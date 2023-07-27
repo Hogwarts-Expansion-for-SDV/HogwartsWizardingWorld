@@ -1,0 +1,935 @@
+      
+{
+  "Changes": [
+/*Ashwinder Basic replace Grub_dangerous*/
+    {
+      "LogName": "Ashwinder Basic Image over Grub_dangerous",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Grub_dangerous",
+      "FromFile": "Monsters/Ashwinder Basic.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Ashwinder Basic Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Grub_dangerous": {
+                    0: 100,
+                    1: 5,
+                    2: 17,
+                    3: 17,
+                    4: false,
+                    5: 1000,
+                    7: 0,
+                    9: 3,
+                    10: 2,
+                    11: .00,
+                    12: true,
+                    13: 10,
+                    14: "Ashwinder",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1", /*will be changed*/
+      }
+    },
+/*Ashwinder Dark replace Grub_dangerous*/
+    {
+      "LogName": "Ashwinder Dark Image over Grub_dangerous",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Grub_dangerous",
+      "FromFile": "Monsters/Ashwinder Dark.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Ashwinder Dark Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Grub_dangerous": {
+                    0: 200,
+                    1: 10,
+                    2: 17,
+                    3: 17,
+                    4: false,
+                    5: 1000,
+                    7: 0,
+                    9: 3,
+                    10: 2,
+                    11: .00,
+                    12: true,
+                    13: 20,
+                    14: "Midnight Ashwinder",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1", /*will be changed*/
+        "Time": "{{Range: 2400, 2600}}",
+      }
+    },
+/*Ashwinder Light replace Grub_dangerous*/
+    {
+      "LogName": "Ashwinder Light Image over Grub_dangerous",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Grub_dangerous",
+      "FromFile": "Monsters/Ashwinder Light.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Ashwinder Light Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Grub_dangerous": {
+                    0: 150,
+                    1: 8,
+                    2: 17,
+                    3: 17,
+                    4: false,
+                    5: 1000,
+                    7: 0,
+                    9: 3,
+                    10: 2,
+                    11: .00,
+                    12: true,
+                    13: 16,
+                    14: "Snowy Ashwinder",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+/*Bicorn replace Pepper Rex*/
+    {
+      "LogName": "Bicorn Image over Pepper Rex",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Pepper Rex",
+      "FromFile": "Monsters/Bicorn.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Bicorn Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Pepper Rex": {
+                    0: 350,
+                    1: 18,
+                    2: 0,
+                    3: 0,
+                    4: true,
+                    5: 1000,
+                    7: 0,
+                    9: 3,
+                    10: 2,
+                    11: .00,
+                    12: true,
+                    13: 36,
+                    14: "Bicorn",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+/*Boomslang Snake Brown replace Grub*/
+    {
+      "LogName": "Boomslang Snake Brown Image over Grub",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Grub",
+      "FromFile": "Monsters/Boomslang Snake Brown.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Boomslang Snake Brown Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Grub": {
+                    0: 60,
+                    1: 3,
+                    2: 0,
+                    3: 0,
+                    4: false,
+                    5: 1000,
+                    7: 0,
+                    9: 3,
+                    10: 3,
+                    11: .00,
+                    12: true,
+                    13: 6,
+                    14: "Brown Boomslang Snake",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+/*Boomslang Snake Green replace Grub*/
+    {
+      "LogName": "Boomslang Snake Green Image over Grub",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Grub",
+      "FromFile": "Monsters/Boomslang Snake Green.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Boomslang Snake Green Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Grub": {
+                    0: 100,
+                    1: 5,
+                    2: 0,
+                    3: 0,
+                    4: false,
+                    5: 1000,
+                    7: 0,
+                    9: 3,
+                    10: 3,
+                    11: .00,
+                    12: true,
+                    13: 10,
+                    14: "Green Boomslang Snake",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+/*Cornish Pixie Dark replace Bat*/
+    {
+      "LogName": "Cornish Pixie Dark Image over Bat",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Bat",
+      "FromFile": "Monsters/Cornish Pixie Dark.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Cornish Pixie Dark Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Bat": {
+                    0: 150,
+                    1: 8,
+                    2: 0,
+                    3: 0,
+                    4: true,
+                    5: 1000,
+                    7: 0,
+                    9: 4,
+                    10: 3,
+                    11: .00,
+                    12: true,
+                    13: 16,
+                    14: "Midnight Cornish Pixie",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+/*Cornish Pixie Light replace Bat*/
+    {
+      "LogName": "Cornish Pixie Light Image over Bat",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Bat",
+      "FromFile": "Monsters/Cornish Pixie Light.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Cornish Pixie Light Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Bat": {
+                    0: 100,
+                    1: 5,
+                    2: 0,
+                    3: 0,
+                    4: true,
+                    5: 1000,
+                    7: 0,
+                    9: 4,
+                    10: 3,
+                    11: .00,
+                    12: true,
+                    13: 10,
+                    14: "Cornish Pixie",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+/*Crup Blonde replace Spider*/
+    {
+      "LogName": "Crup Blonde Image over Spider",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Spider",
+      "FromFile": "Monsters/Crup Blonde.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Crup Blonde Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Spider": {
+                    0: 150,
+                    1: 8,
+                    2: 0,
+                    3: 0,
+                    4: false,
+                    5: 500,
+                    7: 0,
+                    9: 6,
+                    10: 2,
+                    11: .00,
+                    12: true,
+                    13: 16,
+                    14: "Sandy Crup",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+/*Crup Brown replace Spider*/
+    {
+      "LogName": "Crup Brown Image over Spider",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Spider",
+      "FromFile": "Monsters/Crup Brown.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Crup Brown Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Spider": {
+                    0: 200,
+                    1: 10,
+                    2: 0,
+                    3: 0,
+                    4: false,
+                    5: 500,
+                    7: 0,
+                    9: 6,
+                    10: 2,
+                    11: .00,
+                    12: true,
+                    13: 20,
+                    14: "Danger Crup",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+/*Crup Tan replace Spider*/
+    {
+      "LogName": "Crup Tan Image over Spider",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Spider",
+      "FromFile": "Monsters/Crup Tan.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Crup Tan Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Spider": {
+                    0: 100,
+                    1: 5,
+                    2: 0,
+                    3: 0,
+                    4: false,
+                    5: 500,
+                    7: 0,
+                    9: 6,
+                    10: 2,
+                    11: .00,
+                    12: true,
+                    13: 10,
+                    14: "Crup",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+/*Dementor replace Serpent*/
+    {
+      "LogName": "Dementor Image over Serpent",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Serpent",
+      "FromFile": "Monsters/Dementor.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Dementor Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Serpent": {
+                    0: 350,
+                    1: 18,
+                    2: 0,
+                    3: 0,
+                    4: true,
+                    5: 1000,
+                    7: 0,
+                    9: 7,
+                    10: 2,
+                    11: .00,
+                    12: true,
+                    13: 36,
+                    14: "Dementor",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+/*Dugbog Blue replace Big Slime*/
+    {
+      "LogName": "Dugbog Blue Image over Big Slime",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Big Slime",
+      "FromFile": "Monsters/Dugbog Blue.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Dugbog Blue Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Big Slime": {
+                    0: 250,
+                    1: 13,
+                    2: 0,
+                    3: 0,
+                    4: false,
+                    5: 1000,
+                    7: 1,
+                    9: 5,
+                    10: 2,
+                    11: .00,
+                    12: true,
+                    13: 26,
+                    14: "Midnight Dugbog",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+/*Dugbog Brown replace Big Slime*/
+    {
+      "LogName": "Dugbog Brown Image over Big Slime",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Big Slime",
+      "FromFile": "Monsters/Dugbog Brown.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Dugbog Brown Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Big Slime": {
+                    0: 150,
+                    1: 8,
+                    2: 0,
+                    3: 0,
+                    4: false,
+                    5: 1000,
+                    7: 1,
+                    9: 5,
+                    10: 2,
+                    11: .00,
+                    12: true,
+                    13: 16,
+                    14: "Muddy Dugbog",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+/*Dugbog Green replace Big Slime*/
+    {
+      "LogName": "Dugbog GreenImage over Big Slime",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Big Slime",
+      "FromFile": "Monsters/Dugbog Green.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Dugbog Green Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Big Slime": {
+                    0: 200,
+                    1: 10,
+                    2: 0,
+                    3: 0,
+                    4: false,
+                    5: 1000,
+                    7: 1,
+                    9: 5,
+                    10: 2,
+                    11: .00,
+                    12: true,
+                    13: 20,
+                    14: "Forest Dugbog",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+/*Dugbog replace Big Slime*/
+    {
+      "LogName": "Dugbog Image over Big Slime",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Big Slime",
+      "FromFile": "Monsters/Dugbog.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Dugbog Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Big Slime": {
+                    0: 100,
+                    1: 5,
+                    2: 0,
+                    3: 0,
+                    4: false,
+                    5: 1000,
+                    7: 1,
+                    9: 5,
+                    10: 2,
+                    11: .00,
+                    12: true,
+                    13: 10,
+                    14: "Dugbog",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+/*Gnome Basic replace Skeleton*/
+    {
+      "LogName": "Gnome Basic Image over Skeleton",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Skeleton",
+      "FromFile": "Monsters/Gnome Basic.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Gnome Basic Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Skeleton": {
+                    0: 140,
+                    1: 7,
+                    2: 0,
+                    3: 0,
+                    4: false,
+                    5: 1500,
+                    7: 0,
+                    9: 8,
+                    10: 3,
+                    11: .00,
+                    12: true,
+                    13: 14,
+                    14: "Gnome",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+/*Gnome Red replace Skeleton*/
+    {
+      "LogName": "Gnome Red Image over Skeleton",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Skeleton",
+      "FromFile": "Monsters/Gnome Red.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Gnome Red Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Skeleton": {
+                    0: 100,
+                    1: 5,
+                    2: 0,
+                    3: 0,
+                    4: false,
+                    5: 1500,
+                    7: 0,
+                    9: 8,
+                    10: 3,
+                    11: .00,
+                    12: true,
+                    13: 10,
+                    14: "Mud Gnome",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+/*Gnome Yellow replace Skeleton*/
+    {
+      "LogName": "Gnome Yellow Image over Skeleton",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Skeleton",
+      "FromFile": "Monsters/Gnome Yellow.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Gnome Yellow Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Skeleton": {
+                    0: 140,
+                    1: 7,
+                    2: 0,
+                    3: 0,
+                    4: false,
+                    5: 1500,
+                    7: 0,
+                    9: 8,
+                    10: 3,
+                    11: .00,
+                    12: true,
+                    13: 14,
+                    14: "Angry Gnome",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Horned Serpent over Royal Serpent",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Royal Serpent",
+      "FromFile": "assets/Monsters/horned_serpent.png",
+      "PatchMode": "Replace",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Horned Serpent Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Royal Serpent": {
+                    0: 140,
+                    1: 7,
+                    2: 0,
+                    3: 0,
+                    4: false,
+                    5: 1500,
+                    7: 0,
+                    9: 8,
+                    10: 3,
+                    11: .00,
+                    12: true,
+                    13: 14,
+                    14: "Horned Serpent",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+/*Inferi replace Stone Golem*/
+    {
+      "LogName": "Inferi Image over Stone Golem",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Stone Golem",
+      "FromFile": "Monsters/Inferi.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Inferi Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Stone Golem": {
+                    0: 350,
+                    1: 18,
+                    2: 1,
+                    3: 1,
+                    4: false,
+                    5: 0,
+                    7: 0,
+                    9: 3,
+                    10: 2,
+                    11: .00,
+                    12: true,
+                    13: 36,
+                    14: "Inferi",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+/*Streeler Blue replace Lava Crab*/
+    {
+      "LogName": "Streeler Blue Image over Lava Crab",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Lava Crab",
+      "FromFile": "Monsters/Streeler Blue.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Streeler Blue Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Lava Crab": {
+                    0: 250,
+                    1: 13,
+                    2: 0,
+                    3: 0,
+                    4: false,
+                    5: 1000,
+                    7: 1,
+                    9: 3,
+                    10: 2,
+                    11: .00,
+                    12: true,
+                    13: 26,
+                    14: "Midnight Streeler",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+/*Streeler Green replace Lava Crab*/
+    {
+      "LogName": "Streeler Green Image over Lava Crab",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Lava Crab",
+      "FromFile": "Monsters/Streeler Green.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Streeler Green Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Lava Crab": {
+                    0: 100,
+                    1: 5,
+                    2: 0,
+                    3: 0,
+                    4: false,
+                    5: 1000,
+                    7: 1,
+                    9: 3,
+                    10: 2,
+                    11: .00,
+                    12: true,
+                    13: 10,
+                    14: "Forest Streeler",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+/*Streeler Maroon replace Lava Crab*/
+    {
+      "LogName": "Streeler Maroon Image over Lava Crab",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Lava Crab",
+      "FromFile": "Monsters/Streeler Maroon.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Streeler Maroon Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Lava Crab": {
+                    0: 150,
+                    1: 8,
+                    2: 0,
+                    3: 0,
+                    4: false,
+                    5: 1000,
+                    7: 1,
+                    9: 3,
+                    10: 2,
+                    11: .00,
+                    12: true,
+                    13: 16,
+                    14: "Angry Streeler",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+/*Streeler Green replace Lava Crab*/
+    {
+      "LogName": "Streeler Yellow Image over Lava Crab",
+      "Action": "EditImage",
+      "Target": "Characters/Monsters/Lava Crab",
+      "FromFile": "Monsters/Streeler Yellow.png", 
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+    {
+      "LogName": "Streeler Yellow Monster Data",
+      "Action": "EditData",
+      "Target": "Data/Monsters",
+      "Fields": {
+                "Lava Crab": {
+                    0: 200,
+                    1: 10,
+                    2: 0,
+                    3: 0,
+                    4: false,
+                    5: 1000,
+                    7: 1,
+                    9: 3,
+                    10: 2,
+                    11: .00,
+                    12: true,
+                    13: 20,
+                    14: "Toxic Streeler",
+                },
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_HogwartsForbiddenForest1" /*will be changed*/
+      }
+    },
+  ]
+}
+
+
+
+

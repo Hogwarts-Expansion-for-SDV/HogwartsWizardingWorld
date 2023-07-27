@@ -1,0 +1,26 @@
+{
+   "Name": "[CP] Hogwarts",
+   "Author": "Hogwarts Expansion Team",
+   "Version": "0.0.4",
+   "Description": "Adds Hogwarts Expansion to SDV.",
+   "UniqueID": "HogwartsET.CP.Hogwarts",
+   "MinimumApiVersion": "1.0",
+   "UpdateKeys": [ "Nexus:14858" ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher",
+   },
+   "Dependencies": [
+   {
+      "UniqueID": "HogwartsET.JA.Hogwarts",
+     "IsRequired": true,
+   },
+   {
+     "UniqueID": "spacechase0.JsonAssets",
+     "IsRequired": true
+   },
+   {
+     "UniqueID": "aedenthorn.DynamicMapTiles",
+     "IsRequired": false
+   },
+  ],
+}

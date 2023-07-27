@@ -1,0 +1,65 @@
+{
+    "Changes": [
+        {
+            "LogName": "Load Portraits",
+            "Action": "Load",
+            "Target": "Portraits/Hogwarts.Aberforth, Portraits/Hogwarts.Adrian, Portraits/Hogwarts.Alanza, Portraits/Hogwarts.MrFlume,Portraits/Hogwarts.Filch, Portraits/Hogwarts.Avery, Portraits/Hogwarts.BloodyBaron, Portraits/Hogwarts.Charlotte, Portraits/Hogwarts.Colby, Portraits/Hogwarts.Dromgoole, Portraits/Hogwarts.Edgar, Portraits/Hogwarts.FatFriar, Portraits/Hogwarts.GreyLady, Portraits/Hogwarts.Grace, Portraits/Hogwarts.Graham, Portraits/Hogwarts.Hagrid, Portraits/Hogwarts.Holly, Portraits/Hogwarts.Ivan, Portraits/Hogwarts.Levina, Portraits/Hogwarts.MadamHooch, Portraits/Hogwarts.MadamPomfrey, Portraits/Hogwarts.MadamRosmerta, Portraits/Hogwarts.McGonagall, Portraits/Hogwarts.Mneme, Portraits/Hogwarts.MrsFlume, Portraits/Hogwarts.NearlyHeadlessNick, Portraits/Hogwarts.Nozea, Portraits/Hogwarts.Ollivander, Portraits/Hogwarts.Pippa, Portraits/Hogwarts.Brindlemore, Portraits/Hogwarts.Binns, Portraits/Hogwarts.Flitwick, Portraits/Hogwarts.Longbottom, Portraits/Hogwarts.Rowle, Portraits/Hogwarts.Slughorn, Portraits/Hogwarts.Sprout, Portraits/Hogwarts.Simon, Portraits/Hogwarts.Webster, Portraits/Hogwarts.Winky, Portraits/Hogwarts.Xander, Portraits/Hogwarts.Centaur",
+            "FromFile": "assets/{{Target}}.png"
+        },
+        {
+            "LogName": "Load Sprites",
+            "Action": "Load",
+            "Target": "Characters/Hogwarts.Aberforth, Characters/Hogwarts.Adrian, Characters/Hogwarts.Alanza, Characters/Hogwarts.MrFlume,Characters/Hogwarts.Filch, Characters/Hogwarts.Avery, Characters/Hogwarts.BloodyBaron, Characters/Hogwarts.Charlotte, Characters/Hogwarts.Colby, Characters/Hogwarts.Dromgoole, Characters/Hogwarts.Edgar, Characters/Hogwarts.FatFriar, Characters/Hogwarts.GreyLady, Characters/Hogwarts.Grace, Characters/Hogwarts.Graham, Characters/Hogwarts.Hagrid, Characters/Hogwarts.Holly, Characters/Hogwarts.Ivan, Characters/Hogwarts.Levina, Characters/Hogwarts.MadamHooch, Characters/Hogwarts.MadamPomfrey, Characters/Hogwarts.MadamRosmerta, Characters/Hogwarts.McGonagall, Characters/Hogwarts.Mneme, Characters/Hogwarts.MrsFlume, Characters/Hogwarts.NearlyHeadlessNick, Characters/Hogwarts.Nozea, Characters/Hogwarts.Ollivander, Characters/Hogwarts.Pippa, Characters/Hogwarts.Brindlemore, Characters/Hogwarts.Binns, Characters/Hogwarts.Flitwick, Characters/Hogwarts.Longbottom, Characters/Hogwarts.Rowle, Characters/Hogwarts.Slughorn, Characters/Hogwarts.Sprout, Characters/Hogwarts.Simon, Characters/Hogwarts.Webster, Characters/Hogwarts.Winky, Characters/Hogwarts.Xander, Characters/Hogwarts.Centaur",
+            "FromFile": "assets/{{Target}}.png"
+        },
+        {
+            "LogName": "NPC Manifest Data",
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "Entries": {
+                "NPC": "age/manners/social/optimism/gender/datable/null/home/birthday/relationships/spawn point/name", // example
+                "Hogwarts.Aberforth": "adult/neutral/neutral/neutral/male/non-datable/null/Custom_HogsmeadeVillage/birthday/relationships/Custom_HogsHeadInn 6 5/Aberforth Dumbledore",
+                "Hogwarts.Adrian": "teen/polite/shy/negative/male/non-datable/null/Custom_HogsmeadeVillage/birthday/relationships/Custom_HogwartsHufflepuffCommonRoom 6 5/Adrian", // vampire
+                "Hogwarts.Alanza": "adult/polite/neutral/neutral/female/non-datable/null/Custom_HogsmeadeVillage/birthday/relationships/Custom_TomesandScrolls 6 5/Alanza", // owner of tomes & scrolls
+                "Hogwarts.MrFlume": "adult/polite/outgoing/positive/male/non-datable/null/Custom_HogsmeadeVillage/birthday/MrsFlume 'wife'/Custom_Honeydukes 6 5/Ambrosius Flume",
+                "Hogwarts.Filch": "adult/rude/neutral/negative/male/non-datable/null/Custom_HogsmeadeVillage/spring 17/relationships/Custom_HogwartsGreatHall 4 14/Filch",
+                "Hogwarts.Avery": "teen/neutral/outgoing/neutral/male/non-datable/null/Custom_HogsmeadeVillage/birthday/relationships/Custom_Hogwarts/Avery", // metamorphmagus
+                "Hogwarts.BloodyBaron": "adult/rude/outgoing/negative/male/non-datable/null/Custom_HogsmeadeVillage/birthday/relationships/Custom_INFRONTofSLYCommonRoom 6 5/The Bloody Baron",
+                "Hogwarts.Charlotte": "teen/polite/outgoing/positive/female/non-datable/null/Custom_HogsmeadeVillage/spring 1/relationships/Custom_HogwartsGryffindorCommonRoom 6 5/Charlotte", // gryffindor prefect
+                "Hogwarts.Colby": "teen/neutral/neutral/neutral/male/non-datable/null/Custom_HogsmeadeVillage/summer 5/relationships/Custom_HogwartsHufflepuffCommonRoom 6 5/Colby", // hufflepuff prefect
+                "Hogwarts.Dromgoole": "adult/polite/outgoing/positive/female/non-datable/null/Custom_HogsmeadeVillage/birthday/relationships/Custom_HogwartsAncientRunesClassroom 6 5/Professor Dromgoole", // professor of ancient runes
+                "Hogwarts.Edgar": "adult/neutral/neutral/neutral/male/non-datable/null/Custom_HogsmeadeVillage/birthday/relationships/Custom_StitchesandDraughts 6 5/Edgar", // stitches & draughts owner
+                "Hogwarts.FatFriar": "adult/polite/neutral/positive/male/non-datable/null/Custom_HogsmeadeVillage/birthday/relationships/Custom_INFRONTofHUFFCommonRoom 6 5/The Fat Friar",
+                "Hogwarts.GreyLady": "adult/rude/shy/negative/female/non-datable/null/Custom_HogsmeadeVillage/birthday/relationships/Custom_INFRONTofRAVENCommonRoom 6 5/The Grey Lady",
+                "Hogwarts.Grace": "teen/neutral/neutral/neutral/female/non-datable/null/Custom_HogsmeadeVillage/fall 7/relationships/Custom_HogwartsRavenclawCommonRoom 6 5/Grace", // ravenclaw prefect
+                "Hogwarts.Graham": "adult/polite/neutral/positive/male/non-datable/null/Custom_HogsmeadeVillage/birthday/relationships/Custom_CeridwensCauldrons 6 5/Graham", // ceridwen’s owner
+                "Hogwarts.Hagrid": "adult/polite/outgoing/positive/male/non-datable/null/Custom_HogsmeadeVillage/winter 6/relationships/Custom_HagridsHut 6 5/Hagrid",
+                "Hogwarts.Holly": "adult/neutral/outgoing/positive/female/non-datable/null/Custom_HogsmeadeVillage/birthday/relationships/Custom_DogweedandDeathcap 6 5/Holly", // dogweed & deathcap owner
+                "Hogwarts.Ivan": "adult/polite/neutral/neutral/male/non-datable/null/Custom_HogsmeadeVillage/birthday/relationships/Custom_TheMagicNeep 6 5/Ivan", // magic neep owner
+                "Hogwarts.Levina": "teen/rude/neutral/negative/female/non-datable/null/Custom_HogsmeadeVillage/fall 1/relationships/Custom_HogwartsGryffindorCommonRoom 6 5/Levina", // werewolf
+                "Hogwarts.MadamHooch": "adult/neutral/neutral/neutral/female/non-datable/null/Custom_HogsmeadeVillage/summer 18/relationships/Custom_MadamHoochs 6 5/Madam Hooch",
+                "Hogwarts.MadamPomfrey": "adult/polite/neutral/positive/female/non-datable/null/Custom_HogsmeadeVillage/summer 6/relationships/Custom_HogwartsHospitalWing 6 5/Madam Pomfrey",
+                "Hogwarts.MadamRosmerta": "adult/neutral/neutral/neutral/female/non-datable/null/Custom_HogsmeadeVillage/birthday/relationships/Custom_ThreeBroomsticksInn 6 5/Madam Rosmerta",
+                "Hogwarts.Mneme": "teen/polite/neutral/negative/female/non-datable/null/Custom_HogsmeadeVillage/spring 3/relationships/Custom_Hogwarts 6 5/Mneme", // abigail look-alike
+                "Hogwarts.MrsFlume": "adult/polite/outgoing/positive/female/non-datable/null/Custom_HogsmeadeVillage/birthday/AmbrosiusFlume 'husband'/Custom_Honeydukes 6 5/Mrs. Flume",
+                "Hogwarts.NearlyHeadlessNick": "adult/polite/outgoing/positive/male/non-datable/null/Custom_HogsmeadeVillage/birthday/relationships/Custom_INFRONTofGRYCommonRoom 6 5/Nearly Headless Nick",
+                "Hogwarts.Nozea": "teen/polite/neutral/positive/female/non-datable/null/Custom_HogsmeadeVillage/spring 3/relationships/Custom_HogwartsRavenclawCommonRoom 6 5/Nozea", // maledictus
+                "Hogwarts.Ollivander": "adult/polite/neutral/positive/male/non-datable/null/Custom_HogsmeadeVillage/fall 25/relationships/Custom_Ollivanders 6 5/Ollivander",
+                "Hogwarts.Pippa": "adult/polite/neutral/positive/female/non-datable/null/Custom_HogsmeadeVillage/birthday/relationships/Custom_JPippinsPotions 6 5/Pippa", // owner of j. pippins potions
+                "Hogwarts.Brindlemore": "adult/polite/neutral/positive/female/non-datable/null/Custom_HogsmeadeVillage/birthday/relationships/Custom_HogwartsDADAClassroom 6 5/Professor Brindlemore", // professor of dada
+                "Hogwarts.Binns": "adult/neutral/neutral/neutral/male/non-datable/null/Custom_HogsmeadeVillage/fall 26/relationships/Custom_HogwartsHistoryOfMagicClassroom 6 5/Professor Binns", // professor of history
+                "Hogwarts.Flitwick": "adult/polite/neutral/positive/male/non-datable/null/Custom_HogsmeadeVillage/fall 17/relationships/Custom_HogwartsCharmsClassroom 6 5/Professor Flitwick", // professor of charms
+                "Hogwarts.Longbottom": "adult/polite/shy/positive/male/non-datable/null/Custom_HogsmeadeVillage/summer 27/relationships/Custom_HogwartsHerbologyGreenhouse 6 5/Professor Longbottom", // professor of herbology
+                "Hogwarts.McGonagall": "adult/neutral/neutral/neutral/female/non-datable/null/Custom_HogsmeadeVillage/fall 4/relationships/Custom_HogwartsTransfigurationClassroom 6 5/Professor McGonagall", // professor of transfiguration
+                "Hogwarts.Rowle": "adult/polite/neutral/positive/female/non-datable/null/Custom_HogsmeadeVillage/birthday/relationships/Custom_HogwartsMuggleStudiesClassroom 6 5/Professor Rowle", // professor of muggle studies
+                "Hogwarts.Slughorn": "adult/neutral/neutral/negative/male/non-datable/null/Custom_HogsmeadeVillage/spring 28/relationships/Custom_HogwartsPotionsClassroom 6 5/Professor Slughorn", // professor of potions
+                "Hogwarts.Sprout": "adult/polite/outgoing/positive/female/non-datable/null/Custom_HogsmeadeVillage/summer 15/relationships/Custom_HogwartsHerbologyGreenhouse 6 5/Professor Sprout",
+                "Hogwarts.Simon": "teen/rude/outgoing/negative/male/non-datable/null/Custom_HogsmeadeVillage/fall 28/relationships/Custom_SlytherinDungeon 6 5/Simon", // slytherin prefect
+                "Hogwarts.Webster": "adult/polite/shy/neutral/male/non-datable/null/Custom_HogsmeadeVillage/birthday/relationships/Custom_GladragsWizardwear 6 5/Webster", // owner of gladrag’s
+                "Hogwarts.Winky": "adult/polite/shy/negative/female/non-datable/null/Custom_HogsmeadeVillage/spring 12/relationships/Custom_HogwartsKitchens 6 5/Winky",
+                "Hogwarts.Xander": "adult/neutral/neutral/neutral/male/datable/null/Custom_HogsmeadeVillage/birthday/relationships/Custom_BroodandPeck 6 5/Xander", // marriage candidate who owns brood & peck
+                "Hogwarts.Centaur": "child/polite/shy/positive/male/non-datable/null/Custom_HogsmeadeVillage/summer 21/relationships/Custom_HogwartsForbiddenForest1 6 5/Placeholder"
+            }
+        }
+    ]
+}

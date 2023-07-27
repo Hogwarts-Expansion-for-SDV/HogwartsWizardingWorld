@@ -1,0 +1,43 @@
+{
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_HogwartsValleyForbiddenForest1",
+      "FromFile": "assets/Maps/TreasureRoom.tmx",
+      "ToArea": {
+        "X": "{{Query: {{Random: {{Range: 8, 190}}|key=ForbiddenForest1TreasureRoom1X}}}}",
+        "Y": "{{Query: {{Random: {{Range: 8, 150}}|key=ForbiddenForest1TreasureRoom1Y}}}}",
+        "Width": 4,
+        "Height": 4
+      },
+      "PatchMode": "Overlay",
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_HogwartsValleyForbiddenForest1",
+      "FromFile": "assets/Maps/ForbiddenForestButton.tmx",
+      "ToArea": {
+        "X": "{{Query: {{Random: {{Range: 8, 190}}|key=ForbiddenForest1Button1X}}}}",
+        "Y": "{{Query: {{Random: {{Range: 8, 150}}|key=ForbiddenForest1Button1Y}}}}",
+        "Width": 3,
+        "Height": 3
+      },
+      "PatchMode": "Overlay",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 8, 190}}|key=ForbiddenForest1Button1X}} + 1}}",
+            "Y": "{{Query: {{Random: {{Range: 8, 150}}|key=ForbiddenForest1Button1Y}} + 1}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/explosionOn": "{{Query: {{Random: {{Range: 8, 190}}|key=ForbiddenForest1TreasureRoom1X}} + 1}} {{Query: {{Random: {{Range: 8, 150}}|key=ForbiddenForest1TreasureRoom1Y}} + 2}} 4 false -1",
+            "DMT/changeMultipleIndexOn": "Front {{Query: {{Random: {{Range: 8, 190}}|key=ForbiddenForest1TreasureRoom1X}}}} {{Query: {{Random: {{Range: 8, 150}}|key=ForbiddenForest1TreasureRoom1Y}}}}=|Front {{Query: {{Random: {{Range: 8, 190}}|key=ForbiddenForest1TreasureRoom1X}} + 1}} {{Query: {{Random: {{Range: 8, 150}}|key=ForbiddenForest1TreasureRoom1Y}}}}=|Front {{Query: {{Random: {{Range: 8, 190}}|key=ForbiddenForest1TreasureRoom1X}} + 2}} {{Query: {{Random: {{Range: 8, 150}}|key=ForbiddenForest1TreasureRoom1Y}}}}=|Front {{Query: {{Random: {{Range: 8, 190}}|key=ForbiddenForest1TreasureRoom1X}} + 3}} {{Query: {{Random: {{Range: 8, 150}}|key=ForbiddenForest1TreasureRoom1Y}}}}=|Buildings {{Query: {{Random: {{Range: 8, 190}}|key=ForbiddenForest1TreasureRoom1X}}}} {{Query: {{Random: {{Range: 8, 150}}|key=ForbiddenForest1TreasureRoom1Y}} + 1}}=|Buildings {{Query: {{Random: {{Range: 8, 190}}|key=ForbiddenForest1TreasureRoom1X}} + 1}} {{Query: {{Random: {{Range: 8, 150}}|key=ForbiddenForest1TreasureRoom1Y}} + 1}}=|Buildings {{Query: {{Random: {{Range: 8, 190}}|key=ForbiddenForest1TreasureRoom1X}} + 2}} {{Query: {{Random: {{Range: 8, 150}}|key=ForbiddenForest1TreasureRoom1Y}} + 1}}=|Buildings {{Query: {{Random: {{Range: 8, 190}}|key=ForbiddenForest1TreasureRoom1X}} + 3}} {{Query: {{Random: {{Range: 8, 150}}|key=ForbiddenForest1TreasureRoom1Y}} + 1}}=|Buildings {{Query: {{Random: {{Range: 8, 190}}|key=ForbiddenForest1TreasureRoom1X}}}} {{Query: {{Random: {{Range: 8, 150}}|key=ForbiddenForest1TreasureRoom1Y}} + 2}}=|Buildings {{Query: {{Random: {{Range: 8, 190}}|key=ForbiddenForest1TreasureRoom1X}} + 1}} {{Query: {{Random: {{Range: 8, 150}}|key=ForbiddenForest1TreasureRoom1Y}} + 2}}=|Buildings {{Query: {{Random: {{Range: 8, 190}}|key=ForbiddenForest1TreasureRoom1X}} + 2}} {{Query: {{Random: {{Range: 8, 150}}|key=ForbiddenForest1TreasureRoom1Y}} + 2}}=|Buildings {{Query: {{Random: {{Range: 8, 190}}|key=ForbiddenForest1TreasureRoom1X}} + 3}} {{Query: {{Random: {{Range: 8, 150}}|key=ForbiddenForest1TreasureRoom1Y}} + 2}}=|Buildings {{Query: {{Random: {{Range: 8, 190}}|key=ForbiddenForest1TreasureRoom1X}}}} {{Query: {{Random: {{Range: 8, 150}}|key=ForbiddenForest1TreasureRoom1Y}} + 3}}=|Buildings {{Query: {{Random: {{Range: 8, 190}}|key=ForbiddenForest1TreasureRoom1X}} + 1}} {{Query: {{Random: {{Range: 8, 150}}|key=ForbiddenForest1TreasureRoom1Y}} + 3}}=|Buildings {{Query: {{Random: {{Range: 8, 190}}|key=ForbiddenForest1TreasureRoom1X}} + 2}} {{Query: {{Random: {{Range: 8, 150}}|key=ForbiddenForest1TreasureRoom1Y}} + 3}}=|Buildings {{Query: {{Random: {{Range: 8, 190}}|key=ForbiddenForest1TreasureRoom1X}} + 3}} {{Query: {{Random: {{Range: 8, 150}}|key=ForbiddenForest1TreasureRoom1Y}} + 3}}=",
+            "DMT/chestOn": "{{Query: {{Random: {{Range: 8, 190}}|key=ForbiddenForest1TreasureRoom1X}} + 1}} {{Query: {{Random: {{Range: 8, 150}}|key=ForbiddenForest1TreasureRoom1Y}} + 2}}=378,10 380,10 382,10 384,10 386,10 Money/2000 Weapon/30",
+            "DMT/soundOn": "getNewSpecialItem",
+          },
+        }
+      ],
+    },
+  ]
+}

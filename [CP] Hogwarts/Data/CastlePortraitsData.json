@@ -1,0 +1,45 @@
+{
+  "Changes": [
+    /*Passageway Portraits*/
+    {
+      "LogName": "Tile Data of Hogwarts Astronomy Wing 2F Awake",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_HogwartsAstronomyWing2F",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 10,
+            "Y": 2
+          },
+          "Layer": "Buildings1",
+          "SetTilesheet": "PassagewayPortraits",
+          "SetIndex": 22
+        }
+      ],
+      "When": {
+        "Time": "{{Range: 0600, 2400}}"
+      },
+      "Update": "OnLocationChange",
+    },
+    {
+      "LogName": "Tile Data of Hogwarts Astronomy Wing 2F Asleep",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_HogwartsAstronomyWing2F",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 10,
+            "Y": 2
+          },
+          "Layer": "Buildings1",
+          "SetTilesheet": "PassagewayPortraits",
+          "SetIndex": 148
+        }
+      ],
+      "When": {
+        "Time": "{{Range: 2400, 2600}}"
+      },
+      "Update": "OnLocationChange",
+    }
+  ]
+}
