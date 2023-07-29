@@ -1,0 +1,80 @@
+/* 
+NOTES
+
+LocationName is a global token that represents the player's current location.
+    - Appending LocationName with |contains= MapName| applies the patch when the current location is (true) or is not (false) the defined MapName inside the container.
+    - Appending LocationName with |contains=
+    - Applying the container with a map location within a dynamic token
+
+*/
+
+//  paste later in the content.json
+{
+    "DynamicTokens": [
+        {
+            "Name": "LocationToken",
+            "Value": "Base"
+        },
+        {
+            "Name": "LocationToken",
+            "Value": "NotWizardingWorld",
+            "When":{
+                "LocationName": ""
+            }
+        },
+        {
+            "Name": "LocationToken",
+            "Value": "Hogwarts",
+            "When": {
+                "LocationName": "" 
+            }
+        },
+        {
+            "Name": "LocationToken",
+            "Value": "Hogsmeade",
+            "When":{
+                "LocationName": ""
+            }
+        },
+        {
+            "Name": "LocationToken",
+            "Value": "WizardingWorld",
+            "When":{
+                "LocationName": ""
+            }
+        }
+    ],
+//  keep in DynamicTokens.json; these are just examples/guesses because I'm not sure exactly how we would apply a minimap patch
+    "Changes": [
+    //  loads minimap
+        {
+            "LogName": "Wizarding World Map",
+            "Action": "Load",
+            "Target": "LooseSprites/map",
+            "FromFile": "assets/LooseSprites/WizardingWorldMinimap.png",
+            "When":{
+                "LocationToken |contains=WizardingWorld": true
+            }
+        },
+        {
+            "LogName": "Hogsmeade Minimap",
+            "Action": "Load",
+            "Target": "LooseSprites/map",
+            "FromFile": "assets/LooseSprites/HogsmeadeMinimap.png",
+            "When":{
+                "LocationToken |contains=WizardingWorld, Hogsmeade": true
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Hogwarts Minimap",
+            "Action": "Load",
+            "Target": "LooseSprites/map",
+            "FromFile": "assets/LooseSprites/HogwartsMinimap.png",
+            "When":{
+                "LocationToken |contains=WizardingWorld, Hogwarts": true
+            },
+            "Update": "OnLocationChange"
+        }
+    ]
+}
