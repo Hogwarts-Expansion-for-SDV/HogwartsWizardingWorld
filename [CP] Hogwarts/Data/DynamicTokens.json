@@ -1,10 +1,9 @@
 /* 
 NOTES
-
 LocationName is a global token that represents the player's current location.
-    - Appending LocationName with |contains= MapName| applies the patch when the current location is (true) or is not (false) the defined MapName inside the container.
-    - Appending LocationName with |contains=
-    - Applying the container with a map location within a dynamic token
+- Appending LocationName with |contains= MapName| applies the patch when the current location is (true) or is not (false) the defined MapName inside the container.
+- Appending LocationName with |contains=
+- Applying the container with a map location within a dynamic token
 
 */
 
@@ -17,30 +16,23 @@ LocationName is a global token that represents the player's current location.
         },
         {
             "Name": "LocationToken",
-            "Value": "NotWizardingWorld",
-            "When":{
-                "LocationName": ""
-            }
-        },
-        {
-            "Name": "LocationToken",
             "Value": "Hogwarts",
             "When": {
-                "LocationName": "" 
+                "LocationName": "Custom_HogwartsAstronomyWing1F, Custom_HogwartsAstronomyWing2F, Custom_HogwartsAstronomyWing3F, Custom_HogwartsAstronomyWing 3F, Custom_HogwartsAstronomyWing4F, Custom_HogwartsAstronomyWing5F, Custom_HogwartsAstronomyWing 6F, Custom_HogwartsAstronomyWingG1F, Custom_HogwartsBellTowerCourtyard, Custom_HogwartsBellTowerWingGF, Custom_HogwartsCentralHallGF, Custom_HogwartsClockTowerCourtyard, Custom_HogwartsClockTowerGF, Custom_HogwartsDADAClassroom, Custom_HogwartsDivinationRoom, Custom_HogwartsDivinationTower, Custom_HogwartsForbiddenForest1, Custom_HogwartsGrandStaircase, Custom_HogwartsGreatHall, Custom_HogwartGryffindorTower, Custom_HogwartsHistoryOfMagicClassroom, Custom_HogwartsPotionsClassroom, Custom_HogwartsRavenclawCommonRoom, Custom_HogwartsRavenclawTower, Custom_HogwartsReceptionHallGF, Custom_HogwartsSlytherinCommonRoom, Custom_HogwartsSlytherinDungeon, Custom_HogwartsSouthWing, Custom_HogwartsTransfigurationClassroom, Custom_HogwartsTransfigurationCourtyard, Custom_HogwartsTrophyRoom, Custom_HogwartsViaductCourtyard, Custom_HogwartsVivarium" 
             }
         },
         {
             "Name": "LocationToken",
             "Value": "Hogsmeade",
             "When":{
-                "LocationName": ""
+                "LocationName": "Custom_BroodAndPeck, Custom_CeridwensCauldrons, Custom_DervishAndBanges, Custom_DogweedAndDeathcap, Custom_GladragsWizardwear, Custom_HogsHeadInn, Custom_HogsmeadeStation, Custom_HogsmeadeVillage, Custom_Honeydukes, Custom_JPippinsPotions, Custom_MadamPuddifootsTeaShop, Custom_Ollivanders, Custom_StitchesAndDraughts, Custom_TheMagicNeep, Custom_ThreeBroomsticksInn, Custom_TomesAndScrolls, Custom_ZonoksJokeShop"
             }
         },
         {
             "Name": "LocationToken",
             "Value": "WizardingWorld",
             "When":{
-                "LocationName": ""
+                "LocationName": "Custom_HogwartsAstronomyWing1F, Custom_HogwartsAstronomyWing2F, Custom_HogwartsAstronomyWing3F, Custom_HogwartsAstronomyWing 3F, Custom_HogwartsAstronomyWing4F, Custom_HogwartsAstronomyWing5F, Custom_HogwartsAstronomyWing 6F, Custom_HogwartsAstronomyWingG1F, Custom_HogwartsBellTowerCourtyard, Custom_HogwartsBellTowerWingGF, Custom_HogwartsCentralHallGF, Custom_HogwartsClockTowerCourtyard, Custom_HogwartsClockTowerGF, Custom_HogwartsDADAClassroom, Custom_HogwartsDivinationRoom, Custom_HogwartsDivinationTower, Custom_HogwartsForbiddenForest1, Custom_HogwartsGrandStaircase, Custom_HogwartsGreatHall, Custom_HogwartGryffindorTower, Custom_HogwartsHistoryOfMagicClassroom, Custom_HogwartsPotionsClassroom, Custom_HogwartsRavenclawCommonRoom, Custom_HogwartsRavenclawTower, Custom_HogwartsReceptionHallGF, Custom_HogwartsSlytherinCommonRoom, Custom_HogwartsSlytherinDungeon, Custom_HogwartsSouthWing, Custom_HogwartsTransfigurationClassroom, Custom_HogwartsTransfigurationCourtyard, Custom_HogwartsTrophyRoom, Custom_HogwartsViaductCourtyard, Custom_HogwartsVivarium, Custom_BroodAndPeck, Custom_CeridwensCauldrons, Custom_DervishAndBanges, Custom_DogweedAndDeathcap, Custom_GladragsWizardwear, Custom_HogsHeadInn, Custom_HogsmeadeStation, Custom_HogsmeadeVillage, Custom_Honeydukes, Custom_JPippinsPotions, Custom_MadamPuddifootsTeaShop, Custom_Ollivanders, Custom_StitchesAndDraughts, Custom_TheMagicNeep, Custom_ThreeBroomsticksInn, Custom_TomesAndScrolls, Custom_ZonoksJokeShop"
             }
         }
     ],
