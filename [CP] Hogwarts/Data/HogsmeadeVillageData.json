@@ -1,0 +1,1653 @@
+{
+  "Changes": [
+/*Brood and Peck*/
+    {
+      "LogName": "Brood and Peck Entrance",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 74,
+            "Y": 42
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 11 13 {{ModId}}_BroodAndPeck" 
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Brood and Peck Sign",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 78,
+            "Y": 43
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Brood and Peck"
+          }
+        }
+      ]
+    },
+/*Ceridwen's Cauldrons*/
+    {
+      "LogName": "Ceridwen's Cauldrons Entrance",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 108,
+            "Y": 106
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 9 32 {{ModId}}_CeridwensCauldrons"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Ceridwen's Cauldrons Sign",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 104,
+            "Y": 107
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Ceridwen's Cauldrons"
+          }
+        }
+      ]
+    },
+/*Dervish and Banges*/
+    {
+      "LogName": "Dervish and Banges Entrance",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 75,
+            "Y": 67
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 6 10 {{ModId}}_DervishandBanges"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Dervish and Banges Sign",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 72,
+            "Y": 69
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Dervish and Banges"
+          }
+        }
+      ]
+    },
+/*Dogweed and Deathcap*/
+    {
+      "LogName": "Dogweed and Deathcap Entrance",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 63,
+            "Y": 18
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 6 10 {{ModId}}_DogweedAndDeathcap"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Dogweed and Deathcap Sign",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 67,
+            "Y": 19
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Dogweed and Deathcap"
+          }
+        }
+      ]
+    },
+/*Dominic Maestro's Music Shop*/
+    {
+      "LogName": "Dominic Maestro's Music Shop Entrance",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 121,
+            "Y": 74
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 6 10 {{ModId}}_DominicMaestrosMusicShop"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Dominic Maestro's Music Shop Sign",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 117,
+            "Y": 75
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Dominic Maestro's Music Shop"
+          }
+        }
+      ]
+    },
+/*Gladrags Wizardwear*/
+    {
+      "LogName": "Gladrags Wizardwear Entrance",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 82,
+            "Y": 71
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 6 10 {{ModId}}_GladragsWizardwear"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gladrags Wizardwear Sign",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 86,
+            "Y": 71
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Gladrags Wizardwear"
+          }
+        }
+      ]
+    },
+/*Hog's Head Inn*/
+    {
+      "LogName": "Hog's Head Inn Entrance",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 59,
+            "Y": 97
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 14 23 {{ModId}}_HogsHeadInn"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Hog's Head Inn Sign",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 63,
+            "Y": 98
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Hog's Head Inn"
+          }
+        }
+      ]
+    },
+/*Honeydukes*/
+    {
+      "LogName": "Honeydukes Entrance",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 98,
+            "Y": 50
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 10 20 {{ModId}}_Honeydukes"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Honeydukes Sign",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 94,
+            "Y": 51
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Honeydukes"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Honeydukes Shop Action",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Honeydukes",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 14,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "",
+            "Shop": "{{ModId}}_Honeydukes"
+          }
+        },
+        {
+          "Position": {
+            "X": 16,
+            "Y": 16
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "OpenShop {{ModId}}_Honeydukes",
+            "Shop": "{{ModId}}_Honeydukes"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Honeydukes Storage",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Honeydukes",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 13,
+            "Y": 5
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue STORAGE EMPLOYEES ONLY"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Honeydukes Floss",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Honeydukes",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 13,
+            "Y": 5
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue A bin of candyfloss."
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Honeydukes Action Dialogue",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Honeydukes",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 7,
+            "Y": 14
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{Random: Exploding bon bons., They pack a punch!}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 2,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Various flavors of cauldron cakes."
+          }
+        },
+        {
+          "Position": {
+            "X": 5,
+            "Y": 11
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{Random: A globe filled with Bertie Bott's Every Flavor Beans., Dirt., Coconut., Bogey., Peppermint.}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 2,
+            "Y": 5
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{Random: Glass bottles of sweet pumpkin juice., Boxed chocolate wands.}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 10,
+            "Y": 5
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue All confections buy one get one free every 29th of the month!"
+          }
+        },
+        {
+          "Position": {
+            "X": 10,
+            "Y": 12
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{Random: Pumpkin pasties., Baggies of pink coconut ice.}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 5,
+            "Y": 9
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{Random: Yikes blood flavored lollipops., A jar filled with Drooble's Best Blowing Gum., }}"
+          }
+        },
+        {
+          "Position": {
+            "X": 14,
+            "Y": 9
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{Random: Assorted Fortescue's ice-cream., Vanilla with thickened butterbeer swirl., Chocolate strawberry peanut-butter with nuts.}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 8,
+            "Y": 5
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{Random: Weasley brand skiving snackboxes 'Sweets that make you ill.', Fever fudge and nosebleed nougat.}}"
+          }
+        }
+      ]
+    },
+/*J. Pippin's Potions*/
+    {
+      "LogName": "J. Pippin's Potions Entrance",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 54,
+            "Y": 82
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 6 10 {{ModId}}_JPippinsPotions"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "J. Pippin's Potions Sign",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 58,
+            "Y": 83
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue J. Pippin's Potions"
+          }
+        }
+      ]
+    },
+/*Madam Puddifoot's*/
+    {
+      "LogName": "Madam Puddifoot's Tea Shop Entrance",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 109,
+            "Y": 61
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 6 10 {{ModId}}_MadamPuddifootsTeaShop"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Madam Puddifoot's Tea Shop Sign",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 113,
+            "Y": 62
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Madam Puddifoot's Tea Shop"
+          }
+        }
+      ]
+    },
+/*Madam Snelling's*/
+    {
+      "LogName": "Madam Snelling's Tress Emporium Entrance",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 59,
+            "Y": 60
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 6 10 {{ModId}}_MadamSnellingsTressEmporium"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Madam Snelling's Tress Emporium Sign",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 55,
+            "Y": 61
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Madam Snelling's Tress Emporium"
+          }
+        }
+      ]
+    },
+/*Ollivander's*/
+    {
+      "LogName": "Ollivanders Entrance",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 88,
+            "Y": 95
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 8 19 {{ModId}}_Ollivanders"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Ollivanders Sign",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 92,
+            "Y": 96
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Ollivanders"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Ollivanders Shop Action",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Ollivanders",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 7,
+            "Y": 16
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "",
+            "Shop": "Ollivanders"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Ollivanders Book",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Ollivanders",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 11,
+            "Y": 5
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue An encyclopedia on wand cores."
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Ollivanders Workbench",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Ollivanders",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 9,
+            "Y": 5
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{Random: A workbench used for crafting new wands., Tattered paper with plans depicting lighter faster wands for better spellwork., Samplings of the three best wand cores known to wizardkind.}}",
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Ollivanders Shelf 1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Ollivanders",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 14,
+            "Y": 18
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{Random: Blackthorn phoenix feather very flexible 6 1/2 inches.,}}"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Ollivanders Shelf 2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Ollivanders",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 14,
+            "Y": 16
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{Random: Wands measuring within 7 inches., Red Oak unicorn hair swishy}}"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Ollivanders Shelf 3",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Ollivanders",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 14,
+            "Y": 14
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{Random: Wands measuring within 8 inches., }}"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Ollivanders Shelf 4",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Ollivanders",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 1,
+            "Y": 17
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{Random: Wands measuring from 9 to 9 1/2 inches., }}"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Ollivanders Shelf 5",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Ollivanders",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 1,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{Random: Wands measuring from 9 1/2 to 10 inches., }}"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Ollivanders Shelf 6",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Ollivanders",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 1,
+            "Y": 11
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{Random: Wands measuring from 10 to 10 1/2 inches., }}"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Ollivanders Shelf 7",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Ollivanders",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 1,
+            "Y": 7
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{Random: Wands measuring from 10 1/2 to 11 inches., }}"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Ollivanders Shelf 8",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Ollivanders",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 2,
+            "Y": 5
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{Random: Wands measuring from 11 to 13 inches., }}"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Ollivanders Shelf 9",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Ollivanders",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 5,
+            "Y": 5
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{Random: Wands measuring within 14 inches., }}"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Ollivanders Shelf 10",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Ollivanders",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 12,
+            "Y": 5
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{Random: Wands measuring within 15 inches., }}"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Ollivanders Shelf 11",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Ollivanders",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 1,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{Random: Wands measuring from 16 to 18 inches., }}"
+          }
+        }
+      ]
+    },
+/*Spintwitches Sporting*/
+    {
+      "LogName": "Spintwitches Sporting Needs Entrance",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 103,
+            "Y": 94
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 6 10 {{ModId}}_SpintwitchesSportingNeeds"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Spintwitches Sporting Needs Sign",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 99,
+            "Y": 95
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Spintwitches Sporting Needs"
+          }
+        }
+      ]
+    },
+/*The Magic Neep*/
+    {
+      "LogName": "The Magic Neep Entrance",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 18,
+            "Y": 73
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 6 10 {{ModId}}_TheMagicNeep"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "The Magic Neep Sign",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 22,
+            "Y": 74
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue The Magic Neep"
+          }
+        }
+      ]
+    },
+/*Three Broomsticks*/
+    {
+      "LogName": "Three Broomsticks Inn Entrance",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 96,
+            "Y": 84
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 8 30 {{ModId}}_ThreeBroomsticksInn"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Three Broomsticks Inn Sign",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 100,
+            "Y": 85
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Three Broomsticks Inn"
+          }
+        }
+      ]
+    },
+/*Tomes and Scrolls*/
+    {
+      "LogName": "Tomes and Scrolls Entrance",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 94,
+            "Y": 106
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 6 10 {{ModId}}_TomesAndScrolls"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Tomes and Scrolls Sign",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 98,
+            "Y": 107
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Tomes and Scrolls"
+          }
+        }
+      ]
+    },
+/*Zonko's*/
+    {
+      "LogName": "Zonko's Joke Shop Entrance",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 82,
+            "Y": 84
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 6 10 {{ModId}}_ZonkosJokeShop"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Zonko's Joke Shop Sign",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 78,
+            "Y": 85
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Zonko's Joke Shop"
+          }
+        }
+      ]
+    }
+    /*Other*/,
+    {
+      "LogName": "Community Garden Sign",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 70,
+            "Y": 95
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Community Garden"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Graveyard Shrine",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 22,
+            "Y": 23
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue A monument to those brave souls lost at the Battle of Hogwarts May 2, 1998."
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 19,
+            "Y": 25
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Paul Grant 2/3/19XX - 3/20/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 17,
+            "Y": 27
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Alan Sidney Patrick Rickman 2/21/19XX - 1/14/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 3",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 15,
+            "Y": 28
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Leslie Samuel Phillips 4/20/19XX - 11/7/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 4",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 14,
+            "Y": 33
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Anthony Robert 'Robbie' Coltrane 3/30/19XX - 10/14/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 5",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 14,
+            "Y": 37
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Richard Thomas Griffiths 7/31/19XX - 3/28/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 6",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 19,
+            "Y": 40
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Richard St John Frnacis Harris 10/1/19XX - 10/25/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 7",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 24,
+            "Y": 38
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Helen Elizabeth McCrory 8/17/19XX - 4/16/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 8",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 27,
+            "Y": 36
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Verne Jay Troyer 1/1/19XX - 4/21/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 9",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 29,
+            "Y": 34
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Timothy Sydney Robert Hardy 10/29/19XX - 8/3/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 10",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 30,
+            "Y": 32
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Sir John Vincent Hurt 1/22/19XX - 1/25/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 11",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 30,
+            "Y": 29
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Timothy Bateson 4/3/19XX - 9/15/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 12",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 28,
+            "Y": 26
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Terence Bayler 1/24/19XX - 9/21/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 13",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 26,
+            "Y": 27
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Robert Arthur Knox 8/21/19XX - 5/24/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 14",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 24,
+            "Y": 26
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Sam Beazley 3/29/19XX - 6/12/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 15",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 21,
+            "Y": 27
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Simon Paul Adams Ritter 12/20/19XX - 4/5/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 16",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 20,
+            "Y": 29
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue David Legeno 10/12/19XX - 7/6/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 17",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 17,
+            "Y": 31
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Peter Cartwright 10/30/19XX - 11/18/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 18",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 17,
+            "Y": 35
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Derek Deadman 3/11/19XX - 11/22/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 19",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 20,
+            "Y": 38
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Hazel Douglas 11/2/19XX - 9/8/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 20",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 23,
+            "Y": 36
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Alfred Burke 2/28/19XX - 2/16/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 21",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 24,
+            "Y": 33
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Edward Charles James 'Jimmy' Gardener 8/24/19XX - 5/3/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 22",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 26,
+            "Y": 30
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Elizabeth Jean Spriggs 9/18/19XX - 7/2/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 23",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 21,
+            "Y": 31
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Roger Anthony Lloyd-Pack 2/8/19XX - 1/16/20XX"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Gravestone 24",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 21,
+            "Y": 34
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue David John Ryall 1/5/19XX - 12/25/20XX"
+          }
+        }
+      ]
+    },
+    /*Nifflers*/
+    {
+      "LogName": "Hogsmeade Village Niffler Brown and Black",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 92, 98}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 19}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn {{Random: 0, 1, 2}} HogwartsET.CC.Hogwarts.NifflerBrown"
+          }
+        },
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 92, 98}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 19}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn {{Random: 0, 1, 2}} HogwartsET.CC.Hogwarts.NifflerBlack"
+          }
+        }
+      ],
+      "When": {
+        "Weather": "Sun, Snow, Wind",
+        "Season": "Spring, Summer, Fall",
+      }
+    },
+    {
+      "LogName": "Hogsmeade Village Niffler White",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 92, 98}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 19}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} HogwartsET.CC.Hogwarts.NifflerWhite"
+          }
+        },
+      ],
+      "When": {
+        "Weather": "Sun, Snow, Wind",
+        "Season": "Winter",
+      }
+    },
+/*Hogwarts Carriages*/ 
+    {
+      "LogName": "Hogsmeade Carriage Arrival Spawn",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 137,
+            "Y": 120
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageArrival"
+          }
+        },
+        {
+          "Position": {
+            "X": 127,
+            "Y": 120
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageArrival"
+          }
+        },
+        {
+          "Position": {
+            "X": 117,
+            "Y": 120
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageArrival"
+          }
+        },
+        {
+          "Position": {
+            "X": 107,
+            "Y": 120
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageArrival"
+          }
+        },
+      ],
+      "When": {
+        "Time": "{{Range: 1900, 2600}}",
+        "Day": "1, 15"
+      },
+      "Update": "OnTimeChange",
+    },
+    {
+      "LogName": "Hogsmeade Carriage Departure Spawn 1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 8,
+            "Y": 120
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageDeparture"
+          }
+        },
+      ],
+      "When": {
+        "Time": "{{Range: 0900, 1100}}",
+        "Day": "8, 22"
+      },
+      "Update": "OnTimeChange",
+    },
+    {
+      "LogName": "Hogsmeade Carriage Departure Spawn 2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 8,
+            "Y": 120
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageDeparture"
+          }
+        },
+      ],
+      "When": {
+        "Time": "{{Range: 0900, 1100}}",
+        "Day": "8, 22"
+      },
+      "Update": "OnTimeChange",
+    },
+    {
+      "LogName": "Hogsmeade Carriage Departure Spawn 3",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 8,
+            "Y": 120
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageDeparture"
+          }
+        },
+      ],
+      "When": {
+        "Time": "{{Range: 0920, 1100}}",
+        "Day": "8, 22"
+      },
+      "Update": "OnTimeChange",
+    },
+    {
+      "LogName": "Hogsmeade Carriage Departure Spawn 4",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 8,
+            "Y": 120
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageDeparture"
+          }
+        },
+      ],
+      "When": {
+        "Time": "{{Range: 0930, 1100}}",
+        "Day": "8, 22"
+      },
+      "Update": "OnTimeChange",
+    },
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

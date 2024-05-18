@@ -1,0 +1,924 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                 "{{ModId}}_Aconite": {
+                    "Name": "Aconite",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Aconite.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Aconite.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 0,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring" ]
+                  },
+                 "{{ModId}}_Agrimonia": {
+                    "Name": "Agrimonia",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Agrimonia.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Agrimonia.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 1,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_fall" ]
+                  },
+                 "{{ModId}}_AngelsTrumpet": {
+                    "Name": "Angel's Trumpet",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.AngelsTrumpet.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.AngelsTrumpet.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 2,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_fall" ]
+                  },
+                 "{{ModId}}_Asphodel": {
+                    "Name": "Asphodel",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Asphodel.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Asphodel.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 3,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring" ]
+                  },
+                 "{{ModId}}_Belladonna": {
+                    "Name": "Belladonna",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Belladonna.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Belladonna.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 4,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring" ]
+                  },
+/*
+                 "{{ModId}}_Betony": {
+                    "Name": "Betony",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Betony.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Betony.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 5,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring" ]
+                  },
+*/
+/*
+                 "{{ModId}}_Bitterroot": {
+                    "Name": "Bitterroot",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Bitterroot.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Bitterroot.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 6,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring" ],
+                    "CustomFields": {
+                        "{{ModId}}_CategoryName": "Magical Root"
+                    }
+                  },
+*/
+/*
+                 "{{ModId}}_Bloodroot": {
+                    "Name": "Bloodroot",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Bloodroot.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Bloodroot.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 7,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring", "season_winter" ]
+                  },
+*/
+                 "{{ModId}}_BoomBerry": {
+                    "Name": "Boom Berry",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.BoomBerry.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.BoomBerry.desc}}",
+                    "Type": "Basic",
+                    "Category": -79,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 8,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_fall" ]
+                  },
+                 "{{ModId}}_BouncingBulb": {
+                    "Name": "Bouncing Bulb",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.BouncingBulb.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.BouncingBulb.desc}}",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 9,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_winter" ]
+                  },
+/*
+                 "{{ModId}}_Centaury": {
+                    "Name": "Centaury",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Centaury.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Centaury.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 10,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_summer" ]
+                  },
+*/
+/*
+                 "{{ModId}}_ChineseChompingCabbage": {
+                    "Name": "Chinese Chomping Cabbage",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.ChineseChompingCabbage.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.ChineseChompingCabbage.desc}}",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 11,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_summer" ]
+                  },
+*/
+                 "{{ModId}}_Daisy": {
+                    "Name": "Daisy",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Daisy.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Daisy.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 12,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring", "season_summer", "season_fall" ]
+                  },
+                 "{{ModId}}_DevilsSnare": {
+                    "Name": "Devil's Snare",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.DevilsSnare.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.DevilsSnare.desc}}",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 13,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_fall" ]
+                  },
+/*
+                 "{{ModId}}_DirigiblePlum": {
+                    "Name": "Dirigible Plum",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.DirigiblePlum.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.DirigiblePlum.desc}}",
+                    "Type": "Basic",
+                    "Category": -79,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 14,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring", "season_fall", "season_winter" ]
+                  },
+*/
+                 "{{ModId}}_Dittany": {
+                    "Name": "Dittany",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Dittany.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Dittany.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 15,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_fall" ]
+                  },
+/*
+                 "{{ModId}}_DoremaAmmoniacum": {
+                    "Name": "Dorema Ammoniacum",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.DoremaAmmoniacum.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.DoremaAmmoniacum.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 16,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_fall" ]
+                  },
+*/
+/*
+                 "{{ModId}}_FangedGeranium": {
+                    "Name": "Fanged Geranium",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.FangedGeranium.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.FangedGeranium.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 17,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_fall" ]
+                  },
+*/
+                 "{{ModId}}_Flitterbloom": {
+                    "Name": "Flitterbloom",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Flitterbloom.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Flitterbloom.desc}}",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 18,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring", "season_summer", "season_fall", "season_winter" ]
+                  },
+                 "{{ModId}}_FlowerHead": {
+                    "Name": "Flower Head",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.FlowerHead.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.FlowerHead.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 19,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring" ]
+                  },
+/*
+                 "{{ModId}}_Fluxweed": {
+                    "Name": "Fluxweed",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Fluxweed.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Fluxweed.desc}}",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 20,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_summer" ]
+                  },
+*/
+/*
+                 "{{ModId}}_Foxglove": {
+                    "Name": "Foxglove",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Foxglove.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Foxglove.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 21,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring" ]
+                  },
+*/
+/*
+                 "{{ModId}}_GalanthusNivalis": {
+                    "Name": "Galanthus Nivalis",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.GalanthusNivalis.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.GalanthusNivalis.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 22,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring" ]
+                  },
+*/
+/*
+                 "{{ModId}}_Gillyweed": {
+                    "Name": "Gillyweed",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Gillyweed.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Gillyweed.desc}}",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 23,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring", "season_summer", "season_fall", "season_winter" ]
+                  },
+*/
+/*
+                 "{{ModId}}_Goosegrass": {
+                    "Name": "Goosegrass",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Goosegrass.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Goosegrass.desc}}",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 24,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring" ]
+                  },
+*/
+/*
+                 "{{ModId}}_Gurdyroot": {
+                    "Name": "Gurdyroot",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Gurdyroot.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Gurdyroot.desc}}",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 25,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_fall" ]
+                  },
+*/
+                 "{{ModId}}_Hellebore": {
+                    "Name": "Hellebore",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Hellebore.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Hellebore.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 26,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring", "season_winter" ]
+                  },
+                 "{{ModId}}_Hemlock": {
+                    "Name": "Hemlock",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Hemlock.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Hemlock.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 27,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring" ]
+                  },
+/*
+                 "{{ModId}}_Jewelweed": {
+                    "Name": "Jewelweed",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Jewelweed.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Jewelweed.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 28,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_fall" ]
+                  },
+*/
+                 "{{ModId}}_Kelp": {
+                    "Name": "Kelp",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Kelp.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Kelp.desc}}",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 29,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring", "season_summer", "season_fall", "season_winter" ]
+                  },
+                 "{{ModId}}_Knotgrass": {
+                    "Name": "Knotgrass",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Knotgrass.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Knotgrass.desc}}",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 30,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_summer", "season_fall" ]
+                  },
+/*
+                 "{{ModId}}_LadysMantle": {
+                    "Name": "Lady's Mantle",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.LadysMantle.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.LadysMantle.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 31,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_summer" ]
+                  },
+*/
+                 "{{ModId}}_Lavender": {
+                    "Name": "Lavender",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Lavender.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Lavender.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 32,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_summer" ]
+                  },
+/*
+                 "{{ModId}}_Lemongrass": {
+                    "Name": "Lemongrass",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Lemongrass.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Lemongrass.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 33,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_fall" ]
+                  },
+*/
+/*
+                 "{{ModId}}_Lovage": {
+                    "Name": "Lovage",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Lovage.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Lovage.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 34,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring" ]
+                  },
+*/
+                 "{{ModId}}_Mandrake": {
+                    "Name": "Mandrake",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Mandrake.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Mandrake.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 35,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring" ],
+                    "CustomFields": {
+                        "{{ModId}}_CategoryName": "Magical Root"
+                    }
+                  },
+/*
+                 "{{ModId}}_Mint": {
+                    "Name": "Mint",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Mint.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Mint.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 36,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_summer" ]
+                  },
+*/
+                 "{{ModId}}_Moly": {
+                    "Name": "Moly",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Moly.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Moly.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 37,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring", "season_summer" ]
+                  },
+                 "{{ModId}}_Moondew": {
+                    "Name": "Moondew",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Moondew.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Moondew.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 38,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_winter" ]
+                  },
+/*
+                 "{{ModId}}_Motherwort": {
+                    "Name": "Motherwort",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Motherwort.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Motherwort.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 39,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_summer" ]
+                  },
+*/
+                 "{{ModId}}_Nettle": {
+                    "Name": "Nettle",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Nettle.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Nettle.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 40,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_summer" ]
+                  },
+/*
+                 "{{ModId}}_Onion": {
+                    "Name": "Onion",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Onion.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Onion.desc}}",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 41,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_fall" ]
+                  },
+*/
+/*
+                 "{{ModId}}_Peppermint": {
+                    "Name": "Peppermint",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Peppermint.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Peppermint.desc}}",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 42,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_summer" ]
+                  },
+*/
+                 "{{ModId}}_PerfectRose": {
+                    "Name": "Perfect Rose",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.PerfectRose.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.PerfectRose.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 43,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring", "season_summer", "season_fall" ]
+                  },
+/*
+                 "{{ModId}}_Plangentine": {
+                    "Name": "Plangentine",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Plangentine.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Plangentine.desc}}",
+                    "Type": "Basic",
+                    "Category": -79,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 44,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_winter" ]
+                  },
+*/
+/*
+                 "{{ModId}}_Plantain": {
+                    "Name": "Plantain",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Plantain.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Plantain.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 45,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_fall" ]
+                  },
+*/
+/*
+                 "{{ModId}}_Polypody": {
+                    "Name": "Polypody",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Polypody.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Polypody.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 46,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_fall" ]
+                  },
+*/
+/*
+                 "{{ModId}}_PoppyHead": {
+                    "Name": "Poppy Head",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.PoppyHead.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.PoppyHead.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 47,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_summer" ]
+                  },
+*/
+                 "{{ModId}}_Puffapod": {
+                    "Name": "Puffapod",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Puffapod.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Puffapod.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 48,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring" ]
+                  },
+/*
+                 "{{ModId}}_PungousOnion": {
+                    "Name": "Pungous Onion",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.PungousOnion.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.PungousOnion.desc}}",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 49,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_fall" ]
+                  },
+*/
+                 "{{ModId}}_Rose": {
+                    "Name": "Rose",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Rose.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Rose.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 50,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring", "season_summer", "season_fall" ]
+                  },
+                 "{{ModId}}_Rue": {
+                    "Name": "Rue",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Rue.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Rue.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 51,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_summer" ]
+                  },
+/*
+                 "{{ModId}}_Sage": {
+                    "Name": "Sage",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Sage.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Sage.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 52,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring" ]
+                  },
+*/
+/*
+                 "{{ModId}}_ScurvyGrass": {
+                    "Name": "Scurvy Grass",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.ScurvyGrass.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.ScurvyGrass.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 53,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring" ]
+                  },
+*/
+                 "{{ModId}}_Shrivelfig": {
+                    "Name": "Shrivelfig",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Shrivelfig.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Shrivelfig.desc}}",
+                    "Type": "Basic",
+                    "Category": -79,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 54,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_fall" ]
+                  },
+/*
+                 "{{ModId}}_Silverweed": {
+                    "Name": "Silverweed",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Silverweed.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Silverweed.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 55,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_summer", "season_fall" ]
+                  },
+*/
+/*
+                 "{{ModId}}_Snakeweed": {
+                    "Name": "Snakeweed",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Snakeweed.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Snakeweed.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 56,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring" ]
+                  },
+*/
+/*
+                 "{{ModId}}_Sneezewort": {
+                    "Name": "Sneezewort",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Sneezewort.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Sneezewort.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 57,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_summer" ]
+                  },
+*/
+                 "{{ModId}}_SopophorousBean": {
+                    "Name": "Sopophorous Bean",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.SopophorousBean.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.SopophorousBean.desc}}",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 58,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_winter" ]
+                  },
+                 "{{ModId}}_SquillBulb": {
+                    "Name": "Squill Bulb",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.SquillBulb.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.SquillBulb.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 59,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring" ]
+                  },
+/*
+                 "{{ModId}}_StarGrass": {
+                    "Name": "Star Grass",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.StarGrass.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.StarGrass.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 60,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_summer" ]
+                  },
+*/
+/*
+                 "{{ModId}}_Thyme": {
+                    "Name": "Thyme",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Thyme.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Thyme.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 61,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_summer" ]
+                  },
+*/
+/*
+                 "{{ModId}}_Tormentil": {
+                    "Name": "Tormentil",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Tormentil.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Tormentil.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 62,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_summer", "season_fall" ]
+                  },
+*/
+                // 63 is free
+                 "{{ModId}}_Valerian": {
+                    "Name": "Valerian",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Valerian.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Valerian.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 64,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_summer" ],
+                    "CustomFields": {
+                        "{{ModId}}_CategoryName": "Magical Root"
+                    }
+                  },
+                 "{{ModId}}_Vanilla": {
+                    "Name": "Vanilla",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Vanilla.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Vanilla.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 65,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_spring", "season_summer" ]
+                  },
+                 "{{ModId}}_VenomousTentacula": {
+                    "Name": "Venomous Tentacula",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.VenomousTentacula.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.VenomousTentacula.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 66,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_fall" ]
+                  },
+/*
+                 "{{ModId}}_Vervain": {
+                    "Name": "Vervain",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Vervain.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Vervain.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 67,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_summer" ]
+                  },
+*/
+/*
+                 "{{ModId}}_Wormwood": {
+                    "Name": "Wormwood",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Wormwood.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Wormwood.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 68,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_fall" ]
+                  },
+*/
+/*
+                 "{{ModId}}_Nightshade": {
+                    "Name": "Nightshade",
+                    "DisplayName": "{{i18n: obj.crops.hrvst.Nightshade.name}}",
+                    "Description": "{{i18n: obj.crops.hrvst.Nightshade.desc}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Crops/CropHarvestedObjects.png}}",
+                    "SpriteIndex": 69,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_Seed", "season_summer" ]
+                  }
+*/
+            }
+        }
+    ]
+}

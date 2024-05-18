@@ -1,0 +1,303 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogsmeade Express Departure Spawn",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeStation",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 7,
+            "Y": 20
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsExpressDeparture"
+          }
+        }
+      ],
+      "When": {
+        "Time": "{{Range: 0600, 1150}}",
+        "Day": "8, 22"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Hogsmeade Station Path for Hogwarts Express Departure",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeStation",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 15,
+            "Y": 20
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 15,
+            "Y": 21
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 61,
+            "Y": 20
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 61,
+            "Y": 21
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 63,
+            "Y": 20
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 63,
+            "Y": 21
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 62,
+            "Y": 19
+          },
+          "Layer": "Buildings",
+          "SetTilesheet": "uzzzTrainstation",
+          "SetIndex": 11
+        },
+        {
+          "Position": {
+            "X": 62,
+            "Y": 22
+          },
+          "Layer": "Buildings",
+          "SetTilesheet": "uzzzTrainstation",
+          "SetIndex": 52
+        }
+      ],
+      "When": {
+        "Time": "{{Range: 1100, 1150}}",
+        "Day": "8, 22"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Hogsmeade Express Arrival Spawn",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeStation",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 46,
+            "Y": 20
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsExpressArrival"
+          }
+        }
+      ],
+      "When": {
+        "Time": "{{Range: 1800, 2600}}",
+        "Day": "1, 15"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Hogsmeade Station Path for Hogwarts Express Arrival",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeStation",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 15,
+            "Y": 20
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 15,
+            "Y": 21
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 61,
+            "Y": 20
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 61,
+            "Y": 21
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 63,
+            "Y": 20
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 63,
+            "Y": 21
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 62,
+            "Y": 19
+          },
+          "Layer": "Buildings",
+          "SetTilesheet": "uzzzTrainstation",
+          "SetIndex": 11
+        },
+        {
+          "Position": {
+            "X": 62,
+            "Y": 22
+          },
+          "Layer": "Buildings",
+          "SetTilesheet": "uzzzTrainstation",
+          "SetIndex": 52
+        }
+      ],
+      "When": {
+        "Time": "{{Range: 1750, 2000}}",
+        "Day": "1, 15"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Railroad MinecartTransport",
+      "Action": "EditMap",
+      "Target": "Maps/Railroad",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 31,
+            "Y": 40
+          },
+          "Layer": "Buildings",
+          "SetTilesheet": "untitled tile sheet",
+          "SetIndex": 1057,
+          "SetProperties": {
+            "Action": "MinecartTransport HogsmeadeStation Railroad"
+          }
+        },
+        {
+          "Position": {
+            "X": 31,
+            "Y": 39
+          },
+          "Layer": "Front",
+          "SetTilesheet": "untitled tile sheet",
+          "SetIndex": 1032
+        }
+      ]
+    },
+    {
+      "LogName": "Hogsmeade Station MinecartTransport",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeStation",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 14
+          },
+          "Layer": "Buildings",
+          "SetTilesheet": "untitled tile sheet",
+          "SetIndex": 1057,
+          "SetProperties": {
+            "Action": "MinecartTransport HogsmeadeStation HogsmeadeStation"
+          }
+        },
+        {
+          "Position": {
+            "X": 32,
+            "Y": 13
+          },
+          "Layer": "Front",
+          "SetTilesheet": "untitled tile sheet",
+          "SetIndex": 1032
+        }
+      ]
+    },
+    {
+      "LogName": "HogsmeadeStation Minecarts",
+      "Action": "EditData",
+      "Target": "data/Minecarts",
+      "Entries": {
+        "HogsmeadeStation": {
+          "UnlockCondition": null,
+          "LockedMessage": null,
+          "ChooseDestinationMessage": null,
+          "BuyTicketMessage": null,
+          "Destinations": [
+            {
+              "Id": "Railroad",
+              "DisplayName": "Stardew Valley",
+              "Condition": null,
+              "Price": 0,
+              "BuyTicketMessage": null,
+              "TargetLocation": "Railroad",
+              "TargetTile": {
+                "X": 31,
+                "Y": 41
+              },
+              "TargetDirection": "down",
+              "CustomFields": null
+            },
+            {
+              "Id": "HogsmeadeStation",
+              "DisplayName": "Hogsmeade Station",
+              "Condition": null,
+              "Price": 0,
+              "BuyTicketMessage": null,
+              "TargetLocation": "{{ModId}}_HogsmeadeStation",
+              "TargetTile": {
+                "X": 32,
+                "Y": 15
+              },
+              "TargetDirection": "down",
+              "CustomFields": null
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "Name": "White Unicorn",
+  "Type": "Walking",
+  "EnableSpawnAtDayStart": true,
+  "EnableCharacterCollision": true,
+  "EnableFarmerCollision": true,
+  "EnableShadow": true,
+  "InspectionDialogue": "Thestral",
+  "TravelSpeed": 5,
+  "MaxIdleDistance": -1,
+  "MaxDistanceBeforeTeleport": -1,
+  "IdleBehavior": "Wander",
+  "FrameSizeWidth": 32,
+  "FrameSizeHeight": 32,
+  "CollisionPositionX": 32,
+  "CollisionPositionY": 0,
+  "CollisionPositionHeight": 64,
+  "CollisionPositionWidth": 64,
+  "DownAnimation": {
+    "StartingFrame": 0,
+    "NumberOfFrames": 6,
+    "Duration": 150,
+    "IdleAnimation": {
+      "StartingFrame": 0,
+      "NumberOfFrames": 1,
+      "Duration": 500
+    }
+  },
+  "UpAnimation": {
+    "StartingFrame": 14,
+    "NumberOfFrames": 6,
+    "Duration": 150,
+    "IdleAnimation": {
+      "StartingFrame": 14,
+      "NumberOfFrames": 1,
+      "Duration": 500
+    }
+  },
+  "RightAnimation": {
+    "StartingFrame": 7,
+    "NumberOfFrames": 6,
+    "Duration": 150,
+    "IdleAnimation": {
+      "ManualFrames": [
+        {
+          "Frame": 21,
+          "Duration": 1000
+        },
+        {
+          "Frame": 22,
+          "Duration": 150
+        },
+        {
+          "Frame": 23,
+          "Duration": 150
+        },
+        {
+          "Frame": 24,
+          "Duration": 150
+        },
+        {
+          "Frame": 23,
+          "Duration": 150
+        },
+        {
+          "Frame": 24,
+          "Duration": 150
+        },
+        {
+          "Frame": 23,
+          "Duration": 150
+        },
+        {
+          "Frame": 24,
+          "Duration": 1000
+        },
+        {
+          "Frame": 23,
+          "Duration": 150
+        },
+        {
+          "Frame": 22,
+          "Duration": 150
+        },
+        {
+          "Frame": 21,
+          "Duration": 150
+        },
+      ]
+    }
+  },
+  "LeftAnimation": {
+    "ManualFrames": [
+        {
+            "Frame": 7,
+            "Duration": 150,
+            "Flip": true
+        },
+        {
+            "Frame": 8,
+            "Duration": 150,
+            "Flip": true
+        },
+        {
+            "Frame": 9,
+            "Duration": 150,
+            "Flip": true
+        },
+        {
+            "Frame": 10,
+            "Duration": 150,
+            "Flip": true
+        },
+        {
+            "Frame": 11,
+            "Duration": 150,
+            "Flip": true
+        },
+        {
+            "Frame": 12,
+            "Duration": 150,
+            "Flip": true
+        }
+    ],
+    "IdleAnimation": {
+      "ManualFrames": [
+        {
+          "Frame": 21,
+          "Duration": 1000,
+          "Flip": true
+        },
+        {
+          "Frame": 22,
+          "Duration": 150,
+          "Flip": true
+        },
+        {
+          "Frame": 23,
+          "Duration": 150,
+          "Flip": true
+        },
+        {
+          "Frame": 24,
+          "Duration": 150,
+          "Flip": true
+        },
+        {
+          "Frame": 23,
+          "Duration": 150,
+          "Flip": true
+        },
+        {
+          "Frame": 24,
+          "Duration": 150,
+          "Flip": true
+        },
+        {
+          "Frame": 23,
+          "Duration": 150,
+          "Flip": true
+        },
+        {
+          "Frame": 24,
+          "Duration": 150,
+          "Flip": true
+        },
+        {
+          "Frame": 23,
+          "Duration": 150,
+          "Flip": true
+        },
+        {
+          "Frame": 22,
+          "Duration": 150,
+          "Flip": true
+        },
+        {
+          "Frame": 21,
+          "Duration": 150,
+          "Flip": true
+        },
+      ]
+    }
+  },
+  "Shadow": {
+    "OffsetX": 0,
+    "OffsetY": 0,
+    "Scale": 1,
+    "Alpha": 235
+  }
+}

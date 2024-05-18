@@ -1,0 +1,21 @@
+{
+  "Name": "HogwartsExpressArrival",
+  "Type": "Walking", // Can either be Walking or Flying | Walking has collision with objects, flying has no collision
+  "EnableFarmerCollision": false, // Optional parameter, determines if the companion will collide with the farmer | NOTE: Only usable with map-based spawns, does nothing for follower-based spawns (e.g. with rings)
+  "EnableShadow": false, // Optional parameter, default false
+  "TravelSpeed": 1, // Speed at which the companion follows the player
+  "SpawnDirection": 3, // Optional parameter, determines which direction the companion will face when spawned (0 for up, 1 for right, 2 for down, 3 for right) | Default 2
+  "MaxIdleDistance": -1, // Optional parameter, determines how far away a companion can be from a player / spawn point before idle behavior stops | NOTE: -1 will make it always idle if player isn't moving
+  "MaxDistanceBeforeTeleport": -1, // Optional parameter, determines how far away a companion can be from a player / spawn point before teleporting back | NOTE: -1 will make it never teleport if it gets too far
+  "IdleBehavior": "Simple_Path",
+  "IdleArguments": [ 5, 20, 0 ],
+  "EnablePeriodicPatchCheck": true,
+  "FrameSizeWidth": 768, // Width of each frame / tile in pixels
+  "FrameSizeHeight": 80, // Height of each frame / tile in pixels
+
+  "UniformAnimation": {
+    "StartingFrame": 0,
+    "NumberOfFrames": 1,
+    "Duration": 50
+  }
+}

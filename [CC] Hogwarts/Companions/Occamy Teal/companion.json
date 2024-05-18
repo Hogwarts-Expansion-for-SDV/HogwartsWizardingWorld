@@ -1,0 +1,111 @@
+{
+  "Name": "OccamyTeal",
+  "Type": "Walking",
+  "EnableSpawnAtDayStart": true,
+  "EnableCharacterCollision": true,
+  "EnableFarmerCollision": true,
+  "EnableShadow": true,
+  "InspectionDialogue": "Occamy",
+  "TravelSpeed": 2,
+  "MaxIdleDistance": -1,
+  "MaxDistanceBeforeTeleport": -1,
+  "IdleBehavior": "Wander",
+  "FrameSizeWidth": 32,
+  "FrameSizeHeight": 32,
+  "DownAnimation": {
+    "StartingFrame": 0,
+    "NumberOfFrames": 4,
+    "Duration": 200,
+    "IdleAnimation": {
+      "ManualFrames": [
+        {
+          "Frame": 0,
+          "Duration": 1000
+        },
+        {
+          "Frame": 12,
+          "Duration": 200
+        },
+        {
+          "Frame": 13,
+          "Duration": 200
+        },
+        {
+          "Frame": 12,
+          "Duration": 200
+        },
+        {
+          "Frame": 16,
+          "Duration": 200
+        },
+        {
+          "Frame": 17,
+          "Duration": 200
+        },
+        {
+          "Frame": 18,
+          "Duration": 200
+        },
+        {
+          "Frame": 19,
+          "Duration": 1000
+        },
+        {
+          "Frame": 18,
+          "Duration": 200
+        },
+        {
+          "Frame": 17,
+          "Duration": 200
+        },
+        {
+          "Frame": 16,
+          "Duration": 200
+        },
+      ]
+    }
+  },
+  "UpAnimation": {
+    "StartingFrame": 8,
+    "NumberOfFrames": 4,
+    "Duration": 200,
+    "IdleAnimation": {
+      "StartingFrame": 15,
+      "NumberOfFrames": 1,
+      "Duration": 500
+    }
+  },
+  "RightAnimation": {
+    "StartingFrame": 4,
+    "NumberOfFrames": 4,
+    "Duration": 200,
+    "IdleAnimation": {
+      "StartingFrame": 14,
+      "NumberOfFrames": 1,
+      "Duration": 500
+    }
+  },
+  "LeftAnimation": {
+    "StartingFrame": 20,
+    "NumberOfFrames": 4,
+    "Duration": 200,
+    "IdleAnimation": {
+      "ManualFrames": [
+        {
+          "Frame": 14,
+          "Duration": 500,
+          "Flip": true
+        },
+      ]
+    }
+  },
+  "Shadow": {
+    "OffsetX": 0,
+    "OffsetY": 0,
+    "Scale": 1,
+    "Alpha": 235
+  }
+}
+
+
+

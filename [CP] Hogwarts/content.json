@@ -1,283 +1,113 @@
-{ 
-  "Format": "1.29.0",
-  "CustomLocations": [
-// Tester 
-    {
-      "Name": "Custom_TestRoom",
-      "FromMapFile": "assets/Maps/TestRoom.tmx"
-    },
-// Hogsmeade Locations
-    {
-      "Name": "Custom_BroodAndPeck",
-      "FromMapFile": "assets/Maps/BroodAndPeck.tmx"
-    },
-    {
-      "Name": "Custom_CeridwensCauldrons",
-      "FromMapFile": "assets/Maps/CeridwensCauldrons.tmx"
-    },
-    {
-      "Name": "Custom_DervishandBanges",
-      "FromMapFile": "assets/Maps/DervishandBanges.tmx"
-    },
-    {
-      "Name": "Custom_DogweedAndDeathcap",
-      "FromMapFile": "assets/Maps/DogweedAndDeathcap.tmx"
-    },
-    {
-      "Name": "Custom_GladragsWizardwear",
-      "FromMapFile": "assets/Maps/GladragsWizardwear.tmx"
-    },
-    {
-      "Name": "Custom_HogsHeadInn",
-      "FromMapFile": "assets/Maps/HogsHeadInn.tmx"
-    },
-    {
-      "Name": "Custom_HogsmeadeStation",
-      "FromMapFile": "assets/Maps/HogsmeadeStation.tmx"
-    },
-    {
-      "Name": "Custom_HogsmeadeVillage",
-      "FromMapFile": "assets/Maps/HogsmeadeVillage.tmx"
-    },
-    {
-      "Name": "Custom_Honeydukes",
-      "FromMapFile": "assets/Maps/Honeydukes.tmx"
-    },
-    {
-      "Name": "Custom_JPippinsPotions",
-      "FromMapFile": "assets/Maps/JPippinsPotions.tmx"
-    },
-    {
-      "Name": "Custom_MadamPuddifootsTeaShop",
-      "FromMapFile": "assets/Maps/MadamPuddifootsTeaShop.tmx"
-    },
-    {
-      "Name": "Custom_Ollivanders",
-      "FromMapFile": "assets/Maps/Ollivanders.tmx"
-    },
-    {
-      "Name": "Custom_StitchesAndDraughts",
-      "FromMapFile": "assets/Maps/StitchesAndDraughts.tmx"
-    },
-    {
-      "Name": "Custom_TheMagicNeep",
-      "FromMapFile": "assets/Maps/TheMagicNeep.tmx"
-    },
-    {
-      "Name": "Custom_ThreeBroomsticksInn",
-      "FromMapFile": "assets/Maps/ThreeBroomsticksInn.tmx"
-    },
-    {
-      "Name": "Custom_TomesAndScrolls",
-      "FromMapFile": "assets/Maps/TomesAndScrolls.tmx"
-    },
-    {
-      "Name": "Custom_ZonkosJokeShop",
-      "FromMapFile": "assets/Maps/ZonkosJokeShop.tmx"
-    },
-// Hogwarts Locations
-    {
-      "Name": "Custom_HogwartsAstronomyWingG1F",
-      "FromMapFile": "assets/Maps/HogwartsAstronomyWingG1F.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsAstronomyWing2F",
-      "FromMapFile": "assets/Maps/HogwartsAstronomyWing2F.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsAstronomyWing3F",
-      "FromMapFile": "assets/Maps/HogwartsAstronomyWing3F.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsAstronomyWing4F",
-      "FromMapFile": "assets/Maps/HogwartsAstronomyWing4F.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsAstronomyWing5F",
-      "FromMapFile": "assets/Maps/HogwartsAstronomyWing5F.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsAstronomyWing6F",
-      "FromMapFile": "assets/Maps/HogwartsAstronomyWing6F.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsBellTowerWingGF",
-      "FromMapFile": "assets/Maps/HogwartsBellTowerWingGF.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsCentralHallGF",
-      "FromMapFile": "assets/Maps/HogwartsCentralHallGF.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsClockTowerCourtyard",
-      "FromMapFile": "assets/Maps/HogwartsClockTowerCourtyard.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsClockTowerGF",
-      "FromMapFile": "assets/Maps/HogwartsClockTowerGF.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsDADAClassroom",
-      "FromMapFile": "assets/Maps/HogwartsDADAClassroom.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsDivinationRoom",
-      "FromMapFile": "assets/Maps/HogwartsDivinationRoom.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsDivinationTower",
-      "FromMapFile": "assets/Maps/HogwartsDivinationTower.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsGrandStaircase",
-      "FromMapFile": "assets/Maps/HogwartsGrandStaircase.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsGreatHall",
-      "FromMapFile": "assets/Maps/HogwartsGreatHall.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsGreenhouseCentral",
-      "FromMapFile": "assets/Maps/HogwartsGreenhousesCentral.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsGreenhousesNorth",
-      "FromMapFile": "assets/Maps/HogwartsGreenhousesNorth.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsGreenhousesSouth",
-      "FromMapFile": "assets/Maps/HogwartsGreenhousesSouth.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsGryffindorTower",
-      "FromMapFile": "assets/Maps/HogwartsGryffindorTower.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsHistoryOfMagicClassroom",
-      "FromMapFile": "assets/Maps/HogwartsHistoryOfMagicClassroom.tmx"
-    },    
-    {
-      "Name": "Custom_HogwartsPotionsClassroom",
-      "FromMapFile": "assets/Maps/HogwartsPotionsClassroom.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsRavenclawCommonRoom",
-      "FromMapFile": "assets/Maps/HogwartsRavenclawCommonRoom.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsRavenclawTower",
-      "FromMapFile": "assets/Maps/HogwartsRavenclawTower.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsReceptionHallGF",
-      "FromMapFile": "assets/Maps/HogwartsReceptionHallGF.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsSlytherinCommonRoom",
-      "FromMapFile": "assets/Maps/HogwartsSlytherinCommonRoom.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsSlytherinDungeon",
-      "FromMapFile": "assets/Maps/HogwartsSlytherinDungeon.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsSouthWing",
-      "FromMapFile": "assets/Maps/HogwartsSouthWing.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsTransfigurationClassroom",
-      "FromMapFile": "assets/Maps/HogwartsTransfigurationClassroom.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsTransfigurationCourtyard",
-      "FromMapFile": "assets/Maps/HogwartsTransfigurationCourtyard.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsTrophyRoom",
-      "FromMapFile": "assets/Maps/HogwartsTrophyRoom.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsViaductCourtyard",
-      "FromMapFile": "assets/Maps/HogwartsViaductCourtyard.tmx"
-    },
-    {
-      "Name": "Custom_HogwartsVivarium",
-      "FromMapFile": "assets/Maps/HogwartsVivarium.tmx"
-    },
-// Hogwarts Valley Forbidden Forest
-    {
-      "Name": "Custom_HogwartsForbiddenForest1",
-      "FromMapFile": "assets/Maps/HogwartsForbiddenForest1.tmx"
+{
+  "Format": "2.0.0",
+  "ConfigSchema": {
+    "Hogwarts_Interior_Texture": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "Uncheck box to remove custom interior tilesheet.",
+      "Section": "Texture"
     }
-  ],
-  
-  "Changes": [
+  },
+  "DynamicTokens": [
     {
-		  "LogName": "Load Portraits",
-			"Action": "Load",
-			"Target": "Portraits/Adrian, Portraits/Coby, Portraits/Dromgoole, Portraits/Levina, Portraits/Mnemone, Portraits/Nozea, Portraits/Winky",
-			"FromFile": "assets/{{Target}}.png"
-		},
-		{
-			"LogName": "Load Sprites",
-			"Action": "Load",
-			"Target": "Characters/Adrian, Characters/Coby, Characters/Dromgoole, Characters/Levina, Characters/Mnemone, Characters/Nozea, Characters/Winky",
-			"FromFile": "assets/{{Target}}.png"
-		},
-		{
-			"LogName": "Hogwarts Event Blanks",
-			"Action": "Load",
-			"Target": "Data/Events/Custom_HogwartsAstronomyWingG1F, Data/Events/Custom_HogwartsAstronomyWing2F, Data/Events/Custom_HogwartsAstronomyWing3F, Data/Events/Custom_HogwartsAstronomyWing4F, Data/Events/Custom_HogwartsAstronomyWing5F, Data/Events/Custom_HogwartsAstronomyWing6F, Data/Events/Custom_HogwartsBellTowerWingGF, Data/Events/Custom_HogwartsCentralHallGF, Data/Events/Custom_HogwartsClockTowerCourtyard, Data/Events/Custom_HogwartsClockTowerGF, Data/Events/Custom_HogwartsDADAClassroom, Data/Events/Custom_HogwartsDivinationRoom, Data/Events/Custom_HogwartsDivinationTower, Data/Events/Custom_HogwartsGrandStaircase, Data/Events/Custom_HogwartsGreatHall, Data/Events/Custom_HogwartsGryffindorTower, Data/Events/Custom_HogwartsHistoryOfMagicClassroom, Data/Events/Custom_HogwartsPotionsClassroom, Data/Events/Custom_HogwartsRavenclawCommonRoom, Data/Events/Custom_HogwartsRavenclawTower, Data/Events/Custom_HogwartsReceptionHallGF, Data/Events/Custom_HogwartsSlytherinCommonRoom, Data/Events/Custom_HogwartsSlytherinDungeon, Data/Events/Custom_HogwartsSouthWing, Data/Events/Custom_HogwartsTransfigurationClassroom, Data/Events/Custom_HogwartsTransfigurationCourtyard, Data/Events/Custom_HogwartsTrophyRoom, Data/Events/Custom_HogwartsViaductCourtyard, Data/Events/Custom_HogwartsVivarium, Data/Events/Custom_HogwartsForbiddenForest1", 
-			"FromFile": "assets/blank.json"
-		},
-		{
-			"LogName": "Hogsmeade Event Blanks",
-			"Action": "Load",
-			"Target": "Data/Events/Custom_BroodAndPeck, Data/Events/Custom_CeridwensCauldrons, Data/Events/Custom_DervishandBanges, Data/Events/Custom_DogweedandDeathcap, Data/Events/Custom_GladragsWizardwear, Data/Events/Custom_HogsHeadInn, Data/Events/Custom_HogsmeadeStation, Data/Events/Custom_HogsmeadeVillage, Data/Events/Custom_Honeydukes, Data/Events/Custom_JPippinsPotions, Data/Events/Custom_MadamPuddifootsTeaShop, Data/Events/Custom_Ollivanders, Data/Events/Custom_StitchesAndDraughts, Data/Events/Custom_TheMagicNeep, Data/Events/Custom_ThreeBroomsticksInn, Data/Events/Custom_TomesAndScrolls, Data/Events/Custom_ZonkosJokeShop"
-		},
-		{
-			"LogName": "Dialogue & Schedule Blanks",
-			"Action": "Load",
-			"Target": "Data/Dialogue/Adrian, Data/Dialogue/Coby, Data/Dialogue/Levina, Data/Dialogue/Mnemone, Data/Dialogue/Nozea, Data/Dialogue/Winky",
-			"FromFile": "Data/blank.json"
-		},
-		{
-			"LogName": "Various Includes",
-			"Action": "Include",
-			"FromFile": "Data/NPCData.json, Data/Events.json, Data/Dialogue/Adrian.json, Data/Dialogue/Coby.json, Data/Dialogue/Levina.json, Data/Dialogue/Mnemone.json, Data/Dialogue/Nozea.json, Data/Dialogue/Winky.json"
-		},
-	  {
+      "Name": "Creature",
+      "Value": "Ashwinder, AshwinderBlack, AshwinderGrey, Bicorn, Bowtruckle, BowtruckleBlue, BowtruckleBrown, BowtruckleBrownLeaf, BowtruckleGreen, Crup, CrupBrown, CrupGrey, DragonToadOrange, DragonToadRed, DragonToadYellow, Dugbog, DugbogBlue, DugbogBrown, DugbogGreen, FireCrabAmethyst, FireCrabAquamarine, FireCrabDiamond, FireCrabEmerald, FireCrabRuby, FireCrabTopaz, FwooperBlue, FwooperGreen, FwooperPink, FwooperShiny, FwooperYellow, GriffinBrown, GriffinGold, GriffinWhite, HippogriffBlack, HippogriffBrown, HippogriffGrey, HippogriffRed, HippogriffWhite, KneazleBlonde, KneazleBrown, KneazleGrey, Mooncalf, MooncalfBlue, MooncalfOrange, MooncalfYellow, OccamyBlue, OccamyTeal, Thestral, Unicorn"
+    },
+    {
+      "Name": "Interior Locations",
+      "Value": "BroodAndPeck, CeridwensCauldrons, DervishAndBanges, DogweedAndDeathcap, DominicMaestrosMusicShop, GladragsWizardwear, HogsHeadInn, Honeydukes, JPippinsPotions, MadamPuddifootsTeaShop, MadamSnellingsTressEmporium, Ollivanders, StitchesAndDraughts, SpintwitchesSportingNeeds, TheMagicNeep, ThreeBroomsticksInn, TomesAndScrolls, ZonkosJokeShop, HogwartsAstronomyWingG1F, HogwartsAstronomyWing2F, HogwartsAstronomyWing3F, HogwartsAstronomyWing4F, HogwartsAstronomyWing5F, HogwartsAstronomyWing6F, HogwartsBellTowerWingGF, HogwartsCentralHallGF, HogwartsClockTowerGF, HogwartsDADAClassroom, HogwartsDivinationClassroom, HogwartsDivinationTower, HogwartsGrandStaircase, HogwartsGreatHall, HogwartsGryffindorTower, HogwartsHistoryOfMagicClassroom, HogwartsPotionsClassroom, HogwartsRavenclawCommonRoom, HogwartsRavenclawTower, HogwartsReceptionHallGF, HogwartsSlytherinCommonRoom, HogwartsSlytherinDungeon, HogwartsSouthWing, HogwartsTransfigurationClassroom, HogwartsTrophyRoom"
+    },
+      {
+          "Name": "DEBUG",
+          "Value": true
+      }
+  ],
+  "Changes": [
+      {
+          "LogName": "Include debug shop data",
+          "Action": "Include",
+          "FromFile": "Data/DEBUGShopData.json",
+          "When": {
+              "DEBUG": true
+          }
+      },
+    {
       "LogName": "Include Chair Data",
       "Action": "Include",
       "FromFile": "Data/ChairData.json"
     },
     {
-      "LogName": "Include Custom Companion Map Data",
+      "LogName": "Include EditImage Data",
       "Action": "Include",
-      "FromFile": "Data/CustomCompanionMapData.json"
-    },
-    {
-      "LogName": "Include Dynamic Map Tiles Data",
-      "Action": "Include",
-      "FromFile": "Data/DynamicMapTilesData.json"
+      "FromFile": "Data/EditImageData.json"
     },
     {
       "LogName": "Include EditMap Data",
       "Action": "Include",
       "FromFile": "Data/EditMapData.json"
-    },
-    {
+    }
+    /*{
       "LogName": "Include Fish Data",
       "Action": "Include",
       "FromFile": "Data/FishData.json"
-    },
+    },*/,
     {
-      "LogName": "Include Forbidden Forest Data",
+      "LogName": "Include Forbidden Forest Stage 1 Data",
       "Action": "Include",
-      "FromFile": "Data/ForbiddenForestData.json"
+      "FromFile": "Data/ForbiddenForestStage1Data.json"
     },
     {
-      "LogName": "Include Mail",
+      "LogName": "Include Forbidden Forest Stage 2 Data",
+      "Action": "Include",
+      "FromFile": "Data/ForbiddenForestStage2Data.json"
+    },
+    {
+      "LogName": "Include Forbidden Forest Creature Den Data",
+      "Action": "Include",
+      "FromFile": "Data/ForbiddenForestCreatureDenData.json"
+    },
+    {
+      "LogName": "Include Forbidden Forest Creature Den Trigger Data",
+      "Action": "Include",
+      "FromFile": "Data/ForbiddenForestCreatureDenTriggerData.json"
+    },
+    {
+      "LogName": "Include Hogsmeade Station Data",
+      "Action": "Include",
+      "FromFile": "Data/HogsmeadeStationData.json"
+    },
+    {
+      "LogName": "Include Hogsmeade Village Data",
+      "Action": "Include",
+      "FromFile": "Data/HogsmeadeVillageData.json"
+    },
+    {
+      "LogName": "Include Hogsmeade Village Crop Area Data",
+      "Action": "Include",
+      "FromFile": "Data/HogsmeadeVillageCropAreaData.json"
+    },
+    {
+      "LogName": "Include Hogwarts Bell Tower Courtyard Data",
+      "Action": "Include",
+      "FromFile": "Data/HogwartsBellTowerCourtyardData.json"
+    },
+    {
+      "LogName": "Include Hogwarts Icy Corridor",
+      "Action": "Include",
+      "FromFile": "Data/HogwartsIcyCorridorData.json"
+    },
+    {
+      "LogName": "Include Hogwarts Vivarium Data",
+      "Action": "Include",
+      "FromFile": "Data/HogwartsVivariumData.json"
+    },
+    {
+      "LogName": "Include Location Data",
+      "Action": "Include",
+      "FromFile": "Data/LocationData.json"
+    },
+    {
+      "LogName": "Include Mail Data",
       "Action": "Include",
       "FromFile": "Data/MailData.json"
     },
@@ -287,14 +117,14 @@
       "FromFile": "Data/MapPropertiesData.json"
     },
     {
+      "LogName": "Include MinecartPatcher Data",
+      "Action": "Include",
+      "FromFile": "Data/MinecartPatcherData.json"
+    },
+    {
       "LogName": "Include Monster Data",
       "Action": "Include",
       "FromFile": "Data/MonsterData.json"
-    },
-    {
-      "LogName": "Include NPC Data",
-      "Action": "Include",
-      "FromFile": "Data/NPCData.json"
     },
     {
       "LogName": "Include Castle Portraits Data",
@@ -307,7 +137,12 @@
       "FromFile": "Data/PolyjuicePotionData.json"
     },
     {
-      "LogName": "Include Strings",
+      "LogName": "Include South Sea Bog Data",
+      "Action": "Include",
+      "FromFile": "Data/SouthSeaBogData.json"
+    },
+    {
+      "LogName": "Include String Data",
       "Action": "Include",
       "FromFile": "Data/StringData.json"
     },
@@ -315,10 +150,52 @@
       "LogName": "Include Transfiguration Courtyard Data",
       "Action": "Include",
       "FromFile": "Data/TransfigurationCourtyardData.json"
+    },
+/* NPCs */
+    {
+      "LogName": "NPC Loads",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/HogwartsAberforth, Characters/Dialogue/HogwartsMPuddifoot, Characters/Dialogue/HogwartsOllivander, Characters/schedules/HogwartsAberforth, Characters/schedules/HogwartsMPuddifoot, Characters/schedules/HogwartsOllivander",
+      "FromFile": "Data/blank.json"
+    },
+    {
+      "LogName": "NPC Includes",
+      "Action": "Include",
+      "FromFile": "Data/NPCData.json, Data/NPCDialogue.json, Data/ScheduleData.json"
+    },
+    {
+      "LogName": "NPC Portraits & Sprites",
+      "Action": "Load",
+      "Target": "Portraits/HogwartsAberforth, Portraits/HogwartsMPuddifoot, Portraits/HogwartsOllivander, Characters/HogwartsAberforth, Characters/HogwartsMPuddifoot, Characters/HogwartsOllivander",
+      "FromFile": "assets/{{Target}}.png"
+    },
+    /* Objects */
+    {
+        "LogName": "Object Data",
+        "Action": "Include",
+        "FromFile": "Data/Objects/AllObjects.json"
+    },
+      {
+          "LogName": "Crafting Recipe Data",
+          "Action": "Include",
+          "FromFile": "Data/CraftingRecipeData.json"
+      },
+      {
+          "LogName": "Cooking Recipe Data",
+          "Action": "Include",
+          "FromFile": "Data/CookingRecipeData.json"
+      },
+      {
+          "LogName": "Include Forage Data",
+          "Action": "Include",
+          "FromFile": "Data/ForageData.json"
+      },
+    
+    /* Shops */
+    {
+        "LogName": "Shop Data",
+        "Action": "Include",
+        "FromFile": "Data/ShopData.json"
     }
   ]
 }
-
-
-
-

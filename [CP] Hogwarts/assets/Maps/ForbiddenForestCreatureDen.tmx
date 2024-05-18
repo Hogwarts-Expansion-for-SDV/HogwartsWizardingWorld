@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="27" height="24" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="147">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="27" height="24" tilewidth="16" tileheight="16" infinite="0" nextlayerid="42" nextobjectid="147">
  <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
   <image source="paths.png" width="64" height="144"/>
   <tile id="0">
@@ -1664,566 +1664,377 @@
   <image source="mine_frost_dangerous.png" width="256" height="288"/>
  </tileset>
  <layer id="1" name="Back" width="27" height="24">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,4453,4453,4453,4453,4453,4453,4453,4453,4453,4453,4453,4453,4453,4453,4453,4453,4453,4453,0,0,0,0,0,
-0,0,0,0,4453,4453,4453,4453,4453,4453,4453,4453,4453,4453,4453,4470,4470,4470,4453,4453,4453,4453,0,0,0,0,0,
-0,0,0,0,4453,4470,4453,4454,4455,4470,4455,4453,4453,4453,4454,4455,4453,4453,4453,4470,4470,4453,0,0,0,0,0,
-0,0,0,0,4453,4453,4469,4470,4471,4454,4455,4453,4470,4469,4470,4471,4488,4453,4453,4455,4470,4453,0,0,0,0,0,
-0,0,0,0,4453,4453,4485,4486,4487,4470,4471,4453,4453,4485,4486,4487,4470,4455,4453,4455,4453,4453,0,0,0,0,0,
-0,0,0,0,4453,4453,4469,4470,4471,4486,4487,4453,4470,4470,4470,4453,4453,4454,4455,4453,4453,4453,0,0,0,0,0,
-0,0,0,0,4453,4453,4485,4486,4487,4453,4470,4453,4453,4453,4453,4453,4469,4470,4453,4454,4455,4453,0,0,0,0,0,
-0,0,0,0,4453,4453,4485,4488,4487,4453,4482,4483,4483,4483,4483,4484,4485,4486,4469,4470,4471,4453,0,0,0,0,0,
-0,0,0,0,4453,4453,4470,4453,4453,4482,4468,4499,4499,4499,4499,4467,4484,4455,4485,4486,4487,4453,0,0,0,0,0,
-0,0,0,0,4453,4453,4455,4453,4453,4498,4499,4499,4499,4499,4499,4499,4500,4453,4453,4455,4455,4453,0,0,0,0,0,
-0,0,0,0,4453,4453,4454,4455,4469,4498,4499,4499,4499,4499,4499,4499,4500,4453,4453,4453,4488,4453,0,0,0,0,0,
-0,0,0,0,4453,4469,4470,4471,4453,4514,4465,4499,4499,4499,4499,4466,4516,4470,4469,4453,4453,4453,0,0,0,0,0,
-0,0,0,0,4453,4485,4486,4487,4455,4453,4514,4515,4515,4515,4515,4516,4453,4453,4470,4455,4453,4453,0,0,0,0,0,
-0,0,0,0,4453,4469,4470,4471,4454,4455,4453,4453,4453,4453,4454,4455,4453,4454,4455,4455,4453,4453,0,0,0,0,0,
-0,0,0,0,4453,4485,4486,4487,4470,4471,4469,4469,4469,4469,4470,4471,4455,4470,4471,4453,4453,4453,0,0,0,0,0,
-0,0,0,0,4453,4485,4486,4487,4486,4487,4485,4485,4488,4485,4486,4487,4471,4486,4487,4455,4453,4453,0,0,0,0,0,
-0,0,0,0,4453,4453,4453,4453,4453,4453,4453,4453,4453,4470,4485,4486,4487,4470,4453,4453,4453,4453,0,0,0,0,0,
-0,0,0,0,4453,4453,4453,4453,4453,4453,4453,4453,4453,4453,4453,4453,4453,4453,4453,4453,4453,4453,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-</data>
+  <data encoding="base64" compression="zlib">
+   eAHtk0FuAjEMRXMFDjmwbgt033barltOAD1o/5PmS1+RQM6IJZG+PElsP9uB1h7r3hOYNq3dQ5W6RjhH1WX1cVUW8cRupd2SD5v5fJdnya2yiD8sjFfZzEu+vPvW3jzXxb6yHDfL/1P6ksgP89qde7YdZWXtZpLDc8KanX37bG1fZjhPWtfEWTJHWbwFMyTPm/Te6UP7WaJvMz3rEVbOCM5e+u30oj083slM1zbCynf+6RjJPOmOvhExjhthefbMpsqC5/9AldXP/qwcT1L2w/ez9Ccxb2LcH7ay8Jsl3pvZeybwLp3gOD88+46wsi/P0jlt89zfa1izanRf1MvvGH7K5+T3t+vAVhZ+yTKTM8Tb5z112GdNX5Pib4k+kse+96/21cet2VdYD5/xCfwDTuSmGw==
+  </data>
  </layer>
- <layer id="13" name="Back1" width="27" height="24">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-</data>
+ <layer id="40" name="Back1" width="27" height="24">
+  <data encoding="base64" compression="zlib">
+   eAHtklEOwCAIQ7nC7n9Tv5Z9kBCDpYhfDpNFB+U1Nor0uimB8Yig79Rdkcfcq3jOrOw/653lenrGy5vbqbUXfudMpn/O8Ls7k1GkYTJUTcRCfWWwO2JFPdbD6iLmqm8Z7HnFQnWW7ekQV3veXLWmbLtXmT2fS+AFspECuA==
+  </data>
  </layer>
  <layer id="2" name="Buildings" width="27" height="24">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,2484,2485,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,2509,2510,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-</data>
+  <data encoding="base64" compression="zlib">
+   eAFjYBgFoyEwGgKjITAaAuSEwBZOBoatQEwPcBZozzk62UUP/4zaMRoCoyEwuEMAALJ+Ayk=
+  </data>
  </layer>
  <layer id="11" name="Buildings1" width="27" height="24">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-</data>
+  <data encoding="base64" compression="zlib">
+   eAHtklEOwCAIQ7nC7n9Tv5Z9kBCDpYhfDpNFB+U1Nor0uimB8Yig79Rdkcfcq3jOrOw/653lenrGy5vbqbUXfudMpn/O8Ls7k1GkYTJUTcRCfWWwO2JFPdbD6iLmqm8Z7HnFQnWW7ekQV3veXLWmbLtXmT2fS+AFspECuA==
+  </data>
  </layer>
  <layer id="3" name="Paths" width="27" height="24">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-</data>
+  <data encoding="base64" compression="zlib">
+   eAHt0DEBAAAAwqD1T+1pCYhAYcCAAQMGDBgwYOADAwogAAE=
+  </data>
  </layer>
- <layer id="4" name="Front" width="27" height="24">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-</data>
+ <layer id="39" name="Front" width="27" height="24">
+  <data encoding="base64" compression="zlib">
+   eAHtklEOwCAIQ7nC7n9Tv5Z9kBCDpYhfDpNFB+U1Nor0uimB8Yig79Rdkcfcq3jOrOw/653lenrGy5vbqbUXfudMpn/O8Ls7k1GkYTJUTcRCfWWwO2JFPdbD6iLmqm8Z7HnFQnWW7ekQV3veXLWmbLtXmT2fS+AFspECuA==
+  </data>
  </layer>
- <layer id="5" name="AlwaysFront" width="27" height="24">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,0,0,0,0,0,0,0,0,
-0,0,0,0,0,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,0,0,0,0,0,0,
-0,0,0,0,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,0,0,0,0,0,
-0,0,0,0,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,0,0,0,0,0,
-0,0,0,0,4603,4603,4603,4603,4603,4603,4603,2358,2359,2360,2361,4603,4603,4603,4603,4603,4603,4603,0,0,0,0,0,
-0,0,0,0,4603,4603,4603,4603,4603,4603,2382,2383,2384,2385,2386,2387,4603,4603,4603,4603,4603,4603,0,0,0,0,0,
-0,0,0,0,4603,4603,4603,4603,4603,4603,2407,2408,2409,2410,2411,2412,4603,4603,4603,4603,4603,4603,0,0,0,0,0,
-0,0,0,0,4603,4603,4603,4603,4603,4603,2432,2433,2434,2435,2436,2437,4603,4603,4603,4603,4603,4603,0,0,0,0,0,
-0,0,0,0,4603,4603,4603,4603,4603,4603,4603,4603,2459,2460,4603,4603,4603,4603,4603,4603,4603,4603,0,0,0,0,0,
-0,0,0,0,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,0,0,0,0,0,
-0,0,0,0,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,0,0,0,0,0,
-0,0,0,0,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,0,0,0,0,0,
-0,0,0,0,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,0,0,0,0,0,
-0,0,0,0,4603,4603,4603,4603,4603,0,0,0,0,0,0,0,0,4603,4603,4603,4603,4603,0,0,0,0,0,
-0,0,0,0,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,0,0,0,0,0,
-0,0,0,0,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,0,0,0,0,0,
-0,0,0,0,0,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,0,0,0,0,0,
-0,0,0,0,0,0,0,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,4603,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-</data>
+ <layer id="18" name="AlwaysFront" width="27" height="24">
+  <data encoding="base64" compression="zlib">
+   eAHtklEOwCAIQ7nC7n9Tv5Z9kBCDpYhfDpNFB+U1Nor0uimB8Yig79Rdkcfcq3jOrOw/653lenrGy5vbqbUXfudMpn/O8Ls7k1GkYTJUTcRCfWWwO2JFPdbD6iLmqm8Z7HnFQnWW7ekQV3veXLWmbLtXmT2fS+AFspECuA==
+  </data>
  </layer>
- <layer id="15" name="AlwaysFront1" width="27" height="24">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,3359,3384,3383,3384,3383,3383,3384,3383,3384,3383,3358,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,3359,3383,3385,3410,3408,3408,3411,3407,3409,3407,3407,3381,3382,3358,0,0,0,0,0,0,
-0,0,0,3359,3384,3383,3384,3385,3336,3411,3287,3287,3411,3411,3287,3287,3406,3287,3406,3409,3382,3358,0,0,0,0,0,
-0,0,3359,3385,3336,3410,3408,3408,3284,3284,3284,3284,3284,3285,3285,3285,3285,3287,3406,3407,3409,3382,3384,3358,0,0,0,
-0,3359,3385,3282,3408,3411,3287,3282,3307,3307,3309,3309,3309,3309,3309,3310,3311,3311,3286,3406,3406,3331,3409,3382,3358,0,0,
-0,3360,3336,3411,3411,3287,3282,3307,0,0,0,0,0,0,0,3334,3309,3310,3311,3311,3311,3285,3406,3331,3357,0,0,
-3359,3385,3336,3411,3411,3282,3307,0,0,0,0,0,0,0,0,0,0,3334,3309,3308,3309,3310,3361,3331,3382,0,0,
-3335,3336,3408,3306,3282,3307,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3335,3361,3331,3409,3357,0,
-3335,3282,3312,3306,3307,3333,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3335,3361,3287,3331,3357,0,
-3360,3282,3287,3306,3332,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3360,3386,3287,3331,3382,3358,
-3335,3282,3337,3306,3357,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3335,3386,3281,3337,3306,3332,
-3360,3336,3287,3306,3332,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3335,3386,3281,3287,3306,3332,
-3360,3336,3312,3306,3357,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3360,3386,3337,3287,3306,3332,
-3335,3283,3287,3306,3382,3358,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3335,3336,3287,3287,3306,3332,
-3310,3311,3285,3331,3381,3382,3358,0,0,0,0,0,0,0,0,0,0,0,0,0,3359,3385,3410,3287,3312,3306,3332,
-3334,3310,3283,3331,3381,3381,3357,0,0,0,0,0,0,0,0,0,0,0,0,0,3335,3410,3410,3281,3337,3282,3307,
-0,3360,3283,3287,3406,3381,3382,3358,0,0,0,0,0,0,0,0,0,0,0,0,3360,3410,3281,3337,3356,3307,3333,
-0,3335,3283,3287,3406,3381,3381,3357,0,0,0,0,0,0,0,0,0,0,0,3359,3385,3410,3281,3284,3356,3357,0,
-0,3310,3283,3287,3287,3406,3381,3382,3358,0,0,0,0,0,0,0,3359,3384,3383,3385,3410,3281,3284,3356,3307,3333,0,
-0,3360,3311,3285,3286,3287,3406,3381,3382,3383,3384,3358,0,0,0,3359,3385,3410,3408,3408,3411,3284,3356,3307,0,0,0,
-0,3334,3310,3283,3285,3286,3287,3407,3407,3407,3381,3382,3383,3383,3383,3385,3408,3408,3287,3284,3356,3307,3309,3333,0,0,0,
-0,0,3334,3310,3311,3311,3285,3285,3285,3337,3407,3407,3408,3408,3408,3408,3411,3287,3411,3356,3307,3333,0,0,0,0,0,
-0,0,0,3334,3309,3308,3308,3309,3310,3283,3284,3284,3284,3285,3285,3285,3285,3285,3282,3307,3333,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,3334,3308,3308,3309,3308,3309,3309,3309,3309,3309,3309,3333,0,0,0,0,0,0,0
-</data>
+ <layer id="20" name="AlwaysFront1" width="27" height="24">
+  <data encoding="base64" compression="zlib">
+   eAHtklEOwCAIQ7nC7n9Tv5Z9kBCDpYhfDpNFB+U1Nor0uimB8Yig79Rdkcfcq3jOrOw/653lenrGy5vbqbUXfudMpn/O8Ls7k1GkYTJUTcRCfWWwO2JFPdbD6iLmqm8Z7HnFQnWW7ekQV3veXLWmbLtXmT2fS+AFspECuA==
+  </data>
  </layer>
- <objectgroup id="6" name="Back">
-  <object id="51" name="TileData" x="208" y="336" width="16" height="16">
+ <layer id="21" name="AlwaysFront2" width="27" height="24">
+  <data encoding="base64" compression="zlib">
+   eAHtklEOwCAIQ7nC7n9Tv5Z9kBCDpYhfDpNFB+U1Nor0uimB8Yig79Rdkcfcq3jOrOw/653lenrGy5vbqbUXfudMpn/O8Ls7k1GkYTJUTcRCfWWwO2JFPdbD6iLmqm8Z7HnFQnWW7ekQV3veXLWmbLtXmT2fS+AFspECuA==
+  </data>
+ </layer>
+ <layer id="22" name="AlwaysFront3" width="27" height="24">
+  <data encoding="base64" compression="zlib">
+   eAHtklEOwCAIQ7nC7n9Tv5Z9kBCDpYhfDpNFB+U1Nor0uimB8Yig79Rdkcfcq3jOrOw/653lenrGy5vbqbUXfudMpn/O8Ls7k1GkYTJUTcRCfWWwO2JFPdbD6iLmqm8Z7HnFQnWW7ekQV3veXLWmbLtXmT2fS+AFspECuA==
+  </data>
+ </layer>
+ <layer id="23" name="AlwaysFront4" width="27" height="24">
+  <data encoding="base64" compression="zlib">
+   eAHtklEOwCAIQ7nC7n9Tv5Z9kBCDpYhfDpNFB+U1Nor0uimB8Yig79Rdkcfcq3jOrOw/653lenrGy5vbqbUXfudMpn/O8Ls7k1GkYTJUTcRCfWWwO2JFPdbD6iLmqm8Z7HnFQnWW7ekQV3veXLWmbLtXmT2fS+AFspECuA==
+  </data>
+ </layer>
+ <layer id="24" name="AlwaysFront5" width="27" height="24">
+  <data encoding="base64" compression="zlib">
+   eAHtklEOwCAIQ7nC7n9Tv5Z9kBCDpYhfDpNFB+U1Nor0uimB8Yig79Rdkcfcq3jOrOw/653lenrGy5vbqbUXfudMpn/O8Ls7k1GkYTJUTcRCfWWwO2JFPdbD6iLmqm8Z7HnFQnWW7ekQV3veXLWmbLtXmT2fS+AFspECuA==
+  </data>
+ </layer>
+ <layer id="25" name="AlwaysFront6" width="27" height="24">
+  <data encoding="base64" compression="zlib">
+   eAHtklEOwCAIQ7nC7n9Tv5Z9kBCDpYhfDpNFB+U1Nor0uimB8Yig79Rdkcfcq3jOrOw/653lenrGy5vbqbUXfudMpn/O8Ls7k1GkYTJUTcRCfWWwO2JFPdbD6iLmqm8Z7HnFQnWW7ekQV3veXLWmbLtXmT2fS+AFspECuA==
+  </data>
+ </layer>
+ <layer id="26" name="AlwaysFront7" width="27" height="24">
+  <data encoding="base64" compression="zlib">
+   eAHtklEOwCAIQ7nC7n9Tv5Z9kBCDpYhfDpNFB+U1Nor0uimB8Yig79Rdkcfcq3jOrOw/653lenrGy5vbqbUXfudMpn/O8Ls7k1GkYTJUTcRCfWWwO2JFPdbD6iLmqm8Z7HnFQnWW7ekQV3veXLWmbLtXmT2fS+AFspECuA==
+  </data>
+ </layer>
+ <layer id="27" name="AlwaysFront8" width="27" height="24">
+  <data encoding="base64" compression="zlib">
+   eAHtklEOwCAIQ7nC7n9Tv5Z9kBCDpYhfDpNFB+U1Nor0uimB8Yig79Rdkcfcq3jOrOw/653lenrGy5vbqbUXfudMpn/O8Ls7k1GkYTJUTcRCfWWwO2JFPdbD6iLmqm8Z7HnFQnWW7ekQV3veXLWmbLtXmT2fS+AFspECuA==
+  </data>
+ </layer>
+ <layer id="5" name="AlwaysFront9" width="27" height="24">
+  <data encoding="base64" compression="zlib">
+   eAHtlMkNwjAQRefKkWZYmmAtgrUI1iqgUrjwcvjSyLISxw5ISIn0NLYz/i/2IWb9880beA/N2pDzLW3yY72pztjenLUUX05ubE+pazQwG8MEphBzaK3ENSN7DgtYwgrWoOywlrg25G5hB3s4wBFCh+YlrhO5Z7jAFW5wB2WHtcSlrAf5zxqH+rpwKaup/rvrxX9M+LN2eS7lh1W+XFeYVzcvdWm/rzGff597Lp/hx5XPz/04xVX1+D2541SX+n7lka+vzTfwAfptNsI=
+  </data>
+ </layer>
+ <layer id="15" name="AlwaysFront10" width="27" height="24">
+  <data encoding="base64" compression="zlib">
+   eAGtlglqxDAMRQPdob1B10N0PUTXk3e/Q/cjVI/mwSckmdCMQdixJ3r+shxN0yxuBztNc1Z2Gn2OXduv9Smtz58+zsvHbdl1a3fVX5XdtD3j47KTMvcwxIWjv80a4zd7fL9u/xnjfL5s1+jf6jfw5fbxDmtd/+59q/XxVO937bnm0tgHLEy98PbKum2j5tABx/3TP5S9l32WfUTv+Kvmvlt7qV4efmAS0642dMHC/09ZctZqfqit1xr7SCZsNMNdKUttnpWsqZzky0y9Ry0rtWX8OFvjNqYnOX1jfMoiV9TGPP6JHSzOZw4HtixilHHkrGAxD2u1nuc2fF6UyTKO6iLHYal3Dg+fsO7Ln37RkDm4LF3JMl5okOV5LUOXMfR7oAb28Fha5RvbuTHMO+TZsAfvHzkz9i2bwve+8s1j/8aL8+Iecu/RJmvoWzaFRZzgYOYGee7ZoM048m2Zow1fydmt57yzeWay/qMt44cm6gMsNRGXZBFjeVPyBP/dmpqc1AQr84Pa0OUN1drUYd2jjqqny4GV+UE9kEcN0jxDuBq1XAb7w+RkPsDIJs/al3WXOylT3/b+H6DnHnE+cNA01rIOZS0iR/N/QO7Dsf59b4wztAaf9/Ux1i+qRb/g/MOT
+  </data>
+ </layer>
+ <objectgroup id="6" name="Back" visible="0">
+  <object id="51" name="TileData" x="208" y="304" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="52" name="TileData" x="224" y="336" width="16" height="16">
+  <object id="52" name="TileData" x="224" y="304" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="53" name="TileData" x="240" y="336" width="16" height="16">
+  <object id="53" name="TileData" x="240" y="304" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="54" name="TileData" x="256" y="336" width="16" height="16">
+  <object id="54" name="TileData" x="256" y="304" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="55" name="TileData" x="272" y="336" width="16" height="16">
+  <object id="55" name="TileData" x="272" y="304" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="56" name="TileData" x="288" y="336" width="16" height="16">
+  <object id="56" name="TileData" x="288" y="304" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="57" name="TileData" x="304" y="336" width="16" height="16">
+  <object id="57" name="TileData" x="304" y="304" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="58" name="TileData" x="336" y="320" width="16" height="16">
+  <object id="60" name="TileData" x="320" y="288" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="59" name="TileData" x="336" y="304" width="16" height="16">
+  <object id="61" name="TileData" x="320" y="272" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="60" name="TileData" x="336" y="288" width="16" height="16">
+  <object id="62" name="TileData" x="320" y="256" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="61" name="TileData" x="336" y="272" width="16" height="16">
+  <object id="63" name="TileData" x="320" y="240" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="62" name="TileData" x="336" y="256" width="16" height="16">
+  <object id="64" name="TileData" x="320" y="224" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="63" name="TileData" x="336" y="240" width="16" height="16">
+  <object id="65" name="TileData" x="320" y="208" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="64" name="TileData" x="336" y="224" width="16" height="16">
+  <object id="66" name="TileData" x="320" y="192" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="65" name="TileData" x="336" y="208" width="16" height="16">
+  <object id="67" name="TileData" x="320" y="176" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="66" name="TileData" x="336" y="192" width="16" height="16">
+  <object id="68" name="TileData" x="320" y="160" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="67" name="TileData" x="336" y="176" width="16" height="16">
+  <object id="69" name="TileData" x="320" y="144" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="68" name="TileData" x="336" y="160" width="16" height="16">
+  <object id="70" name="TileData" x="320" y="128" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="69" name="TileData" x="336" y="144" width="16" height="16">
+  <object id="71" name="TileData" x="320" y="112" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="70" name="TileData" x="336" y="128" width="16" height="16">
+  <object id="72" name="TileData" x="320" y="96" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="71" name="TileData" x="336" y="112" width="16" height="16">
+  <object id="73" name="TileData" x="320" y="80" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="72" name="TileData" x="336" y="96" width="16" height="16">
+  <object id="76" name="TileData" x="288" y="64" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="73" name="TileData" x="336" y="80" width="16" height="16">
+  <object id="77" name="TileData" x="304" y="64" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="75" name="TileData" x="320" y="48" width="16" height="16">
+  <object id="78" name="TileData" x="272" y="64" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="76" name="TileData" x="288" y="48" width="16" height="16">
+  <object id="79" name="TileData" x="192" y="304" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="77" name="TileData" x="304" y="48" width="16" height="16">
+  <object id="80" name="TileData" x="176" y="304" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="78" name="TileData" x="272" y="48" width="16" height="16">
+  <object id="81" name="TileData" x="160" y="304" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="79" name="TileData" x="192" y="336" width="16" height="16">
+  <object id="82" name="TileData" x="144" y="304" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="80" name="TileData" x="176" y="336" width="16" height="16">
+  <object id="83" name="TileData" x="128" y="304" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="81" name="TileData" x="160" y="336" width="16" height="16">
+  <object id="84" name="TileData" x="112" y="304" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="82" name="TileData" x="144" y="336" width="16" height="16">
+  <object id="85" name="TileData" x="96" y="304" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="83" name="TileData" x="128" y="336" width="16" height="16">
+  <object id="86" name="TileData" x="80" y="304" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="84" name="TileData" x="112" y="336" width="16" height="16">
+  <object id="88" name="TileData" x="256" y="64" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="85" name="TileData" x="96" y="336" width="16" height="16">
+  <object id="89" name="TileData" x="240" y="64" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="86" name="TileData" x="80" y="336" width="16" height="16">
+  <object id="90" name="TileData" x="224" y="64" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="87" name="TileData" x="64" y="336" width="16" height="16">
+  <object id="91" name="TileData" x="208" y="64" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="88" name="TileData" x="256" y="48" width="16" height="16">
+  <object id="92" name="TileData" x="192" y="64" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="89" name="TileData" x="240" y="48" width="16" height="16">
+  <object id="93" name="TileData" x="160" y="64" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="90" name="TileData" x="224" y="48" width="16" height="16">
+  <object id="94" name="TileData" x="176" y="64" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="91" name="TileData" x="208" y="48" width="16" height="16">
+  <object id="95" name="TileData" x="144" y="64" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="92" name="TileData" x="192" y="48" width="16" height="16">
+  <object id="96" name="TileData" x="128" y="64" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="93" name="TileData" x="160" y="48" width="16" height="16">
+  <object id="97" name="TileData" x="112" y="64" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="94" name="TileData" x="176" y="48" width="16" height="16">
+  <object id="98" name="TileData" x="96" y="64" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="95" name="TileData" x="144" y="48" width="16" height="16">
+  <object id="99" name="TileData" x="80" y="64" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="96" name="TileData" x="128" y="48" width="16" height="16">
+  <object id="102" name="TileData" x="64" y="288" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="97" name="TileData" x="112" y="48" width="16" height="16">
+  <object id="103" name="TileData" x="64" y="272" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="98" name="TileData" x="96" y="48" width="16" height="16">
+  <object id="104" name="TileData" x="64" y="256" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="99" name="TileData" x="80" y="48" width="16" height="16">
+  <object id="105" name="TileData" x="64" y="240" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="100" name="TileData" x="64" y="48" width="16" height="16">
+  <object id="106" name="TileData" x="64" y="224" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="101" name="TileData" x="48" y="304" width="16" height="16">
+  <object id="107" name="TileData" x="64" y="208" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="102" name="TileData" x="48" y="288" width="16" height="16">
+  <object id="108" name="TileData" x="64" y="192" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="103" name="TileData" x="48" y="272" width="16" height="16">
+  <object id="109" name="TileData" x="64" y="176" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="104" name="TileData" x="48" y="256" width="16" height="16">
+  <object id="110" name="TileData" x="64" y="160" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="105" name="TileData" x="48" y="240" width="16" height="16">
+  <object id="111" name="TileData" x="64" y="144" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="106" name="TileData" x="48" y="224" width="16" height="16">
+  <object id="112" name="TileData" x="64" y="128" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="107" name="TileData" x="48" y="208" width="16" height="16">
+  <object id="113" name="TileData" x="64" y="112" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="108" name="TileData" x="48" y="192" width="16" height="16">
+  <object id="114" name="TileData" x="64" y="96" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
   </object>
-  <object id="109" name="TileData" x="48" y="176" width="16" height="16">
-   <properties>
-    <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
-   </properties>
-  </object>
-  <object id="110" name="TileData" x="48" y="160" width="16" height="16">
-   <properties>
-    <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
-   </properties>
-  </object>
-  <object id="111" name="TileData" x="48" y="144" width="16" height="16">
-   <properties>
-    <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
-   </properties>
-  </object>
-  <object id="112" name="TileData" x="48" y="128" width="16" height="16">
-   <properties>
-    <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
-   </properties>
-  </object>
-  <object id="113" name="TileData" x="48" y="112" width="16" height="16">
-   <properties>
-    <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
-   </properties>
-  </object>
-  <object id="114" name="TileData" x="48" y="96" width="16" height="16">
-   <properties>
-    <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
-   </properties>
-  </object>
-  <object id="115" name="TileData" x="48" y="64" width="16" height="16">
-   <properties>
-    <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
-   </properties>
-  </object>
-  <object id="116" name="TileData" x="48" y="320" width="16" height="16">
-   <properties>
-    <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
-   </properties>
-  </object>
-  <object id="144" name="TileData" x="320" y="336" width="16" height="16">
-   <properties>
-    <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
-   </properties>
-  </object>
-  <object id="145" name="TileData" x="336" y="64" width="16" height="16">
-   <properties>
-    <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
-   </properties>
-  </object>
-  <object id="146" name="TileData" x="48" y="80" width="16" height="16">
+  <object id="146" name="TileData" x="64" y="80" width="16" height="16">
    <properties>
     <property name="TouchAction" value="ChangeOutOfSwimsuit"/>
    </properties>
@@ -2234,6 +2045,15 @@
  <objectgroup id="12" name="Buildings1"/>
  <objectgroup id="8" name="Paths"/>
  <objectgroup id="9" name="Front"/>
- <objectgroup id="10" name="AlwaysFront"/>
- <objectgroup id="16" name="AlwaysFront1"/>
+ <objectgroup id="19" name="AlwaysFront"/>
+ <objectgroup id="30" name="AlwaysFront1"/>
+ <objectgroup id="29" name="AlwaysFront2"/>
+ <objectgroup id="31" name="AlwaysFront3"/>
+ <objectgroup id="32" name="AlwaysFront4"/>
+ <objectgroup id="33" name="AlwaysFront5"/>
+ <objectgroup id="34" name="AlwaysFront6"/>
+ <objectgroup id="35" name="AlwaysFront7"/>
+ <objectgroup id="36" name="AlwaysFront8"/>
+ <objectgroup id="10" name="AlwaysFront9"/>
+ <objectgroup id="16" name="AlwaysFront10"/>
 </map>

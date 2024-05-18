@@ -1,0 +1,224 @@
+{
+  "Changes": [
+    {
+      "LogName": "Forbidden Forest Stage 2 Creature Den 1 Trigger 4",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage2",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForest1CreatureDen1X}}+12}}",
+            "Y": "{{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForest1CreatureDen1Y}}+12}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/messageOnceAction": "Creature is saved.",
+            "DMT/mailboxOnceAction": "{{Random:{{Creature}}|key=CreatureDen1}}4"
+          }
+        },
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForest1CreatureDen1X}}+13}}",
+            "Y": "{{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForest1CreatureDen1Y}}+12}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/messageOnceAction": "Creature is saved.",
+            "DMT/mailboxOnceAction": "{{Random:{{Creature}}|key=CreatureDen1}}4"
+          }
+        },
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForest1CreatureDen1X}}+12}}",
+            "Y": "{{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForest1CreatureDen1Y}}+13}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/messageOnceAction": "Creature is saved.",
+            "DMT/mailboxOnceAction": "{{Random:{{Creature}}|key=CreatureDen1}}4"
+          }
+        },
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForest1CreatureDen1X}}+13}}",
+            "Y": "{{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForest1CreatureDen1Y}}+13}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/messageOnceAction": "Creature is saved.",
+            "DMT/mailboxOnceAction": "{{Random:{{Creature}}|key=CreatureDen1}}4"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag |contains={{Random:{{Creature}}|key=CreatureDen1}}4": "false"
+      }
+    },
+    {
+      "LogName": "Forbidden Forest Stage 2 Creature Den 1 Trigger 3",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage2",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForest1CreatureDen1X}}+12}}",
+            "Y": "{{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForest1CreatureDen1Y}}+12}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/messageOnceAction": "Creature is saved.",
+            "DMT/mailboxOnceAction": "{{Random:{{Creature}}|key=CreatureDen1}}3"
+          }
+        },
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForest1CreatureDen1X}}+13}}",
+            "Y": "{{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForest1CreatureDen1Y}}+12}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/messageOnceAction": "Creature is saved.",
+            "DMT/mailboxOnceAction": "{{Random:{{Creature}}|key=CreatureDen1}}3"
+          }
+        },
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForest1CreatureDen1X}}+12}}",
+            "Y": "{{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForest1CreatureDen1Y}}+13}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/messageOnceAction": "Creature is saved.",
+            "DMT/mailboxOnceAction": "{{Random:{{Creature}}|key=CreatureDen1}}3"
+          }
+        },
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForest1CreatureDen1X}}+13}}",
+            "Y": "{{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForest1CreatureDen1Y}}+13}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/messageOnceAction": "Creature is saved.",
+            "DMT/mailboxOnceAction": "{{Random:{{Creature}}|key=CreatureDen1}}3"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag |contains={{Random:{{Creature}}|key=CreatureDen1}}3": "false"
+      }
+    },
+    {
+      "LogName": "Forbidden Forest Stage 2 Creature Den 1 Trigger 2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage2",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForest1CreatureDen1X}}+12}}",
+            "Y": "{{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForest1CreatureDen1Y}}+12}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/messageOnceAction": "Creature is saved.",
+            "DMT/mailboxOnceAction": "{{Random:{{Creature}}|key=CreatureDen1}}2"
+          }
+        },
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForest1CreatureDen1X}}+13}}",
+            "Y": "{{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForest1CreatureDen1Y}}+12}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/messageOnceAction": "Creature is saved.",
+            "DMT/mailboxOnceAction": "{{Random:{{Creature}}|key=CreatureDen1}}2"
+          }
+        },
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForest1CreatureDen1X}}+12}}",
+            "Y": "{{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForest1CreatureDen1Y}}+13}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/messageOnceAction": "Creature is saved.",
+            "DMT/mailboxOnceAction": "{{Random:{{Creature}}|key=CreatureDen1}}2"
+          }
+        },
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForest1CreatureDen1X}}+13}}",
+            "Y": "{{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForest1CreatureDen1Y}}+13}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/messageOnceAction": "Creature is saved.",
+            "DMT/mailboxOnceAction": "{{Random:{{Creature}}|key=CreatureDen1}}2"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag |contains={{Random:{{Creature}}|key=CreatureDen1}}2": "false"
+      }
+    },
+    {
+      "LogName": "Forbidden Forest Stage 2 Creature Den 1 Trigger 1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage2",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForest1CreatureDen1X}}+12}}",
+            "Y": "{{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForest1CreatureDen1Y}}+12}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/messageOnceAction": "Creature is saved.",
+            "DMT/mailboxOnceAction": "{{Random:{{Creature}}|key=CreatureDen1}}1"
+          }
+        },
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForest1CreatureDen1X}}+13}}",
+            "Y": "{{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForest1CreatureDen1Y}}+12}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/messageOnceAction": "Creature is saved.",
+            "DMT/mailboxOnceAction": "{{Random:{{Creature}}|key=CreatureDen1}}1"
+          }
+        },
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForest1CreatureDen1X}}+12}}",
+            "Y": "{{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForest1CreatureDen1Y}}+13}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/messageOnceAction": "Creature is saved.",
+            "DMT/mailboxOnceAction": "{{Random:{{Creature}}|key=CreatureDen1}}1"
+          }
+        },
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForest1CreatureDen1X}}+13}}",
+            "Y": "{{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForest1CreatureDen1Y}}+13}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/messageOnceAction": "Creature is saved.",
+            "DMT/mailboxOnceAction": "{{Random:{{Creature}}|key=CreatureDen1}}1"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag |contains={{Random:{{Creature}}|key=CreatureDen1}}1": "false"
+      }
+    },
+  ]
+}
+
+
+
+

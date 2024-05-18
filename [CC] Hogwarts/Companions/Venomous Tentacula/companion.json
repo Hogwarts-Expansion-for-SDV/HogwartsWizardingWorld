@@ -1,0 +1,32 @@
+{
+  "Name": "VenomousTentacula",
+  "Type": "Walking",
+  "EnableSpawnAtDayStart": true,
+  "EnableCharacterCollision": true,
+  "EnableFarmerCollision": true,
+  "EnableShadow": false,
+  "InspectionDialogue": "Venomous Tentacula",
+  "TravelSpeed": 2,
+  "MaxIdleDistance": -1,
+  "MaxDistanceBeforeTeleport": -1,
+  "IdleBehavior": "Nothing",
+  "FrameSizeWidth": 64,
+  "FrameSizeHeight": 64,
+  "CollisionPositionX": 0,
+  "CollisionPositionY": 0,
+  "CollisionPositionHeight": 80,
+  "CollisionPositionWidth": 256,
+  "UniformAnimation": {
+    "StartingFrame": 0, // The index of the first frame for this animation (e.g. 0 is the up most left tile in companion.png)
+    "NumberOfFrames": 20, // Number of frames to play (including the StartingFrame) in sequential order 
+    "Duration": 200 // Duration of each frame in milliseconds
+  },
+  "Shadow": {
+    "OffsetX": 0,
+    "OffsetY": 0,
+    "Scale": 1,
+    "Alpha": 235
+  }
+}
+
+

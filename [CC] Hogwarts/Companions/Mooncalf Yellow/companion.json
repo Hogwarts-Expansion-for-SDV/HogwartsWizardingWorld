@@ -1,0 +1,71 @@
+{
+    "Name": "MooncalfYellow",
+    "Type": "Walking",
+
+    "FrameSizeWidth": 16,
+    "FrameSizeHeight": 32,
+    "EnableFarmerCollision": true,
+    "EnableCharacterCollision": true,
+    "EnableShadow": true,
+    "EnableBreathing": false,
+    "InspectionDialogue": "Mooncalf",
+    "IdleBehavior": "Wander",
+    "TravelSpeed": 1,
+    "MaxIdleDistance": -1,
+    "MaxDistanceBeforeTeleport": -1,
+
+    // This plays when the companion travels upwards
+    "UpAnimation": {
+        "StartingFrame": 8,
+        "NumberOfFrames": 4,
+        "Duration": 250,
+        "IdleAnimation": {
+            "StartingFrame": 19,
+            "NumberOfFrames": 1,
+            "Duration": 100
+        }
+    },
+    // This plays when the companion travels downwards
+    "DownAnimation": {
+        "StartingFrame": 0,
+        "NumberOfFrames": 4,
+        "Duration": 250,
+        "IdleAnimation": {
+            "StartingFrame": 21,
+            "NumberOfFrames": 3,
+            "Duration": 400
+        }
+    },
+
+    // This plays when the companion travels left
+    "LeftAnimation": {
+        "StartingFrame": 12,
+        "NumberOfFrames": 4,
+        "Duration": 250,
+        "IdleAnimation": {
+            "StartingFrame": 12,
+            "NumberOfFrames": 1,
+            "Duration": 150
+        }
+    },
+
+    // This plays when the companion travels right
+    "RightAnimation": {
+        "StartingFrame": 4,
+        "NumberOfFrames": 4,
+        "Duration": 250,
+        "IdleAnimation": {
+            "StartingFrame": 4,
+            "NumberOfFrames": 1,
+            "Duration": 150
+        }
+    },
+    "Shadow": {
+        "OffsetX": 0,
+        "OffsetY": 0,
+        "Scale": 1,
+        "Alpha": 235
+    }
+}
+
+

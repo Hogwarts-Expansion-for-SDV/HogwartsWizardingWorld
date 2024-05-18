@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "Action": "EditImage",
+      "Target": "Maps/townInterior",
+      "FromFile": "assets/Maps/HogwartsInterior1.png",
+      "PatchMode": "Overlay",
+      "When": {
+        "Hogwarts_Interior_Texture": "true",
+        "LocationName |contains={{Interior Locations}}": "true"
+      },
+      "Update": "OnLocationChange"
+    }
+  ]
+}

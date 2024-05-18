@@ -1,0 +1,1443 @@
+{
+  "Changes": [
+    /*Ashwinders*/
+    {
+      "LogName": "Vivarium Ashwinder1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 10, 48}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 14, 44}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.Ashwinder"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "Ashwinder1",
+      }
+    },
+    {
+      "LogName": "Vivarium AshwinderBlack1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 10, 48}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 14, 44}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.AshwinderBlack"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "AshwinderBlack1",
+      }
+    },
+    {
+      "LogName": "Vivarium AshwinderGrey1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 10, 48}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 14, 44}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.AshwinderGrey"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "AshwinderGrey1",
+      }
+    },
+    {
+      "LogName": "Vivarium Bicorn1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 120, 141}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 66, 81}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.Bicorn"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "Bicorn1",
+      }
+    },
+    {
+      "LogName": "Vivarium Bowtruckle1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 175, 176}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 61, 106}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.Bowtruckle"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "Bowtruckle1",
+      }
+    },
+    {
+      "LogName": "Vivarium BowtruckleBlue1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 178, 184}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 8, 67}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.BowtruckleBlue"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "BowtruckleBlue1",
+      }
+    },
+    {
+      "LogName": "Vivarium BowtruckleBrown1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 13, 48}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 71, 100}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.BowtruckleBrown"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "BowtruckleBrown1",
+      }
+    },
+    {
+      "LogName": "Vivarium BowtruckleBrownLeaf1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 120, 141}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 66, 81}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.BowtruckleBrownLeaf"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "BowtruckleBrownLeaf1",
+      }
+    },
+    {
+      "LogName": "Vivarium BowtruckleGreen1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 69, 95}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 62, 113}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.BowtruckleGreen"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "BowtruckleGreen1",
+      }
+    },
+    {
+      "LogName": "Vivarium Crup1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 69, 95}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 62, 113}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.Crup"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "Crup1",
+      }
+    },
+    {
+      "LogName": "Vivarium CrupBrown1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 154, 191}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 120, 145}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.CrupBrown"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "CrupBrown1",
+      }
+    },
+    {
+      "LogName": "Vivarium CrupGrey1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 178, 184}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 8, 67}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.CrupGrey"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "CrupGrey1",
+      }
+    },
+    {
+      "LogName": "Vivarium DragonToadOrange1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 10, 48}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 14, 44}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.DragonToadOrange"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "DragonToadOrange1",
+      }
+    },
+    {
+      "LogName": "Vivarium DragonToadRed1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 10, 48}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 14, 44}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.DragonToadRed"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "DragonToadRed1",
+      }
+    },
+    {
+      "LogName": "Vivarium DragonToadYellow1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 13, 48}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 71, 100}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.DragonToadYellow"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "DragonToadYellow1",
+      }
+    },
+    {
+      "LogName": "Vivarium Dugbog1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 65, 123}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 121, 138}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.Dugbog"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "Dugbog1",
+      }
+    },
+    {
+      "LogName": "Vivarium DugbogBlue1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 178, 184}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 8, 67}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.DugbogBlue"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "DugbogBlue1",
+      }
+    },
+    {
+      "LogName": "Vivarium DugbogBrown1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 13, 48}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 71, 100}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.DugbogBrown"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "DugbogBrown1",
+      }
+    },
+    {
+      "LogName": "Vivarium DugbogGreen1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 69, 95}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 62, 113}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.DugbogGreen"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "DugbogGreen1",
+      }
+    },
+    {
+      "LogName": "Vivarium FireCrabAmethyst1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 10, 48}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 14, 44}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.FireCrabAmethyst"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "FireCrabAmethyst1",
+      }
+    },
+    {
+      "LogName": "Vivarium FireCrabAquamarine1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 10, 48}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 14, 44}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.FireCrabAquamarine"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "FireCrabAquamarine1",
+      }
+    },
+    {
+      "LogName": "Vivarium FireCrabDiamond1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 10, 48}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 14, 44}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.FireCrabDiamond"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "FireCrabDiamond1",
+      }
+    },
+    {
+      "LogName": "Vivarium FireCrabEmerald1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 10, 48}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 14, 44}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.FireCrabEmerald"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "FireCrabEmerald1",
+      }
+    },
+    {
+      "LogName": "Vivarium FireCrabRuby1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 10, 48}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 14, 44}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.FireCrabRuby"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "FireCrabRuby1",
+      }
+    },
+    {
+      "LogName": "Vivarium FireCrabTopaz1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 10, 48}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 14, 44}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.FireCrabTopaz"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "FireCrabTopaz1",
+      }
+    },
+    {
+      "LogName": "Vivarium FwooperBabyBlue1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 78, 130}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 28}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.FwooperBabyBlue"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "FwooperBlue2",
+      }
+    },
+    {
+      "LogName": "Vivarium FwooperBabyGreen1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 78, 130}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 28}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.FwooperBabyGreen"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "FwooperGreen2",
+      }
+    },
+    {
+      "LogName": "Vivarium FwooperBabyPink1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 78, 130}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 28}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.FwooperBabyPink"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "FwooperPink2",
+      }
+    },
+    {
+      "LogName": "Vivarium FwooperBabyShiny1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 78, 130}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 28}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.FwooperBabyShiny"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "FwooperShiny2",
+      }
+    },
+    {
+      "LogName": "Vivarium FwooperBabyYellow1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 78, 130}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 28}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.FwooperBabyYellow"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "FwooperYellow2",
+      }
+    },
+    {
+      "LogName": "Vivarium FwooperBlue1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 78, 130}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 28}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.FwooperBlue"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "FwooperBlue1",
+      }
+    },
+    {
+      "LogName": "Vivarium FwooperGreen1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 78, 130}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 28}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.FwooperGreen"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "FwooperGreen1",
+      }
+    },
+    {
+      "LogName": "Vivarium FwooperPink1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 78, 130}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 28}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.FwooperPink"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "FwooperPink1",
+      }
+    },
+    {
+      "LogName": "Vivarium FwooperShiny1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 78, 130}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 28}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.FwooperShiny"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "FwooperShiny1",
+      }
+    },
+    {
+      "LogName": "Vivarium FwooperYellow1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 78, 130}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 28}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.FwooperYellow"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "FwooperYellow1",
+      }
+    },
+    {
+      "LogName": "Vivarium GriffinBabyBrown1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 154, 191}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 120, 145}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.GriffinBabyBrown"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "GriffinBrown2",
+      }
+    },
+    {
+      "LogName": "Vivarium GriffinBabyGold1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 154, 191}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 120, 145}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.GriffinBabyGold"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "GriffinGold2",
+      }
+    },
+    {
+      "LogName": "Vivarium GriffinBabyWhite1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 178, 184}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 8, 67}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.GriffinBabyWhite"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "GriffinWhite2",
+      }
+    },
+    {
+      "LogName": "Vivarium GriffinBrown1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 154, 191}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 120, 145}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.GriffinBrown"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "GriffinBrown1",
+      }
+    },
+    {
+      "LogName": "Vivarium GriffinGold1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 154, 191}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 120, 145}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.GriffinGold"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "GriffinGold1",
+      }
+    },
+    {
+      "LogName": "Vivarium GriffinWhite1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 178, 184}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 8, 67}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.GriffinWhite"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "GriffinWhite1",
+      }
+    },
+    {
+      "LogName": "Vivarium Grindylow1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 101, 115}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 76, 89}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.Grindylow"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "Grindylow1",
+      }
+    },
+    {
+      "LogName": "Vivarium GrindylowGray1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 150, 152}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 68, 88}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.GrindylowGray"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "GrindylowGray1",
+      }
+    },
+    {
+      "LogName": "Vivarium GrindyGreen1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 56,
+            "Y": "{{Query: {{Random: {{Range: 76, 88}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.GrindylowGreen"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "GrindylowGreen1",
+      }
+    },
+    {
+      "LogName": "Vivarium GrindylowWhite1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 140, 143}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 41}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.GrindylowWhite"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "GrindylowWhite1",
+      }
+    },
+    {
+      "LogName": "Vivarium GrindylowYellow1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 68,
+            "Y": "{{Query: {{Random: {{Range: 0, 38}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.GrindylowYellow"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "GrindylowYellow1",
+      }
+    },
+    {
+      "LogName": "Vivarium HippogriffBlack1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 120, 141}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 66, 81}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HippogriffBlack"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "HippogriffBlack1",
+      }
+    },
+    {
+      "LogName": "Vivarium HippogriffBrown1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 154, 191}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 120, 145}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HippogriffBrown"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "HippogriffBrown1",
+      }
+    },
+    {
+      "LogName": "Vivarium HippogriffGrey1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 178, 184}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 8, 67}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HippogriffGrey"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "HippogriffGrey1",
+      }
+    },
+    {
+      "LogName": "Vivarium HippogriffRed1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 154, 191}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 120, 145}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HippogriffRed"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "HippogriffRed1",
+      }
+    },
+    {
+      "LogName": "Vivarium HippogriffWhite1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 178, 184}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 8, 67}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HippogriffWhite"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "HippogriffWhite1",
+      }
+    },
+    {
+      "LogName": "Vivarium KneazleBlonde1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 154, 191}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 120, 145}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.KneazleBlonde"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "KneazleBlonde1",
+      }
+    },
+    {
+      "LogName": "Vivarium KneazleBrown1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 175, 176}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 61, 106}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.KneazleBrown"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "KneazleBrown1",
+      }
+    },
+    {
+      "LogName": "Vivarium KneazleGrey1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 178, 184}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 8, 67}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.KneazleGrey"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "KneazleGrey1",
+      }
+    },
+    {
+      "LogName": "Vivarium Mooncalf1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 120, 141}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 66, 81}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.Mooncalf"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "Mooncalf1",
+      }
+    },
+    {
+      "LogName": "Vivarium MooncalfBlue1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 178, 184}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 8, 67}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.MooncalfBlue"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "MooncalfBlue1",
+      }
+    },
+    {
+      "LogName": "Vivarium MooncalfOrange1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 154, 191}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 120, 145}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.MooncalfOrange"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "MooncalfOrange1",
+      }
+    },
+    {
+      "LogName": "Vivarium MooncalfYellow1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 175, 176}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 61, 106}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.MooncalfYellow"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "MooncalfYellow1",
+      }
+    },
+    {
+      "LogName": "Vivarium NifflerBlack1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 120, 141}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 66, 81}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.NifflerBlack"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "NifflerBlack1",
+      }
+    },
+    {
+      "LogName": "Vivarium NifflerBrown1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 69, 95}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 62, 113}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.NifflerBrown"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "NifflerBrown1",
+      }
+    },
+    {
+      "LogName": "Vivarium NifflerWhite1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 178, 184}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 8, 67}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.NifflerWhite"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "NifflerWhite1",
+      }
+    },
+    {
+      "LogName": "Vivarium OccamyBabyBlue1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 78, 130}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 28}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.OccamyBabyBlue"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "OccamyBlue2",
+      }
+    },
+    {
+      "LogName": "Vivarium OccamyBabyTeal1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 78, 130}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 28}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.OccamyBabyTeal"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "OccamyTeal2",
+      }
+    },
+    {
+      "LogName": "Vivarium OccamyBlue1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 78, 130}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 28}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.OccamyBlue"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "OccamyBlue1",
+      }
+    },
+    {
+      "LogName": "Vivarium OccamyTeal1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 78, 130}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 28}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.OccamyTeal"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "OccamyTeal1",
+      }
+    },
+    {
+      "LogName": "Vivarium Phoenix1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 78, 130}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 28}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.Phoenix"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "Phoenix1",
+      }
+    },
+    {
+      "LogName": "Vivarium PhoenixBaby1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 78, 130}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 28}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.PhoenixBaby"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "Phoenix2",
+      }
+    },
+    {
+      "LogName": "Vivarium PygmyPuffPink1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 178, 184}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 8, 67}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.PygmyPuffPink"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "PygmyPuffPink1",
+      }
+    },
+    {
+      "LogName": "Vivarium PygmyPuffPurple1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 178, 184}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 8, 67}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.PygmyPuffPurple"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "PygmyPuffPurple1",
+      }
+    },
+    {
+      "LogName": "Vivarium Thestral1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 120, 141}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 66, 81}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.Thestral"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "Thestral1",
+      }
+    },
+    {
+      "LogName": "Vivarium Unicorn1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 69, 95}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 62, 113}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.Unicorn"
+          }
+        },
+      ],
+      "When": {
+        "HasFlag": "Unicorn1",
+      }
+    },
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

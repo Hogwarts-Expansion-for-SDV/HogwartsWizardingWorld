@@ -1,0 +1,64 @@
+{
+  "Name": "Erin Everleigh",
+  "Type": "Walking",
+  "EnableSpawnAtDayStart": true,
+  "EnableCharacterCollision": true,
+  "EnableFarmerCollision": true,
+  "EnableShadow": true,
+  "TravelSpeed": 2,
+  "MaxIdleDistance": -1,
+  "MaxDistanceBeforeTeleport": -1,
+  "IdleBehavior": "Wander",
+  "FrameSizeWidth": 16,
+  "FrameSizeHeight": 32,
+  "CollisionPositionX": 16,
+  "CollisionPositionY": 0,
+  "CollisionPositionHeight": 32,
+  "CollisionPositionWidth": 16,
+  "DownAnimation": {
+    "StartingFrame": 0,
+    "NumberOfFrames": 4,
+    "Duration": 200,
+    "IdleAnimation": {
+        "StartingFrame": 0,
+        "NumberOfFrames": 1,
+        "Duration": 500
+    }
+  },
+  "UpAnimation": {
+    "StartingFrame": 8,
+    "NumberOfFrames": 4,
+    "Duration": 200,
+    "IdleAnimation": {
+      "StartingFrame": 8,
+      "NumberOfFrames": 1,
+      "Duration": 500
+    }
+  },
+  "RightAnimation": {
+    "StartingFrame": 4,
+    "NumberOfFrames": 4,
+    "Duration": 200,
+    "IdleAnimation": {
+        "StartingFrame": 4,
+        "NumberOfFrames": 1,
+        "Duration": 500
+    }
+  },
+  "LeftAnimation": {
+    "StartingFrame": 12,
+    "NumberOfFrames": 4,
+    "Duration": 200,
+    "IdleAnimation": {
+        "StartingFrame": 12,
+        "NumberOfFrames": 1,
+        "Duration": 500
+    }
+  },
+  "Shadow": {
+    "OffsetX": 0,
+    "OffsetY": 0,
+    "Scale": 1,
+    "Alpha": 235
+  }
+}

@@ -1,9 +1,9 @@
 {
   "Changes": [
     {
-      "LogName": "Tile Data of Hogwarts Astronomy Wing 2F",
+      "LogName": "Tile Data of Hogwarts Astronomy Wing 2F to DADA Classroom",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsAstronomyWing2F",
+      "Target": "Maps/{{ModId}}_HogwartsAstronomyWing2F",
       "MapTiles": [
         {
           "Position": {
@@ -12,15 +12,66 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Warp 14 18 Custom_HogwartsDATDAClassroom"
+            "Action": "Warp 14 18 {{ModId}}_HogwartsDADAClassroom"
           }
         }
       ],
     },
     {
-      "LogName": "Tile Data of Hogwarts Reception Hall GF",
+      "LogName": "Tile Data of Hogwarts Bell Tower Wing GF to Bell Tower Courtyard",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsReceptionHallGF",
+      "Target": "Maps/{{ModId}}_HogwartsBellTowerWingGF",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 14,
+            "Y": 3
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 95 66 {{ModId}}_HogwartsBellTowerCourtyard"
+          }
+        }
+      ],
+    },
+    {
+      "LogName": "Tile Data of Hogwarts Divination Tower to Divination Classroom",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDivinationTower",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 13,
+            "Y": 11
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 15 24 {{ModId}}_HogwartsDivinationClassroom"
+          }
+        }
+      ],
+    },
+    {
+      "LogName": "Tile Data of Hogwarts Reception Hall GF to Hufflepuff Common Room",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsReceptionHallGF",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 14,
+            "Y": 23
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 15 36 {{ModId}}_HogwartsHufflepuffCommonRoom"
+          }
+        },
+      ],
+    },
+    {
+      "LogName": "Tile Data of Hogwarts Reception Hall GF to Great Hall",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsReceptionHallGF",
       "MapTiles": [
         {
           "Position": {
@@ -29,7 +80,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Warp 15 36 Custom_HogwartsGreatHall"
+            "Action": "Warp 13 22 {{ModId}}_HogwartsGreatHall"
           }
         },
         {
@@ -39,42 +90,15 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Warp 15 36 Custom_HogwartsGreatHall"
-          }
-        },
-        {
-          "Position": {
-            "X": 14,
-            "Y": 23
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Warp 15 36 Custom_HogwartsHufflepuffCommonRoom"
+            "Action": "Warp 13 22 {{ModId}}_HogwartsGreatHall"
           }
         },
       ],
     },
     {
-      "LogName": "Tile Data of Hogwarts South Wing GF",
+      "LogName": "Tile Data of Hogwarts Slytherin Dungeon to Slytherin Common Room",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsSouthWing1F",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 2,
-            "Y": 3
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Warp 14 18 Custom_HogwartsGryffindorCommonRoom"
-          }
-        }
-      ],
-    },
-    {
-      "LogName": "Tile Data of Hogwarts Slytherin Dungeon",
-      "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsSlytherinDungeon",
+      "Target": "Maps/{{ModId}}_HogwartsSlytherinDungeon",
       "MapTiles": [
         {
           "Position": {
@@ -83,7 +107,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Warp 14 18 Custom_HogwartsSlytherinCommonRoom"
+            "Action": "Warp 14 18 {{ModId}}_HogwartsSlytherinCommonRoom"
           }
         }
       ],

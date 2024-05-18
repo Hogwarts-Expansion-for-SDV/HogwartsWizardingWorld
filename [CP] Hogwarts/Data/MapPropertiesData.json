@@ -4,298 +4,353 @@
     {
       "LogName": "Map Properties of Brood and Peck",
       "Action": "EditMap",
-      "Target": "Maps/Custom_BroodAndPeck",
+      "Target": "Maps/{{ModId}}_BroodAndPeck",
       "MapProperties": {
         "AmbientLight": "95 95 95",
+        "Warp": "11 15 {{ModId}}_HogsmeadeVillage 74 44",
       }
     },
     {
-      "LogName": "Map Properties of Ceridwens Cauldrons",
+      "LogName": "Map Properties of Ceridwen's Cauldrons",
       "Action": "EditMap",
-      "Target": "Maps/Custom_CeridwensCauldrons",
+      "Target": "Maps/{{ModId}}_CeridwensCauldrons",
       "MapProperties": {
         "AmbientLight": "95 95 95",
+        "Warp": "9 34 {{ModId}}_HogsmeadeVillage 108 109",
+      }
+    },
+    {
+      "LogName": "Map Properties of Dervish and Banges",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_DervishAndBanges",
+      "MapProperties": {
+        "AmbientLight": "95 95 95",
+        "Warp": "6 12 {{ModId}}_HogsmeadeVillage 75 69",
       }
     },
     {
       "LogName": "Map Properties of Dogweed and Deathcap",
       "Action": "EditMap",
-      "Target": "Maps/Custom_DogweedAndDeathcap",
+      "Target": "Maps/{{ModId}}_DogweedAndDeathcap",
       "MapProperties": {
         "AmbientLight": "95 95 95",
+        "Warp": "6 12 {{ModId}}_HogsmeadeVillage 63 20",
+      }
+    },
+    {
+      "LogName": "Map Properties of Dominic Maestro's Music Shop",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_DominicMaestrosMusicShop",
+      "MapProperties": {
+        "AmbientLight": "95 95 95",
+        "Warp": "6 12 {{ModId}}_HogsmeadeVillage 121 76",
       }
     },
     {
       "LogName": "Map Properties of Gladrags Wizardwear",
       "Action": "EditMap",
-      "Target": "Maps/Custom_GladragsWizardwear",
+      "Target": "Maps/{{ModId}}_GladragsWizardwear",
       "MapProperties": {
         "AmbientLight": "95 95 95",
+        "Warp": "6 12 {{ModId}}_HogsmeadeVillage 82 73",
       }
     },
     {
-      "LogName": "Map Properties of Hogs Head Inn",
+      "LogName": "Map Properties of Hog's Head Inn",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogsHeadInn",
+      "Target": "Maps/{{ModId}}_HogsHeadInn",
       "MapProperties": {
         "AmbientLight": "95 95 95",
+        "Warp": "14 25 {{ModId}}_HogsmeadeVillage 59 99",
       }
     },
     {
       "LogName": "Map Properties of Hogsmeade Station",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogsmeadeStation",
+      "Target": "Maps/{{ModId}}_HogsmeadeStation",
       "MapProperties": {
-        "DayTiles": "AlwaysFront 11 11 123 AlwaysFront 23 11 123 AlwaysFront 39 11 123 AlwaysFront 51 14 123 AlwaysFront 53 24 123",
         "Light": "11 11 4 23 11 4 39 11 4 51 14 4 53 24 4",
-        "Music": "1900 2400 Honor_of_Hedwig",
         "NightTiles": "AlwaysFront 11 11 124 AlwaysFront 23 11 124 AlwaysFront 39 11 124 AlwaysFront 51 14 124 AlwaysFront 53 24 124",
         "Outdoors": "T",
-        "Warp": "8 9 Custom_HogsmeadeVillage 102 120 8 10 Custom_HogsmeadeVillage 102 120 8 11 Custom_HogsmeadeVillage 102 120 8 24 Custom_HogwartsViaductCourtyard 31 13 8 25 Custom_HogwartsViaductCourtyard 31 13 8 26 Custom_HogwartsViaductCourtyard 31 13"
+        "Warp": "8 9 {{ModId}}_HogsmeadeVillage 102 120 8 10 {{ModId}}_HogsmeadeVillage 102 120 8 11 {{ModId}}_HogsmeadeVillage 102 120"
       }
     },
     {
       "LogName": "Map Properties of Hogsmeade Village",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogsmeadeVillage",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
       "MapProperties": {
-        "DayTiles": "AlwaysFront 19 45 907 AlwaysFront 19 51 907 AlwaysFront 24 51 907 AlwaysFront 26 60 907 AlwaysFront 27 35 907 AlwaysFront 28 25 907 AlwaysFront 34 54 907 AlwaysFront 39 54 907 AlwaysFront 41 29 907 AlwaysFront 42 64 907 AlwaysFront 42 76 907 AlwaysFront 45 24 907 AlwaysFront 47 20 907 AlwaysFront 49 64 907 AlwaysFront 51 45 907 AlwaysFront 52 29 907 AlwaysFront 52 34 907 AlwaysFront 52 55 907 AlwaysFront 59 21 907 AlwaysFront 61 81 907 AlwaysFront 62 45 907 AlwaysFront 64 24 907 AlwaysFront 68 58 907 AlwaysFront 68 18 907 AlwaysFront 73 30 907 AlwaysFront 73 48 907 AlwaysFront 76 65 907 AlwaysFront 77 81 907 AlwaysFront 78 30 907 AlwaysFront 78 48 907 AlwaysFront 89 47 907 AlwaysFront 97 65 907 AlwaysFront 101 43 907 AlwaysFront 101 47 907 AlwaysFront 102 56 907 AlwaysFront 111 54 907",
-        "Light": "19 45 4 19 51 4 24 51 4 26 60 4 27 35 4 28 25 4 34 54 4 39 54 4 41 29 4 42 64 4 42 76 4 45 24 4 47 20 4 49 64 4 51 45 4 52 29 4 52 34 4 52 55 4 59 21 4 61 81 4 62 45 4 64 24 4 68 58 4 68 18 4 73 30 4 73 48 4 76 65 4 77 81 4 78 30 4 78 48 4 89 47 4 97 65 4 101 43 4 101 47 4 102 56 4 111 54 4",
-        "Music": "1900 2400 Honor_of_Hedwig",
-        "NightTiles": "AlwaysFront 19 45 908 AlwaysFront 19 51 908 AlwaysFront 24 51 908 AlwaysFront 26 60 908 AlwaysFront 27 35 908 AlwaysFront 28 25 908 AlwaysFront 34 54 908 AlwaysFront 39 54 908 AlwaysFront 41 29 908 AlwaysFront 42 64 908 AlwaysFront 42 76 908 AlwaysFront 45 24 908 AlwaysFront 47 20 908 AlwaysFront 49 64 908 AlwaysFront 51 45 908 AlwaysFront 52 29 908 AlwaysFront 52 34 908 AlwaysFront 52 55 908 AlwaysFront 59 21 908 AlwaysFront 61 81 908 AlwaysFront 62 45 908 AlwaysFront 64 24 908 AlwaysFront 68 58 908 AlwaysFront 69 18 908 AlwaysFront 73 30 908 AlwaysFront 73 48 908 AlwaysFront 76 65 908 AlwaysFront 77 81 908 AlwaysFront 78 30 908 AlwaysFront 78 48 908 AlwaysFront 89 47 908 AlwaysFront 97 65 908 AlwaysFront 101 43 908 AlwaysFront 101 47 908 AlwaysFront 102 56 908 AlwaysFront 111 54 908",
+        "Light": "19 45 4",
+        "NightTiles": "AlwaysFront 19 45 908",
         "Outdoors": "T",
-        "Warp": "103 120 Custom_HogsmeadeStation 9 13 103 121 Custom_HogsmeadeStation 9 13 103 122 Custom_HogsmeadeStation 9 13 -1 99 Custom_HogwartsForbiddenForest1 100 80 -1 100 Custom_HogwartsForbiddenForest1 100 80 -1 101 Custom_HogwartsForbiddenForest1 100 80 -1 102 Custom_HogwartsForbiddenForest1 100 80 -1 103 Custom_HogwartsForbiddenForest1 100 80"
+        "Warp": "-1 112 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 113 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 114 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 115 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 116 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 117 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 118 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 119 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 120 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 121 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 122 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 123 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 124 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 125 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 126 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 127 {{ModId}}_HogwartsBellTowerCourtyard 170 47 103 119 {{ModId}}_HogsmeadeStation 9 13 103 120 {{ModId}}_HogsmeadeStation 9 13 103 121 {{ModId}}_HogsmeadeStation 9 13 103 122 {{ModId}}_HogsmeadeStation 9 13 103 123 {{ModId}}_HogsmeadeStation 9 13 103 124 {{ModId}}_HogsmeadeStation 9 13 -1 99 {{ModId}}_ForbiddenForestStage1 {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 100 {{ModId}}_ForbiddenForestStage1 {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 101 {{ModId}}_ForbiddenForestStage1 {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 102 {{ModId}}_ForbiddenForestStage1 {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 103 {{ModId}}_ForbiddenForestStage1 {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}}"
       }
     },
     {
       "LogName": "Map Properties of Honeydukes",
       "Action": "EditMap",
-      "Target": "Maps/Custom_Honeydukes",
+      "Target": "Maps/{{ModId}}_Honeydukes",
       "MapProperties": {
         "AmbientLight": "95 95 95",
+        "Warp": "10 22 {{ModId}}_HogsmeadeVillage 98 52",
       }
     },
     {
       "LogName": "Map Properties of J. Pippins Potions",
       "Action": "EditMap",
-      "Target": "Maps/Custom_JPippinsPotions",
+      "Target": "Maps/{{ModId}}_JPippinsPotions",
       "MapProperties": {
         "AmbientLight": "95 95 95",
+        "Warp": "6 12 {{ModId}}_HogsmeadeVillage 54 84",
       }
     },
     {
-      "LogName": "Map Properties of Madam Puddifoots TeaShop",
+      "LogName": "Map Properties of Madam Puddifoot's Tea Shop",
       "Action": "EditMap",
-      "Target": "Maps/Custom_MadamPuddifootsTeaShop",
+      "Target": "Maps/{{ModId}}_MadamPuddifootsTeaShop",
       "MapProperties": {
         "AmbientLight": "95 95 95",
+        "Warp": "6 12 {{ModId}}_HogsmeadeVillage 109 63",
+      }
+    },
+    {
+      "LogName": "Map Properties of Madam Snelling's Tress Emporium",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_MadamSnellingsTressEmporium",
+      "MapProperties": {
+        "AmbientLight": "95 95 95",
+        "Warp": "6 12 {{ModId}}_HogsmeadeVillage 59 62",
       }
     },
     {
       "LogName": "Map Properties of Ollivanders",
       "Action": "EditMap",
-      "Target": "Maps/Custom_Ollivanders",
+      "Target": "Maps/{{ModId}}_Ollivanders",
       "MapProperties": {
         "AmbientLight": "95 95 95",
+        "Warp": "8 21 {{ModId}}_HogsmeadeVillage 88 97",
       }
     },
     {
-      "LogName": "Map Properties of Stitches and Draughts",
+      "LogName": "Map Properties of Spintwitches Sporting Needs",
       "Action": "EditMap",
-      "Target": "Maps/Custom_StitchesAndDraughts",
+      "Target": "Maps/{{ModId}}_SpintwitchesSportingNeeds",
       "MapProperties": {
         "AmbientLight": "95 95 95",
+        "Warp": "6 12 {{ModId}}_HogsmeadeVillage 103 96",
       }
     },
     {
       "LogName": "Map Properties of The Magic Neep",
       "Action": "EditMap",
-      "Target": "Maps/Custom_TheMagicNeep",
+      "Target": "Maps/{{ModId}}_TheMagicNeep",
       "MapProperties": {
         "AmbientLight": "95 95 95",
+        "Warp": "6 12 {{ModId}}_HogsmeadeVillage 18 75",
       }
     },
     {
       "LogName": "Map Properties of Three Broomsticks Inn",
       "Action": "EditMap",
-      "Target": "Maps/Custom_ThreeBroomsticksInn",
+      "Target": "Maps/{{ModId}}_ThreeBroomsticksInn",
       "MapProperties": {
         "AmbientLight": "95 95 95",
+        "Warp": "8 32 {{ModId}}_HogsmeadeVillage 96 86",
       }
     },
     {
       "LogName": "Map Properties of Tomes and Scrolls",
       "Action": "EditMap",
-      "Target": "Maps/Custom_TomesAndScrolls",
+      "Target": "Maps/{{ModId}}_TomesAndScrolls",
       "MapProperties": {
         "AmbientLight": "95 95 95",
+        "Warp": "6 12 {{ModId}}_HogsmeadeVillage 94 108",
       }
     },
     {
-      "LogName": "Map Properties of Zonkos Joke Shop",
+      "LogName": "Map Properties of Zonko's Joke Shop",
       "Action": "EditMap",
-      "Target": "Maps/Custom_ZonkosJokeShop",
+      "Target": "Maps/{{ModId}}_ZonkosJokeShop",
       "MapProperties": {
         "AmbientLight": "95 95 95",
+        "Warp": "6 12 {{ModId}}_HogsmeadeVillage 82 86",
       }
     },
 /*Hogwarts Map Properties*/
     {
       "LogName": "Map Properties of Hogwarts Astronomy Wing G1F",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsAstronomyWingG1F",
+      "Target": "Maps/{{ModId}}_HogwartsAstronomyWingG1F",
       "MapProperties": {
         "AmbientLight": "95 95 95",
-        "Warp": "13 7 Custom_HogwartsAstronomyWingG1F 17 8 13 8 Custom_HogwartsAstronomyWingG1F 17 8 18 7 Custom_HogwartsAstronomyWingG1F 12 7 18 8 Custom_HogwartsAstronomyWingG1F 12 7 0 19 Custom_HogwartsAstronomyWing2F 3 15 0 20 Custom_HogwartsAstronomyWing2F 3 15 0 21 Custom_HogwartsAstronomyWing2F 3 15 10 18 Custom_HogwartsAstronomyWing2F 13 14 11 18 Custom_HogwartsAstronomyWing2F 13 14 12 18 Custom_HogwartsAstronomyWing2F 13 14 13 4 Custom_HogwartsAstronomyWing2F 14 7 13 5 Custom_HogwartsAstronomyWing2F 14 7 19 13 Custom_HogwartsTransfigurationCourtyard 3 26 19 14 Custom_HogwartsTransfigurationCourtyard 3 26 19 15 Custom_HogwartsTransfigurationCourtyard 3 26"
+        "Warp": "13 7 {{ModId}}_HogwartsAstronomyWingG1F 17 8 13 8 {{ModId}}_HogwartsAstronomyWingG1F 17 8 18 7 {{ModId}}_HogwartsAstronomyWingG1F 12 7 18 8 {{ModId}}_HogwartsAstronomyWingG1F 12 7 0 19 {{ModId}}_HogwartsAstronomyWing2F 3 15 0 20 {{ModId}}_HogwartsAstronomyWing2F 3 15 0 21 {{ModId}}_HogwartsAstronomyWing2F 3 15 10 18 {{ModId}}_HogwartsAstronomyWing2F 13 14 11 18 {{ModId}}_HogwartsAstronomyWing2F 13 14 12 18 {{ModId}}_HogwartsAstronomyWing2F 13 14 13 4 {{ModId}}_HogwartsAstronomyWing2F 14 7 13 5 {{ModId}}_HogwartsAstronomyWing2F 14 7 19 13 {{ModId}}_HogwartsTransfigurationCourtyard 3 26 19 14 {{ModId}}_HogwartsTransfigurationCourtyard 3 26 19 15 {{ModId}}_HogwartsTransfigurationCourtyard 3 26"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Astronomy Wing 2F",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsAstronomyWing2F",
+      "Target": "Maps/{{ModId}}_HogwartsAstronomyWing2F",
       "MapProperties": {
         "AmbientLight": "95 95 95",
-        "Warp": "4 14 Custom_HogwartsAstronomyWingG1F 1 19 4 15 Custom_HogwartsAstronomyWingG1F 1 19 4 16 Custom_HogwartsAstronomyWingG1F 1 19 14 13 Custom_HogwartsAstronomyWingG1F 10 19 14 14 Custom_HogwartsAstronomyWingG1F 10 19 14 15 Custom_HogwartsAstronomyWingG1F 10 19 15 7 Custom_HogwartsAstronomyWingG1F 12 5 15 8 Custom_HogwartsAstronomyWingG1F 12 5 12 16 Custom_HogwartsAstronomyWing3F 6 14 13 16 Custom_HogwartsAstronomyWing3F 6 14 15 4 Custom_HogwartsAstronomyWing3F 11 5 15 5 Custom_HogwartsAstronomyWing3F 11 5"
+        "Warp": "4 14 {{ModId}}_HogwartsAstronomyWingG1F 1 19 4 15 {{ModId}}_HogwartsAstronomyWingG1F 1 19 4 16 {{ModId}}_HogwartsAstronomyWingG1F 1 19 14 13 {{ModId}}_HogwartsAstronomyWingG1F 10 19 14 14 {{ModId}}_HogwartsAstronomyWingG1F 10 19 14 15 {{ModId}}_HogwartsAstronomyWingG1F 10 19 15 7 {{ModId}}_HogwartsAstronomyWingG1F 12 5 15 8 {{ModId}}_HogwartsAstronomyWingG1F 12 5 12 16 {{ModId}}_HogwartsAstronomyWing3F 6 14 13 16 {{ModId}}_HogwartsAstronomyWing3F 6 14 15 4 {{ModId}}_HogwartsAstronomyWing3F 11 5 15 5 {{ModId}}_HogwartsAstronomyWing3F 11 5"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Astronomy Wing 3F",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsAstronomyWing3F",
+      "Target": "Maps/{{ModId}}_HogwartsAstronomyWing3F",
       "MapProperties": {
         "AmbientLight": "95 95 95",
-        "Warp": "5 13 Custom_HogwartsAstronomyWing2F 12 15 6 13 Custom_HogwartsAstronomyWing2F 12 15 12 7 Custom_HogwartsAstronomyWing2F 14 5 12 8 Custom_HogwartsAstronomyWing2F 14 5 12 4 Custom_HogwartsAstronomyWing4F 8 7 12 5 Custom_HogwartsAstronomyWing4F 8 7 12 18 Custom_HogwartsCentralHallGF 6 22 3 20 Custom_HogwartsSouthWingGF 10 6"
+        "Warp": "5 13 {{ModId}}_HogwartsAstronomyWing2F 12 15 6 13 {{ModId}}_HogwartsAstronomyWing2F 12 15 12 7 {{ModId}}_HogwartsAstronomyWing2F 14 5 12 8 {{ModId}}_HogwartsAstronomyWing2F 14 5 12 4 {{ModId}}_HogwartsAstronomyWing4F 8 7 12 5 {{ModId}}_HogwartsAstronomyWing4F 8 7 12 18 {{ModId}}_HogwartsCentralHallGF 6 22 3 21 {{ModId}}_SouthWing 32 4 4 21 {{ModId}}_SouthWing 32 4"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Astronomy Wing 4F",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsAstronomyWing4F",
+      "Target": "Maps/{{ModId}}_HogwartsAstronomyWing4F",
       "MapProperties": {
         "AmbientLight": "95 95 95",
-        "Warp": "9 7 Custom_HogwartsAstronomyWing3F 11 5 9 8 Custom_HogwartsAstronomyWing3F 11 5 9 4 Custom_HogwartsAstronomyWing5F 18 11 9 5 Custom_HogwartsAstronomyWing5F 18 11"
+        "Warp": "9 7 {{ModId}}_HogwartsAstronomyWing3F 11 5 9 8 {{ModId}}_HogwartsAstronomyWing3F 11 5 9 4 {{ModId}}_HogwartsAstronomyWing5F 18 11 9 5 {{ModId}}_HogwartsAstronomyWing5F 18 11"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Astronomy Wing 5F",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsAstronomyWing5F",
+      "Target": "Maps/{{ModId}}_HogwartsAstronomyWing5F",
       "MapProperties": {
         "AmbientLight": "95 95 95",
-        "Warp": "19 10 Custom_HogwartsAstronomyWing4F 8 5 19 11 Custom_HogwartsAstronomyWing4F 8 5 19 12 Custom_HogwartsAstronomyWing4F 8 5 1 8 Custom_HogwartsAstronomyWing6F 11 5 2 8 Custom_HogwartsAstronomyWing6F 11 5 3 8 Custom_HogwartsAstronomyWing6F 11 5 4 8 Custom_HogwartsAstronomyWing6F 11 5"
+        "Warp": "19 10 {{ModId}}_HogwartsAstronomyWing4F 8 5 19 11 {{ModId}}_HogwartsAstronomyWing4F 8 5 19 12 {{ModId}}_HogwartsAstronomyWing4F 8 5 1 8 {{ModId}}_HogwartsAstronomyWing6F 11 5 2 8 {{ModId}}_HogwartsAstronomyWing6F 11 5 3 8 {{ModId}}_HogwartsAstronomyWing6F 11 5 4 8 {{ModId}}_HogwartsAstronomyWing6F 11 5"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Astronomy Wing 6F",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsAstronomyWing6F",
+      "Target": "Maps/{{ModId}}_HogwartsAstronomyWing6F",
       "MapProperties": {
         "AmbientLight": "95 95 95",
-        "Warp": "12 4 Custom_HogwartsAstronomyWing5F 4 9 12 5 Custom_HogwartsAstronomyWing5F 4 9 12 6 Custom_HogwartsAstronomyWing5F 4 9"
+        "Warp": "12 4 {{ModId}}_HogwartsAstronomyWing5F 4 9 12 5 {{ModId}}_HogwartsAstronomyWing5F 4 9 12 6 {{ModId}}_HogwartsAstronomyWing5F 4 9"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Bell Tower Courtyard",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsBellTowerCourtyard",
+      "Target": "Maps/{{ModId}}_HogwartsBellTowerCourtyard",
       "MapProperties": {
         "Outdoors": "T",
-        "Warp": "2 16 Custom_HogwartsTransfigurationCourtyard 14 5 19 9 Custom_HogwartsCentralHallGF 18 6 19 10 Custom_HogwartsCentralHallGF 18 6 19 11 Custom_HogwartsCentralHallGF 18 6"
+        "Warp": "171 46 {{ModId}}_HogsmeadeVillage 0 121 171 47 {{ModId}}_HogsmeadeVillage 0 121 171 48 {{ModId}}_HogsmeadeVillage 0 121"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Bell Tower Wing GF",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsBellTowerWingGF",
+      "Target": "Maps/{{ModId}}_HogwartsBellTowerWingGF",
       "MapProperties": {
         "AmbientLight": "95 95 95",
-        "Warp": "2 16 Custom_HogwartsTransfigurationCourtyard 14 5 19 9 Custom_HogwartsCentralHallGF 18 6 19 10 Custom_HogwartsCentralHallGF 18 6 19 11 Custom_HogwartsCentralHallGF 18 6"
+        "Warp": "2 16 {{ModId}}_HogwartsTransfigurationCourtyard 14 5 19 9 {{ModId}}_HogwartsCentralHallGF 18 6 19 10 {{ModId}}_HogwartsCentralHallGF 18 6 19 11 {{ModId}}_HogwartsCentralHallGF 18 6"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Central Hall GF",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsCentralHallGF",
+      "Target": "Maps/{{ModId}}_HogwartsCentralHallGF",
       "MapProperties": {
         "AmbientLight": "95 95 95",
-        "Warp": "5 22 Custom_HogwartsAstronomyWing3F 10 18 18 4 Custom_HogwartsBellTowerWingGF 18 10 19 4 Custom_HogwartsBellTowerWingGF 18 10 2 18 Custom_HogwartsPotionsClassroom 11 24 3 31 Custom_HogwartsSlytherinDungeon 14 5 4 31 Custom_HogwartsSlytherinDungeon 14 5 2 31 Custom_HogwartsSlytherinDungeon 14 5 -1 11 Custom_HogwartsTransfigurationCourtyard 27 26 -1 12 Custom_HogwartsTransfigurationCourtyard 27 27 9 32 Custom_HogwartsViaductCourtyard 0 16 10 32 Custom_HogwartsViaductCourtyard 0 16 11 32 Custom_HogwartsViaductCourtyard 0 16"
+        "Warp": "5 22 {{ModId}}_HogwartsAstronomyWing3F 10 18 18 4 {{ModId}}_HogwartsBellTowerWingGF 19 10 19 4 {{ModId}}_HogwartsBellTowerWingGF 19 10 17 32 {{ModId}}_HogwartsDivinationTower 9 6 18 32 {{ModId}}_HogwartsDivinationTower 9 6 19 32 {{ModId}}_HogwartsDivinationTower 9 6 2 18 {{ModId}}_HogwartsPotionsClassroom 11 24 -1 28 {{ModId}}_HogwartsRavenclawTower 16 24 -1 29 {{ModId}}_HogwartsRavenclawTower 16 24 2 32 {{ModId}}_HogwartsSlytherinDungeon 14 5 3 32 {{ModId}}_HogwartsSlytherinDungeon 3 4 4 32 {{ModId}}_HogwartsSlytherinDungeon 3 4 -1 11 {{ModId}}_HogwartsTransfigurationCourtyard 27 26 -1 12 {{ModId}}_HogwartsTransfigurationCourtyard 27 27 9 32 {{ModId}}_HogwartsViaductCourtyard 0 16 10 32 {{ModId}}_HogwartsViaductCourtyard 0 16 11 32 {{ModId}}_HogwartsViaductCourtyard 0 16"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Clock Tower Courtyard",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsClockTowerCourtyard",
+      "Target": "Maps/{{ModId}}_HogwartsClockTowerCourtyard",
       "MapProperties": {
         "Outdoors": "T",
-        "Warp": "16 19 Custom_HogwartsClockTowerGF 7 0 17 19 Custom_HogwartsClockTowerGF 7 0"
+        "Warp": "16 19 {{ModId}}_HogwartsClockTowerGF 7 4 17 19 {{ModId}}_HogwartsClockTowerGF 7 4"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Clock Tower GF",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsClockTowerGF",
+      "Target": "Maps/{{ModId}}_HogwartsClockTowerGF",
       "MapProperties": {
         "AmbientLight": "95 95 95",
-        "Warp": "6 -1 Custom_HogwartsClockTowerCourtyard 17 18 7 -1 Custom_HogwartsClockTowerCourtyard 17 18 8 -1 Custom_HogwartsClockTowerCourtyard 17 18 14 8 Custom_HogwartsSouthWingGF 0 11"
+        "Warp": "6 2 {{ModId}}_HogwartsClockTowerCourtyard 17 18 7 2 {{ModId}}_HogwartsClockTowerCourtyard 17 18 8 2 {{ModId}}_HogwartsClockTowerCourtyard 17 18 6 11 {{ModId}}_SouthWing 19 10 7 11 {{ModId}}_SouthWing 19 10 8 11 {{ModId}}_SouthWing 19 10"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts DADA Classroom",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsDADAClassroom",
+      "Target": "Maps/{{ModId}}_HogwartsDADAClassroom",
       "MapProperties": {
         "AmbientLight": "95 95 95",
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Divination Classroom",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDivinationClassroom",
+      "MapProperties": {
+        "AmbientLight": "95 95 95",
+        "Warp": "15 27 {{ModId}}_HogwartsDivinationTower 13 12 16 27 {{ModId}}_HogwartsDivinationTower 13 12"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Divination Tower",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsDivinationTower",
+      "Target": "Maps/{{ModId}}_HogwartsDivinationTower",
       "MapProperties": {
         "AmbientLight": "95 95 95",
-        "Warp": "10 4 Custom_HogwartsCentralHallGF 17 30 10 5 Custom_HogwartsCentralHallGF 17 30 10 6 Custom_HogwartsCentralHallGF 17 30 10 7 Custom_HogwartsCentralHallGF 17 30"
+        "Warp": "10 4 {{ModId}}_HogwartsCentralHallGF 17 30 10 5 {{ModId}}_HogwartsCentralHallGF 17 30 10 6 {{ModId}}_HogwartsCentralHallGF 17 30 10 7 {{ModId}}_HogwartsCentralHallGF 17 30"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Grand Staircase",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsGrandStaircase",
+      "Target": "Maps/{{ModId}}_HogwartsGrandStaircase",
       "MapProperties": {
         "AmbientLight": "95 95 95",
-        "Warp": "17 31 Custom_HogwartsCentralHallGF 9 6 18 31 Custom_HogwartsCentralHallGF 9 6 19 31 Custom_HogwartsCentralHallGF 9 6 2 15 Custom_HogwartsGrandStaircase 16 30 3 15 Custom_HogwartsGrandStaircase 16 30 4 15 Custom_HogwartsGrandStaircase 16 30 16 29 Custom_HogwartsGrandStaircase 4 14 17 29 Custom_HogwartsGrandStaircase 4 14 18 29 Custom_HogwartsGrandStaircase 4 14 11 29 Custom_HogwartsGrandStaircase 6 47 12 29 Custom_HogwartsGrandStaircase 6 47 13 29 Custom_HogwartsGrandStaircase 6 47 6 46 Custom_HogwartsGrandStaircase 13 30 7 46 Custom_HogwartsGrandStaircase 13 30 8 46 Custom_HogwartsGrandStaircase 13 30 1 49 Custom_HogwartsGrandStaircase 15 64 2 49 Custom_HogwartsGrandStaircase 15 64 3 49 Custom_HogwartsGrandStaircase 15 64 15 63 Custom_HogwartsGrandStaircase 3 48 16 63 Custom_HogwartsGrandStaircase 3 48 17 63 Custom_HogwartsGrandStaircase 3 48 11 63 Custom_HogwartsGrandStaircase 8 81 12 63 Custom_HogwartsGrandStaircase 8 81 13 63 Custom_HogwartsGrandStaircase 8 81 6 80 Custom_HogwartsGrandStaircase 11 64 7 80 Custom_HogwartsGrandStaircase 11 64 8 80 Custom_HogwartsGrandStaircase 11 64 16 83 Custom_HogwartsGrandStaircase 4 98 17 83 Custom_HogwartsGrandStaircase 4 98 18 83 Custom_HogwartsGrandStaircase 4 98 2 97 Custom_HogwartsGrandStaircase 16 82 3 97 Custom_HogwartsGrandStaircase 16 82 4 97 Custom_HogwartsGrandStaircase 16 82 6 97 Custom_HogwartsSlytherinDungeon 10 8 7 97 Custom_HogwartsSlytherinDungeon 10 8 8 97 Custom_HogwartsSlytherinDungeon 10 8 20 81 Custom_HogwartsSouthWing1F 3 1 20 82 Custom_HogwartsSouthWing1F 3 1 -1 81 Custom_HogwartsReceptionHallGF 17 4 -1 82 Custom_HogwartsReceptionHallGF 17 4 -1 99 Custom_HogwartsReceptionHallGF 17 10 -1 99 Custom_HogwartsReceptionHallGF 17 10 -1 13 Custom_HogwartsTrophyRoom 15 21 -1 14 Custom_HogwartsTrophyRoom 15 21"
+        "Warp": "17 31 {{ModId}}_HogwartsCentralHallGF 9 6 18 31 {{ModId}}_HogwartsCentralHallGF 9 6 19 31 {{ModId}}_HogwartsCentralHallGF 9 6 2 15 {{ModId}}_HogwartsGrandStaircase 16 30 3 15 {{ModId}}_HogwartsGrandStaircase 16 30 4 15 {{ModId}}_HogwartsGrandStaircase 16 30 16 29 {{ModId}}_HogwartsGrandStaircase 4 14 17 29 {{ModId}}_HogwartsGrandStaircase 4 14 18 29 {{ModId}}_HogwartsGrandStaircase 4 14 11 29 {{ModId}}_HogwartsGrandStaircase 6 47 12 29 {{ModId}}_HogwartsGrandStaircase 6 47 13 29 {{ModId}}_HogwartsGrandStaircase 6 47 6 46 {{ModId}}_HogwartsGrandStaircase 13 30 7 46 {{ModId}}_HogwartsGrandStaircase 13 30 8 46 {{ModId}}_HogwartsGrandStaircase 13 30 1 49 {{ModId}}_HogwartsGrandStaircase 15 64 2 49 {{ModId}}_HogwartsGrandStaircase 15 64 3 49 {{ModId}}_HogwartsGrandStaircase 15 64 15 63 {{ModId}}_HogwartsGrandStaircase 3 48 16 63 {{ModId}}_HogwartsGrandStaircase 3 48 17 63 {{ModId}}_HogwartsGrandStaircase 3 48 11 63 {{ModId}}_HogwartsGrandStaircase 8 81 12 63 {{ModId}}_HogwartsGrandStaircase 8 81 13 63 {{ModId}}_HogwartsGrandStaircase 8 81 6 80 {{ModId}}_HogwartsGrandStaircase 11 64 7 80 {{ModId}}_HogwartsGrandStaircase 11 64 8 80 {{ModId}}_HogwartsGrandStaircase 11 64 16 83 {{ModId}}_HogwartsGrandStaircase 4 98 17 83 {{ModId}}_HogwartsGrandStaircase 4 98 18 83 {{ModId}}_HogwartsGrandStaircase 4 98 2 97 {{ModId}}_HogwartsGrandStaircase 16 82 3 97 {{ModId}}_HogwartsGrandStaircase 16 82 4 97 {{ModId}}_HogwartsGrandStaircase 16 82 -1 64 {{ModId}}_HogwartsGryffindorTower 8 9 -1 65 {{ModId}}_HogwartsGryffindorTower 8 9 20 64 {{ModId}}_HogwartsRavenclawTower 0 24 20 65 {{ModId}}_HogwartsRavenclawTower 0 24 -1 81 {{ModId}}_HogwartsReceptionHallGF 17 4 -1 82 {{ModId}}_HogwartsReceptionHallGF 17 4 -1 98 {{ModId}}_HogwartsReceptionHallGF 17 10 -1 99 {{ModId}}_HogwartsReceptionHallGF 17 10 6 97 {{ModId}}_HogwartsSlytherinDungeon 10 8 7 97 {{ModId}}_HogwartsSlytherinDungeon 10 8 8 97 {{ModId}}_HogwartsSlytherinDungeon 10 8 20 81 {{ModId}}_SouthWing 0 17 20 82 {{ModId}}_SouthWing 0 17 -1 13 {{ModId}}_HogwartsTrophyRoom 15 21 -1 14 {{ModId}}_HogwartsTrophyRoom 15 21"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Great Hall",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsGreatHall",
+      "Target": "Maps/{{ModId}}_HogwartsGreatHall",
       "MapProperties": {
         "AmbientLight": "95 95 95",
-        "Warp": "14 37 Custom_HogwartsReceptionHallGF 6 7 15 37 Custom_HogwartsReceptionHallGF 6 7 16 37 Custom_HogwartsReceptionHallGF 6 7"
+        "Warp": "12 23 {{ModId}}_HogwartsReceptionHallGF 6 7 13 23 {{ModId}}_HogwartsReceptionHallGF 6 7 14 23 {{ModId}}_HogwartsReceptionHallGF 6 7"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Greenhouses Central",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsGreenhousesCentral",
+      "Target": "Maps/{{ModId}}_HogwartsGreenhousesCentral",
       "MapProperties": {
         "AmbientLight": "95 95 95",
-        "Warp": "14 37 Custom_HogwartsReceptionHallGF 6 7 15 37 Custom_HogwartsReceptionHallGF 6 7 16 37 Custom_HogwartsReceptionHallGF 6 7"
+        "Warp": "14 37 {{ModId}}_HogwartsReceptionHallGF 6 7 15 37 {{ModId}}_HogwartsReceptionHallGF 6 7 16 37 {{ModId}}_HogwartsReceptionHallGF 6 7"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Gryffindor Tower",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGryffindorTower",
+      "MapProperties": {
+        "AmbientLight": "95 95 95",
+        "Warp": "9 8 {{ModId}}_HogwartsGrandStaircase 0 64 9 9 {{ModId}}_HogwartsGrandStaircase 0 64 -1 8 {{ModId}}_SouthWing 36 6 -1 9 {{ModId}}_SouthWing 36 6"
       }
     },
     {
       "LogName": "Map Properties of Potions Classroom",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsPotionsClassroom",
+      "Target": "Maps/{{ModId}}_HogwartsPotionsClassroom",
       "MapProperties": {
         "AmbientLight": "95 95 95",
-        "Warp": "11 25 Custom_HogwartsCentralHallGF 2 18 12 25 Custom_HogwartsCentralHallGF 2 18"
+        "Warp": "11 25 {{ModId}}_HogwartsCentralHallGF 2 18 12 25 {{ModId}}_HogwartsCentralHallGF 2 18"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Ravenclaw Common Room",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsRavenclawCommonRoom",
+      "Target": "Maps/{{ModId}}_HogwartsRavenclawCommonRoom",
       "MapProperties": {
         "AmbientLight": "95 95 95",
       }
@@ -303,107 +358,143 @@
     {
       "LogName": "Map Properties of Hogwarts Ravenclaw Tower",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsRavenclawTower",
+      "Target": "Maps/{{ModId}}_HogwartsRavenclawTower",
       "MapProperties": {
         "AmbientLight": "95 95 95",
-        "Warp": "7 40 Custom_HogwartsCentralHallGF 1 28 8 40 Custom_HogwartsCentralHallGF 1 28 9 40 Custom_HogwartsCentralHallGF 1 28 2 34 Custom_HogwartsGrandStaircase 27 74 2 35 Custom_HogwartsGrandStaircase 27 75 2 36 Custom_HogwartsGrandStaircase 27 76 7 14 Custom_HogwartsRavenclawTower 7 31 8 14 Custom_HogwartsRavenclawTower 8 31 9 14 Custom_HogwartsRavenclawTower 9 31 10 14 Custom_HogwartsRavenclawTower 10 31 7 29 Custom_HogwartsRavenclawTower 7 13 8 29 Custom_HogwartsRavenclawTower 8 13 9 29 Custom_HogwartsRavenclawTower 9 13"
+        "Warp": "18 23 {{ModId}}_HogwartsCentralHallGF 1 28 18 24 {{ModId}}_HogwartsCentralHallGF 1 28 18 25 {{ModId}}_HogwartsCentralHallGF 1 28 -1 23 {{ModId}}_HogwartsGrandStaircase 19 64 -1 24 {{ModId}}_HogwartsGrandStaircase 19 64 -1 25 {{ModId}}_HogwartsGrandStaircase 19 64 7 10 {{ModId}}_HogwartsRavenclawTower 6 20 8 10 {{ModId}}_HogwartsRavenclawTower 7 20 9 10 {{ModId}}_HogwartsRavenclawTower 7 20 5 18 {{ModId}}_HogwartsRavenclawTower 8 8 6 18 {{ModId}}_HogwartsRavenclawTower 8 8 7 18 {{ModId}}_HogwartsRavenclawTower 8 8"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Reception Hall GF",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsReceptionHallGF",
+      "Target": "Maps/{{ModId}}_HogwartsReceptionHallGF",
       "MapProperties": {
-        "Warp": "18 4 Custom_HogwartsGrandStaircase 0 81 18 5 Custom_HogwartsGrandStaircase 0 81 18 10 Custom_HogwartsGrandStaircase 0 98 18 11 Custom_HogwartsGrandStaircase 0 98 14 12 Custom_HogwartsReceptionHallGF 7 25 15 12 Custom_HogwartsReceptionHallGF 7 25 6 25 Custom_HogwartsReceptionHallGF 14 11 6 26 Custom_HogwartsReceptionHallGF 15 12 14 9 Custom_HogwartsSlytherinDungeon 14 5 15 9 Custom_HogwartsSlytherinDungeon 14 5 6 13 Custom_HogwartsViaductCourtyard 21 25 7 13 Custom_HogwartsViaductCourtyard 21 25"
+        "AmbientLight": "95 95 95",
+        "Warp": "18 4 {{ModId}}_HogwartsGrandStaircase 0 81 18 5 {{ModId}}_HogwartsGrandStaircase 0 81 18 10 {{ModId}}_HogwartsGrandStaircase 0 98 18 11 {{ModId}}_HogwartsGrandStaircase 0 98 14 12 {{ModId}}_HogwartsReceptionHallGF 7 25 15 12 {{ModId}}_HogwartsReceptionHallGF 7 25 6 25 {{ModId}}_HogwartsReceptionHallGF 14 11 6 26 {{ModId}}_HogwartsReceptionHallGF 15 12 14 9 {{ModId}}_HogwartsSlytherinDungeon 14 5 15 9 {{ModId}}_HogwartsSlytherinDungeon 14 5 5 13 {{ModId}}_HogwartsViaductCourtyard 21 25 6 13 {{ModId}}_HogwartsViaductCourtyard 21 25"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Slytherin Common Room",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsSlytherinCommonRoom",
+      "Target": "Maps/{{ModId}}_HogwartsSlytherinCommonRoom",
       "MapProperties": {
         "AmbientLight": "95 95 95",
-        "Warp": "14 19 Custom_HogwartsSlytherinDungeon 13 9"
+        "Warp": "14 19 {{ModId}}_HogwartsSlytherinDungeon 13 9"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Slytherin Dungeon",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsSlytherinDungeon",
+      "Target": "Maps/{{ModId}}_HogwartsSlytherinDungeon",
       "MapProperties": {
         "AmbientLight": "95 95 95",
-        "Warp": "2 3 Custom_HogwartsCentralHallGF 3 30 3 3 Custom_HogwartsCentralHallGF 3 30 9 9 Custom_HogwartsGrandStaircase 6 98 10 9 Custom_HogwartsGrandStaircase 6 98 11 9 Custom_HogwartsGrandStaircase 6 98 15 5 Custom_HogwartsReceptionHallGF 14 11 15 6 Custom_HogwartsReceptionHallGF 14 11"
+        "Warp": "2 3 {{ModId}}_HogwartsCentralHallGF 3 30 3 3 {{ModId}}_HogwartsCentralHallGF 3 30 9 9 {{ModId}}_HogwartsGrandStaircase 6 98 10 9 {{ModId}}_HogwartsGrandStaircase 6 98 11 9 {{ModId}}_HogwartsGrandStaircase 6 98 15 5 {{ModId}}_HogwartsReceptionHallGF 14 11 15 6 {{ModId}}_HogwartsReceptionHallGF 14 11"
       }
     },
     {
-      "LogName": "Map Properties of Hogwarts South Wing GF",
+      "LogName": "Map Properties of Hogwarts South Wing",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsSouthWingGF",
+      "Target": "Maps/{{ModId}}_SouthWing",
       "MapProperties": {
         "AmbientLight": "95 95 95",
-        "Warp": "11 5 Custom_HogwartsAstronomyWing3F 3 19 11 6 Custom_HogwartsAstronomyWing3F 3 19 11 7 Custom_HogwartsAstronomyWing3F 3 19 -1 10 Custom_HogwartsClockTowerGF 13 8 -1 11 Custom_HogwartsClockTowerGF 13 8 -1 12 Custom_HogwartsClockTowerGF 13 8 1 14 Custom_HogwartsSouthWing1F 8 12 2 14 Custom_HogwartsSouthWing1F 8 12 3 14 Custom_HogwartsSouthWing1F 8 12"
-      }
-    },
-    {
-      "LogName": "Map Properties of Hogwarts South Wing 1F",
-      "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsSouthWing1F",
-      "MapProperties": {
-        "AmbientLight": "95 95 95",
-        "Warp": "17 11 Custom_HogwartsGrandStaircase 26 92 17 12 Custom_HogwartsGrandStaircase 26 92 7 11 Custom_HogwartsSouthWingGF 3 13 7 12 Custom_HogwartsSouthWingGF 3 13 7 13 Custom_HogwartsSouthWingGF 3 5 0 8 Custom_HogwartsSouthWing1F 10 15 0 9 Custom_HogwartsSouthWing1F 10 15 0 10 Custom_HogwartsSouthWing1F 10 15 10 16 Custom_HogwartsSouthWing1F 1 8 11 16 Custom_HogwartsSouthWing1F 1 8 12 16 Custom_HogwartsSouthWing1F 1 8 13 16 Custom_HogwartsSouthWing1F 1 8"
+        "Warp": "32 2 {{ModId}}_HogwartsAstronomyWing3F 3 19 33 2 {{ModId}}_HogwartsAstronomyWing3F 3 19 18 8 {{ModId}}_HogwartsClockTowerGF 7 10 19 8 {{ModId}}_HogwartsClockTowerGF 7 10 20 8 {{ModId}}_HogwartsClockTowerGF 7 10 -1 16 {{ModId}}_HogwartsGrandStaircase 19 81 -1 17 {{ModId}}_HogwartsGrandStaircase 19 81 -1 18 {{ModId}}_HogwartsGrandStaircase 19 81 37 5 {{ModId}}_HogwartsGryffindorTower 0 9 37 6 {{ModId}}_HogwartsGryffindorTower 0 9"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Transfiguration Classroom",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsTransfigurationClassroom",
+      "Target": "Maps/{{ModId}}_HogwartsTransfigurationClassroom",
       "MapProperties": {
         "AmbientLight": "95 95 95",
-        "Warp": "10 18 Custom_HogwartsTransfigurationCourtyard 3 5"
+        "Warp": "10 18 {{ModId}}_HogwartsTransfigurationCourtyard 3 5"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Transfiguration Courtyard",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsTransfigurationCourtyard",
+      "Target": "Maps/{{ModId}}_HogwartsTransfigurationCourtyard",
       "MapProperties": {
         "Outdoors": "T",
-        "Warp": "2 26 Custom_HogwartsAstronomyWingG1F 22 20 2 27 Custom_HogwartsAstronomyWingG1F 22 20 14 3 Custom_HogwartsBellTowerWingGF 2 15 16 3 Custom_HogwartsBellTowerWingGF 7 24 28 26 Custom_HogwartsCentralHallGF 0 11 28 27 Custom_HogwartsCentralHallGF 0 12 2 4 Custom_HogwartsTransfigurationClassroom 10 17 2 5 Custom_HogwartsTransfigurationClassroom 10 17", 
+        "Warp": "2 26 {{ModId}}_HogwartsAstronomyWingG1F 18 14 2 27 {{ModId}}_HogwartsAstronomyWingG1F 18 14 14 3 {{ModId}}_HogwartsBellTowerWingGF 2 15 16 3 {{ModId}}_HogwartsBellTowerWingGF 7 24 28 26 {{ModId}}_HogwartsCentralHallGF 0 11 28 27 {{ModId}}_HogwartsCentralHallGF 0 12 2 4 {{ModId}}_HogwartsTransfigurationClassroom 10 17 2 5 {{ModId}}_HogwartsTransfigurationClassroom 10 17", 
       },
     },
     {
       "LogName": "Map Properties of Hogwarts Trophy Room",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsTrophyRoom",
+      "Target": "Maps/{{ModId}}_HogwartsTrophyRoom",
       "MapProperties": {
         "AmbientLight": "95 95 95",
-        "Warp": "14 22 Custom_HogwartsGrandStaircase 0 14 15 22 Custom_HogwartsGrandStaircase 0 14"
+        "Warp": "14 22 {{ModId}}_HogwartsGrandStaircase 0 14 15 22 {{ModId}}_HogwartsGrandStaircase 0 14"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Viaduct Courtyard",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsViaductCourtyard",
+      "Target": "Maps/{{ModId}}_HogwartsViaductCourtyard",
       "MapProperties": {
         "Outdoors": "T",
-        "Warp": "32 12 Custom_HogsmeadeStation 9 26 32 13 Custom_HogsmeadeStation 9 26 -1 16 Custom_HogwartsCentralHallGF 10 31 -1 17 Custom_HogwartsCentralHallGF 10 31 21 26 Custom_HogwartsReceptionHallGF 6 11 22 26 Custom_HogwartsReceptionHallGF 6 11"
+        "Warp": "32 12 {{ModId}}_HogsmeadeStation 9 26 32 13 {{ModId}}_HogsmeadeStation 9 26 -1 16 {{ModId}}_HogwartsCentralHallGF 10 31 -1 17 {{ModId}}_HogwartsCentralHallGF 10 31 21 26 {{ModId}}_HogwartsReceptionHallGF 6 11 22 26 {{ModId}}_HogwartsReceptionHallGF 6 11"
       }
     },
     {
       "LogName": "Map Properties of Hogwarts Vivarium",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsVivarium",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
       "MapProperties": {
         "Outdoors": "T",
+        "Warp": "20 7 {{ModId}}_HogwartsBellTowerCourtyard {{Random: 95 49, 104 48}} 30 113 {{ModId}}_HogwartsBellTowerCourtyard {{Random: 95 49, 104 48}} 42 48 {{ModId}}_HogwartsBellTowerCourtyard {{Random: 95 49, 104 48}} 84 51 {{ModId}}_HogwartsBellTowerCourtyard {{Random: 95 49, 104 48}} 97 119 {{ModId}}_HogwartsBellTowerCourtyard {{Random: 95 49, 104 48}} 101 38 {{ModId}}_HogwartsBellTowerCourtyard {{Random: 95 49, 104 48}} 105 9 {{ModId}}_HogwartsBellTowerCourtyard {{Random: 95 49, 104 48}} 161 107 {{ModId}}_HogwartsBellTowerCourtyard {{Random: 95 49, 104 48}} 177 5 {{ModId}}_HogwartsBellTowerCourtyard {{Random: 95 49, 104 48}}"
       }
     },
 /*Forbidden Forest*/ 
     {
-      "LogName": "Map Properties of Forbidden Forest 1",
+      "LogName": "Map Properties of Charmed Tent",
       "Action": "EditMap",
-      "Target": "Maps/Custom_HogwartsForbiddenForest1",
+      "Target": "Maps/{{ModId}}_ForbiddenForestCharmedTent",
+      "MapProperties": {
+        "DayTiles": "Back 2 2 1090 Back 3 2 1091 Buildings 2 0 1026 Buildings 3 0 1027 Back 2 5 1186",
+        "NightTiles": "Back 2 2 1122 Back 3 2 1184 Buildings 2 0 1188 Buildings 3 0 1189 Back 2 5 1154",
+        "Warp": "2 6 {{ModId}}_ForbiddenForestStage1 {{Query: {{Random: {{Range: 19, 166}}|key=CharmedTent1X}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=CharmedTent1Y}} + 5}}"
+      }
+    },
+    {
+      "LogName": "Map Properties of Forbidden Forest Stage 1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
+      "MapProperties": {
+        "AmbientLight": "120 65 120",
+        "forceLoadPathLayerLights": "T",
+        "Outdoors": "T",
+        "ScreenshotRegion": "{{Query: {{Random: {{Range: 8, 175}}|key=ForbiddenForest1ScreenshotX}}}} {{Query: {{Random: {{Range: 8, 130}}|key=ForbiddenForest1ScreenshotY}}}} {{Query: {{Random: {{Range: 8, 175}}|key=ForbiddenForest1ScreenshotX}} + 40}} {{Query: {{Random: {{Range: 8, 130}}|key=ForbiddenForest1ScreenshotY}} + 40}}",
+      }
+    },
+    {
+      "LogName": "Map Properties of Forbidden Forest Stage 2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage2",
+      "MapProperties": {
+        "AmbientLight": "120 65 120",
+        "forceLoadPathLayerLights": "T",
+        "Outdoors": "T",
+        "ScreenshotRegion": "{{Query: {{Random: {{Range: 8, 175}}|key=ForbiddenForest2ScreenshotX}}}} {{Query: {{Random: {{Range: 8, 130}}|key=ForbiddenForest2ScreenshotY}}}} {{Query: {{Random: {{Range: 8, 175}}|key=ForbiddenForest2ScreenshotX}} + 40}} {{Query: {{Random: {{Range: 8, 130}}|key=ForbiddenForest2ScreenshotY}} + 40}}",
+      }
+    },
+/*Hogwarts Valley*/ 
+    {
+      "LogName": "Map Properties of Forbidden Forest Stage 1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsValley",
       "MapProperties": {
         "Outdoors": "T",
+      }
+    },
+/*South Sea Bog*/ 
+    {
+      "LogName": "Map Properties of Forbidden Forest Stage 1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_SouthSeaBog",
+      "MapProperties": {
+        "Outdoors": "T",
+        "ScreenshotRegion": "{{Query: {{Random: {{Range: 8, 100}}|key=SouthSeaBogScreenshotX}}}} {{Query: {{Random: {{Range: 8, 100}}|key=SouthSeaBogScreenshotY}}}} {{Query: {{Random: {{Range: 8, 100}}|key=SouthSeaBogScreenshotX}} + 30}} {{Query: {{Random: {{Range: 8, 100}}|key=SouthSeaBogScreenshotY}} + 30}}",
       }
     },
   ]

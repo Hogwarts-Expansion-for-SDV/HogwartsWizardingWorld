@@ -1,0 +1,563 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+/*
+                 "{{ModId}}_AcromantulaEgg": {
+                    "Name": "Acromantula Egg",
+                    "DisplayName": "{{i18n: obj.monsterloot.AcromantulaEgg.name}}",
+                    "Description": "{{i18n: obj.monsterloot.AcromantulaEgg.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 0,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+/*
+                 "{{ModId}}_AcromantulaSilk": {
+                    "Name": "Acromantula Silk",
+                    "DisplayName": "{{i18n: obj.monsterloot.AcromantulaSilk.name}}",
+                    "Description": "{{i18n: obj.monsterloot.AcromantulaSilk.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 1,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+                 "{{ModId}}_AcromantulaVenom": {
+                    "Name": "Acromantula Venom",
+                    "DisplayName": "{{i18n: obj.monsterloot.AcromantulaVenom.name}}",
+                    "Description": "{{i18n: obj.monsterloot.AcromantulaVenom.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 2,
+                    "Edibility": -50,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+                 "{{ModId}}_AsianDragonHair": {
+                    "Name": "Asian Dragon Hair",
+                    "DisplayName": "{{i18n: obj.monsterloot.AsianDragonHair.name}}",
+                    "Description": "{{i18n: obj.monsterloot.AsianDragonHair.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 3,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+                 "{{ModId}}_BasiliskVenom": {
+                    "Name": "Basilisk Venom",
+                    "DisplayName": "{{i18n: obj.monsterloot.BasiliskVenom.name}}",
+                    "Description": "{{i18n: obj.monsterloot.BasiliskVenom.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 4,
+                    "Edibility": -299,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+/*
+                 "{{ModId}}_BatSpleen": {
+                    "Name": "Bat Spleen",
+                    "DisplayName": "{{i18n: obj.monsterloot.BatSpleen.name}}",
+                    "Description": "{{i18n: obj.monsterloot.BatSpleen.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 5,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+/*
+                 "{{ModId}}_BeetleEye": {
+                    "Name": "Beetle Eye",
+                    "DisplayName": "{{i18n: obj.monsterloot.BeetleEye.name}}",
+                    "Description": "{{i18n: obj.monsterloot.BeetleEye.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 6,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+                 "{{ModId}}_Bezoar": {
+                    "Name": "Bezoar",
+                    "DisplayName": "{{i18n: obj.monsterloot.Bezoar.name}}",
+                    "Description": "{{i18n: obj.monsterloot.Bezoar.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 7,
+                    "Edibility": 20,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+                 "{{ModId}}_BillywigSting": {
+                    "Name": "Billywig Sting",
+                    "DisplayName": "{{i18n: obj.monsterloot.BillywigSting.name}}",
+                    "Description": "{{i18n: obj.monsterloot.BillywigSting.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 8,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+/*
+                 "{{ModId}}_BlattaPulvereus": {
+                    "Name": "Blatta Pulvereus",
+                    "DisplayName": "{{i18n: obj.monsterloot.BlattaPulvereus.name}}",
+                    "Description": "{{i18n: obj.monsterloot.BlattaPulvereus.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 9,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+                 "{{ModId}}_Blowfly": {
+                    "Name": "Blowfly",
+                    "DisplayName": "{{i18n: obj.monsterloot.Blowfly.name}}",
+                    "Description": "{{i18n: obj.monsterloot.Blowfly.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 10,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+                 "{{ModId}}_BoomslangSkin": {
+                    "Name": "Boomslang Skin",
+                    "DisplayName": "{{i18n: obj.monsterloot.BoomslangSkin.name}}",
+                    "Description": "{{i18n: obj.monsterloot.BoomslangSkin.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 11,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+                 "{{ModId}}_BundimunSecretion": {
+                    "Name": "Bundimun Secretion",
+                    "DisplayName": "{{i18n: obj.monsterloot.BundimunSecretion.name}}",
+                    "Description": "{{i18n: obj.monsterloot.BundimunSecretion.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 12,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+/*
+                 "{{ModId}}_Caterpillar": {
+                    "Name": "Caterpillar",
+                    "DisplayName": "{{i18n: obj.monsterloot.Caterpillar.name}}",
+                    "Description": "{{i18n: obj.monsterloot.Caterpillar.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 13,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+                 "{{ModId}}_ChizpurfleCarapaces": {
+                    "Name": "Chizpurfle Carapace",
+                    "DisplayName": "{{i18n: obj.monsterloot.ChizpurfleCarapace.name}}",
+                    "Description": "{{i18n: obj.monsterloot.ChizpurfleCarapace.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 14,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+/*
+                 "{{ModId}}_Cockroach": {
+                    "Name": "Cockroach",
+                    "DisplayName": "{{i18n: obj.monsterloot.Cockroach.name}}",
+                    "Description": "{{i18n: obj.monsterloot.Cockroach.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 15,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+                 "{{ModId}}_CrocodileHeart": {
+                    "Name": "Crocodile Heart",
+                    "DisplayName": "{{i18n: obj.monsterloot.CrocodileHeart.name}}",
+                    "Description": "{{i18n: obj.monsterloot.CrocodileHeart.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 16,
+                    "Edibility": 10,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+/*
+                 "{{ModId}}_DoxyEgg": {
+                    "Name": "Doxy Egg",
+                    "DisplayName": "{{i18n: obj.monsterloot.DoxyEgg.name}}",
+                    "Description": "{{i18n: obj.monsterloot.DoxyEgg.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 17,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+                 "{{ModId}}_DoxyVenom": {
+                    "Name": "Doxy Venom",
+                    "DisplayName": "{{i18n: obj.monsterloot.DoxyVenom.name}}",
+                    "Description": "{{i18n: obj.monsterloot.DoxyVenom.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 18,
+                    "Edibility": -10,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+/*
+                 "{{ModId}}_DragonflyThorax": {
+                    "Name": "Dragonfly Thorax",
+                    "DisplayName": "{{i18n: obj.monsterloot.DragonflyThorax.name}}",
+                    "Description": "{{i18n: obj.monsterloot.DragonflyThorax.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 19,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+/*
+                 "{{ModId}}_EyeofNewt": {
+                    "Name": "Eye of Newt",
+                    "DisplayName": "{{i18n: obj.monsterloot.EyeofNewt.name}}",
+                    "Description": "{{i18n: obj.monsterloot.EyeofNewt.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 20,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+/*
+                 "{{ModId}}_FlobberwomMuscus": {
+                    "Name": "Flobberwom Muscus",
+                    "DisplayName": "{{i18n: obj.monsterloot.FlobberwomMuscus.name}}",
+                    "Description": "{{i18n: obj.monsterloot.FlobberwomMuscus.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 21,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+/*
+                 "{{ModId}}_GnatHeads": {
+                    "Name": "Gnat Heads",
+                    "DisplayName": "{{i18n: obj.monsterloot.GnatHeads.name}}",
+                    "Description": "{{i18n: obj.monsterloot.GnatHeads.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 22,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+/*
+                 "{{ModId}}_Horklump": {
+                    "Name": "Horklump",
+                    "DisplayName": "{{i18n: obj.monsterloot.Horklump.name}}",
+                    "Description": "{{i18n: obj.monsterloot.Horklump.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 23,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+                 "{{ModId}}_HornedSlug": {
+                    "Name": "Horned Slug",
+                    "DisplayName": "{{i18n: obj.monsterloot.HornedSlug.name}}",
+                    "Description": "{{i18n: obj.monsterloot.HornedSlug.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 24,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+/*
+                 "{{ModId}}_LacewingFly": {
+                    "Name": "Lacewing Fly",
+                    "DisplayName": "{{i18n: obj.monsterloot.LacewingFly.name}}",
+                    "Description": "{{i18n: obj.monsterloot.LacewingFly.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 25,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+                 "{{ModId}}_Leech": {
+                    "Name": "Leech",
+                    "DisplayName": "{{i18n: obj.monsterloot.Leech.name}}",
+                    "Description": "{{i18n: obj.monsterloot.Leech.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 26,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+/*
+                 "{{ModId}}_MummyParts": {
+                    "Name": "Mummy Parts",
+                    "DisplayName": "{{i18n: obj.monsterloot.MummyParts.name}}",
+                    "Description": "{{i18n: obj.monsterloot.MummyParts.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 27,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+/*
+                 "{{ModId}}_OrangeSnake": {
+                    "Name": "Orange Snake",
+                    "DisplayName": "{{i18n: obj.monsterloot.OrangeSnake.name}}",
+                    "Description": "{{i18n: obj.monsterloot.OrangeSnake.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 28,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+/*
+                 "{{ModId}}_Pus": {
+                    "Name": "Pus",
+                    "DisplayName": "{{i18n: obj.monsterloot.Pus.name}}",
+                    "Description": "{{i18n: obj.monsterloot.Pus.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 29,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+/*
+                 "{{ModId}}_Rat": {
+                    "Name": "Rat",
+                    "DisplayName": "{{i18n: obj.monsterloot.Rat.name}}",
+                    "Description": "{{i18n: obj.monsterloot.Rat.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 30,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+/*
+                 "{{ModId}}_RatSpleen": {
+                    "Name": "Rat Spleen",
+                    "DisplayName": "{{i18n: obj.monsterloot.RatSpleen.name}}",
+                    "Description": "{{i18n: obj.monsterloot.RatSpleen.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 31,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+/*
+                 "{{ModId}}_RatTail": {
+                    "Name": "Rat Tail",
+                    "DisplayName": "{{i18n: obj.monsterloot.RatTail.name}}",
+                    "Description": "{{i18n: obj.monsterloot.RatTail.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 32,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+                 "{{ModId}}_ReemBlood": {
+                    "Name": "Re'em Blood",
+                    "DisplayName": "{{i18n: obj.monsterloot.ReemBlood.name}}",
+                    "Description": "{{i18n: obj.monsterloot.ReemBlood.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 33,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+/*
+                 "{{ModId}}_RedSpider": {
+                    "Name": "Red Spider",
+                    "DisplayName": "{{i18n: obj.monsterloot.RedSpider.name}}",
+                    "Description": "{{i18n: obj.monsterloot.RedSpider.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 34,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+/*
+                 "{{ModId}}_RunespoorEggs": {
+                    "Name": "Runespoor Eggs",
+                    "DisplayName": "{{i18n: obj.monsterloot.RunespoorEggs.name}}",
+                    "Description": "{{i18n: obj.monsterloot.RunespoorEggs.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 35,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+/*
+                 "{{ModId}}_RunespoorFangs": {
+                    "Name": "Runespoor Fangs",
+                    "DisplayName": "{{i18n: obj.monsterloot.RunespoorFangs.name}}",
+                    "Description": "{{i18n: obj.monsterloot.RunespoorFangs.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 36,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+                 "{{ModId}}_SalamanderBlood": {
+                    "Name": "Salamander Blood",
+                    "DisplayName": "{{i18n: obj.monsterloot.SalamanderBlood.name}}",
+                    "Description": "{{i18n: obj.monsterloot.SalamanderBlood.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 37,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+/*
+                 "{{ModId}}_ScarabBeetle": {
+                    "Name": "Scarab Beetle",
+                    "DisplayName": "{{i18n: obj.monsterloot.ScarabBeetle.name}}",
+                    "Description": "{{i18n: obj.monsterloot.ScarabBeetle.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 38,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+/*
+                 "{{ModId}}_Slug": {
+                    "Name": "Slug",
+                    "DisplayName": "{{i18n: obj.monsterloot.Slug.name}}",
+                    "Description": "{{i18n: obj.monsterloot.Slug.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 39,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+                 "{{ModId}}_SnakeFang": {
+                    "Name": "Snake Fang",
+                    "DisplayName": "{{i18n: obj.monsterloot.SnakeFang.name}}",
+                    "Description": "{{i18n: obj.monsterloot.SnakeFang.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 40,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+                 "{{ModId}}_Spider": {
+                    "Name": "Spider",
+                    "DisplayName": "{{i18n: obj.monsterloot.Spider.name}}",
+                    "Description": "{{i18n: obj.monsterloot.Spider.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 41,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+/*
+                 "{{ModId}}_Streeler": {
+                    "Name": "Streeler",
+                    "DisplayName": "{{i18n: obj.monsterloot.Streeler.name}}",
+                    "Description": "{{i18n: obj.monsterloot.Streeler.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 42,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  },
+*/
+/*
+                 "{{ModId}}_StreelerShell": {
+                    "Name": "Streeler Shell",
+                    "DisplayName": "{{i18n: obj.monsterloot.StreelerShell.name}}",
+                    "Description": "{{i18n: obj.monsterloot.StreelerShell.desc}}",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": 10,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Ingredients/MonsterLoot.png}}",
+                    "SpriteIndex": 43,
+                    "ContextTags": [ "{{ModId}}_MonsterLoot" ]
+                  }
+*/
+            }
+        }
+    ]
+}

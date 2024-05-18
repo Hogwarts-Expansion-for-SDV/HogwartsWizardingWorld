@@ -1,0 +1,972 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+/*
+                 "{{ModId}}_Ammoniacum": {
+                    "Name": "Ammoniacum",
+                    "DisplayName": "{{i18n: obj.artisangoods.Ammoniacum.name}}",
+                    "Description": "{{i18n: obj.artisangoods.Ammoniacum.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 0,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+                "{{ModId}}_AngelsTrumpetDraught":{
+                    "Name": "Angel's Trumpet Draught",
+                    "DisplayName": "{{i18n: obj.potions.AngelsTrumpetDraught.name}}",
+                    "Description": "{{i18n: obj.potions.AngelsTrumpetDraught.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+                    "SpriteIndex": 3,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ]
+                },
+                "{{ModID}}_AsphodelRoot": {
+                    "Name": "Asphodel Root",
+                    "DisplayName": "{{i18n: obj.misc.AsphodelRoot.name}}",
+                    "Description": "{{i18n: obj.misc.AsphodelRoot.desc}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 35,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Misc/AsphodelRoot.png}}",
+                    "SpriteIndex": 0,  "ContextTags": [ "{{ModId}}_ArtisanGood" ]
+                },
+/*
+                 "{{ModId}}_AquaVitae": {
+                    "Name": "Aqua Vitae",
+                    "DisplayName": "{{i18n: obj.artisangoods.AquaVitae.name}}",
+                    "Description": "{{i18n: obj.artisangoods.AquaVitae.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 1,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+                 "{{ModId}}_AvocadoSkin": {
+                    "Name": "Avocado Skin",
+                    "DisplayName": "{{i18n: obj.artisangoods.AvocadoSkin.name}}",
+                    "Description": "{{i18n: obj.artisangoods.AvocadoSkin.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 30,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 2,
+                    "Edibility": -1,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood", "{{ModId}}_Unobtainable" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+/*
+                 "{{ModId}}_Bdelium": {
+                    "Name": "Bdelium",
+                    "DisplayName": "{{i18n: obj.artisangoods.Bdelium.name}}",
+                    "Description": "{{i18n: obj.artisangoods.Bdelium.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 3,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+                 "{{ModId}}_BoomBerryJuice": {
+                    "Name": "Boom Berry Juice",
+                    "DisplayName": "{{i18n: obj.artisangoods.BoomBerryJuice.name}}",
+                    "Description": "{{i18n: obj.artisangoods.BoomBerryJuice.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 80,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 4,
+                    "Edibility": 40,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+                 "{{ModId}}_BubotuberPus": {
+                    "Name": "Bubotuber Pus",
+                    "DisplayName": "{{i18n: obj.artisangoods.BubotuberPus.name}}",
+                    "Description": "{{i18n: obj.artisangoods.BubotuberPus.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 25,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 5,
+                    "Edibility": -1,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood", "{{ModId}}_Unobtainable" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+                 "{{ModId}}_Butterscotch": {
+                    "Name": "Butterscotch",
+                    "DisplayName": "{{i18n: obj.artisangoods.Butterscotch.name}}",
+                    "Description": "{{i18n: obj.artisangoods.Butterscotch.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 15,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 6,
+                    "Edibility": 5,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+                 "{{ModId}}_CastorOil": {
+                    "Name": "Castor Oil",
+                    "DisplayName": "{{i18n: obj.artisangoods.CastorOil.name}}",
+                    "Description": "{{i18n: obj.artisangoods.CastorOil.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 15,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 7,
+                    "Edibility": 1,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood", "{{ModId}}_Unobtainable" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+                 "{{ModId}}_DriedBillywigSting": {
+                    "Name": "Dried Billywig Sting",
+                    "DisplayName": "{{i18n: obj.artisangoods.DriedBillywigSting.name}}",
+                    "Description": "{{i18n: obj.artisangoods.DriedBillywigSting.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 45,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 8,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+                 "{{ModId}}_DriedNettle": {
+                    "Name": "Dried Nettle",
+                    "DisplayName": "{{i18n: obj.artisangoods.DriedNettle.name}}",
+                    "Description": "{{i18n: obj.artisangoods.DriedNettle.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 45,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 9,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+                 "{{ModId}}_DriedThyme": {
+                    "Name": "Dried Thyme",
+                    "DisplayName": "{{i18n: obj.artisangoods.DriedThyme.name}}",
+                    "Description": "{{i18n: obj.artisangoods.DriedThyme.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 15,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 10,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood", "{{ModId}}_Unobtainable" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+/*
+                 "{{ModId}}_ExtractofGurdyroot": {
+                    "Name": "Extract of Gurdyroot",
+                    "DisplayName": "{{i18n: obj.artisangoods.ExtractofGurdyroot.name}}",
+                    "Description": "{{i18n: obj.artisangoods.ExtractofGurdyroot.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 11,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_ExtractofJewelweed": {
+                    "Name": "Extract of Jewelweed",
+                    "DisplayName": "{{i18n: obj.artisangoods.ExtractofJewelweed.name}}",
+                    "Description": "{{i18n: obj.artisangoods.ExtractofJewelweed.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 12,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+                 "{{ModId}}_FangedGeraniumPetals": {
+                    "Name": "Fanged Geranium Petals",
+                    "DisplayName": "{{i18n: obj.artisangoods.FangedGeraniumPetals.name}}",
+                    "Description": "{{i18n: obj.artisangoods.FangedGeraniumPetals.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 25,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 13,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood", "{{ModId}}_Unobtainable" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+/*
+                 "{{ModId}}_GiantPurpleToadWart": {
+                    "Name": "Giant Purple Toad Wart",
+                    "DisplayName": "{{i18n: obj.artisangoods.GiantPurpleToadWart.name}}",
+                    "Description": "{{i18n: obj.artisangoods.GiantPurpleToadWart.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 14,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_GroundScarabBeetle": {
+                    "Name": "Ground Scarab Beetle",
+                    "DisplayName": "{{i18n: obj.artisangoods.GroundScarabBeetle.name}}",
+                    "Description": "{{i18n: obj.artisangoods.GroundScarabBeetle.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 15,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_GroundUnicornHorn": {
+                    "Name": "Ground Unicorn Horn",
+                    "DisplayName": "{{i18n: obj.artisangoods.GroundUnicornHorn.name}}",
+                    "Description": "{{i18n: obj.artisangoods.GroundUnicornHorn.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 16,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+                 "{{ModId}}_HemlockEssence": {
+                    "Name": "Hemlock Essence",
+                    "DisplayName": "{{i18n: obj.artisangoods.HemlockEssence.name}}",
+                    "Description": "{{i18n: obj.artisangoods.HemlockEssence.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 80,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 17,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+                 "{{ModId}}_Honeywater": {
+                    "Name": "Honeywater",
+                    "DisplayName": "{{i18n: obj.artisangoods.Honeywater.name}}",
+                    "Description": "{{i18n: obj.artisangoods.Honeywater.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 50,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 18,
+                    "Edibility": 10,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+/*
+                 "{{ModId}}_HorklumpJuice": {
+                    "Name": "Horklump Juice",
+                    "DisplayName": "{{i18n: obj.artisangoods.HorklumpJuice.name}}",
+                    "Description": "{{i18n: obj.artisangoods.HorklumpJuice.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 19,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_IcePop": {
+                    "Name": "Ice Pop",
+                    "DisplayName": "{{i18n: obj.artisangoods.IcePop.name}}",
+                    "Description": "{{i18n: obj.artisangoods.IcePop.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 20,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+                 "{{ModId}}_InfusionofCowbane": {
+                    "Name": "Infusion of Cowbane",
+                    "DisplayName": "{{i18n: obj.artisangoods.InfusionofCowbane.name}}",
+                    "Description": "{{i18n: obj.artisangoods.InfusionofCowbane.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 50,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 21,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+                 "{{ModId}}_InfusionofWormwood": {
+                    "Name": "Infusion of Wormwood",
+                    "DisplayName": "{{i18n: obj.artisangoods.InfusionofWormwood.name}}",
+                    "Description": "{{i18n: obj.artisangoods.InfusionofWormwood.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 50,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 22,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood", "{{ModId}}_Unobtainable" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+                 "{{ModId}}_LeechJuice": {
+                    "Name": "Leech Juice",
+                    "DisplayName": "{{i18n: obj.artisangoods.LeechJuice.name}}",
+                    "Description": "{{i18n: obj.artisangoods.LeechJuice.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 46,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 23,
+                    "Edibility": -1,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+/*
+                 "{{ModId}}_LetheRiverWater": {
+                    "Name": "Lethe River Water",
+                    "DisplayName": "{{i18n: obj.artisangoods.LetheRiverWater.name}}",
+                    "Description": "{{i18n: obj.artisangoods.LetheRiverWater.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 24,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_Mastic": {
+                    "Name": "Mastic",
+                    "DisplayName": "{{i18n: obj.artisangoods.Mastic.name}}",
+                    "Description": "{{i18n: obj.artisangoods.Mastic.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 25,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_MincedDaisyRoot": {
+                    "Name": "Minced Daisy Root",
+                    "DisplayName": "{{i18n: obj.artisangoods.MincedDaisyRoot.name}}",
+                    "Description": "{{i18n: obj.artisangoods.MincedDaisyRoot.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 26,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+                 "{{ModId}}_MurtlapTentacle": {
+                    "Name": "Murtlap Tentacle",
+                    "DisplayName": "{{i18n: obj.artisangoods.MurtlapTentacle.name}}",
+                    "Description": "{{i18n: obj.artisangoods.MurtlapTentacle.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 25,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 27,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood", "{{ModId}}_Unobtainable" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+/*
+                 "{{ModId}}_NeemOil": {
+                    "Name": "Neem Oil",
+                    "DisplayName": "{{i18n: obj.artisangoods.NeemOil.name}}",
+                    "Description": "{{i18n: obj.artisangoods.NeemOil.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 28,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+                 "{{ModId}}_NPCDandruff": {
+                    "Name": "NPC Dandruff",
+                    "DisplayName": "{{i18n: obj.artisangoods.NPCDandruff.name}}",
+                    "Description": "{{i18n: obj.artisangoods.NPCDandruff.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 45,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 29,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+/*
+                 "{{ModId}}_NPCHair": {
+                    "Name": "NPC Hair",
+                    "DisplayName": "{{i18n: obj.artisangoods.NPCHair.name}}",
+                    "Description": "{{i18n: obj.artisangoods.NPCHair.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 30,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_OctopusPowder": {
+                    "Name": "Octopus Powder",
+                    "DisplayName": "{{i18n: obj.artisangoods.OctopusPowder.name}}",
+                    "Description": "{{i18n: obj.artisangoods.OctopusPowder.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 31,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_Olibanum": {
+                    "Name": "Olibanum",
+                    "DisplayName": "{{i18n: obj.artisangoods.Olibanum.name}}",
+                    "Description": "{{i18n: obj.artisangoods.Olibanum.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 32,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_OnionJuice": {
+                    "Name": "Onion Juice",
+                    "DisplayName": "{{i18n: obj.artisangoods.OnionJuice.name}}",
+                    "Description": "{{i18n: obj.artisangoods.OnionJuice.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 33,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_Oppopanax": {
+                    "Name": "Oppopanax",
+                    "DisplayName": "{{i18n: obj.artisangoods.Oppopanax.name}}",
+                    "Description": "{{i18n: obj.artisangoods.Oppopanax.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 34,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+                 "{{ModId}}_PearlDust": {
+                    "Name": "Pearl Dust",
+                    "DisplayName": "{{i18n: obj.artisangoods.PearlDust.name}}",
+                    "Description": "{{i18n: obj.artisangoods.PearlDust.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 21,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 35,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+/*
+                 "{{ModId}}_PeeledShrivelfig": {
+                    "Name": "Peeled Shrivelfig",
+                    "DisplayName": "{{i18n: obj.artisangoods.PeeledShrivelfig.name}}",
+                    "Description": "{{i18n: obj.artisangoods.PeeledShrivelfig.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 36,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_PetroleumJelly": {
+                    "Name": "Petroleum Jelly",
+                    "DisplayName": "{{i18n: obj.artisangoods.PetroleumJelly.name}}",
+                    "Description": "{{i18n: obj.artisangoods.PetroleumJelly.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 37,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_PlimpyEyes": {
+                    "Name": "Plimpy Eyes",
+                    "DisplayName": "{{i18n: obj.artisangoods.PlimpyEyes.name}}",
+                    "Description": "{{i18n: obj.artisangoods.PlimpyEyes.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 38,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+                 "{{ModId}}_PomegranateJuice": {
+                    "Name": "Pomegranate Juice",
+                    "DisplayName": "{{i18n: obj.artisangoods.PomegranateJuice.name}}",
+                    "Description": "{{i18n: obj.artisangoods.PomegranateJuice.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 39,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+                 "{{ModId}}_PowderedAsphodelRoot": {
+                    "Name": "Powdered Asphodel Root",
+                    "DisplayName": "{{i18n: obj.artisangoods.PowderedAsphodelRoot.name}}",
+                    "Description": "{{i18n: obj.artisangoods.PowderedAsphodelRoot.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 50,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 40,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+                 "{{ModId}}_PowderedBicornHorn": {
+                    "Name": "Powdered Bicorn Horn",
+                    "DisplayName": "{{i18n: obj.artisangoods.PowderedBicornHorn.name}}",
+                    "Description": "{{i18n: obj.artisangoods.PowderedBicornHorn.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 50,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 41,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+/*
+                 "{{ModId}}_PowderedDragonClaw": {
+                    "Name": "Powdered Dragon Claw",
+                    "DisplayName": "{{i18n: obj.artisangoods.PowderedDragonClaw.name}}",
+                    "Description": "{{i18n: obj.artisangoods.PowderedDragonClaw.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 42,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_PowderedGraphornHorn": {
+                    "Name": "Powdered Graphorn Horn",
+                    "DisplayName": "{{i18n: obj.artisangoods.PowderedGraphornHorn.name}}",
+                    "Description": "{{i18n: obj.artisangoods.PowderedGraphornHorn.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 43,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_PowderedGriffinClaw": {
+                    "Name": "Powdered Griffin Claw",
+                    "DisplayName": "{{i18n: obj.artisangoods.PowderedGriffinClaw.name}}",
+                    "Description": "{{i18n: obj.artisangoods.PowderedGriffinClaw.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 44,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_PowderedMoonstone": {
+                    "Name": "Powdered Moonstone",
+                    "DisplayName": "{{i18n: obj.artisangoods.PowderedMoonstone.name}}",
+                    "Description": "{{i18n: obj.artisangoods.PowderedMoonstone.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 45,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_PowderedPorqupineQuill": {
+                    "Name": "Powdered Porqupine Quill",
+                    "DisplayName": "{{i18n: obj.artisangoods.PowderedPorqupineQuill.name}}",
+                    "Description": "{{i18n: obj.artisangoods.PowderedPorqupineQuill.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 46,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+                 "{{ModId}}_PowderedRue": {
+                    "Name": "Powdered Rue",
+                    "DisplayName": "{{i18n: obj.artisangoods.PowderedRue.name}}",
+                    "Description": "{{i18n: obj.artisangoods.PowderedRue.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 75,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 47,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+/*
+                 "{{ModId}}_PowderedSage": {
+                    "Name": "Powdered Sage",
+                    "DisplayName": "{{i18n: obj.artisangoods.PowderedSage.name}}",
+                    "Description": "{{i18n: obj.artisangoods.PowderedSage.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 48,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_PowderedUnicornHorn": {
+                    "Name": "Powdered Unicorn Horn",
+                    "DisplayName": "{{i18n: obj.artisangoods.PowderedUnicornHorn.name}}",
+                    "Description": "{{i18n: obj.artisangoods.PowderedUnicornHorn.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 49,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_RedMyrrhe": {
+                    "Name": "Red Myrrhe",
+                    "DisplayName": "{{i18n: obj.artisangoods.RedMyrrhe.name}}",
+                    "Description": "{{i18n: obj.artisangoods.RedMyrrhe.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 50,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_RoseOil": {
+                    "Name": "Rose Oil",
+                    "DisplayName": "{{i18n: obj.artisangoods.RoseOil.name}}",
+                    "Description": "{{i18n: obj.artisangoods.RoseOil.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 51,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_RoseThorn": {
+                    "Name": "Rose Thorn",
+                    "DisplayName": "{{i18n: obj.artisangoods.RoseThorn.name}}",
+                    "Description": "{{i18n: obj.artisangoods.RoseThorn.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 52,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_ShrakeSpine": {
+                    "Name": "Shrake Spine",
+                    "DisplayName": "{{i18n: obj.artisangoods.ShrakeSpine.name}}",
+                    "Description": "{{i18n: obj.artisangoods.ShrakeSpine.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 53,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_ShreddedBoomslangSkin": {
+                    "Name": "Shredded Boomslang Skin",
+                    "DisplayName": "{{i18n: obj.artisangoods.ShreddedBoomslangSkin.name}}",
+                    "Description": "{{i18n: obj.artisangoods.ShreddedBoomslangSkin.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 54,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_SlicedCaterpillars": {
+                    "Name": "Sliced Caterpillars",
+                    "DisplayName": "{{i18n: obj.artisangoods.SlicedCaterpillars.name}}",
+                    "Description": "{{i18n: obj.artisangoods.SlicedCaterpillars.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 55,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_StewedMandrake": {
+                    "Name": "Stewed Mandrake",
+                    "DisplayName": "{{i18n: obj.artisangoods.StewedMandrake.name}}",
+                    "Description": "{{i18n: obj.artisangoods.StewedMandrake.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 56,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+                 "{{ModId}}_SyrupofHellebore": {
+                    "Name": "Syrup of Hellebore",
+                    "DisplayName": "{{i18n: obj.artisangoods.SyrupofHellebore.name}}",
+                    "Description": "{{i18n: obj.artisangoods.SyrupofHellebore.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 75,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 57,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+                 "{{ModId}}_TinctureofThyme": {
+                    "Name": "Tincture of Thyme",
+                    "DisplayName": "{{i18n: obj.artisangoods.TinctureofThyme.name}}",
+                    "Description": "{{i18n: obj.artisangoods.TinctureofThyme.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 75,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 58,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood", "{{ModId}}_Unobtainable" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+/*
+                 "{{ModId}}_ToastedDragonflyThoraxes": {
+                    "Name": "Toasted Dragonfly Thoraxes",
+                    "DisplayName": "{{i18n: obj.artisangoods.ToastedDragonflyThoraxes.name}}",
+                    "Description": "{{i18n: obj.artisangoods.ToastedDragonflyThoraxes.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 59,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+                 "{{ModId}}_TormentilTincture": {
+                    "Name": "Tormentil Tincture",
+                    "DisplayName": "{{i18n: obj.artisangoods.TormentilTincture.name}}",
+                    "Description": "{{i18n: obj.artisangoods.TormentilTincture.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 35,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 60,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood", "{{ModId}}_Unobtainable" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+/*
+                 "{{ModId}}_Urine": {
+                    "Name": "Urine",
+                    "DisplayName": "{{i18n: obj.artisangoods.Urine.name}}",
+                    "Description": "{{i18n: obj.artisangoods.Urine.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 61,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_VervainInfusion": {
+                    "Name": "Vervain Infusion",
+                    "DisplayName": "{{i18n: obj.artisangoods.VervainInfusion.name}}",
+                    "Description": "{{i18n: obj.artisangoods.VervainInfusion.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 62,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_Vitriol": {
+                    "Name": "Vitriol",
+                    "DisplayName": "{{i18n: obj.artisangoods.Vitriol.name}}",
+                    "Description": "{{i18n: obj.artisangoods.Vitriol.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 63,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+/*
+                 "{{ModId}}_WartcapPowder": {
+                    "Name": "Wartcap Powder",
+                    "DisplayName": "{{i18n: obj.artisangoods.WartcapPowder.name}}",
+                    "Description": "{{i18n: obj.artisangoods.WartcapPowder.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 999,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 64,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                  },
+*/
+                "{{ModId}}_PowderedBoomslangSkin": {
+                    "Name": "Powdered Boomslang Skin",
+                    "DisplayName": "{{i18n: obj.artisangoods.PowderedBoomslangSkin.name}}",
+                    "Description": "{{i18n: obj.artisangoods.PowderedBoomslangSkin.desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 75,
+                    "Texture": "{{InternalAssetKey: assets/Objects/ArtisanGoods.png}}",
+                    "SpriteIndex": 65,
+                    "Edibility": -300,
+                    "ContextTags": [ "{{ModId}}_ArtisanGood" ],
+                    "ExcludeFromShippingCollection": true
+                }
+            }
+        }
+    ]
+}

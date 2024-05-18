@@ -21,7 +21,7 @@
 		"Action": "EditData",
 		"Target": "Data/Locations",
 		"Entries": {
-			"Custom_HogsmeadeVillage": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1/{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1/{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1/{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1/106 .1 273 .15 310 .25 330 1",
+			"{{ModId}}_HogsmeadeVillage": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1/{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1/{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1/{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1/106 .1 273 .15 310 .25 330 1",
 		},
 	},
 
@@ -37,7 +37,7 @@
 			//Hogsmeade Village
 			{
 				"Operation": "Prepend",
-				"Target": ["Fields", "Custom_HogsmeadeVillage", 5],
+				"Target": ["Fields", "{{ModId}}_HogsmeadeVillage", 5],
 				"Value": "{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1",
 				"Delimiter": " "
 			},
@@ -48,7 +48,7 @@
 			//Hogsmeade Village
 			{
 				"Operation": "Prepend",
-				"Target": ["Fields", "Custom_HogsmeadeVillage", 6],
+				"Target": ["Fields", "{{ModId}}_HogsmeadeVillage", 6],
 				"Value": "{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1",
 				"Delimiter": " "
 			},
@@ -59,7 +59,7 @@
 			//Hogsmeade Village
 			{
 				"Operation": "Prepend",
-				"Target": ["Fields", "Custom_HogsmeadeVillage", 7],
+				"Target": ["Fields", "{{ModId}}_HogsmeadeVillage", 7],
 				"Value": "{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1",
 				"Delimiter": " "
 			},
@@ -70,7 +70,7 @@
 			//Hogsmeade Village
 			{
 				"Operation": "Prepend",
-				"Target": ["Fields", "Custom_HogsmeadeVillage", 8],
+				"Target": ["Fields", "{{ModId}}_HogsmeadeVillage", 8],
 				"Value": "{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1",
 				"Delimiter": " "
 			},

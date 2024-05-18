@@ -1,93 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="12" height="12" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="4">
- <properties>
-  <property name="Warp" value="6 12 custom_HogsmeadeVillage 19 42"/>
- </properties>
- <tileset firstgid="1" name="indoor" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
-  <image source="townInterior.png" width="512" height="1088"/>
- </tileset>
- <tileset firstgid="2177" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
-  <image source="walls_and_floors.png" width="256" height="560"/>
- </tileset>
- <layer id="1" name="Back" width="12" height="12">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,1173,1171,1171,1171,1171,1171,1171,1171,1171,1172,0,
-0,1170,1170,1170,1170,1170,1170,1170,1170,1170,1170,0,
-0,1170,1170,1170,1170,1170,1170,1170,1170,1170,1170,0,
-0,306,306,306,306,306,306,306,306,306,306,0,
-0,306,306,306,306,306,306,306,306,306,306,0,
-0,306,306,306,306,306,306,306,306,306,306,0,
-0,306,306,306,306,306,306,306,306,306,306,0,
-0,306,306,306,306,306,306,306,306,306,306,0,
-0,306,306,306,306,306,306,306,306,306,306,0,
-0,306,306,306,306,306,306,306,306,306,306,0,
-0,0,0,0,0,0,306,0,0,0,0,0
-</data>
- </layer>
- <layer id="2" name="Buildings" width="12" height="12">
-  <data encoding="csv">
-10,11,11,11,11,11,11,11,11,11,11,12,
-65,0,0,0,0,581,0,580,0,0,0,69,
-65,0,0,0,0,613,1390,612,0,0,0,69,
-65,81,81,81,81,613,1422,612,81,81,81,69,
-65,644,705,705,705,645,0,644,705,705,645,69,
-65,0,0,0,0,0,0,0,0,0,0,69,
-65,0,1073,1074,1074,1074,1074,1074,1074,1075,0,69,
-65,0,1105,1106,1106,1106,1106,1106,1106,1107,0,69,
-65,0,0,0,0,0,0,0,0,0,0,69,
-65,0,0,0,0,0,0,0,0,0,0,69,
-161,0,0,0,0,0,0,0,0,0,0,168,
-1,1,1,1,1,97,0,131,1,1,1,1
-</data>
- </layer>
- <layer id="7" name="Buildings1" width="12" height="12">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,580,641,641,641,0,0,0,641,641,581,0,
-0,612,673,673,673,0,0,0,673,673,613,0,
-0,612,673,673,673,0,0,0,673,673,613,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,2144,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0
-</data>
- </layer>
- <layer id="3" name="Front" width="12" height="12">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,1041,1042,1042,1042,1042,1042,1042,1043,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,162,166,166,166,163,0,164,166,166,167,0,
-0,0,0,0,0,0,166,0,0,0,0,0
-</data>
- </layer>
- <objectgroup id="4" name="Back">
-  <object id="2" name="TileData" x="96" y="176" width="16" height="16">
-   <properties>
-    <property name="NoFurniture" value="t"/>
-   </properties>
-  </object>
- </objectgroup>
- <objectgroup id="5" name="Buildings">
-  <object id="3" name="TileData" x="96" y="112" width="16" height="16">
-   <properties>
-    <property name="Action" value=""/>
-    <property name="Shop" value="CeridwensCauldrons"/>
-   </properties>
-  </object>
- </objectgroup>
- <objectgroup id="8" name="Buildings1"/>
- <objectgroup id="6" name="Front"/>
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<map version="1.2" orientation="orthogonal" renderorder="right-down" width="29" height="34" tilewidth="16" tileheight="16" nextobjectid="1">
+  <properties>
+    <property name="AmbientLight" value="255 255 255" />
+    <property name="Warp" value="9 17 Farm 21 22" />
+    <property name="sw1" value="4435" />
+    <property name="sw2" value="12" />
+    <property name="sw3" value="168" />
+    <property name="sw4" value="69" />
+    <property name="sw5" value="3" />
+    <property name="sw6" value="1" />
+  </properties>
+  <tileset firstgid="1" name="townInterior" columns="32" tilecount="2176" tileheight="16" tilewidth="16">
+    <image source="townInterior.png" width="512" height="2048" />
+  </tileset>
+  <tileset firstgid="4097" name="walls_and_floors" columns="16" tilecount="560" tileheight="16" tilewidth="16">
+    <image source="walls_and_floors.png" width="256" height="1024" />
+  </tileset>
+  <tileset firstgid="4657" name="z_hptiles" columns="32" tilecount="2048" tileheight="16" tilewidth="16">
+    <image source="z_hptiles.png" width="512" height="1024" />
+  </tileset>
+  <layer name="Back" width="29" height="34">
+    <data encoding="base64" compression="zlib">
+   eJxjYBgFo4AywDhAeLUQbhwsSFiekBpktTA7TwvhxiB1hOQJqUFWC7MTpo8eeNTOUTupZSe6vbjyMbXUDJSdAxWfxJRzlKpBtpOBjn4d6LAdCXaSk07IxbjqT5CdxNSH5OCRFp+jdo7aOWoncXYS04agZl8FAFQUPy8=
+  </data>
+  </layer>
+  <objectgroup name="Back" visible="false" />
+  <layer name="Buildings" width="29" height="34">
+    <data encoding="base64" compression="zlib">
+   eJztlTFOwzAYhX+adilMKB2BkwDtkGMwVIgrcIEqa0dgAVRogBMAEhQQLCCOAIWFLnAEQOKZ2NQxtlPiEITUJz05rl/+z67+JERjjfX/1CSq7xFdmBzFY93kVmzj/ZI/s4zZ4OxG5ft+2G9hynqAOrYaSpYE82Xa7FBZv/aJbvzhXDB192qyX0xZ1VJyDJX1Z1bDH87lc6p6Qm6QzGqZMzWiWXiupmd2USMakanJapnzYC3AiwamKhtTk9UyJ0vJ8TeYeFYIfUy7fN7lc+FIutZlWlINWx2RlSX2GpBZeWX+gjkBV+ErPr+EPYNdM1OcJ/Z2i2e2XYlHm10y8tnFe4TI/k5yzajMIiQzO/AOpfe6i/fhA16b9c9P+8TFrI+K+l+FAgOzbfkO5sXM0ptZbTqnizbx7dqCt339uo256mVj9sA6g89TmOte0hvwWgrzpEx0CvfK8bzJGX2MD/BjCvMQ9Y/gYy95bdMdWPdwv2zPmZhZ9ArWG/zuwFw2/Bd5K+++XRlh34zZMawtFXTuovQBNkHcCA==
+  </data>
+  </layer>
+  <objectgroup name="Buildings" visible="false" />
+  <layer name="Front" width="29" height="34">
+    <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AU0AKsEGFgWCmCX42ZGAODuRhxakHgFSMqjQ5OAc04TcCcMKB94UB8BKjuKBF2/gWq+QfE/4lQO5TBa0ZUehSMAlJAHiv91ICAIysqTYyaAGDaDgTiIEbcakgFRUTkl0Ii89R3ItVNIkLdRCLNEmciTt1gAUmi1DGnA2hOJxDnQ+Mdlu7ysaSDJhLt7AKq7wbiHjR9K4D8lQTMWgaVXySKKYYPrAKqWQ3Ea9DUngDyTxLQfwwqf0gUUwwfOAVUcxqIz6CpfQHkvySg/xlU/pEophg+8Aqo5jUQv8GhtoEK6WMBsK4/AMQPsNT5yHEBS4sLkMTiadBOQI4LUtMiCODzDzbQIooaF4uoEKaEwBKgHUuR7DlEBzuPAO04imTPIzrY+QRox1PksAXiZTjwYqiaJXjUEIuXA/EKItyXCFXfTLYPMQEAIKJVkg==
+  </data>
+  </layer>
+  <objectgroup name="Front" visible="false" />
 </map>

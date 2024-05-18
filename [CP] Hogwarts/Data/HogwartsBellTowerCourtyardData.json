@@ -1,0 +1,591 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Bell Tower Courtyard Creature Pen 1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModID}}_HogwartsBellTowerCourtyard",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 86, 92}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 19, 25}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 2 HogwartsET.CC.Hogwarts.{{Random:{{Creature}}|key=CreaturePen1}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag": "{{Random:{{Creature}}|key=CreaturePen1}}1",
+        "Weather": "Sun",
+        "Season |contains=Winter": "false"
+      },
+    },
+    {
+      "LogName": "Hogwarts Bell Tower Courtyard Creature Pen 2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModID}}_HogwartsBellTowerCourtyard",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 81, 88}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 32, 41}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 2 HogwartsET.CC.Hogwarts.{{Random:{{Creature}}|key=CreaturePen2}}"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag": "{{Random:{{Creature}}|key=CreaturePen2}}1",
+        "Weather": "Sun",
+        "Season |contains=Winter": "false"
+      },
+    },
+    {
+      "LogName": "Hogwarts Bell Tower Courtyard Vivarium Entrances",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModID}}_HogwartsBellTowerCourtyard",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 95,
+            "Y": 48
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp {{Random: 20 9, 30 115, 42 60, 84 53, 97 121, 101 40, 105 11, 161 109, 177 7}} {{ModID}}_HogwartsVivarium" 
+          }
+        },
+        {
+          "Position": {
+            "X": 103,
+            "Y": 47
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp {{Random: 20 9, 30 115, 42 60, 84 53, 97 121, 101 40, 105 11, 161 109, 177 7}} {{ModID}}_HogwartsVivarium" 
+          }
+        },
+        {
+          "Position": {
+            "X": 103,
+            "Y": 48
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp {{Random: 20 9, 30 115, 42 60, 84 53, 97 121, 101 40, 105 11, 161 109, 177 7}} {{ModID}}_HogwartsVivarium" 
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Hogwarts Bell Tower Courtyard Whomping Willow",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModID}}_HogwartsBellTowerCourtyard",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 15,
+            "Y": 29
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.WhompingWillow"
+          }
+        }
+      ],
+    },
+    {
+      "LogName": "Hogwarts Bell Tower Courtyard Whomping Willow Hazard Tiles",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModID}}_HogwartsBellTowerCourtyard",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 15,
+            "Y": 28
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 16,
+            "Y": 28
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 17,
+            "Y": 28
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 18,
+            "Y": 28
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 19,
+            "Y": 28
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          },
+        },
+        {
+          "Position": {
+            "X": 20,
+            "Y": 28
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 21,
+            "Y": 28
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          },
+        },
+        {
+          "Position": {
+            "X": 22,
+            "Y": 28
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          },
+        },
+        {
+          "Position": {
+            "X": 16,
+            "Y": 29
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 17,
+            "Y": 29
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 18,
+            "Y": 29
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 19,
+            "Y": 29
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          },
+        },
+        {
+          "Position": {
+            "X": 20,
+            "Y": 29
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 21,
+            "Y": 29
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          },
+        },
+        {
+          "Position": {
+            "X": 22,
+            "Y": 29
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          },
+        },
+        {
+          "Position": {
+            "X": 15,
+            "Y": 30
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 16,
+            "Y": 30
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 17,
+            "Y": 30
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 18,
+            "Y": 30
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 19,
+            "Y": 30
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          },
+        },
+        {
+          "Position": {
+            "X": 20,
+            "Y": 30
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 21,
+            "Y": 30
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          },
+        },
+        {
+          "Position": {
+            "X": 22,
+            "Y": 30
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          },
+        },
+        {
+          "Position": {
+            "X": 15,
+            "Y": 31
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 16,
+            "Y": 31
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 17,
+            "Y": 31
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 18,
+            "Y": 31
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 19,
+            "Y": 31
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          },
+        },
+        {
+          "Position": {
+            "X": 20,
+            "Y": 31
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 21,
+            "Y": 31
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          },
+        },
+        {
+          "Position": {
+            "X": 22,
+            "Y": 31
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          },
+        },
+        {
+          "Position": {
+            "X": 15,
+            "Y": 32
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 16,
+            "Y": 32
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 17,
+            "Y": 32
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 18,
+            "Y": 32
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 19,
+            "Y": 32
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          },
+        },
+        {
+          "Position": {
+            "X": 20,
+            "Y": 32
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 21,
+            "Y": 32
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          },
+        },
+        {
+          "Position": {
+            "X": 22,
+            "Y": 32
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          },
+        },
+        {
+          "Position": {
+            "X": 15,
+            "Y": 33
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 16,
+            "Y": 33
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 17,
+            "Y": 33
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 18,
+            "Y": 33
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 19,
+            "Y": 33
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          },
+        },
+        {
+          "Position": {
+            "X": 20,
+            "Y": 33
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          }
+        },
+        {
+          "Position": {
+            "X": 21,
+            "Y": 33
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          },
+        },
+        {
+          "Position": {
+            "X": 22,
+            "Y": 33
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/healthPerSecond": -15,
+          },
+        }
+      ],
+    },
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+

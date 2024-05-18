@@ -1,0 +1,72 @@
+{
+	"Name": "GarrickOllivander",
+	"Type": "Walking",
+
+	"FrameSizeWidth": 16,
+	"FrameSizeHeight": 32,
+	"EnableFarmerCollision": true,
+	"EnableCharacterCollision": true,
+	"EnableShadow": true,
+	"EnableBreathing": true,
+	"InspectionDialogue": "Welcome!",
+	"Portrait": {
+	  "PortraitDisplayName": "Garrick Ollivander",
+	  "FrameSizeWidth": 64,
+	  "FrameSizeHeight": 64,
+	  "FrameIndex": 0
+	},
+	"IdleBehavior": "Nothing",
+
+	// This plays when the companion travels upwards
+	"UpAnimation": {
+		"StartingFrame": 2,
+		"NumberOfFrames": 2,
+		"Duration": 250,
+		"IdleAnimation": {
+			"StartingFrame": 2,
+			"NumberOfFrames": 2,
+			"Duration": 500
+		}
+	},
+	// This plays when the companion travels downwards
+	"DownAnimation": {
+		"StartingFrame": 0,
+		"NumberOfFrames": 2,
+		"Duration": 250,
+		"IdleAnimation": {
+			"StartingFrame": 0,
+			"NumberOfFrames": 2,
+			"Duration": 500
+		}
+	},
+
+	// This plays when the companion travels left
+	"LeftAnimation": {
+		"StartingFrame": 6,
+		"NumberOfFrames": 1,
+		"Duration": 250,
+		"IdleAnimation": {
+			"StartingFrame": 6,
+			"NumberOfFrames": 1,
+			"Duration": 500
+		}
+	},
+
+	// This plays when the companion travels right
+	"RightAnimation": {
+		"StartingFrame": 4,
+		"NumberOfFrames": 1,
+		"Duration": 250,
+		"IdleAnimation": {
+			"StartingFrame": 4,
+			"NumberOfFrames": 1,
+			"Duration": 500
+		}
+	},
+	"Shadow": {
+		"OffsetX": 0,
+		"OffsetY": 0,
+		"Scale": 1,
+		"Alpha": 235
+	}
+}
