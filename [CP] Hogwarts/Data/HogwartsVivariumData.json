@@ -1402,6 +1402,26 @@
       }
     },
     {
+      "LogName": "Vivarium Baby Thestral",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsVivarium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 118, 139}}}}}}",
+            "Y": "{{Query: {{Random: {{Range: 64, 79}}}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.ThestralBaby"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag": "Thestral2"
+      }
+    },
+    {
       "LogName": "Vivarium Unicorn1",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsVivarium",
