@@ -9,9 +9,9 @@
   "SpawnOffsetY": 0, // Y offset (from player) of where to spawn | Note: Negative values will spawn above player head, positive will spawn below player head
   "MaxIdleDistance": -1, // Optional parameter, determines how far away a companion can be from a player / spawn point before idle behavior stops | NOTE: -1 will make it always idle if player isn't moving
   "MaxDistanceBeforeTeleport": -1, // Optional parameter, determines how far away a companion can be from a player / spawn point before teleporting back | NOTE: -1 will make it never teleport if it gets too far
-  "DespawnOnTile": [ 62, 20, 0 ],
+  "DespawnOnTile": [62, 20, 0],
   "IdleBehavior": "Simple_Path",
-  "IdleArguments": [ 62, 20, 0 ],
+  "IdleArguments": [62, 20, 0],
   "EnablePeriodicPatchCheck": true,
   "FrameSizeWidth": 768, // Width of each frame / tile in pixels
   "FrameSizeHeight": 80, // Height of each frame / tile in pixels
@@ -26,11 +26,11 @@
     "Duration": 50
   },
   "Sounds": [
-  {
-    "SoundName": "trainWhistle",
-    "WhenToPlay": "Moving",
-    "TimeBetweenSound": 6000,
-    "ChanceOfPlaying": 1
-  }
+    {
+      "SoundName": "trainWhistle",
+      "WhenToPlay": "Moving",
+      "TimeBetweenSound": 6000,
+      "ChanceOfPlaying": 1
+    }
   ]
 }

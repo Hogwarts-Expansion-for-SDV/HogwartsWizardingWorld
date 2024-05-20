@@ -1,6 +1,6 @@
 {
   "Changes": [
-/*Brood and Peck*/
+    /*Brood and Peck*/
     {
       "LogName": "Brood and Peck Entrance",
       "Action": "EditMap",
@@ -13,7 +13,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Warp 11 13 {{ModId}}_BroodAndPeck" 
+            "Action": "Warp 11 13 {{ModId}}_BroodAndPeck"
           }
         }
       ]
@@ -35,7 +35,7 @@
         }
       ]
     },
-/*Ceridwen's Cauldrons*/
+    /*Ceridwen's Cauldrons*/
     {
       "LogName": "Ceridwen's Cauldrons Entrance",
       "Action": "EditMap",
@@ -70,7 +70,7 @@
         }
       ]
     },
-/*Dervish and Banges*/
+    /*Dervish and Banges*/
     {
       "LogName": "Dervish and Banges Entrance",
       "Action": "EditMap",
@@ -105,7 +105,7 @@
         }
       ]
     },
-/*Dogweed and Deathcap*/
+    /*Dogweed and Deathcap*/
     {
       "LogName": "Dogweed and Deathcap Entrance",
       "Action": "EditMap",
@@ -140,7 +140,7 @@
         }
       ]
     },
-/*Dominic Maestro's Music Shop*/
+    /*Dominic Maestro's Music Shop*/
     {
       "LogName": "Dominic Maestro's Music Shop Entrance",
       "Action": "EditMap",
@@ -175,7 +175,7 @@
         }
       ]
     },
-/*Gladrags Wizardwear*/
+    /*Gladrags Wizardwear*/
     {
       "LogName": "Gladrags Wizardwear Entrance",
       "Action": "EditMap",
@@ -210,7 +210,7 @@
         }
       ]
     },
-/*Hog's Head Inn*/
+    /*Hog's Head Inn*/
     {
       "LogName": "Hog's Head Inn Entrance",
       "Action": "EditMap",
@@ -245,7 +245,7 @@
         }
       ]
     },
-/*Honeydukes*/
+    /*Honeydukes*/
     {
       "LogName": "Honeydukes Entrance",
       "Action": "EditMap",
@@ -440,7 +440,7 @@
         }
       ]
     },
-/*J. Pippin's Potions*/
+    /*J. Pippin's Potions*/
     {
       "LogName": "J. Pippin's Potions Entrance",
       "Action": "EditMap",
@@ -475,7 +475,7 @@
         }
       ]
     },
-/*Madam Puddifoot's*/
+    /*Madam Puddifoot's*/
     {
       "LogName": "Madam Puddifoot's Tea Shop Entrance",
       "Action": "EditMap",
@@ -510,7 +510,7 @@
         }
       ]
     },
-/*Madam Snelling's*/
+    /*Madam Snelling's*/
     {
       "LogName": "Madam Snelling's Tress Emporium Entrance",
       "Action": "EditMap",
@@ -545,7 +545,7 @@
         }
       ]
     },
-/*Ollivander's*/
+    /*Ollivander's*/
     {
       "LogName": "Ollivanders Entrance",
       "Action": "EditMap",
@@ -627,7 +627,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{Random: A workbench used for crafting new wands., Tattered paper with plans depicting lighter faster wands for better spellwork., Samplings of the three best wand cores known to wizardkind.}}",
+            "Action": "Dialogue {{Random: A workbench used for crafting new wands., Tattered paper with plans depicting lighter faster wands for better spellwork., Samplings of the three best wand cores known to wizardkind.}}"
           }
         }
       ]
@@ -819,7 +819,7 @@
         }
       ]
     },
-/*Spintwitches Sporting*/
+    /*Spintwitches Sporting*/
     {
       "LogName": "Spintwitches Sporting Needs Entrance",
       "Action": "EditMap",
@@ -854,7 +854,7 @@
         }
       ]
     },
-/*The Magic Neep*/
+    /*The Magic Neep*/
     {
       "LogName": "The Magic Neep Entrance",
       "Action": "EditMap",
@@ -889,7 +889,7 @@
         }
       ]
     },
-/*Three Broomsticks*/
+    /*Three Broomsticks*/
     {
       "LogName": "Three Broomsticks Inn Entrance",
       "Action": "EditMap",
@@ -924,7 +924,7 @@
         }
       ]
     },
-/*Tomes and Scrolls*/
+    /*Tomes and Scrolls*/
     {
       "LogName": "Tomes and Scrolls Entrance",
       "Action": "EditMap",
@@ -959,7 +959,7 @@
         }
       ]
     },
-/*Zonko's*/
+    /*Zonko's*/
     {
       "LogName": "Zonko's Joke Shop Entrance",
       "Action": "EditMap",
@@ -993,9 +993,8 @@
           }
         }
       ]
-    }
-    /*Other*/,
-    {
+    },
+    /*Other*/ {
       "LogName": "Community Garden Sign",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogsmeadeVillage",
@@ -1466,7 +1465,7 @@
       ],
       "When": {
         "Weather": "Sun, Snow, Wind",
-        "Season": "Spring, Summer, Fall",
+        "Season": "Spring, Summer, Fall"
       }
     },
     {
@@ -1483,14 +1482,14 @@
           "SetProperties": {
             "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} HogwartsET.CC.Hogwarts.NifflerWhite"
           }
-        },
+        }
       ],
       "When": {
         "Weather": "Sun, Snow, Wind",
-        "Season": "Winter",
+        "Season": "Winter"
       }
     },
-/*Hogwarts Carriages*/ 
+    /*Hogwarts Carriages*/
     {
       "LogName": "Hogsmeade Carriage Arrival Spawn",
       "Action": "EditMap",
@@ -1535,13 +1534,13 @@
           "SetProperties": {
             "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageArrival"
           }
-        },
+        }
       ],
       "When": {
         "Time": "{{Range: 1900, 2600}}",
         "Day": "1, 15"
       },
-      "Update": "OnTimeChange",
+      "Update": "OnTimeChange"
     },
     {
       "LogName": "Hogsmeade Carriage Departure Spawn 1",
@@ -1557,13 +1556,13 @@
           "SetProperties": {
             "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageDeparture"
           }
-        },
+        }
       ],
       "When": {
         "Time": "{{Range: 0900, 1100}}",
         "Day": "8, 22"
       },
-      "Update": "OnTimeChange",
+      "Update": "OnTimeChange"
     },
     {
       "LogName": "Hogsmeade Carriage Departure Spawn 2",
@@ -1579,13 +1578,13 @@
           "SetProperties": {
             "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageDeparture"
           }
-        },
+        }
       ],
       "When": {
         "Time": "{{Range: 0900, 1100}}",
         "Day": "8, 22"
       },
-      "Update": "OnTimeChange",
+      "Update": "OnTimeChange"
     },
     {
       "LogName": "Hogsmeade Carriage Departure Spawn 3",
@@ -1601,13 +1600,13 @@
           "SetProperties": {
             "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageDeparture"
           }
-        },
+        }
       ],
       "When": {
         "Time": "{{Range: 0920, 1100}}",
         "Day": "8, 22"
       },
-      "Update": "OnTimeChange",
+      "Update": "OnTimeChange"
     },
     {
       "LogName": "Hogsmeade Carriage Departure Spawn 4",
@@ -1623,31 +1622,13 @@
           "SetProperties": {
             "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageDeparture"
           }
-        },
+        }
       ],
       "When": {
         "Time": "{{Range: 0930, 1100}}",
         "Day": "8, 22"
       },
-      "Update": "OnTimeChange",
-    },
+      "Update": "OnTimeChange"
+    }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

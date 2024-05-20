@@ -1,10 +1,10 @@
 {
-    "Changes": [
-        {
-            "Action": "EditData",
-            "Target": "Data/Objects",
-            "Entries": {
-/*
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        /*
                 "{{ModId}}_AgeingPotion":{
                     "Name": "Ageing Potion",
                     "DisplayName": "{{i18n: obj.potions.AgeingPotion.name}}",
@@ -23,7 +23,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_AlihotsyDraught":{
                     "Name": "Alihotsy Draught",
                     "DisplayName": "{{i18n: obj.potions.AlihotsyDraught.name}}",
@@ -42,7 +42,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_Amortentia":{
                     "Name": "Amortentia",
                     "DisplayName": "{{i18n: obj.potions.Amortentia.name}}",
@@ -61,7 +61,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_AntiParalysisPotion":{
                     "Name": "Anti-Paralysis Potion",
                     "DisplayName": "{{i18n: obj.potions.AntiParalysisPotion.name}}",
@@ -80,7 +80,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_ArmadilloBileMixture":{
                     "Name": "Armadillo Bile Mixture",
                     "DisplayName": "{{i18n: obj.potions.ArmadilloBileMixture.name}}",
@@ -99,7 +99,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_BabblingBeverage":{
                     "Name": "Babbling Beverage",
                     "DisplayName": "{{i18n: obj.potions.BabblingBeverage.name}}",
@@ -118,7 +118,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_BaneberryPotion":{
                     "Name": "Baneberry Potion",
                     "DisplayName": "{{i18n: obj.potions.BaneberryPotion.name}}",
@@ -137,7 +137,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_BaruffiosBrainElixer":{
                     "Name": "Baruffio's Brain Elixer",
                     "DisplayName": "{{i18n: obj.potions.BaruffiosBrainElixer.name}}",
@@ -156,24 +156,24 @@
                     }
                 },
 */
-                "{{ModId}}_BeautificationPotion":{
-                    "Name": "Beautification Potion (HP)",
-                    "DisplayName": "{{i18n: obj.potions.BeautificationPotion.name}}",
-                    "Description": "{{i18n: obj.potions.BeautificationPotion.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 100,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 9,
-                    "Edibility": 0,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-/*
+        "{{ModId}}_BeautificationPotion": {
+          "Name": "Beautification Potion (HP)",
+          "DisplayName": "{{i18n: obj.potions.BeautificationPotion.name}}",
+          "Description": "{{i18n: obj.potions.BeautificationPotion.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 100,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 9,
+          "Edibility": 0,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        /*
                 "{{ModId}}_BefuddlementDraught":{
                     "Name": "Befuddlement Draught",
                     "DisplayName": "{{i18n: obj.potions.BefuddlementDraught.name}}",
@@ -192,19 +192,19 @@
                     }
                 },
 */
-                "{{ModID}}_BelchPowder": {
-                    "Name": "Belch Powder",
-                    "DisplayName": "{{i18n: obj.misc.BelchPowder.name}}",
-                    "Description": "{{i18n: obj.misc.BelchPowder.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 50,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Misc/BelchPowder.png}}",
-                    "SpriteIndex": 0,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "Edibility": 0
-                },
-/*
+        "{{ModID}}_BelchPowder": {
+          "Name": "Belch Powder",
+          "DisplayName": "{{i18n: obj.misc.BelchPowder.name}}",
+          "Description": "{{i18n: obj.misc.BelchPowder.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 50,
+          "Texture": "{{InternalAssetKey: assets/Objects/Misc/BelchPowder.png}}",
+          "SpriteIndex": 0,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "Edibility": 0
+        },
+        /*
                 "{{ModId}}_BerryOckyRot":{
                     "Name": "Berry Ocky Rot",
                     "DisplayName": "{{i18n: obj.potions.BerryOckyRot.name}}",
@@ -223,24 +223,24 @@
                     }
                 },
 */
-                "{{ModId}}_BloodReplenishingPotion":{
-                    "Name": "Blood-Replenishing Potion (HP)",
-                    "DisplayName": "{{i18n: obj.potions.BloodReplenishingPotion.name}}",
-                    "Description": "{{i18n: obj.potions.BloodReplenishingPotion.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 100,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 12,
-                    "Edibility": 50,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-/*
+        "{{ModId}}_BloodReplenishingPotion": {
+          "Name": "Blood-Replenishing Potion (HP)",
+          "DisplayName": "{{i18n: obj.potions.BloodReplenishingPotion.name}}",
+          "Description": "{{i18n: obj.potions.BloodReplenishingPotion.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 100,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 12,
+          "Edibility": 50,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        /*
                 "{{ModId}}_BloodrootPoison":{
                     "Name": "Bloodroot Poison",
                     "DisplayName": "{{i18n: obj.potions.BloodrootPoison.name}}",
@@ -259,7 +259,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_BoilCure":{
                     "Name": "Boil Cure",
                     "DisplayName": "{{i18n: obj.potions.BoilCure.name}}",
@@ -278,7 +278,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_BruiseRemovalPaste":{
                     "Name": "Bruise Removal Paste",
                     "DisplayName": "{{i18n: obj.potions.BruiseRemovalPaste.name}}",
@@ -297,7 +297,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_BulgeyePotion":{
                     "Name": "Bulgeye Potion",
                     "DisplayName": "{{i18n: obj.potions.BulgeyePotion.name}}",
@@ -316,7 +316,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_BundimunPomade":{
                     "Name": "Bundimun Pomade",
                     "DisplayName": "{{i18n: obj.potions.BundimunPomade.name}}",
@@ -335,7 +335,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_BurnHealingPaste":{
                     "Name": "Burn-Healing Paste",
                     "DisplayName": "{{i18n: obj.potions.BurnHealingPaste.name}}",
@@ -354,7 +354,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_CalmingDraught":{
                     "Name": "Calming Draught",
                     "DisplayName": "{{i18n: obj.potions.CalmingDraught.name}}",
@@ -373,7 +373,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_CaxambuStyleBorborygmusPotion":{
                     "Name": "Caxambu Style Borborygmus Potion",
                     "DisplayName": "{{i18n: obj.potions.CaxambuStyleBorborygmusPotion.name}}",
@@ -392,7 +392,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_CheesePotion":{
                     "Name": "Cheese Potion",
                     "DisplayName": "{{i18n: obj.potions.CheesePotion.name}}",
@@ -411,7 +411,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_ChelidoniumMiniscula":{
                     "Name": "Chelidonium Miniscula",
                     "DisplayName": "{{i18n: obj.potions.ChelidoniumMiniscula.name}}",
@@ -430,7 +430,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_CherrySyrup":{
                     "Name": "Cherry Syrup",
                     "DisplayName": "{{i18n: obj.potions.CherrySyrup.name}}",
@@ -449,7 +449,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_CommonAntidote":{
                     "Name": "Common Antidote",
                     "DisplayName": "{{i18n: obj.potions.CommonAntidote.name}}",
@@ -468,7 +468,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_ConfusingConcoction":{
                     "Name": "Confusing Concoction",
                     "DisplayName": "{{i18n: obj.potions.ConfusingConcoction.name}}",
@@ -487,7 +487,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_ConfusingDraught":{
                     "Name": "Confusing Draught",
                     "DisplayName": "{{i18n: obj.potions.ConfusingDraught.name}}",
@@ -506,7 +506,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_CoughPotion":{
                     "Name": "Cough Potion",
                     "DisplayName": "{{i18n: obj.potions.CoughPotion.name}}",
@@ -525,7 +525,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_CupidCrystal":{
                     "Name": "Cupid Crystal",
                     "DisplayName": "{{i18n: obj.potions.CupidCrystal.name}}",
@@ -544,7 +544,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_DawdleDraught":{
                     "Name": "Dawdle Draught",
                     "DisplayName": "{{i18n: obj.potions.DawdleDraught.name}}",
@@ -563,24 +563,24 @@
                     }
                 },
 */
-                "{{ModId}}_DeathPotion":{
-                    "Name": "Death Potion",
-                    "DisplayName": "{{i18n: obj.potions.DeathPotion.name}}",
-                    "Description": "{{i18n: obj.potions.DeathPotion.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 999,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 30,
-                    "Edibility": -300,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-/*
+        "{{ModId}}_DeathPotion": {
+          "Name": "Death Potion",
+          "DisplayName": "{{i18n: obj.potions.DeathPotion.name}}",
+          "Description": "{{i18n: obj.potions.DeathPotion.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 999,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 30,
+          "Edibility": -300,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        /*
                 "{{ModId}}_DeathCapDraught":{
                     "Name": "Death-Cap Draught",
                     "DisplayName": "{{i18n: obj.potions.DeathCapDraught.name}}",
@@ -599,7 +599,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_DeflatingDraught":{
                     "Name": "Deflating Draught",
                     "DisplayName": "{{i18n: obj.potions.DeflatingDraught.name}}",
@@ -618,7 +618,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_DevelopingSolution":{
                     "Name": "Developing Solution",
                     "DisplayName": "{{i18n: obj.potions.DevelopingSolution.name}}",
@@ -637,7 +637,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_DizzinessDraught":{
                     "Name": "Dizziness Draught",
                     "DisplayName": "{{i18n: obj.potions.DizzinessDraught.name}}",
@@ -656,7 +656,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_DogbanePotion":{
                     "Name": "Dogbane Potion",
                     "DisplayName": "{{i18n: obj.potions.DogbanePotion.name}}",
@@ -675,7 +675,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_DogbreathPotion":{
                     "Name": "Dogbreath Potion",
                     "DisplayName": "{{i18n: obj.potions.DogbreathPotion.name}}",
@@ -694,24 +694,24 @@
                     }
                 },
 */
-                "{{ModId}}_Doxycide":{
-                    "Name": "Doxycide (HP)",
-                    "DisplayName": "{{i18n: obj.potions.Doxycide.name}}",
-                    "Description": "{{i18n: obj.potions.Doxycide.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 100,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 37,
-                    "Edibility": -300,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-/*
+        "{{ModId}}_Doxycide": {
+          "Name": "Doxycide (HP)",
+          "DisplayName": "{{i18n: obj.potions.Doxycide.name}}",
+          "Description": "{{i18n: obj.potions.Doxycide.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 100,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 37,
+          "Edibility": -300,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        /*
                 "{{ModId}}_DrUbblysObliviousUnction":{
                     "Name": "Dr. Ubbly's Oblivious Unction",
                     "DisplayName": "{{i18n: obj.potions.DrUbblysObliviousUnction.name}}",
@@ -730,7 +730,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_DragonDungFertiliser":{
                     "Name": "Dragon Dung Fertiliser",
                     "DisplayName": "{{i18n: obj.potions.DragonDungFertiliser.name}}",
@@ -749,7 +749,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_DragonPoison":{
                     "Name": "Dragon Poison",
                     "DisplayName": "{{i18n: obj.potions.DragonPoison.name}}",
@@ -768,7 +768,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_DragonTonic":{
                     "Name": "Dragon Tonic",
                     "DisplayName": "{{i18n: obj.potions.DragonTonic.name}}",
@@ -787,41 +787,41 @@
                     }
                 },
 */
-                "{{ModId}}_DraughtofLivingDeath":{
-                    "Name": "Draught of Living Death (HP)",
-                    "DisplayName": "{{i18n: obj.potions.DraughtofLivingDeath.name}}",
-                    "Description": "{{i18n: obj.potions.DraughtofLivingDeath.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 100,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 42,
-                    "Edibility": 0,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-                "{{ModId}}_DraughtofPeace":{
-                    "Name": "Draught of Peace (HP)",
-                    "DisplayName": "{{i18n: obj.potions.DraughtofPeace.name}}",
-                    "Description": "{{i18n: obj.potions.DraughtofPeace.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 100,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 43,
-                    "Edibility": 80,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-/*
+        "{{ModId}}_DraughtofLivingDeath": {
+          "Name": "Draught of Living Death (HP)",
+          "DisplayName": "{{i18n: obj.potions.DraughtofLivingDeath.name}}",
+          "Description": "{{i18n: obj.potions.DraughtofLivingDeath.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 100,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 42,
+          "Edibility": 0,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        "{{ModId}}_DraughtofPeace": {
+          "Name": "Draught of Peace (HP)",
+          "DisplayName": "{{i18n: obj.potions.DraughtofPeace.name}}",
+          "Description": "{{i18n: obj.potions.DraughtofPeace.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 100,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 43,
+          "Edibility": 80,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        /*
                 "{{ModId}}_DrowsinessDraught":{
                     "Name": "Drowsiness Draught",
                     "DisplayName": "{{i18n: obj.potions.DrowsinessDraught.name}}",
@@ -840,7 +840,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_ElixirofLife":{
                     "Name": "Elixir of Life",
                     "DisplayName": "{{i18n: obj.potions.ElixirofLife.name}}",
@@ -859,24 +859,24 @@
                     }
                 },
 */
-                "{{ModId}}_ElixirtoInduceEuphoria":{
-                    "Name": "Elixir to Induce Euphoria (HP)",
-                    "DisplayName": "{{i18n: obj.potions.ElixirtoInduceEuphoria.name}}",
-                    "Description": "{{i18n: obj.potions.ElixirtoInduceEuphoria.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 100,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 46,
-                    "Edibility": 0,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-/*
+        "{{ModId}}_ElixirtoInduceEuphoria": {
+          "Name": "Elixir to Induce Euphoria (HP)",
+          "DisplayName": "{{i18n: obj.potions.ElixirtoInduceEuphoria.name}}",
+          "Description": "{{i18n: obj.potions.ElixirtoInduceEuphoria.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 100,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 46,
+          "Edibility": 0,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        /*
                 "{{ModId}}_EmeraldPotion":{
                     "Name": "Emerald Potion",
                     "DisplayName": "{{i18n: obj.potions.EmeraldPotion.name}}",
@@ -895,7 +895,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_ErumpentPotion":{
                     "Name": "Erumpent Potion",
                     "DisplayName": "{{i18n: obj.potions.ErumpentPotion.name}}",
@@ -914,7 +914,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_EssenceofInsanity":{
                     "Name": "Essence of Insanity",
                     "DisplayName": "{{i18n: obj.potions.EssenceofInsanity.name}}",
@@ -933,7 +933,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_Everklena":{
                     "Name": "Everklena",
                     "DisplayName": "{{i18n: obj.potions.Everklena.name}}",
@@ -952,7 +952,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_EverlastingElixer":{
                     "Name": "Everlasting Elixer",
                     "DisplayName": "{{i18n: obj.potions.EverlastingElixer.name}}",
@@ -971,24 +971,24 @@
                     }
                 },
 */
-                "{{ModId}}_ExplodingPotion":{
-                    "Name": "Exploding Potion",
-                    "DisplayName": "{{i18n: obj.potions.ExplodingPotion.name}}",
-                    "Description": "{{i18n: obj.potions.ExplodingPotion.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 999,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 52,
-                    "Edibility": -300,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-/*
+        "{{ModId}}_ExplodingPotion": {
+          "Name": "Exploding Potion",
+          "DisplayName": "{{i18n: obj.potions.ExplodingPotion.name}}",
+          "Description": "{{i18n: obj.potions.ExplodingPotion.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 999,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 52,
+          "Edibility": -300,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        /*
                 "{{ModId}}_ExstimuloPotion":{
                     "Name": "Exstimulo Potion",
                     "DisplayName": "{{i18n: obj.potions.ExstimuloPotion.name}}",
@@ -1007,7 +1007,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_FatalPotion":{
                     "Name": "Fatal Potion",
                     "DisplayName": "{{i18n: obj.potions.FatalPotion.name}}",
@@ -1026,7 +1026,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_FatiguingFusion":{
                     "Name": "Fatiguing Fusion",
                     "DisplayName": "{{i18n: obj.potions.FatiguingFusion.name}}",
@@ -1045,24 +1045,24 @@
                     }
                 },
 */
-                "{{ModId}}_FelixFelicis":{
-                    "Name": "Felix Felicis (HP)",
-                    "DisplayName": "{{i18n: obj.potions.FelixFelicis.name}}",
-                    "Description": "{{i18n: obj.potions.FelixFelicis.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 100,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 56,
-                    "Edibility": 0,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-/*
+        "{{ModId}}_FelixFelicis": {
+          "Name": "Felix Felicis (HP)",
+          "DisplayName": "{{i18n: obj.potions.FelixFelicis.name}}",
+          "Description": "{{i18n: obj.potions.FelixFelicis.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 100,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 56,
+          "Edibility": 0,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        /*
                 "{{ModId}}_FergusFungalBudge":{
                     "Name": "Fergus Fungal Budge",
                     "DisplayName": "{{i18n: obj.potions.FergusFungalBudge.name}}",
@@ -1081,24 +1081,24 @@
                     }
                 },
 */
-                "{{ModId}}_FireProtectionPotion":{
-                    "Name": "Fire Protection Potion",
-                    "DisplayName": "{{i18n: obj.potions.FireProtectionPotion.name}}",
-                    "Description": "{{i18n: obj.potions.FireProtectionPotion.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 999,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 58,
-                    "Edibility": -300,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-/*
+        "{{ModId}}_FireProtectionPotion": {
+          "Name": "Fire Protection Potion",
+          "DisplayName": "{{i18n: obj.potions.FireProtectionPotion.name}}",
+          "Description": "{{i18n: obj.potions.FireProtectionPotion.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 999,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 58,
+          "Edibility": -300,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        /*
                 "{{ModId}}_FirstLoveBeguilingBubbles":{
                     "Name": "First Love Beguiling Bubbles",
                     "DisplayName": "{{i18n: obj.potions.FirstLoveBeguilingBubbles.name}}",
@@ -1117,7 +1117,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_FlashEatingSlugRepllent":{
                     "Name": "Flash-Eating Slug Repllent",
                     "DisplayName": "{{i18n: obj.potions.FlashEatingSlugRepllent.name}}",
@@ -1136,7 +1136,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_ForgetfulnessPotion":{
                     "Name": "Forgetfulness Potion",
                     "DisplayName": "{{i18n: obj.potions.ForgetfulnessPotion.name}}",
@@ -1155,7 +1155,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_FrogPartsMixture":{
                     "Name": "Frog Parts Mixture",
                     "DisplayName": "{{i18n: obj.potions.FrogPartsMixture.name}}",
@@ -1174,7 +1174,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_FungifacePotion":{
                     "Name": "Fungiface Potion",
                     "DisplayName": "{{i18n: obj.potions.FungifacePotion.name}}",
@@ -1193,7 +1193,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_GampsOldGregarious":{
                     "Name": "Gamp's Old Gregarious",
                     "DisplayName": "{{i18n: obj.potions.GampsOldGregarious.name}}",
@@ -1212,7 +1212,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_GarrottingGas":{
                     "Name": "Garrotting Gas",
                     "DisplayName": "{{i18n: obj.potions.GarrottingGas.name}}",
@@ -1231,7 +1231,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_GirdingPotion":{
                     "Name": "Girding Potion",
                     "DisplayName": "{{i18n: obj.potions.GirdingPotion.name}}",
@@ -1250,7 +1250,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_GrandPepperupPotion":{
                     "Name": "Grand Pepperup Potion",
                     "DisplayName": "{{i18n: obj.potions.GrandPepperupPotion.name}}",
@@ -1269,7 +1269,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_GrandWiggenweldPotion":{
                     "Name": "Grand Wiggenweld Potion",
                     "DisplayName": "{{i18n: obj.potions.GrandWiggenweldPotion.name}}",
@@ -1288,7 +1288,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_GregorysUnctuousUnction":{
                     "Name": "Gregory's Unctuous Unction",
                     "DisplayName": "{{i18n: obj.potions.GregorysUnctuousUnction.name}}",
@@ -1307,7 +1307,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_HairRaisingPotion":{
                     "Name": "Hair-Raising Potion",
                     "DisplayName": "{{i18n: obj.potions.HairRaisingPotion.name}}",
@@ -1326,7 +1326,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_HatePotion":{
                     "Name": "Hate Potion",
                     "DisplayName": "{{i18n: obj.potions.HatePotion.name}}",
@@ -1345,7 +1345,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_HeartbreakTeardrops":{
                     "Name": "Heartbreak Teardrops",
                     "DisplayName": "{{i18n: obj.potions.HeartbreakTeardrops.name}}",
@@ -1364,7 +1364,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_HerbicidePotion":{
                     "Name": "Herbicide Potion",
                     "DisplayName": "{{i18n: obj.potions.HerbicidePotion.name}}",
@@ -1383,24 +1383,24 @@
                     }
                 },
 */
-                "{{ModId}}_HiccoughingSolution":{
-                    "Name": "Hiccoughing Solution (HP)",
-                    "DisplayName": "{{i18n: obj.potions.HiccoughingSolution.name}}",
-                    "Description": "{{i18n: obj.potions.HiccoughingSolution.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 100,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 74,
-                    "Edibility": 0,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-/*
+        "{{ModId}}_HiccoughingSolution": {
+          "Name": "Hiccoughing Solution (HP)",
+          "DisplayName": "{{i18n: obj.potions.HiccoughingSolution.name}}",
+          "Description": "{{i18n: obj.potions.HiccoughingSolution.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 100,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 74,
+          "Edibility": 0,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        /*
                 "{{ModId}}_InvigorationDraught":{
                     "Name": "Invigoration Draught",
                     "DisplayName": "{{i18n: obj.potions.InvigorationDraught.name}}",
@@ -1419,7 +1419,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_InvisibilityPotion":{
                     "Name": "Invisibility Potion",
                     "DisplayName": "{{i18n: obj.potions.InvisibilityPotion.name}}",
@@ -1438,7 +1438,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_JawbindPotion":{
                     "Name": "Jawbind Potion",
                     "DisplayName": "{{i18n: obj.potions.JawbindPotion.name}}",
@@ -1457,7 +1457,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_KissingConcoction":{
                     "Name": "Kissing Concoction",
                     "DisplayName": "{{i18n: obj.potions.KissingConcoction.name}}",
@@ -1476,7 +1476,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_LaughInducingPotion":{
                     "Name": "Laugh-Inducing Potion",
                     "DisplayName": "{{i18n: obj.potions.LaughInducingPotion.name}}",
@@ -1495,7 +1495,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_LaughingPotion":{
                     "Name": "Laughing Potion",
                     "DisplayName": "{{i18n: obj.potions.LaughingPotion.name}}",
@@ -1514,7 +1514,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_LaxativePotion":{
                     "Name": "Laxative Potion",
                     "DisplayName": "{{i18n: obj.potions.LaxativePotion.name}}",
@@ -1533,41 +1533,41 @@
                     }
                 },
 */
-                "{{ModId}}_LovePotion":{
-                    "Name": "Love Potion (HP)",
-                    "DisplayName": "{{i18n: obj.potions.LovePotion.name}}",
-                    "Description": "{{i18n: obj.potions.LovePotion.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 100,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 82,
-                    "Edibility": 0,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-                "{{ModId}}_LovePotionAntidote":{
-                    "Name": "Love Potion Antidote (HP)",
-                    "DisplayName": "{{i18n: obj.potions.LovePotionAntidote.name}}",
-                    "Description": "{{i18n: obj.potions.LovePotionAntidote.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 100,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 83,
-                    "Edibility": 0,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-/*
+        "{{ModId}}_LovePotion": {
+          "Name": "Love Potion (HP)",
+          "DisplayName": "{{i18n: obj.potions.LovePotion.name}}",
+          "Description": "{{i18n: obj.potions.LovePotion.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 100,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 82,
+          "Edibility": 0,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        "{{ModId}}_LovePotionAntidote": {
+          "Name": "Love Potion Antidote (HP)",
+          "DisplayName": "{{i18n: obj.potions.LovePotionAntidote.name}}",
+          "Description": "{{i18n: obj.potions.LovePotionAntidote.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 100,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 83,
+          "Edibility": 0,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        /*
                 "{{ModId}}_MadameGlossysSilverPolish":{
                     "Name": "Madame Glossy's Silver Polish",
                     "DisplayName": "{{i18n: obj.potions.MadameGlossysSilverPolish.name}}",
@@ -1586,7 +1586,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_MalevolentMixture":{
                     "Name": "Malevolent Mixture",
                     "DisplayName": "{{i18n: obj.potions.MalevolentMixture.name}}",
@@ -1605,7 +1605,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_MandrakeRestorativeDraught":{
                     "Name": "Mandrake Restorative Draught",
                     "DisplayName": "{{i18n: obj.potions.MandrakeRestorativeDraught.name}}",
@@ -1624,7 +1624,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_ManegroPotion":{
                     "Name": "Manegro Potion",
                     "DisplayName": "{{i18n: obj.potions.ManegroPotion.name}}",
@@ -1643,7 +1643,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_MaximumTurboFartsPotion":{
                     "Name": "Maximum Turbo Farts Potion",
                     "DisplayName": "{{i18n: obj.potions.MaximumTurboFartsPotion.name}}",
@@ -1662,7 +1662,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_MemoryPotion":{
                     "Name": "Memory Potion",
                     "DisplayName": "{{i18n: obj.potions.MemoryPotion.name}}",
@@ -1681,24 +1681,24 @@
                     }
                 },
 */
-                "{{ModId}}_MoonseedPoison":{
-                    "Name": "Moonseed Poison",
-                    "DisplayName": "{{i18n: obj.potions.MoonseedPoison.name}}",
-                    "Description": "{{i18n: obj.potions.MoonseedPoison.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 999,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 90,
-                    "Edibility": -300,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion", "{{ModId}}_Unobtainable" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-/*
+        "{{ModId}}_MoonseedPoison": {
+          "Name": "Moonseed Poison",
+          "DisplayName": "{{i18n: obj.potions.MoonseedPoison.name}}",
+          "Description": "{{i18n: obj.potions.MoonseedPoison.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 999,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 90,
+          "Edibility": -300,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion", "{{ModId}}_Unobtainable"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        /*
                 "{{ModId}}_MopsusPotion":{
                     "Name": "Mopsus Potion",
                     "DisplayName": "{{i18n: obj.potions.MopsusPotion.name}}",
@@ -1717,7 +1717,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_MouthItchingAntidote":{
                     "Name": "Mouth Itching Antidote",
                     "DisplayName": "{{i18n: obj.potions.MouthItchingAntidote.name}}",
@@ -1736,7 +1736,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_MrsSkowersAllPurposeMagicalMessRemover":{
                     "Name": "Mrs Skower's All-Purpose Magical Mess Remover",
                     "DisplayName": "{{i18n: obj.potions.MrsSkowersAllPurposeMagicalMessRemover.name}}",
@@ -1755,7 +1755,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_MufflingDraught":{
                     "Name": "Muffling Draught",
                     "DisplayName": "{{i18n: obj.potions.MufflingDraught.name}}",
@@ -1774,7 +1774,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_MulledMead":{
                     "Name": "Mulled Mead",
                     "DisplayName": "{{i18n: obj.potions.MulledMead.name}}",
@@ -1793,7 +1793,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_MurtlapEssence":{
                     "Name": "Murtlap Essence",
                     "DisplayName": "{{i18n: obj.potions.MurtlapEssence.name}}",
@@ -1812,7 +1812,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_NoxiousPoison":{
                     "Name": "Noxious Poison",
                     "DisplayName": "{{i18n: obj.potions.NoxiousPoison.name}}",
@@ -1831,7 +1831,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_OculusPotion":{
                     "Name": "Oculus Potion",
                     "DisplayName": "{{i18n: obj.potions.OculusPotion.name}}",
@@ -1850,41 +1850,41 @@
                     }
                 },
 */
-                "{{ModId}}_PepperupPotion":{
-                    "Name": "Pepperup Potion (HP)",
-                    "DisplayName": "{{i18n: obj.potions.PepperupPotion.name}}",
-                    "Description": "{{i18n: obj.potions.PepperupPotion.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 100,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 99,
-                    "Edibility": 20,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-                "{{ModId}}_PolyjuicePotion":{
-                    "Name": "Polyjuice Potion (HP)",
-                    "DisplayName": "{{i18n: obj.potions.PolyjuicePotion.name}}",
-                    "Description": "{{i18n: obj.potions.PolyjuicePotion.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 100,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 100,
-                    "Edibility": 0,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-/*
+        "{{ModId}}_PepperupPotion": {
+          "Name": "Pepperup Potion (HP)",
+          "DisplayName": "{{i18n: obj.potions.PepperupPotion.name}}",
+          "Description": "{{i18n: obj.potions.PepperupPotion.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 100,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 99,
+          "Edibility": 20,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        "{{ModId}}_PolyjuicePotion": {
+          "Name": "Polyjuice Potion (HP)",
+          "DisplayName": "{{i18n: obj.potions.PolyjuicePotion.name}}",
+          "Description": "{{i18n: obj.potions.PolyjuicePotion.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 100,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 100,
+          "Edibility": 0,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        /*
                 "{{ModId}}_PompionPotion":{
                     "Name": "Pompion Potion",
                     "DisplayName": "{{i18n: obj.potions.PompionPotion.name}}",
@@ -1903,24 +1903,24 @@
                     }
                 },
 */
-                "{{ModId}}_PotionforDreamlessSleep":{
-                    "Name": "Potion for Dreamless Sleep",
-                    "DisplayName": "{{i18n: obj.potions.PotionforDreamlessSleep.name}}",
-                    "Description": "{{i18n: obj.potions.PotionforDreamlessSleep.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 999,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 102,
-                    "Edibility": -300,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-/*
+        "{{ModId}}_PotionforDreamlessSleep": {
+          "Name": "Potion for Dreamless Sleep",
+          "DisplayName": "{{i18n: obj.potions.PotionforDreamlessSleep.name}}",
+          "Description": "{{i18n: obj.potions.PotionforDreamlessSleep.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 999,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 102,
+          "Edibility": -300,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        /*
                 "{{ModId}}_PureMaltWhisky":{
                     "Name": "Pure Malt Whisky",
                     "DisplayName": "{{i18n: obj.potions.PureMaltWhisky.name}}",
@@ -1939,7 +1939,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_QuodpotSolution":{
                     "Name": "Quodpot Solution",
                     "DisplayName": "{{i18n: obj.potions.QuodpotSolution.name}}",
@@ -1958,7 +1958,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_RanoPotion":{
                     "Name": "Rano Potion",
                     "DisplayName": "{{i18n: obj.potions.RanoPotion.name}}",
@@ -1977,7 +1977,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_RatSpleenMixture":{
                     "Name": "Rat Spleen Mixture",
                     "DisplayName": "{{i18n: obj.potions.RatSpleenMixture.name}}",
@@ -1996,7 +1996,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_RatTonic":{
                     "Name": "Rat Tonic",
                     "DisplayName": "{{i18n: obj.potions.RatTonic.name}}",
@@ -2015,7 +2015,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_RedCurrantRum":{
                     "Name": "Red Currant Rum",
                     "DisplayName": "{{i18n: obj.potions.RedCurrantRum.name}}",
@@ -2034,7 +2034,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_RegenerationPotion":{
                     "Name": "Regeneration Potion",
                     "DisplayName": "{{i18n: obj.potions.RegenerationPotion.name}}",
@@ -2053,7 +2053,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_RegerminatingPotion":{
                     "Name": "Regerminating Potion",
                     "DisplayName": "{{i18n: obj.potions.RegerminatingPotion.name}}",
@@ -2072,7 +2072,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_ReplenishingPotion":{
                     "Name": "Replenishing Potion",
                     "DisplayName": "{{i18n: obj.potions.ReplenishingPotion.name}}",
@@ -2091,7 +2091,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_RestorationPotion":{
                     "Name": "Restoration Potion",
                     "DisplayName": "{{i18n: obj.potions.RestorationPotion.name}}",
@@ -2110,7 +2110,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_RevivePotion":{
                     "Name": "Revive Potion",
                     "DisplayName": "{{i18n: obj.potions.RevivePotion.name}}",
@@ -2129,7 +2129,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_RudimentaryBodyPotion":{
                     "Name": "Rudimentary Body Potion",
                     "DisplayName": "{{i18n: obj.potions.RudimentaryBodyPotion.name}}",
@@ -2148,7 +2148,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_ScintillationSolution":{
                     "Name": "Scintillation Solution",
                     "DisplayName": "{{i18n: obj.potions.ScintillationSolution.name}}",
@@ -2167,7 +2167,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_ScreamingSnakesHairPotion":{
                     "Name": "Screaming Snakes Hair Potion",
                     "DisplayName": "{{i18n: obj.potions.ScreamingSnakesHairPotion.name}}",
@@ -2186,7 +2186,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_ShrinkingSolution":{
                     "Name": "Shrinking Solution",
                     "DisplayName": "{{i18n: obj.potions.ShrinkingSolution.name}}",
@@ -2205,24 +2205,24 @@
                     }
                 },
 */
-                "{{ModId}}_SkeleGro":{
-                    "Name": "Skele-Gro (HP)",
-                    "DisplayName": "{{i18n: obj.potions.SkeleGro.name}}",
-                    "Description": "{{i18n: obj.potions.SkeleGro.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 100,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 118,
-                    "Edibility": 0,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-/*
+        "{{ModId}}_SkeleGro": {
+          "Name": "Skele-Gro (HP)",
+          "DisplayName": "{{i18n: obj.potions.SkeleGro.name}}",
+          "Description": "{{i18n: obj.potions.SkeleGro.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 100,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 118,
+          "Edibility": 0,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        /*
                 "{{ModId}}_SleekeazysHairPotion":{
                     "Name": "Sleekeazy's Hair Potion",
                     "DisplayName": "{{i18n: obj.potions.SleekeazysHairPotion.name}}",
@@ -2241,24 +2241,24 @@
                     }
                 },
 */
-                "{{ModId}}_SleepingDraught":{
-                    "Name": "Sleeping Draught",
-                    "DisplayName": "{{i18n: obj.potions.SleepingDraught.name}}",
-                    "Description": "{{i18n: obj.potions.SleepingDraught.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 999,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 120,
-                    "Edibility": -300,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-/*
+        "{{ModId}}_SleepingDraught": {
+          "Name": "Sleeping Draught",
+          "DisplayName": "{{i18n: obj.potions.SleepingDraught.name}}",
+          "Description": "{{i18n: obj.potions.SleepingDraught.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 999,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 120,
+          "Edibility": -300,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        /*
                 "{{ModId}}_SnufflingPotion":{
                     "Name": "Snuffling Potion",
                     "DisplayName": "{{i18n: obj.potions.SnufflingPotion.name}}",
@@ -2277,7 +2277,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_StarGrassSalve":{
                     "Name": "Star Grass Salve",
                     "DisplayName": "{{i18n: obj.potions.StarGrassSalve.name}}",
@@ -2296,7 +2296,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_StrengthPotion":{
                     "Name": "Strength Potion",
                     "DisplayName": "{{i18n: obj.potions.StrengthPotion.name}}",
@@ -2315,7 +2315,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_StrengtheningSolution":{
                     "Name": "Strengthening Solution",
                     "DisplayName": "{{i18n: obj.potions.StrengtheningSolution.name}}",
@@ -2334,7 +2334,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_StrongExstimuloPotion":{
                     "Name": "Strong Exstimulo Potion",
                     "DisplayName": "{{i18n: obj.potions.StrongExstimuloPotion.name}}",
@@ -2353,7 +2353,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_StrongInvigorationDraught":{
                     "Name": "Strong Invigoration Draught",
                     "DisplayName": "{{i18n: obj.potions.StrongInvigorationDraught.name}}",
@@ -2372,7 +2372,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_SwellingSolution":{
                     "Name": "Swelling Solution",
                     "DisplayName": "{{i18n: obj.potions.SwellingSolution.name}}",
@@ -2391,7 +2391,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_TenSecondPimpleVanisher":{
                     "Name": "Ten-Second Pimple Vanisher",
                     "DisplayName": "{{i18n: obj.potions.TenSecondPimpleVanisher.name}}",
@@ -2410,7 +2410,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_ThickGoldenPotion":{
                     "Name": "Thick Golden Potion",
                     "DisplayName": "{{i18n: obj.potions.ThickGoldenPotion.name}}",
@@ -2429,7 +2429,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_TolipanBlemishBlitzer":{
                     "Name": "Tolipan Blemish Blitzer",
                     "DisplayName": "{{i18n: obj.potions.TolipanBlemishBlitzer.name}}",
@@ -2448,7 +2448,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_TongueTyingLemonSquash":{
                     "Name": "Tongue Tying Lemon Squash",
                     "DisplayName": "{{i18n: obj.potions.TongueTyingLemonSquash.name}}",
@@ -2467,24 +2467,24 @@
                     }
                 },
 */
-                "{{ModId}}_TruthSerum":{
-                    "Name": "Truth Serum",
-                    "DisplayName": "{{i18n: obj.potions.TruthSerum.name}}",
-                    "Description": "{{i18n: obj.potions.TruthSerum.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 999,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 132,
-                    "Edibility": -300,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-/*
+        "{{ModId}}_TruthSerum": {
+          "Name": "Truth Serum",
+          "DisplayName": "{{i18n: obj.potions.TruthSerum.name}}",
+          "Description": "{{i18n: obj.potions.TruthSerum.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 999,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 132,
+          "Edibility": -300,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        /*
                 "{{ModId}}_TwilightMoonbeams":{
                     "Name": "Twilight Moonbeams",
                     "DisplayName": "{{i18n: obj.potions.TwilightMoonbeams.name}}",
@@ -2503,7 +2503,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_UncommonAntidote":{
                     "Name": "Uncommon Antidote",
                     "DisplayName": "{{i18n: obj.potions.UncommonAntidote.name}}",
@@ -2522,7 +2522,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_VenomousTentaculaJuice":{
                     "Name": "Venomous Tentacula Juice",
                     "DisplayName": "{{i18n: obj.potions.VenomousTentaculaJuice.name}}",
@@ -2541,24 +2541,24 @@
                     }
                 },
 */
-                "{{ModId}}_Veritaserum":{
-                    "Name": "Veritaserum (HP)",
-                    "DisplayName": "{{i18n: obj.potions.Veritaserum.name}}",
-                    "Description": "{{i18n: obj.potions.Veritaserum.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 100,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 136,
-                    "Edibility": 1,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-/*
+        "{{ModId}}_Veritaserum": {
+          "Name": "Veritaserum (HP)",
+          "DisplayName": "{{i18n: obj.potions.Veritaserum.name}}",
+          "Description": "{{i18n: obj.potions.Veritaserum.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 100,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 136,
+          "Edibility": 1,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        /*
                 "{{ModId}}_VeritaserumAntidote":{
                     "Name": "Veritaserum Antidote",
                     "DisplayName": "{{i18n: obj.potions.VeritaserumAntidote.name}}",
@@ -2577,7 +2577,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_VitamixPotion":{
                     "Name": "Vitamix Potion",
                     "DisplayName": "{{i18n: obj.potions.VitamixPotion.name}}",
@@ -2596,7 +2596,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_VolubilisPotion":{
                     "Name": "Volubilis Potion",
                     "DisplayName": "{{i18n: obj.potions.VolubilisPotion.name}}",
@@ -2615,7 +2615,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_WeaknessPotion":{
                     "Name": "Weakness Potion",
                     "DisplayName": "{{i18n: obj.potions.WeaknessPotion.name}}",
@@ -2634,7 +2634,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_Weedosoros":{
                     "Name": "Weedosoros",
                     "DisplayName": "{{i18n: obj.potions.Weedosoros.name}}",
@@ -2653,7 +2653,7 @@
                     }
                 },
 */
-/*
+        /*
                 "{{ModId}}_WideyePotion":{
                     "Name": "Wideye Potion",
                     "DisplayName": "{{i18n: obj.potions.WideyePotion.name}}",
@@ -2672,24 +2672,24 @@
                     }
                 },
 */
-                "{{ModId}}_WiggenweldPotion":{
-                    "Name": "Wiggenweld Potion (HP)",
-                    "DisplayName": "{{i18n: obj.potions.WiggenweldPotion.name}}",
-                    "Description": "{{i18n: obj.potions.WiggenweldPotion.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 100,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 143,
-                    "Edibility": 50,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-/*
+        "{{ModId}}_WiggenweldPotion": {
+          "Name": "Wiggenweld Potion (HP)",
+          "DisplayName": "{{i18n: obj.potions.WiggenweldPotion.name}}",
+          "Description": "{{i18n: obj.potions.WiggenweldPotion.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 100,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 143,
+          "Edibility": 50,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        },
+        /*
                 "{{ModId}}_WitSharpeningPotion":{
                     "Name": "Wit-Sharpening Potion",
                     "DisplayName": "{{i18n: obj.potions.WitSharpeningPotion.name}}",
@@ -2708,24 +2708,24 @@
                     }
                 },
 */
-                "{{ModId}}_WolfsbanePotion":{
-                    "Name": "Wolfsbane Potion (HP)",
-                    "DisplayName": "{{i18n: obj.potions.WolfsbanePotion.name}}",
-                    "Description": "{{i18n: obj.potions.WolfsbanePotion.desc}}",
-                    "Type": "Basic",
-                    "Category": -26,
-                    "Price": 100,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-                    "SpriteIndex": 145,
-                    "Edibility": 0,
-                    "IsDrink": true,
-                    "ExcludeFromShippingCollection": true,
-                    "ContextTags": [ "{{ModId}}_Potion" ],
-                    "CustomFields": {
-                        "{{ModId}}_CategoryName": "Potion"
-                    }
-                },
-/*
+        "{{ModId}}_WolfsbanePotion": {
+          "Name": "Wolfsbane Potion (HP)",
+          "DisplayName": "{{i18n: obj.potions.WolfsbanePotion.name}}",
+          "Description": "{{i18n: obj.potions.WolfsbanePotion.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 100,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 145,
+          "Edibility": 0,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["{{ModId}}_Potion"],
+          "CustomFields": {
+            "{{ModId}}_CategoryName": "Potion"
+          }
+        }
+        /*
                 "{{ModId}}_WoundCleaningPotion":{
                     "Name": "Wound-Cleaning Potion",
                     "DisplayName": "{{i18n: obj.potions.WoundCleaningPotion.name}}",
@@ -2744,7 +2744,7 @@
                     }
                 }
 */
-            }
-        }
-    ]
+      }
+    }
+  ]
 }

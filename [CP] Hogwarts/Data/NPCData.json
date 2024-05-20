@@ -1,99 +1,98 @@
 {
-    "Changes": [
-        
-        {
-            "LogName": "NPC Character Data",
-            "Action": "EditData",
-            "Target": "Data/Characters",
-            "Entries": {
-                "HogwartsAberforth": {
-                    "DisplayName": "{{i18n: npc.Aberforth.name}}",
-                    "BirthSeason": "Summer",
-                    "BirthDay": 12,
-                    "Gender": "Male",
-                    "Age": "Adult",
-                    "Manner": "Neutral",
-                    "SocialAnxiety": "Neutral",
-                    "Optimism": "Neutral",
-                    "CanBeRomanced": false,
-                    "Calendar": "HiddenUntilMet",
-                    "SocialTab": "UnknownUntilMet",
-                    "CanVisitIsland": "FALSE",
-                    "IntroductionsQuest": false,
-                    "PerfectionScore": true,
-                    "EndSlideShow": "TrailingGroup",
-                    "Home": [
-                      {
-                        "Id": "Default",
-                        "Condition": null,
-                        "Location": "{{ModId}}_HogsHeadInn",
-                        "Tile": {
-                          "X": 6,
-                          "Y": 5
-                        },
-                        "Direction": "down"
-                      }
-                    ]
-                },
-                "HogwartsMPuddifoot": {
-                    "DisplayName": "{{i18n: npc.MPuddifoot.name}}",
-                    "BirthSeason": "Fall",
-                    "BirthDay": 5,
-                    "Gender": "Female",
-                    "Age": "Adult",
-                    "Manner": "Polite",
-                    "SocialAnxiety": "Neutral",
-                    "Optimism": "Positive",
-                    "CanBeRomanced": false,
-                    "Calendar": "HiddenUntilMet",
-                    "SocialTab": "UnknownUntilMet",
-                    "CanVisitIsland": "FALSE",
-                    "IntroductionsQuest": false,
-                    "PerfectionScore": true,
-                    "EndSlideShow": "TrailingGroup",
-                    "Home": [
-                      {
-                        "Id": "Default",
-                        "Condition": null,
-                        "Location": "{{ModId}}_MadamPuddifootsTeaShop",
-                        "Tile": {
-                          "X": 6,
-                          "Y": 5
-                        },
-                        "Direction": "down"
-                      }
-                    ]
-                },
-                "HogwartsOllivander": {
-                    "DisplayName": "{{i18n: npc.Ollivander.name}}",
-                    "BirthSeason": "Fall",
-                    "BirthDay": 25,
-                    "Gender": "Male",
-                    "Age": "Adult",
-                    "Manner": "Polite",
-                    "SocialAnxiety": "Neutral",
-                    "Optimism": "Positive",
-                    "CanBeRomanced": false,
-                    "Calendar": "HiddenUntilMet",
-                    "SocialTab": "UnknownUntilMet",
-                    "CanVisitIsland": "FALSE",
-                    "IntroductionsQuest": false,
-                    "PerfectionScore": true,
-                    "EndSlideShow": "TrailingGroup",
-                    "Home": [
-                      {
-                        "Id": "Default",
-                        "Condition": null,
-                        "Location": "{{ModId}}_Ollivanders",
-                        "Tile": {
-                          "X": 6,
-                          "Y": 7
-                        },
-                        "Direction": "down"
-                      }
-                    ]
-                }
+  "Changes": [
+    {
+      "LogName": "NPC Character Data",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "HogwartsAberforth": {
+          "DisplayName": "{{i18n: npc.Aberforth.name}}",
+          "BirthSeason": "Summer",
+          "BirthDay": 12,
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Neutral",
+          "CanBeRomanced": false,
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "UnknownUntilMet",
+          "CanVisitIsland": "FALSE",
+          "IntroductionsQuest": false,
+          "PerfectionScore": true,
+          "EndSlideShow": "TrailingGroup",
+          "Home": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Location": "{{ModId}}_HogsHeadInn",
+              "Tile": {
+                "X": 6,
+                "Y": 5
+              },
+              "Direction": "down"
             }
+          ]
+        },
+        "HogwartsMPuddifoot": {
+          "DisplayName": "{{i18n: npc.MPuddifoot.name}}",
+          "BirthSeason": "Fall",
+          "BirthDay": 5,
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "CanBeRomanced": false,
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "UnknownUntilMet",
+          "CanVisitIsland": "FALSE",
+          "IntroductionsQuest": false,
+          "PerfectionScore": true,
+          "EndSlideShow": "TrailingGroup",
+          "Home": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Location": "{{ModId}}_MadamPuddifootsTeaShop",
+              "Tile": {
+                "X": 6,
+                "Y": 5
+              },
+              "Direction": "down"
+            }
+          ]
+        },
+        "HogwartsOllivander": {
+          "DisplayName": "{{i18n: npc.Ollivander.name}}",
+          "BirthSeason": "Fall",
+          "BirthDay": 25,
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "CanBeRomanced": false,
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "UnknownUntilMet",
+          "CanVisitIsland": "FALSE",
+          "IntroductionsQuest": false,
+          "PerfectionScore": true,
+          "EndSlideShow": "TrailingGroup",
+          "Home": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Location": "{{ModId}}_Ollivanders",
+              "Tile": {
+                "X": 6,
+                "Y": 7
+              },
+              "Direction": "down"
+            }
+          ]
         }
-    ]
+      }
+    }
+  ]
 }
