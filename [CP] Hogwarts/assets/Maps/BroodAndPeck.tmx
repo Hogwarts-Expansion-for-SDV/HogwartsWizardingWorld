@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="35" height="15" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="3">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="35" height="15" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="3">
  <properties>
   <property name="AmbientLight" value="110 110 110"/>
   <property name="DayTiles_asdf" value="Buildings 3 1 24 Buildings 9 1 24 Buildings 15 1 24 Buildings 21 1 24 Back 3 3 25 Back 21 3 25"/>
@@ -42,10 +42,10 @@
  <tileset firstgid="85" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
   <image source="townInterior.png" width="512" height="1088"/>
  </tileset>
- <tileset firstgid="2261" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
-  <image source="walls_and_floors.png" width="256" height="560"/>
+ <tileset firstgid="2261" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="688" columns="16">
+  <image source="walls_and_floors.png" width="256" height="688"/>
  </tileset>
- <tileset firstgid="2821" name="z_hptiles" tilewidth="16" tileheight="16" tilecount="2048" columns="32">
+ <tileset firstgid="2949" name="z_hptiles" tilewidth="16" tileheight="16" tilecount="2048" columns="32">
   <image source="z_hptiles.png" width="512" height="1024"/>
  </tileset>
  <layer id="1" name="Back" width="35" height="15">
@@ -67,19 +67,19 @@
  </objectgroup>
  <layer id="3" name="Buildings" width="35" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjZGBgYKIhZgZiRiLVsTIggCQN2OxIdmQCLcwC4mxmTLUwdaI0xMhu6QS6oQuIu4HYlokBBSCrwwfW8zAwbADijUC8CYg3A/EWIN7Kg6ruMjumXqCSBcjKfgIj7BcQx+JwiygbA4MYGxGOIgO8B+IPSHxpoBtkmDDVERsulAB+YBgIMCL404HsGYyY6mjlFnWkSNEH2muAxW56uYUcgM0tp5Hy2yYoWx0tjZICgFoPAHECPjWmzKhuecWMqeYSFjFSATFhH4rmFi4WBgZuIOaB0iD8iU5uKWWmT3ohxo6pg8gtW+ngFlCaJ9YOkDpDIjErGXpgmFgAAMD+IRs=
+   eJxjZGBgYKIhZgZiRiLVsTIggCQN2OxIdmQCLcwC4mwgzmFGVQtTJ0pDjGxHJ9D+LiDuBuIeZuzqCAF9XgYGAyA2BGIjIDYGYhMgNuVFVXeZHVMvDwPDAh4k/k9ghP0C4lgmVHVwN7MxMIixEeEoMsB7IP6AxJcGukGGCVMdseFCCeAHhoEAI4I/HciewYipjlZuWY4UKfpAew2w2E0vt5ADsLnlNDOCvQnKRvYnqQCo9QAQJ+BTY8qM6pZXzJhqLmERIxUQE/ahaG7hYmFg4AZiHigNwp/o5JZSZvqkF2LsmDqI3LKVDm4BpXli7QCpMyQSs5KhB4aJBQB9NSA1
   </data>
  </layer>
  <objectgroup id="4" name="Buildings"/>
  <layer id="5" name="Front" width="35" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBhcYCsrA8M2Vtzy+TwMDAVAXAjERUBcDMQlQFzKQ76dOcyofHYofRXojmt43NIPtHMCEE8E4klAPBmIpwDxVDS3bGbH1IsudJORgeEWEPfgcMtXoDu+4XELNcFvoDv+MGKKY/EGVcBzbtL1EOuWThLNZicjHRHrFnL8SSog5JZT0PRFjj9JBchuOcWMUxldAMgtyNnnNdA9b5gh9Gs6uw3dLQMJaO0WUtI8rd0CSvPE5lWQOk4g5iICs0D1cBCpHoZhgJA6UBAaEok5ydBDKgYAUgIjLA==
+   eJxjYBhcYCsrA8M2Vtzy73kYGD4A8Ucg/gTEn4H4CxB/5aGeG9ih9FWgO67hcQs/LwODABALArEQEAsDsQgQi/KiqtvMjqkXXegmIwPDLSC2ZcKu7ivQHd/wuIWa4DfQHX8YMcWxeIMqIJ2MuCPWLZwkmt1OQ7eQ409SASG3nGKG0OT4k1SA7BaYvQMFQG5Bzj6vge55wwyhX9PZbehuGUhAa7eQkuZp7RZQmic2r4LUcQIxFxGYBaqHg0j1MAwDhNRxA7EhkZiTDD2kYgDQliH4
   </data>
  </layer>
  <objectgroup id="6" name="Front"/>
  <layer id="9" name="Front1" width="35" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFIxF0cw+0CxBgNQ3d0jmI/LlyELllFAxf0DuI0tnaQeSWUUAdAADlugPl
+   eJxjYBgFIxFw8wy0CxBAm4Zu4RxE/tQcRG4ZBcMX8A6idKY7iNwyCqgDAOEtAOs=
   </data>
  </layer>
  <objectgroup id="10" name="Front1"/>
