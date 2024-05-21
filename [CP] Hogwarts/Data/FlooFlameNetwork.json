@@ -1,0 +1,169 @@
+{
+    "Changes": [
+        {
+            "LogName": "Floo Flame Network - Hogsmeade Network",
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "Entries": {
+                "{{ModId}}_HogsmeadeNetwork": {
+                    "Destinations": [
+                        {
+                            "Id": "{{ModId}}_HogsmeadeStation",
+                            "DisplayName": "{{i18n: floo.hogsmeadestation}}",
+                            "TargetLocation": "{{ModId}}_HogsmeadeStation",
+                            "TargetTile": {
+                                "X": 33,
+                                "Y": 14
+                            },
+                            "TargetDirection": "down"
+                        },
+                        {
+                            "Id": "{{ModId}}_HogsmeadeVillageCenter",
+                            "DisplayName": "{{i18n: floo.hogsmeadevillagecenter}}",
+                            "TargetLocation": "{{ModId}}_HogsmeadeVillageCenter",
+                            "TargetTile": {
+                                "X": 88,
+                                "Y": 62
+                            },
+                            "TargetDirection": "down"
+                        },
+                        {
+                            "Id": "{{ModId}}_HogsmeadeVillageCrossroads",
+                            "DisplayName": "{{i18n: floo.hogsmeadevillagecrossroads}}",
+                            "TargetLocation": "{{ModId}}_HogsmeadeVillageCrossroads",
+                            "TargetTile": {
+                                "X": 36,
+                                "Y": 117
+                            },
+                            "TargetDirection": "down"
+                        },
+                        {
+                            "Id": "{{ModId}}_BusFloo",
+                            "DisplayName": "{{i18n: floo.bus}}",
+                            "TargetLocation": "BusStop",
+                            "TargetTile": {
+                                "X": 13,
+                                "Y": 9
+                            },
+                            "TargetDirection": "down"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Floo Flame Network - Hogsmeade Station Flame",
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_HogsmeadeStation",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 33,
+                        "Y": 13
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                      "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_HogsmeadeStation"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 33,
+                        "Y": 12
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                      "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_HogsmeadeStation"
+                    }
+                }
+            ]
+        },
+        {
+            "LogName": "Floo Flame Network - Hogsmeade Village Flames",
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 88,
+                        "Y": 61
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                      "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_HogsmeadeVillageCenter"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 88,
+                        "Y": 60
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                      "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_HogsmeadeVillageCenter"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 89,
+                        "Y": 61
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                      "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_HogsmeadeVillageCenter"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 89,
+                        "Y": 60
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                      "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_HogsmeadeVillageCenter"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 36,
+                        "Y": 116
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                      "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_HogsmeadeVillageCrossroads"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 36,
+                        "Y": 115
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                      "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_HogsmeadeVillageCrossroads"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 37,
+                        "Y": 116
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                      "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_HogsmeadeVillageCrossroads"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 37,
+                        "Y": 115
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                      "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_HogsmeadeVillageCrossroads"
+                    }
+                }
+            ]
+        }
+    ]
+}
