@@ -1,6 +1,14 @@
 {
   "Changes": [
     {
+      "LogName": "Mail data for actual mail",
+      "Action": "EditData",
+      "Target": "Data/mail",
+      "Entries": {
+        "{{ModId}}_GetFlooFlame": "{{i18n: floo.mail.body}}%item bigobject {{ModId}}_FlooFlame%%[#]{{i18n: floo.mail.subject}}"
+      }
+    },
+    {
       "LogName": "Quest flags",
       "Action": "EditData",
       "Target": "Data/mail",

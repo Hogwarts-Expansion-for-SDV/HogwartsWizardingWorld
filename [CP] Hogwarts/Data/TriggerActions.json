@@ -1,0 +1,16 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_FlooFlame": {
+                    "Id": "{{ModId}}_FlooFlame",
+                    "Trigger": "DayStarted",
+                    "HostOnly": true,
+                    "Action": "AddMail Current {{ModId}}_GetFlooFlame Now"
+                }
+            }
+        }
+    ]
+}
