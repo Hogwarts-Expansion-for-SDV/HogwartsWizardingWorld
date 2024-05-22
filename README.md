@@ -1,6 +1,6 @@
 # The Hogwarts Wizarding World Expansion
 
-This is a hub for team members current and prospective mod-users and mod-makers to offer support for features, report bugs, and request new features or ideas for the Hogwarts Expansion mod for Stardew Valley. A description of the latest release's features can be found [in its Nexus page](https://www.nexusmods.com/stardewvalley/mods/14858).
+This is a hub for team members current and prospective mod-users and mod-makers to offer support for features, report bugs, and request new features or ideas for the Hogwarts Expansion mod for Stardew Valley. A description of the latest release's features can be found in its [Nexus page](https://www.nexusmods.com/stardewvalley/mods/14858).
 
 ## For Non-Team Members
 
