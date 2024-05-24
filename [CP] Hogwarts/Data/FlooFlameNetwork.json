@@ -38,12 +38,12 @@
                             "TargetDirection": "down"
                         },
                         {
-                            "Id": "{{ModId}}_BusFloo",
-                            "DisplayName": "{{i18n: floo.bus}}",
-                            "TargetLocation": "BusStop",
+                            "Id": "{{ModId}}_FarmFloo",
+                            "DisplayName": "{{i18n: floo.farm}}",
+                            "TargetLocation": "{{ModId}}_FlooFlameCabin",
                             "TargetTile": {
-                                "X": 18,
-                                "Y": 11
+                                "X": 5,
+                                "Y": 5
                             },
                             "TargetDirection": "down"
                         }
@@ -160,7 +160,103 @@
                     },
                     "Layer": "Buildings",
                     "SetProperties": {
-                      "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_HogsmeadeVillageCrossroads"
+                        "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_HogsmeadeVillageCrossroads"
+                    }
+                }
+            ]
+        },
+        {
+            "LogName": "Adding Floo Flame cabin to the carpenter's menu",
+            "Action": "EditData",
+            "Target": "Data/Buildings",
+            "Entries": {
+                "{{ModId}}_FlooFlameCabin": {
+                    "Name": "{{i18n: buildings.FlooFlame.name}}",
+                    "Description": "{{i18n: buildings.FlooFlame.description}}",
+                    "Texture": "{{InternalAssetKey: assets/Maps/FlooFlameCabin.png}}",
+                    "DrawLayers": [
+                        {
+                            "Id": "{{ModId}}_FlooFlameFront",
+                            "SourceRect": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 48,
+                                "Height": 32
+                            },
+                            "DrawPosition": "0, 0"
+                        },
+                        {
+                            "Id": "{{ModId}}_FlooFlameBuilding",
+                            "SourceRect": {
+                                "X": 0,
+                                "Y": 32,
+                                "Width": 48,
+                                "Height": 32
+                            },
+                            "DrawPosition": "0, 32"
+                        }
+
+                    ],
+                    "Builder": "Robin",
+                    "BuildCondition": "BUILDINGS_CONSTRUCTED All \"{{ModId}}_FlooFlameCabin\" 0 0",
+                    "BuildCost": 100,
+                    "MagicalConstruction": true,
+                    "Size": {
+                        "X": 3,
+                        "Y": 2
+                    },
+                    "NonInstancedIndoorLocation": "{{ModId}}_FlooFlameCabin",
+                    "DrawShadow": false,
+                    "HumanDoor": {
+                      "X": 1,
+                      "Y": 1
+                    }
+                }
+            }
+        },
+        {
+            "LogName": "Add cabin to the Floo Network",
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_FlooFlameCabin",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 5,
+                        "Y": 4
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                      "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_FarmFloo"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 6,
+                        "Y": 4
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                      "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_FarmFloo"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 5,
+                        "Y": 3
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                      "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_FarmFloo"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 6,
+                        "Y": 3
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                      "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_FarmFloo"
                     }
                 }
             ]
