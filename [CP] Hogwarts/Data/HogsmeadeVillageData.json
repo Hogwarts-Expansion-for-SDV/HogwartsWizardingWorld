@@ -1,6 +1,6 @@
 {
   "Changes": [
-/*Brood and Peck*/
+    /*Brood and Peck*/
     {
       "LogName": "Brood and Peck Entrance",
       "Action": "EditMap",
@@ -13,7 +13,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Warp 11 13 {{ModId}}_BroodAndPeck" 
+            "Action": "Warp 11 13 {{ModId}}_BroodAndPeck"
           }
         }
       ]
@@ -25,17 +25,27 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 78,
+            "X": 77,
+            "Y": 42
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: signs.shops.BroodAndPeck}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 77,
             "Y": 43
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Brood and Peck"
+            "Action": "Dialogue {{i18n: signs.shops.BroodAndPeck}}"
           }
         }
       ]
     },
-/*Ceridwen's Cauldrons*/
+    /*Ceridwen's Cauldrons*/
     {
       "LogName": "Ceridwen's Cauldrons Entrance",
       "Action": "EditMap",
@@ -61,16 +71,26 @@
         {
           "Position": {
             "X": 104,
+            "Y": 106
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: signs.shops.CeridwensCauldrons}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 104,
             "Y": 107
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Ceridwen's Cauldrons"
+            "Action": "Dialogue {{i18n: signs.shops.CeridwensCauldrons}}"
           }
         }
       ]
     },
-/*Dervish and Banges*/
+    /*Dervish and Banges*/
     {
       "LogName": "Dervish and Banges Entrance",
       "Action": "EditMap",
@@ -96,16 +116,26 @@
         {
           "Position": {
             "X": 72,
-            "Y": 69
+            "Y": 67
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Dervish and Banges"
+            "Action": "Dialogue {{i18n: signs.shops.DervishandBanges}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 72,
+            "Y": 68
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: signs.shops.DervishandBanges}}"
           }
         }
       ]
     },
-/*Dogweed and Deathcap*/
+    /*Dogweed and Deathcap*/
     {
       "LogName": "Dogweed and Deathcap Entrance",
       "Action": "EditMap",
@@ -130,17 +160,17 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 67,
+            "X": 65,
             "Y": 19
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Dogweed and Deathcap"
+            "Action": "Dialogue {{i18n: signs.shops.DogweedAndDeathcap}}"
           }
         }
       ]
     },
-/*Dominic Maestro's Music Shop*/
+    /*Dominic Maestro's Music Shop*/
     {
       "LogName": "Dominic Maestro's Music Shop Entrance",
       "Action": "EditMap",
@@ -165,17 +195,27 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 117,
+            "X": 118,
+            "Y": 74
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: signs.shops.DominicMaestrosMusicShop}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 118,
             "Y": 75
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Dominic Maestro's Music Shop"
+            "Action": "Dialogue {{i18n: signs.shops.DominicMaestrosMusicShop}}"
           }
         }
       ]
     },
-/*Gladrags Wizardwear*/
+    /*Gladrags Wizardwear*/
     {
       "LogName": "Gladrags Wizardwear Entrance",
       "Action": "EditMap",
@@ -200,17 +240,17 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 86,
+            "X": 85,
             "Y": 71
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Gladrags Wizardwear"
+            "Action": "Dialogue {{i18n: signs.shops.GladragsWizardwear}}"
           }
         }
       ]
     },
-/*Hog's Head Inn*/
+    /*Hog's Head Inn*/
     {
       "LogName": "Hog's Head Inn Entrance",
       "Action": "EditMap",
@@ -235,17 +275,27 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 63,
+            "X": 62,
+            "Y": 97
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: signs.shops.HogsHeadInn}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 62,
             "Y": 98
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Hog's Head Inn"
+            "Action": "Dialogue {{i18n: signs.shops.HogsHeadInn}}"
           }
         }
       ]
     },
-/*Honeydukes*/
+    /*Honeydukes*/
     {
       "LogName": "Honeydukes Entrance",
       "Action": "EditMap",
@@ -271,11 +321,11 @@
         {
           "Position": {
             "X": 94,
-            "Y": 51
+            "Y": 49
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Honeydukes"
+            "Action": "Dialogue {{i18n: signs.shops.Honeydukes}}"
           }
         }
       ]
@@ -321,7 +371,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue STORAGE EMPLOYEES ONLY"
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.exployeesonly}}"
           }
         }
       ]
@@ -338,7 +388,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue A bin of candyfloss."
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.candyfloss}}"
           }
         }
       ]
@@ -355,7 +405,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{Random: Exploding bon bons., They pack a punch!}}"
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.explodingbonbons{{Random:1,2}}}}"
           }
         },
         {
@@ -365,7 +415,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Various flavors of cauldron cakes."
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.cauldroncakes}}"
           }
         },
         {
@@ -375,7 +425,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{Random: A globe filled with Bertie Bott's Every Flavor Beans., Dirt., Coconut., Bogey., Peppermint.}}"
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.bertiebotts |Flavor={{i18n: mapstrings.Honeydukes.bertiebotts.flavor{{Random:1,2,3,4}}}}}}"
           }
         },
         {
@@ -385,7 +435,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{Random: Glass bottles of sweet pumpkin juice., Boxed chocolate wands.}}"
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.juiceorwands{{Random:1,2}}}}"
           }
         },
         {
@@ -395,7 +445,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue All confections buy one get one free every 29th of the month!"
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.sale}}"
           }
         },
         {
@@ -405,7 +455,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{Random: Pumpkin pasties., Baggies of pink coconut ice.}}"
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.pastiesorice{{Random:1,2}}}}"
           }
         },
         {
@@ -415,7 +465,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{Random: Yikes blood flavored lollipops., A jar filled with Drooble's Best Blowing Gum., }}"
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.lollipopsorgum{{Random:1,2}}}}"
           }
         },
         {
@@ -425,7 +475,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{Random: Assorted Fortescue's ice-cream., Vanilla with thickened butterbeer swirl., Chocolate strawberry peanut-butter with nuts.}}"
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.icecream |Flavor={{i18n: mapstrings.Honeydukes.icecream.flavor{{Random:1,2}}}}}}"
           }
         },
         {
@@ -435,12 +485,12 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{Random: Weasley brand skiving snackboxes 'Sweets that make you ill.', Fever fudge and nosebleed nougat.}}"
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.snackboxesornougat{{Random:1,2}}}}"
           }
         }
       ]
     },
-/*J. Pippin's Potions*/
+    /*J. Pippin's Potions*/
     {
       "LogName": "J. Pippin's Potions Entrance",
       "Action": "EditMap",
@@ -465,17 +515,27 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 58,
+            "X": 57,
+            "Y": 82
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: signs.shops.JPippinsPotions}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 57,
             "Y": 83
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue J. Pippin's Potions"
+            "Action": "Dialogue {{i18n: signs.shops.JPippinsPotions}}"
           }
         }
       ]
     },
-/*Madam Puddifoot's*/
+    /*Madam Puddifoot's*/
     {
       "LogName": "Madam Puddifoot's Tea Shop Entrance",
       "Action": "EditMap",
@@ -500,17 +560,27 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 113,
+            "X": 106,
+            "Y": 61
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: signs.shops.MadamPuddifootsTeaShop}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 106,
             "Y": 62
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Madam Puddifoot's Tea Shop"
+            "Action": "Dialogue {{i18n: signs.shops.MadamPuddifootsTeaShop}}"
           }
         }
       ]
     },
-/*Madam Snelling's*/
+    /*Madam Snelling's*/
     {
       "LogName": "Madam Snelling's Tress Emporium Entrance",
       "Action": "EditMap",
@@ -535,17 +605,27 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 55,
+            "X": 62,
+            "Y": 60
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: signs.shops.MadamSnellingsTressEmporium}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 62,
             "Y": 61
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Madam Snelling's Tress Emporium"
+            "Action": "Dialogue {{i18n: signs.shops.MadamSnellingsTressEmporium}}"
           }
         }
       ]
     },
-/*Ollivander's*/
+    /*Ollivander's*/
     {
       "LogName": "Ollivanders Entrance",
       "Action": "EditMap",
@@ -571,11 +651,11 @@
         {
           "Position": {
             "X": 92,
-            "Y": 96
+            "Y": 94
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Ollivanders"
+            "Action": "Dialogue {{i18n: signs.shops.Ollivanders}}"
           }
         }
       ]
@@ -610,7 +690,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue An encyclopedia on wand cores."
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.encyclopedia}}"
           }
         }
       ]
@@ -627,7 +707,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{Random: A workbench used for crafting new wands., Tattered paper with plans depicting lighter faster wands for better spellwork., Samplings of the three best wand cores known to wizardkind.}}",
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.workbench{{Random:1,2,3}}}}"
           }
         }
       ]
@@ -644,7 +724,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{Random: Blackthorn phoenix feather very flexible 6 1/2 inches.,}}"
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.blackthorn}}"
           }
         }
       ]
@@ -661,7 +741,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{Random: Wands measuring within 7 inches., Red Oak unicorn hair swishy}}"
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.seveninches{{Random:1,2}}}}"
           }
         }
       ]
@@ -678,7 +758,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{Random: Wands measuring within 8 inches., }}"
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.eightinches}}"
           }
         }
       ]
@@ -695,7 +775,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{Random: Wands measuring from 9 to 9 1/2 inches., }}"
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.nineinches}}"
           }
         }
       ]
@@ -712,7 +792,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{Random: Wands measuring from 9 1/2 to 10 inches., }}"
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.ninetoteninches}}"
           }
         }
       ]
@@ -729,7 +809,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{Random: Wands measuring from 10 to 10 1/2 inches., }}"
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.teninches}}"
           }
         }
       ]
@@ -746,7 +826,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{Random: Wands measuring from 10 1/2 to 11 inches., }}"
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.tentoeleveninches}}"
           }
         }
       ]
@@ -763,7 +843,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{Random: Wands measuring from 11 to 13 inches., }}"
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.thirteeninches}}"
           }
         }
       ]
@@ -780,7 +860,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{Random: Wands measuring within 14 inches., }}"
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.fourteeninches}}"
           }
         }
       ]
@@ -797,7 +877,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{Random: Wands measuring within 15 inches., }}"
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.fifteeninches}}"
           }
         }
       ]
@@ -814,12 +894,12 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{Random: Wands measuring from 16 to 18 inches., }}"
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.sixteeninches}}"
           }
         }
       ]
     },
-/*Spintwitches Sporting*/
+    /*Spintwitches Sporting*/
     {
       "LogName": "Spintwitches Sporting Needs Entrance",
       "Action": "EditMap",
@@ -844,17 +924,27 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 99,
+            "X": 100,
+            "Y": 94
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: signs.shops.SpintwitchesSportingNeeds}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 100,
             "Y": 95
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Spintwitches Sporting Needs"
+            "Action": "Dialogue {{i18n: signs.shops.SpintwitchesSportingNeeds}}"
           }
         }
       ]
     },
-/*The Magic Neep*/
+    /*The Magic Neep*/
     {
       "LogName": "The Magic Neep Entrance",
       "Action": "EditMap",
@@ -879,17 +969,27 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 22,
+            "X": 21,
+            "Y": 73
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: signs.shops.TheMagicNeep}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 21,
             "Y": 74
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue The Magic Neep"
+            "Action": "Dialogue {{i18n: signs.shops.TheMagicNeep}}"
           }
         }
       ]
     },
-/*Three Broomsticks*/
+    /*Three Broomsticks*/
     {
       "LogName": "Three Broomsticks Inn Entrance",
       "Action": "EditMap",
@@ -914,17 +1014,27 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 100,
+            "X": 93,
+            "Y": 84
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: signs.shops.ThreeBroomsticksInn}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 93,
             "Y": 85
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Three Broomsticks Inn"
+            "Action": "Dialogue {{i18n: signs.shops.ThreeBroomsticksInn}}"
           }
         }
       ]
     },
-/*Tomes and Scrolls*/
+    /*Tomes and Scrolls*/
     {
       "LogName": "Tomes and Scrolls Entrance",
       "Action": "EditMap",
@@ -949,17 +1059,27 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 98,
+            "X": 97,
+            "Y": 106
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: signs.shops.TomesAndScrolls}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 97,
             "Y": 107
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Tomes and Scrolls"
+            "Action": "Dialogue {{i18n: signs.shops.TomesAndScrolls}}"
           }
         }
       ]
     },
-/*Zonko's*/
+    /*Zonko's*/
     {
       "LogName": "Zonko's Joke Shop Entrance",
       "Action": "EditMap",
@@ -984,18 +1104,27 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 78,
+            "X": 85,
+            "Y": 84
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: signs.shops.ZonkosJokeShop}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 85,
             "Y": 85
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Zonko's Joke Shop"
+            "Action": "Dialogue {{i18n: signs.shops.ZonkosJokeShop}}"
           }
         }
       ]
-    }
-    /*Other*/,
-    {
+    },
+    /*Other*/ {
       "LogName": "Community Garden Sign",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogsmeadeVillage",
@@ -1007,7 +1136,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Community Garden"
+            "Action": "Dialogue {{i18n: signs.HogwartsVillage.CommunityGarden}}"
           }
         }
       ]
@@ -1024,7 +1153,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue A monument to those brave souls lost at the Battle of Hogwarts May 2, 1998."
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.battle}}"
           }
         }
       ]
@@ -1041,7 +1170,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Paul Grant 2/3/19XX - 3/20/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.PaulGrant}}"
           }
         }
       ]
@@ -1058,7 +1187,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Alan Sidney Patrick Rickman 2/21/19XX - 1/14/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.AlanSidney}}"
           }
         }
       ]
@@ -1075,7 +1204,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Leslie Samuel Phillips 4/20/19XX - 11/7/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.LesliePhillips}}"
           }
         }
       ]
@@ -1092,7 +1221,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Anthony Robert 'Robbie' Coltrane 3/30/19XX - 10/14/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.AnthonyColtrane}}"
           }
         }
       ]
@@ -1109,7 +1238,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Richard Thomas Griffiths 7/31/19XX - 3/28/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.RichardGriffiths}}"
           }
         }
       ]
@@ -1126,7 +1255,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Richard St John Frnacis Harris 10/1/19XX - 10/25/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.RichardHarris}}"
           }
         }
       ]
@@ -1143,7 +1272,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Helen Elizabeth McCrory 8/17/19XX - 4/16/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.HelenMcCrory}}"
           }
         }
       ]
@@ -1160,7 +1289,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Verne Jay Troyer 1/1/19XX - 4/21/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.VerneTroyer}}"
           }
         }
       ]
@@ -1177,7 +1306,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Timothy Sydney Robert Hardy 10/29/19XX - 8/3/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.TimothyHardy}}"
           }
         }
       ]
@@ -1194,7 +1323,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Sir John Vincent Hurt 1/22/19XX - 1/25/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.SirHurt}}"
           }
         }
       ]
@@ -1211,7 +1340,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Timothy Bateson 4/3/19XX - 9/15/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.TimothyBateson}}"
           }
         }
       ]
@@ -1228,7 +1357,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Terence Bayler 1/24/19XX - 9/21/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.TerenceBayler}}"
           }
         }
       ]
@@ -1245,7 +1374,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Robert Arthur Knox 8/21/19XX - 5/24/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.RobertKnox}}"
           }
         }
       ]
@@ -1262,7 +1391,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Sam Beazley 3/29/19XX - 6/12/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.SamBeazley}}"
           }
         }
       ]
@@ -1279,7 +1408,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Simon Paul Adams Ritter 12/20/19XX - 4/5/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.SimonRitter}}"
           }
         }
       ]
@@ -1296,7 +1425,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue David Legeno 10/12/19XX - 7/6/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.DavidLegeno}}"
           }
         }
       ]
@@ -1313,7 +1442,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Peter Cartwright 10/30/19XX - 11/18/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.PeterCartwright}}"
           }
         }
       ]
@@ -1330,7 +1459,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Derek Deadman 3/11/19XX - 11/22/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.DerekDeadman}}"
           }
         }
       ]
@@ -1347,7 +1476,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Hazel Douglas 11/2/19XX - 9/8/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.HazelDouglas}}"
           }
         }
       ]
@@ -1364,7 +1493,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Alfred Burke 2/28/19XX - 2/16/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.AlfredBurke}}"
           }
         }
       ]
@@ -1381,7 +1510,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Edward Charles James 'Jimmy' Gardener 8/24/19XX - 5/3/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.EdwardGardener}}"
           }
         }
       ]
@@ -1398,7 +1527,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Elizabeth Jean Spriggs 9/18/19XX - 7/2/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.ElizabethSpriggs}}"
           }
         }
       ]
@@ -1415,7 +1544,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue Roger Anthony Lloyd-Pack 2/8/19XX - 1/16/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.RogerLloydPack}}"
           }
         }
       ]
@@ -1432,7 +1561,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue David John Ryall 1/5/19XX - 12/25/20XX"
+            "Action": "Dialogue {{i18n: mapstrings.HogsmeadeVillage.Graveyard.DavidRyall}}"
           }
         }
       ]
@@ -1466,7 +1595,7 @@
       ],
       "When": {
         "Weather": "Sun, Snow, Wind",
-        "Season": "Spring, Summer, Fall",
+        "Season": "Spring, Summer, Fall"
       }
     },
     {
@@ -1483,14 +1612,14 @@
           "SetProperties": {
             "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} HogwartsET.CC.Hogwarts.NifflerWhite"
           }
-        },
+        }
       ],
       "When": {
         "Weather": "Sun, Snow, Wind",
-        "Season": "Winter",
+        "Season": "Winter"
       }
     },
-/*Hogwarts Carriages*/ 
+    /*Hogwarts Carriages*/
     {
       "LogName": "Hogsmeade Carriage Arrival Spawn",
       "Action": "EditMap",
@@ -1535,13 +1664,13 @@
           "SetProperties": {
             "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageArrival"
           }
-        },
+        }
       ],
       "When": {
         "Time": "{{Range: 1900, 2600}}",
         "Day": "1, 15"
       },
-      "Update": "OnTimeChange",
+      "Update": "OnTimeChange"
     },
     {
       "LogName": "Hogsmeade Carriage Departure Spawn 1",
@@ -1557,13 +1686,13 @@
           "SetProperties": {
             "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageDeparture"
           }
-        },
+        }
       ],
       "When": {
         "Time": "{{Range: 0900, 1100}}",
         "Day": "8, 22"
       },
-      "Update": "OnTimeChange",
+      "Update": "OnTimeChange"
     },
     {
       "LogName": "Hogsmeade Carriage Departure Spawn 2",
@@ -1579,13 +1708,13 @@
           "SetProperties": {
             "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageDeparture"
           }
-        },
+        }
       ],
       "When": {
         "Time": "{{Range: 0900, 1100}}",
         "Day": "8, 22"
       },
-      "Update": "OnTimeChange",
+      "Update": "OnTimeChange"
     },
     {
       "LogName": "Hogsmeade Carriage Departure Spawn 3",
@@ -1601,13 +1730,13 @@
           "SetProperties": {
             "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageDeparture"
           }
-        },
+        }
       ],
       "When": {
         "Time": "{{Range: 0920, 1100}}",
         "Day": "8, 22"
       },
-      "Update": "OnTimeChange",
+      "Update": "OnTimeChange"
     },
     {
       "LogName": "Hogsmeade Carriage Departure Spawn 4",
@@ -1623,31 +1752,13 @@
           "SetProperties": {
             "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageDeparture"
           }
-        },
+        }
       ],
       "When": {
         "Time": "{{Range: 0930, 1100}}",
         "Day": "8, 22"
       },
-      "Update": "OnTimeChange",
-    },
+      "Update": "OnTimeChange"
+    }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

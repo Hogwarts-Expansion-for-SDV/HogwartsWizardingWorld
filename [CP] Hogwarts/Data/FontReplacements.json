@@ -1,0 +1,40 @@
+{
+  "Changes": [
+    {
+      "LogName": "Replacing stardrop symbol with down arrow: Bold/Latin",
+      "Action": "EditImage",
+      "Target": "LooseSprites/font_bold",
+      "FromFile": "assets/FontReplacements/ArrowDown.png",
+      "ToArea": {
+        "X": 104,
+        "Y": 16,
+        "Width": 8,
+        "Height": 16
+      },
+      "PatchMode": "Replace",
+      "When": {
+        "IsMainPlayer": true,
+        "Query: '{{LocationName}}' LIKE  '{{ModId}}*'": true
+      },
+      "Update": "OnLocationChange, OnDayStart"
+    },
+    {
+      "LogName": "Replacing stardrop symbol with down arrow: Bold/Dwarvish?",
+      "Action": "EditImage",
+      "Target": "LooseSprites/font_bold",
+      "FromFile": "assets/FontReplacements/ArrowDown.png",
+      "ToArea": {
+        "X": 104,
+        "Y": 240,
+        "Width": 8,
+        "Height": 16
+      },
+      "PatchMode": "Replace",
+      "When": {
+        "IsMainPlayer": true,
+        "Query: '{{LocationName}}' LIKE  '{{ModId}}*'": true
+      },
+      "Update": "OnLocationChange, OnDayStart"
+    }
+  ]
+}
