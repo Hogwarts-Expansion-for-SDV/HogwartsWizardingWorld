@@ -11,26 +11,26 @@
   "DynamicTokens": [
     {
       "Name": "Creature",
-      "Value": "Ashwinder, AshwinderBlack, AshwinderGrey, Bicorn, Bowtruckle, BowtruckleBlue, BowtruckleBrown, BowtruckleBrownLeaf, BowtruckleGreen, Crup, CrupBrown, CrupGrey, DragonToadOrange, DragonToadRed, DragonToadYellow, Dugbog, DugbogBlue, DugbogBrown, DugbogGreen, FireCrabAmethyst, FireCrabAquamarine, FireCrabDiamond, FireCrabEmerald, FireCrabRuby, FireCrabTopaz, FwooperBlue, FwooperGreen, FwooperPink, FwooperShiny, FwooperYellow, GriffinBrown, GriffinGold, GriffinWhite, HippogriffBlack, HippogriffBrown, HippogriffGrey, HippogriffRed, HippogriffWhite, KneazleBlonde, KneazleBrown, KneazleGrey, Mooncalf, MooncalfBlue, MooncalfOrange, MooncalfYellow, OccamyBlue, OccamyTeal, Thestral, UnicornRainbow, UnicornCommon, UnicornGlow, UnicornGolden, UnicornWhite"
+      "Value": "Ashwinder, AshwinderBlack, AshwinderGrey, Bicorn, Bowtruckle, BowtruckleBlue, BowtruckleBrown, BowtruckleBrownLeaf, BowtruckleGreen, Crup, CrupBrown, CrupGrey, DragonToadOrange, DragonToadRed, DragonToadYellow, Dugbog, DugbogBlue, DugbogBrown, DugbogGreen, FireCrabAmethyst, FireCrabAquamarine, FireCrabDiamond, FireCrabEmerald, FireCrabRuby, FireCrabTopaz, FwooperBlue, FwooperGreen, FwooperPink, FwooperShiny, FwooperYellow, GriffinBrown, GriffinGold, GriffinWhite, HippogriffBlack, HippogriffBrown, HippogriffGrey, HippogriffRed, HippogriffWhite, KneazleBlonde, KneazleBrown, KneazleGrey, Mooncalf, MooncalfBlue, MooncalfOrange, MooncalfYellow, OccamyBlue, OccamyTeal, Thestral, Unicorn"
     },
     {
       "Name": "Interior Locations",
       "Value": "BroodAndPeck, CeridwensCauldrons, DervishAndBanges, DogweedAndDeathcap, DominicMaestrosMusicShop, GladragsWizardwear, HogsHeadInn, Honeydukes, JPippinsPotions, MadamPuddifootsTeaShop, MadamSnellingsTressEmporium, Ollivanders, StitchesAndDraughts, SpintwitchesSportingNeeds, TheMagicNeep, ThreeBroomsticksInn, TomesAndScrolls, ZonkosJokeShop, HogwartsAstronomyWingG1F, HogwartsAstronomyWing2F, HogwartsAstronomyWing3F, HogwartsAstronomyWing4F, HogwartsAstronomyWing5F, HogwartsAstronomyWing6F, HogwartsBellTowerWingGF, HogwartsCentralHallGF, HogwartsClockTowerGF, HogwartsDADAClassroom, HogwartsDivinationClassroom, HogwartsDivinationTower, HogwartsGrandStaircase, HogwartsGreatHall, HogwartsGryffindorTower, HogwartsHistoryOfMagicClassroom, HogwartsPotionsClassroom, HogwartsRavenclawCommonRoom, HogwartsRavenclawTower, HogwartsReceptionHallGF, HogwartsSlytherinCommonRoom, HogwartsSlytherinDungeon, HogwartsSouthWing, HogwartsTransfigurationClassroom, HogwartsTrophyRoom"
     },
-    {
-      "Name": "DEBUG",
-      "Value": true
-    }
+      {
+          "Name": "DEBUG",
+          "Value": true
+      }
   ],
   "Changes": [
-    {
-      "LogName": "Include debug shop data",
-      "Action": "Include",
-      "FromFile": "Data/DEBUGShopData.json",
-      "When": {
-        "DEBUG": true
-      }
-    },
+      {
+          "LogName": "Include debug shop data",
+          "Action": "Include",
+          "FromFile": "Data/DEBUGShopData.json",
+          "When": {
+              "DEBUG": true
+          }
+      },
     {
       "LogName": "Include Chair Data",
       "Action": "Include",
@@ -46,11 +46,7 @@
       "Action": "Include",
       "FromFile": "Data/EditMapData.json"
     },
-    /*{
-      "LogName": "Include Fish Data",
-      "Action": "Include",
-      "FromFile": "Data/FishData.json"
-    },*/ {
+    {
       "LogName": "Include Forbidden Forest Stage 1 Data",
       "Action": "Include",
       "FromFile": "Data/ForbiddenForestStage1Data.json"
@@ -121,11 +117,6 @@
       "FromFile": "Data/MinecartPatcherData.json"
     },
     {
-      "LogName": "Include Monster Data",
-      "Action": "Include",
-      "FromFile": "Data/MonsterData.json"
-    },
-    {
       "LogName": "Include Castle Portraits Data",
       "Action": "Include",
       "FromFile": "Data/CastlePortraitsData.json"
@@ -150,7 +141,7 @@
       "Action": "Include",
       "FromFile": "Data/TransfigurationCourtyardData.json"
     },
-    /* NPCs */
+/* NPCs */
     {
       "LogName": "NPC Loads",
       "Action": "Load",
@@ -170,52 +161,31 @@
     },
     /* Objects */
     {
-      "LogName": "Object Data",
-      "Action": "Include",
-      "FromFile": "Data/Objects/AllObjects.json"
+        "LogName": "Object Data",
+        "Action": "Include",
+        "FromFile": "Data/Objects/AllObjects.json"
     },
-    {
-      "LogName": "Crafting Recipe Data",
-      "Action": "Include",
-      "FromFile": "Data/CraftingRecipeData.json"
-    },
-    {
-      "LogName": "Cooking Recipe Data",
-      "Action": "Include",
-      "FromFile": "Data/CookingRecipeData.json"
-    },
-    {
-      "LogName": "Include Forage Data",
-      "Action": "Include",
-      "FromFile": "Data/ForageData.json"
-    },
-
+      {
+          "LogName": "Crafting Recipe Data",
+          "Action": "Include",
+          "FromFile": "Data/CraftingRecipeData.json"
+      },
+      {
+          "LogName": "Cooking Recipe Data",
+          "Action": "Include",
+          "FromFile": "Data/CookingRecipeData.json"
+      },
+      {
+          "LogName": "Include Forage Data",
+          "Action": "Include",
+          "FromFile": "Data/ForageData.json"
+      },
+    
     /* Shops */
     {
-      "LogName": "Shop Data",
-      "Action": "Include",
-      "FromFile": "Data/ShopData.json"
-    },
-    {
-      "LogName": "Floo Flame Data",
-      "Action": "Include",
-      "FromFile": "Data/FlooFlameNetwork.json"
-    },
-    {
-      "LogName": "Font Replacements",
-      "Action": "Include",
-      "FromFile": "Data/FontReplacements.json"
-    },
-    {
-      "LogName": "Trigger Actions",
-      "Action": "Include",
-      "FromFile": "Data/TriggerActions.json"
-    }
-  ],
-  "CustomLocations": [
-    {
-      "Name": "HogwartsET.CP.Hogwarts_FlooFlameCabin",
-      "FromMapFile": "assets/Maps/FlooFlameCabin.tmx"
+        "LogName": "Shop Data",
+        "Action": "Include",
+        "FromFile": "Data/ShopData.json"
     }
   ]
 }

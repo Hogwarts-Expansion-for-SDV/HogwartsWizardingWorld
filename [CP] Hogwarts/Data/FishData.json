@@ -1,79 +1,80 @@
 {
-  "Changes": [
-    //---------------------
-    //Fishes
-    //---------------------
+"Changes": [
 
-    //Data
-    {
-      "Action": "EditData",
-      "Target": "Data/Fish",
-      "Entries": {
-        "{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}}": "Tubeworm/20/smooth/5/30/600 1900/spring/both/685 .35/3/.4/.2/0"
-      }
-    },
+//---------------------
+//Fishes
+//---------------------
 
-    //Locations
+//Data
+	{
+		"Action": "EditData",
+		"Target": "Data/Fish",
+		"Entries": {
+			"{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}}": "Tubeworm/20/smooth/5/30/600 1900/spring/both/685 .35/3/.4/.2/0",
+		},
+	},
 
-    //Set basics
-    {
-      "Action": "EditData",
-      "Target": "Data/Locations",
-      "Entries": {
-        "{{ModId}}_HogsmeadeVillage": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1/{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1/{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1/{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1/106 .1 273 .15 310 .25 330 1"
-      }
-    },
+//Locations
 
-    //Set Spawn
-    //Note: Prepend is used so the existing "-1" is the -1 for the last fish
-    {
-      "Action": "EditData",
-      "Target": "Data/Locations",
-      "TextOperations": [
-        //-----------------
-        //SPRING
-        //-----------------
-        //Hogsmeade Village
-        {
-          "Operation": "Prepend",
-          "Target": ["Fields", "{{ModId}}_HogsmeadeVillage", 5],
-          "Value": "{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1",
-          "Delimiter": " "
-        },
+	//Set basics
+	{
+		"Action": "EditData",
+		"Target": "Data/Locations",
+		"Entries": {
+			"{{ModId}}_HogsmeadeVillage": "-1/-1/-1/-1/{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1/{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1/{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1/{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1/106 .1 273 .15 310 .25 330 1",
+		},
+	},
 
-        //-----------------
-        //Summer
-        //-----------------
-        //Hogsmeade Village
-        {
-          "Operation": "Prepend",
-          "Target": ["Fields", "{{ModId}}_HogsmeadeVillage", 6],
-          "Value": "{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1",
-          "Delimiter": " "
-        },
+	//Set Spawn
+	//Note: Prepend is used so the existing "-1" is the -1 for the last fish
+	{
+		"Action": "EditData",
+		"Target": "Data/Locations",
+		"TextOperations": [
+		//-----------------
+		//SPRING
+		//-----------------
+			//Hogsmeade Village
+			{
+				"Operation": "Prepend",
+				"Target": ["Fields", "{{ModId}}_HogsmeadeVillage", 5],
+				"Value": "{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1",
+				"Delimiter": " "
+			},
 
-        //-----------------
-        //Fall
-        //-----------------
-        //Hogsmeade Village
-        {
-          "Operation": "Prepend",
-          "Target": ["Fields", "{{ModId}}_HogsmeadeVillage", 7],
-          "Value": "{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1",
-          "Delimiter": " "
-        },
+		//-----------------
+		//Summer
+		//-----------------
+			//Hogsmeade Village
+			{
+				"Operation": "Prepend",
+				"Target": ["Fields", "{{ModId}}_HogsmeadeVillage", 6],
+				"Value": "{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1",
+				"Delimiter": " "
+			},
 
-        //-----------------
-        //Winter
-        //-----------------
-        //Hogsmeade Village
-        {
-          "Operation": "Prepend",
-          "Target": ["Fields", "{{ModId}}_HogsmeadeVillage", 8],
-          "Value": "{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1",
-          "Delimiter": " "
-        }
-      ]
-    }
-  ]
+		//-----------------
+		//Fall
+		//-----------------
+			//Hogsmeade Village
+			{
+				"Operation": "Prepend",
+				"Target": ["Fields", "{{ModId}}_HogsmeadeVillage", 7],
+				"Value": "{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1",
+				"Delimiter": " "
+			},
+
+		//-----------------
+		//Winter
+		//-----------------
+			//Hogsmeade Village
+			{
+				"Operation": "Prepend",
+				"Target": ["Fields", "{{ModId}}_HogsmeadeVillage", 8],
+				"Value": "{{spacechase0.JsonAssets/ObjectId:Tubeworm (HP)}} -1",
+				"Delimiter": " "
+			},
+		]
+	}
+]
 }

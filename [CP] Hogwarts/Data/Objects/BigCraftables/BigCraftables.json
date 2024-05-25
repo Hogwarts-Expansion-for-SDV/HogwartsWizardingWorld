@@ -1,111 +1,104 @@
 {
-  "Changes": [
-    {
-      "Action": "EditData",
-      "Target": "Data/BigCraftables",
-      "Entries": {
-        "{{ModId}}_Ashwinder": {
-          "Name": "Ashwinder (HP)",
-          "DisplayName": "{{i18n: bc.Ashwinder.name}}",
-          "Description": "{{i18n: bc.Ashwinder.desc}}",
-          "Price": 100,
-          "IsLamp": true,
-          "Texture": "{{InternalAssetKey: assets/Objects/BigCraftables/Ashwinder.png}}",
-          "SpriteIndex": 0,
-          "ContextTags": ["{{ModId}}_BigCraftables"]
-        },
-        "{{ModId}}_CopperCauldron": {
-          "Name": "Copper Cauldron (HP)",
-          "DisplayName": "{{i18n: bc.CopperCauldron.name}}",
-          "Description": "{{i18n: bc.CopperCauldron.desc}}",
-          "Price": 500,
-          "Texture": "{{InternalAssetKey: assets/Objects/BigCraftables/CopperCauldron.png}}",
-          "SpriteIndex": 0,
-          "ContextTags": ["{{ModId}}_BigCraftables", "{{ModId}}_Cauldrons"],
-          "CustomFields": {
-            "{{ModId}}_CategoryName": "Potion Brewing",
-            "leclair.bettercrafting_PerformAction": "leclair.bettercrafting_OpenMenu FALSE TRUE {{ModId}}_CopperCauldron"
-          }
-        },
-        "{{ModId}}_GoldCauldron": {
-          "Name": "Gold Cauldron (HP)",
-          "DisplayName": "{{i18n: bc.GoldCauldron.name}}",
-          "Description": "{{i18n: bc.GoldCauldron.desc}}",
-          "Price": 2500,
-          "Texture": "{{InternalAssetKey: assets/Objects/BigCraftables/GoldCauldron.png}}",
-          "SpriteIndex": 0,
-          "ContextTags": ["{{ModId}}_BigCraftables", "{{ModId}}_Cauldrons"],
-          "CustomFields": {
-            "{{ModId}}_CategoryName": "Potion Brewing",
-            "leclair.bettercrafting_PerformAction": "leclair.bettercrafting_OpenMenu FALSE TRUE {{ModId}}_GoldCauldron"
-          }
-        },
-        "{{ModId}}_IridiumCauldron": {
-          "Name": "Iridium Cauldron (HP)",
-          "DisplayName": "{{i18n: bc.IridiumCauldron.name}}",
-          "Description": "{{i18n: bc.IridiumCauldron.desc}}",
-          "Price": 5000,
-          "Texture": "{{InternalAssetKey: assets/Objects/BigCraftables/IridiumCauldron.png}}",
-          "SpriteIndex": 0,
-          "ContextTags": ["{{ModId}}_BigCraftables"],
-          "CustomFields": {
-            "{{ModId}}_CategoryName": "Potion Brewing",
-            "leclair.bettercrafting_PerformAction": "leclair.bettercrafting_OpenMenu FALSE TRUE {{ModId}}_IridiumCauldron"
-          }
-        },
-        "{{ModId}}_PewterCauldron": {
-          "Name": "Pewter Cauldron (HP)",
-          "DisplayName": "{{i18n: bc.PewterCauldron.name}}",
-          "Description": "{{i18n: bc.PewterCauldron.desc}}",
-          "Price": 0,
-          "Texture": "{{InternalAssetKey: assets/Objects/BigCraftables/PewterCauldron.png}}",
-          "SpriteIndex": 0,
-          "ContextTags": ["{{ModId}}_BigCraftables", "{{ModId}}_Cauldrons"],
-          "CustomFields": {
-            "{{ModId}}_CategoryName": "Potion Brewing",
-            "leclair.bettercrafting_PerformAction": "leclair.bettercrafting_OpenMenu FALSE TRUE {{ModId}}_PewterCauldron"
-          }
-        },
-        "{{ModId}}_SteelCauldron": {
-          "Name": "Steel Cauldron (HP)",
-          "DisplayName": "{{i18n: bc.SteelCauldron.name}}",
-          "Description": "{{i18n: bc.SteelCauldron.desc}}",
-          "Price": 1000,
-          "Texture": "{{InternalAssetKey: assets/Objects/BigCraftables/SteelCauldron.png}}",
-          "SpriteIndex": 0,
-          "ContextTags": ["{{ModId}}_BigCraftables", "{{ModId}}_Cauldrons"],
-          "CustomFields": {
-            "{{ModId}}_CategoryName": "Potion Brewing",
-            "leclair.bettercrafting_PerformAction": "leclair.bettercrafting_OpenMenu FALSE TRUE {{ModId}}_SteelCauldron"
-          }
-        },
-        "{{ModId}}_FlooFlame": {
-          "Name": "Floo Flame",
-          "DisplayName": "{{i18n: bc.FlooFlame.name}}",
-          "Description": "{{i18n: bc.FlooFlame.desc}}",
-          "Price": 0,
-          "Texture": "{{InternalAssetKey: assets/Maps/FlooFlames.png}}",
-          "SpriteIndex": 0,
-          "ContextTags": ["{{ModId}}_BigCraftables"],
-          "CustomFields": {
-            "{{ModId}}_CategoryName": "Floo Flame",
-            "leclair.bettercrafting_PerformAction": "ObeliskWarp {{ModId}}_HogsmeadeVillage 36 117"
-          }
-        },
-        "{{ModId}}_PreparingTable": {
-          "Name": "Preparing Table",
-          "DisplayName": "{{i18n: bc.PreparingTable.name}}",
-          "Description": "{{i18n: bc.PreparingTable.desc}}",
-          "Price": 0,
-          "Texture": "{{InternalAssetKey: assets/Objects/BigCraftables/PreparingTable.png}}",
-          "SpriteIndex": 0,
-          "ContextTags": ["{{ModId}}_BigCraftables"],
-          "CustomFields": {
-            "{{ModId}}_CategoryName": "Potion Brewing",
-            "leclair.bettercrafting_PerformAction": "leclair.bettercrafting_OpenMenu FALSE TRUE {{ModId}}_PreparingTable"
-          }
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "{{ModId}}_Ashwinder": {
+                    "Name": "Ashwinder (HP)",
+                    "DisplayName": "{{i18n: bc.Ashwinder.name}}",
+                    "Description": "{{i18n: bc.Ashwinder.desc}}",
+                    "Price": 100,
+                    "IsLamp": true,
+                    "Texture": "{{InternalAssetKey: assets/Objects/BigCraftables/Ashwinder.png}}",
+                    "SpriteIndex": 0,
+                    "ContextTags": [ "{{ModId}}_BigCraftables" ]
+                },
+                "{{ModId}}_CopperCauldron": {
+                    "Name": "Copper Cauldron (HP)",
+                    "DisplayName": "{{i18n: bc.CopperCauldron.name}}",
+                    "Description": "{{i18n: bc.CopperCauldron.desc}}",
+                    "Price": 500,
+                    "Texture": "{{InternalAssetKey: assets/Objects/BigCraftables/CopperCauldron.png}}",
+                    "SpriteIndex": 0,
+                    "ContextTags": [ "{{ModId}}_BigCraftables", "{{ModId}}_Cauldrons" ],
+                    "CustomFields": {
+                        "leclair.bettercrafting_PerformAction": "leclair.bettercrafting_OpenMenu FALSE TRUE {{ModId}}_CopperCauldron"
+                    }
+                },
+                "{{ModId}}_GoldCauldron": {
+                    "Name": "Gold Cauldron (HP)",
+                    "DisplayName": "{{i18n: bc.GoldCauldron.name}}",
+                    "Description": "{{i18n: bc.GoldCauldron.desc}}",
+                    "Price": 2500,
+                    "Texture": "{{InternalAssetKey: assets/Objects/BigCraftables/GoldCauldron.png}}",
+                    "SpriteIndex": 0,
+                    "ContextTags": [ "{{ModId}}_BigCraftables", "{{ModId}}_Cauldrons" ],
+                    "CustomFields": {
+                        "leclair.bettercrafting_PerformAction": "leclair.bettercrafting_OpenMenu FALSE TRUE {{ModId}}_GoldCauldron"
+                    }
+                },
+                "{{ModId}}_IridiumCauldron": {
+                    "Name": "Iridium Cauldron (HP)",
+                    "DisplayName": "{{i18n: bc.IridiumCauldron.name}}",
+                    "Description": "{{i18n: bc.IridiumCauldron.desc}}",
+                    "Price": 5000,
+                    "Texture": "{{InternalAssetKey: assets/Objects/BigCraftables/IridiumCauldron.png}}",
+                    "SpriteIndex": 0,
+                    "ContextTags": [ "{{ModId}}_BigCraftables" ],
+                    "CustomFields": {
+                        "leclair.bettercrafting_PerformAction": "leclair.bettercrafting_OpenMenu FALSE TRUE {{ModId}}_IridiumCauldron"
+                    }
+                },
+                "{{ModId}}_PewterCauldron": {
+                    "Name": "Pewter Cauldron (HP)",
+                    "DisplayName": "{{i18n: bc.PewterCauldron.name}}",
+                    "Description": "{{i18n: bc.PewterCauldron.desc}}",
+                    "Price": 0,
+                    "Texture": "{{InternalAssetKey: assets/Objects/BigCraftables/PewterCauldron.png}}",
+                    "SpriteIndex": 0,
+                    "ContextTags": [ "{{ModId}}_BigCraftables", "{{ModId}}_Cauldrons" ],
+                    "CustomFields": {
+                        "leclair.bettercrafting_PerformAction": "leclair.bettercrafting_OpenMenu FALSE TRUE {{ModId}}_PewterCauldron"
+                    }
+                },
+                "{{ModId}}_SteelCauldron": {
+                    "Name": "Steel Cauldron (HP)",
+                    "DisplayName": "{{i18n: bc.SteelCauldron.name}}",
+                    "Description": "{{i18n: bc.SteelCauldron.desc}}",
+                    "Price": 1000,
+                    "Texture": "{{InternalAssetKey: assets/Objects/BigCraftables/SteelCauldron.png}}",
+                    "SpriteIndex": 0,
+                    "ContextTags": [ "{{ModId}}_BigCraftables", "{{ModId}}_Cauldrons" ],
+                    "CustomFields": {
+                        "leclair.bettercrafting_PerformAction": "leclair.bettercrafting_OpenMenu FALSE TRUE {{ModId}}_SteelCauldron"
+                    }
+                },
+                "{{ModId}}_FlooFlame": {
+                    "Name": "Floo Flame",
+                    "DisplayName": "{{i18n: bc.FlooFlame.name}}",
+                    "Description": "{{i18n: bc.FlooFlame.desc}}",
+                    "Price": 0,
+                    "Texture": "{{InternalAssetKey: assets/Objects/BigCraftables/SteelCauldron.png}}",
+                    "SpriteIndex": 0,
+                    "ContextTags": [ "{{ModId}}_BigCraftables" ],
+                    "CustomFields": {
+                            "leclair.bettercrafting_PerformAction": "ObeliskWarp 36 122 {{ModId}}_HogsmeadeVillage"
+                    }
+                },
+                "{{ModId}}_PreparingTable": {
+                    "Name": "Preparing Table",
+                    "DisplayName": "{{i18n: bc.PreparingTable.name}}",
+                    "Description": "{{i18n: bc.PreparingTable.desc}}",
+                    "Price": 0,
+                    "Texture": "{{InternalAssetKey: assets/Objects/BigCraftables/PreparingTable.png}}",
+                    "SpriteIndex": 0,
+                    "ContextTags": [ "{{ModId}}_BigCraftables" ],
+                    "CustomFields": {
+                        "leclair.bettercrafting_PerformAction": "leclair.bettercrafting_OpenMenu FALSE TRUE {{ModId}}_PreparingTable"
+                    }
+                }
+            }
         }
-      }
-    }
-  ]
+    ]
 }

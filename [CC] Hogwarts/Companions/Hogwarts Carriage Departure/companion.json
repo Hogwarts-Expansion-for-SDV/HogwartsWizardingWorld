@@ -10,9 +10,9 @@
   "SpawnOffsetY": 0, // Y offset (from player) of where to spawn | Note: Negative values will spawn above player head, positive will spawn below player head
   "MaxIdleDistance": -1, // Optional parameter, determines how far away a companion can be from a player / spawn point before idle behavior stops | NOTE: -1 will make it always idle if player isn't moving
   "MaxDistanceBeforeTeleport": -1, // Optional parameter, determines how far away a companion can be from a player / spawn point before teleporting back | NOTE: -1 will make it never teleport if it gets too far
-  "DespawnOnTile": [130, 120, 0],
+  "DespawnOnTile": [ 130, 120, 0 ],
   "IdleBehavior": "Simple_Path",
-  "IdleArguments": [130, 120, 0],
+  "IdleArguments": [ 130, 120, 0 ],
   "EnablePeriodicPatchCheck": true,
   "FrameSizeWidth": 144, // Width of each frame / tile in pixels
   "FrameSizeHeight": 70, // Height of each frame / tile in pixels
@@ -21,5 +21,5 @@
     "StartingFrame": 0,
     "NumberOfFrames": 1,
     "Duration": 50
-  }
+  },
 }

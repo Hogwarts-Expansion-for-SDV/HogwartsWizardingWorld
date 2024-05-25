@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="19" height="27" tilewidth="16" tileheight="16" infinite="0" nextlayerid="20" nextobjectid="27">
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="19" height="27" tilewidth="16" tileheight="16" infinite="0" nextlayerid="20" nextobjectid="27">
  <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
   <image source="townInterior.png" width="512" height="1088"/>
   <tile id="546">
@@ -43,62 +43,14 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="2177" name="2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
-  <image source="townInterior_2.png" width="512" height="656"/>
+ <tileset firstgid="2177" name="2" tilewidth="16" tileheight="16" tilecount="128" columns="32">
+  <image source="townInterior_2.png" width="512" height="64"/>
  </tileset>
- <tileset firstgid="3489" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
-  <image source="paths.png" width="64" height="256"/>
+ <tileset firstgid="2305" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
  </tileset>
- <tileset firstgid="3553" name="z_FlooFlames" tilewidth="16" tileheight="16" tilecount="50" columns="10">
-  <image source="FlooFlames.png" width="160" height="80"/>
-  <tile id="1">
-   <animation>
-    <frame tileid="1" duration="175"/>
-    <frame tileid="2" duration="175"/>
-    <frame tileid="3" duration="175"/>
-    <frame tileid="4" duration="175"/>
-   </animation>
-  </tile>
-  <tile id="11">
-   <animation>
-    <frame tileid="11" duration="175"/>
-    <frame tileid="12" duration="175"/>
-    <frame tileid="13" duration="175"/>
-    <frame tileid="14" duration="175"/>
-   </animation>
-  </tile>
-  <tile id="30">
-   <animation>
-    <frame tileid="30" duration="175"/>
-    <frame tileid="32" duration="175"/>
-    <frame tileid="34" duration="175"/>
-    <frame tileid="36" duration="175"/>
-   </animation>
-  </tile>
-  <tile id="31">
-   <animation>
-    <frame tileid="31" duration="175"/>
-    <frame tileid="33" duration="175"/>
-    <frame tileid="35" duration="175"/>
-    <frame tileid="37" duration="175"/>
-   </animation>
-  </tile>
-  <tile id="40">
-   <animation>
-    <frame tileid="40" duration="175"/>
-    <frame tileid="42" duration="175"/>
-    <frame tileid="44" duration="175"/>
-    <frame tileid="46" duration="175"/>
-   </animation>
-  </tile>
-  <tile id="41">
-   <animation>
-    <frame tileid="41" duration="175"/>
-    <frame tileid="43" duration="175"/>
-    <frame tileid="45" duration="175"/>
-    <frame tileid="47" duration="175"/>
-   </animation>
-  </tile>
+ <tileset firstgid="2341" name="HogwartsAstronomyWing1F" tilewidth="16" tileheight="16" tilecount="216" columns="12">
+  <image source="HogwartsAstronomyWing1F.png" width="207" height="288"/>
  </tileset>
  <layer id="1" name="Back" width="19" height="27">
   <data encoding="csv">
@@ -201,8 +153,8 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,3554,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,3564,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,

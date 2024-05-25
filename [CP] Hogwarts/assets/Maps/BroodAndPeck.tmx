@@ -1,92 +1,86 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="35" height="15" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="3">
- <properties>
-  <property name="AmbientLight" value="110 110 110"/>
-  <property name="DayTiles_asdf" value="Buildings 3 1 24 Buildings 9 1 24 Buildings 15 1 24 Buildings 21 1 24 Back 3 3 25 Back 21 3 25"/>
-  <property name="Feed" value="5 2"/>
-  <property name="Light_asdf" value="11 14 6 3 2 6 10 2 6 14 2 6 1 5 4 6 5 4 6 10 4 11 7 4 15 11 4 1 12 4 15 2 6 16 9 4 20 13 4 20 6 4  21 2 6 23 2 4 23 11 4"/>
-  <property name="NightTiles_asdf" value="Buildings 3 1 26 Buildings 9 1 26 Buildings 15 1 26 Buildings 21 1 26 Back 3 3 12 Back 21 3 12"/>
-  <property name="ProduceArea" value="6 4 15 7"/>
-  <property name="Warp" value="11 15 Farm 14 11"/>
-  <property name="sw1" value="38"/>
-  <property name="sw2" value="13"/>
-  <property name="sw3" value="15"/>
-  <property name="sw4" value="29"/>
-  <property name="sw5" value="41"/>
-  <property name="sw6" value="21"/>
- </properties>
- <tileset firstgid="1" name="coopTiles" tilewidth="16" tileheight="16" tilecount="84" columns="4">
-  <image source="coopTiles.png" width="64" height="336"/>
-  <tile id="12">
-   <properties>
-    <property name="Type" value="Wood"/>
-   </properties>
-  </tile>
-  <tile id="33">
-   <properties>
-    <property name="Passable" type="int" value="0"/>
-    <property name="Trough" value="T"/>
-   </properties>
-  </tile>
-  <tile id="53">
-   <properties>
-    <property name="Type" value="Wood"/>
-   </properties>
-  </tile>
-  <tile id="54">
-   <properties>
-    <property name="Type" value="Wood"/>
-   </properties>
-  </tile>
- </tileset>
- <tileset firstgid="85" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
-  <image source="townInterior.png" width="512" height="1088"/>
- </tileset>
- <tileset firstgid="2261" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="688" columns="16">
-  <image source="walls_and_floors.png" width="256" height="688"/>
- </tileset>
- <tileset firstgid="2949" name="z_hptiles" tilewidth="16" tileheight="16" tilecount="2048" columns="32">
-  <image source="z_hptiles.png" width="512" height="1024"/>
- </tileset>
- <layer id="1" name="Back" width="35" height="15">
-  <data encoding="base64" compression="zlib">
-   eJytlDEOwjAMRT0ipJZCgDIwsFSMTNDM3JBbcgxcEauWcayEOtJTotqNf77TNgDQOPBgyFjpODPeK//1VqmjMY2Lky85DqyOBaT8J3y9vcHs89I1aRlTndfahrQMSItskM7Rk8h6UKplYocEZJ+0yX3H9Hw0dN+Vd/7RckR65MT24bPUHJRcTeO1skdWbRnn/lk6SRPl1GjJ1abe5PwbWC7FAqP27lrIs5fccdLUO2mRGqLSo1yu3MfLF/5tDBktlmceWiL8nk+7LxRrYb4j0jOvHsmZn53/a4KgAz8tS5D9Kx0fKWVddw==
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<map version="1.2" orientation="orthogonal" renderorder="right-down" width="35" height="15" tilewidth="16" tileheight="16" nextobjectid="3">
+  <properties>
+    <property name="AmbientLight" value="110 110 110" />
+    <property name="DayTiles_asdf" value="Buildings 3 1 24 Buildings 9 1 24 Buildings 15 1 24 Buildings 21 1 24 Back 3 3 25 Back 21 3 25" />
+    <property name="Feed" value="5 2" />
+    <property name="Light_asdf" value="11 14 6 3 2 6 10 2 6 14 2 6 1 5 4 6 5 4 6 10 4 11 7 4 15 11 4 1 12 4 15 2 6 16 9 4 20 13 4 20 6 4  21 2 6 23 2 4 23 11 4" />
+    <property name="NightTiles_asdf" value="Buildings 3 1 26 Buildings 9 1 26 Buildings 15 1 26 Buildings 21 1 26 Back 3 3 12 Back 21 3 12" />
+    <property name="ProduceArea" value="6 4 15 7" />
+    <property name="Warp" value="11 15 Farm 14 11" />
+    <property name="sw1" value="38" />
+    <property name="sw2" value="13" />
+    <property name="sw3" value="15" />
+    <property name="sw4" value="29" />
+    <property name="sw5" value="41" />
+    <property name="sw6" value="21" />
+  </properties>
+  <tileset firstgid="1" name="coopTiles" columns="4" tilecount="128" tileheight="16" tilewidth="16">
+    <image source="coopTiles.png" width="64" height="512" />
+    <tile id="12">
+      <properties>
+        <property name="Type" value="Wood" />
+      </properties>
+    </tile>
+    <tile id="33">
+      <properties>
+        <property name="Passable" type="int" value="0" />
+        <property name="Trough" value="T" />
+      </properties>
+    </tile>
+    <tile id="53">
+      <properties>
+        <property name="Type" value="Wood" />
+      </properties>
+    </tile>
+    <tile id="54">
+      <properties>
+        <property name="Type" value="Wood" />
+      </properties>
+    </tile>
+  </tileset>
+  <tileset firstgid="129" name="townInterior" columns="32" tilecount="2176" tileheight="16" tilewidth="16">
+    <image source="townInterior.png" width="512" height="1088" />
+  </tileset>
+  <tileset firstgid="2305" name="walls_and_floors" columns="16" tilecount="560" tileheight="16" tilewidth="16">
+    <image source="walls_and_floors.png" width="256" height="560" />
+  </tileset>
+  <tileset firstgid="2865" name="z_hptiles" columns="32" tilecount="2048" tileheight="16" tilewidth="16">
+    <image source="z_hptiles.png" width="512" height="1024" />
+  </tileset>
+  <layer name="Back" width="35" height="15">
+    <data encoding="base64" compression="zlib">
+   eJytlMEOgjAMhnvVBESH4sGDF+LRk7Kz7+27WeIamto1m3TJly20rP/+DhoAaBx4MmSsdFwY/cZ/vVfqaMzj6uRLjiOrYwEp/wVfb++w+Lx2TVqmVOe9tSEtI9IiO6Rz9CSyHpRqmTkgAemTNrnvlJ5Phu6H8s4/Wk7IgJzZPnyWmoOSq2m8VfbIqi3j3D9LJ2minBotudrUm5x/I8ulWGDU3l0LefaSO06aBictUkNUepTLlft4+cK/jTGjxfLMQ0uE3/Np94ViLSx3RHrm1SM587Pzf00QdOCnZQ2yf6XjAwA+ZtI=
   </data>
- </layer>
- <objectgroup id="2" name="Back">
-  <object id="1" name="TileData" x="176" y="208" width="16" height="16">
-   <properties>
-    <property name="NPCBarrier" value="T"/>
-   </properties>
-  </object>
-  <object id="2" name="TileData" x="176" y="224" width="16" height="16">
-   <properties>
-    <property name="NPCBarrier" value="T"/>
-   </properties>
-  </object>
- </objectgroup>
- <layer id="3" name="Buildings" width="35" height="15">
-  <data encoding="base64" compression="zlib">
-   eJxjZGBgYKIhZgZiRiLVsTIggCQN2OxIdmQCLcwC4mwgzmFGVQtTJ0pDjGxHJ9D+LiDuBuIeZuzqCAF9XgYGAyA2BGIjIDYGYhMgNuVFVXeZHVMvDwPDAh4k/k9ghP0C4lgmVHVwN7MxMIixEeEoMsB7IP6AxJcGukGGCVMdseFCCeAHhoEAI4I/HciewYipjlZuWY4UKfpAew2w2E0vt5ADsLnlNDOCvQnKRvYnqQCo9QAQJ+BTY8qM6pZXzJhqLmERIxUQE/ahaG7hYmFg4AZiHigNwp/o5JZSZvqkF2LsmDqI3LKVDm4BpXli7QCpMyQSs5KhB4aJBQB9NSA1
+  </layer>
+  <objectgroup name="Back">
+    <object name="TileData" id="1" x="176" y="208" width="16" height="16">
+      <properties>
+        <property name="NPCBarrier" value="T" />
+      </properties>
+    </object>
+    <object name="TileData" id="2" x="176" y="224" width="16" height="16">
+      <properties>
+        <property name="NPCBarrier" value="T" />
+      </properties>
+    </object>
+  </objectgroup>
+  <layer name="Buildings" width="35" height="15">
+    <data encoding="base64" compression="zlib">
+   eJxjZGBgYKIhZgZiRiLVsTIggCQN2OxIdkwFWjgNiKczY6qFqROlIUZ2y1agG7YB8XYgzmRiQAHI6mgFeBgYFvAg8VWBblAD4k46uUUYyXJpYGKRYUTw3YFu8GDC1EMrtxgjucUa6A4bJLccBrKPMGLqIeQWXiiN7E9iQDCS+migvTFY7MblFpidvGh4HzS9G5PoFnIAslu+Qe39zoxwyz0oO5gCtwC1HgDiBHxqEplR3SLGwsAgDsQSUBqE/yG5i1xATJpsRHOLGdBucyC2gNIgLMdCmTuIdctCVLccgGJYOByg0AlgAErzxLjlIDPtyzpjIt3ykA5uCSbSLSAAUmdIJGYlQw8MEwsAReQh6w==
   </data>
- </layer>
- <objectgroup id="4" name="Buildings"/>
- <layer id="5" name="Front" width="35" height="15">
-  <data encoding="base64" compression="zlib">
-   eJxjYBhcYCsrA8M2Vtzy73kYGD4A8Ucg/gTEn4H4CxB/5aGeG9ih9FWgO67hcQs/LwODABALArEQEAsDsQgQi/KiqtvMjqkXXegmIwPDLSC2ZcKu7ivQHd/wuIWa4DfQHX8YMcWxeIMqIJ2MuCPWLZwkmt1OQ7eQ409SASG3nGKG0OT4k1SA7BaYvQMFQG5Bzj6vge55wwyhX9PZbehuGUhAa7eQkuZp7RZQmic2r4LUcQIxFxGYBaqHg0j1MAwDhNRxA7EhkZiTDD2kYgDQliH4
+  </layer>
+  <objectgroup name="Buildings" />
+  <layer name="Front" width="35" height="15">
+    <data encoding="base64" compression="zlib">
+   eJzNlMsKgkAUhk+ammXr1rWpbZtqW08ZdH+IqOj+EBHRxexBqj9woCZHRxHxh49BPWfOxygSpSuORvTQxM97FlEfDMAQjMAYTKzoM7vq77XhrhmdSNHFfUvMXIE12IAt2IE952Ib/738LU0h0sFc4FKGR8XH5YyZF3AFN2CDO3A4l5e74awg3qsKj5oidm7Do+PjEjZHHxdRPI7UM9MIe4eNrMshRS5JJMjlqQYUxJiPy/dvpZRNbjYf5lIEDXg0Qctd48gixHfGn0vcOaXIhc2QrTNBXgL22nKS9QyWoLrPEdYlMSP0hOUN+kAl3g==
   </data>
- </layer>
- <objectgroup id="6" name="Front"/>
- <layer id="9" name="Front1" width="35" height="15">
-  <data encoding="base64" compression="zlib">
-   eJxjYBgFIxFw8wy0CxBAm4Zu4RxE/tQcRG4ZBcMX8A6idKY7iNwyCqgDAOEtAOs=
-  </data>
- </layer>
- <objectgroup id="10" name="Front1"/>
- <layer id="7" name="Paths" width="35" height="15">
-  <data encoding="base64" compression="zlib">
+  </layer>
+  <objectgroup name="Front" />
+  <layer name="Paths" width="35" height="15">
+    <data encoding="base64" compression="zlib">
    eJxjYBgFo2AUjIJRMApGwSggDAAINAAB
   </data>
- </layer>
- <objectgroup id="8" name="Paths"/>
+  </layer>
+  <objectgroup name="Paths" />
 </map>
