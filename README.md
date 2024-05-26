@@ -2,13 +2,10 @@
 
 This is a hub for team members current and prospective mod-users and mod-makers to offer support for features, report bugs, and request new features or ideas for the Hogwarts Expansion mod for Stardew Valley. A description of the latest release's features can be found in its [Nexus page](https://www.nexusmods.com/stardewvalley/mods/14858).
 
+The lack of a license is not an oversight. No one may reproduce, distribute, or create derivative works from the contents of this repository.
+
 ## For Non-Team Members
-
-### Offering Contributions
-If you would like to offer an one-time contribution, make a pull request to the main branch. See the Contribution Guidelines at the end of this file before you start your work.
-
-### Joining the Team
-To join, [message Sexynes on Nexus Mods](https://www.nexusmods.com/stardewvalley/users/85287593) and state one's intention. 
+If you would like to offer an one-time contribution or join the team, [message Sexynes on Nexus Mods](https://www.nexusmods.com/stardewvalley/users/85287593) and state one's intention. See the Contribution Guidelines at the end of this file before you start your work.
 
 ### The Issues Tab
 The [Issues tab](https://github.com/Hogwarts-Expansion-for-SDV/HogwartsWizardingWorld/issues) is located at the top of the page on the tab bar, the second from the left between Code and Pull Requests. Anyone can use it to report bug, request features, and see activity and updates regarding existing issues.
