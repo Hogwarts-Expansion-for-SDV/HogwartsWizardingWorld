@@ -17,20 +17,20 @@
       "Name": "Interior Locations",
       "Value": "BroodAndPeck, CeridwensCauldrons, DervishAndBanges, DogweedAndDeathcap, DominicMaestrosMusicShop, GladragsWizardwear, HogsHeadInn, Honeydukes, JPippinsPotions, MadamPuddifootsTeaShop, MadamSnellingsTressEmporium, Ollivanders, StitchesAndDraughts, SpintwitchesSportingNeeds, TheMagicNeep, ThreeBroomsticksInn, TomesAndScrolls, ZonkosJokeShop, HogwartsAstronomyWingG1F, HogwartsAstronomyWing2F, HogwartsAstronomyWing3F, HogwartsAstronomyWing4F, HogwartsAstronomyWing5F, HogwartsAstronomyWing6F, HogwartsBellTowerWingGF, HogwartsCentralHallGF, HogwartsClockTowerGF, HogwartsDADAClassroom, HogwartsDivinationClassroom, HogwartsDivinationTower, HogwartsGrandStaircase, HogwartsGreatHall, HogwartsGryffindorTower, HogwartsHistoryOfMagicClassroom, HogwartsPotionsClassroom, HogwartsRavenclawCommonRoom, HogwartsRavenclawTower, HogwartsReceptionHallGF, HogwartsSlytherinCommonRoom, HogwartsSlytherinDungeon, HogwartsSouthWing, HogwartsTransfigurationClassroom, HogwartsTrophyRoom"
     },
-      {
-          "Name": "DEBUG",
-          "Value": true
-      }
+    {
+      "Name": "DEBUG",
+      "Value": true
+    }
   ],
   "Changes": [
-      {
-          "LogName": "Include debug shop data",
-          "Action": "Include",
-          "FromFile": "Data/DEBUGShopData.json",
-          "When": {
-              "DEBUG": true
-          }
-      },
+    {
+      "LogName": "Include debug shop data",
+      "Action": "Include",
+      "FromFile": "Data/DEBUGShopData.json",
+      "When": {
+        "DEBUG": true
+      }
+    },
     {
       "LogName": "Include Chair Data",
       "Action": "Include",
@@ -141,7 +141,7 @@
       "Action": "Include",
       "FromFile": "Data/TransfigurationCourtyardData.json"
     },
-/* NPCs */
+    /* NPCs */
     {
       "LogName": "NPC Loads",
       "Action": "Load",
@@ -161,31 +161,31 @@
     },
     /* Objects */
     {
-        "LogName": "Object Data",
-        "Action": "Include",
-        "FromFile": "Data/Objects/AllObjects.json"
+      "LogName": "Object Data",
+      "Action": "Include",
+      "FromFile": "Data/Objects/AllObjects.json"
     },
-      {
-          "LogName": "Crafting Recipe Data",
-          "Action": "Include",
-          "FromFile": "Data/CraftingRecipeData.json"
-      },
-      {
-          "LogName": "Cooking Recipe Data",
-          "Action": "Include",
-          "FromFile": "Data/CookingRecipeData.json"
-      },
-      {
-          "LogName": "Include Forage Data",
-          "Action": "Include",
-          "FromFile": "Data/ForageData.json"
-      },
-    
+    {
+      "LogName": "Crafting Recipe Data",
+      "Action": "Include",
+      "FromFile": "Data/CraftingRecipeData.json"
+    },
+    {
+      "LogName": "Cooking Recipe Data",
+      "Action": "Include",
+      "FromFile": "Data/CookingRecipeData.json"
+    },
+    {
+      "LogName": "Include Forage Data",
+      "Action": "Include",
+      "FromFile": "Data/ForageData.json"
+    },
+
     /* Shops */
     {
-        "LogName": "Shop Data",
-        "Action": "Include",
-        "FromFile": "Data/ShopData.json"
+      "LogName": "Shop Data",
+      "Action": "Include",
+      "FromFile": "Data/ShopData.json"
     },
     {
       "LogName": "Floo Flame Data",

@@ -1,4 +1,3 @@
-      
 {
   "Changes": [
     {
@@ -9,8 +8,7 @@
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
-        "LocationName": "{{ModId}}_HogsmeadeVillage",
-        
+        "LocationName": "{{ModId}}_HogsmeadeVillage"
       }
     },
     {
@@ -18,19 +16,19 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Shadow_Sniper": {
-                    0: 100,
-                    1: 5,
-                    4: false,
-                    5: 1000,
-                    7: 0,
-                    9: 2,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 10,
-                    14: "Dugbog",
-                },
+        "Shadow_Sniper": {
+          "0": 100,
+          "1": 5,
+          "4": false,
+          "5": 1000,
+          "7": 0,
+          "9": 2,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 10,
+          "14": "Dugbog"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
@@ -46,8 +44,7 @@
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
-        "LocationName": "{{ModId}}_HogsmeadeVillage",
-        
+        "LocationName": "{{ModId}}_HogsmeadeVillage"
       }
     },
     {
@@ -55,19 +52,19 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Pepper_Rex": {
-                    0: 100,
-                    1: 8,
-                    4: false,
-                    5: 1000,
-                    7: 0,
-                    9: 2,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 16,
-                    14: "Midnight Dugbog",
-                },
+        "Pepper_Rex": {
+          "0": 100,
+          "1": 8,
+          "4": false,
+          "5": 1000,
+          "7": 0,
+          "9": 2,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 16,
+          "14": "Midnight Dugbog"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
@@ -75,12 +72,12 @@
         "Time": "{{Range: 2400, 2600}}"
       }
     },
-/*Ashwinder Basic replace Grub_dangerous*/
+    /*Ashwinder Basic replace Grub_dangerous*/
     {
       "LogName": "Ashwinder Basic Image over Grub_dangerous",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Grub_dangerous",
-      "FromFile": "assets/Monsters/Ashwinder Basic.png", 
+      "FromFile": "assets/Monsters/Ashwinder Basic.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -92,31 +89,31 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Grub_dangerous": {
-                    0: 150,
-                    1: 5,
-                    4: false,
-                    5: 1000,
-                    7: 0,
-                    9: 2,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 10,
-                    14: "Ashwinder",
-                },
+        "Grub_dangerous": {
+          "0": 150,
+          "1": 5,
+          "4": false,
+          "5": 1000,
+          "7": 0,
+          "9": 2,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 10,
+          "14": "Ashwinder"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
-        "LocationName": "{{ModId}}_HogwartsForbiddenForest1", /*will be changed*/
+        "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Ashwinder Dark replace Grub_dangerous*/
+    /*Ashwinder Dark replace Grub_dangerous*/
     {
       "LogName": "Ashwinder Dark Image over Grub_dangerous",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Grub_dangerous",
-      "FromFile": "assets/Monsters/Ashwinder Dark.png", 
+      "FromFile": "assets/Monsters/Ashwinder Dark.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -128,29 +125,29 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Grub_dangerous": {
-                    0: 200,
-                    1: 10,
-                    2: 17,
-                    3: 17,
-                    4: false,
-                    5: 1000,
-                    7: 0,
-                    9: 3,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 20,
-                    14: "Midnight Ashwinder",
-                },
+        "Grub_dangerous": {
+          "0": 200,
+          "1": 10,
+          "2": 17,
+          "3": 17,
+          "4": false,
+          "5": 1000,
+          "7": 0,
+          "9": 3,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 20,
+          "14": "Midnight Ashwinder"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
-        "LocationName": "{{ModId}}_HogwartsForbiddenForest1", /*will be changed*/
-        "Time": "{{Range: 2400, 2600}}",
+        "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/,
+        "Time": "{{Range: 2400, 2600}}"
       }
     },
-/*Ashwinder Light replace Grub_dangerous*/
+    /*Ashwinder Light replace Grub_dangerous*/
     {
       "LogName": "Ashwinder Light Image over Grub_dangerous",
       "Action": "EditImage",
@@ -167,33 +164,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Grub_dangerous": {
-                    0: 150,
-                    1: 8,
-                    2: 17,
-                    3: 17,
-                    4: false,
-                    5: 1000,
-                    7: 0,
-                    9: 3,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 16,
-                    14: "Snowy Ashwinder",
-                },
+        "Grub_dangerous": {
+          "0": 150,
+          "1": 8,
+          "2": 17,
+          "3": 17,
+          "4": false,
+          "5": 1000,
+          "7": 0,
+          "9": 3,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 16,
+          "14": "Snowy Ashwinder"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Bicorn replace Pepper Rex*/
+    /*Bicorn replace Pepper Rex*/
     {
       "LogName": "Bicorn Image over Pepper Rex",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Pepper Rex",
-      "FromFile": "assets/Monsters/Bicorn.png", 
+      "FromFile": "assets/Monsters/Bicorn.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -205,33 +202,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Pepper Rex": {
-                    0: 350,
-                    1: 18,
-                    2: 0,
-                    3: 0,
-                    4: true,
-                    5: 1000,
-                    7: 0,
-                    9: 3,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 36,
-                    14: "Bicorn",
-                },
+        "Pepper Rex": {
+          "0": 350,
+          "1": 18,
+          "2": 0,
+          "3": 0,
+          "4": true,
+          "5": 1000,
+          "7": 0,
+          "9": 3,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 36,
+          "14": "Bicorn"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Boomslang Snake Brown replace Grub*/
+    /*Boomslang Snake Brown replace Grub*/
     {
       "LogName": "Boomslang Snake Brown Image over Grub",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Grub",
-      "FromFile": "assets/Monsters/Boomslang Snake Brown.png", 
+      "FromFile": "assets/Monsters/Boomslang Snake Brown.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -243,33 +240,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Grub": {
-                    0: 60,
-                    1: 3,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 1000,
-                    7: 0,
-                    9: 3,
-                    10: 3,
-                    11: .00,
-                    12: true,
-                    13: 6,
-                    14: "Brown Boomslang Snake",
-                },
+        "Grub": {
+          "0": 60,
+          "1": 3,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 1000,
+          "7": 0,
+          "9": 3,
+          "10": 3,
+          "11": 0.0,
+          "12": true,
+          "13": 6,
+          "14": "Brown Boomslang Snake"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Boomslang Snake Green replace Grub*/
+    /*Boomslang Snake Green replace Grub*/
     {
       "LogName": "Boomslang Snake Green Image over Grub",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Grub",
-      "FromFile": "assets/Monsters/Boomslang Snake Green.png", 
+      "FromFile": "assets/Monsters/Boomslang Snake Green.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -281,33 +278,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Grub": {
-                    0: 100,
-                    1: 5,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 1000,
-                    7: 0,
-                    9: 3,
-                    10: 3,
-                    11: .00,
-                    12: true,
-                    13: 10,
-                    14: "Green Boomslang Snake",
-                },
+        "Grub": {
+          "0": 100,
+          "1": 5,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 1000,
+          "7": 0,
+          "9": 3,
+          "10": 3,
+          "11": 0.0,
+          "12": true,
+          "13": 10,
+          "14": "Green Boomslang Snake"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Cornish Pixie Dark replace Bat*/
+    /*Cornish Pixie Dark replace Bat*/
     {
       "LogName": "Cornish Pixie Dark Image over Bat",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Bat",
-      "FromFile": "assets/Monsters/Cornish Pixie Dark.png", 
+      "FromFile": "assets/Monsters/Cornish Pixie Dark.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -319,33 +316,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Bat": {
-                    0: 150,
-                    1: 8,
-                    2: 0,
-                    3: 0,
-                    4: true,
-                    5: 1000,
-                    7: 0,
-                    9: 4,
-                    10: 3,
-                    11: .00,
-                    12: true,
-                    13: 16,
-                    14: "Midnight Cornish Pixie",
-                },
+        "Bat": {
+          "0": 150,
+          "1": 8,
+          "2": 0,
+          "3": 0,
+          "4": true,
+          "5": 1000,
+          "7": 0,
+          "9": 4,
+          "10": 3,
+          "11": 0.0,
+          "12": true,
+          "13": 16,
+          "14": "Midnight Cornish Pixie"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Cornish Pixie Light replace Bat*/
+    /*Cornish Pixie Light replace Bat*/
     {
       "LogName": "Cornish Pixie Light Image over Bat",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Bat",
-      "FromFile": "assets/Monsters/Cornish Pixie Light.png", 
+      "FromFile": "assets/Monsters/Cornish Pixie Light.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -357,33 +354,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Bat": {
-                    0: 100,
-                    1: 5,
-                    2: 0,
-                    3: 0,
-                    4: true,
-                    5: 1000,
-                    7: 0,
-                    9: 4,
-                    10: 3,
-                    11: .00,
-                    12: true,
-                    13: 10,
-                    14: "Cornish Pixie",
-                },
+        "Bat": {
+          "0": 100,
+          "1": 5,
+          "2": 0,
+          "3": 0,
+          "4": true,
+          "5": 1000,
+          "7": 0,
+          "9": 4,
+          "10": 3,
+          "11": 0.0,
+          "12": true,
+          "13": 10,
+          "14": "Cornish Pixie"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Crup Blonde replace Spider*/
+    /*Crup Blonde replace Spider*/
     {
       "LogName": "Crup Blonde Image over Spider",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Spider",
-      "FromFile": "assets/Monsters/Crup Blonde.png", 
+      "FromFile": "assets/Monsters/Crup Blonde.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -395,33 +392,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Spider": {
-                    0: 150,
-                    1: 8,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 500,
-                    7: 0,
-                    9: 6,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 16,
-                    14: "Sandy Crup",
-                },
+        "Spider": {
+          "0": 150,
+          "1": 8,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 500,
+          "7": 0,
+          "9": 6,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 16,
+          "14": "Sandy Crup"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Crup Brown replace Spider*/
+    /*Crup Brown replace Spider*/
     {
       "LogName": "Crup Brown Image over Spider",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Spider",
-      "FromFile": "assets/Monsters/Crup Brown.png", 
+      "FromFile": "assets/Monsters/Crup Brown.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -433,33 +430,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Spider": {
-                    0: 200,
-                    1: 10,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 500,
-                    7: 0,
-                    9: 6,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 20,
-                    14: "Danger Crup",
-                },
+        "Spider": {
+          "0": 200,
+          "1": 10,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 500,
+          "7": 0,
+          "9": 6,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 20,
+          "14": "Danger Crup"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Crup Tan replace Spider*/
+    /*Crup Tan replace Spider*/
     {
       "LogName": "Crup Tan Image over Spider",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Spider",
-      "FromFile": "assets/Monsters/Crup Tan.png", 
+      "FromFile": "assets/Monsters/Crup Tan.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -471,33 +468,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Spider": {
-                    0: 100,
-                    1: 5,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 500,
-                    7: 0,
-                    9: 6,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 10,
-                    14: "Crup",
-                },
+        "Spider": {
+          "0": 100,
+          "1": 5,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 500,
+          "7": 0,
+          "9": 6,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 10,
+          "14": "Crup"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Dementor replace Serpent*/
+    /*Dementor replace Serpent*/
     {
       "LogName": "Dementor Image over Serpent",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Serpent",
-      "FromFile": "assets/Monsters/Dementor.png", 
+      "FromFile": "assets/Monsters/Dementor.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -509,33 +506,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Serpent": {
-                    0: 350,
-                    1: 18,
-                    2: 0,
-                    3: 0,
-                    4: true,
-                    5: 1000,
-                    7: 0,
-                    9: 7,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 36,
-                    14: "Dementor",
-                },
+        "Serpent": {
+          "0": 350,
+          "1": 18,
+          "2": 0,
+          "3": 0,
+          "4": true,
+          "5": 1000,
+          "7": 0,
+          "9": 7,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 36,
+          "14": "Dementor"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Doxy replace Frost Bat*/
+    /*Doxy replace Frost Bat*/
     {
       "LogName": "Doxy Image over Frost Bat",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Frost Bat",
-      "FromFile": "assets/Monsters/Doxy.png", 
+      "FromFile": "assets/Monsters/Doxy.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -547,33 +544,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Frost Bat": {
-                    0: 100,
-                    1: 5,
-                    2: 0,
-                    3: 0,
-                    4: true,
-                    5: 1000,
-                    7: 0,
-                    9: 4,
-                    10: 3,
-                    11: .00,
-                    12: true,
-                    13: 10,
-                    14: "Doxy",
-                },
+        "Frost Bat": {
+          "0": 100,
+          "1": 5,
+          "2": 0,
+          "3": 0,
+          "4": true,
+          "5": 1000,
+          "7": 0,
+          "9": 4,
+          "10": 3,
+          "11": 0.0,
+          "12": true,
+          "13": 10,
+          "14": "Doxy"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Dugbog Blue replace Big Slime*/
+    /*Dugbog Blue replace Big Slime*/
     {
       "LogName": "Dugbog Blue Image over Big Slime",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Big Slime",
-      "FromFile": "assets/Monsters/Dugbog Blue.png", 
+      "FromFile": "assets/Monsters/Dugbog Blue.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -585,33 +582,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Big Slime": {
-                    0: 250,
-                    1: 13,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 1000,
-                    7: 1,
-                    9: 5,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 26,
-                    14: "Midnight Dugbog",
-                },
+        "Big Slime": {
+          "0": 250,
+          "1": 13,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 1000,
+          "7": 1,
+          "9": 5,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 26,
+          "14": "Midnight Dugbog"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Dugbog Brown replace Big Slime*/
+    /*Dugbog Brown replace Big Slime*/
     {
       "LogName": "Dugbog Brown Image over Big Slime",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Big Slime",
-      "FromFile": "assets/Monsters/Dugbog Brown.png", 
+      "FromFile": "assets/Monsters/Dugbog Brown.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -623,33 +620,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Big Slime": {
-                    0: 150,
-                    1: 8,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 1000,
-                    7: 1,
-                    9: 5,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 16,
-                    14: "Muddy Dugbog",
-                },
+        "Big Slime": {
+          "0": 150,
+          "1": 8,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 1000,
+          "7": 1,
+          "9": 5,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 16,
+          "14": "Muddy Dugbog"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Dugbog Green replace Big Slime*/
+    /*Dugbog Green replace Big Slime*/
     {
       "LogName": "Dugbog GreenImage over Big Slime",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Big Slime",
-      "FromFile": "assets/Monsters/Dugbog Green.png", 
+      "FromFile": "assets/Monsters/Dugbog Green.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -661,33 +658,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Big Slime": {
-                    0: 200,
-                    1: 10,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 1000,
-                    7: 1,
-                    9: 5,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 20,
-                    14: "Forest Dugbog",
-                },
+        "Big Slime": {
+          "0": 200,
+          "1": 10,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 1000,
+          "7": 1,
+          "9": 5,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 20,
+          "14": "Forest Dugbog"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Dugbog replace Big Slime*/
+    /*Dugbog replace Big Slime*/
     {
       "LogName": "Dugbog Image over Big Slime",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Big Slime",
-      "FromFile": "assets/Monsters/Dugbog.png", 
+      "FromFile": "assets/Monsters/Dugbog.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -699,33 +696,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Big Slime": {
-                    0: 100,
-                    1: 5,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 1000,
-                    7: 1,
-                    9: 5,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 10,
-                    14: "Dugbog",
-                },
+        "Big Slime": {
+          "0": 100,
+          "1": 5,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 1000,
+          "7": 1,
+          "9": 5,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 10,
+          "14": "Dugbog"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Firecrab Amethyst replace Rock Crab*/
+    /*Firecrab Amethyst replace Rock Crab*/
     {
       "LogName": "Firecrab Amethyst Image over Rock Crab",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Rock Crab",
-      "FromFile": "assets/Monsters/Firecrab Amethyst.png", 
+      "FromFile": "assets/Monsters/Firecrab Amethyst.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -737,33 +734,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Rock Crab": {
-                    0: 300,
-                    1: 15,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 0,
-                    7: 1,
-                    9: 3,
-                    10: 3,
-                    11: .00,
-                    12: true,
-                    13: 30,
-                    14: "Midnight Firecrab",
-                },
+        "Rock Crab": {
+          "0": 300,
+          "1": 15,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 0,
+          "7": 1,
+          "9": 3,
+          "10": 3,
+          "11": 0.0,
+          "12": true,
+          "13": 30,
+          "14": "Midnight Firecrab"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Firecrab Aquamarine replace Rock Crab*/
+    /*Firecrab Aquamarine replace Rock Crab*/
     {
       "LogName": "Firecrab Aquamarine Image over Rock Crab",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Rock Crab",
-      "FromFile": "assets/Monsters/Firecrab Aquamarine.png", 
+      "FromFile": "assets/Monsters/Firecrab Aquamarine.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -775,33 +772,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Rock Crab": {
-                    0: 150,
-                    1: 8,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 0,
-                    7: 1,
-                    9: 3,
-                    10: 3,
-                    11: .00,
-                    12: true,
-                    13: 16,
-                    14: "Enchanted Firecrab",
-                },
+        "Rock Crab": {
+          "0": 150,
+          "1": 8,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 0,
+          "7": 1,
+          "9": 3,
+          "10": 3,
+          "11": 0.0,
+          "12": true,
+          "13": 16,
+          "14": "Enchanted Firecrab"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Firecrab Diamond replace Rock Crab*/
+    /*Firecrab Diamond replace Rock Crab*/
     {
       "LogName": "Firecrab Diamond Image over Rock Crab",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Rock Crab",
-      "FromFile": "assets/Monsters/Firecrab Diamond.png", 
+      "FromFile": "assets/Monsters/Firecrab Diamond.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -813,33 +810,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Rock Crab": {
-                    0: 200,
-                    1: 10,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 0,
-                    7: 1,
-                    9: 3,
-                    10: 3,
-                    11: .00,
-                    12: true,
-                    13: 20,
-                    14: "Sparkly Firecrab",
-                },
+        "Rock Crab": {
+          "0": 200,
+          "1": 10,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 0,
+          "7": 1,
+          "9": 3,
+          "10": 3,
+          "11": 0.0,
+          "12": true,
+          "13": 20,
+          "14": "Sparkly Firecrab"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Firecrab Emerald replace Rock Crab*/
+    /*Firecrab Emerald replace Rock Crab*/
     {
       "LogName": "Firecrab Emerald Image over Rock Crab",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Rock Crab",
-      "FromFile": "assets/Monsters/Firecrab Emerald.png", 
+      "FromFile": "assets/Monsters/Firecrab Emerald.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -851,33 +848,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Rock Crab": {
-                    0: 100,
-                    1: 5,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 0,
-                    7: 1,
-                    9: 3,
-                    10: 3,
-                    11: .00,
-                    12: true,
-                    13: 10,
-                    14: "Forest Firecrab",
-                },
+        "Rock Crab": {
+          "0": 100,
+          "1": 5,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 0,
+          "7": 1,
+          "9": 3,
+          "10": 3,
+          "11": 0.0,
+          "12": true,
+          "13": 10,
+          "14": "Forest Firecrab"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Firecrab Topaz replace Rock Crab*/
+    /*Firecrab Topaz replace Rock Crab*/
     {
       "LogName": "Firecrab Topaz Image over Rock Crab",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Rock Crab",
-      "FromFile": "assets/Monsters/Firecrab Topaz.png", 
+      "FromFile": "assets/Monsters/Firecrab Topaz.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -889,33 +886,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Rock Crab": {
-                    0: 250,
-                    1: 13,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 0,
-                    7: 1,
-                    9: 3,
-                    10: 3,
-                    11: .00,
-                    12: true,
-                    13: 26,
-                    14: "Toxic Firecrab",
-                },
+        "Rock Crab": {
+          "0": 250,
+          "1": 13,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 0,
+          "7": 1,
+          "9": 3,
+          "10": 3,
+          "11": 0.0,
+          "12": true,
+          "13": 26,
+          "14": "Toxic Firecrab"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Flobberworm Brown replace Green Slime*/
+    /*Flobberworm Brown replace Green Slime*/
     {
       "LogName": "Flobberworm Brown Image over Green Slime",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Green Slime",
-      "FromFile": "assets/Monsters/Flobberworm Brown.png", 
+      "FromFile": "assets/Monsters/Flobberworm Brown.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -927,33 +924,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Green Slime": {
-                    0: 45,
-                    1: 2,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 1000,
-                    7: 0,
-                    9: 4,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 4,
-                    14: "Mud Flobberworm",
-                },
+        "Green Slime": {
+          "0": 45,
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 1000,
+          "7": 0,
+          "9": 4,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 4,
+          "14": "Mud Flobberworm"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Flobberworm Tan replace Green Slime*/
+    /*Flobberworm Tan replace Green Slime*/
     {
       "LogName": "Flobberworm Tan Image over Green Slime",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Green Slime",
-      "FromFile": "assets/Monsters/Flobberworm Tan.png", 
+      "FromFile": "assets/Monsters/Flobberworm Tan.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -965,33 +962,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Green Slime": {
-                    0: 20,
-                    1: 1,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 1000,
-                    7: 0,
-                    9: 4,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 2,
-                    14: "Flobberworm",
-                },
+        "Green Slime": {
+          "0": 20,
+          "1": 1,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 1000,
+          "7": 0,
+          "9": 4,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 2,
+          "14": "Flobberworm"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Flobberworm Yellow replace Green Slime*/
+    /*Flobberworm Yellow replace Green Slime*/
     {
       "LogName": "Flobberworm Yellow Image over Green Slime",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Green Slime",
-      "FromFile": "assets/Monsters/Flobberworm Yellow.png", 
+      "FromFile": "assets/Monsters/Flobberworm Yellow.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -1003,33 +1000,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Green Slime": {
-                    0: 75,
-                    1: 2,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 1000,
-                    7: 0,
-                    9: 4,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 4,
-                    14: "Toxic Flobberworm",
-                },
+        "Green Slime": {
+          "0": 75,
+          "1": 2,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 1000,
+          "7": 0,
+          "9": 4,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 4,
+          "14": "Toxic Flobberworm"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Gnome Basic replace Skeleton*/
+    /*Gnome Basic replace Skeleton*/
     {
       "LogName": "Gnome Basic Image over Skeleton",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Skeleton",
-      "FromFile": "assets/Monsters/Gnome Basic.png", 
+      "FromFile": "assets/Monsters/Gnome Basic.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -1041,33 +1038,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Skeleton": {
-                    0: 140,
-                    1: 7,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 1500,
-                    7: 0,
-                    9: 8,
-                    10: 3,
-                    11: .00,
-                    12: true,
-                    13: 14,
-                    14: "Gnome",
-                },
+        "Skeleton": {
+          "0": 140,
+          "1": 7,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 1500,
+          "7": 0,
+          "9": 8,
+          "10": 3,
+          "11": 0.0,
+          "12": true,
+          "13": 14,
+          "14": "Gnome"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Gnome Red replace Skeleton*/
+    /*Gnome Red replace Skeleton*/
     {
       "LogName": "Gnome Red Image over Skeleton",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Skeleton",
-      "FromFile": "assets/Monsters/Gnome Red.png", 
+      "FromFile": "assets/Monsters/Gnome Red.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -1079,33 +1076,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Skeleton": {
-                    0: 100,
-                    1: 5,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 1500,
-                    7: 0,
-                    9: 8,
-                    10: 3,
-                    11: .00,
-                    12: true,
-                    13: 10,
-                    14: "Mud Gnome",
-                },
+        "Skeleton": {
+          "0": 100,
+          "1": 5,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 1500,
+          "7": 0,
+          "9": 8,
+          "10": 3,
+          "11": 0.0,
+          "12": true,
+          "13": 10,
+          "14": "Mud Gnome"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Gnome Yellow replace Skeleton*/
+    /*Gnome Yellow replace Skeleton*/
     {
       "LogName": "Gnome Yellow Image over Skeleton",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Skeleton",
-      "FromFile": "assets/Monsters/Gnome Yellow.png", 
+      "FromFile": "assets/Monsters/Gnome Yellow.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -1117,21 +1114,21 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Skeleton": {
-                    0: 140,
-                    1: 7,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 1500,
-                    7: 0,
-                    9: 8,
-                    10: 3,
-                    11: .00,
-                    12: true,
-                    13: 14,
-                    14: "Angry Gnome",
-                },
+        "Skeleton": {
+          "0": 140,
+          "1": 7,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 1500,
+          "7": 0,
+          "9": 8,
+          "10": 3,
+          "11": 0.0,
+          "12": true,
+          "13": 14,
+          "14": "Angry Gnome"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
@@ -1154,33 +1151,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Royal Serpent": {
-                    0: 140,
-                    1: 7,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 1500,
-                    7: 0,
-                    9: 8,
-                    10: 3,
-                    11: .00,
-                    12: true,
-                    13: 14,
-                    14: "Horned Serpent",
-                },
+        "Royal Serpent": {
+          "0": 140,
+          "1": 7,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 1500,
+          "7": 0,
+          "9": 8,
+          "10": 3,
+          "11": 0.0,
+          "12": true,
+          "13": 14,
+          "14": "Horned Serpent"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Inferi replace Stone Golem*/
+    /*Inferi replace Stone Golem*/
     {
       "LogName": "Inferi Image over Stone Golem",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Stone Golem",
-      "FromFile": "assets/Monsters/Inferi.png", 
+      "FromFile": "assets/Monsters/Inferi.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -1192,33 +1189,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Stone Golem": {
-                    0: 350,
-                    1: 18,
-                    2: 1,
-                    3: 1,
-                    4: false,
-                    5: 0,
-                    7: 0,
-                    9: 3,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 36,
-                    14: "Inferi",
-                },
+        "Stone Golem": {
+          "0": 350,
+          "1": 18,
+          "2": 1,
+          "3": 1,
+          "4": false,
+          "5": 0,
+          "7": 0,
+          "9": 3,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 36,
+          "14": "Inferi"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Streeler Blue replace Lava Crab*/
+    /*Streeler Blue replace Lava Crab*/
     {
       "LogName": "Streeler Blue Image over Lava Crab",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Lava Crab",
-      "FromFile": "assets/Monsters/Streeler Blue.png", 
+      "FromFile": "assets/Monsters/Streeler Blue.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -1230,33 +1227,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Lava Crab": {
-                    0: 250,
-                    1: 13,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 1000,
-                    7: 1,
-                    9: 3,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 26,
-                    14: "Midnight Streeler",
-                },
+        "Lava Crab": {
+          "0": 250,
+          "1": 13,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 1000,
+          "7": 1,
+          "9": 3,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 26,
+          "14": "Midnight Streeler"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Streeler Green replace Lava Crab*/
+    /*Streeler Green replace Lava Crab*/
     {
       "LogName": "Streeler Green Image over Lava Crab",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Lava Crab",
-      "FromFile": "assets/Monsters/Streeler Green.png", 
+      "FromFile": "assets/Monsters/Streeler Green.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -1268,33 +1265,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Lava Crab": {
-                    0: 100,
-                    1: 5,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 1000,
-                    7: 1,
-                    9: 3,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 10,
-                    14: "Forest Streeler",
-                },
+        "Lava Crab": {
+          "0": 100,
+          "1": 5,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 1000,
+          "7": 1,
+          "9": 3,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 10,
+          "14": "Forest Streeler"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Streeler Maroon replace Lava Crab*/
+    /*Streeler Maroon replace Lava Crab*/
     {
       "LogName": "Streeler Maroon Image over Lava Crab",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Lava Crab",
-      "FromFile": "assets/Monsters/Streeler Maroon.png", 
+      "FromFile": "assets/Monsters/Streeler Maroon.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -1306,33 +1303,33 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Lava Crab": {
-                    0: 150,
-                    1: 8,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 1000,
-                    7: 1,
-                    9: 3,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 16,
-                    14: "Angry Streeler",
-                },
+        "Lava Crab": {
+          "0": 150,
+          "1": 8,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 1000,
+          "7": 1,
+          "9": 3,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 16,
+          "14": "Angry Streeler"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
     },
-/*Streeler Green replace Lava Crab*/
+    /*Streeler Green replace Lava Crab*/
     {
       "LogName": "Streeler Yellow Image over Lava Crab",
       "Action": "EditImage",
       "Target": "Characters/Monsters/Lava Crab",
-      "FromFile": "assets/Monsters/Streeler Yellow.png", 
+      "FromFile": "assets/Monsters/Streeler Yellow.png",
       "PatchMode": "Replace",
       "Update": "OnLocationChange",
       "When": {
@@ -1344,30 +1341,26 @@
       "Action": "EditData",
       "Target": "Data/Monsters",
       "Fields": {
-                "Lava Crab": {
-                    0: 200,
-                    1: 10,
-                    2: 0,
-                    3: 0,
-                    4: false,
-                    5: 1000,
-                    7: 1,
-                    9: 3,
-                    10: 2,
-                    11: .00,
-                    12: true,
-                    13: 20,
-                    14: "Toxic Streeler",
-                },
+        "Lava Crab": {
+          "0": 200,
+          "1": 10,
+          "2": 0,
+          "3": 0,
+          "4": false,
+          "5": 1000,
+          "7": 1,
+          "9": 3,
+          "10": 2,
+          "11": 0.0,
+          "12": true,
+          "13": 20,
+          "14": "Toxic Streeler"
+        }
       },
       "Update": "OnLocationChange",
       "When": {
         "LocationName": "{{ModId}}_HogwartsForbiddenForest1" /*will be changed*/
       }
-    },
+    }
   ]
 }
-
-
-
-

@@ -1,377 +1,376 @@
 {
-    "Changes": 
-    [ 
-        {
-            "Action": "EditData",
-            "Target": "Data/Shops",
-            "Entries": {
-                "{{ModId}}_RedCap": {
-                    "Owners": [
-                        {
-                            "Id": "RedCap",
-                            "Name": "AnyOrNone"
-                        }
-                    ],
-                    "Items": [
-                        {
-                            "Id": "CookoutKit",
-                            "ItemId": "(O)926",
-                            "AvailableStock": 1
-                        },
-                        {
-                            "Id": "Torch",
-                            "ItemId": "(O)93",
-                            "AvailableStock": 2
-                        },
-                        {
-                            "TradeItemAmount": 1,
-                            "Id": "RandomForage",
-                            "ItemId": "RANDOM_ITEMS (O) @isRandomSale",
-                            "PerItemCondition": "ITEM_CATEGORY Target -81, ITEM_CONTEXT_TAG Target season_{{season}}",
-                            "AvailableStock": 3,
-                            "MaxItems": 1
-                        },
-                        {
-                            "TradeItemAmount": 1,
-                            "Id": "RandomCrop",
-                            "ItemId": "RANDOM_ITEMS (O) @isRandomSale",
-                            "PerItemCondition": "ITEM_CATEGORY Target -80 -79 -75, ITEM_CONTEXT_TAG Target season_{{season}}",
-                            "AvailableStock": 3,
-                            "MaxItems": 1
-                        },
-                        {
-                            "TradeItemAmount": 1,
-                            "Id": "RandomMonsterLootOrAnimalProduct",
-                            "ItemId": "RANDOM_ITEMS (O) @isRandomSale",
-                            "PerItemCondition": "ANY \"ITEM_CONTEXT_TAG Target {{ModId}}_AnimalProduct\" \"ITEM_CONTEXT_TAG Target {{ModId}}_MonsterLoot\"",
-                            "AvailableStock": 3,
-                            "MaxItems": 1
-                        }
-                    ]
-                },
-                "{{ModId}}_Honeydukes": {
-                    "Owners": [
-                      {
-                          // Add shop hours here
-                        "Condition": null,
-                        // add ID of the shop owner here
-                        "Portrait": null,
-                        // add the line the shop owner says whily uou're browsing
-                        "Dialogues": null,
-                        "RandomizeDialogueOnOpen": true,
-                        "Id": "AmbrosiusFlume",
-                        // Change to the ID of the shop owner
-                        "Name": "AnyOrNone"
-                      }
-                    ],
-                    "Items": [
-                      {
-                        "Id": "{{ModId}}_HoneydukesItems",
-                        "ItemId": "ALL_ITEMS (O)",
-                        "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_Honeydukes"
-                      }
-                    ]
-                },
-                "{{ModId}}_BroodAndPeck": {
-                    "Owners": [
-                      {
-                          // Add shop hours here
-                        "Condition": null,
-                        // add ID of the shop owner here
-                        "Portrait": null,
-                        // add the line the shop owner says whily uou're browsing
-                        "Dialogues": null,
-                        "RandomizeDialogueOnOpen": true,
-                        "Id": "AnyOrNone",
-                        // Change to the ID of the shop owner
-                        "Name": "AnyOrNone"
-                      }
-                    ],
-                    "Items": [
-                      {
-                        "Id": "{{ModId}}_BroodAndPeckItems",
-                        "ItemId": "ALL_ITEMS (O)",
-                        "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_BroodAndPeck"
-                      }
-                    ]
-                },
-                "{{ModId}}_DervishandBanges": {
-                    "Owners": [
-                      {
-                          // Add shop hours here
-                        "Condition": null,
-                        // add ID of the shop owner here
-                        "Portrait": null,
-                        // add the line the shop owner says whily uou're browsing
-                        "Dialogues": null,
-                        "RandomizeDialogueOnOpen": true,
-                        "Id": "AnyOrNone",
-                        // Change to the ID of the shop owner
-                        "Name": "AnyOrNone"
-                      }
-                    ],
-                    "Items": [
-                      {
-                        "Id": "{{ModId}}_DervishandBangesItems",
-                        "ItemId": "ALL_ITEMS (O)",
-                        "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_DervishandBanges"
-                      }
-                    ]
-                },
-                "{{ModId}}_DogweedAndDeathcap": {
-                    "Owners": [
-                      {
-                          // Add shop hours here
-                        "Condition": null,
-                        // add ID of the shop owner here
-                        "Portrait": null,
-                        // add the line the shop owner says whily uou're browsing
-                        "Dialogues": null,
-                        "RandomizeDialogueOnOpen": true,
-                        "Id": "AnyOrNone",
-                        // Change to the ID of the shop owner
-                        "Name": "AnyOrNone"
-                      }
-                    ],
-                    "Items": [
-                      {
-                        "Id": "{{ModId}}_DogweedAndDeathcapItems",
-                        "ItemId": "ALL_ITEMS (O)",
-                        "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_DogweedAndDeathcap"
-                      }
-                    ]
-                },
-                "{{ModId}}_DominicMaestrosMusicShop": {
-                    "Owners": [
-                      {
-                          // Add shop hours here
-                        "Condition": null,
-                        // add ID of the shop owner here
-                        "Portrait": null,
-                        // add the line the shop owner says whily uou're browsing
-                        "Dialogues": null,
-                        "RandomizeDialogueOnOpen": true,
-                        "Id": "AnyOrNone",
-                        // Change to the ID of the shop owner
-                        "Name": "AnyOrNone"
-                      }
-                    ],
-                    "Items": [
-                      {
-                        "Id": "{{ModId}}_DominicMaestrosMusicShopItems",
-                        "ItemId": "ALL_ITEMS (O)",
-                        "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_DominicMaestrosMusicShop"
-                      }
-                    ]
-                },
-                "{{ModId}}_GladragsWizardwear": {
-                    "Owners": [
-                      {
-                          // Add shop hours here
-                        "Condition": null,
-                        // add ID of the shop owner here
-                        "Portrait": null,
-                        // add the line the shop owner says whily uou're browsing
-                        "Dialogues": null,
-                        "RandomizeDialogueOnOpen": true,
-                        "Id": "AnyOrNone",
-                        // Change to the ID of the shop owner
-                        "Name": "AnyOrNone"
-                      }
-                    ],
-                    "Items": [
-                      {
-                        "Id": "{{ModId}}_GladragsWizardwearItems",
-                        "ItemId": "ALL_ITEMS (O)",
-                        "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_GladragsWizardwear"
-                      }
-                    ]
-                },
-                "{{ModId}}_HogsHeadInn": {
-                    "Owners": [
-                      {
-                          // Add shop hours here
-                        "Condition": null,
-                        // add ID of the shop owner here
-                        "Portrait": null,
-                        // add the line the shop owner says whily uou're browsing
-                        "Dialogues": null,
-                        "RandomizeDialogueOnOpen": true,
-                        "Id": "AnyOrNone",
-                        // Change to the ID of the shop owner
-                        "Name": "AnyOrNone"
-                      }
-                    ],
-                    "Items": [
-                      {
-                        "Id": "{{ModId}}_HogsHeadInnItems",
-                        "ItemId": "ALL_ITEMS (O)",
-                        "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_HogsHeadInn"
-                      }
-                    ]
-                },
-                "{{ModId}}_JPippinsPotions": {
-                    "Owners": [
-                      {
-                          // Add shop hours here
-                        "Condition": null,
-                        // add ID of the shop owner here
-                        "Portrait": null,
-                        // add the line the shop owner says whily uou're browsing
-                        "Dialogues": null,
-                        "RandomizeDialogueOnOpen": true,
-                        "Id": "AnyOrNone",
-                        // Change to the ID of the shop owner
-                        "Name": "AnyOrNone"
-                      }
-                    ],
-                    "Items": [
-                      {
-                        "Id": "{{ModId}}_JPippinsPotionsItems",
-                        "ItemId": "ALL_ITEMS (O)",
-                        "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_JPippinsPotions"
-                      }
-                    ]
-                },
-                "{{ModId}}_MadamPuddifootsTeaShop": {
-                    "Owners": [
-                      {
-                          // Add shop hours here
-                        "Condition": null,
-                        // add ID of the shop owner here
-                        "Portrait": null,
-                        // add the line the shop owner says whily uou're browsing
-                        "Dialogues": null,
-                        "RandomizeDialogueOnOpen": true,
-                        "Id": "AnyOrNone",
-                        // Change to the ID of the shop owner
-                        "Name": "AnyOrNone"
-                      }
-                    ],
-                    "Items": [
-                      {
-                        "Id": "{{ModId}}_MadamPuddifootsTeaShopItems",
-                        "ItemId": "ALL_ITEMS (O)",
-                        "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_MadamPuddifootsTeaShop"
-                      }
-                    ]
-                },
-                "{{ModId}}_SpintwitchesSportingNeeds": {
-                    "Owners": [
-                      {
-                          // Add shop hours here
-                        "Condition": null,
-                        // add ID of the shop owner here
-                        "Portrait": null,
-                        // add the line the shop owner says whily uou're browsing
-                        "Dialogues": null,
-                        "RandomizeDialogueOnOpen": true,
-                        "Id": "AnyOrNone",
-                        // Change to the ID of the shop owner
-                        "Name": "AnyOrNone"
-                      }
-                    ],
-                    "Items": [
-                      {
-                        "Id": "{{ModId}}_SpintwitchesSportingNeedsItems",
-                        "ItemId": "ALL_ITEMS (O)",
-                        "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_SpintwitchesSportingNeeds"
-                      }
-                    ]
-                },
-                "{{ModId}}_TheMagicNeep": {
-                    "Owners": [
-                      {
-                          // Add shop hours here
-                        "Condition": null,
-                        // add ID of the shop owner here
-                        "Portrait": null,
-                        // add the line the shop owner says whily uou're browsing
-                        "Dialogues": null,
-                        "RandomizeDialogueOnOpen": true,
-                        "Id": "AnyOrNone",
-                        // Change to the ID of the shop owner
-                        "Name": "AnyOrNone"
-                      }
-                    ],
-                    "Items": [
-                      {
-                        "Id": "{{ModId}}_TheMagicNeepItems",
-                        "ItemId": "ALL_ITEMS (O)",
-                        "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_TheMagicNeep"
-                      }
-                    ]
-                },
-                "{{ModId}}_ThreeBroomsticksInn": {
-                    "Owners": [
-                      {
-                          // Add shop hours here
-                        "Condition": null,
-                        // add ID of the shop owner here
-                        "Portrait": null,
-                        // add the line the shop owner says whily uou're browsing
-                        "Dialogues": null,
-                        "RandomizeDialogueOnOpen": true,
-                        "Id": "AnyOrNone",
-                        // Change to the ID of the shop owner
-                        "Name": "AnyOrNone"
-                      }
-                    ],
-                    "Items": [
-                      {
-                        "Id": "{{ModId}}_ThreeBroomsticksInnItems",
-                        "ItemId": "ALL_ITEMS (O)",
-                        "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_ThreeBroomsticksInn"
-                      }
-                    ]
-                },
-                "{{ModId}}_TomesAndScrolls": {
-                    "Owners": [
-                      {
-                          // Add shop hours here
-                        "Condition": null,
-                        // add ID of the shop owner here
-                        "Portrait": null,
-                        // add the line the shop owner says whily uou're browsing
-                        "Dialogues": null,
-                        "RandomizeDialogueOnOpen": true,
-                        "Id": "AnyOrNone",
-                        // Change to the ID of the shop owner
-                        "Name": "AnyOrNone"
-                      }
-                    ],
-                    "Items": [
-                      {
-                        "Id": "{{ModId}}_TomesAndScrollsItems",
-                        "ItemId": "ALL_ITEMS (O)",
-                        "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_TomesAndScrolls"
-                      }
-                    ]
-                },
-                "{{ModId}}_ZonkosJokeShop": {
-                    "Owners": [
-                      {
-                          // Add shop hours here
-                        "Condition": null,
-                        // add ID of the shop owner here
-                        "Portrait": null,
-                        // add the line the shop owner says whily uou're browsing
-                        "Dialogues": null,
-                        "RandomizeDialogueOnOpen": true,
-                        "Id": "AnyOrNone",
-                        // Change to the ID of the shop owner
-                        "Name": "AnyOrNone"
-                      }
-                    ],
-                    "Items": [
-                      {
-                        "Id": "{{ModId}}_ZonkosJokeShopItems",
-                        "ItemId": "ALL_ITEMS (O)",
-                        "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_ZonkosJokeShop"
-                      }
-                    ]
-                }
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "{{ModId}}_RedCap": {
+          "Owners": [
+            {
+              "Id": "RedCap",
+              "Name": "AnyOrNone"
             }
+          ],
+          "Items": [
+            {
+              "Id": "CookoutKit",
+              "ItemId": "(O)926",
+              "AvailableStock": 1
+            },
+            {
+              "Id": "Torch",
+              "ItemId": "(O)93",
+              "AvailableStock": 2
+            },
+            {
+              "TradeItemAmount": 1,
+              "Id": "RandomForage",
+              "ItemId": "RANDOM_ITEMS (O) @isRandomSale",
+              "PerItemCondition": "ITEM_CATEGORY Target -81, ITEM_CONTEXT_TAG Target season_{{season}}",
+              "AvailableStock": 3,
+              "MaxItems": 1
+            },
+            {
+              "TradeItemAmount": 1,
+              "Id": "RandomCrop",
+              "ItemId": "RANDOM_ITEMS (O) @isRandomSale",
+              "PerItemCondition": "ITEM_CATEGORY Target -80 -79 -75, ITEM_CONTEXT_TAG Target season_{{season}}",
+              "AvailableStock": 3,
+              "MaxItems": 1
+            },
+            {
+              "TradeItemAmount": 1,
+              "Id": "RandomMonsterLootOrAnimalProduct",
+              "ItemId": "RANDOM_ITEMS (O) @isRandomSale",
+              "PerItemCondition": "ANY \"ITEM_CONTEXT_TAG Target {{ModId}}_AnimalProduct\" \"ITEM_CONTEXT_TAG Target {{ModId}}_MonsterLoot\"",
+              "AvailableStock": 3,
+              "MaxItems": 1
+            }
+          ]
+        },
+        "{{ModId}}_Honeydukes": {
+          "Owners": [
+            {
+              // Add shop hours here
+              "Condition": null,
+              // add ID of the shop owner here
+              "Portrait": null,
+              // add the line the shop owner says whily uou're browsing
+              "Dialogues": null,
+              "RandomizeDialogueOnOpen": true,
+              "Id": "AmbrosiusFlume",
+              // Change to the ID of the shop owner
+              "Name": "AnyOrNone"
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_HoneydukesItems",
+              "ItemId": "ALL_ITEMS (O)",
+              "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_Honeydukes"
+            }
+          ]
+        },
+        "{{ModId}}_BroodAndPeck": {
+          "Owners": [
+            {
+              // Add shop hours here
+              "Condition": null,
+              // add ID of the shop owner here
+              "Portrait": null,
+              // add the line the shop owner says whily uou're browsing
+              "Dialogues": null,
+              "RandomizeDialogueOnOpen": true,
+              "Id": "AnyOrNone",
+              // Change to the ID of the shop owner
+              "Name": "AnyOrNone"
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_BroodAndPeckItems",
+              "ItemId": "ALL_ITEMS (O)",
+              "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_BroodAndPeck"
+            }
+          ]
+        },
+        "{{ModId}}_DervishandBanges": {
+          "Owners": [
+            {
+              // Add shop hours here
+              "Condition": null,
+              // add ID of the shop owner here
+              "Portrait": null,
+              // add the line the shop owner says whily uou're browsing
+              "Dialogues": null,
+              "RandomizeDialogueOnOpen": true,
+              "Id": "AnyOrNone",
+              // Change to the ID of the shop owner
+              "Name": "AnyOrNone"
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_DervishandBangesItems",
+              "ItemId": "ALL_ITEMS (O)",
+              "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_DervishandBanges"
+            }
+          ]
+        },
+        "{{ModId}}_DogweedAndDeathcap": {
+          "Owners": [
+            {
+              // Add shop hours here
+              "Condition": null,
+              // add ID of the shop owner here
+              "Portrait": null,
+              // add the line the shop owner says whily uou're browsing
+              "Dialogues": null,
+              "RandomizeDialogueOnOpen": true,
+              "Id": "AnyOrNone",
+              // Change to the ID of the shop owner
+              "Name": "AnyOrNone"
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_DogweedAndDeathcapItems",
+              "ItemId": "ALL_ITEMS (O)",
+              "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_DogweedAndDeathcap"
+            }
+          ]
+        },
+        "{{ModId}}_DominicMaestrosMusicShop": {
+          "Owners": [
+            {
+              // Add shop hours here
+              "Condition": null,
+              // add ID of the shop owner here
+              "Portrait": null,
+              // add the line the shop owner says whily uou're browsing
+              "Dialogues": null,
+              "RandomizeDialogueOnOpen": true,
+              "Id": "AnyOrNone",
+              // Change to the ID of the shop owner
+              "Name": "AnyOrNone"
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_DominicMaestrosMusicShopItems",
+              "ItemId": "ALL_ITEMS (O)",
+              "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_DominicMaestrosMusicShop"
+            }
+          ]
+        },
+        "{{ModId}}_GladragsWizardwear": {
+          "Owners": [
+            {
+              // Add shop hours here
+              "Condition": null,
+              // add ID of the shop owner here
+              "Portrait": null,
+              // add the line the shop owner says whily uou're browsing
+              "Dialogues": null,
+              "RandomizeDialogueOnOpen": true,
+              "Id": "AnyOrNone",
+              // Change to the ID of the shop owner
+              "Name": "AnyOrNone"
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_GladragsWizardwearItems",
+              "ItemId": "ALL_ITEMS (O)",
+              "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_GladragsWizardwear"
+            }
+          ]
+        },
+        "{{ModId}}_HogsHeadInn": {
+          "Owners": [
+            {
+              // Add shop hours here
+              "Condition": null,
+              // add ID of the shop owner here
+              "Portrait": null,
+              // add the line the shop owner says whily uou're browsing
+              "Dialogues": null,
+              "RandomizeDialogueOnOpen": true,
+              "Id": "AnyOrNone",
+              // Change to the ID of the shop owner
+              "Name": "AnyOrNone"
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_HogsHeadInnItems",
+              "ItemId": "ALL_ITEMS (O)",
+              "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_HogsHeadInn"
+            }
+          ]
+        },
+        "{{ModId}}_JPippinsPotions": {
+          "Owners": [
+            {
+              // Add shop hours here
+              "Condition": null,
+              // add ID of the shop owner here
+              "Portrait": null,
+              // add the line the shop owner says whily uou're browsing
+              "Dialogues": null,
+              "RandomizeDialogueOnOpen": true,
+              "Id": "AnyOrNone",
+              // Change to the ID of the shop owner
+              "Name": "AnyOrNone"
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_JPippinsPotionsItems",
+              "ItemId": "ALL_ITEMS (O)",
+              "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_JPippinsPotions"
+            }
+          ]
+        },
+        "{{ModId}}_MadamPuddifootsTeaShop": {
+          "Owners": [
+            {
+              // Add shop hours here
+              "Condition": null,
+              // add ID of the shop owner here
+              "Portrait": null,
+              // add the line the shop owner says whily uou're browsing
+              "Dialogues": null,
+              "RandomizeDialogueOnOpen": true,
+              "Id": "AnyOrNone",
+              // Change to the ID of the shop owner
+              "Name": "AnyOrNone"
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_MadamPuddifootsTeaShopItems",
+              "ItemId": "ALL_ITEMS (O)",
+              "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_MadamPuddifootsTeaShop"
+            }
+          ]
+        },
+        "{{ModId}}_SpintwitchesSportingNeeds": {
+          "Owners": [
+            {
+              // Add shop hours here
+              "Condition": null,
+              // add ID of the shop owner here
+              "Portrait": null,
+              // add the line the shop owner says whily uou're browsing
+              "Dialogues": null,
+              "RandomizeDialogueOnOpen": true,
+              "Id": "AnyOrNone",
+              // Change to the ID of the shop owner
+              "Name": "AnyOrNone"
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_SpintwitchesSportingNeedsItems",
+              "ItemId": "ALL_ITEMS (O)",
+              "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_SpintwitchesSportingNeeds"
+            }
+          ]
+        },
+        "{{ModId}}_TheMagicNeep": {
+          "Owners": [
+            {
+              // Add shop hours here
+              "Condition": null,
+              // add ID of the shop owner here
+              "Portrait": null,
+              // add the line the shop owner says whily uou're browsing
+              "Dialogues": null,
+              "RandomizeDialogueOnOpen": true,
+              "Id": "AnyOrNone",
+              // Change to the ID of the shop owner
+              "Name": "AnyOrNone"
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_TheMagicNeepItems",
+              "ItemId": "ALL_ITEMS (O)",
+              "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_TheMagicNeep"
+            }
+          ]
+        },
+        "{{ModId}}_ThreeBroomsticksInn": {
+          "Owners": [
+            {
+              // Add shop hours here
+              "Condition": null,
+              // add ID of the shop owner here
+              "Portrait": null,
+              // add the line the shop owner says whily uou're browsing
+              "Dialogues": null,
+              "RandomizeDialogueOnOpen": true,
+              "Id": "AnyOrNone",
+              // Change to the ID of the shop owner
+              "Name": "AnyOrNone"
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_ThreeBroomsticksInnItems",
+              "ItemId": "ALL_ITEMS (O)",
+              "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_ThreeBroomsticksInn"
+            }
+          ]
+        },
+        "{{ModId}}_TomesAndScrolls": {
+          "Owners": [
+            {
+              // Add shop hours here
+              "Condition": null,
+              // add ID of the shop owner here
+              "Portrait": null,
+              // add the line the shop owner says whily uou're browsing
+              "Dialogues": null,
+              "RandomizeDialogueOnOpen": true,
+              "Id": "AnyOrNone",
+              // Change to the ID of the shop owner
+              "Name": "AnyOrNone"
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_TomesAndScrollsItems",
+              "ItemId": "ALL_ITEMS (O)",
+              "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_TomesAndScrolls"
+            }
+          ]
+        },
+        "{{ModId}}_ZonkosJokeShop": {
+          "Owners": [
+            {
+              // Add shop hours here
+              "Condition": null,
+              // add ID of the shop owner here
+              "Portrait": null,
+              // add the line the shop owner says whily uou're browsing
+              "Dialogues": null,
+              "RandomizeDialogueOnOpen": true,
+              "Id": "AnyOrNone",
+              // Change to the ID of the shop owner
+              "Name": "AnyOrNone"
+            }
+          ],
+          "Items": [
+            {
+              "Id": "{{ModId}}_ZonkosJokeShopItems",
+              "ItemId": "ALL_ITEMS (O)",
+              "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_ZonkosJokeShop"
+            }
+          ]
         }
-    ]
+      }
+    }
+  ]
 }

@@ -11,14 +11,13 @@
         "Width": 199,
         "Height": 155
       },
-      "PatchMode": "Replace",
+      "PatchMode": "Replace"
     },
     {
       "LogName": "Forbidden Forest 1 Paths Light",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
       "MapTiles": [
-        
         {
           "Position": {
             "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
@@ -26,7 +25,7 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
+          "SetIndex": 8
         },
         {
           "Position": {
@@ -35,7 +34,7 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
+          "SetIndex": 8
         },
         {
           "Position": {
@@ -44,7 +43,7 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
+          "SetIndex": 8
         },
         {
           "Position": {
@@ -53,7 +52,7 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
+          "SetIndex": 8
         },
         {
           "Position": {
@@ -62,7 +61,7 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
+          "SetIndex": 8
         },
         {
           "Position": {
@@ -71,7 +70,7 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
+          "SetIndex": 8
         },
         {
           "Position": {
@@ -80,7 +79,7 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
+          "SetIndex": 8
         },
         {
           "Position": {
@@ -89,7 +88,7 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
+          "SetIndex": 8
         },
         {
           "Position": {
@@ -98,7 +97,7 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
+          "SetIndex": 8
         },
         {
           "Position": {
@@ -107,7 +106,7 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
+          "SetIndex": 8
         },
         {
           "Position": {
@@ -116,7 +115,7 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
+          "SetIndex": 8
         },
         {
           "Position": {
@@ -125,7 +124,7 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
+          "SetIndex": 8
         },
         {
           "Position": {
@@ -134,7 +133,7 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
+          "SetIndex": 8
         },
         {
           "Position": {
@@ -143,7 +142,7 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
+          "SetIndex": 8
         },
         {
           "Position": {
@@ -152,7 +151,7 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
+          "SetIndex": 8
         },
         {
           "Position": {
@@ -161,7 +160,7 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
+          "SetIndex": 8
         },
         {
           "Position": {
@@ -170,7 +169,7 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
+          "SetIndex": 8
         },
         {
           "Position": {
@@ -179,7 +178,7 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
+          "SetIndex": 8
         },
         {
           "Position": {
@@ -188,7 +187,7 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
+          "SetIndex": 8
         },
         {
           "Position": {
@@ -197,7 +196,7 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
+          "SetIndex": 8
         },
         {
           "Position": {
@@ -206,7 +205,7 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
+          "SetIndex": 8
         },
         {
           "Position": {
@@ -215,8 +214,8 @@
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
-          "SetIndex": 8,
-        },
+          "SetIndex": 8
+        }
       ]
     },
     {
@@ -414,7 +413,7 @@
           "Layer": "Back",
           "SetProperties": {
             "TouchAction": "Warp {{ModId}}_ForbiddenForestStage2 {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}} + 4}}"
-          },
+          }
         },
         {
           "Position": {
@@ -591,8 +590,8 @@
           },
           "Layer": "Buildings",
           "Remove": true
-        },
-      ],
+        }
+      ]
     },
     {
       "LogName": "Forbidden Forest 1 Merlin Trial Debuff 3",
@@ -615,8 +614,8 @@
           "Layer": "Back",
           "SetProperties": {
             "DMT/buffOn": "{{Random:6, 7, 12, 13, 14, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28}}",
-            "DMT/soundOn": "debuffHit",
-          },
+            "DMT/soundOn": "debuffHit"
+          }
         },
         {
           "Position": {
@@ -793,8 +792,8 @@
           },
           "Layer": "Buildings",
           "Remove": true
-        },
-      ],
+        }
+      ]
     },
     {
       "LogName": "Forbidden Forest 1 Treasure Room 1",
@@ -968,8 +967,8 @@
           },
           "Layer": "Buildings",
           "Remove": true
-        },
-      ],
+        }
+      ]
     },
     {
       "LogName": "Forbidden Forest 1 Merlin Trial Treasure Room 1",
@@ -995,8 +994,8 @@
             "DMT/changeMultipleIndexOn": "Front {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}}+3}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}}+3}}=|Front {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}}+3}}=|Front {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 5}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}}+3}}=|Front {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 6}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}}+3}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}}+3}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 4}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 4}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 5}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 4}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 6}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 4}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}}+3}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 5}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 5}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 5}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 5}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 6}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 5}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}}+3}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 6}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 6}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 5}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 6}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 6}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 6}}=",
             "DMT/chestOn": "{{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 5}}=378,10 380,10 382,10 384,10 386,10 Money/2000 Weapon/30",
             "DMT/soundOn": "getNewSpecialItem",
-            "DMT/messageOn": "You have unlocked treasure somewhere.",
-          },
+            "DMT/messageOn": "You have unlocked treasure somewhere."
+          }
         },
         {
           "Position": {
@@ -1173,8 +1172,8 @@
           },
           "Layer": "Buildings",
           "Remove": true
-        },
-      ],
+        }
+      ]
     },
     {
       "LogName": "Forbidden Forest 1 Treasure Room 2",
@@ -1348,8 +1347,8 @@
           },
           "Layer": "Buildings",
           "Remove": true
-        },
-      ],
+        }
+      ]
     },
     {
       "LogName": "Forbidden Forest 1 Merlin Trial Treasure Room 1",
@@ -1375,8 +1374,8 @@
             "DMT/changeMultipleIndexOn": "Front {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}}+3}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}}+3}}=|Front {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}}+3}}=|Front {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 5}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}}+3}}=|Front {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 6}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}}+3}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}}+3}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 4}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 4}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 5}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 4}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 6}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 4}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}}+3}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 5}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 5}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 5}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 5}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 6}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 5}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}}+3}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 6}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 6}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 5}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 6}}=|Buildings {{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 6}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 6}}=",
             "DMT/chestOn": "{{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1TreasureRoom1X}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1TreasureRoom1Y}} + 5}}=378,10 380,10 382,10 384,10 386,10 Money/2000 Weapon/30",
             "DMT/soundOn": "getNewSpecialItem",
-            "DMT/messageOn": "You have unlocked treasure somewhere.",
-          },
+            "DMT/messageOn": "You have unlocked treasure somewhere."
+          }
         },
         {
           "Position": {
@@ -1553,8 +1552,8 @@
           },
           "Layer": "Buildings",
           "Remove": true
-        },
-      ],
+        }
+      ]
     },
     {
       "LogName": "Forbidden Forest 1 Merlin Trial Debuff 1",
@@ -1577,8 +1576,8 @@
           "Layer": "Back",
           "SetProperties": {
             "DMT/buffOn": "{{Random:6, 7, 12, 13, 14, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28}}",
-            "DMT/soundOn": "debuffHit",
-          },
+            "DMT/soundOn": "debuffHit"
+          }
         },
         {
           "Position": {
@@ -1755,8 +1754,8 @@
           },
           "Layer": "Buildings",
           "Remove": true
-        },
-      ],
+        }
+      ]
     },
     {
       "LogName": "Forbidden Forest 1 Merlin Trial Debuff 2",
@@ -1779,8 +1778,8 @@
           "Layer": "Back",
           "SetProperties": {
             "DMT/buffOn": "{{Random:6, 7, 12, 13, 14, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28}}",
-            "DMT/soundOn": "debuffHit",
-          },
+            "DMT/soundOn": "debuffHit"
+          }
         },
         {
           "Position": {
@@ -1957,8 +1956,8 @@
           },
           "Layer": "Buildings",
           "Remove": true
-        },
-      ],
+        }
+      ]
     },
     {
       "LogName": "Forbidden Forest 1 Merlin Trial Emergency Exit 1",
@@ -1981,7 +1980,7 @@
           "Layer": "Back",
           "SetProperties": {
             "TouchAction": "Warp {{ModId}}_HogsmeadeVillage 1 100"
-          },
+          }
         },
         {
           "Position": {
@@ -2158,8 +2157,8 @@
           },
           "Layer": "Buildings",
           "Remove": true
-        },
-      ],
+        }
+      ]
     },
     {
       "LogName": "Forbidden Forest 1 Emergency Exit 2",
@@ -2182,7 +2181,7 @@
           "Layer": "Back",
           "SetProperties": {
             "TouchAction": "Warp {{ModId}}_HogsmeadeVillage 1 100"
-          },
+          }
         },
         {
           "Position": {
@@ -2359,8 +2358,8 @@
           },
           "Layer": "Buildings",
           "Remove": true
-        },
-      ],
+        }
+      ]
     },
     {
       "LogName": "Forbidden Forest 1 Mini-Obelisk 1",
@@ -2383,7 +2382,7 @@
           "Layer": "Back",
           "SetProperties": {
             "TouchAction": "Warp {{ModId}}_ForbiddenForestStage1 {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialMiniObelisk2X}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialMiniObelisk2Y}} + 5}}"
-          },
+          }
         },
         {
           "Position": {
@@ -2560,8 +2559,8 @@
           },
           "Layer": "Buildings",
           "Remove": true
-        },
-      ],
+        }
+      ]
     },
     {
       "LogName": "Forbidden Forest 1 Mini-Obelisk 2",
@@ -2584,7 +2583,7 @@
           "Layer": "Back",
           "SetProperties": {
             "TouchAction": "Warp {{ModId}}_ForbiddenForestStage1 {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialMiniObelisk1X}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialMiniObelisk1Y}} + 5}}"
-          },
+          }
         },
         {
           "Position": {
@@ -2761,8 +2760,8 @@
           },
           "Layer": "Buildings",
           "Remove": true
-        },
-      ],
+        }
+      ]
     },
     {
       "LogName": "Forbidden Forest 1 Ingress",
@@ -2952,8 +2951,8 @@
           },
           "Layer": "Buildings",
           "Remove": true
-        },
-      ],
+        }
+      ]
     },
     {
       "LogName": "Forbidden Forest 1 Red Cap Shop",
@@ -2976,8 +2975,8 @@
           "Layer": "Buildings",
           "SetProperties": {
             "Action": "",
-            "Shop": "JPippinsPotions",
-          },
+            "Shop": "JPippinsPotions"
+          }
         },
         {
           "Position": {
@@ -3178,12 +3177,8 @@
           },
           "Layer": "Buildings",
           "Remove": true
-        },
-      ],
-    },
+        }
+      ]
+    }
   ]
 }
-
-
-
-
