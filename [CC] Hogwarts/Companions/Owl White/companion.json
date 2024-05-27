@@ -1,0 +1,156 @@
+{
+    "Name": "WhiteOwl",
+    "Type": "Walking",
+    "EnableFarmerCollision": true,
+    "EnableCharacterCollision": false,
+    "EnableShadow": true,
+    "TravelSpeed": 12,
+    "MaxIdleDistance": -1,
+    "MaxDistanceBeforeTeleport": -1,
+    "IdleArguments": [1.0, 10000],
+    "ChanceForHalting": 5,
+    "DirectionChangeChanceWhileIdle": 0,
+    "InspectionDialogue": "A white owl",
+    "IdleBehavior": "Wander",
+    "Sounds": [
+        {
+            "SoundName": "owl",
+            "WhenToPlay": "Moving",
+            "TimeBetweenSound": 5000
+        }
+    ],
+    "FrameSizeWidth": 32,
+    "FrameSizeHeight": 32,
+    "UpAnimation": {
+        "StartingFrame": 8,
+        "NumberOfFrames": 4,
+        "Duration": 250,
+        "IdleAnimation": {
+            "ManualFrames": [
+                {
+                    "Frame": 16,
+                    "Duration": 5000
+                },
+                {
+                    "Frame": 17,
+                    "Duration": 200
+                },
+                {
+                    "Frame": 18,
+                    "Duration": 200
+                },
+                {
+                    "Frame": 19,
+                    "Duration": 5000
+                },
+                {
+                    "Frame": 18,
+                    "Duration": 200
+                },
+                {
+                    "Frame": 17,
+                    "Duration": 200
+                }
+            ]
+        }
+    },
+    "DownAnimation": {
+        "StartingFrame": 0,
+        "NumberOfFrames": 4,
+        "Duration": 250,
+        "IdleAnimation": {
+            "ManualFrames": [
+                {
+                    "Frame": 20,
+                    "Duration": 5000
+                },
+                {
+                    "Frame": 21,
+                    "Duration": 200
+                },
+                {
+                    "Frame": 22,
+                    "Duration": 200
+                },
+                {
+                    "Frame": 23,
+                    "Duration": 5000
+                },
+                {
+                    "Frame": 22,
+                    "Duration": 200
+                },
+                {
+                    "Frame": 21,
+                    "Duration": 200
+                }
+            ]
+        }
+    },
+    "RightAnimation": {
+        "StartingFrame": 4,
+        "NumberOfFrames": 4,
+        "Duration": 250,
+        "IdleAnimation": {
+            "ManualFrames": [
+                {
+                    "Frame": 28,
+                    "Duration": 5000
+                },
+                {
+                    "Frame": 29,
+                    "Duration": 200
+                },
+                {
+                    "Frame": 30,
+                    "Duration": 100
+                },
+                {
+                    "Frame": 31,
+                    "Duration": 200
+                },
+                {
+                    "Frame": 30,
+                    "Duration": 100
+                },
+                {
+                    "Frame": 29,
+                    "Duration": 200
+                }
+            ]
+        }
+    },
+    "LeftAnimation": {
+        "StartingFrame": 12,
+        "NumberOfFrames": 4,
+        "Duration": 250,
+        "IdleAnimation": {
+            "ManualFrames": [
+                {
+                    "Frame": 24,
+                    "Duration": 5000
+                },
+                {
+                    "Frame": 25,
+                    "Duration": 200
+                },
+                {
+                    "Frame": 26,
+                    "Duration": 200
+                },
+                {
+                    "Frame": 27,
+                    "Duration": 5000
+                },
+                {
+                    "Frame": 26,
+                    "Duration": 200
+                },
+                {
+                    "Frame": 25,
+                    "Duration": 200
+                }
+            ]
+        }
+    }
+}
