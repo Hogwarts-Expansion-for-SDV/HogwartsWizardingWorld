@@ -201,34 +201,6 @@
       "Update": "OnTimeChange"
     },
     {
-      "LogName": "Railroad MinecartTransport",
-      "Action": "EditMap",
-      "Target": "Maps/Railroad",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 31,
-            "Y": 40
-          },
-          "Layer": "Buildings",
-          "SetTilesheet": "untitled tile sheet",
-          "SetIndex": 1057,
-          "SetProperties": {
-            "Action": "MinecartTransport HogsmeadeStation Railroad"
-          }
-        },
-        {
-          "Position": {
-            "X": 31,
-            "Y": 39
-          },
-          "Layer": "Front",
-          "SetTilesheet": "untitled tile sheet",
-          "SetIndex": 1032
-        }
-      ]
-    },
-    {
       "LogName": "Hogsmeade Station MinecartTransport",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogsmeadeStation",
@@ -240,10 +212,7 @@
           },
           "Layer": "Buildings",
           "SetTilesheet": "untitled tile sheet",
-          "SetIndex": 1057,
-          "SetProperties": {
-            "Action": "MinecartTransport HogsmeadeStation HogsmeadeStation"
-          }
+          "SetIndex": 1057
         },
         {
           "Position": {
@@ -255,49 +224,6 @@
           "SetIndex": 1032
         }
       ]
-    },
-    {
-      "LogName": "HogsmeadeStation Minecarts",
-      "Action": "EditData",
-      "Target": "data/Minecarts",
-      "Entries": {
-        "HogsmeadeStation": {
-          "UnlockCondition": null,
-          "LockedMessage": null,
-          "ChooseDestinationMessage": null,
-          "BuyTicketMessage": null,
-          "Destinations": [
-            {
-              "Id": "Railroad",
-              "DisplayName": "Stardew Valley",
-              "Condition": null,
-              "Price": 0,
-              "BuyTicketMessage": null,
-              "TargetLocation": "Railroad",
-              "TargetTile": {
-                "X": 31,
-                "Y": 41
-              },
-              "TargetDirection": "down",
-              "CustomFields": null
-            },
-            {
-              "Id": "HogsmeadeStation",
-              "DisplayName": "Hogsmeade Station",
-              "Condition": null,
-              "Price": 0,
-              "BuyTicketMessage": null,
-              "TargetLocation": "{{ModId}}_HogsmeadeStation",
-              "TargetTile": {
-                "X": 32,
-                "Y": 15
-              },
-              "TargetDirection": "down",
-              "CustomFields": null
-            }
-          ]
-        }
-      }
     }
   ]
 }
