@@ -1,7 +1,7 @@
 {
   "ForageSpawnEnabled": false,
   "LargeObjectSpawnEnabled": false,
-  "OreSpawnEnabled": false,
+  "OreSpawnEnabled": true,
   "MonsterSpawnEnabled": true,
   "Forage_Spawn_Settings": {
     "Areas": [
@@ -120,6 +120,80 @@
         "MapName": "Farm",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
+        "IncludeTerrainTypes": [
+          "Quarry"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MiningLevelRequired": null,
+        "StartingSpawnChance": null,
+        "LevelTenSpawnChance": null,
+        "UniqueAreaID": "Forbidden Forest Stage 1",
+        "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
+        "MinimumSpawnsPerDay": 8,
+        "MaximumSpawnsPerDay": 40,
+        "IncludeTerrainTypes": [
+          "Quarry"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MiningLevelRequired": null,
+        "StartingSpawnChance": null,
+        "LevelTenSpawnChance": null,
+        "UniqueAreaID": "Forbidden Forest Stage 2",
+        "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
+        "MinimumSpawnsPerDay": 8,
+        "MaximumSpawnsPerDay": 40,
         "IncludeTerrainTypes": [
           "Quarry"
         ],
@@ -362,10 +436,285 @@
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {
+              "SpawnWeight": 8,
+              "HP": 100,
+              "Damage": 5,
+              "Defense": 1,
+              "DodgeChance": 0,
+              "EXP": 10,
+              "SightRange": 2,
+              "RangedAttacks": false,
+              "Sprite": "Characters/Monsters/Firecrab Amethyst",
+              "Loot": [
+                66
+              ]
+            }
+          },
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {
+              "SpawnWeight": 8,
+              "HP": 150,
+              "Damage": 8,
+              "Defense": 1,
+              "DodgeChance": 0,
+              "EXP": 16,
+              "SightRange": 2,
+              "RangedAttacks": false,
+              "Sprite": "Characters/Monsters/Firecrab Aquamarine",
+              "Loot": [
+                62
+              ]
+            }
+          },
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {
+              "SpawnWeight": 1,
+              "HP": 300,
+              "Damage": 15,
+              "Defense": 1,
+              "DodgeChance": 0,
+              "EXP": 30,
+              "SightRange": 2,
+              "RangedAttacks": false,
+              "Sprite": "Characters/Monsters/Firecrab Diamond",
+              "Loot": [
+                72
+              ]
+            }
+          },
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {
+              "SpawnWeight": 4,
+              "HP": 200,
+              "Damage": 10,
+              "Defense": 1,
+              "DodgeChance": 0,
+              "EXP": 20,
+              "SightRange": 2,
+              "RangedAttacks": false,
+              "Sprite": "Characters/Monsters/Firecrab Emerald",
+              "Loot": [
+                60
+              ]
+            }
+          },
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {
+              "SpawnWeight": 4,
+              "HP": 250,
+              "Damage": 13,
+              "Defense": 1,
+              "DodgeChance": 0,
+              "EXP": 26,
+              "SightRange": 2,
+              "RangedAttacks": false,
+              "Sprite": "Characters/Monsters/Firecrab Ruby",
+              "Loot": [
+                64
+              ]
+            }
+          },
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {
+              "SpawnWeight": 8,
+              "HP": 150,
+              "Damage": 10,
+              "Defense": 1,
+              "DodgeChance": 0,
+              "EXP": 20,
+              "SightRange": 2,
+              "RangedAttacks": false,
+              "Sprite": "Characters/Monsters/Firecrab Topaz",
+              "Loot": [
+                68
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "Forbidden Forest 1 Firecrabs",
+        "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
+        "MinimumSpawnsPerDay": -2,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [
+          "Quarry"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {
+              "SpawnWeight": 6,
+              "HP": 100,
+              "Damage": 5,
+              "Defense": 1,
+              "DodgeChance": 0,
+              "EXP": 10,
+              "SightRange": 2,
+              "RangedAttacks": false,
+              "Sprite": "Characters/Monsters/Firecrab Amethyst",
+              "Loot": [
+                66
+              ]
+            }
+          },
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {
+              "SpawnWeight": 6,
+              "HP": 150,
+              "Damage": 8,
+              "Defense": 1,
+              "DodgeChance": 0,
+              "EXP": 16,
+              "SightRange": 2,
+              "RangedAttacks": false,
+              "Sprite": "Characters/Monsters/Firecrab Aquamarine",
+              "Loot": [
+                62
+              ]
+            }
+          },
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {
+              "SpawnWeight": 2,
+              "HP": 300,
+              "Damage": 15,
+              "Defense": 1,
+              "DodgeChance": 0,
+              "EXP": 30,
+              "SightRange": 2,
+              "RangedAttacks": false,
+              "Sprite": "Characters/Monsters/Firecrab Diamond",
+              "Loot": [
+                72
+              ]
+            }
+          },
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {
+              "SpawnWeight": 4,
+              "HP": 200,
+              "Damage": 10,
+              "Defense": 1,
+              "DodgeChance": 0,
+              "EXP": 20,
+              "SightRange": 2,
+              "RangedAttacks": false,
+              "Sprite": "Characters/Monsters/Firecrab Emerald",
+              "Loot": [
+                60
+              ]
+            }
+          },
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {
+              "SpawnWeight": 4,
+              "HP": 250,
+              "Damage": 13,
+              "Defense": 1,
+              "DodgeChance": 0,
+              "EXP": 26,
+              "SightRange": 2,
+              "RangedAttacks": false,
+              "Sprite": "Characters/Monsters/Firecrab Ruby",
+              "Loot": [
+                64
+              ]
+            }
+          },
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {
+              "SpawnWeight": 6,
+              "HP": 150,
+              "Damage": 10,
+              "Defense": 1,
+              "DodgeChance": 0,
+              "EXP": 20,
+              "SightRange": 2,
+              "RangedAttacks": false,
+              "Sprite": "Characters/Monsters/Firecrab Topaz",
+              "Loot": [
+                68
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "Forbidden Forest 2 Firecrabs",
+        "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
+        "MinimumSpawnsPerDay": -2,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [
+          "Quarry"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
       }
     ],
-    "CustomTileIndex": [
-    ]
+    "CustomTileIndex": []
   },
   "QuarryTileIndex": [
     556,
