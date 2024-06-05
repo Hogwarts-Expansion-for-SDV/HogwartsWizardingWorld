@@ -3,8 +3,36 @@
     {
       "LogName": "Load monster sprites",
       "Action": "Load",
-      "Target": "Characters/Monsters/Acromantula Default, Characters/Monsters/Ashwinder Dark Gray, Characters/Monsters/Ashwinder Default, Characters/Monsters/Ashwinder Light Gray, Characters/Monsters/Bicorn Default, Characters/Monsters/Boomslang Female, Characters/Monsters/Boomslang Male, Characters/Monsters/Cornish Pixie Dark Blue, Characters/Monsters/Cornish Pixie Default, Characters/Monsters/Dementor Default, Characters/Monsters/Dugbog Default, Characters/Monsters/Dugbog Dark Swamp, Characters/Monsters/Dugbog Jungle, Characters/Monsters/Dugbog Muddy, Characters/Monsters/Firecrab Amethyst, Characters/Monsters/Firecrab Aquamarine, Characters/Monsters/Firecrab Diamond, Characters/Monsters/Firecrab Emerald, Characters/Monsters/Firecrab Ruby, Characters/Monsters/Firecrab Topaz, Characters/Monsters/Gnome Default, Characters/Monsters/Gnome Pale, Characters/Monsters/Gnome Red, Characters/Monsters/Horned Serpent Default, Characters/Monsters/Inferi Default, Characters/Monsters/Streeler Dark Blue, Characters/Monsters/Streeler Green, Characters/Monsters/Streeler Maroon, Characters/Monsters/Streeler Yellow",
+      "Target": "Characters/Monsters/Acromantula Default, Characters/Monsters/Ashwinder Dark Gray, Characters/Monsters/Ashwinder Default, Characters/Monsters/Ashwinder Light Gray, Characters/Monsters/Bicorn Default, Characters/Monsters/Boomslang Female, Characters/Monsters/Boomslang Male, Characters/Monsters/Cornish Pixie Dark Blue, Characters/Monsters/Cornish Pixie Default, Characters/Monsters/Dementor Default, Characters/Monsters/Dugbog Default, Characters/Monsters/Dugbog Dark Swamp, Characters/Monsters/Dugbog Jungle, Characters/Monsters/Dugbog Muddy, Characters/Monsters/Firecrab Amethyst, Characters/Monsters/Firecrab Aquamarine, Characters/Monsters/Firecrab Diamond, Characters/Monsters/Firecrab Emerald, Characters/Monsters/Firecrab Ruby, Characters/Monsters/Firecrab Topaz, Characters/Monsters/Gnome Default, Characters/Monsters/Gnome Pale, Characters/Monsters/Gnome Red, Characters/Monsters/Horned Serpent Default, Characters/Monsters/Inferi Default",
       "FromFile": "assets/Monsters/{{TargetWithoutPath}}.png"
+    },
+    {
+      "LogName": "Update Streeler sprites every hour - Dark Blue",
+      "Action": "Load",
+      "Target": "Characters/Monsters/Streeler Dark Blue",
+      "FromFile": "assets/Monsters/Streeler {{Random: Dark Blue, Green, Maroon, Yellow |key={{Time}}}}.png",
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Update Streeler sprites every hour - Green",
+      "Action": "Load",
+      "Target": "Characters/Monsters/Streeler Green",
+      "FromFile": "assets/Monsters/Streeler {{Random: Green, Maroon, Yellow, Dark Blue |key={{Time}}}}.png",
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Update Streeler sprites every hour - Maroon",
+      "Action": "Load",
+      "Target": "Characters/Monsters/Streeler Maroon",
+      "FromFile": "assets/Monsters/Streeler {{Random: Maroon, Yellow, Dark Blue, Green |key={{Time}}}}.png",
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Update Streeler sprites every hour - Yellow",
+      "Action": "Load",
+      "Target": "Characters/Monsters/Streeler Yellow",
+      "FromFile": "assets/Monsters/Streeler {{Random: Yellow, Dark Blue, Green, Maroon |key={{Time}}}}.png",
+      "Update": "OnLocationChange"
     }
   ]
 }
