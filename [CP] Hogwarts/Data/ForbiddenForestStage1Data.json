@@ -1,6 +1,273 @@
 {
   "Changes": [
     {
+      "LogName": "Forbidden Forest 1 Monster Spawn Zone A1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
+      "FromFile":"assets/Maps/ForbiddenForestMonster.tmx",
+      "PatchMode": "Overlay",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 25,
+        "Height": 25
+      },
+      "ToArea": {
+        // Each quadrant has four 25x25 divisions that may house monsters, in this case (0, 48), (25, 48), (0, 73) and (25, 73)
+        "X": "{{Query: {{Random: 0, 1 |key=FF1MA1X}} * 25}}",
+        "Y": "{{Query: 48 + ({{Random: 0, 1 |key=FF1MA1Y}} * 25)}}",
+        "Width": 25,
+        "Height": 25
+      },
+      "When": {
+        // 50% chance for this quadrant to have no monsters
+        "Random: true, true, false |key=FF1MA1HasMonster": true
+      }
+    },
+    {
+      "LogName": "Forbidden Forest 1 Monster Spawn Zone B1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
+      "FromFile":"assets/Maps/ForbiddenForestMonster.tmx",
+      "PatchMode": "Overlay",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 25,
+        "Height": 25
+      },
+      "ToArea": {
+        "X": "{{Query: {{Random: 2, 3 |key=FF1MB1X}} * 25}}",
+        "Y": "{{Query: 48 + ({{Random: 0, 1 |key=FF1MB1Y}} * 25)}}",
+        "Width": 25,
+        "Height": 25
+      },
+      "When": {
+        "Random: true, true, false |key=FF1MB1HasMonster": true
+      }
+    },
+    {
+      "LogName": "Forbidden Forest 1 Monster Spawn Zone C1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
+      "FromFile":"assets/Maps/ForbiddenForestMonster.tmx",
+      "PatchMode": "Overlay",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 25,
+        "Height": 25
+      },
+      "ToArea": {
+        "X": "{{Query: {{Random: 4, 5 |key=FF1MC1X}} * 25}}",
+        "Y": "{{Query: 48 + ({{Random: 0, 1 |key=FF1MC1Y}} * 25)}}",
+        "Width": 25,
+        "Height": 25
+      },
+      "When": {
+        "Random: true, true, false |key=FF1MC1HasMonster": true
+      }
+    },
+    {
+      "LogName": "Forbidden Forest 1 Monster Spawn Zone D1",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
+      "FromFile":"assets/Maps/ForbiddenForestMonster.tmx",
+      "PatchMode": "Overlay",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        // Careful: our map is 199 tiles wide, not 200, so it can't house 8 25x25 divisions, the last one is 24x25
+        "Width": "{{Random: 25, 24 |key=FF1MD1X}}",
+        "Height": 25
+      },
+      "ToArea": {
+        "X": "{{Query: {{Random: 6, 7 |key=FF1MD1X}} * 25}}",
+        "Y": "{{Query: 48 + ({{Random: 0, 1 |key=FF1MD1X}} * 25)}}",
+        "Width": "{{Random: 25, 24 |key=FF1MD1X}}",
+        "Height": 25
+      },
+      "When": {
+        "Random: true, true, false |key=FF1MD1HasMonster": true
+      }
+    },
+    {
+      "LogName": "Forbidden Forest 1 Monster Spawn Zone A2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
+      "FromFile":"assets/Maps/ForbiddenForestMonster.tmx",
+      "PatchMode": "Overlay",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 25,
+        "Height": 25
+      },
+      "ToArea": {
+        "X": "{{Query: {{Random: 0, 1 |key=FF1MA2X}} * 25}}",
+        "Y": "{{Query: 48 + ({{Random: 2, 3 |key=FF1MA2Y}} * 25)}}",
+        "Width": 25,
+        "Height": 25
+      },
+      "When": {
+        "Random: true, true, false |key=FF1MA2HasMonster": true
+      }
+    },
+    {
+      "LogName": "Forbidden Forest 1 Monster Spawn Zone B2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
+      "FromFile":"assets/Maps/ForbiddenForestMonster.tmx",
+      "PatchMode": "Overlay",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 25,
+        "Height": 25
+      },
+      "ToArea": {
+        "X": "{{Query: {{Random: 2, 3 |key=FF1MB2X}} * 25}}",
+        "Y": "{{Query: 48 + ({{Random: 2, 3 |key=FF1MB2Y}} * 25)}}",
+        "Width": 25,
+        "Height": 25
+      },
+      "When": {
+        "Random: true, true, false |key=FF1MB2HasMonster": true
+      }
+    },
+    {
+      "LogName": "Forbidden Forest 1 Monster Spawn Zone C2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
+      "FromFile":"assets/Maps/ForbiddenForestMonster.tmx",
+      "PatchMode": "Overlay",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 25,
+        "Height": 25
+      },
+      "ToArea": {
+        "X": "{{Query: {{Random: 4, 5 |key=FF1MC2X}} * 25}}",
+        "Y": "{{Query: 48 + ({{Random: 2, 3 |key=FF1MC2Y}} * 25)}}",
+        "Width": 25,
+        "Height": 25
+      },
+      "When": {
+        "Random: true, true, false |key=FF1MC2HasMonster": true
+      }
+    },
+    {
+      "LogName": "Forbidden Forest 1 Monster Spawn Zone D2",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
+      "FromFile":"assets/Maps/ForbiddenForestMonster.tmx",
+      "PatchMode": "Overlay",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": "{{Random: 25, 24 |key=FF1MD2X}}",
+        "Height": 25
+      },
+      "ToArea": {
+        "X": "{{Query: {{Random: 6, 7 |key=FF1MD2X}} * 25}}",
+        "Y": "{{Query: 48 + ({{Random: 2, 3 |key=FF1MD2X}} * 25)}}",
+        "Width": "{{Random: 25, 24 |key=FF1MD2X}}",
+        "Height": 25
+      },
+      "When": {
+        "Random: true, true, false |key=FF1MD2HasMonster": true
+      }
+    },
+    {
+      "LogName": "Forbidden Forest 1 Monster Spawn Zone A3",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
+      "FromFile":"assets/Maps/ForbiddenForestMonster.tmx",
+      "PatchMode": "Overlay",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 25,
+        "Height": 25
+      },
+      "ToArea": {
+        "X": "{{Query: {{Random: 0, 1 |key=FF1MA3X}} * 25}}",
+        "Y": "{{Query: 48 + ({{Random: 4, 5 |key=FF1MA3Y}} * 25)}}",
+        "Width": 25,
+        "Height": 25
+      },
+      "When": {
+        "Random: true, true, false |key=FF1MA3HasMonster": true
+      }
+    },
+    {
+      "LogName": "Forbidden Forest 1 Monster Spawn Zone B3",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
+      "FromFile":"assets/Maps/ForbiddenForestMonster.tmx",
+      "PatchMode": "Overlay",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 25,
+        "Height": 25
+      },
+      "ToArea": {
+        "X": "{{Query: {{Random: 2, 3 |key=FF1MB3X}} * 25}}",
+        "Y": "{{Query: 48 + ({{Random: 4, 5 |key=FF1MB3Y}} * 25)}}",
+        "Width": 25,
+        "Height": 25
+      },
+      "When": {
+        "Random: true, true, false |key=FF1MB3HasMonster": true
+      }
+    },
+    {
+      "LogName": "Forbidden Forest 1 Monster Spawn Zone C3",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
+      "FromFile":"assets/Maps/ForbiddenForestMonster.tmx",
+      "PatchMode": "Overlay",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 25,
+        "Height": 25
+      },
+      "ToArea": {
+        "X": "{{Query: {{Random: 4, 5 |key=FF1MC3X}} * 25}}",
+        "Y": "{{Query: 48 + ({{Random: 4, 5 |key=FF1MC3Y}} * 25)}}",
+        "Width": 25,
+        "Height": 25
+      },
+      "When": {
+        "Random: true, true, false |key=FF1MC3HasMonster": true
+      }
+    },
+    {
+      "LogName": "Forbidden Forest 1 Monster Spawn Zone D3",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
+      "FromFile":"assets/Maps/ForbiddenForestMonster.tmx",
+      "PatchMode": "Overlay",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": "{{Random: 25, 24 |key=FF1MD3X}}",
+        "Height": 25
+      },
+      "ToArea": {
+        "X": "{{Query: {{Random: 6, 7 |key=FF1MD3X}} * 25}}",
+        "Y": "{{Query: 48 + ({{Random: 4, 5 |key=FF1MD3X}} * 25)}}",
+        "Width": "{{Random: 25, 24 |key=FF1MD3X}}",
+        "Height": 25
+      },
+      "When": {
+        "Random: true, true, false |key=FF1MD3HasMonster": true
+      }
+    },
+    {
       "LogName": "Forbidden Forest 1 Layout",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
@@ -11,198 +278,9 @@
         "Width": 199,
         "Height": 155
       },
-      "PatchMode": "Replace"
+      "PatchMode": "Overlay"
     },
-    {
-      "LogName": "Forbidden Forest 1 Monster Spawn Zone 0",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
-      "FromFile": "assets/Maps/ForbiddenForestLayout{{Random: {{Range: 1, 1}} |key=ForbiddenForest1Layout}}MonsterSpawns.tmx",
-      "PatchMode": "Overlay",
-      "FromArea": {
-        "X": "{{Random: 32, 42, 45, 57 |key=ForbiddenForest1Monster0}}",
-        "Y": "{{Random: 32, 20, 30, 16 |key=ForbiddenForest1Monster0}}",
-        "Width": "{{Random: 7, 12, 16, 12 |key=ForbiddenForest1Monster0}}",
-        "Height": "{{Random: 12, 9, 11, 13 |key=ForbiddenForest1Monster0}}"
-      },
-      "ToArea": {
-        "X": "{{Random: 32, 42, 45, 57 |key=ForbiddenForest1Monster0}}",
-        "Y": "{{Random: 32, 20, 30, 16 |key=ForbiddenForest1Monster0}}",
-        "Width": "{{Random: 7, 12, 16, 12 |key=ForbiddenForest1Monster0}}",
-        "Height": "{{Random: 12, 9, 11, 13 |key=ForbiddenForest1Monster0}}"
-      }
-    },
-    {
-      "LogName": "Forbidden Forest 1 Monster Spawn Zone 1",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
-      "FromFile": "assets/Maps/ForbiddenForestLayout{{Random: {{Range: 1, 1}} |key=ForbiddenForest1Layout}}MonsterSpawns.tmx",
-      "PatchMode": "Overlay",
-      "FromArea": {
-        "X": "{{Random: 69, 84, 90, 66 |key=ForbiddenForest1Monster1}}",
-        "Y": "{{Random: 15, 18, 35, 39 |key=ForbiddenForest1Monster1}}",
-        "Width": "{{Random: 14, 12, 14, 17 |key=ForbiddenForest1Monster1}}",
-        "Height": "{{Random: 8, 17, 13, 7 |key=ForbiddenForest1Monster1}}"
-      },
-      "ToArea": {
-        "X": "{{Random: 69, 84, 90, 66 |key=ForbiddenForest1Monster1}}",
-        "Y": "{{Random: 15, 18, 35, 39 |key=ForbiddenForest1Monster1}}",
-        "Width": "{{Random: 14, 12, 14, 17 |key=ForbiddenForest1Monster1}}",
-        "Height": "{{Random: 8, 17, 13, 7 |key=ForbiddenForest1Monster1}}"
-      }
-    },
-    {
-      "LogName": "Forbidden Forest 1 Monster Spawn Point 2",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
-      "FromFile": "assets/Maps/ForbiddenForestLayout{{Random: {{Range: 1, 1}} |key=ForbiddenForest1Layout}}MonsterSpawns.tmx",
-      "PatchMode": "Overlay",
-      "FromArea": {
-        "X": "{{Random: 108, 127, 144, 97, 95, 143 |key=ForbiddenForest1Monster2}}",
-        "Y": "{{Random: 29, 41, 15, 52, 67, 41 |key=ForbiddenForest1Monster2}}",
-        "Width": "{{Random: 19, 10, 12, 10, 10, 9 |key=ForbiddenForest1Monster2}}",
-        "Height": "{{Random: 32, 15, 18, 15, 12, 8 |key=ForbiddenForest1Monster2}}"
-      },
-      "ToArea": {
-        "X": "{{Random: 108, 127, 144, 97, 95, 143 |key=ForbiddenForest1Monster2}}",
-        "Y": "{{Random: 29, 41, 15, 52, 67, 41 |key=ForbiddenForest1Monster2}}",
-        "Width": "{{Random: 19, 10, 12, 10, 10, 9 |key=ForbiddenForest1Monster2}}",
-        "Height": "{{Random: 32, 15, 18, 15, 12, 8 |key=ForbiddenForest1Monster2}}"
-      }
-    },
-    {
-      "LogName": "Forbidden Forest 1 Monster Spawn Point 3",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
-      "FromFile": "assets/Maps/ForbiddenForestLayout{{Random: {{Range: 1, 1}} |key=ForbiddenForest1Layout}}MonsterSpawns.tmx",
-      "PatchMode": "Overlay",
-      "FromArea": {
-        "X": "{{Random: 130, 157, 156, 165, 168, 143 |key=ForbiddenForest1Monster3}}",
-        "Y": "{{Random: 26, 28, 52, 52, 65, 60 |key=ForbiddenForest1Monster3}}",
-        "Width": "{{Random: 14, 17, 8, 9, 12, 13 |key=ForbiddenForest1Monster3}}",
-        "Height": "{{Random: 14, 9, 11, 13, 7, 19 |key=ForbiddenForest1Monster3}}"
-      },
-      "ToArea": {
-        "X": "{{Random: 130, 157, 156, 165, 168, 143 |key=ForbiddenForest1Monster3}}",
-        "Y": "{{Random: 26, 28, 52, 52, 65, 60 |key=ForbiddenForest1Monster3}}",
-        "Width": "{{Random: 14, 17, 8, 9, 12, 13 |key=ForbiddenForest1Monster3}}",
-        "Height": "{{Random: 14, 9, 11, 13, 7, 19 |key=ForbiddenForest1Monster3}}"
-      }
-    },
-    {
-      "LogName": "Forbidden Forest 1 Monster Spawn Point 4",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
-      "FromFile": "assets/Maps/ForbiddenForestLayout{{Random: {{Range: 1, 1}} |key=ForbiddenForest1Layout}}MonsterSpawns.tmx",
-      "PatchMode": "Overlay",
-      "FromArea": {
-        "X": "{{Random: 128, 94, 94, 123 |key=ForbiddenForest1Monster4}}",
-        "Y": "{{Random: 102, 98, 83, 78 |key=ForbiddenForest1Monster4}}",
-        "Width": "{{Random: 19, 18, 18, 18 |key=ForbiddenForest1Monster4}}",
-        "Height": "{{Random: 13, 11, 9, 14 |key=ForbiddenForest1Monster4}}"
-      },
-      "ToArea": {
-        "X": "{{Random: 128, 94, 94, 123 |key=ForbiddenForest1Monster4}}",
-        "Y": "{{Random: 102, 98, 83, 78 |key=ForbiddenForest1Monster4}}",
-        "Width": "{{Random: 19, 18, 18, 18 |key=ForbiddenForest1Monster4}}",
-        "Height": "{{Random: 13, 11, 9, 14 |key=ForbiddenForest1Monster4}}"
-      }
-    },
-    {
-      "LogName": "Forbidden Forest 1 Monster Spawn Point 5",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
-      "FromFile": "assets/Maps/ForbiddenForestLayout{{Random: {{Range: 1, 1}} |key=ForbiddenForest1Layout}}MonsterSpawns.tmx",
-      "PatchMode": "Overlay",
-      "FromArea": {
-        "X": "{{Random: 120, 128, 82, 155, 155, 138 |key=ForbiddenForest1Monster5}}",
-        "Y": "{{Random: 111, 115, 112, 122, 131, 121 |key=ForbiddenForest1Monster5}}",
-        "Width": "{{Random: 8, 8, 14, 17, 12, 7 |key=ForbiddenForest1Monster5}}",
-        "Height": "{{Random: 16, 12, 18, 8, 7, 10 |key=ForbiddenForest1Monster5}}"
-      },
-      "ToArea": {
-        "X": "{{Random: 120, 128, 82, 155, 155, 138 |key=ForbiddenForest1Monster5}}",
-        "Y": "{{Random: 111, 115, 112, 122, 131, 121 |key=ForbiddenForest1Monster5}}",
-        "Width": "{{Random: 8, 8, 14, 17, 12, 7 |key=ForbiddenForest1Monster5}}",
-        "Height": "{{Random: 16, 12, 18, 8, 7, 10 |key=ForbiddenForest1Monster5}}"
-      }
-    },
-    {
-      "LogName": "Forbidden Forest 1 Monster Spawn Point 6",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
-      "FromFile": "assets/Maps/ForbiddenForestLayout{{Random: {{Range: 1, 1}} |key=ForbiddenForest1Layout}}MonsterSpawns.tmx",
-      "PatchMode": "Overlay",
-      "FromArea": {
-        "X": "{{Random: 71, 27, 75, 83, 35, 51 |key=ForbiddenForest1Monster6}}",
-        "Y": "{{Random: 79, 63, 60, 64, 50, 48 |key=ForbiddenForest1Monster6}}",
-        "Width": "{{Random: 19, 14, 8, 8, 16, 20 |key=ForbiddenForest1Monster6}}",
-        "Height": "{{Random: 17, 16, 13, 11, 9, 11 |key=ForbiddenForest1Monster6}}"
-      },
-      "ToArea": {
-        "X": "{{Random: 71, 27, 75, 83, 35, 51 |key=ForbiddenForest1Monster6}}",
-        "Y": "{{Random: 79, 63, 60, 64, 50, 48 |key=ForbiddenForest1Monster6}}",
-        "Width": "{{Random: 19, 14, 8, 8, 16, 20 |key=ForbiddenForest1Monster6}}",
-        "Height": "{{Random: 17, 16, 13, 11, 9, 11 |key=ForbiddenForest1Monster6}}"
-      }
-    },
-    {
-      "LogName": "Forbidden Forest 1 Monster Spawn Point 7",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
-      "FromFile": "assets/Maps/ForbiddenForestLayout{{Random: {{Range: 1, 1}} |key=ForbiddenForest1Layout}}MonsterSpawns.tmx",
-      "PatchMode": "Overlay",
-      "FromArea": {
-        "X": "{{Random: 45, 30, 36, 52, 32, 45, 60, 67 |key=ForbiddenForest1Monster7}}",
-        "Y": "{{Random: 66, 82, 122, 109, 109, 97, 85, 96 |key=ForbiddenForest1Monster7}}",
-        "Width": "{{Random: 16, 12, 13, 8, 13, 10, 7, 10 |key=ForbiddenForest1Monster7}}",
-        "Height": "{{Random: 15, 11, 4, 8, 5, 8, 24, 17 |key=ForbiddenForest1Monster7}}"
-      },
-      "ToArea": {
-        "X": "{{Random: 45, 30, 36, 52, 32, 45, 60, 67 |key=ForbiddenForest1Monster7}}",
-        "Y": "{{Random: 66, 82, 122, 109, 109, 97, 85, 96 |key=ForbiddenForest1Monster7}}",
-        "Width": "{{Random: 16, 12, 13, 8, 13, 10, 7, 10 |key=ForbiddenForest1Monster7}}",
-        "Height": "{{Random: 15, 11, 4, 8, 5, 8, 24, 17 |key=ForbiddenForest1Monster7}}"
-      }
-    },
-    {
-      "LogName": "Forbidden Forest 1 Monster Spawn Point 8",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
-      "FromFile": "assets/Maps/ForbiddenForestLayout{{Random: {{Range: 1, 1}} |key=ForbiddenForest1Layout}}MonsterSpawns.tmx",
-      "PatchMode": "Overlay",
-      "FromArea": {
-        "X": "{{Random: 115, 13, 103, 35, 14 |key=ForbiddenForest1Monster8}}",
-        "Y": "{{Random: 130, 65, 133, 127, 98 |key=ForbiddenForest1Monster8}}",
-        "Width": "{{Random: 17, 8, 11, 14, 9 |key=ForbiddenForest1Monster8}}",
-        "Height": "{{Random: 13, 12, 7, 13, 9 |key=ForbiddenForest1Monster8}}"
-      },
-      "ToArea": {
-        "X": "{{Random: 115, 13, 103, 35, 14 |key=ForbiddenForest1Monster8}}",
-        "Y": "{{Random: 130, 65, 133, 127, 98 |key=ForbiddenForest1Monster8}}",
-        "Width": "{{Random: 17, 8, 11, 14, 9 |key=ForbiddenForest1Monster8}}",
-        "Height": "{{Random: 13, 12, 7, 13, 9 |key=ForbiddenForest1Monster8}}"
-      }
-    },
-    {
-      "LogName": "Forbidden Forest 1 Monster Spawn Point 9",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
-      "FromFile": "assets/Maps/ForbiddenForestLayout{{Random: {{Range: 1, 1}} |key=ForbiddenForest1Layout}}MonsterSpawns.tmx",
-      "PatchMode": "Overlay",
-      "FromArea": {
-        "X": "{{Random: 174, 173, 172, 133 |key=ForbiddenForest1Monster9}}",
-        "Y": "{{Random: 53, 85, 115, 136 |key=ForbiddenForest1Monster9}}",
-        "Width": "{{Random: 14, 14, 11, 21 |key=ForbiddenForest1Monster9}}",
-        "Height": "{{Random: 11, 9, 14, 9 |key=ForbiddenForest1Monster9}}"
-      },
-      "ToArea": {
-        "X": "{{Random: 174, 173, 172, 133 |key=ForbiddenForest1Monster9}}",
-        "Y": "{{Random: 53, 85, 115, 136 |key=ForbiddenForest1Monster9}}",
-        "Width": "{{Random: 14, 14, 11, 21 |key=ForbiddenForest1Monster9}}",
-        "Height": "{{Random: 11, 9, 14, 9 |key=ForbiddenForest1Monster9}}"
-      }
-    },
+    
     {
       "LogName": "Forbidden Forest 1 Paths Light",
       "Action": "EditMap",
