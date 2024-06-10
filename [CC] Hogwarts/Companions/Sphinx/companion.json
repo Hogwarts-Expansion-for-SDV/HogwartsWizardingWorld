@@ -1,0 +1,128 @@
+{
+    "Name": "Sphinx",
+    "Type": "Walking",
+    "EnableSpawnAtDayStart": true,
+    "EnableCharacterCollision": true,
+    "EnableFarmerCollision": true,
+    "EnableShadow": true,
+    "TravelSpeed": 2,
+    "MaxIdleDistance": -1,
+    "MaxDistanceBeforeTeleport": -1,
+    // Sphinx has no up animation frames so it should never walk (simple_path can work as long as it's horizontal)
+    "IdleBehavior": "Nothing",
+    "SpawnDirection": 1,
+    "FrameSizeWidth": 32,
+    "FrameSizeHeight": 32,
+    "CollisionPositionX": 32,
+    "CollisionPositionY": 0,
+    "CollisionPositionHeight": 64,
+    "CollisionPositionWidth": 64,
+    "DownAnimation": {
+      "StartingFrame": 0,
+      "NumberOfFrames": 4,
+      "Duration": 200,
+      "IdleAnimation": {
+        "ManualFrames": [
+          {
+            "Frame": 8,
+            "Duration": 3000
+          },
+          {
+            "Frame": 9,
+            "Duration": 200
+          },
+          {
+            "Frame": 10,
+            "Duration": 200
+          },
+          {
+            "Frame": 11,
+            "Duration": 200
+          }
+        ]
+      }
+    },
+    "UpAnimation": {
+        // Frame does not exist at the moment! It's a transparent tile
+      "StartingFrame": 16,
+      "NumberOfFrames": 4,
+      "Duration": 0,
+      "IdleAnimation": {
+        "ManualFrames": [
+          {
+            "Frame": 8,
+            "Duration": 3000
+          },
+          {
+            "Frame": 9,
+            "Duration": 200
+          },
+          {
+            "Frame": 10,
+            "Duration": 200
+          },
+          {
+            "Frame": 11,
+            "Duration": 200
+          }
+        ]
+      }
+    },
+    "RightAnimation": {
+      "StartingFrame": 4,
+      "NumberOfFrames": 4,
+      "Duration": 200,
+      "IdleAnimation": {
+        "ManualFrames": [
+          {
+            "Frame": 8,
+            "Duration": 3000
+          },
+          {
+            "Frame": 9,
+            "Duration": 200
+          },
+          {
+            "Frame": 10,
+            "Duration": 200
+          },
+          {
+            "Frame": 11,
+            "Duration": 200
+          }
+        ]
+      }
+    },
+    "LeftAnimation": {
+      "StartingFrame": 12,
+      "NumberOfFrames": 4,
+      "Duration": 200,
+      "IdleAnimation": {
+        "ManualFrames": [
+          {
+            "Frame": 8,
+            "Duration": 3000
+          },
+          {
+            "Frame": 9,
+            "Duration": 200
+          },
+          {
+            "Frame": 10,
+            "Duration": 200
+          },
+          {
+            "Frame": 11,
+            "Duration": 200
+          }
+        ]
+      }
+    },
+    "Shadow": {
+      "OffsetX": 0,
+      "OffsetY": 0,
+      "Scale": 1,
+      "Alpha": 235
+    }
+  }
+  
