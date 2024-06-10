@@ -3242,6 +3242,26 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
+            "Action": "OpenShop {{ModId}}_RedCap"
+          }
+        },
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1RedCapShop1X}} + 5}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1RedCapShop1Y}} + 6}}"
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "OpenShop {{ModId}}_RedCap"
+          }
+        },
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=ForbiddenForest1RedCapShop1X}} + 5}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=ForbiddenForest1RedCapShop1Y}} + 7}}"
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
             "Action": "",
             "Shop": "JPippinsPotions"
           }
