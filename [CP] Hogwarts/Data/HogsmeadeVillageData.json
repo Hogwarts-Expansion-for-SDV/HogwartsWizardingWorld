@@ -1621,6 +1621,22 @@
     },
     /*Hogwarts Carriages*/
     {
+      "LogName": "Hogsmeade Carriage Arrival Path",
+      "Action": "EditData",
+      "Target": "{{PeacefulEnd.CustomCompanions/Companions:HogwartsET.CC.Hogwarts.HogwartsCarriage}}",
+      "Entries": {
+        "DespawnOnTile": [0, 121, 0],
+        "IdleArguments": [0, 121, 0]
+      },
+      "When": {
+        "HasMod|contains=PeacefulEnd.CustomCompanions": true,
+        "HasMod|contains=HogwartsET.CC.Hogwarts": true,
+        "Time": "{{Range: 1900, 2600}}",
+        "Day": "1, 15"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
       "LogName": "Hogsmeade Carriage Arrival Spawn",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogsmeadeVillage",
@@ -1632,7 +1648,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageArrival"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriage"
           }
         },
         {
@@ -1642,7 +1658,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageArrival"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriage"
           }
         },
         {
@@ -1652,7 +1668,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageArrival"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriage"
           }
         },
         {
@@ -1662,13 +1678,29 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriageArrival"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriage"
           }
         }
       ],
       "When": {
         "Time": "{{Range: 1900, 2600}}",
         "Day": "1, 15"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Hogsmeade Carriage Departure Path",
+      "Action": "EditData",
+      "Target": "{{PeacefulEnd.CustomCompanions/Companions:HogwartsET.CC.Hogwarts.HogwartsCarriage}}",
+      "Entries": {
+        "DespawnOnTile": [130, 121, 0],
+        "IdleArguments": [130, 121, 0]
+      },
+      "When": {
+        "HasMod|contains=PeacefulEnd.CustomCompanions": true,
+        "HasMod|contains=HogwartsET.CC.Hogwarts": true,
+        "Time": "{{Range: 0900, 1100}}",
+        "Day": "8, 22"
       },
       "Update": "OnTimeChange"
     },

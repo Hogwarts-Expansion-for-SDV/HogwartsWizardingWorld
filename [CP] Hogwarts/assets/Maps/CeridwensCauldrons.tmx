@@ -1,40 +1,62 @@
-<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<map version="1.2" orientation="orthogonal" renderorder="right-down" width="29" height="34" tilewidth="16" tileheight="16" nextobjectid="1">
-  <properties>
-    <property name="AmbientLight" value="255 255 255" />
-    <property name="Warp" value="9 17 Farm 21 22" />
-    <property name="sw1" value="4435" />
-    <property name="sw2" value="12" />
-    <property name="sw3" value="168" />
-    <property name="sw4" value="69" />
-    <property name="sw5" value="3" />
-    <property name="sw6" value="1" />
-  </properties>
-  <tileset firstgid="1" name="townInterior" columns="32" tilecount="2176" tileheight="16" tilewidth="16">
-    <image source="townInterior.png" width="512" height="2048" />
-  </tileset>
-  <tileset firstgid="4097" name="walls_and_floors" columns="16" tilecount="560" tileheight="16" tilewidth="16">
-    <image source="walls_and_floors.png" width="256" height="1024" />
-  </tileset>
-  <tileset firstgid="4657" name="z_hptiles" columns="32" tilecount="2048" tileheight="16" tilewidth="16">
-    <image source="z_hptiles.png" width="512" height="1024" />
-  </tileset>
-  <layer name="Back" width="29" height="34">
-    <data encoding="base64" compression="zlib">
-   eJxjYBgFo4AywDhAeLUQbhwsSFiekBpktTA7TwvhxiB1hOQJqUFWC7MTpo8eeNTOUTupZSe6vbjyMbXUDJSdAxWfxJRzlKpBtpOBjn4d6LAdCXaSk07IxbjqT5CdxNSH5OCRFp+jdo7aOWoncXYS04agZl8FAFQUPy8=
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="29" height="34" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="7">
+ <properties>
+  <property name="AmbientLight" value="255 255 255"/>
+  <property name="Doors" value="5 23 1 120 3 17 1 120 12 17 1 120 21 17 1 120"/>
+  <property name="Warp" value="9 17 Farm 21 22"/>
+  <property name="sw1" value="4435"/>
+  <property name="sw2" value="12"/>
+  <property name="sw3" value="168"/>
+  <property name="sw4" value="69"/>
+  <property name="sw5" value="3"/>
+  <property name="sw6" value="1"/>
+ </properties>
+ <tileset firstgid="1" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
+  <image source="walls_and_floors.png" width="256" height="560"/>
+ </tileset>
+ <tileset firstgid="2737" name="z_hptiles" tilewidth="16" tileheight="16" tilecount="2048" columns="32">
+  <image source="z_hptiles.png" width="512" height="1024"/>
+ </tileset>
+ <layer id="1" name="Back" width="29" height="34">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2BoAm1u3PgyJ2F5QmqQ1cKANzduDFJHSJ6QGmS1MADTRw88aueondSyE91eXIBaagbKzoGKT2LKOUrV4IvP4ZpuR4qd5KQTcjEMkFpnUoJHWnyO2jlq56idxNlJCJCilhgAAIS4C/s=
   </data>
-  </layer>
-  <objectgroup name="Back" visible="false" />
-  <layer name="Buildings" width="29" height="34">
-    <data encoding="base64" compression="zlib">
-   eJztlTFOwzAYhX+adilMKB2BkwDtkGMwVIgrcIEqa0dgAVRogBMAEhQQLCCOAIWFLnAEQOKZ2NQxtlPiEITUJz05rl/+z67+JERjjfX/1CSq7xFdmBzFY93kVmzj/ZI/s4zZ4OxG5ft+2G9hynqAOrYaSpYE82Xa7FBZv/aJbvzhXDB192qyX0xZ1VJyDJX1Z1bDH87lc6p6Qm6QzGqZMzWiWXiupmd2USMakanJapnzYC3AiwamKhtTk9UyJ0vJ8TeYeFYIfUy7fN7lc+FIutZlWlINWx2RlSX2GpBZeWX+gjkBV+ErPr+EPYNdM1OcJ/Z2i2e2XYlHm10y8tnFe4TI/k5yzajMIiQzO/AOpfe6i/fhA16b9c9P+8TFrI+K+l+FAgOzbfkO5sXM0ptZbTqnizbx7dqCt339uo256mVj9sA6g89TmOte0hvwWgrzpEx0CvfK8bzJGX2MD/BjCvMQ9Y/gYy95bdMdWPdwv2zPmZhZ9ArWG/zuwFw2/Bd5K+++XRlh34zZMawtFXTuovQBNkHcCA==
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="29" height="34">
+  <data encoding="base64" compression="zlib">
+   eJztl01Kw0AYhr8kddMm2XoBPYbaLgKKZ1BpaUWta6HrkgPoQt2ouKh4AnXjD3oM7ULEU6jgNyZDZqbzl6RVhL7wMk2+N/PMpDNT6gCAM/XU/8xNgPoFwIPKg6Stq9xPrHye8U+WMBuQqDEDIyL3YkM9wn50fQhZoMxuTe1YqC8HACtBdk2ZsmclWWDnSVV1+TYW6jukjyC7Zucpqo25Dp+VMk8wc4o+C+TMObw/b8mUZKXMW8zcoe8VTFE6piQrZdZcvp0Es2nIDQz1vkUfbJbdp3SsEaj38rgyf8Wsop/S7CPaU7hsxhfGtop7tpe2OpfJRAKTnBMA+jOpbEZkynTgKAqM9i0yRLMuzzy3e6y0LiFbP3nXSRmTdWR7hoxLkYLZ+wVmkbVZ1JS5FQJsh/rxbab1Vjh6z6Qu5nZDfp4y7Xl2/YlawN/ARfRSIK9T5pHH+xh9mJP56iftGrLW0RsG5hX2f42+8fjPOj1XAF7Qw4r9uMh3oXu3Jn0g6xP9lYNJxDLf/ILwnKLMluX6M+ldM+42Mjrpu1WdtcMJzdv2/0WerI2/ARnwjl4=
   </data>
-  </layer>
-  <objectgroup name="Buildings" visible="false" />
-  <layer name="Front" width="29" height="34">
-    <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AU0AKsEGFgWCmCX42ZGAODuRhxakHgFSMqjQ5OAc04TcCcMKB94UB8BKjuKBF2/gWq+QfE/4lQO5TBa0ZUehSMAlJAHiv91ICAIysqTYyaAGDaDgTiIEbcakgFRUTkl0Ii89R3ItVNIkLdRCLNEmciTt1gAUmi1DGnA2hOJxDnQ+Mdlu7ysaSDJhLt7AKq7wbiHjR9K4D8lQTMWgaVXySKKYYPrAKqWQ3Ea9DUngDyTxLQfwwqf0gUUwwfOAVUcxqIz6CpfQHkvySg/xlU/pEophg+8Aqo5jUQv8GhtoEK6WMBsK4/AMQPsNT5yHEBS4sLkMTiadBOQI4LUtMiCODzDzbQIooaF4uoEKaEwBKgHUuR7DlEBzuPAO04imTPIzrY+QRox1PksAXiZTjwYqiaJXjUEIuXA/EKItyXCFXfTLYPMQEAIKJVkg==
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="3" name="TileData" x="80" y="368" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door"/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="48" y="272" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door"/>
+   </properties>
+  </object>
+  <object id="5" name="TileData" x="192" y="272" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door"/>
+   </properties>
+  </object>
+  <object id="6" name="TileData" x="336" y="272" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Front" width="29" height="34">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AU0AJo8DIwaPLiV7ONj4FhOx9xakHgFSMqjQ68gGZ4EzDnGtC+60DsAlTnSoSdtUA1dUBcT4TaoQxeM6LSwwksA+LFUPYSKB+GGZDY2NQwEKEGXe1AA0s6qoGBSDqqAQFHVlSaGDUBwLQdCMRBjLjVkAqKiMgvhUTmqe+DIO8tBOJFDITTOiV4ORCvwOMGfOnuEZXKYQ5gHcAJxPnQeIelu3ws6YCJjzSzuYDquYGYB02fBpCvScAsNai8Eh+mGD6gBVSjDcQ6aGo9gHxPAvrdoPJOfJhi+IAXUI03EPuQGD6kAFlgfMsBsTw03rMI2UUFtygA7XIA4gQsaQ05LmBpUQFJ7D4PfrN3szAw7AHivSzEuwc5LkhNiyCAzz/YAAuaHUo0jF8YUAHaoYpkjxMd7HQB2uFKB3vwAVhZiw1Ts/wlVObCQCJUfTPFPkMAAL0sUlk=
   </data>
-  </layer>
-  <objectgroup name="Front" visible="false" />
+ </layer>
+ <objectgroup id="6" name="Front"/>
 </map>

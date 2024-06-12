@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="35" height="15" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="3">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="35" height="15" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="4">
  <properties>
   <property name="AmbientLight" value="110 110 110"/>
-  <property name="DayTiles_asdf" value="Buildings 3 1 24 Buildings 9 1 24 Buildings 15 1 24 Buildings 21 1 24 Back 3 3 25 Back 21 3 25"/>
+  <property name="DayTiles" value="Back 3 3 46 Back 6 3 46 Back 9 3 46 Back 12 3 46 Back 18 3 46 Back 21 3 46 Buildings 3 1 24 Buildings 6 1 24 Buildings 9 1 24 Buildings 12 1 24 Buildings 18 1 24 Buildings 21 1 24 Buildings 32 1 24"/>
   <property name="Feed" value="5 2"/>
   <property name="Light_asdf" value="11 14 6 3 2 6 10 2 6 14 2 6 1 5 4 6 5 4 6 10 4 11 7 4 15 11 4 1 12 4 15 2 6 16 9 4 20 13 4 20 6 4  21 2 6 23 2 4 23 11 4"/>
-  <property name="NightTiles_asdf" value="Buildings 3 1 26 Buildings 9 1 26 Buildings 15 1 26 Buildings 21 1 26 Back 3 3 12 Back 21 3 12"/>
+  <property name="NightTiles" value="Back 3 3 53 Back 6 3 53 Back 9 3 53 Back 12 3 53 Back 18 3 53 Back 21 3 53 Buildings 3 1 26 Buildings 6 1 26 Buildings 9 1 26 Buildings 12 1 26 Buildings 18 1 26 Buildings 21 1 26 Buildings 32 1 26"/>
   <property name="ProduceArea" value="6 4 15 7"/>
   <property name="Warp" value="11 15 Farm 14 11"/>
   <property name="sw1" value="38"/>
@@ -18,6 +18,11 @@
  <tileset firstgid="1" name="coopTiles" tilewidth="16" tileheight="16" tilecount="84" columns="4">
   <image source="coopTiles.png" width="64" height="336"/>
   <tile id="12">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="25">
    <properties>
     <property name="Type" value="Wood"/>
    </properties>
@@ -42,10 +47,10 @@
  <tileset firstgid="85" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
   <image source="townInterior.png" width="512" height="1088"/>
  </tileset>
- <tileset firstgid="2261" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="688" columns="16">
-  <image source="walls_and_floors.png" width="256" height="688"/>
+ <tileset firstgid="2261" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
+  <image source="walls_and_floors.png" width="256" height="560"/>
  </tileset>
- <tileset firstgid="2949" name="z_hptiles" tilewidth="16" tileheight="16" tilecount="2048" columns="32">
+ <tileset firstgid="2821" name="z_hptiles" tilewidth="16" tileheight="16" tilecount="2048" columns="32">
   <image source="z_hptiles.png" width="512" height="1024"/>
  </tileset>
  <layer id="1" name="Back" width="35" height="15">
@@ -67,19 +72,19 @@
  </objectgroup>
  <layer id="3" name="Buildings" width="35" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjZGBgYKIhZgZiRiLVsTIggCQN2OxIdmQCLcwC4mwgzmFGVQtTJ0pDjGxHJ9D+LiDuBuIeZuzqCAF9XgYGAyA2BGIjIDYGYhMgNuVFVXeZHVMvDwPDAh4k/k9ghP0C4lgmVHVwN7MxMIixEeEoMsB7IP6AxJcGukGGCVMdseFCCeAHhoEAI4I/HciewYipjlZuWY4UKfpAew2w2E0vt5ADsLnlNDOCvQnKRvYnqQCo9QAQJ+BTY8qM6pZXzJhqLmERIxUQE/ahaG7hYmFg4AZiHigNwp/o5JZSZvqkF2LsmDqI3LKVDm4BpXli7QCpMyQSs5KhB4aJBQB9NSA1
+   eJwzZGBgMBxEGAYkacBGtiOTmYEhC4izgTiHGVUtTJ0oDTGyHZ1A+7uAuBuIe5ixqyME1vMwMGwA4o1AvAmINwPxFiDeyoOq7jI7pl50O34yMjD8AuJYJuzqRNkYGMTYiHAUGeA9EH8gQh2x4UIJ4AeGgQAjgj8dyJ7BiKmOVm5RR4o7faC9BljsppdbyAHY3HKaGcHeBGWro6VRSu1AB6bMqOpeMWOquYRFjBZuCUVzCxcLAwM3EPNAaRD+RCe3lDLTJ70QY8fUQeSWrXRwCyjNE2sHOXUoLetoAOrUMCw=
   </data>
  </layer>
  <objectgroup id="4" name="Buildings"/>
  <layer id="5" name="Front" width="35" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBhcYCsrA8M2Vtzy73kYGD4A8Ucg/gTEn4H4CxB/5aGeG9ih9FWgO67hcQs/LwODABALArEQEAsDsQgQi/KiqtvMjqkXXegmIwPDLSC2ZcKu7ivQHd/wuIWa4DfQHX8YMcWxeIMqIJ2MuCPWLZwkmt1OQ7eQ409SASG3nGKG0OT4k1SA7BaYvQMFQG5Bzj6vge55wwyhX9PZbehuGUhAa7eQkuZp7RZQmic2r4LUcQIxFxGYBaqHg0j1MAwDhNRxA7EhkZiTDD2kYgDQliH4
+   eJzNlEsOgjAURVuqgsIOdCuuyf8iHPlfCdFFONdEN+AApzrRgbeRlxj5vTaQcJNTCDzoadNWCiGcClFAMuuaYI/moG8yMgiEGIIRGIMJmIJZkP0NxY374Nad0JxzPligzyVYgTXYgC3Y/bmEbrHLBZN0BX0nve6B5smRt0gL/Cq/4PGWyTru/Jnm5me/62I+ek7yOddlnvPvtLiMdWTrkjfOslLkclRxncU4KR5oGLpQv2XHdE9TIvjc1fcaleRm61JF6uKi13xdXPSaN3Fpgw4D2gses57wmX2YHBv0vyqPmg95qx1u
   </data>
  </layer>
  <objectgroup id="6" name="Front"/>
  <layer id="9" name="Front1" width="35" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFIxFw8wy0CxBAm4Zu4RxE/tQcRG4ZBcMX8A6idKY7iNwyCqgDAOEtAOs=
+   eJxjYBgFIxF0cw+0CxBgNQ3d0jmI/LlyELllFAxf0DuI0tnaQeSWUUAdAADlugPl
   </data>
  </layer>
  <objectgroup id="10" name="Front1"/>
