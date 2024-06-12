@@ -1,0 +1,23 @@
+{
+  // Note: this file's Include in AllObjects.json is commented out at the moment. Changes to this file won't do anything.
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_HogsmeadeWarpTotem": {
+          "Name": "Hogsmeade Warp Totem",
+          "DisplayName": "{{i18n: warptotem.Hogsmeade.name}}",
+          "Description": "{{i18n: warptotem.Hogsmeade.desc}}",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 20,
+          // Note: Texture doesn't exist at the moment. Item is invisible
+          "Texture": "{{InternalAssetKey: assets/Objects/WarpTotems.png}}",
+          "SpriteIndex": 0,
+          "ContextTags": ["{{ModId}}_WarpTotem", "not_placeable", "totem_item"]
+        }
+      }
+    }
+  ]
+}

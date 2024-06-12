@@ -201,6 +201,14 @@
       "LogName": "Monster Sprites",
       "Action": "Include",
       "FromFile": "Data/MonsterSprites.json"
+    },
+    {
+      "LogName": "Add-On Settings",
+      "Action": "Include",
+      "FromFile": "AddOnSettings.json",
+      "When": {
+        "HasMod": "HogwartsET.AddOn.Hogwarts"
+      }
     }
   ]
 }
