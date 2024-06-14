@@ -1,0 +1,59 @@
+{
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsReceptionHallGF",
+      "MapProperties": {
+        "Music": "{{ModId}}_HappyHogwarts"
+      },
+      "When": {
+        "Time": "{{Range: 0600, 1200}}"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
+      "MapProperties": {
+        "Music": "{{ModId}}_EerieLullaby"
+      },
+      "When": {
+        "Time": "{{Range: 0600, 1600}}"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
+      "MapProperties": {
+        "Music": "{{ModId}}_HonorofHedwig"
+      },
+      "When": {
+        "Time": "{{Range: 1600, 2600}}"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage2",
+      "MapProperties": {
+        "Music": "{{ModId}}_EerieLullaby"
+      },
+      "When": {
+        "Time": "{{Range: 0600, 1600}}"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestStage2",
+      "MapProperties": {
+        "Music": "{{ModId}}_HonorofHedwig"
+      },
+      "When": {
+        "Time": "{{Range: 1600, 2600}}"
+      },
+      "Update": "OnTimeChange"
+    }
+  ]
+}
