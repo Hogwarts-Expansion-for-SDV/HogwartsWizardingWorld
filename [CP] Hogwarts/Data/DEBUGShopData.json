@@ -134,8 +134,24 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 6,
-            "Y": 7
+            "X": 12,
+            "Y": 9
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "OpenShop {{ModId}}_TheMagicNeepDEBUG"
+          }
+        }
+      ]
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_TheMagicNeep",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 13,
+            "Y": 9
           },
           "Layer": "Buildings",
           "SetProperties": {
