@@ -1,90 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="12" height="12" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="4">
- <tileset firstgid="1" name="indoor" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
-  <image source="townInterior.png" width="512" height="1088"/>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="28" height="14" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="1">
+ <tileset firstgid="1" name="z_TheMagicNeepShopTilesheet" tilewidth="16" tileheight="16" tilecount="952" columns="28">
+  <image source="ShopTileSheet.png" width="448" height="544"/>
  </tileset>
- <tileset firstgid="2177" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
-  <image source="walls_and_floors.png" width="256" height="560"/>
- </tileset>
- <layer id="1" name="Back" width="12" height="12">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,1173,1171,1171,1171,1171,1171,1171,1171,1171,1172,0,
-0,1170,1170,1170,1170,1170,1170,1170,1170,1170,1170,0,
-0,1170,1170,1170,1170,1170,1170,1170,1170,1170,1170,0,
-0,306,306,306,306,306,306,306,306,306,306,0,
-0,306,306,306,306,306,306,306,306,306,306,0,
-0,306,306,306,306,306,306,306,306,306,306,0,
-0,306,306,306,306,306,306,306,306,306,306,0,
-0,306,306,306,306,306,306,306,306,306,306,0,
-0,306,306,306,306,306,306,306,306,306,306,0,
-0,306,306,306,306,306,306,306,306,306,306,0,
-0,0,0,0,0,0,306,0,0,0,0,0
-</data>
+ <layer id="1" name="Back" width="28" height="14">
+  <data encoding="base64" compression="zlib">
+   eJwTZ2RgkABicTrRxkBsQkeaXv4a9d+o/0b9N+q/4eY/AF4IOvU=
+  </data>
  </layer>
- <layer id="2" name="Buildings" width="12" height="12">
-  <data encoding="csv">
-10,11,11,11,11,11,11,11,11,11,11,12,
-65,0,0,0,0,581,0,580,0,0,0,69,
-65,0,0,0,0,613,1390,612,0,0,0,69,
-65,81,81,81,81,613,1422,612,81,81,81,69,
-65,644,705,705,705,645,0,644,705,705,645,69,
-65,0,0,0,0,0,0,0,0,0,0,69,
-65,0,1073,1074,1074,1074,1074,1074,1074,1075,0,69,
-65,0,1105,1106,1106,1106,1106,1106,1106,1107,0,69,
-65,0,0,0,0,0,0,0,0,0,0,69,
-65,0,0,0,0,0,0,0,0,0,0,69,
-161,0,0,0,0,0,0,0,0,0,0,168,
-1,1,1,1,1,97,0,131,1,1,1,1
-</data>
+ <layer id="8" name="Back2" width="28" height="14">
+  <data encoding="base64" compression="zlib">
+   eJzd0rtSEwEUBuANKKAPkUASEHgEAgQFbRSwykWYgU4EK7xgD6Jv4QUq5aJoJ6AVKhCgU4G34Fr6FRROZjKTHY0FZ+Zrzvx7/tmdDYL/O1VUc4GL1FBLHZe4TEYoS4581d/1RYlRTwNxEiRppIkrNNNCa9Hzb3jLHPMssMg73rPEBz6e5dtI0U4HnaTp4irX6KaH69wo6lvjK9/4zjobbFJgi212QnyDIYZD5MuZm5EguEUvffRzO/KPS/6Yu26PcI9Rxrhfwb5Jt6d4yjTPeB6iLyobo54G4iRIlrjxwv4lr3jNDLMh+tpkU7TTQSdpukrc+GS/zAqrfOZLGX0FmS0yZMmR5w4DDJa48cP+J7/YZY/9EO83LvuAhzziMRM8KXHjwP6QI4454bSC/8t5nd+/JTxE
+  </data>
  </layer>
- <layer id="7" name="Buildings1" width="12" height="12" visible="0">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,580,641,641,641,0,0,0,641,641,581,0,
-0,612,673,673,673,0,0,0,673,673,613,0,
-0,612,673,673,673,0,0,0,673,673,613,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,2144,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0
-</data>
+ <layer id="9" name="Back3" width="28" height="14">
+  <data encoding="base64" compression="zlib">
+   eJztzrcNwkAYhuHzsQAwB8wBTAEiTEGuiL0JJbEHauIWxApGIBa8hQvLwkI+ZBr4pKfw3f/7OyGcxwufwp45JZRRQRU11G1mAwh+2NdBFz30McDwxVwIYUSM76gmRExz3jfFDHMssMTKMhNHAkmkjLM0XRmFvjU22GKHPQ6m+yxyyKOAonGu09VQ6DvjgituuONhum+ihbZlb0TXWKHvXSaKe0fecnLhPXaRUgiP/F7fP78Rv0v/fQJo3CTK
+  </data>
  </layer>
- <layer id="3" name="Front" width="12" height="12">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,1041,1042,1042,1042,1042,1042,1042,1043,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,162,166,166,166,163,0,164,166,166,167,0,
-0,0,0,0,0,0,166,0,0,0,0,0
-</data>
+ <layer id="12" name="Back4" width="28" height="14">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgYIA7EEkAsCcRSQCwNxDI0tM8Yi5gFjezyA2J/LOIhNLIvC4izsYgX0Mi+UTAKRgF9gAbTwNoPAJi/A2U=
+  </data>
  </layer>
- <objectgroup id="4" name="Back">
-  <object id="2" name="TileData" x="96" y="176" width="16" height="16">
-   <properties>
-    <property name="NoFurniture" value="t"/>
-   </properties>
-  </object>
- </objectgroup>
- <objectgroup id="5" name="Buildings">
-  <object id="3" name="TileData" x="96" y="112" width="16" height="16">
-   <properties>
-    <property name="Action" value=""/>
-    <property name="Shop" value="TheMagicNeep"/>
-   </properties>
-  </object>
- </objectgroup>
- <objectgroup id="8" name="Buildings1"/>
- <objectgroup id="6" name="Front"/>
+ <layer id="2" name="Buildings" width="28" height="14">
+  <data encoding="base64" compression="zlib">
+   eJyV0ldsjlEYAOCf2ivEdmUkYsZ2QYeW2ntrS+zNFW25sGsUiXljj9p7uyBWXRDuXBDUpvaOLZ4vftE0hJ7kyXu+75z3fc83GuUP/XO0sKclkUQRTQytiCWO1rQhnra0oz0d6EgnOv9Hr2AUpwQlGSAngUSS/jP/1xht/5g85tQhWU4KqXnMDUZa8K7ESKKIJoZWxBL3h5xlcpazIo/9Nti/MZyzWcxgC1vZxvZc9RJIJImB7Ld+V7zHfR7wkEdk85gnPOUZJ+w/Ga55SjzNGc5yjkzO5+iZTAqpTOGStcvh9fR8odBCFrGYu9zjPnspwlV7r/HC/uviDW6SxS1ucyd4BpYG75HlrGBl8Aw5zvLU/BnPg3q85BUX9LlINu9cv6eY+QfxI5/4zBe+8o3vf/lOBSJCoYIUojBFKEoxmlpvRknzUhRQo7RYhpr6lRXLUZ4KVKQSlakS8bP+lVz9qrpfjerU4Kw658iku/Ue1A7nVtWvnnl94qw3EBvSiMY0Cc5IM5qHc17xmje8JdL9KKKJIUudW9xmvPUJxEf8Pl978w4Mst5J7EwXutKN7vSgJ73oTR/60o/+DCCBRJIYGNQL9xgsDmEowxjOCEYyitGMYSzjGM8EJuY4Y84xyf3JJJNCKlOYmmv/NNfTmcFMZjGbOaQxl3nMZwHp1PIOalOHutRjSfC/+C6Fgn/T9fPgP/jDuVbZt5o1rGUd69nARjaxmQy2sJVtbGcHO9nFbvawl33s5wAHOcRhjnCUYxznB8B6j/M=
+  </data>
+ </layer>
+ <layer id="10" name="Buildings2" width="28" height="14">
+  <data encoding="base64" compression="zlib">
+   eJzt0r9OwlAchuFTNkW8AogTAw6MIiMrI0icNEHREXQWUbgAdBMWLsA/o6AsIhpwtILehSm4Y3hNznDStKVNYPOXPDlNOf2+5hQh/sfNbGhCxLCJOKq4wKVmvf8JHTyjixe8uug5Ia+IFNLYQgbXuMGtRd+2Q97ujL4r8mrIo4AjHKOHPt5MfbpDVtLmLMyTR8HmtztTxrdcs9zfwz5yOMChyz4vsyQzT1lLOMM5yqgsoC8sM+sW2Q3l3sBjblS5XvMJYZA1QkJm3rM20cIDHtFW+gw1jOc1n3NfUrleZq8fK9iRmTrrBwYY4hNfNucZ5LnQjD51xuT8zPnbvDvkBXi3VdP7Tdj/u4D/x99E6Fr3cB7znCn8Zy+C
+  </data>
+ </layer>
+ <layer id="11" name="Buildings3" width="28" height="14">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFtAD+WMRCiNRrBsTmVHQLIRAExME45CYyMjBMAuLJQDyFkX5uWg+0awMd7TsNtOsMHe0bKeAmEN+io31fgfgbHe0TBKYZoWGcbgAqwgrB
+  </data>
+ </layer>
+ <layer id="4" name="Front" width="28" height="14">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFGUCcicQXBWIxNDW/GBkYfjNi1x8BxJEk2NcCxK1QtgEQGwKxEZoaMSYGBnEmTL3FQFwCxKUk2AcD3kDsA8QLgXgRGfr3QN1zCcp3A4aHOxB7ALEnWtikAXE6SA8Q7wXifWTYdwOL/3GBJjLMRwdfSLBvOxDvQOLvxqJmGTBMlgPxChzpRoAZlT8LqG42EM8B4rk49FwF4mtAfJ14p8KBDjNhNdQEHnS2jxTAAwxfXiDmA2J+IBaAhvdLIP0Kyr6IIw7QQROV/fkfRDBCMCPUDbOBdswZgPAEAHYFIAo=
+  </data>
+ </layer>
+ <layer id="5" name="Path" width="28" height="14">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMAowAQAGIAAB
+  </data>
+ </layer>
+ <layer id="6" name="AlwaysFront" width="28" height="14">
+  <data encoding="base64" compression="zlib">
+   eJy10DWMVGEQAOCFC24F7sGtQE+A4FbAHQ5B73B3d3fuDgkuDW4FLhWuwa3BE0hwK3D5CFssGyQk8CdfZua9f2bebiAQCFRIGQhUpBKRRBFNDJX5lyfWvLjgzCZiU5qF7Gj5h30dvO9IPAl0ojNd6Eo3utPjL757sLtDGMowhjMi2D9KHM0YxjKO8UxgIpOYzBSmhuycIZ/JLGYzh7kkkkQy85jPgpC+RfLFLGEpy1jOClayitU/+W1rPFvLOtazgY1sYjNb2Mo2Yt2PC/ZtV+9gJ7vYzR72so/9HPjFf3nQ80Mc5ghHOcZxTnCSU5zmTHDGWfEc57nARS5xmStc5RrXf7Lzhmc3ucVt7nCXeyF378sfhNQP5Y94zBOe8oznvOAlr3gdtu+N+i3veM8HPvKJz3z5dj8iEEhBSiIivvelElOThrSkIz0ZyEgmMpMl4sd9WdXZyE4OcpKL3OQhL/nITwEKBvsLiYUpQlGKUZwSlKQUpSkTtq+suhzlqUBFKhFJFNHEUJkqVA32VxOrU4Oa1KI2dahLPerTIGxfQ3UjYomjMU1oSjOa04KWtKJ1sL+N2JZ2tKcDHYkngU50pkvYvh7qnvSiN33oSz/6M4CBDGIwQ0L6h8tHMJJRjGZM2PzwM8X7qUxjOjOYySxmM4e5JJJEcsi8BfKFv5m//A+7/+f5CoYBfcI=
+  </data>
+ </layer>
+ <layer id="7" name="AlwaysFront2" width="28" height="14">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2D4gkpGBoYqRvrZNxVo1zQ62rcRaNcmOto3CkYWAAC6PQOI
+  </data>
+ </layer>
 </map>
