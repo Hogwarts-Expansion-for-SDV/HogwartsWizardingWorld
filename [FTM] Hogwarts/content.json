@@ -1,18 +1,4 @@
 {
-  /*
-  Not implemented yet:
-  FORAGE
-    Monster Book of Monsters
-  MONSTERS
-    CASTLE
-      Chocolate Frog (Caramel, Dark, Milk, White)
-      Suit of Armor (Default, Light Silver, Dark Silver) - Will only be implemented after decoys are placed in the castle
-      Monster Book of Monsters (Default)
-    FORBIDDEN FOREST
-      Flobberworm (Ochre, Pale Brown, Ruddy Brown)
-      Grindylow (Dark, Default, Swamp, Tan, Yellow)
-      Horned Serpent (Cut Horns, Large Horns)
-  */
   "ForageSpawnEnabled": false,
   "LargeObjectSpawnEnabled": false,
   "OreSpawnEnabled": true,
@@ -28,7 +14,10 @@
         "MapName": "Farm",
         "MinimumSpawnsPerDay": 0,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Grass", "Diggable"],
+        "IncludeTerrainTypes": [
+          "Grass",
+          "Diggable"
+        ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [],
@@ -57,16 +46,33 @@
       }
     ],
     "PercentExtraSpawnsPerForagingLevel": 0,
-    "SpringItemIndex": [16, 20, 22, 257],
-    "SummerItemIndex": [396, 398, 402, 404],
-    "FallItemIndex": [281, 404, 420, 422],
+    "SpringItemIndex": [
+      16,
+      20,
+      22,
+      257
+    ],
+    "SummerItemIndex": [
+      396,
+      398,
+      402,
+      404
+    ],
+    "FallItemIndex": [
+      281,
+      404,
+      420,
+      422
+    ],
     "WinterItemIndex": [],
     "CustomTileIndex": []
   },
   "Large_Object_Spawn_Settings": {
     "Areas": [
       {
-        "ObjectTypes": ["Stump"],
+        "ObjectTypes": [
+          "Stump"
+        ],
         "FindExistingObjectLocations": true,
         "PercentExtraSpawnsPerSkillLevel": 0,
         "RelatedSkill": "Foraging",
@@ -114,7 +120,9 @@
         "MapName": "Farm",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Quarry"],
+        "IncludeTerrainTypes": [
+          "Quarry"
+        ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [],
@@ -174,7 +182,9 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 10,
         "MaximumSpawnsPerDay": 20,
-        "IncludeTerrainTypes": ["Quarry"],
+        "IncludeTerrainTypes": [
+          "Quarry"
+        ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [],
@@ -234,7 +244,9 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 10,
         "MaximumSpawnsPerDay": 20,
-        "IncludeTerrainTypes": ["Quarry"],
+        "IncludeTerrainTypes": [
+          "Quarry"
+        ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [],
@@ -378,8 +390,14 @@
         "MinimumSpawnsPerDay": 0,
         "MaximumSpawnsPerDay": 4,
         "IncludeTerrainTypes": [],
-        "ExcludeTerrainTypes": ["Grass", "Wood", "Dirt"],
-        "IncludeCoordinates": ["143,122/188,141"],
+        "ExcludeTerrainTypes": [
+          "Grass",
+          "Wood",
+          "Dirt"
+        ],
+        "IncludeCoordinates": [
+          "143,122/188,141"
+        ],
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
@@ -437,8 +455,14 @@
         "MinimumSpawnsPerDay": 0,
         "MaximumSpawnsPerDay": 4,
         "IncludeTerrainTypes": [],
-        "ExcludeTerrainTypes": ["Grass", "Wood", "Dirt"],
-        "IncludeCoordinates": ["143,122/188,141"],
+        "ExcludeTerrainTypes": [
+          "Grass",
+          "Wood",
+          "Dirt"
+        ],
+        "IncludeCoordinates": [
+          "143,122/188,141"
+        ],
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
@@ -477,7 +501,9 @@
               "SightRange": 2,
               "RangedAttacks": false,
               "Sprite": "Characters/Monsters/Firecrab Amethyst",
-              "Loot": [66]
+              "Loot": [
+                66
+              ]
             }
           },
           {
@@ -492,7 +518,9 @@
               "SightRange": 2,
               "RangedAttacks": false,
               "Sprite": "Characters/Monsters/Firecrab Aquamarine",
-              "Loot": [62]
+              "Loot": [
+                62
+              ]
             }
           },
           {
@@ -507,7 +535,9 @@
               "SightRange": 2,
               "RangedAttacks": false,
               "Sprite": "Characters/Monsters/Firecrab Diamond",
-              "Loot": [72]
+              "Loot": [
+                72
+              ]
             }
           },
           {
@@ -522,7 +552,9 @@
               "SightRange": 2,
               "RangedAttacks": false,
               "Sprite": "Characters/Monsters/Firecrab Emerald",
-              "Loot": [60]
+              "Loot": [
+                60
+              ]
             }
           },
           {
@@ -537,7 +569,9 @@
               "SightRange": 2,
               "RangedAttacks": false,
               "Sprite": "Characters/Monsters/Firecrab Ruby",
-              "Loot": [64]
+              "Loot": [
+                64
+              ]
             }
           },
           {
@@ -552,7 +586,9 @@
               "SightRange": 2,
               "RangedAttacks": false,
               "Sprite": "Characters/Monsters/Firecrab Topaz",
-              "Loot": [68]
+              "Loot": [
+                68
+              ]
             }
           }
         ],
@@ -560,7 +596,9 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": -2,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Quarry"],
+        "IncludeTerrainTypes": [
+          "Quarry"
+        ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [],
@@ -601,7 +639,9 @@
               "SightRange": 2,
               "RangedAttacks": false,
               "Sprite": "Characters/Monsters/Firecrab Amethyst",
-              "Loot": [66]
+              "Loot": [
+                66
+              ]
             }
           },
           {
@@ -616,7 +656,9 @@
               "SightRange": 2,
               "RangedAttacks": false,
               "Sprite": "Characters/Monsters/Firecrab Aquamarine",
-              "Loot": [62]
+              "Loot": [
+                62
+              ]
             }
           },
           {
@@ -631,7 +673,9 @@
               "SightRange": 2,
               "RangedAttacks": false,
               "Sprite": "Characters/Monsters/Firecrab Diamond",
-              "Loot": [72]
+              "Loot": [
+                72
+              ]
             }
           },
           {
@@ -646,7 +690,9 @@
               "SightRange": 2,
               "RangedAttacks": false,
               "Sprite": "Characters/Monsters/Firecrab Emerald",
-              "Loot": [60]
+              "Loot": [
+                60
+              ]
             }
           },
           {
@@ -661,7 +707,9 @@
               "SightRange": 2,
               "RangedAttacks": false,
               "Sprite": "Characters/Monsters/Firecrab Ruby",
-              "Loot": [64]
+              "Loot": [
+                64
+              ]
             }
           },
           {
@@ -676,7 +724,9 @@
               "SightRange": 2,
               "RangedAttacks": false,
               "Sprite": "Characters/Monsters/Firecrab Topaz",
-              "Loot": [68]
+              "Loot": [
+                68
+              ]
             }
           }
         ],
@@ -684,7 +734,9 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": -2,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Quarry"],
+        "IncludeTerrainTypes": [
+          "Quarry"
+        ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [],
@@ -722,10 +774,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "50,3/199,53", "50,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "50,3/199,53",
+          "50,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -800,10 +860,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "50,3/199,53", "50,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "50,3/199,53",
+          "50,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -857,10 +925,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "50,3/199,53", "50,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "50,3/199,53",
+          "50,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -914,10 +990,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "50,3/199,53", "50,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "50,3/199,53",
+          "50,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -971,10 +1055,15 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 3,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["72,0/199,45", "0,45/199,155"],
+        "ExcludeCoordinates": [
+          "72,0/199,45",
+          "0,45/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -1086,10 +1175,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "50,3/199,53", "50,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "50,3/199,53",
+          "50,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -1178,10 +1275,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "50,3/199,53", "50,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "50,3/199,53",
+          "50,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -1218,8 +1323,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -1301,8 +1410,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -1363,8 +1476,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -1425,8 +1542,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -1544,8 +1665,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -1641,8 +1766,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -1686,8 +1815,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -1769,8 +1902,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -1831,8 +1968,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -1893,8 +2034,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -2012,8 +2157,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -2109,8 +2258,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -2154,10 +2307,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "0,3/150,53", "199,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "0,3/150,53",
+          "199,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -2232,10 +2393,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "0,3/150,53", "199,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "0,3/150,53",
+          "199,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -2289,10 +2458,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "0,3/150,53", "199,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "0,3/150,53",
+          "199,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -2346,10 +2523,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "0,3/150,53", "199,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "0,3/150,53",
+          "199,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -2460,10 +2645,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "0,3/150,53", "199,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "0,3/150,53",
+          "199,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -2552,10 +2745,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "0,3/150,53", "199,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "0,3/150,53",
+          "199,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -2592,10 +2793,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "50,53/199,103", "50,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "50,53/199,103",
+          "50,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -2670,10 +2879,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "50,53/199,103", "50,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "50,53/199,103",
+          "50,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -2727,10 +2944,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "50,53/199,103", "50,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "50,53/199,103",
+          "50,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -2784,10 +3009,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "50,53/199,103", "50,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "50,53/199,103",
+          "50,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -2898,10 +3131,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "50,53/199,103", "50,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "50,53/199,103",
+          "50,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -2990,10 +3231,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "50,53/199,103", "50,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "50,53/199,103",
+          "50,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -3030,8 +3279,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -3113,8 +3366,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -3175,8 +3432,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -3237,8 +3498,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -3356,8 +3621,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -3453,8 +3722,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -3498,8 +3771,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -3581,8 +3858,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -3643,8 +3924,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -3705,8 +3990,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -3824,8 +4113,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -3921,8 +4214,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -3966,10 +4263,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "0,53/150,103", "199,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "0,53/150,103",
+          "199,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -4044,10 +4349,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "0,53/150,103", "199,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "0,53/150,103",
+          "199,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -4101,10 +4414,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "0,53/150,103", "199,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "0,53/150,103",
+          "199,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -4158,10 +4479,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "0,53/150,103", "199,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "0,53/150,103",
+          "199,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -4272,10 +4601,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "0,53/150,103", "199,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "0,53/150,103",
+          "199,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -4364,10 +4701,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "0,53/150,103", "199,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "0,53/150,103",
+          "199,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -4404,8 +4749,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -4486,8 +4835,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -4547,8 +4900,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -4608,8 +4965,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -4726,8 +5087,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -4822,8 +5187,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -4866,8 +5235,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -4949,8 +5322,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -5011,8 +5388,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -5073,8 +5454,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -5192,8 +5577,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -5289,8 +5678,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -5334,8 +5727,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -5417,8 +5814,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -5479,8 +5880,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -5541,8 +5946,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -5660,8 +6069,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -5757,8 +6170,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -5802,8 +6219,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -5884,8 +6305,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -5945,8 +6370,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -6006,8 +6435,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -6124,8 +6557,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -6220,8 +6657,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -6288,10 +6729,14 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage1",
         "MinimumSpawnsPerDay": 0,
         "MaximumSpawnsPerDay": 6,
-        "IncludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Diggable"
+        ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["25,28/175,128"],
+        "ExcludeCoordinates": [
+          "25,28/175,128"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -6338,10 +6783,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "50,3/199,53", "50,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "50,3/199,53",
+          "50,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -6522,10 +6975,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "50,3/199,53", "50,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "50,3/199,53",
+          "50,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -6600,10 +7061,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "50,3/199,53", "50,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "50,3/199,53",
+          "50,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -6657,10 +7126,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "50,3/199,53", "50,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "50,3/199,53",
+          "50,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -6707,10 +7184,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "50,3/199,53", "50,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "50,3/199,53",
+          "50,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -6759,10 +7244,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "50,3/199,53", "50,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "50,3/199,53",
+          "50,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -6817,10 +7310,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "50,3/199,53", "50,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "50,3/199,53",
+          "50,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -6932,10 +7433,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "50,3/199,53", "50,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "50,3/199,53",
+          "50,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -7025,10 +7534,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "50,3/199,53", "50,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "50,3/199,53",
+          "50,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -7078,8 +7595,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -7267,8 +7788,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -7350,8 +7875,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -7412,8 +7941,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -7467,8 +8000,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -7524,8 +8061,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -7587,8 +8128,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -7707,8 +8252,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -7805,8 +8354,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -7863,8 +8416,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -8052,8 +8609,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -8135,8 +8696,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -8197,8 +8762,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -8252,8 +8821,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -8309,8 +8882,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -8372,8 +8949,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -8492,8 +9073,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -8590,8 +9175,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,3",
@@ -8648,10 +9237,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "0,3/150,53", "199,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "0,3/150,53",
+          "199,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -8832,10 +9429,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "0,3/150,53", "199,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "0,3/150,53",
+          "199,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -8910,10 +9515,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "0,3/150,53", "199,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "0,3/150,53",
+          "199,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -8967,10 +9580,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "0,3/150,53", "199,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "0,3/150,53",
+          "199,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -9017,10 +9638,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "0,3/150,53", "199,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "0,3/150,53",
+          "199,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -9069,10 +9698,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "0,3/150,53", "199,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "0,3/150,53",
+          "199,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -9127,10 +9764,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "0,3/150,53", "199,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "0,3/150,53",
+          "199,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -9242,10 +9887,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "0,3/150,53", "199,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "0,3/150,53",
+          "199,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -9335,10 +9988,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,3", "0,3/150,53", "199,53/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,3",
+          "0,3/150,53",
+          "199,53/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -9388,10 +10049,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "50,53/199,103", "50,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "50,53/199,103",
+          "50,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -9572,10 +10241,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "50,53/199,103", "50,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "50,53/199,103",
+          "50,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -9650,10 +10327,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "50,53/199,103", "50,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "50,53/199,103",
+          "50,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -9707,10 +10392,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "50,53/199,103", "50,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "50,53/199,103",
+          "50,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -9757,10 +10450,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "50,53/199,103", "50,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "50,53/199,103",
+          "50,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -9809,10 +10510,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "50,53/199,103", "50,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "50,53/199,103",
+          "50,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -9867,10 +10576,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "50,53/199,103", "50,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "50,53/199,103",
+          "50,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -9982,10 +10699,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "50,53/199,103", "50,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "50,53/199,103",
+          "50,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -10075,10 +10800,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "50,53/199,103", "50,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "50,53/199,103",
+          "50,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -10128,8 +10861,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -10317,8 +11054,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -10400,8 +11141,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -10462,8 +11207,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -10517,8 +11266,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -10574,8 +11327,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -10637,8 +11394,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -10757,8 +11518,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -10855,8 +11620,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -10913,8 +11682,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -11102,8 +11875,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -11185,8 +11962,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -11247,8 +12028,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -11302,8 +12087,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -11359,8 +12148,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -11422,8 +12215,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -11542,8 +12339,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -11640,8 +12441,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,53",
@@ -11698,10 +12503,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "0,53/150,103", "199,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "0,53/150,103",
+          "199,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -11882,10 +12695,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "0,53/150,103", "199,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "0,53/150,103",
+          "199,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -11960,10 +12781,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "0,53/150,103", "199,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "0,53/150,103",
+          "199,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -12017,10 +12846,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "0,53/150,103", "199,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "0,53/150,103",
+          "199,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -12067,10 +12904,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "0,53/150,103", "199,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "0,53/150,103",
+          "199,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -12119,10 +12964,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "0,53/150,103", "199,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "0,53/150,103",
+          "199,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -12177,10 +13030,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "0,53/150,103", "199,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "0,53/150,103",
+          "199,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -12292,10 +13153,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "0,53/150,103", "199,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "0,53/150,103",
+          "199,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -12385,10 +13254,18 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["0,0/199,53", "0,53/150,103", "199,103/199,155"],
+        "ExcludeCoordinates": [
+          "0,0/199,53",
+          "0,53/150,103",
+          "199,103/199,155"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -12438,8 +13315,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -12626,8 +13507,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -12708,8 +13593,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -12769,8 +13658,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -12823,8 +13716,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -12879,8 +13776,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -12941,8 +13842,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -13060,8 +13965,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -13157,8 +14066,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -13214,8 +14127,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -13403,8 +14320,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -13486,8 +14407,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -13548,8 +14473,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -13603,8 +14532,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -13660,8 +14593,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -13723,8 +14660,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -13843,8 +14784,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -13941,8 +14886,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -13999,8 +14948,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -14188,8 +15141,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -14271,8 +15228,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -14333,8 +15294,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -14388,8 +15353,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -14445,8 +15414,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -14508,8 +15481,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -14628,8 +15605,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -14726,8 +15707,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -14784,8 +15769,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -14972,8 +15961,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -15054,8 +16047,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -15115,8 +16112,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -15169,8 +16170,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -15225,8 +16230,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -15287,8 +16296,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 5,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -15406,8 +16419,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -15503,8 +16520,12 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 2,
-        "IncludeTerrainTypes": ["Custom"],
-        "ExcludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Custom"
+        ],
+        "ExcludeTerrainTypes": [
+          "Diggable"
+        ],
         "IncludeCoordinates": [],
         "ExcludeCoordinates": [
           "0,0/199,103",
@@ -15600,10 +16621,14 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForestStage2",
         "MinimumSpawnsPerDay": 0,
         "MaximumSpawnsPerDay": 6,
-        "IncludeTerrainTypes": ["Diggable"],
+        "IncludeTerrainTypes": [
+          "Diggable"
+        ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [],
-        "ExcludeCoordinates": ["25,28/175,128"],
+        "ExcludeCoordinates": [
+          "25,28/175,128"
+        ],
         "StrictTileChecking": "Maximum",
         "SpawnTiming": {
           "StartTime": 600,
@@ -15628,10 +16653,23 @@
         "DaysUntilSpawnsExpire": null
       }
     ],
-    "CustomTileIndex": [0]
+    "CustomTileIndex": [
+      0
+    ]
   },
   "QuarryTileIndex": [
-    556, 558, 583, 606, 607, 608, 630, 635, 636, 680, 681, 685
+    556,
+    558,
+    583,
+    606,
+    607,
+    608,
+    630,
+    635,
+    636,
+    680,
+    681,
+    685
   ],
   "File_Conditions": {
     "FarmTypes": [],
