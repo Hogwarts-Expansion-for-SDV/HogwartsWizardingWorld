@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSouthWing",
+      "FromFile": "assets/MapPatches/HogwartsSouthWing Night.tmx",
+      "PatchMode": "Overlay",
+      "When": {
+        "Time": "{{Range: 1900, 2600}}"
+      },
+      "Update": "OnTimeChange"
+    }
+  ]
+}
