@@ -10,6 +10,52 @@
         "LocationName |contains={{Interior Locations}}": "true"
       },
       "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Glass Doors - Animation",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Maps/z_vanillaEdits.png",
+      "PatchMode": "Replace",
+      "FromArea": {
+        "X": 128,
+        "Y": 96,
+        "Width": 64,
+        "Height": 48
+      },
+      "ToArea": {
+        "X": 576,
+        "Y": 144,
+        "Width": 64,
+        "Height": 48
+      },
+      "When": {
+        "LocationName |contains={{GlassDoorLocations}}": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Glass Doors - Tilesheet",
+      "Action": "EditImage",
+      "Target": "Maps/townInterior",
+      "FromFile": "assets/Maps/z_vanillaEdits.png",
+      "PatchMode": "Replace",
+      "FromArea": {
+        "X": 128,
+        "Y": 112,
+        "Width": 16,
+        "Height": 32
+      },
+      "ToArea": {
+        "X": 96,
+        "Y": 400,
+        "Width": 16,
+        "Height": 32
+      },
+      "When": {
+        "LocationName |contains={{GlassDoorLocations}}": true
+      },
+      "Update": "OnLocationChange"
     }
   ]
 }

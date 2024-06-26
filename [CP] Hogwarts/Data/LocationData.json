@@ -159,6 +159,12 @@
       "FromFile": "assets/Maps/HogwartsAstronomyWing6F.tmx"
     },
     {
+      "LogName": "Hogwarts Library Annex Load",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_HogwartsLibraryAnnex",
+      "FromFile": "assets/Maps/HogwartsLibraryAnnex.tmx"
+    },
+    {
       "LogName": "Hogwarts Bell Tower Courtyard Load",
       "Action": "Load",
       "Target": "Maps/{{ModId}}_HogwartsBellTowerCourtyard",
@@ -509,6 +515,12 @@
           "CreateOnLoad": {
             "AlwaysActive": false,
             "MapPath": "Maps/{{ModId}}_HogwartsAstronomyWing6F"
+          }
+        },
+        "{{ModId}}_HogwartsLibraryAnnex": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsLibraryAnnex"
           }
         },
         "{{ModId}}_HogwartsBellTowerCourtyard": {
