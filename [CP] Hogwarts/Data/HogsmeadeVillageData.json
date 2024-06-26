@@ -1598,8 +1598,10 @@
       "Action": "EditData",
       "Target": "{{PeacefulEnd.CustomCompanions/Companions:HogwartsET.CC.Hogwarts.HogwartsCarriage}}",
       "Entries": {
-        "DespawnOnTile": [0, 121, 0],
-        "IdleArguments": [0, 121, 0]
+        "Companion": {
+          "DespawnOnTile": [0, 121, 0],
+          "IdleArguments": [0, 121, 0]
+        }
       },
       "When": {
         "HasMod|contains=PeacefulEnd.CustomCompanions": true,
@@ -1666,8 +1668,10 @@
       "Action": "EditData",
       "Target": "{{PeacefulEnd.CustomCompanions/Companions:HogwartsET.CC.Hogwarts.HogwartsCarriage}}",
       "Entries": {
-        "DespawnOnTile": [130, 121, 0],
-        "IdleArguments": [130, 121, 0]
+        "Companion": {
+          "DespawnOnTile": [130, 121, 0],
+          "IdleArguments": [130, 121, 0]
+        }
       },
       "When": {
         "HasMod|contains=PeacefulEnd.CustomCompanions": true,
