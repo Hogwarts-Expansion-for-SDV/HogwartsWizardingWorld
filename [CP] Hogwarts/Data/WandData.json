@@ -1,0 +1,94 @@
+{
+  "Changes": [
+    {
+      "LogName": "Blank Bundle Load",
+      "Action": "Load",
+      "Target": "UnlockableBundles/ShopTextures/HogwartsBlankBundle",
+      "FromFile": "assets/MapPatches/BlankBundle.png"
+    },
+    {
+      "LogName": "Hogwarts Unlockable Bundle Wand Upgrade Test 1",
+      "Action": "EditData",
+      "Target": "UnlockableBundles/Bundles",
+      "Entries": {
+        "{{ModId}}_WandUpgrade1": {
+          "Location": "{{ModId}}_Ollivanders",
+          "ShopType": "CCBundle",
+          "BundleDescription": "Wand Upgrade 1",
+          "ShopEvent": "none",
+          "ShopPosition": "8, 16",
+          "ShopTexture": "UnlockableBundles/ShopTextures/HogwartsBlankBundle",
+          "DrawQuestionMark": true,
+          "QuestionMarkOffset": "24, 0",
+          "Price": {
+            "money": 1
+          },
+          "BundleCompletedMail": "WandTest1, Alder",
+          "InstantShopRemoval": true
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/mail",
+      "Entries": {
+        "WandTest1": "Multiply damage by 2.",
+        "WandTest2": "Multiply damage by 3.",
+        "Acacia": "Acacia",
+        "Alder": "Alder"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "{{ModId}}_TestWand": {
+          "Name": "Test Wand",
+          "DisplayName": "Test Wand",
+          "Description": "{{Wand Wood}} Wand",
+          "MinDamage": "{{Query: 10*{{Damage Multiplier}}}}",
+          "MaxDamage": "{{Query: 20*{{Damage Multiplier}}}}",
+          "Knockback": 1.0,
+          "Speed": 12,
+          "Precision": 0,
+          "Defense": 0,
+          "Type": 3,
+          "MineBaseLevel": -1,
+          "MineMinLevel": 121,
+          "AreaOfEffect": 0,
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "Projectiles": [
+            {
+              "Id": "{{ModId}}_TestWandP0",
+              "Damage": 98,
+              "Explodes": false,
+              "Bounces": 1,
+              "Velocity": 10,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            },
+            {
+              "Id": "{{ModId}}_TestWandP1",
+              "Damage": 98,
+              "Explodes": false,
+              "Bounces": 1,
+              "Velocity": 10,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

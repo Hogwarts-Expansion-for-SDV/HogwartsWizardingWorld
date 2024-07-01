@@ -24,7 +24,39 @@
     {
       "Name": "DEBUG",
       "Value": true
-    }
+    },
+    {
+      "Name": "Wood",
+      "Value": "Acacia, Alder, Apple, Ash, Aspen, Beech, Birch, Black Walnut, Blackthorn, Cedar, Cherry, Chestnut, Cypress, Dogwood, Ebony, Elder Wood, Elm, English Oak, Fir, Hawthorn, Hazel, Holly, Hornbeam, Ivy, Larch, Laurel, Mahogany, Maple, Pear, Pine, Poplar, Prickly Ash, Red Oak, Redwood, Reed, Rosewood, Rowan, Silver Lime, Spruce, Sugar Maple, Swamp Mayhaw, Sycamore, Tamarack, Vine, Walnut, Willow, Yew"
+    },
+    {
+      "Name": "Wand Wood",
+      "Value": "Acacia",
+      "When": {
+        "HasFlag |contains=Alder": false,
+      }
+    },
+    {
+      "Name": "Wand Wood",
+      "Value": "Alder",
+      "When": {
+        "HasFlag |contains=Alder": true,
+      }
+    },
+    {
+      "Name": "Damage Multiplier",
+      "Value": "2",
+      "When": {
+        "HasFlag |contains=WandTest1": false,
+      }
+    },
+    {
+      "Name": "Damage Multiplier",
+      "Value": "3",
+      "When": {
+        "HasFlag |contains=WandTest1": true,
+      }
+    },
   ],
   "Changes": [
     {
@@ -136,9 +168,9 @@
       "FromFile": "Data/SouthSeaBogData.json"
     },
     {
-      "LogName": "Include String Data",
+      "LogName": "Include Wand Data",
       "Action": "Include",
-      "FromFile": "Data/StringData.json"
+      "FromFile": "Data/WandData.json"
     },
     {
       "LogName": "Include Transfiguration Courtyard Data",
