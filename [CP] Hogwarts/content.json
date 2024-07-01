@@ -44,17 +44,30 @@
       }
     },
     {
-      "Name": "Damage Multiplier",
-      "Value": "2",
+      "Name": "Damage Increase A",
+      "Value": "+15",
       "When": {
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade1}} >= 0": false,
+        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade1}} >= 0": true,
+        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade2}} >= 0": false,
+        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade3}} >= 0": false,
       }
     },
     {
-      "Name": "Damage Multiplier",
-      "Value": "3",
+      "Name": "Damage Increase B",
+      "Value": "+30",
       "When": {
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade1}} >= 0": true,
+        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade1}} >= 0": false,
+        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade2}} >= 0": true,
+        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade3}} >= 0": false,
+      }
+    },
+    {
+      "Name": "Damage Increase A",
+      "Value": "+45",
+      "When": {
+        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade1}} >= 0": false,
+        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade2}} >= 0": false,
+        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade3}} >= 0": true,
       }
     },
   ],

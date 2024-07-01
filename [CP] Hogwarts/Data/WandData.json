@@ -1,10 +1,110 @@
 {
   "Changes": [
     {
-      "LogName": "Blank Bundle Load",
-      "Action": "Load",
-      "Target": "UnlockableBundles/ShopTextures/HogwartsBlankBundle",
-      "FromFile": "assets/MapPatches/BlankBundle.png"
+      "LogName": "Test Wand A",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "{{ModId}}_TestWandA": {
+          "Name": "Test Wand A",
+          "DisplayName": "Test Wand A",
+          "Description": "{{Wand Wood}} Wand A",
+          "MinDamage": "{{Query: 10{{Damage Multiplier A}}}}",
+          "MaxDamage": "{{Query: 20{{Damage Multiplier A}}}}",
+          "Knockback": 1.0,
+          "Speed": 12,
+          "Precision": 0,
+          "Defense": 0,
+          "Type": 3,
+          "MineBaseLevel": -1,
+          "MineMinLevel": 121,
+          "AreaOfEffect": 0,
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "Projectiles": [
+            {
+              "Id": "{{ModId}}_TestWandAP0",
+              "Damage": 98,
+              "Explodes": false,
+              "Bounces": 1,
+              "Velocity": 10,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            },
+            {
+              "Id": "{{ModId}}_TestWandAP1",
+              "Damage": 98,
+              "Explodes": false,
+              "Bounces": 1,
+              "Velocity": 10,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Test Wand B",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "{{ModId}}_TestWandB": {
+          "Name": "Test Wand B",
+          "DisplayName": "Test Wand B",
+          "Description": "{{Wand Wood}} Wand B",
+          "MinDamage": "{{Query: 10{{Damage Multiplier B}}}}",
+          "MaxDamage": "{{Query: 20{{Damage Multiplier B}}}}",
+          "Knockback": 1.0,
+          "Speed": 12,
+          "Precision": 0,
+          "Defense": 0,
+          "Type": 3,
+          "MineBaseLevel": -1,
+          "MineMinLevel": 121,
+          "AreaOfEffect": 0,
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "Projectiles": [
+            {
+              "Id": "{{ModId}}_TestWandBP0",
+              "Damage": 98,
+              "Explodes": false,
+              "Bounces": 1,
+              "Velocity": 10,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            },
+            {
+              "Id": "{{ModId}}_TestWandBP1",
+              "Damage": 98,
+              "Explodes": false,
+              "Bounces": 1,
+              "Velocity": 10,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            }
+          ]
+        }
+      }
     },
     {
       "LogName": "Hogwarts Unlockable Bundle Wand Upgrade Test 1",
@@ -21,75 +121,67 @@
           "DrawQuestionMark": true,
           "QuestionMarkOffset": "24, 0",
           "Price": {
-            "(W){{ModId}}_TestWand": 1
+            "(W){{ModId}}_TestWandA": 1
           },
           "BundleReward": {
-            "(W){{ModId}}_TestWand": 1
+            "(W){{ModId}}_TestWandB": 1
           },
           "InstantShopRemoval": true
         }
       }
     },
     {
+      "LogName": "Hogwarts Unlockable Bundle Wand Upgrade Test 2",
       "Action": "EditData",
-      "Target": "Data/mail",
+      "Target": "UnlockableBundles/Bundles",
       "Entries": {
-        "WandTest1": "Multiply damage by 2.",
-        "WandTest2": "Multiply damage by 3.",
-        "Acacia": "Acacia",
-        "Alder": "Alder"
+        "{{ModId}}_WandUpgrade2": {
+          "Location": "{{ModId}}_Ollivanders",
+          "ShopType": "CCBundle",
+          "BundleDescription": "Wand Upgrade 2",
+          "ShopEvent": "none",
+          "ShopPosition": "8, 16",
+          "ShopTexture": "UnlockableBundles/ShopTextures/HogwartsBlankBundle",
+          "DrawQuestionMark": true,
+          "QuestionMarkOffset": "24, 0",
+          "Price": {
+            "(W){{ModId}}_TestWandB": 1
+          },
+          "BundleReward": {
+            "(W){{ModId}}_TestWandA": 1
+          },
+          "InstantShopRemoval": true
+        }
+      },
+      "When": {
+        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade1}} >= 0": true,
       }
     },
     {
+      "LogName": "Hogwarts Unlockable Bundle Wand Upgrade Test 3",
       "Action": "EditData",
-      "Target": "Data/Weapons",
+      "Target": "UnlockableBundles/Bundles",
       "Entries": {
-        "{{ModId}}_TestWand": {
-          "Name": "Test Wand",
-          "DisplayName": "Test Wand",
-          "Description": "{{Wand Wood}} Wand",
-          "MinDamage": "{{Query: 10*{{Damage Multiplier}}}}",
-          "MaxDamage": "{{Query: 20*{{Damage Multiplier}}}}",
-          "Knockback": 1.0,
-          "Speed": 12,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 1,
-          "Projectiles": [
-            {
-              "Id": "{{ModId}}_TestWandP0",
-              "Damage": 98,
-              "Explodes": false,
-              "Bounces": 1,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "stairsdown",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
-            },
-            {
-              "Id": "{{ModId}}_TestWandP1",
-              "Damage": 98,
-              "Explodes": false,
-              "Bounces": 1,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "stairsdown",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
-            }
-          ]
+        "{{ModId}}_WandUpgrade3": {
+          "Location": "{{ModId}}_Ollivanders",
+          "ShopType": "CCBundle",
+          "BundleDescription": "Wand Upgrade 3",
+          "ShopEvent": "none",
+          "ShopPosition": "8, 16",
+          "ShopTexture": "UnlockableBundles/ShopTextures/HogwartsBlankBundle",
+          "DrawQuestionMark": true,
+          "QuestionMarkOffset": "24, 0",
+          "Price": {
+            "(W){{ModId}}_TestWandA": 1
+          },
+          "BundleReward": {
+            "(W){{ModId}}_TestWandB": 1
+          },
+          "InstantShopRemoval": true
         }
+      },
+      "When": {
+        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade2}} >= 0": true,
       }
     }
   ]
