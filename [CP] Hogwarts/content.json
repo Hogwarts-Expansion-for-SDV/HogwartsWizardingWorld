@@ -33,52 +33,45 @@
       "Name": "Wand Wood",
       "Value": "Acacia",
       "When": {
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade1}} >= 0": false,
+        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade1}} >= 0": false
       }
     },
     {
       "Name": "Wand Wood",
       "Value": "Alder",
       "When": {
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade1}} >= 0": true,
+        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade1}} >= 0": true
       }
     },
     {
       "Name": "Damage Increase",
-      "Value": "+0",
+      "Value": 0
+    },
+    {
+      "Name": "Damage Increase",
+      "Value": 50,
       "When": {
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade1}} >= 0": false,
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade2}} >= 0": false,
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade3}} >= 0": false,
+        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade1}} >= 0 AND {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade2}} < 0": true
       }
     },
     {
       "Name": "Damage Increase",
-      "Value": "+50",
+      "Value": 75,
       "When": {
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade1}} >= 0": true,
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade2}} >= 0": false,
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade3}} >= 0": false,
+        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade2}} >= 0 AND {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade3}} < 0": true
       }
     },
     {
       "Name": "Damage Increase",
-      "Value": "+75",
+      "Value": 100,
       "When": {
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade1}} >= 0": true,
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade2}} >= 0": true,
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade3}} >= 0": false,
+        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade3}} >= 0": true
       }
     },
     {
       "Name": "Damage Increase",
-      "Value": "+100",
-      "When": {
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade1}} >= 0": true,
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade2}} >= 0": true,
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade3}} >= 0": true,
-      }
-    },
+      "Value": "{{Query: {{Damage1}} + {{Damage2}} + {{Damage3}}"
+    }
   ],
   "Changes": [
     {
