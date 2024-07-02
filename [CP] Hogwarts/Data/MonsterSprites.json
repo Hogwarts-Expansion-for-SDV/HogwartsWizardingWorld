@@ -9,26 +9,62 @@
     {
       "Action": "Load",
       "Target": "Characters/Monsters/Streeler One",
+      "FromFile": "assets/Monsters/Streeler Green.png",
+      "Priority": "Low"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Monsters/Streeler Two",
+      "FromFile": "assets/Monsters/Streeler Green.png",
+      "Priority": "Low"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Monsters/Streeler Three",
+      "FromFile": "assets/Monsters/Streeler Green.png",
+      "Priority": "Low"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Monsters/Streeler Four",
+      "FromFile": "assets/Monsters/Streeler Green.png",
+      "Priority": "Low"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Monsters/Streeler One",
       "FromFile": "assets/Monsters/Streeler {{Random: Dark Blue, Green, Maroon, Yellow |key={{Time}}}}.png",
-      "Update": "OnLocationChange"
+      "Update": "OnLocationChange",
+      "When": {
+        "Query: {{Time}} >= 0": true
+      }
     },
     {
       "Action": "Load",
       "Target": "Characters/Monsters/Streeler Two",
       "FromFile": "assets/Monsters/Streeler {{Random: Green, Maroon, Yellow, Dark Blue |key={{Time}}}}.png",
-      "Update": "OnLocationChange"
+      "Update": "OnLocationChange",
+      "When": {
+        "Query: {{Time}} >= 0": true
+      }
     },
     {
       "Action": "Load",
       "Target": "Characters/Monsters/Streeler Three",
       "FromFile": "assets/Monsters/Streeler {{Random: Maroon, Yellow, Dark Blue, Green |key={{Time}}}}.png",
-      "Update": "OnLocationChange"
+      "Update": "OnLocationChange",
+      "When": {
+        "Query: {{Time}} >= 0": true
+      }
     },
     {
       "Action": "Load",
       "Target": "Characters/Monsters/Streeler Four",
       "FromFile": "assets/Monsters/Streeler {{Random: Yellow, Dark Blue, Green, Maroon |key={{Time}}}}.png",
-      "Update": "OnLocationChange"
+      "Update": "OnLocationChange",
+      "When": {
+        "Query: {{Time}} >= 0": true
+      }
     }
   ]
 }
