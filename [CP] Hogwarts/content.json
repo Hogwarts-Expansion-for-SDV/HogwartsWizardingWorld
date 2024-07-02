@@ -26,22 +26,8 @@
       "Value": true
     },
     {
-      "Name": "Wood",
+      "Name": "Wand Wood Type",
       "Value": "Acacia, Alder, Apple, Ash, Aspen, Beech, Birch, Black Walnut, Blackthorn, Cedar, Cherry, Chestnut, Cypress, Dogwood, Ebony, Elder Wood, Elm, English Oak, Fir, Hawthorn, Hazel, Holly, Hornbeam, Ivy, Larch, Laurel, Mahogany, Maple, Pear, Pine, Poplar, Prickly Ash, Red Oak, Redwood, Reed, Rosewood, Rowan, Silver Lime, Spruce, Sugar Maple, Swamp Mayhaw, Sycamore, Tamarack, Vine, Walnut, Willow, Yew"
-    },
-    {
-      "Name": "Wand Wood",
-      "Value": "Acacia",
-      "When": {
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade1}} >= 0": false
-      }
-    },
-    {
-      "Name": "Wand Wood",
-      "Value": "Alder",
-      "When": {
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade1}} >= 0": true
-      }
     },
     {
       "Name": "Damage Increase",
@@ -68,10 +54,6 @@
         "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade3}} >= 0": true
       }
     },
-    {
-      "Name": "Damage Increase",
-      "Value": "{{Query: {{Damage1}} + {{Damage2}} + {{Damage3}}}}"
-    }
   ],
   "Changes": [
     {
