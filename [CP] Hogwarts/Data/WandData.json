@@ -1,36 +1,28 @@
 {
   "Changes": [
     {
-      "LogName": "Test Wand A",
+      "LogName": "Wands",
       "Action": "EditData",
       "Target": "Data/Weapons",
       "Entries": {
-        "{{ModId}}_TestWandA": {
-          "Name": "Test Wand A",
-          "DisplayName": "Test Wand A",
-          "Description": "Wand A",
-          "MinDamage": "{{Query: 10+{{Damage Increase}}}}",
-          "MaxDamage": "{{Query: 20+{{Damage Increase}}}}",
-          "Knockback": 1.0,
+        "{{ModId}}_Wand_D0E0B1": {
+          "Name": "Wand",
+          "DisplayName": "{{i18n: wand.starter.name}}",
+          "Description": "{{i18n: wand.starter.desc}}",
+          "MinDamage": 0,
+          "MaxDamage": 1,
           "Speed": 12,
-          "Precision": 0,
-          "Defense": 0,
           "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
           "CritChance": 0,
-          "CritMultiplier": 0,
           "CanBeLostOnDeath": false,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 1,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_TestWandAP0",
+              "Id": "P0",
               "Damage": 98,
               "Explodes": false,
               "Bounces": 1,
-              "Velocity": 10,
               "RotationVelocity": 100,
               "TailLength": 3,
               "FireSound": "stairsdown",
@@ -38,11 +30,10 @@
               "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
             },
             {
-              "Id": "{{ModId}}_TestWandAP1",
+              "Id": "P1",
               "Damage": 98,
               "Explodes": false,
               "Bounces": 1,
-              "Velocity": 10,
               "RotationVelocity": 100,
               "TailLength": 3,
               "FireSound": "stairsdown",
@@ -50,40 +41,25 @@
               "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
             }
           ]
-        }
-      }
-    },
-    {
-      "LogName": "Test Wand B",
-      "Action": "EditData",
-      "Target": "Data/Weapons",
-      "Entries": {
-        "{{ModId}}_TestWandB": {
-          "Name": "Test Wand B",
-          "DisplayName": "Test Wand B",
-          "Description": "Wand B",
-          "MinDamage": "{{Query: 20+{{Damage Increase}}}}",
-          "MaxDamage": "{{Query: 30+{{Damage Increase}}}}",
-          "Knockback": 1.0,
+        },
+        "{{ModId}}_Wand_D0E0B2": {
+          "Name": "Wand",
+          "DisplayName": "{{i18n: wand.name}}",
+          "Description": "{{i18n: wand.desc}}",
+          "MinDamage": 1,
+          "MaxDamage": 1,
           "Speed": 12,
-          "Precision": 0,
-          "Defense": 0,
           "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
           "CritChance": 0,
-          "CritMultiplier": 0,
           "CanBeLostOnDeath": false,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 1,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_TestWandBP0",
+              "Id": "P0",
               "Damage": 98,
               "Explodes": false,
-              "Bounces": 1,
-              "Velocity": 10,
+              "Bounces": 2,
               "RotationVelocity": 100,
               "TailLength": 3,
               "FireSound": "stairsdown",
@@ -91,11 +67,676 @@
               "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
             },
             {
-              "Id": "{{ModId}}_TestWandBP1",
+              "Id": "P1",
               "Damage": 98,
               "Explodes": false,
+              "Bounces": 2,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            }
+          ]
+        },
+        "{{ModId}}_Wand_D0E0B3": {
+          "Name": "Wand",
+          "DisplayName": "{{i18n: wand.name}}",
+          "Description": "{{i18n: wand.desc}}",
+          "MinDamage": 1,
+          "MaxDamage": 1,
+          "Speed": 12,
+          "Type": 3,
+          "CritChance": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "Projectiles": [
+            {
+              "Id": "P0",
+              "Damage": 98,
+              "Explodes": false,
+              "Bounces": 3,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            },
+            {
+              "Id": "P1",
+              "Damage": 98,
+              "Explodes": false,
+              "Bounces": 3,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            }
+          ]
+        },
+        "{{ModId}}_Wand_D0E0B4": {
+          "Name": "Wand",
+          "DisplayName": "{{i18n: wand.name}}",
+          "Description": "{{i18n: wand.desc}}",
+          "MinDamage": 1,
+          "MaxDamage": 1,
+          "Speed": 12,
+          "Type": 3,
+          "CritChance": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "Projectiles": [
+            {
+              "Id": "P0",
+              "Damage": 98,
+              "Explodes": false,
+              "Bounces": 4,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            },
+            {
+              "Id": "P1",
+              "Damage": 98,
+              "Explodes": false,
+              "Bounces": 4,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            }
+          ]
+        },
+        "{{ModId}}_Wand_D0E1B1": {
+          "Name": "Wand",
+          "DisplayName": "{{i18n: wand.name}}",
+          "Description": "{{i18n: wand.desc}}",
+          "MinDamage": 0,
+          "MaxDamage": 1,
+          "Speed": 12,
+          "Type": 3,
+          "CritChance": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "Projectiles": [
+            {
+              "Id": "P0",
+              "Damage": 98,
+              "Explodes": true,
               "Bounces": 1,
-              "Velocity": 10,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            },
+            {
+              "Id": "P1",
+              "Damage": 98,
+              "Explodes": true,
+              "Bounces": 1,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            }
+          ]
+        },
+        "{{ModId}}_Wand_D0E1B2": {
+          "Name": "Wand",
+          "DisplayName": "{{i18n: wand.name}}",
+          "Description": "{{i18n: wand.desc}}",
+          "MinDamage": 1,
+          "MaxDamage": 1,
+          "Speed": 12,
+          "Type": 3,
+          "CritChance": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "Projectiles": [
+            {
+              "Id": "P0",
+              "Damage": 98,
+              "Explodes": true,
+              "Bounces": 2,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            },
+            {
+              "Id": "P1",
+              "Damage": 98,
+              "Explodes": true,
+              "Bounces": 2,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            }
+          ]
+        },
+        "{{ModId}}_Wand_D0E1B3": {
+          "Name": "Wand",
+          "DisplayName": "{{i18n: wand.name}}",
+          "Description": "{{i18n: wand.desc}}",
+          "MinDamage": 1,
+          "MaxDamage": 1,
+          "Speed": 12,
+          "Type": 3,
+          "CritChance": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "Projectiles": [
+            {
+              "Id": "P0",
+              "Damage": 98,
+              "Explodes": true,
+              "Bounces": 3,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            },
+            {
+              "Id": "P1",
+              "Damage": 98,
+              "Explodes": true,
+              "Bounces": 3,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            }
+          ]
+        },
+        "{{ModId}}_Wand_D0E1B4": {
+          "Name": "Wand",
+          "DisplayName": "{{i18n: wand.name}}",
+          "Description": "{{i18n: wand.desc}}",
+          "MinDamage": 1,
+          "MaxDamage": 1,
+          "Speed": 12,
+          "Type": 3,
+          "CritChance": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "Projectiles": [
+            {
+              "Id": "P0",
+              "Damage": 98,
+              "Explodes": true,
+              "Bounces": 4,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            },
+            {
+              "Id": "P1",
+              "Damage": 98,
+              "Explodes": true,
+              "Bounces": 4,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            }
+          ]
+        },
+        "{{ModId}}_Wand_D1E0B1": {
+          "Name": "Wand",
+          "DisplayName": "{{i18n: wand.name}}",
+          "Description": "{{i18n: wand.desc}}",
+          "MinDamage": 0,
+          "MaxDamage": 1,
+          "Speed": 12,
+          "Type": 3,
+          "CritChance": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "Projectiles": [
+            {
+              "Id": "P0",
+              "Damage": 108,
+              "Explodes": false,
+              "Bounces": 1,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            },
+            {
+              "Id": "P1",
+              "Damage": 108,
+              "Explodes": false,
+              "Bounces": 1,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            }
+          ]
+        },
+        "{{ModId}}_Wand_D1E0B2": {
+          "Name": "Wand",
+          "DisplayName": "{{i18n: wand.name}}",
+          "Description": "{{i18n: wand.desc}}",
+          "MinDamage": 1,
+          "MaxDamage": 1,
+          "Speed": 12,
+          "Type": 3,
+          "CritChance": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "Projectiles": [
+            {
+              "Id": "P0",
+              "Damage": 108,
+              "Explodes": false,
+              "Bounces": 2,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            },
+            {
+              "Id": "P1",
+              "Damage": 108,
+              "Explodes": false,
+              "Bounces": 2,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            }
+          ]
+        },
+        "{{ModId}}_Wand_D1E0B3": {
+          "Name": "Wand",
+          "DisplayName": "{{i18n: wand.name}}",
+          "Description": "{{i18n: wand.desc}}",
+          "MinDamage": 1,
+          "MaxDamage": 1,
+          "Speed": 12,
+          "Type": 3,
+          "CritChance": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "Projectiles": [
+            {
+              "Id": "P0",
+              "Damage": 108,
+              "Explodes": false,
+              "Bounces": 3,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            },
+            {
+              "Id": "P1",
+              "Damage": 108,
+              "Explodes": false,
+              "Bounces": 3,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            }
+          ]
+        },
+        "{{ModId}}_Wand_D1E0B4": {
+          "Name": "Wand",
+          "DisplayName": "{{i18n: wand.name}}",
+          "Description": "{{i18n: wand.desc}}",
+          "MinDamage": 1,
+          "MaxDamage": 1,
+          "Speed": 12,
+          "Type": 3,
+          "CritChance": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "Projectiles": [
+            {
+              "Id": "P0",
+              "Damage": 108,
+              "Explodes": false,
+              "Bounces": 4,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            },
+            {
+              "Id": "P1",
+              "Damage": 108,
+              "Explodes": false,
+              "Bounces": 4,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            }
+          ]
+        },
+        "{{ModId}}_Wand_D2E1B1": {
+          "Name": "Wand",
+          "DisplayName": "{{i18n: wand.name}}",
+          "Description": "{{i18n: wand.desc}}",
+          "MinDamage": 0,
+          "MaxDamage": 1,
+          "Speed": 12,
+          "Type": 3,
+          "CritChance": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "Projectiles": [
+            {
+              "Id": "P0",
+              "Damage": 128,
+              "Explodes": true,
+              "Bounces": 1,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            },
+            {
+              "Id": "P1",
+              "Damage": 128,
+              "Explodes": true,
+              "Bounces": 1,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            }
+          ]
+        },
+        "{{ModId}}_Wand_D2E1B2": {
+          "Name": "Wand",
+          "DisplayName": "{{i18n: wand.name}}",
+          "Description": "{{i18n: wand.desc}}",
+          "MinDamage": 1,
+          "MaxDamage": 1,
+          "Speed": 12,
+          "Type": 3,
+          "CritChance": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "Projectiles": [
+            {
+              "Id": "P0",
+              "Damage": 128,
+              "Explodes": true,
+              "Bounces": 2,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            },
+            {
+              "Id": "P1",
+              "Damage": 128,
+              "Explodes": true,
+              "Bounces": 2,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            }
+          ]
+        },
+        "{{ModId}}_Wand_D2E1B3": {
+          "Name": "Wand",
+          "DisplayName": "{{i18n: wand.name}}",
+          "Description": "{{i18n: wand.desc}}",
+          "MinDamage": 1,
+          "MaxDamage": 1,
+          "Speed": 12,
+          "Type": 3,
+          "CritChance": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "Projectiles": [
+            {
+              "Id": "P0",
+              "Damage": 128,
+              "Explodes": true,
+              "Bounces": 3,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            },
+            {
+              "Id": "P1",
+              "Damage": 128,
+              "Explodes": true,
+              "Bounces": 3,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            }
+          ]
+        },
+        "{{ModId}}_Wand_D2E1B4": {
+          "Name": "Wand",
+          "DisplayName": "{{i18n: wand.name}}",
+          "Description": "{{i18n: wand.desc}}",
+          "MinDamage": 1,
+          "MaxDamage": 1,
+          "Speed": 12,
+          "Type": 3,
+          "CritChance": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "Projectiles": [
+            {
+              "Id": "P0",
+              "Damage": 128,
+              "Explodes": true,
+              "Bounces": 4,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            },
+            {
+              "Id": "P1",
+              "Damage": 128,
+              "Explodes": true,
+              "Bounces": 4,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            }
+          ]
+        },
+        "{{ModId}}_Wand_D3E0B1": {
+          "Name": "Wand",
+          "DisplayName": "{{i18n: wand.name}}",
+          "Description": "{{i18n: wand.desc}}",
+          "MinDamage": 0,
+          "MaxDamage": 1,
+          "Speed": 12,
+          "Type": 3,
+          "CritChance": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "Projectiles": [
+            {
+              "Id": "P0",
+              "Damage": 148,
+              "Explodes": false,
+              "Bounces": 1,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            },
+            {
+              "Id": "P1",
+              "Damage": 148,
+              "Explodes": false,
+              "Bounces": 1,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            }
+          ]
+        },
+        "{{ModId}}_Wand_D3E0B2": {
+          "Name": "Wand",
+          "DisplayName": "{{i18n: wand.name}}",
+          "Description": "{{i18n: wand.desc}}",
+          "MinDamage": 1,
+          "MaxDamage": 1,
+          "Speed": 12,
+          "Type": 3,
+          "CritChance": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "Projectiles": [
+            {
+              "Id": "P0",
+              "Damage": 148,
+              "Explodes": false,
+              "Bounces": 2,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            },
+            {
+              "Id": "P1",
+              "Damage": 148,
+              "Explodes": false,
+              "Bounces": 2,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            }
+          ]
+        },
+        "{{ModId}}_Wand_D3E0B3": {
+          "Name": "Wand",
+          "DisplayName": "{{i18n: wand.name}}",
+          "Description": "{{i18n: wand.desc}}",
+          "MinDamage": 1,
+          "MaxDamage": 1,
+          "Speed": 12,
+          "Type": 3,
+          "CritChance": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "Projectiles": [
+            {
+              "Id": "P0",
+              "Damage": 148,
+              "Explodes": false,
+              "Bounces": 3,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            },
+            {
+              "Id": "P1",
+              "Damage": 148,
+              "Explodes": false,
+              "Bounces": 3,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            }
+          ]
+        },
+        "{{ModId}}_Wand_D3E0B4": {
+          "Name": "Wand",
+          "DisplayName": "{{i18n: wand.name}}",
+          "Description": "{{i18n: wand.desc}}",
+          "MinDamage": 1,
+          "MaxDamage": 1,
+          "Speed": 12,
+          "Type": 3,
+          "CritChance": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "Projectiles": [
+            {
+              "Id": "P0",
+              "Damage": 148,
+              "Explodes": false,
+              "Bounces": 4,
+              "RotationVelocity": 100,
+              "TailLength": 3,
+              "FireSound": "stairsdown",
+              "MaxAngleOffset": 5,
+              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+            },
+            {
+              "Id": "P1",
+              "Damage": 148,
+              "Explodes": false,
+              "Bounces": 4,
               "RotationVelocity": 100,
               "TailLength": 3,
               "FireSound": "stairsdown",
@@ -115,17 +756,18 @@
           "Location": "{{ModId}}_Ollivanders",
           "ShopType": "CCBundle",
           "BundleDescription": "Wand Upgrade 1",
-          "ShopEvent": "none",
+          "ShopEvent": "continue/7 15/farmer 7 15 3/addMailReceived HOGWARTSWANDSTATSD1E0B1HOGWARTSWANDSTATS/addMailReceived HOGWARTSWANDSPRITE4HOGWARTSWANDSPRITE/end",
           "ShopPosition": "8, 16",
           "ShopTexture": "UnlockableBundles/ShopTextures/HogwartsBlankBundle",
           "DrawQuestionMark": true,
           "QuestionMarkOffset": "24, 0",
           "Price": {
-            "(W){{ModId}}_TestWandA": 1
+            "(W){{ModId}}_Wand_D0E0B1": 1
           },
           "BundleReward": {
-            "(W){{ModId}}_TestWandB": 1
+            "(W){{ModId}}_Wand_D1E0B1": 1
           },
+          "BundleCompletedMail": "HOGWARTSWANDSTATSD1E0B1HOGWARTSWANDSTATS",
           "InstantShopRemoval": true
         }
       }
@@ -139,22 +781,22 @@
           "Location": "{{ModId}}_Ollivanders",
           "ShopType": "CCBundle",
           "BundleDescription": "Wand Upgrade 2",
-          "ShopEvent": "none",
+          "ShopEvent": "continue/7 15/farmer 7 15 3/addMailReceived HOGWARTSWANDSPRITE4HOGWARTSWANDSPRITE/end",
           "ShopPosition": "8, 16",
           "ShopTexture": "UnlockableBundles/ShopTextures/HogwartsBlankBundle",
           "DrawQuestionMark": true,
           "QuestionMarkOffset": "24, 0",
           "Price": {
-            "(W){{ModId}}_TestWandB": 1
+            "(W){{ModId}}_Wand_D1E0B1": 1
           },
           "BundleReward": {
-            "(W){{ModId}}_TestWandA": 1
+            "(W){{ModId}}_Wand_D2E0B1": 1
           },
           "InstantShopRemoval": true
         }
       },
       "When": {
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade1}} >= 0": true,
+        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade1}} >= 0": true
       }
     },
     {
@@ -166,23 +808,37 @@
           "Location": "{{ModId}}_Ollivanders",
           "ShopType": "CCBundle",
           "BundleDescription": "Wand Upgrade 3",
-          "ShopEvent": "none",
+          "ShopEvent": "continue/7 15/farmer 7 15 3/addMailReceived HOGWARTSWANDSPRITE8HOGWARTSWANDSPRITE/end",
           "ShopPosition": "8, 16",
           "ShopTexture": "UnlockableBundles/ShopTextures/HogwartsBlankBundle",
           "DrawQuestionMark": true,
           "QuestionMarkOffset": "24, 0",
           "Price": {
-            "(W){{ModId}}_TestWandA": 1
+            "(W){{ModId}}_Wand_D2E0B1": 1
           },
           "BundleReward": {
-            "(W){{ModId}}_TestWandB": 1
+            "(W){{ModId}}_Wand_D3E0B1": 1
           },
           "InstantShopRemoval": true
         }
       },
       "When": {
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade2}} >= 0": true,
+        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade2}} >= 0": true
       }
+    },
+    {
+      "LogName": "Replace wand sprites",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Fields": {
+        "{{ModId}}_Wand_{{Merge: {{HasFlag}}|inputSeparator=HOGWARTSWANDSTATS|valueAt=1}}": {
+          "SpriteIndex": "{{Merge: {{HasFlag}}|inputSeparator=HOGWARTSWANDSPRITE|valueAt=1}}"
+        }
+      },
+      "When": {
+        "Query: {{Count:{{Merge: {{HasFlag}}}}|inputSeparator=HOGWARTSWANDSPRITE}} > 1 AND {{Count:{{Merge: {{HasFlag}}}}|inputSeparator=HOGWARTSWANDSTATS}} > 1": true
+      },
+      "Update": "OnLocationChange"
     }
   ]
 }
