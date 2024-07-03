@@ -1,0 +1,32 @@
+{
+  "Changes": [
+    /*Divination Classroom*/
+    {
+      "LogName": "Divination Classroom",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsLibraryAnnex",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 51,
+            "Y": 55
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 11 13 {{ModId}}_HogwartsDivinationClassroom"
+          }
+        },
+        {
+          "Position": {
+            "X": 52,
+            "Y": 55
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 11 13 {{ModId}}_HogwartsDivinationClassroom"
+          }
+        }
+      ]
+    }
+  ]
+}
