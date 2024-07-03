@@ -1,0 +1,78 @@
+{
+  "Changes": [
+    /*Great Hall*/
+    {
+      "LogName": "Great Hall",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGrandStaircase",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 16,
+            "Y": 94
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 11 13 {{ModId}}_HogwartsGreatHall"
+          }
+        },
+        {
+          "Position": {
+            "X": 17,
+            "Y": 94
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 11 13 {{ModId}}_HogwartsGreatHall"
+          }
+        }
+      ]
+    },
+    /*Ravenclaw Common Room*/
+    {
+      "LogName": "Ravenclaw Common Room",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGrandStaircase",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 57,
+            "Y": 53
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 11 13 {{ModId}}_HogwartsRavenclawCommonRoom"
+          }
+        }
+      ]
+    },
+    /*Slytherin Common Room*/
+    {
+      "LogName": "Slytherin Common Room",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGrandStaircase",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 63,
+            "Y": 109
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 11 13 {{ModId}}_HogwartsSlytherinCommonRoom"
+          }
+        },
+        {
+          "Position": {
+            "X": 64,
+            "Y": 109
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 11 13 {{ModId}}_HogwartsSlytherinCommonRoom"
+          }
+        }
+      ]
+    }
+  ]
+}
