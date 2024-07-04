@@ -1,10 +1,32 @@
 {
   "Changes": [
     {
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsSouthWing",
-      "FromFile": "assets/MapPatches/HogwartsSouthWing Night.tmx",
-      "PatchMode": "Overlay",
+      "LogName": "Cloudy_Ocean_BG Load",
+      "Action": "Load",
+      "Target": "Maps/Cloudy_Ocean_BG",
+      "FromFile": "assets/Maps/Tilesheets/Cloudy_Ocean_BG.png"
+    },
+    {
+      "LogName": "Cloudy_Ocean_BG_SmoothHorizon Load",
+      "Action": "Load",
+      "Target": "Maps/Cloudy_Ocean_BG_SmoothHorizon",
+      "FromFile": "assets/Maps/Tilesheets/Cloudy_Ocean_BG_SmoothHorizon.png"
+    },
+    {
+      "LogName": "Replace Day Sky With Night Sky",
+      "Action": "EditImage",
+      "Target": "Maps/Cloudy_Ocean_BG",
+      "FromFile": "assets/Maps/Tilesheets/Cloudy_Ocean_BG_Night.png",
+      "When": {
+        "Time": "{{Range: 1900, 2600}}"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Replace Day Horizon With Night Horizon",
+      "Action": "EditImage",
+      "Target": "Maps/Cloudy_Ocean_BG_SmoothHorizon",
+      "FromFile": "assets/Maps/Tilesheets/Cloudy_Ocean_BG_Night.png",
       "When": {
         "Time": "{{Range: 1900, 2600}}"
       },
