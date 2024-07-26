@@ -1,6 +1,34 @@
 {
   "Changes": [
     {
+      "LogName": "Cloudy Skies Forbidden Forest 2 Debris Particles",
+      "Action": "EditData",
+      "Target": "Mods/leclair.cloudyskies/WeatherData",
+      "Entries": {
+        "{{ModID}}_ForbiddenForest2FloatingDebrisParticles": {
+          "Id": "{{ModID}}_SeasonalLeaves",
+          "DisplayName": "Seasonal Leaves",
+          "Condition": "!CS_LOCATION_IGNORE_DEBRIS_WEATHER Here {{ModID}}_ForbiddenForestStage2",
+          "IsRaining": false,
+          "IsSnowing": false,
+          "IsLightning": false,
+          "IsDebrisWeather": true,
+          "IsGreenRain": false,
+          "AmbientColor": "120 65 120",
+          "LightingTint": null,
+          "PostLightingTint": null,
+          "Layers": [
+            {
+              "Id": "{{ModID}}_ForbiddenForest2FloatingDebrisParticles",
+              "Type": "Debris",
+              "Group": "Debris",
+              "UseSeasonal": -1
+            }
+          ]
+        }
+      }
+    },
+    {
       "LogName": "Forbidden Forest 2 Monster Spawn Zone A1",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_ForbiddenForestStage2",
@@ -271,7 +299,7 @@
       "LogName": "Forbidden Forest 2 Layout",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_ForbiddenForestStage2",
-      "FromFile": "assets/Maps/ForbiddenForestLayout{{Random: {{Range: 1, 1}}}}.tmx",
+      "FromFile": "assets/Maps/ForbiddenForestLayout{{Random: {{Range: 1, 2}}}}.tmx",
       "ToArea": {
         "X": 0,
         "Y": 0,
