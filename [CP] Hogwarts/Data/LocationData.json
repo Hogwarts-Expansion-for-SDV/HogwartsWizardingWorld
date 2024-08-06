@@ -226,16 +226,10 @@
       "FromFile": "assets/Maps/ForbiddenForestCharmedTent.tmx"
     },
     {
-      "LogName": "Forbidden Forest Stage 1 Load",
+      "LogName": "Forbidden Forest Load",
       "Action": "Load",
-      "Target": "Maps/{{ModId}}_ForbiddenForestStage1",
-      "FromFile": "assets/Maps/ForbiddenForestStage1.tmx"
-    },
-    {
-      "LogName": "Forbidden Forest Stage 2 Load",
-      "Action": "Load",
-      "Target": "Maps/{{ModId}}_ForbiddenForestStage2",
-      "FromFile": "assets/Maps/ForbiddenForestStage2.tmx"
+      "Target": "Maps/{{ModId}}_ForbiddenForest",
+      "FromFile": "assets/Maps/ForbiddenForest.tmx"
     },
     /*Hogwarts Valley Load*/
     {
@@ -476,16 +470,10 @@
             "MapPath": "Maps/{{ModId}}_ForbiddenForestCharmedTent"
           }
         },
-        "{{ModId}}_ForbiddenForestStage1": {
+        "{{ModId}}_ForbiddenForest": {
           "CreateOnLoad": {
             "AlwaysActive": false,
-            "MapPath": "Maps/{{ModId}}_ForbiddenForestStage1"
-          }
-        },
-        "{{ModId}}_ForbiddenForestStage2": {
-          "CreateOnLoad": {
-            "AlwaysActive": false,
-            "MapPath": "Maps/{{ModId}}_ForbiddenForestStage2"
+            "MapPath": "Maps/{{ModId}}_ForbiddenForest"
           }
         },
         /*Hogwarts Valley Location Data*/
