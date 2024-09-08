@@ -1,7 +1,7 @@
 {
   "Name": "[CP] Hogwarts",
   "Author": "Hogwarts Expansion Team",
-  "Version": "0.2.1",
+  "Version": "0.3.0",
   "Description": "Adds Hogwarts Expansion to SDV.",
   "UniqueID": "HogwartsET.CP.Hogwarts",
   "MinimumApiVersion": "4.0",
@@ -12,16 +12,16 @@
   },
   "Dependencies": [
     {
-      "UniqueID": "datamancer.DynamicMapTiles",
-      "IsRequired": true
-    },
-    {
       "UniqueID": "DLX.Bundles",
       "IsRequired": true
     },
     {
       "UniqueID": "leclair.cloudyskies",
       "IsRequired": false
+    },
+    {
+      "UniqueID": "MindMeltMax.DMT",
+      "IsRequired": true
     }
   ]
 }
