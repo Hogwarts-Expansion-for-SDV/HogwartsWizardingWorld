@@ -1198,9 +1198,9 @@
     {
       "LogName": "Hogwarts Icy Corridor DMT",
       "Action": "EditData",
-      "Target": "aedenthorn.DynamicMapTiles/dictionary",
+      "Target": "DMT/Tiles",
       "Entries": {
-        "HogwartsET.CP.Hogwarts/Maps": {
+        "{{ModId}}/Maps": {
           "locations": ["{{ModId}}_HogwartsIcyCorridor"],
           "layers": ["Back"],
           "tileSheets": ["z_mine_frost_dark"],
@@ -1211,7 +1211,7 @@
             210, 211, 212, 217, 218, 219, 225, 226, 227, 228, 233, 234, 235
           ],
           "properties": {
-            "DMT/slippery": "10"
+            "DMT/slippery_On": "10.0"
           }
         }
       }
