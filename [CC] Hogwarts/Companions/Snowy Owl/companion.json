@@ -1,0 +1,254 @@
+{
+
+    "Name": "SnowyOwl",
+    "Type": "Walking",
+    "EnableFarmerCollision": true,
+    "EnableCharacterCollision": false,
+    "EnableShadow": true,
+    "TravelSpeed": 12,
+    "InspectionDialogue": "Wow, it's a Snowy Owl!",
+    "MaxIdleDistance": -1,
+    "MaxDistanceBeforeTeleport": -1,
+    "IdleBehavior": "Wander",
+
+    "FrameSizeWidth": 32,
+    "FrameSizeHeight": 32,
+
+    "Sounds": 
+    [
+        {
+            "SoundName": "owl",
+            "WhenToPlay": "Moving",
+            "TimeBetweenSound": 5000
+        }
+    ],
+
+
+    "DownAnimation": 
+    {
+        "StartingFrame": 0,
+        "NumberOfFrames": 4,
+        "Duration": 200
+    },
+
+    
+    "UpAnimation": 
+    {
+        "StartingFrame": 8,
+        "NumberOfFrames": 4,
+        "Duration": 200
+    },
+
+
+    "RightAnimation": 
+    {
+        "StartingFrame": 4,
+        "NumberOfFrames": 4,
+        "Duration": 200,
+
+        "IdleAnimation": 
+        {
+            "ManualFrames": 
+            [
+                {
+                    "Frame": 31,
+                    "Duration": 200
+                },
+                {
+                    "Frame": 22,
+                    "Duration": 200,
+                    "Flip": true
+                },
+                {
+                    "Frame": 23,
+                    "Duration": 200,
+                    "Flip": true
+                },
+                {
+                    "Frame": 18,
+                    "Duration": 200,
+                    "Flip": true
+                },
+                {
+                    "Frame": 17,
+                    "Duration": 200,
+                    "Flip": true
+                },
+                {
+                    "Frame": 16,
+                    "Duration": 300,
+                    "Flip": true
+                },
+                {
+                    "Frame": 17,
+                    "Duration": 200,
+                    "Flip": true
+                },
+                {
+                    "Frame": 18,
+                    "Duration": 200,
+                    "Flip": true
+                },
+                {
+                    "Frame": 26,
+                    "Duration": 400,
+                    "Flip": true
+                },
+                {
+                    "Frame": 27,
+                    "Duration": 400,
+                    "Flip": true
+                },
+                {
+                    "Frame": 26,
+                    "Duration": 400,
+                    "Flip": true
+                },
+                {
+                    "Frame": 27,
+                    "Duration": 400,
+                    "Flip": true
+                },
+                {
+                    "Frame": 18,
+                    "Duration": 200,
+                    "Flip": true
+                },
+                {
+                    "Frame": 17,
+                    "Duration": 200,
+                    "Flip": true
+                },
+                {
+                    "Frame": 16,
+                    "Duration": 200,
+                    "Flip": true
+                },
+                {
+                    "Frame": 17,
+                    "Duration": 200,
+                    "Flip": true
+                },
+                {
+                    "Frame": 18,
+                    "Duration": 200,
+                    "Flip": true
+                },
+                {
+                    "Frame": 23,
+                    "Duration": 200,
+                    "Flip": true
+                }, 
+                {
+                    "Frame": 22,
+                    "Duration": 200,
+                    "Flip": true
+                },
+                {
+                    "Frame": 31,
+                    "Duration": 200
+                }
+                
+                
+                ]
+            }
+        },
+
+
+        "LeftAnimation": 
+        {
+            "StartingFrame": 12,
+            "NumberOfFrames": 4,
+            "Duration": 200,
+
+            "IdleAnimation": 
+            {
+                "ManualFrames": 
+                [
+                    {
+                        "Frame": 31,
+                        "Duration": 200,
+                        "Flip": true
+                    },
+                    {
+                        "Frame": 22,
+                        "Duration": 200
+                    },
+                    {
+                        "Frame": 23,
+                        "Duration": 200
+                    },
+                    {
+                        "Frame": 18,
+                        "Duration": 200
+                    },
+                    {
+                        "Frame": 17,
+                        "Duration": 200
+                    },
+                    {
+                        "Frame": 16,
+                        "Duration": 300
+                    },
+                    {
+                        "Frame": 17,
+                        "Duration": 200
+                    },
+                    {
+                        "Frame": 18,
+                        "Duration": 200
+                    },
+                    {
+                        "Frame": 26,
+                        "Duration": 400
+                    },
+                    {
+                        "Frame": 27,
+                        "Duration": 400
+                    },
+                    {
+                        "Frame": 26,
+                        "Duration": 400
+                    },
+                    {
+                        "Frame": 27,
+                        "Duration": 400
+                    },
+                    {
+                        "Frame": 18,
+                        "Duration": 200
+                    },
+                    {
+                        "Frame": 17,
+                        "Duration": 200
+                    },
+                    {
+                        "Frame": 16,
+                        "Duration": 200
+                    },
+                    {
+                        "Frame": 17,
+                        "Duration": 200
+                    },
+                    {
+                        "Frame": 18,
+                        "Duration": 200
+                    },
+                    {
+                        "Frame": 23,
+                        "Duration": 200
+                    }, 
+                    {
+                        "Frame": 22,
+                        "Duration": 200
+                    },
+                    {
+                        "Frame": 31,
+                        "Duration": 200,
+                        "Flip": true
+                    }
+                    ]
+                }
+        }
+
+}
