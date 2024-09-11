@@ -1,0 +1,190 @@
+{
+
+    "Name": "UnicornRainbow",
+    "Type": "Walking",
+    "EnableSpawnAtDayStart": true,
+    "EnableCharacterCollision": true,
+    "EnableShadow": true,
+    "InspectDialogue": "It's a Rainbow Unicorn! Look at it's beautiful colours.",
+    "TravelSpeed": 2,
+    "MaxIdleDistance": -1,
+    "MaxDistanceBeforeTeleport": -1,
+    "IdleBehavior": "Wander",
+    
+    "FrameSizeWidth": 32,
+    "FrameSizeHeight": 32,
+
+
+    "DownAnimation": 
+    {
+        "StartingFrame": 0,
+        "NumberOfFrames": 7,
+        "Duration": 200
+        },
+
+
+        "UpAnimation": 
+        {
+            "StartingFrame": 14,
+            "NumberOfFrames": 7,
+            "Duration": 200
+        },
+
+
+        "RightAnimation":
+        {
+            "StartingFrame": 7,
+            "NumberOfFrames": 7,
+            "Duration": 200,
+
+            "IdleAnimation": 
+            {
+                "ManualFrames":
+                [
+                    {
+                        "Frame": 21,
+                        "Duration": 200
+                    },
+                    {
+                        "Frame": 22,
+                        "Duration": 200
+                    },
+                    {
+                        "Frame": 23,
+                        "Duration": 400
+                    },
+                    {
+                        "Frame": 24,
+                        "Duration": 400
+                    },
+                    {
+                        "Frame": 23,
+                        "Duration": 400
+                    },
+                    {
+                        "Frame": 24,
+                        "Duration": 400
+                    },
+                    {
+                        "Frame": 23,
+                        "Duration": 400
+                    },
+                    {
+                        "Frame": 22,
+                        "Duration": 200
+                    },
+                    {
+                        "Frame": 21,
+                        "Duration": 200
+                    }
+                ]
+        }
+
+    },
+
+
+    "LeftAnimation": 
+    {
+        "ManualFrames": 
+        [
+            {
+                "Frame": 7,
+                "Duration": 200,
+                "Flip": true
+            },
+            {
+                "Frame": 8,
+                "Duration": 200,
+                "Flip": true
+            },
+            {
+                "Frame": 9,
+                "Duration": 200,
+                "Flip": true
+            },
+            {
+                "Frame": 10,
+                "Duration": 200,
+                "Flip": true
+            },
+            {
+                "Frame": 11,
+                "Duration": 200,
+                "Flip": true
+            },
+            {
+                "Frame": 12,
+                "Duration": 200,
+                "Flip": true
+            },
+            {
+                "Frame": 13,
+                "Duration": 200,
+                "Flip": true
+            }
+
+        ],
+
+        "IdleAnimation": 
+        {
+            "ManualFrames":
+            [
+                {
+                    "Frame": 21,
+                    "Duration": 200,
+                    "Flip": true
+                },
+                {
+                    "Frame": 22,
+                    "Duration": 200,
+                    "Flip": true
+                },
+                {
+                    "Frame": 23,
+                    "Duration": 400,
+                    "Flip": true
+                },
+                {
+                    "Frame": 24,
+                    "Duration": 400,
+                    "Flip": true
+                },
+                {
+                    "Frame": 23,
+                    "Duration": 400,
+                    "Flip": true
+                },
+                {
+                    "Frame": 24,
+                    "Duration": 400,
+                    "Flip": true
+                },
+                {
+                    "Frame": 23,
+                    "Duration": 400,
+                    "Flip": true
+                },
+                {
+                    "Frame": 22,
+                    "Duration": 200,
+                    "Flip": true
+                },
+                {
+                    "Frame": 21,
+                    "Duration": 200,
+                    "Flip": true
+                }
+            ]
+    }
+    },
+
+
+
+    "Shadow": {
+        "OffsetX": 0,
+        "OffsetY": 0,
+        "Scale": 1,
+        "Alpha": 235
+      }
+
+}
