@@ -1,5 +1,9 @@
 {
-  "Changes": [
+  "Changes": 
+  
+  [
+
+
     /*Brood and Peck*/
     {
       "LogName": "Brood and Peck Entrance",
@@ -9,7 +13,7 @@
         {
           "Position": {
             "X": 74,
-            "Y": 42
+            "Y": 43
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -26,16 +30,6 @@
         {
           "Position": {
             "X": 77,
-            "Y": 42
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Dialogue {{i18n: signs.shops.BroodAndPeck}}"
-          }
-        },
-        {
-          "Position": {
-            "X": 77,
             "Y": 43
           },
           "Layer": "Buildings",
@@ -45,6 +39,9 @@
         }
       ]
     },
+
+
+
     /*Ceridwen's Cauldrons*/
     {
       "LogName": "Ceridwen's Cauldrons Entrance",
@@ -53,7 +50,7 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 108,
+            "X": 105,
             "Y": 106
           },
           "Layer": "Buildings",
@@ -63,6 +60,26 @@
         }
       ]
     },
+    {
+      "LogName": "Ceridwen's Cauldrons Sign",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 102,
+            "Y": 106
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: signs.shops.CeridwensCauldrons}}"
+          }
+        }
+      ]
+    },
+
+
+
     /*Dervish and Banges*/
     {
       "LogName": "Dervish and Banges Entrance",
@@ -71,8 +88,8 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 75,
-            "Y": 67
+            "X": 74,
+            "Y": 68
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -89,16 +106,6 @@
         {
           "Position": {
             "X": 72,
-            "Y": 67
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Dialogue {{i18n: signs.shops.DervishandBanges}}"
-          }
-        },
-        {
-          "Position": {
-            "X": 72,
             "Y": 68
           },
           "Layer": "Buildings",
@@ -108,6 +115,8 @@
         }
       ]
     },
+
+
     /*Dogweed and Deathcap*/
     {
       "LogName": "Dogweed and Deathcap Entrance",
@@ -117,7 +126,17 @@
         {
           "Position": {
             "X": 63,
-            "Y": 18
+            "Y": 19
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 6 10 {{ModId}}_DogweedAndDeathcap"
+          }
+        },
+        {
+          "Position": {
+            "X": 64,
+            "Y": 19
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -133,7 +152,7 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 65,
+            "X": 66,
             "Y": 19
           },
           "Layer": "Buildings",
@@ -143,6 +162,9 @@
         }
       ]
     },
+
+
+
     /*Dominic Maestro's Music Shop*/
     {
       "LogName": "Dominic Maestro's Music Shop Entrance",
@@ -151,7 +173,7 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 121,
+            "X": 123,
             "Y": 74
           },
           "Layer": "Buildings",
@@ -175,19 +197,12 @@
           "SetProperties": {
             "Action": "Dialogue {{i18n: signs.shops.DominicMaestrosMusicShop}}"
           }
-        },
-        {
-          "Position": {
-            "X": 118,
-            "Y": 75
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Dialogue {{i18n: signs.shops.DominicMaestrosMusicShop}}"
-          }
         }
       ]
     },
+
+
+
     /*Gladrags Wizardwear*/
     {
       "LogName": "Gladrags Wizardwear Entrance",
@@ -223,6 +238,9 @@
         }
       ]
     },
+
+
+
     /*Hog's Head Inn*/
     {
       "LogName": "Hog's Head Inn Entrance",
@@ -231,8 +249,8 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 59,
-            "Y": 97
+            "X": 57,
+            "Y": 98
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -249,16 +267,6 @@
         {
           "Position": {
             "X": 62,
-            "Y": 97
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Dialogue {{i18n: signs.shops.HogsHeadInn}}"
-          }
-        },
-        {
-          "Position": {
-            "X": 62,
             "Y": 98
           },
           "Layer": "Buildings",
@@ -268,6 +276,9 @@
         }
       ]
     },
+
+
+  
     /*Honeydukes*/
     {
       "LogName": "Honeydukes Entrance",
@@ -276,8 +287,8 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 98,
-            "Y": 50
+            "X": 95,
+            "Y": 49
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -293,7 +304,7 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 94,
+            "X": 92,
             "Y": 49
           },
           "Layer": "Buildings",
@@ -463,6 +474,9 @@
         }
       ]
     },
+
+
+
     /*J. Pippin's Potions*/
     {
       "LogName": "J. Pippin's Potions Entrance",
@@ -471,8 +485,8 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 54,
-            "Y": 82
+            "X": 56,
+            "Y": 83
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -489,16 +503,6 @@
         {
           "Position": {
             "X": 57,
-            "Y": 82
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Dialogue {{i18n: signs.shops.JPippinsPotions}}"
-          }
-        },
-        {
-          "Position": {
-            "X": 57,
             "Y": 83
           },
           "Layer": "Buildings",
@@ -508,6 +512,9 @@
         }
       ]
     },
+
+
+
     /*Madam Puddifoot's*/
     {
       "LogName": "Madam Puddifoot's Tea Shop Entrance",
@@ -516,8 +523,8 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 109,
-            "Y": 61
+            "X": 108,
+            "Y": 59
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -533,18 +540,8 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 106,
-            "Y": 61
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Dialogue {{i18n: signs.shops.MadamPuddifootsTeaShop}}"
-          }
-        },
-        {
-          "Position": {
-            "X": 106,
-            "Y": 62
+            "X": 105,
+            "Y": 59
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -553,6 +550,9 @@
         }
       ]
     },
+
+
+
     /*Madam Snelling's*/
     {
       "LogName": "Madam Snelling's Tress Emporium Entrance",
@@ -561,8 +561,8 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 59,
-            "Y": 60
+            "X": 61,
+            "Y": 59
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -578,18 +578,8 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 62,
-            "Y": 60
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Dialogue {{i18n: signs.shops.MadamSnellingsTressEmporium}}"
-          }
-        },
-        {
-          "Position": {
-            "X": 62,
-            "Y": 61
+            "X": 63,
+            "Y": 59
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -598,6 +588,9 @@
         }
       ]
     },
+
+
+
     /*Ollivander's*/
     {
       "LogName": "Ollivanders Entrance",
@@ -607,7 +600,7 @@
         {
           "Position": {
             "X": 88,
-            "Y": 95
+            "Y": 96
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -623,8 +616,8 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 92,
-            "Y": 94
+            "X": 91,
+            "Y": 96
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -872,6 +865,9 @@
         }
       ]
     },
+
+
+
     /*Spintwitches Sporting*/
     {
       "LogName": "Spintwitches Sporting Needs Entrance",
@@ -881,7 +877,7 @@
         {
           "Position": {
             "X": 103,
-            "Y": 94
+            "Y": 96
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -897,18 +893,8 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 100,
-            "Y": 94
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Dialogue {{i18n: signs.shops.SpintwitchesSportingNeeds}}"
-          }
-        },
-        {
-          "Position": {
-            "X": 100,
-            "Y": 95
+            "X": 102,
+            "Y": 96
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -917,6 +903,9 @@
         }
       ]
     },
+
+
+
     /*The Magic Neep*/
     {
       "LogName": "The Magic Neep Entrance",
@@ -926,7 +915,7 @@
         {
           "Position": {
             "X": 18,
-            "Y": 73
+            "Y": 71
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -942,18 +931,8 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 21,
-            "Y": 73
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Dialogue {{i18n: signs.shops.TheMagicNeep}}"
-          }
-        },
-        {
-          "Position": {
-            "X": 21,
-            "Y": 74
+            "X": 22,
+            "Y": 71
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -962,6 +941,9 @@
         }
       ]
     },
+
+
+
     /*Three Broomsticks*/
     {
       "LogName": "Three Broomsticks Inn Entrance",
@@ -970,7 +952,7 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 96,
+            "X": 94,
             "Y": 84
           },
           "Layer": "Buildings",
@@ -988,16 +970,6 @@
         {
           "Position": {
             "X": 93,
-            "Y": 84
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Dialogue {{i18n: signs.shops.ThreeBroomsticksInn}}"
-          }
-        },
-        {
-          "Position": {
-            "X": 93,
             "Y": 85
           },
           "Layer": "Buildings",
@@ -1007,6 +979,9 @@
         }
       ]
     },
+
+
+
     /*Tomes and Scrolls*/
     {
       "LogName": "Tomes and Scrolls Entrance",
@@ -1015,7 +990,17 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 94,
+            "X": 90,
+            "Y": 106
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 6 10 {{ModId}}_TomesAndScrolls"
+          }
+        },
+        {
+          "Position": {
+            "X": 91,
             "Y": 106
           },
           "Layer": "Buildings",
@@ -1032,7 +1017,7 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 97,
+            "X": 92,
             "Y": 106
           },
           "Layer": "Buildings",
@@ -1052,6 +1037,9 @@
         }
       ]
     },
+
+
+
     /*Zonko's*/
     {
       "LogName": "Zonko's Joke Shop Entrance",
@@ -1078,16 +1066,6 @@
         {
           "Position": {
             "X": 85,
-            "Y": 84
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Dialogue {{i18n: signs.shops.ZonkosJokeShop}}"
-          }
-        },
-        {
-          "Position": {
-            "X": 85,
             "Y": 85
           },
           "Layer": "Buildings",
@@ -1097,6 +1075,8 @@
         }
       ]
     },
+
+
     /*Other*/ {
       "LogName": "Community Garden Sign",
       "Action": "EditMap",
@@ -1539,6 +1519,8 @@
         }
       ]
     },
+
+
     /*Nifflers*/
     {
       "LogName": "Hogsmeade Village Niffler Brown and Black",
@@ -1592,6 +1574,8 @@
         "Season": "Winter"
       }
     },
+
+    
     /*Hogwarts Carriages*/
     {
       "LogName": "Hogsmeade Carriage Arrival Path",
