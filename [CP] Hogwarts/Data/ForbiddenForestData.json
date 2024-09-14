@@ -179,6 +179,7 @@
         "Random: true, true, false |key=FFMD2HasMonster": true
       }
     },
+    /*
     {
       "LogName": "Forbidden Forest Monster Spawn Zone A3",
       "Action": "EditMap",
@@ -266,7 +267,7 @@
       "When": {
         "Random: true, true, false |key=FFMD3HasMonster": true
       }
-    },
+    },*/
     {
       "LogName": "Forbidden Forest Layout",
       "Action": "EditMap",
@@ -283,12 +284,12 @@
     {
       "LogName": "Forbidden Forest Paths Light",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsForbiddenForestStage1",
+      "Target": "Maps/{{ModId}}_ForbiddenForest",
       "MapTiles": [
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=1}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=1}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -296,8 +297,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=2}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=2}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -305,8 +306,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=3}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=3}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -314,8 +315,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=4}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=4}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -323,8 +324,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=5}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=5}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -332,8 +333,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=6}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=6}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -341,8 +342,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=7}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=7}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -350,8 +351,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=8}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=8}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -359,8 +360,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=9}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=9}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -368,8 +369,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=10}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=10}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -377,8 +378,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=11}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=11}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -386,8 +387,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=12}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=12}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -395,8 +396,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=13}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=13}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -404,8 +405,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=14}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=14}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -413,8 +414,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=15}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=15}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -422,8 +423,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=16}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=16}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -431,8 +432,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=17}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=17}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -440,8 +441,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=18}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=18}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -449,8 +450,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=19}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=19}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -458,8 +459,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=20}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=20}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -467,8 +468,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=21}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=21}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -476,8 +477,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=22}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=22}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -485,8 +486,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=23}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=23}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -494,8 +495,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=24}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=24}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -503,8 +504,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=25}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=25}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -512,8 +513,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=26}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=26}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -521,8 +522,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=27}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=27}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -530,8 +531,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=28}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=28}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -539,8 +540,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=29}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=29}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -548,8 +549,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=30}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=30}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -557,8 +558,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=30}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=30}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -566,8 +567,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=31}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=31}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -575,8 +576,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=32}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=32}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -584,8 +585,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=33}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=33}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -593,8 +594,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=34}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=34}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -602,8 +603,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=35}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=35}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -611,8 +612,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=36}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=36}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -620,8 +621,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=37}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=37}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -629,8 +630,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=38}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=38}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -638,8 +639,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=39}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=39}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -647,8 +648,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=40}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=40}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -656,8 +657,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=41}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=41}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -665,8 +666,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=42}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=42}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -674,8 +675,8 @@
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 0, 198}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 0, 154}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 0, 198}}|key=43}}}}",
+            "Y": "{{Query: {{Random: {{Range: 0, 154}}|key=43}}}}"
           },
           "Layer": "Paths",
           "SetTilesheet": "Paths",
@@ -689,8 +690,8 @@
       "Target": "Maps/{{ModId}}_ForbiddenForest",
       "FromFile": "assets/Maps/MerlinTrialIngress.tmx",
       "ToArea": {
-        "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}}}",
-        "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}}}",
+        "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}}}",
+        "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}}}",
         "Width": 9,
         "Height": 9
       },
@@ -698,176 +699,176 @@
       "MapTiles": [
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+3}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+2}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+3}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+2}}"
           },
           "Layer": "Buildings",
           "Remove": true
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+4}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+2}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+4}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+2}}"
           },
           "Layer": "Buildings",
           "Remove": true
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+5}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+2}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+5}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+2}}"
           },
           "Layer": "Buildings",
           "Remove": true
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+2}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+3}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+2}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+3}}"
           },
           "Layer": "Buildings",
           "Remove": true
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+3}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+3}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+3}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+3}}"
           },
           "Layer": "Buildings",
           "Remove": true
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+4}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+3}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+4}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+3}}"
           },
           "Layer": "Buildings",
           "Remove": true
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+5}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+3}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+5}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+3}}"
           },
           "Layer": "Buildings",
           "Remove": true
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+6}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+3}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+6}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+3}}"
           },
           "Layer": "Buildings",
           "Remove": true
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+2}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+4}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+2}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+4}}"
           },
           "Layer": "Buildings",
           "Remove": true
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+3}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+4}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+3}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+4}}"
           },
           "Layer": "Buildings",
           "Remove": true
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+4}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+4}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+4}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+4}}"
           },
           "Layer": "Buildings",
           "Remove": true
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+5}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+4}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+5}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+4}}"
           },
           "Layer": "Buildings",
           "Remove": true
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+6}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+4}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+6}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+4}}"
           },
           "Layer": "Buildings",
           "Remove": true
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+2}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+5}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+2}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+5}}"
           },
           "Layer": "Buildings",
           "Remove": true
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+3}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+5}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+3}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+5}}"
           },
           "Layer": "Buildings",
           "Remove": true
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+4}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+5}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+4}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+5}}"
           },
           "Layer": "Buildings",
           "Remove": true
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+5}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+5}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+5}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+5}}"
           },
           "Layer": "Buildings",
           "Remove": true
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+6}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+5}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+6}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+5}}"
           },
           "Layer": "Buildings",
           "Remove": true
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+3}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+6}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+3}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+6}}"
           },
           "Layer": "Buildings",
           "Remove": true
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+4}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+6}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+4}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+6}}"
           },
           "Layer": "Buildings",
           "Remove": true
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+5}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+6}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+5}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+6}}"
           },
           "Layer": "Buildings",
           "Remove": true
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngress2X}}+6}}",
-            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngress2Y}}+6}}"
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}}+6}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}}+6}}"
           },
           "Layer": "Buildings",
           "Remove": true
@@ -2660,7 +2661,7 @@
       ]
     },
     {
-      "LogName": "Forbidden Forest Emergency Exit 2",
+      "LogName": "Forbidden Forest Merlin Trial Emergency Exit 2",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_ForbiddenForest",
       "FromFile": "assets/Maps/MerlinTrialEgress.tmx",
@@ -2880,7 +2881,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_ForbiddenForestStage2 {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialMiniObelisk2X}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialMiniObelisk2Y}} + 5}}"
+            "TouchAction": "Warp {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialMiniObelisk2X}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialMiniObelisk2Y}} + 5}}"
           }
         },
         {
@@ -3081,7 +3082,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_ForbiddenForestStage2 {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialMiniObelisk1X}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialMiniObelisk1Y}} + 5}}"
+            "TouchAction": "Warp {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialMiniObelisk1X}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialMiniObelisk1Y}} + 5}}"
           }
         },
         {
