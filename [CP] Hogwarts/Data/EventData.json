@@ -15,14 +15,6 @@
       "Entries": {
         "{{ModId}}_HogwartsInvitation": "Dear @,^We are pleased to inform you that you have been accepted at Hogwarts School of Witchcraft and Wizardry. Please find your nearest wizard tower to travel to the Scottish Highlands where you can begin your studies.^^Yours sincerely,^^Minerva McGonagall^Headmistress[#]Hogwarts Invitation"
       }
-    },
-    {
-      "LogName": "Event HogwartsAberforth Intro",
-      "Action": "EditData",
-      "Target": "Data/Events/Town",
-      "Entries": {
-        "{{ModID}}_AberforthIntro/t 600 2300/w sunny": "CloudCountry/44 101/farmer 48 101 2/addTemporaryActor HogwartsAberforth 16 32 -57 -99 2 false/skippable/viewport 54 101/move farmer 8 0 1/pause 500/playSound doorClose/warp HogwartsAberforth 57 99/pause 500/emote HogwartsAberforth 16/pause 500/move HogwartsAberforth 0 2 2/pause 500/speak HogwartsAberforth \"Hey @! I've been so busy preparing my shop that I haven't had time to introduce myself properly#$b#I'm Aberforth, I finally arrived this morning.$1#$b#I hope you'll enjoy your stay at Hog's Head Inn$2\"/emote HogwartsAberforth 28/Pause 500/speak HogwartsAberforth \"Hogwarts is a great school and you'll learn a lot from your teachers.$0#$b#See you around @!$1\"/globalFade/viewport -1000 -1000/end/"
-      }
     }
   ]
 }
