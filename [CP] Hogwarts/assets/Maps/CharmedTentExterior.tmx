@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="9" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="40" nextobjectid="147">
- <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
-  <image source="paths.png" width="64" height="144"/>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="9" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="40" nextobjectid="147">
+ <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
   <tile id="0">
    <properties>
     <property name="PathType" value="NE"/>
@@ -33,7 +33,7 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="37" name="Town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
+ <tileset firstgid="65" name="Town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
   <image source="spring_town.png" width="512" height="1152"/>
   <tile id="45">
    <animation>
@@ -324,8 +324,8 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="2341" name="Landscape" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
-  <image source="spring_outdoorsTileSheet.png" width="400" height="1264"/>
+ <tileset firstgid="2369" name="Landscape" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="spring_outdoorsTileSheet" width="400" height="1264"/>
   <tile id="150">
    <properties>
     <property name="Spawnable" value="t"/>
@@ -1660,10 +1660,10 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="4316" name="z_mine_frost_dangerous" tilewidth="16" tileheight="16" tilecount="288" columns="16">
-  <image source="mine_frost_dangerous.png" width="256" height="288"/>
+ <tileset firstgid="4344" name="z_mine_frost_dangerous_Hogwarts" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="z_mine_frost_dangerous_Hogwarts.png" width="256" height="288"/>
  </tileset>
- <tileset firstgid="4604" name="Landscape" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+ <tileset firstgid="4632" name="Landscape" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
   <image source="spring_outdoorsTileSheet" width="400" height="1264"/>
   <tile id="150">
    <properties>
@@ -3001,82 +3001,82 @@
  </tileset>
  <layer id="1" name="Back" width="9" height="9">
   <data encoding="base64" compression="zlib">
-   eAFjYBgFlIYAAAFEAAE=
+   eJxjYBgFlAIAAUQAAQ==
   </data>
  </layer>
  <layer id="2" name="Buildings" width="9" height="9">
   <data encoding="base64" compression="zlib">
-   eAFjYKA++M3JwPAPiP8CMS4gwgWREYPS2NTpQuX08ajBpo/eYgBM8gPA
+   eJxjYKA+EOdiYJACYkku3GoMoHJGeNR4QuW88agZDAAAKKUBhw==
   </data>
  </layer>
  <layer id="11" name="Buildings1" width="9" height="9">
   <data encoding="base64" compression="zlib">
-   eAFjYKA+SOJiYIBhbKbD5P5x4lYHU6OHxyyYGmQan30gdbQAAAWFCUQ=
+   eJxjYKA+qONCYHzyUnjUwcS9iFBDrH245CkFALb8CpE=
   </data>
  </layer>
  <layer id="3" name="Paths" width="9" height="9">
   <data encoding="base64" compression="zlib">
-   eAFjYBgFlIYAAAFEAAE=
+   eJxjYBgFlAIAAUQAAQ==
   </data>
  </layer>
  <layer id="39" name="Front" width="9" height="9">
   <data encoding="base64" compression="zlib">
-   eAFjYKA+SOJiYPjDycAAorEBkDgIi0JpbOpgapBpdLOQ5WDsX4LoqiB8ZHlcakAqQXIwjN0kTFEAkAwO/w==
+   eJxjYKA+qONiYJDggtC45EHYkAvBxqWmjkQ1YkL47QTJ41IDAjB5fGrQAQCbGgre
   </data>
  </layer>
  <layer id="18" name="AlwaysFront" width="9" height="9">
   <data encoding="base64" compression="zlib">
-   eAFjYKA+SOKCmAmj0W0AiaNjaqn5JYhuEqpdIHlsamC6YPL41MDUwmgABBcOsw==
+   eJxjYKA+qONCpbHJo2NqqRETwq8OJI9NDQzA5PGpQQcA6uoLkQ==
   </data>
  </layer>
  <layer id="20" name="AlwaysFront1" width="9" height="9">
   <data encoding="base64" compression="zlib">
-   eAFjYKA+SOJiYIBhbKbD5JBpdHXIcjA2MWp+CaKrQrgFZA5IHpsamC6YPD41MLUwGgBnnQ8f
+   eJxjYKA+qONCYELyuNSRq0ZMCL86kDw2NTAAk8enBh0AAGhPDBk=
   </data>
  </layer>
  <layer id="21" name="AlwaysFront2" width="9" height="9">
   <data encoding="base64" compression="zlib">
-   eAFjYKA+SOJiYIBhbKbD5JBpdHXIcjA2MWp+CaKrQrgFZA5IHpsamC6YPD41MLUwGgBnnQ8f
+   eJxjYKA+qONCYELyuNSRq0ZMCL86kDw2NTAAk8enBh0AAGhPDBk=
   </data>
  </layer>
  <layer id="22" name="AlwaysFront3" width="9" height="9">
   <data encoding="base64" compression="zlib">
-   eAFjYKA+SOJiYIBhbKbD5JBpdHXIcjA2MWp+CaKrQrgFZA5IHpsamC6YPD41MLUwGgBnnQ8f
+   eJxjYKA+qONCYELyuNSRq0ZMCL86kDw2NTAAk8enBh0AAGhPDBk=
   </data>
  </layer>
  <layer id="23" name="AlwaysFront4" width="9" height="9">
   <data encoding="base64" compression="zlib">
-   eAFjYKA+SOJiYIBhbKbD5JBpdHXIcjA2MWp+CaKrQrgFZA5IHpsamC6YPD41MLUwGgBnnQ8f
+   eJxjYKA+qONCYELyuNSRq0ZMCL86kDw2NTAAk8enBh0AAGhPDBk=
   </data>
  </layer>
  <layer id="24" name="AlwaysFront5" width="9" height="9">
   <data encoding="base64" compression="zlib">
-   eAFjYKA+SOJiYIBhbKbD5JBpdHXIcjA2MWp+CaKrQrgFZA5IHpsamC6YPD41MLUwGgBnnQ8f
+   eJxjYKA+qONCYELyuNSRq0ZMCL86kDw2NTAAk8enBh0AAGhPDBk=
   </data>
  </layer>
  <layer id="25" name="AlwaysFront6" width="9" height="9">
   <data encoding="base64" compression="zlib">
-   eAFjYKA+SOJiYIBhbKbD5JBpdHXIcjA2MWp+CaKrQrgFZA5IHpsamC6YPD41MLUwGgBnnQ8f
+   eJxjYKA+qONCYELyuNSRq0ZMCL86kDw2NTAAk8enBh0AAGhPDBk=
   </data>
  </layer>
  <layer id="26" name="AlwaysFront7" width="9" height="9">
   <data encoding="base64" compression="zlib">
-   eAFjYKA+SOJiYIBhbKbD5JBpdHXIcjA2MWp+CaKrQrgFZA5IHpsamC6YPD41MLUwGgBnnQ8f
+   eJxjYKA+qONCYELyuNSRq0ZMCL86kDw2NTAAk8enBh0AAGhPDBk=
   </data>
  </layer>
  <layer id="27" name="AlwaysFront8" width="9" height="9">
   <data encoding="base64" compression="zlib">
-   eAFjYKA+SOJiYIBhbKbD5JBpdHXIcjA2MWp+CaKrQrgFZA5IHpsamC6YPD41MLUwGgBnnQ8f
+   eJxjYKA+qONCYELyuNSRq0ZMCL86kDw2NTAAk8enBh0AAGhPDBk=
   </data>
  </layer>
  <layer id="5" name="AlwaysFront9" width="9" height="9">
   <data encoding="base64" compression="zlib">
-   eAFjYKA+SOJiYIBhbKbD5JDp34KoKpHlYGxy1IBMhekH0SAz0M2B2QyTg9EwcUI0AAfAEkk=
+   eJxjYKA+qONCYELyMCwuRBs16OpA8tjUgABMDp8abAAAqS0Mmg==
   </data>
  </layer>
  <layer id="15" name="AlwaysFront10" width="9" height="9">
   <data encoding="base64" compression="zlib">
-   eAFtjzkOwlAMBX2ALDSkTQtHh2NAwiXYDsGSNjNCllxgaWTr+/1nOyLiu43oh4gOav7wbtjf0NvDgbohy5G6JatbIPsn6glmuIC6NzzA//ZvYNzJ6vS7kvXZUauv4fsL0qfOVje2vx2faNInZ7ujd9Ub9MnZqdPf//929J4z1Jw3rKWcMl0=
+   eJxjYGBgEBJjYNAGYi00WhCIGaDyOkDsCsRHRRkYNMQg+BiQrQlVJ4wkfw+IHwDxQyB+JApRJwCU+yWKkP8hCjH7J1QdyLzvohBzXMQg6pEBSJxfDGEOst0gYM0LceNvUYQ5j5DUaaP5AWTOTzQ38kP1Y3MjyD/30WiYPAC/rytM
   </data>
  </layer>
  <objectgroup id="6" name="Back"/>

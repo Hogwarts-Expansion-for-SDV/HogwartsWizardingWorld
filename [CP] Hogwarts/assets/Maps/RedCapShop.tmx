@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="11" height="12" tilewidth="16" tileheight="16" infinite="0" nextlayerid="31" nextobjectid="147">
- <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
-  <image source="paths.png" width="64" height="144"/>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="11" height="12" tilewidth="16" tileheight="16" infinite="0" nextlayerid="31" nextobjectid="147">
+ <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
   <tile id="0">
    <properties>
     <property name="PathType" value="NE"/>
@@ -33,7 +33,7 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="37" name="Town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
+ <tileset firstgid="65" name="Town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
   <image source="spring_town.png" width="512" height="1152"/>
   <tile id="45">
    <animation>
@@ -324,7 +324,7 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="2341" name="Landscape" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+ <tileset firstgid="2369" name="Landscape" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
   <image source="spring_outdoorsTileSheet.png" width="400" height="1264"/>
   <tile id="150">
    <properties>
@@ -1660,254 +1660,89 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="4316" name="z_mine_frost_dangerous" tilewidth="16" tileheight="16" tilecount="288" columns="16">
-  <image source="mine_frost_dangerous.png" width="256" height="288"/>
+ <tileset firstgid="4344" name="z_mine_frost_dangerous_Hogwarts" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="z_mine_frost_dangerous_Hogwarts.png" width="256" height="288"/>
  </tileset>
- <tileset firstgid="4604" name="spring_outdoorsTileSheet2" tilewidth="16" tileheight="16" tilecount="256" columns="16">
-  <image source="spring_outdoorsTileSheet2.png" width="256" height="256"/>
+ <tileset firstgid="4632" name="spring_outdoorsTileSheet2" tilewidth="16" tileheight="16" tilecount="1120" columns="16">
+  <image source="spring_outdoorsTileSheet2.png" width="256" height="1120"/>
  </tileset>
- <tileset firstgid="4860" name="z_redcap" tilewidth="16" tileheight="16" tilecount="1" columns="1">
-  <image source="redcap.png" width="16" height="16"/>
+ <tileset firstgid="5752" name="z_redcap_Hogwarts" tilewidth="16" tileheight="16" tilecount="1" columns="1">
+  <image source="z_redcap_Hogwarts.png" width="16" height="16"/>
  </tileset>
  <layer id="1" name="Back" width="11" height="12">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0
-</data>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFowABAAIQAAE=
+  </data>
  </layer>
  <layer id="13" name="Back1" width="11" height="12">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0
-</data>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFowABAAIQAAE=
+  </data>
  </layer>
  <layer id="2" name="Buildings" width="11" height="12">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,4798,4799,4800,0,0,0,0,
-0,0,0,0,4814,4815,4816,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0
-</data>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgF2MAtIQaG20B8R4iw2ldANa+B+A0Ragc7AAD4dAW/
+  </data>
  </layer>
  <layer id="11" name="Buildings1" width="11" height="12">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,4860,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0
-</data>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFuECF2EC7gP4AAIlSAI8=
+  </data>
  </layer>
  <layer id="3" name="Paths" width="11" height="12">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0
-</data>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFowABAAIQAAE=
+  </data>
  </layer>
  <layer id="4" name="Front" width="11" height="12">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0
-</data>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFowABAAIQAAE=
+  </data>
  </layer>
  <layer id="17" name="AlwaysFront" width="11" height="12">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,2658,2658,2658,2658,2658,0,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,0,0,0,
-0,0,0,0,2658,2658,2658,2658,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0
-</data>
+  <data encoding="base64" compression="zlib">
+   eJxjYBhcoI4LExOrDpf6wayWlLCgBwAAPowW2Q==
+  </data>
  </layer>
  <layer id="18" name="AlwaysFront1" width="11" height="12">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,2658,2658,2658,2658,2658,0,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,0,0,0,
-0,0,0,0,2658,2658,2658,2658,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0
-</data>
+  <data encoding="base64" compression="zlib">
+   eJxjYBhcoI4LExOrDpf6wayWlLCgBwAAPowW2Q==
+  </data>
  </layer>
  <layer id="19" name="AlwaysFront2" width="11" height="12">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,2658,2658,2658,2658,2658,0,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,0,0,0,
-0,0,0,0,2658,2658,2658,2658,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0
-</data>
+  <data encoding="base64" compression="zlib">
+   eJxjYBhcoI4LExOrDpf6wayWlLCgBwAAPowW2Q==
+  </data>
  </layer>
  <layer id="20" name="AlwaysFront3" width="11" height="12">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,2658,2658,2658,2658,2658,0,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,0,0,0,
-0,0,0,0,2658,2658,2658,2658,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0
-</data>
+  <data encoding="base64" compression="zlib">
+   eJxjYBhcoI4LExOrDpf6wayWlLCgBwAAPowW2Q==
+  </data>
  </layer>
  <layer id="21" name="AlwaysFront4" width="11" height="12">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,2658,2658,2658,2658,2658,0,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,0,0,0,
-0,0,0,0,2658,2658,2658,2658,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0
-</data>
+  <data encoding="base64" compression="zlib">
+   eJxjYBhcoI4LExOrDpf6wayWlLCgBwAAPowW2Q==
+  </data>
  </layer>
  <layer id="22" name="AlwaysFront5" width="11" height="12">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,2658,2658,2658,2658,2658,0,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,0,0,0,
-0,0,0,0,2658,2658,2658,2658,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0
-</data>
+  <data encoding="base64" compression="zlib">
+   eJxjYBhcoI4LExOrDpf6wayWlLCgBwAAPowW2Q==
+  </data>
  </layer>
  <layer id="23" name="AlwaysFront6" width="11" height="12">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,2658,2658,2658,2658,2658,0,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,0,0,0,
-0,0,0,0,2658,2658,2658,2658,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0
-</data>
+  <data encoding="base64" compression="zlib">
+   eJxjYBhcoI4LExOrDpf6wayWlLCgBwAAPowW2Q==
+  </data>
  </layer>
  <layer id="5" name="AlwaysFront7" width="11" height="12">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,4717,4718,4719,4720,4721,0,0,0,
-0,0,4732,4733,4734,4735,4736,4737,4738,0,0,
-0,0,4748,4749,4750,4751,4752,4753,4754,0,0,
-0,0,4764,4765,4766,4767,4768,4769,4770,0,0,
-0,0,2658,4781,4782,4783,4784,4785,4786,0,0,
-0,0,2658,4797,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,2658,2658,2658,2658,2658,2658,2658,0,0,
-0,0,0,2639,2658,2658,2658,2639,2639,0,0,
-0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0
-</data>
+  <data encoding="base64" compression="zlib">
+   eJy1yjsOglAQRuGpKe827x7oRe1BhVoQqXlJL4o9u+EQqMjQYJjkyyR/jsi2OxgRD0eccDZ657MHuOCKG0JESn9ni5HggRRPZEqbsxUoUaHGC43Suo7Im73FB190+K20vZn+ktau+acdzy4aO9v7Bvi0Js4=
+  </data>
  </layer>
  <layer id="15" name="AlwaysFront8" width="11" height="12">
-  <data encoding="csv">
-0,3359,3384,3383,3384,3383,3384,3383,3384,3358,0,
-0,3360,3410,3408,3408,3408,3408,3407,3381,3382,3358,
-3359,3385,3336,3284,3284,3284,3284,3284,3406,3381,3357,
-3360,3336,3336,3307,3309,3308,3309,3310,3311,3409,3332,
-3335,3336,3307,3333,0,0,0,3334,3310,3311,3357,
-3335,3409,3357,0,0,0,0,0,3360,3311,3332,
-3360,3409,3332,0,0,0,0,0,3335,3409,3357,
-3335,3311,3357,0,0,0,0,0,3360,3336,3332,
-3360,3311,3382,3384,3358,0,3359,3384,3385,3336,3357,
-3334,3310,3283,3409,3382,3384,3385,3410,3410,3307,3333,
-0,3334,3310,3311,3283,3311,3410,3282,3307,3333,0,
-0,0,3334,3309,3308,3309,3308,3309,0,0,0
-</data>
+  <data encoding="base64" compression="zlib">
+   eJx1kN0NwjAMhP3GT9IdCs0SpV2iBZYA2tGBEbioZ+lUGkuf7IfL2Tkzs64yu4FroV+AV495Bq8VTzCAkfrseQcJfOM/D+rbavFMZAcOYM9+BAFMoAaN6E5yV66z6FtqJ85b1VNb8wbfsVXq1ciOkm8S38BcNEvP3DPKXn7/Jy67RtHMRP+t/81vAjXvWM5Hs/Wu9QNZOyCs
+  </data>
  </layer>
  <objectgroup id="6" name="Back"/>
  <objectgroup id="14" name="Back1"/>
