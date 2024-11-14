@@ -6,6 +6,7 @@
       "Target": "UnlockableBundles/ShopTextures/HogwartsBlankBundle",
       "FromFile": "assets/MapPatches/BlankBundle.png"
     },
+    /*
     {
       "Action": "EditImage",
       "Target": "Maps/townInterior",
@@ -13,10 +14,11 @@
       "PatchMode": "Overlay",
       "When": {
         "Hogwarts_Interior_Texture": "true",
-        "LocationName |contains={{Interior Locations}}": "true"
+        "LocationName |contains={{ModId}}_{{Interior Locations}}": "true"
       },
       "Update": "OnLocationChange"
     },
+    */
     {
       "LogName": "Glass Doors - Animation",
       "Action": "EditImage",
@@ -36,7 +38,7 @@
         "Height": 48
       },
       "When": {
-        "LocationName |contains={{GlassDoorLocations}}": true
+        "LocationName |contains={{ModId}}_{{GlassDoorLocations}}": true
       },
       "Update": "OnLocationChange"
     },
@@ -59,7 +61,7 @@
         "Height": 32
       },
       "When": {
-        "LocationName |contains={{GlassDoorLocations}}": true
+        "LocationName |contains={{ModId}}_{{GlassDoorLocations}}": true
       },
       "Update": "OnLocationChange"
     }
