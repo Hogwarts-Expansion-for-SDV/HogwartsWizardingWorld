@@ -1,11 +1,5 @@
 {
   "Changes": [
-    {
-      "LogName": "Blank Bundle Load",
-      "Action": "Load",
-      "Target": "UnlockableBundles/ShopTextures/HogwartsBlankBundle",
-      "FromFile": "assets/MapPatches/BlankBundle.png"
-    },
     /*
     {
       "Action": "EditImage",
@@ -19,6 +13,15 @@
       "Update": "OnLocationChange"
     },
     */
+    {
+      "LogName": "Mine Frost Dark Winter",
+      "Action": "EditImage",
+      "Target": "Maps/z_mine_frost_dangerous_Hogwarts",
+      "FromFile": "assets/Tilesheets/z_mine_frost_dark_Hogwarts.png",
+      "When": {
+        "Season": "winter"
+      }
+    },
     {
       "LogName": "Glass Doors - Animation",
       "Action": "EditImage",
