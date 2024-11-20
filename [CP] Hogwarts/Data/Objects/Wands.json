@@ -1,6 +1,7 @@
 {
   "Changes": [
     {
+      "LogName": "Hogwarts Expansion Objects Data Wands",
       "Action": "EditData",
       "Target": "Data/Weapons",
       "Entries": {
@@ -25,28 +26,18 @@
           "SpriteIndex": 1,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_AcaciaWandP0",
-              "Damage": 98,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
-              "Bounces": 1,
+              "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
-              "FireSound": "stairsdown",
+              "FireSound": "drumkit3",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
-            },
-            {
-              "Id": "{{ModId}}_AcaciaWandP1",
-              "Damage": 98,
-              "Explodes": false,
-              "Bounces": 1,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "stairsdown",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile695"
+              }
             }
           ]
         },
@@ -71,28 +62,18 @@
           "SpriteIndex": 2,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_AlderWandP0",
-              "Damage": 52,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "drumkit3",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile224" }
-            },
-            {
-              "Id": "{{ModId}}_AlderWandP1",
-              "Damage": 52,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "drumkit3",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile224" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile224"
+              }
             }
           ]
         },
@@ -117,28 +98,18 @@
           "SpriteIndex": 3,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_AppleWandP0",
-              "Damage": 48,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "monsterdead",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile892" }
-            },
-            {
-              "Id": "{{ModId}}_AppleWandP1",
-              "Damage": 48,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "monsterdead",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile892" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile892"
+              }
             }
           ]
         },
@@ -163,28 +134,18 @@
           "SpriteIndex": 4,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_AshWandP0",
-              "Damage": 41,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "shwip",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile170" }
-            },
-            {
-              "Id": "{{ModId}}_AshWandP1",
-              "Damage": 41,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "shwip",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile170" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile170"
+              }
             }
           ]
         },
@@ -209,28 +170,18 @@
           "SpriteIndex": 5,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_AspenWandP0",
-              "Damage": 27,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "pullItemFromWater",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile707" }
-            },
-            {
-              "Id": "{{ModId}}_AspenWandP1",
-              "Damage": 27,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "pullItemFromWater",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile707" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile707"
+              }
             }
           ]
         },
@@ -255,28 +206,18 @@
           "SpriteIndex": 6,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_BeechWandP0",
-              "Damage": 41,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": true,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "crystal",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile822" }
-            },
-            {
-              "Id": "{{ModId}}_BeechWandP1",
-              "Damage": 41,
-              "Explodes": true,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "crystal",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile822" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile822"
+              }
             }
           ]
         },
@@ -301,28 +242,18 @@
           "SpriteIndex": 7,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_BirchWandP0",
-              "Damage": 53,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "harvest",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile93" }
-            },
-            {
-              "Id": "{{ModId}}_BirchWandP1",
-              "Damage": 53,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "harvest",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile93" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile93"
+              }
             }
           ]
         },
@@ -347,28 +278,18 @@
           "SpriteIndex": 8,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_BlackthornWandP0",
-              "Damage": 29,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
-              "Bounces": 1,
+              "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "parrot",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile812" }
-            },
-            {
-              "Id": "{{ModId}}_BlackthornWandP1",
-              "Damage": 29,
-              "Explodes": false,
-              "Bounces": 1,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "parrot",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile812" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile812"
+              }
             }
           ]
         },
@@ -393,28 +314,18 @@
           "SpriteIndex": 9,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_BlackWalnutWandP0",
-              "Damage": 53,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "throwDownITem",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile107" }
-            },
-            {
-              "Id": "{{ModId}}_BlackWalnutWandP1",
-              "Damage": 53,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "throwDownITem",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile107" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile107"
+              }
             }
           ]
         },
@@ -439,28 +350,18 @@
           "SpriteIndex": 10,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_CedarWandP0",
-              "Damage": 61,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "axchop",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile133" }
-            },
-            {
-              "Id": "{{ModId}}_CedarWandP1",
-              "Damage": 61,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "axchop",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile133" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile133"
+              }
             }
           ]
         },
@@ -485,28 +386,18 @@
           "SpriteIndex": 11,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_CherryWandP0",
-              "Damage": 51,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "keyboardTyping",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile222" }
-            },
-            {
-              "Id": "{{ModId}}_CherryWandP1",
-              "Damage": 51,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "keyboardTyping",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile222" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile222"
+              }
             }
           ]
         },
@@ -531,28 +422,18 @@
           "SpriteIndex": 12,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_ChestnutWandP0",
-              "Damage": 52,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "phone",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile74" }
-            },
-            {
-              "Id": "{{ModId}}_ChestnutWandP1",
-              "Damage": 52,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "phone",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile74" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile74"
+              }
             }
           ]
         },
@@ -577,28 +458,18 @@
           "SpriteIndex": 13,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_CypressWandP0",
-              "Damage": 45,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "flute",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
-            },
-            {
-              "Id": "{{ModId}}_CypressWandP1",
-              "Damage": 45,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "flute",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile695" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile695"
+              }
             }
           ]
         },
@@ -623,28 +494,18 @@
           "SpriteIndex": 14,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_DogwoodWandP0",
-              "Damage": 39,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "secret1",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile624" }
-            },
-            {
-              "Id": "{{ModId}}_DogwoodWandP1",
-              "Damage": 39,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "secret1",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile624" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile624"
+              }
             }
           ]
         },
@@ -669,28 +530,18 @@
           "SpriteIndex": 15,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_EbonyWandP0",
-              "Damage": 54,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "fireball",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile180" }
-            },
-            {
-              "Id": "{{ModId}}_EbonyWandP1",
-              "Damage": 54,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "fireball",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile180" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile180"
+              }
             }
           ]
         },
@@ -715,28 +566,18 @@
           "SpriteIndex": 16,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_ElderWoodWandP0",
-              "Damage": 46,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "detector",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile191" }
-            },
-            {
-              "Id": "{{ModId}}_ElderWoodWandP1",
-              "Damage": 46,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "detector",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile191" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile191"
+              }
             }
           ]
         },
@@ -761,28 +602,18 @@
           "SpriteIndex": 17,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_ElmWandP0",
-              "Damage": 44,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "Meteorite",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile213" }
-            },
-            {
-              "Id": "{{ModId}}_ElmWandP1",
-              "Damage": 44,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "Meteorite",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile213" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile213"
+              }
             }
           ]
         },
@@ -807,28 +638,18 @@
           "SpriteIndex": 18,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_EnglishOakWandP0",
-              "Damage": 52,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "breathin",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile35" }
-            },
-            {
-              "Id": "{{ModId}}_EnglishOakWandP1",
-              "Damage": 52,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "breathin",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile35" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile35"
+              }
             }
           ]
         },
@@ -853,28 +674,18 @@
           "SpriteIndex": 19,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_FirWandP0",
-              "Damage": 62,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
-              "Bounces": 1,
+              "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "ow",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile467" }
-            },
-            {
-              "Id": "{{ModId}}_FirWandP1",
-              "Damage": 62,
-              "Explodes": false,
-              "Bounces": 1,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "ow",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile467" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile467"
+              }
             }
           ]
         },
@@ -899,28 +710,18 @@
           "SpriteIndex": 20,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_HawthornWandP0",
-              "Damage": 38,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "drumkit0",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile445" }
-            },
-            {
-              "Id": "{{ModId}}_HawthornWandP1",
-              "Damage": 38,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "drumkit0",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile445" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile445"
+              }
             }
           ]
         },
@@ -945,28 +746,18 @@
           "SpriteIndex": 21,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_HazelWandP0",
-              "Damage": 37,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "achievement",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile683" }
-            },
-            {
-              "Id": "{{ModId}}_HazelWandP1",
-              "Damage": 37,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "achievement",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile683" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile683"
+              }
             }
           ]
         },
@@ -991,28 +782,18 @@
           "SpriteIndex": 22,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_HollyWandP0",
-              "Damage": 45,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "cast",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile469" }
-            },
-            {
-              "Id": "{{ModId}}_HollyWandP1",
-              "Damage": 45,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "cast",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile469" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile469"
+              }
             }
           ]
         },
@@ -1037,28 +818,18 @@
           "SpriteIndex": 23,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_HornbeamWandP0",
-              "Damage": 50,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
-              "Bounces": 1,
+              "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "robotSoundEffects",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile367" }
-            },
-            {
-              "Id": "{{ModId}}_HornbeamWandP1",
-              "Damage": 50,
-              "Explodes": false,
-              "Bounces": 1,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "robotSoundEffects",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile367" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile367"
+              }
             }
           ]
         },
@@ -1083,28 +854,18 @@
           "SpriteIndex": 24,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_IvyWandP0",
-              "Damage": 48,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": true,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "backpackIN",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile129" }
-            },
-            {
-              "Id": "{{ModId}}_IvyWandP1",
-              "Damage": 48,
-              "Explodes": true,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "backpackIN",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile129" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile129"
+              }
             }
           ]
         },
@@ -1129,28 +890,18 @@
           "SpriteIndex": 25,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_LarchWandP0",
-              "Damage": 34,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": true,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "furnace",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile359" }
-            },
-            {
-              "Id": "{{ModId}}_LarchWandP1",
-              "Damage": 34,
-              "Explodes": true,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "furnace",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile359" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile359"
+              }
             }
           ]
         },
@@ -1175,28 +926,18 @@
           "SpriteIndex": 26,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_LaurelWandP0",
-              "Damage": 40,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
-              "Bounces": 1,
+              "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "doorCreakReverse",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile65" }
-            },
-            {
-              "Id": "{{ModId}}_LaurelWandP1",
-              "Damage": 40,
-              "Explodes": false,
-              "Bounces": 1,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "doorCreakReverse",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile65" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile65"
+              }
             }
           ]
         },
@@ -1221,28 +962,18 @@
           "SpriteIndex": 27,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_MahoganyWandP0",
-              "Damage": 104,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "Cavern",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile723" }
-            },
-            {
-              "Id": "{{ModId}}_MahoganyWandP1",
-              "Damage": 104,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "Cavern",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile723" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile723"
+              }
             }
           ]
         },
@@ -1267,28 +998,18 @@
           "SpriteIndex": 28,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_MapleWandP0",
-              "Damage": 28,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": true,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "FishHit",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile237" }
-            },
-            {
-              "Id": "{{ModId}}_MapleWandP1",
-              "Damage": 28,
-              "Explodes": true,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "FishHit",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile237" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile237"
+              }
             }
           ]
         },
@@ -1313,28 +1034,18 @@
           "SpriteIndex": 29,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_PearWandP0",
-              "Damage": 51,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": true,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "cameraNoise",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile748" }
-            },
-            {
-              "Id": "{{ModId}}_PearWandP1",
-              "Damage": 51,
-              "Explodes": true,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "cameraNoise",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile748" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile748"
+              }
             }
           ]
         },
@@ -1359,8 +1070,8 @@
           "SpriteIndex": 30,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_PineWandP0",
-              "Damage": 49,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
@@ -1368,19 +1079,9 @@
               "TailLength": 3,
               "FireSound": "sheep",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile243" }
-            },
-            {
-              "Id": "{{ModId}}_PineWandP1",
-              "Damage": 49,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 2,
-              "TailLength": 3,
-              "FireSound": "sheep",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile243" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile243"
+              }
             }
           ]
         },
@@ -1405,28 +1106,18 @@
           "SpriteIndex": 31,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_PoplarWandP0",
-              "Damage": 102,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": true,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "Cowboy_monsterDie",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile159" }
-            },
-            {
-              "Id": "{{ModId}}_PoplarWandP1",
-              "Damage": 102,
-              "Explodes": true,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "Cowboy_monsterDie",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile159" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile159"
+              }
             }
           ]
         },
@@ -1451,28 +1142,18 @@
           "SpriteIndex": 32,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_PricklyAshWandP0",
-              "Damage": 41,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "glug",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile289" }
-            },
-            {
-              "Id": "{{ModId}}_PricklyAshWandP1",
-              "Damage": 41,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "glug",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile289" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile289"
+              }
             }
           ]
         },
@@ -1497,28 +1178,18 @@
           "SpriteIndex": 33,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_RedOakWandP0",
-              "Damage": 38,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "treethud",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile875" }
-            },
-            {
-              "Id": "{{ModId}}_RedOakWandP1",
-              "Damage": 38,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "treethud",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile875" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile875"
+              }
             }
           ]
         },
@@ -1543,28 +1214,18 @@
           "SpriteIndex": 34,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_RedwoodWandP0",
-              "Damage": 33,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "boop",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile772" }
-            },
-            {
-              "Id": "{{ModId}}_RedwoodWandP1",
-              "Damage": 33,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "boop",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile772" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile772"
+              }
             }
           ]
         },
@@ -1589,28 +1250,18 @@
           "SpriteIndex": 35,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_ReedWandP0",
-              "Damage": 99,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "drumkit6",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile521" }
-            },
-            {
-              "Id": "{{ModId}}_ReedWandP1",
-              "Damage": 99,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "drumkit6",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile521" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile521"
+              }
             }
           ]
         },
@@ -1635,28 +1286,18 @@
           "SpriteIndex": 36,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_RosewoodWandP0",
-              "Damage": 38,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "breakingGlass",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile802" }
-            },
-            {
-              "Id": "{{ModId}}_RosewoodWandP1",
-              "Damage": 38,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "breakingGlass",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile802" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile802"
+              }
             }
           ]
         },
@@ -1681,28 +1322,18 @@
           "SpriteIndex": 37,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_RowanWandP0",
-              "Damage": 40,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "serpentHit",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile472" }
-            },
-            {
-              "Id": "{{ModId}}_RowanWandP1",
-              "Damage": 40,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "serpentHit",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile472" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile472"
+              }
             }
           ]
         },
@@ -1727,28 +1358,18 @@
           "SpriteIndex": 38,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_SilverLimeWandP0",
-              "Damage": 37,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
-              "Bounces": 1,
+              "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "skeletonDie",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile908" }
-            },
-            {
-              "Id": "{{ModId}}_SilverLimeWandP1",
-              "Damage": 37,
-              "Explodes": false,
-              "Bounces": 1,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "skeletonDie",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile908" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile908"
+              }
             }
           ]
         },
@@ -1773,28 +1394,18 @@
           "SpriteIndex": 39,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_SpruceWandP0",
-              "Damage": 44,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "pullItemFromWater",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile633" }
-            },
-            {
-              "Id": "{{ModId}}_SpruceWandP1",
-              "Damage": 44,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "pullItemFromWater",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile633" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile633"
+              }
             }
           ]
         },
@@ -1819,28 +1430,18 @@
           "SpriteIndex": 40,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_SugarMapleWandP0",
-              "Damage": 35,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": true,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "jingle1",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile640" }
-            },
-            {
-              "Id": "{{ModId}}_SugarMapleWandP1",
-              "Damage": 35,
-              "Explodes": true,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "jingle1",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile640" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile640"
+              }
             }
           ]
         },
@@ -1865,28 +1466,18 @@
           "SpriteIndex": 41,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_SwampMayhawWandP0",
-              "Damage": 47,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
-              "Bounces": 1,
+              "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "robotBLASTOFF",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile781" }
-            },
-            {
-              "Id": "{{ModId}}_SwampMayhawWandP1",
-              "Damage": 47,
-              "Explodes": false,
-              "Bounces": 1,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "robotBLASTOFF",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile781" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile781"
+              }
             }
           ]
         },
@@ -1911,28 +1502,18 @@
           "SpriteIndex": 42,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_SycamoreWandP0",
-              "Damage": 38,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "pig",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile536" }
-            },
-            {
-              "Id": "{{ModId}}_SycamoreWandP1",
-              "Damage": 38,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "pig",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile536" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile536"
+              }
             }
           ]
         },
@@ -1957,28 +1538,18 @@
           "SpriteIndex": 43,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_TamarackWandP0",
-              "Damage": 31,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "gulp",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile530" }
-            },
-            {
-              "Id": "{{ModId}}_TamarackWandP1",
-              "Damage": 31,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "gulp",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile530" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile530"
+              }
             }
           ]
         },
@@ -2003,28 +1574,18 @@
           "SpriteIndex": 44,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_VineWandP0",
-              "Damage": 43,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "slosh",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile204" }
-            },
-            {
-              "Id": "{{ModId}}_VineWandP1",
-              "Damage": 43,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "slosh",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile204" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile204"
+              }
             }
           ]
         },
@@ -2049,28 +1610,18 @@
           "SpriteIndex": 45,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_WalnutWandP0",
-              "Damage": 47,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "fishBite",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile625" }
-            },
-            {
-              "Id": "{{ModId}}_WalnutWandP1",
-              "Damage": 47,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "fishBite",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile625" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile625"
+              }
             }
           ]
         },
@@ -2095,28 +1646,18 @@
           "SpriteIndex": 46,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_WillowWandP0",
-              "Damage": 42,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "button1",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile92" }
-            },
-            {
-              "Id": "{{ModId}}_WillowWandP1",
-              "Damage": 42,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "button1",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile92" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile92"
+              }
             }
           ]
         },
@@ -2141,31 +1682,61 @@
           "SpriteIndex": 47,
           "Projectiles": [
             {
-              "Id": "{{ModId}}_YewWandP0",
-              "Damage": 36,
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
               "Velocity": 10,
-              "RotationVelocity": 100,
+              "RotationVelocity": 1,
               "TailLength": 3,
               "FireSound": "killAnimal",
               "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile592" }
-            },
-            {
-              "Id": "{{ModId}}_YewWandP1",
-              "Damage": 36,
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 100,
-              "TailLength": 3,
-              "FireSound": "killAnimal",
-              "MaxAngleOffset": 5,
-              "Item": { "ItemId": "(O){{ModId}}_Projectile592" }
+              "Item": {
+                "ItemId": "(O){{ModId}}_Projectile592"
+              }
             }
           ]
         }
+      }
+    },
+    {
+      "LogName": "Acacia Wand Upgrade Test",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "TargetField": [
+        "{{ModId}}_AcaciaWand"
+      ],
+      "Entries": {
+        "Projectiles": [
+          {
+            "Id": "Forward",
+            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+            "Explodes": false,
+            "Bounces": 0,
+            "Velocity": 10,
+            "RotationVelocity": 1,
+            "TailLength": 3,
+            "FireSound": "drumkit3",
+            "MaxAngleOffset": 5,
+            "Item": {
+              "ItemId": "(O){{ModId}}_Projectile695"
+            }
+          },
+          {
+            "Id": "Tail Extension Test",
+            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+            "Explodes": false,
+            "Bounces": 0,
+            "Velocity": 1,
+            "RotationVelocity": 1,
+            "TailLength": 10,
+            "FireSound": "drumkit3",
+            "MaxAngleOffset": 1,
+            "Item": {
+              "ItemId": "(O){{ModId}}_Projectile695"
+            }
+          }
+        ]
       }
     }
   ]
