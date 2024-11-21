@@ -1,5 +1,6 @@
 {
   "Changes": [
+    /*Add Brazilwood, Olive, and Snakewood*/
     {
       "LogName": "Hogwarts Expansion Objects Data Wands",
       "Action": "EditData",
@@ -18,7 +19,7 @@
           "Type": 3,
           "MineBaseLevel": -1,
           "MineMinLevel": 121,
-          "AreaOfEffect": 0,
+          "AreaOfEffect": 100,
           "CritChance": 0,
           "CritMultiplier": 0,
           "CanBeLostOnDeath": false,
@@ -30,6 +31,7 @@
               "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
               "Explodes": false,
               "Bounces": 0,
+              "MaxDistance": 10,
               "Velocity": 10,
               "RotationVelocity": 1,
               "TailLength": 3,
@@ -1697,47 +1699,8 @@
             }
           ]
         }
-      }
-    },
-    {
-      "LogName": "Acacia Wand Upgrade Test",
-      "Action": "EditData",
-      "Target": "Data/Weapons",
-      "TargetField": [
-        "{{ModId}}_AcaciaWand"
-      ],
-      "Entries": {
-        "Projectiles": [
-          {
-            "Id": "Forward",
-            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-            "Explodes": false,
-            "Bounces": 0,
-            "Velocity": 10,
-            "RotationVelocity": 1,
-            "TailLength": 3,
-            "FireSound": "drumkit3",
-            "MaxAngleOffset": 5,
-            "Item": {
-              "ItemId": "(O){{ModId}}_Projectile695"
-            }
-          },
-          {
-            "Id": "Tail Extension Test",
-            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-            "Explodes": false,
-            "Bounces": 0,
-            "Velocity": 1,
-            "RotationVelocity": 1,
-            "TailLength": 10,
-            "FireSound": "drumkit3",
-            "MaxAngleOffset": 1,
-            "Item": {
-              "ItemId": "(O){{ModId}}_Projectile695"
-            }
-          }
-        ]
-      }
+      },
+      "Priority": "Early"
     }
   ]
 }
