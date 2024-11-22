@@ -1,5 +1,39 @@
 {
   "Changes": [
+    {
+      "LogName": "Hogwarts Transfiguration Wing Remove Rain",
+      "Action": "EditImage",
+      "Target": "TileSheets/rain",
+      "FromFile": "assets/PolyjuicePotion/blank.png",
+      "When": {
+        "Query: {{Weather}} = Sun": false,
+        "LocationName |contains= {{ModId}}_HogwartsTransfigurationWing": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Transfiguration Wing Remove Snow",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/PolyjuicePotion/blank.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 256,
+        "Height": 16
+      },
+      "ToArea": {
+        "X": 368,
+        "Y": 192,
+        "Width": 256,
+        "Height": 16
+      },
+      "When": {
+        "Weather": "Snow",
+        "LocationName |contains= {{ModId}}_HogwartsTransfigurationWing": true
+      },
+      "Update": "OnLocationChange"
+    },
     /*DADA Classroom*/
     {
       "LogName": "Defense Against The Dark Arts Classroom Entrance",

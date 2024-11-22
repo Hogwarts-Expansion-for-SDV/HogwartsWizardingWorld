@@ -13,7 +13,7 @@
   "DynamicTokens": [
     {
       "Name": "Creature",
-      "Value": "Ashwinder, AshwinderBlack, AshwinderGrey, Bicorn, Bowtruckle, BowtruckleBlue, BowtruckleBrown, BowtruckleBrownLeaf, BowtruckleGreen, Crup, CrupBrown, CrupGrey, DragonToadOrange, DragonToadRed, DragonToadYellow, Dugbog, DugbogBlue, DugbogBrown, DugbogGreen, FireCrabAmethyst, FireCrabAquamarine, FireCrabDiamond, FireCrabEmerald, FireCrabRuby, FireCrabTopaz, FwooperBlue, FwooperGreen, FwooperPink, FwooperShiny, FwooperYellow, GriffinBrown, GriffinGold, GriffinWhite, HippogriffBlack, HippogriffBrown, HippogriffGrey, HippogriffRed, HippogriffWhite, KneazleBlonde, KneazleBrown, KneazleGrey, Mooncalf, MooncalfBlue, MooncalfOrange, MooncalfYellow, OccamyBlue, OccamyTeal, Thestral, Unicorn"
+      "Value": "Abraxan, Ashwinder, AshwinderBlack, AshwinderGrey, Bicorn, Bowtruckle, BowtruckleBlue, BowtruckleBrown, BowtruckleBrownLeaf, BowtruckleGreen, Crup, CrupBrown, CrupGrey, DragonToadOrange, DragonToadRed, DragonToadYellow, Dugbog, DugbogBlue, DugbogBrown, DugbogGreen, FireCrabAmethyst, FireCrabAquamarine, FireCrabDiamond, FireCrabEmerald, FireCrabRuby, FireCrabTopaz, FwooperBlue, FwooperGreen, FwooperPink, FwooperShiny, FwooperYellow, Granian, GriffinBrown, GriffinGold, GriffinWhite, HippogriffBlack, HippogriffBrown, HippogriffGrey, HippogriffRed, HippogriffWhite, KneazleBlonde, KneazleBrown, KneazleGrey, Mooncalf, MooncalfBlue, MooncalfOrange, MooncalfYellow, OccamyBlue, OccamyTeal, Thestral, Unicorn, UnicornCommon, UnicornGlowing, UnicornGolden, UnicornRainbow, UnicornWhite"
     },
     {
       "Name": "Interior Locations",
@@ -41,6 +41,11 @@
       "LogName": "Include Chair Data",
       "Action": "Include",
       "FromFile": "Data/ChairData.json"
+    },
+    {
+      "LogName": "Include Creature Mail Data",
+      "Action": "Include",
+      "FromFile": "Data/CreatureMailData.json"
     },
     {
       "LogName": "Include EditImage Data",
@@ -123,19 +128,9 @@
       "FromFile": "Data/LocationData.json"
     },
     {
-      "LogName": "Include Mail Data",
-      "Action": "Include",
-      "FromFile": "Data/MailData.json"
-    },
-    {
       "LogName": "Include Map Properties Data",
       "Action": "Include",
       "FromFile": "Data/MapPropertiesData.json"
-    },
-    {
-      "LogName": "Include MinecartPatcher Data",
-      "Action": "Include",
-      "FromFile": "Data/MinecartPatcherData.json"
     },
     {
       "LogName": "Include Castle Portraits Data",
@@ -206,7 +201,6 @@
       "Action": "Include",
       "FromFile": "Data/ForageData.json"
     },
-
     /* Shops */
     {
       "LogName": "Shop Data",
