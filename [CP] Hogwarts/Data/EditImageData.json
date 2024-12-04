@@ -16,17 +16,100 @@
     {
       "LogName": "Mine Frost Dark Winter",
       "Action": "EditImage",
-      "Target": "Maps/z_mine_frost_dangerous_Hogwarts",
+      "Target": "Maps/z_mine_frost_Hogwarts",
       "FromFile": "assets/Tilesheets/z_mine_frost_dark_Hogwarts.png",
       "When": {
         "Season": "winter"
       }
     },
     {
+      "LogName": "Cherry Tree Summer",
+      "Action": "EditImage",
+      "Target": "Maps/z_fruitTrees_Hogwarts",
+      "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png",
+      "FromArea": {
+        "X": 240,
+        "Y": 0,
+        "Width": 48,
+        "Height": 80
+      },
+      "ToArea": {
+        "X": 192,
+        "Y": 0,
+        "Width": 48,
+        "Height": 80
+      },
+      "When": {
+        "Season": "summer"
+      }
+    },
+    {
+      "LogName": "Cherry Tree Fall",
+      "Action": "EditImage",
+      "Target": "Maps/z_fruitTrees_Hogwarts",
+      "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png",
+      "FromArea": {
+        "X": 288,
+        "Y": 0,
+        "Width": 48,
+        "Height": 80
+      },
+      "ToArea": {
+        "X": 192,
+        "Y": 0,
+        "Width": 48,
+        "Height": 80
+      },
+      "When": {
+        "Season": "fall"
+      }
+    },
+    {
+      "LogName": "Cherry Tree Winter",
+      "Action": "EditImage",
+      "Target": "Maps/z_fruitTrees_Hogwarts",
+      "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png",
+      "FromArea": {
+        "X": 336,
+        "Y": 0,
+        "Width": 48,
+        "Height": 80
+      },
+      "ToArea": {
+        "X": 192,
+        "Y": 0,
+        "Width": 48,
+        "Height": 80
+      },
+      "When": {
+        "Season": "winter"
+      }
+    },
+    {
+      "LogName": "Hogwarts Expansion Replace Day Sky With Night Sky",
+      "Action": "EditImage",
+      "Target": "Maps/z_Cloudy_Ocean_BG_Hogwarts",
+      "FromFile": "assets/Maps/Tilesheets/z_Cloudy_Ocean_BG_Night_Hogwarts.png",
+      "When": {
+        "Time": "{{Range: 1900, 2600}}"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Expansion Replace Day Horizon With Night Horizon",
+      "Action": "EditImage",
+      "Target": "Maps/z_Cloudy_Ocean_BG_SmoothHorizon_Hogwarts",
+      "FromFile": "assets/Maps/Tilesheets/z_Cloudy_Ocean_BG_Night_Hogwarts.png",
+      "When": {
+        "Time": "{{Range: 1900, 2600}}"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
       "LogName": "Glass Doors - Animation",
       "Action": "EditImage",
       "Target": "LooseSprites/Cursors",
-      "FromFile": "assets/Maps/z_vanillaEdits_Hogwarts.png",
+      "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
       "PatchMode": "Replace",
       "FromArea": {
         "X": 128,
@@ -49,7 +132,7 @@
       "LogName": "Glass Doors - Tilesheet",
       "Action": "EditImage",
       "Target": "Maps/townInterior",
-      "FromFile": "assets/Maps/z_vanillaEdits_Hogwarts.png",
+      "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
       "PatchMode": "Replace",
       "FromArea": {
         "X": 128,

@@ -12,7 +12,7 @@
       "Update": "OnLocationChange"
     },
     {
-      "LogName": "Hogwarts South Wing Remove Snow",
+      "LogName": "Hogwarts South Wing Remove Snowing",
       "Action": "EditImage",
       "Target": "LooseSprites/Cursors",
       "FromFile": "assets/PolyjuicePotion/blank.png",
@@ -31,26 +31,6 @@
       "When": {
         "Weather": "Snow",
         "LocationName |contains= {{ModId}}_HogwartsSouthWing": true
-      },
-      "Update": "OnLocationChange"
-    },
-    {
-      "LogName": "Hogwarts South Wing Replace Day Sky With Night Sky",
-      "Action": "EditImage",
-      "Target": "Maps/z_Cloudy_Ocean_BG_Hogwarts",
-      "FromFile": "assets/Maps/Tilesheets/Cloudy_Ocean_BG_Night.png",
-      "When": {
-        "Time": "{{Range: 1900, 2600}}"
-      },
-      "Update": "OnLocationChange"
-    },
-    {
-      "LogName": "Hogwarts South Wing Replace Day Horizon With Night Horizon",
-      "Action": "EditImage",
-      "Target": "Maps/z_Cloudy_Ocean_BG_SmoothHorizon_Hogwarts",
-      "FromFile": "assets/Maps/Tilesheets/Cloudy_Ocean_BG_Night.png",
-      "When": {
-        "Time": "{{Range: 1900, 2600}}"
       },
       "Update": "OnLocationChange"
     }
