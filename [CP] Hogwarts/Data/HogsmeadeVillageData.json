@@ -1519,22 +1519,42 @@
       "MapTiles": [
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 92, 98}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 11, 19}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 92, 95}}|key=1}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 19}}|key=1}}}}"
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn {{Random: 0, 1, 2}} HogwartsET.CC.Hogwarts.NifflerBrown"
+            "CustomCompanions": "Spawn {{Random: 0, 1}} HogwartsET.CC.Hogwarts.NifflerBlack"
           }
         },
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 92, 98}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 11, 19}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 92, 95}}|key=2}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 19}}|key=2}}}}"
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn {{Random: 0, 1, 2}} HogwartsET.CC.Hogwarts.NifflerBlack"
+            "CustomCompanions": "Spawn {{Random: 0, 1}} HogwartsET.CC.Hogwarts.NifflerBlack"
+          }
+        },
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 92, 95}}|key=3}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 19}}|key=3}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn {{Random: 0, 1}} HogwartsET.CC.Hogwarts.NifflerBrown"
+          }
+        },
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 92, 95}}|key=4}}}}",
+            "Y": "{{Query: {{Random: {{Range: 11, 19}}|key=4}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn {{Random: 0, 1}} HogwartsET.CC.Hogwarts.NifflerBrown"
           }
         }
       ],

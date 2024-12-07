@@ -7,12 +7,22 @@
       "MapTiles": [
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 86, 92}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 19, 25}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 86, 92}}|key=1}}}}",
+            "Y": "{{Query: {{Random: {{Range: 19, 25}}|key=1}}}}"
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 2 HogwartsET.CC.Hogwarts.{{Random:{{Creature}}|key=CreaturePen1}}"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.{{Random:{{Creature}}|key=CreaturePen1}}"
+          }
+        },
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 86, 92}}|key=2}}}}",
+            "Y": "{{Query: {{Random: {{Range: 19, 25}}|key=2}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.{{Random:{{Creature}}|key=CreaturePen1}}"
           }
         }
       ],
@@ -29,12 +39,22 @@
       "MapTiles": [
         {
           "Position": {
-            "X": "{{Query: {{Random: {{Range: 81, 88}}}}}}",
-            "Y": "{{Query: {{Random: {{Range: 32, 41}}}}}}"
+            "X": "{{Query: {{Random: {{Range: 81, 88}}|key=1}}}}",
+            "Y": "{{Query: {{Random: {{Range: 32, 41}}|key=1}}}}"
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 2 HogwartsET.CC.Hogwarts.{{Random:{{Creature}}|key=CreaturePen2}}"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.{{Random:{{Creature}}|key=CreaturePen2}}"
+          }
+        },
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 81, 88}}|key=2}}}}",
+            "Y": "{{Query: {{Random: {{Range: 32, 41}}|key=2}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.{{Random:{{Creature}}|key=CreaturePen2}}"
           }
         }
       ],
