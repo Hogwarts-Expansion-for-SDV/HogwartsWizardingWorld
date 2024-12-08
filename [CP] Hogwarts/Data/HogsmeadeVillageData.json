@@ -627,7 +627,7 @@
       ]
     },
     {
-      "LogName": "Ollivanders Shop Action",
+      "LogName": "Ollivanders Action OpenShop",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_Ollivanders",
       "MapTiles": [
@@ -638,8 +638,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "",
-            "Shop": "Ollivanders"
+            "Action": "OpenShop {{ModId}}_Ollivanders"
           }
         }
       ]
