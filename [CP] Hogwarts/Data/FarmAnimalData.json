@@ -1,0 +1,115 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Expansion Load Bowtruckle",
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}_Bowtruckle",
+      "FromFile": "assets/Creatures/Bowtruckle.png"
+    },
+    {
+      "LogName": "Hogwarts Expansion Data Farm Animal",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "{{ModId}}_Bowtruckle": {
+          "House": "Coop",
+          "Gender": "Female",
+          "PurchasePrice": 400,
+          "SellPrice": 800,
+          "ShopTexture": "Animals\\{{ModId}}_Bowtruckle",
+          "ShopSourceRect": {
+            "X": 0,
+            "Y": 0,
+            "Width": 32,
+            "Height": 16
+          },
+          "ShopDisplayName": "Bowtruckle",
+          "ShopDescription": "Bowtruckle",
+          "ShopMissingBuildingDescription": "Bowtruckle",
+          "RequiredBuilding": "Coop",
+          "UnlockCondition": null,
+          "EggItemIds": [
+            "176",
+            "174"
+          ],
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 1,
+          "BirthText": "Bowtruckle",
+          "DaysToMature": 3,
+          "CanGetPregnant": false,
+          "DaysToProduce": 1,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "MinimumFriendship": 0,
+              "ItemId": "176"
+            }
+          ],
+          "DeluxeProduceItemIds": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "MinimumFriendship": 0,
+              "ItemId": "174"
+            }
+          ],
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200.0,
+          "DeluxeProduceLuckMultiplier": 0.0,
+          "CanEatGoldenCrackers": true,
+          "ProfessionForHappinessBoost": 2,
+          "ProfessionForQualityBoost": 2,
+          "ProfessionForFasterProduce": -1,
+          "Sound": "cluck",
+          "BabySound": null,
+          "Texture": "Animals\\{{ModId}}_Bowtruckle",
+          "HarvestedTexture": null,
+          "BabyTexture": "Animals\\{{ModId}}_Bowtruckle",
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 16,
+          "SpriteHeight": 16,
+          "UseDoubleUniqueAnimationFrames": true,
+          "SleepFrame": 16,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": -16
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "Skins": null,
+          "ShadowWhenBabySwims": null,
+          "ShadowWhenBaby": null,
+          "ShadowWhenAdultSwims": null,
+          "ShadowWhenAdult": null,
+          "Shadow": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": true,
+          "GrassEatAmount": 2,
+          "HappinessDrain": 7,
+          "UpDownPetHitboxTileSize": "1, 1",
+          "LeftRightPetHitboxTileSize": "1, 1",
+          "BabyUpDownPetHitboxTileSize": "1, 1",
+          "BabyLeftRightPetHitboxTileSize": "1, 1",
+          "StatToIncrementOnProduce": [
+            {
+              "Id": "ChickenEggsLayed",
+              "RequiredItemId": null,
+              "RequiredTags": [
+                "egg_item"
+              ],
+              "StatName": "ChickenEggsLayed"
+            }
+          ],
+          "ShowInSummitCredits": true
+        }
+      }
+    }
+  ]
+}
