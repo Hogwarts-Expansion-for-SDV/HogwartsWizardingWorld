@@ -72,8 +72,35 @@
         "Light": "11 11 4 23 11 4 39 11 4 51 14 4 53 24 4",
         "NightTiles": "AlwaysFront 11 11 124 AlwaysFront 23 11 124 AlwaysFront 39 11 124 AlwaysFront 51 14 124 AlwaysFront 53 24 124",
         "Outdoors": "T",
-        "Warp": "8 9 {{ModId}}_HogsmeadeVillage 102 120 8 10 {{ModId}}_HogsmeadeVillage 102 120 8 11 {{ModId}}_HogsmeadeVillage 102 120 7 23 {{ModID}}_HogwartsSouthWing 31 13 7 24 {{ModID}}_HogwartsSouthWing 31 13 64 15 {{ModID}}_HogwartsValley 0 128 64 16 {{ModID}}_HogwartsValley 0 128 64 17 {{ModID}}_HogwartsValley 0 128 64 18 {{ModID}}_HogwartsValley 0 128"
+        "Warp": "8 9 {{ModId}}_HogsmeadeVillage 102 120 8 10 {{ModId}}_HogsmeadeVillage 102 120 8 11 {{ModId}}_HogsmeadeVillage 102 120 64 15 {{ModID}}_HogwartsValley 0 128 64 16 {{ModID}}_HogwartsValley 0 128 64 17 {{ModID}}_HogwartsValley 0 128 64 18 {{ModID}}_HogwartsValley 0 128"
       }
+    },
+    {
+      "LogName": "Tile Properties of Hogsmeade Station (adds warp for player but not NPC)",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeStation",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 7,
+            "Y": 23
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 31 13"
+          }
+        },
+        {
+          "Position": {
+            "X": 7,
+            "Y": 24
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 31 13"
+          }
+        }
+      ],
     },
     {
       "LogName": "Map Properties of Hogsmeade Village",
@@ -83,8 +110,75 @@
         "Light": "19 45 4",
         "NightTiles": "AlwaysFront 19 45 908",
         "Outdoors": "T",
-        "Warp": "-1 25 {{ModId}}_ForbiddenForestCentaurCamp 134 58 -1 26 {{ModId}}_ForbiddenForestCentaurCamp 134 58 -1 27 {{ModId}}_ForbiddenForestCentaurCamp 134 58 -1 28 {{ModId}}_ForbiddenForestCentaurCamp 134 58 -1 29 {{ModId}}_ForbiddenForestCentaurCamp 134 58 -1 112 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 113 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 114 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 115 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 116 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 117 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 118 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 119 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 120 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 121 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 122 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 123 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 124 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 125 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 126 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 127 {{ModId}}_HogwartsBellTowerCourtyard 170 47 103 119 {{ModId}}_HogsmeadeStation 9 13 103 120 {{ModId}}_HogsmeadeStation 9 13 103 121 {{ModId}}_HogsmeadeStation 9 13 103 122 {{ModId}}_HogsmeadeStation 9 13 103 123 {{ModId}}_HogsmeadeStation 9 13 103 124 {{ModId}}_HogsmeadeStation 9 13 34 137 {{ModId}}_HogwartsSouthWing 21 12 35 137 {{ModId}}_HogwartsSouthWing 21 12 36 137 {{ModId}}_HogwartsSouthWing 21 12 37 137 {{ModId}}_HogwartsSouthWing 21 12 38 137 {{ModId}}_HogwartsSouthWing 21 12 39 137 {{ModId}}_HogwartsSouthWing 21 12 -1 99 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 100 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 101 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 102 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 103 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}}"
+        "Warp": "-1 25 {{ModId}}_ForbiddenForestCentaurCamp 134 58 -1 26 {{ModId}}_ForbiddenForestCentaurCamp 134 58 -1 27 {{ModId}}_ForbiddenForestCentaurCamp 134 58 -1 28 {{ModId}}_ForbiddenForestCentaurCamp 134 58 -1 29 {{ModId}}_ForbiddenForestCentaurCamp 134 58 -1 112 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 113 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 114 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 115 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 116 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 117 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 118 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 119 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 120 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 121 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 122 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 123 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 124 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 125 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 126 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 127 {{ModId}}_HogwartsBellTowerCourtyard 170 47 103 119 {{ModId}}_HogsmeadeStation 9 13 103 120 {{ModId}}_HogsmeadeStation 9 13 103 121 {{ModId}}_HogsmeadeStation 9 13 103 122 {{ModId}}_HogsmeadeStation 9 13 103 123 {{ModId}}_HogsmeadeStation 9 13 103 124 {{ModId}}_HogsmeadeStation 9 13 -1 99 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 100 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 101 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 102 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 103 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}}"
       }
+    },
+    {
+      "LogName": "Tile Properties of Hogsmeade Village (adds warp for player but not NPC)",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 34,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
+          }
+        },
+        {
+          "Position": {
+            "X": 35,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
+          }
+        },
+        {
+          "Position": {
+            "X": 36,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
+          }
+        },
+        {
+          "Position": {
+            "X": 37,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
+          }
+        },
+        {
+          "Position": {
+            "X": 38,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
+          }
+        },
+        {
+          "Position": {
+            "X": 39,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
+          }
+        },
+      ]
     },
     {
       "LogName": "Map Properties of Honeydukes",
@@ -292,9 +386,116 @@
       "MapProperties": {
         "AmbientLight": "255 255 255",
         "AmbientNightLight": "150 150 30",
-        "Warp": "32 13 {{ModId}}_HogsmeadeStation 9 24 32 14 {{ModId}}_HogsmeadeStation 9 24 20 11 {{ModID}}_HogsmeadeVillage 37 136 21 11 {{ModID}}_HogsmeadeVillage 37 136 22 11 {{ModID}}_HogsmeadeVillage 37 136 23 11 {{ModID}}_HogsmeadeVillage 37 136 -1 60 {{ModId}}_HogwartsGrandStaircase 79 85 -1 61 {{ModId}}_HogwartsGrandStaircase 79 85 -1 62 {{ModId}}_HogwartsGrandStaircase 79 85 17 35 {{ModId}}_HogwartsGrandStaircase 17 99 18 35 {{ModId}}_HogwartsGrandStaircase 17 99 79 56 {{ModId}}_HogwartsGrandStaircase 0 85 79 57 {{ModId}}_HogwartsGrandStaircase 0 85 79 58 {{ModId}}_HogwartsGrandStaircase 0 85 -1 16 {{ModId}}_HogwartsLibraryAnnex 41 36 -1 17 {{ModId}}_HogwartsLibraryAnnex 41 36 80 35 {{ModId}}_HogwartsTransfigurationWing 0 31 80 36 {{ModId}}_HogwartsTransfigurationWing 0 31 68 11 {{ModId}}_HogwartsValley 185 134 69 11 {{ModId}}_HogwartsValley 185 134 70 11 {{ModId}}_HogwartsValley 185 134 71 11 {{ModId}}_HogwartsValley 185 134",
+        "Warp": "-1 60 {{ModId}}_HogwartsGrandStaircase 79 85 -1 61 {{ModId}}_HogwartsGrandStaircase 79 85 -1 62 {{ModId}}_HogwartsGrandStaircase 79 85 17 35 {{ModId}}_HogwartsGrandStaircase 17 99 18 35 {{ModId}}_HogwartsGrandStaircase 17 99 79 56 {{ModId}}_HogwartsGrandStaircase 0 85 79 57 {{ModId}}_HogwartsGrandStaircase 0 85 79 58 {{ModId}}_HogwartsGrandStaircase 0 85 -1 16 {{ModId}}_HogwartsLibraryAnnex 41 36 -1 17 {{ModId}}_HogwartsLibraryAnnex 41 36 80 35 {{ModId}}_HogwartsTransfigurationWing 0 31 80 36 {{ModId}}_HogwartsTransfigurationWing 0 31",
         "Outdoors":"T"
       }
+    },
+    {
+      "LogName": "Tile Properties of Hogwarts South Wing (adds warp for player but not NPC)",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSouthWing",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 13
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogsmeadeStation 9 24"
+          }
+        },
+        {
+          "Position": {
+            "X": 32,
+            "Y": 14
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogsmeadeStation 9 24"
+          }
+        },
+        {
+          "Position": {
+            "X": 20,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogsmeadeStation 37 136"
+          }
+        },
+        {
+          "Position": {
+            "X": 21,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogsmeadeStation 37 136"
+          }
+        },
+        {
+          "Position": {
+            "X": 22,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogsmeadeStation 37 136"
+          }
+        },
+        {
+          "Position": {
+            "X": 23,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogsmeadeStation 37 136"
+          }
+        },
+        {
+          "Position": {
+            "X": 68,
+            "Y": 12
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsValley 185 134"
+          }
+        },
+        {
+          "Position": {
+            "X": 69,
+            "Y": 12
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsValley 185 134"
+          }
+        },
+        {
+          "Position": {
+            "X": 70,
+            "Y": 12
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsValley 185 134"
+          }
+        },
+        {
+          "Position": {
+            "X": 71,
+            "Y": 12
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsValley 185 134"
+          }
+        },
+      ]
     },
     {
       "LogName": "Map Properties of Hogwarts Transfiguration Classroom",
@@ -365,8 +566,25 @@
       "Target": "Maps/{{ModId}}_HogwartsValley",
       "MapProperties": {
         "Outdoors": "T",
-        "Warp": "-1 128 {{ModId}}_HogsmeadeStation 63 15 199 131 {{ModId}}_HogwartsBellTowerCourtyard 0 53 185 137 {{ModId}}_HogwartsSouthWing 69 12"
+        "Warp": "-1 128 {{ModId}}_HogsmeadeStation 63 15 199 131 {{ModId}}_HogwartsBellTowerCourtyard 0 53"
       }
+    },
+    {
+      "LogName": "Tile Properties of Hogwarts Valley (adds warp for player but not NPC)",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsValley",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 185,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 69 12"
+          }
+        },
+      ]
     },
     /*South Sea Bog*/
     {
