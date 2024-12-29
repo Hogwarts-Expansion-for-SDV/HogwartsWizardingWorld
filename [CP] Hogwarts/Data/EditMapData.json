@@ -1,101 +1,6 @@
 {
   "Changes": [
     {
-      "LogName": "Tile Data of Hogwarts Astronomy Wing 2F to DADA Classroom",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsAstronomyWing2F",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 2,
-            "Y": 13
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Warp 14 18 {{ModId}}_HogwartsDADAClassroom"
-          }
-        }
-      ]
-    },
-    {
-      "LogName": "Tile Data of Hogwarts Bell Tower Wing GF to Bell Tower Courtyard",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsBellTowerWingGF",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 14,
-            "Y": 3
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Warp 95 66 {{ModId}}_HogwartsBellTowerCourtyard"
-          }
-        }
-      ]
-    },
-    {
-      "LogName": "Tile Data of Hogwarts Divination Tower to Divination Classroom",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsDivinationTower",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 13,
-            "Y": 11
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Warp 15 24 {{ModId}}_HogwartsDivinationClassroom"
-          }
-        }
-      ]
-    },
-    {
-      "LogName": "Tile Data of Hogwarts Reception Hall GF to Great Hall",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsReceptionHallGF",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 5,
-            "Y": 6
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Warp 13 22 {{ModId}}_HogwartsGreatHall"
-          }
-        },
-        {
-          "Position": {
-            "X": 6,
-            "Y": 6
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Warp 13 22 {{ModId}}_HogwartsGreatHall"
-          }
-        }
-      ]
-    },
-    {
-      "LogName": "Tile Data of Hogwarts Slytherin Dungeon to Slytherin Common Room",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsSlytherinDungeon",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 10,
-            "Y": 3
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Warp 14 18 {{ModId}}_HogwartsSlytherinCommonRoom"
-          }
-        }
-      ]
-    },
-    {
       "LogName": "Tile Properties of Hogwarts South Wing (adds warp for player but not NPC)",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsSouthWing",
@@ -236,7 +141,57 @@
       "MapTiles": [
         {
           "Position": {
+            "X": 183,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 69 12"
+          }
+        },
+        {
+          "Position": {
+            "X": 184,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 69 12"
+          }
+        },
+        {
+          "Position": {
             "X": 185,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 69 12"
+          }
+        },
+        {
+          "Position": {
+            "X": 186,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 69 12"
+          }
+        },
+        {
+          "Position": {
+            "X": 187,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 69 12"
+          }
+        },
+        {
+          "Position": {
+            "X": 188,
             "Y": 137
           },
           "Layer": "Back",
@@ -247,70 +202,98 @@
       ]
     },
     {
-      "LogName": "Tile Properties of Hogsmeade Village (adds warp for player but not NPC)",
+      "LogName": "Tile Data of Hogwarts Astronomy Wing 2F to DADA Classroom",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "Target": "Maps/{{ModId}}_HogwartsAstronomyWing2F",
       "MapTiles": [
         {
           "Position": {
-            "X": 34,
-            "Y": 137
+            "X": 2,
+            "Y": 13
           },
-          "Layer": "Back",
+          "Layer": "Buildings",
           "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
+            "Action": "Warp 14 18 {{ModId}}_HogwartsDADAClassroom"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Tile Data of Hogwarts Bell Tower Wing GF to Bell Tower Courtyard",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsBellTowerWingGF",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 14,
+            "Y": 3
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 95 66 {{ModId}}_HogwartsBellTowerCourtyard"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Tile Data of Hogwarts Divination Tower to Divination Classroom",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDivinationTower",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 13,
+            "Y": 11
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 15 24 {{ModId}}_HogwartsDivinationClassroom"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Tile Data of Hogwarts Reception Hall GF to Great Hall",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsReceptionHallGF",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 5,
+            "Y": 6
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 13 22 {{ModId}}_HogwartsGreatHall"
           }
         },
         {
           "Position": {
-            "X": 35,
-            "Y": 137
+            "X": 6,
+            "Y": 6
           },
-          "Layer": "Back",
+          "Layer": "Buildings",
           "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
+            "Action": "Warp 13 22 {{ModId}}_HogwartsGreatHall"
           }
-        },
+        }
+      ]
+    },
+    {
+      "LogName": "Tile Data of Hogwarts Slytherin Dungeon to Slytherin Common Room",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSlytherinDungeon",
+      "MapTiles": [
         {
           "Position": {
-            "X": 36,
-            "Y": 137
+            "X": 10,
+            "Y": 3
           },
-          "Layer": "Back",
+          "Layer": "Buildings",
           "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
+            "Action": "Warp 14 18 {{ModId}}_HogwartsSlytherinCommonRoom"
           }
-        },
-        {
-          "Position": {
-            "X": 37,
-            "Y": 137
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
-          }
-        },
-        {
-          "Position": {
-            "X": 38,
-            "Y": 137
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
-          }
-        },
-        {
-          "Position": {
-            "X": 39,
-            "Y": 137
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
-          }
-        },
+        }
       ]
     },
   ]
