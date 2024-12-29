@@ -26,7 +26,9 @@
     {
       "Name": "DEBUG",
       "Value": true
-    }
+    },
+
+
   ],
   "Changes": [
     {
@@ -61,11 +63,6 @@
       "LogName": "Include Event Data",
       "Action": "Include",
       "FromFile": "Data/EventData.json"
-    },
-    {
-      "LogName": "Include Farm Animal Data",
-      "Action": "Include",
-      "FromFile": "Data/FarmAnimalData.json"
     },
     {
       "LogName": "Include Forbidden Forest Data",
@@ -163,11 +160,6 @@
       "FromFile": "Data/TransfigurationCourtyardData.json"
     },
     {
-      "LogName": "Include Trinket Tinker Data",
-      "Action": "Include",
-      "FromFile": "Data/TrinketTinkerData.json"
-    },
-    {
       "LogName": "Include Wand Data",
       "Action": "Include",
       "FromFile": "Data/WandData.json"
@@ -176,7 +168,7 @@
     {
       "LogName": "NPC Loads",
       "Action": "Load",
-      "Target": "Characters/Dialogue/HogwartsAberforth, Characters/Dialogue/HogwartsMPuddifoot, Characters/Dialogue/HogwartsOllivander, Characters/schedules/HogwartsAberforth, Characters/schedules/HogwartsMPuddifoot, Characters/schedules/HogwartsOllivander",
+      "Target": "Characters/Dialogue/HogwartsAberforth, Characters/Dialogue/HogwartsMPuddifoot, Characters/Dialogue/HogwartsOllivander, Characters/schedules/HogwartsAberforth, Characters/schedules/HogwartsMPuddifoot, Characters/schedules/HogwartsOllivander, Characters/schedules/HogwartsGryffindorKid1, Characters/schedules/HogwartsGryffindorKid2, Characters/schedules/HogwartsRavenclawKid1, Characters/schedules/HogwartsRavenclawKid2,",
       "FromFile": "Data/blank.json"
     },
     {
@@ -187,7 +179,7 @@
     {
       "LogName": "NPC Portraits & Sprites",
       "Action": "Load",
-      "Target": "Portraits/HogwartsAberforth, Portraits/HogwartsMPuddifoot, Portraits/HogwartsOllivander, Characters/HogwartsAberforth, Characters/HogwartsMPuddifoot, Characters/HogwartsOllivander",
+      "Target": "Portraits/HogwartsAberforth, Portraits/HogwartsMPuddifoot, Portraits/HogwartsOllivander, Characters/HogwartsAberforth, Characters/HogwartsMPuddifoot, Characters/HogwartsOllivander, Portraits/HogwartsGryffindorKid1, Characters/HogwartsGryffindorKid1,Portraits/HogwartsGryffindorKid2, Characters/HogwartsGryffindorKid2, Portraits/HogwartsRavenclawKid1, Characters/HogwartsRavenclawKid1, Portraits/HogwartsRavenclawKid2, Characters/HogwartsRavenclawKid2,",
       "FromFile": "assets/{{Target}}.png"
     },
     /* Objects */
