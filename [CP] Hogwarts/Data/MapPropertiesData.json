@@ -76,33 +76,6 @@
       }
     },
     {
-      "LogName": "Tile Properties of Hogsmeade Station (adds warp for player but not NPC)",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogsmeadeStation",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 7,
-            "Y": 23
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 31 13"
-          }
-        },
-        {
-          "Position": {
-            "X": 7,
-            "Y": 24
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 31 13"
-          }
-        }
-      ],
-    },
-    {
       "LogName": "Map Properties of Hogsmeade Village",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogsmeadeVillage",
@@ -112,73 +85,6 @@
         "Outdoors": "T",
         "Warp": "-1 25 {{ModId}}_ForbiddenForestCentaurCamp 134 58 -1 26 {{ModId}}_ForbiddenForestCentaurCamp 134 58 -1 27 {{ModId}}_ForbiddenForestCentaurCamp 134 58 -1 28 {{ModId}}_ForbiddenForestCentaurCamp 134 58 -1 29 {{ModId}}_ForbiddenForestCentaurCamp 134 58 -1 112 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 113 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 114 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 115 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 116 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 117 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 118 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 119 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 120 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 121 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 122 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 123 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 124 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 125 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 126 {{ModId}}_HogwartsBellTowerCourtyard 170 47 -1 127 {{ModId}}_HogwartsBellTowerCourtyard 170 47 103 119 {{ModId}}_HogsmeadeStation 9 13 103 120 {{ModId}}_HogsmeadeStation 9 13 103 121 {{ModId}}_HogsmeadeStation 9 13 103 122 {{ModId}}_HogsmeadeStation 9 13 103 123 {{ModId}}_HogsmeadeStation 9 13 103 124 {{ModId}}_HogsmeadeStation 9 13 -1 99 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 100 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 101 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 102 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 103 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}}"
       }
-    },
-    {
-      "LogName": "Tile Properties of Hogsmeade Village (adds warp for player but not NPC)",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 34,
-            "Y": 137
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
-          }
-        },
-        {
-          "Position": {
-            "X": 35,
-            "Y": 137
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
-          }
-        },
-        {
-          "Position": {
-            "X": 36,
-            "Y": 137
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
-          }
-        },
-        {
-          "Position": {
-            "X": 37,
-            "Y": 137
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
-          }
-        },
-        {
-          "Position": {
-            "X": 38,
-            "Y": 137
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
-          }
-        },
-        {
-          "Position": {
-            "X": 39,
-            "Y": 137
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
-          }
-        },
-      ]
     },
     {
       "LogName": "Map Properties of Honeydukes",
@@ -391,113 +297,6 @@
       }
     },
     {
-      "LogName": "Tile Properties of Hogwarts South Wing (adds warp for player but not NPC)",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsSouthWing",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 32,
-            "Y": 13
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogsmeadeStation 9 24"
-          }
-        },
-        {
-          "Position": {
-            "X": 32,
-            "Y": 14
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogsmeadeStation 9 24"
-          }
-        },
-        {
-          "Position": {
-            "X": 20,
-            "Y": 11
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogsmeadeStation 37 136"
-          }
-        },
-        {
-          "Position": {
-            "X": 21,
-            "Y": 11
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogsmeadeStation 37 136"
-          }
-        },
-        {
-          "Position": {
-            "X": 22,
-            "Y": 11
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogsmeadeStation 37 136"
-          }
-        },
-        {
-          "Position": {
-            "X": 23,
-            "Y": 11
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogsmeadeStation 37 136"
-          }
-        },
-        {
-          "Position": {
-            "X": 68,
-            "Y": 12
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogwartsValley 185 134"
-          }
-        },
-        {
-          "Position": {
-            "X": 69,
-            "Y": 12
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogwartsValley 185 134"
-          }
-        },
-        {
-          "Position": {
-            "X": 70,
-            "Y": 12
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogwartsValley 185 134"
-          }
-        },
-        {
-          "Position": {
-            "X": 71,
-            "Y": 12
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogwartsValley 185 134"
-          }
-        },
-      ]
-    },
-    {
       "LogName": "Map Properties of Hogwarts Transfiguration Classroom",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsTransfigurationClassroom",
@@ -568,23 +367,6 @@
         "Outdoors": "T",
         "Warp": "-1 128 {{ModId}}_HogsmeadeStation 63 15 199 131 {{ModId}}_HogwartsBellTowerCourtyard 0 53"
       }
-    },
-    {
-      "LogName": "Tile Properties of Hogwarts Valley (adds warp for player but not NPC)",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsValley",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 185,
-            "Y": 137
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 69 12"
-          }
-        },
-      ]
     },
     /*South Sea Bog*/
     {

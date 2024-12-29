@@ -94,6 +94,224 @@
           }
         }
       ]
-    }
+    },
+    {
+      "LogName": "Tile Properties of Hogwarts South Wing (adds warp for player but not NPC)",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSouthWing",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 32,
+            "Y": 13
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogsmeadeStation 9 24"
+          }
+        },
+        {
+          "Position": {
+            "X": 32,
+            "Y": 14
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogsmeadeStation 9 24"
+          }
+        },
+        {
+          "Position": {
+            "X": 20,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogsmeadeStation 37 136"
+          }
+        },
+        {
+          "Position": {
+            "X": 21,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogsmeadeStation 37 136"
+          }
+        },
+        {
+          "Position": {
+            "X": 22,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogsmeadeStation 37 136"
+          }
+        },
+        {
+          "Position": {
+            "X": 23,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogsmeadeStation 37 136"
+          }
+        },
+        {
+          "Position": {
+            "X": 68,
+            "Y": 12
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsValley 185 134"
+          }
+        },
+        {
+          "Position": {
+            "X": 69,
+            "Y": 12
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsValley 185 134"
+          }
+        },
+        {
+          "Position": {
+            "X": 70,
+            "Y": 12
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsValley 185 134"
+          }
+        },
+        {
+          "Position": {
+            "X": 71,
+            "Y": 12
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsValley 185 134"
+          }
+        },
+      ]
+    },
+    {
+      "LogName": "Tile Properties of Hogsmeade Station (adds warp for player but not NPC)",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeStation",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 7,
+            "Y": 23
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 31 13"
+          }
+        },
+        {
+          "Position": {
+            "X": 7,
+            "Y": 24
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 31 13"
+          }
+        }
+      ],
+    },
+    {
+      "LogName": "Tile Properties of Hogwarts Valley (adds warp for player but not NPC)",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsValley",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 185,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 69 12"
+          }
+        },
+      ]
+    },
+    {
+      "LogName": "Tile Properties of Hogsmeade Village (adds warp for player but not NPC)",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 34,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
+          }
+        },
+        {
+          "Position": {
+            "X": 35,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
+          }
+        },
+        {
+          "Position": {
+            "X": 36,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
+          }
+        },
+        {
+          "Position": {
+            "X": 37,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
+          }
+        },
+        {
+          "Position": {
+            "X": 38,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
+          }
+        },
+        {
+          "Position": {
+            "X": 39,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 21 12"
+          }
+        },
+      ]
+    },
   ]
 }
