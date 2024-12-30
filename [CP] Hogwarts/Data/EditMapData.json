@@ -1,6 +1,23 @@
 {
   "Changes": [
     {
+      "LogName": "Tile Properties of Hogwarts Library Annex (adds warp for player but not NPC)",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsLibraryAnnex",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 44,
+            "Y": 36
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModID}}_HogwartsSouthWing 0 17"
+          }
+        },
+      ]
+    },
+    {
       "LogName": "Tile Properties of Hogwarts South Wing (adds warp for player but not NPC)",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsSouthWing",
