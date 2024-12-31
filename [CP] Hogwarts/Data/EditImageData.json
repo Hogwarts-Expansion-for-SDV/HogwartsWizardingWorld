@@ -14,6 +14,44 @@
     },
     */
     {
+      "LogName": "Hogwarts Transfiguration Wing Remove Rain",
+      "Action": "EditImage",
+      "Target": "TileSheets/rain",
+      "FromFile": "assets/PolyjuicePotion/blank.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 64,
+        "Height": 32
+      },
+      "When": {
+        "LocationName |contains= {{ModId}}_HogwartsTransfigurationWing, {{ModId}}_HogwartsSouthWing": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Transfiguration Wing Remove Snowing",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/PolyjuicePotion/blank.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 256,
+        "Height": 16
+      },
+      "ToArea": {
+        "X": 368,
+        "Y": 192,
+        "Width": 256,
+        "Height": 16
+      },
+      "When": {
+        "LocationName |contains= {{ModId}}_HogwartsTransfigurationWing, {{ModId}}_HogwartsSouthWing": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
       "LogName": "Mine Frost Dark Winter",
       "Action": "EditImage",
       "Target": "Maps/z_mine_frost_Hogwarts",
