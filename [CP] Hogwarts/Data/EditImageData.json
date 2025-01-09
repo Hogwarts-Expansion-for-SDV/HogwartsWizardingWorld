@@ -14,7 +14,7 @@
     },
     */
     {
-      "LogName": "Hogwarts Transfiguration Wing Remove Rain",
+      "LogName": "Hogwarts Interior Remove Rain",
       "Action": "EditImage",
       "Target": "TileSheets/rain",
       "FromFile": "assets/PolyjuicePotion/blank.png",
@@ -30,7 +30,7 @@
       "Update": "OnLocationChange"
     },
     {
-      "LogName": "Hogwarts Transfiguration Wing Remove Snowing",
+      "LogName": "Hogwarts Interior Remove Snowing",
       "Action": "EditImage",
       "Target": "LooseSprites/Cursors",
       "FromFile": "assets/PolyjuicePotion/blank.png",
@@ -45,6 +45,22 @@
         "Y": 192,
         "Width": 256,
         "Height": 16
+      },
+      "When": {
+        "LocationName |contains= {{ModId}}_HogwartsTransfigurationWing, {{ModId}}_HogwartsSouthWing": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Interior Remove Critters",
+      "Action": "EditImage",
+      "Target": "TileSheets/critters",
+      "FromFile": "assets/PolyjuicePotion/blank.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 320,
+        "Height": 640
       },
       "When": {
         "LocationName |contains= {{ModId}}_HogwartsTransfigurationWing, {{ModId}}_HogwartsSouthWing": true

@@ -1,11 +1,82 @@
 {
   "Changes": [
-    /*DADA Classroom*/
     {
-      "LogName": "Defense Against The Dark Arts Classroom Entrance",
+      "LogName": "Hogwarts Transfiguration Wing Warps",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsTransfigurationWing",
       "MapTiles": [
+/*Bell Tower Courtyard*/ 
+        {
+          "Position": {
+            "X": 20,
+            "Y": 17
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 95 78 {{ModId}}_HogwartsBellTowerCourtyard"
+          }
+        },
+        {
+          "Position": {
+            "X": 21,
+            "Y": 17
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 95 78 {{ModId}}_HogwartsBellTowerCourtyard"
+          }
+        },
+        {
+          "Position": {
+            "X": 39,
+            "Y": 24
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 146 78 {{ModId}}_HogwartsBellTowerCourtyard"
+          }
+        },
+        {
+          "Position": {
+            "X": 40,
+            "Y": 24
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 146 78 {{ModId}}_HogwartsBellTowerCourtyard"
+          }
+        },
+        {
+          "Position": {
+            "X": 56,
+            "Y": 0
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 174 78"
+          }
+        },
+        {
+          "Position": {
+            "X": 57,
+            "Y": 0
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 174 78"
+          }
+        },
+        {
+          "Position": {
+            "X": 58,
+            "Y": 0
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 174 78"
+          }
+        },
+/*DADA Classroom*/
         {
           "Position": {
             "X": 3,
@@ -25,15 +96,59 @@
           "SetProperties": {
             "Action": "Warp 10 17 {{ModId}}_HogwartsDADAClassroom"
           }
-        }
-      ]
-    },
-    /*History of Magic Classroom*/
-    {
-      "LogName": "History of Magic Classroom",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsTransfigurationWing",
-      "MapTiles": [
+        },
+/*Grand Staircase*/
+        {
+          "Position": {
+            "X": 0,
+            "Y": 66
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 79 114"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 67
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 79 114"
+          }
+        },
+        {
+          "Position": {
+            "X": 60,
+            "Y": 66
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 1 102"
+          }
+        },
+        {
+          "Position": {
+            "X": 60,
+            "Y": 67
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 1 102"
+          }
+        },
+        {
+          "Position": {
+            "X": 60,
+            "Y": 68
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 1 102"
+          }
+        },
+/*History of Magic Classroom*/
         {
           "Position": {
             "X": 28,
@@ -53,15 +168,109 @@
           "SetProperties": {
             "Action": "Warp 11 19 {{ModId}}_HogwartsHistoryOfMagicClassroom"
           }
-        }
-      ]
-    },
-    /*Potions Classroom*/
-    {
-      "LogName": "Potions Classroom",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsTransfigurationWing",
-      "MapTiles": [
+        },
+/*Library Annex*/
+        {
+          "Position": {
+            "X": 19,
+            "Y": 30
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 37 36"
+          }
+        },
+        {
+          "Position": {
+            "X": 19,
+            "Y": 31
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 37 36"
+          }
+        },
+        {
+          "Position": {
+            "X": 19,
+            "Y": 32
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 37 36"
+          }
+        },
+        {
+          "Position": {
+            "X": 40,
+            "Y": 49
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 31 20"
+          }
+        },
+        {
+          "Position": {
+            "X": 41,
+            "Y": 49
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 31 20"
+          }
+        },
+        {
+          "Position": {
+            "X": 42,
+            "Y": 49
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 31 20"
+          }
+        },
+        {
+          "Position": {
+            "X": 43,
+            "Y": 63
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 31 31"
+          }
+        },
+        {
+          "Position": {
+            "X": 46,
+            "Y": 33
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 47 19"
+          }
+        },
+        {
+          "Position": {
+            "X": 47,
+            "Y": 33
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 47 19"
+          }
+        },
+        {
+          "Position": {
+            "X": 48,
+            "Y": 33
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 47 19"
+          }
+        },
+/*Potions Classroom*/
         {
           "Position": {
             "X": 51,
@@ -81,15 +290,29 @@
           "SetProperties": {
             "Action": "Warp 15 34 {{ModId}}_HogwartsPotionsClassroom"
           }
-        }
-      ]
-    },
-    /*Transfiguration Classroom*/
-    {
-      "LogName": "Transfiguration Classroom",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsTransfigurationWing",
-      "MapTiles": [
+        },
+/*South Wing*/
+        {
+          "Position": {
+            "X": 0,
+            "Y": 31
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 79 35"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 32
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 79 35"
+          }
+        },
+/*Transfiguration Classroom*/
         {
           "Position": {
             "X": 22,
