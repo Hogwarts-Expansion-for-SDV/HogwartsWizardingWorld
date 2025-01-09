@@ -350,7 +350,7 @@
         ],
         "UniqueAreaID": "Hogsmeade Village Tide Pools 1",
         "MapName": "HogwartsET.CP.Hogwarts_HogsmeadeVillage",
-        "MinimumSpawnsPerDay": 0,
+        "MinimumSpawnsPerDay": 10,
         "MaximumSpawnsPerDay": 15,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [
@@ -886,28 +886,6 @@
       {
         "MonsterTypes": [
           {
-            "MonsterName": "Serpent",
-            "Settings": {
-              "Segments": 25,
-              "SpawnWeight": 2,
-              "HP": 500,
-              "Damage": 170,
-              "Defense": 0,
-              "DodgeChance": 0,
-              "EXP": 25,
-              "SightRange": 10,
-              "RangedAttacks": false,
-              "Sprite": "Characters/Monsters/Horned Serpent Default",
-              "Loot": [
-                {
-                  "Category": "Object",
-                  "Name": "HogwartsET.CP.Hogwarts_SnakeFang",
-                  "PercentChanceToSpawn": 100
-                }
-              ]
-            }
-          },
-          {
             "MonsterName": "Iridium Golem",
             "Settings": {
               "SpawnWeight": 1,
@@ -919,21 +897,6 @@
               "SightRange": 1,
               "RangedAttacks": false,
               "Sprite": "Characters/Monsters/Inferi Default"
-            }
-          },
-          {
-            "MonsterName": "Serpent",
-            "Settings": {
-              "Segments": 1,
-              "SpawnWeight": 1,
-              "HP": 400,
-              "Damage": 160,
-              "Defense": 0,
-              "DodgeChance": 40,
-              "EXP": 20,
-              "SightRange": 4,
-              "RangedAttacks": false,
-              "Sprite": "Characters/Monsters/Dementor Default"
             }
           },
           {
@@ -962,6 +925,115 @@
         "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForest",
         "MinimumSpawnsPerDay": 5,
         "MaximumSpawnsPerDay": 10,
+        "IncludeTerrainTypes": [
+          "Diggable"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Medium",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Serpent",
+            "Settings": {
+              "Segments": 1,
+              "SpawnWeight": 1,
+              "HP": 400,
+              "Damage": 80,
+              "Defense": 0,
+              "DodgeChance": 40,
+              "EXP": 20,
+              "SightRange": 4,
+              "RangedAttacks": false,
+              "Sprite": "Characters/Monsters/Dementor Default"
+            }
+          }
+        ],
+        "UniqueAreaID": "Forbidden Forest Dementor",
+        "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForest",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Diggable"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Medium",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Serpent",
+            "Settings": {
+              "Segments": 25,
+              "SpawnWeight": 2,
+              "HP": 500,
+              "Damage": 170,
+              "Defense": 0,
+              "DodgeChance": 0,
+              "EXP": 25,
+              "SightRange": 10,
+              "RangedAttacks": false,
+              "Sprite": "Characters/Monsters/Horned Serpent Default",
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "HogwartsET.CP.Hogwarts_SnakeFang",
+                  "PercentChanceToSpawn": 100
+                }
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "Forbidden Forest Royal Serpent",
+        "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForest",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
         "IncludeTerrainTypes": [
           "Diggable"
         ],
