@@ -1,0 +1,21 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts DADA Classroom Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDADAClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 10,
+            "Y": 17
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 4 40"
+          }
+        }
+      ]
+    }
+  ]
+}

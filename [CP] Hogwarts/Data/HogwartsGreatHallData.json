@@ -1,0 +1,41 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Great Hall Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGreatHall",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 12,
+            "Y": 23
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 17 95"
+          }
+        },
+        {
+          "Position": {
+            "X": 13,
+            "Y": 23
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 17 95"
+          }
+        },
+        {
+          "Position": {
+            "X": 14,
+            "Y": 23
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 17 95"
+          }
+        }
+      ]
+    }
+  ]
+}

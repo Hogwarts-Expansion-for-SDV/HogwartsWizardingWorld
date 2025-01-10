@@ -200,6 +200,106 @@
       },
       "Update": "OnTimeChange"
     },
+    {
+      "LogName": "Hogsmeade Station Warps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeStation",
+      "MapTiles": [
+/*Hogsmeade Station*/
+        {
+          "Position": {
+            "X": 8,
+            "Y": 9
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogsmeadeVillage 102 120"
+          }
+        },
+        {
+          "Position": {
+            "X": 8,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogsmeadeVillage 102 120"
+          }
+        },
+        {
+          "Position": {
+            "X": 8,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogsmeadeVillage 102 120"
+          }
+        },
+/*Hogwarts Valley*/
+        {
+          "Position": {
+            "X": 64,
+            "Y": 15
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsValley 1 128"
+          }
+        },
+        {
+          "Position": {
+            "X": 64,
+            "Y": 16
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsValley 1 128"
+          }
+        },
+        {
+          "Position": {
+            "X": 64,
+            "Y": 17
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsValley 1 128"
+          }
+        },
+        {
+          "Position": {
+            "X": 64,
+            "Y": 18
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsValley 1 128"
+          }
+        },
+/*South Wing*/
+        {
+          "Position": {
+            "X": 7,
+            "Y": 23
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 30 14"
+          }
+        },
+        {
+          "Position": {
+            "X": 7,
+            "Y": 24
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 30 14"
+          }
+        }
+      ]
+    }
     /*
     {
       "LogName": "Hogsmeade Station MinecartTransport",

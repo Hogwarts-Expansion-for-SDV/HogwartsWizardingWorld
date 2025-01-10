@@ -1,0 +1,21 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Divination Classroom Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDivinationClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 15,
+            "Y": 31
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 51 56"
+          }
+        }
+      ]
+    }
+  ]
+}
