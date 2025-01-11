@@ -1,0 +1,54 @@
+{ // WIP
+  "Changes": [
+    {
+      "LogName": "NPC Gift Tastes Append",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+      {
+          "Operation": "Append",
+          "Target": ["Entries", "Universal_Love"],
+          "Value": "",
+          "Delimiter": " "
+      },
+      {
+        "Operation": "Append",
+        "Target": ["Entries", "Universal_Like"],
+        "Value": "",
+        "Delimiter": " "
+      },
+      {
+        "Operation": "Append",
+        "Target": ["Entries", "Universal_Neutral"],
+        "Value": "{{ModId}}_Artifact {{ModId}}_BertieBottsBeans",
+        "Delimiter": " "
+      },
+      {
+        "Operation": "Append",
+        "Target": ["Entries", "Universal_Dislike"],
+        "Value": "",
+        "Delimiter": " "
+      },
+      {
+        "Operation": "Append",
+        "Target": ["Entries", "Universal_Hate"],
+        "Value": "",
+        "Delimiter": " "
+      },
+      ]
+    },
+    {
+      "LogName": "NPC Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "HogwartsAberforth": "{{i18n: GiftDialogue.HogwartsAberforth.Love}}//{{i18n: GiftDialogue.HogwartsAberforth.Like}}//{{i18n: GiftDialogue.HogwartsAberforth.Dislike}}//{{i18n: GiftDialogue.HogwartsAberforth.Hate}}//{{i18n: GiftDialogue.HogwartsAberforth.Neutral}}//",
+        "HogwartsMPuddifoot": "{{i18n: GiftDialogue.HogwartsMPuddifoot.Love}}//{{i18n: GiftDialogue.HogwartsMPuddifoot.Like}}//{{i18n: GiftDialogue.HogwartsMPuddifoot.Dislike}}//{{i18n: GiftDialogue.HogwartsMPuddifoot.Hate}}//{{i18n: GiftDialogue.HogwartsMPuddifoot.Neutral}}//",
+        "HogwartsOllivander": "{{i18n: GiftDialogue.HogwartsOllivander.Love}}//{{i18n: GiftDialogue.HogwartsOllivander.Like}}//{{i18n: GiftDialogue.HogwartsOllivander.Dislike}}//{{i18n: GiftDialogue.HogwartsOllivander.Hate}}//{{i18n: GiftDialogue.HogwartsOllivander.Neutral}}//",
+        "HogwartsSuryawati": "{{i18n: GiftDialogue.HogwartsSuryawati.Love}}/82/{{i18n: GiftDialogue.HogwartsSuryawati.Like}}//{{i18n: GiftDialogue.HogwartsSuryawati.Dislike}}//{{i18n: GiftDialogue.HogwartsSuryawati.Hate}}//{{i18n: GiftDialogue.HogwartsSuryawati.Neutral}}//", // Love: Fire Quartz
+        "HogwartsPatrick": "{{i18n: GiftDialogue.HogwartsPatrick.Love}}/84/{{i18n: GiftDialogue.HogwartsPatrick.Like}}//{{i18n: GiftDialogue.HogwartsPatrick.Dislike}}//{{i18n: GiftDialogue.HogwartsPatrick.Hate}}/223/{{i18n: GiftDialogue.HogwartsPatrick.Neutral}}//", // Love: Frozen Tear, Hates: Cookies
+        "HogwartsAbrielle": "{{i18n: GiftDialogue.HogwartsAbrielle.Love}}//{{i18n: GiftDialogue.HogwartsAbrielle.Like}}/172/{{i18n: GiftDialogue.HogwartsAbrielle.Dislike}}//{{i18n: GiftDialogue.HogwartsAbrielle.Hate}}//{{i18n: GiftDialogue.HogwartsAbrielle.Neutral}}//", // Like: Soggy Newspaper
+      }
+    }
+  ]
+}
