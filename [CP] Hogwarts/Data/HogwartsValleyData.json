@@ -1,0 +1,33 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Valley Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsValley",
+      "MapTiles": [
+/*Bell Tower Courtyard*/ 
+        {
+          "Position": {
+            "X": 198,
+            "Y": 131
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 0 53"
+          }
+        },
+/*Hogsmeade Station*/
+        {
+          "Position": {
+            "X": 0,
+            "Y": 128
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogsmeadeStation 63 15"
+          }
+        }
+      ]
+    }
+  ]
+}

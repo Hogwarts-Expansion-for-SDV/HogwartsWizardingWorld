@@ -1,0 +1,31 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts History Of Magic Classroom Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsHistoryOfMagicClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 10,
+            "Y": 21
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 28 30"
+          }
+        },
+        {
+          "Position": {
+            "X": 11,
+            "Y": 21
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 28 30"
+          }
+        }
+      ]
+    }
+  ]
+}

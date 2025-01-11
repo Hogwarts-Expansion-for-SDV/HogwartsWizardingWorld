@@ -1,9 +1,5 @@
 {
-  "Changes": 
-  
-  [
-
-
+  "Changes": [
     /*Brood and Peck*/
     {
       "LogName": "Brood and Peck Entrance",
@@ -39,9 +35,6 @@
         }
       ]
     },
-
-
-
     /*Ceridwen's Cauldrons*/
     {
       "LogName": "Ceridwen's Cauldrons Entrance",
@@ -77,9 +70,6 @@
         }
       ]
     },
-
-
-
     /*Dervish and Banges*/
     {
       "LogName": "Dervish and Banges Entrance",
@@ -115,8 +105,6 @@
         }
       ]
     },
-
-
     /*Dogweed and Deathcap*/
     {
       "LogName": "Dogweed and Deathcap Entrance",
@@ -162,9 +150,6 @@
         }
       ]
     },
-
-
-
     /*Dominic Maestro's Music Shop*/
     {
       "LogName": "Dominic Maestro's Music Shop Entrance",
@@ -200,9 +185,6 @@
         }
       ]
     },
-
-
-
     /*Gladrags Wizardwear*/
     {
       "LogName": "Gladrags Wizardwear Entrance",
@@ -238,9 +220,6 @@
         }
       ]
     },
-
-
-
     /*Hog's Head Inn*/
     {
       "LogName": "Hog's Head Inn Entrance",
@@ -276,9 +255,6 @@
         }
       ]
     },
-
-
-  
     /*Honeydukes*/
     {
       "LogName": "Honeydukes Entrance",
@@ -474,9 +450,6 @@
         }
       ]
     },
-
-
-
     /*J. Pippin's Potions*/
     {
       "LogName": "J. Pippin's Potions Entrance",
@@ -512,9 +485,6 @@
         }
       ]
     },
-
-
-
     /*Madam Puddifoot's*/
     {
       "LogName": "Madam Puddifoot's Tea Shop Entrance",
@@ -550,9 +520,6 @@
         }
       ]
     },
-
-
-
     /*Madam Snelling's*/
     {
       "LogName": "Madam Snelling's Tress Emporium Entrance",
@@ -588,9 +555,6 @@
         }
       ]
     },
-
-
-
     /*Ollivander's*/
     {
       "LogName": "Ollivanders Entrance",
@@ -864,9 +828,6 @@
         }
       ]
     },
-
-
-
     /*Spintwitches Sporting*/
     {
       "LogName": "Spintwitches Sporting Needs Entrance",
@@ -902,9 +863,6 @@
         }
       ]
     },
-
-
-
     /*The Magic Neep*/
     {
       "LogName": "The Magic Neep Entrance",
@@ -940,9 +898,6 @@
         }
       ]
     },
-
-
-
     /*Three Broomsticks*/
     {
       "LogName": "Three Broomsticks Inn Entrance",
@@ -978,9 +933,6 @@
         }
       ]
     },
-
-
-
     /*Tomes and Scrolls*/
     {
       "LogName": "Tomes and Scrolls Entrance",
@@ -1026,9 +978,6 @@
         }
       ]
     },
-
-
-
     /*Zonko's*/
     {
       "LogName": "Zonko's Joke Shop Entrance",
@@ -1064,8 +1013,6 @@
         }
       ]
     },
-
-
     /*Other*/ {
       "LogName": "Community Garden Sign",
       "Action": "EditMap",
@@ -1508,8 +1455,6 @@
         }
       ]
     },
-
-
     /*Nifflers*/
     {
       "LogName": "Hogsmeade Village Niffler Brown and Black",
@@ -1583,8 +1528,6 @@
         "Season": "Winter"
       }
     },
-
-    
     /*Hogwarts Carriages*/
     {
       "LogName": "Hogsmeade Carriage Arrival Path",
@@ -1592,8 +1535,16 @@
       "Target": "{{PeacefulEnd.CustomCompanions/Companions:HogwartsET.CC.Hogwarts.HogwartsCarriage}}",
       "Entries": {
         "Companion": {
-          "DespawnOnTile": [0, 121, 0],
-          "IdleArguments": [0, 121, 0]
+          "DespawnOnTile": [
+            0,
+            121,
+            0
+          ],
+          "IdleArguments": [
+            0,
+            121,
+            0
+          ]
         }
       },
       "When": {
@@ -1662,8 +1613,16 @@
       "Target": "{{PeacefulEnd.CustomCompanions/Companions:HogwartsET.CC.Hogwarts.HogwartsCarriage}}",
       "Entries": {
         "Companion": {
-          "DespawnOnTile": [130, 121, 0],
-          "IdleArguments": [130, 121, 0]
+          "DespawnOnTile": [
+            130,
+            121,
+            0
+          ],
+          "IdleArguments": [
+            130,
+            121,
+            0
+          ]
         }
       },
       "When": {
@@ -1761,6 +1720,347 @@
         "Day": "8, 22"
       },
       "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Hogsmeade Village Warps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+/*Centaur Camp*/
+        {
+          "Position": {
+            "X": 0,
+            "Y": 25
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsForbiddenForestCentaurCamp 134 58"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 26
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsForbiddenForestCentaurCamp 134 58"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 27
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsForbiddenForestCentaurCamp 134 58"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 28
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsForbiddenForestCentaurCamp 134 58"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 29
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsForbiddenForestCentaurCamp 134 58"
+          }
+        },
+/*Bell Tower Courtyard*/
+        {
+          "Position": {
+            "X": 0,
+            "Y": 112
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 170 47"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 113
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 170 47"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 114
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 170 47"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 115
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 170 47"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 116
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 170 47"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 117
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 170 47"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 118
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 170 47"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 119
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 170 47"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 120
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 170 47"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 121
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 170 47"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 122
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 170 47"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 123
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 170 47"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 124
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 170 47"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 125
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 170 47"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 126
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 170 47"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 127
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 170 47"
+          }
+        },
+/*Hogsmeade Station*/
+        {
+          "Position": {
+            "X": 103,
+            "Y": 119
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogsmeadeStation 9 13"
+          }
+        },
+        {
+          "Position": {
+            "X": 103,
+            "Y": 120
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogsmeadeStation 9 13"
+          }
+        },
+        {
+          "Position": {
+            "X": 103,
+            "Y": 121
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogsmeadeStation 9 13"
+          }
+        },
+        {
+          "Position": {
+            "X": 103,
+            "Y": 122
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogsmeadeStation 9 13"
+          }
+        },
+        {
+          "Position": {
+            "X": 103,
+            "Y": 123
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogsmeadeStation 9 13"
+          }
+        },
+        {
+          "Position": {
+            "X": 103,
+            "Y": 124
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogsmeadeStation 9 13"
+          }
+        },
+/*South Wing*/
+        {
+          "Position": {
+            "X": 34,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 22 13"
+          }
+        },
+        {
+          "Position": {
+            "X": 35,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 22 13"
+          }
+        },
+        {
+          "Position": {
+            "X": 36,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 22 13"
+          }
+        },
+        {
+          "Position": {
+            "X": 37,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 22 13"
+          }
+        },
+        {
+          "Position": {
+            "X": 38,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 22 13"
+          }
+        },
+        {
+          "Position": {
+            "X": 39,
+            "Y": 137
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 22 13"
+          }
+        }
+      ]
     }
   ]
 }

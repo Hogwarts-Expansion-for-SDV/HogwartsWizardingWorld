@@ -1,0 +1,21 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Potions Classroom Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsPotionsClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 15,
+            "Y": 35
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 51 56"
+          }
+        }
+      ]
+    }
+  ]
+}
