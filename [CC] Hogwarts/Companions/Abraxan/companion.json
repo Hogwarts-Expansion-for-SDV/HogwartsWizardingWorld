@@ -3,14 +3,19 @@
     "Type": "Walking",
     "EnableSpawnAtDayStart": true,
     "EnableCharacterCollision": true,
+    "EnableFarmerCollision": true,
     "EnableShadow": true,
-    "InspectDialogue": "Wow, it's an Abraxan!",
+    "InspectDialogue": "It's an Abraxan!",
     "TravelSpeed": 2,
     "MaxIdleDistance": -1,
     "MaxDistanceBeforeTeleport": -1,
     "IdleBehavior": "Wander",
     "FrameSizeWidth": 32,
     "FrameSizeHeight": 32,
+    "CollisionPositionX": 32,
+    "CollisionPositionY": 0,
+    "CollisionPositionHeight": 64,
+    "CollisionPositionWidth": 64,
     "DownAnimation": {
         "StartingFrame": 0,
         "NumberOfFrames": 7,
@@ -29,39 +34,47 @@
             "ManualFrames": [
                 {
                     "Frame": 21,
-                    "Duration": 200
+                    "Duration": 1000
                 },
                 {
                     "Frame": 22,
-                    "Duration": 200
+                    "Duration": 150
                 },
                 {
                     "Frame": 23,
-                    "Duration": 400
+                    "Duration": 150
                 },
                 {
                     "Frame": 24,
-                    "Duration": 400
+                    "Duration": 150
                 },
                 {
                     "Frame": 23,
-                    "Duration": 400
+                    "Duration": 150
                 },
                 {
                     "Frame": 24,
-                    "Duration": 400
+                    "Duration": 150
                 },
                 {
                     "Frame": 23,
-                    "Duration": 400
+                    "Duration": 150
+                },
+                {
+                    "Frame": 24,
+                    "Duration": 1000
+                },
+                {
+                    "Frame": 23,
+                    "Duration": 150
                 },
                 {
                     "Frame": 22,
-                    "Duration": 200
+                    "Duration": 150
                 },
                 {
                     "Frame": 21,
-                    "Duration": 200
+                    "Duration": 150
                 }
             ]
         }
@@ -108,47 +121,57 @@
             "ManualFrames": [
                 {
                     "Frame": 21,
-                    "Duration": 200,
+                    "Duration": 1000,
                     "Flip": true
                 },
                 {
                     "Frame": 22,
-                    "Duration": 200,
+                    "Duration": 150,
                     "Flip": true
                 },
                 {
                     "Frame": 23,
-                    "Duration": 400,
+                    "Duration": 150,
                     "Flip": true
                 },
                 {
                     "Frame": 24,
-                    "Duration": 400,
+                    "Duration": 150,
                     "Flip": true
                 },
                 {
                     "Frame": 23,
-                    "Duration": 400,
+                    "Duration": 150,
                     "Flip": true
                 },
                 {
                     "Frame": 24,
-                    "Duration": 400,
+                    "Duration": 150,
                     "Flip": true
                 },
                 {
                     "Frame": 23,
-                    "Duration": 400,
+                    "Duration": 150,
+                    "Flip": true
+                },
+                {
+                    "Frame": 24,
+                    "Duration": 150,
+                    "Flip": true
+                },
+                {
+                    "Frame": 23,
+                    "Duration": 150,
                     "Flip": true
                 },
                 {
                     "Frame": 22,
-                    "Duration": 200,
+                    "Duration": 150,
                     "Flip": true
                 },
                 {
                     "Frame": 21,
-                    "Duration": 200,
+                    "Duration": 150,
                     "Flip": true
                 }
             ]
