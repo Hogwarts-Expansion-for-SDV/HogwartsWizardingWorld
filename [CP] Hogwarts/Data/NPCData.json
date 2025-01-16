@@ -63,6 +63,64 @@
             }
           ]
         },
+        "HogwartsMrFlume": {
+          "DisplayName": "{{i18n: npc.MrFlume.name}}",
+          "BirthSeason": "Fall", // TODO
+          "BirthDay": 5, // TODO
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Shy",
+          "Optimism": "Negative",
+          "CanBeRomanced": false,
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "UnknownUntilMet",
+          "CanVisitIsland": "FALSE",
+          "IntroductionsQuest": false,
+          "PerfectionScore": true,
+          "EndSlideShow": "TrailingGroup",
+          "Home": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Location": "{{ModId}}_Honeydukes",
+              "Tile": {
+                "X": 16,
+                "Y": 11
+              },
+              "Direction": "left"
+            }
+          ]
+        },
+        "HogwartsMrsFlume": {
+          "DisplayName": "{{i18n: npc.MrsFlume.name}}",
+          "BirthSeason": "Fall", // TODO
+          "BirthDay": 5, // TODO
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Positive",
+          "CanBeRomanced": false,
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "UnknownUntilMet",
+          "CanVisitIsland": "FALSE",
+          "IntroductionsQuest": false,
+          "PerfectionScore": true,
+          "EndSlideShow": "TrailingGroup",
+          "Home": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Location": "{{ModId}}_Honeydukes",
+              "Tile": {
+                "X": 16,
+                "Y": 13
+              },
+              "Direction": "down"
+            }
+          ]
+        },
         "HogwartsOllivander": {
           "DisplayName": "{{i18n: npc.Ollivander.name}}",
           "BirthSeason": "Fall",
