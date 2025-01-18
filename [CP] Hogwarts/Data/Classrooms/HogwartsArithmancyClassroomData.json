@@ -1,0 +1,31 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Arithmancy Classroom Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsArithmancyClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 10,
+            "Y": 21
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 44 51"
+          }
+        },
+        {
+          "Position": {
+            "X": 11,
+            "Y": 21
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 44 51"
+          }
+        }
+      ]
+    }
+  ]
+}

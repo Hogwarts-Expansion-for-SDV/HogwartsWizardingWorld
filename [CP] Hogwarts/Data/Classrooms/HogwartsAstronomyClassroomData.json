@@ -1,0 +1,31 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Astronomy Classroom Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsAstronomyClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 24,
+            "Y": 25
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 11 6"
+          }
+        },
+        {
+          "Position": {
+            "X": 25,
+            "Y": 25
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 11 6"
+          }
+        }
+      ]
+    }
+  ]
+}
