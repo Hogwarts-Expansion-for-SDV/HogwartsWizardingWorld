@@ -1,0 +1,31 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Charms Classroom Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsCharmsClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 8,
+            "Y": 12
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 44 51"
+          }
+        },
+        {
+          "Position": {
+            "X": 9,
+            "Y": 12
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 44 51"
+          }
+        }
+      ]
+    }
+  ]
+}

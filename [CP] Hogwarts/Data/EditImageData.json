@@ -1,18 +1,5 @@
 {
   "Changes": [
-    /*
-    {
-      "Action": "EditImage",
-      "Target": "Maps/townInterior",
-      "FromFile": "assets/Maps/HogwartsInterior1.png",
-      "PatchMode": "Overlay",
-      "When": {
-        "Hogwarts_Interior_Texture": "true",
-        "LocationName |contains={{ModId}}_{{Interior Locations}}": "true"
-      },
-      "Update": "OnLocationChange"
-    },
-    */
     {
       "LogName": "Hogwarts Interior Remove Rain",
       "Action": "EditImage",
@@ -140,7 +127,30 @@
       }
     },
     {
-      "LogName": "Hogwarts Expansion Replace Day Sky With Night Sky",
+      "LogName": "Hogwarts Expansion Replace Day Sky Smooth Horizon Change",
+      "Action": "EditImage",
+      "Target": "Maps/z_Cloudy_Ocean_BG_SmoothHorizon_Hogwarts",
+      "FromFile": "assets/Tilesheets/z_Cloudy_Ocean_BG_SmoothHorizon_Hogwarts.png",
+      "FromArea": {
+        "X": "{{Query: {{Random: {{Range: 0, 220}}}}}}",
+        "Y": 0,
+        "Width": 1280,
+        "Height": 520
+      },
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 1280,
+        "Height": 520
+      },
+      "When": {
+        "Time": "{{Range: 600, 1900}}",
+        "LocationName |contains= {{ModId}}_HogwartsAstronomyClassroom, {{ModId}}_HogwartsSouthWing": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Expansion Replace Day Sky With Night Sky Default Change",
       "Action": "EditImage",
       "Target": "Maps/z_Cloudy_Ocean_BG_Hogwarts",
       "FromFile": "assets/Tilesheets/z_Cloudy_Ocean_BG_Night_Hogwarts.png",
@@ -150,12 +160,25 @@
       "Update": "OnLocationChange"
     },
     {
-      "LogName": "Hogwarts Expansion Replace Day Horizon With Night Horizon",
+      "LogName": "Hogwarts Expansion Replace Night Sky Smooth Horizon Change",
       "Action": "EditImage",
       "Target": "Maps/z_Cloudy_Ocean_BG_SmoothHorizon_Hogwarts",
       "FromFile": "assets/Tilesheets/z_Cloudy_Ocean_BG_Night_Hogwarts.png",
+      "FromArea": {
+        "X": "{{Query: {{Random: {{Range: 0, 220}}}}}}",
+        "Y": 0,
+        "Width": 1280,
+        "Height": 520
+      },
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 1280,
+        "Height": 520
+      },
       "When": {
-        "Time": "{{Range: 1900, 2600}}"
+        "Time": "{{Range: 1900, 2600}}",
+        "LocationName |contains= {{ModId}}_HogwartsAstronomyClassroom, {{ModId}}_HogwartsSouthWing": true
       },
       "Update": "OnLocationChange"
     },

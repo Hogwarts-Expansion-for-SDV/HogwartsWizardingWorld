@@ -5,6 +5,27 @@
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsTransfigurationWing",
       "MapTiles": [
+/*Astronomy Classroom*/ 
+        {
+          "Position": {
+            "X": 11,
+            "Y": 7
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsAstronomyClassroom 24 26"
+          }
+        },
+        {
+          "Position": {
+            "X": 12,
+            "Y": 7
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsAstronomyClassroom 24 26"
+          }
+        },
 /*Bell Tower Courtyard*/ 
         {
           "Position": {
@@ -76,7 +97,28 @@
             "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 174 78"
           }
         },
-/*DADA Classroom*/
+/*Charms Classroom*/
+        {
+          "Position": {
+            "X": 7,
+            "Y": 11
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 9 20 {{ModId}}_HogwartsCharmsClassroom"
+          }
+        },
+        {
+          "Position": {
+            "X": 8,
+            "Y": 11
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 9 20 {{ModId}}_HogwartsCharmsClassroom"
+          }
+        },
+        /*DADA Classroom*/
         {
           "Position": {
             "X": 3,
@@ -84,7 +126,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Warp 10 17 {{ModId}}_HogwartsDADAClassroom"
+            "Action": "Warp 5 29 {{ModId}}_HogwartsDADAClassroom"
           }
         },
         {
@@ -94,7 +136,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Warp 10 17 {{ModId}}_HogwartsDADAClassroom"
+            "Action": "Warp 5 29 {{ModId}}_HogwartsDADAClassroom"
           }
         },
 /*Grand Staircase*/
@@ -334,6 +376,99 @@
           }
         }
       ]
+    },
+/*Fountain Transfiguration*/
+    {
+      "LogName": "Hogwarts Transfiguration Wing Fountain Spring 1st Birthday",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsTransfigurationWing",
+      "FromFile": "assets/MapPatches/HogwartsGryffindorFountainStatue.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 1,
+        "Height": 3
+      },
+      "ToArea": {
+        "X": 27,
+        "Y": 48,
+        "Width": 1,
+        "Height": 3
+      },
+      "PatchMode": "ReplaceByLayer",
+      "When": {
+        "Season": "Spring",
+        "Day": 1
+      }
+    },
+    {
+      "LogName": "Hogwarts Transfiguration Wing Fountain Spring 3rd Birthday",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsTransfigurationWing",
+      "FromFile": "assets/MapPatches/HogwartsRavenclawFountainStatue.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 1,
+        "Height": 3
+      },
+      "ToArea": {
+        "X": 27,
+        "Y": 48,
+        "Width": 1,
+        "Height": 3
+      },
+      "PatchMode": "ReplaceByLayer",
+      "When": {
+        "Season": "Spring",
+        "Day": 3
+      }
+    },
+    {
+      "LogName": "Hogwarts Transfiguration Wing Fountain Spring 23rd Birthday",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsTransfigurationWing",
+      "FromFile": "assets/MapPatches/HogwartsSlytherinFountainStatue.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 1,
+        "Height": 3
+      },
+      "ToArea": {
+        "X": 27,
+        "Y": 48,
+        "Width": 1,
+        "Height": 3
+      },
+      "PatchMode": "ReplaceByLayer",
+      "When": {
+        "Season": "Spring",
+        "Day": 23
+      }
+    },
+    {
+      "LogName": "Hogwarts Transfiguration Wing Fountain Summer 5th Birthday",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsTransfigurationWing",
+      "FromFile": "assets/MapPatches/HogwartsHufflepuffFountainStatue.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 1,
+        "Height": 3
+      },
+      "ToArea": {
+        "X": 27,
+        "Y": 48,
+        "Width": 1,
+        "Height": 3
+      },
+      "PatchMode": "ReplaceByLayer",
+      "When": {
+        "Season": "Summer",
+        "Day": 5
+      }
     }
   ]
 }

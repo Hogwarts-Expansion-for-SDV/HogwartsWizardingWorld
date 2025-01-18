@@ -123,10 +123,28 @@
     },
     /*Hogwarts Load*/
     {
+      "LogName": "Hogwarts Arithmancy Classroom Load",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_HogwartsArithmancyClassroom",
+      "FromFile": "assets/Maps/HogwartsArithmancyClassroom.tmx"
+    },
+    {
+      "LogName": "Hogwarts Astronomy Classroom Load",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_HogwartsAstronomyClassroom",
+      "FromFile": "assets/Maps/HogwartsAstronomyClassroom.tmx"
+    },
+    {
       "LogName": "Hogwarts Bell Tower Courtyard Load",
       "Action": "Load",
       "Target": "Maps/{{ModId}}_HogwartsBellTowerCourtyard",
       "FromFile": "assets/Maps/HogwartsBellTowerCourtyard.tmx"
+    },
+    {
+      "LogName": "Hogwarts Charms Classroom Load",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_HogwartsCharmsClassroom",
+      "FromFile": "assets/Maps/HogwartsCharmsClassroom.tmx"
     },
     {
       "LogName": "Hogwarts Defense Against The Dark Arts Classroom Load",
@@ -373,10 +391,28 @@
           }
         },
         /*Hogwarts Location Data*/
+        "{{ModId}}_HogwartsArithmancyClassroom": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsArithmancyClassroom"
+          }
+        },
+        "{{ModId}}_HogwartsAstronomyClassroom": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsAstronomyClassroom"
+          }
+        },
         "{{ModId}}_HogwartsBellTowerCourtyard": {
           "CreateOnLoad": {
             "AlwaysActive": false,
             "MapPath": "Maps/{{ModId}}_HogwartsBellTowerCourtyard"
+          }
+        },
+        "{{ModId}}_HogwartsCharmsClassroom": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsCharmsClassroom"
           }
         },
         "{{ModId}}_HogwartsDADAClassroom": {
@@ -417,7 +453,7 @@
         },
         "{{ModId}}_HogwartsLibraryAnnex": {
           "CreateOnLoad": {
-            "AlwaysActive": false,
+            "AlwaysActive": true,
             "MapPath": "Maps/{{ModId}}_HogwartsLibraryAnnex"
           }
         },
