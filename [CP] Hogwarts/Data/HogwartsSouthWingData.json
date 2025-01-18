@@ -5,7 +5,7 @@
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsSouthWing",
       "MapTiles": [
-/*Grand Staircase*/
+        /*Grand Staircase*/
         {
           "Position": {
             "X": 17,
@@ -86,7 +86,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 1 85"
           }
         },
-/*Hogsmeade Station*/ 
+        /*Hogsmeade Station*/
         {
           "Position": {
             "X": 31,
@@ -107,7 +107,7 @@
             "TouchAction": "Warp {{ModId}}_HogsmeadeStation 8 24"
           }
         },
-/*Hogsmeade Village*/ 
+        /*Hogsmeade Village*/
         {
           "Position": {
             "X": 20,
@@ -148,7 +148,7 @@
             "TouchAction": "Warp {{ModId}}_HogsmeadeVillage 37 136"
           }
         },
-/*Library Annex*/
+        /*Library Annex*/
         {
           "Position": {
             "X": 0,
@@ -169,7 +169,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 41 36"
           }
         },
-/*South Wing*/ 
+        /*South Wing*/
         {
           "Position": {
             "X": 7,
@@ -210,7 +210,17 @@
             "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 8 24"
           }
         },
-/*Transfiguration Wing*/
+        /*Transfiguration Wing*/
+        {
+          "Position": {
+            "X": 79,
+            "Y": 35
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 1 31"
+          }
+        },
         {
           "Position": {
             "X": 79,
@@ -218,7 +228,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 1 31"
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 1 31"
           }
         },
         {
@@ -228,7 +238,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 1 31"
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 1 31"
           }
         }
       ]
