@@ -189,6 +189,12 @@
       "FromFile": "assets/Maps/HogwartsLibraryAnnex.tmx"
     },
     {
+      "LogName": "Hogwarts Magical Theory Classroom Load",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_HogwartsMagicalTheoryClassroom",
+      "FromFile": "assets/Maps/HogwartsMagicalTheoryClassroom.tmx"
+    },
+    {
       "LogName": "Hogwarts Potions Classroom Load",
       "Action": "Load",
       "Target": "Maps/{{ModId}}_HogwartsPotionsClassroom",
@@ -453,8 +459,14 @@
         },
         "{{ModId}}_HogwartsLibraryAnnex": {
           "CreateOnLoad": {
-            "AlwaysActive": true,
+            "AlwaysActive": false,
             "MapPath": "Maps/{{ModId}}_HogwartsLibraryAnnex"
+          }
+        },
+        "{{ModId}}_HogwartsMagicalTheoryClassroom": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsMagicalTheoryClassroom"
           }
         },
         "{{ModId}}_HogwartsPotionsClassroom": {

@@ -1,0 +1,21 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Magical Theory Classroom Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsMagicalTheoryClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 9,
+            "Y": 30
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 6 19"
+          }
+        }
+      ]
+    }
+  ]
+}
