@@ -195,6 +195,12 @@
       "FromFile": "assets/Maps/HogwartsMagicalTheoryClassroom.tmx"
     },
     {
+      "LogName": "Hogwarts Muggle Studies Classroom Load",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_HogwartsMuggleStudiesClassroom",
+      "FromFile": "assets/Maps/HogwartsMuggleStudiesClassroom.tmx"
+    },
+    {
       "LogName": "Hogwarts Potions Classroom Load",
       "Action": "Load",
       "Target": "Maps/{{ModId}}_HogwartsPotionsClassroom",
@@ -467,6 +473,12 @@
           "CreateOnLoad": {
             "AlwaysActive": false,
             "MapPath": "Maps/{{ModId}}_HogwartsMagicalTheoryClassroom"
+          }
+        },
+        "{{ModId}}_HogwartsMuggleStudiesClassroom": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsMuggleStudiesClassroom"
           }
         },
         "{{ModId}}_HogwartsPotionsClassroom": {

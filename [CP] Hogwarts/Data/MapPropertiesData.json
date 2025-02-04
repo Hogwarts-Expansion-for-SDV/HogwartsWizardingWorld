@@ -264,8 +264,7 @@
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsIcyCorridor",
       "MapProperties": {
-        "AmbientLight": "95 95 95",
-        "Warp": "12 23 {{ModId}}_HogwartsReceptionHallGF 6 7 13 23 {{ModId}}_HogwartsReceptionHallGF 6 7 14 23 {{ModId}}_HogwartsReceptionHallGF 6 7"
+        "AmbientLight": "255 255 255",
       }
     },*/
     {
@@ -282,6 +281,15 @@
       "LogName": "Map Properties of Magical Theory Classroom",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsMagicalTheoryClassroom",
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Muggle Studies Classroom",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsMuggleStudiesClassroom",
       "MapProperties": {
         "AmbientLight": "255 255 255",
         "AmbientNightLight": "150 150 30"

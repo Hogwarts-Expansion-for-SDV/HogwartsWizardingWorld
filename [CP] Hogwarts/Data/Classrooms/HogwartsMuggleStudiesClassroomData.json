@@ -1,0 +1,31 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Muggle Studies Classroom Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsMuggleStudiesClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 7,
+            "Y": 15
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 55 45"
+          }
+        },
+        {
+          "Position": {
+            "X": 8,
+            "Y": 15
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 55 45"
+          }
+        }
+      ]
+    }
+  ]
+}
