@@ -400,7 +400,7 @@
     {
       "LogName": "Gryffindor Jr Dialogue",
       "Action": "EditData",
-      "Target": "Characters/Dialogue/HogwartsGryffindorJr1, Characters/Dialogue/HogwartsGryffindorJr2, Characters/Dialogue/HogwartsGryffindorJr3",
+      "Target": "Characters/Dialogue/HogwartsGryffindorJr2, Characters/Dialogue/HogwartsGryffindorJr3",
       "Entries": {
         "HogwartsIntroduction": "{{i18n:Hogwarts.GenericDialogue.GryffindorJr.Introduction}}",
         "Mon": "{{i18n:Hogwarts.GenericDialogue.GryffindorJr.{{Random:1,2,3}} }}",
@@ -430,7 +430,7 @@
     {
       "LogName": "Ravenclaw Kid Dialogue",
       "Action": "EditData",
-      "Target": "Characters/Dialogue/HogwartsRavenclawKid1, Characters/Dialogue/HogwartsRavenclawKid2",
+      "Target": "Characters/Dialogue/HogwartsRavenclawKid1, Characters/Dialogue/HogwartsRavenclawKid2JiHyeon",
       "Entries": {
         "HogwartsIntroduction": "{{i18n:Hogwarts.GenericDialogue.RavenclawKid.Introduction}}",
         "Mon": "{{i18n:Hogwarts.GenericDialogue.RavenclawKid.{{Random:1,2}} }}",
@@ -445,7 +445,7 @@
     {
       "LogName": "Ravenclaw Jr Dialogue",
       "Action": "EditData",
-      "Target": "Characters/Dialogue/HogwartsRavenclawJr1, Characters/Dialogue/HogwartsRavenclawJr2, Characters/Dialogue/HogwartsRavenclawJr3",
+      "Target": "Characters/Dialogue/HogwartsRavenclawJr1Carter, Characters/Dialogue/HogwartsRavenclawJr2Quinn, Characters/Dialogue/HogwartsRavenclawJr3",
       "Entries": {
         "HogwartsIntroduction": "{{i18n:Hogwarts.GenericDialogue.RavenclawJr.Introduction}}",
         "Mon": "{{i18n:Hogwarts.GenericDialogue.RavenclawJr.{{Random:1,2,3}} }}",
@@ -458,7 +458,7 @@
       }
     },
     {
-      "LogName": "Ravenclaw Sr Dialogue",
+      "LogName": "Ravenclaw Sr 1, 2 Dialogue",
       "Action": "EditData",
       "Target": "Characters/Dialogue/HogwartsRavenclawSr1, Characters/Dialogue/HogwartsRavenclawSr2",
       "Entries": {
@@ -471,11 +471,25 @@
         "Sat": "{{i18n:Hogwarts.GenericDialogue.RavenclawSr.{{Random:1,2}} }}",
         "Sun": "{{i18n:Hogwarts.GenericDialogue.RavenclawSr.{{Random:1,2}} }}",
       }
+    },        {
+      "LogName": "Ravenclaw Sr 3 Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/HogwartsRavenclawSr3Harv",
+      "Entries": {
+        "HogwartsIntroduction": "{{i18n:Hogwarts.GenericDialogue.RavenclawSr3Harv.Introduction}}",
+        "Mon": "{{i18n:Hogwarts.GenericDialogue.RavenclawSr.{{Random:1,2}} }}",
+        "Tue": "{{i18n:Hogwarts.GenericDialogue.RavenclawSr.{{Random:1,2}} }}",
+        "Wed": "{{i18n:Hogwarts.GenericDialogue.RavenclawSr.{{Random:1,2}} }}",
+        "Thu": "{{i18n:Hogwarts.GenericDialogue.RavenclawSr.{{Random:1,2}} }}",
+        "Fri": "{{i18n:Hogwarts.GenericDialogue.RavenclawSr.{{Random:1,2}} }}",
+        "Sat": "{{i18n:Hogwarts.GenericDialogue.RavenclawSr.{{Random:1,2}} }}",
+        "Sun": "{{i18n:Hogwarts.GenericDialogue.RavenclawSr.{{Random:1,2}} }}",
+      }
     },    
     {
       "LogName": "Hufflepuff Kid Dialogue",
       "Action": "EditData",
-      "Target": "Characters/Dialogue/HogwartsHufflepuffKid1, Characters/Dialogue/HogwartsHufflepuffKid2",
+      "Target": "Characters/Dialogue/HogwartsHufflepuffKid2",
       "Entries": {
         "HogwartsIntroduction": "{{i18n:Hogwarts.GenericDialogue.HufflepuffKid.Introduction}}",
         "Mon": "{{i18n:Hogwarts.GenericDialogue.HufflepuffKid.{{Random:1,2}} }}",
@@ -488,9 +502,23 @@
       }
     },
     {
-      "LogName": "Hufflepuff Jr Dialogue",
+      "LogName": "Hufflepuff Jr 1 Dialogue",
       "Action": "EditData",
-      "Target": "Characters/Dialogue/HogwartsHufflepuffJr1, Characters/Dialogue/HogwartsHufflepuffJr2, Characters/Dialogue/HogwartsHufflepuffJr3",
+      "Target": "Characters/Dialogue/HogwartsHufflepuffJr1Kat",
+      "Entries": {
+        "Mon": "{{i18n:Hogwarts.GenericDialogue.HufflepuffJr1Kat.{{Random: {{Range:1,13}} }} }}",
+        "Tue": "{{i18n:Hogwarts.GenericDialogue.HufflepuffJr1Kat.{{Random: {{Range:1,13}} }} }}",
+        "Wed": "{{i18n:Hogwarts.GenericDialogue.HufflepuffJr1Kat.{{Random: {{Range:1,13}} }} }}",
+        "Thu": "{{i18n:Hogwarts.GenericDialogue.HufflepuffJr1Kat.{{Random: {{Range:1,13}} }} }}",
+        "Fri": "{{i18n:Hogwarts.GenericDialogue.HufflepuffJr1Kat.{{Random: {{Range:1,13}} }} }}",
+        "Sat": "{{i18n:Hogwarts.GenericDialogue.HufflepuffJr1Kat.{{Random: {{Range:1,13}} }} }}",
+        "Sun": "{{i18n:Hogwarts.GenericDialogue.HufflepuffJr1Kat.{{Random: {{Range:1,13}} }} }}",
+      }
+    },
+    {
+      "LogName": "Hufflepuff Jr 2, 3 Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/HogwartsHufflepuffJr2Clover, Characters/Dialogue/HogwartsHufflepuffJr3",
       "Entries": {
         "HogwartsIntroduction": "{{i18n:Hogwarts.GenericDialogue.HufflepuffJr.Introduction}}",
         "Mon": "{{i18n:Hogwarts.GenericDialogue.HufflepuffJr.{{Random:1,2,3}} }}",
@@ -503,9 +531,23 @@
       }
     },
     {
-      "LogName": "Hufflepuff Sr Dialogue",
+      "LogName": "Hufflepuff Sr 2 Dialogue",
       "Action": "EditData",
-      "Target": "Characters/Dialogue/HogwartsHufflepuffSr1, Characters/Dialogue/HogwartsHufflepuffSr2",
+      "Target": "Characters/Dialogue/HogwartsHufflepuffSr2Dom",
+      "Entries": {
+        "Mon": "{{i18n:Hogwarts.GenericDialogue.HufflepuffSr2Dom.1 }}",
+        "Tue": "{{i18n:Hogwarts.GenericDialogue.HufflepuffSr2Dom.1 }}",
+        "Wed": "{{i18n:Hogwarts.GenericDialogue.HufflepuffSr2Dom.1 }}",
+        "Thu": "{{i18n:Hogwarts.GenericDialogue.HufflepuffSr2Dom.1 }}",
+        "Fri": "{{i18n:Hogwarts.GenericDialogue.HufflepuffSr2Dom.1 }}",
+        "Sat": "{{i18n:Hogwarts.GenericDialogue.HufflepuffSr2Dom.1 }}",
+        "Sun": "{{i18n:Hogwarts.GenericDialogue.HufflepuffSr2Dom.1 }}",
+      }
+    },    
+    {
+      "LogName": "Hufflepuff Sr 1, 3 Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/HogwartsHufflepuffSr1, Characters/Dialogue/HogwartsHufflepuffSr3Kaaty",
       "Entries": {
         "HogwartsIntroduction": "{{i18n:Hogwarts.GenericDialogue.HufflepuffSr.Introduction}}",
         "Mon": "{{i18n:Hogwarts.GenericDialogue.HufflepuffSr.{{Random:1,2}} }}",
@@ -548,9 +590,9 @@
       }
     },
     {
-      "LogName": "Slytherin Sr Dialogue",
+      "LogName": "Slytherin Sr 1, 2 Dialogue",
       "Action": "EditData",
-      "Target": "Characters/Dialogue/HogwartsSlytherinSr1, Characters/Dialogue/HogwartsSlytherinSr2",
+      "Target": "Characters/Dialogue/HogwartsSlytherinSr2Mo",
       "Entries": {
         "HogwartsIntroduction": "{{i18n:Hogwarts.GenericDialogue.SlytherinSr.Introduction}}",
         "Mon": "{{i18n:Hogwarts.GenericDialogue.SlytherinSr.{{Random:1,2}} }}",
@@ -562,7 +604,21 @@
         "Sun": "{{i18n:Hogwarts.GenericDialogue.SlytherinSr.{{Random:1,2}} }}",
       }
     },
-
+    {
+      "LogName": "Slytherin Sr 3 Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/HogwartsSlytherinSr3Sandro",
+      "Entries": {
+        "HogwartsIntroduction": "{{i18n:Hogwarts.GenericDialogue.SlythernSr3Sandro.Introduction}}",
+        "Mon": "{{i18n:Hogwarts.GenericDialogue.SlythernSr3Sandro.1 }}",
+        "Tue": "{{i18n:Hogwarts.GenericDialogue.SlythernSr3Sandro.1 }}",
+        "Wed": "{{i18n:Hogwarts.GenericDialogue.SlythernSr3Sandro.1 }}",
+        "Thu": "{{i18n:Hogwarts.GenericDialogue.SlythernSr3Sandro.1 }}",
+        "Fri": "{{i18n:Hogwarts.GenericDialogue.SlythernSr3Sandro.1 }}",
+        "Sat": "{{i18n:Hogwarts.GenericDialogue.SlythernSr3Sandro.1 }}",
+        "Sun": "{{i18n:Hogwarts.GenericDialogue.SlythernSr3Sandro.1 }}",
+      }
+    },
 
     {
       "LogName": "Student Schedule Strings",

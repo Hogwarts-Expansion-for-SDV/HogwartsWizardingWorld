@@ -172,10 +172,10 @@
               "Condition": null,
               "Location": "{{ModId}}_HogwartsGreatHall",
               "Tile": {
-                "X": 23,
-                "Y": 18
+                "X": 20,
+                "Y": 16
               },
-              "Direction": "left"
+              "Direction": "right"
             }
           ],
           "Appearance": [
@@ -216,7 +216,7 @@
               "Location": "{{ModId}}_HogwartsGreatHall",
               "Tile": {
                 "X": 8,
-                "Y": 18
+                "Y": 15
               },
               "Direction": "right"
             }
@@ -244,856 +244,1275 @@
               "Condition": null,
               "Location": "{{ModId}}_HogwartsGreatHall",
               "Tile": {
-                "X": 6,
-                "Y": 18
+                "X": 3,
+                "Y": 17
               },
-              "Direction": "left"
+              "Direction": "right"
             }
           ]
         },
+// Professors
+"HogwartsBinns": {
+  "DisplayName": "{{i18n: npc.Binns.name}}",
+  "BirthSeason": "Spring",
+  "BirthDay": 13,
+  "Gender": "Female",
+  "Age": "Adult",
+  "Manner": "Polite",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Positive",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "EndSlideShow": "TrailingGroup",
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModId}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 6,
+        "Y": 18
+      },
+      "Direction": "left"
+    }
+  ]
+},
+"HogwartsBrindlemore": {
+  "DisplayName": "{{i18n: npc.Brindlemore.name}}",
+  "BirthSeason": "Spring",
+  "BirthDay": 13,
+  "Gender": "Female",
+  "Age": "Adult",
+  "Manner": "Polite",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Positive",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "EndSlideShow": "TrailingGroup",
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModId}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 6,
+        "Y": 18
+      },
+      "Direction": "left"
+    }
+  ]
+},
+"HogwartsFilch": {
+  "DisplayName": "{{i18n: npc.Filch.name}}",
+  "BirthSeason": "Spring",
+  "BirthDay": 13,
+  "Gender": "Female",
+  "Age": "Adult",
+  "Manner": "Polite",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Positive",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "EndSlideShow": "TrailingGroup",
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModId}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 6,
+        "Y": 18
+      },
+      "Direction": "left"
+    }
+  ]
+},
+"HogwartsFlitwick": {
+  "DisplayName": "{{i18n: npc.Flitwick.name}}",
+  "BirthSeason": "Spring",
+  "BirthDay": 13,
+  "Gender": "Male",
+  "Age": "Adult",
+  "Manner": "Polite",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Positive",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "EndSlideShow": "TrailingGroup",
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModId}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 6,
+        "Y": 18
+      },
+      "Direction": "left"
+    }
+  ]
+},
+"HogwartsMcGonagall": {
+  "DisplayName": "{{i18n: npc.McGonagall.name}}",
+  "BirthSeason": "Spring",
+  "BirthDay": 13,
+  "Gender": "Female",
+  "Age": "Adult",
+  "Manner": "Polite",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Positive",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "EndSlideShow": "TrailingGroup",
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModId}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 13,
+        "Y": 8
+      },
+      "Direction": "left"
+    }
+  ]
+},
+"HogwartsPomfrey": {
+  "DisplayName": "{{i18n: npc.Pomfrey.name}}",
+  "BirthSeason": "Spring",
+  "BirthDay": 13,
+  "Gender": "Female",
+  "Age": "Adult",
+  "Manner": "Polite",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Positive",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "EndSlideShow": "TrailingGroup",
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModId}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 6,
+        "Y": 18
+      },
+      "Direction": "left"
+    }
+  ]
+},
+"HogwartsSlughorn": {
+  "DisplayName": "{{i18n: npc.Pomfrey.name}}",
+  "BirthSeason": "Spring",
+  "BirthDay": 13,
+  "Gender": "Female",
+  "Age": "Adult",
+  "Manner": "Polite",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Positive",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "EndSlideShow": "TrailingGroup",
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModId}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 6,
+        "Y": 18
+      },
+      "Direction": "left"
+    }
+  ]
+},
+
 
 // Filler student characters
-        "HogwartsGryffindorKid1": {
-          "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.boy}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Male",
-          "Age": "Child",
-          "Manner": "Neutral",
-          "SocialAnxiety": "Neutral",
-          "Optimism": "Positive",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 23,
-                "Y": 15
-              },
-              "Direction": "left"
-            }
-          ]
-        },
-        "HogwartsGryffindorKid2": {
-          "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.girl}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Female",
-          "Age": "Child",
-          "Manner": "Rude",
-          "SocialAnxiety": "Outgoing",
-          "Optimism": "Negative",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 20,
-                "Y": 15
-              },
-              "Direction": "right"
-            }
-          ]
-        },
-        "HogwartsGryffindorJr1": {
-          "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.girl}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Female",
-          "Age": "Teen",
-          "Manner": "Rude",
-          "SocialAnxiety": "Outgoing",
-          "Optimism": "Negative",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 20,
-                "Y": 16
-              },
-              "Direction": "right"
-            }
-          ]
-        },
-        "HogwartsGryffindorJr2": {
-          "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.boy}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Male",
-          "Age": "Teen",
-          "Manner": "Neutral",
-          "SocialAnxiety": "Neutral",
-          "Optimism": "Positive",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 23,
-                "Y": 16
-              },
-              "Direction": "left"
-            }
-          ]
-        },
-        "HogwartsGryffindorJr3": {
-          "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.boy}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Male",
-          "Age": "Teen",
-          "Manner": "Neutral",
-          "SocialAnxiety": "Neutral",
-          "Optimism": "Negative",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 23,
-                "Y": 17
-              },
-              "Direction": "left"
-            }
-          ]
-        },
-        "HogwartsGryffindorSr1": {
-          "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.boy}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Male",
-          "Age": "Teen",
-          "Manner": "Neutral",
-          "SocialAnxiety": "Neutral",
-          "Optimism": "Positive",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 20,
-                "Y": 17
-              },
-              "Direction": "right"
-            }
-          ]
-        },
-        "HogwartsGryffindorSr2": {
-          "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.girl}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Female",
-          "Age": "Teen",
-          "Manner": "Rude",
-          "SocialAnxiety": "Outgoing",
-          "Optimism": "Negative",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 20,
-                "Y": 18
-              },
-              "Direction": "right"
-            }
-          ]
-        },
-        "HogwartsRavenclawKid1": {
-          "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.boy}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Male",
-          "Age": "Child",
-          "Manner": "Neutral",
-          "SocialAnxiety": "Shy",
-          "Optimism": "Positive",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 15,
-                "Y": 15
-              },
-              "Direction": "right"
-            }
-          ]
-        },
-        "HogwartsRavenclawKid2": {
-          "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.girl}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Female",
-          "Age": "Child",
-          "Manner": "Polite",
-          "SocialAnxiety": "Shy",
-          "Optimism": "Negative",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 18,
-                "Y": 15
-              },
-              "Direction": "left"
-            }
-          ]
-        },
-        "HogwartsRavenclawJr1": {
-          "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.girl}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Female",
-          "Age": "Teen",
-          "Manner": "Polite",
-          "SocialAnxiety": "Shy",
-          "Optimism": "Negative",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 18,
-                "Y": 16
-              },
-              "Direction": "left"
-            }
-          ]
-        },
-        "HogwartsRavenclawJr2": {
-          "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.boy}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Male",
-          "Age": "Teen",
-          "Manner": "Neutral",
-          "SocialAnxiety": "Shy",
-          "Optimism": "Positive",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 18,
-                "Y": 17
-              },
-              "Direction": "left"
-            }
-          ]
-        },
-        "HogwartsRavenclawJr3": {
-          "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.boy}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Male",
-          "Age": "Teen",
-          "Manner": "Neutral",
-          "SocialAnxiety": "Shy",
-          "Optimism": "Positive",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 18,
-                "Y": 18
-              },
-              "Direction": "left"
-            }
-          ]
-        },
-        "HogwartsRavenclawSr1": {
-          "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.boy}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Male",
-          "Age": "Teen",
-          "Manner": "Neutral",
-          "SocialAnxiety": "Shy",
-          "Optimism": "Positive",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 15,
-                "Y": 16
-              },
-              "Direction": "right"
-            }
-          ]
-        },
-        "HogwartsRavenclawSr2": {
-          "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.girl}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Female",
-          "Age": "Teen",
-          "Manner": "Polite",
-          "SocialAnxiety": "Shy",
-          "Optimism": "Negative",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 15,
-                "Y": 17
-              },
-              "Direction": "right"
-            }
-          ]
-        },
-        "HogwartsHufflepuffKid1": {
-          "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.boy}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Male",
-          "Age": "Child",
-          "Manner": "Neutral",
-          "SocialAnxiety": "Shy",
-          "Optimism": "Positive",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 8,
-                "Y": 15
-              },
-              "Direction": "right"
-            }
-          ]
-        },
-        "HogwartsHufflepuffKid2": {
-          "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.girl}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Female",
-          "Age": "Child",
-          "Manner": "Polite",
-          "SocialAnxiety": "Shy",
-          "Optimism": "Negative",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 11,
-                "Y": 15
-              },
-              "Direction": "left"
-            }
-          ]
-        },
-        "HogwartsHufflepuffJr1": {
-          "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.girl}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Female",
-          "Age": "Teen",
-          "Manner": "Polite",
-          "SocialAnxiety": "Shy",
-          "Optimism": "Negative",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 11,
-                "Y": 16
-              },
-              "Direction": "left"
-            }
-          ]
-        },
-        "HogwartsHufflepuffJr2": {
-          "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.boy}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Male",
-          "Age": "Teen",
-          "Manner": "Neutral",
-          "SocialAnxiety": "Shy",
-          "Optimism": "Positive",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 11,
-                "Y": 17
-              },
-              "Direction": "left"
-            }
-          ]
-        },
-        "HogwartsHufflepuffJr3": {
-          "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.boy}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Male",
-          "Age": "Teen",
-          "Manner": "Neutral",
-          "SocialAnxiety": "Shy",
-          "Optimism": "Positive",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 11,
-                "Y": 18
-              },
-              "Direction": "left"
-            }
-          ]
-        },
-        "HogwartsHufflepuffSr1": {
-          "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.boy}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Male",
-          "Age": "Teen",
-          "Manner": "Neutral",
-          "SocialAnxiety": "Shy",
-          "Optimism": "Positive",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 8,
-                "Y": 16
-              },
-              "Direction": "right"
-            }
-          ]
-        },
-        "HogwartsHufflepuffSr2": {
-          "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.girl}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Female",
-          "Age": "Teen",
-          "Manner": "Polite",
-          "SocialAnxiety": "Shy",
-          "Optimism": "Negative",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 8,
-                "Y": 17
-              },
-              "Direction": "right"
-            }
-          ]
-        },
-        "HogwartsSlytherinKid1": {
-          "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.boy}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Male",
-          "Age": "Child",
-          "Manner": "Neutral",
-          "SocialAnxiety": "Neutral",
-          "Optimism": "Positive",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 6,
-                "Y": 15
-              },
-              "Direction": "left"
-            }
-          ]
-        },
-        "HogwartsSlytherinKid2": {
-          "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.girl}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Female",
-          "Age": "Child",
-          "Manner": "Rude",
-          "SocialAnxiety": "Outgoing",
-          "Optimism": "Negative",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 3,
-                "Y": 15
-              },
-              "Direction": "right"
-            }
-          ]
-        },
-        "HogwartsSlytherinJr1": {
-          "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.girl}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Female",
-          "Age": "Teen",
-          "Manner": "Rude",
-          "SocialAnxiety": "Outgoing",
-          "Optimism": "Negative",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 3,
-                "Y": 16
-              },
-              "Direction": "right"
-            }
-          ]
-        },
-        "HogwartsSlytherinJr2": {
-          "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.boy}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Male",
-          "Age": "Teen",
-          "Manner": "Neutral",
-          "SocialAnxiety": "Neutral",
-          "Optimism": "Positive",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 6,
-                "Y": 16
-              },
-              "Direction": "left"
-            }
-          ]
-        },
-        "HogwartsSlytherinJr3": {
-          "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.boy}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Male",
-          "Age": "Teen",
-          "Manner": "Neutral",
-          "SocialAnxiety": "Neutral",
-          "Optimism": "Negative",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 6,
-                "Y": 17
-              },
-              "Direction": "left"
-            }
-          ]
-        },
-        "HogwartsSlytherinSr1": {
-          "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.boy}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Male",
-          "Age": "Teen",
-          "Manner": "Neutral",
-          "SocialAnxiety": "Neutral",
-          "Optimism": "Positive",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 3,
-                "Y": 17
-              },
-              "Direction": "right"
-            }
-          ]
-        },
-        "HogwartsSlytherinSr2": {
-          "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.girl}}",
-          "BirthSeason": "Spring",
-          "BirthDay": "1",
-          "Gender": "Female",
-          "Age": "Teen",
-          "Manner": "Rude",
-          "SocialAnxiety": "Outgoing",
-          "Optimism": "Negative",
-          "CanBeRomanced": false,
-          "Calendar": "HiddenAlways",
-          "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
-          "IntroductionsQuest": false,
-          "PerfectionScore": false,
-          "Home": [
-            {
-              "Id": "Default",
-              "Condition": null,
-              "Location": "{{ModID}}_HogwartsGreatHall",
-              "Tile": {
-                "X": 3,
-                "Y": 18
-              },
-              "Direction": "right"
-            }
-          ]
-        },
-      }
+// GryffindorJr1 replaced by Suryawati
+// SlytherinSr1 replaced by Abrielle
+// HufflepuffKid1 replaced by Patrick
+
+/* "HogwartsGryffindorJr1": {
+  "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.girl}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Female",
+  "Age": "Teen",
+  "Manner": "Rude",
+  "SocialAnxiety": "Outgoing",
+  "Optimism": "Negative",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 20,
+        "Y": 16
+      },
+      "Direction": "right"
     }
+  ]
+},*/
+"HogwartsGryffindorJr2": {
+  "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.boy}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Male",
+  "Age": "Teen",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Positive",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 23,
+        "Y": 16
+      },
+      "Direction": "left"
+    }
+  ]
+},
+"HogwartsGryffindorJr3": {
+  "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.boy}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Male",
+  "Age": "Teen",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Negative",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 23,
+        "Y": 17
+      },
+      "Direction": "left"
+    }
+  ]
+},
+"HogwartsGryffindorKid1": {
+  "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.boy}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Male",
+  "Age": "Child",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Positive",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 23,
+        "Y": 15
+      },
+      "Direction": "left"
+    }
+  ]
+},
+"HogwartsGryffindorKid2": {
+  "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.girl}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Female",
+  "Age": "Child",
+  "Manner": "Rude",
+  "SocialAnxiety": "Outgoing",
+  "Optimism": "Negative",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 20,
+        "Y": 15
+      },
+      "Direction": "right"
+    }
+  ]
+},
+"HogwartsGryffindorSr1": {
+  "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.boy}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Male",
+  "Age": "Teen",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Positive",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 20,
+        "Y": 17
+      },
+      "Direction": "right"
+    }
+  ]
+},
+"HogwartsGryffindorSr2": {
+  "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.girl}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Female",
+  "Age": "Teen",
+  "Manner": "Rude",
+  "SocialAnxiety": "Outgoing",
+  "Optimism": "Negative",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 20,
+        "Y": 18
+      },
+      "Direction": "right"
+    }
+  ]
+},
+"HogwartsGryffindorSr3": {
+  "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.girl}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Female",
+  "Age": "Teen",
+  "Manner": "Rude",
+  "SocialAnxiety": "Outgoing",
+  "Optimism": "Negative",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 20,
+        "Y": 14
+      },
+      "Direction": "right"
+    }
+  ]
+},
+
+"HogwartsHufflepuffJr1Kat": {
+  "DisplayName": "{{i18n: Hogwarts.member.Kat}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Age": "Teen",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Neutral",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 18,
+        "Y": 16
+      },
+      "Direction": "left"
+    },
+  ],
+    "Appearance": [
+      {
+        "Id": "Winter",
+        "Condition": null,
+        "Season": "Winter",
+        "Indoors": true,
+        "Outdoors": true,
+        "Portrait": "Portraits/HogwartsHufflepuffJr1Kat_Winter",
+        "Sprite": "Characters/HogwartsHufflepuffJr1Kat_Winter",
+        "IsIslandAttire": false,
+        "Precedence": -100,
+        "Weight": 1
+      }
+    ],
+  },
+},
+"HogwartsHufflepuffJr2Clover": {
+  "DisplayName": "{{i18n: Hogwarts.member.Clover}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Age": "Teen",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Neutral",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 18,
+        "Y": 17
+      },
+      "Direction": "left"
+    }
+  ],
+  "Appearance": [
+  {
+    "Id": "Winter",
+    "Condition": null,
+    "Season": "Winter",
+    "Indoors": true,
+    "Outdoors": true,
+    "Portrait": "Portraits/HogwartsHufflepuffJr2Clover_Winter",
+    "Sprite": "Characters/HogwartsHufflepuffJr2Clover_Winter",
+    "IsIslandAttire": false,
+    "Precedence": -100,
+    "Weight": 1
+  }
+],
+},
+"HogwartsHufflepuffJr3": {
+  "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.boy}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Male",
+  "Age": "Teen",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Shy",
+  "Optimism": "Positive",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 11,
+        "Y": 18
+      },
+      "Direction": "left"
+    }
+  ]
+},
+/*"HogwartsHufflepuffKid1": {
+  "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.boy}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Male",
+  "Age": "Child",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Shy",
+  "Optimism": "Positive",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 8,
+        "Y": 15
+      },
+      "Direction": "right"
+    }
+  ]
+},*/
+"HogwartsHufflepuffKid2": {
+  "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.girl}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Female",
+  "Age": "Child",
+  "Manner": "Polite",
+  "SocialAnxiety": "Shy",
+  "Optimism": "Negative",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 11,
+        "Y": 15
+      },
+      "Direction": "left"
+    }
+  ]
+},
+"HogwartsHufflepuffSr1": {
+  "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.girl}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Female",
+  "Age": "Teen",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Shy",
+  "Optimism": "Positive",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 8,
+        "Y": 16
+      },
+      "Direction": "right"
+    }
+  ]
+},
+"HogwartsHufflepuffSr2Dom": {
+  "DisplayName": "{{i18n: Hogwarts.member.Dom}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Age": "Teen",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Neutral",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 8,
+        "Y": 17
+      },
+      "Direction": "right"
+    }
+  ],
+  "Appearance": [
+    {
+      "Id": "Winter",
+      "Condition": null,
+      "Season": "Winter",
+      "Indoors": true,
+      "Outdoors": true,
+      "Portrait": "Portraits/HogwartsHufflepuffSr2Dom_Winter",
+      "Sprite": "Characters/HogwartsHufflepuffSr2Dom_Winter",
+      "IsIslandAttire": false,
+      "Precedence": -100,
+      "Weight": 1
+    }
+  ],  
+},
+"HogwartsHufflepuffSr3Kaaty": {
+  "DisplayName": "{{i18n: Hogwarts.member.Kaaty}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Age": "Teen",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Neutral",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 8,
+        "Y": 14
+      },
+      "Direction": "right"
+    }
+  ],
+  "Appearance": [
+    {
+      "Id": "Winter",
+      "Condition": null,
+      "Season": "Winter",
+      "Indoors": true,
+      "Outdoors": true,
+      "Portrait": "Portraits/HogwartsHufflepuffSr3Kaaty_Winter",
+      "Sprite": "Characters/HogwartsHufflepuffSr3Kaaty_Winter",
+      "IsIslandAttire": false,
+      "Precedence": -100,
+      "Weight": 1
+    }
+  ],  
+},
+
+"HogwartsRavenclawJr1Carter": {
+  "DisplayName": "{{i18n: Hogwarts.member.Carter}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Age": "Teen",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Neutral",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 18,
+        "Y": 16
+      },
+      "Direction": "left"
+    },
+  ],
+  "Appearance": [
+    {
+      "Id": "Winter",
+      "Condition": null,
+      "Season": "Winter",
+      "Indoors": true,
+      "Outdoors": true,
+      "Portrait": "Portraits/HogwartsRavenclawJr1Carter_Winter",
+      "Sprite": "Characters/HogwartsRavenclawJr1Carter_Winter",
+      "IsIslandAttire": false,
+      "Precedence": -100,
+      "Weight": 1
+    }
+  ],
+},
+"HogwartsRavenclawJr2Quinn": {
+  "DisplayName": "{{i18n: Hogwarts.member.Quinn}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Age": "Teen",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Neutral",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 18,
+        "Y": 17
+      },
+      "Direction": "left"
+    }
+  ],
+  "Appearance": [
+  {
+    "Id": "Winter",
+    "Condition": null,
+    "Season": "Winter",
+    "Indoors": true,
+    "Outdoors": true,
+    "Portrait": "Portraits/HogwartsRavenclawJr2Quinn_Winter",
+    "Sprite": "Characters/HogwartsRavenclawJr2Quinn_Winter",
+    "IsIslandAttire": false,
+    "Precedence": -100,
+    "Weight": 1
+  }
+],
+},
+"HogwartsRavenclawJr3": {
+  "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.boy}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Male",
+  "Age": "Teen",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Shy",
+  "Optimism": "Positive",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 18,
+        "Y": 18
+      },
+      "Direction": "left"
+    }
+  ]
+},
+"HogwartsRavenclawKid1": {
+  "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.boy}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Male",
+  "Age": "Child",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Shy",
+  "Optimism": "Positive",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 15,
+        "Y": 15
+      },
+      "Direction": "right"
+    }
+  ]
+},
+"HogwartsRavenclawKid2JiHyeon": {
+  "DisplayName": "{{i18n: Hogwarts.member.JiHyeon}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Age": "Child",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Neutral",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 18,
+        "Y": 15
+      },
+      "Direction": "left"
+    }
+  ]
+},
+"HogwartsRavenclawSr1": {
+  "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.girl}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Female",
+  "Age": "Teen",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Shy",
+  "Optimism": "Positive",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 15,
+        "Y": 16
+      },
+      "Direction": "right"
+    }
+  ]
+},
+"HogwartsRavenclawSr2": {
+  "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.boy}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Male",
+  "Age": "Teen",
+  "Manner": "Polite",
+  "SocialAnxiety": "Outgoing",
+  "Optimism": "Negative",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 15,
+        "Y": 17
+      },
+      "Direction": "right"
+    }
+  ]
+},
+"HogwartsRavenclawSr3Harv": {
+  "DisplayName": "{{i18n: Hogwarts.member.Harv}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Age": "Teen",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Neutral",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 15,
+        "Y": 18
+      },
+      "Direction": "right"
+    }
+  ],
+  "Appearance": [
+    {
+      "Id": "Winter",
+      "Condition": null,
+      "Season": "Winter",
+      "Indoors": true,
+      "Outdoors": true,
+      "Portrait": "Portraits/HogwartsRavenclawSr3Harv_Winter",
+      "Sprite": "Characters/HogwartsRavenclawSr3Harv_Winter",
+      "IsIslandAttire": false,
+      "Precedence": -100,
+      "Weight": 1
+    }
+  ],  
+},
+
+"HogwartsSlytherinJr1": {
+  "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.girl}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Female",
+  "Age": "Teen",
+  "Manner": "Rude",
+  "SocialAnxiety": "Shy",
+  "Optimism": "Negative",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 3,
+        "Y": 16
+      },
+      "Direction": "right"
+    }
+  ]
+},
+"HogwartsSlytherinJr2": {
+  "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.boy}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Male",
+  "Age": "Teen",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Positive",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 6,
+        "Y": 16
+      },
+      "Direction": "left"
+    }
+  ]
+},
+"HogwartsSlytherinJr3": {
+  "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.girl}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Female",
+  "Age": "Teen",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Negative",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 6,
+        "Y": 17
+      },
+      "Direction": "left"
+    }
+  ]
+},
+"HogwartsSlytherinKid1": {
+  "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.boy}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Male",
+  "Age": "Child",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Positive",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 6,
+        "Y": 15
+      },
+      "Direction": "left"
+    }
+  ]
+},
+"HogwartsSlytherinKid2": {
+  "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.girl}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Female",
+  "Age": "Child",
+  "Manner": "Rude",
+  "SocialAnxiety": "Outgoing",
+  "Optimism": "Negative",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 3,
+        "Y": 15
+      },
+      "Direction": "right"
+    }
+  ]
+},
+/* "HogwartsSlytherinSr1": {
+  "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.boy}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Gender": "Male",
+  "Age": "Teen",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Positive",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 3,
+        "Y": 17
+      },
+      "Direction": "right"
+    }
+  ]
+},*/
+"HogwartsSlytherinSr2Mo": {
+  "DisplayName": "{{i18n: Hogwarts.member.Mo}}",
+  "BirthSeason": "Spring",
+  "BirthDay": "1",
+  "Age": "Teen",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Neutral",
+  "Optimism": "Neutral",
+  "CanBeRomanced": false,
+  "Calendar": "HiddenAlways",
+  "SocialTab": "HiddenAlways",
+  "CanReceiveGifts": false,
+  "CanGreetNearbyCharacters": true,
+  "CanVisitIsland": false,
+  "IntroductionsQuest": false,
+  "PerfectionScore": false,
+  "Home": [
+    {
+      "Id": "Default",
+      "Condition": null,
+      "Location": "{{ModID}}_HogwartsGreatHall",
+      "Tile": {
+        "X": 3,
+        "Y": 18
+      },
+      "Direction": "right"
+    }
+  ],
+  "Appearance": [
+  {
+    "Id": "Winter",
+    "Condition": null,
+    "Season": "Winter",
+    "Indoors": true,
+    "Outdoors": true,
+    "Portrait": "Portraits/HogwartsSlytherinSr2Mo_Winter",
+    "Sprite": "Characters/HogwartsSlytherinSr2Mo_Winter",
+    "IsIslandAttire": false,
+    "Precedence": -100,
+    "Weight": 1
+  }
+  ],
+},
+}
   ]
 }
