@@ -159,6 +159,12 @@
       "FromFile": "assets/Maps/HogwartsDivinationClassroom.tmx"
     },
     {
+      "LogName": "Hogwarts Faculty Tower Load",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_HogwartsFacultyTower",
+      "FromFile": "assets/Maps/HogwartsFacultyTower.tmx"
+    },
+    {
       "LogName": "Hogwarts Grand Staircase Load",
       "Action": "Load",
       "Target": "Maps/{{ModId}}_HogwartsGrandStaircase",
@@ -437,6 +443,12 @@
           "CreateOnLoad": {
             "AlwaysActive": false,
             "MapPath": "Maps/{{ModId}}_HogwartsDivinationClassroom"
+          }
+        },
+        "{{ModId}}_HogwartsFacultyTower": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsFacultyTower"
           }
         },
         "{{ModId}}_HogwartsGrandStaircase": {

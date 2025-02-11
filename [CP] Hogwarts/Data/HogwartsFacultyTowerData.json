@@ -1,0 +1,52 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Faculty Tower Warps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsFacultyTower",
+      "MapTiles": [
+/*South Wing*/
+        {
+          "Position": {
+            "X": 29,
+            "Y": 26
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 31 58 {{ModId}}_HogwartsSouthWing"
+          }
+        },
+        {
+          "Position": {
+            "X": 30,
+            "Y": 26
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 31 58 {{ModId}}_HogwartsSouthWing"
+          }
+        },
+        {
+          "Position": {
+            "X": 62,
+            "Y": 6
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 67 25 {{ModId}}_HogwartsSouthWing"
+          }
+        },
+        {
+          "Position": {
+            "X": 63,
+            "Y": 6
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 67 25 {{ModId}}_HogwartsSouthWing"
+          }
+        }
+      ]
+    }
+  ]
+}

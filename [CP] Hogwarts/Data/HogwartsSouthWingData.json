@@ -5,6 +5,57 @@
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsSouthWing",
       "MapTiles": [
+        /*Faculty Tower*/
+        {
+          "Position": {
+            "X": 30,
+            "Y": 59
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsFacultyTower 30 27"
+          }
+        },
+        {
+          "Position": {
+            "X": 31,
+            "Y": 59
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsFacultyTower 30 27"
+          }
+        },
+        {
+          "Position": {
+            "X": 32,
+            "Y": 59
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsFacultyTower 30 27"
+          }
+        },
+        {
+          "Position": {
+            "X": 66,
+            "Y": 24
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 62 7 {{ModId}}_HogwartsFacultyTower"
+          }
+        },
+        {
+          "Position": {
+            "X": 67,
+            "Y": 24
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 62 7 {{ModId}}_HogwartsFacultyTower"
+          }
+        },
         /*Grand Staircase*/
         {
           "Position": {
