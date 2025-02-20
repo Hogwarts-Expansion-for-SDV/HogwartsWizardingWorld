@@ -957,6 +957,159 @@
       {
         "MonsterTypes": [
           {
+            "MonsterName": "Lava Lurk",
+            "Settings": {
+              "Segments": 1,
+              "SpawnWeight": 20,
+              "HP": 80,
+              "Damage": 40,
+              "Defense": 0,
+              "DodgeChance": 0,
+              "EXP": 25,
+              "SightRange": 10,
+              "RangedAttacks": true,
+              "Sprite": "Characters/Monsters/Grindylow Default",
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "HogwartsET.CP.Hogwarts_CrocodileHeart",
+                  "PercentChanceToSpawn": 50
+                },
+                {
+                  "Category": "Object",
+                  "Name": "HogwartsET.CP.Hogwarts_Leech",
+                  "PercentChanceToSpawn": 50
+                }
+              ]
+            }
+          },
+          {
+            "MonsterName": "Lava Lurk",
+            "Settings": {
+              "Segments": 1,
+              "SpawnWeight": 20,
+              "HP": 80,
+              "Damage": 40,
+              "Defense": 0,
+              "DodgeChance": 0,
+              "EXP": 25,
+              "SightRange": 10,
+              "RangedAttacks": true,
+              "Sprite": "Characters/Monsters/Grindylow Swamp",
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "HogwartsET.CP.Hogwarts_CrocodileHeart",
+                  "PercentChanceToSpawn": 50
+                },
+                {
+                  "Category": "Object",
+                  "Name": "HogwartsET.CP.Hogwarts_Leech",
+                  "PercentChanceToSpawn": 50
+                }
+              ]
+            }
+          },
+          {
+            "MonsterName": "Lava Lurk",
+            "Settings": {
+              "Segments": 1,
+              "SpawnWeight": 20,
+              "HP": 80,
+              "Damage": 40,
+              "Defense": 0,
+              "DodgeChance": 0,
+              "EXP": 25,
+              "SightRange": 10,
+              "RangedAttacks": true,
+              "Sprite": "Characters/Monsters/Grindylow Tan",
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "HogwartsET.CP.Hogwarts_CrocodileHeart",
+                  "PercentChanceToSpawn": 50
+                },
+                {
+                  "Category": "Object",
+                  "Name": "HogwartsET.CP.Hogwarts_Leech",
+                  "PercentChanceToSpawn": 50
+                }
+              ]
+            }
+          },
+          {
+            "MonsterName": "Lava Lurk",
+            "Settings": {
+              "Segments": 1,
+              "SpawnWeight": 20,
+              "HP": 80,
+              "Damage": 40,
+              "Defense": 0,
+              "DodgeChance": 0,
+              "EXP": 25,
+              "SightRange": 10,
+              "RangedAttacks": true,
+              "Sprite": "Characters/Monsters/Grindylow Yellow",
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "HogwartsET.CP.Hogwarts_CrocodileHeart",
+                  "PercentChanceToSpawn": 50
+                },
+                {
+                  "Category": "Object",
+                  "Name": "HogwartsET.CP.Hogwarts_Leech",
+                  "PercentChanceToSpawn": 50
+                }
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "Forbidden Forest Water",
+        "MapName": "HogwartsET.CP.Hogwarts_ForbiddenForest",
+        "MinimumSpawnsPerDay": 8,
+        "MaximumSpawnsPerDay": 9,
+        "IncludeTerrainTypes": [
+          "Diggable"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "7,9/188,10",
+          "10,8/10,66",
+          "10,79/10,146",
+          "4,141/44,141",
+          "43,145/81,145",
+          "68,144/134,144",
+          "101,145/192,145",
+          "189,10/190,147"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Medium",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "MonsterTypes": [
+          {
             "MonsterName": "Serpent",
             "Settings": {
               "Segments": 1,
@@ -1013,7 +1166,7 @@
               "Segments": 30,
               "SpawnWeight": 2,
               "HP": 500,
-              "Damage": 170,
+              "Damage": 90,
               "Defense": 0,
               "DodgeChance": 0,
               "EXP": 25,
