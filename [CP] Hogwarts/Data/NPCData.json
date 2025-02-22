@@ -254,13 +254,13 @@
 // Professors
 "HogwartsBinns": {
   "DisplayName": "{{i18n: npc.Binns.name}}",
-  "BirthSeason": "Spring",
-  "BirthDay": 13,
-  "Gender": "Female",
+  "BirthSeason": "Fall",
+  "BirthDay": 12,
+  "Gender": "Male",
   "Age": "Adult",
-  "Manner": "Polite",
-  "SocialAnxiety": "Neutral",
-  "Optimism": "Positive",
+  "Manner": "Neutral",
+  "SocialAnxiety": "Shy",
+  "Optimism": "Neutral",
   "CanBeRomanced": false,
   "Calendar": "HiddenAlways",
   "SocialTab": "HiddenAlways",
@@ -274,24 +274,24 @@
     {
       "Id": "Default",
       "Condition": null,
-      "Location": "{{ModId}}_HogwartsGreatHall",
+      "Location": "{{ModId}}_HogwartsHistoryOfMagicClassroom",
       "Tile": {
-        "X": 6,
-        "Y": 18
+        "X": 10,
+        "Y": 6
       },
-      "Direction": "left"
+      "Direction": "down"
     }
   ]
 },
 "HogwartsBrindlemore": {
   "DisplayName": "{{i18n: npc.Brindlemore.name}}",
-  "BirthSeason": "Spring",
-  "BirthDay": 13,
+  "BirthSeason": "Fall",
+  "BirthDay": 6,
   "Gender": "Female",
   "Age": "Adult",
-  "Manner": "Polite",
+  "Manner": "Rude",
   "SocialAnxiety": "Neutral",
-  "Optimism": "Positive",
+  "Optimism": "Negative",
   "CanBeRomanced": false,
   "Calendar": "HiddenAlways",
   "SocialTab": "HiddenAlways",
@@ -305,10 +305,10 @@
     {
       "Id": "Default",
       "Condition": null,
-      "Location": "{{ModId}}_HogwartsGreatHall",
+      "Location": "{{ModId}}_HogwartsFacultyTower",
       "Tile": {
-        "X": 6,
-        "Y": 18
+        "X": 21,
+        "Y": 5
       },
       "Direction": "left"
     }
@@ -317,17 +317,17 @@
 "HogwartsFilch": {
   "DisplayName": "{{i18n: npc.Filch.name}}",
   "BirthSeason": "Spring",
-  "BirthDay": 13,
-  "Gender": "Female",
+  "BirthDay": 17,
+  "Gender": "Male",
   "Age": "Adult",
-  "Manner": "Polite",
+  "Manner": "Rude",
   "SocialAnxiety": "Neutral",
-  "Optimism": "Positive",
+  "Optimism": "Negative",
   "CanBeRomanced": false,
   "Calendar": "HiddenAlways",
   "SocialTab": "HiddenAlways",
   "CanReceiveGifts": false,
-  "CanGreetNearbyCharacters": true,
+  "CanGreetNearbyCharacters": false, //
   "CanVisitIsland": false,
   "IntroductionsQuest": false,
   "PerfectionScore": false,
@@ -336,22 +336,22 @@
     {
       "Id": "Default",
       "Condition": null,
-      "Location": "{{ModId}}_HogwartsGreatHall",
+      "Location": "{{ModId}}_HogwartsFacultyTower",
       "Tile": {
-        "X": 6,
+        "X": 34,
         "Y": 18
       },
-      "Direction": "left"
+      "Direction": "right"
     }
   ]
 },
 "HogwartsFlitwick": {
   "DisplayName": "{{i18n: npc.Flitwick.name}}",
-  "BirthSeason": "Spring",
-  "BirthDay": 13,
+  "BirthSeason": "Fall",
+  "BirthDay": 17,
   "Gender": "Male",
   "Age": "Adult",
-  "Manner": "Polite",
+  "Manner": "Neutral",
   "SocialAnxiety": "Neutral",
   "Optimism": "Positive",
   "CanBeRomanced": false,
@@ -367,22 +367,22 @@
     {
       "Id": "Default",
       "Condition": null,
-      "Location": "{{ModId}}_HogwartsGreatHall",
+      "Location": "{{ModId}}_HogwartsFacultyTower",
       "Tile": {
-        "X": 6,
-        "Y": 18
+        "X": 21,
+        "Y": 35
       },
-      "Direction": "left"
+      "Direction": "right"
     }
   ]
 },
 "HogwartsMcGonagall": {
   "DisplayName": "{{i18n: npc.McGonagall.name}}",
-  "BirthSeason": "Spring",
-  "BirthDay": 13,
+  "BirthSeason": "Fall",
+  "BirthDay": 14,
   "Gender": "Female",
   "Age": "Adult",
-  "Manner": "Polite",
+  "Manner": "Neutral",
   "SocialAnxiety": "Neutral",
   "Optimism": "Positive",
   "CanBeRomanced": false,
@@ -398,10 +398,10 @@
     {
       "Id": "Default",
       "Condition": null,
-      "Location": "{{ModId}}_HogwartsGreatHall",
+      "Location": "{{ModId}}_HogwartsFacultyTower",
       "Tile": {
-        "X": 13,
-        "Y": 8
+        "X": 2,
+        "Y": 7
       },
       "Direction": "left"
     }
@@ -410,12 +410,12 @@
 "HogwartsPomfrey": {
   "DisplayName": "{{i18n: npc.Pomfrey.name}}",
   "BirthSeason": "Spring",
-  "BirthDay": 13,
+  "BirthDay": 5,
   "Gender": "Female",
   "Age": "Adult",
-  "Manner": "Polite",
+  "Manner": "Neutral",
   "SocialAnxiety": "Neutral",
-  "Optimism": "Positive",
+  "Optimism": "Negative",
   "CanBeRomanced": false,
   "Calendar": "HiddenAlways",
   "SocialTab": "HiddenAlways",
@@ -429,23 +429,23 @@
     {
       "Id": "Default",
       "Condition": null,
-      "Location": "{{ModId}}_HogwartsGreatHall",
+      "Location": "{{ModId}}_HogwartsFacultyTower",
       "Tile": {
-        "X": 6,
-        "Y": 18
+        "X": 51,
+        "Y": 44
       },
-      "Direction": "left"
+      "Direction": "right"
     }
   ]
 },
 "HogwartsSlughorn": {
   "DisplayName": "{{i18n: npc.Pomfrey.name}}",
   "BirthSeason": "Spring",
-  "BirthDay": 13,
-  "Gender": "Female",
+  "BirthDay": 18,
+  "Gender": "Male",
   "Age": "Adult",
-  "Manner": "Polite",
-  "SocialAnxiety": "Neutral",
+  "Manner": "Rude",
+  "SocialAnxiety": "Outgoing",
   "Optimism": "Positive",
   "CanBeRomanced": false,
   "Calendar": "HiddenAlways",
@@ -460,12 +460,12 @@
     {
       "Id": "Default",
       "Condition": null,
-      "Location": "{{ModId}}_HogwartsGreatHall",
+      "Location": "{{ModId}}_HogwartsFacultyTower",
       "Tile": {
-        "X": 6,
-        "Y": 18
+        "X": 17,
+        "Y": 45
       },
-      "Direction": "left"
+      "Direction": "right"
     }
   ]
 },
