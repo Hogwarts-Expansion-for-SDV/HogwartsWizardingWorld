@@ -1,0 +1,42 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Common Room Hufflepuff Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsCommonRoomHufflepuff",
+      "MapTiles": [
+/*South Wing*/
+        {
+          "Position": {
+            "X": 24,
+            "Y": 27
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 4 35"
+          }
+        },
+        {
+          "Position": {
+            "X": 25,
+            "Y": 27
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 4 35"
+          }
+        },
+        {
+          "Position": {
+            "X": 26,
+            "Y": 27
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 4 35"
+          }
+        }
+      ]
+    }
+  ]
+}

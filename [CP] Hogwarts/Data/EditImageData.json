@@ -1,6 +1,22 @@
 {
   "Changes": [
     {
+      "LogName": "Hogwarts Interior Remove Critter Shadow",
+      "Action": "EditImage",
+      "Target": "LooseSprites/shadow",
+      "FromFile": "assets/PolyjuicePotion/blank.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 16
+      },
+      "When": {
+        "LocationName |contains= {{ModId}}_HogwartsTransfigurationWing, {{ModId}}_HogwartsSouthWing": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
       "LogName": "Hogwarts Interior Remove Rain",
       "Action": "EditImage",
       "Target": "TileSheets/rain",

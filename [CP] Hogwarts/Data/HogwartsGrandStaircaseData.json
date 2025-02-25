@@ -5,6 +5,49 @@
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsGrandStaircase",
       "MapTiles": [
+/*Common Room Gryffindor*/ 
+        {
+          "Position": {
+            "X": 14,
+            "Y": 63
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 24 25 {{ModId}}_HogwartsCommonRoomGryffindor"
+          }
+        },
+/*Common Room Ravenclaw*/ 
+        {
+          "Position": {
+            "X": 47,
+            "Y": 53
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 24 32 {{ModId}}_HogwartsCommonRoomRavenclaw"
+          }
+        },
+/*Common Room Slytherin*/ 
+        {
+          "Position": {
+            "X": 44,
+            "Y": 112
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 24 31 {{ModId}}_HogwartsCommonRoomSlytherin"
+          }
+        },
+        {
+          "Position": {
+            "X": 45,
+            "Y": 112
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 24 31 {{ModId}}_HogwartsCommonRoomSlytherin"
+          }
+        },
 /*Faculty Tower*/
         {
           "Position": {

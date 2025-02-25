@@ -5,6 +5,17 @@
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsSouthWing",
       "MapTiles": [
+/*Common Room Hufflepuff*/
+        {
+          "Position": {
+            "X": 3,
+            "Y": 34
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 25 26 {{ModId}}_HogwartsCommonRoomHufflepuff"
+          }
+        },
         /*Faculty Tower*/
         {
           "Position": {
