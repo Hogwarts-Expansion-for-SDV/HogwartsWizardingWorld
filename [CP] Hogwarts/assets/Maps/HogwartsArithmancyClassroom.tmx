@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="22" height="22" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="5">
- <tileset firstgid="1" name="z_HistoryClassroom_Hogwarts" tilewidth="16" tileheight="16" tilecount="240" columns="12">
-  <image source="z_tilesheet1_Hogwarts.png" width="192" height="320"/>
- </tileset>
- <tileset firstgid="241" name="z_ArithmancyCharmsDADA_ICEC_Hogwarts" tilewidth="16" tileheight="16" tilecount="770" columns="22">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="34" height="22" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="5">
+ <tileset firstgid="1" name="z_ArithmancyCharmsDADA_ICEC_Hogwarts" tilewidth="16" tileheight="16" tilecount="770" columns="22">
   <image source="z_ArithmancyCharmsDADA_ICEC_Hogwarts.png" width="352" height="560"/>
  </tileset>
- <tileset firstgid="1011" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+ <tileset firstgid="771" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
   <image source="townInterior.png" width="512" height="1088"/>
  </tileset>
- <tileset firstgid="3187" name="townInterior_2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+ <tileset firstgid="2947" name="townInterior_2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
   <image source="townInterior_2.png" width="512" height="656"/>
  </tileset>
- <tileset firstgid="4499" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
+ <tileset firstgid="4259" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
   <image source="walls_and_floors.png" width="256" height="560"/>
  </tileset>
- <tileset firstgid="5059" name="z_vanillaEdits_Hogwarts" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+ <tileset firstgid="4819" name="z_vanillaEdits_Hogwarts" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
   <image source="z_vanillaEdits_Hogwarts.png" width="512" height="656"/>
  </tileset>
- <tileset firstgid="6371" name="z_AstronomyKitchen_SC_Hogwarts" tilewidth="16" tileheight="16" tilecount="418" columns="22">
+ <tileset firstgid="6131" name="z_AstronomyKitchen_SC_Hogwarts" tilewidth="16" tileheight="16" tilecount="418" columns="22">
   <image source="z_AstronomyKitchen_SC_Hogwarts.png" width="352" height="304"/>
  </tileset>
- <layer id="1" name="Back" width="22" height="22">
+ <tileset firstgid="6549" name="z_furniture_Hogwarts" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="z_furniture_Hogwarts.png" width="512" height="1488"/>
+ </tileset>
+ <layer id="1" name="Back" width="34" height="22">
   <data encoding="base64" compression="zlib">
-   eJxLFmZgSAHiZCrTxUBcQgOa2u4cde+oe0fdO+reUfeOuncwuBcAsk3vKw==
+   eJztljsWwCAIBDkDVzU30IOb0iLIgm4qpqFQeO7k8xQpijhNRR716w6kvzkz+rs+1K87kP7+MQM9P5or24eeH80V7Tv1YOWL7j/1YOUrH/Z7gsDysc5HKB9cH9n/75/fiwcjb9THStYD6jnKjed9k8y9gwk7/wRqfNBk
   </data>
  </layer>
  <objectgroup id="2" name="Back"/>
- <layer id="11" name="Back1" width="22" height="22">
+ <layer id="11" name="Back1" width="34" height="22">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFAwHO8Qy0CwiDoeBGEBgq7hwFo2AUjAJ8AADzHwKP
+   eJxjYBgFo4B0cI97oF0w8GA0DCBgNBxGwSgYBaNgFIwC2gIAHgACvA==
   </data>
  </layer>
  <objectgroup id="12" name="Back1"/>
- <layer id="5" name="Buildings" width="22" height="22">
+ <layer id="5" name="Buildings" width="34" height="22">
   <data encoding="base64" compression="zlib">
-   eJzFlUEKwjAQRafVIoW4SlfdaBEUz6UX0Qt5FNEriNZ9QbcmYCCkk5lJKzjwoUzSx0sa0m4C0CGZVgBPTaeo8HdjWZn5iwJgyaQxWQvYznGfwN1VtHvoaJ9Pik7DuFvP0FFaobvz9j2d41XJuaG78555XKrOOcAl590tt/S4nOPdMFuG67wd99fFcV8m74S+lKsygHkm70u5QwvjcmsMC5uPcWNrPNQAx7rfx+b/4zxw+0GNW+4mwuW+OTW+/d4RN02IJdZD9+/KMXyMN4Yv4aXwh/DC+GemFP4rP5Haiug=
+   eJy1lk1KA0EQhStENCGgMKOEIf6tFZ0EIZIDuPTnLrr3DHohQV16B3GuICZxZxVJYVnp7uqOmQePTDrd1d+86SkC4NZ2DjDNwt7JPYtRE2Ot9HfmrnGG9cs1gL7hAXroYenm9np2oWpwBncJHLe5O5tlOXQGdP3UCXsQyIY4rPVs5qAcdAax0tlwLsRx1AA4bvjXHqAPYcYhc+AMqk48h86Gc+k6zs1mG2CrvThezOeXERm84319BO6NxBxc903MP8H9T9Elui9YaI7ksDL4wvkTg4Nz4bqVmH+Je1+hr9E3gqMSHKsW150a3KRpBMc6eiNhXHNIXXiuffOldtF7CeOy7nlCzqOangv3Nu6Jcox6eLP51yTNYWWu5Zqv+6Uc0z2cpTl8mT8UAI/F4rhrvua4z9M5ViHZs7kf6B4ey2E9n9Tnx/Jx+M619U6Efg+dfx8H6dPzP2QZjee1iKOlfmsZHCR6f/7DM85+30ES5byPn889gBf0a2/2fRR5HlN59P66lqtXpMjiCe1fh2gveebo+dax/w9yIm3M
   </data>
  </layer>
  <objectgroup id="6" name="Buildings"/>
- <layer id="13" name="Buildings1" width="22" height="22">
+ <layer id="13" name="Buildings1" width="34" height="22">
   <data encoding="base64" compression="zlib">
-   eJxjYKAvUBEhrEaVCDXooI+HgaGfAJ7AQ5obQWauI0LPBiSz8bkd5sZNRLrjAlDdRjxuB7mTWDfiAjC3I7u7jwQ34gIwtyO7mxJ3ooMNVDQLGVwgwlwWRuzi4jjEhxOQAPpRkkR/4gqv4QKY8fiPnPAaBSMXAACdOxfo
+   eJxjYBjcwESYsBpTItRQCuZxMzDMJ4AXcOM3g5B+GEYHsDAAuWEfATtA4ACSW7CFjQgjA4MoI279nEDMhUUcFgaHiHADCDwAqjtIZNgQA0DhQGwY4AKwsKEkzcwjIQxwAVjYkBouIkhsSsIBHRxAMqtdknrmkgoeUNFPMCCCQ1yd+laNAgJAA4g1SdSDHn8LkdLIIm5MMXqBg0hlNqw8OIijDB9KAF/RSE78jXSwFa2uFRoYZ4yCYQAAsu8pbw==
   </data>
  </layer>
  <objectgroup id="14" name="Buildings1"/>
- <layer id="15" name="Buildings2" width="22" height="22">
+ <layer id="15" name="Buildings2" width="34" height="22">
   <data encoding="base64" compression="zlib">
-   eJxjYKA/CGBkYAgE4iAgDgPicCAOBuIQIA5lJN/cNKDedCDOAOIcIM4F4kwgzgLibBLNjQWqj8Oipwko1oxFXBUopkaEHcVANSUkuMUaqNYGj/oYCsILnxlFVDCXGmaMglEwCkbBSAEAfqMLDA==
+   eJztzjEOgkAQQFEuJY2A9tAIYo0C2gglCkiDnADuC/4DkMAmFBszP3nNZmd2DUP/Ilxxwx0PxEiQKuzZw4INBwccFeYLvPDGBw1KVKhXzI+YcIKPAGeEuCzMZshnznsMM+c7mCv+pNoXncJ9F96G7z812dFqskOSJEmSpP/vBwcrEjE=
   </data>
  </layer>
  <objectgroup id="16" name="Buildings2"/>
- <layer id="9" name="Front" width="22" height="22">
+ <layer id="9" name="Front" width="34" height="22">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjALKQLYUA0OO1EC7YmgCFxHqmeWMZtYTYcrMB5n3VBi3PKnmEzKPVPNJNY+Q+ZSaRykAAJ3dDDM=
+   eJxjYBgFo2BwgHccDAzvOQbWDbycCLYAJ251o4C+QB8HeyQBC2EGhhBhCDtYGMLHhukF7KloV7UkA0ONJHl64+no51GAGwQjpU9SADl68LmBEvBFiDL3gOz/KoQpvkiagWExEC+Rpq17cNkPAtQoKwi5B5/9tADo7qG3/fQGALSTF/U=
   </data>
  </layer>
  <objectgroup id="10" name="Front"/>

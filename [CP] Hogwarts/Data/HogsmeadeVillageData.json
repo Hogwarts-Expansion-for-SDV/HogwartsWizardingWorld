@@ -1550,7 +1550,6 @@
       "When": {
         "HasMod|contains=PeacefulEnd.CustomCompanions": true,
         "HasMod|contains=HogwartsET.CC.Hogwarts": true,
-        "Time": "{{Range: 1900, 2600}}",
         "Day": "1, 15"
       },
       "Update": "OnTimeChange"
@@ -1602,7 +1601,7 @@
         }
       ],
       "When": {
-        "Time": "{{Range: 1900, 2600}}",
+        "Time": "{{Range: 1900, 2100}}",
         "Day": "1, 15"
       },
       "Update": "OnTimeChange"
@@ -1628,19 +1627,48 @@
       "When": {
         "HasMod|contains=PeacefulEnd.CustomCompanions": true,
         "HasMod|contains=HogwartsET.CC.Hogwarts": true,
-        "Time": "{{Range: 0900, 1100}}",
         "Day": "8, 22"
       },
       "Update": "OnTimeChange"
     },
     {
-      "LogName": "Hogsmeade Carriage Departure Spawn 1",
+      "LogName": "Hogsmeade Carriage Departure Spawn",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogsmeadeVillage",
       "MapTiles": [
         {
           "Position": {
-            "X": 8,
+            "X": 15,
+            "Y": 121
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriage"
+          }
+        },
+        {
+          "Position": {
+            "X": 25,
+            "Y": 121
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriage"
+          }
+        },
+        {
+          "Position": {
+            "X": 35,
+            "Y": 121
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriage"
+          }
+        },
+        {
+          "Position": {
+            "X": 45,
             "Y": 121
           },
           "Layer": "Back",
@@ -1650,73 +1678,7 @@
         }
       ],
       "When": {
-        "Time": "{{Range: 0900, 1100}}",
-        "Day": "8, 22"
-      },
-      "Update": "OnTimeChange"
-    },
-    {
-      "LogName": "Hogsmeade Carriage Departure Spawn 2",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 8,
-            "Y": 121
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriage"
-          }
-        }
-      ],
-      "When": {
-        "Time": "{{Range: 0900, 1100}}",
-        "Day": "8, 22"
-      },
-      "Update": "OnTimeChange"
-    },
-    {
-      "LogName": "Hogsmeade Carriage Departure Spawn 3",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 8,
-            "Y": 121
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriage"
-          }
-        }
-      ],
-      "When": {
-        "Time": "{{Range: 0920, 1100}}",
-        "Day": "8, 22"
-      },
-      "Update": "OnTimeChange"
-    },
-    {
-      "LogName": "Hogsmeade Carriage Departure Spawn 4",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 8,
-            "Y": 121
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.HogwartsCarriage"
-          }
-        }
-      ],
-      "When": {
-        "Time": "{{Range: 0930, 1100}}",
+        "Time": "{{Range: 0800, 1000}}",
         "Day": "8, 22"
       },
       "Update": "OnTimeChange"

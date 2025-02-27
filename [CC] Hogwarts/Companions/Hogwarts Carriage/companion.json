@@ -2,40 +2,38 @@
   "Name": "HogwartsCarriage",
   "Type": "Walking",
   "EnableFarmerCollision": true,
-  "EnableCharacterCollision": true,
+  "EnableCharacterCollision": false,
   "EnableShadow": false,
   "TravelSpeed": 2,
   "SpawnDirection": 3,
   "MaxIdleDistance": -1,
   "MaxDistanceBeforeTeleport": -1,
-  "DespawnOnTile": [1, 121, 0],
   "IdleBehavior": "Simple_Path",
-  "IdleArguments": [1, 121, 0],
-  "FrameSizeWidth": 128,
-  "FrameSizeHeight": 128,
-  "CollisionPositionX": 64,
+  "FrameSizeWidth": 96,
+  "FrameSizeHeight": 112,
+  "CollisionPositionX": 48,
   "CollisionPositionY": 0,
   "CollisionPositionHeight": 0,
-  "CollisionPositionWidth": 64,
+  "CollisionPositionWidth": 0,
 
   "LeftAnimation": {
     "StartingFrame": 0,
     "NumberOfFrames": 2,
-    "Duration": 100
+    "Duration": 125
   },
   "RightAnimation": {
     "StartingFrame": 2,
     "NumberOfFrames": 2,
-    "Duration": 100
+    "Duration": 125
   },
   "DownAnimation": {
     "StartingFrame": 6,
     "NumberOfFrames": 2,
-    "Duration": 100
+    "Duration": 125
   },
   "UpAnimation": {
     "StartingFrame": 4,
     "NumberOfFrames": 2,
-    "Duration": 100
+    "Duration": 125
   }
 }
