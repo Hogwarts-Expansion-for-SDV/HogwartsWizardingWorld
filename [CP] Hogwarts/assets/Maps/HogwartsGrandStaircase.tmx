@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="60" height="130" tilewidth="16" tileheight="16" infinite="0" nextlayerid="31" nextobjectid="67">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="60" height="130" tilewidth="16" tileheight="16" infinite="0" nextlayerid="31" nextobjectid="71">
  <properties>
   <property name="DefaultWarpLocation" value="16 95"/>
+  <property name="Doors" value="7 79 1 68 51 79 1 68 56 112 1 68"/>
  </properties>
  <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
   <image source="townInterior.png" width="512" height="1088"/>
@@ -126,7 +127,23 @@
   </data>
  </layer>
  <objectgroup id="5" name="Back"/>
- <objectgroup id="6" name="Buildings"/>
+ <objectgroup id="6" name="Buildings">
+  <object id="68" name="TileData" x="816" y="1264" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door"/>
+   </properties>
+  </object>
+  <object id="69" name="TileData" x="896" y="1792" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door"/>
+   </properties>
+  </object>
+  <object id="70" name="TileData" x="112" y="1264" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door"/>
+   </properties>
+  </object>
+ </objectgroup>
  <objectgroup id="13" name="Buildings1"/>
  <objectgroup id="30" name="Buildings2"/>
  <objectgroup id="8" name="Paths"/>

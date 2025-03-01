@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="34" height="22" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="5">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="34" height="22" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="6">
+ <properties>
+  <property name="Doors" value="8 13 1 172"/>
+ </properties>
  <tileset firstgid="1" name="z_ArithmancyCharmsDADA_ICEC_Hogwarts" tilewidth="16" tileheight="16" tilecount="770" columns="22">
   <image source="z_ArithmancyCharmsDADA_ICEC_Hogwarts.png" width="352" height="560"/>
  </tileset>
@@ -38,7 +41,13 @@
    eJy1ll1Kw0AQx6dUtKWg0Cgl1K9nRdMiKD2Aj37cRd89g15IUB+9g5griCa+OUO7ZNzu7Mza+oeh6WR29pd/kiFVH6A2xjeGpM1MX7+VyesHeG60Yotc6HOC+cKwfoxxKvRYhMN5cJvAcZOFvSGOx54tOIfvAR1r68cRb4jjoAVw2JLv3R7GPjQc5IPvgVW+N86XQeB+rXcBNrrzeeLgPjgPyp6dw/fG+UIcr8yLI9z/GKPAGDEWqsln9YXBgzesf494THIcrm/J6i9w70uMK4xrxlF6HJoHn1hfKRzOF9e3VupJNeNYtkJ9z4VjqZ5rFWMtIc/7niVc30Th2MbYSchzDlK7/TuqfjOfSG728NwyJc1pPmNJ/lzk0jz3Faq3cNwF5j6X5Pl9DvCQz+dD9TEOPp/4bE6ZWVbFOFKl3Z/Y+VSO2PulvROx85MIR8fLdaDh/oh8D6XqK9KLrnkXf5+GAM8YL8Ppf85N7/ciPLQ/9dDkzxRpTSqPdf+/SuP57/1DPPw5p2fKsv8P9zdt8A==
   </data>
  </layer>
- <objectgroup id="6" name="Buildings"/>
+ <objectgroup id="6" name="Buildings">
+  <object id="5" name="TileData" x="128" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door"/>
+   </properties>
+  </object>
+ </objectgroup>
  <layer id="13" name="Buildings1" width="34" height="22">
   <data encoding="base64" compression="zlib">
    eJxjYBhewESYsBpTAmrmcxOH8YF5ROhfQMAMEUYGBlFG3PKcQMyFRRwWBiA37CNgBwgcQHILobAhBcDC4BARbgCBB0B1B4kMG2IAKByIDQNcABY2pIaLCBJ7HglhgAvAwgY5XNolSTODknBABweoaBYl4AEN3CGCQ1yd+laNaLAIGncLuTHFYEADiDVJNBdX/GEDyOXTQaSymdL8OpIAvqKRnPgbTGArWv0rNDDOGAWjAAwAAocpcQ==
