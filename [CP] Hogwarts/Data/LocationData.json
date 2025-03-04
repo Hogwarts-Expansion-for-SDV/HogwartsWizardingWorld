@@ -183,6 +183,12 @@
       "FromFile": "assets/Maps/HogwartsDivinationClassroom.tmx"
     },
     {
+      "LogName": "Hogwarts Dorms Load",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_HogwartsDorms",
+      "FromFile": "assets/Maps/HogwartsDorms.tmx"
+    },
+    {
       "LogName": "Hogwarts Faculty Tower Load",
       "Action": "Load",
       "Target": "Maps/{{ModId}}_HogwartsFacultyTower",
@@ -491,6 +497,12 @@
           "CreateOnLoad": {
             "AlwaysActive": false,
             "MapPath": "Maps/{{ModId}}_HogwartsDivinationClassroom"
+          }
+        },
+        "{{ModId}}_HogwartsDorms": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDorms"
           }
         },
         "{{ModId}}_HogwartsFacultyTower": {
