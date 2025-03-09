@@ -1,0 +1,179 @@
+{
+  "Changes": [
+    /*Invisibility Potion*/
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_InvisibilityPotion": {
+          "Name": "Invisibility Potion",
+          "DisplayName": "{{i18n: obj.potions.InvisibilityPotion.name}}",
+          "Description": "{{i18n: obj.potions.InvisibilityPotion.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 999,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 76,
+          "Edibility": 0,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Drink",
+              "BuffId": "{{ModID}}_Invisibility"
+            }
+          ],
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": [
+            "{{ModId}}_Potion"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts Potions Buffs Data",
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "Entries": {
+        "{{ModID}}_Invisibility": {
+          "DisplayName": "{{i18n: obj.potions.InvisibilityPotion.name}}",
+          "Description": "{{i18n: obj.potions.InvisibilityPotion.desc}}",
+          "IsDebuff": true,
+          "GlowColor": "#7F22007F",
+          "Duration": 90000,
+          "MaxDuration": -1,
+          "IconTexture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "IconSpriteIndex": 76,
+          "ActionsOnApply": [
+            "AddMail Current {{ModId}}_InvisibilityPotion now"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts Invisibility Potion Trigger Action Remove Mail",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_InvisibilityPotion": {
+          "Id": "{{ModId}}_InvisibilityPotion",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_InvisibilityPotion Any",
+          "Action": "RemoveMail Current {{ModId}}_InvisibilityPotion",
+          "MarkActionApplied": false
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts Invisibility Potion EditImage Hairstyles",
+      "Action": "EditImage",
+      "Target": "Characters/Farmer/hairstyles, Characters/Farmer/hairstyles2",
+      "FromFile": "assets/Potion/blank.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 126,
+        "Height": 672
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_InvisibilityPotion": true
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Invisibility Potion EditImage Shirts",
+      "Action": "EditImage",
+      "Target": "Characters/Farmer/shirts",
+      "FromFile": "assets/Potion/blank.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 256,
+        "Height": 608
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_InvisibilityPotion": true
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Invisibility Potion EditImage Pants",
+      "Action": "EditImage",
+      "Target": "Characters/Farmer/pants",
+      "FromFile": "assets/Potion/blank.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 1920,
+        "Height": 1376
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_InvisibilityPotion": true
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Invisibility Potion EditImage Hats",
+      "Action": "EditImage",
+      "Target": "Characters/Farmer/hats",
+      "FromFile": "assets/Potion/blank.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 240,
+        "Height": 640
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_InvisibilityPotion": true
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Invisibility Potion EditImage Accessories",
+      "Action": "EditImage",
+      "Target": "Characters/Farmer/accessories",
+      "FromFile": "assets/Potion/blank.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 128,
+        "Height": 96
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_InvisibilityPotion": true
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Invisibility Potion EditImage Farmer Base",
+      "Action": "EditImage",
+      "Target": "Characters/Farmer/farmer_base, Characters/Farmer/farmer_base_bald, Characters/Farmer/farmer_girl_base, Characters/Farmer/farmer_girl_base_bald",
+      "FromFile": "assets/Potion/blank.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 288,
+        "Height": 672
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_InvisibilityPotion": true
+      },
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Invisibility Potion EditImage Skin Colors",
+      "Action": "EditImage",
+      "Target": "Characters/Farmer/skinColors",
+      "FromFile": "assets/Potion/blank.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 3,
+        "Height": 24
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_InvisibilityPotion": true
+      },
+      "Update": "OnTimeChange"
+    }
+  ]
+}
