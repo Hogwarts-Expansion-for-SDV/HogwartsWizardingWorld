@@ -1,15 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="27" height="24" tilewidth="16" tileheight="16" infinite="0" nextlayerid="15" nextobjectid="1">
- <tileset firstgid="1" name="z_GreatHallTileSheet_Hogwarts" tilewidth="16" tileheight="16" tilecount="77" columns="7">
-  <image source="z_GreatHallTileSheet_Hogwarts.png" width="112" height="176"/>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="31" height="43" tilewidth="16" tileheight="16" infinite="0" nextlayerid="21" nextobjectid="1">
+ <tileset firstgid="1" name="z_GreatHallTileSheet_Hogwarts" tilewidth="16" tileheight="16" tilecount="1353" columns="33">
+  <image source="z_GreatHallTileSheet_Hogwarts.png" width="528" height="664"/>
+  <tile id="572">
+   <animation>
+    <frame tileid="572" duration="100"/>
+    <frame tileid="574" duration="100"/>
+    <frame tileid="576" duration="100"/>
+    <frame tileid="578" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="573">
+   <animation>
+    <frame tileid="573" duration="100"/>
+    <frame tileid="575" duration="100"/>
+    <frame tileid="577" duration="100"/>
+    <frame tileid="579" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="580">
+   <animation>
+    <frame tileid="580" duration="100"/>
+    <frame tileid="582" duration="100"/>
+    <frame tileid="584" duration="100"/>
+    <frame tileid="586" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="581">
+   <animation>
+    <frame tileid="581" duration="100"/>
+    <frame tileid="583" duration="100"/>
+    <frame tileid="585" duration="100"/>
+    <frame tileid="587" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="605">
+   <animation>
+    <frame tileid="605" duration="100"/>
+    <frame tileid="607" duration="100"/>
+    <frame tileid="609" duration="100"/>
+    <frame tileid="611" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="606">
+   <animation>
+    <frame tileid="606" duration="100"/>
+    <frame tileid="608" duration="100"/>
+    <frame tileid="610" duration="100"/>
+    <frame tileid="612" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="613">
+   <animation>
+    <frame tileid="613" duration="100"/>
+    <frame tileid="615" duration="100"/>
+    <frame tileid="617" duration="100"/>
+    <frame tileid="619" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="614">
+   <animation>
+    <frame tileid="614" duration="100"/>
+    <frame tileid="616" duration="100"/>
+    <frame tileid="618" duration="100"/>
+    <frame tileid="620" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="638">
+   <animation>
+    <frame tileid="638" duration="100"/>
+    <frame tileid="639" duration="100"/>
+    <frame tileid="640" duration="100"/>
+    <frame tileid="641" duration="100"/>
+    <frame tileid="642" duration="100"/>
+    <frame tileid="643" duration="100"/>
+    <frame tileid="644" duration="100"/>
+    <frame tileid="645" duration="100"/>
+    <frame tileid="646" duration="100"/>
+    <frame tileid="647" duration="100"/>
+    <frame tileid="648" duration="100"/>
+    <frame tileid="649" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="671">
+   <animation>
+    <frame tileid="671" duration="100"/>
+    <frame tileid="672" duration="100"/>
+    <frame tileid="673" duration="100"/>
+    <frame tileid="674" duration="100"/>
+    <frame tileid="675" duration="100"/>
+    <frame tileid="676" duration="100"/>
+    <frame tileid="677" duration="100"/>
+    <frame tileid="678" duration="100"/>
+    <frame tileid="679" duration="100"/>
+    <frame tileid="680" duration="100"/>
+    <frame tileid="681" duration="100"/>
+    <frame tileid="682" duration="100"/>
+   </animation>
+  </tile>
  </tileset>
- <tileset firstgid="78" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
-  <image source="walls_and_floors.png" width="256" height="560"/>
+ <tileset firstgid="1354" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="688" columns="16">
+  <image source="walls_and_floors.png" width="256" height="688"/>
  </tileset>
- <tileset firstgid="638" name="z_classrooms_Hogwarts" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+ <tileset firstgid="2042" name="z_classrooms_Hogwarts" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
   <image source="z_classrooms_Hogwarts.png" width="512" height="1088"/>
  </tileset>
- <tileset firstgid="2814" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+ <tileset firstgid="4218" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
   <image source="townInterior.png" width="512" height="1088"/>
   <tile id="546">
    <animation>
@@ -52,47 +148,54 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="4990" name="z_vanillaEdits_Hogwarts" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
-  <image source="z_vanillaEdits_Hogwarts.png" width="512" height="656"/>
- </tileset>
- <layer id="2" name="Back" width="27" height="24">
+ <layer id="2" name="Back" width="31" height="43">
   <data encoding="base64" compression="zlib">
-   eJzFVUEOgjAQXLjpQeMf1It6UY/6EU6ceQVPwR/gF/AH+AFPPsO4TbtxXAoBk2KTybTTboehKRCN27IRIC3xzCUAPU48NW26zGEuvXbJWDHWqh513Evrej+dC+c2jC1jp7xQRy+t64yY6zX9nt8zDoyjehbUsw69Kxd6hYC0MiK6Rv35MmBt6YBep5joHFvGvk/T/bb1Mkavgvtb1naxZez7NN1vWy/jf+RiSgt3BtcAKOC8FvNxIO0eWdQBWIBeN4vcoLJMjhva3TI5XWq9ms/LweyT124/xw2t+jx7XkeN99LQ5LsxIcoND8lVD8yVWR96zugB2YLlYp9UvELnEq9shFxyXkngXPidh9pWxntT/XDP0Ksv9B3tC9PMP7IvsFbObEj9G9nweEk=
+   eJzdVktOAzEMdbvoMLDhGPwuAuzhDiAkOkWAegeQ2s4h4Ab0Nu2OJSzaNTEdq8aKncyvI1HpyYnr+PnFSTTjQ4BxAFV+oZyx6Jr7qQ9w7TDtAVw5+6yMMaZJ7pHg4HXIMcZgfNPcsbqb5M5L6s5LcmOtBJ/P0i3rCOWS3CvnWxf4TgC+ku0c4x+E7kehldeE8asClIvmaw83/k9x0ua9v3UTLL+VT3IvnG+Z+C3mexsAvDsMDU4OK18Z3ZnL9eF454MwJ9aVldSNwJ7N2J4hyMdza6CYmfDTfKKcf+Tg+OxvkBfznK33gdclc3FNPm6Zi3SPinnG+ujrIUKri6/X7rh1PqrYpcevcVvnoym7K90x90vqXrQIjZv3qC1od2wX/Z56zjregxfYYKLYIdi57wPrf8ce7j3nd8uD1uLG/y+KuJStS0UeyX3sfEdg25MAd2g92aq6+R6+Ctumbt8+nFZY5zvrMbq5Dq7H0snn2v0uW38Vq3HH6tb0xdj/oPsctue6rm78FmxTN+bXuPFbsEq/Sb9mKX5ucNfVdeNwW7PfqGff4SCg+9LoP43LnnN6r85a6LvGLfsTOsdN3m/Zr5j+dXG/02JfunzX7jrQ3XS/23rPYnTHwHrP6+TdNX4AgNxGCg==
   </data>
  </layer>
- <layer id="12" name="Back1" width="27" height="24">
+ <layer id="12" name="Back1" width="31" height="43">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T+1pCaAAAOAGCiAAAQ==
+   eJzt1bsNgDAMRdEHCTAdjAKjQM90fAbBEqloXEAkBPdI0UviwlaaSAAA/MsSpDWc+81yD5kbRqmwNZdSaRliuras0r62bGLmOYCbOqc+OPX+qUFe1nty6uPl7L0jAAD4llb8/zkcA3oIgA==
   </data>
  </layer>
- <layer id="4" name="Buildings" width="27" height="24">
+ <layer id="3" name="Paths" width="31" height="43">
   <data encoding="base64" compression="zlib">
-   eJzFlM1KAzEURm8rutCirQWtBXWjblQEqwt/FmrfwpWPkscQ1I36ELOWvoYgIj6GeIZMIFwmw0xj44VDbr5JcmD+nvsiLwl4hTcoqzVYh0Fk7mpS4dqELdiOzOu4dmAX9iLzOq59OIDDyFy7Htpy9QhP4K4dwwhO1J6muXa9t+38doZU3cO/rjLX0Qz6MtcZnMNFwzF07bLCNRYxN4zXjCCx/Vi55iRN4TG9RK7elK7ThK5pyrm6xfx+XkyHbAnog5l468mlY/tg1rUes0L/vSx3eZZ552bFurLMVead66/XGed/4DH5mMKVO/7TxSdnVpVLZ76LXPrKpTPnyJ9Xq9g7WBAz5MwNoA9m4q0nl6Htg1nLvhcm5X/+M5HrC8/PYn30PZg03P8Lnmy05Q==
+   eJztwQENAAAAwqD3T20ON6AAAAAAAH4MFNQAAQ==
   </data>
  </layer>
- <layer id="13" name="Buildings1" width="27" height="24">
+ <layer id="4" name="Buildings" width="31" height="43">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2BwgdtMA+2CUTCYADA5NNDJnlG7hphd9AQc9LOnYSjZ5QHEnkTaRaFVo4DOAAAiSwWz
+   eJztV0svQ0EU7r2xQtKnskEsPKIkpa2wwcK+C88gwR6xIKGr/gHEkh+BSGz4CRJvv8KGkNj6Jp2bTo8707kT94a0X/LlnDlzzvlmpnNvc0OhOv4rPqxg9Ubtsp+w5XkqLKJuSUEd7RzJU/VbFnKHSM8o5mIa+xC1ZWfu1ist+CrtvF2pIdMWz5zF87aZtogtwzNX1elqH2lq0zNX1VHtW+Tegw/go+A/G97fO0m/F7tSexiMkto37OPdwzNLz1yGOJglMdO77hVpl5iudgtiSbAVLHDLxm2a65RpJ+0yR8Ax7heEeEGiQXOShM4aVfsO4zeO/PK7Weypc+YimlB3I1iGHvi9YB/vKc43K9ZeTbuRaKVgBzgHed+UZOzEZGuh2tvgjjBGbZH16Cf9daGqnwZnyJ4vA/r/vbB+vteC0n5y0f4y0H410P500Q4Sde06HGziLq6DG1bJl8VM8/+KdozPzfusvaDQ3vVZe89FO8PmwGOftU/ABlLLtLvAK5+1r8HuKveuVu55rWqzZywOJnjOIew+eGCVfFnMgW5+O2wH2CnUs3ueBXM8dg57Cp5ZJV8Wc6CbPw47AU6S+lmM5zz8LiZYQf9VcM1Fh30ThsEIt26k34wO4ooah6wv/Q70Aro+ZjOaPad8Plcv+AYkgKAB
   </data>
  </layer>
- <layer id="3" name="Paths" width="27" height="24">
+ <layer id="13" name="Buildings1" width="31" height="43">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T+1pCaAAAOAGCiAAAQ==
+   eJzt1bENwCAMRFEQNUyRwbMKLWMwAMkAKcIIuDri/Ce5O/ncOQQAaney5R9jHviTMef6wE7vSrTlszGPdU19AIBtnMLuKuzuwu4k/G8HvxWAcy8ZKAkA
   </data>
  </layer>
- <layer id="5" name="Front" width="27" height="24">
+ <layer id="5" name="Front" width="31" height="43">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2BoAkUqmWNGBFuDRPWjYOQAvYF2AInAgpWhgZWBoYEFiIFsnGLI6oHiDKwQNk6xUTAKRjJ4LEwc/i+Mqu8fkfoeC2O3l5YAAO3FHSM=
+   eJztV7lOw0AUtL0CpIQ/4BRfQcFZAx9AwfkJ9BCOCkFJTziqiFsIEWg4Qgk9Z0VSIPgB7rE8Fk52NyGJZSS0I41mvJ6dt1pZkWJZBgb5aHc8PXA8fwim6Y/AY+cnE8yHNfsefOCMa/CG/ha8c+RMmLM/wS/2voJv9O/ghyNnwkSLsKxW4fU2QBvpm6DN9H4mTLi9Pejs5YwOaCd9F7RbyJlysIn8NrgD7gb8Hu9wDJ3j7B2CDtOPQEeFnNnS9O0rzvVk6+l2zaJzjr1T0AT9NHRGyJkXW08dFsBFxZ2voXOdvcvQJP0KdFXImVKdKmy496+YnUHnBXtPoKfgIPwZ9FzImVKdKlyCVwVr7owsOnOc5yPzi4yusxzMB3QS3Y/QLJhTvK8Wwa5nMMVnX2vwzdSCdXb+eor5as4S7IqhP07Wc1ZM8+yvFZ61HMTtfI16v4GBwf/DAH4P+sB+2/O6tUrzBgZ/gSVqW0Tf40Q0YwwMiiJR5H+k7l0le1RIFsnq3lWyxyB6fAMVzHCY
   </data>
  </layer>
- <layer id="14" name="Front1" width="27" height="24">
+ <layer id="14" name="Front1" width="31" height="43">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T+1pCaAAAOAGCiAAAQ==
+   eJzt0U0KgCAQhmHFQwTdf+NRrEUHqbXpLlu0KoYmlEDeB77V/CEaA+C0uP9ue6vrn5X9kqnj28Hec1mVu7YP744lu37slVSShfpQ8Z+ejI33AwAAAAAgOQAgBA9T
   </data>
  </layer>
- <layer id="6" name="AlwaysFront" width="27" height="24">
+ <layer id="6" name="AlwaysFront" width="31" height="43">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T+1pCaAAAOAGCiAAAQ==
+   eJzt1UkvQ1EYxvF71cY8fwkzxY4dGzMddpVYsDHTYWdaE4koloaVhZAIYiOmNZqIShELJFjxCfybtMkhpTdxTi3aJ/nlnLQ373Nvc0+qadGTYtK0VKQhHRnIRBaykYNc5CEfBSYDQw2mkFlFKEYJSlGGclSgEmZUoRo1ErsbmdWEZrSgFW1oRwc6YYEVNtgldvcxqx8DGMQQhjGCUYzBCRfc8EjsnmHWbGjenDB3Xth7Q/sl1mWJ3ZuhWVus23jHB3aE/Z7QdyCxO5hwhy/4TifzTuNK2PuF+whI7g53GNlv6P/XLTvx2m1mZlWUPvEaVd0/7WPx3BZWa4S9qucWO5ysrgh78RqZETv+ck0iiSQSHznHBS7hg13y/344DuYGWG9xh3uM8ZkTLrjhUdQ9ztwJTGIK01iAF4tYwrKi7mBWmL2KNaxjF3vYR22SptUlqemtZ24DTug5xRmu4ccNHHzXpai7h7m9eKTnCc/fft9DNbWG8hCDjlee9y3CO6UrfM8i5b/Od7eeON/xfL5V5yXGfb+lk3uxwAqbHr9nTGWinTFVOWL+sf71jH0C+WKESQ==
+  </data>
+ </layer>
+ <layer id="17" name="AlwaysFront1" width="31" height="43">
+  <data encoding="base64" compression="zlib">
+   eJztjblOQlEURV/xfkTF4TsQp+9wAktsNbHA+Rs0WjiAfoOFhaBinDrHgkIaSLTHuBI3DSGh4dzi5axkZ+2b93J2FDmO4ziOk1QG4igajP/7EE6pD+MR9VE8Fvd/O83Ncd3N4An1STylPo1nDLZnuTmnu/N4QX0RZ9VzeMlgu8DNdd3dwJvqW3hbfQfvGmwfcfNYd0/wqXoRl9TP8LnB9hU3y7pbwdfqN/hWvYrvDLa/uFnvcbfB96bBtpMsVshqgJ21jvcy2SP7xrsH5JDkO7YvjHfbXHbZ/gy0XeuyHZJ871+chPJNfgJttchvoC3HaXNPHsgjeSLPRjsv5JW8kXfyQf4AmfYx1Q==
+  </data>
+ </layer>
+ <layer id="18" name="AlwaysFront2" width="31" height="43">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAH4MFNQAAQ==
   </data>
  </layer>
  <objectgroup id="7" name="Back"/>
