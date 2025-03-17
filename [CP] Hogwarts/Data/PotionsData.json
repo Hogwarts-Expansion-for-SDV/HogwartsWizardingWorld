@@ -250,7 +250,7 @@
             "{{LocationName}}"
           ],
           "Layers": [
-            "Back"
+            "Paths"
           ],
           "Actions": [
             {
@@ -264,7 +264,7 @@
       "When": {
         "HasFlag |contains= {{ModId}}_LovePotion": true
       },
-      "Update": "OnTimeChange"
+      "Update": "OnLocationChange"
     }
   ]
 }
