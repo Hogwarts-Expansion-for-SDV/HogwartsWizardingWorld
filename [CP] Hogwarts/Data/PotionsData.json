@@ -1,5 +1,61 @@
 {
   "Changes": [
+    /*Edurus Potion*/
+    {
+      "LogName": "Hogwarts Objects Data Edurus Potion",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_EdurusPotion": {
+          "Name": "Edurus Potion",
+          "DisplayName": "Edurus Potion Name i18n",
+          "Description": "Edurus Potion Description i18n",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 100,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 82,
+          "Edibility": 0,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Drink",
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 30,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "CombatLevel": 0.0,
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 1.0,
+                "Defense": 100.0,
+                "Attack": 0.0,
+                "AttackMultiplier": 0.0,
+                "Immunity": 0.0,
+                "KnockbackMultiplier": 0.0,
+                "WeaponSpeedMultiplier": 0.0,
+                "CriticalChanceMultiplier": 0.0,
+                "CriticalPowerMultiplier": 0.0,
+                "WeaponPrecisionMultiplier": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": [
+            "{{ModId}}_Potion"
+          ]
+        }
+      }
+    },
     /*Invisibility Potion*/
     {
       "LogName": "Hogwarts Objects Data Invisibility Potion",
