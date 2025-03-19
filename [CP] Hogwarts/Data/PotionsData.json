@@ -1,5 +1,225 @@
 {
   "Changes": [
+    /*Alihotsy Draught
+    {
+      "LogName": "Hogwarts Objects Data Alihotsy Draught",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_AlihotsyDraught": {
+          "Name": "Alihotsy Draught",
+          "DisplayName": "Alihotsy Draught Name i18n",
+          "Description": "Alihotsy Draught Description i18n",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 100,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 82,
+          "Edibility": 0,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Drink",
+              "BuffId": "{{ModID}}_HystericalLaughter"
+            }
+          ],
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": [
+            "{{ModId}}_Potion"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts Alihotsy Draught Buffs Data",
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "Entries": {
+        "{{ModID}}_HystericalLaughter": {
+          "DisplayName": "Alihotsy Draught Name i18n",
+          "Description": "Alihotsy Draught Description i18n",
+          "IsDebuff": true,
+          "GlowColor": null,
+          "Duration": 90000,
+          "MaxDuration": -1,
+          "IconTexture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "IconSpriteIndex": 82,
+          "ActionsOnApply": [
+            "AddMail Current {{ModId}}_AlihotsyDraught now"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts Alihotsy Draught Trigger Action Remove Mail",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_LovePotion": {
+          "Id": "{{ModId}}_AlihotsyDraught",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_AlihotsyDraught Any",
+          "Action": "RemoveMail Current {{ModId}}_AlihotsyDraught",
+          "MarkActionApplied": false
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts Alihotsy Draught DMT",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}_LovePotion": {
+          "Locations": [
+            "{{LocationName}}"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Actions": [
+            {
+              "Key": "DMT/emote",
+              "Value": "64",
+              "Trigger": "On"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_AlihotsyDraught": true
+      },
+      "Update": "OnLocationChange"
+    },*/
+    /*Love Potion*/
+    {
+      "LogName": "Hogwarts Objects Data Confusing Concoction",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_ConfusingConcoction": {
+          "Name": "Confusing Concoction",
+          "DisplayName": "Confusing Concoction Name i18n",
+          "Description": "Confusing Concoction Description i18n",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 100,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 82,
+          "Edibility": 0,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Drink",
+              "BuffId": "{{ModID}}_Confused"
+            }
+          ],
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": [
+            "{{ModId}}_Potion"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts Confusing Concoction Buffs Data",
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "Entries": {
+        "{{ModID}}_Confused": {
+          "DisplayName": "Confusing Concoction Name i18n",
+          "Description": "Confusing Concoction Description i18n",
+          "IsDebuff": true,
+          "GlowColor": null,
+          "Duration": 90000,
+          "MaxDuration": -1,
+          "IconTexture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "IconSpriteIndex": 82,
+          "ActionsOnApply": [
+            "AddMail Current {{ModId}}_ConfusingConcoction now"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts Confusing Concoction Trigger Action Remove Mail",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_ConfusingConcoction": {
+          "Id": "{{ModId}}_ConfusingConcoction",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_ConfusingConcoction Any",
+          "Action": "RemoveMail Current {{ModId}}_ConfusingConcoction",
+          "MarkActionApplied": false
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts Confusing Concoction DMT",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}_ConfusingConcoction": {
+          "Locations": [
+            "{{LocationName}}"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Actions": [
+            {
+              "Key": "DMT/emote",
+              "Value": "8",
+              "Trigger": "On"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_ConfusingConcoction": true
+      },
+      "Update": "OnLocationChange"
+    },
+    /*Edurus Potion*/
+    {
+      "LogName": "Hogwarts Objects Data Edurus Potion",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_EdurusPotion": {
+          "Name": "Edurus Potion",
+          "DisplayName": "Edurus Potion Name i18n",
+          "Description": "Edurus Potion Description i18n",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 100,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 82,
+          "Edibility": 0,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Drink",
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 30,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "Defense": 100.0,
+                "Immunity": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": [
+            "{{ModId}}_Potion"
+          ]
+        }
+      }
+    },
     /*Invisibility Potion*/
     {
       "LogName": "Hogwarts Objects Data Invisibility Potion",
@@ -250,7 +470,7 @@
             "{{LocationName}}"
           ],
           "Layers": [
-            "Back"
+            "Paths"
           ],
           "Actions": [
             {
