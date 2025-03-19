@@ -360,27 +360,49 @@
             "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 30 90"
           }
         },
-/*Great Hall*/
+/*Great Hall - Balcony Left*/
         {
           "Position": {
-            "X": 7,
-            "Y": 109
+            "X": 5,
+            "Y": 90
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGreatHall 2 7"
+            "TouchAction": "Warp {{ModId}}_HogwartsGreatHall 5 8"
           }
         },
         {
           "Position": {
-            "X": 8,
-            "Y": 109
+            "X": 6,
+            "Y": 90
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGreatHall 2 7"
+            "TouchAction": "Warp {{ModId}}_HogwartsGreatHall 6 8"
           }
         },
+        /*Great Hall - Balcony Right*/
+        {
+          "Position": {
+            "X": 9,
+            "Y": 90
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGreatHall 24 8"
+          }
+        },
+        {
+          "Position": {
+            "X": 10,
+            "Y": 90
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGreatHall 25 8"
+          }
+        },
+        /*Great Hall - Entrance*/
         {
           "Position": {
             "X": 6,
@@ -399,6 +421,27 @@
           "Layer": "Buildings",
           "SetProperties": {
             "Action": "Warp 13 22 {{ModId}}_HogwartsGreatHall"
+          }
+        },
+        /*Great Hall - Trophy Room*/
+        {
+          "Position": {
+            "X": 7,
+            "Y": 109
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGreatHall 6 14"
+          }
+        },
+        {
+          "Position": {
+            "X": 8,
+            "Y": 109
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGreatHall 6 14"
           }
         },
 /*Library Annex*/
@@ -460,7 +503,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Warp 10 17 {{ModId}}_HogwartsRavenclawCommonRoom"
+            "Action": "Warp 10 17 {{ModId}}_HogwartsCommonRoomRavenclaw"
           }
         },
 /*Slytherin Common Room*/
@@ -471,7 +514,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Warp 14 18 {{ModId}}_HogwartsSlytherinCommonRoom"
+            "Action": "Warp 14 18 {{ModId}}_HogwartsCommonRoomSlytherin"
           }
         },
         {
@@ -481,7 +524,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Warp 14 18 {{ModId}}_HogwartsSlytherinCommonRoom"
+            "Action": "Warp 14 18 {{ModId}}_HogwartsCommonRoomSlytherin"
           }
         },
 /*South Wing*/
@@ -492,7 +535,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 78 50"
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 77 50"
           }
         },
         {
@@ -502,7 +545,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 78 50"
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 77 50"
           }
         },
         {

@@ -1,5 +1,73 @@
 {
   "Changes": [
+    /*Left Top Left
+
+    Tasks 
+    1. Fix ShopTexture Load 
+    2. Creature den location to dialogue
+    
+    {
+      "LogName": "Hogwarts Divination Classroom Unlockable Bundle Left Top Left",
+      "Action": "EditData",
+      "Target": "UnlockableBundles/Bundles",
+      "Entries": {
+        "{{ModId}}_DivinationClassroom{{Day}}{{Season}}{{Year}}LTL": {
+          "Location": "{{ModId}}_HogwartsDivinationClassroom",
+          "ShopType": "CCBundle",
+          "BundleDescription": "Creature Den Divination",
+          "ShopEvent": "none",
+          "ShopPosition": "5, 10",
+          "ShopTexture": "UnlockableBundles/ShopTextures/IF4BlankBundle",
+          "DrawQuestionMark": true,
+          "QuestionMarkOffset": "24, 32",
+          "Price": {
+            "84": 1
+          },
+          "BundleCompletedActions": [
+            "AddMail All {{ModId}}_HogwartsDivinationCreatureDen now"
+          ],
+          "InteractionShake": true,
+          "InstantShopRemoval": true
+        }
+      },
+      "When": {
+        "HasMod |contains= DLX.Bundles": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Divination Classroom Creature Den Trigger Action Remove Mail",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_HogwartsDivinationCreatureDen": {
+          "Id": "{{ModId}}_HogwartsDivinationCreatureDen",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_HogwartsDivinationCreatureDen Any",
+          "Action": "RemoveMail Current {{ModId}}_HogwartsDivinationCreatureDen",
+          "MarkActionApplied": false
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts Divination Classroom Left Top Left Creature Den Dialogue",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDivinationClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 5,
+            "Y": 10
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: signs.shops.BroodAndPeck}}"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= DLX.Bundles": true
+      }
+    },*/
     {
       "LogName": "Hogwarts Divination Classroom Warp",
       "Action": "EditMap",
