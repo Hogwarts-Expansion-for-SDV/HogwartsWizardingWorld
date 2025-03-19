@@ -1,0 +1,157 @@
+{
+//Precondition to include this part: HasMod:CJBok.CheatsMenu
+/*Notes for others:
+    - To add more warp or warp section: see examples below
+    - Key for DisplayName for WarpSections if translate: {{i18n:warp-sections.exampleMapName}}
+    - Key for DisplayName for Warps if translate: {{i18n:warps.exampleMapName}}
+*/
+"Changes":[
+
+    //Warp Sections
+    {
+        "Action": "EditData",
+        "Target": "Mods/CJBok.CheatsMenu/WarpSections",
+        "Entries": {
+            //Hogwarts Castle
+            "{{ModId}}_HogwartsCastle_WarpSection": {
+                "Id": "{{ModId}}_HogwartsCastle_WarpSection",
+                "Order": "0",
+                "DisplayName": "Hogwarts Castle",
+            },
+
+            //Hogsmeade Village
+            "{{ModId}}_HogsmeadeVillage_WarpSection": {
+                "Id": "{{ModId}}_HogsmeadeVillage_WarpSection",
+                "Order": "0",
+                "DisplayName": "Hogsmeade Village"
+            },
+
+            //Forbidden Forest
+            /*"{{ModId}}_ForbiddenForest_WarpSection": {
+                "Id": "{{ModId}}_ForbiddenForest_WarpSection",
+                "Order": "0",
+                "DisplayName": "Forbidden Forest"
+            },*/
+
+            //Individual Maps
+            /*"{{ModId}}_HogwartsOtherMaps_WarpSection": {
+                "Id": "{{ModId}}_OtherMaps_WarpSection",
+                "Order": "0",
+                "DisplayName": "Others"
+            }*/
+        }
+    },
+
+    //Warps
+    {
+        "Action": "EditData",
+        "Target": "Mods/CJBok.CheatsMenu/Warps",
+        "Entries": {
+            //HOGSMEADE
+            //Hogsmeade Ceridwens Cauldrons
+            "{{ModId}}_CeridwensCauldrons_DebugWarp": {
+                "Id": "{{ModId}}_CeridwensCauldrons_DebugWarp",
+                "SectionId": "{{ModId}}_HogsmeadeVillage_WarpSection",
+                "DisplayName": "Ceridwens Cauldrons", 
+                "Location": "{{ModId}}_CeridwensCauldrons",
+                "Tile": "9, 31"
+            },
+
+            //Hogsmeade Station
+            "{{ModId}}_HogsmeadeStation_DebugWarp": {
+                "Id": "{{ModId}}_HogsmeadeStation_DebugWarp",
+                "SectionId": "{{ModId}}_HogsmeadeVillage_WarpSection",
+                "DisplayName": "Hogsmeade Station", 
+                "Location": "{{ModId}}_HogsmeadeStation",
+                "Tile": "34, 14"
+            },
+
+            //Ollivanders
+            "{{ModId}}_Ollivanders_DebugWarp": {
+                "Id": "{{ModId}}_Ollivanders_DebugWarp",
+                "SectionId": "{{ModId}}_HogsmeadeVillage_WarpSection",
+                "DisplayName": "Ollivanders", 
+                "Location": "{{ModId}}_Ollivanders",
+                "Tile": "8, 18"
+            },
+
+            //HOGWARTS
+            //Muggle Studies Classroom
+            "{{ModId}}_HogwartsMuggleStudiesClassroom_DebugWarp": {
+                "Id": "{{ModId}}_HogwartsMuggleStudiesClassroom_DebugWarp",
+                "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
+                "DisplayName": "Muggle Studies Classroom",
+                "Location": "{{ModId}}_HogwartsMuggleStudiesClassroom",
+                "Tile": "8, 14"
+            },
+
+            //Potions Classroom
+            "{{ModId}}_HogwartsPotionsClassroom_DebugWarp": {
+                "Id": "{{ModId}}_HogwartsPotionsClassroom_DebugWarp",
+                "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
+                "DisplayName": "Potions Classroom", 
+                "Location": "{{ModId}}_HogwartsPotionsClassroom",
+                "Tile": "15, 30"
+            },
+
+            //Library Annex
+            "{{ModId}}_HogwartsLibraryAnnex_DebugWarp": {
+                "Id": "{{ModId}}_HogwartsLibraryAnnex_DebugWarp",
+                "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
+                "DisplayName": "Library",
+                "Location": "{{ModId}}_HogwartsLibraryAnnex",
+                "Tile": "40, 21"
+            },
+
+            //Transfiguration Classroom
+            "{{ModId}}_HogwartsTransfigurationClassroom_DebugWarp": {
+                "Id": "{{ModId}}_HogwartsTransfigurationClassroom_DebugWarp",
+                "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
+                "DisplayName": "Transfiguration Classroom",
+                "Location": "{{ModId}}_HogwartsTransfigurationClassroom",
+                "Tile": "8, 19"
+            },
+
+            //TWings
+            "{{ModId}}_HogwartsTransfigurationWing_DebugWarp": {
+                "Id": "{{ModId}}_HogwartsTransfigurationWing_DebugWarp",
+                "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
+                "DisplayName": "Transfiguration Wing",
+                "Location": "{{ModId}}_HogwartsTransfigurationWing",
+                "Tile": "26, 36"
+            },
+
+            //Grand Staircase (BasementF)
+            "{{ModId}}_HogwartsGrandStaircase_DebugWarp": {
+                "Id": "{{ModId}}_HogwartsGrandStaircase_DebugWarp",
+                "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
+                "DisplayName": "Grand Staircase",
+                "Location": "{{ModId}}_HogwartsGrandStaircase",
+                "Tile": "29, 114"
+            },
+
+            //Great Hall
+            "{{ModId}}_HogwartsGreatHall_DebugWarp": {
+                "Id": "{{ModId}}_HogwartsGreatHall_DebugWarp",
+                "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
+                "DisplayName": "Great Hall",
+                "Location": "{{ModId}}_HogwartsGreatHall",
+                "Tile": "15, 39"
+            },
+
+            //Bell Tower Courtyard
+            "{{ModId}}_HogwartsBellTowerCourtyard_DebugWarp": {
+                "Id": "{{ModId}}_HogwartsBellTowerCourtyard_DebugWarp",
+                "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
+                "DisplayName": "Bell Tower Courtyard",
+                "Location": "{{ModId}}_HogwartsBellTowerCourtyard",
+                "Tile": "44, 62"
+            },
+
+            //FORBIDDEN FOREST    
+
+        },
+    }
+
+]
+    }
