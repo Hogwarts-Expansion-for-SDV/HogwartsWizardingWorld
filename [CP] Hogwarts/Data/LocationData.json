@@ -278,6 +278,12 @@
       "Target": "Maps/{{ModId}}_HogwartsVivarium",
       "FromFile": "assets/Maps/HogwartsVivarium.tmx"
     },
+    {
+      "LogName": "Hogwarts Greenhouse Load",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_HogwartsGreenhouse",
+      "FromFile": "assets/Maps/HogwartsGreenhouse.tmx"
+    },
     /*Forbidden Forest Load*/
     {
       "LogName": "Forbidden Forest Centaur Camp Load",
@@ -583,6 +589,10 @@
           "CreateOnLoad": {
             "AlwaysActive": false,
             "MapPath": "Maps/{{ModId}}_HogwartsMuggleStudiesClassroom"
+          },
+          "DefaultArrivalTile": {
+            "X": 8,
+            "Y": 14
           }
         },
         "{{ModId}}_HogwartsPotionsClassroom": {
@@ -613,8 +623,8 @@
             "MapPath": "Maps/{{ModId}}_HogwartsTransfigurationClassroom"
           },
           "DefaultArrivalTile": {
-            "X": 27, 
-            "Y": 36
+            "X": 8, 
+            "Y": 19
           }
         },
         "{{ModId}}_HogwartsTransfigurationWing": {
@@ -627,6 +637,16 @@
           "CreateOnLoad": {
             "AlwaysActive": false,
             "MapPath": "Maps/{{ModId}}_HogwartsVivarium"
+          }
+        },
+        "{{ModId}}_HogwartsGreenhouse": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsGreenhouse"
+          },
+          "DefaultArrivalTile": {
+            "X": 22,
+            "Y": 18
           }
         },
         /*Forbidden Forest Location Data*/
