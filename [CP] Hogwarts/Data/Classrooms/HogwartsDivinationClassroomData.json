@@ -3,8 +3,7 @@
     /*Left Top Left
 
     Tasks 
-    1. Fix ShopTexture Load 
-    2. Creature den location to dialogue
+    1. Creature den location to picture*/
     
     {
       "LogName": "Hogwarts Divination Classroom Unlockable Bundle Left Top Left",
@@ -17,7 +16,7 @@
           "BundleDescription": "Creature Den Divination",
           "ShopEvent": "none",
           "ShopPosition": "5, 10",
-          "ShopTexture": "UnlockableBundles/ShopTextures/IF4BlankBundle",
+          "ShopTexture": "Maps/HogwartsBlankBundle",
           "DrawQuestionMark": true,
           "QuestionMarkOffset": "24, 32",
           "Price": {
@@ -60,14 +59,14 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{i18n: signs.shops.BroodAndPeck}}"
+            "Action": "Dialogue {{DivinationCreatureDen}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= DLX.Bundles": true
       }
-    },*/
+    },
     {
       "LogName": "Hogwarts Divination Classroom Warp",
       "Action": "EditMap",

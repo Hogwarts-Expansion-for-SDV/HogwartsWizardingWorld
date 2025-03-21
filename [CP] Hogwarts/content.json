@@ -12,6 +12,78 @@
     {
       "Name": "DEBUG",
       "Value": true
+    },
+    {
+      "Name": "DivinationCreatureDen",
+      "Value": "LT",
+      "When": {
+        "Query: {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} <= 66": true,
+        "Query: {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} <= 47": true
+      }
+    },
+    {
+      "Name": "DivinationCreatureDen",
+      "Value": "LC",
+      "When": {
+        "Query: {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} <= 66": true,
+        "Query: 47 < {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} < 85": true
+      }
+    },
+    {
+      "Name": "DivinationCreatureDen",
+      "Value": "LB",
+      "When": {
+        "Query: {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} <= 66": true,
+        "Query: 85 <= {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}}": true
+      }
+    },
+    {
+      "Name": "DivinationCreatureDen",
+      "Value": "CT",
+      "When": {
+        "Query: 66 < {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} < 118": true,
+        "Query: {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} <= 47": true
+      }
+    },
+    {
+      "Name": "DivinationCreatureDen",
+      "Value": "CC",
+      "When": {
+        "Query: 66 < {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} < 118": true,
+        "Query: 47 < {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} < 85": true
+      }
+    },
+    {
+      "Name": "DivinationCreatureDen",
+      "Value": "CB",
+      "When": {
+        "Query: 66 < {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} < 118": true,
+        "Query: 85 <= {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}}": true
+      }
+    },
+    {
+      "Name": "DivinationCreatureDen",
+      "Value": "RT",
+      "When": {
+        "Query: 118 <= {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}}": true,
+        "Query: {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} <= 47": true
+      }
+    },
+    {
+      "Name": "DivinationCreatureDen",
+      "Value": "RC",
+      "When": {
+        "Query: 118 < {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}}": true,
+        "Query: 47 < {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} < 85": true
+      }
+    },
+    {
+      "Name": "DivinationCreatureDen",
+      "Value": "RB",
+      "When": {
+        "Query: 118 <= {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}}": true,
+        "Query: 85 <= {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}}": true
+      }
     }
   ],
   "Changes": [
@@ -126,9 +198,8 @@ Characters/Dialogue/HogwartsSlytherinJr3,
 Characters/Dialogue/HogwartsSlytherinKid1, 
 Characters/Dialogue/HogwartsSlytherinKid2,
 Characters/Dialogue/HogwartsSlytherinSr2Mo,
-Characters/Dialogue/HogwartsSlytherinSr3Sandro",
-      "FromFile": "Data/blank.json"
-    }, 
+Characters/Dialogue/HogwartsSlytherinSr3Sandro","FromFile": "Data/blank.json"
+    },
     {
       "LogName": "NPC Loads (schedules)",
       "Action": "Load",
@@ -182,8 +253,7 @@ Characters/schedules/HogwartsSlytherinKid2,
 Characters/schedules/HogwartsSlytherinSr2Mo,
 Characters/schedules/HogwartsSlytherinSr3Sandro,
 
-Strings/schedules/HogwartsStudents",
-      "FromFile": "Data/blank.json"
+Strings/schedules/HogwartsStudents","FromFile": "Data/blank.json"
     },
     {
       "LogName": "NPC Includes",
@@ -241,8 +311,7 @@ Characters/HogwartsSlytherinJr3,
 Characters/HogwartsSlytherinKid1, 
 Characters/HogwartsSlytherinKid2, 
 Characters/HogwartsSlytherinSr2Mo,
-Characters/HogwartsSlytherinSr3Sandro",
-      "FromFile": "assets/{{Target}}.png"
+Characters/HogwartsSlytherinSr3Sandro","FromFile": "assets/{{Target}}.png"
     },
     {
       "LogName": "NPC Sprites (Winter)",
@@ -259,8 +328,7 @@ Characters/HogwartsRavenclawJr2Quinn_Winter,
 Characters/HogwartsRavenclawSr3Harv_Winter, 
 
 Characters/HogwartsSlytherinSr2Mo_Winter,
-Characters/HogwartsSlytherinSr3Sandro_Winter",
-      "FromFile": "assets/{{Target}}.png"
+Characters/HogwartsSlytherinSr3Sandro_Winter","FromFile": "assets/{{Target}}.png"
     },
     {
       "LogName": "NPC Portraits",
@@ -281,8 +349,7 @@ Portraits/HogwartsHufflepuffSr2Dom,
 Portraits/HogwartsRavenclawJr2Quinn, 
 Portraits/HogwartsRavenclawSr3Harv, 
 
-Portraits/HogwartsSlytherinSr3Sandro",
-      "FromFile": "assets/{{Target}}.png"
+Portraits/HogwartsSlytherinSr3Sandro","FromFile": "assets/{{Target}}.png"
     },
     {
       "LogName": "NPC Portraits (Winter)",
@@ -292,10 +359,8 @@ Portraits/HogwartsHufflepuffJr1Kat_Winter,
 Portraits/HogwartsHufflepuffSr2Dom_Winter, 
 
 Portraits/HogwartsRavenclawJr2Quinn_Winter, 
-Portraits/HogwartsRavenclawSr3Harv_Winter,",
-      "FromFile": "assets/{{Target}}.png"
+Portraits/HogwartsRavenclawSr3Harv_Winter,","FromFile": "assets/{{Target}}.png"
     },
-
     {
       "LogName": "NPC Portraits (blank)",
       "Action": "Load",
@@ -333,8 +398,7 @@ Portraits/HogwartsSlytherinJr2,
 Portraits/HogwartsSlytherinJr3,
 Portraits/HogwartsSlytherinKid1, 
 Portraits/HogwartsSlytherinKid2, 
-Portraits/HogwartsSlytherinSr2Mo,",
-      "FromFile": "assets/Portraits/blank.png"
+Portraits/HogwartsSlytherinSr2Mo,","FromFile": "assets/Portraits/blank.png"
     },
     /* Objects */
     {
@@ -397,7 +461,6 @@ Portraits/HogwartsSlytherinSr2Mo,",
         "HasMod": "HogwartsET.AddOn.Hogwarts"
       }
     },
-
     {
       "LogName": "Add Warp Points to CJB Cheats Menu",
       "Action": "Include",

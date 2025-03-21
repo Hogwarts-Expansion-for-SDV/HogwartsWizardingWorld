@@ -5,7 +5,7 @@
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsGreatHall",
       "MapTiles": [
-/*Grand Staircase - Balcony Left*/
+        /*Grand Staircase - Balcony Left*/
         {
           "Position": {
             "X": 5,
@@ -47,7 +47,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 9 89"
           }
         },
-/*Grand Staircase - Entrance*/
+        /*Grand Staircase - Entrance*/
         {
           "Position": {
             "X": 12,
@@ -97,29 +97,29 @@
           "SetProperties": {
             "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 7 95"
           }
+        },
+        /*Grand Staircase - Trophy Room*/
+        {
+          "Position": {
+            "X": 6,
+            "Y": 13
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 7 108"
+          }
+        },
+        {
+          "Position": {
+            "X": 7,
+            "Y": 13
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 7 108"
+          }
         }
       ]
-    },
-    /*Grand Staircase - Trophy Room*/
-    {
-      "Position": {
-        "X": 6,
-        "Y": 13
-      },
-      "Layer": "Back",
-      "SetProperties": {
-        "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 7 108"
-      }
-    },
-    {
-      "Position": {
-        "X": 7,
-        "Y": 13
-      },
-      "Layer": "Back",
-      "SetProperties": {
-        "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 7 108"
-      }
     }
   ]
 }
