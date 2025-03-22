@@ -1,5 +1,13 @@
 {
   "Format": "2.5.0",
+  "ConfigSchema": {
+    "Debug_mode": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Description": "Debug if an error occurs.",
+      "Section": "Debug"
+    }
+  },
   "DynamicTokens": [
     {
       "Name": "Creature",
@@ -15,7 +23,7 @@
     },
     {
       "Name": "DivinationCreatureDen",
-      "Value": "LT",
+      "Value": "A1",
       "When": {
         "Query: {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} <= 66": true,
         "Query: {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} <= 47": true
@@ -23,7 +31,7 @@
     },
     {
       "Name": "DivinationCreatureDen",
-      "Value": "LC",
+      "Value": "A2",
       "When": {
         "Query: {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} <= 66": true,
         "Query: 47 < {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} < 85": true
@@ -31,7 +39,7 @@
     },
     {
       "Name": "DivinationCreatureDen",
-      "Value": "LB",
+      "Value": "A3",
       "When": {
         "Query: {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} <= 66": true,
         "Query: 85 <= {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}}": true
@@ -39,7 +47,7 @@
     },
     {
       "Name": "DivinationCreatureDen",
-      "Value": "CT",
+      "Value": "B1",
       "When": {
         "Query: 66 < {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} < 118": true,
         "Query: {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} <= 47": true
@@ -47,7 +55,7 @@
     },
     {
       "Name": "DivinationCreatureDen",
-      "Value": "CC",
+      "Value": "B2",
       "When": {
         "Query: 66 < {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} < 118": true,
         "Query: 47 < {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} < 85": true
@@ -55,7 +63,7 @@
     },
     {
       "Name": "DivinationCreatureDen",
-      "Value": "CB",
+      "Value": "B3",
       "When": {
         "Query: 66 < {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} < 118": true,
         "Query: 85 <= {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}}": true
@@ -63,7 +71,7 @@
     },
     {
       "Name": "DivinationCreatureDen",
-      "Value": "RT",
+      "Value": "C1",
       "When": {
         "Query: 118 <= {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}}": true,
         "Query: {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} <= 47": true
@@ -71,7 +79,7 @@
     },
     {
       "Name": "DivinationCreatureDen",
-      "Value": "RC",
+      "Value": "C2",
       "When": {
         "Query: 118 < {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}}": true,
         "Query: 47 < {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} < 85": true
@@ -79,7 +87,7 @@
     },
     {
       "Name": "DivinationCreatureDen",
-      "Value": "RB",
+      "Value": "C3",
       "When": {
         "Query: 118 <= {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}}": true,
         "Query: 85 <= {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}}": true

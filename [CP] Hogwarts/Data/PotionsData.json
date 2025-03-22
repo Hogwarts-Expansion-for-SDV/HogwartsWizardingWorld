@@ -165,20 +165,21 @@
             "{{LocationName}}"
           ],
           "Layers": [
-            "Back"
+            "Paths"
           ],
           "Actions": [
             {
               "Key": "DMT/emote",
               "Value": "8",
-              "Trigger": "On"
+              "Trigger": "Enter"
             }
           ]
         }
       },
       "When": {
         "HasFlag |contains= {{ModId}}_ConfusingConcoction": true,
-        "HasMod |contains= MindMeltMax.DMT": true
+        "HasMod |contains= MindMeltMax.DMT": true,
+        "Debug": false
       },
       "Update": "OnLocationChange"
     },
@@ -205,7 +206,7 @@
               "BuffId": null,
               "IconTexture": null,
               "IconSpriteIndex": 0,
-              "Duration": 30,
+              "Duration": 45,
               "IsDebuff": false,
               "GlowColor": null,
               "CustomAttributes": {
@@ -222,7 +223,7 @@
         }
       }
     },
-    /*Invisibility Potion*/
+    /*Invisibility Potion - turn off for multiplayer*/
     {
       "LogName": "Hogwarts Objects Data Invisibility Potion",
       "Action": "EditData",
@@ -298,7 +299,8 @@
         "Height": 672
       },
       "When": {
-        "HasFlag |contains= {{ModId}}_InvisibilityPotion": true
+        "HasFlag |contains= {{ModId}}_InvisibilityPotion": true,
+        "Debug": false
       },
       "Update": "OnTimeChange"
     },
@@ -314,7 +316,8 @@
         "Height": 608
       },
       "When": {
-        "HasFlag |contains= {{ModId}}_InvisibilityPotion": true
+        "HasFlag |contains= {{ModId}}_InvisibilityPotion": true,
+        "Debug": false
       },
       "Update": "OnTimeChange"
     },
@@ -330,7 +333,8 @@
         "Height": 1376
       },
       "When": {
-        "HasFlag |contains= {{ModId}}_InvisibilityPotion": true
+        "HasFlag |contains= {{ModId}}_InvisibilityPotion": true,
+        "Debug": false
       },
       "Update": "OnTimeChange"
     },
@@ -346,7 +350,8 @@
         "Height": 640
       },
       "When": {
-        "HasFlag |contains= {{ModId}}_InvisibilityPotion": true
+        "HasFlag |contains= {{ModId}}_InvisibilityPotion": true,
+        "Debug": false
       },
       "Update": "OnTimeChange"
     },
@@ -362,7 +367,8 @@
         "Height": 96
       },
       "When": {
-        "HasFlag |contains= {{ModId}}_InvisibilityPotion": true
+        "HasFlag |contains= {{ModId}}_InvisibilityPotion": true,
+        "Debug": false
       },
       "Update": "OnTimeChange"
     },
@@ -378,7 +384,8 @@
         "Height": 672
       },
       "When": {
-        "HasFlag |contains= {{ModId}}_InvisibilityPotion": true
+        "HasFlag |contains= {{ModId}}_InvisibilityPotion": true,
+        "Debug": false
       },
       "Update": "OnTimeChange"
     },
@@ -394,7 +401,8 @@
         "Height": 24
       },
       "When": {
-        "HasFlag |contains= {{ModId}}_InvisibilityPotion": true
+        "HasFlag |contains= {{ModId}}_InvisibilityPotion": true,
+        "Debug": false
       },
       "Update": "OnTimeChange"
     },
@@ -485,7 +493,8 @@
       },
       "When": {
         "HasFlag |contains= {{ModId}}_LovePotion": true,
-        "HasMod |contains= MindMeltMax.DMT": true
+        "HasMod |contains= MindMeltMax.DMT": true,
+        "Debug": false
       },
       "Update": "OnLocationChange"
     }

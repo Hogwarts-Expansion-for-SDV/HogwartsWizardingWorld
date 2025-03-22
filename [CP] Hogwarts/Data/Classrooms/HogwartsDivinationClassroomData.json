@@ -1,9 +1,10 @@
 {
   "Changes": [
-    /*Left Top Left
+    /*Left Top Left - Creature Den 
 
     Tasks 
-    1. Creature den location to picture*/
+    1. Creature den location to picture
+    2. Change frozen tear to tea leaves*/
     
     {
       "LogName": "Hogwarts Divination Classroom Unlockable Bundle Left Top Left",
@@ -23,7 +24,7 @@
             "84": 1
           },
           "BundleCompletedActions": [
-            "AddMail All {{ModId}}_HogwartsDivinationCreatureDen now"
+            "AddMail Current {{ModId}}_HogwartsDivinationCreatureDen now"
           ],
           "InteractionShake": true,
           "InstantShopRemoval": true
@@ -65,6 +66,68 @@
       ],
       "When": {
         "HasMod |contains= DLX.Bundles": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Divination Classroom Unlockable Bundle Left Top Right",
+      "Action": "EditData",
+      "Target": "UnlockableBundles/Bundles",
+      "Entries": {
+        "{{ModId}}_DivinationClassroom{{Day}}{{Season}}{{Year}}LTR": {
+          "Location": "{{ModId}}_HogwartsDivinationClassroom",
+          "ShopType": "CCBundle",
+          "BundleDescription": "Creature Divination",
+          "ShopEvent": "none",
+          "ShopPosition": "7, 10",
+          "ShopTexture": "Maps/HogwartsBlankBundle",
+          "DrawQuestionMark": true,
+          "QuestionMarkOffset": "24, 32",
+          "Price": {
+            "84": 1
+          },
+          "BundleCompletedActions": [
+            "AddMail Current {{ModId}}_HogwartsDivinationCreature now"
+          ],
+          "InteractionShake": true,
+          "InstantShopRemoval": true
+        }
+      },
+      "When": {
+        "HasMod |contains= DLX.Bundles": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Divination Classroom Left Top Right Creature",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDivinationClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 7,
+            "Y": 10
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{Random:{{Creature}}|key=CreatureDen1}}"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= DLX.Bundles": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Divination Classroom Creature Trigger Action Remove Mail",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_HogwartsDivinationCreature": {
+          "Id": "{{ModId}}_HogwartsDivinationCreature",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_HogwartsDivinationCreature Any",
+          "Action": "RemoveMail Current {{ModId}}_HogwartsDivinationCreature",
+          "MarkActionApplied": false
+        }
       }
     },
     {
