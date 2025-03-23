@@ -30,7 +30,13 @@
                     "ContextTags": ["{{ModId}}_Potion"],
                     "Edibility": 0,
                     "IsDrink": true,
-                    "ExcludeFromShippingCollection": true
+                    "ExcludeFromShippingCollection": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": "{{ModID}}_Love"
+                        }
+                    ]
                 },
                 "{{ModId}}_BabblingBeverage": {
                     "Name": "Babbling Beverage",
@@ -136,13 +142,19 @@
                     "Description": "{{i18n: obj.potions.ConfusingConcoction.desc}}",
                     "Type": "Basic",
                     "Category": -26,
-                    "Price": 999,
+                    "Price": 100,
                     "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
                     "SpriteIndex": 10,
                     "ContextTags": ["{{ModId}}_Potion"],
                     "Edibility": 0,
                     "IsDrink": true,
-                    "ExcludeFromShippingCollection": true
+                    "ExcludeFromShippingCollection": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": "{{ModID}}_Confused"
+                        }
+                    ]
                 },
                 "{{ModId}}_DeflatingDraught": {
                     "Name": "Deflating Draught",
@@ -450,7 +462,13 @@
                     "ContextTags": ["{{ModId}}_Potion"],
                     "Edibility": 0,
                     "IsDrink": true,
-                    "ExcludeFromShippingCollection": true
+                    "ExcludeFromShippingCollection": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": "{{ModID}}_Invisibility"
+                        }
+                    ]
                 },
                 "{{ModId}}_JawbindPotion": {
                     "Name": "Jawbind Potion",
@@ -884,7 +902,23 @@
                     "ContextTags": ["{{ModId}}_Potion"],
                     "Edibility": 0,
                     "IsDrink": true,
-                    "ExcludeFromShippingCollection": true
+                    "ExcludeFromShippingCollection": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 45,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "Defense": 100.0,
+                                "Immunity": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ]
                 },
                 "{{ModId}}_ThunderbrewPotion": {
                     "Name": "Thunderbrew Potion",
@@ -929,6 +963,245 @@
                     "ExcludeFromShippingCollection": true
                 }
             }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+                "{{ModID}}_Confused": {
+                    "DisplayName": "Confusing Concoction Name i18n",
+                    "Description": "Confusing Concoction Description i18n",
+                    "IsDebuff": true,
+                    "GlowColor": null,
+                    "Duration": 90000,
+                    "MaxDuration": -1,
+                    "IconTexture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+                    "IconSpriteIndex": 82,
+                    "ActionsOnApply": [
+                        "AddMail Current {{ModId}}_ConfusingConcoction now"
+                    ]
+                },
+                "{{ModID}}_Invisibility": {
+                    "DisplayName": "{{i18n: obj.potions.InvisibilityPotion.name}}",
+                    "Description": "{{i18n: obj.potions.InvisibilityPotion.desc}}",
+                    "IsDebuff": true,
+                    "GlowColor": "#7F22007F",
+                    "Duration": 90000,
+                    "MaxDuration": -1,
+                    "IconTexture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+                    "IconSpriteIndex": 76,
+                    "ActionsOnApply": [
+                        "AddMail Current {{ModId}}_InvisibilityPotion now"
+                    ]
+                },
+                "{{ModID}}_Love": {
+                    "DisplayName": "{{i18n: obj.potions.LovePotion.name}}",
+                    "Description": "{{i18n: obj.potions.LovePotion.desc}}",
+                    "IsDebuff": true,
+                    "GlowColor": null,
+                    "Duration": 90000,
+                    "MaxDuration": -1,
+                    "IconTexture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+                    "IconSpriteIndex": 82,
+                    "ActionsOnApply": [
+                        "AddMail Current {{ModId}}_LovePotion now"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_ConfusingConcoction": {
+                    "Id": "{{ModId}}_ConfusingConcoction",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_ConfusingConcoction Any",
+                    "Action": "RemoveMail Current {{ModId}}_ConfusingConcoction",
+                    "MarkActionApplied": false
+                },
+                "{{ModId}}_InvisibilityPotion": {
+                    "Id": "{{ModId}}_InvisibilityPotion",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_InvisibilityPotion Any",
+                    "Action": "RemoveMail Current {{ModId}}_InvisibilityPotion",
+                    "MarkActionApplied": false
+                },
+                "{{ModId}}_LovePotion": {
+                    "Id": "{{ModId}}_LovePotion",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_LovePotion Any",
+                    "Action": "RemoveMail Current {{ModId}}_LovePotion",
+                    "MarkActionApplied": false
+                }
+            }
+        },
+        {
+            "LogName": "Hogwarts Confusing Concoction DMT",
+            "Action": "EditData",
+            "Target": "DMT/Tiles",
+            "Entries": {
+                "{{ModId}}_ConfusingConcoction": {
+                    "Locations": ["{{LocationName}}"],
+                    "Layers": ["Paths"],
+                    "Actions": [
+                        {
+                            "Key": "DMT/emote",
+                            "Value": "8",
+                            "Trigger": "Enter"
+                        }
+                    ]
+                }
+            },
+            "When": {
+                "HasFlag |contains= {{ModId}}_ConfusingConcoction": true,
+                "HasMod |contains= MindMeltMax.DMT": true,
+                "Debug": false
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Hogwarts Love Potion DMT",
+            "Action": "EditData",
+            "Target": "DMT/Tiles",
+            "Entries": {
+                "{{ModId}}_LovePotion": {
+                    "Locations": ["{{LocationName}}"],
+                    "Layers": ["Paths"],
+                    "Actions": [
+                        {
+                            "Key": "DMT/emote",
+                            "Value": "20",
+                            "Trigger": "Talk"
+                        }
+                    ]
+                }
+            },
+            "When": {
+                "HasFlag |contains= {{ModId}}_LovePotion": true,
+                "HasMod |contains= MindMeltMax.DMT": true,
+                "Debug": false
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Hogwarts Invisibility Potion EditImage Hairstyles",
+            "Action": "EditImage",
+            "Target": "Characters/Farmer/hairstyles, Characters/Farmer/hairstyles2",
+            "FromFile": "assets/Potion/blank.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 126,
+                "Height": 672
+            },
+            "When": {
+                "HasFlag |contains= {{ModId}}_InvisibilityPotion": true,
+                "Debug": false
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Hogwarts Invisibility Potion EditImage Shirts",
+            "Action": "EditImage",
+            "Target": "Characters/Farmer/shirts",
+            "FromFile": "assets/Potion/blank.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 256,
+                "Height": 608
+            },
+            "When": {
+                "HasFlag |contains= {{ModId}}_InvisibilityPotion": true,
+                "Debug": false
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Hogwarts Invisibility Potion EditImage Pants",
+            "Action": "EditImage",
+            "Target": "Characters/Farmer/pants",
+            "FromFile": "assets/Potion/blank.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 1920,
+                "Height": 1376
+            },
+            "When": {
+                "HasFlag |contains= {{ModId}}_InvisibilityPotion": true,
+                "Debug": false
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Hogwarts Invisibility Potion EditImage Hats",
+            "Action": "EditImage",
+            "Target": "Characters/Farmer/hats",
+            "FromFile": "assets/Potion/blank.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 240,
+                "Height": 640
+            },
+            "When": {
+                "HasFlag |contains= {{ModId}}_InvisibilityPotion": true,
+                "Debug": false
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Hogwarts Invisibility Potion EditImage Accessories",
+            "Action": "EditImage",
+            "Target": "Characters/Farmer/accessories",
+            "FromFile": "assets/Potion/blank.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 128,
+                "Height": 96
+            },
+            "When": {
+                "HasFlag |contains= {{ModId}}_InvisibilityPotion": true,
+                "Debug": false
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Hogwarts Invisibility Potion EditImage Farmer Base",
+            "Action": "EditImage",
+            "Target": "Characters/Farmer/farmer_base, Characters/Farmer/farmer_base_bald, Characters/Farmer/farmer_girl_base, Characters/Farmer/farmer_girl_base_bald",
+            "FromFile": "assets/Potion/blank.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 288,
+                "Height": 672
+            },
+            "When": {
+                "HasFlag |contains= {{ModId}}_InvisibilityPotion": true,
+                "Debug": false
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "LogName": "Hogwarts Invisibility Potion EditImage Skin Colors",
+            "Action": "EditImage",
+            "Target": "Characters/Farmer/skinColors",
+            "FromFile": "assets/Potion/blank.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 3,
+                "Height": 24
+            },
+            "When": {
+                "HasFlag |contains= {{ModId}}_InvisibilityPotion": true,
+                "Debug": false
+            },
+            "Update": "OnTimeChange"
         }
     ]
 }
