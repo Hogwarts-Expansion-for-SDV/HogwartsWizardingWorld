@@ -1,180 +1,354 @@
 {
-  "Changes": [
-    {
-      "Action": "EditData",
-      "Target": "Mods/leclair.bettercrafting/CraftingStations",
-      "Entries": {
-        "{{ModId}}_PewterCauldron": {
-          "Id": "{{ModId}}_PewterCauldron",
-          "DisplayName": "Brew a Potion",
-          "AreRecipesExclusive": true,
-          // DEBUG
-          "DisplayUnknownRecipes": true,
-          "IsCooking": false,
-          "Recipes": [
-            // Level 1
-            "{{ModId}}_BloodReplenishingPotion",
-            "{{ModId}}_Doxycide",
-            "{{ModId}}_PepperupPotion",
-            "{{ModId}}_HemlockEssence",
-            "{{ModId}}_SyrupofHellebore",
-            "{{ModId}}_TinctureofThyme",
-            "{{ModId}}_BelchPowder"
-          ]
-        },
-        "{{ModId}}_CopperCauldron": {
-          "Id": "{{ModId}}_CopperCauldron",
-          "DisplayName": "Brew a Potion",
-          "AreRecipesExclusive": true,
-          "DisplayUnknownRecipes": true,
-          "IsCooking": false,
-          "Recipes": [
-            // Level 1
-            "{{ModId}}_BloodReplenishingPotion",
-            "{{ModId}}_Doxycide",
-            "{{ModId}}_PepperupPotion",
-            "{{ModId}}_HemlockEssence",
-            "{{ModId}}_SyrupofHellebore",
-            "{{ModId}}_TinctureofThyme",
-            "{{ModId}}_BelchPowder",
-            // Level 2
-            "{{ModId}}_Exploding Potion",
-            "{{ModId}}_PotionforDreamlessSleep",
-            "{{ModId}}_SleepingDraught",
-            "{{ModId}}_AngelsTrumpetDraught",
-            "{{ModId}}_InfusionofCowbane"
-          ]
-        },
-        "{{ModId}}_SteelCauldron": {
-          "Id": "{{ModId}}_SteelCauldron",
-          "DisplayName": "Brew a Potion",
-          "AreRecipesExclusive": true,
-          // DEBUG
-          "DisplayUnknownRecipes": true,
-          "IsCooking": false,
-          "Recipes": [
-            // Level 1
-            "{{ModId}}_BloodReplenishingPotion",
-            "{{ModId}}_Doxycide",
-            "{{ModId}}_PepperupPotion",
-            "{{ModId}}_HemlockEssence",
-            "{{ModId}}_SyrupofHellebore",
-            "{{ModId}}_TinctureofThyme",
-            "{{ModId}}_BelchPowder",
-            // Level 2
-            "{{ModId}}_Exploding Potion",
-            "{{ModId}}_PotionforDreamlessSleep",
-            "{{ModId}}_SleepingDraught",
-            "{{ModId}}_AngelsTrumpetDraught",
-            "{{ModId}}_InfusionofCowbane",
-            // Level 3
-            "{{ModId}}_HiccoughingSolution",
-            "{{ModId}}_LovePotionAntidote",
-            "{{ModId}}_TruthSerum",
-            "{{ModId}}_ElixirtoInduceEuphoria",
-            "{{ModId}}_WiggenweldPotion"
-          ]
-        },
-        "{{ModId}}_GoldCauldron": {
-          "Id": "{{ModId}}_GoldCauldron",
-          "DisplayName": "Brew a Potion",
-          "AreRecipesExclusive": true,
-          // DEBUG
-          "DisplayUnknownRecipes": true,
-          "IsCooking": false,
-          "Recipes": [
-            // Level 1
-            "{{ModId}}_BloodReplenishingPotion",
-            "{{ModId}}_Doxycide",
-            "{{ModId}}_PepperupPotion",
-            "{{ModId}}_HemlockEssence",
-            "{{ModId}}_SyrupofHellebore",
-            "{{ModId}}_TinctureofThyme",
-            "{{ModId}}_BelchPowder",
-            // Level 2
-            "{{ModId}}_Exploding Potion",
-            "{{ModId}}_PotionforDreamlessSleep",
-            "{{ModId}}_SleepingDraught",
-            "{{ModId}}_AngelsTrumpetDraught",
-            "{{ModId}}_InfusionofCowbane",
-            // Level 3
-            "{{ModId}}_HiccoughingSolution",
-            "{{ModId}}_LovePotionAntidote",
-            "{{ModId}}_TruthSerum",
-            "{{ModId}}_ElixirtoInduceEuphoria",
-            "{{ModId}}_WiggenweldPotion",
-            // Level 4
-            "{{ModId}}_DeathPotion",
-            "{{ModId}}_DraughtofLivingDeath",
-            "{{ModId}}_DraughtofPeace",
-            "{{ModId}}_SkeleGro",
-            "{{ModId}}_Veritaserum"
-          ]
-        },
-        "{{ModId}}_IridiumCauldron": {
-          "Id": "{{ModId}}_IridiumCauldron",
-          "DisplayName": "Brew a Potion",
-          "AreRecipesExclusive": true,
-          // DEBUG
-          "DisplayUnknownRecipes": true,
-          "IsCooking": false,
-          "Recipes": [
-            // Level 1
-            "{{ModId}}_BloodReplenishingPotion",
-            "{{ModId}}_Doxycide",
-            "{{ModId}}_PepperupPotion",
-            "{{ModId}}_HemlockEssence",
-            "{{ModId}}_SyrupofHellebore",
-            "{{ModId}}_TinctureofThyme",
-            "{{ModId}}_BelchPowder",
-            // Level 2
-            "{{ModId}}_Exploding Potion",
-            "{{ModId}}_PotionforDreamlessSleep",
-            "{{ModId}}_SleepingDraught",
-            "{{ModId}}_AngelsTrumpetDraught",
-            "{{ModId}}_InfusionofCowbane",
-            // Level 3
-            "{{ModId}}_HiccoughingSolution",
-            "{{ModId}}_LovePotionAntidote",
-            "{{ModId}}_TruthSerum",
-            "{{ModId}}_ElixirtoInduceEuphoria",
-            "{{ModId}}_WiggenweldPotion",
-            // Level 4
-            "{{ModId}}_DeathPotion",
-            "{{ModId}}_DraughtofLivingDeath",
-            "{{ModId}}_DraughtofPeace",
-            "{{ModId}}_SkeleGro",
-            "{{ModId}}_Veritaserum",
-            // Level 5
-            "{{ModId}}_BeautificationPotion",
-            "{{ModId}}_FelixFelicis",
-            "{{ModId}}_LovePotion",
-            "{{ModId}}_PolyjuicePotion",
-            "{{ModId}}_WolfsbanePotion"
-          ]
-        },
-        "{{ModId}}_PreparingTable": {
-          "Id": "{{ModId}}_PewterCauldron",
-          "DisplayName": "Brew a Potion",
-          "AreRecipesExclusive": true,
-          // DEBUG
-          "DisplayUnknownRecipes": true,
-          "IsCooking": false,
-          "Recipes": [
-            "{{ModId}}_AsphodelRoot",
-            "{{ModId}}_BoomBerryJuice",
-            "{{ModId}}_DriedBillywigSting",
-            "{{ModId}}_DriedNettle",
-            "{{ModId}}_LeechJuice",
-            "{{ModId}}_PearlDust",
-            "{{ModId}}_PomegranateJuice",
-            "{{ModId}}_PowderedAsphodelRoot",
-            "{{ModId}}_PowderedBicornHorn",
-            "{{ModId}}_PowderedBoomslangSkin",
-            "{{ModId}}_PowderedRue"
-          ]
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Mods/leclair.bettercrafting/CraftingStations",
+            "Entries": {
+                "{{ModId}}_PewterCauldron": {
+                    "Id": "{{ModId}}_PewterCauldron",
+                    "DisplayName": "Brew a Potion",
+                    "AreRecipesExclusive": true,
+                    "DisplayUnknownRecipes": "{{Debug_mode}}",
+                    "IsCooking": false,
+                    "Recipes": [
+                        // Pewter - Level 1
+                        "{{ModId}}_BulgeyePotion",
+                        "{{ModId}}_BundimunPomade",
+                        "{{ModId}}_CaxambuStyleBorborygmusPotion",
+                        "{{ModId}}_DeflatingDraught",
+                        "{{ModId}}_DevelopingSolution",
+                        "{{ModId}}_DizzinessDraught",
+                        "{{ModId}}_DrowsinessDraught",
+                        "{{ModId}}_Everklena",
+                        "{{ModId}}_Flesh-EatingSlugRepllent",
+                        "{{ModId}}_FungifacePotion",
+                        "{{ModId}}_Hair-RaisingPotion",
+                        "{{ModId}}_HerbicidePotion",
+                        "{{ModId}}_JawbindPotion",
+                        "{{ModId}}_LaxativePotion",
+                        "{{ModId}}_ManegroPotion",
+                        "{{ModId}}_MaximumTurboFartsPotion",
+                        "{{ModId}}_PompionPotion",
+                        "{{ModId}}_RestorationPotion",
+                        "{{ModId}}_ScintillationSolution",
+                        "{{ModId}}_SnufflingPotion",
+                        "{{ModId}}_VolubilisPotion"
+                    ]
+                },
+                "{{ModId}}_CopperCauldron": {
+                    "Id": "{{ModId}}_CopperCauldron",
+                    "DisplayName": "Brew a Potion",
+                    "AreRecipesExclusive": true,
+                    "DisplayUnknownRecipes": "{{Debug_mode}}",
+                    "IsCooking": false,
+                    "Recipes": [
+                        // Pewter - Level 1
+                        "{{ModId}}_BulgeyePotion",
+                        "{{ModId}}_BundimunPomade",
+                        "{{ModId}}_CaxambuStyleBorborygmusPotion",
+                        "{{ModId}}_DeflatingDraught",
+                        "{{ModId}}_DevelopingSolution",
+                        "{{ModId}}_DizzinessDraught",
+                        "{{ModId}}_DrowsinessDraught",
+                        "{{ModId}}_Everklena",
+                        "{{ModId}}_Flesh-EatingSlugRepllent",
+                        "{{ModId}}_FungifacePotion",
+                        "{{ModId}}_Hair-RaisingPotion",
+                        "{{ModId}}_HerbicidePotion",
+                        "{{ModId}}_JawbindPotion",
+                        "{{ModId}}_LaxativePotion",
+                        "{{ModId}}_ManegroPotion",
+                        "{{ModId}}_MaximumTurboFartsPotion",
+                        "{{ModId}}_PompionPotion",
+                        "{{ModId}}_RestorationPotion",
+                        "{{ModId}}_ScintillationSolution",
+                        "{{ModId}}_SnufflingPotion",
+                        "{{ModId}}_VolubilisPotion",
+                        // Copper - Level 1
+                        "{{ModId}}_ElixirtoInduceEuphoria",
+                        "{{ModId}}_ErumpentPotion",
+                        "{{ModId}}_EssenceofInsanity",
+                        "{{ModId}}_MufflingDraught",
+                        "{{ModId}}_OculusPotion",
+                        "{{ModId}}_RevivePotion",
+                        "{{ModId}}_Sleekeazy",
+                        "{{ModId}}_sHairPotion",
+                        "{{ModId}}_EdurusPotion",
+                        "{{ModId}}_BefuddlementDraught",
+                        "{{ModId}}_CalmingDraught",
+                        "{{ModId}}_SwellingSolution",
+                        // Copper - Level 2
+                        "{{ModId}}_BabblingBeverage",
+                        "{{ModId}}_PotionforDreamlessSleep",
+                        "{{ModId}}_RegerminatingPotion",
+                        "{{ModId}}_ScreamingSnakesHairPotion",
+                        "{{ModId}}_SleepingDraught",
+                        "{{ModId}}_WeaknessPotion",
+                        "{{ModId}}_ThunderbrewPotion"
+                    ]
+                },
+                "{{ModId}}_SteelCauldron": {
+                    "Id": "{{ModId}}_SteelCauldron",
+                    "DisplayName": "Brew a Potion",
+                    "AreRecipesExclusive": true,
+                    "DisplayUnknownRecipes": "{{Debug_mode}}",
+                    "IsCooking": false,
+                    "Recipes": [
+                        // Pewter - Level 1
+                        "{{ModId}}_BulgeyePotion",
+                        "{{ModId}}_BundimunPomade",
+                        "{{ModId}}_CaxambuStyleBorborygmusPotion",
+                        "{{ModId}}_DeflatingDraught",
+                        "{{ModId}}_DevelopingSolution",
+                        "{{ModId}}_DizzinessDraught",
+                        "{{ModId}}_DrowsinessDraught",
+                        "{{ModId}}_Everklena",
+                        "{{ModId}}_Flesh-EatingSlugRepllent",
+                        "{{ModId}}_FungifacePotion",
+                        "{{ModId}}_Hair-RaisingPotion",
+                        "{{ModId}}_HerbicidePotion",
+                        "{{ModId}}_JawbindPotion",
+                        "{{ModId}}_LaxativePotion",
+                        "{{ModId}}_ManegroPotion",
+                        "{{ModId}}_MaximumTurboFartsPotion",
+                        "{{ModId}}_PompionPotion",
+                        "{{ModId}}_RestorationPotion",
+                        "{{ModId}}_ScintillationSolution",
+                        "{{ModId}}_SnufflingPotion",
+                        "{{ModId}}_VolubilisPotion",
+                        // Copper - Level 1
+                        "{{ModId}}_ElixirtoInduceEuphoria",
+                        "{{ModId}}_ErumpentPotion",
+                        "{{ModId}}_EssenceofInsanity",
+                        "{{ModId}}_MufflingDraught",
+                        "{{ModId}}_OculusPotion",
+                        "{{ModId}}_RevivePotion",
+                        "{{ModId}}_Sleekeazy",
+                        "{{ModId}}_sHairPotion",
+                        "{{ModId}}_EdurusPotion",
+                        "{{ModId}}_BefuddlementDraught",
+                        "{{ModId}}_CalmingDraught",
+                        "{{ModId}}_SwellingSolution",
+                        // Copper - Level 2
+                        "{{ModId}}_BabblingBeverage",
+                        "{{ModId}}_PotionforDreamlessSleep",
+                        "{{ModId}}_RegerminatingPotion",
+                        "{{ModId}}_ScreamingSnakesHairPotion",
+                        "{{ModId}}_SleepingDraught",
+                        "{{ModId}}_WeaknessPotion",
+                        "{{ModId}}_ThunderbrewPotion",
+                        // Steel - Level 2
+                        "{{ModId}}_ExplodingPotion",
+                        "{{ModId}}_ForgetfulnessPotion",
+                        "{{ModId}}_ShrinkingSolution",
+                        "{{ModId}}_WideyePotion",
+                        "{{ModId}}_MandrakeRestorativeDraught",
+                        "{{ModId}}_ConfusingConcoction",
+                        "{{ModId}}_DogbreathPotion",
+                        // Steel - Level 3
+                        "{{ModId}}_ExstimuloPotion",
+                        "{{ModId}}_Laugh-InducingPotion",
+                        "{{ModId}}_WiggenweldPotion",
+                        "{{ModId}}_FocusPotion",
+                        "{{ModId}}_MaximaPotion"
+                    ]
+                },
+                "{{ModId}}_GoldCauldron": {
+                    "Id": "{{ModId}}_GoldCauldron",
+                    "DisplayName": "Brew a Potion",
+                    "AreRecipesExclusive": true,
+                    "DisplayUnknownRecipes": "{{Debug_mode}}",
+                    "IsCooking": false,
+                    "Recipes": [
+                        // Pewter - Level 1
+                        "{{ModId}}_BulgeyePotion",
+                        "{{ModId}}_BundimunPomade",
+                        "{{ModId}}_CaxambuStyleBorborygmusPotion",
+                        "{{ModId}}_DeflatingDraught",
+                        "{{ModId}}_DevelopingSolution",
+                        "{{ModId}}_DizzinessDraught",
+                        "{{ModId}}_DrowsinessDraught",
+                        "{{ModId}}_Everklena",
+                        "{{ModId}}_Flesh-EatingSlugRepllent",
+                        "{{ModId}}_FungifacePotion",
+                        "{{ModId}}_Hair-RaisingPotion",
+                        "{{ModId}}_HerbicidePotion",
+                        "{{ModId}}_JawbindPotion",
+                        "{{ModId}}_LaxativePotion",
+                        "{{ModId}}_ManegroPotion",
+                        "{{ModId}}_MaximumTurboFartsPotion",
+                        "{{ModId}}_PompionPotion",
+                        "{{ModId}}_RestorationPotion",
+                        "{{ModId}}_ScintillationSolution",
+                        "{{ModId}}_SnufflingPotion",
+                        "{{ModId}}_VolubilisPotion",
+                        // Copper - Level 1
+                        "{{ModId}}_ElixirtoInduceEuphoria",
+                        "{{ModId}}_ErumpentPotion",
+                        "{{ModId}}_EssenceofInsanity",
+                        "{{ModId}}_MufflingDraught",
+                        "{{ModId}}_OculusPotion",
+                        "{{ModId}}_RevivePotion",
+                        "{{ModId}}_Sleekeazy",
+                        "{{ModId}}_sHairPotion",
+                        "{{ModId}}_EdurusPotion",
+                        "{{ModId}}_BefuddlementDraught",
+                        "{{ModId}}_CalmingDraught",
+                        "{{ModId}}_SwellingSolution",
+                        // Copper - Level 2
+                        "{{ModId}}_BabblingBeverage",
+                        "{{ModId}}_PotionforDreamlessSleep",
+                        "{{ModId}}_RegerminatingPotion",
+                        "{{ModId}}_ScreamingSnakesHairPotion",
+                        "{{ModId}}_SleepingDraught",
+                        "{{ModId}}_WeaknessPotion",
+                        "{{ModId}}_ThunderbrewPotion",
+                        // Steel - Level 2
+                        "{{ModId}}_ExplodingPotion",
+                        "{{ModId}}_ForgetfulnessPotion",
+                        "{{ModId}}_ShrinkingSolution",
+                        "{{ModId}}_WideyePotion",
+                        "{{ModId}}_MandrakeRestorativeDraught",
+                        "{{ModId}}_ConfusingConcoction",
+                        "{{ModId}}_DogbreathPotion",
+                        // Steel - Level 3
+                        "{{ModId}}_ExstimuloPotion",
+                        "{{ModId}}_Laugh-InducingPotion",
+                        "{{ModId}}_WiggenweldPotion",
+                        "{{ModId}}_FocusPotion",
+                        "{{ModId}}_MaximaPotion",
+                        // Gold - Level 3
+                        "{{ModId}}_DraughtofPeace",
+                        "{{ModId}}_LovePotionAntidote",
+                        "{{ModId}}_VeritaserumAntidote",
+                        // Gold - Level 4
+                        "{{ModId}}_AgeingPotion",
+                        "{{ModId}}_GarrottingGas",
+                        "{{ModId}}_HatePotion",
+                        "{{ModId}}_MemoryPotion",
+                        // Gold - Level 5
+                        "{{ModId}}_DraughtofLivingDeath"
+                    ]
+                },
+                "{{ModId}}_IridiumCauldron": {
+                    "Id": "{{ModId}}_IridiumCauldron",
+                    "DisplayName": "Brew a Potion",
+                    "AreRecipesExclusive": true,
+                    "DisplayUnknownRecipes": "{{Debug_mode}}",
+                    "IsCooking": false,
+                    "Recipes": [
+                        // Pewter - Level 1
+                        "{{ModId}}_BulgeyePotion",
+                        "{{ModId}}_BundimunPomade",
+                        "{{ModId}}_CaxambuStyleBorborygmusPotion",
+                        "{{ModId}}_DeflatingDraught",
+                        "{{ModId}}_DevelopingSolution",
+                        "{{ModId}}_DizzinessDraught",
+                        "{{ModId}}_DrowsinessDraught",
+                        "{{ModId}}_Everklena",
+                        "{{ModId}}_Flesh-EatingSlugRepllent",
+                        "{{ModId}}_FungifacePotion",
+                        "{{ModId}}_Hair-RaisingPotion",
+                        "{{ModId}}_HerbicidePotion",
+                        "{{ModId}}_JawbindPotion",
+                        "{{ModId}}_LaxativePotion",
+                        "{{ModId}}_ManegroPotion",
+                        "{{ModId}}_MaximumTurboFartsPotion",
+                        "{{ModId}}_PompionPotion",
+                        "{{ModId}}_RestorationPotion",
+                        "{{ModId}}_ScintillationSolution",
+                        "{{ModId}}_SnufflingPotion",
+                        "{{ModId}}_VolubilisPotion",
+                        // Copper - Level 1
+                        "{{ModId}}_ElixirtoInduceEuphoria",
+                        "{{ModId}}_ErumpentPotion",
+                        "{{ModId}}_EssenceofInsanity",
+                        "{{ModId}}_MufflingDraught",
+                        "{{ModId}}_OculusPotion",
+                        "{{ModId}}_RevivePotion",
+                        "{{ModId}}_Sleekeazy",
+                        "{{ModId}}_sHairPotion",
+                        "{{ModId}}_EdurusPotion",
+                        "{{ModId}}_BefuddlementDraught",
+                        "{{ModId}}_CalmingDraught",
+                        "{{ModId}}_SwellingSolution",
+                        // Copper - Level 2
+                        "{{ModId}}_BabblingBeverage",
+                        "{{ModId}}_PotionforDreamlessSleep",
+                        "{{ModId}}_RegerminatingPotion",
+                        "{{ModId}}_ScreamingSnakesHairPotion",
+                        "{{ModId}}_SleepingDraught",
+                        "{{ModId}}_WeaknessPotion",
+                        "{{ModId}}_ThunderbrewPotion",
+                        // Steel - Level 2
+                        "{{ModId}}_ExplodingPotion",
+                        "{{ModId}}_ForgetfulnessPotion",
+                        "{{ModId}}_ShrinkingSolution",
+                        "{{ModId}}_WideyePotion",
+                        "{{ModId}}_MandrakeRestorativeDraught",
+                        "{{ModId}}_ConfusingConcoction",
+                        "{{ModId}}_DogbreathPotion",
+                        // Steel - Level 3
+                        "{{ModId}}_ExstimuloPotion",
+                        "{{ModId}}_Laugh-InducingPotion",
+                        "{{ModId}}_WiggenweldPotion",
+                        "{{ModId}}_FocusPotion",
+                        "{{ModId}}_MaximaPotion",
+                        // Gold - Level 3
+                        "{{ModId}}_DraughtofPeace",
+                        "{{ModId}}_LovePotionAntidote",
+                        "{{ModId}}_VeritaserumAntidote",
+                        // Gold - Level 4
+                        "{{ModId}}_AgeingPotion",
+                        "{{ModId}}_GarrottingGas",
+                        "{{ModId}}_HatePotion",
+                        "{{ModId}}_MemoryPotion",
+                        // Gold - Level 5
+                        "{{ModId}}_DraughtofLivingDeath",
+                        // Iridium - Level 5
+                        "{{ModId}}_DraughtofLivingDeath",
+                        "{{ModId}}_InvisibilityPotion",
+                        "{{ModId}}_WolfsbanePotion",
+                        "{{ModId}}_Veritaserum",
+                        "{{ModId}}_Amortentia",
+                        "{{ModId}}_BeautificationPotion",
+                        "{{ModId}}_GregorysUnctuousUnction",
+                        "{{ModId}}_PolyjuicePotion"
+                    ]
+                },
+                "{{ModId}}_PreparingTable": {
+                    "Id": "{{ModId}}_PewterCauldron",
+                    "DisplayName": "Brew a Potion",
+                    "AreRecipesExclusive": true,
+                    "DisplayUnknownRecipes": "{{Debug_mode}}",
+                    "IsCooking": false,
+                    "Recipes": [
+                        "{{ModId}}_AsphodelRoot",
+                        "{{ModId}}_BoomBerryJuice",
+                        "{{ModId}}_BubotuberPus",
+                        "{{ModId}}_Butterscotch",
+                        "{{ModId}}_CastorOil",
+                        "{{ModId}}_DriedBillywigSting",
+                        "{{ModId}}_DriedNettle",
+                        "{{ModId}}_DriedThyme",
+                        "{{ModId}}_FangedGeraniumPetals",
+                        "{{ModId}}_HemlockEssence",
+                        "{{ModId}}_Honeywater",
+                        "{{ModId}}_InfusionofCowbane",
+                        "{{ModId}}_InfusionofWormwood",
+                        "{{ModId}}_LeechJuice",
+                        "{{ModId}}_MurtlapTentacle",
+                        "{{ModId}}_NPCDandruff",
+                        "{{ModId}}_PearlDust",
+                        "{{ModId}}_PowderedAsphodelRoot",
+                        "{{ModId}}_PowderedBicornHorn",
+                        "{{ModId}}_ShreddedBoomslangSkin",
+                        "{{ModId}}_SyrupofHellebore",
+                        "{{ModId}}_TinctureofThyme",
+                        "{{ModId}}_TormentilTincture"
+                    ]
+                }
+            }
         }
-      }
-    }
-  ]
+    ]
 }
