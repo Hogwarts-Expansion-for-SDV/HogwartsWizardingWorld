@@ -24,7 +24,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 1,
+                    "SpriteIndex": 0,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -62,7 +62,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 2,
+                    "SpriteIndex": 1,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -99,7 +99,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 3,
+                    "SpriteIndex": 2,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -113,7 +113,7 @@
                             "MinAngleOffset": 0,
                             "MaxAngleOffset": 0,
                             "Item": {
-                                "ItemId": "(O){{ModId}}_Projectile892"
+                                "ItemId": "(O)613"
                             }
                         }
                     ]
@@ -122,6 +122,43 @@
                     "Name": "Ash Wand",
                     "DisplayName": "{{i18n: obj.wands.AshWand.name}}",
                     "Description": "{{i18n: obj.wands.AshWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 2,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 3,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 64,
+                            "TailLength": 3,
+                            "FireSound": "shwip",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O)582"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_AspenWand": {
+                    "Name": "Aspen Wand",
+                    "DisplayName": "{{i18n: obj.wands.AspenWand.name}}",
+                    "Description": "{{i18n: obj.wands.AspenWand.desc}}",
                     "MinDamage": 0,
                     "MaxDamage": 1,
                     "Knockback": 1.0,
@@ -146,48 +183,11 @@
                             "Velocity": 10,
                             "RotationVelocity": 64,
                             "TailLength": 3,
-                            "FireSound": "shwip",
-                            "MinAngleOffset": 0,
-                            "MaxAngleOffset": 0,
-                            "Item": {
-                                "ItemId": "(O){{ModId}}_Projectile170"
-                            }
-                        }
-                    ]
-                },
-                "{{ModId}}_AspenWand": {
-                    "Name": "Aspen Wand",
-                    "DisplayName": "{{i18n: obj.wands.AspenWand.name}}",
-                    "Description": "{{i18n: obj.wands.AspenWand.desc}}",
-                    "MinDamage": 0,
-                    "MaxDamage": 1,
-                    "Knockback": 1.0,
-                    "Speed": 2,
-                    "Precision": 0,
-                    "Defense": 0,
-                    "Type": 3,
-                    "MineBaseLevel": -1,
-                    "MineMinLevel": 121,
-                    "AreaOfEffect": 0,
-                    "CritChance": 0,
-                    "CritMultiplier": 0,
-                    "CanBeLostOnDeath": false,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 5,
-                    "Projectiles": [
-                        {
-                            "Id": "Forward",
-                            "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
-                            "Explodes": false,
-                            "Bounces": 0,
-                            "Velocity": 10,
-                            "RotationVelocity": 64,
-                            "TailLength": 3,
                             "FireSound": "pullItemFromWater",
                             "MinAngleOffset": 0,
                             "MaxAngleOffset": 0,
                             "Item": {
-                                "ItemId": "(O){{ModId}}_Projectile707"
+                                "ItemId": "(O)544"
                             }
                         }
                     ]
@@ -210,7 +210,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 6,
+                    "SpriteIndex": 5,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -224,7 +224,7 @@
                             "MinAngleOffset": 0,
                             "MaxAngleOffset": 0,
                             "Item": {
-                                "ItemId": "(O){{ModId}}_Projectile822"
+                                "ItemId": "(O)456"
                             }
                         }
                     ]
@@ -233,6 +233,43 @@
                     "Name": "Birch Wand",
                     "DisplayName": "{{i18n: obj.wands.BirchWand.name}}",
                     "Description": "{{i18n: obj.wands.BirchWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 2,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 6,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 64,
+                            "TailLength": 3,
+                            "FireSound": "harvest",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O)521"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_BlackWalnutWand": {
+                    "Name": "Black Walnut Wand",
+                    "DisplayName": "{{i18n: obj.wands.BlackWalnutWand.name}}",
+                    "Description": "{{i18n: obj.wands.BlackWalnutWand.desc}}",
                     "MinDamage": 0,
                     "MaxDamage": 1,
                     "Knockback": 1.0,
@@ -257,19 +294,19 @@
                             "Velocity": 10,
                             "RotationVelocity": 64,
                             "TailLength": 3,
-                            "FireSound": "harvest",
+                            "FireSound": "throwDownITem",
                             "MinAngleOffset": 0,
                             "MaxAngleOffset": 0,
                             "Item": {
-                                "ItemId": "(O){{ModId}}_Projectile93"
+                                "ItemId": "(O)553"
                             }
                         }
                     ]
                 },
-                "{{ModId}}_BlackWalnutWand": {
-                    "Name": "Black Walnut Wand",
-                    "DisplayName": "{{i18n: obj.wands.BlackWalnutWand.name}}",
-                    "Description": "{{i18n: obj.wands.BlackWalnutWand.desc}}",
+                "{{ModId}}_BlackthornWand": {
+                    "Name": "Blackthorn Wand",
+                    "DisplayName": "{{i18n: obj.wands.BlackthornWand.name}}",
+                    "Description": "{{i18n: obj.wands.BlackthornWand.desc}}",
                     "MinDamage": 0,
                     "MaxDamage": 1,
                     "Knockback": 1.0,
@@ -294,48 +331,11 @@
                             "Velocity": 10,
                             "RotationVelocity": 64,
                             "TailLength": 3,
-                            "FireSound": "throwDownITem",
-                            "MinAngleOffset": 0,
-                            "MaxAngleOffset": 0,
-                            "Item": {
-                                "ItemId": "(O){{ModId}}_Projectile107"
-                            }
-                        }
-                    ]
-                },
-                "{{ModId}}_BlackthornWand": {
-                    "Name": "Blackthorn Wand",
-                    "DisplayName": "{{i18n: obj.wands.BlackthornWand.name}}",
-                    "Description": "{{i18n: obj.wands.BlackthornWand.desc}}",
-                    "MinDamage": 0,
-                    "MaxDamage": 1,
-                    "Knockback": 1.0,
-                    "Speed": 2,
-                    "Precision": 0,
-                    "Defense": 0,
-                    "Type": 3,
-                    "MineBaseLevel": -1,
-                    "MineMinLevel": 121,
-                    "AreaOfEffect": 0,
-                    "CritChance": 0,
-                    "CritMultiplier": 0,
-                    "CanBeLostOnDeath": false,
-                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 9,
-                    "Projectiles": [
-                        {
-                            "Id": "Forward",
-                            "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
-                            "Explodes": false,
-                            "Bounces": 0,
-                            "Velocity": 10,
-                            "RotationVelocity": 64,
-                            "TailLength": 3,
                             "FireSound": "parrot",
                             "MinAngleOffset": 0,
                             "MaxAngleOffset": 0,
                             "Item": {
-                                "ItemId": "(O){{ModId}}_Projectile812"
+                                "ItemId": "(O)599"
                             }
                         }
                     ]
@@ -358,7 +358,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 10,
+                    "SpriteIndex": 9,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -395,7 +395,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 11,
+                    "SpriteIndex": 10,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -432,7 +432,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 12,
+                    "SpriteIndex": 11,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -469,7 +469,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 13,
+                    "SpriteIndex": 12,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -506,7 +506,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 14,
+                    "SpriteIndex": 13,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -543,7 +543,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 15,
+                    "SpriteIndex": 14,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -580,7 +580,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 16,
+                    "SpriteIndex": 15,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -617,7 +617,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 17,
+                    "SpriteIndex": 16,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -654,7 +654,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 18,
+                    "SpriteIndex": 17,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -691,7 +691,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 19,
+                    "SpriteIndex": 18,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -728,7 +728,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 20,
+                    "SpriteIndex": 19,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -765,7 +765,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 21,
+                    "SpriteIndex": 20,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -802,7 +802,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 22,
+                    "SpriteIndex": 21,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -839,7 +839,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 23,
+                    "SpriteIndex": 22,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -876,7 +876,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 24,
+                    "SpriteIndex": 23,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -913,7 +913,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 25,
+                    "SpriteIndex": 24,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -950,7 +950,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 26,
+                    "SpriteIndex": 25,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -987,7 +987,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 27,
+                    "SpriteIndex": 26,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1024,7 +1024,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 28,
+                    "SpriteIndex": 27,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1061,7 +1061,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 29,
+                    "SpriteIndex": 28,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1098,7 +1098,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 30,
+                    "SpriteIndex": 29,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1135,7 +1135,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 31,
+                    "SpriteIndex": 30,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1172,7 +1172,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 32,
+                    "SpriteIndex": 31,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1209,7 +1209,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 33,
+                    "SpriteIndex": 32,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1246,7 +1246,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 34,
+                    "SpriteIndex": 33,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1283,7 +1283,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 35,
+                    "SpriteIndex": 34,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1320,7 +1320,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 36,
+                    "SpriteIndex": 35,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1357,7 +1357,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 37,
+                    "SpriteIndex": 36,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1394,7 +1394,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 38,
+                    "SpriteIndex": 37,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1431,7 +1431,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 39,
+                    "SpriteIndex": 38,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1468,7 +1468,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 40,
+                    "SpriteIndex": 39,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1505,7 +1505,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 42,
+                    "SpriteIndex": 41,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1542,7 +1542,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 41,
+                    "SpriteIndex": 40,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1579,7 +1579,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 43,
+                    "SpriteIndex": 42,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1616,7 +1616,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 44,
+                    "SpriteIndex": 43,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1653,7 +1653,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 45,
+                    "SpriteIndex": 44,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1690,7 +1690,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 46,
+                    "SpriteIndex": 45,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1727,7 +1727,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 47,
+                    "SpriteIndex": 46,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1764,7 +1764,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 48,
+                    "SpriteIndex": 47,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1801,7 +1801,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 49,
+                    "SpriteIndex": 48,
                     "Projectiles": [
                         {
                             "Id": "Forward",
@@ -1838,7 +1838,7 @@
                     "CritMultiplier": 0,
                     "CanBeLostOnDeath": false,
                     "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-                    "SpriteIndex": 50,
+                    "SpriteIndex": 49,
                     "Projectiles": [
                         {
                             "Id": "Forward",
