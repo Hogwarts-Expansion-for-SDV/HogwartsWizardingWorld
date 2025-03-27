@@ -1,1864 +1,1864 @@
 {
-  "Changes": [
-    /*Priority early; otherwise, wand upgrades won't work. Alter Brazilwood, Olive, and Snakewood unique properties*/
-    {
-      "LogName": "Hogwarts Expansion Objects Weapons Data Wands",
-      "Action": "EditData",
-      "Target": "Data/Weapons",
-      "Entries": {
-        "{{ModId}}_AcaciaWand": {
-          "Name": "Acacia Wand",
-          "DisplayName": "{{i18n: obj.wands.AcaciaWand.name}}",
-          "Description": "{{i18n: obj.wands.AcaciaWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 12,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 100,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 1,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "MaxDistance": 10,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "drumkit3",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile695"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_AlderWand": {
-          "Name": "Alder Wand",
-          "DisplayName": "{{i18n: obj.wands.AlderWand.name}}",
-          "Description": "{{i18n: obj.wands.AlderWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 11,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 2,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "drumkit3",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile224"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_AppleWand": {
-          "Name": "Apple Wand",
-          "DisplayName": "{{i18n: obj.wands.AppleWand.name}}",
-          "Description": "{{i18n: obj.wands.AppleWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 10,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 3,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "monsterdead",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile892"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_AshWand": {
-          "Name": "Ash Wand",
-          "DisplayName": "{{i18n: obj.wands.AshWand.name}}",
-          "Description": "{{i18n: obj.wands.AshWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 8,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 4,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "shwip",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile170"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_AspenWand": {
-          "Name": "Aspen Wand",
-          "DisplayName": "{{i18n: obj.wands.AspenWand.name}}",
-          "Description": "{{i18n: obj.wands.AspenWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 5,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 5,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "pullItemFromWater",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile707"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_BeechWand": {
-          "Name": "Beech Wand",
-          "DisplayName": "{{i18n: obj.wands.BeechWand.name}}",
-          "Description": "{{i18n: obj.wands.BeechWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 8,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 6,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": true,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "crystal",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile822"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_BirchWand": {
-          "Name": "Birch Wand",
-          "DisplayName": "{{i18n: obj.wands.BirchWand.name}}",
-          "Description": "{{i18n: obj.wands.BirchWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 11,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 7,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "harvest",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile93"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_BlackWalnutWand": {
-          "Name": "Black Walnut Wand",
-          "DisplayName": "{{i18n: obj.wands.BlackWalnutWand.name}}",
-          "Description": "{{i18n: obj.wands.BlackWalnutWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 11,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 8,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "throwDownITem",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile107"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_BlackthornWand": {
-          "Name": "Blackthorn Wand",
-          "DisplayName": "{{i18n: obj.wands.BlackthornWand.name}}",
-          "Description": "{{i18n: obj.wands.BlackthornWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 5,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 9,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "parrot",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile812"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_BrazilwoodWand": {
-          "Name": "Brazilwood Wand",
-          "DisplayName": "{{i18n: obj.wands.BrazilwoodWand.name}}",
-          "Description": "{{i18n: obj.wands.BrazilwoodWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 11,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 10,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "throwDownITem",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile107"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_CedarWand": {
-          "Name": "Cedar Wand",
-          "DisplayName": "{{i18n: obj.wands.CedarWand.name}}",
-          "Description": "{{i18n: obj.wands.CedarWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 6,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 11,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "axchop",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile133"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_CherryWand": {
-          "Name": "Cherry Wand",
-          "DisplayName": "{{i18n: obj.wands.CherryWand.name}}",
-          "Description": "{{i18n: obj.wands.CherryWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 11,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 12,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "keyboardTyping",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile222"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_ChestnutWand": {
-          "Name": "Chestnut Wand",
-          "DisplayName": "{{i18n: obj.wands.ChestnutWand.name}}",
-          "Description": "{{i18n: obj.wands.ChestnutWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 11,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 13,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "phone",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile74"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_CypressWand": {
-          "Name": "Cypress Wand",
-          "DisplayName": "{{i18n: obj.wands.CypressWand.name}}",
-          "Description": "{{i18n: obj.wands.CypressWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 10,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 14,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "flute",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile695"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_DogwoodWand": {
-          "Name": "Dogwood Wand",
-          "DisplayName": "{{i18n: obj.wands.DogwoodWand.name}}",
-          "Description": "{{i18n: obj.wands.DogwoodWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 7,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 15,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "secret1",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile624"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_EbonyWand": {
-          "Name": "Ebony Wand",
-          "DisplayName": "{{i18n: obj.wands.EbonyWand.name}}",
-          "Description": "{{i18n: obj.wands.EbonyWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 11,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 16,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "fireball",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile180"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_ElderWoodWand": {
-          "Name": "Elder Wood Wand",
-          "DisplayName": "{{i18n: obj.wands.ElderWoodWand.name}}",
-          "Description": "{{i18n: obj.wands.ElderWoodWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 10,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 17,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "detector",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile191"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_ElmWand": {
-          "Name": "Elm Wand",
-          "DisplayName": "{{i18n: obj.wands.ElmWand.name}}",
-          "Description": "{{i18n: obj.wands.ElmWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 8,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 18,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "Meteorite",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile213"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_EnglishOakWand": {
-          "Name": "English Oak Wand",
-          "DisplayName": "{{i18n: obj.wands.EnglishOakWand.name}}",
-          "Description": "{{i18n: obj.wands.EnglishOakWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 11,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 19,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "breathin",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile35"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_FirWand": {
-          "Name": "Fir Wand",
-          "DisplayName": "{{i18n: obj.wands.FirWand.name}}",
-          "Description": "{{i18n: obj.wands.FirWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 6,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 20,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "ow",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile467"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_HawthornWand": {
-          "Name": "Hawthorn Wand",
-          "DisplayName": "{{i18n: obj.wands.HawthornWand.name}}",
-          "Description": "{{i18n: obj.wands.HawthornWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 7,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 21,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "drumkit0",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile445"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_HazelWand": {
-          "Name": "Hazel Wand",
-          "DisplayName": "{{i18n: obj.wands.HazelWand.name}}",
-          "Description": "{{i18n: obj.wands.HazelWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 7,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 22,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "achievement",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile683"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_HollyWand": {
-          "Name": "Holly Wand",
-          "DisplayName": "{{i18n: obj.wands.HollyWand.name}}",
-          "Description": "{{i18n: obj.wands.HollyWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 10,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 23,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "cast",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile469"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_HornbeamWand": {
-          "Name": "Hornbeam Wand",
-          "DisplayName": "{{i18n: obj.wands.HornbeamWand.name}}",
-          "Description": "{{i18n: obj.wands.HornbeamWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 11,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 24,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "robotSoundEffects",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile367"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_IvyWand": {
-          "Name": "Ivy Wand",
-          "DisplayName": "{{i18n: obj.wands.IvyWand.name}}",
-          "Description": "{{i18n: obj.wands.IvyWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 10,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 25,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": true,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "backpackIN",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile129"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_LarchWand": {
-          "Name": "Larch Wand",
-          "DisplayName": "{{i18n: obj.wands.LarchWand.name}}",
-          "Description": "{{i18n: obj.wands.LarchWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 6,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 26,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": true,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "furnace",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile359"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_LaurelWand": {
-          "Name": "Laurel Wand",
-          "DisplayName": "{{i18n: obj.wands.LaurelWand.name}}",
-          "Description": "{{i18n: obj.wands.LaurelWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 8,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 27,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "doorCreakReverse",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile65"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_MahoganyWand": {
-          "Name": "Mahogany Wand",
-          "DisplayName": "{{i18n: obj.wands.MahoganyWand.name}}",
-          "Description": "{{i18n: obj.wands.MahoganyWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 12,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 28,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "Cavern",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile723"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_MapleWand": {
-          "Name": "Maple Wand",
-          "DisplayName": "{{i18n: obj.wands.MapleWand.name}}",
-          "Description": "{{i18n: obj.wands.MapleWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 5,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 29,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": true,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "FishHit",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile237"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_OliveWand": {
-          "Name": "Olive Wand",
-          "DisplayName": "{{i18n: obj.wands.OliveWand.name}}",
-          "Description": "{{i18n: obj.wands.OliveWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 5,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 30,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": true,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "FishHit",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile237"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_PearWand": {
-          "Name": "Pear Wand",
-          "DisplayName": "{{i18n: obj.wands.PearWand.name}}",
-          "Description": "{{i18n: obj.wands.PearWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 11,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 31,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": true,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "cameraNoise",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile748"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_PineWand": {
-          "Name": "Pine Wand",
-          "DisplayName": "{{i18n: obj.wands.PineWand.name}}",
-          "Description": "{{i18n: obj.wands.PineWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 10,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 32,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 2,
-              "TailLength": 3,
-              "FireSound": "sheep",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile243"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_PoplarWand": {
-          "Name": "Poplar Wand",
-          "DisplayName": "{{i18n: obj.wands.PoplarWand.name}}",
-          "Description": "{{i18n: obj.wands.PoplarWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 12,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 33,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": true,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "Cowboy_monsterDie",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile159"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_PricklyAshWand": {
-          "Name": "Prickly Ash Wand",
-          "DisplayName": "{{i18n: obj.wands.PricklyAshWand.name}}",
-          "Description": "{{i18n: obj.wands.PricklyAshWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 8,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 34,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "glug",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile289"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_RedOakWand": {
-          "Name": "Red Oak Wand",
-          "DisplayName": "{{i18n: obj.wands.RedOakWand.name}}",
-          "Description": "{{i18n: obj.wands.RedOakWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 7,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 35,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "treethud",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile875"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_RedwoodWand": {
-          "Name": "Redwood Wand",
-          "DisplayName": "{{i18n: obj.wands.RedwoodWand.name}}",
-          "Description": "{{i18n: obj.wands.RedwoodWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 6,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 36,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "boop",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile772"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_ReedWand": {
-          "Name": "Reed Wand",
-          "DisplayName": "{{i18n: obj.wands.ReedWand.name}}",
-          "Description": "{{i18n: obj.wands.ReedWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 12,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 37,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "drumkit6",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile521"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_RosewoodWand": {
-          "Name": "Rosewood Wand",
-          "DisplayName": "{{i18n: obj.wands.RosewoodWand.name}}",
-          "Description": "{{i18n: obj.wands.RosewoodWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 8,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 38,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "breakingGlass",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile802"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_RowanWand": {
-          "Name": "Rowan Wand",
-          "DisplayName": "{{i18n: obj.wands.RowanWand.name}}",
-          "Description": "{{i18n: obj.wands.RowanWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 8,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 39,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "serpentHit",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile472"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_SilverLimeWand": {
-          "Name": "Silver Lime Wand",
-          "DisplayName": "{{i18n: obj.wands.SilverLimeWand.name}}",
-          "Description": "{{i18n: obj.wands.SilverLimeWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 7,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 40,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "skeletonDie",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile908"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_SpruceWand": {
-          "Name": "Spruce Wand",
-          "DisplayName": "{{i18n: obj.wands.SpruceWand.name}}",
-          "Description": "{{i18n: obj.wands.SpruceWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 8,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 41,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "pullItemFromWater",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile633"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_SnakewoodWand": {
-          "Name": "Snakewood Wand",
-          "DisplayName": "{{i18n: obj.wands.SnakewoodWand.name}}",
-          "Description": "{{i18n: obj.wands.SnakewoodWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 8,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 42,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "pullItemFromWater",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile633"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_SugarMapleWand": {
-          "Name": "Sugar Maple Wand",
-          "DisplayName": "{{i18n: obj.wands.SugarMapleWand.name}}",
-          "Description": "{{i18n: obj.wands.SugarMapleWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 7,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 43,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": true,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "jingle1",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile640"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_SwampMayhawWand": {
-          "Name": "Swamp Mayhaw Wand",
-          "DisplayName": "{{i18n: obj.wands.SwampMayhawWand.name}}",
-          "Description": "{{i18n: obj.wands.SwampMayhawWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 10,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 44,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "robotBLASTOFF",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile781"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_SycamoreWand": {
-          "Name": "Sycamore Wand",
-          "DisplayName": "{{i18n: obj.wands.SycamoreWand.name}}",
-          "Description": "{{i18n: obj.wands.SycamoreWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 8,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 45,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "pig",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile536"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_TamarackWand": {
-          "Name": "Tamarack Wand",
-          "DisplayName": "{{i18n: obj.wands.TamarackWand.name}}",
-          "Description": "{{i18n: obj.wands.TamarackWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 6,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 46,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "gulp",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile530"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_VineWand": {
-          "Name": "Vine Wand",
-          "DisplayName": "{{i18n: obj.wands.VineWand.name}}",
-          "Description": "{{i18n: obj.wands.VineWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 8,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 47,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "slosh",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile204"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_WalnutWand": {
-          "Name": "Walnut Wand",
-          "DisplayName": "{{i18n: obj.wands.WalnutWand.name}}",
-          "Description": "{{i18n: obj.wands.WalnutWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 10,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 48,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "fishBite",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile625"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_WillowWand": {
-          "Name": "Willow Wand",
-          "DisplayName": "{{i18n: obj.wands.WillowWand.name}}",
-          "Description": "{{i18n: obj.wands.WillowWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 8,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 49,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "button1",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile92"
-              }
-            }
-          ]
-        },
-        "{{ModId}}_YewWand": {
-          "Name": "Yew Wand",
-          "DisplayName": "{{i18n: obj.wands.YewWand.name}}",
-          "Description": "{{i18n: obj.wands.YewWand.desc}}",
-          "MinDamage": 0,
-          "MaxDamage": 1,
-          "Knockback": 1.0,
-          "Speed": 7,
-          "Precision": 0,
-          "Defense": 0,
-          "Type": 3,
-          "MineBaseLevel": -1,
-          "MineMinLevel": 121,
-          "AreaOfEffect": 0,
-          "CritChance": 0,
-          "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 50,
-          "Projectiles": [
-            {
-              "Id": "Forward",
-              "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-              "Explodes": false,
-              "Bounces": 0,
-              "Velocity": 10,
-              "RotationVelocity": 1,
-              "TailLength": 3,
-              "FireSound": "killAnimal",
-              "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O){{ModId}}_Projectile592"
-              }
-            }
-          ]
+    "Changes": [
+        /*Priority early; otherwise, wand upgrades won't work. Alter Brazilwood, Olive, and Snakewood unique properties*/
+        {
+            "LogName": "Hogwarts Expansion Objects Weapons Data Wands",
+            "Action": "EditData",
+            "Target": "Data/Weapons",
+            "Entries": {
+                "{{ModId}}_AcaciaWand": {
+                    "Name": "Acacia Wand",
+                    "DisplayName": "{{i18n: obj.wands.AcaciaWand.name}}",
+                    "Description": "{{i18n: obj.wands.AcaciaWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 12,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 100,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 1,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "MaxDistance": 10,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "drumkit3",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile695"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_AlderWand": {
+                    "Name": "Alder Wand",
+                    "DisplayName": "{{i18n: obj.wands.AlderWand.name}}",
+                    "Description": "{{i18n: obj.wands.AlderWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 11,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 2,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "drumkit3",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile224"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_AppleWand": {
+                    "Name": "Apple Wand",
+                    "DisplayName": "{{i18n: obj.wands.AppleWand.name}}",
+                    "Description": "{{i18n: obj.wands.AppleWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 10,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 3,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "monsterdead",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile892"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_AshWand": {
+                    "Name": "Ash Wand",
+                    "DisplayName": "{{i18n: obj.wands.AshWand.name}}",
+                    "Description": "{{i18n: obj.wands.AshWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 8,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 4,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "shwip",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile170"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_AspenWand": {
+                    "Name": "Aspen Wand",
+                    "DisplayName": "{{i18n: obj.wands.AspenWand.name}}",
+                    "Description": "{{i18n: obj.wands.AspenWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 5,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 5,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "pullItemFromWater",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile707"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_BeechWand": {
+                    "Name": "Beech Wand",
+                    "DisplayName": "{{i18n: obj.wands.BeechWand.name}}",
+                    "Description": "{{i18n: obj.wands.BeechWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 8,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 6,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": true,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "crystal",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile822"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_BirchWand": {
+                    "Name": "Birch Wand",
+                    "DisplayName": "{{i18n: obj.wands.BirchWand.name}}",
+                    "Description": "{{i18n: obj.wands.BirchWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 11,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 7,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "harvest",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile93"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_BlackWalnutWand": {
+                    "Name": "Black Walnut Wand",
+                    "DisplayName": "{{i18n: obj.wands.BlackWalnutWand.name}}",
+                    "Description": "{{i18n: obj.wands.BlackWalnutWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 11,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 8,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "throwDownITem",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile107"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_BlackthornWand": {
+                    "Name": "Blackthorn Wand",
+                    "DisplayName": "{{i18n: obj.wands.BlackthornWand.name}}",
+                    "Description": "{{i18n: obj.wands.BlackthornWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 5,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 9,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "parrot",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile812"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_BrazilwoodWand": {
+                    "Name": "Brazilwood Wand",
+                    "DisplayName": "{{i18n: obj.wands.BrazilwoodWand.name}}",
+                    "Description": "{{i18n: obj.wands.BrazilwoodWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 11,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 10,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "throwDownITem",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile107"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_CedarWand": {
+                    "Name": "Cedar Wand",
+                    "DisplayName": "{{i18n: obj.wands.CedarWand.name}}",
+                    "Description": "{{i18n: obj.wands.CedarWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 6,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 11,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "axchop",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile133"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_CherryWand": {
+                    "Name": "Cherry Wand",
+                    "DisplayName": "{{i18n: obj.wands.CherryWand.name}}",
+                    "Description": "{{i18n: obj.wands.CherryWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 11,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 12,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "keyboardTyping",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile222"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_ChestnutWand": {
+                    "Name": "Chestnut Wand",
+                    "DisplayName": "{{i18n: obj.wands.ChestnutWand.name}}",
+                    "Description": "{{i18n: obj.wands.ChestnutWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 11,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 13,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "phone",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile74"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_CypressWand": {
+                    "Name": "Cypress Wand",
+                    "DisplayName": "{{i18n: obj.wands.CypressWand.name}}",
+                    "Description": "{{i18n: obj.wands.CypressWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 10,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 14,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "flute",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile695"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_DogwoodWand": {
+                    "Name": "Dogwood Wand",
+                    "DisplayName": "{{i18n: obj.wands.DogwoodWand.name}}",
+                    "Description": "{{i18n: obj.wands.DogwoodWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 7,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 15,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "secret1",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile624"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_EbonyWand": {
+                    "Name": "Ebony Wand",
+                    "DisplayName": "{{i18n: obj.wands.EbonyWand.name}}",
+                    "Description": "{{i18n: obj.wands.EbonyWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 11,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 16,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "fireball",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile180"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_ElderWoodWand": {
+                    "Name": "Elder Wood Wand",
+                    "DisplayName": "{{i18n: obj.wands.ElderWoodWand.name}}",
+                    "Description": "{{i18n: obj.wands.ElderWoodWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 10,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 17,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "detector",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile191"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_ElmWand": {
+                    "Name": "Elm Wand",
+                    "DisplayName": "{{i18n: obj.wands.ElmWand.name}}",
+                    "Description": "{{i18n: obj.wands.ElmWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 8,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 18,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "Meteorite",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile213"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_EnglishOakWand": {
+                    "Name": "English Oak Wand",
+                    "DisplayName": "{{i18n: obj.wands.EnglishOakWand.name}}",
+                    "Description": "{{i18n: obj.wands.EnglishOakWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 11,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 19,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "breathin",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile35"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_FirWand": {
+                    "Name": "Fir Wand",
+                    "DisplayName": "{{i18n: obj.wands.FirWand.name}}",
+                    "Description": "{{i18n: obj.wands.FirWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 6,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 20,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "ow",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile467"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_HawthornWand": {
+                    "Name": "Hawthorn Wand",
+                    "DisplayName": "{{i18n: obj.wands.HawthornWand.name}}",
+                    "Description": "{{i18n: obj.wands.HawthornWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 7,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 21,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "drumkit0",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile445"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_HazelWand": {
+                    "Name": "Hazel Wand",
+                    "DisplayName": "{{i18n: obj.wands.HazelWand.name}}",
+                    "Description": "{{i18n: obj.wands.HazelWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 7,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 22,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "achievement",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile683"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_HollyWand": {
+                    "Name": "Holly Wand",
+                    "DisplayName": "{{i18n: obj.wands.HollyWand.name}}",
+                    "Description": "{{i18n: obj.wands.HollyWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 10,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 23,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "cast",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile469"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_HornbeamWand": {
+                    "Name": "Hornbeam Wand",
+                    "DisplayName": "{{i18n: obj.wands.HornbeamWand.name}}",
+                    "Description": "{{i18n: obj.wands.HornbeamWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 11,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 24,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "robotSoundEffects",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile367"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_IvyWand": {
+                    "Name": "Ivy Wand",
+                    "DisplayName": "{{i18n: obj.wands.IvyWand.name}}",
+                    "Description": "{{i18n: obj.wands.IvyWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 10,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 25,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": true,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "backpackIN",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile129"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_LarchWand": {
+                    "Name": "Larch Wand",
+                    "DisplayName": "{{i18n: obj.wands.LarchWand.name}}",
+                    "Description": "{{i18n: obj.wands.LarchWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 6,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 26,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": true,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "furnace",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile359"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_LaurelWand": {
+                    "Name": "Laurel Wand",
+                    "DisplayName": "{{i18n: obj.wands.LaurelWand.name}}",
+                    "Description": "{{i18n: obj.wands.LaurelWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 8,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 27,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "doorCreakReverse",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile65"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_MahoganyWand": {
+                    "Name": "Mahogany Wand",
+                    "DisplayName": "{{i18n: obj.wands.MahoganyWand.name}}",
+                    "Description": "{{i18n: obj.wands.MahoganyWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 12,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 28,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "Cavern",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile723"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_MapleWand": {
+                    "Name": "Maple Wand",
+                    "DisplayName": "{{i18n: obj.wands.MapleWand.name}}",
+                    "Description": "{{i18n: obj.wands.MapleWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 5,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 29,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": true,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "FishHit",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile237"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_OliveWand": {
+                    "Name": "Olive Wand",
+                    "DisplayName": "{{i18n: obj.wands.OliveWand.name}}",
+                    "Description": "{{i18n: obj.wands.OliveWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 5,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 30,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": true,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "FishHit",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile237"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_PearWand": {
+                    "Name": "Pear Wand",
+                    "DisplayName": "{{i18n: obj.wands.PearWand.name}}",
+                    "Description": "{{i18n: obj.wands.PearWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 11,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 31,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": true,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "cameraNoise",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile748"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_PineWand": {
+                    "Name": "Pine Wand",
+                    "DisplayName": "{{i18n: obj.wands.PineWand.name}}",
+                    "Description": "{{i18n: obj.wands.PineWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 10,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 32,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 2,
+                            "TailLength": 3,
+                            "FireSound": "sheep",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile243"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_PoplarWand": {
+                    "Name": "Poplar Wand",
+                    "DisplayName": "{{i18n: obj.wands.PoplarWand.name}}",
+                    "Description": "{{i18n: obj.wands.PoplarWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 12,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 33,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": true,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "Cowboy_monsterDie",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile159"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_PricklyAshWand": {
+                    "Name": "Prickly Ash Wand",
+                    "DisplayName": "{{i18n: obj.wands.PricklyAshWand.name}}",
+                    "Description": "{{i18n: obj.wands.PricklyAshWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 8,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 34,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "glug",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile289"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_RedOakWand": {
+                    "Name": "Red Oak Wand",
+                    "DisplayName": "{{i18n: obj.wands.RedOakWand.name}}",
+                    "Description": "{{i18n: obj.wands.RedOakWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 7,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 35,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "treethud",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile875"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_RedwoodWand": {
+                    "Name": "Redwood Wand",
+                    "DisplayName": "{{i18n: obj.wands.RedwoodWand.name}}",
+                    "Description": "{{i18n: obj.wands.RedwoodWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 6,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 36,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "boop",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile772"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_ReedWand": {
+                    "Name": "Reed Wand",
+                    "DisplayName": "{{i18n: obj.wands.ReedWand.name}}",
+                    "Description": "{{i18n: obj.wands.ReedWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 12,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 37,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "drumkit6",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile521"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_RosewoodWand": {
+                    "Name": "Rosewood Wand",
+                    "DisplayName": "{{i18n: obj.wands.RosewoodWand.name}}",
+                    "Description": "{{i18n: obj.wands.RosewoodWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 8,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 38,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "breakingGlass",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile802"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_RowanWand": {
+                    "Name": "Rowan Wand",
+                    "DisplayName": "{{i18n: obj.wands.RowanWand.name}}",
+                    "Description": "{{i18n: obj.wands.RowanWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 8,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 39,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "serpentHit",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile472"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_SilverLimeWand": {
+                    "Name": "Silver Lime Wand",
+                    "DisplayName": "{{i18n: obj.wands.SilverLimeWand.name}}",
+                    "Description": "{{i18n: obj.wands.SilverLimeWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 7,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 40,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "skeletonDie",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile908"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_SpruceWand": {
+                    "Name": "Spruce Wand",
+                    "DisplayName": "{{i18n: obj.wands.SpruceWand.name}}",
+                    "Description": "{{i18n: obj.wands.SpruceWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 8,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 42,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "pullItemFromWater",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile633"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_SnakewoodWand": {
+                    "Name": "Snakewood Wand",
+                    "DisplayName": "{{i18n: obj.wands.SnakewoodWand.name}}",
+                    "Description": "{{i18n: obj.wands.SnakewoodWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 8,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 41,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "pullItemFromWater",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile633"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_SugarMapleWand": {
+                    "Name": "Sugar Maple Wand",
+                    "DisplayName": "{{i18n: obj.wands.SugarMapleWand.name}}",
+                    "Description": "{{i18n: obj.wands.SugarMapleWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 7,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 43,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": true,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "jingle1",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile640"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_SwampMayhawWand": {
+                    "Name": "Swamp Mayhaw Wand",
+                    "DisplayName": "{{i18n: obj.wands.SwampMayhawWand.name}}",
+                    "Description": "{{i18n: obj.wands.SwampMayhawWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 10,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 44,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "robotBLASTOFF",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile781"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_SycamoreWand": {
+                    "Name": "Sycamore Wand",
+                    "DisplayName": "{{i18n: obj.wands.SycamoreWand.name}}",
+                    "Description": "{{i18n: obj.wands.SycamoreWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 8,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 45,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "pig",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile536"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_TamarackWand": {
+                    "Name": "Tamarack Wand",
+                    "DisplayName": "{{i18n: obj.wands.TamarackWand.name}}",
+                    "Description": "{{i18n: obj.wands.TamarackWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 6,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 46,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "gulp",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile530"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_VineWand": {
+                    "Name": "Vine Wand",
+                    "DisplayName": "{{i18n: obj.wands.VineWand.name}}",
+                    "Description": "{{i18n: obj.wands.VineWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 8,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 47,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "slosh",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile204"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_WalnutWand": {
+                    "Name": "Walnut Wand",
+                    "DisplayName": "{{i18n: obj.wands.WalnutWand.name}}",
+                    "Description": "{{i18n: obj.wands.WalnutWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 10,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 48,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "fishBite",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile625"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_WillowWand": {
+                    "Name": "Willow Wand",
+                    "DisplayName": "{{i18n: obj.wands.WillowWand.name}}",
+                    "Description": "{{i18n: obj.wands.WillowWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 8,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 49,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "button1",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile92"
+                            }
+                        }
+                    ]
+                },
+                "{{ModId}}_YewWand": {
+                    "Name": "Yew Wand",
+                    "DisplayName": "{{i18n: obj.wands.YewWand.name}}",
+                    "Description": "{{i18n: obj.wands.YewWand.desc}}",
+                    "MinDamage": 0,
+                    "MaxDamage": 1,
+                    "Knockback": 1.0,
+                    "Speed": 7,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": -1,
+                    "MineMinLevel": 121,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+                    "SpriteIndex": 50,
+                    "Projectiles": [
+                        {
+                            "Id": "Forward",
+                            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
+                            "Explodes": false,
+                            "Bounces": 0,
+                            "Velocity": 10,
+                            "RotationVelocity": 1,
+                            "TailLength": 3,
+                            "FireSound": "killAnimal",
+                            "MinAngleOffset": 0,
+                            "MaxAngleOffset": 0,
+                            "Item": {
+                                "ItemId": "(O){{ModId}}_Projectile592"
+                            }
+                        }
+                    ]
+                }
+            },
+            "Priority": "Early"
         }
-      },
-      "Priority": "Early"
-    }
-  ]
+    ]
 }
