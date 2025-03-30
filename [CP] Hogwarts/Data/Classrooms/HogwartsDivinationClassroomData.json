@@ -3,9 +3,7 @@
     /*Left Top Left - Creature Den 
 
     Tasks 
-    1. Creature den location to picture
-    2. Change frozen tear to tea leaves*/
-    
+    1. Creature den location to picture*/
     {
       "LogName": "Hogwarts Divination Classroom Unlockable Bundle Left Top Left",
       "Action": "EditData",
@@ -49,7 +47,13 @@
       }
     },
     {
-      "LogName": "Hogwarts Divination Classroom Left Top Left Creature Den Dialogue",
+      "LogName": "Hogwarts Teacup Image Base Load",
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/TeacupBaseCreatureDen",
+      "FromFile": "assets/Divination/TeacupBase.png"
+    },
+    {
+      "LogName": "Hogwarts Divination Classroom Left Top Left Creature Den Teacup Image Base",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsDivinationClassroom",
       "MapTiles": [
@@ -60,14 +64,27 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Dialogue {{DivinationCreatureDen}}"
+            "Action": "MEEP_CloseupInteraction_Image Mods/{{ModId}}/TeacupBaseCreatureDen 0 0 128 128"
           }
         }
       ],
       "When": {
-        "HasMod |contains= DLX.Bundles": true
+        "HasMod |contains= DLX.Bundles, DecidedlyHuman.MappingExtensionsAndExtraProperties": true
       }
     },
+    {
+      "LogName": "Hogwarts Teacup Creature Den Placement EditImage",
+      "Action": "EditImage",
+      "Target": "Mods/{{ModId}}/TeacupBaseCreatureDen",
+      "FromFile": "assets/Divination/CreatureDen.png",
+      "ToArea": {
+        "X": "{{DivinationCreatureDenX}}",
+        "Y": "{{DivinationCreatureDenY}}",
+        "Width": 32,
+        "Height": 32
+      }
+    },
+    /*Left Top Right - Creature*/
     {
       "LogName": "Hogwarts Divination Classroom Unlockable Bundle Left Top Right",
       "Action": "EditData",
