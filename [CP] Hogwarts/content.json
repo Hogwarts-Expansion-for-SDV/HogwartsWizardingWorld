@@ -1,5 +1,5 @@
 {
-  "Format": "2.5.0",
+  "Format": "2.6.0",
   "ConfigSchema": {
     "Debug_mode": {
       "AllowValues": "true, false",
@@ -18,75 +18,46 @@
       "Value": "HogwartsLibraryAnnex"
     },
     {
-      "Name": "DivinationCreatureDen",
-      "Value": "A1",
+      "Name": "DivinationCreatureDenX",
+      "Value": "19",
       "When": {
-        "Query: {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} <= 66": true,
+        "Query: {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} <= 66": true
+      }
+    },
+    {
+      "Name": "DivinationCreatureDenX",
+      "Value": "48",
+      "When": {
+        "Query: {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} > 66 AND {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} < 118": true
+      }
+    },
+    {
+      "Name": "DivinationCreatureDenX",
+      "Value": "75",
+      "When": {
+        "Query: {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} >= 118": true
+      }
+    },
+    {
+      "Name": "DivinationCreatureDenY",
+      "Value": "19",
+      "When": {
         "Query: {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} <= 47": true
       }
     },
     {
-      "Name": "DivinationCreatureDen",
-      "Value": "A2",
+      "Name": "DivinationCreatureDenY",
+      "Value": "48",
       "When": {
-        "Query: {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} <= 66": true,
-        "Query: 47 < {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} < 85": true
+        "Query: {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} > 47 AND {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} < 85": true
       }
     },
+
     {
-      "Name": "DivinationCreatureDen",
-      "Value": "A3",
+      "Name": "DivinationCreatureDenY",
+      "Value": "75",
       "When": {
-        "Query: {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} <= 66": true,
-        "Query: 85 <= {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}}": true
-      }
-    },
-    {
-      "Name": "DivinationCreatureDen",
-      "Value": "B1",
-      "When": {
-        "Query: 66 < {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} < 118": true,
-        "Query: {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} <= 47": true
-      }
-    },
-    {
-      "Name": "DivinationCreatureDen",
-      "Value": "B2",
-      "When": {
-        "Query: 66 < {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} < 118": true,
-        "Query: 47 < {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} < 85": true
-      }
-    },
-    {
-      "Name": "DivinationCreatureDen",
-      "Value": "B3",
-      "When": {
-        "Query: 66 < {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}} < 118": true,
-        "Query: 85 <= {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}}": true
-      }
-    },
-    {
-      "Name": "DivinationCreatureDen",
-      "Value": "C1",
-      "When": {
-        "Query: 118 <= {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}}": true,
-        "Query: {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} <= 47": true
-      }
-    },
-    {
-      "Name": "DivinationCreatureDen",
-      "Value": "C2",
-      "When": {
-        "Query: 118 < {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}}": true,
-        "Query: 47 < {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} < 85": true
-      }
-    },
-    {
-      "Name": "DivinationCreatureDen",
-      "Value": "C3",
-      "When": {
-        "Query: 118 <= {{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}}}": true,
-        "Query: 85 <= {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}}": true
+        "Query: {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} >= 85": true
       }
     }
   ],
