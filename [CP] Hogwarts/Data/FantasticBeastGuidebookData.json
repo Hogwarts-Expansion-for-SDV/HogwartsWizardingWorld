@@ -1,0 +1,86 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Fantastic Beasts Guidebook Tabs Load",
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/GuidebookTabs",
+      "FromFile": "Assets/Guidebook/{{TargetWithoutPath}}.png"
+    },
+    {
+      "LogName": "Hogwarts Fantastic Beasts Guidebook Object Data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_FantasticBeastsGuidebook": {
+          "Name": "Fantastic Beasts and Where to Find Them",
+          "DisplayName": "Fantastic Beasts i18n name",
+          "Description": "Fantastic Beasts i18n description",
+          "Type": "Quest",
+          "Category": 0,
+          "Price": 50,
+          "Texture": "{{InternalAssetKey: assets/Objects/Artifacts.png}}",
+          "SpriteIndex": 14,
+          "ContextTags": [
+            "{{ModId}}_Guidebook"
+          ]
+        }
+      }
+    },
+    /*How to connect object to trigger action?*/
+    {
+      "LogName": "Hogwarts Fantastic Beasts Guidebook SpaceCore Object Extension UseForTriggerAction",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+      "Entries": {
+        "{{ModId}}_FantasticBeastsGuidebook": {
+          "UseForTriggerAction": true
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts Fantastic Beasts Guidebook Trigger Action",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModID}}_OpenFantasticBeastsGuidebook": {
+          "Id": "{{ModID}}_OpenFantasticBeastsGuidebook",
+          "Condition": null,
+          "Actions": [
+            "spacechase0.SpaceCore_OpenGuidebook {{ModId}}_FantasticBeasts"
+          ],
+          "MarkActionApplied": false,
+          "Trigger": "Manual"
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts Fantastic Beasts Guidebook",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/Guidebooks",
+      "Entries": {
+        "{{ModID}}_FantasticBeasts": {
+          "Title": "Fantastic Beasts and Where to Find Them",
+          "DefaultChapter": "Title",
+          "Chapters": {
+            "Title": {
+              "Name": "Fantastic Beasts and Where to Find Them",
+              "TabIconTexture": "Mods/{{ModId}}/GuidebookTabs",
+              "TabIconRect": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+              },
+              "Condition": "TRUE",
+              "Pages": [
+                {
+                  "Contents": "[image=Animals/{{ModId}}_Bowtruckle:null:1]"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}
