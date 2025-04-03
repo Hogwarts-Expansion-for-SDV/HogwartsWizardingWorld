@@ -171,6 +171,280 @@
           }
         }
       ]
+    },
+    /*Left Top Left - Creature Den*/
+    {
+      "LogName": "Hogwarts Divination Classroom Unlockable Bundle Left Bottom Left",
+      "Action": "EditData",
+      "Target": "UnlockableBundles/Bundles",
+      "Entries": {
+        "{{ModId}}_DivinationClassroom{{Day}}{{Season}}{{Year}}LBL": {
+          "Location": "{{ModId}}_HogwartsDivinationClassroom",
+          "ShopType": "CCBundle",
+          "BundleDescription": "Charmed Tent Divination",
+          "ShopEvent": "none",
+          "ShopPosition": "5, 13",
+          "ShopTexture": "Maps/HogwartsBlankBundle",
+          "DrawQuestionMark": true,
+          "QuestionMarkOffset": "24, 32",
+          "Price": {
+            "815": 1
+          },
+          "BundleCompletedActions": [
+            "AddMail Current {{ModId}}_HogwartsDivinationCharmedTent now"
+          ],
+          "InteractionShake": true,
+          "InstantShopRemoval": true
+        }
+      },
+      "When": {
+        "HasMod |contains= DLX.Bundles": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Divination Classroom Charmed Tent Trigger Action Remove Mail",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_HogwartsDivinationCharmedTent": {
+          "Id": "{{ModId}}_HogwartsDivinationCharmedTent",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_HogwartsDivinationCharmedTent Any",
+          "Action": "RemoveMail Current {{ModId}}_HogwartsDivinationCharmedTent",
+          "MarkActionApplied": false
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts Xylomancy Image Base Load",
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/XylomancyBase",
+      "FromFile": "assets/Divination/{{TargetWithoutPath}}.png"
+    },
+    {
+      "LogName": "Hogwarts Twigs Spritesheet Load",
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/Twigs",
+      "FromFile": "assets/Divination/{{TargetWithoutPath}}.png"
+    },
+    {
+      "LogName": "Hogwarts Divination Classroom Left Top Left Charmed Tent Xylomancy Image Base",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDivinationClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 5,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteraction_Image Mods/{{ModId}}/XylomancyBase 0 0 128 128"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= DLX.Bundles, DecidedlyHuman.MappingExtensionsAndExtraProperties": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Twig Formation EditImage A1",
+      "Action": "EditImage",
+      "Target": "Mods/{{ModId}}/XylomancyBase",
+      "FromFile": "assets/Divination/Twigs.png",
+      "FromArea": {
+        "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key={{Time}}A1}}}}",
+        "Y": "{{Query: {{Random: 0, 40, 80, 120|key={{Time}}A1}}}}",
+        "Width": 40,
+        "Height": 40
+      },
+      "ToArea": {
+        "X": 8,
+        "Y": 8,
+        "Width": 40,
+        "Height": 40
+      },
+      "PatchMode": "Overlay",
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Twig Formation EditImage A2",
+      "Action": "EditImage",
+      "Target": "Mods/{{ModId}}/XylomancyBase",
+      "FromFile": "assets/Divination/Twigs.png",
+      "FromArea": {
+        "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key=A2{{Time}}}}}}",
+        "Y": "{{Query: {{Random: 0, 40, 80, 120|key=A2{{Time}}}}}}",
+        "Width": 40,
+        "Height": 40
+      },
+      "ToArea": {
+        "X": 8,
+        "Y": 48,
+        "Width": 40,
+        "Height": 40
+      },
+      "PatchMode": "Overlay",
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Twig Formation EditImage A3",
+      "Action": "EditImage",
+      "Target": "Mods/{{ModId}}/XylomancyBase",
+      "FromFile": "assets/Divination/Twigs.png",
+      "FromArea": {
+        "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key={{Time}}A3}}}}",
+        "Y": "{{Query: {{Random: 0, 40, 80, 120|key={{Time}}A3}}}}",
+        "Width": 40,
+        "Height": 40
+      },
+      "ToArea": {
+        "X": 8,
+        "Y": 88,
+        "Width": 40,
+        "Height": 40
+      },
+      "PatchMode": "Overlay",
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Twig Formation EditImage B1",
+      "Action": "EditImage",
+      "Target": "Mods/{{ModId}}/XylomancyBase",
+      "FromFile": "assets/Divination/Twigs.png",
+      "FromArea": {
+        "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key={{Time}}B1}}}}",
+        "Y": "{{Query: {{Random: 0, 40, 80, 120|key={{Time}}B1}}}}",
+        "Width": 40,
+        "Height": 40
+      },
+      "ToArea": {
+        "X": 48,
+        "Y": 8,
+        "Width": 40,
+        "Height": 40
+      },
+      "PatchMode": "Overlay",
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Twig Formation EditImage B2",
+      "Action": "EditImage",
+      "Target": "Mods/{{ModId}}/XylomancyBase",
+      "FromFile": "assets/Divination/Twigs.png",
+      "FromArea": {
+        "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key={{Time}}B2}}}}",
+        "Y": "{{Query: {{Random: 0, 40, 80, 120|key={{Time}}B2}}}}",
+        "Width": 40,
+        "Height": 40
+      },
+      "ToArea": {
+        "X": 48,
+        "Y": 48,
+        "Width": 40,
+        "Height": 40
+      },
+      "PatchMode": "Overlay",
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Twig Formation EditImage B3",
+      "Action": "EditImage",
+      "Target": "Mods/{{ModId}}/XylomancyBase",
+      "FromFile": "assets/Divination/Twigs.png",
+      "FromArea": {
+        "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key={{Time}}B3}}}}",
+        "Y": "{{Query: {{Random: 0, 40, 80, 120|key={{Time}}B3}}}}",
+        "Width": 40,
+        "Height": 40
+      },
+      "ToArea": {
+        "X": 48,
+        "Y": 88,
+        "Width": 40,
+        "Height": 40
+      },
+      "PatchMode": "Overlay",
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Twig Formation EditImage C1",
+      "Action": "EditImage",
+      "Target": "Mods/{{ModId}}/XylomancyBase",
+      "FromFile": "assets/Divination/Twigs.png",
+      "FromArea": {
+        "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key={{Time}}C1}}}}",
+        "Y": "{{Query: {{Random: 0, 40, 80, 120|key={{Time}}C1}}}}",
+        "Width": 40,
+        "Height": 40
+      },
+      "ToArea": {
+        "X": 88,
+        "Y": 8,
+        "Width": 40,
+        "Height": 40
+      },
+      "PatchMode": "Overlay",
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Twig Formation EditImage C2",
+      "Action": "EditImage",
+      "Target": "Mods/{{ModId}}/XylomancyBase",
+      "FromFile": "assets/Divination/Twigs.png",
+      "FromArea": {
+        "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key=C2{{Time}}}}}}",
+        "Y": "{{Query: {{Random: 0, 40, 80, 120|key=C2{{Time}}}}}}",
+        "Width": 40,
+        "Height": 40
+      },
+      "ToArea": {
+        "X": 88,
+        "Y": 48,
+        "Width": 40,
+        "Height": 40
+      },
+      "PatchMode": "Overlay",
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Twig Formation EditImage C3",
+      "Action": "EditImage",
+      "Target": "Mods/{{ModId}}/XylomancyBase",
+      "FromFile": "assets/Divination/Twigs.png",
+      "FromArea": {
+        "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key={{Time}}C3}}}}",
+        "Y": "{{Query: {{Random: 0, 40, 80, 120|key={{Time}}C3}}}}",
+        "Width": 40,
+        "Height": 40
+      },
+      "ToArea": {
+        "X": 88,
+        "Y": 88,
+        "Width": 40,
+        "Height": 40
+      },
+      "PatchMode": "Overlay",
+      "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Twig Formation EditImage Charmed Tent",
+      "Action": "EditImage",
+      "Target": "Mods/{{ModId}}/XylomancyBase",
+      "FromFile": "assets/Divination/Twigs.png",
+      "FromArea": {
+        "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key=Twig}}}}",
+        "Y": "{{Query: {{Random: 0, 40, 80, 120|key=Twig}}}}",
+        "Width": 40,
+        "Height": 40
+      },
+      "ToArea": {
+        "X": "{{DivinationCharmedTentX}}",
+        "Y": "{{DivinationCharmedTentY}}",
+        "Width": 40,
+        "Height": 40
+      },
+      "PatchMode": "Overlay"
     }
   ]
 }

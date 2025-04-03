@@ -17,6 +17,7 @@
       "Name": "GlassDoorLocations",
       "Value": "HogwartsLibraryAnnex"
     },
+    /*Divination Creature Den*/
     {
       "Name": "DivinationCreatureDenX",
       "Value": "19",
@@ -52,12 +53,54 @@
         "Query: {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} > 47 AND {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} < 85": true
       }
     },
-
     {
       "Name": "DivinationCreatureDenY",
       "Value": "75",
       "When": {
         "Query: {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} >= 85": true
+      }
+    },
+    /*Divination Charmed Tent*/
+    {
+      "Name": "DivinationCharmedTentX",
+      "Value": "19",
+      "When": {
+        "Query: {{Query: {{Random: {{Range: 19, 166}}|key=CharmedTent1X}}}} <= 66": true
+      }
+    },
+    {
+      "Name": "DivinationCharmedTentX",
+      "Value": "48",
+      "When": {
+        "Query: {{Query: {{Random: {{Range: 19, 166}}|key=CharmedTent1X}}}} > 66 AND {{Query: {{Random: {{Range: 19, 166}}|key=CharmedTent1X}}}} < 118": true
+      }
+    },
+    {
+      "Name": "DivinationCharmedTentX",
+      "Value": "75",
+      "When": {
+        "Query: {{Query: {{Random: {{Range: 19, 166}}|key=CharmedTent1X}}}} >= 118": true
+      }
+    },
+    {
+      "Name": "DivinationCharmedTentY",
+      "Value": "19",
+      "When": {
+        "Query: {{Query: {{Random: {{Range: 23, 128}}|key=CharmedTent1Y}}}} <= 47": true
+      }
+    },
+    {
+      "Name": "DivinationCharmedTentY",
+      "Value": "48",
+      "When": {
+        "Query: {{Query: {{Random: {{Range: 23, 128}}|key=CharmedTent1Y}}}} > 47 AND {{Query: {{Random: {{Range: 23, 128}}|key=CharmedTent1Y}}}} < 85": true
+      }
+    },
+    {
+      "Name": "DivinationCharmedTentY",
+      "Value": "75",
+      "When": {
+        "Query: {{Query: {{Random: {{Range: 23, 128}}|key=CharmedTent1Y}}}} >= 85": true
       }
     }
   ],

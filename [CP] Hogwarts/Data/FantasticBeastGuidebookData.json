@@ -26,7 +26,6 @@
         }
       }
     },
-    /*How to connect object to trigger action?*/
     {
       "LogName": "Hogwarts Fantastic Beasts Guidebook SpaceCore Object Extension UseForTriggerAction",
       "Action": "EditData",
@@ -44,12 +43,10 @@
       "Entries": {
         "{{ModID}}_OpenFantasticBeastsGuidebook": {
           "Id": "{{ModID}}_OpenFantasticBeastsGuidebook",
-          "Condition": null,
-          "Actions": [
-            "spacechase0.SpaceCore_OpenGuidebook {{ModId}}_FantasticBeasts"
-          ],
-          "MarkActionApplied": false,
-          "Trigger": "Manual"
+          "Condition": "ITEM_ID Input {{ModId}}_FantasticBeastsGuidebook",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "spacechase0.SpaceCore_OpenGuidebook {{ModId}}_FantasticBeasts",
+          "MarkActionApplied": false
         }
       }
     },
