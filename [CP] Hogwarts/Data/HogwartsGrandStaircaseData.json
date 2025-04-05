@@ -48,7 +48,7 @@
             "Action": "Warp 24 31 {{ModId}}_HogwartsCommonRoomSlytherin"
           }
         },
-/*Faculty Tower*/
+//Faculty Tower (WIP)
         {
           "Position": {
             "X": 0,
@@ -109,7 +109,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsFacultyTower 1 46"
           }
         },
-/*Great Hall - Balcony Left*/
+//Great Hall - Balcony Left
         {
           "Position": {
             "X": 5,
@@ -130,7 +130,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsGreatHall 6 8"
           }
         },
-        /*Great Hall - Balcony Right*/
+//Great Hall - Balcony Right
         {
           "Position": {
             "X": 9,
@@ -151,7 +151,37 @@
             "TouchAction": "Warp {{ModId}}_HogwartsGreatHall 25 8"
           }
         },
-        /*Great Hall - Entrance*/
+//Great Hall - Entrance
+        {
+          "Position": {
+            "X": 6,
+            "Y": 82
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 14 39 {{ModId}}_HogwartsGreatHall"
+          }
+        },
+        {
+          "Position": {
+            "X": 7,
+            "Y": 82
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 15 39 {{ModId}}_HogwartsGreatHall"
+          }
+        },
+        {
+          "Position": {
+            "X": 8,
+            "Y": 82
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 16 39 {{ModId}}_HogwartsGreatHall"
+          }
+        },
         {
           "Position": {
             "X": 9,
@@ -159,20 +189,10 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "Warp 13 22 {{ModId}}_HogwartsGreatHall"
+            "Action": "Warp 17 39 {{ModId}}_HogwartsGreatHall"
           }
         },
-        {
-          "Position": {
-            "X": 10,
-            "Y": 82
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Warp 13 22 {{ModId}}_HogwartsGreatHall"
-          }
-        },
-        /*Great Hall - Trophy Room*/
+//Great Hall - Trophy Room
         {
           "Position": {
             "X": 9,
@@ -193,47 +213,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsGreatHall 6 14"
           }
         },
-/*Library Annex*/
-        {
-          "Position": {
-            "X": 46,
-            "Y": 100
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 32 44"
-          }
-        },
-        {
-          "Position": {
-            "X": 47,
-            "Y": 100
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 32 44"
-          }
-        },
-        {
-          "Position": {
-            "X": 48,
-            "Y": 100
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 32 44"
-          }
-        },
-        {
-          "Position": {
-            "X": 49,
-            "Y": 100
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 32 44"
-          }
-        },
+//Library Annex Right
         {
           "Position": {
             "X": 55,
@@ -241,7 +221,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 30 42"
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 46 44"
           }
         },
         {
@@ -251,10 +231,51 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 30 42"
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 46 45"
           }
         },
-/*South Wing*/
+        {
+          "Position": {
+            "X": 55,
+            "Y": 52
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 46 46"
+          }
+        },
+//Library Annex Up
+        {
+          "Position": {
+            "X": 46,
+            "Y": 98
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 46 46"
+          }
+        },
+        {
+          "Position": {
+            "X": 47,
+            "Y": 98
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 47 46"
+          }
+        },
+        {
+          "Position": {
+            "X": 48,
+            "Y": 98
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 48 46"
+          }
+        },
+//South Wing (WIP)
         {
           "Position": {
             "X": 0,
@@ -335,7 +356,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 20 50"
           }
         },
-/*Transfiguration Wing*/
+//Transfiguration Wing Left
         {
           "Position": {
             "X": 0,
@@ -343,7 +364,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 59 67"
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 65 70"
           }
         },
         {
@@ -353,7 +374,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 59 67"
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 65 71"
           }
         },
         {
@@ -363,9 +384,10 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 59 67"
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 65 71"
           }
         },
+//Transfiguration Wing Right
         {
           "Position": {
             "X": 55,
@@ -373,7 +395,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 0 66"
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 3 72"
           }
         },
         {
@@ -383,7 +405,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 0 66"
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 3 73"
           }
         },
         {
@@ -393,7 +415,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 0 66"
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 3 73"
           }
         }
       ]

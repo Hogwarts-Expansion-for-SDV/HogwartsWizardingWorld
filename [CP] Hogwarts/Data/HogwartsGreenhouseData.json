@@ -1,0 +1,52 @@
+{
+    "Changes": [
+      {
+        "LogName": "Hogwarts Greenhouse Warp",
+        "Action": "EditMap",
+        "Target": "Maps/{{ModId}}_HogwartsGreenhouse",
+        "MapTiles": [
+          {
+            "Position": {
+              "X": 1,
+              "Y": 12
+            },
+            "Layer": "Back",
+            "SetProperties": {
+              "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 65 22"
+            }
+          },
+          {
+            "Position": {
+              "X": 1,
+              "Y": 13
+            },
+            "Layer": "Back",
+            "SetProperties": {
+              "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 65 23"
+            }
+          },
+        //Library Annex Left 2
+          {
+            "Position": {
+              "X": 2,
+              "Y": 31
+            },
+            "Layer": "Back",
+            "SetProperties": {
+              "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 65 29"
+            }
+          },
+          {
+            "Position": {
+              "X": 2,
+              "Y": 32
+            },
+            "Layer": "Back",
+            "SetProperties": {
+              "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 65 30"
+            }
+          }
+        ]
+      }
+    ]
+  }

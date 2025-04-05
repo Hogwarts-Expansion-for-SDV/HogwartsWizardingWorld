@@ -1,5 +1,33 @@
 {
   "Changes": [
+    //Warp Data
+    {
+      "LogName": "Hogwarts Divination Classroom Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDivinationClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 14,
+            "Y": 24
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 66 56"
+          }
+        },
+        {
+          "Position": {
+            "X": 15,
+            "Y": 24
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 66 56"
+          }
+        }
+      ]
+    },
     /*Left Top Left - Creature Den*/
     {
       "LogName": "Hogwarts Divination Classroom Unlockable Bundle Left Top Left",
@@ -145,33 +173,7 @@
         }
       }
     },
-    {
-      "LogName": "Hogwarts Divination Classroom Warp",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsDivinationClassroom",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 14,
-            "Y": 24
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 52 56"
-          }
-        },
-        {
-          "Position": {
-            "X": 15,
-            "Y": 24
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 52 56"
-          }
-        }
-      ]
-    },
+
     /*Left Top Left - Creature Den*/
     {
       "LogName": "Hogwarts Divination Classroom Unlockable Bundle Left Bottom Left",

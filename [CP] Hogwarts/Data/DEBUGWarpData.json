@@ -16,13 +16,20 @@
             "{{ModId}}_HogwartsCastle_WarpSection": {
                 "Id": "{{ModId}}_HogwartsCastle_WarpSection",
                 "Order": "0",
-                "DisplayName": "Hogwarts Castle",
+                "DisplayName": "Hogwarts Castle -  Main Areas",
+            },
+
+            //Hogwarts Castle - Classrooms
+            "{{ModId}}_HogwartsCastleClassroom_WarpSection": {
+                "Id": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
+                "Order": "1",
+                "DisplayName": "Hogwarts Castle - Classrooms",
             },
 
             //Hogsmeade Village
             "{{ModId}}_HogsmeadeVillage_WarpSection": {
                 "Id": "{{ModId}}_HogsmeadeVillage_WarpSection",
-                "Order": "0",
+                "Order": "2",
                 "DisplayName": "Hogsmeade Village"
             },
 
@@ -75,11 +82,65 @@
                 "Tile": "8, 18"
             },
 
-            //HOGWARTS
+            //HOGWARTS - CLASSROOMS
+            //Arithmancy Classroom
+            "{{ModId}}_HogwartsArithmancyClassroom_DebugWarp": {
+                "Id": "{{ModId}}_HogwartsArithmancyClassroom_DebugWarp",
+                "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
+                "DisplayName": "Arithmancy Classroom",
+                "Location": "{{ModId}}_HogwartsArithmancyClassroom",
+                "Tile": "22, 8"
+            },
+
+            //Astronomy Classroom
+            "{{ModId}}_HogwartsAstronomyClassroom_DebugWarp": {
+                "Id": "{{ModId}}_HogwartsAstronomyClassroom_DebugWarp",
+                "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
+                "DisplayName": "Astronomy Classroom",
+                "Location": "{{ModId}}_HogwartsAstronomyClassroom",
+                "Tile": "17, 25"
+            },
+
+            //Charm Classroom
+            "{{ModId}}_HogwartsCharmClassroom_DebugWarp": {
+                "Id": "{{ModId}}_HogwartsCharmClassroom_DebugWarp",
+                "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
+                "DisplayName": "Charm Classroom",
+                "Location": "{{ModId}}_HogwartsCharmClassroom",
+                "Tile": "9, 15"
+            },
+
+            //DADA Classroom
+            "{{ModId}}_HogwartsDADAClassroom_DebugWarp": {
+                "Id": "{{ModId}}_HogwartsDADAClassroom_DebugWarp",
+                "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
+                "DisplayName": "DADA Classroom",
+                "Location": "{{ModId}}_HogwartsDADAClassroom",
+                "Tile": "3, 20"
+            },
+
+            //Divination Classroom
+            "{{ModId}}_HogwartsDivinationClassroom_DebugWarp": {
+                "Id": "{{ModId}}_HogwartsDivinationClassroom_DebugWarp",
+                "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
+                "DisplayName": "Divination Classroom",
+                "Location": "{{ModId}}_HogwartsDivinationClassroom",
+                "Tile": "14, 20"
+            },
+            
+            //Magical Theory Classroom
+            "{{ModId}}_HogwartsMagicalTheoryClassroom_DebugWarp": {
+                "Id": "{{ModId}}_HogwartsMagicalTheoryClassroom_DebugWarp",
+                "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
+                "DisplayName": "Magical Theory Classroom",
+                "Location": "{{ModId}}_HogwartsMagicalClassroom",
+                "Tile": "7, 22"
+            },
+
             //Muggle Studies Classroom
             "{{ModId}}_HogwartsMuggleStudiesClassroom_DebugWarp": {
                 "Id": "{{ModId}}_HogwartsMuggleStudiesClassroom_DebugWarp",
-                "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
+                "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
                 "DisplayName": "Muggle Studies Classroom",
                 "Location": "{{ModId}}_HogwartsMuggleStudiesClassroom",
                 "Tile": "8, 14"
@@ -88,28 +149,29 @@
             //Potions Classroom
             "{{ModId}}_HogwartsPotionsClassroom_DebugWarp": {
                 "Id": "{{ModId}}_HogwartsPotionsClassroom_DebugWarp",
-                "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
+                "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
                 "DisplayName": "Potions Classroom", 
                 "Location": "{{ModId}}_HogwartsPotionsClassroom",
                 "Tile": "15, 30"
             },
 
+            //Transfiguration Classroom
+            "{{ModId}}_HogwartsTransfigurationClassroom_DebugWarp": {
+                "Id": "{{ModId}}_HogwartsTransfigurationClassroom_DebugWarp",
+                "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
+                "DisplayName": "Transfiguration Classroom",
+                "Location": "{{ModId}}_HogwartsTransfigurationClassroom",
+                "Tile": "8, 19"
+            },
+
+            //HOGWARTS
             //Library Annex
             "{{ModId}}_HogwartsLibraryAnnex_DebugWarp": {
                 "Id": "{{ModId}}_HogwartsLibraryAnnex_DebugWarp",
                 "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
                 "DisplayName": "Library",
                 "Location": "{{ModId}}_HogwartsLibraryAnnex",
-                "Tile": "40, 21"
-            },
-
-            //Transfiguration Classroom
-            "{{ModId}}_HogwartsTransfigurationClassroom_DebugWarp": {
-                "Id": "{{ModId}}_HogwartsTransfigurationClassroom_DebugWarp",
-                "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
-                "DisplayName": "Transfiguration Classroom",
-                "Location": "{{ModId}}_HogwartsTransfigurationClassroom",
-                "Tile": "8, 19"
+                "Tile": "54, 29"
             },
 
             //TWings
@@ -118,7 +180,7 @@
                 "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
                 "DisplayName": "Transfiguration Wing",
                 "Location": "{{ModId}}_HogwartsTransfigurationWing",
-                "Tile": "26, 36"
+                "Tile": "35, 57"
             },
 
             //Grand Staircase (BasementF)
@@ -127,8 +189,10 @@
                 "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
                 "DisplayName": "Grand Staircase",
                 "Location": "{{ModId}}_HogwartsGrandStaircase",
-                "Tile": "29, 114"
+                "Tile": "30, 102"
             },
+
+            //Greenhouse
 
             //Great Hall
             "{{ModId}}_HogwartsGreatHall_DebugWarp": {
