@@ -9,7 +9,17 @@
         {
           "Position": {
             "X": 14,
-            "Y": 63
+            "Y": 48
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 24 25 {{ModId}}_HogwartsCommonRoomGryffindor"
+          }
+        },
+        {
+          "Position": {
+            "X": 15,
+            "Y": 48
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -19,8 +29,8 @@
 /*Common Room Ravenclaw*/ 
         {
           "Position": {
-            "X": 47,
-            "Y": 53
+            "X": 43,
+            "Y": 38
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -30,18 +40,8 @@
 /*Common Room Slytherin*/ 
         {
           "Position": {
-            "X": 44,
-            "Y": 112
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Warp 24 31 {{ModId}}_HogwartsCommonRoomSlytherin"
-          }
-        },
-        {
-          "Position": {
-            "X": 45,
-            "Y": 112
+            "X": 39,
+            "Y": 100
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -52,7 +52,7 @@
         {
           "Position": {
             "X": 0,
-            "Y": 64
+            "Y": 50
           },
           "Layer": "Back",
           "SetProperties": {
@@ -62,7 +62,7 @@
         {
           "Position": {
             "X": 0,
-            "Y": 65
+            "Y": 51
           },
           "Layer": "Back",
           "SetProperties": {
@@ -71,8 +71,18 @@
         },
         {
           "Position": {
-            "X": 59,
-            "Y": 81
+            "X": 0,
+            "Y": 52
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsFacultyTower 74 18"
+          }
+        },
+        {
+          "Position": {
+            "X": 55,
+            "Y": 68
           },
           "Layer": "Back",
           "SetProperties": {
@@ -81,8 +91,8 @@
         },
         {
           "Position": {
-            "X": 59,
-            "Y": 82
+            "X": 55,
+            "Y": 69
           },
           "Layer": "Back",
           "SetProperties": {
@@ -91,280 +101,19 @@
         },
         {
           "Position": {
-            "X": 59,
-            "Y": 83
+            "X": 55,
+            "Y": 70
           },
           "Layer": "Back",
           "SetProperties": {
             "TouchAction": "Warp {{ModId}}_HogwartsFacultyTower 1 46"
-          }
-        },
-/*Grand Staircase*/
-        {
-          "Position": {
-            "X": 22,
-            "Y": 15
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 35 30"
-          }
-        },
-        {
-          "Position": {
-            "X": 23,
-            "Y": 15
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 35 30"
-          }
-        },
-        {
-          "Position": {
-            "X": 24,
-            "Y": 15
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 35 30"
-          }
-        },
-        {
-          "Position": {
-            "X": 36,
-            "Y": 29
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 24 14"
-          }
-        },
-        {
-          "Position": {
-            "X": 37,
-            "Y": 29
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 24 14"
-          }
-        },
-        {
-          "Position": {
-            "X": 38,
-            "Y": 29
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 24 14"
-          }
-        },
-        {
-          "Position": {
-            "X": 31,
-            "Y": 32
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 27 47"
-          }
-        },
-        {
-          "Position": {
-            "X": 32,
-            "Y": 32
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 27 47"
-          }
-        },
-        {
-          "Position": {
-            "X": 33,
-            "Y": 32
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 27 47"
-          }
-        },
-        {
-          "Position": {
-            "X": 28,
-            "Y": 47
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 33 31"
-          }
-        },
-        {
-          "Position": {
-            "X": 21,
-            "Y": 49
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 35 64"
-          }
-        },
-        {
-          "Position": {
-            "X": 22,
-            "Y": 49
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 35 64"
-          }
-        },
-        {
-          "Position": {
-            "X": 23,
-            "Y": 49
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 35 64"
-          }
-        },
-        {
-          "Position": {
-            "X": 35,
-            "Y": 63
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 23 48"
-          }
-        },
-        {
-          "Position": {
-            "X": 36,
-            "Y": 63
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 23 48"
-          }
-        },
-        {
-          "Position": {
-            "X": 37,
-            "Y": 63
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 23 48"
-          }
-        },
-        {
-          "Position": {
-            "X": 23,
-            "Y": 83
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 30 89"
-          }
-        },
-        {
-          "Position": {
-            "X": 24,
-            "Y": 83
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 30 89"
-          }
-        },
-        {
-          "Position": {
-            "X": 25,
-            "Y": 83
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 30 89"
-          }
-        },
-        {
-          "Position": {
-            "X": 29,
-            "Y": 88
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 25 82"
-          }
-        },
-        {
-          "Position": {
-            "X": 30,
-            "Y": 88
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 25 82"
-          }
-        },
-        {
-          "Position": {
-            "X": 29,
-            "Y": 91
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 22 98"
-          }
-        },
-        {
-          "Position": {
-            "X": 30,
-            "Y": 91
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 22 98"
-          }
-        },
-        {
-          "Position": {
-            "X": 22,
-            "Y": 97
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 30 90"
-          }
-        },
-        {
-          "Position": {
-            "X": 23,
-            "Y": 97
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 30 90"
-          }
-        },
-        {
-          "Position": {
-            "X": 24,
-            "Y": 97
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 30 90"
           }
         },
 /*Great Hall - Balcony Left*/
         {
           "Position": {
             "X": 5,
-            "Y": 90
+            "Y": 78
           },
           "Layer": "Back",
           "SetProperties": {
@@ -374,7 +123,7 @@
         {
           "Position": {
             "X": 6,
-            "Y": 90
+            "Y": 78
           },
           "Layer": "Back",
           "SetProperties": {
@@ -385,7 +134,7 @@
         {
           "Position": {
             "X": 9,
-            "Y": 90
+            "Y": 78
           },
           "Layer": "Back",
           "SetProperties": {
@@ -395,7 +144,7 @@
         {
           "Position": {
             "X": 10,
-            "Y": 90
+            "Y": 78
           },
           "Layer": "Back",
           "SetProperties": {
@@ -405,8 +154,8 @@
         /*Great Hall - Entrance*/
         {
           "Position": {
-            "X": 6,
-            "Y": 94
+            "X": 9,
+            "Y": 82
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -415,8 +164,8 @@
         },
         {
           "Position": {
-            "X": 7,
-            "Y": 94
+            "X": 10,
+            "Y": 82
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -426,8 +175,8 @@
         /*Great Hall - Trophy Room*/
         {
           "Position": {
-            "X": 7,
-            "Y": 109
+            "X": 9,
+            "Y": 95
           },
           "Layer": "Back",
           "SetProperties": {
@@ -436,8 +185,8 @@
         },
         {
           "Position": {
-            "X": 8,
-            "Y": 109
+            "X": 10,
+            "Y": 95
           },
           "Layer": "Back",
           "SetProperties": {
@@ -447,91 +196,69 @@
 /*Library Annex*/
         {
           "Position": {
-            "X": 51,
-            "Y": 112
+            "X": 46,
+            "Y": 100
           },
           "Layer": "Back",
           "SetProperties": {
             "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 32 44"
           }
         },
-        {
-          "Position": {
-            "X": 52,
-            "Y": 112
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 32 44"
-          }
-        },
-        {
-          "Position": {
-            "X": 59,
-            "Y": 64
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 30 42"
-          }
-        },
-        {
-          "Position": {
-            "X": 59,
-            "Y": 65
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 30 42"
-          }
-        },
-        {
-          "Position": {
-            "X": 59,
-            "Y": 66
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 30 42"
-          }
-        },
-/*Ravenclaw Common Room*/
         {
           "Position": {
             "X": 47,
-            "Y": 53
+            "Y": 100
           },
-          "Layer": "Buildings",
+          "Layer": "Back",
           "SetProperties": {
-            "Action": "Warp 10 17 {{ModId}}_HogwartsCommonRoomRavenclaw"
-          }
-        },
-/*Slytherin Common Room*/
-        {
-          "Position": {
-            "X": 44,
-            "Y": 112
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Warp 14 18 {{ModId}}_HogwartsCommonRoomSlytherin"
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 32 44"
           }
         },
         {
           "Position": {
-            "X": 45,
-            "Y": 112
+            "X": 48,
+            "Y": 100
           },
-          "Layer": "Buildings",
+          "Layer": "Back",
           "SetProperties": {
-            "Action": "Warp 14 18 {{ModId}}_HogwartsCommonRoomSlytherin"
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 32 44"
+          }
+        },
+        {
+          "Position": {
+            "X": 49,
+            "Y": 100
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 32 44"
+          }
+        },
+        {
+          "Position": {
+            "X": 55,
+            "Y": 50
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 30 42"
+          }
+        },
+        {
+          "Position": {
+            "X": 55,
+            "Y": 51
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 30 42"
           }
         },
 /*South Wing*/
         {
           "Position": {
             "X": 0,
-            "Y": 81
+            "Y": 68
           },
           "Layer": "Back",
           "SetProperties": {
@@ -541,7 +268,7 @@
         {
           "Position": {
             "X": 0,
-            "Y": 82
+            "Y": 69
           },
           "Layer": "Back",
           "SetProperties": {
@@ -550,8 +277,18 @@
         },
         {
           "Position": {
-            "X": 6,
-            "Y": 100
+            "X": 0,
+            "Y": 70
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 77 50"
+          }
+        },
+        {
+          "Position": {
+            "X": 9,
+            "Y": 85
           },
           "Layer": "Back",
           "SetProperties": {
@@ -560,8 +297,8 @@
         },
         {
           "Position": {
-            "X": 7,
-            "Y": 100
+            "X": 10,
+            "Y": 85
           },
           "Layer": "Back",
           "SetProperties": {
@@ -570,8 +307,8 @@
         },
         {
           "Position": {
-            "X": 59,
-            "Y": 88
+            "X": 55,
+            "Y": 75
           },
           "Layer": "Back",
           "SetProperties": {
@@ -580,8 +317,8 @@
         },
         {
           "Position": {
-            "X": 59,
-            "Y": 89
+            "X": 55,
+            "Y": 76
           },
           "Layer": "Back",
           "SetProperties": {
@@ -590,8 +327,8 @@
         },
         {
           "Position": {
-            "X": 59,
-            "Y": 90
+            "X": 55,
+            "Y": 77
           },
           "Layer": "Back",
           "SetProperties": {
@@ -602,7 +339,7 @@
         {
           "Position": {
             "X": 0,
-            "Y": 114
+            "Y": 101
           },
           "Layer": "Back",
           "SetProperties": {
@@ -612,7 +349,7 @@
         {
           "Position": {
             "X": 0,
-            "Y": 115
+            "Y": 102
           },
           "Layer": "Back",
           "SetProperties": {
@@ -622,7 +359,7 @@
         {
           "Position": {
             "X": 0,
-            "Y": 116
+            "Y": 103
           },
           "Layer": "Back",
           "SetProperties": {
@@ -631,8 +368,8 @@
         },
         {
           "Position": {
-            "X": 59,
-            "Y": 114
+            "X": 55,
+            "Y": 101
           },
           "Layer": "Back",
           "SetProperties": {
@@ -641,8 +378,8 @@
         },
         {
           "Position": {
-            "X": 59,
-            "Y": 115
+            "X": 55,
+            "Y": 102
           },
           "Layer": "Back",
           "SetProperties": {
@@ -651,8 +388,8 @@
         },
         {
           "Position": {
-            "X": 59,
-            "Y": 116
+            "X": 55,
+            "Y": 103
           },
           "Layer": "Back",
           "SetProperties": {

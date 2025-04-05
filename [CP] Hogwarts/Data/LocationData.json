@@ -56,6 +56,12 @@
       "FromFile": "assets/Maps/HogsmeadeVillage.tmx"
     },
     {
+      "LogName": "Hogwarts Express Load",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_HogwartsExpressInterior",
+      "FromFile": "assets/Maps/HogwartsExpressInterior.tmx"
+    },
+    {
       "LogName": "Honeydukes Load",
       "Action": "Load",
       "Target": "Maps/{{ModId}}_Honeydukes",
@@ -388,6 +394,16 @@
           "DefaultArrivalTile": {
             "X": 37, 
             "Y": 121
+          }
+        },
+        "{{ModId}}_HogwartsExpressInterior": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsExpressInterior"
+          },
+          "DefaultArrivalTile": {
+            "X": 3, 
+            "Y": 9
           }
         },
         "{{ModId}}_Honeydukes": {

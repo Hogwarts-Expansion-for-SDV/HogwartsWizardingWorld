@@ -433,8 +433,8 @@
       "Target": "Mods/{{ModId}}/XylomancyBase",
       "FromFile": "assets/Divination/Twigs.png",
       "FromArea": {
-        "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key=Twig}}}}",
-        "Y": "{{Query: {{Random: 0, 40, 80, 120|key=Twig}}}}",
+        "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key={{Time}}Twig}}}}",
+        "Y": "{{Query: {{Random: 0, 40, 80, 120|key={{Time}}Twig}}}}",
         "Width": 40,
         "Height": 40
       },
@@ -444,7 +444,8 @@
         "Width": 40,
         "Height": 40
       },
-      "PatchMode": "Overlay"
+      "PatchMode": "Overlay",
+      "Update": "OnTimeChange"
     }
   ]
 }
