@@ -27,13 +27,16 @@
       }
     },
     {
-      "LogName": "Hogwarts Fantastic Beasts Guidebook SpaceCore Object Extension UseForTriggerAction",
+      "LogName": "Hogwarts Fantastic Beasts Guidebook UseForTriggerAction",
       "Action": "EditData",
       "Target": "spacechase0.SpaceCore/ObjectExtensionData",
       "Entries": {
         "{{ModId}}_FantasticBeastsGuidebook": {
           "UseForTriggerAction": true
         }
+      },
+      "When": {
+        "HasMod |contains= spacechase0.SpaceCore": true
       }
     },
     {
@@ -48,6 +51,9 @@
           "Action": "spacechase0.SpaceCore_OpenGuidebook {{ModId}}_FantasticBeasts",
           "MarkActionApplied": false
         }
+      },
+      "When": {
+        "HasMod |contains= spacechase0.SpaceCore": true
       }
     },
     {
@@ -77,6 +83,9 @@
             }
           }
         }
+      },
+      "When": {
+        "HasMod |contains= spacechase0.SpaceCore": true
       }
     }
   ]

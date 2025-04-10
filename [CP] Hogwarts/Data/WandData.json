@@ -1,64 +1,92 @@
 {
   "Changes": [
+    /*Acacia*/
     {
-      "LogName": "Acacia Wand Upgrade Test",
+      "LogName": "Hogwarts Upgrade Book 1 Acacia Object Data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_AcaciaUpgradeBook1": {
+          "Name": "Upgrade Book Acacia",
+          "DisplayName": "Upgrade Book Acacia i18n name",
+          "Description": "Upgrade Book Acacia i18n description",
+          "Type": "Quest",
+          "Category": 0,
+          "Price": 50,
+          "Texture": "{{InternalAssetKey: assets/Objects/Artifacts.png}}",
+          "SpriteIndex": 14,
+          "ContextTags": [
+            "{{ModId}}_UpgradeBook"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts Acacia Upgrade Book 1 ConsumeForTriggerAction",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+      "Entries": {
+        "{{ModId}}_AcaciaUpgradeBook1": {
+          "UseForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        }
+      },
+      "When": {
+        "HasMod |contains= spacechase0.SpaceCore": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Acacia Upgrade Book 1 Trigger Action",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModID}}_AcaciaUpgradeBook1": {
+          "Id": "{{ModID}}_AcaciaUpgradeBook1",
+          "Condition": "ITEM_ID Input {{ModId}}_AcaciaUpgradeBook1",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_AcaciaUpgradeBook1 Received",
+          "MarkActionApplied": true
+        }
+      },
+      "When": {
+        "HasMod |contains= spacechase0.SpaceCore": true
+      }
+    },
+    {
+      "LogName": "Acacia Wand Upgrade Test 1",
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
-        "{{ModId}}_AcaciaWand"
+        "{{ModId}}_AcaciaWand",
+        "Projectiles",
+        "Diagonal Left"
       ],
       "Entries": {
-        "Projectiles": [
-          {
-            "Id": "Forward",
-            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-            "Explodes": false,
-            "Bounces": 0,
-            "MaxDistance": 30,
-            "Velocity": 10,
-            "RotationVelocity": 32,
-            "TailLength": 3,
-            "FireSound": "drumkit3",
-            "MinAngleOffset": 0,
-            "MaxAngleOffset": 0,
-            "Item": {
-              "ItemId": "(O){{ModId}}_Projectile695"
-            }
-          },
-          {
-            "Id": "Diagonal Left",
-            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-            "Explodes": false,
-            "Bounces": 0,
-            "MaxDistance": 30,
-            "Velocity": 10,
-            "RotationVelocity": 32,
-            "TailLength": 10,
-            "FireSound": "drumkit3",
-            "MinAngleOffset": 20,
-            "MaxAngleOffset": 20,
-            "Item": {
-              "ItemId": "(O){{ModId}}_Projectile695"
-            }
-          },
-          {
-            "Id": "Diagonal Right",
-            "Damage": "{{Query: {{Random: {{Range: 90, 100}}}}}}",
-            "Explodes": false,
-            "Bounces": 0,
-            "MaxDistance": 30,
-            "Velocity": 10,
-            "RotationVelocity": 32,
-            "TailLength": 10,
-            "FireSound": "drumkit3",
-            "MinAngleOffset": -20,
-            "MaxAngleOffset": -20,
-            "Item": {
-              "ItemId": "(O){{ModId}}_Projectile695"
-            }
-          }
-        ]
-      }
+        "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
+        "MaxDistance": 10
+      },
+      "When": {
+        "HasFlag": "{{ModId}}_AcaciaUpgradeBook1"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Acacia Wand Upgrade Test 2",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "TargetField": [
+        "{{ModId}}_AcaciaWand",
+        "Projectiles",
+        "Diagonal Right"
+      ],
+      "Entries": {
+        "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
+        "MaxDistance": 10
+      },
+      "When": {
+        "HasFlag|contains={{ModId}}_AcaciaUpgradeBook1": true
+      },
+      "Update": "OnLocationChange"
     }
     /*Wand Upgrade UB Test
     {
