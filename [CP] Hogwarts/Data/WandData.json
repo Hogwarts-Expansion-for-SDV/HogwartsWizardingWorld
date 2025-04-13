@@ -32,24 +32,29 @@
         }
       },
       "When": {
-        "HasMod |contains= spacechase0.SpaceCore": true
+        "HasMod |contains= spacechase0.SpaceCore, Spiderbuttons.BETAS": true
       }
     },
     {
-      "LogName": "Hogwarts Acacia Upgrade Book 1 Trigger Action",
+      "LogName": "Hogwarts Acacia Upgrade Book 1 Trigger Action Setup",
       "Action": "EditData",
       "Target": "Data/TriggerActions",
       "Entries": {
-        "{{ModID}}_AcaciaUpgradeBook1": {
-          "Id": "{{ModID}}_AcaciaUpgradeBook1",
-          "Condition": "ITEM_ID Input {{ModId}}_AcaciaUpgradeBook1",
+        "{{ModID}}_AcaciaUpgradeBook1Setup": {
+          "Id": "{{ModID}}_AcaciaUpgradeBook1Setup",
+          "Condition": "\"ITEM_ID Input {{ModId}}_AcaciaUpgradeBook1\" \"PLAYER_HAS_ITEM Current {{ModId}}_AcaciaWand\"",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
-          "Action": "AddMail Current {{ModId}}_AcaciaUpgradeBook1 Received",
+          "Actions": [
+            "AddMail Current {{ModId}}_AcaciaUpgradeBook1 Received",
+            "Spiderbuttons.BETAS_DelayedAction \"RemoveItem {{ModId}}_AcaciaWand\" 10000",
+            "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_AcaciaWand\" 10000",
+            "RemoveMail Current {{ModId}}_AcaciaUpgradeBook1 20000"
+          ],
           "MarkActionApplied": true
         }
       },
       "When": {
-        "HasMod |contains= spacechase0.SpaceCore": true
+        "HasMod |contains= spacechase0.SpaceCore, Spiderbuttons.BETAS": true
       }
     },
     {
@@ -66,9 +71,9 @@
         "MaxDistance": 10
       },
       "When": {
-        "HasFlag": "{{ModId}}_AcaciaUpgradeBook1"
+        "HasFlag |contains= {{ModId}}_AcaciaUpgradeBook1": true
       },
-      "Update": "OnLocationChange"
+      "Update": "OnLocationChange, OnTimeChange"
     },
     {
       "LogName": "Acacia Wand Upgrade Test 2",
@@ -84,90 +89,11 @@
         "MaxDistance": 10
       },
       "When": {
-        "HasFlag|contains={{ModId}}_AcaciaUpgradeBook1": true
+        "HasFlag |contains= {{ModId}}_AcaciaUpgradeBook1": true
       },
-      "Update": "OnLocationChange"
+      "Update": "OnLocationChange, OnTimeChange"
     }
-    /*Wand Upgrade UB Test
-    {
-      "LogName": "Hogwarts Unlockable Bundle Wand Upgrade Test 1",
-      "Action": "EditData",
-      "Target": "UnlockableBundles/Bundles",
-      "Entries": {
-        "{{ModId}}_WandUpgrade1": {
-          "Location": "{{ModId}}_Ollivanders",
-          "ShopType": "CCBundle",
-          "BundleDescription": "Wand Upgrade 1",
-          "ShopEvent": "continue/7 15/farmer 7 15 3/addMailReceived HOGWARTSWANDSTATSD1E0B1HOGWARTSWANDSTATS/addMailReceived HOGWARTSWANDSPRITE4HOGWARTSWANDSPRITE/end",
-          "ShopPosition": "8, 16",
-          "ShopTexture": "UnlockableBundles/ShopTextures/HogwartsBlankBundle",
-          "DrawQuestionMark": true,
-          "QuestionMarkOffset": "24, 0",
-          "Price": {
-            "(W){{ModId}}_Wand_D0E0B1": 1
-          },
-          "BundleReward": {
-            "(W){{ModId}}_Wand_D1E0B1": 1
-          },
-          "BundleCompletedMail": "HOGWARTSWANDSTATSD1E0B1HOGWARTSWANDSTATS",
-          "InstantShopRemoval": true
-        }
-      }
-    },
-    {
-      "LogName": "Hogwarts Unlockable Bundle Wand Upgrade Test 2",
-      "Action": "EditData",
-      "Target": "UnlockableBundles/Bundles",
-      "Entries": {
-        "{{ModId}}_WandUpgrade2": {
-          "Location": "{{ModId}}_Ollivanders",
-          "ShopType": "CCBundle",
-          "BundleDescription": "Wand Upgrade 2",
-          "ShopEvent": "continue/7 15/farmer 7 15 3/addMailReceived HOGWARTSWANDSPRITE4HOGWARTSWANDSPRITE/end",
-          "ShopPosition": "8, 16",
-          "ShopTexture": "UnlockableBundles/ShopTextures/HogwartsBlankBundle",
-          "DrawQuestionMark": true,
-          "QuestionMarkOffset": "24, 0",
-          "Price": {
-            "(W){{ModId}}_Wand_D1E0B1": 1
-          },
-          "BundleReward": {
-            "(W){{ModId}}_Wand_D2E0B1": 1
-          },
-          "InstantShopRemoval": true
-        }
-      },
-      "When": {
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade1}} >= 0": true
-      }
-    },
-    {
-      "LogName": "Hogwarts Unlockable Bundle Wand Upgrade Test 3",
-      "Action": "EditData",
-      "Target": "UnlockableBundles/Bundles",
-      "Entries": {
-        "{{ModId}}_WandUpgrade3": {
-          "Location": "{{ModId}}_Ollivanders",
-          "ShopType": "CCBundle",
-          "BundleDescription": "Wand Upgrade 3",
-          "ShopEvent": "continue/7 15/farmer 7 15 3/addMailReceived HOGWARTSWANDSPRITE8HOGWARTSWANDSPRITE/end",
-          "ShopPosition": "8, 16",
-          "ShopTexture": "UnlockableBundles/ShopTextures/HogwartsBlankBundle",
-          "DrawQuestionMark": true,
-          "QuestionMarkOffset": "24, 0",
-          "Price": {
-            "(W){{ModId}}_Wand_D2E0B1": 1
-          },
-          "BundleReward": {
-            "(W){{ModId}}_Wand_D3E0B1": 1
-          },
-          "InstantShopRemoval": true
-        }
-      },
-      "When": {
-        "Query: {{DLX.Bundles/DaysSincePurchase:{{ModId}}_WandUpgrade2}} >= 0": true
-      }
-    },
+    /*Wand Upgrade Test
     {
       "LogName": "Replace wand sprites",
       "Action": "EditData",
