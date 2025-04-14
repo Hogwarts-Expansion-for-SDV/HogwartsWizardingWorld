@@ -42,13 +42,13 @@
       "Entries": {
         "{{ModID}}_AcaciaUpgradeBook1Setup": {
           "Id": "{{ModID}}_AcaciaUpgradeBook1Setup",
-          "Condition": "\"ITEM_ID Input {{ModId}}_AcaciaUpgradeBook1\" \"PLAYER_HAS_ITEM Current {{ModId}}_AcaciaWand\"",
+          "Condition": "ITEM_ID Input {{ModId}}_AcaciaUpgradeBook1",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Actions": [
             "AddMail Current {{ModId}}_AcaciaUpgradeBook1 Received",
             "Spiderbuttons.BETAS_DelayedAction \"RemoveItem {{ModId}}_AcaciaWand\" 10000",
             "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_AcaciaWand\" 10000",
-            "RemoveMail Current {{ModId}}_AcaciaUpgradeBook1 20000"
+            "Spiderbuttons.BETAS_DelayedAction RemoveMail Current {{ModId}}_AcaciaUpgradeBook1 20000"
           ],
           "MarkActionApplied": true
         }
