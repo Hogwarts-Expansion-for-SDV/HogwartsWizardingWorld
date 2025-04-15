@@ -36,19 +36,38 @@
       }
     },
     {
+      "LogName": "Hogwarts Acacia Upgrade Book Trigger Action No Wand",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModID}}_AcaciaUpgradeBookNoWand": {
+          "Id": "{{ModID}}_AcaciaUpgradeBookNoWand",
+          "Condition": "!PLAYER_HAS_ITEM Current (W){{ModId}}_AcaciaWand, ITEM_ID Input {{ModId}}_AcaciaUpgradeBook1",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Wand Required\"",
+            "AddItem {{ModId}}_AcaciaUpgradeBook1"
+          ],
+          "MarkActionApplied": false
+        }
+      },
+      "When": {
+        "HasMod |contains= spacechase0.SpaceCore, Spiderbuttons.BETAS": true
+      }
+    },
+    {
       "LogName": "Hogwarts Acacia Upgrade Book 1 Trigger Action Setup",
       "Action": "EditData",
       "Target": "Data/TriggerActions",
       "Entries": {
         "{{ModID}}_AcaciaUpgradeBook1Setup": {
           "Id": "{{ModID}}_AcaciaUpgradeBook1Setup",
-          "Condition": "ITEM_ID Input {{ModId}}_AcaciaUpgradeBook1",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_AcaciaWand, ITEM_ID Input {{ModId}}_AcaciaUpgradeBook1",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Actions": [
             "AddMail Current {{ModId}}_AcaciaUpgradeBook1 Received",
             "Spiderbuttons.BETAS_DelayedAction \"RemoveItem {{ModId}}_AcaciaWand\" 10000",
-            "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_AcaciaWand\" 10000",
-            "Spiderbuttons.BETAS_DelayedAction RemoveMail Current {{ModId}}_AcaciaUpgradeBook1 20000"
+            "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_AcaciaWand\" 10000"
           ],
           "MarkActionApplied": true
         }
