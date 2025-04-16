@@ -2,31 +2,31 @@
   "Changes": [
     /*Acacia*/
     {
-      "LogName": "Hogwarts Upgrade Book 1 Acacia Object Data",
+      "LogName": "Hogwarts Wand Skill Book 1 Acacia Object Data",
       "Action": "EditData",
       "Target": "Data/Objects",
       "Entries": {
-        "{{ModId}}_AcaciaUpgradeBook1": {
-          "Name": "Upgrade Book Acacia",
-          "DisplayName": "Upgrade Book Acacia i18n name",
-          "Description": "Upgrade Book Acacia i18n description",
+        "{{ModId}}_AcaciaSkillBook1": {
+          "Name": "Skill Book Acacia",
+          "DisplayName": "Skill Book Acacia i18n name",
+          "Description": "Skill Book Acacia i18n description",
           "Type": "Quest",
           "Category": 0,
           "Price": 50,
           "Texture": "{{InternalAssetKey: assets/Objects/Artifacts.png}}",
           "SpriteIndex": 14,
           "ContextTags": [
-            "{{ModId}}_UpgradeBook"
+            "{{ModId}}_WandSkillBook"
           ]
         }
       }
     },
     {
-      "LogName": "Hogwarts Acacia Upgrade Book 1 ConsumeForTriggerAction",
+      "LogName": "Hogwarts Acacia Wand Skill Book 1 ConsumeForTriggerAction",
       "Action": "EditData",
       "Target": "spacechase0.SpaceCore/ObjectExtensionData",
       "Entries": {
-        "{{ModId}}_AcaciaUpgradeBook1": {
+        "{{ModId}}_AcaciaSkillBook1": {
           "UseForTriggerAction": true,
           "ConsumeForTriggerAction": true
         }
@@ -36,36 +36,26 @@
       }
     },
     {
-      "LogName": "Hogwarts Acacia Upgrade Book Trigger Action No Wand",
+      "LogName": "Hogwarts Wand Trigger Actions",
       "Action": "EditData",
       "Target": "Data/TriggerActions",
       "Entries": {
         "{{ModID}}_AcaciaUpgradeBookNoWand": {
-          "Id": "{{ModID}}_AcaciaUpgradeBookNoWand",
-          "Condition": "!PLAYER_HAS_ITEM Current (W){{ModId}}_AcaciaWand, ITEM_ID Input {{ModId}}_AcaciaUpgradeBook1",
+          "Id": "{{ModID}}_AcaciaSkillBookNoWand",
+          "Condition": "!PLAYER_HAS_ITEM Current (W){{ModId}}_AcaciaWand, ITEM_ID Input {{ModId}}_AcaciaSkillBook1",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Actions": [
             "spacechase0.SpaceCore_ShowHudMessage \"Wand Required\"",
             "AddItem {{ModId}}_AcaciaUpgradeBook1"
           ],
           "MarkActionApplied": false
-        }
-      },
-      "When": {
-        "HasMod |contains= spacechase0.SpaceCore, Spiderbuttons.BETAS": true
-      }
-    },
-    {
-      "LogName": "Hogwarts Acacia Upgrade Book 1 Trigger Action Setup",
-      "Action": "EditData",
-      "Target": "Data/TriggerActions",
-      "Entries": {
-        "{{ModID}}_AcaciaUpgradeBook1Setup": {
-          "Id": "{{ModID}}_AcaciaUpgradeBook1Setup",
-          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_AcaciaWand, ITEM_ID Input {{ModId}}_AcaciaUpgradeBook1",
+        },
+        "{{ModID}}_AcaciaSkillBook1Setup": {
+          "Id": "{{ModID}}_AcaciaSkillBook1Setup",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_AcaciaWand, ITEM_ID Input {{ModId}}_AcaciaSkillBook1",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Actions": [
-            "AddMail Current {{ModId}}_AcaciaUpgradeBook1 Received",
+            "AddMail Current {{ModId}}_WandSkillBook1 Received",
             "Spiderbuttons.BETAS_DelayedAction \"RemoveItem {{ModId}}_AcaciaWand\" 10000",
             "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_AcaciaWand\" 10000"
           ],
@@ -76,8 +66,9 @@
         "HasMod |contains= spacechase0.SpaceCore, Spiderbuttons.BETAS": true
       }
     },
+    /*Skill 1*/
     {
-      "LogName": "Acacia Wand Upgrade Test 1",
+      "LogName": "Hogwarts Wand Skill 1 Left",
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
@@ -90,12 +81,12 @@
         "MaxDistance": 10
       },
       "When": {
-        "HasFlag |contains= {{ModId}}_AcaciaUpgradeBook1": true
+        "HasFlag |contains= {{ModId}}_WandSkillBook1": true
       },
       "Update": "OnLocationChange, OnTimeChange"
     },
     {
-      "LogName": "Acacia Wand Upgrade Test 2",
+      "LogName": "Hogwarts Wand Skill 1 Right",
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
@@ -108,7 +99,340 @@
         "MaxDistance": 10
       },
       "When": {
-        "HasFlag |contains= {{ModId}}_AcaciaUpgradeBook1": true
+        "HasFlag |contains= {{ModId}}_WandSkillBook1": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    /*Skill 2*/
+    {
+      "LogName": "Hogwarts Wand Skill 2 Forward",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "TargetField": [
+        "{{ModId}}_AcaciaWand",
+        "Projectiles",
+        "Forward"
+      ],
+      "Entries": {
+        "Damage": "{{Query: {{Random: {{Range: 40, 60}}}}}}"
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook2": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Wand Skill 2 Left",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "TargetField": [
+        "{{ModId}}_AcaciaWand",
+        "Projectiles",
+        "Diagonal Left"
+      ],
+      "Entries": {
+        "Damage": "{{Query: {{Random: {{Range: 40, 60}}}}}}",
+        "MaxDistance": 10
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook2": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Wand Skill 2 Right",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "TargetField": [
+        "{{ModId}}_AcaciaWand",
+        "Projectiles",
+        "Diagonal Right"
+      ],
+      "Entries": {
+        "Damage": "{{Query: {{Random: {{Range: 40, 60}}}}}}",
+        "MaxDistance": 10
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook2": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    /*Skill 3*/
+    {
+      "LogName": "Hogwarts Wand Skill 3 Forward",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "TargetField": [
+        "{{ModId}}_AcaciaWand",
+        "Projectiles",
+        "Forward"
+      ],
+      "Entries": {
+        "Damage": "{{Query: {{Random: {{Range: 50, 70}}}}}}"
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook3": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Wand Skill 3 Left",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "TargetField": [
+        "{{ModId}}_AcaciaWand",
+        "Projectiles",
+        "Diagonal Left"
+      ],
+      "Entries": {
+        "Damage": "{{Query: {{Random: {{Range: 50, 70}}}}}}",
+        "MaxDistance": 10
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook3": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Wand Skill 3 Right",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "TargetField": [
+        "{{ModId}}_AcaciaWand",
+        "Projectiles",
+        "Diagonal Right"
+      ],
+      "Entries": {
+        "Damage": "{{Query: {{Random: {{Range: 50, 70}}}}}}",
+        "MaxDistance": 10
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook3": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    /*Skill 4*/
+    {
+      "LogName": "Hogwarts Wand Skill 4 Forward",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "TargetField": [
+        "{{ModId}}_AcaciaWand",
+        "Projectiles",
+        "Forward"
+      ],
+      "Entries": {
+        "Damage": "{{Query: {{Random: {{Range: 60, 80}}}}}}"
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook4": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Wand Skill 4 Left",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "TargetField": [
+        "{{ModId}}_AcaciaWand",
+        "Projectiles",
+        "Diagonal Left"
+      ],
+      "Entries": {
+        "Damage": "{{Query: {{Random: {{Range: 60, 80}}}}}}",
+        "MaxDistance": 10
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook4": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Wand Skill 4 Right",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "TargetField": [
+        "{{ModId}}_AcaciaWand",
+        "Projectiles",
+        "Diagonal Right"
+      ],
+      "Entries": {
+        "Damage": "{{Query: {{Random: {{Range: 60, 80}}}}}}",
+        "MaxDistance": 10
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook4": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    /*Skill 5*/
+    {
+      "LogName": "Hogwarts Wand Skill 5 Forward",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "TargetField": [
+        "{{ModId}}_AcaciaWand",
+        "Projectiles",
+        "Forward"
+      ],
+      "Entries": {
+        "Damage": "{{Query: {{Random: {{Range: 60, 80}}}}}}",
+        "MaxDistance": 20
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook5": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Wand Skill 5 Left",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "TargetField": [
+        "{{ModId}}_AcaciaWand",
+        "Projectiles",
+        "Diagonal Left"
+      ],
+      "Entries": {
+        "Damage": "{{Query: {{Random: {{Range: 60, 80}}}}}}",
+        "MaxDistance": 20
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook5": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Wand Skill 5 Right",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "TargetField": [
+        "{{ModId}}_AcaciaWand",
+        "Projectiles",
+        "Diagonal Right"
+      ],
+      "Entries": {
+        "Damage": "{{Query: {{Random: {{Range: 60, 80}}}}}}",
+        "MaxDistance": 20
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook5": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    /*Skill 6*/
+    {
+      "LogName": "Hogwarts Wand Skill 6 Forward",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "TargetField": [
+        "{{ModId}}_AcaciaWand",
+        "Projectiles",
+        "Forward"
+      ],
+      "Entries": {
+        "Damage": "{{Query: {{Random: {{Range: 60, 80}}}}}}",
+        "MaxDistance": 20,
+        "Bounces": 1
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook5": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Wand Skill 6 Left",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "TargetField": [
+        "{{ModId}}_AcaciaWand",
+        "Projectiles",
+        "Diagonal Left"
+      ],
+      "Entries": {
+        "Damage": "{{Query: {{Random: {{Range: 60, 80}}}}}}",
+        "MaxDistance": 20,
+        "Bounces": 1
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook6": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Wand Skill 6 Right",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "TargetField": [
+        "{{ModId}}_AcaciaWand",
+        "Projectiles",
+        "Diagonal Right"
+      ],
+      "Entries": {
+        "Damage": "{{Query: {{Random: {{Range: 60, 80}}}}}}",
+        "MaxDistance": 20,
+        "Bounces": 1
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook6": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    /*Skill 7*/
+    {
+      "LogName": "Hogwarts Wand Skill 7 Forward",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "TargetField": [
+        "{{ModId}}_AcaciaWand",
+        "Projectiles",
+        "Forward"
+      ],
+      "Entries": {
+        "Damage": "{{Query: {{Random: {{Range: 70, 90}}}}}}",
+        "MaxDistance": 20,
+        "Bounces": 1
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook7": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Wand Skill 7 Left",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "TargetField": [
+        "{{ModId}}_AcaciaWand",
+        "Projectiles",
+        "Diagonal Left"
+      ],
+      "Entries": {
+        "Damage": "{{Query: {{Random: {{Range: 70, 90}}}}}}",
+        "MaxDistance": 20,
+        "Bounces": 1
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook7": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Wand Skill 7 Right",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "TargetField": [
+        "{{ModId}}_AcaciaWand",
+        "Projectiles",
+        "Diagonal Right"
+      ],
+      "Entries": {
+        "Damage": "{{Query: {{Random: {{Range: 70, 90}}}}}}",
+        "MaxDistance": 20,
+        "Bounces": 1
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook7": true
       },
       "Update": "OnLocationChange, OnTimeChange"
     }
