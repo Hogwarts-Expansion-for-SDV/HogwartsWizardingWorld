@@ -1,15 +1,14 @@
 {
   "Changes": [
-    /*Acacia*/
     {
-      "LogName": "Hogwarts Wand Skill Book 1 Acacia Object Data",
+      "LogName": "Hogwarts Wand Skill Book Object Data",
       "Action": "EditData",
       "Target": "Data/Objects",
       "Entries": {
-        "{{ModId}}_AcaciaSkillBook1": {
-          "Name": "Skill Book Acacia",
-          "DisplayName": "Skill Book Acacia i18n name",
-          "Description": "Skill Book Acacia i18n description",
+        "{{ModId}}_WandSkillBook": {
+          "Name": "Wand Skill Book",
+          "DisplayName": "Wand Skill Book i18n name",
+          "Description": "Wand Skill Book i18n description",
           "Type": "Quest",
           "Category": 0,
           "Price": 50,
@@ -22,11 +21,11 @@
       }
     },
     {
-      "LogName": "Hogwarts Acacia Wand Skill Book 1 ConsumeForTriggerAction",
+      "LogName": "Hogwarts Wand Skill Book ConsumeForTriggerAction",
       "Action": "EditData",
       "Target": "spacechase0.SpaceCore/ObjectExtensionData",
       "Entries": {
-        "{{ModId}}_AcaciaSkillBook1": {
+        "{{ModId}}_WandSkillBook": {
           "UseForTriggerAction": true,
           "ConsumeForTriggerAction": true
         }
@@ -40,24 +39,456 @@
       "Action": "EditData",
       "Target": "Data/TriggerActions",
       "Entries": {
-        "{{ModID}}_AcaciaUpgradeBookNoWand": {
-          "Id": "{{ModID}}_AcaciaSkillBookNoWand",
-          "Condition": "!PLAYER_HAS_ITEM Current (W){{ModId}}_AcaciaWand, ITEM_ID Input {{ModId}}_AcaciaSkillBook1",
+        /*Wand Register*/
+        "{{ModID}}_WandRegisterAcacia": {
+          "Id": "{{ModID}}_WandRegisterAcacia",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_AcaciaWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_AcaciaWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterAlder": {
+          "Id": "{{ModID}}_WandRegisterAlder",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_AlderWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_AlderWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterApple": {
+          "Id": "{{ModID}}_WandRegisterApple",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_AppleWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_AppleWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterAsh": {
+          "Id": "{{ModID}}_WandRegisterAsh",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_AshWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_AshWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterAspen": {
+          "Id": "{{ModID}}_WandRegisterAspen",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_AspenWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_AspenWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterBeech": {
+          "Id": "{{ModID}}_WandRegisterBeech",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_BeechWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_BeechWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterBirch": {
+          "Id": "{{ModID}}_WandRegisterBirch",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_BirchWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_BirchWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterBlackWalnut": {
+          "Id": "{{ModID}}_WandRegisterBlackWalnut",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_BlackWalnutWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_BlackWalnutWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterBlackthorn": {
+          "Id": "{{ModID}}_WandRegisterBlackthorn",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_BlackthornWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_BlackthornWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterBrazilwood": {
+          "Id": "{{ModID}}_WandRegisterBrazilwood",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_BrazilwoodWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_BrazilwoodWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterCedar": {
+          "Id": "{{ModID}}_WandRegisterCedar",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_CedarWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_CedarWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterCherry": {
+          "Id": "{{ModID}}_WandRegisterCherry",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_CherryWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_CherryWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterChestnut": {
+          "Id": "{{ModID}}_WandRegisterChestnut",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_ChestnutWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_ChestnutWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterCypress": {
+          "Id": "{{ModID}}_WandRegisterCypress",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_CypressWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_CypressWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterDogwood": {
+          "Id": "{{ModID}}_WandRegisterDogwood",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_DogwoodWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_DogwoodWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterEbony": {
+          "Id": "{{ModID}}_WandRegisterEbony",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_EbonyWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_EbonyWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterElderWood": {
+          "Id": "{{ModID}}_WandRegisterElderWood",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_ElderWoodWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_ElderWoodWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterElm": {
+          "Id": "{{ModID}}_WandRegisterElm",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_ElmWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_ElmWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterEnglishOak": {
+          "Id": "{{ModID}}_WandRegisterEnglishOak",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_EnglishOakWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_EnglishOakWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterFir": {
+          "Id": "{{ModID}}_WandRegisterFir",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_FirWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_FirWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterHawthorn": {
+          "Id": "{{ModID}}_WandRegisterHawthorn",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_HawthornWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_HawthornWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterHazel": {
+          "Id": "{{ModID}}_WandRegisterHazel",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_HazelWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_HazelWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterHolly": {
+          "Id": "{{ModID}}_WandRegisterHolly",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_HollyWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_HollyWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterHornbeam": {
+          "Id": "{{ModID}}_WandRegisterHornbeam",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_HornbeamWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_HornbeamWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterIvy": {
+          "Id": "{{ModID}}_WandRegisterIvy",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_IvyWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_IvyWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterLarch": {
+          "Id": "{{ModID}}_WandRegisterLarch",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_LarchWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_LarchWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterLaurel": {
+          "Id": "{{ModID}}_WandRegisterLaurel",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_LaurelWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_LaurelWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterMahogany": {
+          "Id": "{{ModID}}_WandRegisterMahogany",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_MahoganyWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_MahoganyWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterMaple": {
+          "Id": "{{ModID}}_WandRegisterMaple",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_MapleWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_MapleWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterOlive": {
+          "Id": "{{ModID}}_WandRegisterOlive",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_OliveWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_OliveWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterPear": {
+          "Id": "{{ModID}}_WandRegisterPear",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_PearWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_PearWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterPine": {
+          "Id": "{{ModID}}_WandRegisterPine",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_PineWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_PineWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterPoplar": {
+          "Id": "{{ModID}}_WandRegisterPoplar",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_PoplarWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_PoplarWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterPricklyAsh": {
+          "Id": "{{ModID}}_WandRegisterPricklyAsh",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_PricklyAshWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_PricklyAshWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterRedOak": {
+          "Id": "{{ModID}}_WandRegisterRedOak",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_RedOakWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_RedOakWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterRedwood": {
+          "Id": "{{ModID}}_WandRegisterRedwood",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_RedwoodWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_RedwoodWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterReed": {
+          "Id": "{{ModID}}_WandRegisterReed",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_ReedWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_ReedWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterRosewood": {
+          "Id": "{{ModID}}_WandRegisterRosewood",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_RosewoodWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_RosewoodWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterRowan": {
+          "Id": "{{ModID}}_WandRegisterRowan",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_RowanWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_RowanWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterSilverLime": {
+          "Id": "{{ModID}}_WandRegisterSilverLime",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_SilverLimeWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_SilverLimeWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterSpruce": {
+          "Id": "{{ModID}}_WandRegisterSpruce",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_SpruceWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_SpruceWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterSnakewood": {
+          "Id": "{{ModID}}_WandRegisterSnakewood",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_SnakewoodWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_SnakewoodWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterSugarMaple": {
+          "Id": "{{ModID}}_WandRegisterSugarMaple",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_SugarMapleWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_SugarMapleWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterSwampMayhaw": {
+          "Id": "{{ModID}}_WandRegisterSwampMayhaw",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_SwampMayhawWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_SwampMayhawWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterSycamore": {
+          "Id": "{{ModID}}_WandRegisterSycamore",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_SycamoreWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_SycamoreWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterTamarack": {
+          "Id": "{{ModID}}_WandRegisterTamarack",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_TamarackWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_TamarackWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterVine": {
+          "Id": "{{ModID}}_WandRegisterVine",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_VineWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_VineWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterWalnut": {
+          "Id": "{{ModID}}_WandRegisterWalnut",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_WalnutWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_WalnutWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterWillow": {
+          "Id": "{{ModID}}_WandRegisterWillow",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_WillowWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_WillowWand Received",
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandRegisterYew": {
+          "Id": "{{ModID}}_WandRegisterYew",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_YewWand",
+          "Trigger": "LocationChanged",
+          "Action": "AddMail Current {{ModId}}_YewWand Received",
+          "MarkActionApplied": true
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts Wand Skill Book Trigger Actions",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": { 
+        /*Skill Book*/
+        "{{ModID}}_WandSkillBookNoWand": {
+          "Id": "{{ModID}}_WandSkillBookNoWand",
+          "Condition": "!PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Actions": [
             "spacechase0.SpaceCore_ShowHudMessage \"Wand Required\"",
-            "AddItem {{ModId}}_AcaciaUpgradeBook1"
+            "AddItem {{ModId}}_WandSkillBook"
           ],
           "MarkActionApplied": false
         },
-        "{{ModID}}_AcaciaSkillBook1Setup": {
-          "Id": "{{ModID}}_AcaciaSkillBook1Setup",
-          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_AcaciaWand, ITEM_ID Input {{ModId}}_AcaciaSkillBook1",
+        /*Add skill upgraded HUD*/
+        "{{ModID}}_WandSkillBook1Setup": {
+          "Id": "{{ModID}}_WandSkillBook1Setup",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook1, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook2, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook3, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook4, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook5, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook6, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook7",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Actions": [
             "AddMail Current {{ModId}}_WandSkillBook1 Received",
-            "Spiderbuttons.BETAS_DelayedAction \"RemoveItem {{ModId}}_AcaciaWand\" 10000",
-            "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_AcaciaWand\" 10000"
+            "Spiderbuttons.BETAS_DelayedAction \"RemoveItem {{ModId}}_{{Wand}}Wand\" 10000",
+            "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_{{Wand}}Wand\" 10000"
+          ],
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandSkillBook2Setup": {
+          "Id": "{{ModID}}_WandSkillBook2Setup",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook1",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "AddMail Current {{ModId}}_WandSkillBook2 Received",
+            "Spiderbuttons.BETAS_DelayedAction \"RemoveItem {{ModId}}_{{Wand}}Wand\" 10000",
+            "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_{{Wand}}Wand\" 10000",
+            "RemoveMail Current {{ModId}}_WandSkillBook1"
+          ],
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandSkillBook3Setup": {
+          "Id": "{{ModID}}_WandSkillBook3Setup",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook2",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "AddMail Current {{ModId}}_WandSkillBook3 Received",
+            "Spiderbuttons.BETAS_DelayedAction \"RemoveItem {{ModId}}_{{Wand}}Wand\" 10000",
+            "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_{{Wand}}Wand\" 10000",
+            "RemoveMail Current {{ModId}}_WandSkillBook2"
+          ],
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandSkillBook4Setup": {
+          "Id": "{{ModID}}_WandSkillBook4Setup",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook3",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "AddMail Current {{ModId}}_WandSkillBook4 Received",
+            "Spiderbuttons.BETAS_DelayedAction \"RemoveItem {{ModId}}_{{Wand}}Wand\" 10000",
+            "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_{{Wand}}Wand\" 10000",
+            "RemoveMail Current {{ModId}}_WandSkillBook3"
+          ],
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandSkillBook5Setup": {
+          "Id": "{{ModID}}_WandSkillBook5Setup",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook4",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "AddMail Current {{ModId}}_WandSkillBook5 Received",
+            "Spiderbuttons.BETAS_DelayedAction \"RemoveItem {{ModId}}_{{Wand}}Wand\" 10000",
+            "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_{{Wand}}Wand\" 10000",
+            "RemoveMail Current {{ModId}}_WandSkillBook4"
+          ],
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandSkillBook6Setup": {
+          "Id": "{{ModID}}_WandSkillBook6Setup",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook5",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "AddMail Current {{ModId}}_WandSkillBook6 Received",
+            "Spiderbuttons.BETAS_DelayedAction \"RemoveItem {{ModId}}_{{Wand}}Wand\" 10000",
+            "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_{{Wand}}Wand\" 10000",
+            "RemoveMail Current {{ModId}}_WandSkillBook5"
+          ],
+          "MarkActionApplied": true
+        },
+        "{{ModID}}_WandSkillBook7Setup": {
+          "Id": "{{ModID}}_WandSkillBook7Setup",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook6",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "AddMail Current {{ModId}}_WandSkillBook7 Received",
+            "Spiderbuttons.BETAS_DelayedAction \"RemoveItem {{ModId}}_{{Wand}}Wand\" 10000",
+            "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_{{Wand}}Wand\" 10000",
+            "RemoveMail Current {{ModId}}_WandSkillBook6"
           ],
           "MarkActionApplied": true
         }
@@ -72,7 +503,7 @@
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
-        "{{ModId}}_AcaciaWand",
+        "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
         "Diagonal Left"
       ],
@@ -90,7 +521,7 @@
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
-        "{{ModId}}_AcaciaWand",
+        "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
         "Diagonal Right"
       ],
@@ -109,7 +540,7 @@
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
-        "{{ModId}}_AcaciaWand",
+        "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
         "Forward"
       ],
@@ -126,7 +557,7 @@
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
-        "{{ModId}}_AcaciaWand",
+        "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
         "Diagonal Left"
       ],
@@ -144,7 +575,7 @@
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
-        "{{ModId}}_AcaciaWand",
+        "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
         "Diagonal Right"
       ],
@@ -163,7 +594,7 @@
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
-        "{{ModId}}_AcaciaWand",
+        "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
         "Forward"
       ],
@@ -180,7 +611,7 @@
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
-        "{{ModId}}_AcaciaWand",
+        "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
         "Diagonal Left"
       ],
@@ -198,7 +629,7 @@
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
-        "{{ModId}}_AcaciaWand",
+        "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
         "Diagonal Right"
       ],
@@ -217,7 +648,7 @@
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
-        "{{ModId}}_AcaciaWand",
+        "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
         "Forward"
       ],
@@ -234,7 +665,7 @@
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
-        "{{ModId}}_AcaciaWand",
+        "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
         "Diagonal Left"
       ],
@@ -252,7 +683,7 @@
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
-        "{{ModId}}_AcaciaWand",
+        "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
         "Diagonal Right"
       ],
@@ -271,7 +702,7 @@
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
-        "{{ModId}}_AcaciaWand",
+        "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
         "Forward"
       ],
@@ -289,7 +720,7 @@
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
-        "{{ModId}}_AcaciaWand",
+        "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
         "Diagonal Left"
       ],
@@ -307,7 +738,7 @@
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
-        "{{ModId}}_AcaciaWand",
+        "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
         "Diagonal Right"
       ],
@@ -326,7 +757,7 @@
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
-        "{{ModId}}_AcaciaWand",
+        "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
         "Forward"
       ],
@@ -345,7 +776,7 @@
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
-        "{{ModId}}_AcaciaWand",
+        "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
         "Diagonal Left"
       ],
@@ -364,7 +795,7 @@
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
-        "{{ModId}}_AcaciaWand",
+        "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
         "Diagonal Right"
       ],
@@ -384,7 +815,7 @@
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
-        "{{ModId}}_AcaciaWand",
+        "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
         "Forward"
       ],
@@ -403,7 +834,7 @@
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
-        "{{ModId}}_AcaciaWand",
+        "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
         "Diagonal Left"
       ],
@@ -422,7 +853,7 @@
       "Action": "EditData",
       "Target": "Data/Weapons",
       "TargetField": [
-        "{{ModId}}_AcaciaWand",
+        "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
         "Diagonal Right"
       ],
