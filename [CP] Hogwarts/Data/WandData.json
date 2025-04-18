@@ -21,6 +21,82 @@
       }
     },
     {
+      "LogName": "Hogwarts Expansion Objects Weapons Data Default Wand",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Priority": "Early",
+      "Entries": {
+        "{{ModId}}_Wand": {
+          "Name": "Default Wand",
+          "DisplayName": "Default Wand i18n name",
+          "Description": "Default Wand i18n description",
+          "MinDamage": 0,
+          "MaxDamage": 1,
+          "Knockback": 1.0,
+          "Speed": 2,
+          "Precision": 0,
+          "Defense": 0,
+          "Type": 3,
+          "MineBaseLevel": -1,
+          "MineMinLevel": 121,
+          "AreaOfEffect": 100,
+          "CritChance": 0,
+          "CritMultiplier": 0,
+          "CanBeLostOnDeath": false,
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 0,
+          "Projectiles": [
+            {
+              "Id": "Forward",
+              "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
+              "Explodes": false,
+              "Bounces": 0,
+              "MaxDistance": 10,
+              "Velocity": 10,
+              "RotationVelocity": 64,
+              "TailLength": 3,
+              "FireSound": "pullItemFromWater",
+              "MinAngleOffset": 0,
+              "MaxAngleOffset": 0,
+              "Item": {
+                "ItemId": "(O)132"
+              }
+            },
+            {
+              "Id": "Diagonal Left",
+              "Damage": 0,
+              "Explodes": false,
+              "Bounces": 0,
+              "MaxDistance": 0,
+              "Velocity": 10,
+              "RotationVelocity": 64,
+              "TailLength": 3,
+              "MinAngleOffset": 20,
+              "MaxAngleOffset": 20,
+              "Item": {
+                "ItemId": "(O)132"
+              }
+            },
+            {
+              "Id": "Diagonal Right",
+              "Damage": 0,
+              "Explodes": false,
+              "Bounces": 0,
+              "MaxDistance": 0,
+              "Velocity": 10,
+              "RotationVelocity": 64,
+              "TailLength": 3,
+              "MinAngleOffset": -20,
+              "MaxAngleOffset": -20,
+              "Item": {
+                "ItemId": "(O)132"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
       "LogName": "Hogwarts Wand Skill Book ConsumeForTriggerAction",
       "Action": "EditData",
       "Target": "spacechase0.SpaceCore/ObjectExtensionData",
@@ -396,8 +472,7 @@
       "LogName": "Hogwarts Wand Skill Book Trigger Actions",
       "Action": "EditData",
       "Target": "Data/TriggerActions",
-      "Entries": { 
-        /*Skill Book*/
+      "Entries": {
         "{{ModID}}_WandSkillBookNoWand": {
           "Id": "{{ModID}}_WandSkillBookNoWand",
           "Condition": "!PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook",
@@ -408,12 +483,12 @@
           ],
           "MarkActionApplied": false
         },
-        /*Add skill upgraded HUD*/
         "{{ModID}}_WandSkillBook1Setup": {
           "Id": "{{ModID}}_WandSkillBook1Setup",
           "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook1, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook2, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook3, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook4, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook5, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook6, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook7",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Learned greater spell damage\"",
             "AddMail Current {{ModId}}_WandSkillBook1 Received",
             "Spiderbuttons.BETAS_DelayedAction \"RemoveItem {{ModId}}_{{Wand}}Wand\" 10000",
             "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_{{Wand}}Wand\" 10000"
@@ -425,6 +500,7 @@
           "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook1",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Learned greater spell damage\"",
             "AddMail Current {{ModId}}_WandSkillBook2 Received",
             "Spiderbuttons.BETAS_DelayedAction \"RemoveItem {{ModId}}_{{Wand}}Wand\" 10000",
             "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_{{Wand}}Wand\" 10000",
@@ -437,6 +513,7 @@
           "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook2",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Learned greater spell damage\"",
             "AddMail Current {{ModId}}_WandSkillBook3 Received",
             "Spiderbuttons.BETAS_DelayedAction \"RemoveItem {{ModId}}_{{Wand}}Wand\" 10000",
             "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_{{Wand}}Wand\" 10000",
@@ -449,6 +526,7 @@
           "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook3",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Learned greater spell damage\"",
             "AddMail Current {{ModId}}_WandSkillBook4 Received",
             "Spiderbuttons.BETAS_DelayedAction \"RemoveItem {{ModId}}_{{Wand}}Wand\" 10000",
             "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_{{Wand}}Wand\" 10000",
@@ -461,6 +539,7 @@
           "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook4",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Learned greater spell distance\"",
             "AddMail Current {{ModId}}_WandSkillBook5 Received",
             "Spiderbuttons.BETAS_DelayedAction \"RemoveItem {{ModId}}_{{Wand}}Wand\" 10000",
             "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_{{Wand}}Wand\" 10000",
@@ -473,6 +552,7 @@
           "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook5",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Learned spell bounce\"",
             "AddMail Current {{ModId}}_WandSkillBook6 Received",
             "Spiderbuttons.BETAS_DelayedAction \"RemoveItem {{ModId}}_{{Wand}}Wand\" 10000",
             "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_{{Wand}}Wand\" 10000",
@@ -485,6 +565,7 @@
           "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook6",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Learned greater spell damage\"",
             "AddMail Current {{ModId}}_WandSkillBook7 Received",
             "Spiderbuttons.BETAS_DelayedAction \"RemoveItem {{ModId}}_{{Wand}}Wand\" 10000",
             "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_{{Wand}}Wand\" 10000",
