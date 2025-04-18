@@ -57,10 +57,7 @@
               "TailLength": 3,
               "FireSound": "pullItemFromWater",
               "MinAngleOffset": 0,
-              "MaxAngleOffset": 0,
-              "Item": {
-                "ItemId": "(O)132"
-              }
+              "MaxAngleOffset": 0
             },
             {
               "Id": "Diagonal Left",
@@ -72,10 +69,7 @@
               "RotationVelocity": 64,
               "TailLength": 3,
               "MinAngleOffset": 20,
-              "MaxAngleOffset": 20,
-              "Item": {
-                "ItemId": "(O)132"
-              }
+              "MaxAngleOffset": 20
             },
             {
               "Id": "Diagonal Right",
@@ -87,10 +81,7 @@
               "RotationVelocity": 64,
               "TailLength": 3,
               "MinAngleOffset": -20,
-              "MaxAngleOffset": -20,
-              "Item": {
-                "ItemId": "(O)132"
-              }
+              "MaxAngleOffset": -20
             }
           ]
         }
@@ -469,7 +460,7 @@
       }
     },
     {
-      "LogName": "Hogwarts Wand Skill Book Trigger Actions",
+      "LogName": "Hogwarts Wand Skill Book No Wand Trigger Action",
       "Action": "EditData",
       "Target": "Data/TriggerActions",
       "Entries": {
@@ -482,7 +473,14 @@
             "AddItem {{ModId}}_WandSkillBook"
           ],
           "MarkActionApplied": false
-        },
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts Wand Skill Book 1 Setup Trigger Action",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
         "{{ModID}}_WandSkillBook1Setup": {
           "Id": "{{ModID}}_WandSkillBook1Setup",
           "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook1, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook2, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook3, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook4, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook5, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook6, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook7",
@@ -494,10 +492,21 @@
             "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_{{Wand}}Wand\" 10000"
           ],
           "MarkActionApplied": true
-        },
+        }
+      },
+      "When": {
+        "HasMod |contains= spacechase0.SpaceCore, Spiderbuttons.BETAS": true,
+        "HasFlag |contains= {{ModId}}_WandSkillBook1": false
+      }
+    },
+    {
+      "LogName": "Hogwarts Wand Skill Book 2 Setup Trigger Actions",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
         "{{ModID}}_WandSkillBook2Setup": {
           "Id": "{{ModID}}_WandSkillBook2Setup",
-          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook1",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook1 Tomorrow",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Actions": [
             "spacechase0.SpaceCore_ShowHudMessage \"Learned greater spell damage\"",
@@ -507,10 +516,21 @@
             "RemoveMail Current {{ModId}}_WandSkillBook1"
           ],
           "MarkActionApplied": true
-        },
+        }
+      },
+      "When": {
+        "HasMod |contains= spacechase0.SpaceCore, Spiderbuttons.BETAS": true,
+        "HasFlag |contains= {{ModId}}_WandSkillBook2": false
+      }
+    },/*
+    {
+      "LogName": "Hogwarts Wand Skill Book 3 Setup Trigger Actions",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
         "{{ModID}}_WandSkillBook3Setup": {
           "Id": "{{ModID}}_WandSkillBook3Setup",
-          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook2",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook2 Tomorrow",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Actions": [
             "spacechase0.SpaceCore_ShowHudMessage \"Learned greater spell damage\"",
@@ -520,10 +540,21 @@
             "RemoveMail Current {{ModId}}_WandSkillBook2"
           ],
           "MarkActionApplied": true
-        },
+        }
+      },
+      "When": {
+        "HasMod |contains= spacechase0.SpaceCore, Spiderbuttons.BETAS": true,
+        "HasFlag |contains= {{ModId}}_WandSkillBook3": false
+      }
+    },
+    {
+      "LogName": "Hogwarts Wand Skill Book 4 Setup Trigger Actions",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
         "{{ModID}}_WandSkillBook4Setup": {
           "Id": "{{ModID}}_WandSkillBook4Setup",
-          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook3",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook3 Tomorrow",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Actions": [
             "spacechase0.SpaceCore_ShowHudMessage \"Learned greater spell damage\"",
@@ -533,10 +564,21 @@
             "RemoveMail Current {{ModId}}_WandSkillBook3"
           ],
           "MarkActionApplied": true
-        },
+        }
+      },
+      "When": {
+        "HasMod |contains= spacechase0.SpaceCore, Spiderbuttons.BETAS": true,
+        "HasFlag |contains= {{ModId}}_WandSkillBook4": false
+      }
+    },
+    {
+      "LogName": "Hogwarts Wand Skill Book 5 Setup Trigger Actions",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
         "{{ModID}}_WandSkillBook5Setup": {
           "Id": "{{ModID}}_WandSkillBook5Setup",
-          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook4",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook4 Tomorrow",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Actions": [
             "spacechase0.SpaceCore_ShowHudMessage \"Learned greater spell distance\"",
@@ -546,10 +588,21 @@
             "RemoveMail Current {{ModId}}_WandSkillBook4"
           ],
           "MarkActionApplied": true
-        },
+        }
+      },
+      "When": {
+        "HasMod |contains= spacechase0.SpaceCore, Spiderbuttons.BETAS": true,
+        "HasFlag |contains= {{ModId}}_WandSkillBook5": false
+      }
+    },
+    {
+      "LogName": "Hogwarts Wand Skill Book 6 Setup Trigger Actions",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
         "{{ModID}}_WandSkillBook6Setup": {
           "Id": "{{ModID}}_WandSkillBook6Setup",
-          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook5",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook5 Tomorrow",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Actions": [
             "spacechase0.SpaceCore_ShowHudMessage \"Learned spell bounce\"",
@@ -559,10 +612,21 @@
             "RemoveMail Current {{ModId}}_WandSkillBook5"
           ],
           "MarkActionApplied": true
-        },
+        }
+      },
+      "When": {
+        "HasMod |contains= spacechase0.SpaceCore, Spiderbuttons.BETAS": true,
+        "HasFlag |contains= {{ModId}}_WandSkillBook6": false
+      }
+    },
+    {
+      "LogName": "Hogwarts Wand Skill Book 7 Setup Trigger Actions",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
         "{{ModID}}_WandSkillBook7Setup": {
           "Id": "{{ModID}}_WandSkillBook7Setup",
-          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook6",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook6 Tomorrow",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Actions": [
             "spacechase0.SpaceCore_ShowHudMessage \"Learned greater spell damage\"",
@@ -575,9 +639,10 @@
         }
       },
       "When": {
-        "HasMod |contains= spacechase0.SpaceCore, Spiderbuttons.BETAS": true
+        "HasMod |contains= spacechase0.SpaceCore, Spiderbuttons.BETAS": true,
+        "HasFlag |contains= {{ModId}}_WandSkillBook7": false
       }
-    },
+    },*/
     /*Skill 1*/
     {
       "LogName": "Hogwarts Wand Skill 1 Left",
