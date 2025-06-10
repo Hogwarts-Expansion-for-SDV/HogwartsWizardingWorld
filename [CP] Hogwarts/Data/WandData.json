@@ -466,7 +466,7 @@
       "Entries": {
         "{{ModID}}_WandSkillBookNoWand": {
           "Id": "{{ModID}}_WandSkillBookNoWand",
-          "Condition": "!PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook",
+          "Condition": "!PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_{{Wand}}Wand Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Actions": [
             "spacechase0.SpaceCore_ShowHudMessage \"Original Wand Required\"",
@@ -476,7 +476,7 @@
         },
         "{{ModID}}_WandSkillBook1Setup": {
           "Id": "{{ModID}}_WandSkillBook1Setup",
-          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, ITEM_ID Input {{ModId}}_WandSkillBook, PLAYER_HAS_MAIL Current {{ModId}}_{{Wand}}Wand Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Actions": [
             //Upgrade 7 
