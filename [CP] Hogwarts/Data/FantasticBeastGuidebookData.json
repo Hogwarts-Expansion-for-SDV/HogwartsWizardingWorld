@@ -1,6 +1,72 @@
 {
   "Changes": [
     {
+      "LogName": "Hogwarts Expansion Load Abraxan",
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}_Abraxan",
+      "FromFile": "assets/Creatures/Abraxan.png"
+    },
+    {
+      "LogName": "Hogwarts Expansion Load Bicorn",
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}_Bicorn",
+      "FromFile": "assets/Creatures/Bicorn.png"
+    },
+    {
+      "LogName": "Hogwarts Expansion Load Bowtruckle",
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}_Bowtruckle",
+      "FromFile": "assets/Creatures/Bowtruckle.png"
+    },
+    {
+      "LogName": "Hogwarts Expansion Load Crup",
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}_Crup",
+      "FromFile": "assets/Creatures/Crup.png"
+    },
+    {
+      "LogName": "Hogwarts Expansion Load Dragon Toad Orange",
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}_DragonToadOrange",
+      "FromFile": "assets/Creatures/DragonToadOrange.png"
+    },
+    {
+      "LogName": "Hogwarts Expansion Load Fire Crab Diamond",
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}_FireCrabDiamond",
+      "FromFile": "assets/Creatures/FireCrabDiamond.png"
+    },
+    {
+      "LogName": "Hogwarts Expansion Load Fwooper Pink",
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}_FwooperPink",
+      "FromFile": "assets/Creatures/FwooperPink.png"
+    },
+    {
+      "LogName": "Hogwarts Expansion Load Granian",
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}_Granian",
+      "FromFile": "assets/Creatures/Granian.png"
+    },
+    {
+      "LogName": "Hogwarts Expansion Load Griffin Brown",
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}_GriffinBrown",
+      "FromFile": "assets/Creatures/GriffinBrown.png"
+    },
+    {
+      "LogName": "Hogwarts Expansion Load Hippogriff Grey",
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}_HippogriffGrey",
+      "FromFile": "assets/Creatures/HippogriffGrey.png"
+    },
+    {
+      "LogName": "Hogwarts Expansion Load Kneazle Blonde",
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}_KneazleBlonde",
+      "FromFile": "assets/Creatures/KneazleBlonde.png"
+    },
+    {
       "LogName": "Hogwarts Fantastic Beasts Guidebook Tabs Load",
       "Action": "Load",
       "Target": "Mods/{{ModId}}/GuidebookTabs",
@@ -62,7 +128,7 @@
       "Target": "spacechase0.SpaceCore/Guidebooks",
       "Entries": {
         "{{ModID}}_FantasticBeasts": {
-          "Title": "Fantastic Beasts and Where to Find Them",
+          "Title": "Hogwarts Textbook",
           "DefaultChapter": "Title",
           "Chapters": {
             "Title": {
@@ -77,8 +143,117 @@
               "Condition": "TRUE",
               "Pages": [
                 {
-                  "Contents": "[image=Animals/{{ModId}}_Bowtruckle:null:1]"
-                }
+                  "Contents": "[center][font=dialogue]Beast Classifications[/font][/center]
+                  [center][nextposition=0,64][font=default]X[/font][/center]
+                  [center][nextposition=0,96][font=default]prosaic[/font][/center]
+                  [center][nextposition=0,160][font=default]XX[/font][/center]
+                  [center][nextposition=0,192][font=default]harmless; can be domesticated[/font][/center]
+                  [center][nextposition=0,256][font=default]XXX[/font][/center]
+                  [center][nextposition=0,288][font=default]hazardous; competent wizards should cope[/font][/center]          
+                  [center][nextposition=0,352][font=default]XXXX[/font][/center]
+                  [center][nextposition=0,384][font=default]dangerous; requires specialized knowledge[/font][/center]
+                  [center][nextposition=0,448][font=default]XXXXX[/font][/center]
+                  [center][nextposition=0,480][font=default]restricted; do not approach or handle without proper authorization[/font][/center]"
+                },
+                {
+                  "Contents": "[center][font=dialogue]Bowtruckle[/font][/center]
+                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Bowtruckle:0,0,16,16:10][nextposition=160,32][image=Animals/{{ModId}}_Bowtruckle:0,16,16,16:10][/nospacing]
+                  [nextposition=0,192][font=default]Class X Beast[/font]
+                  [nextposition=0,256][font=default]Resembles small plants[/font]
+                  [nextposition=0,288][font=default]Dwells on and around trees of magic potential[/font]
+                  [nextposition=0,320][font=default]Enjoys feeding on small insects and soft eggs[/font]
+                  [nextposition=0,352][font=default]Dexterious and can learn to lockpick[/font]
+                  [nextposition=0,384][font=default]Adept at dodging most types of charms[/font]
+                  [nextposition=0,416][font=default]Can gouge eyes when threatened[/font]"
+                },
+                {
+                  "Contents": "[center][font=dialogue]Abraxan[/font][/center]
+                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Abraxan:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Abraxan:0,32,32,32:5][/nospacing]
+                  [nextposition=0,192][font=default]Class XXX Beast[/font]
+                  [nextposition=0,256][font=default]A breed of winged-horses[/font]
+                  [nextposition=0,288][font=default]Akin to a palomino horse[/font]
+                  [nextposition=0,320][font=default]Enjoys drinking single-malt whiskey[/font]
+                  [nextposition=0,352][font=default]Extremely powerful; most powerful among winged-horse breeds[/font]"
+                },
+                {
+                  "Contents": "[center][font=dialogue]Bicorn[/font][/center]
+                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Bicorn:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Bicorn:0,32,32,32:5][/nospacing]
+                  [nextposition=0,192][font=default]Class XXX Beast[/font]
+                  [nextposition=0,256][font=default]Notable for possessing two horns[/font]
+                  [nextposition=0,288][font=default]Aggressive disposition[/font]"
+                },
+                {
+                  "Contents": "[center][font=dialogue]Crup[/font][/center]
+                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Crup:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Crup:0,32,32,32:5][/nospacing]
+                  [nextposition=0,192][font=default]Class XXX Beast[/font]
+                  [nextposition=0,256][font=default]Resembles a Jack Russell terrier[/font]
+                  [nextposition=0,288][font=default]Tail is forked into two[/font]
+                  [nextposition=0,320][font=default]As per British wizarding law, owners must removed its forked tail to be inconspicious to muggles[/font]
+                  [nextposition=0,416][font=default]Destructive bite strength[/font]
+                  [nextposition=0,448][font=default]Loyal to wizards, but extremely ferocious towards muggles[/font]
+                  [nextposition=0,512][font=default]Keep muggles out of sight and smell from crups[/font]"
+                },
+                {
+                  "Contents": "[center][font=dialogue]Dragon Toad[/font][/center]
+                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_DragonToadOrange:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_DragonToadOrange:0,32,32,32:5][/nospacing]
+                  [nextposition=0,192][font=default]Class X Beast[/font]
+                  [nextposition=0,256][font=default]A toad resembling qualities of a dragon: belly, head, and back were covered with dragon-like scales and spikes[/font]"
+                },
+                {
+                  "Contents": "[center][font=dialogue]Fire Crab[/font][/center]
+                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_FireCrabDiamond:0,0,16,24:7][nextposition=160,32][image=Animals/{{ModId}}_FireCrabDiamond:16,0,16,24:7][/nospacing]
+                  [nextposition=0,208][font=default]Class XXX Beast[/font]
+                  [nextposition=0,256][font=default]Resembles a mix between a tortose and crab[/font]
+                  [nextposition=0,288][font=default]Shell is embedded with gemstones[/font]
+                  [nextposition=0,320][font=default]Can shoot flames from its tail[/font]
+                  [nextposition=0,352][font=default]Poached by wizards for its shell to used as a cauldron, and poached by muggles for its gemstones[/font]"
+                },
+                {
+                  "Contents": "[center][font=dialogue]Fwooper[/font][/center]
+                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_FwooperPink:0,0,16,16:10][nextposition=160,32][image=Animals/{{ModId}}_FwooperPink:0,16,16,16:10][/nospacing]
+                  [nextposition=0,192][font=default]Class XXX Beast[/font]
+                  [nextposition=0,256][font=default]Resembles an owl[/font]
+                  [nextposition=0,288][font=default]Feathers can be one of four distinct colors; other colors are possible, but rare[/font]
+                  [nextposition=0,352][font=default]Can spread its feathers to court another fwooper[/font]
+                  [nextposition=0,384][font=default]Voices are high-pitched, which can cause insanity to listeners[/font]
+                  [nextposition=0,448][font=default]Silencing charms are recommended when encountering a fwooper[/font]"
+                },
+                {
+                  "Contents": "[center][font=dialogue]Granian[/font][/center]
+                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Granian:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Granian:0,32,32,32:5][/nospacing]
+                  [nextposition=0,192][font=default]Class XXX Beast[/font]
+                  [nextposition=0,256][font=default]Greyish in color[/font]
+                  [nextposition=0,288][font=default]Fastest among winged-horses[/font]"
+                },
+                {
+                  "Contents": "[center][font=dialogue]Griffin[/font][/center]
+                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_GriffinBrown:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_GriffinBrown:0,32,32,32:5][/nospacing]
+                  [nextposition=0,192][font=default]Class XXXX Beast[/font]
+                  [nextposition=0,256][font=default]Front legs, wings and head of a giant eagle, and the body, hind legs, and tail of a lion[/font]
+                  [nextposition=0,320][font=default]Main diet was raw meat[/font]
+                  [nextposition=0,352][font=default]Capable of flight[/font]
+                  [nextposition=0,384][font=default]Known to guard anything from gold to garden plants[/font]
+                  [nextposition=0,448][font=default]Can become distraught when not guarding anything[/font]"
+                },
+                {
+                  "Contents": "[center][font=dialogue]Hippogriff[/font][/center]
+                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_HippogriffGrey:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_HippogriffGrey:0,32,32,32:5][/nospacing]
+                  [nextposition=0,192][font=default]Class XXX Beast[/font]
+                  [nextposition=0,256][font=default]Front legs, wings, and head of a giant eagle and the body, hind legs and tail of a horse[/font]
+                  [nextposition=0,320][font=default]Capable of flight[/font]
+                  [nextposition=0,352][font=default]Diet consisted mainly of insects, birds, and small mammals[/font]
+                  [nextposition=0,416][font=default]Proud creatures; bow to hippogriffs to show respect, and they may bow in return before one should approach or mount[/font]
+                  [nextposition=0,512][font=default]Dislikes when feathers are plucked[/font]"
+                },
+                {
+                  "Contents": "[center][font=dialogue]Kneazle[/font][/center]
+                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_KneazleBlonde:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_KneazleBlonde:0,32,32,32:5][/nospacing]
+                  [nextposition=0,192][font=default]Class XXX Beast[/font]
+                  [nextposition=0,256][font=default]Resembles a cat; spotted, speckled or flecked fur, large ears and a lightly plumed tail, akin to that of a lion's[/font]
+                  [nextposition=0,352][font=default]Notably intelligent and independent[/font]
+                  [nextposition=0,384][font=default]Notably capable of detecting untrustworthy individuals, and can turn aggressive to them[/font]
+                  [nextposition=0,448][font=default]Capable of guarding homes, and warding out certain pests[/font]"
+                },
               ]
             }
           }
