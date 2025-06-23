@@ -67,6 +67,54 @@
       "FromFile": "assets/Creatures/KneazleBlonde.png"
     },
     {
+      "LogName": "Hogwarts Expansion Load Mooncalf Blonde",
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}_Mooncalf",
+      "FromFile": "assets/Creatures/Mooncalf.png"
+    },
+    {
+      "LogName": "Hogwarts Expansion Load Niffler Brown",
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}_NifflerBrown",
+      "FromFile": "assets/Creatures/NifflerBrown.png"
+    },
+    {
+      "LogName": "Hogwarts Expansion Load Occamy Teal",
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}_OccamyTeal",
+      "FromFile": "assets/Creatures/OccamyTeal.png"
+    },
+    {
+      "LogName": "Hogwarts Expansion Load Phoenix",
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}_Phoenix",
+      "FromFile": "assets/Creatures/Phoenix.png"
+    },
+    {
+      "LogName": "Hogwarts Expansion Load Pygmy Puff Pink",
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}_PygmyPuffPink",
+      "FromFile": "assets/Creatures/PygmyPuffPink.png"
+    },
+    {
+      "LogName": "Hogwarts Expansion Load Sphinx",
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}_Sphinx",
+      "FromFile": "assets/Creatures/Sphinx.png"
+    },
+    {
+      "LogName": "Hogwarts Expansion Load Thestral",
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}_Thestral",
+      "FromFile": "assets/Creatures/Thestral.png"
+    },
+    {
+      "LogName": "Hogwarts Expansion Load Unicorn Common",
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}_UnicornCommon",
+      "FromFile": "assets/Creatures/UnicornCommon.png"
+    },
+    {
       "LogName": "Hogwarts Fantastic Beasts Guidebook Tabs Load",
       "Action": "Load",
       "Target": "Mods/{{ModId}}/GuidebookTabs",
@@ -153,7 +201,7 @@
                   [center][nextposition=0,352][font=default]XXXX[/font][/center]
                   [center][nextposition=0,384][font=default]dangerous; requires specialized knowledge[/font][/center]
                   [center][nextposition=0,448][font=default]XXXXX[/font][/center]
-                  [center][nextposition=0,480][font=default]restricted; do not approach or handle without proper authorization[/font][/center]"
+                  [center][nextposition=0,480][font=default]restricted; do not approach or handle without qualified authorization[/font][/center]"
                 },
                 {
                   "Contents": "[center][font=dialogue]Bowtruckle[/font][/center]
@@ -162,7 +210,7 @@
                   [nextposition=0,256][font=default]Resembles small plants[/font]
                   [nextposition=0,288][font=default]Dwells on and around trees of magic potential[/font]
                   [nextposition=0,320][font=default]Enjoys feeding on small insects and soft eggs[/font]
-                  [nextposition=0,352][font=default]Dexterious and can learn to lockpick[/font]
+                  [nextposition=0,352][font=default]Dexterous and can learn to lockpick[/font]
                   [nextposition=0,384][font=default]Adept at dodging most types of charms[/font]
                   [nextposition=0,416][font=default]Can gouge eyes when threatened[/font]"
                 },
@@ -222,8 +270,9 @@
                   "Contents": "[center][font=dialogue]Granian[/font][/center]
                   [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Granian:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Granian:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXX Beast[/font]
-                  [nextposition=0,256][font=default]Greyish in color[/font]
-                  [nextposition=0,288][font=default]Fastest among winged-horses[/font]"
+                  [nextposition=0,256][font=default]A breed of winged-horses[/font]
+                  [nextposition=0,288][font=default]Greyish in color[/font]
+                  [nextposition=0,320][font=default]Fastest among winged-horses[/font]"
                 },
                 {
                   "Contents": "[center][font=dialogue]Griffin[/font][/center]
@@ -249,10 +298,88 @@
                   "Contents": "[center][font=dialogue]Kneazle[/font][/center]
                   [nospacing][nextposition=0,32][image=Animals/{{ModId}}_KneazleBlonde:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_KneazleBlonde:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXX Beast[/font]
-                  [nextposition=0,256][font=default]Resembles a cat; spotted, speckled or flecked fur, large ears and a lightly plumed tail, akin to that of a lion's[/font]
+                  [nextposition=0,256][font=default]Resembles a lynx; spotted, speckled or flecked fur, large ears and a lightly plumed tail, akin to that of a lion's[/font]
                   [nextposition=0,352][font=default]Notably intelligent and independent[/font]
                   [nextposition=0,384][font=default]Notably capable of detecting untrustworthy individuals, and can turn aggressive to them[/font]
                   [nextposition=0,448][font=default]Capable of guarding homes, and warding out certain pests[/font]"
+                },
+                {
+                  "Contents": "[center][font=dialogue]Mooncalf[/font][/center]
+                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Mooncalf:0,0,16,32:5][nextposition=160,32][image=Animals/{{ModId}}_Mooncalf:0,32,16,32:5][/nospacing]
+                  [nextposition=0,192][font=default]Class XX Beast[/font]
+                  [nextposition=0,256][font=default]Four spindly legs with large flat webbed feet[/font]
+                  [nextposition=0,288][font=default]Very long neck and bulging eyes[/font]
+                  [nextposition=0,320][font=default]Comes out only during full moon[/font]
+                  [nextposition=0,352][font=default]Creates fairy rings (mushrooms) on the ground as they run during a full moon[/font]"
+                },
+                {
+                  "Contents": "[center][font=dialogue]Niffler[/font][/center]
+                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_NifflerBrown:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_NifflerBrown:0,32,32,32:5][/nospacing]
+                  [nextposition=0,192][font=default]Class XXX Beast[/font]
+                  [nextposition=0,256][font=default]Resembles a mix between a mole and platypus[/font]
+                  [nextposition=0,288][font=default]Pouch contains indefinite space for objects of varying size and weight[/font]
+                  [nextposition=0,352][font=default]Notably adept at hunting for treasure[/font]
+                  [nextposition=0,384][font=default]Attracted to shiny objects and metals, and has a tendency to slip them into their pouch with ease[/font]"
+                },
+                {
+                  "Contents": "[center][font=dialogue]Occamy[/font][/center]
+                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_OccamyTeal:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_OccamyTeal:0,32,32,32:5][/nospacing]
+                  [nextposition=0,192][font=default]Class XXXX Beast[/font]
+                  [nextposition=0,256][font=default]Appearance and behaviour resemble a mix between bird and serpentine-like features[/font]
+                  [nextposition=0,320][font=default]Capable of flight[/font]
+                  [nextposition=0,352][font=default]Notably territorial[/font]
+                  [nextposition=0,384][font=default]Alters its size to fit its enclosure[/font]"
+                },
+                {
+                  "Contents": "[center][font=dialogue]Phoenix[/font][/center]
+                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Phoenix:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Phoenix:0,32,32,32:5][/nospacing]
+                  [nextposition=0,192][font=default]Class XXXX Beast[/font]
+                  [nextposition=0,256][font=default]A bird possessing and featuring qualities of fire[/font]
+                  [nextposition=0,288][font=default]Notably immortal; reborn from the ashes of its flame[/font]
+                  [nextposition=0,352][font=default]Notably intelligent[/font]
+                  [nextposition=0,384][font=default]Supposedly capable of bursting into flames for magical teleportation[/font]
+                  [nextposition=0,448][font=default]Capable of flying and lifting indefinite weightload[/font]
+                  [nextposition=0,480][font=default]Tears can rapidly heal any wound, even preventing the wounded from succumbing to certain death[/font]
+                  [nextposition=0,544][font=default]Notable of detecting beings in peril, and arriving to assist in their survival, even physically confronting the aggressor[/font]"
+                },
+                {
+                  "Contents": "[center][font=dialogue]Pygmy Puff[/font][/center]
+                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_PygmyPuffPink:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_PygmyPuffPink:0,32,32,32:5][/nospacing]
+                  [nextposition=0,192][font=default]Class XX Beast[/font]
+                  [nextposition=0,256][font=default]Resembled little fluffy balls[/font]
+                  [nextposition=0,288][font=default]Bred from puffskeins to be pets for wizards[/font]"
+                },
+                {
+                  "Contents": "[center][font=dialogue]Sphinx[/font][/center]
+                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Sphinx:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Sphinx:0,32,32,32:5][/nospacing]
+                  [nextposition=0,192][font=default]Class XXXX Beast[/font]
+                  [nextposition=0,256][font=default]Head of a human, and the body of a lion[/font]
+                  [nextposition=0,288][font=default]Highly intelligent[/font]
+                  [nextposition=0,320][font=default]Capable of human speech; notably spoken in rhymes[/font]
+                  [nextposition=0,384][font=default]Paws are destructive and deadly when attacking[/font]
+                  [nextposition=0,416][font=default]Adept in various aspects of riddles and puzzles[/font]
+                  [nextposition=0,448][font=default]Aggressive when their riddle is answered incorrectly[/font]
+                  [nextposition=0,512][font=default]However, correctly answering pacifies their aggression[/font]"
+                },
+                {
+                  "Contents": "[center][font=dialogue]Thestral[/font][/center]
+                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Thestral:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Thestral:0,32,32,32:5][/nospacing]
+                  [nextposition=0,192][font=default]Class XXXX Beast[/font]
+                  [nextposition=0,256][font=default]A breed of winged-horses[/font]
+                  [nextposition=0,288][font=default]Capable of flight[/font]
+                  [nextposition=0,320][font=default]Carnivorous[/font]
+                  [nextposition=0,352][font=default]Completely invisible to those who have not witnessed death and accepted its reality[/font]
+                  [nextposition=0,416][font=default]When visible, they have black skin and are skinny to the outline of their skeletal structure[/font]"
+                },
+                {
+                  "Contents": "[center][font=dialogue]Unicorn[/font][/center]
+                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_UnicornCommon:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_UnicornCommon:0,32,32,32:5][/nospacing]
+                  [nextposition=0,192][font=default]Class XXXX Beast[/font]
+                  [nextposition=0,256][font=default]Horse with a single straight horn from its forehead[/font]
+                  [nextposition=0,320][font=default]Extremely fast, and can outrun most creatures[/font]
+                  [nextposition=0,352][font=default]Preferred female humans over male humans[/font]
+                  [nextposition=0,384][font=default]Consuming unicorn blood causes the drinker to extends their life[/font]
+                  [nextposition=0,448][font=default]Consuming unicorn blood if the unicorn was harmed or killed causes the drinker to live a cursed life[/font]"
                 },
               ]
             }
