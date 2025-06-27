@@ -193,7 +193,7 @@
                 {
                   "Contents": "[center][font=dialogue]Beast Classifications[/font][/center]
                   [center][nextposition=0,64][font=default]X[/font][/center]
-                  [center][nextposition=0,96][font=default]prosaic[/font][/center]
+                  [center][nextposition=0,96][font=default]prosaic; not interesting[/font][/center]
                   [center][nextposition=0,160][font=default]XX[/font][/center]
                   [center][nextposition=0,192][font=default]harmless; can be domesticated[/font][/center]
                   [center][nextposition=0,256][font=default]XXX[/font][/center]
@@ -204,6 +204,27 @@
                   [center][nextposition=0,480][font=default]restricted; do not approach or handle without qualified authorization[/font][/center]"
                 },
                 {
+                  "Id": "Abraxan",
+                  "Contents": "[center][font=dialogue]Abraxan[/font][/center]
+                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Abraxan:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Abraxan:0,32,32,32:5][/nospacing]
+                  [nextposition=0,192][font=default]Class XXX Beast[/font]
+                  [nextposition=0,256][font=default]A breed of winged-horses[/font]
+                  [nextposition=0,288][font=default]Akin to a palomino horse[/font]
+                  [nextposition=0,320][font=default]Enjoys drinking single-malt whiskey[/font]
+                  [nextposition=0,352][font=default]Extremely powerful; most powerful among winged-horse breeds[/font]",
+                  "Condition": "PLAYER_HAS_MAIL Any Abraxan1 Any",
+                },
+                {
+                  "Id": "Bicorn",
+                  "Contents": "[center][font=dialogue]Bicorn[/font][/center]
+                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Bicorn:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Bicorn:0,32,32,32:5][/nospacing]
+                  [nextposition=0,192][font=default]Class XXX Beast[/font]
+                  [nextposition=0,256][font=default]Notable for possessing two horns[/font]
+                  [nextposition=0,288][font=default]Aggressive disposition[/font]",
+                  "Condition": "PLAYER_HAS_MAIL Any Bicorn1 Any",
+                },
+                {
+                  "Id": "Bowtruckle",
                   "Contents": "[center][font=dialogue]Bowtruckle[/font][/center]
                   [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Bowtruckle:0,0,16,16:10][nextposition=160,32][image=Animals/{{ModId}}_Bowtruckle:0,16,16,16:10][/nospacing]
                   [nextposition=0,192][font=default]Class X Beast[/font]
@@ -212,25 +233,11 @@
                   [nextposition=0,320][font=default]Enjoys feeding on small insects and soft eggs[/font]
                   [nextposition=0,352][font=default]Dexterous and can learn to lockpick[/font]
                   [nextposition=0,384][font=default]Adept at dodging most types of charms[/font]
-                  [nextposition=0,416][font=default]Can gouge eyes when threatened[/font]"
+                  [nextposition=0,416][font=default]Can gouge eyes when threatened[/font]",
+                  "Condition": "ANY \"PLAYER_HAS_MAIL Any Bowtruckle1 Any\" \"PLAYER_HAS_MAIL Any BowtruckleBlue1 Any\" \"PLAYER_HAS_MAIL Any BowtruckleBrown1 Any\" \"PLAYER_HAS_MAIL Any BowtruckleBrownLeaf1 Any\" \"PLAYER_HAS_MAIL Any BowtruckleGreen1 Any\"",
                 },
                 {
-                  "Contents": "[center][font=dialogue]Abraxan[/font][/center]
-                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Abraxan:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Abraxan:0,32,32,32:5][/nospacing]
-                  [nextposition=0,192][font=default]Class XXX Beast[/font]
-                  [nextposition=0,256][font=default]A breed of winged-horses[/font]
-                  [nextposition=0,288][font=default]Akin to a palomino horse[/font]
-                  [nextposition=0,320][font=default]Enjoys drinking single-malt whiskey[/font]
-                  [nextposition=0,352][font=default]Extremely powerful; most powerful among winged-horse breeds[/font]"
-                },
-                {
-                  "Contents": "[center][font=dialogue]Bicorn[/font][/center]
-                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Bicorn:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Bicorn:0,32,32,32:5][/nospacing]
-                  [nextposition=0,192][font=default]Class XXX Beast[/font]
-                  [nextposition=0,256][font=default]Notable for possessing two horns[/font]
-                  [nextposition=0,288][font=default]Aggressive disposition[/font]"
-                },
-                {
+                  "Id": "Crup",
                   "Contents": "[center][font=dialogue]Crup[/font][/center]
                   [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Crup:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Crup:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXX Beast[/font]
@@ -239,24 +246,30 @@
                   [nextposition=0,320][font=default]As per British wizarding law, owners must removed its forked tail to be inconspicious to muggles[/font]
                   [nextposition=0,416][font=default]Destructive bite strength[/font]
                   [nextposition=0,448][font=default]Loyal to wizards, but extremely ferocious towards muggles[/font]
-                  [nextposition=0,512][font=default]Keep muggles out of sight and smell from crups[/font]"
+                  [nextposition=0,512][font=default]Keep muggles out of sight and smell from crups[/font]",
+                  "Condition": "ANY \"PLAYER_HAS_MAIL Any Crup1 Any\" \"PLAYER_HAS_MAIL Any CrupBrown1 Any\" \"PLAYER_HAS_MAIL Any CrupGrey1 Any\"",
                 },
                 {
+                  "Id": "Dragon Toad",
                   "Contents": "[center][font=dialogue]Dragon Toad[/font][/center]
                   [nospacing][nextposition=0,32][image=Animals/{{ModId}}_DragonToadOrange:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_DragonToadOrange:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class X Beast[/font]
-                  [nextposition=0,256][font=default]A toad resembling qualities of a dragon: belly, head, and back were covered with dragon-like scales and spikes[/font]"
+                  [nextposition=0,256][font=default]A toad resembling qualities of a dragon: belly, head, and back were covered with dragon-like scales and spikes[/font]",
+                  "Condition": "ANY \"PLAYER_HAS_MAIL Any DragonToadOrange1 Any\" \"PLAYER_HAS_MAIL Any DragonToadRed1 Any\" \"PLAYER_HAS_MAIL Any DragonToadYellow1 Any\"",
                 },
                 {
+                  "Id": "Fire Crab",
                   "Contents": "[center][font=dialogue]Fire Crab[/font][/center]
                   [nospacing][nextposition=0,32][image=Animals/{{ModId}}_FireCrabDiamond:0,0,16,24:7][nextposition=160,32][image=Animals/{{ModId}}_FireCrabDiamond:16,0,16,24:7][/nospacing]
                   [nextposition=0,208][font=default]Class XXX Beast[/font]
                   [nextposition=0,256][font=default]Resembles a mix between a tortose and crab[/font]
                   [nextposition=0,288][font=default]Shell is embedded with gemstones[/font]
                   [nextposition=0,320][font=default]Can shoot flames from its tail[/font]
-                  [nextposition=0,352][font=default]Poached by wizards for its shell to used as a cauldron, and poached by muggles for its gemstones[/font]"
+                  [nextposition=0,352][font=default]Poached by wizards for its shell to used as a cauldron, and poached by muggles for its gemstones[/font]",
+                  "Condition": "ANY \"PLAYER_HAS_MAIL Any FireCrabAmethyst1 Any\" \"PLAYER_HAS_MAIL Any FireCrabAquamarine1 Any\" \"PLAYER_HAS_MAIL Any FireCrabDiamond1 Any\" \"PLAYER_HAS_MAIL Any FireCrabEmerald1 Any\" \"PLAYER_HAS_MAIL Any FireCrabRuby1 Any\" \"PLAYER_HAS_MAIL Any FireCrabTopaz1 Any\"",
                 },
                 {
+                  "Id": "Fwooper",
                   "Contents": "[center][font=dialogue]Fwooper[/font][/center]
                   [nospacing][nextposition=0,32][image=Animals/{{ModId}}_FwooperPink:0,0,16,16:10][nextposition=160,32][image=Animals/{{ModId}}_FwooperPink:0,16,16,16:10][/nospacing]
                   [nextposition=0,192][font=default]Class XXX Beast[/font]
@@ -264,17 +277,21 @@
                   [nextposition=0,288][font=default]Feathers can be one of four distinct colors; other colors are possible, but rare[/font]
                   [nextposition=0,352][font=default]Can spread its feathers to court another fwooper[/font]
                   [nextposition=0,384][font=default]Voices are high-pitched, which can cause insanity to listeners[/font]
-                  [nextposition=0,448][font=default]Silencing charms are recommended when encountering a fwooper[/font]"
+                  [nextposition=0,448][font=default]Silencing charms are recommended when encountering a fwooper[/font]",
+                  "Condition": "ANY \"PLAYER_HAS_MAIL Any FwooperBlue1 Any\" \"PLAYER_HAS_MAIL Any FwooperGreen1 Any\" \"PLAYER_HAS_MAIL Any FwooperPink1 Any\" \"PLAYER_HAS_MAIL Any FwooperShiny1 Any\" \"PLAYER_HAS_MAIL Any FwooperYellow1 Any\"",
                 },
                 {
+                  "Id": "Granian",
                   "Contents": "[center][font=dialogue]Granian[/font][/center]
                   [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Granian:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Granian:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXX Beast[/font]
                   [nextposition=0,256][font=default]A breed of winged-horses[/font]
                   [nextposition=0,288][font=default]Greyish in color[/font]
-                  [nextposition=0,320][font=default]Fastest among winged-horses[/font]"
+                  [nextposition=0,320][font=default]Fastest among winged-horses[/font]",
+                  "Condition": "PLAYER_HAS_MAIL Any Granian1 Any",
                 },
                 {
+                  "Id": "Griffin",
                   "Contents": "[center][font=dialogue]Griffin[/font][/center]
                   [nospacing][nextposition=0,32][image=Animals/{{ModId}}_GriffinBrown:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_GriffinBrown:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXXX Beast[/font]
@@ -282,9 +299,11 @@
                   [nextposition=0,320][font=default]Main diet was raw meat[/font]
                   [nextposition=0,352][font=default]Capable of flight[/font]
                   [nextposition=0,384][font=default]Known to guard anything from gold to garden plants[/font]
-                  [nextposition=0,448][font=default]Can become distraught when not guarding anything[/font]"
+                  [nextposition=0,448][font=default]Can become distraught when not guarding anything[/font]",
+                  "Condition": "ANY \"PLAYER_HAS_MAIL Any GriffinBrown1 Any\" \"PLAYER_HAS_MAIL Any GriffinGold1 Any\" \"PLAYER_HAS_MAIL Any GriffinWhite1 Any\"",
                 },
                 {
+                  "Id": "Hippogriff",
                   "Contents": "[center][font=dialogue]Hippogriff[/font][/center]
                   [nospacing][nextposition=0,32][image=Animals/{{ModId}}_HippogriffGrey:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_HippogriffGrey:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXX Beast[/font]
@@ -292,45 +311,55 @@
                   [nextposition=0,320][font=default]Capable of flight[/font]
                   [nextposition=0,352][font=default]Diet consisted mainly of insects, birds, and small mammals[/font]
                   [nextposition=0,416][font=default]Proud creatures; bow to hippogriffs to show respect, and they may bow in return before one should approach or mount[/font]
-                  [nextposition=0,512][font=default]Dislikes when feathers are plucked[/font]"
+                  [nextposition=0,512][font=default]Dislikes when feathers are plucked[/font]",
+                  "Condition": "ANY \"PLAYER_HAS_MAIL Any HippogriffBlack1 Any\" \"PLAYER_HAS_MAIL Any HippogriffBrown1 Any\" \"PLAYER_HAS_MAIL Any HippogriffGrey1 Any\" \"PLAYER_HAS_MAIL Any HippogriffRed1 Any\" \"PLAYER_HAS_MAIL Any HippogriffWhite1 Any\"",
                 },
                 {
+                  "Id": "Kneazle",
                   "Contents": "[center][font=dialogue]Kneazle[/font][/center]
                   [nospacing][nextposition=0,32][image=Animals/{{ModId}}_KneazleBlonde:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_KneazleBlonde:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXX Beast[/font]
                   [nextposition=0,256][font=default]Resembles a lynx; spotted, speckled or flecked fur, large ears and a lightly plumed tail, akin to that of a lion's[/font]
                   [nextposition=0,352][font=default]Notably intelligent and independent[/font]
                   [nextposition=0,384][font=default]Notably capable of detecting untrustworthy individuals, and can turn aggressive to them[/font]
-                  [nextposition=0,448][font=default]Capable of guarding homes, and warding out certain pests[/font]"
+                  [nextposition=0,448][font=default]Capable of guarding homes, and warding out certain pests[/font]",
+                  "Condition": "ANY \"PLAYER_HAS_MAIL Any KneazleBlonde1 Any\" \"PLAYER_HAS_MAIL Any KneazleBrown1 Any\" \"PLAYER_HAS_MAIL Any KneazleGrey1 Any\"",
                 },
                 {
+                  "Id": "Mooncalf",
                   "Contents": "[center][font=dialogue]Mooncalf[/font][/center]
                   [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Mooncalf:0,0,16,32:5][nextposition=160,32][image=Animals/{{ModId}}_Mooncalf:0,32,16,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XX Beast[/font]
                   [nextposition=0,256][font=default]Four spindly legs with large flat webbed feet[/font]
                   [nextposition=0,288][font=default]Very long neck and bulging eyes[/font]
                   [nextposition=0,320][font=default]Comes out only during full moon[/font]
-                  [nextposition=0,352][font=default]Creates fairy rings (mushrooms) on the ground as they run during a full moon[/font]"
+                  [nextposition=0,352][font=default]Creates fairy rings (mushrooms) on the ground as they run during a full moon[/font]",
+                  "Condition": "ANY \"PLAYER_HAS_MAIL Any Mooncalf1 Any\" \"PLAYER_HAS_MAIL Any MooncalfBlue1 Any\" \"PLAYER_HAS_MAIL Any MooncalfOrange1 Any\" \"PLAYER_HAS_MAIL Any MooncalfYellow1 Any\"",
                 },
                 {
+                  "Id": "Niffler",
                   "Contents": "[center][font=dialogue]Niffler[/font][/center]
                   [nospacing][nextposition=0,32][image=Animals/{{ModId}}_NifflerBrown:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_NifflerBrown:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXX Beast[/font]
                   [nextposition=0,256][font=default]Resembles a mix between a mole and platypus[/font]
                   [nextposition=0,288][font=default]Pouch contains indefinite space for objects of varying size and weight[/font]
                   [nextposition=0,352][font=default]Notably adept at hunting for treasure[/font]
-                  [nextposition=0,384][font=default]Attracted to shiny objects and metals, and has a tendency to slip them into their pouch with ease[/font]"
+                  [nextposition=0,384][font=default]Attracted to shiny objects and metals, and has a tendency to slip them into their pouch with ease[/font]",
+                  "Condition": "ANY \"PLAYER_HAS_MAIL Any NifflerBlack1 Any\" \"PLAYER_HAS_MAIL Any NifflerBrown1 Any\" \"PLAYER_HAS_MAIL Any NifflerWhite1 Any\"",
                 },
                 {
+                  "Id": "Occamy",
                   "Contents": "[center][font=dialogue]Occamy[/font][/center]
                   [nospacing][nextposition=0,32][image=Animals/{{ModId}}_OccamyTeal:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_OccamyTeal:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXXX Beast[/font]
                   [nextposition=0,256][font=default]Appearance and behaviour resemble a mix between bird and serpentine-like features[/font]
                   [nextposition=0,320][font=default]Capable of flight[/font]
                   [nextposition=0,352][font=default]Notably territorial[/font]
-                  [nextposition=0,384][font=default]Alters its size to fit its enclosure[/font]"
+                  [nextposition=0,384][font=default]Alters its size to fit its enclosure[/font]",
+                  "Condition": "ANY \"PLAYER_HAS_MAIL Any OccamyBlue1 Any\" \"PLAYER_HAS_MAIL Any OccamyTeal1 Any\"",
                 },
                 {
+                  "Id": "Phoenix",
                   "Contents": "[center][font=dialogue]Phoenix[/font][/center]
                   [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Phoenix:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Phoenix:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXXX Beast[/font]
@@ -340,16 +369,20 @@
                   [nextposition=0,384][font=default]Supposedly capable of bursting into flames for magical teleportation[/font]
                   [nextposition=0,448][font=default]Capable of flying and lifting indefinite weightload[/font]
                   [nextposition=0,480][font=default]Tears can rapidly heal any wound, even preventing the wounded from succumbing to certain death[/font]
-                  [nextposition=0,544][font=default]Notable of detecting beings in peril, and arriving to assist in their survival, even physically confronting the aggressor[/font]"
+                  [nextposition=0,544][font=default]Notable of detecting beings in peril, and arriving to assist in their survival, even physically confronting the aggressor[/font]",
+                  "Condition": "PLAYER_HAS_MAIL Any Phoenix1 Any",
                 },
                 {
+                  "Id": "Pygmy Puff",
                   "Contents": "[center][font=dialogue]Pygmy Puff[/font][/center]
                   [nospacing][nextposition=0,32][image=Animals/{{ModId}}_PygmyPuffPink:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_PygmyPuffPink:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XX Beast[/font]
                   [nextposition=0,256][font=default]Resembled little fluffy balls[/font]
-                  [nextposition=0,288][font=default]Bred from puffskeins to be pets for wizards[/font]"
+                  [nextposition=0,288][font=default]Bred from puffskeins to be pets for wizards[/font]",
+                  "Condition": "ANY \"PLAYER_HAS_MAIL Any PygmyPuffPink1 Any\" \"PLAYER_HAS_MAIL Any PygmyPuffPurple1 Any\"",
                 },
                 {
+                  "Id": "Sphinx",
                   "Contents": "[center][font=dialogue]Sphinx[/font][/center]
                   [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Sphinx:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Sphinx:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXXX Beast[/font]
@@ -362,6 +395,7 @@
                   [nextposition=0,512][font=default]However, correctly answering pacifies their aggression[/font]"
                 },
                 {
+                  "Id": "Thestral",
                   "Contents": "[center][font=dialogue]Thestral[/font][/center]
                   [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Thestral:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Thestral:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXXX Beast[/font]
@@ -369,9 +403,11 @@
                   [nextposition=0,288][font=default]Capable of flight[/font]
                   [nextposition=0,320][font=default]Carnivorous[/font]
                   [nextposition=0,352][font=default]Completely invisible to those who have not witnessed death and accepted its reality[/font]
-                  [nextposition=0,416][font=default]When visible, they have black skin and are skinny to the outline of their skeletal structure[/font]"
+                  [nextposition=0,416][font=default]When visible, they have black skin and are skinny to the outline of their skeletal structure[/font]",
+                  "Condition": "PLAYER_HAS_MAIL Any Thestral1 Any",
                 },
                 {
+                  "Id": "Unicorn",
                   "Contents": "[center][font=dialogue]Unicorn[/font][/center]
                   [nospacing][nextposition=0,32][image=Animals/{{ModId}}_UnicornCommon:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_UnicornCommon:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXXX Beast[/font]
@@ -379,7 +415,8 @@
                   [nextposition=0,320][font=default]Extremely fast, and can outrun most creatures[/font]
                   [nextposition=0,352][font=default]Preferred female humans over male humans[/font]
                   [nextposition=0,384][font=default]Consuming unicorn blood causes the drinker to extends their life[/font]
-                  [nextposition=0,448][font=default]Consuming unicorn blood if the unicorn was harmed or killed causes the drinker to live a cursed life[/font]"
+                  [nextposition=0,448][font=default]Consuming unicorn blood if the unicorn was harmed or killed causes the drinker to live a cursed life[/font]",
+                  "Condition": "ANY \"PLAYER_HAS_MAIL Any Unicorn1 Any\" \"PLAYER_HAS_MAIL Any UnicornCommon1 Any\" \"PLAYER_HAS_MAIL Any UnicornGlowing1 Any\" \"PLAYER_HAS_MAIL Any UnicornGolden1 Any\" \"PLAYER_HAS_MAIL Any UnicornRainbow1 Any\" \"PLAYER_HAS_MAIL Any UnicornWhite1 Any\"",
                 },
               ]
             }
