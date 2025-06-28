@@ -304,6 +304,54 @@
           }
         }
       ]
+    },
+    {
+      "LogName": "Hogwarts South Wing Boat Animation",
+      "Action": "EditData",
+      "Target": "DMT/Animations",
+      "Entries": {
+        "{{ModId}}.BoatAnimation": [
+          {
+            "Name": "Boat",
+            "Texture": "Minigames\\{{season}}_boatJourneyMap",
+            "SourceRect": {
+              "X": 640,
+              "Y": 352,
+              "Width": 32,
+              "Height": 32
+            },
+            "Position": {
+              "X": 2816,
+              "Y": 1536
+            },
+            "Scale": 4,
+            "Motion": {
+              "X": 0,
+              "Y": -1
+            },
+            "Length": 1,
+            "LayerDepth": 0.1395,
+            "Loops": 130
+          }
+        ]
+      }
+    },
+    {
+      "LogName": "Hogwarts South Wing Boat Animation Trigger",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSouthWing",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 43,
+            "Y": 20
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/animation_On": "{{ModId}}.BoatAnimation,Boat"
+          }
+        }
+      ]
     }
   ]
 }
