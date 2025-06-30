@@ -1,117 +1,105 @@
 {
   "Changes": [
     {
-      "LogName": "Hogwarts Expansion Load Abraxan",
+      "LogName": "Hogwarts Expansion Load Fantastic Beasts Creatures",
       "Action": "Load",
-      "Target": "Animals/{{ModId}}_Abraxan",
-      "FromFile": "assets/Creatures/Abraxan.png"
-    },
-    {
-      "LogName": "Hogwarts Expansion Load Bicorn",
-      "Action": "Load",
-      "Target": "Animals/{{ModId}}_Bicorn",
-      "FromFile": "assets/Creatures/Bicorn.png"
-    },
-    {
-      "LogName": "Hogwarts Expansion Load Bowtruckle",
-      "Action": "Load",
-      "Target": "Animals/{{ModId}}_Bowtruckle",
-      "FromFile": "assets/Creatures/Bowtruckle.png"
+      "Target": "{{ModId}}/Abraxan, {{ModId}}/Bicorn, {{ModId}}/Bowtruckle, {{ModId}}/BowtruckleBlue, {{ModId}}/BowtruckleBrown, {{ModId}}/BowtruckleBrownLeaf, {{ModId}}/BowtruckleGreen",
+      "FromFile": "assets/Creatures/{{TargetWithoutPath}}.png"
     },
     {
       "LogName": "Hogwarts Expansion Load Crup",
       "Action": "Load",
-      "Target": "Animals/{{ModId}}_Crup",
+      "Target": "{{ModId}}/Crup",
       "FromFile": "assets/Creatures/Crup.png"
     },
     {
       "LogName": "Hogwarts Expansion Load Dragon Toad Orange",
       "Action": "Load",
-      "Target": "Animals/{{ModId}}_DragonToadOrange",
+      "Target": "{{ModId}}/DragonToadOrange",
       "FromFile": "assets/Creatures/DragonToadOrange.png"
     },
     {
       "LogName": "Hogwarts Expansion Load Fire Crab Diamond",
       "Action": "Load",
-      "Target": "Animals/{{ModId}}_FireCrabDiamond",
+      "Target": "{{ModId}}/FireCrabDiamond",
       "FromFile": "assets/Creatures/FireCrabDiamond.png"
     },
     {
       "LogName": "Hogwarts Expansion Load Fwooper Pink",
       "Action": "Load",
-      "Target": "Animals/{{ModId}}_FwooperPink",
+      "Target": "{{ModId}}/FwooperPink",
       "FromFile": "assets/Creatures/FwooperPink.png"
     },
     {
       "LogName": "Hogwarts Expansion Load Granian",
       "Action": "Load",
-      "Target": "Animals/{{ModId}}_Granian",
+      "Target": "{{ModId}}/Granian",
       "FromFile": "assets/Creatures/Granian.png"
     },
     {
       "LogName": "Hogwarts Expansion Load Griffin Brown",
       "Action": "Load",
-      "Target": "Animals/{{ModId}}_GriffinBrown",
+      "Target": "{{ModId}}/GriffinBrown",
       "FromFile": "assets/Creatures/GriffinBrown.png"
     },
     {
       "LogName": "Hogwarts Expansion Load Hippogriff Grey",
       "Action": "Load",
-      "Target": "Animals/{{ModId}}_HippogriffGrey",
+      "Target": "{{ModId}}/HippogriffGrey",
       "FromFile": "assets/Creatures/HippogriffGrey.png"
     },
     {
       "LogName": "Hogwarts Expansion Load Kneazle Blonde",
       "Action": "Load",
-      "Target": "Animals/{{ModId}}_KneazleBlonde",
+      "Target": "{{ModId}}/KneazleBlonde",
       "FromFile": "assets/Creatures/KneazleBlonde.png"
     },
     {
       "LogName": "Hogwarts Expansion Load Mooncalf Blonde",
       "Action": "Load",
-      "Target": "Animals/{{ModId}}_Mooncalf",
+      "Target": "{{ModId}}/Mooncalf",
       "FromFile": "assets/Creatures/Mooncalf.png"
     },
     {
       "LogName": "Hogwarts Expansion Load Niffler Brown",
       "Action": "Load",
-      "Target": "Animals/{{ModId}}_NifflerBrown",
+      "Target": "{{ModId}}/NifflerBrown",
       "FromFile": "assets/Creatures/NifflerBrown.png"
     },
     {
       "LogName": "Hogwarts Expansion Load Occamy Teal",
       "Action": "Load",
-      "Target": "Animals/{{ModId}}_OccamyTeal",
+      "Target": "{{ModId}}/OccamyTeal",
       "FromFile": "assets/Creatures/OccamyTeal.png"
     },
     {
       "LogName": "Hogwarts Expansion Load Phoenix",
       "Action": "Load",
-      "Target": "Animals/{{ModId}}_Phoenix",
+      "Target": "{{ModId}}/Phoenix",
       "FromFile": "assets/Creatures/Phoenix.png"
     },
     {
       "LogName": "Hogwarts Expansion Load Pygmy Puff Pink",
       "Action": "Load",
-      "Target": "Animals/{{ModId}}_PygmyPuffPink",
+      "Target": "{{ModId}}/PygmyPuffPink",
       "FromFile": "assets/Creatures/PygmyPuffPink.png"
     },
     {
       "LogName": "Hogwarts Expansion Load Sphinx",
       "Action": "Load",
-      "Target": "Animals/{{ModId}}_Sphinx",
+      "Target": "{{ModId}}/Sphinx",
       "FromFile": "assets/Creatures/Sphinx.png"
     },
     {
       "LogName": "Hogwarts Expansion Load Thestral",
       "Action": "Load",
-      "Target": "Animals/{{ModId}}_Thestral",
+      "Target": "{{ModId}}/Thestral",
       "FromFile": "assets/Creatures/Thestral.png"
     },
     {
       "LogName": "Hogwarts Expansion Load Unicorn Common",
       "Action": "Load",
-      "Target": "Animals/{{ModId}}_UnicornCommon",
+      "Target": "{{ModId}}/UnicornCommon",
       "FromFile": "assets/Creatures/UnicornCommon.png"
     },
     {
@@ -206,40 +194,52 @@
                 {
                   "Id": "Abraxan",
                   "Contents": "[center][font=dialogue]Abraxan[/font][/center]
-                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Abraxan:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Abraxan:0,32,32,32:5][/nospacing]
+                  [nospacing][nextposition=0,32][image={{ModId}}/Abraxan:0,0,32,32:5][nextposition=160,32][image={{ModId}}/Abraxan:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXX Beast[/font]
                   [nextposition=0,256][font=default]A breed of winged-horses[/font]
                   [nextposition=0,288][font=default]Akin to a palomino horse[/font]
                   [nextposition=0,320][font=default]Enjoys drinking single-malt whiskey[/font]
-                  [nextposition=0,352][font=default]Extremely powerful; most powerful among winged-horse breeds[/font]",
-                  "Condition": "PLAYER_HAS_MAIL Any Abraxan1 Any",
+                  [nextposition=0,352][font=default]Extremely powerful; most powerful among winged-horse breeds[/font]
+                  [nextposition=0,448][center][font=dialogue]Variants[/font][/center]
+                  [nextposition=0,512][font=default]None known[/font]",
+                  /*
+                  "Condition": "PLAYER_HAS_MAIL Any Abraxan1 Any"*/
                 },
                 {
                   "Id": "Bicorn",
                   "Contents": "[center][font=dialogue]Bicorn[/font][/center]
-                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Bicorn:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Bicorn:0,32,32,32:5][/nospacing]
+                  [nospacing][nextposition=0,32][image={{ModId}}/Bicorn:0,0,32,32:5][nextposition=160,32][image={{ModId}}/Bicorn:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXX Beast[/font]
                   [nextposition=0,256][font=default]Notable for possessing two horns[/font]
-                  [nextposition=0,288][font=default]Aggressive disposition[/font]",
-                  "Condition": "PLAYER_HAS_MAIL Any Bicorn1 Any",
+                  [nextposition=0,288][font=default]Aggressive disposition[/font]
+                  [nextposition=0,352][center][font=dialogue]Variants[/font][/center]
+                  [nextposition=0,416][font=default]None known[/font]",
+                  /*
+                  "Condition": "PLAYER_HAS_MAIL Any Bicorn1 Any"*/
                 },
                 {
                   "Id": "Bowtruckle",
                   "Contents": "[center][font=dialogue]Bowtruckle[/font][/center]
-                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Bowtruckle:0,0,16,16:10][nextposition=160,32][image=Animals/{{ModId}}_Bowtruckle:0,16,16,16:10][/nospacing]
+                  [nospacing][nextposition=0,32][image={{ModId}}/Bowtruckle:0,0,16,16:10][nextposition=160,32][image={{ModId}}/Bowtruckle:0,16,16,16:10][/nospacing]
                   [nextposition=0,192][font=default]Class X Beast[/font]
                   [nextposition=0,256][font=default]Resembles small plants[/font]
                   [nextposition=0,288][font=default]Dwells on and around trees of magic potential[/font]
                   [nextposition=0,320][font=default]Enjoys feeding on small insects and soft eggs[/font]
                   [nextposition=0,352][font=default]Dexterous and can learn to lockpick[/font]
                   [nextposition=0,384][font=default]Adept at dodging most types of charms[/font]
-                  [nextposition=0,416][font=default]Can gouge eyes when threatened[/font]",
-                  "Condition": "ANY \"PLAYER_HAS_MAIL Any Bowtruckle1 Any\" \"PLAYER_HAS_MAIL Any BowtruckleBlue1 Any\" \"PLAYER_HAS_MAIL Any BowtruckleBrown1 Any\" \"PLAYER_HAS_MAIL Any BowtruckleBrownLeaf1 Any\" \"PLAYER_HAS_MAIL Any BowtruckleGreen1 Any\"",
+                  [nextposition=0,416][font=default]Can gouge eyes when threatened[/font]
+                  [nextposition=0,480][center][font=dialogue]Variants[/font][/center]
+                  [nospacing][nextposition=0,512][image={{ModId}}/BowtruckleBlue:0,0,16,16:10][nextposition=160,512][image={{ModId}}/BowtruckleBlue:0,16,16,16:10][/nospacing]
+                  [nospacing][nextposition=0,672][image={{ModId}}/BowtruckleBrown:0,0,16,16:10][nextposition=160,672][image={{ModId}}/BowtruckleBrown:0,16,16,16:10][/nospacing]
+                  [nospacing][nextposition=0,832][image={{ModId}}/BowtruckleBrownLeaf:0,0,16,16:10][nextposition=160,832][image={{ModId}}/BowtruckleBrownLeaf:0,16,16,16:10][/nospacing]
+                  [nospacing][nextposition=0,992][image={{ModId}}/BowtruckleGreen:0,0,16,16:10][nextposition=160,992][image={{ModId}}/BowtruckleGreen:0,16,16,16:10][/nospacing]",
+                  /*
+                  "Condition": "ANY \"PLAYER_HAS_MAIL Any Bowtruckle1 Any\" \"PLAYER_HAS_MAIL Any BowtruckleBlue1 Any\" \"PLAYER_HAS_MAIL Any BowtruckleBrown1 Any\" \"PLAYER_HAS_MAIL Any BowtruckleBrownLeaf1 Any\" \"PLAYER_HAS_MAIL Any BowtruckleGreen1 Any\"",*/
                 },
                 {
                   "Id": "Crup",
                   "Contents": "[center][font=dialogue]Crup[/font][/center]
-                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Crup:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Crup:0,32,32,32:5][/nospacing]
+                  [nospacing][nextposition=0,32][image={{ModId}}/Crup:0,0,32,32:5][nextposition=160,32][image={{ModId}}/Crup:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXX Beast[/font]
                   [nextposition=0,256][font=default]Resembles a Jack Russell terrier[/font]
                   [nextposition=0,288][font=default]Tail is forked into two[/font]
@@ -252,7 +252,7 @@
                 {
                   "Id": "Dragon Toad",
                   "Contents": "[center][font=dialogue]Dragon Toad[/font][/center]
-                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_DragonToadOrange:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_DragonToadOrange:0,32,32,32:5][/nospacing]
+                  [nospacing][nextposition=0,32][image={{ModId}}/DragonToadOrange:0,0,32,32:5][nextposition=160,32][image={{ModId}}/DragonToadOrange:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class X Beast[/font]
                   [nextposition=0,256][font=default]A toad resembling qualities of a dragon: belly, head, and back were covered with dragon-like scales and spikes[/font]",
                   "Condition": "ANY \"PLAYER_HAS_MAIL Any DragonToadOrange1 Any\" \"PLAYER_HAS_MAIL Any DragonToadRed1 Any\" \"PLAYER_HAS_MAIL Any DragonToadYellow1 Any\"",
@@ -260,7 +260,7 @@
                 {
                   "Id": "Fire Crab",
                   "Contents": "[center][font=dialogue]Fire Crab[/font][/center]
-                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_FireCrabDiamond:0,0,16,24:7][nextposition=160,32][image=Animals/{{ModId}}_FireCrabDiamond:16,0,16,24:7][/nospacing]
+                  [nospacing][nextposition=0,32][image={{ModId}}/FireCrabDiamond:0,0,16,24:7][nextposition=160,32][image={{ModId}}/FireCrabDiamond:16,0,16,24:7][/nospacing]
                   [nextposition=0,208][font=default]Class XXX Beast[/font]
                   [nextposition=0,256][font=default]Resembles a mix between a tortose and crab[/font]
                   [nextposition=0,288][font=default]Shell is embedded with gemstones[/font]
@@ -271,7 +271,7 @@
                 {
                   "Id": "Fwooper",
                   "Contents": "[center][font=dialogue]Fwooper[/font][/center]
-                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_FwooperPink:0,0,16,16:10][nextposition=160,32][image=Animals/{{ModId}}_FwooperPink:0,16,16,16:10][/nospacing]
+                  [nospacing][nextposition=0,32][image={{ModId}}/FwooperPink:0,0,16,16:10][nextposition=160,32][image={{ModId}}/FwooperPink:0,16,16,16:10][/nospacing]
                   [nextposition=0,192][font=default]Class XXX Beast[/font]
                   [nextposition=0,256][font=default]Resembles an owl[/font]
                   [nextposition=0,288][font=default]Feathers can be one of four distinct colors; other colors are possible, but rare[/font]
@@ -283,17 +283,17 @@
                 {
                   "Id": "Granian",
                   "Contents": "[center][font=dialogue]Granian[/font][/center]
-                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Granian:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Granian:0,32,32,32:5][/nospacing]
+                  [nospacing][nextposition=0,32][image={{ModId}}/Granian:0,0,32,32:5][nextposition=160,32][image={{ModId}}/Granian:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXX Beast[/font]
                   [nextposition=0,256][font=default]A breed of winged-horses[/font]
                   [nextposition=0,288][font=default]Greyish in color[/font]
                   [nextposition=0,320][font=default]Fastest among winged-horses[/font]",
-                  "Condition": "PLAYER_HAS_MAIL Any Granian1 Any",
+                  "Condition": "PLAYER_HAS_MAIL Any Granian1 Any"
                 },
                 {
                   "Id": "Griffin",
                   "Contents": "[center][font=dialogue]Griffin[/font][/center]
-                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_GriffinBrown:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_GriffinBrown:0,32,32,32:5][/nospacing]
+                  [nospacing][nextposition=0,32][image={{ModId}}/GriffinBrown:0,0,32,32:5][nextposition=160,32][image={{ModId}}/GriffinBrown:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXXX Beast[/font]
                   [nextposition=0,256][font=default]Front legs, wings and head of a giant eagle, and the body, hind legs, and tail of a lion[/font]
                   [nextposition=0,320][font=default]Main diet was raw meat[/font]
@@ -305,7 +305,7 @@
                 {
                   "Id": "Hippogriff",
                   "Contents": "[center][font=dialogue]Hippogriff[/font][/center]
-                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_HippogriffGrey:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_HippogriffGrey:0,32,32,32:5][/nospacing]
+                  [nospacing][nextposition=0,32][image={{ModId}}/HippogriffGrey:0,0,32,32:5][nextposition=160,32][image={{ModId}}/HippogriffGrey:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXX Beast[/font]
                   [nextposition=0,256][font=default]Front legs, wings, and head of a giant eagle and the body, hind legs and tail of a horse[/font]
                   [nextposition=0,320][font=default]Capable of flight[/font]
@@ -317,7 +317,7 @@
                 {
                   "Id": "Kneazle",
                   "Contents": "[center][font=dialogue]Kneazle[/font][/center]
-                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_KneazleBlonde:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_KneazleBlonde:0,32,32,32:5][/nospacing]
+                  [nospacing][nextposition=0,32][image={{ModId}}/KneazleBlonde:0,0,32,32:5][nextposition=160,32][image={{ModId}}/KneazleBlonde:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXX Beast[/font]
                   [nextposition=0,256][font=default]Resembles a lynx; spotted, speckled or flecked fur, large ears and a lightly plumed tail, akin to that of a lion's[/font]
                   [nextposition=0,352][font=default]Notably intelligent and independent[/font]
@@ -328,7 +328,7 @@
                 {
                   "Id": "Mooncalf",
                   "Contents": "[center][font=dialogue]Mooncalf[/font][/center]
-                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Mooncalf:0,0,16,32:5][nextposition=160,32][image=Animals/{{ModId}}_Mooncalf:0,32,16,32:5][/nospacing]
+                  [nospacing][nextposition=0,32][image={{ModId}}/Mooncalf:0,0,16,32:5][nextposition=160,32][image={{ModId}}/Mooncalf:0,32,16,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XX Beast[/font]
                   [nextposition=0,256][font=default]Four spindly legs with large flat webbed feet[/font]
                   [nextposition=0,288][font=default]Very long neck and bulging eyes[/font]
@@ -339,7 +339,7 @@
                 {
                   "Id": "Niffler",
                   "Contents": "[center][font=dialogue]Niffler[/font][/center]
-                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_NifflerBrown:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_NifflerBrown:0,32,32,32:5][/nospacing]
+                  [nospacing][nextposition=0,32][image={{ModId}}/NifflerBrown:0,0,32,32:5][nextposition=160,32][image={{ModId}}/NifflerBrown:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXX Beast[/font]
                   [nextposition=0,256][font=default]Resembles a mix between a mole and platypus[/font]
                   [nextposition=0,288][font=default]Pouch contains indefinite space for objects of varying size and weight[/font]
@@ -350,7 +350,7 @@
                 {
                   "Id": "Occamy",
                   "Contents": "[center][font=dialogue]Occamy[/font][/center]
-                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_OccamyTeal:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_OccamyTeal:0,32,32,32:5][/nospacing]
+                  [nospacing][nextposition=0,32][image={{ModId}}/OccamyTeal:0,0,32,32:5][nextposition=160,32][image={{ModId}}/OccamyTeal:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXXX Beast[/font]
                   [nextposition=0,256][font=default]Appearance and behaviour resemble a mix between bird and serpentine-like features[/font]
                   [nextposition=0,320][font=default]Capable of flight[/font]
@@ -361,7 +361,7 @@
                 {
                   "Id": "Phoenix",
                   "Contents": "[center][font=dialogue]Phoenix[/font][/center]
-                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Phoenix:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Phoenix:0,32,32,32:5][/nospacing]
+                  [nospacing][nextposition=0,32][image={{ModId}}/Phoenix:0,0,32,32:5][nextposition=160,32][image={{ModId}}/Phoenix:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXXX Beast[/font]
                   [nextposition=0,256][font=default]A bird possessing and featuring qualities of fire[/font]
                   [nextposition=0,288][font=default]Notably immortal; reborn from the ashes of its flame[/font]
@@ -370,12 +370,12 @@
                   [nextposition=0,448][font=default]Capable of flying and lifting indefinite weightload[/font]
                   [nextposition=0,480][font=default]Tears can rapidly heal any wound, even preventing the wounded from succumbing to certain death[/font]
                   [nextposition=0,544][font=default]Notable of detecting beings in peril, and arriving to assist in their survival, even physically confronting the aggressor[/font]",
-                  "Condition": "PLAYER_HAS_MAIL Any Phoenix1 Any",
+                  "Condition": "PLAYER_HAS_MAIL Any Phoenix1 Any"
                 },
                 {
                   "Id": "Pygmy Puff",
                   "Contents": "[center][font=dialogue]Pygmy Puff[/font][/center]
-                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_PygmyPuffPink:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_PygmyPuffPink:0,32,32,32:5][/nospacing]
+                  [nospacing][nextposition=0,32][image={{ModId}}/PygmyPuffPink:0,0,32,32:5][nextposition=160,32][image={{ModId}}/PygmyPuffPink:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XX Beast[/font]
                   [nextposition=0,256][font=default]Resembled little fluffy balls[/font]
                   [nextposition=0,288][font=default]Bred from puffskeins to be pets for wizards[/font]",
@@ -384,7 +384,7 @@
                 {
                   "Id": "Sphinx",
                   "Contents": "[center][font=dialogue]Sphinx[/font][/center]
-                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Sphinx:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Sphinx:0,32,32,32:5][/nospacing]
+                  [nospacing][nextposition=0,32][image={{ModId}}/Sphinx:0,0,32,32:5][nextposition=160,32][image={{ModId}}/Sphinx:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXXX Beast[/font]
                   [nextposition=0,256][font=default]Head of a human, and the body of a lion[/font]
                   [nextposition=0,288][font=default]Highly intelligent[/font]
@@ -397,19 +397,19 @@
                 {
                   "Id": "Thestral",
                   "Contents": "[center][font=dialogue]Thestral[/font][/center]
-                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_Thestral:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_Thestral:0,32,32,32:5][/nospacing]
+                  [nospacing][nextposition=0,32][image={{ModId}}/Thestral:0,0,32,32:5][nextposition=160,32][image={{ModId}}/Thestral:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXXX Beast[/font]
                   [nextposition=0,256][font=default]A breed of winged-horses[/font]
                   [nextposition=0,288][font=default]Capable of flight[/font]
                   [nextposition=0,320][font=default]Carnivorous[/font]
                   [nextposition=0,352][font=default]Completely invisible to those who have not witnessed death and accepted its reality[/font]
                   [nextposition=0,416][font=default]When visible, they have black skin and are skinny to the outline of their skeletal structure[/font]",
-                  "Condition": "PLAYER_HAS_MAIL Any Thestral1 Any",
+                  "Condition": "PLAYER_HAS_MAIL Any Thestral1 Any"
                 },
                 {
                   "Id": "Unicorn",
                   "Contents": "[center][font=dialogue]Unicorn[/font][/center]
-                  [nospacing][nextposition=0,32][image=Animals/{{ModId}}_UnicornCommon:0,0,32,32:5][nextposition=160,32][image=Animals/{{ModId}}_UnicornCommon:0,32,32,32:5][/nospacing]
+                  [nospacing][nextposition=0,32][image={{ModId}}/UnicornCommon:0,0,32,32:5][nextposition=160,32][image={{ModId}}/UnicornCommon:0,32,32,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXXX Beast[/font]
                   [nextposition=0,256][font=default]Horse with a single straight horn from its forehead[/font]
                   [nextposition=0,320][font=default]Extremely fast, and can outrun most creatures[/font]
