@@ -1,5 +1,4 @@
 {
-  "$schema": "https://smapi.io/schemas/content-patcher.json",
   "Changes": [
     {
       "LogName": "Trinket Tinker Bowtruckle Data",
@@ -10,11 +9,11 @@
           "Id": "Bowtruckle1",
           "DisplayName": "Bowtruckle",
           "Description": "These creatures love to pick locks.",
-          "Texture": "Animals/{{ModId}}_Bowtruckle",
+          "Texture": "{{ModId}}/Bowtruckle",
           "SheetIndex": 0,
           "DropsNaturally": false,
-          "CanBeReforged": true
-        },
+          "CanBeReforged": false
+        }
       }
     },
     {
@@ -25,121 +24,27 @@
         "{{ModId}}_Bowtruckle": {
           "Variants": [
             {
-              "Texture": "Animals/{{ModId}}_Bowtruckle",
+              "Texture": "{{ModId}}/Bowtruckle",
               "Width": 16,
-              "Height": 19,
-              "ShadowScale": 0
-            },
+              "Height": 16,
+              "TextureScale": 2
+            }
           ],
           "Motion": {
             "MotionClass": "Lerp",
-            "DirectionMode": "R",
-            "FrameLength": 3,
+            "DirectionMode": "DRUL",
             "Anchors": [
               {
-                "Mode": "Forage",
+                "Mode": "Owner",
                 "Range": 320
               },
               {
-                "Mode": "Crop",
+                "Mode": "Shakeable",
                 "Range": 240
-              },
-            ],
-            "AnimClips": {
-              "Idle": {
-                "FrameStart": 3,
-                "FrameLength": 1
-              },
-            },
-            "Args": {
-              "Min": 32,
-              "MoveSync": true
-            }
-          },
-          "Abilities": [
-            // level 1
-            [
-              {
-                "AbilityClass": "HarvestForage",
-                "Description": "{{i18n:Stick.AbilityDescription.1}}",
-                "Proc": "Timer",
-                "ProcTimer": 250,
-                "ProcSound": "harvest",
-                "Args": {
-                  "Range": 1,
-                },
-              },
-              {
-                "AbilityClass": "Health",
-                "Proc": "Sync",
-                "Args": {
-                  "ValueMode": "Number",
-                  "Min": 44
-                }
-              },
-            ],
-            // level 2
-            [
-              {
-                "AbilityClass": "HarvestCrop",
-                "Description": "{{i18n:Stick.AbilityDescription.2}}",
-                "Proc": "Timer",
-                "ProcTimer": 1000,
-                "ProcSound": "harvest",
-                "Args": {
-                  "Range": 0,
-                },
-              },
-              {
-                "AbilityClass": "Stamina",
-                "Proc": "Sync",
-                "Args": {
-                  "ValueMode": "Number",
-                  "Min": 44
-                }
               }
-            ],
-            // level 3
-            [
-              {
-                "AbilityClass": "HarvestForage",
-                "Description": "{{i18n:Stick.AbilityDescription.3}}",
-                "Proc": "Timer",
-                "ProcTimer": 250,
-                "ProcSound": "harvest",
-                "Args": {
-                  "Range": 1,
-                },
-              },
-              {
-                "AbilityClass": "HarvestCrop",
-                "Proc": "Timer",
-                "ProcTimer": 1000,
-                "ProcSound": "harvest",
-                "Args": {
-                  "Range": 0,
-                },
-              },
-              {
-                "AbilityClass": "Health",
-                "Proc": "Sync",
-                "Args": {
-                  "ValueMode": "Number",
-                  "Min": 44
-                }
-              },
-              {
-                "AbilityClass": "Stamina",
-                "Proc": "Sync",
-                "ProcSyncIndex": 1,
-                "Args": {
-                  "ValueMode": "Number",
-                  "Min": 44
-                }
-              }
-            ],
-          ]
-        },
+            ]
+          }
+        }
       }
     }
   ]
