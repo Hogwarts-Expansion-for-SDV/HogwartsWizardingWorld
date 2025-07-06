@@ -1,15 +1,60 @@
 {
   "Changes": [
     {
-      "LogName": "Trinket Tinker Bowtruckle Data",
+      "LogName": "Trinket Data",
       "Action": "EditData",
       "Target": "Data/Trinkets",
       "Entries": {
+        "{{ModId}}_Bicorn": {
+          "Id": "Bicorn1",
+          "DisplayName": "Bicorn",
+          "Description": "Bicorn description.",
+          "Texture": "{{ModId}}/Bicorn",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": false
+        },
         "{{ModId}}_Bowtruckle": {
           "Id": "Bowtruckle1",
           "DisplayName": "Bowtruckle",
-          "Description": "These creatures love to pick locks.",
+          "Description": "Bowtruckle description.",
           "Texture": "{{ModId}}/Bowtruckle",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": false
+        },
+        "{{ModId}}_Crup": {
+          "Id": "Crup1",
+          "DisplayName": "Crup",
+          "Description": "Crup description.",
+          "Texture": "{{ModId}}/Crup",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": false
+        },
+        "{{ModId}}_DragonToadOrange": {
+          "Id": "DragonToadOrange1",
+          "DisplayName": "Dragon Toad",
+          "Description": "Dragon Toad description.",
+          "Texture": "{{ModId}}/DragonToadOrange",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": false
+        },
+        "{{ModId}}_FireCrabAmethyst": {
+          "Id": "FireCrabAmethyst1",
+          "DisplayName": "Fire Crab",
+          "Description": "Fire Crab description.",
+          "Texture": "{{ModId}}/DragonToadOrange",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": false
+        },
+        "{{ModId}}_NifflerBrown": {
+          "Id": "NifflerBrown1",
+          "DisplayName": "Niffler",
+          "Description": "Niffler description.",
+          "Texture": "{{ModId}}/NifflerBrown",
           "SheetIndex": 0,
           "DropsNaturally": false,
           "CanBeReforged": false
@@ -17,10 +62,45 @@
       }
     },
     {
-      "LogName": "Trinket Tinker Bowtruckle Advance Data",
+      "LogName": "Trinket Tinker Data",
       "Action": "EditData",
       "Target": "mushymato.TrinketTinker/Tinker",
       "Entries": {
+        "{{ModId}}_Bicorn": {
+          "Variants": [
+            {
+              "Texture": "{{ModId}}/Bicorn",
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 6
+            }
+          ],
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "Anchors": [
+              {
+                "Mode": "Owner",
+                "Range": 320
+              }
+            ]
+          },
+          "Abilities": [
+            [
+              {
+                "AbilityClass": "Hitscan",
+                "Proc": "Timer",
+                "ProcTimer": 3000,
+                "Args": {
+                  "Min": 40,
+                  "Max": 80,
+                  "Range": 192,
+                  "Knockback": 5
+                }
+              }
+            ]
+          ]
+        },
         "{{ModId}}_Bowtruckle": {
           "Variants": [
             {
@@ -43,6 +123,127 @@
                 "Range": 240
               }
             ]
+          },
+          "Abilities": [
+            [
+              {
+                "AbilityClass": "HarvestShakeable",
+                "Proc": "Timer",
+                "ProcTimer": 500,
+                "ProcSound": "harvest",
+                "Args": {
+                  "Range": 3,
+                  "HarvestTo": "Player"
+                }
+              }
+            ]
+          ],
+        },
+        "{{ModId}}_Crup": {
+          "Variants": [
+            {
+              "Texture": "{{ModId}}/Crup",
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 4
+            }
+          ],
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "Anchors": [
+              {
+                "Mode": "Owner",
+                "Range": 320
+              }
+            ]
+          },
+          "Abilities": [
+            [
+              {
+                "AbilityClass": "HoeDirt",
+                "Proc": "Timer",
+                "ProcTimer": 10000,
+                "Args": {
+                  "Range": 2,
+                  "Watering": "{{Random: true, false|key={{time}}}}"
+                }
+              }
+            ]
+          ]
+        },
+        "{{ModId}}_DragonToadOrange": {
+          "Variants": [
+            {
+              "Texture": "{{ModId}}/DragonToadOrange",
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2
+            }
+          ],
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "Anchors": [
+              {
+                "Mode": "Owner",
+                "Range": 320
+              }
+            ]
+          },
+          "Abilities": [
+            [
+              {
+                "AbilityClass": "Projectile",
+                "Proc": "Timer",
+                "ProcTimer": 1000,
+                "Args": {
+                  "SpriteIndex": 10,
+                  "Min": 5,
+                  "Max": 40,
+                  "Range": 192,
+                  "Knockback": 1
+                }
+              }
+            ]
+          ]
+        },
+        "{{ModId}}_NifflerBrown": {
+          "Variants": [
+            {
+              "Texture": "{{ModId}}/NifflerBrown",
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2
+            }
+          ],
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "Anchors": [
+              {
+                "Mode": "Owner",
+                "Range": 320
+              }
+            ]
+          },
+          "Abilities": [
+            [
+              {
+                "AbilityClass": "HarvestForage",
+                "Proc": "Timer",
+                "ProcTimer": 500,
+                "ProcSound": "harvest",
+                "Args": {
+                  "Range": 10,
+                  "HarvestTo": "TinkerInventory",
+                  "Filters": "color_gold"
+                }
+              }
+            ]
+          ],
+          "Inventory": {
+            "Capacity": 9
           }
         }
       }
