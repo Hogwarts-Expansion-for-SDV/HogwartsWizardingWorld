@@ -45,7 +45,43 @@
           "Id": "FireCrabAmethyst1",
           "DisplayName": "Fire Crab",
           "Description": "Fire Crab description.",
-          "Texture": "{{ModId}}/DragonToadOrange",
+          "Texture": "{{ModId}}/FireCrabAmethyst",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": false
+        },
+        "{{ModId}}_FwooperBabyBlue": {
+          "Id": "FwooperBabyBlue1",
+          "DisplayName": "Fwooper",
+          "Description": "Fwooper description.",
+          "Texture": "{{ModId}}/FwooperBabyBlue",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": false
+        },
+        "{{ModId}}_FwooperBlue": {
+          "Id": "FwooperBlue1",
+          "DisplayName": "Fwooper",
+          "Description": "Fwooper description.",
+          "Texture": "{{ModId}}/FwooperBlue",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": false
+        },
+        "{{ModId}}_GriffinBabyBrown": {
+          "Id": "GriffinBabyBrown1",
+          "DisplayName": "Griffin",
+          "Description": "Griffin description.",
+          "Texture": "{{ModId}}/GriffinBabyBrown",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": false
+        },
+        "{{ModId}}_GriffinBrown": {
+          "Id": "GriffinBrown1",
+          "DisplayName": "Griffin",
+          "Description": "Griffin description.",
+          "Texture": "{{ModId}}/GriffinBrown",
           "SheetIndex": 0,
           "DropsNaturally": false,
           "CanBeReforged": false
@@ -72,7 +108,8 @@
               "Texture": "{{ModId}}/Bicorn",
               "Width": 32,
               "Height": 32,
-              "TextureScale": 6
+              "TextureScale": 6,
+              "ShadowScale": 0
             }
           ],
           "Motion": {
@@ -137,7 +174,7 @@
                 }
               }
             ]
-          ],
+          ]
         },
         "{{ModId}}_Crup": {
           "Variants": [
@@ -178,12 +215,16 @@
               "Texture": "{{ModId}}/DragonToadOrange",
               "Width": 32,
               "Height": 32,
-              "TextureScale": 2
+              "TextureScale": 2,
+              "ShadowScale": 0
             }
           ],
           "Motion": {
-            "MotionClass": "Lerp",
+            "MotionClass": "Hop",
             "DirectionMode": "DRUL",
+            "Args": {
+              "MaxHeight": 50
+            },
             "Anchors": [
               {
                 "Mode": "Owner",
@@ -207,6 +248,164 @@
               }
             ]
           ]
+        },
+        "{{ModId}}_FireCrabAmethyst": {
+          "Variants": [
+            {
+              "Texture": "{{ModId}}/FireCrabAmethyst",
+              "Width": 16,
+              "Height": 24,
+              "TextureScale": 5
+            }
+          ],
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "Single",
+            "FrameStart": 1,
+            "FrameLength": 3,
+            "AnimClips": {
+              "Idle.1": {
+                "FrameStart": 0,
+                "FrameLength": 1
+              }
+            },
+            "Anchors": [
+              {
+                "Mode": "Owner",
+                "Range": 320
+              }
+            ]
+          },
+          "Abilities": [
+            [
+              {
+                "AbilityClass": "Projectile",
+                "Proc": "Timer",
+                "ProcTimer": 1000,
+                "Args": {
+                  "SpriteIndex": 10,
+                  "Min": 5,
+                  "Max": 40,
+                  "Range": 192,
+                  "Knockback": 1
+                }
+              }
+            ]
+          ]
+        },
+        "{{ModId}}_FwooperBabyBlue": {
+          "Variants": [
+            {
+              "Texture": "{{ModId}}/FwooperBabyBlue",
+              "Width": 16,
+              "Height": 16,
+              "TextureScale": 2
+            }
+          ],
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "Anchors": [
+              {
+                "Mode": "Owner",
+                "Range": 320
+              }
+            ]
+          },
+          "Abilities": [
+            [
+              {
+                // Issue with negative values 
+                "AbilityClass": "Stamina",
+                "Proc": "Timer",
+                "ProcTimer": 10000,
+                "ProcSound": "owl",
+                "Args": {
+                  "ValueMode": "Percent",
+                  "Min": 0.01,
+                  "Max": 0.01
+                }
+              }
+            ]
+          ]
+        },
+        "{{ModId}}_FwooperBlue": {
+          "Variants": [
+            {
+              "Texture": "{{ModId}}/FwooperBlue",
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 4
+            }
+          ],
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "Anchors": [
+              {
+                "Mode": "Owner",
+                "Range": 320
+              }
+            ]
+          },
+          "Abilities": [
+            [
+              {
+                // Issue with negative values 
+                "AbilityClass": "Stamina",
+                "Proc": "Timer",
+                "ProcTimer": 10000,
+                "ProcSound": "owl",
+                "Args": {
+                  "ValueMode": "Percent",
+                  "Min": 0.01,
+                  "Max": 0.01
+                }
+              }
+            ]
+          ]
+        },
+        "{{ModId}}_GriffinBabyBrown": {
+          "Variants": [
+            {
+              "Texture": "{{ModId}}/GriffinBabyBrown",
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 4,
+              "ShadowScale": 0
+            }
+          ],
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "Anchors": [
+              {
+                "Mode": "Owner",
+                "Range": 320
+              }
+            ]
+          }
+        },
+        "{{ModId}}_GriffinBrown": {
+          "Variants": [
+            {
+              "Texture": "{{ModId}}/GriffinBrown",
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 4,
+              "ShadowScale": 0
+            }
+          ],
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "Anchors": [
+              {
+                "Mode": "Owner",
+                "Range": 320
+              }
+            ]
+          }
         },
         "{{ModId}}_NifflerBrown": {
           "Variants": [
