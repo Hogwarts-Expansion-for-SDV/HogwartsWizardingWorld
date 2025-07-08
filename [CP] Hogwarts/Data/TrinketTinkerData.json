@@ -86,11 +86,65 @@
           "DropsNaturally": false,
           "CanBeReforged": false
         },
+        "{{ModId}}_KneazleBlonde": {
+          "Id": "KneazleBlonde1",
+          "DisplayName": "Kneazle",
+          "Description": "Kneazle description.",
+          "Texture": "{{ModId}}/KneazleBlonde",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": false
+        },
+        "{{ModId}}_Mooncalf": {
+          "Id": "Mooncalf1",
+          "DisplayName": "Mooncalf",
+          "Description": "Mooncalf description.",
+          "Texture": "{{ModId}}/Mooncalf",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": false
+        },
         "{{ModId}}_NifflerBrown": {
           "Id": "NifflerBrown1",
           "DisplayName": "Niffler",
           "Description": "Niffler description.",
           "Texture": "{{ModId}}/NifflerBrown",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": false
+        },
+        "{{ModId}}_OccamyBabyBlue": {
+          "Id": "OccamyBabyBlue1",
+          "DisplayName": "Occamy",
+          "Description": "Occamy description.",
+          "Texture": "{{ModId}}/OccamyBabyBlue",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": false
+        },
+        "{{ModId}}_OccamyBlue": {
+          "Id": "OccamyBlue1",
+          "DisplayName": "Occamy",
+          "Description": "Occamy description.",
+          "Texture": "{{ModId}}/OccamyBlue",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": false
+        },
+        "{{ModId}}_Phoenix": {
+          "Id": "Phoenix1",
+          "DisplayName": "Phoenix",
+          "Description": "Phoenix description.",
+          "Texture": "{{ModId}}/Phoenix",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": false
+        },
+        "{{ModId}}_PygmyPuffPink": {
+          "Id": "PygmyPuffPink1",
+          "DisplayName": "Pygmy Puff",
+          "Description": "Pygmy Puff description.",
+          "Texture": "{{ModId}}/PygmyPuffPink",
           "SheetIndex": 0,
           "DropsNaturally": false,
           "CanBeReforged": false
@@ -322,8 +376,8 @@
                 "ProcSound": "owl",
                 "Args": {
                   "ValueMode": "Percent",
-                  "Min": 0.01,
-                  "Max": 0.01
+                  "Min": -0.01,
+                  "Max": -0.01
                 }
               }
             ]
@@ -358,8 +412,8 @@
                 "ProcSound": "owl",
                 "Args": {
                   "ValueMode": "Percent",
-                  "Min": 0.01,
-                  "Max": 0.01
+                  "Min": -0.01,
+                  "Max": -0.01
                 }
               }
             ]
@@ -407,6 +461,70 @@
             ]
           }
         },
+        "{{ModId}}_KneazleBlonde": {
+          "Variants": [
+            {
+              "Texture": "{{ModId}}/KneazleBlonde",
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 3,
+              "ShadowScale": 0
+            }
+          ],
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "Anchors": [
+              {
+                "Mode": "Owner",
+                "Range": 320
+              }
+            ]
+          },
+          "Abilities": [
+            [
+              {
+                "AbilityClass": "PetFarmAnimal",
+                "Proc": "Always"
+              }
+            ]
+          ]
+        },
+        "{{ModId}}_Mooncalf": {
+          "Variants": [
+            {
+              "Texture": "{{ModId}}/Mooncalf",
+              "Width": 16,
+              "Height": 32,
+              "TextureScale": 4,
+              "ShadowScale": 0
+            }
+          ],
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "Anchors": [
+              {
+                "Mode": "Owner",
+                "Range": 320
+              }
+            ]
+          },
+          "Abilities": [
+            [
+              {
+                "AbilityClass": "Stamina",
+                "Proc": "Timer",
+                "ProcTimer": 10000,
+                "Args": {
+                  "ValueMode": "Percent",
+                  "Min": 0.01,
+                  "Max": 0.01
+                }
+              }
+            ]
+          ]
+        },
         "{{ModId}}_NifflerBrown": {
           "Variants": [
             {
@@ -443,6 +561,123 @@
           ],
           "Inventory": {
             "Capacity": 9
+          }
+        },
+        "{{ModId}}_OccamyBabyBlue": {
+          "Variants": [
+            {
+              "Texture": "{{ModId}}/OccamyBabyBlue",
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": "{{Query: {{Random: {{Range: 2, 10}}}}}}",
+              "ShadowScale": 0
+            }
+          ],
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "Anchors": [
+              {
+                "Mode": "Owner",
+                "Range": 320
+              }
+            ]
+          }
+        },
+        "{{ModId}}_OccamyBlue": {
+          "Variants": [
+            {
+              "Texture": "{{ModId}}/OccamyBlue",
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": "{{Query: {{Random: {{Range: 2, 10}}}}}}",
+              "ShadowScale": 0
+            }
+          ],
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "Anchors": [
+              {
+                "Mode": "Owner",
+                "Range": 320
+              }
+            ]
+          }
+        },
+        "{{ModId}}_Phoenix": {
+          "Variants": [
+            {
+              "Texture": "{{ModId}}/Phoenix",
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 4,
+              "ShadowScale": 0
+            }
+          ],
+          "Motion": {
+            "MotionClass": "Hover",
+            "DirectionMode": "DRUL",
+            "AlwaysMoving": true,
+            "Interval": 350,
+            "Anchors": [
+              {
+                "Mode": "Owner",
+                "Range": 320
+              }
+            ]
+          },
+          "Abilities": [
+            [
+              {
+                "AbilityClass": "Health",
+                "Proc": "Timer",
+                "ProcTimer": 10000,
+                "Args": {
+                  "ValueMode": "Percent",
+                  "Min": 0.01,
+                  "Max": 0.01
+                }
+              }
+            ]
+          ]
+        },
+        "{{ModId}}_PygmyPuffPink": {
+          "Variants": [
+            {
+              "Texture": "{{ModId}}/PygmyPuffPink",
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 2
+            }
+          ],
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "AnimClips": {
+              "Idle.1": {
+                "FrameStart": 16,
+                "FrameLength": 8,
+                "Interval": 200
+              },
+              "Idle.2": {
+                "FrameStart": 24,
+                "FrameLength": 8,
+                "Interval": 5000
+              },
+              "Idle.4": {
+                "FrameStart": 24,
+                "FrameLength": 8,
+                "Interval": 5000,
+                "Flip": "FlipHorizontally"
+              }
+            },
+            "Anchors": [
+              {
+                "Mode": "Owner",
+                "Range": 320
+              }
+            ]
           }
         }
       }
