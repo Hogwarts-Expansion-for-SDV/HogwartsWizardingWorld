@@ -148,6 +148,24 @@
           "SheetIndex": 0,
           "DropsNaturally": false,
           "CanBeReforged": false
+        },
+        "{{ModId}}_ThestralBaby": {
+          "Id": "ThestralBaby1",
+          "DisplayName": "Thestral",
+          "Description": "Thestral description.",
+          "Texture": "{{ModId}}/ThestralBaby",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": false
+        },
+        "{{ModId}}_Unicorn": {
+          "Id": "Unicorn1",
+          "DisplayName": "Unicorn",
+          "Description": "Unicorn description.",
+          "Texture": "{{ModId}}/Unicorn",
+          "SheetIndex": 0,
+          "DropsNaturally": false,
+          "CanBeReforged": false
         }
       }
     },
@@ -198,12 +216,36 @@
               "Texture": "{{ModId}}/Bowtruckle",
               "Width": 16,
               "Height": 16,
-              "TextureScale": 2
+              "TextureScale": 2,
+              "ShadowScale": 0
             }
           ],
           "Motion": {
             "MotionClass": "Lerp",
             "DirectionMode": "DRUL",
+            "AnimClips": {
+              "Idle.1": {
+                "FrameStart": 22,
+                "FrameLength": 6,
+                "Interval": 500
+              },
+              "Idle.2": {
+                "FrameStart": 18,
+                "FrameLength": 2,
+                "Interval": 500
+              },
+              "Idle.3": {
+                "FrameStart": 20,
+                "FrameLength": 2,
+                "Interval": 500
+              },
+              "Idle.4": {
+                "FrameStart": 18,
+                "FrameLength": 2,
+                "Interval": 500,
+                "Flip": "FlipHorizontally"
+              }
+            },
             "Anchors": [
               {
                 "Mode": "Owner",
@@ -236,12 +278,31 @@
               "Texture": "{{ModId}}/Crup",
               "Width": 32,
               "Height": 32,
-              "TextureScale": 4
+              "TextureScale": 4,
+              "ShadowScale": 0
             }
           ],
           "Motion": {
             "MotionClass": "Lerp",
             "DirectionMode": "DRUL",
+            "AnimClips": {
+              "Idle.1": {
+                "FrameStart": 16,
+                "FrameLength": 4,
+                "Interval": 5000
+              },
+              "Idle.2": {
+                "FrameStart": 20,
+                "FrameLength": 7,
+                "Interval": 5000
+              },
+              "Idle.4": {
+                "FrameStart": 20,
+                "FrameLength": 7,
+                "Interval": 5000,
+                "Flip": "FlipHorizontally"
+              }
+            },
             "Anchors": [
               {
                 "Mode": "Owner",
@@ -276,6 +337,24 @@
           "Motion": {
             "MotionClass": "Hop",
             "DirectionMode": "DRUL",
+            "AnimClips": {
+              "Idle.1": {
+                "FrameStart": 16,
+                "FrameLength": 8,
+                "Interval": 500
+              },
+              "Idle.2": {
+                "FrameStart": 24,
+                "FrameLength": 2,
+                "Interval": 1000
+              },
+              "Idle.4": {
+                "FrameStart": 24,
+                "FrameLength": 2,
+                "Interval": 1000,
+                "Flip": "FlipHorizontally"
+              }
+            },
             "Args": {
               "MaxHeight": 50
             },
@@ -289,15 +368,10 @@
           "Abilities": [
             [
               {
-                "AbilityClass": "Projectile",
-                "Proc": "Timer",
-                "ProcTimer": 1000,
+                "AbilityClass": "Buff",
+                "Proc": "Always",
                 "Args": {
-                  "SpriteIndex": 10,
-                  "Min": 5,
-                  "Max": 40,
-                  "Range": 192,
-                  "Knockback": 1
+                  "BuffId": "dwarfStatue_{{Random: {{Range: 0, 4}}}}"
                 }
               }
             ]
@@ -309,7 +383,8 @@
               "Texture": "{{ModId}}/FireCrabAmethyst",
               "Width": 16,
               "Height": 24,
-              "TextureScale": 5
+              "TextureScale": 5,
+              "ShadowScale": 0
             }
           ],
           "Motion": {
@@ -353,7 +428,8 @@
               "Texture": "{{ModId}}/FwooperBabyBlue",
               "Width": 16,
               "Height": 16,
-              "TextureScale": 2
+              "TextureScale": 2,
+              "ShadowScale": 0
             }
           ],
           "Motion": {
@@ -369,7 +445,6 @@
           "Abilities": [
             [
               {
-                // Issue with negative values 
                 "AbilityClass": "Stamina",
                 "Proc": "Timer",
                 "ProcTimer": 10000,
@@ -389,7 +464,8 @@
               "Texture": "{{ModId}}/FwooperBlue",
               "Width": 32,
               "Height": 32,
-              "TextureScale": 4
+              "TextureScale": 4,
+              "ShadowScale": 0
             }
           ],
           "Motion": {
@@ -405,7 +481,6 @@
           "Abilities": [
             [
               {
-                // Issue with negative values 
                 "AbilityClass": "Stamina",
                 "Proc": "Timer",
                 "ProcTimer": 10000,
@@ -474,6 +549,24 @@
           "Motion": {
             "MotionClass": "Lerp",
             "DirectionMode": "DRUL",
+            "AnimClips": {
+              "Idle.1": {
+                "FrameStart": 18,
+                "FrameLength": 6,
+                "Interval": 500
+              },
+              "Idle.2": {
+                "FrameStart": 24,
+                "FrameLength": 2,
+                "Interval": 500
+              },
+              "Idle.4": {
+                "FrameStart": 24,
+                "FrameLength": 2,
+                "Interval": 500,
+                "Flip": "FlipHorizontally"
+              }
+            },
             "Anchors": [
               {
                 "Mode": "Owner",
@@ -485,7 +578,8 @@
             [
               {
                 "AbilityClass": "PetFarmAnimal",
-                "Proc": "Always"
+                "Proc": "Always",
+                "ProcSound": "cat"
               }
             ]
           ]
@@ -531,12 +625,31 @@
               "Texture": "{{ModId}}/NifflerBrown",
               "Width": 32,
               "Height": 32,
-              "TextureScale": 2
+              "TextureScale": 2,
+              "ShadowScale": 0
             }
           ],
           "Motion": {
             "MotionClass": "Lerp",
             "DirectionMode": "DRUL",
+            "AnimClips": {
+              "Idle.1": {
+                "FrameStart": 18,
+                "FrameLength": 2,
+                "Interval": 500
+              },
+              "Idle.2": {
+                "FrameStart": 22,
+                "FrameLength": 5,
+                "Interval": 500
+              },
+              "Idle.4": {
+                "FrameStart": 22,
+                "FrameLength": 5,
+                "Interval": 500,
+                "Flip": "FlipHorizontally"
+              }
+            },
             "Anchors": [
               {
                 "Mode": "Owner",
@@ -648,7 +761,8 @@
               "Texture": "{{ModId}}/PygmyPuffPink",
               "Width": 32,
               "Height": 32,
-              "TextureScale": 2
+              "TextureScale": 2,
+              "ShadowScale": 0
             }
           ],
           "Motion": {
@@ -679,6 +793,70 @@
               }
             ]
           }
+        },
+        "{{ModId}}_ThestralBaby": {
+          "Variants": [
+            {
+              "Texture": "{{ModId}}/ThestralBaby",
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 3,
+              "ShadowScale": 0
+            }
+          ],
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "Anchors": [
+              {
+                "Mode": "Owner",
+                "Range": 320
+              }
+            ]
+          },
+          "Abilities": [
+            [
+              {
+                "AbilityClass": "Buff",
+                "Proc": "Always",
+                "Args": {
+                  "BuffId": 23
+                }
+              }
+            ]
+          ]
+        },
+        "{{ModId}}_Unicorn": {
+          "Variants": [
+            {
+              "Texture": "{{ModId}}/Unicorn",
+              "Width": 32,
+              "Height": 32,
+              "TextureScale": 6,
+              "ShadowScale": 0
+            }
+          ],
+          "Motion": {
+            "MotionClass": "Lerp",
+            "DirectionMode": "DRUL",
+            "Anchors": [
+              {
+                "Mode": "Owner",
+                "Range": 320
+              }
+            ]
+          },
+          "Abilities": [
+            [
+              {
+                "AbilityClass": "Buff",
+                "Proc": "Always",
+                "Args": {
+                  "BuffId": "statue_of_blessings_{{Random: {{Range: 0, 6}}}}"
+                }
+              }
+            ]
+          ]
         }
       }
     }
