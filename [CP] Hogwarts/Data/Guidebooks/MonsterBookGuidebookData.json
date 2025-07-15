@@ -87,11 +87,13 @@
                   [center][nextposition=0,64][font=default]Beast[/font][/center]
                   [center][nextposition=0,96][font=default]Tangible and capable of ingestion[/font][/center]
                   [center][nextposition=0,128][font=default]Not responsible for shaping laws in the wizarding world[/font][/center]
-                  [center][nextposition=0,224][font=default]Spirit[/font][/center]
-                  [center][nextposition=0,256][font=default]Previously alive; capable of phasing through solid objects; unaffected by gravity[/font][/center]
-                  [center][nextposition=0,352][font=default]Non-Human Spiritous Apparition (NHSA; also known as non-being)[/font][/center]
-                  [center][nextposition=0,416][font=default]Amortal; never having died, and being unable to die[/font][/center]
-                  [center][nextposition=0,448][font=default]Obscure area of creature knowledge[/font][/center]"
+                  [center][nextposition=0,224][font=default]Living Dead[/font][/center]
+                  [center][nextposition=0,256][font=default]Dead, but behaved as if alive[/font][/center]
+                  [center][nextposition=0,320][font=default]Spirit[/font][/center]
+                  [center][nextposition=0,352][font=default]Previously alive; capable of phasing through solid objects; unaffected by gravity[/font][/center]
+                  [center][nextposition=0,448][font=default]Non-Human Spiritous Apparition (NHSA; also known as non-being)[/font][/center]
+                  [center][nextposition=0,512][font=default]Amortal; never having died, and being unable to die[/font][/center]
+                  [center][nextposition=0,544][font=default]Obscure area of creature knowledge[/font][/center]"
                 },
                 {
                   "Contents": "[center][font=dialogue]Beast Classifications[/font][/center]
@@ -147,7 +149,7 @@
                 {
                   "Id": "Dementor",
                   "Contents": "[center][font=dialogue]Dementor[/font][/center]
-                  [nospacing][nextposition=0,32][image={{ModId}}/Dementor Default:0,0,32,32:5][nextposition=160,32][image={{ModId}}/Dementor Default:0,32,32,32:5][/nospacing]
+                  [nospacing][nextposition=0,32][image={{ModId}}/Dementor Default:0,0,32,32:5]
                   [nextposition=0,192][font=default]NHSA; non-being[/font]
                   [nextposition=0,256][font=default]Resembles a dark spirit[/font]
                   [nextposition=0,288][font=default]Presence causes nearby surroundings to freeze and fog[/font]
@@ -223,140 +225,24 @@
                   [nospacing][nextposition=0,512][image={{ModId}}/Horned Serpent Default:32,0,32,32:5][/nospacing]
                   [nospacing][nextposition=0,512][image={{ModId}}/Horned Serpent Default:64,0,32,32:5][/nospacing]
                   [center][nextposition=0,64][font=default]Class XXXXX Beast[/font][/center]
-                  [nextposition=128,128][font=default]Front legs, wings, and head of a giant eagle and the body, hind legs and tail of a horse[/font]",/*
+                  [nextposition=128,128][offset=64,0][font=default]Intelligent[/font]
+                  [nextposition=128,160][offset=64,0][font=default]Ability to sense threats[/font]
+                  [nextposition=128,192][offset=64,0][font=default]Sports a jewel in its forehead[/font]
+                  [nextposition=128,224][offset=64,0][font=default]Jewel contains magical properties[/font]
+                  [nextposition=128,256][offset=64,0][font=default]Poached by wizards for its jewel[/font]",/*
                   "Condition": "ANY \"PLAYER_HAS_MAIL Any HippogriffBlack1 Any\" \"PLAYER_HAS_MAIL Any HippogriffBrown1 Any\" \"PLAYER_HAS_MAIL Any HippogriffGrey1 Any\" \"PLAYER_HAS_MAIL Any HippogriffRed1 Any\" \"PLAYER_HAS_MAIL Any HippogriffWhite1 Any\"",*/
                 },
                 {
-                  "Id": "Kneazle",
-                  "Contents": "[center][font=dialogue]Kneazle[/font][/center]
-                  [nospacing][nextposition=0,32][image={{ModId}}/KneazleBlonde:0,0,32,32:5][nextposition=160,32][image={{ModId}}/KneazleBlonde:0,32,32,32:5][/nospacing]
+                  "Id": "Streeler",
+                  "Contents": "[center][font=dialogue]Streeler[/font][/center]
+                  [nospacing][nextposition=0,32][image={{ModId}}/Streeler Dark Blue:0,0,16,24:6][nextposition=160,32][image={{ModId}}/Streeler Dark Blue:16,0,16,24:6][/nospacing]
                   [nextposition=0,192][font=default]Class XXX Beast[/font]
-                  [nextposition=0,256][font=default]Resembles a lynx; spotted, speckled or flecked fur, large ears and a lightly plumed tail, akin to that of a lion's[/font]
-                  [nextposition=0,352][font=default]Notably intelligent and independent[/font]
-                  [nextposition=0,384][font=default]Notably capable of detecting untrustworthy individuals, and can turn aggressive to them[/font]
-                  [nextposition=0,448][font=default]Capable of guarding homes, and warding out certain pests[/font]
-                  [nextposition=0,512][center][font=dialogue]Variants[/font][/center]
-                  [nospacing][nextposition=0,544][image={{ModId}}/KneazleBrown:0,0,32,32:5][nextposition=160,544][image={{ModId}}/KneazleBrown:0,32,32,32:5][/nospacing]
-                  [nospacing][nextposition=0,704][image={{ModId}}/KneazleGrey:0,0,32,32:5][nextposition=160,704][image={{ModId}}/KneazleGrey:0,32,32,32:5][/nospacing]",/*
+                  [nextposition=0,256][font=default]Resembles a giant snail[/font]
+                  [nextposition=0,288][font=default]Shell can appear in any color[/font]
+                  [nextposition=0,320][font=default]Slime trail is toxic that burns vegetation it touches[/font]
+                  [nextposition=0,384][font=default]Spikes on its shell are venomous[/font]",/*
                   "Condition": "ANY \"PLAYER_HAS_MAIL Any KneazleBlonde1 Any\" \"PLAYER_HAS_MAIL Any KneazleBrown1 Any\" \"PLAYER_HAS_MAIL Any KneazleGrey1 Any\"",*/
-                },
-                {
-                  "Id": "Mooncalf",
-                  "Contents": "[center][font=dialogue]Mooncalf[/font][/center]
-                  [nospacing][nextposition=0,32][image={{ModId}}/Mooncalf:0,0,16,32:5][nextposition=160,32][image={{ModId}}/Mooncalf:0,32,16,32:5][/nospacing]
-                  [nextposition=0,192][font=default]Class XX Beast[/font]
-                  [nextposition=0,256][font=default]Four spindly legs with large flat webbed feet[/font]
-                  [nextposition=0,288][font=default]Very long neck and bulging eyes[/font]
-                  [nextposition=0,320][font=default]Comes out only during full moon[/font]
-                  [nextposition=0,352][font=default]Creates fairy rings (mushrooms) on the ground as they run during a full moon[/font]
-                  [nextposition=0,416][center][font=dialogue]Variants[/font][/center]
-                  [nospacing][nextposition=0,448][image={{ModId}}/MooncalfBlue:0,0,16,32:5][nextposition=160,448][image={{ModId}}/MooncalfBlue:0,32,16,32:5][/nospacing]
-                  [nospacing][nextposition=0,608][image={{ModId}}/MooncalfOrange:0,0,16,32:5][nextposition=160,608][image={{ModId}}/MooncalfOrange:0,32,16,32:5][/nospacing]
-                  [nospacing][nextposition=0,768][image={{ModId}}/MooncalfYellow:0,0,16,32:5][nextposition=160,768][image={{ModId}}/MooncalfYellow:0,32,16,32:5][/nospacing]",/*
-                  "Condition": "ANY \"PLAYER_HAS_MAIL Any Mooncalf1 Any\" \"PLAYER_HAS_MAIL Any MooncalfBlue1 Any\" \"PLAYER_HAS_MAIL Any MooncalfOrange1 Any\" \"PLAYER_HAS_MAIL Any MooncalfYellow1 Any\"",*/
-                },
-                {
-                  "Id": "Niffler",
-                  "Contents": "[center][font=dialogue]Niffler[/font][/center]
-                  [nospacing][nextposition=0,32][image={{ModId}}/NifflerBrown:0,0,32,32:5][nextposition=160,32][image={{ModId}}/NifflerBrown:0,32,32,32:5][/nospacing]
-                  [nextposition=0,192][font=default]Class XXX Beast[/font]
-                  [nextposition=0,256][font=default]Resembles a mix between a mole and platypus[/font]
-                  [nextposition=0,288][font=default]Pouch contains indefinite space for objects of varying size and weight[/font]
-                  [nextposition=0,352][font=default]Notably adept at hunting for treasure[/font]
-                  [nextposition=0,384][font=default]Attracted to shiny objects and metals, and has a tendency to slip them into their pouch with ease
-                  [nextposition=0,448][center][font=dialogue]Variants[/font][/center][/font]
-                  [nospacing][nextposition=0,480][image={{ModId}}/NifflerBlack:0,0,32,32:5][nextposition=160,480][image={{ModId}}/NifflerBlack:0,32,32,32:5][/nospacing]
-                  [nospacing][nextposition=0,640][image={{ModId}}/NifflerWhite:0,0,32,32:5][nextposition=160,640][image={{ModId}}/NifflerWhite:0,32,32,32:5][/nospacing]",/*
-                  "Condition": "ANY \"PLAYER_HAS_MAIL Any NifflerBlack1 Any\" \"PLAYER_HAS_MAIL Any NifflerBrown1 Any\" \"PLAYER_HAS_MAIL Any NifflerWhite1 Any\"",*/
-                },
-                {
-                  "Id": "Occamy",
-                  "Contents": "[center][font=dialogue]Occamy[/font][/center]
-                  [nospacing][nextposition=0,32][image={{ModId}}/OccamyTeal:0,0,32,32:5][nextposition=160,32][image={{ModId}}/OccamyTeal:0,32,32,32:5][/nospacing]
-                  [nextposition=0,192][font=default]Class XXXX Beast[/font]
-                  [nextposition=0,256][font=default]Appearance and behaviour resemble a mix between bird and serpentine-like features[/font]
-                  [nextposition=0,320][font=default]Capable of flight[/font]
-                  [nextposition=0,352][font=default]Notably territorial[/font]
-                  [nextposition=0,384][font=default]Alters its size to fit its enclosure[/font]
-                  [nextposition=0,416][center][font=dialogue]Variants[/font][/center]
-                  [nospacing][nextposition=0,448][image={{ModId}}/OccamyBlue:0,0,32,32:5][nextposition=160,448][image={{ModId}}/OccamyBlue:0,32,32,32:5][/nospacing]
-                  [nextposition=0,640][center][font=dialogue]Baby Variants[/font][/center]
-                  [nospacing][nextposition=0,672][image={{ModId}}/OccamyBabyTeal:0,0,32,32:5][nextposition=160,672][image={{ModId}}/OccamyBabyTeal:0,32,32,32:5][/nospacing]
-                  [nospacing][nextposition=0,832][image={{ModId}}/OccamyBabyBlue:0,0,32,32:5][nextposition=160,832][image={{ModId}}/OccamyBabyBlue:0,32,32,32:5][/nospacing]",/*
-                  "Condition": "ANY \"PLAYER_HAS_MAIL Any OccamyBlue1 Any\" \"PLAYER_HAS_MAIL Any OccamyTeal1 Any\""*/
-                },
-                {
-                  "Id": "Phoenix",
-                  "Contents": "[center][font=dialogue]Phoenix[/font][/center]
-                  [nospacing][nextposition=0,32][image={{ModId}}/Phoenix:0,0,32,32:5][nextposition=160,32][image={{ModId}}/Phoenix:0,32,32,32:5][/nospacing]
-                  [nextposition=0,192][font=default]Class XXXX Beast[/font]
-                  [nextposition=0,256][font=default]A bird possessing and featuring qualities of fire[/font]
-                  [nextposition=0,288][font=default]Notably immortal; reborn from the ashes of its flame[/font]
-                  [nextposition=0,352][font=default]Notably intelligent[/font]
-                  [nextposition=0,384][font=default]Supposedly capable of bursting into flames for magical teleportation[/font]
-                  [nextposition=0,448][font=default]Capable of flying and lifting indefinite weightload[/font]
-                  [nextposition=0,480][font=default]Tears can rapidly heal any wound, even preventing the wounded from succumbing to certain death[/font]
-                  [nextposition=0,544][font=default]Notable of detecting beings in peril, and arriving to assist in their survival, even physically confronting the aggressor[/font]
-                  [nextposition=0,640][center][font=dialogue]Baby Variants[/font][/center]
-                  [nospacing][nextposition=0,704][image={{ModId}}/PhoenixBaby:0,0,16,32:5][nextposition=160,704][image={{ModId}}/PhoenixBaby:0,32,16,32:5][/nospacing]",/*
-                  "Condition": "PLAYER_HAS_MAIL Any Phoenix1 Any"*/
-                },
-                {
-                  "Id": "Pygmy Puff",
-                  "Contents": "[center][font=dialogue]Pygmy Puff[/font][/center]
-                  [nospacing][nextposition=0,32][image={{ModId}}/PygmyPuffPink:0,0,32,32:5][nextposition=160,32][image={{ModId}}/PygmyPuffPink:0,32,32,32:5][/nospacing]
-                  [nextposition=0,192][font=default]Class XX Beast[/font]
-                  [nextposition=0,256][font=default]Resembled little fluffy balls[/font]
-                  [nextposition=0,288][font=default]Bred from puffskeins to be pets for wizards[/font]
-                  [nextposition=0,352][center][font=dialogue]Variants[/font][/center]
-                  [nospacing][nextposition=0,384][image={{ModId}}/PygmyPuffPurple:0,0,32,32:5][nextposition=160,384][image={{ModId}}/PygmyPuffPurple:0,32,32,32:5][/nospacing]",/*
-                  "Condition": "ANY \"PLAYER_HAS_MAIL Any PygmyPuffPink1 Any\" \"PLAYER_HAS_MAIL Any PygmyPuffPurple1 Any\"",*/
-                },
-                {
-                  "Id": "Sphinx",
-                  "Contents": "[center][font=dialogue]Sphinx[/font][/center]
-                  [nospacing][nextposition=0,32][image={{ModId}}/Sphinx:0,0,32,32:5][nextposition=160,32][image={{ModId}}/Sphinx:0,32,32,32:5][/nospacing]
-                  [nextposition=0,192][font=default]Class XXXX Beast[/font]
-                  [nextposition=0,256][font=default]Head of a human, and the body of a lion[/font]
-                  [nextposition=0,288][font=default]Highly intelligent[/font]
-                  [nextposition=0,320][font=default]Capable of human speech; notably spoken in rhymes[/font]
-                  [nextposition=0,384][font=default]Paws are destructive and deadly when attacking[/font]
-                  [nextposition=0,416][font=default]Adept in various aspects of riddles and puzzles[/font]
-                  [nextposition=0,448][font=default]Aggressive when their riddle is answered incorrectly[/font]
-                  [nextposition=0,512][font=default]However, correctly answering pacifies their aggression[/font]"
-                },
-                {
-                  "Id": "Thestral",
-                  "Contents": "[center][font=dialogue]Thestral[/font][/center]
-                  [nospacing][nextposition=0,32][image={{ModId}}/Thestral:0,0,32,32:5][nextposition=160,32][image={{ModId}}/Thestral:0,32,32,32:5][/nospacing]
-                  [nextposition=0,192][font=default]Class XXXX Beast[/font]
-                  [nextposition=0,256][font=default]A breed of winged-horses[/font]
-                  [nextposition=0,288][font=default]Capable of flight[/font]
-                  [nextposition=0,320][font=default]Carnivorous[/font]
-                  [nextposition=0,352][font=default]Completely invisible to those who have not witnessed death and accepted its reality[/font]
-                  [nextposition=0,416][font=default]When visible, they have black skin and are skinny to the outline of their skeletal structure
-                  [nextposition=0,480][center][font=dialogue]Baby Variants[/font][/center]
-                  [nospacing][nextposition=0,512][image={{ModId}}/ThestralBaby:0,0,32,32:5][nextposition=160,512][image={{ModId}}/ThestralBaby:0,32,32,32:5][/nospacing]",/*
-                  "Condition": "PLAYER_HAS_MAIL Any Thestral1 Any"*/
-                },
-                {
-                  "Id": "Unicorn",
-                  "Contents": "[center][font=dialogue]Unicorn[/font][/center]
-                  [nospacing][nextposition=0,32][image={{ModId}}/UnicornCommon:0,0,32,32:5][nextposition=160,32][image={{ModId}}/UnicornCommon:0,32,32,32:5][/nospacing]
-                  [nextposition=0,192][font=default]Class XXXX Beast[/font]
-                  [nextposition=0,256][font=default]Horse with a single straight horn from its forehead[/font]
-                  [nextposition=0,320][font=default]Extremely fast, and can outrun most creatures[/font]
-                  [nextposition=0,352][font=default]Preferred female humans over male humans[/font]
-                  [nextposition=0,384][font=default]Consuming unicorn blood causes the drinker to extends their life[/font]
-                  [nextposition=0,448][font=default]Consuming unicorn blood if the unicorn was harmed or killed causes the drinker to live a cursed life[/font]
-                  [nextposition=0,544][center][font=dialogue]Variants[/font][/center]
-                  [nospacing][nextposition=0,576][image={{ModId}}/Unicorn:0,0,32,32:5][nextposition=160,576][image={{ModId}}/Unicorn:0,32,32,32:5][/nospacing]
-                  [nospacing][nextposition=0,736][image={{ModId}}/UnicornGlow:0,0,32,32:5][nextposition=160,736][image={{ModId}}/UnicornGlow:0,32,32,32:5][/nospacing]
-                  [nospacing][nextposition=0,896][image={{ModId}}/UnicornGolden:0,0,32,32:5][nextposition=160,896][image={{ModId}}/UnicornGolden:0,32,32,32:5][/nospacing]
-                  [nospacing][nextposition=0,1056][image={{ModId}}/UnicornRainbow:0,0,32,32:5][nextposition=160,1056][image={{ModId}}/UnicornRainbow:0,32,32,32:5][/nospacing]
-                  [nospacing][nextposition=0,1216][image={{ModId}}/UnicornWhite:0,0,32,32:5][nextposition=160,1216][image={{ModId}}/UnicornWhite:0,32,32,32:5][/nospacing]",/*
-                  "Condition": "ANY \"PLAYER_HAS_MAIL Any Unicorn1 Any\" \"PLAYER_HAS_MAIL Any UnicornCommon1 Any\" \"PLAYER_HAS_MAIL Any UnicornGlowing1 Any\" \"PLAYER_HAS_MAIL Any UnicornGolden1 Any\" \"PLAYER_HAS_MAIL Any UnicornRainbow1 Any\" \"PLAYER_HAS_MAIL Any UnicornWhite1 Any\"",*/
-                },
+                }
               ]
             }
           }
