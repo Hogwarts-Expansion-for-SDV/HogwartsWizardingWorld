@@ -107,24 +107,82 @@
                   [center][nextposition=0,384][font=default]dangerous; requires specialized knowledge[/font][/center]
                   [center][nextposition=0,448][font=default]XXXXX[/font][/center]
                   [center][nextposition=0,480][font=default]restricted; do not approach or handle without qualified authorization[/font][/center]"
+                }
+              ]
+            },
+            "ClassXBeasts": {
+              "Name": "Class X Beasts",
+              "TabIconTexture": "Mods/{{ModId}}/MonsterBookGuidebookTabs",
+              "TabIconRect": {
+                "X": 0,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+              },
+              "Condition": "TRUE",
+              "Pages": [
+                {
+                  "Id": "Flobberworm",
+                  "Contents": "[center][font=dialogue]Flobberworm[/font][/center]
+                  [nospacing][nextposition=128,32][image={{ModId}}/Flobberworm Ochre:0,0,16,16:10][nextposition=288,32][image={{ModId}}/Flobberworm Ochre:0,16,16,16:10][/nospacing]
+                  [nextposition=0,192][font=default]Class X Beast[/font]
+                  [nextposition=0,256][font=default]Resembles a thick worm[/font]
+                  [nextposition=0,288][font=default]Mouths on both ends[/font]
+                  [nextposition=0,320][font=default]Produced mucus contains magical properties; often used in potions[/font]",/*
+                  "Condition": "ANY \"PLAYER_HAS_MAIL Any FwooperBlue1 Any\" \"PLAYER_HAS_MAIL Any FwooperGreen1 Any\" \"PLAYER_HAS_MAIL Any FwooperPink1 Any\" \"PLAYER_HAS_MAIL Any FwooperShiny1 Any\" \"PLAYER_HAS_MAIL Any FwooperYellow1 Any\"",*/
+                },
+              ]
+            },
+            "ClassXXBeasts": {
+              "Name": "Class XX Beasts",
+              "TabIconTexture": "Mods/{{ModId}}/MonsterBookGuidebookTabs",
+              "TabIconRect": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+              },
+              "Condition": "TRUE",
+              "Pages": [
+                {
+                  "Id": "Gnome",
+                  "Contents": "[center][font=dialogue]Gnome[/font][/center]
+                  [nospacing][nextposition=172,32][image={{ModId}}/Gnome Default:0,0,16,24:6][nextposition=336,32][image={{ModId}}/Gnome Default:0,24,16,24:6][/nospacing]
+                  [nextposition=0,192][font=default]Class XX Beast[/font]
+                  [nextposition=0,256][font=default]Resembles a small Erkling with potato-shaped head[/font]
+                  [nextposition=0,320][font=default]Brownish in color[/font]
+                  [nextposition=0,352][font=default]Possesses sharp teeth, and may bite when provoked[/font]
+                  [nextposition=0,416][font=default]Tends to infest gardens[/font]",/*
+                  "Condition": "PLAYER_HAS_MAIL Any Granian1 Any"*/
                 },
                 {
-                  "Id": "Acromantula",
-                  "Contents": "[center][font=dialogue]Acromantula[/font][/center]
-                  [nospacing][nextposition=0,32][image={{ModId}}/Acromantula Default:0,0,32,32:5][nextposition=160,32][image={{ModId}}/Acromantula Default:0,32,32,32:5][/nospacing]
-                  [nextposition=0,192][font=default]Class XXXXX Beast[/font]
-                  [nextposition=0,256][font=default]Resembles a tarantula[/font]
-                  [nextposition=0,288][font=default]Intelligent[/font]
-                  [nextposition=0,320][font=default]Adults grow to the size of a carthorse[/font]
-                  [nextposition=0,352][font=default]Strong silk and fangs contains highly toxic venom[/font]
-                  [nextposition=0,384][font=default]Lives in large colonies[/font]",
-                  /*
-                  "Condition": "PLAYER_HAS_MAIL Any Abraxan1 Any"*/
+                  "Id": "Grindylow",
+                  "Contents": "[center][font=dialogue]Grindylow[/font][/center]
+                  [nospacing][nextposition=172,32][image={{ModId}}/Grindylow Default:0,0,16,32:5][nextposition=336,32][image={{ModId}}/Grindylow Default:0,32,16,32:5][/nospacing]
+                  [nextposition=0,192][font=default]Class XX Beast[/font]
+                  [nextposition=0,256][font=default]A small, horned, pale-green skinned water demon possessing seven tentacles[/font]
+                  [nextposition=0,320][font=default]Carnivorous[/font]
+                  [nextposition=0,352][font=default]Aggressive in nature[/font]
+                  [nextposition=0,384][font=default]May attack as a swarm[/font]",/*
+                  "Condition": "ANY \"PLAYER_HAS_MAIL Any GriffinBrown1 Any\" \"PLAYER_HAS_MAIL Any GriffinGold1 Any\" \"PLAYER_HAS_MAIL Any GriffinWhite1 Any\"",*/
                 },
+              ]
+            },
+            "ClassXXXBeasts": {
+              "Name": "Class XXX Beasts",
+              "TabIconTexture": "Mods/{{ModId}}/MonsterBookGuidebookTabs",
+              "TabIconRect": {
+                "X": 0,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+              },
+              "Condition": "TRUE",
+              "Pages": [
                 {
                   "Id": "Ashwinder",
                   "Contents": "[center][font=dialogue]Ashwinder[/font][/center]
-                  [nospacing][nextposition=0,32][image={{ModId}}/Ashwinder Default:0,0,16,32:5][nextposition=160,32][image={{ModId}}/Ashwinder Default:0,32,16,32:5][/nospacing]
+                  [nospacing][nextposition=172,32][image={{ModId}}/Ashwinder Default:0,0,16,32:5][nextposition=336,32][image={{ModId}}/Ashwinder Default:0,32,16,32:5][/nospacing]
                   [nextposition=0,192][font=default]Class XXX Beast[/font]
                   [nextposition=0,256][font=default]Resembles a snake[/font]
                   [nextposition=0,288][font=default]Birth from magical fires[/font]
@@ -136,7 +194,7 @@
                 {
                   "Id": "CornishPixie",
                   "Contents": "[center][font=dialogue]Cornish Pixie[/font][/center]
-                  [nospacing][nextposition=0,32][image={{ModId}}/Cornish Pixie Default:0,0,16,24:7]
+                  [nospacing][nextposition=240,32][image={{ModId}}/Cornish Pixie Default:0,0,16,24:6]
                   [nextposition=0,192][font=default]Class XXX Beast[/font]
                   [nextposition=0,256][font=default]Resembles a blue fairy[/font]
                   [nextposition=0,288][font=default]Capable of flight[/font]
@@ -147,21 +205,9 @@
                   "Condition": "ANY \"PLAYER_HAS_MAIL Any Bowtruckle1 Any\" \"PLAYER_HAS_MAIL Any BowtruckleBlue1 Any\" \"PLAYER_HAS_MAIL Any BowtruckleBrown1 Any\" \"PLAYER_HAS_MAIL Any BowtruckleBrownLeaf1 Any\" \"PLAYER_HAS_MAIL Any BowtruckleGreen1 Any\"",*/
                 },
                 {
-                  "Id": "Dementor",
-                  "Contents": "[center][font=dialogue]Dementor[/font][/center]
-                  [nospacing][nextposition=0,32][image={{ModId}}/Dementor Default:0,0,32,32:5]
-                  [nextposition=0,192][font=default]NHSA; non-being[/font]
-                  [nextposition=0,256][font=default]Resembles a dark spirit[/font]
-                  [nextposition=0,288][font=default]Presence causes nearby surroundings to freeze and fog[/font]
-                  [nextposition=0,352][font=default]Fed on human happiness, and causes victim to relive their worst memories[/font]
-                  [nextposition=0,416][font=default]Generates feelings of dispair and depression[/font]
-                  [nextposition=0,448][font=default]Capable of consuming human souls, leaving victims in an irreversible vegetative state[/font]",/*
-                  "Condition": "ANY \"PLAYER_HAS_MAIL Any Crup1 Any\" \"PLAYER_HAS_MAIL Any CrupBrown1 Any\" \"PLAYER_HAS_MAIL Any CrupGrey1 Any\"",*/
-                },
-                {
                   "Id": "Doxy",
                   "Contents": "[center][font=dialogue]Doxy[/font][/center]
-                  [nospacing][nextposition=0,32][image={{ModId}}/Doxy Default:0,0,16,24:7][nextposition=160,32][image={{ModId}}/Doxy Default:0,24,16,24:7][/nospacing]
+                  [nospacing][nextposition=172,32][image={{ModId}}/Doxy Default:0,0,16,24:7][nextposition=336,32][image={{ModId}}/Doxy Default:0,24,16,24:7][/nospacing]
                   [nextposition=0,192][font=default]Class XXX Beast[/font]
                   [nextposition=0,256][font=default]Resembles a mix between a fairy and frog[/font]
                   [nextposition=0,288][font=default]Capable of flight[/font]
@@ -172,7 +218,7 @@
                 {
                   "Id": "Dugbog",
                   "Contents": "[center][font=dialogue]Dugbog[/font][/center]
-                  [nospacing][nextposition=0,32][image={{ModId}}/Dugbog Default:0,0,32,32:5][nextposition=160,32][image={{ModId}}/Dugbog Default:0,32,32,32:5][/nospacing]
+                  [nospacing][nextposition=128,32][image={{ModId}}/Dugbog Default:0,0,32,32:5][nextposition=288,32][image={{ModId}}/Dugbog Default:0,32,32,32:5][/nospacing]
                   [nextposition=0,208][font=default]Class XXX Beast[/font]
                   [nextposition=0,256][font=default]Resembles a mix between a frog and alligator[/font]
                   [nextposition=0,288][font=default]Features characteristics of natural environments on its body[/font]
@@ -182,36 +228,41 @@
                   "Condition": "ANY \"PLAYER_HAS_MAIL Any FireCrabAmethyst1 Any\" \"PLAYER_HAS_MAIL Any FireCrabAquamarine1 Any\" \"PLAYER_HAS_MAIL Any FireCrabDiamond1 Any\" \"PLAYER_HAS_MAIL Any FireCrabEmerald1 Any\" \"PLAYER_HAS_MAIL Any FireCrabRuby1 Any\" \"PLAYER_HAS_MAIL Any FireCrabTopaz1 Any\"",*/
                 },
                 {
-                  "Id": "Flobberworm",
-                  "Contents": "[center][font=dialogue]Flobberworm[/font][/center]
-                  [nospacing][nextposition=0,32][image={{ModId}}/Flobberworm Ochre:0,0,16,16:10][nextposition=160,32][image={{ModId}}/Flobberworm Ochre:0,16,16,16:10][/nospacing]
-                  [nextposition=0,192][font=default]Class X Beast[/font]
-                  [nextposition=0,256][font=default]Resembles a thick worm[/font]
-                  [nextposition=0,288][font=default]Mouths on both ends[/font]
-                  [nextposition=0,320][font=default]Produced mucus contains magical properties; often used in potions[/font]",/*
-                  "Condition": "ANY \"PLAYER_HAS_MAIL Any FwooperBlue1 Any\" \"PLAYER_HAS_MAIL Any FwooperGreen1 Any\" \"PLAYER_HAS_MAIL Any FwooperPink1 Any\" \"PLAYER_HAS_MAIL Any FwooperShiny1 Any\" \"PLAYER_HAS_MAIL Any FwooperYellow1 Any\"",*/
+                  "Id": "Streeler",
+                  "Contents": "[center][font=dialogue]Streeler[/font][/center]
+                  [nospacing][nextposition=172,32][image={{ModId}}/Streeler Dark Blue:0,0,16,24:6][nextposition=336,32][image={{ModId}}/Streeler Dark Blue:16,0,16,24:6][/nospacing]
+                  [nextposition=0,192][font=default]Class XXX Beast[/font]
+                  [nextposition=0,256][font=default]Resembles a giant snail[/font]
+                  [nextposition=0,288][font=default]Shell can appear in any color[/font]
+                  [nextposition=0,320][font=default]Slime trail is toxic that burns vegetation it touches[/font]
+                  [nextposition=0,384][font=default]Spikes on its shell are venomous[/font]",/*
+                  "Condition": "ANY \"PLAYER_HAS_MAIL Any KneazleBlonde1 Any\" \"PLAYER_HAS_MAIL Any KneazleBrown1 Any\" \"PLAYER_HAS_MAIL Any KneazleGrey1 Any\"",*/
                 },
+              ]
+            },
+            "ClassXXXXXBeasts": {
+              "Name": "Class XXXXX Beasts",
+              "TabIconTexture": "Mods/{{ModId}}/MonsterBookGuidebookTabs",
+              "TabIconRect": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+              },
+              "Condition": "TRUE",
+              "Pages": [
                 {
-                  "Id": "Gnome",
-                  "Contents": "[center][font=dialogue]Gnome[/font][/center]
-                  [nospacing][nextposition=0,32][image={{ModId}}/Gnome Default:0,0,16,24:7][nextposition=160,32][image={{ModId}}/Gnome Default:0,24,16,24:7][/nospacing]
-                  [nextposition=0,192][font=default]Class XX Beast[/font]
-                  [nextposition=0,256][font=default]Resembles a small Erkling with potato-shaped head[/font]
-                  [nextposition=0,320][font=default]Brownish in color[/font]
-                  [nextposition=0,352][font=default]Possesses sharp teeth, and may bite when provoked[/font]
-                  [nextposition=0,416][font=default]Tends to infest gardens[/font]",/*
-                  "Condition": "PLAYER_HAS_MAIL Any Granian1 Any"*/
-                },
-                {
-                  "Id": "Grindylow",
-                  "Contents": "[center][font=dialogue]Grindylow[/font][/center]
-                  [nospacing][nextposition=0,32][image={{ModId}}/Grindylow Default:0,0,16,32:5][nextposition=160,32][image={{ModId}}/Grindylow Default:0,32,16,32:5][/nospacing]
-                  [nextposition=0,192][font=default]Class XX Beast[/font]
-                  [nextposition=0,256][font=default]A small, horned, pale-green skinned water demon possessing seven tentacles[/font]
-                  [nextposition=0,320][font=default]Carnivorous[/font]
-                  [nextposition=0,352][font=default]Aggressive in nature[/font]
-                  [nextposition=0,384][font=default]May attack as a swarm[/font]",/*
-                  "Condition": "ANY \"PLAYER_HAS_MAIL Any GriffinBrown1 Any\" \"PLAYER_HAS_MAIL Any GriffinGold1 Any\" \"PLAYER_HAS_MAIL Any GriffinWhite1 Any\"",*/
+                  "Id": "Acromantula",
+                  "Contents": "[center][font=dialogue]Acromantula[/font][/center]
+                  [nospacing][nextposition=128,32][image={{ModId}}/Acromantula Default:0,0,32,32:5][nextposition=288,32][image={{ModId}}/Acromantula Default:0,32,32,32:5][/nospacing]
+                  [nextposition=0,192][font=default]Class XXXXX Beast[/font]
+                  [nextposition=0,256][font=default]Resembles a tarantula[/font]
+                  [nextposition=0,288][font=default]Intelligent[/font]
+                  [nextposition=0,320][font=default]Adults grow to the size of a carthorse[/font]
+                  [nextposition=0,352][font=default]Strong silk and fangs contains highly toxic venom[/font]
+                  [nextposition=0,384][font=default]Lives in large colonies[/font]",
+                  /*
+                  "Condition": "PLAYER_HAS_MAIL Any Abraxan1 Any"*/
                 },
                 {
                   "Id": "HornedSerpent",
@@ -232,16 +283,30 @@
                   [nextposition=128,256][offset=64,0][font=default]Poached by wizards for its jewel[/font]",/*
                   "Condition": "ANY \"PLAYER_HAS_MAIL Any HippogriffBlack1 Any\" \"PLAYER_HAS_MAIL Any HippogriffBrown1 Any\" \"PLAYER_HAS_MAIL Any HippogriffGrey1 Any\" \"PLAYER_HAS_MAIL Any HippogriffRed1 Any\" \"PLAYER_HAS_MAIL Any HippogriffWhite1 Any\"",*/
                 },
+              ]
+            },
+            "NHSA": {
+              "Name": "Non-Human Spiritous Apparition",
+              "TabIconTexture": "Mods/{{ModId}}/MonsterBookGuidebookTabs",
+              "TabIconRect": {
+                "X": 0,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+              },
+              "Condition": "TRUE",
+              "Pages": [
                 {
-                  "Id": "Streeler",
-                  "Contents": "[center][font=dialogue]Streeler[/font][/center]
-                  [nospacing][nextposition=0,32][image={{ModId}}/Streeler Dark Blue:0,0,16,24:6][nextposition=160,32][image={{ModId}}/Streeler Dark Blue:16,0,16,24:6][/nospacing]
-                  [nextposition=0,192][font=default]Class XXX Beast[/font]
-                  [nextposition=0,256][font=default]Resembles a giant snail[/font]
-                  [nextposition=0,288][font=default]Shell can appear in any color[/font]
-                  [nextposition=0,320][font=default]Slime trail is toxic that burns vegetation it touches[/font]
-                  [nextposition=0,384][font=default]Spikes on its shell are venomous[/font]",/*
-                  "Condition": "ANY \"PLAYER_HAS_MAIL Any KneazleBlonde1 Any\" \"PLAYER_HAS_MAIL Any KneazleBrown1 Any\" \"PLAYER_HAS_MAIL Any KneazleGrey1 Any\"",*/
+                  "Id": "Dementor",
+                  "Contents": "[center][font=dialogue]Dementor[/font][/center]
+                  [nospacing][nextposition=240,32][image={{ModId}}/Dementor Default:0,0,32,32:5]
+                  [nextposition=0,192][font=default]NHSA; non-being[/font]
+                  [nextposition=0,256][font=default]Resembles a dark spirit[/font]
+                  [nextposition=0,288][font=default]Presence causes nearby surroundings to freeze and fog[/font]
+                  [nextposition=0,352][font=default]Fed on human happiness, and causes victim to relive their worst memories[/font]
+                  [nextposition=0,416][font=default]Generates feelings of dispair and depression[/font]
+                  [nextposition=0,448][font=default]Capable of consuming human souls, leaving victims in an irreversible vegetative state[/font]",/*
+                  "Condition": "ANY \"PLAYER_HAS_MAIL Any Crup1 Any\" \"PLAYER_HAS_MAIL Any CrupBrown1 Any\" \"PLAYER_HAS_MAIL Any CrupGrey1 Any\"",*/
                 }
               ]
             }
