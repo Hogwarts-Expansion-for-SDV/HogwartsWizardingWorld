@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="35" height="15" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="4">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="28" height="15" tilewidth="16" tileheight="16" infinite="0" nextlayerid="15" nextobjectid="4">
  <properties>
-  <property name="AmbientLight" value="110 110 110"/>
+  <property name="AmbientLight" value="95 95 95"/>
   <property name="DayTiles" value="Back 3 3 46 Back 6 3 46 Back 9 3 46 Back 12 3 46 Back 18 3 46 Back 21 3 46 Buildings 3 1 24 Buildings 6 1 24 Buildings 9 1 24 Buildings 12 1 24 Buildings 18 1 24 Buildings 21 1 24 Buildings 32 1 24"/>
-  <property name="Feed" value="5 2"/>
   <property name="Light_asdf" value="11 14 6 3 2 6 10 2 6 14 2 6 1 5 4 6 5 4 6 10 4 11 7 4 15 11 4 1 12 4 15 2 6 16 9 4 20 13 4 20 6 4  21 2 6 23 2 4 23 11 4"/>
   <property name="NightTiles" value="Back 3 3 53 Back 6 3 53 Back 9 3 53 Back 12 3 53 Back 18 3 53 Back 21 3 53 Buildings 3 1 26 Buildings 6 1 26 Buildings 9 1 26 Buildings 12 1 26 Buildings 18 1 26 Buildings 21 1 26 Buildings 32 1 26"/>
-  <property name="ProduceArea" value="6 4 15 7"/>
   <property name="Warp" value="11 15 Farm 14 11"/>
-  <property name="sw1" value="38"/>
-  <property name="sw2" value="13"/>
-  <property name="sw3" value="15"/>
-  <property name="sw4" value="29"/>
-  <property name="sw5" value="41"/>
-  <property name="sw6" value="21"/>
  </properties>
- <tileset firstgid="1" name="coopTiles" tilewidth="16" tileheight="16" tilecount="84" columns="4">
+ <tileset firstgid="1" name="z_coopTiles" tilewidth="16" tileheight="16" tilecount="84" columns="4">
   <image source="coopTiles.png" width="64" height="336"/>
   <tile id="12">
    <properties>
@@ -47,51 +39,87 @@
  <tileset firstgid="85" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
   <image source="townInterior.png" width="512" height="1088"/>
  </tileset>
- <tileset firstgid="2261" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
-  <image source="walls_and_floors.png" width="256" height="560"/>
+ <tileset firstgid="2261" name="z_walls_and_floors" tilewidth="16" tileheight="16" tilecount="688" columns="16">
+  <image source="walls_and_floors.png" width="256" height="688"/>
  </tileset>
- <tileset firstgid="2821" name="z_hptiles_Hogwarts" tilewidth="16" tileheight="16" tilecount="2048" columns="32">
+ <tileset firstgid="2949" name="z_furniture_2" tilewidth="16" tileheight="16" tilecount="512" columns="16">
+  <image source="z_furniture_2_Hogwarts.png" width="256" height="512"/>
+ </tileset>
+ <tileset firstgid="3461" name="z_townInterior_2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="townInterior_2.png" width="512" height="656"/>
+ </tileset>
+ <tileset firstgid="4773" name="z_spring_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="spring_outdoorsTileSheet.png" width="400" height="1264"/>
+ </tileset>
+ <tileset firstgid="6748" name="z_hptiles_Hogwarts" tilewidth="16" tileheight="16" tilecount="2048" columns="32">
   <image source="z_hptiles_Hogwarts.png" width="512" height="1024"/>
  </tileset>
- <layer id="1" name="Back" width="35" height="15">
+ <tileset firstgid="8796" name="z_furniture_Hogwarts" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="z_furniture_Hogwarts.png" width="512" height="1488"/>
+ </tileset>
+ <tileset firstgid="11772" name="z_Craftables_Hogwarts" tilewidth="16" tileheight="16" tilecount="576" columns="8">
+  <image source="z_Craftables_Hogwarts.png" width="128" height="1152"/>
+ </tileset>
+ <tileset firstgid="12348" name="z_springobjects" tilewidth="16" tileheight="16" tilecount="936" columns="24">
+  <image source="springobjects.png" width="384" height="624"/>
+ </tileset>
+ <tileset firstgid="13284" name="z_AstronomyKitchen_SC_Hogwarts" tilewidth="16" tileheight="16" tilecount="418" columns="22">
+  <image source="z_AstronomyKitchen_SC_Hogwarts.png" width="352" height="304"/>
+ </tileset>
+ <layer id="1" name="Back" width="28" height="15">
   <data encoding="base64" compression="zlib">
-   eJytlDEOwjAMRT0ipJZCgDIwsFSMTNDM3JBbcgxcEauWcayEOtJTotqNf77TNgDQOPBgyFjpODPeK//1VqmjMY2Lky85DqyOBaT8J3y9vcHs89I1aRlTndfahrQMSItskM7Rk8h6UKplYocEZJ+0yX3H9Hw0dN+Vd/7RckR65MT24bPUHJRcTeO1skdWbRnn/lk6SRPl1GjJ1abe5PwbWC7FAqP27lrIs5fccdLUO2mRGqLSo1yu3MfLF/5tDBktlmceWiL8nk+7LxRrYb4j0jOvHsmZn53/a4KgAz8tS5D9Kx0fKWVddw==
+   eJzjZWBg4CUSmyFhdDligQwB/IKDsLggkWYxkOA3fFgUapYCAcwADZs8VgaGXFZUug9Ko4ttYWJg2MyESptDzfLmYmDwwYNh/gOZ08uKSWcAcSYQZwFxNlTsCtD8y0yoNCy8kO2LwYJh9mHzH4juAOJOIO4C4m6oGDb/IduHC/sQsA/kxxVAvBKIVwHxaqgYNv+pkxieGSzEY2z+g9HE+g/dvTCaWDFi0wsIg+zD5V5ixWD2ReNIJ8iYmv4jBlDTf8TaN9z9h4xB7iWnDCUWAAAnCZob
   </data>
  </layer>
- <objectgroup id="2" name="Back">
-  <object id="1" name="TileData" x="176" y="208" width="16" height="16">
+ <layer id="13" name="Back1" width="28" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgF1AbPWUnCCSAaWS8+c7CpI9FtCTC2swF5ZpBrHzbgpsvA4A7FHkDsqYvTHJxhQYp9aUDz06E4A4gzcdhHLMBmH7L72oDmt0NxBxB3UmgfqUCMj4FBnI8+dvnwMzCYAe0yp5N9gwXco0M+IhcQk2cGEwAACZgthQ==
+  </data>
+ </layer>
+ <layer id="14" name="Back2" width="28" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFAwmesw60C0bBKBgFo2BwAACxhwDt
+  </data>
+ </layer>
+ <layer id="3" name="Buildings" width="28" height="15">
+  <data encoding="base64" compression="zlib">
+   eJwzZGBgMKQjRgaSUExIDF0c2awcZoaGbCDOAmJ0vSA1okRiBjxyyPb1AO3pBuIuIEbXA1OzhJWBYSkQ32GB8J9zMzD4AOnL7Ai3xTKh+i9ekqHBigeiDmZfJFB9FBDvZGRg2AXE7DwQtR16DAxr1VHD8xUzlkDDAv5JMTAc5Ubw+ViI08fAgLCPRZqBgQuojxuIeaA0Nw5zQPYhAz0s6qYC/TaNEVVsBwdmeiEH+LGgxjE+QA37sIEPWPxcygyxbxOR8YYPYMtblsB0YwXE04HpNIwfGMZQ+y5RaN90CYR9oDgCYWTwmxeSL7ZC7fsEpEXZGBjE2FDVlTJjp0HAB0pLA9P5Nz3SyxdrEwYGZTT7pjJjp3OAeSoXiPOAOJ8HYie55Rky2MqMna4B2lELxHVAXA/ET6QYGki17zzQrAto8XiJA0FfQosTFCBNmn3Y7Kdl/QAAnz9NYA==
+  </data>
+ </layer>
+ <layer id="12" name="Buildings1" width="28" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKA/yGdnYChgRxXzZ2c44AfE2NQDxR2A8g5YxA/449BDKhAFYlMZBgYzGWqYxsBwipk65tADPGdlSADiBaP2jYLBBoT1BtoFo4CeAADQuBC9
+  </data>
+ </layer>
+ <layer id="5" name="Front" width="28" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYKIQMwMxI5HqWBkIg1saDAyPpBgYRGUYGMRkUOUOsTEwsOMxB6i3AaimAcSGqWsBEq1IGq5zMzB4AOnN7AgxWyYEeyk3hNbigahDt28m0LOzgPg7VF2DHgPDEXVUdQ+kiPAoENwDqtvKjeCvAwYS0IsMPEhqvgPt+sGIqRdm3xOQXdIMDK+Bet8wQ2gQxmUfOlAXYGDQEEDwxYFhIcGEqmYGB/5wJwW4A+3yECCsjlr2EQNMmRH2bQUS2yiwGBhUDCxoYpJAw6XYUcVg9l0FEtfItK9OAmEOKI5AGBeAqfsKJL6h2WfKjJ1GBqC88E4PYg4nEHMRwNxQ+1RNMM2SRAug61D7YoAJPxaI44A4HogbjSD2EQtwBaMleoTgAaTatx7o9g1o4bWJA1IGAWk4GxsAlhMNpNiHHO4wL3EwEI4L9HghB8DsJlc/MQAA83ww0g==
+  </data>
+ </layer>
+ <layer id="9" name="Front1" width="28" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFIMAkPdAuoC6YZjLQLhhaYDozbc0/PMjjo8wYQnNA88EdXuqZ3WTE0EA900bBcAYAaV0FYg==
+  </data>
+ </layer>
+ <layer id="7" name="Paths" width="28" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMAoGHgAABpAAAQ==
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back" visible="0">
+  <object id="1" name="TileData" x="64" y="208" width="16" height="16">
    <properties>
     <property name="NPCBarrier" value="T"/>
    </properties>
   </object>
-  <object id="2" name="TileData" x="176" y="224" width="16" height="16">
+  <object id="2" name="TileData" x="64" y="224" width="16" height="16">
    <properties>
     <property name="NPCBarrier" value="T"/>
    </properties>
   </object>
  </objectgroup>
- <layer id="3" name="Buildings" width="35" height="15">
-  <data encoding="base64" compression="zlib">
-   eJwzZGBgMBxEGAYkacBGtiOTmYEhC4izgTiHGVUtTJ0oDTGyHZ1A+7uAuBuIe5ixqyME1vMwMGwA4o1AvAmINwPxFiDeyoOq7jI7pl50O34yMjD8AuJYJuzqRNkYGMTYiHAUGeA9EH8gQh2x4UIJ4AeGgQAjgj8dyJ7BiKmOVm5RR4o7faC9BljsppdbyAHY3HKaGcHeBGWro6VRSu1AB6bMqOpeMWOquYRFjBZuCUVzCxcLAwM3EPNAaRD+RCe3lDLTJ70QY8fUQeSWrXRwCyjNE2sHOXUoLetoAOrUMCw=
-  </data>
- </layer>
- <objectgroup id="4" name="Buildings"/>
- <layer id="5" name="Front" width="35" height="15">
-  <data encoding="base64" compression="zlib">
-   eJzNlEsOgjAURVuqgsIOdCuuyf8iHPlfCdFFONdEN+AApzrRgbeRlxj5vTaQcJNTCDzoadNWCiGcClFAMuuaYI/moG8yMgiEGIIRGIMJmIJZkP0NxY374Nad0JxzPligzyVYgTXYgC3Y/bmEbrHLBZN0BX0nve6B5smRt0gL/Cq/4PGWyTru/Jnm5me/62I+ek7yOddlnvPvtLiMdWTrkjfOslLkclRxncU4KR5oGLpQv2XHdE9TIvjc1fcaleRm61JF6uKi13xdXPSaN3Fpgw4D2gses57wmX2YHBv0vyqPmg95qx1u
-  </data>
- </layer>
- <objectgroup id="6" name="Front"/>
- <layer id="9" name="Front1" width="35" height="15">
-  <data encoding="base64" compression="zlib">
-   eJxjYBgFIxF0cw+0CxBgNQ3d0jmI/LlyELllFAxf0DuI0tnaQeSWUUAdAADlugPl
-  </data>
- </layer>
- <objectgroup id="10" name="Front1"/>
- <layer id="7" name="Paths" width="35" height="15">
-  <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjIJRMApGwSggDAAINAAB
-  </data>
- </layer>
- <objectgroup id="8" name="Paths"/>
+ <objectgroup id="4" name="Buildings" visible="0"/>
+ <objectgroup id="6" name="Front" visible="0"/>
+ <objectgroup id="10" name="Front1" visible="0"/>
+ <objectgroup id="8" name="Paths" visible="0"/>
 </map>

@@ -92,6 +92,12 @@
       "FromFile": "assets/Maps/Ollivanders.tmx"
     },
     {
+      "LogName": "Scenic Viewpoint East Load",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_ScenicViewpointEast",
+      "FromFile": "assets/Maps/ScenicViewpointEast.tmx"
+    },
+    {
       "LogName": "Stitches and Draughts Load",
       "Action": "Load",
       "Target": "Maps/{{ModId}}_StitchesAndDraughts",
@@ -440,6 +446,16 @@
             "Y": 18
           }
         },
+        "{{ModId}}_ScenicViewpointEast": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_ScenicViewpointEast"
+          },
+          "DefaultArrivalTile": {
+            "X": 10, 
+            "Y": 27
+          }
+        },
         "{{ModId}}_StitchesAndDraughts": {
           "CreateOnLoad": {
             "AlwaysActive": false,
@@ -457,13 +473,13 @@
             "AlwaysActive": false,
             "MapPath": "Maps/{{ModId}}_TheMagicNeep"
           }
-        },
+        },/*
         "{{ModId}}_ThreeBroomsticksInn": {
           "CreateOnLoad": {
             "AlwaysActive": false,
             "MapPath": "Maps/{{ModId}}_ThreeBroomsticksInn"
           }
-        },
+        },*/
         "{{ModId}}_TomesAndScrolls": {
           "CreateOnLoad": {
             "AlwaysActive": false,
