@@ -1,0 +1,343 @@
+{
+  "Changes": [
+    {
+      // Don't remove this! It's the fallback for invalid broomstick sprites.
+      "LogName": "Hogwarts Broomsticks Load",
+      "Action": "Load",
+      "Target": "{{ModId}}/Broomsticks/Default, {{ModId}}/Broomsticks/StableCommonDefault",
+      "FromFile": "assets/Broomsticks/{{TargetWithoutPath}}.png"
+    },
+    // Adds a build menu to a map's tile, similar to OpenShop
+    {
+      "LogName": "Spintwitches Sporting Needs Broomstick Construction Shop",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_SpintwitchesSportingNeeds",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 6,
+            "Y": 7
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            // Any building menus should be added by actions called {{ModId}}_OpenBuildMenu followed by an NPC's unique id. We don't have the right NPCs right now, so Ollivanders is part timing there or something.
+            "Action": "{{ModId}}_OpenBuildMenu HogwartsOllivander"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Hogwarts Mount Buildings",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Entries": {
+        "{{ModId}}_BroomstickDefault": {
+          "Name": "Broomstick Stable",
+          "Description": "Default broom stable.",
+          "Texture": "{{ModId}}/Broomsticks/StableCommonDefault",
+          "Size": {
+            "X": 1,
+            "Y": 1
+          },
+          "BuildingType": "StardewValley.Buildings.Stable",
+          "Builder": "Robin",
+          "BuildCost": 10,
+          "MagicalConstruction": true
+        },
+        "{{ModId}}_Abraxan": {
+          "Name": "Abraxan Stable",
+          "Description": "Abraxan stable.",
+          "Texture": "Buildings\\Stable",
+          "Size": {
+            "X": 4,
+            "Y": 2
+          },
+          "CollisionMap": "\n          XXXX\n          XOOX\n        ",
+          "BuildingType": "StardewValley.Buildings.Stable",
+          "Builder": "Robin",
+          "BuildCost": 10,
+          "MagicalConstruction": true
+        },
+        "{{ModId}}_Granian": {
+          "Name": "Granian Stable",
+          "Description": "Granian stable.",
+          "Texture": "Buildings\\Stable",
+          "Size": {
+            "X": 4,
+            "Y": 2
+          },
+          "CollisionMap": "\n          XXXX\n          XOOX\n        ",
+          "BuildingType": "StardewValley.Buildings.Stable",
+          "Builder": "Robin",
+          "BuildCost": 10,
+          "MagicalConstruction": true
+        },
+        "{{ModId}}_Thestral": {
+          "Name": "Thestral Stable",
+          "Description": "Thestral stable.",
+          "Texture": "Buildings\\Stable",
+          "Size": {
+            "X": 4,
+            "Y": 2
+          },
+          "CollisionMap": "\n          XXXX\n          XOOX\n        ",
+          "BuildingType": "StardewValley.Buildings.Stable",
+          "Builder": "Robin",
+          "BuildCost": 10,
+          "MagicalConstruction": true
+        },
+        "{{ModId}}_UnicornCommon": {
+          "Name": "Common Unicorn Stable",
+          "Description": "Common unicorn stable.",
+          "Texture": "Buildings\\Stable",
+          "Size": {
+            "X": 4,
+            "Y": 2
+          },
+          "CollisionMap": "\n          XXXX\n          XOOX\n        ",
+          "BuildingType": "StardewValley.Buildings.Stable",
+          "Builder": "Robin",
+          "BuildCost": 10,
+          "MagicalConstruction": true
+        },
+        "{{ModId}}_UnicornGlow": {
+          "Name": "Glow Unicorn Stable",
+          "Description": "Glow unicorn stable.",
+          "Texture": "Buildings\\Stable",
+          "Size": {
+            "X": 4,
+            "Y": 2
+          },
+          "CollisionMap": "\n          XXXX\n          XOOX\n        ",
+          "BuildingType": "StardewValley.Buildings.Stable",
+          "Builder": "Robin",
+          "BuildCost": 10,
+          "MagicalConstruction": true
+        },
+        "{{ModId}}_UnicornGolden": {
+          "Name": "Golden Unicorn Stable",
+          "Description": "Golden unicorn stable.",
+          "Texture": "Buildings\\Stable",
+          "Size": {
+            "X": 4,
+            "Y": 2
+          },
+          "CollisionMap": "\n          XXXX\n          XOOX\n        ",
+          "BuildingType": "StardewValley.Buildings.Stable",
+          "Builder": "Robin",
+          "BuildCost": 10,
+          "MagicalConstruction": true
+        },
+        "{{ModId}}_UnicornRainbow": {
+          "Name": "Rainbow Unicorn Stable",
+          "Description": "Rainbow unicorn stable.",
+          "Texture": "Buildings\\Stable",
+          "Size": {
+            "X": 4,
+            "Y": 2
+          },
+          "CollisionMap": "\n          XXXX\n          XOOX\n        ",
+          "BuildingType": "StardewValley.Buildings.Stable",
+          "Builder": "Robin",
+          "BuildCost": 10,
+          "MagicalConstruction": true
+        },
+        "{{ModId}}_UnicornWhite": {
+          "Name": "White Unicorn Stable",
+          "Description": "White unicorn stable.",
+          "Texture": "Buildings\\Stable",
+          "Size": {
+            "X": 4,
+            "Y": 2
+          },
+          "CollisionMap": "\n          XXXX\n          XOOX\n        ",
+          "BuildingType": "StardewValley.Buildings.Stable",
+          "Builder": "Robin",
+          "BuildCost": 10,
+          "MagicalConstruction": true
+        },
+      }
+    },
+    {
+      "LogName": "Hogwarts Broomstick Default",
+      "Action": "EditData",
+      "Target": "aedenthorn.CustomMounts/dict",
+      "Entries": {
+        "{{ModId}}/BroomstickDefault": {
+          "Name": "Broomstick",
+          "Stable": "Broomstick Stable",
+          "SpawnOffset": {
+            "X": 2,
+            "Y": 3
+          },
+          "Speed": 2,
+          "TexturePath": "{{ModId}}/Broomsticks/Default",
+          "FootstepSound": "magic_arrow",
+          "FootstepSoundStone": "magic_arrow",
+          "FootstepSoundWood": "magic_arrow"
+        },
+        "{{ModId}}/Abraxan": {
+          "Name": "Abraxan",
+          "Stable": "Abraxan Stable",
+          "SpawnOffset": {
+            "X": 2,
+            "Y": 3
+          },
+          "Speed": 2,
+          "TexturePath": "{{ModId}}/Abraxan"
+        },
+        "{{ModId}}/Granian": {
+          "Name": "Granian",
+          "Stable": "Granian Stable",
+          "SpawnOffset": {
+            "X": 2,
+            "Y": 3
+          },
+          "Speed": 2,
+          "TexturePath": "{{ModId}}/Granian"
+        },
+        "{{ModId}}/Thestral": {
+          "Name": "Thestral",
+          "Stable": "Thestral Stable",
+          "SpawnOffset": {
+            "X": 2,
+            "Y": 3
+          },
+          "Speed": 2,
+          "TexturePath": "{{ModId}}/Thestral"
+        },
+        "{{ModId}}/UnicornCommon": {
+          "Name": "Unicorn",
+          "Stable": "Common Unicorn Stable",
+          "SpawnOffset": {
+            "X": 2,
+            "Y": 3
+          },
+          "Speed": 2,
+          "TexturePath": "{{ModId}}/UnicornCommon"
+        },
+        "{{ModId}}/UnicornGlow": {
+          "Name": "Unicorn",
+          "Stable": "Glow Unicorn Stable",
+          "SpawnOffset": {
+            "X": 2,
+            "Y": 3
+          },
+          "Speed": 2,
+          "TexturePath": "{{ModId}}/UnicornGlow"
+        },
+        "{{ModId}}/UnicornGolden": {
+          "Name": "Unicorn",
+          "Stable": "Golden Unicorn Stable",
+          "SpawnOffset": {
+            "X": 2,
+            "Y": 3
+          },
+          "Speed": 2,
+          "TexturePath": "{{ModId}}/UnicornGolden"
+        },
+        "{{ModId}}/UnicornRainbow": {
+          "Name": "Unicorn",
+          "Stable": "Rainbow Unicorn Stable",
+          "SpawnOffset": {
+            "X": 2,
+            "Y": 3
+          },
+          "Speed": 2,
+          "TexturePath": "{{ModId}}/UnicornRainbow"
+        },
+        "{{ModId}}/UnicornWhite": {
+          "Name": "Unicorn",
+          "Stable": "White Unicorn Stable",
+          "SpawnOffset": {
+            "X": 2,
+            "Y": 3
+          },
+          "Speed": 2,
+          "TexturePath": "{{ModId}}/UnicornWhite"
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.CustomMounts": true
+      }
+    }
+  ]
+}
+/*
+        "{{ModId}}_BroomstickStableUpgradedDefault": {
+          "BuildingToUpgrade": "{{ModId}}_BroomstickStableCommonDefault",
+          "Name": "Upgraded Broom Stable",
+          "Description": "It's faster",
+          "Texture": "{{InternalAssetKey: assets/Broomsticks/StableUpgradedDefault.png}}",
+          "MagicalConstruction": true,
+          "BuildCost": 10,
+          "BuildingType": "StardewValley.Buildings.Stable",
+          "Builder": "HogwartsOllivander",
+          "ModData": {
+            "{{ModId}}_BroomstickStable": "just write whatever",
+            "{{ModId}}_BroomstickSpeed": "2",
+            "{{ModId}}_BroomTexture": "{{InternalAssetKey: assets/Broomsticks/Default.png}}"
+          }
+        },
+        "{{ModId}}_BroomstickStableCommonBlue": {
+          "Name": "Blue Broom Stable",
+          "Description": "It's blue!",
+          "Texture": "{{InternalAssetKey: assets/Broomsticks/StableCommonBlue.png}}",
+          "MagicalConstruction": true,
+          "BuildCost": 10,
+          "BuildingType": "StardewValley.Buildings.Stable",
+          "Builder": "HogwartsOllivander"
+        },
+        "{{ModId}}_BroomstickStableUpgradedBlue": {
+          "BuildingToUpgrade": "{{ModId}}_BroomstickStableCommonBlue",
+          "Name": "Blue Upgraded Broom Stable",
+          "Description": "It's blue AND upgraded!",
+          "Texture": "{{InternalAssetKey: assets/Broomsticks/StableUpgradedBlue.png}}",
+          "MagicalConstruction": true,
+          "BuildCost": 10,
+          "BuildingType": "StardewValley.Buildings.Stable",
+          "Builder": "HogwartsOllivander"
+        },
+        "{{ModId}}_BroomstickStableCommonPink": {
+          "Name": "Pink Broom Stable",
+          "Description": "It's pink!",
+          "Texture": "{{InternalAssetKey: assets/Broomsticks/StableCommonPink.png}}",
+          "MagicalConstruction": false,
+          "BuildDays": 2,
+          "BuildCost": 100,
+          "BuildingType": "StardewValley.Buildings.Stable",
+          "Builder": "HogwartsOllivander"
+        },
+        "{{ModId}}_BroomstickStableUpgradedPink": {
+          "BuildingToUpgrade": "{{ModId}}_BroomstickStableCommonPink",
+          "Name": "Pink Upgraded Broom Stable",
+          "Description": "It's pink AND upgraded!",
+          "Texture": "{{InternalAssetKey: assets/Broomsticks/StableUpgradedPink.png}}",
+          "MagicalConstruction": false,
+          "BuildDays": 1,
+          "BuildCost": 50,
+          "BuildingType": "StardewValley.Buildings.Stable",
+          "Builder": "HogwartsOllivander"
+        }*/
+
+        /*,
+     Adds building dialogue. A builder should have all strings included here. If a building is set to magical, no dialogue will be said.
+    {
+      "LogName": "Hogwarts Mount Builder Extra Dialogue",
+      "Action": "EditData",
+      "Target": "Data/ExtraDialogue",
+      "Entries": {
+        // Ollivanders is only here for tests so I won't add his lines to i18n
+        "HogwartsOllivander_Instant": "Ollivanders will say this when building something (new buildings or upgrades) that has BuildDays set to 0. The building's name will replace this: {0}",
+        "HogwartsOllivander_UpgradeConstruction": "Ollivanders will say this when upgrading a building with more than 0 BuildDays as long as tomorrow isn't a festival. The upgrade's name will replace this: {1}",
+        "HogwartsOllivander_UpgradeConstruction_Festival": "Ollivanders will say this when upgrading a building with more than 0 BuildDays if tomorrow is a festival. The upgrade's name will replace this: {1}",
+        "HogwartsOllivander_NewConstruction": "Ollivanders will say this when building something new with more than 0 BuildDays as long as tomorrow isn't a festival. The building's name will replace this: {0}",
+        "HogwartsOllivander_NewConstruction_Festival": "Ollivanders will say this when building something new with more than 0 BuildDays if tomorrow is a festival. The building's name will replace this: {0}",
+        // Default lines must always exist unless you love SMAPI errors. They'll be used in place of a builder's lines if that builder has no strings in Data/ExtraDialogue.
+        "{{ModId}}_Default_Instant": "{{i18n: buildings.Default.Instant}}",
+        "{{ModId}}_Default_UpgradeConstruction": "{{i18n: buildings.Default.UpgradeConstruction}}",
+        "{{ModId}}_Default_UpgradeConstruction_Festival": "{{i18n: buildings.Default.UpgradeConstruction.Festival}}",
+        "{{ModId}}_Default_NewConstruction": "{{i18n: buildings.Default.NewConstruction}}",
+        "{{ModId}}_Default_NewConstruction_Festival": "{{i18n: buildings.Default.NewConstruction.Festival}}"
+      }
+    },*/
