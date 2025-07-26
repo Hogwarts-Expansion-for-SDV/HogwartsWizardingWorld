@@ -4,8 +4,28 @@
       // Don't remove this! It's the fallback for invalid broomstick sprites.
       "LogName": "Hogwarts Broomsticks Load",
       "Action": "Load",
-      "Target": "{{ModId}}/Broomsticks/Default, {{ModId}}/Broomsticks/StableCommonDefault",
+      "Target": "{{ModId}}/Broomsticks/Default, {{ModId}}/Broomsticks/StableDefault, {{ModId}}/Broomsticks/StableUpgradedDefault, {{ModId}}/Broomsticks/Blue, {{ModId}}/Broomsticks/StableBlue, {{ModId}}/Broomsticks/StableUpgradedBlue",
       "FromFile": "assets/Broomsticks/{{TargetWithoutPath}}.png"
+    },
+    // Adds building dialogue. A builder should have all strings included here. If a building is set to magical, no dialogue will be said.
+    {
+      "LogName": "Hogwarts Mount Builder Extra Dialogue",
+      "Action": "EditData",
+      "Target": "Data/ExtraDialogue",
+      "Entries": {
+        // Ollivanders is only here for tests so I won't add his lines to i18n
+        "HogwartsOllivander_Instant": "Ollivanders will say this when building something (new buildings or upgrades) that has BuildDays set to 0. The building's name will replace this: {0}",
+        "HogwartsOllivander_UpgradeConstruction": "Ollivanders will say this when upgrading a building with more than 0 BuildDays as long as tomorrow isn't a festival. The upgrade's name will replace this: {1}",
+        "HogwartsOllivander_UpgradeConstruction_Festival": "Ollivanders will say this when upgrading a building with more than 0 BuildDays if tomorrow is a festival. The upgrade's name will replace this: {1}",
+        "HogwartsOllivander_NewConstruction": "Ollivanders will say this when building something new with more than 0 BuildDays as long as tomorrow isn't a festival. The building's name will replace this: {0}",
+        "HogwartsOllivander_NewConstruction_Festival": "Ollivanders will say this when building something new with more than 0 BuildDays if tomorrow is a festival. The building's name will replace this: {0}",
+        // Default lines must always exist unless you love SMAPI errors. They'll be used in place of a builder's lines if that builder has no strings in Data/ExtraDialogue.
+        "{{ModId}}_Default_Instant": "{{i18n: buildings.Default.Instant}}",
+        "{{ModId}}_Default_UpgradeConstruction": "{{i18n: buildings.Default.UpgradeConstruction}}",
+        "{{ModId}}_Default_UpgradeConstruction_Festival": "{{i18n: buildings.Default.UpgradeConstruction.Festival}}",
+        "{{ModId}}_Default_NewConstruction": "{{i18n: buildings.Default.NewConstruction}}",
+        "{{ModId}}_Default_NewConstruction_Festival": "{{i18n: buildings.Default.NewConstruction.Festival}}"
+      }
     },
     // Adds a build menu to a map's tile, similar to OpenShop
     {
@@ -21,7 +41,7 @@
           "Layer": "Buildings",
           "SetProperties": {
             // Any building menus should be added by actions called {{ModId}}_OpenBuildMenu followed by an NPC's unique id. We don't have the right NPCs right now, so Ollivanders is part timing there or something.
-            "Action": "{{ModId}}_OpenBuildMenu HogwartsOllivander"
+            "Action": "selph.CustomBuilders_ShowConstruct HogwartsOllivander"
           }
         }
       ]
@@ -31,10 +51,51 @@
       "Action": "EditData",
       "Target": "Data/Buildings",
       "Entries": {
-        "{{ModId}}_BroomstickDefault": {
+        "{{ModId}}_BroomstickStableDefault": {
           "Name": "Broomstick Stable",
           "Description": "Default broom stable.",
-          "Texture": "{{ModId}}/Broomsticks/StableCommonDefault",
+          "Texture": "{{ModId}}/Broomsticks/StableDefault",
+          "Size": {
+            "X": 1,
+            "Y": 1
+          },
+          "BuildingType": "StardewValley.Buildings.Stable",
+          "Builder": "Robin",
+          "BuildCost": 10,
+          "MagicalConstruction": true
+        },
+        "{{ModId}}_BroomstickStableUpgradedDefault": {
+          "BuildingToUpgrade": "{{ModId}}_BroomstickStableDefault",
+          "Name": "Broomstick Upgraded Stable",
+          "Description": "It's faster",
+          "Texture": "{{ModId}}/Broomsticks/StableUpgradedDefault",
+          "Size": {
+            "X": 1,
+            "Y": 1
+          },
+          "BuildingType": "StardewValley.Buildings.Stable",
+          "Builder": "Robin",
+          "BuildCost": 10,
+          "MagicalConstruction": true
+        },
+        "{{ModId}}_BroomstickStableBlue": {
+          "Name": "Broomstick Stable Blue",
+          "Description": "It's blue!",
+          "Texture": "{{ModId}}/Broomsticks/StableBlue",
+          "Size": {
+            "X": 1,
+            "Y": 1
+          },
+          "BuildingType": "StardewValley.Buildings.Stable",
+          "Builder": "Robin",
+          "BuildCost": 10,
+          "MagicalConstruction": true
+        },
+        "{{ModId}}_BroomstickStableUpgradedBlue": {
+          "BuildingToUpgrade": "{{ModId}}_BroomstickStableBlue",
+          "Name": "Broomstick Upgraded Stable Blue",
+          "Description": "It's blue AND upgraded!",
+          "Texture": "{{ModId}}/Broomsticks/StableUpgradedBlue",
           "Size": {
             "X": 1,
             "Y": 1
@@ -54,7 +115,7 @@
           },
           "CollisionMap": "\n          XXXX\n          XOOX\n        ",
           "BuildingType": "StardewValley.Buildings.Stable",
-          "Builder": "Robin",
+          "Builder": "HogwartsOllivander",
           "BuildCost": 10,
           "MagicalConstruction": true
         },
@@ -68,7 +129,7 @@
           },
           "CollisionMap": "\n          XXXX\n          XOOX\n        ",
           "BuildingType": "StardewValley.Buildings.Stable",
-          "Builder": "Robin",
+          "Builder": "HogwartsOllivander",
           "BuildCost": 10,
           "MagicalConstruction": true
         },
@@ -82,7 +143,7 @@
           },
           "CollisionMap": "\n          XXXX\n          XOOX\n        ",
           "BuildingType": "StardewValley.Buildings.Stable",
-          "Builder": "Robin",
+          "Builder": "HogwartsOllivander",
           "BuildCost": 10,
           "MagicalConstruction": true
         },
@@ -96,7 +157,7 @@
           },
           "CollisionMap": "\n          XXXX\n          XOOX\n        ",
           "BuildingType": "StardewValley.Buildings.Stable",
-          "Builder": "Robin",
+          "Builder": "HogwartsOllivander",
           "BuildCost": 10,
           "MagicalConstruction": true
         },
@@ -110,7 +171,7 @@
           },
           "CollisionMap": "\n          XXXX\n          XOOX\n        ",
           "BuildingType": "StardewValley.Buildings.Stable",
-          "Builder": "Robin",
+          "Builder": "HogwartsOllivander",
           "BuildCost": 10,
           "MagicalConstruction": true
         },
@@ -124,7 +185,7 @@
           },
           "CollisionMap": "\n          XXXX\n          XOOX\n        ",
           "BuildingType": "StardewValley.Buildings.Stable",
-          "Builder": "Robin",
+          "Builder": "HogwartsOllivander",
           "BuildCost": 10,
           "MagicalConstruction": true
         },
@@ -138,7 +199,7 @@
           },
           "CollisionMap": "\n          XXXX\n          XOOX\n        ",
           "BuildingType": "StardewValley.Buildings.Stable",
-          "Builder": "Robin",
+          "Builder": "HogwartsOllivander",
           "BuildCost": 10,
           "MagicalConstruction": true
         },
@@ -152,10 +213,13 @@
           },
           "CollisionMap": "\n          XXXX\n          XOOX\n        ",
           "BuildingType": "StardewValley.Buildings.Stable",
-          "Builder": "Robin",
+          "Builder": "HogwartsOllivander",
           "BuildCost": 10,
           "MagicalConstruction": true
-        },
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.CustomMounts, selph.CustomBuilders": true
       }
     },
     {
@@ -170,8 +234,47 @@
             "X": 2,
             "Y": 3
           },
+          "Speed": 10,
+          "TexturePath": "{{ModId}}/Broomsticks/Default",
+          "FootstepSound": "magic_arrow",
+          "FootstepSoundStone": "magic_arrow",
+          "FootstepSoundWood": "magic_arrow"
+        },
+        "{{ModId}}/BroomstickUpgradedDefault": {
+          "Name": "Broomstick",
+          "Stable": "Broomstick Upgraded Stable",
+          "SpawnOffset": {
+            "X": 2,
+            "Y": 3
+          },
           "Speed": 2,
           "TexturePath": "{{ModId}}/Broomsticks/Default",
+          "FootstepSound": "magic_arrow",
+          "FootstepSoundStone": "magic_arrow",
+          "FootstepSoundWood": "magic_arrow"
+        },
+        "{{ModId}}/BroomstickDefaultBlue": {
+          "Name": "Broomstick",
+          "Stable": "Broomstick Stable Blue",
+          "SpawnOffset": {
+            "X": 2,
+            "Y": 3
+          },
+          "Speed": 2,
+          "TexturePath": "{{ModId}}/Broomsticks/Blue",
+          "FootstepSound": "magic_arrow",
+          "FootstepSoundStone": "magic_arrow",
+          "FootstepSoundWood": "magic_arrow"
+        },
+        "{{ModId}}/BroomstickUpgradedDefaultBlue": {
+          "Name": "Broomstick",
+          "Stable": "Broomstick Upgraded Stable Blue",
+          "SpawnOffset": {
+            "X": 2,
+            "Y": 3
+          },
+          "Speed": 7,
+          "TexturePath": "{{ModId}}/Broomsticks/Blue",
           "FootstepSound": "magic_arrow",
           "FootstepSoundStone": "magic_arrow",
           "FootstepSoundWood": "magic_arrow"
@@ -258,86 +361,8 @@
         }
       },
       "When": {
-        "HasMod |contains= aedenthorn.CustomMounts": true
+        "HasMod |contains= aedenthorn.CustomMounts, selph.CustomBuilders": true
       }
     }
   ]
 }
-/*
-        "{{ModId}}_BroomstickStableUpgradedDefault": {
-          "BuildingToUpgrade": "{{ModId}}_BroomstickStableCommonDefault",
-          "Name": "Upgraded Broom Stable",
-          "Description": "It's faster",
-          "Texture": "{{InternalAssetKey: assets/Broomsticks/StableUpgradedDefault.png}}",
-          "MagicalConstruction": true,
-          "BuildCost": 10,
-          "BuildingType": "StardewValley.Buildings.Stable",
-          "Builder": "HogwartsOllivander",
-          "ModData": {
-            "{{ModId}}_BroomstickStable": "just write whatever",
-            "{{ModId}}_BroomstickSpeed": "2",
-            "{{ModId}}_BroomTexture": "{{InternalAssetKey: assets/Broomsticks/Default.png}}"
-          }
-        },
-        "{{ModId}}_BroomstickStableCommonBlue": {
-          "Name": "Blue Broom Stable",
-          "Description": "It's blue!",
-          "Texture": "{{InternalAssetKey: assets/Broomsticks/StableCommonBlue.png}}",
-          "MagicalConstruction": true,
-          "BuildCost": 10,
-          "BuildingType": "StardewValley.Buildings.Stable",
-          "Builder": "HogwartsOllivander"
-        },
-        "{{ModId}}_BroomstickStableUpgradedBlue": {
-          "BuildingToUpgrade": "{{ModId}}_BroomstickStableCommonBlue",
-          "Name": "Blue Upgraded Broom Stable",
-          "Description": "It's blue AND upgraded!",
-          "Texture": "{{InternalAssetKey: assets/Broomsticks/StableUpgradedBlue.png}}",
-          "MagicalConstruction": true,
-          "BuildCost": 10,
-          "BuildingType": "StardewValley.Buildings.Stable",
-          "Builder": "HogwartsOllivander"
-        },
-        "{{ModId}}_BroomstickStableCommonPink": {
-          "Name": "Pink Broom Stable",
-          "Description": "It's pink!",
-          "Texture": "{{InternalAssetKey: assets/Broomsticks/StableCommonPink.png}}",
-          "MagicalConstruction": false,
-          "BuildDays": 2,
-          "BuildCost": 100,
-          "BuildingType": "StardewValley.Buildings.Stable",
-          "Builder": "HogwartsOllivander"
-        },
-        "{{ModId}}_BroomstickStableUpgradedPink": {
-          "BuildingToUpgrade": "{{ModId}}_BroomstickStableCommonPink",
-          "Name": "Pink Upgraded Broom Stable",
-          "Description": "It's pink AND upgraded!",
-          "Texture": "{{InternalAssetKey: assets/Broomsticks/StableUpgradedPink.png}}",
-          "MagicalConstruction": false,
-          "BuildDays": 1,
-          "BuildCost": 50,
-          "BuildingType": "StardewValley.Buildings.Stable",
-          "Builder": "HogwartsOllivander"
-        }*/
-
-        /*,
-     Adds building dialogue. A builder should have all strings included here. If a building is set to magical, no dialogue will be said.
-    {
-      "LogName": "Hogwarts Mount Builder Extra Dialogue",
-      "Action": "EditData",
-      "Target": "Data/ExtraDialogue",
-      "Entries": {
-        // Ollivanders is only here for tests so I won't add his lines to i18n
-        "HogwartsOllivander_Instant": "Ollivanders will say this when building something (new buildings or upgrades) that has BuildDays set to 0. The building's name will replace this: {0}",
-        "HogwartsOllivander_UpgradeConstruction": "Ollivanders will say this when upgrading a building with more than 0 BuildDays as long as tomorrow isn't a festival. The upgrade's name will replace this: {1}",
-        "HogwartsOllivander_UpgradeConstruction_Festival": "Ollivanders will say this when upgrading a building with more than 0 BuildDays if tomorrow is a festival. The upgrade's name will replace this: {1}",
-        "HogwartsOllivander_NewConstruction": "Ollivanders will say this when building something new with more than 0 BuildDays as long as tomorrow isn't a festival. The building's name will replace this: {0}",
-        "HogwartsOllivander_NewConstruction_Festival": "Ollivanders will say this when building something new with more than 0 BuildDays if tomorrow is a festival. The building's name will replace this: {0}",
-        // Default lines must always exist unless you love SMAPI errors. They'll be used in place of a builder's lines if that builder has no strings in Data/ExtraDialogue.
-        "{{ModId}}_Default_Instant": "{{i18n: buildings.Default.Instant}}",
-        "{{ModId}}_Default_UpgradeConstruction": "{{i18n: buildings.Default.UpgradeConstruction}}",
-        "{{ModId}}_Default_UpgradeConstruction_Festival": "{{i18n: buildings.Default.UpgradeConstruction.Festival}}",
-        "{{ModId}}_Default_NewConstruction": "{{i18n: buildings.Default.NewConstruction}}",
-        "{{ModId}}_Default_NewConstruction_Festival": "{{i18n: buildings.Default.NewConstruction.Festival}}"
-      }
-    },*/
