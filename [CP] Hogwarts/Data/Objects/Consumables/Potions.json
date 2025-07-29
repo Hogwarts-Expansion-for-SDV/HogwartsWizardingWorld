@@ -1,6 +1,7 @@
 {
     "Changes": [
         {
+            "LogName": "Hogwarts Potion Object Data",
             "Action": "EditData",
             "Target": "Data/Objects",
             "Entries": {
@@ -1032,6 +1033,13 @@
                     "Trigger": "DayEnding",
                     "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_LovePotion Any",
                     "Action": "RemoveMail Current {{ModId}}_LovePotion",
+                    "MarkActionApplied": false
+                },
+                "{{ModId}}_ThunderBrewPotion": {
+                    "Id": "{{ModId}}_ThunderBrewPotion",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_ThunderBrewPotion Any",
+                    "Action": "RemoveMail Current {{ModId}}_ThunderBrewPotion",
                     "MarkActionApplied": false
                 }
             }

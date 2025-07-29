@@ -75,7 +75,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 10 83"
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 9 84"
           }
         },
         {
@@ -100,7 +100,7 @@
         },
         {
           "Position": {
-            "X": 21,
+            "X": 20,
             "Y": 51
           },
           "Layer": "Back",
@@ -110,7 +110,7 @@
         },
         {
           "Position": {
-            "X": 22,
+            "X": 20,
             "Y": 52
           },
           "Layer": "Back",
@@ -210,6 +210,47 @@
             "TouchAction": "Warp {{ModId}}_HogsmeadeVillage 37 136"
           }
         },
+        /*Hogwarts Valley*/
+        {
+          "Position": {
+            "X": 72,
+            "Y": 3
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsValley 37 136"
+          }
+        },
+        {
+          "Position": {
+            "X": 73,
+            "Y": 3
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsValley 37 136"
+          }
+        },
+        {
+          "Position": {
+            "X": 74,
+            "Y": 3
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsValley 37 136"
+          }
+        },
+        {
+          "Position": {
+            "X": 75,
+            "Y": 3
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsValley 37 136"
+          }
+        },
         /*Library Annex*/
         {
           "Position": {
@@ -218,7 +259,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 41 36"
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 56 38"
           }
         },
         {
@@ -228,7 +269,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 41 36"
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 56 38"
           }
         },
         {
@@ -238,7 +279,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 41 36"
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 56 38"
           }
         },
         {
@@ -248,7 +289,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 41 36"
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 56 38"
           }
         },
         /*South Wing*/
@@ -279,7 +320,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 18 23"
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 18 23"
           }
         },
         {
@@ -289,7 +330,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 18 23"
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 18 23"
           }
         },
         /*Transfiguration Wing*/
@@ -300,7 +341,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 1 31"
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 3 41"
           }
         },
         {
@@ -310,7 +351,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 1 31"
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 3 41"
           }
         },
         {
@@ -320,7 +361,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 1 31"
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 3 41"
           }
         }
       ]
@@ -349,10 +390,11 @@
               "X": 1,
               "Y": -0.3
             },
-            "Length": 1,
+            "Length": 2,
             "LayerDepth": -1,
             "Loops": 500,
-            "Flipped": true
+            "Flipped": true,
+            "Interval": 1750
           }
         ]
       }
@@ -369,7 +411,6 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            // Once 
             "DMT/animation_On": "{{ModId}}.BoatAnimation,Boat"
           }
         }
