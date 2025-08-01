@@ -921,10 +921,10 @@
                         }
                     ]
                 },
-                "{{ModId}}_ThunderbrewPotion": {
-                    "Name": "Thunderbrew Potion",
-                    "DisplayName": "{{i18n: obj.potions.ThunderbrewPotion.name}}",
-                    "Description": "{{i18n: obj.potions.ThunderbrewPotion.desc}}",
+                "{{ModId}}_Thunderbrew": {
+                    "Name": "Thunderbrew",
+                    "DisplayName": "{{i18n: obj.potions.Thunderbrew.name}}",
+                    "Description": "{{i18n: obj.potions.Thunderbrew.desc}}",
                     "Type": "Basic",
                     "Category": -26,
                     "Price": 999,
@@ -1015,6 +1015,32 @@
             "Action": "EditData",
             "Target": "Data/TriggerActions",
             "Entries": {
+                /*Amortentia*/
+                "{{ModId}}_Amortentia": {
+                    "Id": "{{ModId}}_Amortentia",
+                    "Trigger": "spacechase0.SpaceCore_OnItemEaten",
+                    "Condition": "ITEM_ID Input {{ModId}}_Amortentia",
+                    "Actions": [
+                        "Spiderbuttons.BETAS_EmoteFarmer 20",
+                        "AddMail Current {{ModId}}_Amortentia received"
+                    ],
+                    "MarkActionApplied": false
+                },
+                "{{ModId}}_AmortentiaRepeat": {
+                    "Id": "{{ModId}}_AmortentiaRepeat",
+                    "Trigger": "Spiderbuttons.BETAS_DialogueOpened",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_Amortentia Any",
+                    "Action": "Spiderbuttons.BETAS_EmoteFarmer 20",
+                    "MarkActionApplied": false
+                },
+                "{{ModId}}_AmortentiaEnd": {
+                    "Id": "{{ModId}}_AmortentiaEnd",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_Amortentia Any",
+                    "Action": "RemoveMail Current {{ModId}}_Amortentia all",
+                    "MarkActionApplied": false
+                },
+                /*Confusing Concoction*/
                 "{{ModId}}_ConfusingConcoction": {
                     "Id": "{{ModId}}_ConfusingConcoction",
                     "Trigger": "spacechase0.SpaceCore_OnItemEaten",
@@ -1039,6 +1065,7 @@
                     "Action": "RemoveMail Current {{ModId}}_ConfusingConcoction all",
                     "MarkActionApplied": false
                 },
+                /*Invisibility Potion*/
                 "{{ModId}}_InvisibilityPotion": {
                     "Id": "{{ModId}}_InvisibilityPotion",
                     "Trigger": "DayEnding",
@@ -1046,90 +1073,33 @@
                     "Action": "RemoveMail Current {{ModId}}_InvisibilityPotion",
                     "MarkActionApplied": false
                 },
-                "{{ModId}}_LovePotion": {
-                    "Id": "{{ModId}}_LovePotion",
+                /*Thunder Brew*/
+                "{{ModId}}_ThunderBrew": {
+                    "Id": "{{ModId}}_ThunderBrew",
                     "Trigger": "spacechase0.SpaceCore_OnItemEaten",
-                    "Condition": "ITEM_ID Input {{ModId}}_LovePotion",
-                    "Action": "Spiderbuttons.BETAS_EmoteFarmer 20",
-                    "MarkActionApplied": false
-                },/*
-                "{{ModId}}_ConfusingConcoction": {
-                    "Id": "{{ModId}}_ConfusingConcoction",
-                    "Trigger": "DayEnding",
-                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_ConfusingConcoction Any",
-                    "Action": "RemoveMail All {{ModId}}_ConfusingConcoction",
+                    "Condition": "ITEM_ID Input {{ModId}}_ThunderBrew",
+                    "Actions": [
+                        "Spiderbuttons.BETAS_Lightning [Spiderbuttons.BETAS_NumberOffset [Spiderbuttons.BETAS_CharacterCoordinate Farmer X] {{Query: {{Random: {{Range: -7, 7}}}}}}] [Spiderbuttons.BETAS_NumberOffset [Spiderbuttons.BETAS_CharacterCoordinate Farmer Y] {{Query: {{Random: {{Range: -13, 13}}}}}}]",
+                        "AddMail Current {{ModId}}_ThunderBrew received"
+                    ],
                     "MarkActionApplied": false
                 },
-                "{{ModId}}_InvisibilityPotion": {
-                    "Id": "{{ModId}}_InvisibilityPotion",
-                    "Trigger": "DayEnding",
-                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_InvisibilityPotion Any",
-                    "Action": "RemoveMail All {{ModId}}_InvisibilityPotion",
+                "{{ModId}}_ThunderBrewRepeat": {
+                    "Id": "{{ModId}}_ThunderBrewRepeat",
+                    "Trigger": "Spiderbuttons.BETAS_MonsterKilled",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_ThunderBrew Any",
+                    "Action": "Spiderbuttons.BETAS_Lightning [Spiderbuttons.BETAS_NumberOffset [Spiderbuttons.BETAS_CharacterCoordinate Farmer X] {{Query: {{Random: {{Range: -7, 7}}}}}}] [Spiderbuttons.BETAS_NumberOffset [Spiderbuttons.BETAS_CharacterCoordinate Farmer Y] {{Query: {{Random: {{Range: -13, 13}}}}}}]",
                     "MarkActionApplied": false
                 },
-                "{{ModId}}_LovePotion": {
-                    "Id": "{{ModId}}_LovePotion",
+                "{{ModId}}_ThunderBrewEnd": {
+                    "Id": "{{ModId}}_ThunderBrewEnd",
                     "Trigger": "DayEnding",
-                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_LovePotion Any",
-                    "Action": "RemoveMail All {{ModId}}_LovePotion",
-                    "MarkActionApplied": false
-                },*/
-                "{{ModId}}_ThunderBrewPotion": {
-                    "Id": "{{ModId}}_ThunderBrewPotion",
-                    "Trigger": "spacechase0.SpaceCore_OnItemEaten",
-                    "Condition": "ITEM_ID Input {{ModId}}_ThunderBrewPotion",
-                    "Action": "Spiderbuttons.BETAS_Lightning",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_ThunderBrew Any",
+                    "Action": "RemoveMail Current {{ModId}}_ThunderBrew all",
                     "MarkActionApplied": false
                 }
-            }
-        },/*
-        {
-            "LogName": "Hogwarts Confusing Concoction DMT",
-            "Action": "EditData",
-            "Target": "DMT/Tiles",
-            "Entries": {
-                "{{ModId}}_ConfusingConcoction": {
-                    "Locations": ["{{LocationName}}"],
-                    "Layers": ["Back"],
-                    "Actions": [
-                        {
-                            "Key": "DMT/emote",
-                            "Value": "8",
-                            "Trigger": "Enter"
-                        }
-                    ]
-                }
             },
-            "When": {
-                "HasFlag |contains= {{ModId}}_ConfusingConcoction": true,
-                "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
-                "Debug_mode": false
-            },
-            "Update": "OnLocationChange"
-        },*/
-        {
-            "LogName": "Hogwarts Love Potion DMT",
-            "Action": "EditData",
-            "Target": "DMT/Tiles",
-            "Entries": {
-                "{{ModId}}_LovePotion": {
-                    "Locations": ["{{LocationName}}"],
-                    "Layers": ["Back"],
-                    "Actions": [
-                        {
-                            "Key": "DMT/emote",
-                            "Value": "20",
-                            "Trigger": "Talk"
-                        }
-                    ]
-                }
-            },
-            "When": {
-                "HasFlag |contains= {{ModId}}_LovePotion": true,
-                "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
-                "Debug_mode": false
-            },
-            "Update": "OnLocationChange"
+            "Update": "OnTimeChange, OnLocationChange"
         },
         {
             "LogName": "Hogwarts Invisibility Potion EditImage Hairstyles",

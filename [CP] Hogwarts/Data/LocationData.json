@@ -56,7 +56,7 @@
       "FromFile": "assets/Maps/HogsmeadeVillage.tmx"
     },
     {
-      "LogName": "Hogwarts Express Load",
+      "LogName": "Hogwarts Express Interior Load",
       "Action": "Load",
       "Target": "Maps/{{ModId}}_HogwartsExpressInterior",
       "FromFile": "assets/Maps/HogwartsExpressInterior.tmx"
@@ -253,18 +253,6 @@
       "Action": "Load",
       "Target": "Maps/{{ModId}}_HogwartsPotionsClassroom",
       "FromFile": "assets/Maps/HogwartsPotionsClassroom.tmx"
-    },
-    {
-      "LogName": "Hogwarts Ravenclaw Common Room Load",
-      "Action": "Load",
-      "Target": "Maps/{{ModId}}_HogwartsRavenclawCommonRoom",
-      "FromFile": "assets/Maps/HogwartsRavenclawCommonRoom.tmx"
-    },
-    {
-      "LogName": "Hogwarts Slytherin Common Room Load",
-      "Action": "Load",
-      "Target": "Maps/{{ModId}}_HogwartsSlytherinCommonRoom",
-      "FromFile": "assets/Maps/HogwartsSlytherinCommonRoom.tmx"
     },
     {
       "LogName": "Hogwarts South Wing Load",
@@ -635,12 +623,6 @@
           "DefaultArrivalTile": {
             "X": 15, 
             "Y": 30
-          }
-        },
-        "{{ModId}}_HogwartsRavenclawCommonRoom": {
-          "CreateOnLoad": {
-            "AlwaysActive": false,
-            "MapPath": "Maps/{{ModId}}_HogwartsRavenclawCommonRoom"
           }
         },
         "{{ModId}}_HogwartsSouthWing": {

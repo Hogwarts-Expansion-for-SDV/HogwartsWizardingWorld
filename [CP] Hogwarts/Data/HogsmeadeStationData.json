@@ -299,32 +299,75 @@
           }
         }
       ]
-    }
-    /*
+    },
     {
-      "LogName": "Hogsmeade Station MinecartTransport",
+      "LogName": "Hogwarts Express Interior Warp",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogsmeadeStation",
       "MapTiles": [
         {
           "Position": {
-            "X": 32,
-            "Y": 14
+            "X": 19,
+            "Y": 18
           },
-          "Layer": "Buildings",
-          "SetTilesheet": "untitled tile sheet",
-          "SetIndex": 1057
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsExpressInterior 3 10"
+          }
         },
         {
           "Position": {
-            "X": 32,
-            "Y": 13
+            "X": 27,
+            "Y": 18
           },
-          "Layer": "Front",
-          "SetTilesheet": "untitled tile sheet",
-          "SetIndex": 1032
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsExpressInterior 3 10"
+          }
+        },
+        {
+          "Position": {
+            "X": 34,
+            "Y": 18
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsExpressInterior 3 10"
+          }
+        },
+        {
+          "Position": {
+            "X": 42,
+            "Y": 18
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsExpressInterior 3 10"
+          }
+        }
+      ],
+      "When": {
+        "Time": "{{Range: 0600, 1150}}",
+        "Day": "8, 22"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Express Interior To Railroad",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsExpressInterior",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 3,
+            "Y": 11
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 39 41 Railroad"
+          }
         }
       ]
-    }*/
+    }
   ]
 }
