@@ -1011,14 +1011,32 @@
             }
         },
         {
+            "LogName": "Hogwarts Potions Trigger Actions",
             "Action": "EditData",
             "Target": "Data/TriggerActions",
             "Entries": {
                 "{{ModId}}_ConfusingConcoction": {
                     "Id": "{{ModId}}_ConfusingConcoction",
+                    "Trigger": "spacechase0.SpaceCore_OnItemEaten",
+                    "Condition": "ITEM_ID Input {{ModId}}_ConfusingConcoction",
+                    "Actions": [
+                        "Spiderbuttons.BETAS_EmoteFarmer 8",
+                        "AddMail Current {{ModId}}_ConfusingConcoction received"
+                    ],
+                    "MarkActionApplied": false
+                },
+                "{{ModId}}_ConfusingConcoctionRepeat": {
+                    "Id": "{{ModId}}_ConfusingConcoctionRepeat",
+                    "Trigger": "LocationChanged",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_ConfusingConcoction Any",
+                    "Action": "Spiderbuttons.BETAS_EmoteFarmer 8",
+                    "MarkActionApplied": false
+                },
+                "{{ModId}}_ConfusingConcoctionEnd": {
+                    "Id": "{{ModId}}_ConfusingConcoctionEnd",
                     "Trigger": "DayEnding",
                     "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_ConfusingConcoction Any",
-                    "Action": "RemoveMail Current {{ModId}}_ConfusingConcoction",
+                    "Action": "RemoveMail Current {{ModId}}_ConfusingConcoction all",
                     "MarkActionApplied": false
                 },
                 "{{ModId}}_InvisibilityPotion": {
@@ -1030,20 +1048,41 @@
                 },
                 "{{ModId}}_LovePotion": {
                     "Id": "{{ModId}}_LovePotion",
+                    "Trigger": "spacechase0.SpaceCore_OnItemEaten",
+                    "Condition": "ITEM_ID Input {{ModId}}_LovePotion",
+                    "Action": "Spiderbuttons.BETAS_EmoteFarmer 20",
+                    "MarkActionApplied": false
+                },/*
+                "{{ModId}}_ConfusingConcoction": {
+                    "Id": "{{ModId}}_ConfusingConcoction",
                     "Trigger": "DayEnding",
-                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_LovePotion Any",
-                    "Action": "RemoveMail Current {{ModId}}_LovePotion",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_ConfusingConcoction Any",
+                    "Action": "RemoveMail All {{ModId}}_ConfusingConcoction",
                     "MarkActionApplied": false
                 },
+                "{{ModId}}_InvisibilityPotion": {
+                    "Id": "{{ModId}}_InvisibilityPotion",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_InvisibilityPotion Any",
+                    "Action": "RemoveMail All {{ModId}}_InvisibilityPotion",
+                    "MarkActionApplied": false
+                },
+                "{{ModId}}_LovePotion": {
+                    "Id": "{{ModId}}_LovePotion",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_LovePotion Any",
+                    "Action": "RemoveMail All {{ModId}}_LovePotion",
+                    "MarkActionApplied": false
+                },*/
                 "{{ModId}}_ThunderBrewPotion": {
                     "Id": "{{ModId}}_ThunderBrewPotion",
-                    "Trigger": "DayEnding",
-                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_ThunderBrewPotion Any",
-                    "Action": "RemoveMail Current {{ModId}}_ThunderBrewPotion",
+                    "Trigger": "spacechase0.SpaceCore_OnItemEaten",
+                    "Condition": "ITEM_ID Input {{ModId}}_ThunderBrewPotion",
+                    "Action": "Spiderbuttons.BETAS_Lightning",
                     "MarkActionApplied": false
                 }
             }
-        },
+        },/*
         {
             "LogName": "Hogwarts Confusing Concoction DMT",
             "Action": "EditData",
@@ -1051,7 +1090,7 @@
             "Entries": {
                 "{{ModId}}_ConfusingConcoction": {
                     "Locations": ["{{LocationName}}"],
-                    "Layers": ["Paths"],
+                    "Layers": ["Back"],
                     "Actions": [
                         {
                             "Key": "DMT/emote",
@@ -1067,7 +1106,7 @@
                 "Debug_mode": false
             },
             "Update": "OnLocationChange"
-        },
+        },*/
         {
             "LogName": "Hogwarts Love Potion DMT",
             "Action": "EditData",
@@ -1075,7 +1114,7 @@
             "Entries": {
                 "{{ModId}}_LovePotion": {
                     "Locations": ["{{LocationName}}"],
-                    "Layers": ["Paths"],
+                    "Layers": ["Back"],
                     "Actions": [
                         {
                             "Key": "DMT/emote",
