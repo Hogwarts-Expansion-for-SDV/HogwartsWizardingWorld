@@ -1,18 +1,21 @@
 {
     "Name": "[CC] Hogwarts",
     "Author": "Hogwarts Expansion Team",
-    "Version": "0.0.1",
+    "Version": "0.4.0",
     "Description": "Adds Hogwarts Custom Companions to SDV.",
     "UniqueID": "HogwartsET.CC.Hogwarts",
-    "MinimumApiVersion": "4.0",
-    "UpdateKeys": ["Nexus:14858"],
+    "MinimumApiVersion": "4.3.0",
+    "UpdateKeys": [
+        "Nexus:14858"
+    ],
     "ContentPackFor": {
-        "UniqueID": "PeacefulEnd.CustomCompanions"
+        "UniqueID": "PeacefulEnd.CustomCompanions",
+        "MinimumVersion": "5.0.0"
     },
     "Dependencies": [
         {
             "UniqueID": "HogwartsET.CP.Hogwarts",
-            "IsRequired": false
+            "IsRequired": true
         }
     ]
 }
