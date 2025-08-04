@@ -1011,7 +1011,22 @@
             }
         },
         {
-            "LogName": "Hogwarts Potions Trigger Actions",
+            "LogName": "Hogwarts Potions Trigger Actions Standard",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                /*Invisibility Potion*/
+                "{{ModId}}_InvisibilityPotion": {
+                    "Id": "{{ModId}}_InvisibilityPotion",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_InvisibilityPotion Any",
+                    "Action": "RemoveMail Current {{ModId}}_InvisibilityPotion",
+                    "MarkActionApplied": false
+                }
+            }
+        },
+        {
+            "LogName": "Hogwarts Potions Trigger Actions Unique",
             "Action": "EditData",
             "Target": "Data/TriggerActions",
             "Entries": {
@@ -1065,22 +1080,15 @@
                     "Action": "RemoveMail Current {{ModId}}_ConfusingConcoction all",
                     "MarkActionApplied": false
                 },
-                /*Invisibility Potion*/
-                "{{ModId}}_InvisibilityPotion": {
-                    "Id": "{{ModId}}_InvisibilityPotion",
-                    "Trigger": "DayEnding",
-                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_InvisibilityPotion Any",
-                    "Action": "RemoveMail Current {{ModId}}_InvisibilityPotion",
-                    "MarkActionApplied": false
-                },
                 /*Thunder Brew*/
                 "{{ModId}}_ThunderBrew": {
                     "Id": "{{ModId}}_ThunderBrew",
                     "Trigger": "spacechase0.SpaceCore_OnItemEaten",
                     "Condition": "ITEM_ID Input {{ModId}}_ThunderBrew",
                     "Actions": [
-                        "Spiderbuttons.BETAS_Lightning [Spiderbuttons.BETAS_NumberOffset [Spiderbuttons.BETAS_CharacterCoordinate Farmer X] {{Query: {{Random: {{Range: -7, 7}}}}}}] [Spiderbuttons.BETAS_NumberOffset [Spiderbuttons.BETAS_CharacterCoordinate Farmer Y] {{Query: {{Random: {{Range: -13, 13}}}}}}]",
-                        "AddMail Current {{ModId}}_ThunderBrew received"
+                        "Spiderbuttons.BETAS_Lightning [Spiderbuttons.BETAS_NumberOffset [Spiderbuttons.BETAS_CharacterCoordinate Farmer X] {{Query: {{Random: {{Range: -13, 13}}|key={{Time}}}}}}] [Spiderbuttons.BETAS_NumberOffset [Spiderbuttons.BETAS_CharacterCoordinate Farmer Y] {{Query: {{Random: {{Range: -7, 7}}|key={{Time}}}}}}]",
+                        "AddMail Current {{ModId}}_ThunderBrew received",
+                        "Spiderbuttons.BETAS_PatchUpdate"
                     ],
                     "MarkActionApplied": false
                 },
@@ -1088,7 +1096,10 @@
                     "Id": "{{ModId}}_ThunderBrewRepeat",
                     "Trigger": "Spiderbuttons.BETAS_MonsterKilled",
                     "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_ThunderBrew Any",
-                    "Action": "Spiderbuttons.BETAS_Lightning [Spiderbuttons.BETAS_NumberOffset [Spiderbuttons.BETAS_CharacterCoordinate Farmer X] {{Query: {{Random: {{Range: -7, 7}}}}}}] [Spiderbuttons.BETAS_NumberOffset [Spiderbuttons.BETAS_CharacterCoordinate Farmer Y] {{Query: {{Random: {{Range: -13, 13}}}}}}]",
+                    "Actions": [
+                        "Spiderbuttons.BETAS_Lightning [Spiderbuttons.BETAS_NumberOffset [Spiderbuttons.BETAS_CharacterCoordinate Farmer X] {{Query: {{Random: {{Range: -13, 13}}|key={{Time}}}}}}] [Spiderbuttons.BETAS_NumberOffset [Spiderbuttons.BETAS_CharacterCoordinate Farmer Y] {{Query: {{Random: {{Range: -7, 7}}|key={{Time}}}}}}]",
+                        "Spiderbuttons.BETAS_PatchUpdate"
+                    ],
                     "MarkActionApplied": false
                 },
                 "{{ModId}}_ThunderBrewEnd": {
@@ -1099,7 +1110,7 @@
                     "MarkActionApplied": false
                 }
             },
-            "Update": "OnTimeChange, OnLocationChange"
+            "HasMod |contains= spacechase0.SpaceCore, Spiderbuttons.BETAS": true
         },
         {
             "LogName": "Hogwarts Invisibility Potion EditImage Hairstyles",

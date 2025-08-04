@@ -27,6 +27,7 @@
         }
       ],
       "When": {
+        "HasMod |contains= PeacefulEnd.CustomCompanions": true,
         "HasFlag": "{{Random:{{Creature}}|key=CreaturePen1}}1",
         "Weather": "Sun",
         "Season |contains=Winter": "false"
@@ -59,6 +60,7 @@
         }
       ],
       "When": {
+        "HasMod |contains= PeacefulEnd.CustomCompanions": true,
         "HasFlag": "{{Random:{{Creature}}|key=CreaturePen2}}1",
         "Weather": "Sun",
         "Season |contains=Winter": "false"
@@ -116,7 +118,10 @@
             "CustomCompanions": "Spawn 1 HogwartsET.CC.Hogwarts.WhompingWillow"
           }
         }
-      ]
+      ],
+      "When": {
+        "HasMod |contains= PeacefulEnd.CustomCompanions": true
+      }
     },
     {
       "LogName": "Hogwarts Bell Tower Courtyard Whomping Willow Hazard Rectangle",

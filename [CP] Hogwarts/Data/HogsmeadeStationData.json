@@ -17,6 +17,7 @@
         }
       ],
       "When": {
+        "HasMod |contains= PeacefulEnd.CustomCompanions": true,
         "Time": "{{Range: 0600, 1150}}",
         "Day": "8, 22"
       },
@@ -95,6 +96,7 @@
         }
       ],
       "When": {
+        "HasMod |contains= PeacefulEnd.CustomCompanions": true,
         "Time": "{{Range: 1100, 1150}}",
         "Day": "8, 22"
       },
@@ -117,6 +119,7 @@
         }
       ],
       "When": {
+        "HasMod |contains= PeacefulEnd.CustomCompanions": true,
         "Time": "{{Range: 1800, 2600}}",
         "Day": "1, 15"
       },
@@ -195,6 +198,7 @@
         }
       ],
       "When": {
+        "HasMod |contains= PeacefulEnd.CustomCompanions": true,
         "Time": "{{Range: 1750, 2000}}",
         "Day": "1, 15"
       },
@@ -348,7 +352,9 @@
       ],
       "When": {
         "Time": "{{Range: 0600, 1150}}",
-        "Day": "8, 22"
+        "Day": "8, 22",
+        "HasMod |contains= Esca.EMP": true,
+        "Esca.EMP/GameStateQuery: LOCATION_ACCESSIBLE Railroad": true
       },
       "Update": "OnLocationChange"
     },
@@ -367,7 +373,11 @@
             "Action": "Warp 39 41 Railroad"
           }
         }
-      ]
+      ],
+      "When": {
+        "HasMod |contains= Esca.EMP": true,
+        "Esca.EMP/GameStateQuery: LOCATION_ACCESSIBLE Railroad": true
+      }
     }
   ]
 }
