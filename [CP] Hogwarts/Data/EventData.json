@@ -1,6 +1,22 @@
 {
   "Changes": [
     {
+      "LogName": "Hogwarts Event Load",
+      "Action": "Load",
+      "Target": "Data/Events/{{ModId}}_Ollivanders, Data/Events/{{ModId}}_HogwartsValley",
+      "FromFile": "Assets/blank.json"
+    },
+    /*Ollivanders
+    {
+      "LogName": "Ollivanders Events",
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_Ollivanders",
+      "Entries": {
+        "{{ModId}}_Ollivander10/": "none/8 6/farmer 7 6 1 HogwartsOllivander 9 6 3/skippable/pause 1000/pause 3000/end"
+      }
+    },*/
+    /*Hogwarts Valley*/
+    {
       "LogName": "Hogsmeade Village Events",
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogsmeadeVillage",
@@ -15,6 +31,7 @@
       "Entries": {
         "{{ModId}}_HogwartsInvitation": "Dear @,^We are pleased to inform you that you have been accepted at Hogwarts School of Witchcraft and Wizardry. Please find your nearest wizard tower to travel to the Scottish Highlands where you can begin your studies.^^Yours sincerely,^^Minerva McGonagall^Headmistress[#]Hogwarts Invitation"
       }
-    }
+    },
+    
   ]
 }
