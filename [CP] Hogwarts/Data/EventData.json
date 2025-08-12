@@ -7,6 +7,14 @@
       "FromFile": "Assets/blank.json"
     },
     /*Ollivanders*/
+
+    //How did the player meet Ollivander? (just passing by or visiting the shop), logically he won't perform the spell in front of the player without any reason. -> Lead to Ollivander and the player speak about it, and move into the positions.
+    //Adding the message to signify a change of scene like "A long time ago" or something. Why would Ollivander appear in front of Albus grave, is this a flashback or something?
+    //Pausing in the middle of the speak then speak again make it feel like Ollivander is analyzing/pondering.
+    //globalFade/viewport -1000 -1000/pause 1000 at the very end is unnecessary unless the scene bug out without them. 
+    //Add move/facedirection occasionally to make the cutscene feel more dynamic.
+    //Using shake, playSound, playMusic.
+    //Approaching = make the NPC move 1 tile closer.
     {
       "LogName": "Hogwarts Ollivanders Events",
       "Action": "EditData",
