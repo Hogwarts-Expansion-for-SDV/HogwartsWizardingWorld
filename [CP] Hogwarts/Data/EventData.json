@@ -3,19 +3,27 @@
     {
       "LogName": "Hogwarts Event Load",
       "Action": "Load",
-      "Target": "Data/Events/{{ModId}}_Ollivanders, Data/Events/{{ModId}}_HogwartsValley",
+      "Target": "Data/Events/{{ModId}}_Ollivanders",
       "FromFile": "Assets/blank.json"
     },
-    /*Ollivanders
+    /*Ollivanders*/
     {
-      "LogName": "Ollivanders Events",
+      "LogName": "Hogwarts Ollivanders Events",
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_Ollivanders",
       "Entries": {
-        "{{ModId}}_Ollivander10/": "none/8 6/farmer 7 6 1 HogwartsOllivander 9 6 3/skippable/pause 1000/pause 3000/end"
+        "{{ModId}}_Ollivander10": "none/8 6/farmer 7 6 1 HogwartsOllivander 9 6 3/skippable/pause 800/
+        speak HogwartsOllivander \"Oh, aren't you perceptive?#$b#Correct, this is no ordinary yew wand.\"/pause 800/
+        globalFade/viewport -1000 -1000/pause 800/
+        changeToTemporaryMap {{ModId}}_HogwartsValley/viewport 92 131 true/warp HogwartsOllivander 92 132/faceDirection HogwartsOllivander 0/pause 800/
+        speak HogwartsOllivander \"It's been some time, Albus.#$b#Curious... A yew tree.#$b#This tree grew...#$b#From the Dark Lord's wand!\"/pause 800/
+        emote HogwartsOllivander 12/pause 800/
+        globalFade/viewport -1000 -1000/warp farmer 7 6/faceDirection farmer 1/warp HogwartsOllivander 9 6/faceDirection HogwartsOllivander 3/pause 800/
+        changeLocation {{ModId}}_Ollivanders/viewport 8 6 true/pause 800/
+        speak HogwartsOllivander \"I crafted the tree's wood into a wand, and now...#$b#The Dark Lord's wand serves me.\"/pause 800/
+        globalFade/viewport -1000 -1000/pause 1000/end"
       }
-    },*/
-    /*Hogwarts Valley*/
+    },
     {
       "LogName": "Hogsmeade Village Events",
       "Action": "EditData",
@@ -31,7 +39,6 @@
       "Entries": {
         "{{ModId}}_HogwartsInvitation": "Dear @,^We are pleased to inform you that you have been accepted at Hogwarts School of Witchcraft and Wizardry. Please find your nearest wizard tower to travel to the Scottish Highlands where you can begin your studies.^^Yours sincerely,^^Minerva McGonagall^Headmistress[#]Hogwarts Invitation"
       }
-    },
-    
+    }
   ]
 }
