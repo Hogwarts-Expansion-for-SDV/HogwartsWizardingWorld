@@ -1,0 +1,138 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Astronomy Gameplay Images Load",
+      "Action": "Load",
+      "Target": "{{ModId}}/moonobjects, {{ModId}}/moons, {{ModId}}/nightsky, {{ModId}}/scopecutout1, {{ModId}}/scopecutout2, {{ModId}}/stars, {{ModId}}/starsobjects",
+      "FromFile": "assets/Astronomy/{{TargetWithoutPath}}.png"
+    },
+    {
+      "LogName": "Stellascope Transparent Images Load",
+      "Action": "Load",
+      "Target": "{{ModId}}/transparentstellascope",
+      "FromFile": "assets/Astronomy/transparent.png"
+    },
+    {
+      "LogName": "Lunascope Transparent Images Load",
+      "Action": "Load",
+      "Target": "{{ModId}}/transparentlunascope",
+      "FromFile": "assets/Astronomy/transparent.png"
+    },
+    {
+      "LogName": "Hogwarts Astronomy Classroom Lunascope Top Left",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsAstronomyClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 11,
+            "Y": 22
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteraction_Image {{ModId}}/transparentlunascope 0 0 128 128"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= DecidedlyHuman.MappingExtensionsAndExtraProperties": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Astronomy Night Sky",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/transparentlunascope",
+      "FromFile": "assets/Astronomy/nightsky.png",
+      "FromArea": {
+        "X": "{{Query: {{Random: {{Range: 0, 472}}}}}}",
+        "Y": "{{Query: {{Random: {{Range: 0, 272}}}}}}",
+        "Width": 128,
+        "Height": 128
+      },
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 128,
+        "Height": 128
+      },
+      "PatchMode": "Overlay",
+    },
+     {
+      "LogName": "Hogwarts Astronomy Moon",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/transparentlunascope",
+      "FromFile": "assets/Astronomy/moons.png",
+      "FromArea": {
+        "X": "{{Query: {{Random: 0, 32, 64, 128, 160, 192, 224}}}}",
+        "Y": 0,
+        "Width": 32,
+        "Height": 32
+      },
+      "ToArea": {
+        "X": 48,
+        "Y": 48,
+        "Width": 32,
+        "Height": 32
+      },
+      "PatchMode": "Overlay",
+    },
+        {
+      "LogName": "Hogwarts Lunascope Cutout",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/transparentlunascope",
+      "FromFile": "assets/Astronomy/scopecutout2.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 128,
+        "Height": 128
+      },
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 128,
+        "Height": 128
+      },
+      "PatchMode": "Overlay",
+    },
+    {
+      "LogName": "Hogwarts Astronomy Classroom Stellascope Top Left",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsAstronomyClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 20,
+            "Y": 22
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteraction_Image {{ModId}}/transparentstellascope 0 0 128 128"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= DecidedlyHuman.MappingExtensionsAndExtraProperties": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Astronomy Night Sky Stellascope",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/transparentstellascope",
+      "FromFile": "assets/Astronomy/nightsky.png",
+      "FromArea": {
+        "X": "{{Query: {{Random: {{Range: 0, 472|key=Luna}}}}}}",
+        "Y": "{{Query: {{Random: {{Range: 0, 272|key=Luna}}}}}}",
+        "Width": 128,
+        "Height": 128
+      },
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 128,
+        "Height": 128
+      },
+      "PatchMode": "Overlay",
+    }
+  ]
+}
