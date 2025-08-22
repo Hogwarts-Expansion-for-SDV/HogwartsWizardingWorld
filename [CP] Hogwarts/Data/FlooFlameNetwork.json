@@ -52,6 +52,23 @@
       }
     },
     {
+      "LogName": "Floo Flame Network Fireplace Furniture Calcifer",
+      "Action": "EditData",
+      "Target": "sophie.Calcifer/FurnitureActions",
+      "Entries": {
+        "(F)1792": {
+          "TileActions": [
+            {
+              "TileAction": "MinecartTransport {{ModId}}_HogsmeadeNetwork"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= sophie.Calcifer": true
+      }
+    },
+    {
       "LogName": "Floo Flame Network - Hogsmeade Station Flame",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogsmeadeStation",
