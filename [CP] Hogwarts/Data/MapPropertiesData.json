@@ -462,6 +462,19 @@
       }
     },
     {
+      "LogName": "Map Properties of Forbidden Forest MMAP",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForest",
+      "MapProperties": {
+        "mushymato.MMAP_LightRays": "T",
+        "mushymato.MMAP_WoodsLighting": "T T false",
+        "mushymato.MMAP_WoodsDebris": "-2"
+      },
+      "When": {
+        "HasMod |contains= mushymato.MMAP": true
+      }
+    },
+    {
       "LogName": "Map Properties of Forbidden Forest Centaur Camp",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_ForbiddenForestCentaurCamp",

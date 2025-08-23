@@ -50,7 +50,7 @@
           ]
         }
       }
-    },
+    },/*
     {
       "LogName": "Floo Flame Network Fireplace Furniture Calcifer",
       "Action": "EditData",
@@ -67,6 +67,32 @@
       "When": {
         "HasMod |contains= sophie.Calcifer": true
       }
+    },*/
+    {
+      "LogName": "Floo Flame Network Fireplace Furniture MMAP",
+      "Action": "EditData",
+      "Target": "mushymato.MMAP/FurnitureProperties",
+      "Entries": {
+        "1792": {
+          "TileProperties": [
+            {
+              "Id": "Floo",
+              "Name": "Action",
+              "Value": "MinecartTransport {{ModId}}_HogsmeadeNetwork",
+              "Layer": "Buildings",
+              "TileArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 2,
+                "Height": 1
+              }
+            }
+          ]
+        }
+      },/*
+      "When": {
+        "HasMod |contains= mushymato.MMAP": true
+      }*/
     },
     {
       "LogName": "Floo Flame Network - Hogsmeade Station Flame",
