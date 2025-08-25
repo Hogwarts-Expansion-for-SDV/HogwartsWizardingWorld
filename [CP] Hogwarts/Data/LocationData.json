@@ -310,6 +310,12 @@
       "Target": "Maps/{{ModId}}_HogwartsValley",
       "FromFile": "assets/Maps/HogwartsValley.tmx"
     },
+    {
+      "LogName": "Hogwarts Valley Farmhouse Load",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_HogwartsValleyFarmhouse",
+      "FromFile": "assets/Maps/HogwartsValleyFarmhouse.tmx"
+    },
     /*South Sea Bog Load*/
     {
       "LogName": "South Sea Bog Load",
@@ -336,7 +342,7 @@
             "MapPath": "Maps/{{ModId}}_CeridwensCauldrons"
           },
           "DefaultArrivalTile": {
-            "X": 9, 
+            "X": 9,
             "Y": 31
           }
         },
@@ -376,7 +382,7 @@
             "MapPath": "Maps/{{ModId}}_HogsmeadeStation"
           },
           "DefaultArrivalTile": {
-            "X": 34, 
+            "X": 34,
             "Y": 14
           }
         },
@@ -386,7 +392,7 @@
             "MapPath": "Maps/{{ModId}}_HogsmeadeVillage"
           },
           "DefaultArrivalTile": {
-            "X": 37, 
+            "X": 37,
             "Y": 121
           }
         },
@@ -396,7 +402,7 @@
             "MapPath": "Maps/{{ModId}}_HogwartsExpressInterior"
           },
           "DefaultArrivalTile": {
-            "X": 3, 
+            "X": 3,
             "Y": 9
           }
         },
@@ -430,7 +436,7 @@
             "MapPath": "Maps/{{ModId}}_Ollivanders"
           },
           "DefaultArrivalTile": {
-            "X": 8, 
+            "X": 8,
             "Y": 18
           }
         },
@@ -440,7 +446,7 @@
             "MapPath": "Maps/{{ModId}}_ScenicViewpointEast"
           },
           "DefaultArrivalTile": {
-            "X": 10, 
+            "X": 10,
             "Y": 27
           }
         },
@@ -499,7 +505,7 @@
             "MapPath": "Maps/{{ModId}}_HogwartsBellTowerCourtyard"
           },
           "DefaultArrivalTile": {
-            "X": 44, 
+            "X": 44,
             "Y": 62
           }
         },
@@ -563,7 +569,7 @@
             "MapPath": "Maps/{{ModId}}_HogwartsGrandStaircase"
           },
           "DefaultArrivalTile": {
-            "X": 29, 
+            "X": 29,
             "Y": 114
           }
         },
@@ -573,7 +579,7 @@
             "MapPath": "Maps/{{ModId}}_HogwartsGreatHall"
           },
           "DefaultArrivalTile": {
-            "X": 15, 
+            "X": 15,
             "Y": 39
           }
         },
@@ -595,7 +601,7 @@
             "MapPath": "Maps/{{ModId}}_HogwartsLibraryAnnex"
           },
           "DefaultArrivalTile": {
-            "X": 40, 
+            "X": 40,
             "Y": 21
           }
         },
@@ -621,7 +627,7 @@
             "MapPath": "Maps/{{ModId}}_HogwartsPotionsClassroom"
           },
           "DefaultArrivalTile": {
-            "X": 15, 
+            "X": 15,
             "Y": 30
           }
         },
@@ -641,7 +647,7 @@
             "MapPath": "Maps/{{ModId}}_HogwartsTransfigurationClassroom"
           },
           "DefaultArrivalTile": {
-            "X": 8, 
+            "X": 8,
             "Y": 19
           }
         },
@@ -686,11 +692,23 @@
             "MapPath": "Maps/{{ModId}}_ForbiddenForest"
           }
         },
-        /*Hogwarts Valley Location Data*/
+        /*Hogwarts Valley*/
         "{{ModId}}_HogwartsValley": {
           "CreateOnLoad": {
             "AlwaysActive": true,
             "MapPath": "Maps/{{ModId}}_HogwartsValley"
+          },
+          "CanPlantHere": true
+        },
+        "{{ModId}}_HogwartsValleyFarmhouse": {
+          "CreateOnLoad": {
+            "AlwaysActive": true,
+            "MapPath": "Maps/{{ModId}}_HogwartsValleyFarmhouse",
+            "DefaultArrivalTile": {
+              "X": 25,
+              "Y": 30
+            },
+            "CanPlantHere": true
           }
         },
         /*South Sea Bog*/

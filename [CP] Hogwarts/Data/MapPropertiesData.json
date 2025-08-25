@@ -485,6 +485,19 @@
       }
     },
     {
+      "LogName": "Map Properties of Forbidden Forest Centaur Camp MMAP",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForest",
+      "MapProperties": {
+        "mushymato.MMAP_LightRays": "T",
+        "mushymato.MMAP_WoodsLighting": "T T false",
+        "mushymato.MMAP_WoodsDebris": "-2"
+      },
+      "When": {
+        "HasMod |contains= mushymato.MMAP": true
+      }
+    },
+    {
       "LogName": "Map Properties of Charmed Tent",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_ForbiddenForestCharmedTent",
@@ -501,6 +514,16 @@
       "Target": "Maps/{{ModId}}_HogwartsValley",
       "MapProperties": {
         "Outdoors": "T"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Valley Farmhouse",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsValleyFarmhouse",
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30",
+        "Warp": "25 32 {{ModId}}_HogwartsValley 156 57"
       }
     },
     /*South Sea Bog*/
