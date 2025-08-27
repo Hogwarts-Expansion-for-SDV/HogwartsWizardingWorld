@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="33" height="29" tilewidth="16" tileheight="16" infinite="0" nextlayerid="20" nextobjectid="11">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="25" height="26" tilewidth="16" tileheight="16" infinite="0" nextlayerid="20" nextobjectid="11">
  <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
   <image source="paths" width="64" height="256"/>
  </tileset>
@@ -1941,57 +1941,57 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="8506" name="z_HogwartsSideProfile_DD15_Hogwarts" tilewidth="16" tileheight="16" tilecount="1260" columns="45">
-  <image source="z_HogwartsSideProfile_DD15_Hogwarts.png" width="720" height="450"/>
+ <tileset firstgid="8506" name="z_HogwartsSideProfile_DD15_Hogwarts" tilewidth="16" tileheight="16" tilecount="625" columns="25">
+  <image source="z_HogwartsSideProfile_DD15_Hogwarts.png" width="400" height="400"/>
  </tileset>
- <tileset firstgid="9766" name="z_Cloudy_Ocean_BG_SmoothHorizon_Hogwarts" tilewidth="16" tileheight="16" tilecount="2976" columns="93">
+ <tileset firstgid="9131" name="z_Cloudy_Ocean_BG_SmoothHorizon_Hogwarts" tilewidth="16" tileheight="16" tilecount="2976" columns="93">
   <image source="z_Cloudy_Ocean_BG_SmoothHorizon_Hogwarts.png" width="1500" height="520"/>
  </tileset>
- <layer id="18" name="Back-1" width="33" height="29">
+ <layer id="18" name="Back-1" width="25" height="26">
   <data encoding="base64" compression="zlib">
-   eJztw8EJAAAIBKBrf2jm6N0EgYIJAAD81uUGrgFxgSTf
+   eJxjYBgFo2AUjIJRMApGwSggDPoYhwceBcQDAOg3G+8=
   </data>
  </layer>
  <objectgroup id="19" name="Back-1"/>
- <layer id="1" name="Back" width="33" height="29">
+ <layer id="1" name="Back" width="25" height="26">
   <data encoding="base64" compression="zlib">
-   eJzt1GO7EAYAhuETl41lbHUcFpbN5TpZy7a9bK4tnGzXycZqy5q9bNvt7tq3/Ybe67r/wPPhzZ49ICCQIIIJIZQwwslBTnKRm0/IQ17ykZ9PKUBBClGYIhSlGMUpQUlKUZoylKUcwxnBSEYxmjGMZRzjmcBEJjGZKUxlGl8yna/4mhnMZBaziWQOc5nHfBawkEUs5hznucBFLnGZK1zlGte5wU1ucZs73OUe93nAQx7xmCc85RnPecFLXvGaN7wlIFAvilGcEpSkFKUpQ1nKUZ4KVOQzKlGZKlSlGtWpQU1qEUFt6lCXetSnAQ1pRGNmE8kc5jKP+SxgIYtYzBKWsozlrGAlq1jNGtayjvVsIIqNbGIzW9jKNrazg5085RnPecFLXvGaN7wlICggIBrRiUFMYhGbD4hDXOIRnwQkJBGJSUJSkpGcFKQkFamJoDZ1qEs96tOAhjSiMU1oyuc0ozktaEkrWtOGtrSjPR3oSCc604WudKM7PehJFBvZxGa2sJVtbGcHO9nFbvawl33s5wDfcJBDfMt3HOYIRznGcU5wklOc5gxn3/UK1oskJCUZyUlBSlKRmg9JQ1rSkZ4MZCQTmclCVj7iY7KRnUCCCCaEUMIIJwcd6EgnOtOFrnSjOz3oSS9604e+9KM/AxjIIAYzhC8YyjCGM4KRjGI0YxjLOMZzhKMc4zgnOMkpTnOGs3zPD/zIT/zML/zKb/zOH/zJX/zNP5zjPBe4yCUuc4WrXHvXK0QvAgkimBBCCSOcHOQkF7n5hDzkJR/5+ZQCFKQQhSlCUYpRnBKUpBSlKUNZhjGcEYxkFKMZw1jGMZ4JTGQSk5nCVKbxJdP5iq+ZwUxmMZtI5jCXecxnAQtZxD+c4zwXuMglLnOFq1zjOje4yS1uc4e73OM+D3jIIx7zhKc84zkveMkrXvOGt+96hepFMYpTgpKUojRlKEs5ylOBinxGJSpThapUozo1qEktIqhNHepSj/o0oCGNmMVsIpnDXOYxnwUsZBGLWcJSlrGcFaxkFatZw1rWsZ4NRLGRTWxmC1vZxnZ28ISnPOM5L3jJK17zhrcEhPlrohODmMQiNh8Qh7jEIz4JSEgiEpOEpCQjOSlISSpqEUFt6lCXetSnAQ1pRGOa0JTPaUZzWtCSVrSmDW1pR3s60JFOdKYLXelGd3qwgSg2sonNbGEr29jODnayi93sYS/72M8BvuEgh/iW7zjMEY5yjOOc4CSnOM2Zd73C9SIxSUhKMpKTgpSkIjUfkoa0pCM9GchIJjKThax8xMdkIzuBBBFMCKGEEU57OtCRTnSmC13pRnd60JNe9KYPfelHfwYwkEEMZghfMJRhDGcEIxnFaMYwlnG833+LiPbee+/9379RxgSI
+   eJxjYBgFo2AUjIJRMApGwSgYOWAB4ygmFgMADQkvLA==
   </data>
  </layer>
  <objectgroup id="6" name="Back"/>
- <layer id="2" name="Buildings" width="33" height="29">
+ <layer id="2" name="Buildings" width="25" height="26">
   <data encoding="base64" compression="zlib">
-   eJzt0lV7lwUAxuH/KHGOkRsxRBihG2XCYEGNlFCQFJDeYBuwETYGE1BsBSxC+QKIgKiURaqEgKCuWNEjDWDqfe6Bh568v+u6r+cLPKFQUFBQUFDQf7c/NhQ6wEEO8SOHOcJRfuIYx/mZX/iVPPIpoJAiTlBMCaWUUc5JTnGaM5zlHOep4AaV/MXfhFqGQmFUoSrVqE4NbqImNxPOLURQi0hqU4e61KM+DYgimoY0ojFNiKEpccTTlna0pwMduZO7uJt7uJf76ERnEuhCVxJJIpkUutGdHvSkF6n0pg996Ud/RjCSUYxmDA8zlnGM5xEmMJFJTGYKU5lGGulMZwYZZJLFTGYxm2xymMNc5jGfheTyAotYzBJe5CWW8jKv8Cqv8Tpv8CZv8TbLWM4K3uFd3uN9PmAlq1jNGj7kI9ayjo9ZzydsYCOb+JTNfMbnfMEWtrKN7ezgS77ia77hW3ayi93sYS/7+I7v+YH9HCCPfAoopIgTFFNCKWWUc5JTnOYMZznHeSq4wEUucZkrXOU3fucP/uQa17lBJeGt/JsIahFJbepQl3rUpwFRRNOQRjSmCTE05VaacRvNaUEsLWlFa9pwO3cQRzydSaALXUkkiWRS6EZ3etCTXqTSmz70pR/9GcD9DGQQgxnCAzzIUIbxEMMZwUimMJVppJHOdGaQQSZZzGQWs8kmhznMZR7zeZTHeJwneJKneJoFPMOzPMfzLCSX/DBfCPt/Nygo6N/9A0YC5qs=
+   eJzt1WOTHgYUBeC3VsrUTra2Edu2bdu2ud5N1oxt27ZtO6me/oq2Mz0zz8z9fubMDQT+z78pWTIFAlnJRnZykJNc5CYPeclHfgpQkEIUpghFKUZxSlCSUpSmDGUpR3kqUJFKVKYKValGdWpQk1rUpg51qUd9GtCQRjSmCU1pRnNa0JJWtKYNbWlHezrQkU50pgtd6UZ3etCTXvSmD33pR38GMJBBDGYIQxnGcEYwklGMZgxjCSaEUMIIJ4JIoohmHOOJIZY44kkgkSSSSSGVNNKZwEQmMZkpTGUa05nBTGYxmznMZR7zWcBCFrGYJSxlGctZwUpWsZo1rGUd69nARjaxmS1sZRvb2cFOdrGbPexlH/s5wEEOcZgjHOUYxznBSU5xmjOc5RznucBFLnGZK1zlGte5wU1ucZs73OUe93nAb/zOH/xJIHMg8BAP8wiP8hiP8wRP8hRP8wwZeJbneJ4XeJGXyMjLvMKrvMbrvMGbvMXbvMO7vMf7ZCIzQXzAh3zEx3zCp3zG53zBl3zF13zDt3zH9/zAj/zEz/zCr2QhK9nITg5ykovc5CEv+chPAQpSiMIUoSjFKE4JSlKK0pShLOUoTwUqUonKVKEq1ahODWpSi9rUoS71qE8DGtKIxjShKc1oTgta0orWtKEt7WhPBzrSic50oSvd6E4PetKL3vShL/3ozwAGMojBDGEowxjOCEYyitGMYSzBhBBKGOFEEEkU0YxjPDHEEkc8CSSSRDIppJJGOhOYyCQmM4WpTGM6M5jJLGYzh7nMYz4LWMgiFrOEpSxjOStYySpWs4a1rGM9G9jIJjazha1sYzs72MkudrOHvexjPwc4yCEOc4SjHOM4JzjJKU5zhrOc4zwXuMglLnOFq1zjOje4yS1uc4e73OM+D/7uKUhPBBNCKGGEE0EkUUSTMYMtE+OOJY54EkgkiWRSSCWN9KB/+tP/t/IXAaRBOw==
   </data>
  </layer>
  <objectgroup id="7" name="Buildings"/>
- <layer id="11" name="Buildings1" width="33" height="29">
+ <layer id="11" name="Buildings1" width="25" height="26">
   <data encoding="base64" compression="zlib">
-   eJztwQENAAAAwqD3T20PBxQAAAB8Gg70AAE=
+   eJztwYEAAAAAw6D5Ux/gClUBAMAbCigAAQ==
   </data>
  </layer>
  <objectgroup id="12" name="Buildings1"/>
- <layer id="13" name="Paths" width="33" height="29">
+ <layer id="13" name="Paths" width="25" height="26">
   <data encoding="base64" compression="zlib">
-   eJztwQENAAAAwqD3T20PBxQAAAB8Gg70AAE=
+   eJztwYEAAAAAw6D5Ux/gClUBAMAbCigAAQ==
   </data>
  </layer>
  <objectgroup id="10" name="Paths"/>
- <layer id="16" name="Front" width="33" height="29">
+ <layer id="16" name="Front" width="25" height="26">
   <data encoding="base64" compression="zlib">
-   eJztwQENAAAAwqD3T20PBxQAAAB8Gg70AAE=
+   eJztwYEAAAAAw6D5Ux/gClUBAMAbCigAAQ==
   </data>
  </layer>
  <objectgroup id="17" name="Front"/>
- <layer id="3" name="Front1" width="33" height="29">
+ <layer id="3" name="Front1" width="25" height="26">
   <data encoding="base64" compression="zlib">
-   eJztwQENAAAAwqD3T20PBxQAAAB8Gg70AAE=
+   eJztwYEAAAAAw6D5Ux/gClUBAMAbCigAAQ==
   </data>
  </layer>
  <objectgroup id="8" name="Front1"/>
- <layer id="4" name="AlwaysFront" width="33" height="29">
+ <layer id="4" name="AlwaysFront" width="25" height="26">
   <data encoding="base64" compression="zlib">
-   eJztwQENAAAAwqD3T20PBxQAAAB8Gg70AAE=
+   eJztwYEAAAAAw6D5Ux/gClUBAMAbCigAAQ==
   </data>
  </layer>
  <objectgroup id="9" name="AlwaysFront"/>

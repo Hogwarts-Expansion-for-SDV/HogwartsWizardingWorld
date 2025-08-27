@@ -143,7 +143,19 @@
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_ScenicViewpointEast",
       "MapProperties": {
-        "Outdoors": "T"
+        "Outdoors": "T",
+        "ViewportClamp": "0 0 24 25"
+      }
+    },
+    {
+      "LogName": "Map Properties of Scenic Viewpoint East MMAP",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ScenicViewpointEast",
+      "MapProperties": {
+        "mushymato.MMAP_Panorama": "MMAP_MountainView"
+      },
+      "When": {
+        "HasMod |contains= mushymato.MMAP": true
       }
     },
     {
@@ -487,7 +499,7 @@
     {
       "LogName": "Map Properties of Forbidden Forest Centaur Camp MMAP",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_ForbiddenForest",
+      "Target": "Maps/{{ModId}}_ForbiddenForestCentaurCamp",
       "MapProperties": {
         "mushymato.MMAP_LightRays": "T",
         "mushymato.MMAP_WoodsLighting": "T T false",

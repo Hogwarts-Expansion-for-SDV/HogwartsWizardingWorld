@@ -1013,7 +1013,7 @@
         }
       ]
     },
-    /*Other*/ 
+    /*Other*/
     {
       "LogName": "Graveyard Shrines",
       "Action": "EditMap",
@@ -1517,7 +1517,7 @@
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogsmeadeVillage",
       "MapTiles": [
-/*Centaur Camp*/
+        /*Centaur Camp*/
         {
           "Position": {
             "X": 0,
@@ -1568,7 +1568,7 @@
             "TouchAction": "Warp {{ModId}}_ForbiddenForestCentaurCamp 133 58"
           }
         },
-/*Bell Tower Courtyard*/
+        /*Bell Tower Courtyard*/
         {
           "Position": {
             "X": 0,
@@ -1729,7 +1729,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsBellTowerCourtyard 170 47"
           }
         },
-/*Hogsmeade Station*/
+        /*Hogsmeade Station*/
         {
           "Position": {
             "X": 103,
@@ -1790,7 +1790,7 @@
             "TouchAction": "Warp {{ModId}}_HogsmeadeStation 9 13"
           }
         },
-/*South Wing*/
+        /*South Wing*/
         {
           "Position": {
             "X": 34,
@@ -1852,6 +1852,66 @@
           }
         }
       ]
+    },
+    /*Animation*/
+    {
+      "LogName": "Hogsmeade Village Animation",
+      "Action": "EditData",
+      "Target": "DMT/Animations",
+      "Entries": {
+        "{{ModId}}.HogsmeadeVillage": [
+          {
+            "Name": "Bird1",
+            "Texture": "TileSheets\\critters",
+            "SourceRect": {
+              "X": 160,
+              "Y": 64,
+              "Width": 32,
+              "Height": 32
+            },
+            "Position": {
+              "X": 7744,
+              "Y": 704
+            },
+            "Scale": 4,
+            "Length": 2,
+            "LayerDepth": 0,
+            "Loops": 50000,
+            "Flipped": false,
+            "Interval": 1000
+          }
+        ]
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Hogsmeade Village Bird 1 Animation Idle",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}.Bird1AnimationIdle": {
+          "Locations": [
+            "{{ModId}}_HogsmeadeVillage"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Actions": [
+            {
+              "LogName": "Bird 1 Idle Astronomy Table",
+              "Key": "DMT/animation",
+              "Value": "{{ModId}}.HogsmeadeVillage,Bird1",
+              "Trigger": "Load",
+              "Once": false
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
     }
   ]
 }

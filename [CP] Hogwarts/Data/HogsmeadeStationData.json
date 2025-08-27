@@ -209,7 +209,7 @@
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogsmeadeStation",
       "MapTiles": [
-/*Hogsmeade Station*/
+        /*Hogsmeade Station*/
         {
           "Position": {
             "X": 8,
@@ -240,7 +240,7 @@
             "TouchAction": "Warp {{ModId}}_HogsmeadeVillage 102 120"
           }
         },
-/*Hogwarts Valley*/
+        /*Hogwarts Valley*/
         {
           "Position": {
             "X": 63,
@@ -281,7 +281,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsValley 1 128"
           }
         },
-/*South Wing*/
+        /*South Wing*/
         {
           "Position": {
             "X": 7,
@@ -378,6 +378,21 @@
         "HasMod |contains= Esca.EMP": true,
         "Esca.EMP/GameStateQuery: LOCATION_ACCESSIBLE Railroad": true
       }
-    }
+    },/*
+    {
+      "LogName": "Hogwarts Scenic Viewpoint MMAP Panorama FullView",
+      "Action": "EditMap",
+      "Target": "mushymato.MMAP/Panorama",
+      "Entries": {
+        "MMAP_MountainView": [
+          {
+            "FullView": false
+          }
+        ]
+      },
+      "When": {
+        "HasMod |contains= mushymato.MMAP": true
+      }
+    }*/
   ]
 }
