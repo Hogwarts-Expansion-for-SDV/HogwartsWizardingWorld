@@ -378,21 +378,21 @@
         "HasMod |contains= Esca.EMP": true,
         "Esca.EMP/GameStateQuery: LOCATION_ACCESSIBLE Railroad": true
       }
-    },/*
+    },
     {
       "LogName": "Hogwarts Scenic Viewpoint MMAP Panorama FullView",
-      "Action": "EditMap",
+      "Action": "EditData",
       "Target": "mushymato.MMAP/Panorama",
-      "Entries": {
-        "MMAP_MountainView": [
-          {
-            "FullView": false
-          }
-        ]
+      "Fields": {
+        "MMAP_MountainView": {
+          "FullView": false
+        }
       },
       "When": {
-        "HasMod |contains= mushymato.MMAP": true
-      }
-    }*/
+        "HasMod |contains= mushymato.MMAP": true,
+        "LocationName |contains= {{ModId}}_ScenicViewpointEast": true
+      },
+      "Update": "OnLocationChange"
+    }
   ]
 }
