@@ -7,7 +7,6 @@
       "FromFile": "Assets/blank.json"
     },
     /*Ollivanders*/
-
     //How did the player meet Ollivander? (just passing by or visiting the shop), logically he won't perform the spell in front of the player without any reason. -> Lead to Ollivander and the player speak about it, and move into the positions.
     //Adding the message to signify a change of scene like "A long time ago" or something. Why would Ollivander appear in front of Albus grave, is this a flashback or something?
     //Pausing in the middle of the speak then speak again make it feel like Ollivander is analyzing/pondering.
@@ -20,7 +19,7 @@
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_Ollivanders",
       "Entries": {
-        "{{ModId}}_Ollivander10": "none/8 6/farmer 7 6 1 HogwartsOllivander 9 6 3/skippable/pause 800/
+        "{{ModId}}_Ollivander50": "none/8 6/farmer 7 6 1 HogwartsOllivander 9 6 3/skippable/pause 800/
         speak HogwartsOllivander \"Oh, aren't you perceptive?#$b#Correct, this is no ordinary yew wand.\"/pause 800/
         globalFade/viewport -1000 -1000/pause 800/
         changeToTemporaryMap {{ModId}}_HogwartsValley/viewport 92 132 true/warp HogwartsOllivander 92 132/faceDirection HogwartsOllivander 0/pause 800/
