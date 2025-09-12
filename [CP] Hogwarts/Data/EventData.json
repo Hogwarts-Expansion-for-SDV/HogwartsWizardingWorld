@@ -4,23 +4,48 @@
       "LogName": "Hogwarts Event Load",
       "Action": "Load",
       "Target": "Data/Events/{{ModId}}_Ollivanders",
-      "FromFile": "Assets/blank.json"
+      "FromFile": "Data/blank.json"
     },
-    /*Ollivanders*/
-    //How did the player meet Ollivander? (just passing by or visiting the shop), logically he won't perform the spell in front of the player without any reason. -> Lead to Ollivander and the player speak about it, and move into the positions.
-    //Adding the message to signify a change of scene like "A long time ago" or something. Why would Ollivander appear in front of Albus grave, is this a flashback or something?
-    //Pausing in the middle of the speak then speak again make it feel like Ollivander is analyzing/pondering.
-    //globalFade/viewport -1000 -1000/pause 1000 at the very end is unnecessary unless the scene bug out without them. 
-    //Add move/facedirection occasionally to make the cutscene feel more dynamic.
-    //Using shake, playSound, playMusic.
-    //Approaching = make the NPC move 1 tile closer.
     {
       "LogName": "Hogwarts Ollivanders Events",
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_Ollivanders",
       "Entries": {
-        "{{ModId}}_Ollivander50": "none/8 6/farmer 7 6 1 HogwartsOllivander 9 6 3/skippable/pause 800/
-        speak HogwartsOllivander \"Oh, aren't you perceptive?#$b#Correct, this is no ordinary yew wand.\"/pause 800/
+        "{{ModId}}_Ollivander05": "none/8 17/farmer 7 17 1 HogwartsOllivander 9 17 3/skippable/pause 800/
+        question null \"#None of these wands are working.\"/pause 800/
+        speak HogwartsOllivander \"Despite years of experience, wandmakers never know how wands will react.#$b#However, what we have agreed upon is that the wand chooses the wizard.\"/pause 800/
+        question null \"#Yes, Mr. Ollivander... #I’ve heard of your shop in Diagon Alley, but you have a shop here now?\"/pause 800/
+        speak HogwartsOllivander \"I opened this branch after... I was taken from my shop, and haven’t returned... #$b#So, I came here to Hogsmeade. Quainter. Safer. A place to forget.#$b#I have this locket to help me get through. It’s a painting of my daughter.\"/pause 800/
+        question null \"#Is your daughter in London?\"/pause 800/
+        speak HogwartsOllivander \"Sadly, she has passed.\"/pause 800/
+        emote farmer 28/pause 800/
+        question null \"#If you can come, every week, Mrs. Granger hosts a support group for victims of Voldemort.\"/pause 800/
+        speak HogwartsOllivander \"We do not speak his name...\"/pause 800/
+        emote farmer 16/pause 800/
+        speak HogwartsOllivander \"#$b#Would you be able to come back another time?\"/pause 800/
+        globalFade/viewport -1000 -1000/pause 1000/end",
+        "{{ModId}}_Ollivander15": "none/8 17/farmer 7 17 1 HogwartsOllivander 9 17 3/skippable/pause 800/
+        question null \"#Mr. Ollivander? Sir?\"/pause 800/
+        speak HogwartsOllivander \"Oh, I didn't hear you. Forgive me. I was deep in thought.\"/pause 800/
+        question null \"#Are you alright sir? #You seem fatigued\"/pause 800/
+        speak HogwartsOllivander \"This wand… it is quite unlike any other.\"/pause 800/
+        question null \"#I saw that. That was… extraordinary. #I've never seen such potency from a charm.\"/pause 800/
+        speak HogwartsOllivander \"This wand… it elevates me. Every memory of hate, this wand turns it into power, #$b#and I have had tremendous power lately.\"/pause 800/
+        emote farmer 8/pause 800/
+        question null \"#Be careful. This intensity… it’s affecting you. #Some power isn't meant to be wielded.\"/pause 800/
+        speak HogwartsOllivander \"Wands are meant to be wielded, and I intend to wield this one.\"/pause 800/
+        emote farmer 40/pause 800/
+        globalFade/viewport -1000 -1000/pause 1000/end",
+        /*How did the player meet Ollivander? (just passing by or visiting the shop), logically he won't perform the spell in front of the player without any reason. -> Lead to Ollivander and the player speak about it, and move into the positions.
+        Adding the message to signify a change of scene like "A long time ago" or something. Why would Ollivander appear in front of Albus grave, is this a flashback or something?
+        Pausing in the middle of the speak then speak again make it feel like Ollivander is analyzing/pondering.
+        globalFade/viewport -1000 -1000/pause 1000 at the very end is unnecessary unless the scene bug out without them. 
+        Add move/facedirection occasionally to make the cutscene feel more dynamic.
+        Using shake, playSound, playMusic.
+        Approaching = make the NPC move 1 tile closer.*/
+        "{{ModId}}_Ollivander25": "none/8 6/farmer 7 6 1 HogwartsOllivander 9 6 3/skippable/pause 800/
+        question null \"#How is it possible that your wand is more powerful than other wands I've witnessed?\"/pause 800/
+        speak HogwartsOllivander \"This is no ordinary yew wand.\"/pause 800/
         globalFade/viewport -1000 -1000/pause 800/
         changeToTemporaryMap {{ModId}}_HogwartsValley/viewport 92 132 true/warp HogwartsOllivander 92 132/faceDirection HogwartsOllivander 0/pause 800/
         speak HogwartsOllivander \"It's been some time, Albus.#$b#Curious... A yew tree.#$b#This tree grew...#$b#From the Dark Lord's wand!\"/pause 800/
