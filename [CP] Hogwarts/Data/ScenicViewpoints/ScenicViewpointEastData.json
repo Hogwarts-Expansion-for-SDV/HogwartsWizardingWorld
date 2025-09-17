@@ -1,0 +1,119 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Scenic Viewpoint MMAP Panorama FullView",
+      "Action": "EditData",
+      "Target": "mushymato.MMAP/Panorama",
+      "Fields": {
+        "MMAP_MountainView": {
+          "FullView": false
+        }
+      },
+      "When": {
+        "HasMod |contains= mushymato.MMAP": true,
+        "LocationName |contains= {{ModId}}_ScenicViewpointEast": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Scenic Viewpoint East Animation",
+      "Action": "EditData",
+      "Target": "DMT/Animations",
+      "Entries": {
+        "{{ModId}}.ScenicViewpointEast": [
+          {
+            "Name": "Abraxan1",
+            "Texture": "{{ModId}}/Abraxan",
+            "SourceRect": {
+              "X": 96,
+              "Y": 32,
+              "Width": 32,
+              "Height": 32
+            },
+            "Position": {
+              "X": 0,
+              "Y": 896
+            },
+            "Scale": 0.75,
+            "Length": 4,
+            "LayerDepth": 1,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 150,
+            "Motion": {
+              "X": 2,
+              "Y": 0
+            }
+          },
+          {
+            "Name": "Phoenix1",
+            "Texture": "{{ModId}}/Phoenix",
+            "SourceRect": {
+              "X": 0,
+              "Y": 32,
+              "Width": 32,
+              "Height": 32
+            },
+            "Position": {
+              "X": 1600,
+              "Y": 832
+            },
+            "Scale": 0.75,
+            "Length": 4,
+            "LayerDepth": 1,
+            "Loops": 10000,
+            "Flipped": true,
+            "Interval": 150,
+            "Motion": {
+              "X": -2,
+              "Y": 0
+            }
+          }
+        ]
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Scenic Viewpoint East Abraxan 1 Animation",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ScenicViewpointEast",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 4,
+            "Y": 21
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/animation_On": "{{ModId}}.ScenicViewpointEast,Abraxan1"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Scenic Viewpoint East Phoenix 1 Animation",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ScenicViewpointEast",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 20,
+            "Y": 21
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/animation_On": "{{ModId}}.ScenicViewpointEast,Phoenix1"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    }
+  ]
+}
