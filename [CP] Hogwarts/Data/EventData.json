@@ -3,8 +3,35 @@
     {
       "LogName": "Hogwarts Event Load",
       "Action": "Load",
-      "Target": "Data/Events/{{ModId}}_Ollivanders",
+      "Target": "Data/Events/{{ModId}}_ForbiddenForestCentaurCamp, Data/Events/{{ModId}}_HogwartsGrandStaircase, Data/Events/{{ModId}}_Ollivanders",
       "FromFile": "Data/blank.json"
+    },
+    {
+      "LogName": "Hogwarts Suryawati Phoenix Load",
+      "Action": "Load",
+      "Target": "Characters/Monsters/{{ModId}}_SuryawatiPhoenix",
+      "FromFile": "assets/Creatures/Phoenix.png"
+    },
+    {
+      "LogName": "Hogwarts Grand Staircase Events",
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_HogwartsGrandStaircase",
+      "Entries": {
+        "{{ModId}}_Suryawati05": "none/28 40/farmer 25 44 0 HogwartsSuryawati 27 41 3/skippable/pause 800/
+        addTemporaryActor {{ModId}}_SuryawatiPhoenix 32 32 34 38 3 false Monster/pause 800/
+        move {{ModId}}_SuryawatiPhoenix -5 0 2 false/pause 800/
+        move HogwartsSuryawati -3 0 2 false/pause 800/
+        emote HogwartsSuryawati 16/pause 800/
+        speak HogwartsSuryawati \"It's not what it looks like...$2\"/pause 800/
+        question null \"#Were you... a bird?\"/pause 800/
+        speak HogwartsSuryawati \"You saw nothing!$3\"/pause 800/
+        beginSimultaneousCommand/
+        move HogwartsSuryawati 0 10 2 true/
+        emote HogwartsSuryawati 12/
+        emote farmer 8/
+        endSimultaneousCommand/
+        globalFade/viewport -1000 -1000/pause 1000/end"
+      }
     },
     {
       "LogName": "Hogwarts Ollivanders Events",
