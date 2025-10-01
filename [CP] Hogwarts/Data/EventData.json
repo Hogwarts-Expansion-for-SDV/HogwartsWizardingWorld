@@ -3,7 +3,7 @@
     {
       "LogName": "Hogwarts Event Load",
       "Action": "Load",
-      "Target": "Data/Events/{{ModId}}_ForbiddenForestCentaurCamp, Data/Events/{{ModId}}_HogwartsGrandStaircase, Data/Events/{{ModId}}_Ollivanders",
+      "Target": "Data/Events/{{ModId}}_ForbiddenForestCentaurCamp, Data/Events/{{ModId}}_HogwartsBellTowerCourtyard, Data/Events/{{ModId}}_HogwartsGrandStaircase, Data/Events/{{ModId}}_Ollivanders",
       "FromFile": "Data/blank.json"
     },
     {
@@ -12,6 +12,39 @@
       "Target": "Characters/Monsters/{{ModId}}_SuryawatiPhoenix",
       "FromFile": "assets/Creatures/Phoenix.png"
     },
+    // Forbidden Forest Centaur Camp 
+    {
+      "LogName": "Hogwarts Forbidden Forest Centaur Camp Events",
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_ForbiddenForestCentaurCamp",
+      "Entries": {
+        "{{ModId}}_Suryawati25": "none/57 66/farmer 60 66 3 HogwartsSuryawati 57 65 2/skippable/pause 800/
+        temporaryAnimatedSprite \"{{ModId}}/UnicornCommon\" 96 96 32 32 99999 1 0 56 66 false false -1 0 2 0 3.14 0/
+        emote HogwartsSuryawati 28/
+        emote farmer 28/pause 800/
+        speak HogwartsSuryawati \"I will never forgive my father for this.$2#$b#Never.$2\"/pause 800/
+        emote farmer 28/pause 800/
+        globalFade/viewport -1000 -1000/pause 1000/end"
+      }
+    },
+    // Bell Tower Courtyard 
+    {
+      "LogName": "Hogwarts Bell Tower Courtyard Events",
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_HogwartsBellTowerCourtyard",
+      "Entries": {
+        "{{ModId}}_Suryawati15": "none/61 20/farmer 61 21 0 HogwartsSuryawati 61 19 2/skippable/pause 800/
+        emote farmer 8/pause 800/
+        speak HogwartsSuryawati \"As long as you don't tell to anyone, I will answer your questions.$2\"/pause 800/
+        question null \"#I won't tell.#How are you able to transform into a bird?\"/pause 800/
+        speak HogwartsSuryawati \"After an argument with my father, I ran away, and transformed for the first time.$2\"/pause 800/
+        question null \"#Do your parents know?\"/pause 800/
+        speak HogwartsSuryawati \"I do not remember my mother.$2#$b#My father... I cannot tell him.$2#$b#He poaches magical creatures...$2\"/pause 800/
+        emote farmer 28 true/
+        globalFade/viewport -1000 -1000/pause 1000/end"
+      }
+    },
+    // Grand Staircase 
     {
       "LogName": "Hogwarts Grand Staircase Events",
       "Action": "EditData",
@@ -33,6 +66,7 @@
         globalFade/viewport -1000 -1000/pause 1000/end"
       }
     },
+    // Ollivanders 
     {
       "LogName": "Hogwarts Ollivanders Events",
       "Action": "EditData",
