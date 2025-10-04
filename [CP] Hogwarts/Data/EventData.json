@@ -12,19 +12,80 @@
       "Target": "Characters/Monsters/{{ModId}}_SuryawatiPhoenix",
       "FromFile": "assets/Creatures/Phoenix.png"
     },
+    {
+      "LogName": "Hogwarts Forbidden Forest Centaur Camp Suryawati25 Unicorn Sprite",
+      "Action": "EditData",
+      "Target": "mushymato.MMAP/TAS",
+      "Entries": {
+        "{{ModId}}_Suryawati25Unicorn": {
+          "Id": "{{ModId}}_Suryawati25Unicorn",
+          "Texture": "{{ModId}}/UnicornCommon",
+          "SourceRect": {
+            "X": 96,
+            "Y": 96,
+            "Width": 32,
+            "Height": 32
+          },
+          "Interval": 99999,
+          "Scale": 2
+        }
+      }
+    },/*
+    {
+      "LogName": "Hogwarts Event Trigger Action",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_Suryawati25Unicorn": {
+          "Id": "{{ModId}}_Suryawati25Unicorn",
+          "Trigger": "DayStarted",
+          "Condition": null,
+          "Action": "mushymato.MMAP_TAS 56 66 {{ModId}}_Suryawati25Unicorn",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_Suryawati25UnicornClear": {
+          "Id": "{{ModId}}_Suryawati25UnicornClear",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_Suryawati25",
+          "Action": "mushymato.MMAP_TAS 56 66 {{ModId}}_Suryawati25Unicorn",
+          "MarkActionApplied": false
+        }
+      }
+    },*/
+    {
+      "LogName": "Hogwarts Centaur Camp Unicorn MMAP TAS",
+      "Action": "EditMap",
+      "Target": "Maps/ForbiddenForestCentaurCamp",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 56,
+            "Y": 66
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "mushymato.MMAP_TAS": "{{ModId}}_Suryawati25Unicorn"
+          }
+        }
+      ]
+    },
     // Forbidden Forest Centaur Camp 
     {
       "LogName": "Hogwarts Forbidden Forest Centaur Camp Events",
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_ForbiddenForestCentaurCamp",
       "Entries": {
-        "{{ModId}}_Suryawati25": "none/57 66/farmer 60 66 3 HogwartsSuryawati 57 65 2/skippable/pause 800/
-        temporaryAnimatedSprite \"{{ModId}}/UnicornCommon\" 96 96 32 32 99999 1 0 56 66 false false -1 0 2 0 3.14 0/
+        "{{ModId}}_Suryawati25": "none/67 76/farmer 60 66 3 HogwartsSuryawati 57 65 2/skippable/pause 800/
+        temporaryAnimatedSprite \"{{ModId}}/UnicornCommon\" 96 96 32 32 99999 1 0 56 64 false false -1 0 2 0 0 0/
+        viewport move -2 -2 5000/pause 6000/
+        beginSimultaneousCommand/
         emote HogwartsSuryawati 28/
-        emote farmer 28/pause 800/
+        emote farmer 28/
+        endSimultaneousCommand/pause 800/
         speak HogwartsSuryawati \"I will never forgive my father for this.$2#$b#Never.$2\"/pause 800/
         emote farmer 28/pause 800/
-        globalFade/viewport -1000 -1000/pause 1000/end"
+        globalFade/viewport -1000 -1000/
+        action mushymato.MMAP_TAS 56 66 {{ModId}}_Suryawati25Unicorn/pause 1000/end"
       }
     },
     // Bell Tower Courtyard 
@@ -51,8 +112,14 @@
       "Target": "Data/Events/{{ModId}}_HogwartsGrandStaircase",
       "Entries": {
         "{{ModId}}_Suryawati05": "none/28 40/farmer 25 44 0 HogwartsSuryawati 27 41 3/skippable/pause 800/
-        addTemporaryActor {{ModId}}_SuryawatiPhoenix 32 32 34 38 3 false Monster/pause 800/
-        move {{ModId}}_SuryawatiPhoenix -5 0 2 false/pause 800/
+        addTemporaryActor {
+          {ModId
+          }
+        }_SuryawatiPhoenix 32 32 34 38 3 false Monster/pause 800/
+        move {
+          {ModId
+          }
+        }_SuryawatiPhoenix -5 0 2 false/pause 800/
         move HogwartsSuryawati -3 0 2 false/pause 800/
         emote HogwartsSuryawati 16/pause 800/
         speak HogwartsSuryawati \"It's not what it looks like...$2\"/pause 800/
@@ -84,8 +151,10 @@
         speak HogwartsOllivander \"We do not speak his name...\"/pause 800/
         emote farmer 16/pause 800/
         speak HogwartsOllivander \"#$b#Would you be able to come back another time?\"/pause 800/
-        globalFade/viewport -1000 -1000/pause 1000/end",
-        "{{ModId}}_Ollivander15": "none/8 17/farmer 7 17 1 HogwartsOllivander 9 17 3/skippable/pause 800/
+        globalFade/viewport -1000 -1000/pause 1000/end","{
+          {ModId
+          }
+        }_Ollivander15": "none/8 17/farmer 7 17 1 HogwartsOllivander 9 17 3/skippable/pause 800/
         question null \"#Mr. Ollivander? Sir?\"/pause 800/
         speak HogwartsOllivander \"Oh, I didn't hear you. Forgive me. I was deep in thought.\"/pause 800/
         question null \"#Are you alright sir? #You seem fatigued\"/pause 800/
@@ -108,11 +177,17 @@
         question null \"#How is it possible that your wand is more powerful than other wands I've witnessed?\"/pause 800/
         speak HogwartsOllivander \"This is no ordinary yew wand.\"/pause 800/
         globalFade/viewport -1000 -1000/pause 800/
-        changeToTemporaryMap {{ModId}}_HogwartsValley/viewport 92 132 true/warp HogwartsOllivander 92 132/faceDirection HogwartsOllivander 0/pause 800/
+        changeToTemporaryMap {
+          {ModId
+          }
+        }_HogwartsValley/viewport 92 132 true/warp HogwartsOllivander 92 132/faceDirection HogwartsOllivander 0/pause 800/
         speak HogwartsOllivander \"It's been some time, Albus.#$b#Curious... A yew tree.#$b#This tree grew...#$b#From the Dark Lord's wand!\"/pause 800/
         emote HogwartsOllivander 12/pause 800/
         globalFade/viewport -1000 -1000/warp farmer 7 6/faceDirection farmer 1/warp HogwartsOllivander 9 6/faceDirection HogwartsOllivander 3/pause 800/
-        changeLocation {{ModId}}_Ollivanders/viewport 8 6 true/pause 800/
+        changeLocation {
+          {ModId
+          }
+        }_Ollivanders/viewport 8 6 true/pause 800/
         speak HogwartsOllivander \"I crafted the tree's wood into a wand, and now...#$b#The Dark Lord's wand serves me.\"/pause 800/
         globalFade/viewport -1000 -1000/pause 1000/end"
       }
