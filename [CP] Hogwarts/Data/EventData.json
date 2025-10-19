@@ -96,7 +96,7 @@
       "Entries": {
         "{{ModId}}_Suryawati15": "none/61 20/farmer 61 21 0 HogwartsSuryawati 61 19 2/skippable/pause 800/
         emote farmer 8/pause 800/
-        speak HogwartsSuryawati \"As long as you don't tell to anyone, I will answer your questions.$2\"/pause 800/
+        speak HogwartsSuryawati \"As long as you don't tell anyone, I will answer your questions.$2\"/pause 800/
         question null \"#I won't tell.#How are you able to transform into a bird?\"/pause 800/
         speak HogwartsSuryawati \"After an argument with my father, I ran away, and transformed for the first time.$2\"/pause 800/
         question null \"#Do your parents know?\"/pause 800/
@@ -112,14 +112,8 @@
       "Target": "Data/Events/{{ModId}}_HogwartsGrandStaircase",
       "Entries": {
         "{{ModId}}_Suryawati05": "none/28 40/farmer 25 44 0 HogwartsSuryawati 27 41 3/skippable/pause 800/
-        addTemporaryActor {
-          {ModId
-          }
-        }_SuryawatiPhoenix 32 32 34 38 3 false Monster/pause 800/
-        move {
-          {ModId
-          }
-        }_SuryawatiPhoenix -5 0 2 false/pause 800/
+        addTemporaryActor {{ModId}}_SuryawatiPhoenix 32 32 34 38 3 false Monster/pause 800/
+        move {{ModId}}_SuryawatiPhoenix -5 0 2 false/pause 800/
         move HogwartsSuryawati -3 0 2 false/pause 800/
         emote HogwartsSuryawati 16/pause 800/
         speak HogwartsSuryawati \"It's not what it looks like...$2\"/pause 800/
@@ -151,13 +145,11 @@
         speak HogwartsOllivander \"We do not speak his name...\"/pause 800/
         emote farmer 16/pause 800/
         speak HogwartsOllivander \"#$b#Would you be able to come back another time?\"/pause 800/
-        globalFade/viewport -1000 -1000/pause 1000/end","{
-          {ModId
-          }
-        }_Ollivander15": "none/8 17/farmer 7 17 1 HogwartsOllivander 9 17 3/skippable/pause 800/
+        globalFade/viewport -1000 -1000/pause 1000/end",
+        "{{ModId}}_Ollivander15": "none/8 17/farmer 7 17 1 HogwartsOllivander 9 17 3/skippable/pause 800/
         question null \"#Mr. Ollivander? Sir?\"/pause 800/
         speak HogwartsOllivander \"Oh, I didn't hear you. Forgive me. I was deep in thought.\"/pause 800/
-        question null \"#Are you alright sir? #You seem fatigued\"/pause 800/
+        question null \"#Are you alright sir? #You seem fatigued.\"/pause 800/
         speak HogwartsOllivander \"This wand of yew... it is quite unlike any other.\"/pause 800/
         question null \"#I saw that. That was... extraordinary. #I've never seen such potency from a charm.\"/pause 800/
         speak HogwartsOllivander \"This wand... it elevates me. Every memory of hate, this wand turns it into power, #$b#and I have had tremendous power lately.\"/pause 800/
@@ -177,18 +169,30 @@
         question null \"#How is it possible that your wand is more powerful than other wands I've witnessed?\"/pause 800/
         speak HogwartsOllivander \"This is no ordinary yew wand.\"/pause 800/
         globalFade/viewport -1000 -1000/pause 800/
-        changeToTemporaryMap {
-          {ModId
-          }
-        }_HogwartsValley/viewport 92 132 true/warp HogwartsOllivander 92 132/faceDirection HogwartsOllivander 0/pause 800/
+        changeToTemporaryMap {{ModId}}_HogwartsValley/viewport 92 132 true/warp HogwartsOllivander 92 132/faceDirection HogwartsOllivander 0/pause 800/
         speak HogwartsOllivander \"It's been some time, Albus.#$b#Curious... A yew tree.#$b#This tree grew...#$b#From the Dark Lord's wand!\"/pause 800/
         emote HogwartsOllivander 12/pause 800/
         globalFade/viewport -1000 -1000/warp farmer 7 6/faceDirection farmer 1/warp HogwartsOllivander 9 6/faceDirection HogwartsOllivander 3/pause 800/
-        changeLocation {
-          {ModId
-          }
-        }_Ollivanders/viewport 8 6 true/pause 800/
+        changeLocation {{ModId}}_Ollivanders/viewport 8 6 true/pause 800/
         speak HogwartsOllivander \"I crafted the tree's wood into a wand, and now...#$b#The Dark Lord's wand serves me.\"/pause 800/
+        globalFade/viewport -1000 -1000/pause 1000/end"
+      }
+    },
+    // Wizard Tower
+    {
+      "LogName": "Hogwarts Grand Staircase Events",
+      "Action": "EditData",
+      "Target": "Data/Events/WizardHouse",
+      "Entries": {
+        "{{ModId}}_Wizard05": "none/4 17/farmer 5 17 3 Wizard 3 17 1/skippable/pause 800/
+        speak Wizard \"The Ministry has assigned me to be your mentor.\"/pause 800/
+        globalFade/viewport -1000 -1000/pause 800/
+        changeLocation CommunityCenter/viewport 43 21 true/pause 800/
+        viewport move -3 -2 5500/pause 6000/
+        speak Wizard \"There are creatures you and I know as Junimos that reside in Stardew Valley, yet the world is unaware of their existence and power.\"/pause 800/
+        globalFade/viewport -1000 -1000/warp farmer 5 17/faceDirection farmer 3/warp Wizard 3 17/faceDirection Wizard 1/pause 800/
+        changeLocation WizardHouse/viewport 6 16 true/pause 800/
+        speak Wizard \"Thus, you will assist me in understanding their affinity to this plane.\"/pause 800/
         globalFade/viewport -1000 -1000/pause 1000/end"
       }
     },
