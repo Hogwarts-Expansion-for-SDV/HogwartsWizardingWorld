@@ -69,6 +69,23 @@
         }
       ]
     },
+    // Bell Tower Courtyard 
+    {
+      "LogName": "Hogwarts Bell Tower Courtyard Events",
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_HogwartsBellTowerCourtyard",
+      "Entries": {
+        "{{ModId}}_Suryawati15": "none/61 20/farmer 61 21 0 HogwartsSuryawati 61 19 2/skippable/pause 800/
+        emote farmer 8/pause 800/
+        speak HogwartsSuryawati \"As long as you don't tell anyone, I will answer your questions.$2\"/pause 800/
+        question null \"#I won't tell.#How are you able to transform into a bird?\"/pause 800/
+        speak HogwartsSuryawati \"After an argument with my father, I ran away, and transformed for the first time.$2\"/pause 800/
+        question null \"#Do your parents know?\"/pause 800/
+        speak HogwartsSuryawati \"I do not remember my mother.$2#$b#My father... I cannot tell him.$2#$b#He poaches magical creatures...$2\"/pause 800/
+        emote farmer 28 true/
+        globalFade/viewport -1000 -1000/pause 1000/end"
+      }
+    },
     // Forbidden Forest Centaur Camp 
     {
       "LogName": "Hogwarts Forbidden Forest Centaur Camp Events",
@@ -88,20 +105,22 @@
         action mushymato.MMAP_TAS 56 66 {{ModId}}_Suryawati25Unicorn/pause 1000/end"
       }
     },
-    // Bell Tower Courtyard 
+    // Forest 
     {
-      "LogName": "Hogwarts Bell Tower Courtyard Events",
+      "LogName": "Hogwarts Forest Events",
       "Action": "EditData",
-      "Target": "Data/Events/{{ModId}}_HogwartsBellTowerCourtyard",
+      "Target": "Data/Events/Forest",
       "Entries": {
-        "{{ModId}}_Suryawati15": "none/61 20/farmer 61 21 0 HogwartsSuryawati 61 19 2/skippable/pause 800/
-        emote farmer 8/pause 800/
-        speak HogwartsSuryawati \"As long as you don't tell anyone, I will answer your questions.$2\"/pause 800/
-        question null \"#I won't tell.#How are you able to transform into a bird?\"/pause 800/
-        speak HogwartsSuryawati \"After an argument with my father, I ran away, and transformed for the first time.$2\"/pause 800/
-        question null \"#Do your parents know?\"/pause 800/
-        speak HogwartsSuryawati \"I do not remember my mother.$2#$b#My father... I cannot tell him.$2#$b#He poaches magical creatures...$2\"/pause 800/
-        emote farmer 28 true/
+        "{{ModId}}_Wizard15": "none/7 9/farmer 8 9 3 Wizard 6 9 1/skippable/pause 800/
+        speak Wizard \"While the valley appears peaceful, dark forces attempt to penetrate our lands at this very moment.\"/pause 800/
+        globalFade/viewport -1000 -1000/pause 800/
+        changeLocation Woods/viewport 41 20 true/pause 800/
+        viewport move -3 -2 5500/pause 6000/
+        changeLocation Forest/viewport 7 9 true/pause 800/
+        speak Wizard \"Hence, our vocation is protecting muggles that reside here.\"/pause 800/
+        globalFade/viewport -1000 -1000/pause 1000/end",
+        "{{ModId}}_Wizard25": "none/6 35/farmer 7 35 3 Wizard 5 35 1/skippable/pause 800/
+        speak Wizard \"In more than one instance, dark wizards dominated the wizarding world.#$b#They targeted muggle-born wizards, wizards who had relationships with muggles, and wizards who were supporters of muggle relationships.#$b#At that time, I was afraid for my life.#$b#Thus, I ended my relationship with a muggle, erasing both of our memories.#$b#Although protection charms appear banal, we protect families from breaking apart, wizarding and muggles alike.\"/pause 800/
         globalFade/viewport -1000 -1000/pause 1000/end"
       }
     },
@@ -180,7 +199,7 @@
     },
     // Wizard Tower
     {
-      "LogName": "Hogwarts Grand Staircase Events",
+      "LogName": "Hogwarts Wizard Tower Events",
       "Action": "EditData",
       "Target": "Data/Events/WizardHouse",
       "Entries": {
