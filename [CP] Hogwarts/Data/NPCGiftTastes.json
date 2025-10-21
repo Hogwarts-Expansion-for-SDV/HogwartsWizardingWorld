@@ -5,36 +5,51 @@
       "Action": "EditData",
       "Target": "Data/NPCGiftTastes",
       "TextOperations": [
-      {
+        {
           "Operation": "Append",
-          "Target": ["Entries", "Universal_Love"],
+          "Target": [
+            "Entries",
+            "Universal_Love"
+          ],
           "Value": "",
           "Delimiter": " "
-      },
-      {
-        "Operation": "Append",
-        "Target": ["Entries", "Universal_Like"],
-        "Value": "",
-        "Delimiter": " "
-      },
-      {
-        "Operation": "Append",
-        "Target": ["Entries", "Universal_Neutral"],
-        "Value": "{{ModId}}_Artifact {{ModId}}_BertieBottsBeans",
-        "Delimiter": " "
-      },
-      {
-        "Operation": "Append",
-        "Target": ["Entries", "Universal_Dislike"],
-        "Value": "",
-        "Delimiter": " "
-      },
-      {
-        "Operation": "Append",
-        "Target": ["Entries", "Universal_Hate"],
-        "Value": "",
-        "Delimiter": " "
-      },
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Like"
+          ],
+          "Value": "",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Neutral"
+          ],
+          "Value": "{{ModId}}_Artifact {{ModId}}_BertieBottsBeans",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Dislike"
+          ],
+          "Value": "",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Hate"
+          ],
+          "Value": "",
+          "Delimiter": " "
+        }
       ]
     },
     {

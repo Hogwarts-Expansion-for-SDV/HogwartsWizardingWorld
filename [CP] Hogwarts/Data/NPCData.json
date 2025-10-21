@@ -151,7 +151,7 @@
           ]
         },
         "HogwartsAndrew": {
-          "DisplayName": "{{i18n: npc.Andrew.name}}",
+          "DisplayName": "Andrew",
           "BirthSeason": "Fall",
           "BirthDay": 5,
           "Gender": "Male",
@@ -172,8 +172,37 @@
               "Condition": null,
               "Location": "{{ModId}}_HogwartsGreatHall",
               "Tile": {
-                "X": 3,
+                "X": 13,
                 "Y": 17
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsNkiruka": {
+          "DisplayName": "Nkiruka",
+          "BirthSeason": "Winter",
+          "BirthDay": 22,
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Neutral",
+          "CanBeRomanced": false,
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "UnknownUntilMet",
+          "CanVisitIsland": "FALSE",
+          "IntroductionsQuest": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "TrailingGroup",
+          "Home": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "Location": "{{ModId}}_HogwartsGreatHall",
+              "Tile": {
+                "X": 14,
+                "Y": 18
               },
               "Direction": "right"
             }
