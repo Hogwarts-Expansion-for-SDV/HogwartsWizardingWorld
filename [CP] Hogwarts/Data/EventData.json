@@ -3,7 +3,7 @@
     {
       "LogName": "Hogwarts Event Load",
       "Action": "Load",
-      "Target": "Data/Events/{{ModId}}_ForbiddenForestCentaurCamp, Data/Events/{{ModId}}_HogwartsBellTowerCourtyard, Data/Events/{{ModId}}_HogwartsGrandStaircase, Data/Events/{{ModId}}_Ollivanders",
+      "Target": "Data/Events/{{ModId}}_ForbiddenForestCentaurCamp, Data/Events/{{ModId}}_HogwartsBellTowerCourtyard, Data/Events/{{ModId}}_HogwartsGrandStaircase, Data/Events/{{ModId}}_HogwartsPotionsClassroom, Data/Events/{{ModId}}_HogwartsTransfigurationClassroom, Data/Events/{{ModId}}_Ollivanders",
       "FromFile": "Data/blank.json"
     },
     {
@@ -120,7 +120,7 @@
         speak Wizard \"Hence, our vocation is protecting muggles that reside here.\"/pause 800/
         globalFade/viewport -1000 -1000/pause 1000/end",
         "{{ModId}}_Wizard25": "none/6 35/farmer 7 35 3 Wizard 5 35 1/skippable/pause 800/
-        speak Wizard \"In more than one instance, dark wizards dominated the wizarding world.#$b#They targeted muggle-born wizards, wizards who had relationships with muggles, and wizards who were supporters of muggle relationships.#$b#At that time, I was afraid for my life.#$b#Thus, I ended my relationship with a muggle, erasing both of our memories.#$b#Although protection charms appear banal, we protect families from breaking apart, wizarding and muggles alike.\"/pause 800/
+        speak Wizard \"In more than one instance, dark wizards dominated the wizarding world.#$b#They targeted muggle-born wizards, wizards who had relationships with muggles, and wizards who were supporters of muggle relationships.#$b#At that time, I was afraid for my life, so I erased both of our memories to protect her.#$b#Although protection charms appear banal, we protect families from breaking apart, wizarding and muggles alike.\"/pause 800/
         globalFade/viewport -1000 -1000/pause 1000/end"
       }
     },
@@ -194,6 +194,50 @@
         globalFade/viewport -1000 -1000/warp farmer 7 6/faceDirection farmer 1/warp HogwartsOllivander 9 6/faceDirection HogwartsOllivander 3/pause 800/
         changeLocation {{ModId}}_Ollivanders/viewport 8 6 true/pause 800/
         speak HogwartsOllivander \"I crafted the tree's wood into a wand, and now...#$b#The Dark Lord's wand serves me.\"/pause 800/
+        globalFade/viewport -1000 -1000/pause 1000/end"
+      }
+    },
+    // Potions Classroom 
+    {
+      "LogName": "Hogwarts Potions Classroom Events",
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_HogwartsPotionsClassroom",
+      "Entries": {
+        "{{ModId}}_Andrew15": "none/23 19/farmer 23 19 3 HogwartsAndrew 27 19 3 HogwartsHorace 18 19 2/skippable/pause 800/
+        faceDirection farmer 1/pause 800/
+        speak farmer \"How did you complete your potion so effortlessly?\"/pause 800/
+        speak HogwartsHorace \"Three minutes remaining!\"/pause 800/
+        speak farmer \"Hmm... your potion still needs the finishing spell to be casted.\"/pause 800/
+        emote HogwartsAndrew 40/pause 800/
+        emote farmer 8/pause 800/
+        faceDirection farmer 3/pause 800/
+        advancedMove HogwartsAndrew true 0 -2 0 5000 0 3 2 3000/
+        speak HogwartsAndrew \"*Mutters* Where is she? She should be here by now.\"/pause 800/
+        speak HogwartsHorace \"Three minutes remaining!\"/pause 800/
+        globalFade/viewport -1000 -1000/pause 1000/end"
+      }
+    },
+    // Transfiguration Classroom 
+    {
+      "LogName": "Hogwarts Transfiguration Classroom Events",
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_HogwartsTransfigurationClassroom",
+      "Entries": {
+        "{{ModId}}_Andrew05": "none/19 11/farmer 20 15 0 HogwartsAndrew 20 12 0 HogwartsNkiruka 17 12 0 HogwartsHermione 20 8 2/skippable/pause 800/
+        speak HogwartsHermione \"Welcome class. I am Professor Granger, and I will be your substitute transfiguration professor for now until I am summoned by the Ministry.#$b#Now, let’s see your proficiency.#$b#Andrew, you are up first.\"/pause 800/
+        emote HogwartsAndrew 40/pause 800/
+        faceDirection HogwartsAndrew 3/faceDirection HogwartsNkiruka 1/faceDirection farmer 3/
+        speak HogwartsAndrew \"Vero verto\"/
+        speak HogwartsNkiruka \"...\"/pause 800/
+        emote farmer 8/pause 800/
+        speak HogwartsHermione \"Flawless transfiguration, Andrew!\"/pause 800/
+        faceDirection HogwartsAndrew 0/faceDirection HogwartsNkiruka 0/faceDirection farmer 0/
+        speak HogwartsHermione \"Since you were watching so closely, let’s see yours, Nkiruka.\"/pause 800/
+        emote HogwartsNkiruka 40/pause 800/
+        faceDirection HogwartsNkiruka 1/faceDirection HogwartsAndrew 3/faceDirection farmer 3/pause 800/
+        speak HogwartsNkiruka \"Fera verta\"/pause 800/
+        speak HogwartsHermione \"Good attempt, but not quite there.\"/pause 800/
+        emote HogwartsNkiruka 28/pause 800/
         globalFade/viewport -1000 -1000/pause 1000/end"
       }
     },

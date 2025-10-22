@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="51" height="39" tilewidth="16" tileheight="16" infinite="0" nextlayerid="23" nextobjectid="5">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="51" height="39" tilewidth="16" tileheight="16" infinite="0" nextlayerid="26" nextobjectid="5">
  <tileset firstgid="1" name="z_HistoryClassroom_Hogwarts" tilewidth="16" tileheight="16" tilecount="240" columns="12">
   <image source="z_tilesheet1_Hogwarts.png" width="192" height="320"/>
  </tileset>
@@ -12,76 +12,95 @@
  <tileset firstgid="3187" name="townInterior_2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
   <image source="townInterior_2.png" width="512" height="656"/>
  </tileset>
- <tileset firstgid="4499" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
-  <image source="walls_and_floors.png" width="256" height="560"/>
+ <tileset firstgid="4499" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="688" columns="16">
+  <image source="walls_and_floors.png" width="256" height="688"/>
  </tileset>
- <tileset firstgid="5059" name="z_vanillaEdits_Hogwarts" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+ <tileset firstgid="5187" name="z_vanillaEdits_Hogwarts" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
   <image source="z_vanillaEdits_Hogwarts.png" width="512" height="656"/>
  </tileset>
- <tileset firstgid="6371" name="z_AstronomyKitchen_SC_Hogwarts" tilewidth="16" tileheight="16" tilecount="418" columns="22">
-  <image source="z_AstronomyKitchen_SC_Hogwarts.png" width="352" height="304"/>
+ <tileset firstgid="6499" name="z_AstronomyKitchen_SC_Hogwarts" tilewidth="16" tileheight="16" tilecount="616" columns="22">
+  <image source="z_AstronomyKitchen_SC_Hogwarts.png" width="352" height="448"/>
  </tileset>
- <tileset firstgid="6789" name="z_furniture_Hogwarts" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+ <tileset firstgid="7115" name="z_furniture_Hogwarts" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
   <image source="z_furniture_Hogwarts.png" width="512" height="1488"/>
  </tileset>
- <tileset firstgid="9765" name="z_Rugs_Shyzie_Hogwarts" tilewidth="16" tileheight="16" tilecount="572" columns="22">
+ <tileset firstgid="10091" name="z_Rugs_Shyzie_Hogwarts" tilewidth="16" tileheight="16" tilecount="572" columns="22">
   <image source="z_Rugs_Shyzie_Hogwarts.png" width="352" height="416"/>
  </tileset>
- <tileset firstgid="10337" name="z_Rattan_PC_Hogwarts" tilewidth="16" tileheight="16" tilecount="2144" columns="32">
+ <tileset firstgid="10663" name="z_Rattan_PC_Hogwarts" tilewidth="16" tileheight="16" tilecount="2144" columns="32">
   <image source="z_Rattan_PC_Hogwarts.png" width="512" height="1072"/>
  </tileset>
- <tileset firstgid="12481" name="z_CommonRoom_ICEC_Hogwarts" tilewidth="16" tileheight="16" tilecount="770" columns="22">
+ <tileset firstgid="12807" name="z_CommonRoom_ICEC_Hogwarts" tilewidth="16" tileheight="16" tilecount="770" columns="22">
   <image source="z_CommonRoom_ICEC_Hogwarts.png" width="352" height="560"/>
  </tileset>
- <tileset firstgid="13251" name="z_wizard_furniture_Hogwarts" tilewidth="16" tileheight="16" tilecount="351" columns="13">
+ <tileset firstgid="13577" name="z_wizard_furniture_Hogwarts" tilewidth="16" tileheight="16" tilecount="351" columns="13">
   <image source="z_wizard_furniture_Hogwarts.png" width="208" height="432"/>
  </tileset>
- <tileset firstgid="13602" name="farmhouse_tiles" tilewidth="16" tileheight="16" tilecount="264" columns="12">
+ <tileset firstgid="13928" name="farmhouse_tiles" tilewidth="16" tileheight="16" tilecount="264" columns="12">
   <image source="farmhouse_tiles.png" width="192" height="352"/>
+ </tileset>
+ <tileset firstgid="14192" name="z_sunflowerfurniture_CT_Hogwarts" tilewidth="16" tileheight="16" tilecount="351" columns="13">
+  <image source="z_sunflowerfurniture_CT_Hogwarts.png" width="208" height="432"/>
+ </tileset>
+ <tileset firstgid="14543" name="z_LibraryTilesheet_Hogwarts" tilewidth="16" tileheight="16" tilecount="924" columns="21">
+  <image source="z_LibraryTilesheet_Hogwarts.png" width="336" height="704"/>
+ </tileset>
+ <tileset firstgid="15467" name="z_CozyFurniture_BP_Hogwarts" tilewidth="16" tileheight="16" tilecount="598" columns="26">
+  <image source="z_CozyFurniture_BP_Hogwarts.png" width="416" height="368"/>
  </tileset>
  <layer id="1" name="Back" width="51" height="39">
   <data encoding="base64" compression="zlib">
-   eJztVlsOwiAQ7Ed/7QnUm3sLT2OtB/EVu0mJG7JPQKWRSQgfWNydGRi6roHCecOvXYS12gB9TMpYQz/Qx30eh14ez8p7Cn1sB72X/fDuqSZgT0Efp7nGsdfn0FNNwJ6COq/zuDnmmoA9ZdEjnmtC4BjXuFZdQg/jl3Th7vwSd2Lg94b41nrIqZm780vciZQumrcAGrdczdyd/6k7Ucv9SeB2WvrhatY4SgXlA4CWlVKGPpY9vOeO8q72ngo+4LzLcW7ld7d4xZtTlC7aeyqcsYfwXrH8t3avldBFe0+FMwb8UTVaM1PLm9i3nE8kXTz9czWm5EysC+ZPOoOSLh5fct7J9bmnFwm5uqTMlHes30l5n8oj91vLft4cwd9JeW/JOSqnOe4s/GrnQPpOyntPtmFOcnTJnUv0Apwco71SdMmdOXj4gBH7DmeEVZfcOjh4+KC8jjPCqktuHaV0od4v1r00XkvCogu1RgH38AtYdKHWaoRFl7XAoktDQ0NDQ8O/4AWcv8AR
+   eJztV0tOwzAQ9SIrDGmkcAjKSYCTUE7hDdwAdlwBNpyirWAP4gJQwRXwyLFiJp76W9Wq/KSnSeLGnfGb8TiMVRwyli1jK8knztgzV1ZSyGsBFsbW7b699MN3q/gqY3jjykoKeS3AwthmiLfkmJZDHEczxn5kDL9cWUkhrwVYLseOZ+p3m8Ji0Tmled8z9tC7rY6pJHy1Y14Bb6Wfd72/LQmQT9ygry7aloRQHUrWJVSHVF1wfa4y7okxeqT4jOtTM8eeGKMHYN5Ned6N81I+4/rU3NWeaPr3eaKIn112U14N4wDK51S9KZxZ1hZg+vfYKOJni27Km2EcEKu3CSpPcY2B3xeWtZ0j/3Qs+Bnlz2KIJUcdUnmKawz8vrasLTz3+W+XPzl0ofIU1xj4Ta2rz3+7/MF5a9srgNt0CelvtnHfnHDpYuYtvje5TZeQ/mYb980JV7808xbf4zEK+9DFljs+c+CelKKL7b0YXWy54zOH7kkUqBpz9ekUXWy5Y/pMzaF7EgWqxqg+nUMX133s+ZSqMapPvzTju/1pnC4fco735r/N8d0Q2mtt+z3WKmYfy6FLaK+17fc+6+Ja1211sitdcN7l0iU3Us8hJnKdzWOReg4pCTFn01KR69u9oqKioqLiEPAHVTzhiQ==
   </data>
  </layer>
  <layer id="11" name="Back1" width="51" height="39">
   <data encoding="base64" compression="zlib">
-   eJzt0DENADAMA8FMVfkj7lAKGSLnTjKAdxUAAInO/UugZaaklg5JX2iZKamlU9IvWmZKagEAgK0eU3UA4Q==
+   eJztlk1OwkAYhr+VYck5egGuxwEUZUvRuBMXoG4VvIGgW38IF1DhBjzYmYRMVNo67Yzke5InmTRpO+/MNz8iiqIoiqIoyj5y0Mj0Tb8l7RR76P/r31NVlksyDPBiD7LERK8pkmIfT/GsGbpH5bml73c4xgne/5Klrnl9T+T8AYd4hHnfe6bvL/iKbziPIMsykcW18QTt80OP/6grywf9H5ksna0sPqlz73iitkYVZvFJnnG5IU+3wHoJRcjzgf1EmG85Nto2a1MYu8KEzML+KNSvXBltm/W5qYWduHedkFnY72WKM6NtPyZf63QnIe46P/HXLNu49Vq2TmPArde8dRoj7hyXmdtY4L61Odvl08idRVb/NIuiKIqiKBlrg+VrRg==
+  </data>
+ </layer>
+ <layer id="23" name="Back2" width="51" height="39">
+  <data encoding="base64" compression="zlib">
+   eJzt1MENQDAUxvFnADuYoBdJD04WsoMBrMAGNuLGAMKRRMXBjQRF5f9LmiZN23wv6asIAAAAgCd0WtK3MwAuKP23E3xPo9e51efO59E6F9E9eVyTmDdVKZFabWupuPsnj6aOSR3vW2T00yVXe+9I6Nm514a9rL0Zg0jwVBabTC3xX2oBAADAZgZjJhOu
   </data>
  </layer>
  <layer id="5" name="Buildings" width="51" height="39">
   <data encoding="base64" compression="zlib">
-   eJztl0EKgzAQRbPwSl6g7UnanqS4VfAAtusu4k3smVrBgWHIJDE2JpF5EBBB/RP/nyRKCUIZnCqlzo5xqVKrdDPXcf2Nm2PcM6+pW+p4eOhrUE05AZ4aPevANJnVAp76ZKYrhLX/QjgmXM9P1RN9+henmev5sXtih97fouu+ds8tp5nLZ4yeSPUBGt0bavsaOrN3TzH5oCc6AXzvXZvf15BnYugz+YDz7oB0PtH1i9EfE9d+CjLGeZeb81Agc23A/3L5dK99B/hgXL6nGZ+UAM0c55PcoP7BvRwyZ8pbiO9iQ/0zemrUK9f7LdnzZSK+8d1zT471nmbLlr0czoW2XsTlK8Ue6N/YsjfPCfZeV1htFG3wY6ng3B7hnCwIgiAIgiBs5wt5RFun
+   eJztV89rE0EUfqFbItisf4AIgkKFNmUhUiG5SFtBxP/BYgNKQU96dig9VVPBgx4reBPag/4DsR4U2uSmUVAQi+DNnwWPvslmui8vO7MzWY2L7AeP3Z0fme978968CUCO/x3rnrFPjIxISiwg1y2DFuwTC4b+LKGOXNvIdV5j2Cfqvfcsa5KxtYpcZ4Iwju5NAxTLAIfK0ZjJme4YWPK6ujOFOeLzuNiaRB2n0Bqoa306bNsJAHaDUNOPsdHyNeFyz8dLYfzAFeR4Negfg/sjdPOzokXyWEH+1/D9OtpLjK0Xgds5lSUtn6fc512qwuINNHx+yJIWV0jtch41F8xpzse0Z6LiQf3sMs8EHWean9TSnoncv8oeHQmN1v+GF7V3ZpN9q+O8ouH8N85Ezk9hk7Ttzep9O+9FZ4or0miJi4MO46lA277gmGfYth2awHcx5kc1VHJarnVzS9jwuIBjL9YGtejilMeBLnalz8tYX54ijyeWXBSO1kCoOL1Vix9zfwLgwUR/2/sKiHeVcC6FLk55jqnY9XwQOyWAUhHAL4Y+HxYB0cJzjuYbNQqqxSZOVY5J264APK8Mz53jHNHC70WbmjgxaUnC8lS0nknLYhXgNvmW+3fiGMBJtPMYP3cg6o87C3nO6eJEV6ts6sUa0fIGdbxlWlTs3qza71uD+df0X840j8LmTvKYaNHVbtwDWHPQwuPH9F+OzzPVe55bcbnHIbXss7aNavy+Sai9U98tFjdtSy2thHrPc8uUe8onUsvhQv/v0HyQ+Ip58g3tO9qn0mC/CeoermqS+pbQ1Xuec0m5VydaXO6J4/7gujb3zVe4x6/ROmSvf4Fey+q4HR8J6ROaf7Y5e7Ae2s8YLi53Eb+g1+KCu2f6Y2+L71OPK8+lg/UAzmL/wzRadOOHuZvRvG0zLaihiVybyLnJ550udPuP72u0uFqcFmr0TN3FZ6syeAbFIWkt2/z4U+C18CM+93rvnq+fp+by71FyT+JjGvevuSbBRUvWkSbvcuTIkSNHDoXffqVgbA==
   </data>
  </layer>
  <layer id="13" name="Buildings1" width="51" height="39">
   <data encoding="base64" compression="zlib">
-   eJzt1L0NgCAQhmFaBmIfR2ES7XUJRzMWFw8SLPyBu+R9Gq6g4OL3GQIAAIBNUyxPD1pvzrE8/zana15S+96d3m9u+WIXK6zsUuf0Sce2FHaZVzX3Vud0VF7l23rP6JkFvYvH/7DI1S6jM/KWdG5k3yzy3j3dMe/d0x2jewAAAACsOQDr3iXZ
+   eJztljtLA0EQx6fxJGiMae+0tfF1kpDC+waChICNhaLBIqbVws5tLSz8BrYqCgramoiNxohtKlMkpWJKH4Wzdwn34M7crfci7A+GWTaT8P9fduYWgDPorEtAotbgF7sD4iUpA4zJzl6G50IUw8CaBFCUtPWsrOWjGf3zhhi+JlZ20Mee5L6+hn6fMOpycJpY2cQo9qnB/4mEICVwrtDH5YB4sSOPPbScjFpFPNhImLPfTHiYVwej7s6ck2aSMOegqGU1na2cvtfG9UMW4BEjPQXkBPdOtaBr4vRbYWk2ci4AXAjmPauXV/TRxFhAL9e4d6MFXRNa01nU60sKHAet2cp9UtNRRx/PgvrM1Xe/qi2nP++OwVcBvVQx32lB12qdoOg1ZR+9WM+pU4+10MsZzqM39PEuqM88dljPqdvzWvDZS++ctnN/17GwNO1u/hz68O6gZ8HoJeg5HCTE4oV1pk3+82676uGu2eML59g3xo9hnuHMqND80c1RUGL4Tgrn2DhGWulfy4Lb3lsRzX1E7MtCx9hjceq92wxABaOacVe/NWTuMT96Ly706z16t8J7IqRi+I70Cr1b0Txv4+UTZ+EL9lFDtG8fIkKzjBGgPE8Uul7yDP/LPvrYjsjLiBKb8cThcDgcDoczcPwCvtJ2DQ==
   </data>
  </layer>
- <layer id="15" name="Buildings2" width="51" height="39" visible="0">
+ <layer id="15" name="Buildings2" width="51" height="39">
   <data encoding="base64" compression="zlib">
-   eJzt1csVgkAQBdFJZ/JAREkDVDANxV8g/pKkcnChPdY9p/b9Vp2SJEmS9L+qnNKC6vztSz7XsaGnTQFbDmw40lTAFkmSfsmS39rQitbUBv61W27f0UAj7QNvOXH7mS50pVvgLXduf9CTXvQOvEWSJJVjBgS2Eac=
+   eJzt18ENwiAYhmEGoJP0YuIWxpNuYTzpAly56hQm3nUFN3EMwehBioKBUtq8z63tf+ALhR+EwJSdpFA3+f27ls+aUTA5VESNzRSsQz6L2dAjyGczoSyAlWtPPIv+9lXbg2L291yuJsulpzy/+m1p61aoVdvNqSsao+t1JlHu+73JsfNkiXWfp8+3HZe7lnTgjOX7r48mxyEhSw4l1xuA/73vZ2O90yybz+che2PqXXfbhGtKqumcAT/mCAAAAKjbA5lvKI8=
   </data>
  </layer>
  <layer id="9" name="Front" width="51" height="39">
   <data encoding="base64" compression="zlib">
-   eJztV0tOwzAQHREL2FGJBRvEJSLCUTgJYpsNJwBC4BxUHKwtC1aMS0ZMLLv+BlvITxpVsuzRe5N5YxegQsW2Adg10O/mv7P4bHKztONIAFwJ6G37cA98oc5SNZ076uCQmi7EQoQCMPUUrAM53RSiJeRbqChFS5uAR9WSHjm0bDUzPsWcD9Uy4LkR4xXjzZBDxxnnOFwa9sfORJ2WW1xrOuhliO53XUxrMk66w7WVM8XE+RBi+vURzz5hfLB4wThDvjJWTMtqWpPxcK3PR7UN/d4xWlgf9PReOe3s52x8UmkxeUvXB7q7xVRzHz4ptLj0aWwfuPBpfzy3D/Ic95vOj3SW4MovpnauudFX+yDPcb/p/EhnCSVpccG9sq8ELQObg3ceuY+ne0p3V+XS8i7m88X1zS3PyVm0YUFo2T2n+ot7T2rhd8tzxjeV6b5v2T2n+ot7j+pINVnKO67Q3ZG+nJaez65IoYXyUL+F9hr3/hiQJ5UW7lvy7ODJR3Lh/vXlkUqLKbdPLpXLf9LCZ+RoCdN/oFRz1jazuT90XDaNf6iI6VlVC8/FdRF3G5eUcNXCa+xT57+Ez3smN1cbqC9CfFcaYnxXUVFRUVFB+AbBb9Sa
+   eJztV7tuFDEUvWi33KkoaEgEtARpxYhMsR8AiRQ60kNDQIBECCBoYmghVSAiqdJCko5NPoDHItEAv0D4giwUVBxPbPbOrO2xd0dhkOZIR9nx48bH9vG1iWrk8atB4meDSJH//ku0qTxONElMgkXt0IZ+Q2eVNSUeOjikJuivDPps73TZuO5OES1Omfs8axM9B1faqf5K4HgznVvh0/Y2dN1R2ragYRvcqZCW2DCOixjfpXa2DOsjbDGqrCUUVdLy6exofXuqX6iWvuGML+OcH2VdpPY19HsFroMblhimMeMcp5OW9mWciVt06IVewPrMJe65lWeKbcwulLFf989nv68kJCTnk0HZvCqT/DxtjqPndlQfjqOln72rpPeVy0lxPxPeRYPxhGo51SE60xnWYvOWaR+Ycottzovw3aAF3hqKb8IFqSOnxWefjrsPiqC1zCSHnFXrjL8C3+JBi+hhK60Tuq4Xk/gIci2+4xtlH/hCx4avUmrPcb+Z/JhHqJbtGPeQ2NxmAbzOvt9Hg/3yKBquz8ceF2WuiwCX2fc+tDQmiJpgjL29xOplvtlTvB+oZQGxboA3O9lyHsOVL1xa9N6Vv13rtsvW6W0ze750PbXIfvIsOmDkWmRenlE+4/6aZWVSyyr4Qs3lS/Bc5Pf/y4Yt3yvPGf3FvafnUc+J7DcXoEWvnckvLrwG3xjKTTky1HNF57P0+GOl8Qt88hX8Bn5A2a0o6ycXroLXwC64y741ytCi46xa+q1jvBtHsPfK0sJ9qz27FhBn4lj4//RBqJanllzF58k1VnknFS3zPeUefLmY2O8wqJNtaMmRL5HT0v28EtnjFMHnvjqpNG5atAjoWHZoQZ1sQ08cWpDT6Ae4Ay2m/MDzhw1cS/494IODRjhdMcaBz7oUjeVfQd8/9izvXp95PArId85p9dbh0N6TqMpYiyDfOdPqrcOhvfc/YBzf1ahRo0aNGhp/ACt7Azg=
   </data>
  </layer>
  <layer id="19" name="Front1" width="51" height="39">
   <data encoding="base64" compression="zlib">
-   eJzt0yEKwDAQRNGIvb8L9CShx4sIJWGpXNW+B2PG/9YAAP7tirU79jdi/0Ct3NzZ27OuPSiT+3prDwAAAL5sAniADrw=
+   eJxjYBgFo2AUjIJR0GHA0NAOxAPtDkqAkRSEXgH0x/Ih7hdygS7vQLuAcvDEaKBdMHLBDBYGhh0sCP42FojYDBbcegYL6GVjYOhjGzj7TaUGzu5RwMDgac7QAMID7Q5SACxvwfIccn4bbPmuahjULSAwE+iPabzUSSdnoXk+X5oapmGCI4MkzKmRr57QyS/TCNiDnr+w5T1qAB8y/GsjhRrO2wZJ/DeQqB65DXdWkpouwQRTgPE1lcw4mwbUtx2KZ1BgDq0AKe4xB6r9zIzAxiT6xZzGfifFPehuoYZfSDUDH6DEL5NZIGl2OwtmWYSOZwLxLCx2IZuBL40QU3/gMws5f+ByC70AMfUHcvpH9tdAu324gIdWDA3frQbaFdQB34B+4bEeaFeMglEwCkbBKBgFAw8Ar4NKWA==
   </data>
  </layer>
  <layer id="20" name="Front2" width="51" height="39">
   <data encoding="base64" compression="zlib">
-   eJzt06ERACAMBME0lXZJqwyCQeEyGHbVi7cXAQDAMvLsyvsP6LGb0xu8pT0AAAB+MwHa6wT2
+   eJzt170NwjAQBeArEFUyDVK8ArAALSUbIKjcUvOXpKJlAmZgj7AHlyhRLDBOIA7G4n3Sa07RKVecZRMBAAAAvDYaPNdmXJsIknmmoq6PRVEv8ou2/N87zkXJkROXM2ZR/e0t0vcAAHuqndPt2/7h7BGas6gv14BOZ84moLmNfkuHs6jSsHuPYXlm5kk4qaNZoBvT7jUx7cXiw/9RrUOSK46FVo1413vFOyeTL80CAP7RvbN81XaWgwczt53F1X3uHdX7NzYE9zkAAPgndyzxJuo=
   </data>
  </layer>
  <layer id="17" name="AlwaysFront" width="51" height="39">
   <data encoding="base64" compression="zlib">
-   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAfBofFAAB
+   eJzt1sEJAjEQheEBPXp3rWX3sKWklJRiKQu6RegpFWgLviBRWbwEFobo/8G7TC4zDIExA+BlP9jYvTPlqDZ591XrMFi69WYfiSV6C9791dAO0uY5T0nIUS10jc1yUt/33qblXlQb9Za8+6ulv5H3UxJzVIvefQEA1hF33h2s5/hDs3ibdbsotkyL8s28VXSLvXJV5gbvsi83c7oo5wZn4V4GAAAAgP/wAMcsWFg=
+  </data>
+ </layer>
+ <layer id="24" name="AlwaysFront2" width="51" height="39">
+  <data encoding="base64" compression="zlib">
+   eJzt08EJgDAQBMCrKm9LS2k2YwNqAV4BGhAkETID+7rP7uMiAAAA5nWUWM6H5G0d3e+NrTRvtVuRD9jyT/kTkb9R77I3dgIAAMBIF2NaID4=
   </data>
  </layer>
  <objectgroup id="2" name="Back"/>
