@@ -209,7 +209,7 @@
         question null \"#Andrew, how did you complete your potion so effortlessly?\"/pause 800/
         textAboveHead HogwartsSlughorn \"Three minutes remaining!\"/pause 2500/
         emote farmer 8/pause 800/
-        question null \"#Wait... Nevermind.#Your potion still needs the finishing spell.\"/pause 800/
+        question null \"#Wait...#Your potion still needs the finishing spell.\"/
         emote HogwartsAndrew 40/pause 800/
         emote farmer 8/pause 800/
         faceDirection farmer 3/pause 800/
@@ -224,8 +224,8 @@
         faceDirection HogwartsSlughorn 2/pause 800/
         speak HogwartsSlughorn \"Ahh marvelous potion-work, Andrew!\"/pause 800/
         emote HogwartsAndrew 40/pause 800/
-        globalFade/viewport -1000 -1000/warp farmer 24 45/faceDirection farmer 3/warp HogwartsAndrew 21 44/faceDirection HogwartsAndrew 2/addTemporaryActor HogwartsNkiruka 16 32 21 48 0 true Character/faceDirection HogwartsNkiruka 0/pause 800/
-        changeLocation {{ModId}}_HogwartsTransfigurationWing/viewport 22 45 true/pause 800/
+        globalFade/viewport -1000 -1000/warp farmer 61 62/faceDirection farmer 3/warp HogwartsAndrew 58 61/faceDirection HogwartsAndrew 2/addTemporaryActor HogwartsNkiruka 16 32 58 65 0 true Character/faceDirection HogwartsNkiruka 0/pause 800/
+        changeLocation {{ModId}}_HogwartsTransfigurationWing/viewport 59 63 true/pause 800/
         move HogwartsNkiruka 0 -2 0 false/pause 800/
         speak HogwartsNkiruka \"I am so sorry I’m late, Andrew.\"/pause 800/
         emote HogwartsAndrew 16/pause 800/
@@ -234,6 +234,19 @@
         question null \"#Nkiruka, are you fabricating magic for Andrew?\"/pause 800/
         speak HogwartsAndrew \"Quiet.#$b#Follow me.\"/pause 800/
         emote HogwartsNkiruka 28/pause 800/
+        globalFade/viewport -1000 -1000/warp farmer 64 42/faceDirection farmer 1/warp HogwartsAndrew 66 42/faceDirection HogwartsAndrew 3/addTemporaryActor HogwartsNkiruka 16 32 65 41 2 true Character/faceDirection HogwartsNkiruka 2/pause 800/
+        viewport 65 42 true/pause 800/
+        question null \"#Andrew is doing what?!\"/pause 800/
+        speak HogwartsNkiruka \"Andrew is impersonating my brother who passed away.\"/pause 800/
+        question null \"#How has he not been caught yet?\"/pause 800/
+        speak HogwartsNkiruka \"I am a transfer student from Uagadou. Over there, people are expected to know wandless magic, so I have been using my skills to fabricate Andrew’s magic in his classes.\"/pause 800/
+        question null \"#Andrew, why are you not doing your own magic?\"/pause 800/
+        speak HogwartsAndrew \"My parents... are magical, but I am not.\"/pause 800/
+        emote farmer 16/
+        question null \"#You’re... a squib?\"/pause 800/
+        speak HogwartsNkiruka \"@, Andrew has a health condition that only lets him live to 19. This is my chance to help him before he...\"/pause 800/
+        speak HogwartsAndrew \"Someone is coming. We’ll talk later.\"/pause 800/
+        emote farmer 40/pause 800/
         globalFade/viewport -1000 -1000/pause 1000/end"
       }
     },
