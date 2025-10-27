@@ -75,6 +75,21 @@
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogwartsBellTowerCourtyard",
       "Entries": {
+        "{{ModId}}_Andrew55": "none/74 56/farmer 74 56 2 HogwartsAndrew 73 56 2/skippable/pause 800/
+        question null \"#Why is Nkiruka helping you impersonate her deceased brother?\"/pause 800/
+        speak HogwartsAndrew \"She... caused her brother to form an obscurial, a deadly parasitic force.\"/pause 800/
+        move HogwartsAndrew 0 -1 0 true/pause 800/
+        speak HogwartsAndrew \"At Uagadou, everyone is expected to know how to cast spells without a wand. However, Andrew did not know, and...#$b#Nkiruka belittled him for it.\"/pause 800/
+        emote farmer 28/pause 800/
+        question null \"#Why are you at Hogwarts?\"/pause 800/
+        move HogwartsAndrew 0 1 2 true/pause 800/
+        speak HogwartsAndrew \"Although I am a squib, my brother is not.#$b#I dreamed of something that my brother has the power to, and I do not.\"/pause 800/
+        question null \"#What’s that?\"/pause 800/
+        globalFade/viewport -1000 -1000/pause 800/
+        changeLocation {{ModId}}_HogwartsValley/viewport 192 139 true/pause 800/
+        viewport move -2 -2 4500/pause 6000/
+        speak HogwartsAndrew \"I dream of being an explorer.\"/pause 800/
+        globalFade/viewport -1000 -1000/pause 1000/end",
         "{{ModId}}_Suryawati35": "none/61 20/farmer 61 21 0 HogwartsSuryawati 61 19 2/skippable/pause 800/
         emote farmer 8/pause 800/
         speak HogwartsSuryawati \"As long as you don't tell anyone, I will answer your questions.$2\"/pause 800/
