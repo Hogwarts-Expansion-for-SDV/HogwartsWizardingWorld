@@ -1,5 +1,5 @@
 {
-  "Format": "2.7.0",
+  "Format": "2.8.0",
   "ConfigSchema": {
     "Debug_mode": {
       "AllowValues": "true, false",
@@ -12,6 +12,131 @@
     {
       "Name": "Creature",
       "Value": "Abraxan, Ashwinder, AshwinderBlack, AshwinderGrey, Bicorn, Bowtruckle, BowtruckleBlue, BowtruckleBrown, BowtruckleBrownLeaf, BowtruckleGreen, Crup, CrupBrown, CrupGrey, DragonToadOrange, DragonToadRed, DragonToadYellow, Dugbog, DugbogBlue, DugbogBrown, DugbogGreen, FireCrabAmethyst, FireCrabAquamarine, FireCrabDiamond, FireCrabEmerald, FireCrabRuby, FireCrabTopaz, FwooperBlue, FwooperGreen, FwooperPink, FwooperShiny, FwooperYellow, Granian, GriffinBrown, GriffinGold, GriffinWhite, HippogriffBlack, HippogriffBrown, HippogriffGrey, HippogriffRed, HippogriffWhite, KneazleBlonde, KneazleBrown, KneazleGrey, Mooncalf, MooncalfBlue, MooncalfOrange, MooncalfYellow, OccamyBlue, OccamyTeal, Thestral, Unicorn, UnicornCommon, UnicornGlowing, UnicornGolden, UnicornRainbow, UnicornWhite"
+    },
+    // Schedules 
+    {
+      "Name": "Direction",
+      "Value": "0, 1, 2, 3"
+    },
+    {
+      "Name": "Lounge",
+      "Value": "HogwartsBellTowerCourtyard, HogwartsGreatHall, HogwartsLibraryAnnex, HogwartsSouthWing, HogwartsTransfigurationWing, HogwartsGreenhouse"
+    },
+    {
+      "Name": "Class",
+      "Value": "HogwartsArithmancyClassroom, HogwartsAstronomyClassroom, HogwartsCharmsClassroom, HogwartsDADAClassroom, HogwartsDivinationClassroom, HogwartsHistoryOfMagicClassroom, HogwartsMagicalTheoryClassroom, HogwartsMuggleStudiesClassroom, HogwartsPotionsClassroom, HogwartsTransfigurationClassroom, HogwartsVivarium, HogwartsGreenhouse"
+    },
+    {
+      "Name": "ClassCoordinateX",
+      "Value": "16, 29",
+      "When": {
+        "Query: '{{Class}}' = 'HogwartsArithmancyClassroom'": true
+      }
+    },
+    {
+      "Name": "ClassCoordinateY",
+      "Value": "8, 17",
+      "When": {
+        "Query: '{{Class}}' = 'HogwartsArithmancyClassroom'": true
+      }
+    },
+    {
+      "Name": "ClassCoordinateX",
+      "Value": "10, 24",
+      "When": {
+        "Query: '{{Class}}' = 'HogwartsAstronomyClassroom'": true
+      }
+    },
+    {
+      "Name": "ClassCoordinateY",
+      "Value": "40, 47",
+      "When": {
+        "Query: '{{Class}}' = 'HogwartsAstronomyClassroom'": true
+      }
+    },
+    {
+      "Name": "LoungeCoordinateX",
+      "Value": "31, 170",
+      "When": {
+        "Query: '{{Lounge}}' = 'HogwartsBellTowerCourtyard'": true
+      }
+    },
+    {
+      "Name": "LoungeCoordinateY",
+      "Value": "16, 72",
+      "When": {
+        "Query: '{{Lounge}}' = 'HogwartsBellTowerCourtyard'": true
+      }
+    },
+    {
+      "Name": "LoungeCoordinateX",
+      "Value": "4, 26",
+      "When": {
+        "Query: '{{Lounge}}' = 'HogwartsGreatHall'": true
+      }
+    },
+    {
+      "Name": "LoungeCoordinateY",
+      "Value": "22, 39",
+      "When": {
+        "Query: '{{Lounge}}' = 'HogwartsGreatHall'": true
+      }
+    },
+    {
+      "Name": "LoungeCoordinateX",
+      "Value": "2, 41",
+      "When": {
+        "Query: '{{Lounge}}' = 'HogwartsLibraryAnnex'": true
+      }
+    },
+    {
+      "Name": "LoungeCoordinateY",
+      "Value": "6, 59",
+      "When": {
+        "Query: '{{Lounge}}' = 'HogwartsLibraryAnnex'": true
+      }
+    },
+    {
+      "Name": "LoungeCoordinateX",
+      "Value": "21, 78",
+      "When": {
+        "Query: '{{Lounge}}' = 'HogwartsSouthWing'": true
+      }
+    },
+    {
+      "Name": "LoungeCoordinateY",
+      "Value": "8, 61",
+      "When": {
+        "Query: '{{Lounge}}' = 'HogwartsSouthWing'": true
+      }
+    },
+    {
+      "Name": "LoungeCoordinateX",
+      "Value": "3, 65",
+      "When": {
+        "Query: '{{Lounge}}' = 'HogwartsTransfigurationWing'": true
+      }
+    },
+    {
+      "Name": "LoungeCoordinateY",
+      "Value": "5, 71",
+      "When": {
+        "Query: '{{Lounge}}' = 'HogwartsTransfigurationWing'": true
+      }
+    },
+    {
+      "Name": "LoungeCoordinateX",
+      "Value": "4, 30",
+      "When": {
+        "Query: '{{Lounge}}' = 'HogwartsGreenhouse'": true
+      }
+    },
+    {
+      "Name": "LoungeCoordinateY",
+      "Value": "9, 26",
+      "When": {
+        "Query: '{{Lounge}}' = 'HogwartsGreenhouse'": true
+      }
     },
     /*Wands*/
     {
