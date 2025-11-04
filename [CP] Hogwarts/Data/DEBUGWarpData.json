@@ -32,6 +32,13 @@
                 "Order": "2",
                 "DisplayName": "Hogsmeade Village"
             },
+            //Hogwarts Common Rooms
+            "{{ModId}}_HogwartsCommonRoom_WarpSection":{
+                "Id":"{{ModId}}_HogwartsCommonRoom_WarpSection",
+                "Order": "3",
+                "DisplayName": "Hogwarts - Common Rooms"
+            }
+            
 
             //Forbidden Forest
             /*"{{ModId}}_ForbiddenForest_WarpSection": {
@@ -106,7 +113,7 @@
                 "Id": "{{ModId}}_HogwartsCharmClassroom_DebugWarp",
                 "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
                 "DisplayName": "Charm Classroom",
-                "Location": "{{ModId}}_HogwartsCharmClassroom",
+                "Location": "{{ModId}}_HogwartsCharmsClassroom",
                 "Tile": "9, 15"
             },
 
@@ -133,7 +140,7 @@
                 "Id": "{{ModId}}_HogwartsMagicalTheoryClassroom_DebugWarp",
                 "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
                 "DisplayName": "Magical Theory Classroom",
-                "Location": "{{ModId}}_HogwartsMagicalClassroom",
+                "Location": "{{ModId}}_HogwartsMagicalTheoryClassroom",
                 "Tile": "7, 22"
             },
 
@@ -162,6 +169,15 @@
                 "DisplayName": "Transfiguration Classroom",
                 "Location": "{{ModId}}_HogwartsTransfigurationClassroom",
                 "Tile": "8, 19"
+            },
+
+            //CommonRooms
+            "{{ModId}}_HogwartsCommonRoomGryffindor_DebugWarp":{
+                "Id":"{{ModId}}_HogwartsCommonRoomGryffindor_DebugWarp",
+                "SectionId":"{{ModId}}_HogwartsCommonRoom_WarpSection",
+                "DisplayName":"Gryffindor",
+                "Location":"{{ModId}}_HogwartsCommonRoomGryffindor",
+                "Tile": "20, 17"
             },
 
             //HOGWARTS
