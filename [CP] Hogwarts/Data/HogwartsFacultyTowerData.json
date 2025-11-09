@@ -5,11 +5,11 @@
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsFacultyTower",
       "MapTiles": [
-/*Grand Staircase*/
+/*Grand Staircase East*/
         {
           "Position": {
             "X": 0,
-            "Y": 45
+            "Y": 59
           },
           "Layer": "Back",
           "SetProperties": {
@@ -19,7 +19,7 @@
         {
           "Position": {
             "X": 0,
-            "Y": 46
+            "Y": 60
           },
           "Layer": "Back",
           "SetProperties": {
@@ -29,7 +29,7 @@
         {
           "Position": {
             "X": 0,
-            "Y": 47
+            "Y": 61
           },
           "Layer": "Back",
           "SetProperties": {
@@ -38,17 +38,18 @@
         },
         {
           "Position": {
-            "X": 75,
-            "Y": 17
+            "X": 0,
+            "Y": 62
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 1 51"
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 54 69"
           }
         },
+  //Grand Staircase West
         {
           "Position": {
-            "X": 75,
+            "X": 98,
             "Y": 18
           },
           "Layer": "Back",
@@ -58,8 +59,28 @@
         },
         {
           "Position": {
-            "X": 75,
-            "Y": 18
+            "X": 98,
+            "Y": 19
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 1 51"
+          }
+        },
+        {
+          "Position": {
+            "X": 98,
+            "Y": 20
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 1 51"
+          }
+        },
+        {
+          "Position": {
+            "X": 98,
+            "Y": 21
           },
           "Layer": "Back",
           "SetProperties": {
@@ -69,8 +90,8 @@
 /*South Wing*/
         {
           "Position": {
-            "X": 29,
-            "Y": 26
+            "X": 41,
+            "Y": 22
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -79,8 +100,8 @@
         },
         {
           "Position": {
-            "X": 30,
-            "Y": 26
+            "X": 42,
+            "Y": 22
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -89,8 +110,8 @@
         },
         {
           "Position": {
-            "X": 62,
-            "Y": 6
+            "X": 88,
+            "Y": 3
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -99,8 +120,8 @@
         },
         {
           "Position": {
-            "X": 63,
-            "Y": 6
+            "X": 87,
+            "Y": 3
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -108,6 +129,106 @@
           }
         }
       ]
-    }
-  ]
+    },
+//Door Replacements
+
+  //Wood Door 1
+		{
+		"LogName": "FacultyTowerDoors - Animation1",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
+    "PatchMode": "Replace",
+    "FromArea": {
+      "X": 192,
+      "Y": 48,
+      "Width": 64,
+      "Height": 48
+    },
+    "ToArea": {
+      "X": 512,
+      "Y": 144,
+      "Width": 64,
+      "Height": 48
+    },
+    "When": {
+      "LocationName": "{{ModId}}_HogwartsFacultyTower"
+    },
+    "Update": "OnLocationChange"
+  },
+  {
+		"LogName": "FacultyTowerDoors - TileReplace1",
+    "Action": "EditImage",
+    "Target": "Maps/townInterior",
+    "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
+    "PatchMode": "Replace",
+    "FromArea": {
+      "X": 192,
+      "Y": 48,
+      "Width": 16,
+      "Height": 48
+    },
+    "ToArea": {
+      "X": 384,
+      "Y": 16,
+      "Width": 16,
+      "Height": 48
+    },
+    "When": {
+      "LocationName": "{{ModId}}_HogwartsFacultyTower"
+    },
+    "Update": "OnLocationChange"
+  },
+  //Glass Door 2
+  {
+		"LogName": "FacultyTowerDoors - Animation2",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
+    "PatchMode": "Replace",
+      "FromArea": {
+        "X": 128,
+        "Y": 96,
+        "Width": 64,
+        "Height": 48
+      },
+      "ToArea": {
+        "X": 576,
+        "Y": 144,
+        "Width": 64,
+        "Height": 48
+      },
+    "When": {
+      "LocationName": "{{ModId}}_HogwartsFacultyTower"
+    },
+    "Update": "OnLocationChange",
+    "Priority": "Late"
+  },
+  {
+		"LogName": "FacultyTowerDoors - TileReplace2",
+    "Action": "EditImage",
+    "Target": "Maps/townInterior",
+    "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
+    "PatchMode": "Replace",
+    "FromArea": {
+      "X": 128,
+      "Y": 96,
+      "Width": 16,
+      "Height": 48
+    },
+    "ToArea": {
+      "X": 96,
+      "Y": 384,
+      "Width": 16,
+      "Height": 48
+    },
+    "When": {
+      "LocationName": "{{ModId}}_HogwartsFacultyTower"
+    },
+    "Update": "OnLocationChange",
+    "Priority": "Late"
+  }
+
+
+]
 }
