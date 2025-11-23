@@ -109,13 +109,15 @@
         /*Wand Register*/
         "{{ModID}}_WandRegisterAcacia": {
           "Id": "{{ModID}}_WandRegisterAcacia",
-          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_AcaciaWand",
-          "Trigger": "LocationChanged",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_AcaciaWand, Esca.EMP_IS_PLAYER_FREE",
+          "Trigger": "Esca.EMP_OneSecondUpdateTicked",
           "Actions": [
             "AddMail Current {{ModId}}_AcaciaWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received",
             "Spiderbuttons.BETAS_PatchUpdate"
           ],
-          "MarkActionApplied": true
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
         },
         "{{ModID}}_WandRegisterAlder": {
           "Id": "{{ModID}}_WandRegisterAlder",
@@ -652,9 +654,9 @@
             "If !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook1 Received ## spacechase0.SpaceCore_ShowHudMessage \"Learned greater spell damage 1\"",
             "If !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook1 Received ## AddMail Current {{ModId}}_WandSkillBook1 Received",
             //Reload Wand
+            "Spiderbuttons.BETAS_PatchUpdate",
             "RemoveItem {{ModId}}_{{Wand}}Wand",
-            "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_{{Wand}}Wand\" 1",
-            "Spiderbuttons.BETAS_PatchUpdate"
+            "Spiderbuttons.BETAS_DelayedAction \"AddItem {{ModId}}_{{Wand}}Wand\" 1"
           ],
           "MarkActionApplied": false
         }
