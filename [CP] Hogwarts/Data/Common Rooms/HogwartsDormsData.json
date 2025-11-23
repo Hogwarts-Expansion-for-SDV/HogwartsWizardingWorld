@@ -1,6 +1,6 @@
 {
   "Changes": [
-    {
+    // {
       // "LogName": "Hogwarts Dorms Warp",
       // "Action": "EditMap",
       // "Target": "Maps/{{ModId}}_HogwartsDorms",
@@ -574,53 +574,357 @@
       //     }
       //   }
       // ],
+  // }
+      //New warp
+      //gryfindor boys
 
-      //New warp Test Gryffindor
-      "LogName": "Hogwarts Dorms Warp 2.0",
+    {
+      "LogName": "GM1DWarps",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsDorms",
-      "AddWarps": [ 
-//                                                     Gryffindoor
-//                            BOYS                                                  Girls                        
-        "15 29 {{ModId}}_HogwartsCommonRoomGryffindor 4 27", "125 29 {{ModId}}_HogwartsCommonRoomGryffindor 41 29",
-        "15 49 {{ModId}}_HogwartsCommonRoomGryffindor 9 28", "125 49 {{ModId}}_HogwartsCommonRoomGryffindor 39 29",
-        "15 69 {{ModId}}_HogwartsCommonRoomGryffindor 3 12", "125 69 {{ModId}}_HogwartsCommonRoomGryffindor 46 17",
-        "15 89 {{ModId}}_HogwartsCommonRoomGryffindor 5 12", "125 89 {{ModId}}_HogwartsCommonRoomGryffindor 44 17",
-        "15 109 {{ModId}}_HogwartsCommonRoomGryffindor 5 5", "125 109 {{ModId}}_HogwartsCommonRoomGryffindor 42 4",
-        "15 129 {{ModId}}_HogwartsCommonRoomGryffindor 7 5", "125 129 {{ModId}}_HogwartsCommonRoomGryffindor 39 4",
-        "15 149 {{ModId}}_HogwartsCommonRoomGryffindor 12 7", "125 149 {{ModId}}_HogwartsCommonRoomGryffindor 33 11",
-
-//                                                      Hufflepuff
-//                            BOYS                                                  Girls                        
-        "35 29 {{ModId}}_HogwartsCommonRoomHufflepuff 3 24", "145 29 {{ModId}}_HogwartsCommonRoomHufflepuff 43 19",
-        "35 49 {{ModId}}_HogwartsCommonRoomHufflepuff 5 24", "145 49 {{ModId}}_HogwartsCommonRoomHufflepuff 41 19",
-        "35 69 {{ModId}}_HogwartsCommonRoomHufflepuff 9 24", "145 69 {{ModId}}_HogwartsCommonRoomHufflepuff 37 19",
-        "35 89 {{ModId}}_HogwartsCommonRoomHufflepuff 11 24", "145 89 {{ModId}}_HogwartsCommonRoomHufflepuff 46 12",
-        "35 109 {{ModId}}_HogwartsCommonRoomHufflepuff 4 17", "145 109 {{ModId}}_HogwartsCommonRoomHufflepuff 44 12",
-        "35 129 {{ModId}}_HogwartsCommonRoomHufflepuff 6 17", "145 129 {{ModId}}_HogwartsCommonRoomHufflepuff 40 13",
-        "35 149 {{ModId}}_HogwartsCommonRoomHufflepuff 8 17", "145 149 {{ModId}}_HogwartsCommonRoomHufflepuff 38 13",
-                
-//                                                      Ravenclaw
-//                            BOYS                                                  Girls                        
-        "55 29 {{ModId}}_HogwartsCommonRoomRavenclaw 14 33", "165 29 {{ModId}}_HogwartsCommonRoomRavenclaw 43 29",
-        "55 49 {{ModId}}_HogwartsCommonRoomRavenclaw 10 33", "165 49 {{ModId}}_HogwartsCommonRoomRavenclaw 39 29",
-        "55 69 {{ModId}}_HogwartsCommonRoomRavenclaw 3 12", "165 69 {{ModId}}_HogwartsCommonRoomRavenclaw 46 17",
-        "55 89 {{ModId}}_HogwartsCommonRoomRavenclaw 5 12", "165 89 {{ModId}}_HogwartsCommonRoomRavenclaw 44 17",
-        "55 109 {{ModId}}_HogwartsCommonRoomRavenclaw 5 5", "165 109 {{ModId}}_HogwartsCommonRoomRavenclaw 42 4",
-        "55 129 {{ModId}}_HogwartsCommonRoomRavenclaw 7 5", "165 129 {{ModId}}_HogwartsCommonRoomRavenclaw 39 4",
-        "55 149 {{ModId}}_HogwartsCommonRoomRavenclaw 12 7", "165 149 {{ModId}}_HogwartsCommonRoomRavenclaw 33 11",
-          
-//                                                      Slytherin
-//                            BOYS                                                  Girls                        
-        "75 29 {{ModId}}_HogwartsCommonRoomSlytherin 4 27", "185 29 {{ModId}}_HogwartsCommonRoomSlytherin 41 29",
-        "75 49 {{ModId}}_HogwartsCommonRoomSlytherin 9 28", "185 49 {{ModId}}_HogwartsCommonRoomSlytherin 39 29",
-        "75 69 {{ModId}}_HogwartsCommonRoomSlytherin 3 12", "185 69 {{ModId}}_HogwartsCommonRoomSlytherin 46 17",
-        "75 89 {{ModId}}_HogwartsCommonRoomSlytherin 5 12", "185 89 {{ModId}}_HogwartsCommonRoomSlytherin 44 17",
-        "75 109 {{ModId}}_HogwartsCommonRoomSlytherin 5 5", "185 109 {{ModId}}_HogwartsCommonRoomSlytherin 42 4",
-        "75 129 {{ModId}}_HogwartsCommonRoomSlytherin 7 5", "185 129 {{ModId}}_HogwartsCommonRoomSlytherin 39 4",
-        "75 149 {{ModId}}_HogwartsCommonRoomSlytherin 12 7", "185 149 {{ModId}}_HogwartsCommonRoomSlytherin 33 11"       
-
-      ]
+      "Target": "Maps/{{ModId}}_HogwartsGM1D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomGryffindor 4 27"]
     },
+    {
+      "LogName": "GM2DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGM2D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomGryffindor 9 28"]
+    },
+    {
+      "LogName": "GM3DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGM3D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomGryffindor 3 12"]
+    },
+    {
+      "LogName": "GM4DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGM4D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomGryffindor 5 12"]
+    },
+    {
+      "LogName": "GM5DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGM5D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomGryffindor 5 5"]
+    },
+    {
+      "LogName": "GM6DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGM6D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomGryffindor 7 5"]
+    },
+    {
+      "LogName": "GM7DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGM7D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomGryffindor 12 7"]
+    },
+    //gryfindor female
+    {
+      "LogName": "GF1DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGF1D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomGryffindor 41 29"]
+    },
+    {
+      "LogName": "GF2DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGF2D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomGryffindor 39 29"]
+    },
+    {
+      "LogName": "GF3DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGF3D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomGryffindor 46 17"]
+    },
+    {
+      "LogName": "GF4DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGF4D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomGryffindor 44 17"]
+    },
+    {
+      "LogName": "GF5DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGF5D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomGryffindor 42 4"]
+    },
+    {
+      "LogName": "GF6DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGF6D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomGryffindor 39 4"]
+    },
+    {
+      "LogName": "GF7DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGF7D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomGryffindor 33 11"]
+    },
+          //Hufflepuff boys
+
+    {
+      "LogName": "HM1DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsHM1D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomHufflepuff 3 24"]
+    },
+    {
+      "LogName": "HM2DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsHM2D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomHufflepuff 5 24"]
+    },
+    {
+      "LogName": "HM3DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsHM3D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomHufflepuff 9 24"]
+    },
+    {
+      "LogName": "HM4DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsHM4D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomHufflepuff 11 24"]
+    },
+    {
+      "LogName": "HM5DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsHM5D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomHufflepuff 4 17"]
+    },
+    {
+      "LogName": "HM6DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsHM6D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomHufflepuff 6 17"]
+    },
+    {
+      "LogName": "HM7DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsHM7D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomHufflepuff 8 17"]
+    },
+    //Hufflepuff girls
+    {
+      "LogName": "HF1DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsHF1D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomHufflepuff 43 19"]
+    },
+    {
+      "LogName": "HF2DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsHF2D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomHufflepuff 41 19"]
+    },
+    {
+      "LogName": "HF3DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsHF3D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomHufflepuff 37 19"]
+    },
+    {
+      "LogName": "HF4DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsHF4D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomHufflepuff 46 12"]
+    },
+    {
+      "LogName": "HF5DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsHF5D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomHufflepuff 44 12"]
+    },
+    {
+      "LogName": "HF6DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsHF6D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomHufflepuff 40 13"]
+    },
+    {
+      "LogName": "HF7DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsHF7D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomHufflepuff 38 13"]
+    },
+          //Ravenclaw boys
+
+    {
+      "LogName": "RM1DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsRM1D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomRavenclaw 14 33"]
+    },
+    {
+      "LogName": "RM2DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsRM2D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomRavenclaw 10 33"]
+    },
+    {
+      "LogName": "RM3DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsRM3D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomRavenclaw 3 12"]
+    },
+    {
+      "LogName": "RM4DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsRM4D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomRavenclaw 5 12"]
+    },
+    {
+      "LogName": "RM5DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsRM5D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomRavenclaw 5 5"]
+    },
+    {
+      "LogName": "RM6DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsRM6D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomRavenclaw 7 5"]
+    },
+    {
+      "LogName": "RM7DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsRM7D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomRavenclaw 12 7"]
+    },
+    //Ravenclaw girls
+    {
+      "LogName": "RF1DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsRF1D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomRavenclaw 43 29"]
+    },
+    {
+      "LogName": "RF2DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsRF2D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomRavenclaw 39 29"]
+    },
+    {
+      "LogName": "RF3DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsRF3D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomRavenclaw 46 17"]
+    },
+    {
+      "LogName": "RF4DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsRF4D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomRavenclaw 44 17"]
+    },
+    {
+      "LogName": "RF5DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsRF5D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomRavenclaw 42 4"]
+    },
+    {
+      "LogName": "RF6DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsRF6D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomRavenclaw 39 4"]
+    },
+    {
+      "LogName": "RF7DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsRF7D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomRavenclaw 33 11"]
+    },
+          //Slytherin boys
+
+    {
+      "LogName": "SM1DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSM1D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomSlytherin 4 27"]
+    },
+    {
+      "LogName": "SM2DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSM2D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomSlytherin 9 28"]
+    },
+    {
+      "LogName": "SM3DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSM3D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomSlytherin 3 12"]
+    },
+    {
+      "LogName": "SM4DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSM4D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomSlytherin 5 12"]
+    },
+    {
+      "LogName": "SM5DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSM5D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomSlytherin 5 5"]
+    },
+    {
+      "LogName": "SM6DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSM6D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomSlytherin 7 5"]
+    },
+    {
+      "LogName": "SM7DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSM7D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomSlytherin 12 7"]
+    },
+    //Slytherin girls
+    {
+      "LogName": "SF1DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSF1D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomSlytherin 41 29"]
+    },
+    {
+      "LogName": "SF2DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSF2D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomSlytherin 39 29"]
+    },
+    {
+      "LogName": "SF3DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSF3D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomSlytherin 46 17"]
+    },
+    {
+      "LogName": "SF4DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSF4D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomSlytherin 44 17"]
+    },
+    {
+      "LogName": "SF5DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSF5D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomSlytherin 42 4"]
+    },
+    {
+      "LogName": "SF6DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSF6D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomSlytherin 39 4"]
+    },
+    {
+      "LogName": "SF7DWarps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSF7D",
+      "AddWarps": ["5 9 {{ModId}}_HogwartsCommonRoomSlytherin 33 11"]
+    }
+
+
   ]
 }
