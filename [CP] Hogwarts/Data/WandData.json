@@ -102,7 +102,7 @@
       }
     },
     {
-      "LogName": "Hogwarts Wand Trigger Actions",
+      "LogName": "Hogwarts Wand Trigger Actions EMP BETAS",
       "Action": "EditData",
       "Target": "Data/TriggerActions",
       "Entries": {
@@ -707,6 +707,570 @@
           "MarkActionApplied": true,
           "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
         }
+      },
+      "When": {
+        "HasMod |contains= Esca.EMP, Spiderbuttons.BETAS": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Wand Trigger Actions CP Only",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        /*Wand Register*/
+        "{{ModID}}_WandRegisterAcacia": {
+          "Id": "{{ModID}}_WandRegisterAcacia",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_AcaciaWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_AcaciaWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterAlder": {
+          "Id": "{{ModID}}_WandRegisterAlder",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_AlderWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_AlderWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterApple": {
+          "Id": "{{ModID}}_WandRegisterApple",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_AppleWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_AppleWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterAsh": {
+          "Id": "{{ModID}}_WandRegisterAsh",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_AshWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_AshWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterAspen": {
+          "Id": "{{ModID}}_WandRegisterAspen",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_AspenWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_AspenWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterBeech": {
+          "Id": "{{ModID}}_WandRegisterBeech",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_BeechWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_BeechWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterBirch": {
+          "Id": "{{ModID}}_WandRegisterBirch",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_BirchWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_BirchWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterBlackWalnut": {
+          "Id": "{{ModID}}_WandRegisterBlackWalnut",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_BlackWalnutWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_BlackWalnutWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterBlackthorn": {
+          "Id": "{{ModID}}_WandRegisterBlackthorn",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_BlackthornWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_BlackthornWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterBrazilwood": {
+          "Id": "{{ModID}}_WandRegisterBrazilwood",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_BrazilwoodWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_BrazilwoodWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterCedar": {
+          "Id": "{{ModID}}_WandRegisterCedar",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_CedarWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_CedarWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterCherry": {
+          "Id": "{{ModID}}_WandRegisterCherry",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_CherryWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_CherryWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterChestnut": {
+          "Id": "{{ModID}}_WandRegisterChestnut",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_ChestnutWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_ChestnutWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterCypress": {
+          "Id": "{{ModID}}_WandRegisterCypress",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_CypressWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_CypressWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterDogwood": {
+          "Id": "{{ModID}}_WandRegisterDogwood",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_DogwoodWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_DogwoodWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterEbony": {
+          "Id": "{{ModID}}_WandRegisterEbony",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_EbonyWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_EbonyWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterElderwood": {
+          "Id": "{{ModID}}_WandRegisterElderwood",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_ElderwoodWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_ElderwoodWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterElm": {
+          "Id": "{{ModID}}_WandRegisterElm",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_ElmWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_ElmWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterEnglishOak": {
+          "Id": "{{ModID}}_WandRegisterEnglishOak",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_EnglishOakWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_EnglishOakWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterFir": {
+          "Id": "{{ModID}}_WandRegisterFir",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_FirWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_FirWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterHawthorn": {
+          "Id": "{{ModID}}_WandRegisterHawthorn",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_HawthornWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_HawthornWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterHazel": {
+          "Id": "{{ModID}}_WandRegisterHazel",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_HazelWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_HazelWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterHolly": {
+          "Id": "{{ModID}}_WandRegisterHolly",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_HollyWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_HollyWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterHornbeam": {
+          "Id": "{{ModID}}_WandRegisterHornbeam",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_HornbeamWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_HornbeamWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterIvy": {
+          "Id": "{{ModID}}_WandRegisterIvy",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_IvyWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_IvyWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterLarch": {
+          "Id": "{{ModID}}_WandRegisterLarch",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_LarchWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_LarchWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterLaurel": {
+          "Id": "{{ModID}}_WandRegisterLaurel",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_LaurelWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_LaurelWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterMahogany": {
+          "Id": "{{ModID}}_WandRegisterMahogany",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_MahoganyWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_MahoganyWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterMaple": {
+          "Id": "{{ModID}}_WandRegisterMaple",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_MapleWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_MapleWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterOlive": {
+          "Id": "{{ModID}}_WandRegisterOlive",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_OliveWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_OliveWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterPear": {
+          "Id": "{{ModID}}_WandRegisterPear",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_PearWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_PearWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterPine": {
+          "Id": "{{ModID}}_WandRegisterPine",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_PineWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_PineWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterPoplar": {
+          "Id": "{{ModID}}_WandRegisterPoplar",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_PoplarWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_PoplarWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterPricklyAsh": {
+          "Id": "{{ModID}}_WandRegisterPricklyAsh",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_PricklyAshWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_PricklyAshWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterRedOak": {
+          "Id": "{{ModID}}_WandRegisterRedOak",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_RedOakWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_RedOakWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterRedwood": {
+          "Id": "{{ModID}}_WandRegisterRedwood",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_RedwoodWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_RedwoodWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterReed": {
+          "Id": "{{ModID}}_WandRegisterReed",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_ReedWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_ReedWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterRosewood": {
+          "Id": "{{ModID}}_WandRegisterRosewood",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_RosewoodWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_RosewoodWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterRowan": {
+          "Id": "{{ModID}}_WandRegisterRowan",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_RowanWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_RowanWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterSilverLime": {
+          "Id": "{{ModID}}_WandRegisterSilverLime",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_SilverLimeWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_SilverLimeWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterSpruce": {
+          "Id": "{{ModID}}_WandRegisterSpruce",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_SpruceWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_SpruceWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterSnakewood": {
+          "Id": "{{ModID}}_WandRegisterSnakewood",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_SnakewoodWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_SnakewoodWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterSugarMaple": {
+          "Id": "{{ModID}}_WandRegisterSugarMaple",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_SugarMapleWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_SugarMapleWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterSwampMayhaw": {
+          "Id": "{{ModID}}_WandRegisterSwampMayhaw",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_SwampMayhawWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_SwampMayhawWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterSycamore": {
+          "Id": "{{ModID}}_WandRegisterSycamore",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_SycamoreWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_SycamoreWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterTamarack": {
+          "Id": "{{ModID}}_WandRegisterTamarack",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_TamarackWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_TamarackWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterVine": {
+          "Id": "{{ModID}}_WandRegisterVine",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_VineWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_VineWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterWalnut": {
+          "Id": "{{ModID}}_WandRegisterWalnut",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_WalnutWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_WalnutWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterWillow": {
+          "Id": "{{ModID}}_WandRegisterWillow",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_WillowWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_WillowWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        },
+        "{{ModID}}_WandRegisterYew": {
+          "Id": "{{ModID}}_WandRegisterYew",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_YewWand",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "AddMail Current {{ModId}}_YewWand Received",
+            "AddMail Current {{ModId}}_WandRegistered Received"
+          ],
+          "MarkActionApplied": true,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_WandRegistered Received"
+        }
+      },
+      "When": {
+        "HasMod |contains= Esca.EMP, Spiderbuttons.BETAS": false
       }
     },
     {
