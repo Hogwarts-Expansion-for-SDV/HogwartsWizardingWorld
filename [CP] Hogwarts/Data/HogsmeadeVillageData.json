@@ -1013,6 +1013,55 @@
         }
       ]
     },
+
+    //Warps
+    {
+    "LogName":"Forbidden Forest Warps",
+    "Action": "EditMap",
+    "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+    "MapTiles":[
+      {
+        "Position":{
+          "X": 0,
+          "Y": 103
+        },
+        "Layer":"Back",
+        "SetProperties":{
+          "TouchAction":"{{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}}"
+        }
+      },
+      {
+        "Position":{
+          "X": 0,
+          "Y": 102
+        },
+        "Layer":"Back",
+        "SetProperties":{
+          "TouchAction":"{{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}}"
+        }
+      },
+      {
+        "Position":{
+          "X": 0,
+          "Y": 101
+        },
+        "Layer":"Back",
+        "SetProperties":{
+          "TouchAction":"{{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}}"
+        }
+      },
+      {
+        "Position":{
+          "X": 0,
+          "Y": 100
+        },
+        "Layer":"Back",
+        "SetProperties":{
+          "TouchAction":"{{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}}"
+        }
+      }
+    ]
+    } ,
     /*Other*/
     {
       "LogName": "Graveyard Shrines",

@@ -77,7 +77,8 @@
       "MapProperties": {
         "Light": "11 11 4 23 11 4 39 11 4 51 14 4 53 24 4",
         "NightTiles": "AlwaysFront 11 11 124 AlwaysFront 23 11 124 AlwaysFront 39 11 124 AlwaysFront 51 14 124 AlwaysFront 53 24 124",
-        "Outdoors": "T"
+        "Outdoors": "T",
+        "NPCWarp":"0 10 {{ModId}}_HogmeadeVillage 197 110 63 16 {{ModId}}_HogwartsValley 1 128"
       }
     },
     {
@@ -88,7 +89,8 @@
         "Light": "19 45 4",
         "NightTiles": "AlwaysFront 19 45 908",
         "Outdoors": "T",
-        "Warp": "-1 99 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 100 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 101 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 102 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 103 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}}"
+        // "Warp": "-1 99 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 100 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 101 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 102 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 103 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}}"
+        "NPCWarp": "36 155 {{ModId}}_HogwartsSouthWing 28 1 198 110 {{ModId}}_HogsmeadeStation 1 10 "
       }
     },
     {
@@ -241,7 +243,7 @@
       "Target": "Maps/{{ModId}}_HogwartsBellTowerCourtyard",
       "MapProperties": {
         "Outdoors": "T",
-        // "NPCWarp": "94 78 {{ModId}}_HogwartsTransfigurationWing 21 18 95 79 {{ModId}}_HogwartsTransfigurationWing 21 18 96 79 {{ModId}}_HogwartsTransfigurationWing 21 18 145 79 {{ModId}}_HogwartsTransfigurationWing 39 25 146 79 {{ModId}}_HogwartsTransfigurationWing 39 25 147 79 {{ModId}}_HogwartsTransfigurationWing 39 25 173 79 {{ModId}}_HogwartsTransfigurationWing 57 0 174 79 {{ModId}}_HogwartsTransfigurationWing 57 0 95 48 {{ModID}}_HogwartsVivarium 9 56",
+        "NPCWarp": "95 78 {{ModId}}_HogwartsTransfigurationWing 19 29 95 48 {{ModID}}_HogwartsVivarium 9 56",
       }
     },
     {
@@ -433,7 +435,7 @@
         "AmbientLight": "255 255 255",
         "AmbientNightLight": "150 150 30",
         "Outdoors": "T",
-        "NPCWarp": "79 50 {{ModId}}_HogwartsGrandStaircase 1 85"
+        "NPCWarp": "79 50 {{ModId}}_HogwartsGrandStaircase 1 85 0 29 {{ModId_HogsmeadeVillage 37 154 14 37 {{ModId}}_HogwartsCommonRoomHufflepuff 25 26"
       }
     },
     {
@@ -454,7 +456,7 @@
         "AmbientLight": "255 255 255",
         "AmbientNightLight": "150 150 30",
         "Outdoors": "T",
-        "NPCWarp": "20 17 {{ModId}}_HogwartsBellTowerCourtyard 95 78 _HogwartsBellTowerCourtyard 147 78 52 56 {{ModId}}_HogwartsPotionsClassroom 15 34 22 37 {{ModId}}_HogwartsTransfigurationClassroom 10 17 4 39 {{ModId}}_HogwartsDADAClassroom 10 16 28 29 {{ModId}}_HogwartsHistoryOfMagicClassroom 11 20 11 5 {{ModId}}_HogwartsAstronomyClassroom 24 24 55 44 {{ModId}}_HogwartsMuggleStudiesClassroom 8 14 5 18 {{ModId}}_HogwartsMagicalTheoryClassroom 9 29 18 41 {{ModId}}_HogwartsLibraryAnnex 51 38",
+        "NPCWarp": "19 28 {{ModId}}_HogwartsBellTowerCourtyard 95 77 52 56 {{ModId}}_HogwartsPotionsClassroom 15 34 22 37 {{ModId}}_HogwartsTransfigurationClassroom 10 17 4 39 {{ModId}}_HogwartsDADAClassroom 10 16 28 29 {{ModId}}_HogwartsHistoryOfMagicClassroom 11 20 11 5 {{ModId}}_HogwartsAstronomyClassroom 24 24 55 44 {{ModId}}_HogwartsMuggleStudiesClassroom 8 14 5 18 {{ModId}}_HogwartsMagicalTheoryClassroom 9 29 18 41 {{ModId}}_HogwartsLibraryAnnex 51 38",
       }
     },
     {
@@ -530,7 +532,8 @@
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsValley",
       "MapProperties": {
-        "Outdoors": "T"
+        "Outdoors": "T",
+        "NPCWarp":"0 128 {{ModId}}_HogsmeadeStation 62 16"
       }
     },
     {
