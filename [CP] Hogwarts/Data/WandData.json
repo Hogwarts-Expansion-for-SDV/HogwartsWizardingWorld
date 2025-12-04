@@ -1696,7 +1696,25 @@
         "HasFlag |contains= {{ModId}}_WandSkillBook7": true
       },
       "Update": "OnLocationChange, OnTimeChange"
-    }
+    },
+    {
+      "LogName": "Hogwarts Potions Lumos Trigger Actions",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        /*Lumos*/
+        "{{ModId}}_Lumos": {
+          "Id": "{{ModId}}_Lumos",
+          "Trigger": "Spiderbuttons.BETAS_ItemEquipped",
+          "Condition": "ITEM_ID Target (W){{ModId}}_{{Wand}}Wand, PLAYER_HAS_MAIL Current {{ModId}}_{{Wand}}Wand Received",
+          "Action": "AddBuff MindMeltMax.GlowBuff/Glow 90000",
+          "MarkActionApplied": false
+        }
+      },
+      "When": {
+        "HasMod |contains= MindMeltMax.GlowBuff, Spiderbuttons.BETAS": true
+      }
+    },
     /*Wand Upgrade Test
     {
       "LogName": "Replace wand sprites",
