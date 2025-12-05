@@ -1713,15 +1713,24 @@
           "Id": "{{ModId}}_LumosDisable",
           "Trigger": "Spiderbuttons.BETAS_ItemUnequipped",
           "Condition": "ITEM_ID Target (W){{ModId}}_{{Wand}}Wand",
-          "Actions": [
-            "Spiderbuttons.BETAS_PatchUpdate",
-            "AddBuff MindMeltMax.GlowBuff/Glow 1"
-          ],
+          "Action": "AddBuff MindMeltMax.GlowBuff/Glow 1",
           "MarkActionApplied": false
         }
       },
       "When": {
         "HasMod |contains= MindMeltMax.GlowBuff, Spiderbuttons.BETAS": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Wand Lumos Buff Display",
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "TargetField": [
+        "MindMeltMax.GlowBuff/Glow"
+      ],
+      "Entries": {
+        "DisplayName": "Wand-Lighting Charm",
+        "Description": "Lumos!"
       }
     },
     {
@@ -1737,6 +1746,102 @@
       },
       "When": {
         "HasFlag |contains= {{ModId}}_WandSkillBook1": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Wand Lumos Upgrade 2",
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "TargetField": [
+        "MindMeltMax.GlowBuff/Glow",
+        "CustomFields"
+      ],
+      "Entries": {
+        "MindMeltMax.GlowBuff/GlowRadius": 1.6
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook2": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Wand Lumos Upgrade 3",
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "TargetField": [
+        "MindMeltMax.GlowBuff/Glow",
+        "CustomFields"
+      ],
+      "Entries": {
+        "MindMeltMax.GlowBuff/GlowRadius": 1.9
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook3": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Wand Lumos Upgrade 4",
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "TargetField": [
+        "MindMeltMax.GlowBuff/Glow",
+        "CustomFields"
+      ],
+      "Entries": {
+        "MindMeltMax.GlowBuff/GlowRadius": 2.2
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook4": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Wand Lumos Upgrade 5",
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "TargetField": [
+        "MindMeltMax.GlowBuff/Glow",
+        "CustomFields"
+      ],
+      "Entries": {
+        "MindMeltMax.GlowBuff/GlowRadius": 2.5
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook5": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Wand Lumos Upgrade 6",
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "TargetField": [
+        "MindMeltMax.GlowBuff/Glow",
+        "CustomFields"
+      ],
+      "Entries": {
+        "MindMeltMax.GlowBuff/GlowRadius": 2.8
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook6": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Wand Lumos Upgrade 7",
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "TargetField": [
+        "MindMeltMax.GlowBuff/Glow",
+        "CustomFields"
+      ],
+      "Entries": {
+        "MindMeltMax.GlowBuff/GlowRadius": 3.1
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook7": true
       },
       "Update": "OnLocationChange, OnTimeChange"
     },
