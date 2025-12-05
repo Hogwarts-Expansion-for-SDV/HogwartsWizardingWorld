@@ -1304,16 +1304,16 @@
             "If PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook4 Received, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook5 Received ## spacechase0.SpaceCore_ShowHudMessage \"Learned greater spell distance\"",
             "If PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook4 Received, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook5 Received ## AddMail Current {{ModId}}_WandSkillBook5 Received",
             //Upgrade 4 
-            "If PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook3 Received, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook4 Received ## spacechase0.SpaceCore_ShowHudMessage \"Learned greater spell damage 4\"",
+            "If PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook3 Received, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook4 Received ## spacechase0.SpaceCore_ShowHudMessage \"Learned greater spell damage 3\"",
             "If PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook3 Received, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook4 Received ## AddMail Current {{ModId}}_WandSkillBook4 Received",
             //Upgrade 3 
-            "If PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook2 Received, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook3 Received ## spacechase0.SpaceCore_ShowHudMessage \"Learned greater spell damage 3\"",
+            "If PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook2 Received, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook3 Received ## spacechase0.SpaceCore_ShowHudMessage \"Learned greater spell damage 2\"",
             "If PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook2 Received, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook3 Received ## AddMail Current {{ModId}}_WandSkillBook3 Received",
             //Upgrade 2 
-            "If PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook1 Received, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook2 Received ## spacechase0.SpaceCore_ShowHudMessage \"Learned greater spell damage 2\"",
+            "If PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook1 Received, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook2 Received ## spacechase0.SpaceCore_ShowHudMessage \"Learned greater spell damage 1\"",
             "If PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook1 Received, !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook2 Received ## AddMail Current {{ModId}}_WandSkillBook2 Received",
             //Upgrade 1
-            "If !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook1 Received ## spacechase0.SpaceCore_ShowHudMessage \"Learned greater spell damage 1\"",
+            "If !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook1 Received ## spacechase0.SpaceCore_ShowHudMessage \"Learned multiple spell casts\"",
             "If !PLAYER_HAS_MAIL Current {{ModId}}_WandSkillBook1 Received ## AddMail Current {{ModId}}_WandSkillBook1 Received",
             //Reload Wand
             "Spiderbuttons.BETAS_PatchUpdate",
@@ -1698,22 +1698,47 @@
       "Update": "OnLocationChange, OnTimeChange"
     },
     {
-      "LogName": "Hogwarts Potions Lumos Trigger Actions",
+      "LogName": "Hogwarts Wand Lumos Trigger Actions",
       "Action": "EditData",
       "Target": "Data/TriggerActions",
       "Entries": {
-        /*Lumos*/
-        "{{ModId}}_Lumos": {
-          "Id": "{{ModId}}_Lumos",
+        "{{ModId}}_LumosEnable": {
+          "Id": "{{ModId}}_LumosEnable",
           "Trigger": "Spiderbuttons.BETAS_ItemEquipped",
           "Condition": "ITEM_ID Target (W){{ModId}}_{{Wand}}Wand, PLAYER_HAS_MAIL Current {{ModId}}_{{Wand}}Wand Received",
-          "Action": "AddBuff MindMeltMax.GlowBuff/Glow 90000",
+          "Action": "AddBuff MindMeltMax.GlowBuff/Glow",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_LumosDisable": {
+          "Id": "{{ModId}}_LumosDisable",
+          "Trigger": "Spiderbuttons.BETAS_ItemUnequipped",
+          "Condition": "ITEM_ID Target (W){{ModId}}_{{Wand}}Wand",
+          "Actions": [
+            "Spiderbuttons.BETAS_PatchUpdate",
+            "RemoveBuff MindMeltMax.GlowBuff/Glow"
+          ],
           "MarkActionApplied": false
         }
       },
       "When": {
         "HasMod |contains= MindMeltMax.GlowBuff, Spiderbuttons.BETAS": true
       }
+    },
+    {
+      "LogName": "Hogwarts Wand Lumos Upgrade 1",
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "TargetField": [
+        "MindMeltMax.GlowBuff/Glow",
+        "CustomFields"
+      ],
+      "Entries": {
+        "MindMeltMax.GlowBuff/GlowRadius": 1.3
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_WandSkillBook1": true
+      },
+      "Update": "OnLocationChange, OnTimeChange"
     },
     /*Wand Upgrade Test
     {
