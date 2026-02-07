@@ -1,11 +1,26 @@
 {
   "Changes": [
     {
+      "LogName": "Hogwarts Grand Staircase Panorama",
+      "Action": "EditData",
+      "Target": "mushymato.MMAP/Panorama",
+      "Fields": {
+        "MMAP_MountainView": {
+          "FullView": false
+        }
+      },
+      "When": {
+        "HasMod |contains= mushymato.MMAP": true,
+        "LocationName |contains= {{ModId}}_HogwartsGrandStaircase": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
       "LogName": "Hogwarts Grand Staircase Warps",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsGrandStaircase",
       "MapTiles": [
-/*Common Room Gryffindor*/ 
+        /*Common Room Gryffindor*/
         {
           "Position": {
             "X": 14,
@@ -26,18 +41,18 @@
             "Action": "Warp 24 25 {{ModId}}_HogwartsCommonRoomGryffindor"
           }
         },
-/*Common Room Ravenclaw*/ 
+        /*Common Room Ravenclaw*/
         {
           "Position": {
             "X": 43,
-            "Y": 38
+            "Y": 41
           },
           "Layer": "Buildings",
           "SetProperties": {
             "Action": "Warp 24 32 {{ModId}}_HogwartsCommonRoomRavenclaw"
           }
         },
-/*Common Room Slytherin*/ 
+        /*Common Room Slytherin*/
         {
           "Position": {
             "X": 39,
@@ -48,7 +63,7 @@
             "Action": "Warp 24 31 {{ModId}}_HogwartsCommonRoomSlytherin"
           }
         },
-//Faculty Tower (WIP)
+        //Faculty Tower (WIP)
         {
           "Position": {
             "X": 0,
@@ -109,7 +124,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsFacultyTower 1 61"
           }
         },
-//Great Hall - Balcony Left
+        //Great Hall - Balcony Left
         {
           "Position": {
             "X": 5,
@@ -130,7 +145,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsGreatHall 6 8"
           }
         },
-//Great Hall - Balcony Right
+        //Great Hall - Balcony Right
         {
           "Position": {
             "X": 9,
@@ -151,7 +166,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsGreatHall 25 8"
           }
         },
-//Great Hall - Entrance
+        //Great Hall - Entrance
         {
           "Position": {
             "X": 6,
@@ -192,7 +207,7 @@
             "Action": "Warp 17 39 {{ModId}}_HogwartsGreatHall"
           }
         },
-//Great Hall - Trophy Room
+        //Great Hall - Trophy Room
         {
           "Position": {
             "X": 9,
@@ -213,7 +228,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsGreatHall 6 14"
           }
         },
-//Library Annex Right
+        //Library Annex Right
         {
           "Position": {
             "X": 55,
@@ -244,7 +259,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 46 46"
           }
         },
-//Library Annex Up
+        //Library Annex Up
         {
           "Position": {
             "X": 46,
@@ -275,7 +290,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 48 46"
           }
         },
-//South Wing 
+        //South Wing 
         {
           "Position": {
             "X": 0,
@@ -356,7 +371,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 21 50"
           }
         },
-//Transfiguration Wing Left
+        //Transfiguration Wing Left
         {
           "Position": {
             "X": 0,
@@ -387,7 +402,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 65 71"
           }
         },
-//Transfiguration Wing Right
+        //Transfiguration Wing Right
         {
           "Position": {
             "X": 55,
