@@ -343,6 +343,17 @@
       }
     },
     {
+      "LogName": "Hogwarts Map Properties Grand Staircase MMAP",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGrandStaircase",
+      "MapProperties": {
+        "mushymato.MMAP_Panorama": "MMAP_MountainView"
+      },
+      "When": {
+        "HasMod |contains= mushymato.MMAP": true
+      }
+    },
+    {
       "LogName": "Map Properties of Hogwarts Great Hall",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsGreatHall",
