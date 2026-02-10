@@ -100,6 +100,53 @@
           }
         }
       ]
+    },
+    {
+      "LogName": "Hogwarts Valley Signage",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModID}}_HogwartsValley",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 26,
+            "Y": 126
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Aranshire ^@Hogsmeade Station ^`Brocburroww ^Lower Hogsfield>"
+          }
+        },
+        {
+          "Position": {
+            "X": 30,
+            "Y": 34
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Brocburrow ^=Aranshire ^Keenbridge>"
+          }
+        },
+        {
+          "Position": {
+            "X": 30,
+            "Y": 34
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Keenbridge ^=Lower Hogsfield ^@Brocburrow"
+          }
+        },
+        {
+          "Position": {
+            "X": 122,
+            "Y": 103
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue Lower Hogsfield ^`Keenbridge ^@Aranshire ^Hogwarts>"
+          }
+        }
+      ]
     }
   ]
 }
