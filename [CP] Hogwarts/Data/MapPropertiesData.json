@@ -239,6 +239,17 @@
       }
     },
     {
+      "LogName": "Hogwarts Map Properties Astronomy Classroom MMAP",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsAstronomyClassroom",
+      "MapProperties": {
+        "mushymato.MMAP_Panorama": "MMAP_MountainView"
+      },
+      "When": {
+        "HasMod |contains= mushymato.MMAP": true
+      }
+    },
+    {
       "LogName": "Map Properties of Hogwarts Bell Tower Courtyard",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsBellTowerCourtyard",
