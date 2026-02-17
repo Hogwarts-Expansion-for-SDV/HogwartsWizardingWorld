@@ -514,6 +514,49 @@
         "Query: {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} >= 85": true
       }
     },
+    //Astronomy Table Luna
+    {
+      "Name": "AstronomyTableLunaX",
+      "Value": "23",
+      "When": {
+        "Query: {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableLunaX}}}} <= 66": true
+      }
+    },
+    {
+      "Name": "AstronomyTableLunaX",
+      "Value": "53",
+      "When": {
+        "Query: {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableLunaX}}}} > 66 AND {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableLunaX}}}} < 118": true
+      }
+    },
+    {
+      "Name": "AstronomyTableLunaX",
+      "Value": "85",
+      "When": {
+        "Query: {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableLunaX}}}} >= 118": true
+      }
+    },
+    {
+      "Name": "AstronomyTableLunaY",
+      "Value": "23",
+      "When": {
+        "Query: {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableLunaY}}}} <= 47": true
+      }
+    },
+    {
+      "Name": "AstronomyTableLunaY",
+      "Value": "53",
+      "When": {
+        "Query: {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableLunaY}}}} > 47 AND {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableLunaY}}}} < 85": true
+      }
+    },
+    {
+      "Name": "AstronomyTableLunaY",
+      "Value": "85",
+      "When": {
+        "Query: {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableLunaY}}}} >= 85": true
+      }
+    },
     /*Divination Charmed Tent*/
     {
       "Name": "DivinationCharmedTentX",

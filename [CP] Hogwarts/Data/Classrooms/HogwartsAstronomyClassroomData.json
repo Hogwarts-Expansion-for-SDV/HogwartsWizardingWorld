@@ -3,7 +3,7 @@
     {
       "LogName": "Hogwarts Astronomy Gameplay Images Load",
       "Action": "Load",
-      "Target": "{{ModId}}/moonobjects, {{ModId}}/moons, {{ModId}}/nightsky, {{ModId}}/scopecutout1, {{ModId}}/scopecutout2, {{ModId}}/stars, {{ModId}}/starsobjects",
+      "Target": "{{ModId}}/moonobjects, {{ModId}}/moons, {{ModId}}/nightsky, {{ModId}}/scopecutout1, {{ModId}}/scopecutout2, {{ModId}}/stars, {{ModId}}/starsobjects, {{ModId}}/StarSirius",
       "FromFile": "assets/Astronomy/{{TargetWithoutPath}}.png"
     },
     {
@@ -55,9 +55,9 @@
         "Width": 128,
         "Height": 128
       },
-      "PatchMode": "Overlay",
+      "PatchMode": "Overlay"
     },
-     {
+    {
       "LogName": "Hogwarts Astronomy Moon",
       "Action": "EditImage",
       "Target": "{{ModId}}/transparentlunascope",
@@ -74,9 +74,22 @@
         "Width": 32,
         "Height": 32
       },
-      "PatchMode": "Overlay",
+      "PatchMode": "Overlay"
     },
-        {
+    {
+      "LogName": "Hogwarts Astronomy StarSirius",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/transparentstellascope",
+      "FromFile": "assets/Astronomy/StarSirius.png",
+      "ToArea": {
+        "X": "{{AstronomyTableLunaX}}",
+        "Y": "{{AstronomyTableLunaY}}",
+        "Width": 20,
+        "Height": 20
+      },
+      "PatchMode": "Overlay"
+    },
+    {
       "LogName": "Hogwarts Lunascope Cutout",
       "Action": "EditImage",
       "Target": "{{ModId}}/transparentlunascope",
@@ -93,7 +106,7 @@
         "Width": 128,
         "Height": 128
       },
-      "PatchMode": "Overlay",
+      "PatchMode": "Overlay"
     },
     {
       "LogName": "Hogwarts Astronomy Classroom Stellascope Top Left",
@@ -132,7 +145,7 @@
         "Width": 128,
         "Height": 128
       },
-      "PatchMode": "Overlay",
+      "PatchMode": "Overlay"
     },
     {
       "LogName": "Hogwarts Astronomy Classroom Warp",
