@@ -1,21 +1,6 @@
 {
   "Changes": [
     {
-      "LogName": "Hogwarts Grand Staircase Panorama",
-      "Action": "EditData",
-      "Target": "mushymato.MMAP/Panorama",
-      "Fields": {
-        "MMAP_MountainView": {
-          "FullView": false
-        }
-      },
-      "When": {
-        "HasMod |contains= mushymato.MMAP": true,
-        "LocationName |contains= {{ModId}}_HogwartsGrandStaircase": true
-      },
-      "Update": "OnLocationChange"
-    },
-    {
       "LogName": "Hogwarts Grand Staircase Warps",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsGrandStaircase",
