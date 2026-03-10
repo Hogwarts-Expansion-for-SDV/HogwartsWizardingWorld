@@ -1,5 +1,43 @@
+//#region Note
+/*
+Note:
+Classes (planned):
+  1. DADA, 
+  2. Magical Theory, 
+  3. Charms, 
+  4. Astronomy, 
+  5. Transfiguration, 
+  6. Potions, 
+  7. Muggle Studies, 
+  8. Herbology, 
+  9. Divination, 
+  10. Arithmancy.
+  11. Music,
+  12. Alchemy,
+  13. Care of Magical Creatures,
+  14.  History Of Magic (same classroom as Arithmancy)
+Classes (not planned):
+  14. Flying?
+
+Normal rountines for students (Monday to Friday):  
+  - Class 1: 8:30am (walk to class) - 10am.
+  - Class 2: 10am - 11h30am.
+  - Lunch Break: 11h30am - 1pm.
+  - Classs 3/Free Time: 1pm - 2h30pm 
+  - Free time/Class 3: 2h30pm - 4pm
+  - Free time after class: 4pm - 5pm
+  - Dinner: 5pm - 6pm
+  - Common room (hanging around): 6pm - 8pm
+  - Dorm rooms: 8pm - 9pm.
+  - Bed: 9pm.
+
+Detailed schedule (WIP): https://docs.google.com/spreadsheets/d/1-PddB07soZ7LuTvDYNNQfPpxf9iYMufbu7j06xBjuyA/edit?gid=0#gid=0
+*/
+//#endregion
 {
   "Changes": [
+//OTHER CHARACTERS  
+    //WIP
     {
       "LogName": "Aberforth Schedule",
       "Action": "EditData",
@@ -11,7 +49,6 @@
       }
     },
     
-
     {
       "LogName": "Madam Puddifoot Schedule",
       "Action": "EditData",
@@ -52,7 +89,7 @@
       }
     },
 
-    // Professors
+    //PROFESSORS
     {
       "LogName": "Binns Schedule",
       "Action": "EditData",
@@ -63,7 +100,7 @@
     },
 
     {
-      "LogName": "Rowle Schedule",
+      "LogName": "Professor Rowle Schedule",
       "Action": "EditData",
       "Target": "Characters/schedules/HogwartsRowle",
       "Entries": {
@@ -89,7 +126,7 @@
     },
 
     {
-      "LogName": "Filch Schedule",
+      "LogName": "Professor Filch Schedule",
       "Action": "EditData",
       "Target": "Characters/schedules/HogwartsFilch",
       "Entries": {
@@ -133,7 +170,7 @@
       }
     },
 
-    /* Students
+//GRYFFINDOR
     {
       "LogName": "Gryffindor Kid 1 Schedule",
       "Action": "EditData",
@@ -148,7 +185,8 @@
         // Sun: exMu
         "spring": "610 {{ModId}}_HogwartsHistoryOfMagicClassroom 8 17 0 \"Strings\\schedules\\HogwartsStudents:GryffindorKid.Class.HistoryOfMagic\"/1130 {{ModId}}_HogwartsPotionsClassroom 7 19 1 \"Strings\\schedules\\HogwartsStudents:GryffindorKid.Class\"/1600 {{ModId}}_HogwartsSouthWing 5 46 2",
       }
-    },*/
+    },
+
     // 730 {{ModId}}_{{Random:{{Lounge}}|key=730GK1}} {{Random:{{Range:{{LoungeCoordinateX}}}}|key=730GK1}} {{Random:{{Range:{{LoungeCoordinateY}}}}|key=730GK1}} {{Random:{{Direction}}|key=730GK1}}/800 {{ModId}}_{{Random:{{Class}}|key=800GK1}} {{Random:{{ClassroomCoordinates}}|key=730GK1}} 0/1000 {{ModId}}_{{Random:{{Class}}|key=1000GK1}} 7 19 0/1200 {{ModId}}_{{Random:{{Lounge}}|key=1200GK1}} 5 46 {{Random:{{Direction}}|key=1200GK1}}/1300 {{ModId}}_{{Random:{{Class}}|key=1300GK1}} 5 46 0/1400 {{ModId}}_{{Random:{{Lounge}}|key=1400GK1}} 5 46 {{Random:{{Direction}}|key=1400GK1}}/1600 {{ModId}}_{{Random:{{Lounge}}|key=1600GK1}} 5 46 {{Random:{{Direction}}|key=1600GK1}}
     {
       "LogName": "Gryffindor Male 1 Schedule",
@@ -165,6 +203,7 @@
         "spring": "610 {{Random:{{ArithmancyClassroomCoordinates}}|key=730GM1}}/620 {{ModID}}_HogwartsBellTowerCourtyard {{Random:{{BellTowerCourtyardCoordinateX}}|key=700GM1}} {{Random:{{BellTowerCourtyardCoordinateY}}|key=700GM1}} {{Random:{{Direction}}|key=700GM1}}",
       }
     },
+
     {
       "LogName": "Gryffindor Kid 2 Schedule",
       "Action": "EditData",
@@ -180,6 +219,8 @@
         "spring": "610 {{ModId}}_HogwartsHistoryOfMagicClassroom 13 17 0 \"Strings\\schedules\\HogwartsStudents:GryffindorKid.Class.HistoryOfMagic\"/1130 {{ModId}}_HogwartsPotionsClassroom 15 12 2 \"Strings\\schedules\\HogwartsStudents:GryffindorKid.Class\"/1600 {{ModId}}_HogwartsSouthWing 6 46 2",
       }
     },
+    
+  //RAVENCLAW
     {
       "LogName": "Ravenclaw Kid 1 Schedule",
       "Action": "EditData",
@@ -206,6 +247,7 @@
         "spring": "610 {{ModId}}_HogwartsHistoryOfMagicClassroom 13 9 0 \"Strings\\schedules\\HogwartsStudents:RavenclawKid.Class.HistoryOfMagic\"/1130 {{ModId}}_HogwartsPotionsClassroom 15 25 0 \"Strings\\schedules\\HogwartsStudents:RavenclawKid.Class\"/1600 {{ModId}}_HogwartsCommonRoomRavenclaw 5 6 2",
       }
     },
+
     {
       "LogName": "Slytherin Kid 1 Schedule",
       "Action": "EditData",
@@ -221,6 +263,7 @@
         "spring": "610 {{ModId}}_HogwartsTransfigurationClassroom 6 14 0 \"Strings\\schedules\\HogwartsStudents:SlytherinKid.Class\"/1130 {{ModId}}_HogwartsLibraryAnnex 54 40 2 \"Strings\\schedules\\HogwartsStudents:SlytherinKid.Class\"",
       }
     },
+
     {
       "LogName": "Slytherin Kid 2 Schedule",
       "Action": "EditData",
@@ -537,6 +580,8 @@
         "spring": "610 {{ModId}}_HogwartsLibraryAnnex 55 44 0 \"Strings\\schedules\\HogwartsStudents:RavenclawSr.Class\"/1130 {{ModId}}_HogwartsTransfigurationWing 45 54 2", //TODO
       }
     },
+
+    //HUFFLEPUFF    
     {
       "LogName": "Hufflepuff Sr 1 Schedule",
       "Action": "EditData",
@@ -552,6 +597,7 @@
         "spring": "610 {{ModId}}_HogwartsLibraryAnnex 60 40 2 \"Strings\\schedules\\HogwartsStudents:HufflepuffSr.Class\"/1130 {{ModId}}_HogwartsDivinationClassroom 4 16 1 \"Strings\\schedules\\HogwartsStudents:HufflepuffSr.Class\"",
       }
     },
+
     {
       "LogName": "Hufflepuff Sr 2 Schedule",
       "Action": "EditData",
@@ -567,6 +613,7 @@
         "spring": "610 {{ModId}}_HogwartsLibraryAnnex 61 44 0 \"Strings\\schedules\\HogwartsStudents:HufflepuffSr.Class\"/1130 {{ModId}}_HogwartsTransfigurationWing 46 54 2",
       }
     },
+
     {
       "LogName": "Hufflepuff Sr 3 Schedule",
       "Action": "EditData",
@@ -582,6 +629,8 @@
         "spring": "610 {{ModId}}_HogwartsLibraryAnnex 61 44 0 \"Strings\\schedules\\HogwartsStudents:HufflepuffSr.Class\"/1130 {{ModId}}_HogwartsTransfigurationWing 46 54 2", // TODO
       }
     },
+    
+    //SLYTHERIN
     {
       "LogName": "Abrielle (Slytherin Sr 1) Schedule",
       "Action": "EditData",
@@ -597,6 +646,7 @@
         "spring": "610 {{ModId}}_HogwartsPotionsClassroom 23 19 3 \"Strings\\schedules\\HogwartsStudents:SlytherinSr.Class\"/1130 {{ModId}}_HogwartsDivinationClassroom 26 13 3 \"Strings\\schedules\\HogwartsStudents:SlytherinSr.Class\"", ///1600 {{ModId}}_HogwartsCommonRoomSlytherin 3 8 1
       } 
     },
+
     {
       "LogName": "Slytherin Sr 2 Schedule",
       "Action": "EditData",
@@ -612,6 +662,7 @@
         "spring": "610 {{ModId}}_HogwartsPotionsClassroom 15 25 0 \"Strings\\schedules\\HogwartsStudents:SlytherinSr.Class\"/1130 {{ModId}}_HogwartsDivinationClassroom 26 16 3 \"Strings\\schedules\\HogwartsStudents:SlytherinSr.Class\"", ///1600 {{ModId}}_HogwartsCommonRoomSlytherin 5 6 2
       }
     },
+
     {
       "LogName": "Slytherin Sr 3 Schedule",
       "Action": "EditData",
@@ -627,7 +678,8 @@
         "spring": "610 {{ModId}}_HogwartsPotionsClassroom 15 25 0 \"Strings\\schedules\\HogwartsStudents:SlytherinSr.Class\"/1130 {{ModId}}_HogwartsDivinationClassroom 26 16 3 \"Strings\\schedules\\HogwartsStudents:SlytherinSr.Class\"", //TODO
       }
     },
-    //New Student Schedule Data WIP
+
+    //New Student Schedule Data WIP (WHAT IS THIS?)
     {
       "LogName": "Gryffindor Male 1.0 Schedule",
       "Action": "EditData",
@@ -1259,6 +1311,8 @@
         "spring": "610 {{ModId}}_HogwartsGreatHall 15 33 2/a900 {{ModId}}_HogwartsMuggleStudiesClassroom 8 6 2"
       }
     },
+
+    //SLYTHERIN CHARACTERS
     {
       "LogName": "Slytherin Male 1 Schedule",
       "Action": "EditData",
