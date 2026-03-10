@@ -5,7 +5,7 @@
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsFacultyTower",
       "MapTiles": [
-/*Grand Staircase East*/
+        /*Grand Staircase East*/
         {
           "Position": {
             "X": 0,
@@ -46,7 +46,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 54 69"
           }
         },
-  //Grand Staircase West
+        //Grand Staircase West
         {
           "Position": {
             "X": 98,
@@ -87,7 +87,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 1 51"
           }
         },
-/*South Wing*/
+        /*South Wing*/
         {
           "Position": {
             "X": 41,
@@ -130,62 +130,61 @@
         }
       ]
     },
-//Door Replacements
-
-  //Wood Door 1
-		{
-		"LogName": "FacultyTowerDoors - Animation1",
-    "Action": "EditImage",
-    "Target": "LooseSprites/Cursors",
-    "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
-    "PatchMode": "Replace",
-    "FromArea": {
-      "X": 192,
-      "Y": 48,
-      "Width": 64,
-      "Height": 48
+    //Door Replacements
+    //Wood Door 1
+    {
+      "LogName": "FacultyTowerDoors - Animation1",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
+      "PatchMode": "Replace",
+      "FromArea": {
+        "X": 192,
+        "Y": 48,
+        "Width": 64,
+        "Height": 48
+      },
+      "ToArea": {
+        "X": 512,
+        "Y": 144,
+        "Width": 64,
+        "Height": 48
+      },
+      "When": {
+        "LocationName": "{{ModId}}_HogwartsFacultyTower"
+      },
+      "Update": "OnLocationChange"
     },
-    "ToArea": {
-      "X": 512,
-      "Y": 144,
-      "Width": 64,
-      "Height": 48
+    {
+      "LogName": "FacultyTowerDoors - TileReplace1",
+      "Action": "EditImage",
+      "Target": "Maps/townInterior",
+      "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
+      "PatchMode": "Replace",
+      "FromArea": {
+        "X": 192,
+        "Y": 48,
+        "Width": 16,
+        "Height": 48
+      },
+      "ToArea": {
+        "X": 384,
+        "Y": 16,
+        "Width": 16,
+        "Height": 48
+      },
+      "When": {
+        "LocationName": "{{ModId}}_HogwartsFacultyTower"
+      },
+      "Update": "OnLocationChange"
     },
-    "When": {
-      "LocationName": "{{ModId}}_HogwartsFacultyTower"
-    },
-    "Update": "OnLocationChange"
-  },
-  {
-		"LogName": "FacultyTowerDoors - TileReplace1",
-    "Action": "EditImage",
-    "Target": "Maps/townInterior",
-    "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
-    "PatchMode": "Replace",
-    "FromArea": {
-      "X": 192,
-      "Y": 48,
-      "Width": 16,
-      "Height": 48
-    },
-    "ToArea": {
-      "X": 384,
-      "Y": 16,
-      "Width": 16,
-      "Height": 48
-    },
-    "When": {
-      "LocationName": "{{ModId}}_HogwartsFacultyTower"
-    },
-    "Update": "OnLocationChange"
-  },
-  //Glass Door 2
-  {
-		"LogName": "FacultyTowerDoors - Animation2",
-    "Action": "EditImage",
-    "Target": "LooseSprites/Cursors",
-    "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
-    "PatchMode": "Replace",
+    //Glass Door 2
+    {
+      "LogName": "FacultyTowerDoors - Animation2",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
+      "PatchMode": "Replace",
       "FromArea": {
         "X": 128,
         "Y": 96,
@@ -198,37 +197,118 @@
         "Width": 64,
         "Height": 48
       },
-    "When": {
-      "LocationName": "{{ModId}}_HogwartsFacultyTower"
+      "When": {
+        "LocationName": "{{ModId}}_HogwartsFacultyTower"
+      },
+      "Update": "OnLocationChange",
+      "Priority": "Late"
     },
-    "Update": "OnLocationChange",
-    "Priority": "Late"
-  },
-  {
-		"LogName": "FacultyTowerDoors - TileReplace2",
-    "Action": "EditImage",
-    "Target": "Maps/townInterior",
-    "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
-    "PatchMode": "Replace",
-    "FromArea": {
-      "X": 128,
-      "Y": 96,
-      "Width": 16,
-      "Height": 48
+    {
+      "LogName": "FacultyTowerDoors - TileReplace2",
+      "Action": "EditImage",
+      "Target": "Maps/townInterior",
+      "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
+      "PatchMode": "Replace",
+      "FromArea": {
+        "X": 128,
+        "Y": 96,
+        "Width": 16,
+        "Height": 48
+      },
+      "ToArea": {
+        "X": 96,
+        "Y": 384,
+        "Width": 16,
+        "Height": 48
+      },
+      "When": {
+        "LocationName": "{{ModId}}_HogwartsFacultyTower"
+      },
+      "Update": "OnLocationChange",
+      "Priority": "Late"
     },
-    "ToArea": {
-      "X": 96,
-      "Y": 384,
-      "Width": 16,
-      "Height": 48
+    {
+      "LogName": "Faculty Tower Horklump Animation",
+      "Action": "EditData",
+      "Target": "DMT/Animations",
+      "Entries": {
+        "{{ModId}}.FacultyTower": [
+          {
+            "Name": "Horklump",
+            "Texture": "Maps/z_Hogwarts_FacultyTower_Hxoni",
+            "SourceRect": {
+              "X": 0,
+              "Y": 336,
+              "Width": 16,
+              "Height": 16
+            },
+            "Position": {
+              "X": 768,
+              "Y": 2304
+            },
+            "Scale": 4,
+            "Length": 8,
+            "LayerDepth": 5,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 100,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          },/*
+          {
+            "Name": "Gear",
+            "Texture": "{{ModId}}/Gear",
+            "SourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 64,
+              "Height": 64
+            },
+            "Position": {
+              "X": 4224,
+              "Y": 896
+            },
+            "Scale": 4,
+            "Length": 1,
+            "LayerDepth": 2,
+            "Rotation": 0.01,
+            "RotationChange": 0.01,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 1000,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          }*/
+        ]
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
     },
-    "When": {
-      "LocationName": "{{ModId}}_HogwartsFacultyTower"
-    },
-    "Update": "OnLocationChange",
-    "Priority": "Late"
-  }
-
-
-]
+    {
+      "LogName": "Faculty Tower Horklump Animation Trigger",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsFacultyTower",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 12,
+            "Y": 39
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/animation_On": "{{ModId}}.FacultyTower,Horklump",
+            "DMT/changeMultipleIndex_On": "Buildings 12 36="
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    }
+  ]
 }
