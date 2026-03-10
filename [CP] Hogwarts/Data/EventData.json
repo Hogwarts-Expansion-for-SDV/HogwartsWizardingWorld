@@ -167,18 +167,33 @@
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_Ollivanders",
       "Entries": {
-        "{{ModId}}_Ollivander05": "none/8 17/farmer 7 17 1 HogwartsOllivander 9 17 3/skippable/pause 800/
-        question null \"#None of these wands are working.\"/pause 800/
+        "{{ModId}}_Ollivander05": "none/8 17/farmer 100 100 0 HogwartsOllivander 10 15 3/skippable/pause 800/
+		    playSound doorClose/pause 200/
+	    	warp farmer 8 19/pause 500/
+        facedirection HogwartsOllivander 2/
+	    	speak HogwartsOllivander \"Welcome, welcome. You must be here for your first wand.\"/pause 400/emote HogwartsOllivander 40/pause 200/
+        move HogwartsOllivander 0 2 2/pause 300/
+        speak HogwartsOllivander \"A student I wasn't expecting. Curious..\"/pause 200/
+	    	speak HogwartsOllivander \"Forgive me.#$b#Do take your time. Please, look about...#$b# I am most interested to see which wand's attention you draw.\"/pause 200/
+        emote farmer 56/pause 200/
+		    move farmer 0 -1 0/move farmer 5 0 1/
+        facedirection HogwartsOllivander 1/pause 400/
+        emote farmer 40/move farmer 0 -2 0/facedirection farmer 1/pause 400/emote farmer 28/pause 200/move farmer 0 -2 0/move farmer -1 0 3/
+        facedirection HogwartsOllivander 0/
+        facedirection farmer 0/pause 600/emote farmer 12/pause 400/facedirection farmer 2/
+        question null \"#None of these wands seem to be working.\"/pause 800/
         speak HogwartsOllivander \"Despite years of experience, wandmakers never know how wands will react.#$b#However, what we have agreed upon is that the wand chooses the wizard.\"/pause 800/
-        question null \"#Yes, Mr. Ollivander... #I’ve heard of your shop in Diagon Alley, but you have a shop here now?\"/pause 800/
-        speak HogwartsOllivander \"I opened this branch after... I was taken from my shop, and haven’t returned... #$b#So, I came here to Hogsmeade. Quainter. Safer. A place to forget.#$b#I have this locket to help me get through. It’s a painting of my daughter.\"/pause 800/
-        question null \"#Is your daughter in London?\"/pause 800/
-        speak HogwartsOllivander \"Sadly, she has passed.\"/pause 800/
+        quickQuestion #Do you make all of these wands by yourself?#I’ve heard of your shop in Diagon Alley, but you have a shop here now?#
+        (break)pause 800\\speak HogwartsOllivander \"My daughter made many of these... She was a gifted wandmaker.\"
+        (break) speak HogwartsOllivander \"I opened this branch after... I was taken from my shop, and haven’t returned... #$b#Hogsmeade is quainter. Safer. #$b#A place to forget.\"/pause 800/
+        question null \"#Is your family still in London?\"/pause 800/
+        speak HogwartsOllivander \"Sadly, they have passed.#$b#I have this locket to help me get through... It has a portrait of my daughter.\"/pause 800/
         emote farmer 28/pause 800/
-        question null \"#If you can come, every week, Mrs. Granger hosts a support group for victims of Voldemort.\"/pause 800/
-        speak HogwartsOllivander \"We do not speak his name...\"/pause 800/
-        emote farmer 16/pause 800/
-        speak HogwartsOllivander \"#$b#Would you be able to come back another time?\"/pause 800/
+        question null \"#If you can go, I heard there's a support group for victims of Voldemort.\"/pause 800/emote HogwartsOllivander 12/pause 100/
+        move HogwartsOllivander 0 -1 0/pause 100/
+        speak HogwartsOllivander \"We do not speak his name!\"/pause 400/
+        emote farmer 16/pause 400/
+        speak HogwartsOllivander \"You have no idea-#$b#...#$b#Perhaps another time, @.#$b# The wands, and I, need a moment.\"/pause 800/
         globalFade/viewport -1000 -1000/pause 1000/end",
         "{{ModId}}_Ollivander25": "none/8 17/farmer 7 17 1 HogwartsOllivander 9 17 3/skippable/pause 800/
         question null \"#Mr. Ollivander? Sir?\"/pause 800/
