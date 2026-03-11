@@ -1,0 +1,48 @@
+/* The template is for repeatable code only*/
+//Hitme's Note: Move the rest of the code StudentLoadData,json to this file once portraits/sprites is completed
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Hogwarts{{Name}}": {
+                    "DisplayName": "{{i18n:Hogwarts{{Name}}}}",
+                    "BirthSeason": "Spring",
+                    "BirthDay": "1",
+                    "Gender": "{{Gender}}",
+                    "Age": "Teen",
+                    "Manner": "Neutral",
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false,
+                    "Calendar": "HiddenAlways",
+                    "SocialTab": "HiddenAlways",
+                    "CanReceiveGifts": false,
+                    "CanGreetNearbyCharacters": true,
+                    "CanVisitIsland": false,
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "Home": [
+                    {
+                        "Id": "Default",
+                        "Condition": null,
+                        "Location": "{{ModID}}_Hogwarts{{Room}}",
+                        "Tile": {
+                        "X": 3,
+                        "Y": 6
+                        },
+                        "Direction": "right"
+                    }
+                    ]
+                },
+            } 
+        },
+
+        {
+            "Action": "Load",
+            "Target": "Characters/schedules/Hogwarts{{Name}}, Characters/Dialogue/Hogwarts{{Name}}",
+            "FromFile": "Data/blank.json"
+        },
+    ]
+}
