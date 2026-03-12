@@ -1,0 +1,92 @@
+/*Normal rountines for students (Monday to Friday):  
+  - Class 1: 7am (walk to class) - 10am.
+  - Class 2: 10am - 11h30am.
+  - Lunch Break: 11h30am - 1pm.
+  - Classs 3/Free Time: 1pm - 2h30pm ()
+  - Free time/Class 3: 2h30pm - 4pm
+  - Free time after class: 4pm - 5pm
+  - Dinner: 5pm - 6pm
+  - Common room (hanging around): 6pm - 8pm
+  - Dorm rooms: 8pm - 9pm.
+  - Bed: 9pm.
+*/
+
+/*Hitme's Note:
+***CLASSES/COMMON ROOMS:***
+    - Each House when attending a class will use pinned key within the House (GClass1, GClass2, GLunch...)
+
+* CORE IDEA:
+    - Instead of randomize on the base value in ClassroomCooardiantes token with having a risk of duplication, this method try to randomize from a set of controlled, unique indexes that would then parsed into real position (in Math, it is called 'permutation')
+
+* HOW IT WORKS:
+    - In classes or commom room, each NPC in the House has at least 3 seats to choose from, for example:
+        GryffindorMaleOne can sit at positions with index 0,4,5.
+        GryffindorFemaleOne can sit at positions with index 2,5,3.
+        GryffindorMaleTwo can sit at positions with index 6,3,4.
+
+    - With the same pinned key for GClass1, and if we get the first value after randomized:
+        MaleOne with positions 0,4,5 -> will sit position with index 0 which parsed to '{{ModId}}_HogwartsDADAClassroom 3 24 0' in the base DADAClassroomCooardinates token
+        FemaleOne with positions 1,5,3 -> will sit at position with index 1 which parsed to '{{ModId}}_HogwartsDADAClassroom 4 24 0' in the base DADAClassroomCooardinates token 
+        MaleTwo with positions 6,3,4 -> will sit at position with index 6 which parsed to '{{ModId}}_HogwartsDADAClassroom 3 27 0' in the base DADAClassroomCooardinates token...
+
+    - !!THE SET'S SEQUENCE MATTER!!:
+        GryffindorMaleOne: 0,4,5 
+        GryffindorFemaleOne: 1,3,5 
+    (X) This is wrong because both MaleOne and FemaleOne have index '5' at the same position.
+
+    - However, students from different can have duplicated sets:
+        - GryffindorMaleOne: 0,4,5
+        - SlytherinMaleSeven: 0,4,5
+    (V) This is okay because they're in a different map.
+
+    - In theory, if we have at least 14 seats for each class and choose 3 seats at a times: P(14,3) = 2184.
+
+***SHARED SPACES IN FREE TIME:***
+    - If they're having free times, they will use the shared key of ALL Houses instead (SharedFreeTime1, SharedFreeTime2, SharedFreeTime3). 
+    
+* OPTION 1: 
+    Same as the above but adding another layer on top of it, so it randomize the location first then randomize the index which parsed into the actual positions, for example:
+
+    {{Random:{{FacultyTowerCooardinates|valueAt={{Random:0,4,5|key=SharedFreeTime1}}}} @@ {{GrandStaircaseCooardinates|valueAt={{Random:0,4,5|key=SharedFreeTime1}}}} @@ {{LibraryAnnexCooardinates|valueAt={{Random:0,4,5|key=SharedFreeTime1}}}} |inputSeparator=@@ |key=SharedFreeTime1}}
+    
+    
+        - Upside: Randomize everything
+        - Downside: the duplication chance is low (maybe 0.001%) but not zero, not easy to control the result, and no schedule dialogue because we don't know which location they will go to.
+
+* OPTION 2:
+    For true zero duplication chance, we can specify the location NPC walk to that day and only randomize where they stand the in that location:
+
+    {{FacultyTowerCooardinates}}|valueAt={{Random:0,4,5|key=SharedFreeTime1}}}
+        
+        - Upside: Better controlling over the result, easier to understand and can add schedule dialogue, zero duplication chance
+        - Downsize: Only randomize the position, the location is fixed.    
+*/
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/HogwartsGryffindorMaleOne",
+            "Entries": {
+                "spring": "610 {{ModId}}_HogwartsGM1D 1 5",
+                "Mon" : "700 {{DADAClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass1}}}} \"String\\schedules\\Students:GryffindorMaleDADA\"/
+                1000 {{CharmsClassroomCoordinates:valueAt={{Random:0,4,5|key=GClass2}}}}/
+                1130 {{ModId}}_HogwartsGreatHall {{Gryffindor_GreatHallCoordinates|valueAt={{Random:0,4,5|key=GLunch}}}}/
+                1300 {{ArithmancyClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass3}}}/
+                1600 {{TransfigurationWingCooardinates|valuaAt={{Random:0,4,5|key=SharedFreeTime2}}}}/
+                1700 {{Gryffindor_GreatHallCoordinates|valueAt={{Random:0,4,5|key=GDinner}}}}/
+                1800 {{Gryffindor_CommonRoomCoordinates|valueAt={{Random:0,4,5|key=GCommon}}}}/
+                2000 {{ModId}}_HogwartsGM1D 1 5/
+                2100 {{ModId}}_HogwartsGM1D 1 5",
+                "Mon" : "700 {{HistoryOfMagicClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass1}}}} \"String\\schedules\\Students:GryffindorMale.HistoryOfMagic\"/
+                1000 {{PotionsClassroomCoordinates:valueAt={{Random:0,4,5|key=GClass2}}}}/
+                1130 {{ModId}}_HogwartsGreatHall {{Gryffindor_GreatHallCoordinates|valueAt={{Random:0,4,5|key=GLunch}}}}/
+                1300 {{DivinationClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass3}}}/
+                1600 {{TransfigurationWingCooardinates|valuaAt={{Random:0,4,5|key=SharedFreeTime2}}}}/
+                1700 {{Gryffindor_GreatHallCoordinates|valueAt={{Random:0,4,5|key=GDinner}}}}/
+                1800 {{Gryffindor_CommonRoomCoordinates|valueAt={{Random:0,4,5|key=GCommon}}}}/
+                2000 {{ModId}}_HogwartsGM1D 1 5/
+                2100 {{ModId}}_HogwartsGM1D 1 5",
+            }
+        },
+    ],
+}
