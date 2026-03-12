@@ -2,9 +2,9 @@
   - Class 1: 7am (walk to class) - 10am.
   - Class 2: 10am - 11h30am.
   - Lunch Break: 11h30am - 1pm.
-  - Classs 3/Free Time: 1pm - 2h30pm ()
-  - Free time/Class 3: 2h30pm - 4pm
-  - Free time after class: 4pm - 5pm
+  - Classs 3/Free Time: 1pm - 2h30pm (SharedFreeTime1)
+  - Free time/Class 3: 2h30pm - 4pm (SharedFreeTime2)
+  - Free time after class: 4pm - 5pm (SharedFreeTime3)
   - Dinner: 5pm - 6pm
   - Common room (hanging around): 6pm - 8pm
   - Dorm rooms: 8pm - 9pm.
@@ -59,7 +59,7 @@
     {{FacultyTowerCooardinates}}|valueAt={{Random:0,4,5|key=SharedFreeTime1}}}
         
         - Upside: Better controlling over the result, easier to understand and can add schedule dialogue, zero duplication chance
-        - Downsize: Only randomize the position, the location is fixed.    
+        - Downsize: Only randomize the position, the location is fixed.
 */
 {
     "Changes": [
@@ -67,25 +67,75 @@
             "Action": "EditData",
             "Target": "Characters/schedules/HogwartsGryffindorMaleOne",
             "Entries": {
-                "spring": "610 {{ModId}}_HogwartsGM1D 1 5",
-                "Mon" : "700 {{DADAClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass1}}}} \"String\\schedules\\Students:GryffindorMaleDADA\"/
-                1000 {{CharmsClassroomCoordinates:valueAt={{Random:0,4,5|key=GClass2}}}}/
-                1130 {{ModId}}_HogwartsGreatHall {{Gryffindor_GreatHallCoordinates|valueAt={{Random:0,4,5|key=GLunch}}}}/
-                1300 {{ArithmancyClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass3}}}/
-                1600 {{TransfigurationWingCooardinates|valuaAt={{Random:0,4,5|key=SharedFreeTime2}}}}/
+                "spring": "610 {{ModId}}_HogwartsGM1D 1 5 0",
+                "Mon" : "700 {{DADAClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass1}}}} \"String\\schedules\\Students:GryffindorMale.DADA\"/
+                1000 {{CharmsClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass2}}}}/
+                1130 {{Gryffindor_GreatHallCoordinates|valueAt={{Random:0,4,5|key=GLunch}}}}/
+                1300 {{ArithmancyClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass3}}}}/
+                1430 {{TransfigurationWingCoordinates|valueAt={{Random:0,4,5|key=SharedFreeTime2}}}}/
+                1600 {{GrandStaircaseCoordinates|valueAt={{Random:0,4,5|key=SharedFreeTime3}}}}/
                 1700 {{Gryffindor_GreatHallCoordinates|valueAt={{Random:0,4,5|key=GDinner}}}}/
                 1800 {{Gryffindor_CommonRoomCoordinates|valueAt={{Random:0,4,5|key=GCommon}}}}/
                 2000 {{ModId}}_HogwartsGM1D 1 5/
                 2100 {{ModId}}_HogwartsGM1D 1 5",
-                "Mon" : "700 {{HistoryOfMagicClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass1}}}} \"String\\schedules\\Students:GryffindorMale.HistoryOfMagic\"/
-                1000 {{PotionsClassroomCoordinates:valueAt={{Random:0,4,5|key=GClass2}}}}/
-                1130 {{ModId}}_HogwartsGreatHall {{Gryffindor_GreatHallCoordinates|valueAt={{Random:0,4,5|key=GLunch}}}}/
+
+                "Tue" : "700 {{HistoryOfMagicClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass1}}}} \"String\\schedules\\Students:GryffindorMale.HistoryOfMagic\"/
+                1000 {{PotionsClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass2}}}}/
+                1130 {{Gryffindor_GreatHallCoordinates|valueAt={{Random:0,4,5|key=GLunch}}}}/
+                1300 {{DivinationClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass3}}}}/
+                1430 {{TransfigurationWingCoordinates|valueAt={{Random:0,4,5|key=SharedFreeTime2}}}}/
+                1600 {{GrandStaircaseCoordinates|valueAt={{Random:0,4,5|key=SharedFreeTime3}}}}/
+                1700 {{Gryffindor_GreatHallCoordinates|valueAt={{Random:0,4,5|key=GDinner}}}}/
+                1800 {{Gryffindor_CommonRoomCoordinates|valueAt={{Random:0,4,5|key=GCommon}}}}/
+                2000 {{ModId}}_HogwartsGM1D 1 5/
+                2100 {{ModId}}_HogwartsGM1D 1 5",
+
+                /*"Tue" : "700 {{HistoryOfMagicClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass1}}}} \"String\\schedules\\Students:GryffindorMale.HistoryOfMagic\"/
+                1000 {{PotionsClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass2}}}}/
+                1130 {{Gryffindor_GreatHallCoordinates|valueAt={{Random:0,4,5|key=GLunch}}}}/
                 1300 {{DivinationClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass3}}}/
-                1600 {{TransfigurationWingCooardinates|valuaAt={{Random:0,4,5|key=SharedFreeTime2}}}}/
+                1430 {{TransfigurationWingCooardinates|valuaAt={{Random:0,4,5|key=SharedFreeTime2}}}}/
+                1600 {{GrandStaircaseCooardinates|valueAT={{Random:0,4,5|key=SharedFreeTime3}}}}/
                 1700 {{Gryffindor_GreatHallCoordinates|valueAt={{Random:0,4,5|key=GDinner}}}}/
                 1800 {{Gryffindor_CommonRoomCoordinates|valueAt={{Random:0,4,5|key=GCommon}}}}/
                 2000 {{ModId}}_HogwartsGM1D 1 5/
                 2100 {{ModId}}_HogwartsGM1D 1 5",
+
+                "Wed": "700 {{TransfigurationClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass1}}}} \"String\\schedules\\Students:GryffindorMale.Transfiguration\"/
+                1000 {{HerbologyClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass2}}}}/
+                1130 {{Gryffindor_GreatHallCoordinates|valueAt={{Random:0,4,5|key=GLunch}}}}/
+                1300 {{MagicalTheoryClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass3}}}/
+                1430 {{TransfigurationWingCooardinates|valuaAt={{Random:0,4,5|key=SharedFreeTime2}}}}/
+                1600 {{GrandStaircaseCooardinates|valueAt={{Random:0,4,5|key=SharedFreeTime3}}}}/
+                1700 {{Gryffindor_GreatHallCoordinates|valueAt={{Random:0,4,5|key=GDinner}}}}/
+                1800 {{Gryffindor_CommonRoomCoordinates|valueAt={{Random:0,4,5|key=GCommon}}}}/
+                2000 {{ModId}}_HogwartsGM1D 1 5/
+                2100 {{ModId}}_HogwartsGM1D 1 5",
+
+                "Thu": "700 {{StudyOfAncientRunes_ClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass1}}}} \"String\\schedules\\Students:GryffindorMale.StudyOfAncientRunes\"/
+                1000 {{AlchemyClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass2}}}}/
+                1130 {{Gryffindor_GreatHallCoordinates|valueAt={{Random:0,4,5|key=GLunch}}}}/
+                1300 {{MuggleStudyClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass3}}}/
+                1430 {{TransfigurationWingCooardinates|valuaAt={{Random:0,4,5|key=SharedFreeTime2}}}}/
+                1600 {{GrandStaircaseCooardinates|valueAT={{Random:0,4,5|key=SharedFreeTime3}}}}/
+                1700 {{Gryffindor_GreatHallCoordinates|valueAt={{Random:0,4,5|key=GDinner}}}}/
+                1800 {{Gryffindor_CommonRoomCoordinates|valueAt={{Random:0,4,5|key=GCommon}}}}/
+                2000 {{ModId}}_HogwartsGM1D 1 5/
+                2100 {{ModId}}_HogwartsGM1D 1 5",
+
+                "Fri": "700 {{CareOfMagicalCreaturesClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass1}}}} \"String\\schedules\\Students:GryffindorMale.CareOfMagicalCreatures\"/
+                1000 {{MusicClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass2}}}}/
+                1130 {{Gryffindor_GreatHallCoordinates|valueAt={{Random:0,4,5|key=GLunch}}}}/
+                1300 {{TransfigurationWingCooardinates|valuaAt={{Random:0,4,5|key=SharedFreeTime1}}}}/
+                1430 {{MuggleStudyClassroomCoordinates|valueAt={{Random:0,4,5|key=GClass3}}}/
+                1600 {{GrandStaircaseCooardinates|valueAT={{Random:0,4,5|key=SharedFreeTime3}}}}/
+                1700 {{Gryffindor_GreatHallCoordinates|valueAt={{Random:0,4,5|key=GDinner}}}}/
+                1800 {{Gryffindor_CommonRoomCoordinates|valueAt={{Random:0,4,5|key=GCommon}}}}/
+                2000 {{ModId}}_HogwartsGM1D 1 5/
+                2100 {{ModId}}_HogwartsGM1D 1 5",*/
+
+                "Sat": "GOTO srping",
+                "Sun": "GOTO spring",
             }
         },
     ],
