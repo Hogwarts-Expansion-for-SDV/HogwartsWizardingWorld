@@ -1,0 +1,522 @@
+{
+  "Changes": [
+    {
+      "LogName": "Faculty Tower Gears Texture",
+      "Action": "Load",
+      "Target": "{{ModId}}/Gear",
+      "FromFile": "assets/Tilesheets/z_Hogwarts_ClockTower_Gears.png"
+    },
+    {
+      "LogName": "Faculty Tower Gear 1 Animation",
+      "Action": "EditData",
+      "Target": "DMT/Animations",
+      "Entries": {
+        "{{ModId}}.Gear1": [
+          {
+            "Name": "Gear 1",
+            "Texture": "{{ModId}}/Gear",
+            "SourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 48,
+              "Height": 48
+            },
+            "Position": {
+              "X": 5376,
+              "Y": 256
+            },
+            "Scale": 4,
+            "Length": 1,
+            "LayerDepth": 2,
+            "Rotation": 0.01,
+            "RotationChange": 0.01,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 1000,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          }
+        ]
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Faculty Tower Gear 1 Animation Play",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}.Gear1": {
+          "Locations": [
+            "{{ModId}}_HogwartsFacultyTower"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Actions": [
+            {
+              "LogName": "PlayAnimation_1",
+              "Key": "DMT/animation",
+              "Value": "{{ModId}}.Gear1,Gear 1|Custom",
+              "Trigger": "Load"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Faculty Tower Gear 2 Animation",
+      "Action": "EditData",
+      "Target": "DMT/Animations",
+      "Entries": {
+        "{{ModId}}.Gear2": [
+          {
+            "Name": "Gear 2",
+            "Texture": "{{ModId}}/Gear",
+            "SourceRect": {
+              "X": 0,
+              "Y": 48,
+              "Width": 48,
+              "Height": 48
+            },
+            "Position": {
+              "X": 5504,
+              "Y": 320
+            },
+            "Scale": 4,
+            "Length": 1,
+            "LayerDepth": 2,
+            "Rotation": 0.01,
+            "RotationChange": -0.01,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 1000,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          }
+        ]
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Faculty Tower Gear 2 Animation Play",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}.Gear2": {
+          "Locations": [
+            "{{ModId}}_HogwartsFacultyTower"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Actions": [
+            {
+              "LogName": "PlayAnimation_2",
+              "Key": "DMT/animation",
+              "Value": "{{ModId}}.Gear2,Gear 2|Custom",
+              "Trigger": "Load"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Faculty Tower Gear 3 Animation",
+      "Action": "EditData",
+      "Target": "DMT/Animations",
+      "Entries": {
+        "{{ModId}}.Gear3": [
+          {
+            "Name": "Gear 3",
+            "Texture": "{{ModId}}/Gear",
+            "SourceRect": {
+              "X": 64,
+              "Y": 48,
+              "Width": 64,
+              "Height": 64
+            },
+            "Position": {
+              "X": 5312,
+              "Y": 384
+            },
+            "Scale": 4,
+            "Length": 1,
+            "LayerDepth": 5,
+            "Rotation": 0.01,
+            "RotationChange": -0.01,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 1000,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          }
+        ]
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Faculty Tower Gear 3 Animation Play",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}.Gear3": {
+          "Locations": [
+            "{{ModId}}_HogwartsFacultyTower"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Actions": [
+            {
+              "LogName": "PlayAnimation_3",
+              "Key": "DMT/animation",
+              "Value": "{{ModId}}.Gear3,Gear 3|Custom",
+              "Trigger": "Load"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+      {
+      "LogName": "Faculty Tower Gear 4 Animation",
+      "Action": "EditData",
+      "Target": "DMT/Animations",
+      "Entries": {
+        "{{ModId}}.Gear4": [
+          {
+            "Name": "Gear 4",
+            "Texture": "{{ModId}}/Gear",
+            "SourceRect": {
+              "X": 96,
+              "Y": 16,
+              "Width": 32,
+              "Height": 32
+            },
+            "Position": {
+              "X": 5568,
+              "Y": 448
+            },
+            "Scale": 4,
+            "Length": 1,
+            "LayerDepth": 1,
+            "Rotation": 0.01,
+            "RotationChange": 0.01,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 1000,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          }
+        ]
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Faculty Tower Gear 4 Animation Play",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}.Gear4": {
+          "Locations": [
+            "{{ModId}}_HogwartsFacultyTower"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Actions": [
+            {
+              "LogName": "PlayAnimation_4",
+              "Key": "DMT/animation",
+              "Value": "{{ModId}}.Gear4,Gear 4|Custom",
+              "Trigger": "Load"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Faculty Tower Gear 5 Animation",
+      "Action": "EditData",
+      "Target": "DMT/Animations",
+      "Entries": {
+        "{{ModId}}.Gear5": [
+          {
+            "Name": "Gear 5",
+            "Texture": "{{ModId}}/Gear",
+            "SourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 48,
+              "Height": 48
+            },
+            "Position": {
+              "X": 5632,
+              "Y": 384
+            },
+            "Scale": 4,
+            "Length": 1,
+            "LayerDepth": 2,
+            "Rotation": 0.01,
+            "RotationChange": 0.01,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 1000,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          }
+        ]
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Faculty Tower Gear 5 Animation Play",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}.Gear5": {
+          "Locations": [
+            "{{ModId}}_HogwartsFacultyTower"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Actions": [
+            {
+              "LogName": "PlayAnimation_5",
+              "Key": "DMT/animation",
+              "Value": "{{ModId}}.Gear5,Gear 5|Custom",
+              "Trigger": "Load"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Faculty Tower Gear 6 Animation",
+      "Action": "EditData",
+      "Target": "DMT/Animations",
+      "Entries": {
+        "{{ModId}}.Gear6": [
+          {
+            "Name": "Gear 6",
+            "Texture": "{{ModId}}/Gear",
+            "SourceRect": {
+              "X": 32,
+              "Y": 96,
+              "Width": 32,
+              "Height": 32
+            },
+            "Position": {
+              "X": 5440,
+              "Y": 384
+            },
+            "Scale": 4,
+            "Length": 1,
+            "LayerDepth": 1,
+            "Rotation": 0.01,
+            "RotationChange": 0.01,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 1000,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          }
+        ]
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Faculty Tower Gear 6 Animation Play",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}.Gear6": {
+          "Locations": [
+            "{{ModId}}_HogwartsFacultyTower"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Actions": [
+            {
+              "LogName": "PlayAnimation_6",
+              "Key": "DMT/animation",
+              "Value": "{{ModId}}.Gear6,Gear 6|Custom",
+              "Trigger": "Load"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Faculty Tower Gear 7 Animation",
+      "Action": "EditData",
+      "Target": "DMT/Animations",
+      "Entries": {
+        "{{ModId}}.Gear7": [
+          {
+            "Name": "Gear 7",
+            "Texture": "{{ModId}}/Gear",
+            "SourceRect": {
+              "X": 64,
+              "Y": 48,
+              "Width": 64,
+              "Height": 64
+            },
+            "Position": {
+              "X": 5760,
+              "Y": 320
+            },
+            "Scale": 4,
+            "Length": 1,
+            "LayerDepth": 2,
+            "Rotation": -0.01,
+            "RotationChange": 0.01,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 1000,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          }
+        ]
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Faculty Tower Gear 7 Animation Play",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}.Gear7": {
+          "Locations": [
+            "{{ModId}}_HogwartsFacultyTower"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Actions": [
+            {
+              "LogName": "PlayAnimation_7",
+              "Key": "DMT/animation",
+              "Value": "{{ModId}}.Gear7,Gear 7|Custom",
+              "Trigger": "Load"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Faculty Tower Gear 8 Animation",
+      "Action": "EditData",
+      "Target": "DMT/Animations",
+      "Entries": {
+        "{{ModId}}.Gear8": [
+          {
+            "Name": "Gear 8",
+            "Texture": "{{ModId}}/Gear",
+            "SourceRect": {
+              "X": 64,
+              "Y": 16,
+              "Width": 32,
+              "Height": 32
+            },
+            "Position": {
+              "X": 5632,
+              "Y": 320
+            },
+            "Scale": 4,
+            "Length": 1,
+            "LayerDepth": 1,
+            "Rotation": -0.01,
+            "RotationChange": 0.01,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 1000,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          }
+        ]
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Faculty Tower Gear 8 Animation Play",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}.Gear8": {
+          "Locations": [
+            "{{ModId}}_HogwartsFacultyTower"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Actions": [
+            {
+              "LogName": "PlayAnimation_8",
+              "Key": "DMT/animation",
+              "Value": "{{ModId}}.Gear8,Gear 8|Custom",
+              "Trigger": "Load"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    }
+  ]
+}

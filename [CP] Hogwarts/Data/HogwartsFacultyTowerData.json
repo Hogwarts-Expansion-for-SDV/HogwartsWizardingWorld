@@ -110,22 +110,22 @@
         },
         {
           "Position": {
-            "X": 88,
-            "Y": 3
+            "X": 94,
+            "Y": 8
           },
-          "Layer": "Buildings",
+          "Layer": "Back",
           "SetProperties": {
-            "Action": "Warp 70 27 {{ModId}}_HogwartsSouthWing"
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 70 27"
           }
         },
         {
           "Position": {
-            "X": 87,
-            "Y": 3
+            "X": 95,
+            "Y": 8
           },
-          "Layer": "Buildings",
+          "Layer": "Back",
           "SetProperties": {
-            "Action": "Warp 70 27 {{ModId}}_HogwartsSouthWing"
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 70 27"
           }
         }
       ]
@@ -256,33 +256,7 @@
               "X": 0,
               "Y": 0
             }
-          },/*
-          {
-            "Name": "Gear",
-            "Texture": "{{ModId}}/Gear",
-            "SourceRect": {
-              "X": 0,
-              "Y": 0,
-              "Width": 64,
-              "Height": 64
-            },
-            "Position": {
-              "X": 4224,
-              "Y": 896
-            },
-            "Scale": 4,
-            "Length": 1,
-            "LayerDepth": 2,
-            "Rotation": 0.01,
-            "RotationChange": 0.01,
-            "Loops": 10000,
-            "Flipped": false,
-            "Interval": 1000,
-            "Motion": {
-              "X": 0,
-              "Y": 0
-            }
-          }*/
+          }
         ]
       },
       "When": {
