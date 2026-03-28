@@ -233,7 +233,7 @@
         speak HogwartsOllivander \"You have no idea-#$b#...#$b#Perhaps another time, @.#$b# The wands, and I, need a moment.\"/pause 800/
         globalFade/viewport -1000 -1000/pause 1000/end",
         
-        "{{ModId}}_Ollivander25": "none/8 17/farmer 100 100 0 HogwartsOllivander 7 14 0/skippable/pause 800/
+        "{{ModId}}_Ollivander25/f {{ModId}}_HogwartsOllivander 1000/e {{ModId}}_Ollivander15": "none/8 17/farmer 100 100 0 HogwartsOllivander 7 14 0/skippable/pause 800/
         warp farmer 8 19/playSound doorCreak/pause 400/
         move farmer 0 -2 0/pause 1000/emote farmer 40/pause 1500/
         question null \"#Mr. Ollivander? Sir?\"/pause 500/emote HogwartsOllivander 16/faceDirection HogwartsOllivander 2/
@@ -247,7 +247,7 @@
 		    question null \"#It doesn't feel like you're the one in control of that wand. Maybe it's too dangerous.\"/pause 800/
         speak HogwartsOllivander \"Wands are meant to be wielded, and I intend to wield this one.\"/pause 400/
         emote farmer 40/pause 800/
-		    speak HogwartsOllivander \"You are a student. #$b#What could you possibly know of power or what it takes to survive it? #$b#You should return to the castle, where you at least are safe.\"/
+	    	speak HogwartsOllivander \"You are a student. #$b#What could you possibly know of power or what it takes to survive it? #$b#You should return to the castle, where you at least are safe.\"/
         globalFade/viewport -1000 -1000/pause 1000/end",
 
         "{{ModId}}_Ollivander45": "none/8 6/farmer 7 6 1 HogwartsOllivander 9 6 3/skippable/pause 800/
