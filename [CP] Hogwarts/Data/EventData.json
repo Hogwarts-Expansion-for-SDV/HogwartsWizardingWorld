@@ -3,7 +3,7 @@
     {
       "LogName": "Hogwarts Event Load",
       "Action": "Load",
-      "Target": "Data/Events/{{ModId}}_ForbiddenForestCentaurCamp, Data/Events/{{ModId}}_HogwartsBellTowerCourtyard, Data/Events/{{ModId}}_HogwartsGrandStaircase, Data/Events/{{ModId}}_HogwartsPotionsClassroom, Data/Events/{{ModId}}_HogwartsTransfigurationClassroom, Data/Events/{{ModId}}_Ollivanders",
+      "Target": "Data/Events/{{ModId}}_ForbiddenForestCentaurCamp, Data/Events/{{ModId}}_HogwartsBellTowerCourtyard, Data/Events/{{ModId}}_HogwartsGrandStaircase, Data/Events/{{ModId}}_HogwartsPotionsClassroom, Data/Events/{{ModId}}_HogwartsTransfigurationClassroom, Data/Events/{{ModId}}_Ollivanders, Data/Events/{{ModId}}_HogsmeadeVillage",
       "FromFile": "Data/blank.json"
     },
     {
@@ -161,6 +161,43 @@
         globalFade/viewport -1000 -1000/pause 1000/end"
       }
     },
+    	// Hogsmeade 
+    {
+      "LogName": "Hogsmeade - Hog's Head Events",
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_HogsmeadeVillage",
+      "Entries": {
+        "{{ModId}}_Ollivander15/f {{ModId}}_HogwartsOllivander 500/e {{ModId}}_Ollivander05": "none/55 78/farmer 200 200 0 HogwartsOllivander 52 77 2 HogwartsAberforth 50 75 2/skippable/pause 500/playMusic none/pause 300
+		/speak HogwartsAberforth \"You're lurking again. Come in or clear off.\"/pause 500
+		/speak HogwartsOllivander \"I find the air clearer here.\"/pause 500
+		/speak HogwartsAberforth \"Air's the same on both sides of the door. #$b#It's the man that's different.\"/pause 200
+		/speak HogwartsAberforth \"You're not the only one who's buried family.\"/pause 500
+		/emote HogwartsOllivander 12/faceDirection HogwartsOllivander 0/pause 500
+		/speak HogwartsOllivander \"No, but you still have a son.\"/pause 500
+		/speak HogwartsAberforth \"Aye.#$b#Found that out late, didn't I?\"/pause 500
+		/emote HogwartsOllivander 28/pause 500
+		/speak HogwartsOllivander \"...That was poorly said.\"/pause 500
+		/speak HogwartsAberforth \"It was. And you should see the look on your face.\"
+		/move HogwartsAberforth 0 2 2/pause 500
+		/speak HogwartsAberforth \"My brother used to get that look too.\"/pause 200/faceDirection HogwartsOllivander 2/pause 800
+		/speak HogwartsAberforth \"... Right before he'd decide he was going to do something selfish.\"/pause 500
+		/speak HogwartsOllivander \"Your brother possessed courage I do not claim.\"/pause 500
+		/speak HogwartsAberforth \"He was cracked clean-through with pride.\"/pause 500/faceDirection HogwartsAberforth 1
+		/speak HogwartsAberforth \"Same as you.\"/pause 500/faceDirection HogwartsOllivander 3
+		/speak HogwartsOllivander \"Albus, he - He stood against darkness and did not yield.\"/pause 500
+		/speak HogwartsOllivander \"Magic answered him in ways it never has me.\"/pause 500
+		/speak HogwartsAberforth \"He died anyway, didn't he?\"/pause 800/move HogwartsOllivander 0 2 2/pause 200
+		/speak HogwartsOllivander \"If I had possessed such power...#$b$If I had known the right means...\"/pause 500/faceDirection HogwartsAberforth 2
+		/speak HogwartsAberforth \"Listen to yourself. Acting like dittany will soothe a dragon bite. Power don't-\"/pause 500/move HogwartsOllivander 0 1 2
+		/speak HogwartsOllivander \"With the right tools, I could be like Albus...\"/pause 500/move HogwartsAberforth 0 1 2
+		/speak HogwartsAberforth \"Ollivander!#$b#It takes more than spellotape to fix a wand. Are you listening, old man?\"/pause 500
+		/speak HogwartsOllivander \"...I must be going.\"/pause 500
+		/speak HogwartsAberforth \"Aye. Suit yourself.\"/pause 500/playSound wand/warp HogwartsOllivander 100 100/pause 800
+		/speak HogwartsAberforth \"...\"/pause 800
+		/speak HogwartsAberforth \"Door's always here. Once you come to your senses.\"
+		/globalFade/viewport -1000 -1000/pause 1000/end"
+      }
+    },
     // Ollivanders 
     {
       "LogName": "Hogwarts Ollivanders Events",
@@ -195,63 +232,7 @@
         emote farmer 16/pause 400/
         speak HogwartsOllivander \"You have no idea-#$b#...#$b#Perhaps another time, @.#$b# The wands, and I, need a moment.\"/pause 800/
         globalFade/viewport -1000 -1000/pause 1000/end",
-        "{{ModId}}_Ollivander15/f {{ModId}}_HogwartsOllivander 500/e {{ModID}}_Ollivander05": "none/34 18/farmer 200 200 0 HogwartsOllivander 10 10 2 Aberforth 11 11 2/skippable/pause 500/
-          playMusic none/pause 300/
-          speak Aberforth \"You're lurking again. Come in or clear off.\"/
-          pause 500/
-          speak HogwartsOllivander \"I find the air clearer here.\"/
-          pause 500/
-          speak Aberforth \"Air's the same on both sides of the door.\"/
-          pause 500/
-          speak Aberforth \"It's the man that's different.\"/
-          pause 500/
-          speak Aberforth \"You're not the only one who's buried family.\"/
-          pause 500/
-          emote HogwartsOllivander 12/
-          pause 500/
-          speak HogwartsOllivander \"No, but you still have a son.\"/
-          pause 500/
-          speak Aberforth \"Aye.\"/
-          pause 500/
-          speak Aberforth \"Found that out late, didn't I?\"/
-          pause 500/
-          emote HogwartsOllivander 28/
-          pause 500/
-          speak HogwartsOllivander \"...That was poorly said.\"/
-          pause 500/
-          speak Aberforth \"It was. And you should see the look on your face.\"/
-          pause 500/
-          speak Aberforth \"My brother used to get that look too.\"/
-          pause 500/
-          speak Aberforth \"Right before he'd decide he was going to do something selfish.\"/
-          pause 500/
-          speak HogwartsOllivander \"Your brother possessed courage I do not claim.\"/
-          pause 500/
-          speak Aberforth \"He was cracked clean-through with pride.\"/
-          pause 800/
-          speak Aberforth \"Same as you.\"/
-          pause 500/
-          speak HogwartsOllivander \"Albus, he - He stood against darkness and did not yield.\"/
-          pause 500/
-          speak HogwartsOllivander \"Magic answered him in ways it never has me.\"/
-          pause 500/
-          speak Aberforth \"He died anyway, didn't he?\"/
-          pause 500/
-          speak HogwartsOllivander \"If I had possessed such power...#$b$If I had known the right means...\"/
-          pause 500/
-          speak Aberforth \"Listen to yourself. Acting like dittany will soothe a dragon bite. Power don't-\"/
-          pause 500/
-          speak HogwartsOllivander \"With the right tools, I could be like Albus...\"/
-          pause 500/
-          speak Aberforth \"Ollivander!#$b#It takes more than spellotape to fix a wand. Are you listening, old man?\"/
-          pause 500/
-          speak HogwartsOllivander \"...I must be going.\"/
-          pause 500/
-          speak Aberforth \"Aye. Suit yourself.\"/
-          pause 500/
-          speak Aberforth \"Door's always here. Once you come to your senses.\"/
-          pause 500/
-          globalFade/viewport -500 -500/pause 500/end",
+        
         "{{ModId}}_Ollivander25": "none/8 17/farmer 7 17 1 HogwartsOllivander 9 17 3/skippable/pause 800/
         question null \"#Mr. Ollivander? Sir?\"/pause 800/
         speak HogwartsOllivander \"Oh, I didn't hear you. Forgive me. I was deep in thought.\"/pause 800/
