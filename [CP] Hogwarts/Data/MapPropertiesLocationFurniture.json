@@ -3,12 +3,20 @@
     {
       "LogName": "Map Properties of Potions Classroom - Location Furniture",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsPotionsClassroom",
+      "Target": "Maps/{{ModId}}_HogwartsPLibraryAnnex",
       "MapProperties": {
-        "LocationFurniture": "Cauldron 14 18 1 false"
+        "LocationFurniture": "Maps_z_AstronomyKitchen_SC_Hogwarts_508 30 16 1 true"
       },
       "When": {
         "HasMod |contains= aedenthorn.LocationFurniture": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Furniture",
+      "Action": "EditData",
+      "Target": "Data/Furniture",
+      "Entries": {
+        "Maps_z_AstronomyKitchen_SC_Hogwarts_508": "Maps_z_AstronomyKitchen_SC_Hogwarts_508/lamp/1 1/1 1/1/500/2/Orange Crystal/508/Maps\\z_AstronomyKitchen_SC_Hogwarts/false/collection_Hogwarts",
       }
     }
   ]

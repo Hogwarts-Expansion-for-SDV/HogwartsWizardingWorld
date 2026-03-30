@@ -1,6 +1,26 @@
 {
   "Changes": [
     {
+      "LogName": "Hogwarts Grand Staircase Secret Room DMTE",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGrandStaircase",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 3,
+            "Y": 80
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/changeMultipleIndex_Once_ObjectPlaced((F)Maps_z_AstronomyKitchen_SC_Hogwarts_508)": "Buildings 2 76=|Buildings 2 77=|Buildings 2 78=|Buildings 2 79=|Buildings3 1 71=|Buildings3 2 71=|Buildings3 3 71=|Buildings3 1 72=|Buildings3 2 72=|Buildings3 3 72=|Buildings3 1 73=|Buildings3 2 73=|Buildings3 3 73=|Buildings3 1 74=|Buildings3 2 74=|Buildings3 3 74=|Buildings3 1 75=|Buildings3 2 75=|Buildings3 3 75=|"
+          }
+        },
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
       "LogName": "Hogwarts Grand Staircase Warps",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsGrandStaircase",
