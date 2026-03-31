@@ -563,6 +563,12 @@
       "FromFile": "assets/Maps/HogwartsGreatHall.tmx"
     },
     {
+      "LogName": "Hogwarts Headmistress Office Load",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_HogwartsHeadmistressOffice",
+      "FromFile": "assets/Maps/HogwartsHeadmistressOffice.tmx"
+    },
+    {
       "LogName": "Hogwarts History of Magic Classroom Load",
       "Action": "Load",
       "Target": "Maps/{{ModId}}_HogwartsHistoryOfMagicClassroom",
@@ -1278,6 +1284,16 @@
           "DefaultArrivalTile": {
             "X": 15,
             "Y": 39
+          }
+        },
+        "{{ModId}}_HogwartsHeadmistressOffice": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsHeadmistressOffice"
+          },
+          "DefaultArrivalTile": {
+            "X": 37,
+            "Y": 54
           }
         },
         "{{ModId}}_HogwartsHistoryOfMagicClassroom": {
