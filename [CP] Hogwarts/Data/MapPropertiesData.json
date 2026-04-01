@@ -385,6 +385,26 @@
         "AmbientNightLight": "150 150 30"
       }
     },
+     {
+      "LogName": "Map Properties of Hogwarts Headmistress Office",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsHeadmistressOffice",
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Hogwarts Map Properties Headmistress Office MMAP",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsHeadmistressOffice",
+      "MapProperties": {
+        "mushymato.MMAP_Panorama": "MMAP_MountainView"
+      },
+      "When": {
+        "HasMod |contains= mushymato.MMAP": true
+      }
+    },
     {
       "LogName": "Map Properties of Hogwarts History of Magic Classroom",
       "Action": "EditMap",
