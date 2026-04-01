@@ -1,11 +1,11 @@
 {
   "Changes": [
     {
-      "LogName": "Map Properties of Potions Classroom - Location Furniture",
+      "LogName": "Map Properties - Location Furniture",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsPLibraryAnnex",
+      "Target": "Maps/{{ModId}}_HogwartsGrandStaircase",
       "MapProperties": {
-        "LocationFurniture": "Maps_z_AstronomyKitchen_SC_Hogwarts_508 30 16 1 true"
+        "LocationFurniture": "AstronomyKitchen_SC_Hogwarts_508 16 80 1 true"
       },
       "When": {
         "HasMod |contains= aedenthorn.LocationFurniture": true
@@ -16,7 +16,7 @@
       "Action": "EditData",
       "Target": "Data/Furniture",
       "Entries": {
-        "Maps_z_AstronomyKitchen_SC_Hogwarts_508": "Maps_z_AstronomyKitchen_SC_Hogwarts_508/lamp/1 1/1 1/1/500/2/Orange Crystal/508/Maps\\z_AstronomyKitchen_SC_Hogwarts/false/collection_Hogwarts",
+        "AstronomyKitchen_SC_Hogwarts_508": "AstronomyKitchen_SC_Hogwarts_508/lamp/1 1/1 1/1/500/2/Orange Crystal/508/Maps\\z_AstronomyKitchen_SC_Hogwarts/false/collection_Hogwarts",
       }
     }
   ]
