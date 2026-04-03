@@ -18,6 +18,120 @@
       "Entries": {
         "AstronomyKitchen_SC_Hogwarts_508": "AstronomyKitchen_SC_Hogwarts_508/lamp/1 1/1 1/1/500/2/Orange Crystal/508/Maps\\z_AstronomyKitchen_SC_Hogwarts/false/collection_Hogwarts",
       }
+    },
+    {
+      "LogName": "Hogwarts SpaceCore Map Tile Trigger",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGrandStaircase",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 5,
+            "Y": 80
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "spacechase0.SpaceCore_TriggerAction {{ModID}}_OrangeCrystal"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= spacechase0.SpaceCore": true
+      }
+    },
+    {
+      "LogName": "Hogwarts SpaceCore Trigger Action",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModID}}_OrangeCrystal": {
+          "Id": "{{ModID}}_OrangeCrystal",
+          "Condition": null,
+          "Trigger": "Manual",
+          "Actions": [
+            "spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_GrandStaircase {{ModId}}_HogwartsGrandStaircase 1,80,16,5/0,0,0,0",
+            "AddItem (O)74 3"
+          ],
+          "MarkActionApplied": false
+        }
+      },
+      "When": {
+        "HasMod |contains= spacechase0.SpaceCore": true
+      }
+    },
+    {
+      "LogName": "Hogwarts SpaceCore Spawnable Definitions",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/SpawnableDefinitions",
+      "Entries": {
+        "{{ModID}}_OrangeCrystal": {
+          "Type": "Furniture",
+          "FurnitureQualifiedId": "(F)AstronomyKitchen_SC_Hogwarts_508",
+          "FurnitureRotation": 1,
+          "FurnitureIsOn": true,
+          "FurnitureCanPickup": true
+        }
+      },
+      "When": {
+        "HasMod |contains= spacechase0.SpaceCore": true
+      }
+    },
+    {
+      "LogName": "Hogwarts SpaceCore Spawning Groups",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/SpawningGroups",
+      "Entries": {
+        "{{ModID}}_GrandStaircase": {
+          "SpawnablesToSpawn": [
+            {
+              "SpawnableIds": [
+                {
+                  "Weight": 1.0,
+                  "Value": "{{ModID}}_OrangeCrystal"
+                }
+              ],
+              "Minimum": 3,
+              "Maximum": 5
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= spacechase0.SpaceCore": true
+      }
+    },
+    {
+      "LogName": "Hogwarts SpaceCore Animation",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/TextureOverrides",
+      "Entries": {
+        "{{ModID}}_Horklump": {
+          "TargetTexture": "assets/Tilesheets/z_ClockTower_Hxoni_Hogwarts.png",
+          "TargetRect": {
+            "X": 0,
+            "Y": 336,
+            "Width": 16,
+            "Height": 16
+          },
+          "SourceTexture": "{{InternalAssetKey: assets/Tilesheets/z_Horklump_Hxoni_Hogwarts.png}}:0..8@100",/*
+          "SourceSizeOverride": {
+            "X": 16,
+            "Y": 16
+          },
+          "SourceSizeModifier": 1,
+          "FullSheetMode": false,
+          "ChancePerTick": 1*/
+        }
+      },
+      "When": {
+        "HasMod |contains= spacechase0.SpaceCore": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Horklump Tilesheet Load",
+      "Action": "Load",
+      "Target": "Maps/z_Horklump_Hxoni_Hogwarts",
+      "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png"
     }
   ]
 }
