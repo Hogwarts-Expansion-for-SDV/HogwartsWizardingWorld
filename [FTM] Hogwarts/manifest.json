@@ -3,13 +3,17 @@
   "Author": "Hogwarts Expansion Team",
   "Version": "0.4.0",
   "Description": "Adds spawning logic to the Hogwarts Expansion",
-  "UniqueID": "HogwartsET.FTM.Hogwarts",
-  "MinimumApiVersion": "4.3.0",
+  "UniqueID": "HogwartsET.FTM",
   "UpdateKeys": [
     "Nexus:14858"
   ],
   "ContentPackFor": {
-    "UniqueID": "Esca.FarmTypeManager",
-    "MinimumVersion": "1.25.0"
-  }
+    "UniqueID": "Esca.FarmTypeManager"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "HogwartsET.CP",
+      "IsRequired": true
+    }
+  ]
 }
