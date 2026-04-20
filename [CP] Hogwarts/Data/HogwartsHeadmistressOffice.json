@@ -1,6 +1,28 @@
 {
   "Changes": [
     {
+      "LogName": "Hogwarts Broomstick Spawn",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsHeadmistressOffice",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 24,
+            "Y": 49
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.Broomstick"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= PeacefulEnd.CustomCompanions": true,
+        "Time": "{{Range: 0600, 1700}}"
+      },
+      "Update": "OnTimeChange"
+    },
+    {
       "LogName": "Hogwarts Headmistress Office Warp",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsHeadmistressOffice",
