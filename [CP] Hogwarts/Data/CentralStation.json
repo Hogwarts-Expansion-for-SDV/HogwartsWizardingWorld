@@ -1,0 +1,23 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Central Station",
+      "Action": "EditData",
+      "Target": "Mods/Pathoschild.CentralStation/Stops",
+      "Entries": {
+        "{{ModId}}_HogsmeadeStationTrain": {
+          "DisplayName": "Hogsmeade Station",
+          "ToLocation": "{{ModId}}_HogsmeadeStation",
+          "Network": "Train",
+          "ToTile": {
+            "X": 33,
+            "Y": 14
+          }
+        }
+      },
+      "When": {
+        "HasMod |contains= Pathoschild.CentralStation": true
+      }
+    }
+  ]
+}
