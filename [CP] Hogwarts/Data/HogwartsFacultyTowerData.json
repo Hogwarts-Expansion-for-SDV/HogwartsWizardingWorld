@@ -262,9 +262,9 @@
       "When": {
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
       }
-    },
+    },/*
     {
-      "LogName": "Faculty Tower Horklump Animation Trigger",
+      "LogName": "Faculty Tower Horklump DMTE",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsFacultyTower",
       "MapTiles": [
@@ -283,6 +283,26 @@
       "When": {
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
       }
-    }
+    },
+    {
+      "LogName": "Faculty Tower Horklump CC",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsFacultyTower",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 12,
+            "Y": 39
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.HorklumpPotted"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= PeacefulEnd.CustomCompanions": true
+      }
+    }*/
   ]
 }
