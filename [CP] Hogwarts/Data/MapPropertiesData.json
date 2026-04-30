@@ -90,7 +90,19 @@
         "NightTiles": "AlwaysFront 28 121 908 AlwaysFront 32 111 908 AlwaysFront 32 125 908 AlwaysFront 37 79 908 AlwaysFront 38 51 908 AlwaysFront 41 111 908 AlwaysFront 41 125 908 AlwaysFront 44 121 908 AlwaysFront 46 79 908 AlwaysFront 47 51 908 AlwaysFront 62 62 908 AlwaysFront 62 87 908 AlwaysFront 62 95 908 AlwaysFront 66 62 908 AlwaysFront 69 87 908 AlwaysFront 69 95 908 AlwaysFront 75 104 908 AlwaysFront 78 31 908 AlwaysFront 79 77 908 AlwaysFront 82 40 908 AlwaysFront 83 31 908 AlwaysFront 83 105 908 AlwaysFront 88 58 908 AlwaysFront 90 67 908 AlwaysFront 93 108 908 AlwaysFront1 93 116 908 AlwaysFront 94 87 908 AlwaysFront 100 67 908 AlwaysFront 101 35 908 AlwaysFront 101 108 908 AlwaysFront1 101 116 908 AlwaysFront 103 56 908 AlwaysFront 103 99 908 AlwaysFront 111 86 908 AlwaysFront 118 55 908 AlwaysFront 121 89 908 AlwaysFront 130 76 908 AlwaysFront 157 31 4",
         "Outdoors": "T",
         "Warp": "-1 99 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 100 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 101 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 102 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 103 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}}",
-        "NPCWarp": "36 155 {{ModId}}_HogwartsSouthWing 28 1 198 110 {{ModId}}_HogsmeadeStation 1 10 "
+        "NPCWarp": "36 155 {{ModId}}_HogwartsSouthWing 28 1 198 110 {{ModId}}_HogsmeadeStation 1 10"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogsmeade Village MMAP",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapProperties": {
+        "mushymato.MMAP_SteamOverlay": "T {{Random: -0.1, 0, 0.1|key=X}} {{Random: -0.1, 0, 0.1|key=Y}} White 0.4 4"
+      },
+      "When": {
+        "HasMod |contains= mushymato.MMAP": true,
+        "Season": "Winter"
       }
     },
     {
@@ -547,6 +559,7 @@
       "Target": "Maps/{{ModId}}_ForbiddenForest",
       "MapProperties": {
         "mushymato.MMAP_LightRays": "T",
+        "mushymato.MMAP_WoodsBaubles": "T",
         "mushymato.MMAP_WoodsLighting": "T T false",
         "mushymato.MMAP_WoodsDebris": "-2"
       },
@@ -570,6 +583,7 @@
       "Target": "Maps/{{ModId}}_ForbiddenForestCentaurCamp",
       "MapProperties": {
         "mushymato.MMAP_LightRays": "T",
+        "mushymato.MMAP_WoodsBaubles": "T",
         "mushymato.MMAP_WoodsLighting": "T T false",
         "mushymato.MMAP_WoodsDebris": "-2"
       },

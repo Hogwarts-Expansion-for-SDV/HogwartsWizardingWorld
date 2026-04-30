@@ -207,7 +207,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "MEEP_CloseupInteraction_Image {{ModId}}/transparentstellascope 0 0 128 128"
+            "Action": "mushymato.MMAP_ScaledOverlay 1000 {{ModId}}/transparentstellascope LetterBox"
           }
         },
         {
@@ -240,10 +240,10 @@
             "Action": "MEEP_CloseupInteraction_Image {{ModId}}/transparentstellascope 0 0 128 128"
           }
         }
-      ],
+      ],/*
       "When": {
-        "HasMod |contains= DecidedlyHuman.MappingExtensionsAndExtraProperties": true
-      }
+        "HasMod |contains= mushymato.MMAP": true
+      }*/
     },
     {
       "LogName": "Hogwarts Astronomy Classroom Warp",

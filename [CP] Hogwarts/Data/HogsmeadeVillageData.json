@@ -1902,7 +1902,134 @@
         }
       ]
     },
-    /*Animation*/
+    {
+      "LogName": "Hogsmeade Village MMAP Critter Birdie",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 121,
+            "Y": 14
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "mushymato.MMAP_Critter": "Birdie T {{Random: {{Range: 1, 3}}|key={{Time}}}}"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= mushymato.MMAP": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Hogsmeade Village MMAP Smoke",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 49,
+            "Y": 70
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "mushymato.MMAP_TAS": "{{ModId}}_WhiteSmoke"
+          }
+        },
+        {
+          "Position": {
+            "X": 122,
+            "Y": 91
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "mushymato.MMAP_TAS": "{{ModId}}_Lime"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= mushymato.MMAP": true
+      }
+    },
+    {
+      "LogName": "Hogsmeade Village MMAP Animation Dictionary",
+      "Action": "EditData",
+      "Target": "mushymato.MMAP/TAS",
+      "Entries": {
+        "{{ModId}}_WhiteSmoke": {
+          "Id": "{{ModId}}_WhiteSmoke",
+          "Texture": "LooseSprites/Cursors",
+          "DrawAboveAlwaysFront": true,
+          "SourceRect": {
+            "X": 372,
+            "Y": 1956,
+            "Width": 10,
+            "Height": 10
+          },
+          "Alpha": 0.75,
+          "AlphaFade": 0.002,
+          "Motion": "0,-0.5",
+          "Acceleration": "-0.002,0",
+          "Interval": 99999,
+          "LayerDepth": 0.144,
+          "SortOffset": 0,
+          "Scale": 0.75,
+          "ScaleChange": 0.01,
+          "Color": "WhiteSmoke",
+          "SpawnInterval": 100,
+          // "SpawnDelay": 1000,
+          "RandMin": {
+            "PositionOffset": "-8,0",
+            "LayerDepth": 0,
+            "RotationChange": -0.0613592315155
+          },
+          "RandMax": {
+            "PositionOffset": "16,4",
+            "LayerDepth": 0.01,
+            "RotationChange": 0.0736310778185
+          }
+        },
+        "{{ModId}}_Lime": {
+          "Id": "{{ModId}}_Lime",
+          "Texture": "LooseSprites/Cursors",
+          "DrawAboveAlwaysFront": true,
+          "SourceRect": {
+            "X": 372,
+            "Y": 1956,
+            "Width": 10,
+            "Height": 10
+          },
+          "Alpha": 0.75,
+          "AlphaFade": 0.002,
+          "Motion": "0,-0.5",
+          "Acceleration": "-0.002,0",
+          "Interval": 99999,
+          "LayerDepth": 0.144,
+          "SortOffset": 0,
+          "Scale": 0.75,
+          "ScaleChange": 0.01,
+          "Color": "Lime",
+          "SpawnInterval": 100,
+          // "SpawnDelay": 1000,
+          "RandMin": {
+            "PositionOffset": "-8,0",
+            "LayerDepth": 0,
+            "RotationChange": -0.0613592315155
+          },
+          "RandMax": {
+            "PositionOffset": "16,4",
+            "LayerDepth": 0.01,
+            "RotationChange": 0.0736310778185
+          }
+        }
+      },
+      "When": {
+        "HasMod |contains= mushymato.MMAP": true
+      }
+    }
+    /*Bird Animation DMTE
     {
       "LogName": "Hogsmeade Village Animation",
       "Action": "EditData",
@@ -1961,6 +2088,6 @@
       "When": {
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
       }
-    }
+    }*/
   ]
 }
