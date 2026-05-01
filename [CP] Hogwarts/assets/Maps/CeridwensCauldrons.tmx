@@ -1,62 +1,367 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="29" height="34" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="7">
- <properties>
-  <property name="AmbientLight" value="255 255 255"/>
-  <property name="Doors" value="5 23 1 120 3 17 1 120 12 17 1 120 21 17 1 120"/>
-  <property name="Warp" value="9 17 Farm 21 22"/>
-  <property name="sw1" value="4435"/>
-  <property name="sw2" value="12"/>
-  <property name="sw3" value="168"/>
-  <property name="sw4" value="69"/>
-  <property name="sw5" value="3"/>
-  <property name="sw6" value="1"/>
- </properties>
- <tileset firstgid="1" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="13" height="21" tilewidth="16" tileheight="16" infinite="0" nextlayerid="20" nextobjectid="1">
+ <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
   <image source="townInterior.png" width="512" height="1088"/>
  </tileset>
- <tileset firstgid="2177" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
-  <image source="walls_and_floors.png" width="256" height="560"/>
+ <tileset firstgid="2177" name="z_Potions_Katy_Hogwarts" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="z_Potions_Katy_Hogwarts.png" width="512" height="1088"/>
  </tileset>
- <tileset firstgid="2737" name="z_hptiles_Hogwarts" tilewidth="16" tileheight="16" tilecount="2048" columns="32">
-  <image source="z_hptiles_Hogwarts.png" width="512" height="1024"/>
+ <tileset firstgid="4353" name="z_FacultyTower_Hxoni_Hogwarts" tilewidth="16" tileheight="16" tilecount="437" columns="19">
+  <image source="z_FacultyTower_Hxoni_Hogwarts.png" width="304" height="368"/>
  </tileset>
- <layer id="1" name="Back" width="29" height="34">
-  <data encoding="base64" compression="zlib">
-   eJxjYBgFo2BoAm1u3PgyJ2F5QmqQ1cKANzduDFJHSJ6QGmS1MADTRw88aueondSyE91eXIBaagbKzoGKT2LKOUrV4IvP4ZpuR4qd5KQTcjEMkFpnUoJHWnyO2jlq56idxNlJCJCilhgAAIS4C/s=
-  </data>
+ <tileset firstgid="4790" name="z_Library_HitMe_Hogwarts" tilewidth="16" tileheight="16" tilecount="924" columns="21">
+  <image source="z_Library_HitMe_Hogwarts.png" width="336" height="704"/>
+ </tileset>
+ <tileset firstgid="5714" name="z_GrandStaircase_HitMe_Hogwarts" tilewidth="16" tileheight="16" tilecount="420" columns="21">
+  <image source="z_GrandStaircase_HitMe_Hogwarts.png" width="336" height="320"/>
+  <tile id="336">
+   <animation>
+    <frame tileid="336" duration="250"/>
+    <frame tileid="337" duration="250"/>
+    <frame tileid="338" duration="250"/>
+    <frame tileid="339" duration="250"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="6134" name="z_HogsmeadeInterior_Letteas_Hogwarts" tilewidth="16" tileheight="16" tilecount="644" columns="23">
+  <image source="z_HogsmeadeInterior_Letteas_Hogwarts.png" width="368" height="448"/>
+  <tile id="461">
+   <animation>
+    <frame tileid="461" duration="250"/>
+    <frame tileid="644" duration="250"/>
+    <frame tileid="645" duration="250"/>
+    <frame tileid="646" duration="250"/>
+    <frame tileid="461" duration="250"/>
+    <frame tileid="644" duration="250"/>
+    <frame tileid="645" duration="250"/>
+    <frame tileid="646" duration="250"/>
+    <frame tileid="461" duration="250"/>
+    <frame tileid="644" duration="250"/>
+    <frame tileid="645" duration="250"/>
+    <frame tileid="646" duration="250"/>
+    <frame tileid="461" duration="250"/>
+    <frame tileid="644" duration="250"/>
+    <frame tileid="645" duration="250"/>
+    <frame tileid="646" duration="250"/>
+    <frame tileid="461" duration="250"/>
+    <frame tileid="644" duration="250"/>
+    <frame tileid="645" duration="250"/>
+    <frame tileid="646" duration="250"/>
+    <frame tileid="647" duration="250"/>
+    <frame tileid="648" duration="250"/>
+    <frame tileid="649" duration="250"/>
+    <frame tileid="650" duration="250"/>
+    <frame tileid="461" duration="250"/>
+    <frame tileid="644" duration="250"/>
+    <frame tileid="645" duration="250"/>
+    <frame tileid="646" duration="250"/>
+    <frame tileid="647" duration="250"/>
+    <frame tileid="648" duration="250"/>
+    <frame tileid="649" duration="250"/>
+    <frame tileid="650" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="507">
+   <animation>
+    <frame tileid="507" duration="150"/>
+    <frame tileid="667" duration="150"/>
+    <frame tileid="668" duration="150"/>
+    <frame tileid="669" duration="150"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="6829" name="z_FacultyTower_HitMe_Hogwarts" tilewidth="16" tileheight="16" tilecount="180" columns="12">
+  <image source="z_FacultyTower_HitMe_Hogwarts.png" width="192" height="240"/>
+ </tileset>
+ <tileset firstgid="7009" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="7073" name="z_HogsmeadeInterior_Hxoni_Hogwarts" tilewidth="16" tileheight="16" tilecount="552" columns="23">
+  <image source="z_HogsmeadeInterior_Hxoni_Hogwarts.png" width="368" height="384"/>
+  <tile id="1">
+   <animation>
+    <frame tileid="1" duration="150"/>
+    <frame tileid="184" duration="150"/>
+    <frame tileid="185" duration="150"/>
+    <frame tileid="186" duration="150"/>
+    <frame tileid="1" duration="150"/>
+    <frame tileid="184" duration="150"/>
+    <frame tileid="185" duration="150"/>
+    <frame tileid="186" duration="150"/>
+    <frame tileid="187" duration="150"/>
+    <frame tileid="188" duration="150"/>
+    <frame tileid="189" duration="150"/>
+    <frame tileid="190" duration="150"/>
+    <frame tileid="187" duration="150"/>
+    <frame tileid="184" duration="150"/>
+    <frame tileid="185" duration="150"/>
+    <frame tileid="186" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="47">
+   <animation>
+    <frame tileid="47" duration="150"/>
+    <frame tileid="207" duration="150"/>
+    <frame tileid="208" duration="150"/>
+    <frame tileid="209" duration="150"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="1" name="Back" width="13" height="21">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+4822,4821,4822,4822,4821,4822,4821,4822,4821,4822,4821,4821,4822,
+4843,4842,4843,4843,4842,4843,4842,4843,4842,4843,4842,4842,4843,
+4822,4821,4822,4822,4821,4822,4821,4822,4821,4822,4821,4821,4822,
+4914,7303,7304,7303,7304,7303,7304,7303,7304,7303,7304,7303,7304,
+4935,7326,7327,7326,7327,7326,7327,7326,7327,7326,7327,7326,7327,
+4935,4915,4914,4914,4936,4935,4936,4935,4936,4914,4915,4915,4843,
+4914,4936,4935,4935,4915,2190,2190,2191,4915,4935,4936,4936,4822,
+4935,4915,4914,4914,4936,2190,2191,2191,4936,4914,4915,4915,4843,
+4914,4915,4935,4935,4915,4914,4915,2147490411,4915,4935,4936,4936,4822,
+4935,4936,4914,4914,4936,4935,4936,4935,4936,4914,4915,4915,4843,
+4914,4915,4935,4935,4936,4935,4936,4935,4936,4935,4936,4936,4822,
+4935,4915,4914,4914,4915,4914,4915,4914,4915,4914,4915,4915,4843,
+4914,4936,4935,4935,4936,4935,4936,4935,4936,4935,4936,4936,4822,
+4935,4915,4914,4914,4915,4914,4915,4914,4915,4914,4915,4915,4843,
+4914,4936,4935,4935,4936,4935,4936,4935,4936,4935,4936,4936,4822,
+4935,4843,4842,4843,4842,4843,4842,4843,4842,4843,4842,4842,4843,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
  </layer>
- <objectgroup id="2" name="Back"/>
- <layer id="3" name="Buildings" width="29" height="34">
-  <data encoding="base64" compression="zlib">
-   eJztl01Kw0AYhr8kddMm2XoBPYbaLgKKZ1BpaUWta6HrkgPoQt2ouKh4AnXjD3oM7ULEU6jgNyZDZqbzl6RVhL7wMk2+N/PMpDNT6gCAM/XU/8xNgPoFwIPKg6Stq9xPrHye8U+WMBuQqDEDIyL3YkM9wn50fQhZoMxuTe1YqC8HACtBdk2ZsmclWWDnSVV1+TYW6jukjyC7Zucpqo25Dp+VMk8wc4o+C+TMObw/b8mUZKXMW8zcoe8VTFE6piQrZdZcvp0Es2nIDQz1vkUfbJbdp3SsEaj38rgyf8Wsop/S7CPaU7hsxhfGtop7tpe2OpfJRAKTnBMA+jOpbEZkynTgKAqM9i0yRLMuzzy3e6y0LiFbP3nXSRmTdWR7hoxLkYLZ+wVmkbVZ1JS5FQJsh/rxbab1Vjh6z6Qu5nZDfp4y7Xl2/YlawN/ARfRSIK9T5pHH+xh9mJP56iftGrLW0RsG5hX2f42+8fjPOj1XAF7Qw4r9uMh3oXu3Jn0g6xP9lYNJxDLf/ILwnKLMluX6M+ldM+42Mjrpu1WdtcMJzdv2/0WerI2/ARnwjl4=
-  </data>
+ <layer id="2" name="Back1" width="13" height="21">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,6884,6870,6870,6870,6870,6870,6870,6870,6870,6870,6872,0,
+0,4510,0,0,0,0,0,0,0,0,0,4472,0,
+0,4529,6870,6870,6870,6870,6870,6870,6870,6870,6870,4491,0,
+0,6896,0,0,0,0,0,0,0,0,0,6871,0,
+0,6896,0,0,0,6828,0,0,0,0,0,6871,0,
+0,6896,0,0,0,7107,0,2147490817,0,0,0,6871,0,
+0,6896,0,0,0,7130,0,2147490840,0,0,0,6871,0,
+0,6896,0,0,0,0,0,0,0,0,0,6871,0,
+0,0,0,0,0,0,0,0,0,0,0,6871,0,
+0,6896,0,0,0,0,0,0,0,0,0,6871,0,
+0,6896,0,0,0,0,0,0,0,0,0,6871,0,
+0,6896,0,0,0,7349,7350,7351,0,0,0,6871,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
  </layer>
- <objectgroup id="4" name="Buildings">
-  <object id="3" name="TileData" x="80" y="368" width="16" height="16">
-   <properties>
-    <property name="Action" value="Door"/>
-   </properties>
-  </object>
-  <object id="4" name="TileData" x="48" y="272" width="16" height="16">
-   <properties>
-    <property name="Action" value="Door"/>
-   </properties>
-  </object>
-  <object id="5" name="TileData" x="192" y="272" width="16" height="16">
-   <properties>
-    <property name="Action" value="Door"/>
-   </properties>
-  </object>
-  <object id="6" name="TileData" x="336" y="272" width="16" height="16">
-   <properties>
-    <property name="Action" value="Door"/>
-   </properties>
-  </object>
- </objectgroup>
- <layer id="5" name="Front" width="29" height="34">
-  <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AU0AJo8DIwaPLiV7ONj4FhOx9xakHgFSMqjQ68gGZ4EzDnGtC+60DsAlTnSoSdtUA1dUBcT4TaoQxeM6LSwwksA+LFUPYSKB+GGZDY2NQwEKEGXe1AA0s6qoGBSDqqAQFHVlSaGDUBwLQdCMRBjLjVkAqKiMgvhUTmqe+DIO8tBOJFDITTOiV4ORCvwOMGfOnuEZXKYQ5gHcAJxPnQeIelu3ws6YCJjzSzuYDquYGYB02fBpCvScAsNai8Eh+mGD6gBVSjDcQ6aGo9gHxPAvrdoPJOfJhi+IAXUI03EPuQGD6kAFlgfMsBsTw03rMI2UUFtygA7XIA4gQsaQ05LmBpUQFJ7D4PfrN3szAw7AHivSzEuwc5LkhNiyCAzz/YAAuaHUo0jF8YUAHaoYpkjxMd7HQB2uFKB3vwAVhZiw1Ts/wlVObCQCJUfTPFPkMAAL0sUlk=
-  </data>
+ <layer id="3" name="Buildings" width="13" height="21">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+5259,5261,5261,5261,5261,5261,5261,5261,5261,5261,5261,5261,5239,
+5130,5958,5957,5957,5958,5957,5958,5957,5958,5957,5957,5958,5129,
+5130,5979,5957,5957,5979,5957,5979,5981,5979,5957,5957,5979,5129,
+5130,5958,5978,5978,5958,5978,5958,5978,5958,5978,5978,5958,5129,
+5130,5979,5957,5957,5979,5957,5979,5957,5979,5957,5957,5979,5129,
+5130,1427,0,1427,1427,1427,1427,0,7099,7100,7175,7176,5129,
+5130,2147490335,0,0,0,0,0,0,0,0,0,7165,5129,
+5130,7165,0,0,0,7073,7074,7075,0,0,0,7188,5129,
+5130,7165,0,0,7217,7096,7097,7098,7105,0,0,7211,5129,
+5130,7165,0,0,0,7119,7120,7121,7128,0,0,2830,5129,
+5130,7165,0,0,7106,7142,7143,7144,7176,0,0,0,5129,
+5130,7190,0,0,7129,7211,7212,7213,2147490839,0,7154,0,5129,
+5130,7213,0,0,0,0,0,0,0,0,7188,0,5129,
+5130,7176,0,0,0,0,0,0,0,0,7211,7212,5129,
+5130,0,0,0,0,0,0,0,0,0,0,2935,5129,
+5130,0,0,0,0,0,0,0,0,0,0,0,5129,
+5217,0,0,0,5196,0,0,0,5198,0,0,0,5219,
+5197,5197,5197,5197,5217,5218,5218,5218,5219,5197,5197,5197,5197,
+0,0,0,0,5197,5197,5197,5197,5197,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
  </layer>
- <objectgroup id="6" name="Front"/>
+ <layer id="4" name="Buildings1" width="13" height="21">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1427,1427,1427,1427,1427,1427,1427,1427,1427,1427,1427,0,
+0,5126,5126,5126,5126,5126,5126,5126,5126,5126,5126,5126,0,
+0,5208,0,5207,5208,0,0,0,5207,5208,0,5207,0,
+0,5208,0,5207,5208,0,0,0,5207,5208,0,0,0,
+0,5229,1427,2935,7175,7176,0,1427,6758,6759,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,7171,0,
+0,2147490752,0,0,0,0,0,0,0,0,0,7191,0,
+0,2147490775,0,0,0,6617,6618,6619,0,0,0,2798,0,
+0,2147490798,0,0,0,0,0,0,0,0,0,0,0,
+0,7192,0,0,0,0,0,0,0,0,0,0,0,
+0,7197,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,2903,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="17" name="Buildings2" width="13" height="21">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,6155,0,0,0,0,0,0,0,0,0,0,
+0,0,6178,0,5208,0,0,0,0,0,0,0,0,
+0,0,6178,0,0,0,0,0,0,0,0,0,0,
+0,0,6201,0,7152,7153,0,0,0,0,7152,0,0,
+0,0,0,0,2936,7196,7197,0,0,0,0,7237,0,
+0,0,0,0,0,0,0,0,0,0,0,6762,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,7235,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,2147490410,0,0,0,0,
+0,0,0,0,0,0,0,0,7235,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="5" name="Front" width="13" height="21">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,5124,5124,5124,5124,5124,5124,5124,5124,5124,5124,5124,0,
+0,5187,0,5207,0,0,0,0,5207,5208,7078,5186,0,
+0,0,0,0,0,0,0,0,0,0,7101,0,0,
+0,0,0,2903,2904,7173,7174,0,7076,7077,7124,7153,0,
+0,0,0,0,0,0,0,0,0,0,0,7166,0,
+0,7167,0,0,0,0,0,0,0,0,0,7168,0,
+0,0,0,0,7194,0,0,0,7082,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,7169,0,0,7083,0,0,0,7153,0,0,0,0,
+0,7174,0,0,0,7236,0,0,2147490816,0,7155,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,7153,0,0,0,0,0,0,0,0,0,7189,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,5124,5124,5124,5124,5124,5124,5124,5124,5124,5124,5124,0,
+0,5187,0,5186,5187,0,0,0,5186,5187,0,5186,0,
+0,5218,5218,5218,0,0,0,0,0,5218,5218,5218,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="19" name="Front1" width="13" height="21">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,7122,7123,0,
+0,7234,0,0,0,0,0,0,0,0,7145,7146,0,
+0,0,0,0,7193,7079,0,0,0,2147490750,0,0,0,
+0,0,0,0,0,7102,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,7214,0,
+0,0,0,0,0,0,0,0,0,0,0,7148,0,
+0,2147490729,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,7152,0,
+0,0,0,0,0,0,0,0,0,0,7266,7175,0,
+0,0,0,7194,7195,0,0,7194,7195,0,0,0,0,
+0,0,0,7217,7218,0,0,7217,7240,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="6" name="AlwaysFront" width="13" height="21">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="18" name="AlwaysFront1" width="13" height="21">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="16" name="Paths" width="13" height="21" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,7017,0,0,0,0,0,0,
+0,0,0,0,0,0,7017,0,0,0,0,0,0,
+0,0,0,0,0,0,7017,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="9" name="Back"/>
+ <objectgroup id="10" name="Back1"/>
+ <objectgroup id="11" name="Buildings"/>
+ <objectgroup id="12" name="Buildings1"/>
+ <objectgroup id="13" name="Front"/>
+ <objectgroup id="14" name="AlwaysFront"/>
+ <objectgroup id="15" name="Paths"/>
 </map>

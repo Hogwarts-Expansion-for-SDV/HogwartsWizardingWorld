@@ -1,90 +1,1011 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="12" height="12" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="5">
- <tileset firstgid="1" name="indoor" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="15" height="14" tilewidth="16" tileheight="16" infinite="0" nextlayerid="18" nextobjectid="1">
+ <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
   <image source="townInterior.png" width="512" height="1088"/>
  </tileset>
- <tileset firstgid="2177" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
-  <image source="walls_and_floors.png" width="256" height="560"/>
+ <tileset firstgid="2177" name="z_HogsmeadeInterior_Letteas_Hogwarts" tilewidth="16" tileheight="16" tilecount="648" columns="23">
+  <image source="z_HogsmeadeInterior_Letteas_Hogwarts.png" width="368" height="448"/>
+  <tile id="0"/>
+  <tile id="1"/>
+  <tile id="2"/>
+  <tile id="3"/>
+  <tile id="4"/>
+  <tile id="5"/>
+  <tile id="6"/>
+  <tile id="7"/>
+  <tile id="8"/>
+  <tile id="9"/>
+  <tile id="10"/>
+  <tile id="11"/>
+  <tile id="12"/>
+  <tile id="13"/>
+  <tile id="14"/>
+  <tile id="15"/>
+  <tile id="16"/>
+  <tile id="17"/>
+  <tile id="18"/>
+  <tile id="19"/>
+  <tile id="20"/>
+  <tile id="21"/>
+  <tile id="22"/>
+  <tile id="23"/>
+  <tile id="24"/>
+  <tile id="25"/>
+  <tile id="26"/>
+  <tile id="27"/>
+  <tile id="28"/>
+  <tile id="29"/>
+  <tile id="30"/>
+  <tile id="31"/>
+  <tile id="32"/>
+  <tile id="33"/>
+  <tile id="34"/>
+  <tile id="35"/>
+  <tile id="36"/>
+  <tile id="37"/>
+  <tile id="38"/>
+  <tile id="39"/>
+  <tile id="40"/>
+  <tile id="41"/>
+  <tile id="42"/>
+  <tile id="43"/>
+  <tile id="44"/>
+  <tile id="45"/>
+  <tile id="46"/>
+  <tile id="47"/>
+  <tile id="48"/>
+  <tile id="49"/>
+  <tile id="50"/>
+  <tile id="51"/>
+  <tile id="52"/>
+  <tile id="53"/>
+  <tile id="54"/>
+  <tile id="55"/>
+  <tile id="56"/>
+  <tile id="57"/>
+  <tile id="58"/>
+  <tile id="59"/>
+  <tile id="60"/>
+  <tile id="61"/>
+  <tile id="62"/>
+  <tile id="63"/>
+  <tile id="64"/>
+  <tile id="65"/>
+  <tile id="66"/>
+  <tile id="67"/>
+  <tile id="68"/>
+  <tile id="69"/>
+  <tile id="70"/>
+  <tile id="71"/>
+  <tile id="72"/>
+  <tile id="73"/>
+  <tile id="74"/>
+  <tile id="75"/>
+  <tile id="76"/>
+  <tile id="77"/>
+  <tile id="78"/>
+  <tile id="79"/>
+  <tile id="80"/>
+  <tile id="81"/>
+  <tile id="82"/>
+  <tile id="83"/>
+  <tile id="84"/>
+  <tile id="85"/>
+  <tile id="86"/>
+  <tile id="87"/>
+  <tile id="88"/>
+  <tile id="89"/>
+  <tile id="90"/>
+  <tile id="91"/>
+  <tile id="92"/>
+  <tile id="93"/>
+  <tile id="94"/>
+  <tile id="95"/>
+  <tile id="96"/>
+  <tile id="97"/>
+  <tile id="98"/>
+  <tile id="99"/>
+  <tile id="100"/>
+  <tile id="101"/>
+  <tile id="102"/>
+  <tile id="103"/>
+  <tile id="104"/>
+  <tile id="105"/>
+  <tile id="106"/>
+  <tile id="107"/>
+  <tile id="108"/>
+  <tile id="109"/>
+  <tile id="110"/>
+  <tile id="111"/>
+  <tile id="112"/>
+  <tile id="113"/>
+  <tile id="114"/>
+  <tile id="115"/>
+  <tile id="116"/>
+  <tile id="117"/>
+  <tile id="118"/>
+  <tile id="119"/>
+  <tile id="120"/>
+  <tile id="121"/>
+  <tile id="122"/>
+  <tile id="123"/>
+  <tile id="124"/>
+  <tile id="125"/>
+  <tile id="126"/>
+  <tile id="127"/>
+  <tile id="128"/>
+  <tile id="129"/>
+  <tile id="130"/>
+  <tile id="131"/>
+  <tile id="132"/>
+  <tile id="133"/>
+  <tile id="134"/>
+  <tile id="135"/>
+  <tile id="136"/>
+  <tile id="137"/>
+  <tile id="138"/>
+  <tile id="139"/>
+  <tile id="140"/>
+  <tile id="141"/>
+  <tile id="142"/>
+  <tile id="143"/>
+  <tile id="144"/>
+  <tile id="145"/>
+  <tile id="146"/>
+  <tile id="147"/>
+  <tile id="148"/>
+  <tile id="149"/>
+  <tile id="150"/>
+  <tile id="151"/>
+  <tile id="152"/>
+  <tile id="153"/>
+  <tile id="154"/>
+  <tile id="155"/>
+  <tile id="156"/>
+  <tile id="157"/>
+  <tile id="158"/>
+  <tile id="159"/>
+  <tile id="160"/>
+  <tile id="161"/>
+  <tile id="162"/>
+  <tile id="163"/>
+  <tile id="164"/>
+  <tile id="165"/>
+  <tile id="166"/>
+  <tile id="167"/>
+  <tile id="168"/>
+  <tile id="169"/>
+  <tile id="170"/>
+  <tile id="171"/>
+  <tile id="172"/>
+  <tile id="173"/>
+  <tile id="174"/>
+  <tile id="175"/>
+  <tile id="176"/>
+  <tile id="177"/>
+  <tile id="178"/>
+  <tile id="179"/>
+  <tile id="180"/>
+  <tile id="181"/>
+  <tile id="182"/>
+  <tile id="183"/>
+  <tile id="184"/>
+  <tile id="185"/>
+  <tile id="186"/>
+  <tile id="187"/>
+  <tile id="188"/>
+  <tile id="189"/>
+  <tile id="190"/>
+  <tile id="191"/>
+  <tile id="192"/>
+  <tile id="193"/>
+  <tile id="194"/>
+  <tile id="195"/>
+  <tile id="196"/>
+  <tile id="197"/>
+  <tile id="198"/>
+  <tile id="199"/>
+  <tile id="200"/>
+  <tile id="201"/>
+  <tile id="202"/>
+  <tile id="203"/>
+  <tile id="204"/>
+  <tile id="205"/>
+  <tile id="206"/>
+  <tile id="207"/>
+  <tile id="208"/>
+  <tile id="209"/>
+  <tile id="210"/>
+  <tile id="211"/>
+  <tile id="212"/>
+  <tile id="213"/>
+  <tile id="214"/>
+  <tile id="215"/>
+  <tile id="216"/>
+  <tile id="217"/>
+  <tile id="218"/>
+  <tile id="219"/>
+  <tile id="220"/>
+  <tile id="221"/>
+  <tile id="222"/>
+  <tile id="223"/>
+  <tile id="224"/>
+  <tile id="225"/>
+  <tile id="226"/>
+  <tile id="227"/>
+  <tile id="228"/>
+  <tile id="229"/>
+  <tile id="230"/>
+  <tile id="231"/>
+  <tile id="232"/>
+  <tile id="233"/>
+  <tile id="234"/>
+  <tile id="235"/>
+  <tile id="236"/>
+  <tile id="237"/>
+  <tile id="238"/>
+  <tile id="239"/>
+  <tile id="240"/>
+  <tile id="241"/>
+  <tile id="242"/>
+  <tile id="243"/>
+  <tile id="244"/>
+  <tile id="245"/>
+  <tile id="246"/>
+  <tile id="247"/>
+  <tile id="248"/>
+  <tile id="249"/>
+  <tile id="250"/>
+  <tile id="251"/>
+  <tile id="252"/>
+  <tile id="253"/>
+  <tile id="254"/>
+  <tile id="255"/>
+  <tile id="256"/>
+  <tile id="257"/>
+  <tile id="258"/>
+  <tile id="259"/>
+  <tile id="260"/>
+  <tile id="261"/>
+  <tile id="262"/>
+  <tile id="263"/>
+  <tile id="264"/>
+  <tile id="265"/>
+  <tile id="266"/>
+  <tile id="267"/>
+  <tile id="268"/>
+  <tile id="269"/>
+  <tile id="270"/>
+  <tile id="271"/>
+  <tile id="272"/>
+  <tile id="273"/>
+  <tile id="274"/>
+  <tile id="275"/>
+  <tile id="276"/>
+  <tile id="277"/>
+  <tile id="278"/>
+  <tile id="279"/>
+  <tile id="280"/>
+  <tile id="281"/>
+  <tile id="282"/>
+  <tile id="283"/>
+  <tile id="284"/>
+  <tile id="285"/>
+  <tile id="286"/>
+  <tile id="287"/>
+  <tile id="288"/>
+  <tile id="289"/>
+  <tile id="290"/>
+  <tile id="291"/>
+  <tile id="292"/>
+  <tile id="293"/>
+  <tile id="294"/>
+  <tile id="295"/>
+  <tile id="296"/>
+  <tile id="297"/>
+  <tile id="298"/>
+  <tile id="299"/>
+  <tile id="300"/>
+  <tile id="301"/>
+  <tile id="302"/>
+  <tile id="303"/>
+  <tile id="304"/>
+  <tile id="305"/>
+  <tile id="306"/>
+  <tile id="307"/>
+  <tile id="308"/>
+  <tile id="309"/>
+  <tile id="310"/>
+  <tile id="311"/>
+  <tile id="312"/>
+  <tile id="313"/>
+  <tile id="314"/>
+  <tile id="315"/>
+  <tile id="316"/>
+  <tile id="317"/>
+  <tile id="318"/>
+  <tile id="319"/>
+  <tile id="320"/>
+  <tile id="321"/>
+  <tile id="322"/>
+  <tile id="323"/>
+  <tile id="324"/>
+  <tile id="325"/>
+  <tile id="326"/>
+  <tile id="327"/>
+  <tile id="328"/>
+  <tile id="329"/>
+  <tile id="330"/>
+  <tile id="331"/>
+  <tile id="332"/>
+  <tile id="333"/>
+  <tile id="334"/>
+  <tile id="335"/>
+  <tile id="336"/>
+  <tile id="337"/>
+  <tile id="338"/>
+  <tile id="339"/>
+  <tile id="340"/>
+  <tile id="341"/>
+  <tile id="342"/>
+  <tile id="343"/>
+  <tile id="344"/>
+  <tile id="345"/>
+  <tile id="346"/>
+  <tile id="347"/>
+  <tile id="348"/>
+  <tile id="349"/>
+  <tile id="350"/>
+  <tile id="351"/>
+  <tile id="352"/>
+  <tile id="353"/>
+  <tile id="354"/>
+  <tile id="355"/>
+  <tile id="356"/>
+  <tile id="357"/>
+  <tile id="358"/>
+  <tile id="359"/>
+  <tile id="360"/>
+  <tile id="361"/>
+  <tile id="362"/>
+  <tile id="363"/>
+  <tile id="364"/>
+  <tile id="365"/>
+  <tile id="366"/>
+  <tile id="367"/>
+  <tile id="368"/>
+  <tile id="369"/>
+  <tile id="370"/>
+  <tile id="371"/>
+  <tile id="372"/>
+  <tile id="373"/>
+  <tile id="374"/>
+  <tile id="375"/>
+  <tile id="376"/>
+  <tile id="377"/>
+  <tile id="378"/>
+  <tile id="379"/>
+  <tile id="380"/>
+  <tile id="381"/>
+  <tile id="382"/>
+  <tile id="383"/>
+  <tile id="384"/>
+  <tile id="385"/>
+  <tile id="386"/>
+  <tile id="387"/>
+  <tile id="388"/>
+  <tile id="389"/>
+  <tile id="390"/>
+  <tile id="391"/>
+  <tile id="392"/>
+  <tile id="393"/>
+  <tile id="394"/>
+  <tile id="395"/>
+  <tile id="396"/>
+  <tile id="397"/>
+  <tile id="398"/>
+  <tile id="399"/>
+  <tile id="400"/>
+  <tile id="401"/>
+  <tile id="402"/>
+  <tile id="403"/>
+  <tile id="404"/>
+  <tile id="405"/>
+  <tile id="406"/>
+  <tile id="407"/>
+  <tile id="408"/>
+  <tile id="409"/>
+  <tile id="410"/>
+  <tile id="411"/>
+  <tile id="412"/>
+  <tile id="413"/>
+  <tile id="414"/>
+  <tile id="415"/>
+  <tile id="416"/>
+  <tile id="417"/>
+  <tile id="418"/>
+  <tile id="419"/>
+  <tile id="420"/>
+  <tile id="421"/>
+  <tile id="422"/>
+  <tile id="423"/>
+  <tile id="424"/>
+  <tile id="425"/>
+  <tile id="426"/>
+  <tile id="427"/>
+  <tile id="428"/>
+  <tile id="429"/>
+  <tile id="430"/>
+  <tile id="431"/>
+  <tile id="432"/>
+  <tile id="433"/>
+  <tile id="434"/>
+  <tile id="435"/>
+  <tile id="436"/>
+  <tile id="437"/>
+  <tile id="438"/>
+  <tile id="439"/>
+  <tile id="440"/>
+  <tile id="441"/>
+  <tile id="442"/>
+  <tile id="443"/>
+  <tile id="444"/>
+  <tile id="445"/>
+  <tile id="446"/>
+  <tile id="447"/>
+  <tile id="448"/>
+  <tile id="449"/>
+  <tile id="450"/>
+  <tile id="451"/>
+  <tile id="452"/>
+  <tile id="453"/>
+  <tile id="454"/>
+  <tile id="455"/>
+  <tile id="456"/>
+  <tile id="457"/>
+  <tile id="458"/>
+  <tile id="459"/>
+  <tile id="460"/>
+  <tile id="461"/>
+  <tile id="462"/>
+  <tile id="463"/>
+  <tile id="464"/>
+  <tile id="465"/>
+  <tile id="466"/>
+  <tile id="467"/>
+  <tile id="468"/>
+  <tile id="469"/>
+  <tile id="470"/>
+  <tile id="471"/>
+  <tile id="472"/>
+  <tile id="473"/>
+  <tile id="474"/>
+  <tile id="475"/>
+  <tile id="476"/>
+  <tile id="477"/>
+  <tile id="478"/>
+  <tile id="479"/>
+  <tile id="480"/>
+  <tile id="481"/>
+  <tile id="482"/>
+  <tile id="483"/>
+  <tile id="484"/>
+  <tile id="485"/>
+  <tile id="486"/>
+  <tile id="487"/>
+  <tile id="488"/>
+  <tile id="489"/>
+  <tile id="490"/>
+  <tile id="491"/>
+  <tile id="492"/>
+  <tile id="493"/>
+  <tile id="494"/>
+  <tile id="495"/>
+  <tile id="496"/>
+  <tile id="497"/>
+  <tile id="498"/>
+  <tile id="499"/>
+  <tile id="500"/>
+  <tile id="501"/>
+  <tile id="502"/>
+  <tile id="503"/>
+  <tile id="504"/>
+  <tile id="505"/>
+  <tile id="506"/>
+  <tile id="507"/>
+  <tile id="508"/>
+  <tile id="509"/>
+  <tile id="510"/>
+  <tile id="511"/>
+  <tile id="512"/>
+  <tile id="513"/>
+  <tile id="514"/>
+  <tile id="515"/>
+  <tile id="516"/>
+  <tile id="517"/>
+  <tile id="518"/>
+  <tile id="519"/>
+  <tile id="520"/>
+  <tile id="521"/>
+  <tile id="522"/>
+  <tile id="523"/>
+  <tile id="524"/>
+  <tile id="525"/>
+  <tile id="526"/>
+  <tile id="527"/>
+  <tile id="528"/>
+  <tile id="529"/>
+  <tile id="530"/>
+  <tile id="531"/>
+  <tile id="532"/>
+  <tile id="533"/>
+  <tile id="534"/>
+  <tile id="535"/>
+  <tile id="536"/>
+  <tile id="537"/>
+  <tile id="538"/>
+  <tile id="539"/>
+  <tile id="540"/>
+  <tile id="541"/>
+  <tile id="542"/>
+  <tile id="543"/>
+  <tile id="544"/>
+  <tile id="545"/>
+  <tile id="546"/>
+  <tile id="547"/>
+  <tile id="548"/>
+  <tile id="549"/>
+  <tile id="550"/>
+  <tile id="551"/>
+  <tile id="552"/>
+  <tile id="553"/>
+  <tile id="554"/>
+  <tile id="555"/>
+  <tile id="556"/>
+  <tile id="557"/>
+  <tile id="558"/>
+  <tile id="559"/>
+  <tile id="560"/>
+  <tile id="561"/>
+  <tile id="562"/>
+  <tile id="563"/>
+  <tile id="564"/>
+  <tile id="565"/>
+  <tile id="566"/>
+  <tile id="567"/>
+  <tile id="568"/>
+  <tile id="569"/>
+  <tile id="570"/>
+  <tile id="571"/>
+  <tile id="572"/>
+  <tile id="573"/>
+  <tile id="574"/>
+  <tile id="575"/>
+  <tile id="576"/>
+  <tile id="577"/>
+  <tile id="578"/>
+  <tile id="579"/>
+  <tile id="580"/>
+  <tile id="581"/>
+  <tile id="582"/>
+  <tile id="583"/>
+  <tile id="584"/>
+  <tile id="585"/>
+  <tile id="586"/>
+  <tile id="587"/>
+  <tile id="588"/>
+  <tile id="589"/>
+  <tile id="590"/>
+  <tile id="591"/>
+  <tile id="592"/>
+  <tile id="593"/>
+  <tile id="594"/>
+  <tile id="595"/>
+  <tile id="596"/>
+  <tile id="597"/>
+  <tile id="598"/>
+  <tile id="599"/>
+  <tile id="600"/>
+  <tile id="601"/>
+  <tile id="602"/>
+  <tile id="603"/>
+  <tile id="604"/>
+  <tile id="605"/>
+  <tile id="606"/>
+  <tile id="607"/>
+  <tile id="608"/>
+  <tile id="609"/>
+  <tile id="610"/>
+  <tile id="611"/>
+  <tile id="612"/>
+  <tile id="613"/>
+  <tile id="614"/>
+  <tile id="615"/>
+  <tile id="616"/>
+  <tile id="617"/>
+  <tile id="618"/>
+  <tile id="619"/>
+  <tile id="620"/>
+  <tile id="621"/>
+  <tile id="622"/>
+  <tile id="623"/>
+  <tile id="624"/>
+  <tile id="625"/>
+  <tile id="626"/>
+  <tile id="627"/>
+  <tile id="628"/>
+  <tile id="629"/>
+  <tile id="630"/>
+  <tile id="631"/>
+  <tile id="632"/>
+  <tile id="633"/>
+  <tile id="634"/>
+  <tile id="635"/>
+  <tile id="636"/>
+  <tile id="637">
+   <animation>
+    <frame tileid="637" duration="500"/>
+    <frame tileid="637" duration="500"/>
+    <frame tileid="637" duration="500"/>
+    <frame tileid="636" duration="500"/>
+    <frame tileid="636" duration="500"/>
+    <frame tileid="636" duration="500"/>
+    <frame tileid="636" duration="500"/>
+    <frame tileid="637" duration="500"/>
+    <frame tileid="637" duration="500"/>
+    <frame tileid="637" duration="500"/>
+    <frame tileid="636" duration="500"/>
+    <frame tileid="636" duration="500"/>
+   </animation>
+  </tile>
+  <tile id="638"/>
+  <tile id="639"/>
+  <tile id="640"/>
+  <tile id="641"/>
+  <tile id="642"/>
+  <tile id="643"/>
+  <tile id="655">
+   <animation>
+    <frame tileid="655" duration="500"/>
+    <frame tileid="655" duration="500"/>
+    <frame tileid="655" duration="500"/>
+    <frame tileid="655" duration="500"/>
+    <frame tileid="656" duration="500"/>
+    <frame tileid="656" duration="500"/>
+    <frame tileid="656" duration="500"/>
+    <frame tileid="655" duration="500"/>
+    <frame tileid="655" duration="500"/>
+    <frame tileid="656" duration="500"/>
+    <frame tileid="655" duration="500"/>
+    <frame tileid="656" duration="500"/>
+    <frame tileid="655" duration="500"/>
+   </animation>
+  </tile>
+  <tile id="768">
+   <animation>
+    <frame tileid="768" duration="500"/>
+    <frame tileid="768" duration="500"/>
+    <frame tileid="790" duration="500"/>
+    <frame tileid="790" duration="500"/>
+    <frame tileid="790" duration="500"/>
+    <frame tileid="768" duration="500"/>
+    <frame tileid="768" duration="500"/>
+    <frame tileid="790" duration="500"/>
+    <frame tileid="790" duration="500"/>
+    <frame tileid="790" duration="500"/>
+    <frame tileid="790" duration="500"/>
+    <frame tileid="768" duration="500"/>
+   </animation>
+  </tile>
+  <tile id="772">
+   <animation>
+    <frame tileid="772" duration="250"/>
+    <frame tileid="773" duration="250"/>
+    <frame tileid="774" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="795">
+   <animation>
+    <frame tileid="795" duration="250"/>
+    <frame tileid="796" duration="250"/>
+    <frame tileid="797" duration="250"/>
+   </animation>
+  </tile>
  </tileset>
- <layer id="1" name="Back" width="12" height="12">
+ <tileset firstgid="2973" name="z_Library_HitMe_Hogwarts" tilewidth="16" tileheight="16" tilecount="924" columns="21">
+  <image source="z_Library_HitMe_Hogwarts.png" width="336" height="704"/>
+ </tileset>
+ <tileset firstgid="3897" name="z_Potions_Katy_Hogwarts" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="z_Potions_Katy_Hogwarts.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="6073" name="z_HeadmistressOffice_Hxoni_Hogwarts" tilewidth="16" tileheight="16" tilecount="312" columns="12">
+  <image source="z_HeadmistressOffice_Hxoni_Hogwarts.png" width="192" height="416"/>
+ </tileset>
+ <tileset firstgid="6385" name="z_GrandStaircase_HitMe_Hogwarts" tilewidth="16" tileheight="16" tilecount="420" columns="21">
+  <image source="z_GrandStaircase_HitMe_Hogwarts.png" width="336" height="320"/>
+ </tileset>
+ <tileset firstgid="6805" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="6869" name="z_HogsmeadeInterior_Hxoni_Hogwarts" tilewidth="16" tileheight="16" tilecount="552" columns="23">
+  <image source="z_HogsmeadeInterior_Hxoni_Hogwarts.png" width="368" height="384"/>
+  <tile id="104">
+   <animation>
+    <frame tileid="104" duration="250"/>
+    <frame tileid="104" duration="250"/>
+    <frame tileid="104" duration="250"/>
+    <frame tileid="104" duration="250"/>
+    <frame tileid="104" duration="250"/>
+    <frame tileid="104" duration="250"/>
+    <frame tileid="104" duration="250"/>
+    <frame tileid="105" duration="250"/>
+    <frame tileid="105" duration="250"/>
+    <frame tileid="105" duration="250"/>
+    <frame tileid="105" duration="250"/>
+    <frame tileid="105" duration="250"/>
+    <frame tileid="105" duration="250"/>
+    <frame tileid="104" duration="250"/>
+    <frame tileid="104" duration="250"/>
+    <frame tileid="104" duration="250"/>
+    <frame tileid="104" duration="250"/>
+    <frame tileid="105" duration="250"/>
+    <frame tileid="105" duration="250"/>
+    <frame tileid="105" duration="250"/>
+    <frame tileid="104" duration="250"/>
+    <frame tileid="104" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="169">
+   <animation>
+    <frame tileid="169" duration="500"/>
+    <frame tileid="169" duration="500"/>
+    <frame tileid="169" duration="500"/>
+    <frame tileid="169" duration="500"/>
+    <frame tileid="170" duration="500"/>
+    <frame tileid="170" duration="500"/>
+    <frame tileid="170" duration="500"/>
+    <frame tileid="169" duration="500"/>
+    <frame tileid="169" duration="500"/>
+    <frame tileid="169" duration="500"/>
+    <frame tileid="170" duration="500"/>
+    <frame tileid="170" duration="500"/>
+    <frame tileid="169" duration="500"/>
+    <frame tileid="170" duration="500"/>
+    <frame tileid="169" duration="500"/>
+    <frame tileid="169" duration="500"/>
+   </animation>
+  </tile>
+  <tile id="195">
+   <animation>
+    <frame tileid="195" duration="250"/>
+    <frame tileid="196" duration="250"/>
+    <frame tileid="197" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="218">
+   <animation>
+    <frame tileid="218" duration="250"/>
+    <frame tileid="219" duration="250"/>
+    <frame tileid="220" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="237">
+   <animation>
+    <frame tileid="237" duration="200"/>
+    <frame tileid="237" duration="200"/>
+    <frame tileid="237" duration="200"/>
+    <frame tileid="261" duration="200"/>
+    <frame tileid="261" duration="200"/>
+    <frame tileid="261" duration="200"/>
+    <frame tileid="237" duration="200"/>
+    <frame tileid="237" duration="200"/>
+    <frame tileid="237" duration="200"/>
+    <frame tileid="261" duration="200"/>
+    <frame tileid="261" duration="200"/>
+    <frame tileid="237" duration="200"/>
+    <frame tileid="237" duration="200"/>
+    <frame tileid="237" duration="200"/>
+    <frame tileid="261" duration="200"/>
+    <frame tileid="261" duration="200"/>
+    <frame tileid="237" duration="200"/>
+    <frame tileid="237" duration="200"/>
+    <frame tileid="261" duration="200"/>
+    <frame tileid="261" duration="200"/>
+    <frame tileid="261" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="299">
+   <animation>
+    <frame tileid="299" duration="250"/>
+    <frame tileid="299" duration="250"/>
+    <frame tileid="299" duration="250"/>
+    <frame tileid="299" duration="250"/>
+    <frame tileid="349" duration="250"/>
+    <frame tileid="299" duration="250"/>
+    <frame tileid="349" duration="250"/>
+    <frame tileid="299" duration="250"/>
+    <frame tileid="349" duration="250"/>
+    <frame tileid="349" duration="250"/>
+    <frame tileid="349" duration="250"/>
+    <frame tileid="349" duration="250"/>
+    <frame tileid="299" duration="250"/>
+    <frame tileid="349" duration="250"/>
+    <frame tileid="299" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="300">
+   <animation>
+    <frame tileid="300" duration="250"/>
+    <frame tileid="300" duration="250"/>
+    <frame tileid="300" duration="250"/>
+    <frame tileid="300" duration="250"/>
+    <frame tileid="350" duration="250"/>
+    <frame tileid="300" duration="250"/>
+    <frame tileid="350" duration="250"/>
+    <frame tileid="300" duration="250"/>
+    <frame tileid="350" duration="250"/>
+    <frame tileid="350" duration="250"/>
+    <frame tileid="350" duration="250"/>
+    <frame tileid="350" duration="250"/>
+    <frame tileid="300" duration="250"/>
+    <frame tileid="350" duration="250"/>
+    <frame tileid="300" duration="250"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="7421" name="2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="townInterior_2.png" width="512" height="656"/>
+ </tileset>
+ <layer id="1" name="Back" width="15" height="14">
   <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,1173,1171,1171,1171,1171,1171,1171,1171,1171,1172,0,
-0,1170,1170,1170,1170,1170,1170,1170,1170,1170,1170,0,
-0,1170,1170,1170,1170,1170,1170,1170,1170,1170,1170,0,
-0,306,306,306,306,306,306,306,306,306,306,0,
-0,306,306,306,306,306,306,306,306,306,306,0,
-0,306,306,306,306,306,306,306,306,306,306,0,
-0,306,306,306,306,306,306,306,306,306,306,0,
-0,306,306,306,306,306,306,306,306,306,306,0,
-0,306,306,306,306,306,306,306,306,306,306,0,
-0,306,306,306,306,306,306,306,306,306,306,0,
-0,0,0,0,0,0,306,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,6324,6324,6324,6324,6324,6324,6324,6324,6324,6324,6324,6324,0,0,
+0,6312,6312,6312,6312,0,6312,6312,6312,6312,6312,6312,6312,0,0,
+0,6324,6324,6324,6324,0,6324,6324,6324,6324,6324,6324,6324,3098,0,
+0,6336,6336,6336,6336,6336,6336,6324,6336,6336,6336,6336,6336,3119,0,
+0,3098,3097,3098,3097,3098,3097,3098,3097,3098,3097,3098,3097,0,0,
+0,3119,3118,3119,3118,3119,3118,3119,3118,3119,3118,3119,3118,0,0,
+0,3098,3097,3098,3097,3098,3097,3098,3097,3098,3097,3098,3097,0,0,
+0,3119,3118,3119,3118,3119,3118,3119,3118,3119,3118,3119,3118,0,0,
+0,3098,3097,3098,3097,3098,3097,3098,3097,3098,3097,3098,3097,0,0,
+0,3119,3118,3119,3118,3119,3118,3119,3118,3119,3118,3119,3118,0,0,
+0,3098,3097,3098,3097,3098,3097,3098,3097,3098,3097,3098,3097,0,0,
+0,3119,3118,3119,3118,3119,3118,3119,3118,3119,3118,3119,3118,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="2" name="Buildings" width="12" height="12">
+ <layer id="2" name="Back1" width="15" height="14">
   <data encoding="csv">
-10,11,11,11,11,11,11,11,11,11,11,12,
-65,0,0,0,0,581,0,580,0,0,0,69,
-65,0,0,0,0,613,1390,612,0,0,0,69,
-65,81,81,81,81,613,1422,612,81,81,81,69,
-65,644,705,705,705,645,0,644,705,705,645,69,
-65,0,0,0,0,0,0,0,0,0,0,69,
-65,0,1073,1074,1074,1074,1074,1074,1074,1075,0,69,
-65,0,1105,1106,1106,1106,1106,1106,1106,1107,0,69,
-65,0,0,0,0,0,0,0,0,0,0,69,
-65,0,0,0,0,0,0,0,0,0,0,69,
-161,0,0,0,0,0,0,0,0,0,0,168,
-1,1,1,1,1,97,0,131,1,1,1,1
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,2816,2817,2818,2819,2820,0,0,
+0,0,0,6420,2147490068,0,2147490068,0,2147490068,0,0,0,0,0,0,
+0,0,0,6420,2147490089,0,0,0,2147490089,0,0,0,0,0,0,
+0,0,0,6441,0,0,0,0,2147490089,0,0,0,0,0,0,
+0,1427,1427,1427,1427,1427,1427,1427,1427,1427,1427,1427,1427,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,7043,7044,7045,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="7" name="Buildings1" width="12" height="12" visible="0">
+ <layer id="3" name="Buildings" width="15" height="14">
   <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,580,641,641,641,0,0,0,641,641,581,0,
-0,612,673,673,673,0,0,0,673,673,613,0,
-0,612,673,673,673,0,0,0,673,673,613,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,2144,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0
+0,3380,3380,3380,3380,3380,3380,3380,3380,3380,3380,3380,3380,3380,0,
+0,7540,7541,7541,7541,7541,7541,7541,7541,7541,7541,7541,7541,7542,0,
+0,7572,6312,6310,6312,7101,7150,7151,3221231795,6312,4258,6312,1073748146,7574,0,
+0,7572,6324,6957,6324,7124,7173,7174,1073748146,6324,4811,6324,6996,7574,0,
+0,7572,0,6960,6336,6336,7196,7197,2147489971,6336,4843,6336,2147489971,7574,0,
+0,7572,4848,6983,0,0,0,0,0,0,0,7040,7041,7574,0,
+0,7572,0,0,0,0,0,0,0,0,0,0,2147490664,7574,0,
+0,7572,0,0,0,0,0,7129,7107,7108,7109,0,7636,7606,0,
+0,7572,0,0,0,0,0,0,0,0,0,0,7574,3380,0,
+0,7604,7391,7392,0,0,0,0,0,0,0,0,7574,3380,0,
+0,3380,3380,7604,0,0,7191,7192,0,0,0,4849,7574,3380,0,
+0,3380,3380,3380,7604,0,0,0,0,0,0,2147488226,7606,3380,0,
+0,3380,3380,3380,3380,3380,3380,3380,7568,0,0,7571,3380,3380,0,
+0,0,0,0,0,0,0,3380,3380,3380,3380,3380,3380,0,0
 </data>
  </layer>
- <layer id="3" name="Front" width="12" height="12">
+ <layer id="4" name="Buildings1" width="15" height="14">
   <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,1041,1042,1042,1042,1042,1042,1042,1043,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,
-0,162,166,166,166,163,0,164,166,166,167,0,
-0,0,0,0,0,0,166,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,7005,7006,2797,0,0,
+0,0,0,0,0,0,7073,7074,7075,7027,7028,6958,6959,0,0,
+0,0,6966,2147490603,2147490602,7064,7096,7097,7098,6931,6932,6981,6982,0,0,
+0,0,6989,0,2147490529,7087,7173,7174,7175,6954,6955,6994,6995,0,0,
+0,0,0,2147490626,2147490625,2147490624,0,6975,7198,6977,6978,7017,7018,0,0,
+0,0,0,2147490649,2147490648,2147490647,0,6998,6999,7000,7001,0,6973,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,2814,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,7061,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="4" name="Back">
-  <object id="2" name="TileData" x="96" y="176" width="16" height="16">
-   <properties>
-    <property name="NoFurniture" value="t"/>
-   </properties>
-  </object>
- </objectgroup>
- <objectgroup id="5" name="Buildings">
-  <object id="4" name="TileData" x="96" y="112" width="16" height="16">
-   <properties>
-    <property name="Action" value=""/>
-    <property name="Shop" value="DogweedandDeathcap"/>
-   </properties>
-  </object>
- </objectgroup>
- <objectgroup id="8" name="Buildings1"/>
- <objectgroup id="6" name="Front"/>
+ <layer id="17" name="Buildings2" width="15" height="14">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,6960,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,6983,0,0,0,0,0,2147490585,0,0,0,0,
+0,0,6943,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="5" name="Front" width="15" height="14">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,6889,6890,0,0,0,0,0,0,0,0,0,0,0,
+0,0,6912,6913,0,0,7037,0,0,0,0,6876,7012,0,0,
+0,0,6935,0,0,0,7060,0,0,0,0,6899,7035,0,0,
+0,0,4816,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,7106,7084,7085,7086,7002,7003,6891,0,
+0,0,0,0,0,0,0,0,7038,7020,7021,7025,7026,0,0,
+0,0,7368,7369,0,0,0,0,0,0,0,7048,7049,0,0,
+0,0,7605,7637,0,0,7168,7169,0,0,0,7131,0,0,0,
+0,0,0,0,2147490696,0,0,0,0,0,0,7368,0,0,0,
+0,0,0,0,0,7605,7605,7605,7637,0,0,7391,0,0,0,
+0,0,0,0,0,0,0,0,0,7569,7570,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="6" name="Front1" width="15" height="14">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,7023,7024,0,0,
+0,2147490539,0,0,0,0,2797,0,0,0,0,7046,7047,0,0,
+0,3758103312,3758103289,2147490651,2147490650,2796,0,0,0,0,0,7050,7051,0,0,
+0,3758103311,3758103288,2147490674,2147490673,2819,2820,0,0,0,0,0,0,0,0,
+0,0,0,2147490697,7637,0,0,0,0,0,0,0,0,0,0,
+0,0,0,2797,0,0,0,0,0,0,0,7636,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="7" name="Paths" width="15" height="14" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,6813,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,6813,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="9" name="Back"/>
+ <objectgroup id="10" name="Back1"/>
+ <objectgroup id="11" name="Buildings"/>
+ <objectgroup id="12" name="Buildings1"/>
+ <objectgroup id="13" name="Front"/>
+ <objectgroup id="14" name="AlwaysFront"/>
+ <objectgroup id="15" name="AlwaysFront1"/>
+ <objectgroup id="16" name="Paths"/>
 </map>
