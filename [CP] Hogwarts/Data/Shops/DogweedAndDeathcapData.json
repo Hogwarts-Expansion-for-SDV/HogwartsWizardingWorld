@@ -1,0 +1,24 @@
+{
+  "Changes": [
+    {
+      "LogName": "Dogweed and Deathcap CC Spawn",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_DogweedAndDeathcap",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 2,
+            "Y": 7
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.VenomousTentacula"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= PeacefulEnd.CustomCompanions": true
+      }
+    }
+  ]
+}
