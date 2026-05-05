@@ -1,0 +1,62 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Custom Monster Dictionary",
+      "Action": "EditData",
+      "Target": "aedenthorn.CustomMonsters/dict",
+      "Entries": {
+        "Streeler_One": {
+          "Type": "RockCrab",
+          "Sprite": "Characters/Monsters/Streeler One",
+          "Damage": 6,
+          "Health": 50,
+          "Speed": 3,
+          "Experience": 5,
+          "Drops": [
+            {
+              "ItemId": "(O)608",
+              "MinQuantity": 1,
+              "MaxQuantity": 2,
+              "Chance": 50
+            },
+          ]
+        },
+        "Dugbog_Muddy": {
+          "Type": "Shooter",
+          "Sprite": "Characters/Monsters/Dugbog Muddy",
+          "Parameters": "position,name",
+          "Name": "Shadow Sniper",
+          "Damage": 11,
+          "Health": 160,
+          "Speed": 1,
+          "Experience": 16,
+          "Drops": [
+            {
+              "ItemId": "(O)608",
+              "MinQuantity": 1,
+              "MaxQuantity": 2,
+              "Chance": 50
+            }
+          ]
+        },
+      }
+    },
+    {
+      "LogName": "Hogwarts Forbidden Forest Monster Spawn DMTE",
+      "Action": "EditMap",
+      "Target": "Maps/Town",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 28,
+            "Y": 67
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/monster_On": "{{ModId}}_Streeler_One 2240 4608|{{ModId}}_Dugbog_Muddy 2240 4608"
+          }
+        }
+      ]
+    }
+  ]
+}
