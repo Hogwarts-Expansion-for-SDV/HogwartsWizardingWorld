@@ -5,7 +5,7 @@
       "Action": "EditData",
       "Target": "aedenthorn.CustomMonsters/dict",
       "Entries": {
-        "Streeler_One": {
+        "{{ModId}}_Streeler_One": {
           "Type": "RockCrab",
           "Sprite": "Characters/Monsters/Streeler One",
           "Damage": 6,
@@ -21,7 +21,7 @@
             },
           ]
         },
-        "Dugbog_Muddy": {
+        "{{ModId}}_Dugbog_Muddy": {
           "Type": "Shooter",
           "Sprite": "Characters/Monsters/Dugbog Muddy",
           "Parameters": "position,name",
@@ -39,6 +39,9 @@
             }
           ]
         },
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.CustomMonsters": true
       }
     },
     {
@@ -53,10 +56,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "DMT/monster_On": "{{ModId}}_Streeler_One 2240 4608|{{ModId}}_Dugbog_Muddy 2240 4608"
+            "DMT/monster_Enter": "{{ModId}}_Streeler_One 2240 4608|{{ModId}}_Dugbog_Muddy 2240 4608"
           }
         }
-      ]
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
     }
   ]
 }
