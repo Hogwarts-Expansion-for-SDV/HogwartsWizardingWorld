@@ -1,0 +1,24 @@
+{
+  "Changes": [
+    {
+      "LogName": "Tomes and Scrolls Staircase DMTE",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_TomesAndScrolls",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 14,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "DMT/changeMultipleIndex_Swap_Action": "Front 6 5=|Front 6 6=|Buildings 6 7=|Buildings 6 8=|Buildings 6 9=|Buildings 6 10=|Buildings1 6 7=z_HogsmeadeInterior_Hxoni_Hogwarts/546|Buildings1 6 8=z_HogsmeadeInterior_Hxoni_Hogwarts/546|Buildings1 6 9=z_HogsmeadeInterior_Hxoni_Hogwarts/546|Buildings1 6 10=z_HogsmeadeInterior_Hxoni_Hogwarts/546|Buildings1 6 11=z_HogsmeadeInterior_Hxoni_Hogwarts/546|Buildings1 6 12=z_HogsmeadeInterior_Hxoni_Hogwarts/546|Buildings1 7 8=z_HogsmeadeInterior_Hxoni_Hogwarts/504|Buildings1 7 9=z_HogsmeadeInterior_Hxoni_Hogwarts/504|Buildings1 7 12=z_HogsmeadeInterior_Hxoni_Hogwarts/572|Buildings2 7 9=z_HogsmeadeInterior_Hxoni_Hogwarts/574|Buildings2 7 10=z_HogsmeadeInterior_Hxoni_Hogwarts/574|Buildings2 7 11=z_HogsmeadeInterior_Hxoni_Hogwarts/504|Front 7 5=z_HogsmeadeInterior_Hxoni_Hogwarts/547|Front 7 6=z_HogsmeadeInterior_Hxoni_Hogwarts/570|Front 7 7=z_HogsmeadeInterior_Hxoni_Hogwarts/574|Front 7 8=z_HogsmeadeInterior_Hxoni_Hogwarts/574|Front 7 11=z_HogsmeadeInterior_Hxoni_Hogwarts/621|Front1 7 6=z_HogsmeadeInterior_Hxoni_Hogwarts/573|Front1 7 7=z_HogsmeadeInterior_Hxoni_Hogwarts/569|Front1 7 9=z_HogsmeadeInterior_Hxoni_Hogwarts/569|Front1 7 9=z_HogsmeadeInterior_Hxoni_Hogwarts/569|Front1 7 11=z_HogsmeadeInterior_Hxoni_Hogwarts/549|"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    }
+  ]
+}
