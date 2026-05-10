@@ -1,58 +1,14 @@
 {
   "Changes": [
-    {
-      "LogName": "Hogwarts Custom Monster Dictionary",
-      "Action": "EditData",
-      "Target": "aedenthorn.CustomMonsters/dict",
-      "Entries": {
-        "{{ModId}}_Streeler_One": {
-          "Type": "RockCrab",
-          "Sprite": "Characters/Monsters/Streeler One",
-          "Damage": 6,
-          "Health": 50,
-          "Speed": 3,
-          "Experience": 5,
-          "Drops": [
-            {
-              "ItemId": "(O)608",
-              "MinQuantity": 1,
-              "MaxQuantity": 2,
-              "Chance": 50
-            },
-          ]
-        },
-        "{{ModId}}_Dugbog_Muddy": {
-          "Type": "Shooter",
-          "Sprite": "Characters/Monsters/Dugbog Muddy",
-          "Parameters": "position,name",
-          "Name": "Shadow Sniper",
-          "Damage": 11,
-          "Health": 160,
-          "Speed": 1,
-          "Experience": 16,
-          "Drops": [
-            {
-              "ItemId": "(O)608",
-              "MinQuantity": 1,
-              "MaxQuantity": 2,
-              "Chance": 50
-            }
-          ]
-        },
-      },
-      "When": {
-        "HasMod |contains= aedenthorn.CustomMonsters": true
-      }
-    },
-    {
+    /*{
       "LogName": "Hogwarts Forbidden Forest Monster Spawn DMTE",
       "Action": "EditMap",
-      "Target": "Maps/Town",
+      "Target": "Maps/{{ModId}}_ForbiddenForest",
       "MapTiles": [
         {
           "Position": {
-            "X": 28,
-            "Y": 67
+            "X": 0,
+            "Y": 0
           },
           "Layer": "Back",
           "SetProperties": {
@@ -61,7 +17,492 @@
         }
       ],
       "When": {
+        "HasMod |contains= aedenthorn.CustomMonsters": true,
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },*/
+    {
+      "LogName": "Hogwarts Custom Monster Dictionary",
+      "Action": "EditData",
+      "Target": "aedenthorn.CustomMonsters/dict",
+      "Entries": {
+        "{{ModId}}_HornedSerpentDefault": {
+          "Type": "Serpent",
+          "Sprite": "{{ModId}}/Horned Serpent Default",
+          "Parameters": "position,name",
+          "Name": "Royal Serpent",
+          "MinSegment": 10,
+          "MaxSegment": 15,
+          "Scale": 1.5,
+          "Damage": 90,
+          "Health": 500,
+          "Experience": 25,
+          "Resilience": 0,
+          "MissChance": 0,
+          "Drops": [
+            {
+              "ItemId": "(O){{ModId}}_SnakeFang",
+              "Chance": 100
+            }
+          ]
+        },
+        "{{ModId}}_DementorDefault": {
+          "Type": "Serpent",
+          "Sprite": "{{ModId}}/Dementor Default",
+          "Scale": 1.5,
+          "Damage": 80,
+          "Health": 400,
+          "Experience": 20,
+          "Resilience": 0,
+          "MissChance": 40
+        },
+        "{{ModId}}_GrindyLowYellow": {
+          "Type": "LavaLurk",
+          "Sprite": "{{ModId}}/Grindylow Tan",
+          "Scale": 1.5,
+          "Damage": 40,
+          "Health": 80,
+          "Experience": 25,
+          "Resilience": 0,
+          "MissChance": 0,
+          "Drops": [
+            {
+              "ItemId": "(O){{ModId}}_CrocodileHeart",
+              "Chance": 50
+            },
+            {
+              "ItemId": "(O){{ModId}}_Leech",
+              "Chance": 50
+            }
+          ]
+        },
+        "{{ModId}}_GrindylowTan": {
+          "Type": "LavaLurk",
+          "Sprite": "{{ModId}}/Grindylow Tan",
+          "Scale": 1.5,
+          "Damage": 40,
+          "Health": 80,
+          "Experience": 25,
+          "Resilience": 0,
+          "MissChance": 0,
+          "Drops": [
+            {
+              "ItemId": "(O){{ModId}}_CrocodileHeart",
+              "Chance": 50
+            },
+            {
+              "ItemId": "(O){{ModId}}_Leech",
+              "Chance": 50
+            }
+          ]
+        },
+        "{{ModId}}_GrindylowSwamp": {
+          "Type": "LavaLurk",
+          "Sprite": "{{ModId}}/Grindylow Swamp",
+          "Scale": 1.5,
+          "Damage": 40,
+          "Health": 80,
+          "Experience": 25,
+          "Resilience": 0,
+          "MissChance": 0,
+          "Drops": [
+            {
+              "ItemId": "(O){{ModId}}_CrocodileHeart",
+              "Chance": 50
+            },
+            {
+              "ItemId": "(O){{ModId}}_Leech",
+              "Chance": 50
+            }
+          ]
+        },
+        "{{ModId}}_GrindylowDefault": {
+          "Type": "LavaLurk",
+          "Sprite": "{{ModId}}/Grindylow Default",
+          "Scale": 1.5,
+          "Damage": 40,
+          "Health": 80,
+          "Experience": 25,
+          "Resilience": 0,
+          "MissChance": 0,
+          "Drops": [
+            {
+              "ItemId": "(O){{ModId}}_CrocodileHeart",
+              "Chance": 50
+            },
+            {
+              "ItemId": "(O){{ModId}}_Leech",
+              "Chance": 50
+            }
+          ]
+        },
+        "{{ModId}}_AcromantulaDefault": {
+          "Type": "Shooter",
+          "Sprite": "{{ModId}}/Acromantula Default",
+          "Scale": 1.5,
+          "Damage": 50,
+          "Health": 300,
+          "Experience": 20,
+          "Resilience": 2,
+          "MissChance": 0,
+          "Drops": [
+            {
+              "ItemId": "(O){{ModId}}_AcromantulaVenom",
+              "Chance": 75
+            }
+          ]
+        },
+        "{{ModId}}_InferiDefault": {
+          "Type": "RockGolem",
+          "Sprite": "{{ModId}}/Inferi Default",
+          "Parameters": "position,level",
+          "Level": 10,
+          "Scale": 1.5,
+          "Damage": 55,
+          "Health": 300,
+          "Experience": 8,
+          "Resilience": 4,
+          "MissChance": 0
+        },
+        "{{ModId}}_DoxyDefault": {
+          "Type": "Bat",
+          "Sprite": "{{ModId}}/Doxy Default",
+          "Scale": 1.5,
+          "Damage": 0,
+          "Health": 75,
+          "Experience": 7,
+          "Resilience": 0,
+          "MissChance": 0,
+          "Drops": [
+            {
+              "ItemId": "(O){{ModId}}_DoxyVenom",
+              "Chance": 60
+            }
+          ]
+        },
+        "{{ModId}}_CornishPixieDarkBlue": {
+          "Type": "Bat",
+          "Sprite": "{{ModId}}/Cornish Pixie Dark Blue",
+          "Scale": 1.5,
+          "Damage": 3,
+          "Health": 50,
+          "Experience": 5,
+          "Resilience": 0,
+          "MissChance": 10,
+          "Drops": [
+            {
+              "ItemId": "(O)872",
+              "Chance": 2
+            }
+          ]
+        },
+        "{{ModId}}_CornishPixieDefault": {
+          "Type": "Bat",
+          "Sprite": "{{ModId}}/Cornish Pixie Default",
+          "Scale": 1.5,
+          "Damage": 2,
+          "Health": 25,
+          "Experience": 2,
+          "Resilience": 0,
+          "MissChance": 10,
+          "Drops": [
+            {
+              "ItemId": "(O)872",
+              "Chance": 1
+            }
+          ]
+        },
+        "{{ModId}}_BoomslangFemale": {
+          "Type": "RockGolem",
+          "Sprite": "{{ModId}}/Boomslang Female",
+          "Parameters": "position,level",
+          "Level": 10,
+          "Scale": 1.5,
+          "Damage": 9,
+          "Health": 80,
+          "Experience": 8,
+          "Resilience": 0,
+          "MissChance": 0,
+          "Drops": [
+            {
+              "ItemId": "(O){{ModId}}_BoomslangSkin",
+              "Chance": 40
+            }
+          ]
+        },
+        "{{ModId}}_BoomslangMale": {
+          "Type": "RockGolem",
+          "Sprite": "{{ModId}}/Boomslang Male",
+          "Parameters": "position,level",
+          "Level": 10,
+          "Scale": 1.5,
+          "Damage": 8,
+          "Health": 60,
+          "Experience": 6,
+          "Resilience": 0,
+          "MissChance": 0,
+          "Drops": [
+            {
+              "ItemId": "(O){{ModId}}_BoomslangSkin",
+              "Chance": 25
+            }
+          ]
+        },
+        "{{ModId}}_BicornDefault": {
+          "Type": "DinoMonster",
+          "Sprite": "{{ModId}}/Bicorn Default",
+          "Scale": 1.5,
+          "Damage": 20,
+          "Health": 250,
+          "Experience": 25,
+          "Resilience": 0,
+          "MissChance": 0,
+          "Drops": [
+            {
+              "ItemId": "(O){{ModId}}_BicornHorn",
+              "Chance": 75
+            }
+          ]
+        },
+        "{{ModId}}_AswinderDarkGray": {
+          "Type": "Mummy",
+          "Sprite": "{{ModId}}/Ashwinder Dark Grey",
+          "Scale": 1.5,
+          "Damage": 15,
+          "Health": 180,
+          "Experience": 18,
+          "Resilience": 0,
+          "MissChance": 7,
+          "Drops": [
+            {
+              "ItemId": "(O){{ModId}}_AshwinderEgg",
+              "Chance": 70
+            }
+          ]
+        },
+        "{{ModId}}_AswinderLightGray": {
+          "Type": "Mummy",
+          "Sprite": "{{ModId}}/Ashwinder Light Grey",
+          "Scale": 1.5,
+          "Damage": 14,
+          "Health": 160,
+          "Experience": 16,
+          "Resilience": 0,
+          "MissChance": 6,
+          "Drops": [
+            {
+              "ItemId": "(O){{ModId}}_AshwinderEgg",
+              "Chance": 60
+            }
+          ]
+        },
+        "{{ModId}}_AswinderDefault": {
+          "Type": "Mummy",
+          "Sprite": "{{ModId}}/Ashwinder Default",
+          "Scale": 1.5,
+          "Damage": 12,
+          "Experience": 15,
+          "Resilience": 0,
+          "MissChance": 5,
+          "Drops": [
+            {
+              "ItemId": "(O){{ModId}}_AshwinderEgg",
+              "Chance": 50
+            }
+          ]
+        },
+        "{{ModId}}_Spider": {
+          "Type": "Leaper",
+          "Sprite": "Characters/Monsters/Spider",
+          "Drops": [
+            {
+              "ItemId": "(O){{ModId}}_Spider",
+              "Chance": 80
+            }
+          ]
+        },
+        "{{ModId}}_DugbogJungle": {
+          "Type": "Shooter",
+          "Sprite": "{{ModId}}/Dugbog Jungle",
+          "Parameters": "position,name",
+          "Name": "Shadow Sniper",
+          "Scale": 1.5,
+          "Damage": 120,
+          "Health": 170,
+          "Experience": 17,
+          "Resilience": 2,
+          "MissChance": 0
+        },
+        "{{ModId}}_DugbogMuddy": {
+          "Type": "Shooter",
+          "Sprite": "{{ModId}}/Dugbog Muddy",
+          "Parameters": "position,name",
+          "Name": "Shadow Sniper",
+          "Scale": 1.5,
+          "Damage": 110,
+          "Health": 160,
+          "Experience": 16,
+          "Resilience": 2,
+          "MissChance": 0
+        },
+        "{{ModId}}_StreelerFour": {
+          "Type": "RockCrab",
+          "Sprite": "{{ModId}}/Streeler Four",
+          "Scale": 1.5,
+          "Damage": 6,
+          "Health": 50,
+          "Experience": 5,
+          "Resilience": 0,
+          "MissChance": 0
+        },
+        "{{ModId}}_StreelerThree": {
+          "Type": "RockCrab",
+          "Sprite": "{{ModId}}/Streeler Three",
+          "Scale": 1.5,
+          "Damage": 6,
+          "Health": 50,
+          "Experience": 5,
+          "Resilience": 0,
+          "MissChance": 0
+        },
+        "{{ModId}}_StreelerTwo": {
+          "Type": "RockCrab",
+          "Sprite": "{{ModId}}/Streeler Two",
+          "Scale": 1.5,
+          "Damage": 6,
+          "Health": 50,
+          "Experience": 5,
+          "Resilience": 0,
+          "MissChance": 0
+        },
+        "{{ModId}}_StreelerOne": {
+          "Type": "RockCrab",
+          "Sprite": "{{ModId}}/Streeler One",
+          "Scale": 1.5,
+          "Damage": 6,
+          "Health": 50,
+          "Experience": 5,
+          "Resilience": 0,
+          "MissChance": 0
+        },
+        "{{ModId}}_GnomeRed": {
+          "Type": "RockGolem",
+          "Sprite": "{{ModId}}/Gnome Red",
+          "Parameters": "position,level",
+          "Level": 10,
+          "Scale": 1.5,
+          "Damage": 5,
+          "Health": 50,
+          "Experience": 5,
+          "Resilience": 0,
+          "MissChance": 0,
+          "Drops": [
+            {
+              "ItemId": "(O){{ModId}}_DirtBean",
+              "Chance": 25
+            },
+            {
+              "ItemId": "(O){{ModId}}_EarthwormBean",
+              "Chance": 25
+            }
+          ]
+        },
+        "{{ModId}}_GnomePale": {
+          "Type": "RockGolem",
+          "Sprite": "{{ModId}}/Gnome Pale",
+          "Parameters": "position,level",
+          "Level": 10,
+          "Scale": 1.5,
+          "Damage": 3,
+          "Health": 25,
+          "Experience": 2,
+          "Resilience": 0,
+          "MissChance": 0,
+          "Drops": [
+            {
+              "ItemId": "(O){{ModId}}_DirtBean",
+              "Chance": 5
+            },
+            {
+              "ItemId": "(O){{ModId}}_EarthwormBean",
+              "Chance": 5
+            }
+          ]
+        },
+        "{{ModId}}_GnomeDefault": {
+          "Type": "RockGolem",
+          "Sprite": "{{ModId}}/Gnome Default",
+          "Parameters": "position,level",
+          "Level": 10,
+          "Scale": 1.5,
+          "Damage": 4,
+          "Health": 40,
+          "Experience": 4,
+          "Resilience": 0,
+          "MissChance": 0,
+          "Drops": [
+            {
+              "ItemId": "(O){{ModId}}_DirtBean",
+              "Chance": 10
+            },
+            {
+              "ItemId": "(O){{ModId}}_EarthwormBean",
+              "Chance": 10
+            },
+          ]
+        },
+        "{{ModId}}_Horklump": {
+          "Type": "RockCrab",
+          "Sprite": "Characters/Monsters/False Magma Cap",
+          "Parameters": "position,name",
+          "Name": "False Magma Cap",
+          "Scale": 1.5
+        },
+        "{{ModId}}_DugbogDarkSwamp": {
+          "Type": "Shooter",
+          "Sprite": "{{ModId}}/Dugbog Dark Swamp",
+          "Parameters": "position,name",
+          "Name": "Shadow Sniper",
+          "Scale": 1.5,
+          "Damage": 90,
+          "Health": 100,
+          "Experience": 10,
+          "Resilience": 2,
+          "Drops": [
+            {
+              "ItemId": "(O){{ModId}}_Mandrake",
+              "Chance": 5
+            },
+            {
+              "ItemId": "(O)142",
+              "Chance": 10
+            }
+          ]
+        },
+        "{{ModId}}_DugbogDefault": {
+          "Type": "Shooter",
+          "Sprite": "{{ModId}}/Dugbog Default",
+          "Parameters": "position,name",
+          "Name": "Shadow Sniper",
+          "Scale": 1.5,
+          "Damage": 90,
+          "Health": 100,
+          "Experience": 10,
+          "Resilience": 2,
+          "Drops": [
+            {
+              "ItemId": "(O){{ModId}}_Mandrake",
+              "Chance": 5
+            },
+            {
+              "ItemId": "(O)142",
+              "Chance": 10
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.CustomMonsters": true
       }
     }
   ]
