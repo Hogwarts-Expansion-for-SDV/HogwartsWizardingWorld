@@ -1924,6 +1924,64 @@
       "Update": "OnLocationChange"
     },
     {
+      "LogName": "Hogsmeade Village Tide Pool Dugbog DMTE CM",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 0,
+            "Y": 0
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/monster_Enter": "{{ModId}}_DugbogDefault {{Random: {{Range: 9280, 11968}}|key= 1}} {{Random: {{Range: 8064, 9024}}|key= 1}}|{{ModId}}_DugbogDefault {{Random: {{Range: 9280, 11968}}|key= 2}} {{Random: {{Range: 8064, 9024}}|key= 2}}|{{ModId}}_DugbogDefault {{Random: {{Range: 9280, 11968}}|key= 3}} {{Random: {{Range: 8064, 9024}}|key= 3}}|{{ModId}}_DugbogDefault {{Random: {{Range: 9280, 11968}}|key= 4}} {{Random: {{Range: 8064, 9024}}|key= 4}}|{{ModId}}_DugbogDefault {{Random: {{Range: 9280, 11968}}|key= 5}} {{Random: {{Range: 8064, 9024}}|key= 5}}|{{ModId}}_DugbogDarkSwamp {{Random: {{Range: 9280, 11968}}|key= 6}} {{Random: {{Range: 8064, 9024}}|key= 6}}|{{ModId}}_DugbogDarkSwamp {{Random: {{Range: 9280, 11968}}|key= 7}} {{Random: {{Range: 8064, 9024}}|key= 7}}|{{ModId}}_DugbogDarkSwamp {{Random: {{Range: 9280, 11968}}|key= 8}} {{Random: {{Range: 8064, 9024}}|key= 8}}|{{ModId}}_DugbogDarkSwamp {{Random: {{Range: 9280, 11968}}|key= 9}} {{Random: {{Range: 8064, 9024}}|key= 9}}|{{ModId}}_DugbogDarkSwamp {{Random: {{Range: 9280, 11968}}|key= 10}} {{Random: {{Range: 8064, 9024}}|key= 10}}",
+            "DMT/mail_Enter": "{{ModId}}_HogsmeadeVillageTilePoolDugbog"
+          }
+        }
+      ],
+      "Update": "OnLocationChange",
+      "When": {
+        "HasMod |contains= aedenthorn.CustomMonsters": true,
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageTilePoolDugbog": false
+      }
+    },
+    {
+      "LogName": "Hogsmeade Village Tide Pool Dugbog Trigger Actions Remove Mail",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_HogsmeadeVillageTilePoolDugbog": {
+          "Id": "{{ModId}}_HogsmeadeVillageTilePoolDugbog",
+          "Trigger": "DayStarted",
+          "Action": "RemoveMail all {{ModId}}_HogsmeadeVillageTilePoolDugbog",
+          "MarkActionApplied": false
+        }
+      }
+    },/*
+    {
+      "LogName": "Tomes and Scrolls Staircase DMTE Mail Remove",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 0,
+            "Y": 1
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/mailRemove_Enter": "{{ModId}}_HogsmeadeVillageTilePoolDugbog"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageTilePoolDugbog": true
+      }
+    },*/
+    {
       "LogName": "Hogsmeade Village MMAP Smoke",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogsmeadeVillage",
