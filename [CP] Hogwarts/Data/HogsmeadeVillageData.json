@@ -1955,6 +1955,7 @@
         "{{ModId}}_HogsmeadeVillageTilePoolDugbog": {
           "Id": "{{ModId}}_HogsmeadeVillageTilePoolDugbog",
           "Trigger": "DayStarted",
+          "Condition": "PLAYER_HAS_MAIL Any {{ModId}}_HogsmeadeVillageTilePoolDugbog received, {{HasMod |contains=aedenthorn.CustomMonsters}}, {{HasMod |contains=aedenthorn.DynamicMapTilesExtended}}",
           "Action": "RemoveMail all {{ModId}}_HogsmeadeVillageTilePoolDugbog",
           "MarkActionApplied": false
         }
