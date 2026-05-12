@@ -58,20 +58,6 @@
       }
     },
     {
-      "LogName": "Hogwarts Divination Classroom Creature Den Trigger Action Remove Mail",
-      "Action": "EditData",
-      "Target": "Data/TriggerActions",
-      "Entries": {
-        "{{ModId}}_HogwartsDivinationCreatureDen": {
-          "Id": "{{ModId}}_HogwartsDivinationCreatureDen",
-          "Trigger": "DayEnding",
-          "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_HogwartsDivinationCreatureDen Any",
-          "Action": "RemoveMail Current {{ModId}}_HogwartsDivinationCreatureDen",
-          "MarkActionApplied": false
-        }
-      }
-    },
-    {
       "LogName": "Hogwarts Teacup Image Base Load",
       "Action": "Load",
       "Target": "Mods/{{ModId}}/TeacupBaseCreatureDen",
@@ -159,21 +145,6 @@
         "HasMod |contains= DLX.Bundles": true
       }
     },
-    {
-      "LogName": "Hogwarts Divination Classroom Creature Trigger Action Remove Mail",
-      "Action": "EditData",
-      "Target": "Data/TriggerActions",
-      "Entries": {
-        "{{ModId}}_HogwartsDivinationCreature": {
-          "Id": "{{ModId}}_HogwartsDivinationCreature",
-          "Trigger": "DayEnding",
-          "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_HogwartsDivinationCreature Any",
-          "Action": "RemoveMail Current {{ModId}}_HogwartsDivinationCreature",
-          "MarkActionApplied": false
-        }
-      }
-    },
-
     /*Left Top Left - Creature Den*/
     {
       "LogName": "Hogwarts Divination Classroom Unlockable Bundle Left Bottom Left",
@@ -201,20 +172,6 @@
       },
       "When": {
         "HasMod |contains= DLX.Bundles": true
-      }
-    },
-    {
-      "LogName": "Hogwarts Divination Classroom Charmed Tent Trigger Action Remove Mail",
-      "Action": "EditData",
-      "Target": "Data/TriggerActions",
-      "Entries": {
-        "{{ModId}}_HogwartsDivinationCharmedTent": {
-          "Id": "{{ModId}}_HogwartsDivinationCharmedTent",
-          "Trigger": "DayEnding",
-          "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_HogwartsDivinationCharmedTent Any",
-          "Action": "RemoveMail Current {{ModId}}_HogwartsDivinationCharmedTent",
-          "MarkActionApplied": false
-        }
       }
     },
     {
@@ -448,6 +405,43 @@
       },
       "PatchMode": "Overlay",
       "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Hogwarts Divination Classroom Trigger Actions Remove Mail",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_HogwartsDivinationCreatureDen": {
+          "Id": "{{ModId}}_HogwartsDivinationCreatureDen",
+          "Trigger": "DayEnding",
+          "Condition": "ANY \"PLAYER_HAS_MAIL Any {{ModId}}_HogwartsDivinationCreatureDen Any\" \"PLAYER_HAS_MAIL Any DLX.Bundles.{{ModId}}_DivinationClassroom{{Day}}{{Season}}{{Year}}LTL Any\"",
+          "Actions": [
+            "RemoveMail All {{ModId}}_HogwartsDivinationCreatureDen",
+            "RemoveMail All DLX.Bundles.{{ModId}}_DivinationClassroom{{Day}}{{Season}}{{Year}}LTL"
+          ],
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_HogwartsDivinationCreature": {
+          "Id": "{{ModId}}_HogwartsDivinationCreature",
+          "Trigger": "DayEnding",
+          "Condition": "ANY \"PLAYER_HAS_MAIL Any {{ModId}}_HogwartsDivinationCreature Any\" \"PLAYER_HAS_MAIL Any DLX.Bundles.{{ModId}}_DivinationClassroom{{Day}}{{Season}}{{Year}}LTR Any\"",
+          "Actions": [
+            "RemoveMail All {{ModId}}_HogwartsDivinationCreature",
+            "RemoveMail All DLX.Bundles.{{ModId}}_DivinationClassroom{{Day}}{{Season}}{{Year}}LTR"
+          ],
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_HogwartsDivinationCharmedTent": {
+          "Id": "{{ModId}}_HogwartsDivinationCharmedTent",
+          "Trigger": "DayEnding",
+          "Condition": "ANY \"PLAYER_HAS_MAIL Any {{ModId}}_HogwartsDivinationCharmedTent Any\" \"PLAYER_HAS_MAIL Any DLX.Bundles.{{ModId}}_DivinationClassroom{{Day}}{{Season}}{{Year}}LBL Any\"",
+          "Actions": [
+            "RemoveMail All {{ModId}}_HogwartsDivinationCharmedTent",
+            "RemoveMail All DLX.Bundles.{{ModId}}_DivinationClassroom{{Day}}{{Season}}{{Year}}LBL"
+          ],
+          "MarkActionApplied": false
+        }
+      }
     }
   ]
 }
