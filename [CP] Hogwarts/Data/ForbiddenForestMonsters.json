@@ -1,6 +1,58 @@
 {
   "Changes": [
     {
+      "LogName": "Hogwarts Forbidden Forest Monster Spawn",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}.ForbiddenForestMonsterSpawn": {
+          "Locations": [
+            "{{ModId}}_ForbiddenForest"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Rectangles": [
+            {
+              "X": 0,
+              "Y": 0,
+              "Width": 1,
+              "Height": 1
+            }
+          ],
+          "Actions": [
+            {
+              "LogName": "Monster Spawn",
+              "Key": "DMT/monster",
+              "Value": "{{ModId}}_AcromantulaDefault {{Random: {{ForbiddenForestMonsterCoordinates}}|key= 1}}|{{ModId}}_AshwinderDarkGray {{Random: {{ForbiddenForestMonsterCoordinates}}|key= 2}}|{{ModId}}_AshwinderDefault {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 4}}|{{ModId}}_AshwinderLightGray {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 5}}|{{ModId}}_BicornDefault {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 6}}|{{ModId}}_BoomslangFemale {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 7}}|{{ModId}}_BoomslangMale {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 8}}|{{ModId}}_CornishPixieDarkBlue {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 9}}|{{ModId}}_CornishPixieDefault {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 10}}|{{ModId}}_DementorDefault {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 11}}|{{ModId}}_DoxyDefault {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 12}}|{{ModId}}_DugbogDarkSwamp {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 13}}|{{ModId}}_DugbogDefault {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 14}}|{{ModId}}_DugbogJungle {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 15}}|{{ModId}}_DugbogMuddy {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 16}}|{{ModId}}_GnomeDefault {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 17}}|{{ModId}}_GnomePale {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 18}}|{{ModId}}_GnomeRed {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 19}}|{{ModId}}_Horklump {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 24}}|{{ModId}}_HornedSerpentDefault {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 25}}|{{ModId}}_InferiDefault {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 26}}|{{ModId}}_Spider {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 27}}|{{ModId}}_StreelerFour {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 28}}|{{ModId}}_StreelerThree {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 29}}|{{ModId}}_StreelerTwo {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 30}}|{{ModId}}_StreelerOne {{Random: {{ForbiddenForestMonsterCoordinates}}|Key= 31}}",
+              "Trigger": "Load",
+              "Once": false
+            },
+            {
+              "LogName": "Monster Spawn Water",
+              "Key": "DMT/monster",
+              "Value": "{{ModId}}_GrindylowDefault {{Random: {{ForbiddenForestWaterMonsterCoordinates}}|Key= 20}}|{{ModId}}_GrindylowSwamp {{Random: {{ForbiddenForestWaterMonsterCoordinates}}|Key= 21}}|{{ModId}}_GrindylowTan {{Random: {{ForbiddenForestWaterMonsterCoordinates}}|Key= 22}}|{{ModId}}_GrindyLowYellow {{Random: {{ForbiddenForestWaterMonsterCoordinates}}|Key= 23}}",
+              "Trigger": "Load",
+              "Once": false
+            },
+            {
+              "LogName": "Monster Spawn Mail",
+              "Key": "DMT/mail",
+              "Value": "{{ModId}}_ForbiddenForestMonsterSpawn",
+              "Trigger": "Load",
+              "Once": false
+            }
+          ]
+        }
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "HasMod |contains= aedenthorn.CustomMonsters": true,
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_ForbiddenForestMonsterSpawn": false
+      }
+    },/*
+    {
       "LogName": "Hogwarts Forbidden Forest Monster Spawn DMTE",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_ForbiddenForest",
@@ -32,7 +84,7 @@
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
         "HasFlag |contains= {{ModId}}_ForbiddenForestMonsterSpawn": false
       }
-    },
+    },*/
     {
       "LogName": "Hogwarts Forbidden Forest Monster Trigger Actions Remove Mail",
       "Action": "EditData",

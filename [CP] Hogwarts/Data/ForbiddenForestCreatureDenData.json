@@ -3498,6 +3498,41 @@
           "Remove": true
         }
       ]
+    },
+    {
+      "LogName": "Hogwarts Forbidden Forest Creature Den Monster Barrier",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}.MonsterBarrier": {
+          "Locations": [
+            "{{ModId}}_ForbiddenForest"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Rectangles": [
+            {
+              "X": "{{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}+4}}",
+              "Y": "{{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}+3}}",
+              "Width": 18,
+              "Height": 18
+            }
+          ],
+          "Actions": [
+            {
+              "LogName": "Monster Barrier",
+              "Key": "DMT/barrier",
+              "Value": "Monster|Serpent",
+              "Trigger": "Load",
+              "Once": false
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
     }
   ]
 }
