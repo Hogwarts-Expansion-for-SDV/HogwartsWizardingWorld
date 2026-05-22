@@ -1,0 +1,209 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Mail Letter Data",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "{{ModId}}_HogwartsLetter": "HOGWARTS SCHOOL of WITCHCRAFT and WIZARDRY^HEADMISTRESS: Professor Minerva McGonagall^(Order of Merlin, First Class)^Dear ${Mr^Ms}$ @^We are pleased to inform you that you have successfully passed your first year at Hogwarts. Enclosed is your report and a list of necessary books and equipment for the upcoming year.^Place the emblem attached to the letter at one of the designated spots for an owl to pick up.^The new school year shall begin soon; we look forward to your owl's reply.^Sincerely,^Filius Flitwick^Deputy Headmaster^COURSE BOOKS^All students should have a copy of each of the following:^Fantastic Beasts and Where to Find Them^by Newt Scamander^The Monster Book of Monsters^by Edwardus Lima^OTHER EQUIPMENT^1 wand^1 cauldron^1 telescope^1 dark detector with eyes^Students may also bring, if they desire, a pet.^Yours sincerely,^Lucinda Thomsonicle-Pocus^Chief Attendant of Witchcraft Provisions^%item object 388 1 %%[#]A Letter From Hogwarts"
+      }
+    },
+    {
+      "LogName": "Hogwarts Task Hufflepuff",
+      "Action": "EditMap",
+      "Target": "Maps/SeedShop",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 18,
+            "Y": 28
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "DMT/animation_Enter": "{{ModId}}.NotificationHouseTasks,NotificationSeedShop",
+            "DMT/take_Once_Item((O){{ModId}}_HogwartsEmblem)": "(O){{ModId}}_HogwartsEmblem,1",
+            "DMT/mail_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}_Hufflepuff"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Task Gryffindor",
+      "Action": "EditMap",
+      "Target": "Maps/AdventureGuild",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 6,
+            "Y": 12
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "DMT/animation_Enter": "{{ModId}}.NotificationHouseTasks,NotificationAdventureGuild",
+            "DMT/take_Once_Item((O){{ModId}}_HogwartsEmblem)": "(O){{ModId}}_HogwartsEmblem,1",
+            "DMT/mail_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}_Gryffindor"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Task Ravenclaw",
+      "Action": "EditMap",
+      "Target": "Maps/ArchaeologyHouse",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 6,
+            "Y": 9
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "DMT/animation_Enter": "{{ModId}}.NotificationHouseTasks,NotificationArchaeologyHouse",
+            "DMT/take_Once_Item((O){{ModId}}_HogwartsEmblem)": "(O){{ModId}}_HogwartsEmblem,1",
+            "DMT/mail_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}_Ravenclaw"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Task Slytherin",
+      "Action": "EditMap",
+      "Target": "Maps/Forest",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 94,
+            "Y": 103
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "DMT/animation_Enter": "{{ModId}}.NotificationHouseTasks,NotificationForest",
+            "DMT/take_Once_Item((O){{ModId}}_HogwartsEmblem)": "(O){{ModId}}_HogwartsEmblem,1",
+            "DMT/mail_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}_Slytherin"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Hogwarts House Tasks Notification 1 Animation",
+      "Action": "EditData",
+      "Target": "DMT/Animations",
+      "Entries": {
+        "{{ModId}}.NotificationHouseTasks": [
+          {
+            "Name": "NotificationAdventureGuild",
+            "Texture": "Maps/z_Notification1_Hogwarts",
+            "SourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 16,
+              "Height": 16
+            },
+            "Position": {
+              "X": 384,
+              "Y": 704
+            },
+            "Scale": 4,
+            "Length": 6,
+            "LayerDepth": 2,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 100,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          {
+            "Name": "NotificationArchaeologyHouse",
+            "Texture": "Maps/z_Notification1_Hogwarts",
+            "SourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 16,
+              "Height": 16
+            },
+            "Position": {
+              "X": 384,
+              "Y": 512
+            },
+            "Scale": 4,
+            "Length": 6,
+            "LayerDepth": 2,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 100,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          {
+            "Name": "NotificationForest",
+            "Texture": "Maps/z_Notification1_Hogwarts",
+            "SourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 16,
+              "Height": 16
+            },
+            "Position": {
+              "X": 6016,
+              "Y": 6528
+            },
+            "Scale": 4,
+            "Length": 6,
+            "LayerDepth": 2,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 100,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          {
+            "Name": "NotificationSeedShop",
+            "Texture": "Maps/z_Notification1_Hogwarts",
+            "SourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 16,
+              "Height": 16
+            },
+            "Position": {
+              "X": 1152,
+              "Y": 1728
+            },
+            "Scale": 4,
+            "Length": 6,
+            "LayerDepth": 2,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 100,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          }
+        ]
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      },
+      "Update": "OnLocationChange"
+    }
+  ]
+}
