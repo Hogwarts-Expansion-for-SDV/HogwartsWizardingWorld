@@ -5,7 +5,8 @@
       "Action": "EditData",
       "Target": "Data/Mail",
       "Entries": {
-        "{{ModId}}_HogwartsLetterAcceptance": "HOGWARTS SCHOOL of WITCHCRAFT and WIZARDRY^HEADMISTRESS: Professor Minerva McGonagall^(Order of Merlin, First Class)^Dear ${Mr^Ms}$ @^We are pleased to inform you that you have successfully passed your first year at Hogwarts. Enclosed is your report and a list of necessary books and equipment for the upcoming year.^Place the emblem attached to the letter at one of the designated spots for an owl to pick up.^The new school year shall begin soon; we look forward to your owl's reply.^Sincerely,^Filius Flitwick^Deputy Headmaster^COURSE BOOKS^All students should have a copy of each of the following:^Fantastic Beasts and Where to Find Them^by Newt Scamander^The Monster Book of Monsters^by Edwardus Lima^OTHER EQUIPMENT^1 wand^1 cauldron^1 telescope^1 dark detector with eyes^Students may also bring, if they desire, a pet.^Yours sincerely,^Lucinda Thomsonicle-Pocus^Chief Attendant of Witchcraft Provisions%item id (O){{ModId}}_HogwartsEmblem 1 %%[#]A Letter From Hogwarts"
+        "{{ModId}}_HogwartsLetterAcceptance": "HOGWARTS SCHOOL of WITCHCRAFT and WIZARDRY^         Headmistress: Minerva McGonagall^          (Order of Merlin, First Class)^^Dear ${Mr^Ms}$ @,^    We are pleased to inform you that you have successfully passed your first year at Hogwarts. Enclosed is your report and a list of necessary books and equipment for the upcoming year. Place the emblem attached to the letter at one of the designated spots for an owl to pick up.^^*Guild for brave adventurers^*Shop selling seeds and saplings^*Museum containing books^*Forest that leads to a dark entrance^^We look forward to your owl's reply,^Filius Flitwick^Deputy Headmaster^COURSE BOOKS^All students should have a copy of each of the following:^^Fantastic Beasts and Where to Find Them^by Newt Scamander^^The Monster Book of Monsters^by Edwardus Lima^^OTHER EQUIPMENT^1 wand^1 cauldron^1 telescope^1 dark detector with eyes^Students may also bring, if they desire, a pet.^^Yours sincerely,^Lucinda Thomsonicle-Pocus^Chief Attendant of Witchcraft Provisions%item id (O){{ModId}}_HogwartsEmblem 1 %%[#]A Letter From Hogwarts",
+        "{{ModId}}_Wizard": "HOGWARTS SCHOOL of WITCHCRAFT and WIZARDRY^         Headmistress: Minerva McGonagall^          (Order of Merlin, First Class)^^Dear ${Mr^Ms}$ @,^    We have received your owl. To reach Hogsmeade Station, please use one of the following methods:^*Wizard's Tower Floo Flame^*Floo Flame using a furniture^Sincerely,^Filius Flitwick^Deputy Headmaster[#]Locations To Use Floo Flame"
       }
     },
     {
@@ -16,7 +17,7 @@
         "{{ModId}}_HogwartsLetterAcceptanceAddMail": {
           "Id": "{{ModId}}_HogwartsLetterAcceptanceAddMail",
           "Trigger": "DayStarted",
-          "Condition": "!PLAYER_HAS_MAIL Any {{ModId}}_HogwartsLetterAcceptance received",
+          "Condition": "!PLAYER_HAS_MAIL Any {{ModId}}_HogwartsLetterAcceptance received, {{HasMod |contains= aedenthorn.DynamicMapTilesExtended}}, !{{HasFlag |contains= {{ModId}}_Hufflepuff, {{ModId}}_Gryffindor, {{ModId}}_Slytherin, {{ModId}}_Ravenclaw}}",
           "Action": "AddMail all {{ModId}}_HogwartsLetterAcceptance now",
           "MarkActionApplied": false
         }
@@ -36,6 +37,7 @@
           "Price": 10,
           "Texture": "{{InternalAssetKey: assets/Objects/Artifacts.png}}",
           "SpriteIndex": 16,
+          "CanBeTrashed": false,
           "ContextTags": [
             "{{ModId}}_Hogwarts"
           ],
@@ -58,14 +60,16 @@
             "DMT/animation_Enter": "{{ModId}}.StardewValleyHouseTasks,NotificationSeedShop",
             "DMT/take_Once_Item((O){{ModId}}_HogwartsEmblem)": "(O){{ModId}}_HogwartsEmblem,1",
             "DMT/mail_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}_Hufflepuff",
+            "DMT/mailbox_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}_Wizard",
             "DMT/animationOff_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}.StardewValleyHouseTasks,NotificationSeedShop",
-            "DMT/message_Once_Item((O){{ModId}}_HogwartsEmblem)": "You drop the emblem at the designated location.",
+            "DMT/message_Once_Item((O){{ModId}}_HogwartsEmblem)": "You toss the emblem at the designated location.",
             "DMT/animation_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}.StardewValleyHouseTasks,HouseTaskOwlSeedShop"
           }
         }
       ],
       "When": {
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogwartsLetterAcceptance": true,
         "HasFlag |contains= {{ModId}}_Hufflepuff, {{ModId}}_Gryffindor, {{ModId}}_Slytherin, {{ModId}}_Ravenclaw": false
       }
     },
@@ -84,14 +88,16 @@
             "DMT/animation_Enter": "{{ModId}}.StardewValleyHouseTasks,NotificationAdventureGuild",
             "DMT/take_Once_Item((O){{ModId}}_HogwartsEmblem)": "(O){{ModId}}_HogwartsEmblem,1",
             "DMT/mail_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}_Gryffindor",
+            "DMT/mailbox_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}_Wizard",
             "DMT/animationOff_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}.StardewValleyHouseTasks,NotificationAdventureGuild",
-            "DMT/message_Once_Item((O){{ModId}}_HogwartsEmblem)": "You drop the emblem at the designated location.",
+            "DMT/message_Once_Item((O){{ModId}}_HogwartsEmblem)": "You toss the emblem at the designated location.",
             "DMT/animation_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}.StardewValleyHouseTasks,HouseTaskOwlAdventureGuild"
           }
         }
       ],
       "When": {
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogwartsLetterAcceptance": true,
         "HasFlag |contains= {{ModId}}_Hufflepuff, {{ModId}}_Gryffindor, {{ModId}}_Slytherin, {{ModId}}_Ravenclaw": false
       }
     },
@@ -110,14 +116,16 @@
             "DMT/animation_Enter": "{{ModId}}.StardewValleyHouseTasks,NotificationArchaeologyHouse",
             "DMT/take_Once_Item((O){{ModId}}_HogwartsEmblem)": "(O){{ModId}}_HogwartsEmblem,1",
             "DMT/mail_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}_Ravenclaw",
+            "DMT/mailbox_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}_Wizard",
             "DMT/animationOff_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}.StardewValleyHouseTasks,NotificationArchaeologyHouse",
-            "DMT/message_Once_Item((O){{ModId}}_HogwartsEmblem)": "You drop the emblem at the designated location.",
+            "DMT/message_Once_Item((O){{ModId}}_HogwartsEmblem)": "You toss the emblem at the designated location.",
             "DMT/animation_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}.StardewValleyHouseTasks,HouseTaskOwlArchaeologyHouse"
           }
         }
       ],
       "When": {
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogwartsLetterAcceptance": true,
         "HasFlag |contains= {{ModId}}_Hufflepuff, {{ModId}}_Gryffindor, {{ModId}}_Slytherin, {{ModId}}_Ravenclaw": false
       }
     },
@@ -136,14 +144,16 @@
             "DMT/animation_Enter": "{{ModId}}.StardewValleyHouseTasks,NotificationForest",
             "DMT/take_Once_Item((O){{ModId}}_HogwartsEmblem)": "(O){{ModId}}_HogwartsEmblem,1",
             "DMT/mail_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}_Slytherin",
+            "DMT/mailbox_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}_Wizard",
             "DMT/animationOff_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}.StardewValleyHouseTasks,NotificationForest",
-            "DMT/message_Once_Item((O){{ModId}}_HogwartsEmblem)": "You drop the emblem at the designated location.",
+            "DMT/message_Once_Item((O){{ModId}}_HogwartsEmblem)": "You toss the emblem at the designated location.",
             "DMT/animation_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}.StardewValleyHouseTasks,HouseTaskOwlForest"
           }
         }
       ],
       "When": {
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogwartsLetterAcceptance": true,
         "HasFlag |contains= {{ModId}}_Hufflepuff, {{ModId}}_Gryffindor, {{ModId}}_Slytherin, {{ModId}}_Ravenclaw": false
       }
     },
@@ -154,7 +164,7 @@
       "FromFile": "Assets/Creatures/{{TargetWithoutPath}}.png"
     },
     {
-      "LogName": "Hogwarts House Tasks Notification 1 Animation",
+      "LogName": "Hogwarts House Tasks Animation",
       "Action": "EditData",
       "Target": "DMT/Animations",
       "Entries": {

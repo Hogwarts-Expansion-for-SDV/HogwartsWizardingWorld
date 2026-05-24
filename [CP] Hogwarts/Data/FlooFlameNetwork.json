@@ -1,7 +1,7 @@
 {
   "Changes": [
     {
-      "LogName": "Floo Flame Network - Hogsmeade Network",
+      "LogName": "Hogwarts Floo Flame Network",
       "Action": "EditData",
       "Target": "Data/Minecarts",
       "Entries": {
@@ -10,6 +10,7 @@
             {
               "Id": "{{ModId}}_HogsmeadeStation",
               "DisplayName": "{{i18n: floo.hogsmeadestation}}",
+              "Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Wizard",
               "TargetLocation": "{{ModId}}_HogsmeadeStation",
               "TargetTile": {
                 "X": 33,
@@ -20,6 +21,7 @@
             {
               "Id": "{{ModId}}_HogsmeadeVillageCenter",
               "DisplayName": "{{i18n: floo.hogsmeadevillagecenter}}",
+              "Condition": "PLAYER_HAS_MAIL Any {{ModId}}_HogsmeadeVillageCenterFlooFlame",
               "TargetLocation": "{{ModId}}_HogsmeadeVillage",
               "TargetTile": {
                 "X": 73,
@@ -28,8 +30,9 @@
               "TargetDirection": "down"
             },
             {
-              "Id": "{{ModId}}_HogsmeadeVillageCrossroads",
+              "Id": "{{ModId}}_HogsmeadeVillageCrossroad",
               "DisplayName": "{{i18n: floo.hogsmeadevillagecrossroads}}",
+              "Condition": "PLAYER_HAS_MAIL Any {{ModId}}_HogsmeadeVillageCrossroadFlooFlame",
               "TargetLocation": "{{ModId}}_HogsmeadeVillage",
               "TargetTile": {
                 "X": 25,
@@ -40,6 +43,7 @@
             {
               "Id": "{{ModId}}_WizardsTowerFireplace",
               "DisplayName": "{{i18n: floo.wizard}}",
+              "Condition": "PLAYER_HAS_MAIL Any {{ModId}}_Wizard",
               "TargetLocation": "WizardHouse",
               "TargetTile": {
                 "X": 10,
@@ -138,8 +142,10 @@
         }
       },
       "When": {
-        "HasMod |contains= mushymato.MMAP": true
-      }
+        "HasMod |contains= mushymato.MMAP": true,
+        "HasFlag |contains= {{ModId}}_Wizard": true
+      },
+      "Update": "OnLocationChange"
     },
     {
       "LogName": "Floo Flame Network - Hogsmeade Station Flame",
