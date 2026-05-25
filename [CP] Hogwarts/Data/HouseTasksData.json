@@ -1,25 +1,55 @@
 {
   "Changes": [
     {
-      "LogName": "Hogwarts Acceptance Letter Mail Data",
+      "LogName": "Hogwarts House Tasks Mail Data",
       "Action": "EditData",
       "Target": "Data/Mail",
       "Entries": {
-        "{{ModId}}_HogwartsLetterAcceptance": "HOGWARTS SCHOOL of WITCHCRAFT and WIZARDRY^         Headmistress: Minerva McGonagall^          (Order of Merlin, First Class)^^Dear ${Mr^Ms}$ @,^    We are pleased to inform you that you have successfully passed your first year at Hogwarts. Enclosed is your report and a list of necessary books and equipment for the upcoming year. Place the emblem attached to the letter at one of the designated spots for an owl to pick up.^^*Guild for brave adventurers^*Shop selling seeds and saplings^*Museum containing books^*Forest that leads to a dark entrance^^We look forward to your owl's reply,^Filius Flitwick^Deputy Headmaster^COURSE BOOKS^All students should have a copy of each of the following:^^Fantastic Beasts and Where to Find Them^by Newt Scamander^^The Monster Book of Monsters^by Edwardus Lima^^OTHER EQUIPMENT^1 wand^1 cauldron^1 telescope^1 dark detector with eyes^Students may also bring, if they desire, a pet.^^Yours sincerely,^Lucinda Thomsonicle-Pocus^Chief Attendant of Witchcraft Provisions%item id (O){{ModId}}_HogwartsEmblem 1 %%[#]A Letter From Hogwarts",
-        "{{ModId}}_Wizard": "HOGWARTS SCHOOL of WITCHCRAFT and WIZARDRY^         Headmistress: Minerva McGonagall^          (Order of Merlin, First Class)^^Dear ${Mr^Ms}$ @,^    We have received your owl. To reach Hogsmeade Station, please use one of the following methods:^*Wizard's Tower Floo Flame^*Floo Flame using a furniture^Sincerely,^Filius Flitwick^Deputy Headmaster[#]Locations To Use Floo Flame"
+        "{{ModId}}_HogwartsLetterAcceptance": "HOGWARTS SCHOOL of WITCHCRAFT and WIZARDRY^         Headmistress: Minerva McGonagall^          (Order of Merlin, First Class)^^Dear ${Mr^Ms}$ @,^    We are pleased to inform you that you have successfully passed your first year at Hogwarts. Enclosed is your report and a list of necessary books and equipment for the upcoming year. Place the emblem attached to the letter at one of the designated spots for an owl to pick up.^^-Guild for brave adventurers^-Shop selling seeds and saplings^-Museum containing books^-Forest that leads to a dark entrance^^We look forward to your owl's reply,^Filius Flitwick^Deputy Headmaster^COURSE BOOKS^All students should have a copy of each of the following:^^Fantastic Beasts and Where to Find Them^by Newt Scamander^^The Monster Book of Monsters^by Edwardus Lima^^OTHER EQUIPMENT^1 wand^1 cauldron^1 telescope^1 dark detector with eyes^Students may also bring, if they desire, a pet.^^Yours sincerely,^Lucinda Thomsonicle-Pocus^Chief Attendant of Witchcraft Provisions%item id (O){{ModId}}_HogwartsEmblem 1 %%[#]A Letter From Hogwarts",
+        "{{ModId}}_Wizard": "HOGWARTS SCHOOL of WITCHCRAFT and WIZARDRY^^Dear ${Mr^Ms}$ @,^    We have received your owl. To reach Hogsmeade Station, please use one of the following methods:^-Wizard's Tower Floo Flame^-Floo Flame using a fireplace furniture^^Sincerely,^Filius Flitwick^Deputy Headmaster[#]Locations To Use Floo Flame"
       }
     },
     {
-      "LogName": "Hogwarts Letter Trigger Actions Mail",
+      "LogName": "Hogwarts House Tasks Quests Data",
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        "{{ModId}}_HogwartsLetterAcceptance": "Basic/Deliver Hogwarts Emblem/Deliver the Hogwarts Emblem to one of the designated locations:                                                                                           -Guild for brave adventurers          -Shop selling seeds and saplings          -Museum containing books                    -Forest that leads to a dark entrance/Deliver Hogwarts Emblem///0//",
+        "{{ModId}}_HogsmeadeStationFlooFlame": "Basic/Go To Hogsmeade Station/Use a Floo Flame either at the Wizard's Tower or with fireplace furniture to get to Hogsmeade Station. /Go to Hogsmeade Station///0//"
+      }
+    },
+    {
+      "LogName": "Hogwarts House Tasks Trigger Actions", //Should create Wizard mail if dependencies fail 
       "Action": "EditData",
       "Target": "Data/TriggerActions",
       "Entries": {
         "{{ModId}}_HogwartsLetterAcceptanceAddMail": {
           "Id": "{{ModId}}_HogwartsLetterAcceptanceAddMail",
           "Trigger": "DayStarted",
-          "Condition": "!PLAYER_HAS_MAIL Any {{ModId}}_HogwartsLetterAcceptance received, {{HasMod |contains= aedenthorn.DynamicMapTilesExtended}}, !{{HasFlag |contains= {{ModId}}_Hufflepuff, {{ModId}}_Gryffindor, {{ModId}}_Slytherin, {{ModId}}_Ravenclaw}}",
+          "Condition": "!PLAYER_HAS_MAIL Current {{ModId}}_HogwartsLetterAcceptance received, {{HasMod |contains= aedenthorn.DynamicMapTilesExtended}}",
           "Action": "AddMail all {{ModId}}_HogwartsLetterAcceptance now",
-          "MarkActionApplied": false
+          "MarkActionApplied": true
+        },
+        "{{ModId}}_HogwartsLetterAcceptanceQuest": {
+          "Id": "{{ModId}}_HogwartsLetterAcceptanceQuest",
+          "Trigger": "Spiderbuttons.BETAS_LetterRead",
+          "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_HogwartsLetterAcceptance received, {{HasMod |contains= aedenthorn.DynamicMapTilesExtended}}",
+          "Action": "AddQuest {{ModId}}_HogwartsLetterAcceptance",
+          "MarkActionApplied": true
+        },
+        "{{ModId}}_HogwartsFlooFlameHogsmeadeStationQuest": {
+          "Id": "{{ModId}}_HogwartsFlameHogsmeadeStationQuest",
+          "Trigger": "Spiderbuttons.BETAS_LetterRead",
+          "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_Wizard received",
+          "Action": "AddQuest {{ModId}}_HogsmeadeStationFlooFlame",
+          "MarkActionApplied": true
+        },
+        "{{ModId}}_HogwartsFlooFlameHogsmeadeStationQuestComplete": {
+          "Id": "{{ModId}}_HogwartsFlameHogsmeadeStationQuestComplete",
+          "Trigger": "LocationChanged",
+          "Condition": "LOCATION_NAME Here {{ModId}}_HogsmeadeStation",
+          "Action": "RemoveQuest {{ModId}}_HogsmeadeStationFlooFlame",
+          "MarkActionApplied": true
         }
       }
     },
@@ -63,6 +93,7 @@
             "DMT/mailbox_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}_Wizard",
             "DMT/animationOff_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}.StardewValleyHouseTasks,NotificationSeedShop",
             "DMT/message_Once_Item((O){{ModId}}_HogwartsEmblem)": "You toss the emblem at the designated location.",
+            "DMT/removeQuest_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}_HogwartsLetterAcceptance",
             "DMT/animation_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}.StardewValleyHouseTasks,HouseTaskOwlSeedShop"
           }
         }
@@ -91,6 +122,7 @@
             "DMT/mailbox_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}_Wizard",
             "DMT/animationOff_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}.StardewValleyHouseTasks,NotificationAdventureGuild",
             "DMT/message_Once_Item((O){{ModId}}_HogwartsEmblem)": "You toss the emblem at the designated location.",
+            "DMT/removeQuest_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}_HogwartsLetterAcceptance",
             "DMT/animation_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}.StardewValleyHouseTasks,HouseTaskOwlAdventureGuild"
           }
         }
@@ -119,6 +151,7 @@
             "DMT/mailbox_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}_Wizard",
             "DMT/animationOff_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}.StardewValleyHouseTasks,NotificationArchaeologyHouse",
             "DMT/message_Once_Item((O){{ModId}}_HogwartsEmblem)": "You toss the emblem at the designated location.",
+            "DMT/removeQuest_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}_HogwartsLetterAcceptance",
             "DMT/animation_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}.StardewValleyHouseTasks,HouseTaskOwlArchaeologyHouse"
           }
         }
@@ -147,6 +180,7 @@
             "DMT/mailbox_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}_Wizard",
             "DMT/animationOff_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}.StardewValleyHouseTasks,NotificationForest",
             "DMT/message_Once_Item((O){{ModId}}_HogwartsEmblem)": "You toss the emblem at the designated location.",
+            "DMT/removeQuest_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}_HogwartsLetterAcceptance",
             "DMT/animation_Once_Item((O){{ModId}}_HogwartsEmblem)": "{{ModId}}.StardewValleyHouseTasks,HouseTaskOwlForest"
           }
         }
