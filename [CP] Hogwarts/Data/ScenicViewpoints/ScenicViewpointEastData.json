@@ -16,6 +16,36 @@
       "Update": "OnLocationChange"
     },
     {
+      "LogName": "Scenic Viewpoint East DMTE",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ScenicViewpointEast",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 1, 23}}|key=Abraxan1}}}}",
+            "Y": "{{Query: {{Random: {{Range: 20, 22}}|key=Abraxan1}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/animation_Once_On": "{{ModId}}.ScenicViewpointEast,Abraxan1"
+          }
+        },
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 1, 23}}|key=Phoenix1}}}}",
+            "Y": "{{Query: {{Random: {{Range: 20, 23}}|key=Phoenix1}}}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/animation_Once_On": "{{ModId}}.ScenicViewpointEast,Phoenix1"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
       "LogName": "Scenic Viewpoint East Animation",
       "Action": "EditData",
       "Target": "DMT/Animations",
@@ -71,46 +101,6 @@
           }
         ]
       },
-      "When": {
-        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
-      }
-    },
-    {
-      "LogName": "Scenic Viewpoint East Abraxan 1 Animation",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_ScenicViewpointEast",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 4,
-            "Y": 21
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "DMT/animation_On": "{{ModId}}.ScenicViewpointEast,Abraxan1"
-          }
-        }
-      ],
-      "When": {
-        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
-      }
-    },
-    {
-      "LogName": "Scenic Viewpoint East Phoenix 1 Animation",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_ScenicViewpointEast",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 20,
-            "Y": 21
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "DMT/animation_On": "{{ModId}}.ScenicViewpointEast,Phoenix1"
-          }
-        }
-      ],
       "When": {
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
       }

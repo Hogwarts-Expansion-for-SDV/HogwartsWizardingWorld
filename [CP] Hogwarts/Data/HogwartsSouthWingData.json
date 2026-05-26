@@ -427,6 +427,41 @@
       ]
     },
     {
+      "LogName": "Hogwarts South Wing Boat Animation Trigger",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSouthWing",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 49,
+            "Y": 7
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/animation_Once_On": "{{ModId}}.HogwartsSouthWing,Boat"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Hogwarts South Wing Hufflepuff Common Room Door Trigger",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSouthWing",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 14,
+            "Y": 38
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/animation_On": "{{ModId}}.HogwartsSouthWing,HufflepuffCommonRoomDoorOpen",
+            "DMT/changeMultipleIndex_On": "Buildings1 13 36=z_Hogwarts_SouthWing_Hogwarts/844|Buildings1 14 36=z_Hogwarts_SouthWing_Hogwarts/845|Buildings1 15 36=z_Hogwarts_SouthWing_Hogwarts/846|Buildings1 14 37=z_Hogwarts_SouthWing_Hogwarts/879"
+          }
+        }
+      ]
+    },
+    {
       "LogName": "Hogwarts South Wing Boat Animation",
       "Action": "EditData",
       "Target": "DMT/Animations",
@@ -494,41 +529,6 @@
           }
         ]
       }
-    },
-    {
-      "LogName": "Hogwarts South Wing Boat Animation Trigger",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsSouthWing",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 49,
-            "Y": 7
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "DMT/animation_On": "{{ModId}}.HogwartsSouthWing,Boat"
-          }
-        }
-      ]
-    },
-    {
-      "LogName": "Hogwarts South Wing Hufflepuff Common Room Door Trigger",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsSouthWing",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 14,
-            "Y": 38
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "DMT/animation_On": "{{ModId}}.HogwartsSouthWing,HufflepuffCommonRoomDoorOpen",
-            "DMT/changeMultipleIndex_On": "Buildings1 13 36=z_Hogwarts_SouthWing_Hogwarts/844|Buildings1 14 36=z_Hogwarts_SouthWing_Hogwarts/845|Buildings1 15 36=z_Hogwarts_SouthWing_Hogwarts/846|Buildings1 14 37=z_Hogwarts_SouthWing_Hogwarts/879"
-          }
-        }
-      ]
     }
   ]
 }
