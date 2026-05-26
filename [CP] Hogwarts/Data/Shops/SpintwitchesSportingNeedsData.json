@@ -1,0 +1,29 @@
+{
+  "Changes": [
+    {
+      "LogName": "ikg Changes",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_SpintwitchesSportingNeeds",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 5,
+            "Y": 4
+          },
+          "Layer": "Buildings1",
+          "SetTilesheet": "z_HogsmeadeInterior_Hxoni_Hogwarts",
+          "SetIndex": "{{Query:{{Random:762,794,795,796}}}}"
+        },
+        {
+          "Position": {
+            "X": 5,
+            "Y": 5
+          },
+          "Layer": "Buildings1",
+          "SetTilesheet": "z_HogsmeadeInterior_Hxoni_Hogwarts",
+          "SetIndex": "{{Query:{{Random:762,794,795,796}}+23}}"
+        }
+      ]
+    }
+  ]
+}

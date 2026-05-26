@@ -14,17 +14,7 @@
           "SetProperties": {
             "DMT/appearance_Action": "hairstyle,4|haircolor,#1b76b9"
           }
-        }
-      ],
-      "When": {
-        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
-      }
-    },
-    {
-      "LogName": "Madam Snelling's Tress Emporium Appearance Test Hair 2 DMTE",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_MadamSnellingsTressEmporium",
-      "MapTiles": [
+        },
         {
           "Position": {
             "X": 3,
@@ -34,17 +24,7 @@
           "SetProperties": {
             "DMT/appearance_Action": "hairstyle,17|haircolor,#a52929"
           }
-        }
-      ],
-      "When": {
-        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
-      }
-    },
-    {
-      "LogName": "Madam Snelling's Tress Emporium Appearance Test Hair 3 DMTE",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_MadamSnellingsTressEmporium",
-      "MapTiles": [
+        },
         {
           "Position": {
             "X": 2,
@@ -54,17 +34,7 @@
           "SetProperties": {
             "DMT/appearance_Action": "hairstyle,30|haircolor,#fbb15a"
           }
-        }
-      ],
-      "When": {
-        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
-      }
-    },
-    {
-      "LogName": "Madam Snelling's Tress Emporium Appearance Test Hair 4 DMTE",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_MadamSnellingsTressEmporium",
-      "MapTiles": [
+        },
         {
           "Position": {
             "X": 15,
@@ -74,17 +44,7 @@
           "SetProperties": {
             "DMT/appearance_Action": "hairstyle,43|haircolor,#ae3b5e"
           }
-        }
-      ],
-      "When": {
-        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
-      }
-    },
-    {
-      "LogName": "Madam Snelling's Tress Emporium Appearance Test Hair 5 DMTE",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_MadamSnellingsTressEmporium",
-      "MapTiles": [
+        },
         {
           "Position": {
             "X": 11,
@@ -94,17 +54,7 @@
           "SetProperties": {
             "DMT/appearance_Action": "hairstyle,107|haircolor,#a14ec9"
           }
-        }
-      ],
-      "When": {
-        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
-      }
-    },
-    {
-      "LogName": "Madam Snelling's Tress Emporium Appearance Test Hair 6 DMTE",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_MadamSnellingsTressEmporium",
-      "MapTiles": [
+        },
         {
           "Position": {
             "X": 12,
@@ -114,17 +64,7 @@
           "SetProperties": {
             "DMT/appearance_Action": "hairstyle,103|haircolor,#82bcc9"
           }
-        }
-      ],
-      "When": {
-        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
-      }
-    },
-    {
-      "LogName": "Madam Snelling's Tress Emporium Appearance Test Hair 7 DMTE",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_MadamSnellingsTressEmporium",
-      "MapTiles": [
+        },
         {
           "Position": {
             "X": 3,
@@ -134,17 +74,7 @@
           "SetProperties": {
             "DMT/appearance_Action": "hairstyle,110|haircolor,#5d304b"
           }
-        }
-      ],
-      "When": {
-        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
-      }
-    },
-    {
-      "LogName": "Madam Snelling's Tress Emporium Appearance Test Hair 8 DMTE",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_MadamSnellingsTressEmporium",
-      "MapTiles": [
+        },
         {
           "Position": {
             "X": 4,
@@ -159,6 +89,22 @@
       "When": {
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
       }
+    },
+    {
+      "LogName": "Madam Snelling's Tress Emporium Wig Changes",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_MadamSnellingsTressEmporium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 9,
+            "Y": 11
+          },
+          "Layer": "Front",
+          "SetTilesheet": "z_HogsmeadeInterior_Hxoni_Hogwarts",
+          "SetIndex": "{{Query:{{Random:{{MadamSnellingsTressEmporiumWigs}}}}}}"
+        }
+      ]
     }
   ]
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="15" height="14" tilewidth="16" tileheight="16" infinite="0" nextlayerid="18" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="15" height="14" tilewidth="16" tileheight="16" infinite="0" nextlayerid="18" nextobjectid="1">
  <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
   <image source="townInterior.png" width="512" height="1088"/>
  </tileset>
@@ -727,8 +727,8 @@
  <tileset firstgid="6805" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
   <image source="paths.png" width="64" height="256"/>
  </tileset>
- <tileset firstgid="6869" name="z_HogsmeadeInterior_Hxoni_Hogwarts" tilewidth="16" tileheight="16" tilecount="552" columns="23">
-  <image source="z_HogsmeadeInterior_Hxoni_Hogwarts.png" width="368" height="384"/>
+ <tileset firstgid="6869" name="z_HogsmeadeInterior_Hxoni_Hogwarts" tilewidth="16" tileheight="16" tilecount="828" columns="23">
+  <image source="z_HogsmeadeInterior_Hxoni_Hogwarts.png" width="368" height="576"/>
   <tile id="104">
    <animation>
     <frame tileid="104" duration="250"/>
@@ -755,6 +755,44 @@
     <frame tileid="104" duration="250"/>
    </animation>
   </tile>
+  <tile id="114">
+   <animation>
+    <frame tileid="114" duration="500"/>
+    <frame tileid="114" duration="500"/>
+    <frame tileid="114" duration="500"/>
+    <frame tileid="114" duration="500"/>
+    <frame tileid="65" duration="500"/>
+    <frame tileid="65" duration="500"/>
+    <frame tileid="65" duration="500"/>
+    <frame tileid="65" duration="500"/>
+    <frame tileid="114" duration="500"/>
+    <frame tileid="114" duration="500"/>
+    <frame tileid="65" duration="500"/>
+    <frame tileid="65" duration="500"/>
+    <frame tileid="114" duration="500"/>
+    <frame tileid="114" duration="500"/>
+    <frame tileid="65" duration="500"/>
+    <frame tileid="114" duration="500"/>
+    <frame tileid="65" duration="500"/>
+    <frame tileid="114" duration="500"/>
+    <frame tileid="114" duration="500"/>
+   </animation>
+  </tile>
+  <tile id="160">
+   <animation>
+    <frame tileid="160" duration="500"/>
+    <frame tileid="182" duration="500"/>
+    <frame tileid="181" duration="500"/>
+    <frame tileid="182" duration="500"/>
+    <frame tileid="160" duration="500"/>
+    <frame tileid="182" duration="500"/>
+    <frame tileid="181" duration="500"/>
+    <frame tileid="182" duration="500"/>
+    <frame tileid="181" duration="500"/>
+    <frame tileid="160" duration="500"/>
+    <frame tileid="160" duration="500"/>
+   </animation>
+  </tile>
   <tile id="169">
    <animation>
     <frame tileid="169" duration="500"/>
@@ -775,11 +813,56 @@
     <frame tileid="169" duration="500"/>
    </animation>
   </tile>
+  <tile id="177">
+   <animation>
+    <frame tileid="177" duration="500"/>
+    <frame tileid="135" duration="500"/>
+    <frame tileid="177" duration="500"/>
+    <frame tileid="177" duration="500"/>
+    <frame tileid="177" duration="500"/>
+    <frame tileid="135" duration="500"/>
+    <frame tileid="135" duration="500"/>
+    <frame tileid="135" duration="500"/>
+    <frame tileid="135" duration="500"/>
+    <frame tileid="177" duration="500"/>
+    <frame tileid="177" duration="500"/>
+    <frame tileid="135" duration="500"/>
+    <frame tileid="177" duration="500"/>
+   </animation>
+  </tile>
   <tile id="195">
    <animation>
     <frame tileid="195" duration="250"/>
     <frame tileid="196" duration="250"/>
     <frame tileid="197" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="217">
+   <animation>
+    <frame tileid="217" duration="500"/>
+    <frame tileid="217" duration="500"/>
+    <frame tileid="217" duration="500"/>
+    <frame tileid="217" duration="500"/>
+    <frame tileid="217" duration="500"/>
+    <frame tileid="194" duration="500"/>
+    <frame tileid="194" duration="500"/>
+    <frame tileid="194" duration="500"/>
+    <frame tileid="194" duration="500"/>
+    <frame tileid="194" duration="500"/>
+    <frame tileid="217" duration="500"/>
+    <frame tileid="217" duration="500"/>
+    <frame tileid="217" duration="500"/>
+    <frame tileid="194" duration="500"/>
+    <frame tileid="194" duration="500"/>
+    <frame tileid="194" duration="500"/>
+    <frame tileid="194" duration="500"/>
+    <frame tileid="194" duration="500"/>
+    <frame tileid="194" duration="500"/>
+    <frame tileid="194" duration="500"/>
+    <frame tileid="194" duration="500"/>
+    <frame tileid="217" duration="500"/>
+    <frame tileid="217" duration="500"/>
+    <frame tileid="217" duration="500"/>
    </animation>
   </tile>
   <tile id="218">
@@ -853,7 +936,7 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="7421" name="2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+ <tileset firstgid="7697" name="2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
   <image source="townInterior_2.png" width="512" height="656"/>
  </tileset>
  <layer id="1" name="Back" width="15" height="14">
@@ -895,19 +978,19 @@
  <layer id="3" name="Buildings" width="15" height="14">
   <data encoding="csv">
 0,3380,3380,3380,3380,3380,3380,3380,3380,3380,3380,3380,3380,3380,0,
-0,7540,7541,7541,7541,7541,7541,7541,7541,7541,7541,7541,7541,7542,0,
-0,7572,6312,6310,6312,7101,7150,7151,3221231795,6312,4258,6312,1073748146,7574,0,
-0,7572,6324,6957,2147490529,7124,7173,7174,1073748146,6324,4811,6324,6996,7574,0,
-0,7572,0,6980,6336,6336,7196,7197,2147489971,6336,4843,6336,2147489971,7574,0,
-0,7572,4848,0,0,0,0,0,0,0,0,7040,7041,7574,0,
-0,7572,0,0,0,0,0,0,0,0,0,0,2147490664,7574,0,
-0,7572,0,0,0,0,0,7129,7107,7108,7109,0,7636,7606,0,
-0,7572,0,0,0,0,0,0,0,0,0,0,7574,3380,0,
-0,7604,7391,7392,0,0,0,0,0,0,0,0,7574,3380,0,
-0,3380,3380,7604,0,0,7191,7192,0,0,0,4849,7574,3380,0,
-0,3380,3380,3380,7604,0,0,0,0,0,0,2147488226,7606,3380,0,
-0,3380,3380,3380,3380,3380,3380,3380,7568,0,0,7571,3380,3380,0,
-0,0,0,0,0,0,0,3380,3380,3380,3380,3380,3380,0,0
+0,7816,7817,7817,7817,7817,7817,7817,7817,7817,7817,7817,7817,7818,0,
+0,7848,6312,6310,6312,7101,7150,7151,3221231795,6312,4258,6312,1073748146,7850,0,
+0,7848,6324,6957,2147490529,7124,7173,7174,1073748146,6324,4811,6324,6996,7850,0,
+0,7848,0,6980,6336,6336,7196,7197,2147489971,6336,4843,6336,2147489971,7850,0,
+0,7848,4848,0,0,0,0,0,0,0,0,7040,7041,7850,0,
+0,7848,0,0,0,0,0,0,0,0,0,0,2147490664,7850,0,
+0,7848,0,0,0,0,0,7129,7107,7108,7109,0,0,7882,0,
+0,7848,0,0,0,0,0,0,0,0,0,0,7850,3380,0,
+0,7880,7391,7392,0,0,0,0,0,0,0,0,7850,3380,0,
+0,3380,3380,7880,0,0,7191,7192,0,0,0,4849,7850,3380,0,
+0,3380,3380,3380,7880,0,0,0,0,0,0,2147488226,7882,3380,0,
+0,3380,3380,3380,3380,3380,3380,3380,7844,0,0,7847,3380,3380,0,
+0,0,0,0,0,0,0,3380,3380,0,0,3380,3380,0,0
 </data>
  </layer>
  <layer id="4" name="Buildings1" width="15" height="14">
@@ -955,13 +1038,13 @@
 0,0,4816,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,7106,7084,7085,7086,7002,7003,6891,0,
-0,0,0,0,0,0,0,0,0,0,0,7064,7026,0,0,
+0,0,0,0,0,0,0,0,0,0,0,7064,7912,0,0,
 0,0,7368,7369,0,0,0,0,0,0,0,7087,7049,0,0,
-0,0,7605,7637,0,0,7168,7169,0,0,0,7131,0,0,0,
+0,0,7881,7913,0,0,7168,7169,0,0,0,7131,0,0,0,
 0,0,0,0,2147490696,0,0,0,0,0,0,7368,0,0,0,
-0,0,0,0,0,7605,7605,7605,7637,0,0,7391,0,0,0,
-0,0,0,0,0,0,0,0,0,7569,7570,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,7881,7881,7881,7913,0,0,7391,0,0,0,
+0,0,0,0,0,0,0,0,0,7845,7846,0,0,0,0,
+0,0,0,0,0,0,0,0,0,3380,3380,0,0,0,0
 </data>
  </layer>
  <layer id="6" name="Front1" width="15" height="14">
@@ -973,11 +1056,11 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,2147490539,0,0,0,0,2797,0,0,0,0,7025,0,0,0,
-0,3758103312,3758103289,2147490651,2147490650,2796,0,0,0,0,0,7048,7051,0,0,
+0,2147490539,0,0,0,0,2797,0,0,0,0,7025,7026,0,0,
+0,3758103312,3758103289,2147490651,2147490650,2796,0,0,0,0,0,7048,0,0,0,
 0,3758103311,3758103288,2147490674,2147490673,2819,2820,0,0,0,0,0,0,0,0,
-0,0,0,2147490697,7637,0,0,0,0,0,0,0,0,0,0,
-0,0,0,2797,0,0,0,0,0,0,0,7636,0,0,0,
+0,0,0,2147490697,7913,0,0,0,0,0,0,0,0,0,0,
+0,0,0,2797,0,0,0,0,0,0,0,7912,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
