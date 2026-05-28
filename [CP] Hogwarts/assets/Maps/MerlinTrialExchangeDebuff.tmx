@@ -1,39 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="9" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="42" nextobjectid="161">
- <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
-  <image source="paths.png" width="64" height="256"/>
-  <tile id="0">
-   <properties>
-    <property name="PathType" value="NE"/>
-   </properties>
-  </tile>
-  <tile id="1">
-   <properties>
-    <property name="PathType" value="SE"/>
-   </properties>
-  </tile>
-  <tile id="2">
-   <properties>
-    <property name="PathType" value="WS"/>
-   </properties>
-  </tile>
-  <tile id="3">
-   <properties>
-    <property name="PathType" value="WN"/>
-   </properties>
-  </tile>
-  <tile id="4">
-   <properties>
-    <property name="PathType" value="Crossroad"/>
-   </properties>
-  </tile>
-  <tile id="7">
-   <properties>
-    <property name="PathType" value="End"/>
-   </properties>
-  </tile>
- </tileset>
- <tileset firstgid="65" name="Landscape" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="9" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="29" nextobjectid="66">
+ <tileset firstgid="1" name="Landscape" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
   <image source="spring_outdoorsTileSheet" width="400" height="1264"/>
   <tile id="150">
    <properties>
@@ -1369,6 +1336,42 @@
    </properties>
   </tile>
  </tileset>
+ <tileset firstgid="1976" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+  <tile id="0">
+   <properties>
+    <property name="PathType" value="NE"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="PathType" value="SE"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="PathType" value="WS"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="PathType" value="WN"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="PathType" value="Crossroad"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="PathType" value="End"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="2040" name="z_merlin_trial_DomTSVG_Hogwarts" tilewidth="16" tileheight="16" tilecount="84" columns="12">
+  <image source="z_merlin_trial_sheet_DomTSVG_Hogwarts.png" width="192" height="112"/>
+ </tileset>
  <layer id="1" name="Back" width="9" height="9">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,
@@ -1382,15 +1385,28 @@
 0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="40" name="Back1" width="9" height="9">
+ <layer id="13" name="Back1" width="9" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,126,126,126,0,0,0,
+0,0,126,126,126,126,126,0,0,
+0,0,126,126,126,126,126,0,0,
+0,0,126,126,126,126,126,0,0,
+0,0,0,126,126,126,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="23" name="Back38" width="9" height="9">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,
-0,0,190,190,0,190,190,0,0,
-0,0,190,190,0,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,0,190,190,190,0,0,0,
+0,0,0,2076,2077,2078,0,0,0,
+0,0,0,2088,2089,2090,0,0,0,
+0,0,0,2100,2101,2102,0,0,0,
+0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0
 </data>
@@ -1399,24 +1415,11 @@
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,
-0,0,0,279,282,281,0,0,0,
-0,0,190,304,190,306,190,0,0,
-0,0,190,329,190,331,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,0,190,190,190,0,0,0,
-0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0
-</data>
- </layer>
- <layer id="11" name="Buildings1" width="9" height="9">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,
-0,0,0,0,282,0,0,0,0,
-0,0,0,0,330,0,0,0,0,
-0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,
+0,0,126,126,126,126,126,0,0,
+0,0,126,126,126,126,126,0,0,
+0,0,126,126,126,126,126,0,0,
+0,0,126,126,126,126,126,0,0,
+0,0,0,126,126,126,0,0,0,
 0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0
 </data>
@@ -1434,248 +1437,195 @@
 0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="39" name="Front" width="9" height="9">
+ <layer id="4" name="Front" width="9" height="9">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,
-0,0,0,190,280,190,0,0,0,
-0,0,190,190,305,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,0,190,190,190,0,0,0,
+0,0,0,126,126,126,0,0,0,
+0,0,126,126,126,126,126,0,0,
+0,0,126,126,126,126,126,0,0,
+0,0,126,126,126,126,126,0,0,
+0,0,0,126,126,126,0,0,0,
 0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="18" name="AlwaysFront" width="9" height="9">
+ <layer id="5" name="AlwaysFront" width="9" height="9">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,
-0,0,0,190,190,190,0,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,0,190,190,190,0,0,0,
+0,0,0,126,126,126,0,0,0,
+0,0,126,126,126,126,126,0,0,
+0,0,126,126,126,126,126,0,0,
+0,0,126,126,126,126,126,0,0,
+0,0,0,126,126,126,0,0,0,
 0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="20" name="AlwaysFront10" width="9" height="9">
+ <layer id="17" name="AlwaysFront10" width="9" height="9">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,
-0,0,0,190,190,190,0,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,0,190,190,190,0,0,0,
+0,0,0,126,126,126,0,0,0,
+0,0,126,126,126,126,126,0,0,
+0,0,126,126,126,126,126,0,0,
+0,0,126,126,126,126,126,0,0,
+0,0,0,126,126,126,0,0,0,
 0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="21" name="AlwaysFront20" width="9" height="9">
+ <layer id="22" name="AlwaysFront20" width="9" height="9">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,
-0,0,0,190,190,190,0,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,0,190,190,190,0,0,0,
+0,0,0,126,126,126,0,0,0,
+0,0,126,126,126,126,126,0,0,
+0,0,126,126,126,126,126,0,0,
+0,0,126,126,126,126,126,0,0,
+0,0,0,126,126,126,0,0,0,
 0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="22" name="AlwaysFront30" width="9" height="9">
+ <layer id="24" name="AlwaysFront28" width="9" height="9">
   <data encoding="csv">
-0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,
-0,0,0,190,190,190,0,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,0,190,190,190,0,0,0,
-0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0
-</data>
- </layer>
- <layer id="23" name="AlwaysFront40" width="9" height="9">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,
-0,0,0,190,190,190,0,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,0,190,190,190,0,0,0,
-0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0
-</data>
- </layer>
- <layer id="24" name="AlwaysFront50" width="9" height="9">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,
-0,0,0,190,190,190,0,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,0,190,190,190,0,0,0,
-0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0
-</data>
- </layer>
- <layer id="25" name="AlwaysFront60" width="9" height="9">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,
-0,0,0,190,190,190,0,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,0,190,190,190,0,0,0,
-0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0
-</data>
- </layer>
- <layer id="26" name="AlwaysFront70" width="9" height="9">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,
-0,0,0,190,190,190,0,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,0,190,190,190,0,0,0,
-0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0
-</data>
- </layer>
- <layer id="27" name="AlwaysFront80" width="9" height="9">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,
-0,0,0,190,190,190,0,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,0,190,190,190,0,0,0,
-0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0
-</data>
- </layer>
- <layer id="5" name="AlwaysFront90" width="9" height="9">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,
-0,0,0,190,190,190,0,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,190,190,190,190,190,0,0,
-0,0,0,190,190,190,0,0,0,
-0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0
-</data>
- </layer>
- <layer id="15" name="AlwaysFront100" width="9" height="9">
-  <data encoding="csv">
-0,1083,1108,1107,1108,1107,1108,1082,0,
-1083,1109,1134,1006,1105,1105,1007,1106,1082,
-1084,1134,1006,1031,1033,1034,1035,1007,1081,
-1059,1006,1031,1057,190,1058,1034,1105,1056,
-1084,1133,1081,190,190,190,1084,1080,1081,
-1059,1007,1106,1082,190,1083,1109,1060,1056,
-1084,1035,1007,1106,1108,1109,1134,1006,1081,
-1058,1034,1035,1007,1080,1060,1006,1031,1057,
-0,1058,1033,1032,1033,1032,1033,1057,0
+0,1019,1044,1043,1044,1043,1044,1018,0,
+1019,1045,1070,942,1041,1041,943,1042,1018,
+1020,1070,942,967,969,970,971,943,1017,
+995,942,967,993,126,994,970,1041,992,
+1020,1069,1017,126,126,126,1020,1016,1017,
+995,943,1042,1018,126,1019,1045,996,992,
+1020,971,943,1042,1044,1045,1070,942,1017,
+994,970,971,943,1016,996,942,967,993,
+0,994,969,968,969,968,969,993,0
 </data>
  </layer>
  <objectgroup id="6" name="Back"/>
  <objectgroup id="14" name="Back1"/>
+ <objectgroup id="25" name="Back38"/>
  <objectgroup id="7" name="Buildings">
-  <object id="147" name="TileData" x="32" y="48" width="16" height="16">
+  <object id="43" name="TileData" x="32" y="32" width="16" height="16">
    <properties>
     <property name="Passable" value="T"/>
    </properties>
   </object>
-  <object id="148" name="TileData" x="32" y="64" width="16" height="16">
+  <object id="44" name="TileData" x="48" y="32" width="16" height="16">
    <properties>
     <property name="Passable" value="T"/>
    </properties>
   </object>
-  <object id="149" name="TileData" x="96" y="48" width="16" height="16">
+  <object id="45" name="TileData" x="64" y="32" width="16" height="16">
    <properties>
     <property name="Passable" value="T"/>
    </properties>
   </object>
-  <object id="150" name="TileData" x="96" y="64" width="16" height="16">
+  <object id="46" name="TileData" x="80" y="32" width="16" height="16">
    <properties>
     <property name="Passable" value="T"/>
    </properties>
   </object>
-  <object id="151" name="TileData" x="96" y="80" width="16" height="16">
+  <object id="47" name="TileData" x="96" y="32" width="16" height="16">
    <properties>
     <property name="Passable" value="T"/>
    </properties>
   </object>
-  <object id="152" name="TileData" x="80" y="80" width="16" height="16">
+  <object id="48" name="TileData" x="32" y="48" width="16" height="16">
    <properties>
     <property name="Passable" value="T"/>
    </properties>
   </object>
-  <object id="153" name="TileData" x="64" y="80" width="16" height="16">
+  <object id="49" name="TileData" x="48" y="48" width="16" height="16">
    <properties>
     <property name="Passable" value="T"/>
    </properties>
   </object>
-  <object id="154" name="TileData" x="48" y="80" width="16" height="16">
+  <object id="50" name="TileData" x="64" y="48" width="16" height="16">
    <properties>
     <property name="Passable" value="T"/>
    </properties>
   </object>
-  <object id="155" name="TileData" x="32" y="80" width="16" height="16">
+  <object id="51" name="TileData" x="80" y="48" width="16" height="16">
    <properties>
     <property name="Passable" value="T"/>
    </properties>
   </object>
-  <object id="156" name="TileData" x="48" y="96" width="16" height="16">
+  <object id="52" name="TileData" x="96" y="48" width="16" height="16">
    <properties>
     <property name="Passable" value="T"/>
    </properties>
   </object>
-  <object id="157" name="TileData" x="64" y="96" width="16" height="16">
+  <object id="53" name="TileData" x="32" y="64" width="16" height="16">
    <properties>
     <property name="Passable" value="T"/>
    </properties>
   </object>
-  <object id="158" name="TileData" x="80" y="96" width="16" height="16">
+  <object id="54" name="TileData" x="48" y="64" width="16" height="16">
    <properties>
     <property name="Passable" value="T"/>
    </properties>
   </object>
-  <object id="159" name="TileData" x="64" y="48" width="16" height="16">
+  <object id="55" name="TileData" x="64" y="64" width="16" height="16">
    <properties>
     <property name="Passable" value="T"/>
    </properties>
   </object>
-  <object id="160" name="TileData" x="64" y="64" width="16" height="16">
+  <object id="56" name="TileData" x="80" y="64" width="16" height="16">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </object>
+  <object id="57" name="TileData" x="96" y="64" width="16" height="16">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </object>
+  <object id="58" name="TileData" x="32" y="80" width="16" height="16">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </object>
+  <object id="59" name="TileData" x="48" y="80" width="16" height="16">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </object>
+  <object id="60" name="TileData" x="64" y="80" width="16" height="16">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </object>
+  <object id="61" name="TileData" x="80" y="80" width="16" height="16">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </object>
+  <object id="62" name="TileData" x="96" y="80" width="16" height="16">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </object>
+  <object id="63" name="TileData" x="48" y="96" width="16" height="16">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </object>
+  <object id="64" name="TileData" x="64" y="96" width="16" height="16">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </object>
+  <object id="65" name="TileData" x="80" y="96" width="16" height="16">
    <properties>
     <property name="Passable" value="T"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="12" name="Buildings1"/>
  <objectgroup id="8" name="Paths"/>
  <objectgroup id="9" name="Front"/>
- <objectgroup id="19" name="AlwaysFront"/>
- <objectgroup id="30" name="AlwaysFront10"/>
- <objectgroup id="29" name="AlwaysFront20"/>
- <objectgroup id="31" name="AlwaysFront30"/>
- <objectgroup id="32" name="AlwaysFront40"/>
- <objectgroup id="33" name="AlwaysFront50"/>
- <objectgroup id="34" name="AlwaysFront60"/>
- <objectgroup id="35" name="AlwaysFront70"/>
- <objectgroup id="36" name="AlwaysFront80"/>
- <objectgroup id="10" name="AlwaysFront90"/>
- <objectgroup id="16" name="AlwaysFront100"/>
+ <objectgroup id="10" name="AlwaysFront"/>
+ <objectgroup id="18" name="AlwaysFront10"/>
+ <objectgroup id="26" name="AlwaysFront20"/>
+ <objectgroup id="27" name="AlwaysFront28"/>
 </map>
