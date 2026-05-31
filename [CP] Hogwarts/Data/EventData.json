@@ -3,7 +3,7 @@
     {
       "LogName": "Hogwarts Event Load",
       "Action": "Load",
-      "Target": "Data/Events/{{ModId}}_ForbiddenForestCentaurCamp, Data/Events/{{ModId}}_HogwartsBellTowerCourtyard, Data/Events/{{ModId}}_HogwartsGrandStaircase, Data/Events/{{ModId}}_HogwartsPotionsClassroom, Data/Events/{{ModId}}_HogwartsTransfigurationClassroom, Data/Events/{{ModId}}_Ollivanders, Data/Events/{{ModId}}_HogsmeadeVillage",
+      "Target": "Data/Events/{{ModId}}_ForbiddenForestCentaurCamp, Data/Events/{{ModId}}_HogsmeadeVillage, Data/Events/{{ModId}}_HogsmeadeStation, Data/Events/{{ModId}}_HogwartsBellTowerCourtyard, Data/Events/{{ModId}}_HogwartsGrandStaircase, Data/Events/{{ModId}}_HogwartsPotionsClassroom, Data/Events/{{ModId}}_HogwartsTransfigurationClassroom, Data/Events/{{ModId}}_Ollivanders",
       "FromFile": "Data/blank.json"
     },
     {
@@ -29,6 +29,9 @@
           "Interval": 99999,
           "Scale": 2
         }
+      },
+      "When": {
+        "HasMod |contains= mushymato.MMAP": true
       }
     },/*
     {
@@ -139,30 +142,17 @@
         globalFade/viewport -1000 -1000/pause 1000/end"
       }
     },
-    // Grand Staircase 
-    {
-      "LogName": "Hogwarts Grand Staircase Events",
-      "Action": "EditData",
-      "Target": "Data/Events/{{ModId}}_HogwartsGrandStaircase",
-      "Entries": {
-        "{{ModId}}_Suryawati15": "none/28 40/farmer 25 44 0 HogwartsSuryawati 27 41 3/skippable/pause 800/
-        addTemporaryActor {{ModId}}_SuryawatiPhoenix 32 32 34 38 3 false Monster/pause 800/
-        move {{ModId}}_SuryawatiPhoenix -5 0 2 false/pause 800/
-        move HogwartsSuryawati -3 0 2 false/pause 800/
-        emote HogwartsSuryawati 16/pause 800/
-        speak HogwartsSuryawati \"It's not what it looks like...$2\"/pause 800/
-        question null \"#Were you... a bird?\"/pause 800/
-        speak HogwartsSuryawati \"You saw nothing!$3\"/pause 800/
-        beginSimultaneousCommand/
-        move HogwartsSuryawati 0 10 2 true/
-        emote HogwartsSuryawati 12/
-        emote farmer 8/
-        endSimultaneousCommand/
-        globalFade/viewport -1000 -1000/pause 1000/end"
-      }
-    },
     	// Hogsmeade 
     {
+      "LogName": "Hogsmeade - Hog's Head Events",
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_HogsmeadeStation",
+      "Entries": {
+        "{{ModId}}_Ollivander15/f {{ModId}}_HogwartsOllivander 500/e {{ModId}}_Ollivander05": "none/55 78/farmer 200 200 0 HogwartsOllivander 52 77 2 HogwartsAberforth 50 75 2/skippable/pause 500/playMusic none/pause 300
+		/speak HogwartsAberforth \"You're lurking again. Come in or clear off.\"/pause 500"
+      }
+    },/*
+      {
       "LogName": "Hogsmeade - Hog's Head Events",
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogsmeadeVillage",
@@ -196,6 +186,28 @@
 		/speak HogwartsAberforth \"...\"/pause 800
 		/speak HogwartsAberforth \"Door's always here. Once you come to your senses.\"
 		/globalFade/viewport -1000 -1000/pause 1000/end"
+      }
+    },*/
+    // Grand Staircase 
+    {
+      "LogName": "Hogwarts Grand Staircase Events",
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_HogwartsGrandStaircase",
+      "Entries": {
+        "{{ModId}}_Suryawati15": "none/28 40/farmer 25 44 0 HogwartsSuryawati 27 41 3/skippable/pause 800/
+        addTemporaryActor {{ModId}}_SuryawatiPhoenix 32 32 34 38 3 false Monster/pause 800/
+        move {{ModId}}_SuryawatiPhoenix -5 0 2 false/pause 800/
+        move HogwartsSuryawati -3 0 2 false/pause 800/
+        emote HogwartsSuryawati 16/pause 800/
+        speak HogwartsSuryawati \"It's not what it looks like...$2\"/pause 800/
+        question null \"#Were you... a bird?\"/pause 800/
+        speak HogwartsSuryawati \"You saw nothing!$3\"/pause 800/
+        beginSimultaneousCommand/
+        move HogwartsSuryawati 0 10 2 true/
+        emote HogwartsSuryawati 12/
+        emote farmer 8/
+        endSimultaneousCommand/
+        globalFade/viewport -1000 -1000/pause 1000/end"
       }
     },
     // Ollivanders 

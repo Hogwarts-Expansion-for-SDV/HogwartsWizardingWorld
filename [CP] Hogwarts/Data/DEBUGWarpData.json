@@ -1,283 +1,259 @@
 {
-//Precondition to include this part: HasMod:CJBok.CheatsMenu
-/*Notes for others:
+  //Precondition to include this part: HasMod:CJBok.CheatsMenu
+  /*Notes for others:
     - To add more warp or warp section: see examples below
     - Key for DisplayName for WarpSections if translate: {{i18n:warp-sections.exampleMapName}}
     - Key for DisplayName for Warps if translate: {{i18n:warps.exampleMapName}}
 */
-"Changes":[
-
+  "Changes": [
     //Warp Sections
     {
-        "Action": "EditData",
-        "Target": "Mods/CJBok.CheatsMenu/WarpSections",
-        "Entries": {
-            //Hogwarts Castle
-            "{{ModId}}_HogwartsCastle_WarpSection": {
-                "Id": "{{ModId}}_HogwartsCastle_WarpSection",
-                "Order": "0",
-                "DisplayName": "Hogwarts Castle -  Main Areas",
-            },
-
-            //Hogwarts Castle - Classrooms
-            "{{ModId}}_HogwartsCastleClassroom_WarpSection": {
-                "Id": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
-                "Order": "1",
-                "DisplayName": "Hogwarts Castle - Classrooms",
-            },
-
-            //Hogsmeade Village
-            "{{ModId}}_HogsmeadeVillage_WarpSection": {
-                "Id": "{{ModId}}_HogsmeadeVillage_WarpSection",
-                "Order": "2",
-                "DisplayName": "Hogsmeade Village"
-            },
-            //Hogwarts Common Rooms
-            "{{ModId}}_HogwartsCommonRoom_WarpSection":{
-                "Id":"{{ModId}}_HogwartsCommonRoom_WarpSection",
-                "Order": "3",
-                "DisplayName": "Hogwarts - Common Rooms"
-            }
-            
-
-            //Forbidden Forest
-            /*"{{ModId}}_ForbiddenForest_WarpSection": {
+      "Action": "EditData",
+      "Target": "Mods/CJBok.CheatsMenu/WarpSections",
+      "Entries": {
+        //Hogwarts Castle
+        "{{ModId}}_HogwartsCastle_WarpSection": {
+          "Id": "{{ModId}}_HogwartsCastle_WarpSection",
+          "Order": "0",
+          "DisplayName": "Hogwarts Castle -  Main Areas"
+        },
+        //Hogwarts Castle - Classrooms
+        "{{ModId}}_HogwartsCastleClassroom_WarpSection": {
+          "Id": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
+          "Order": "1",
+          "DisplayName": "Hogwarts Castle - Classrooms"
+        },
+        //Hogsmeade Village
+        "{{ModId}}_HogsmeadeVillage_WarpSection": {
+          "Id": "{{ModId}}_HogsmeadeVillage_WarpSection",
+          "Order": "2",
+          "DisplayName": "Hogsmeade Village"
+        },
+        //Hogwarts Common Rooms
+        "{{ModId}}_HogwartsCommonRoom_WarpSection": {
+          "Id": "{{ModId}}_HogwartsCommonRoom_WarpSection",
+          "Order": "3",
+          "DisplayName": "Hogwarts - Common Rooms"
+        }
+        //Forbidden Forest
+        /*"{{ModId}}_ForbiddenForest_WarpSection": {
                 "Id": "{{ModId}}_ForbiddenForest_WarpSection",
                 "Order": "0",
                 "DisplayName": "Forbidden Forest"
             },*/
-
-            //Individual Maps
-            /*"{{ModId}}_HogwartsOtherMaps_WarpSection": {
+        //Individual Maps
+        /*"{{ModId}}_HogwartsOtherMaps_WarpSection": {
                 "Id": "{{ModId}}_OtherMaps_WarpSection",
                 "Order": "0",
                 "DisplayName": "Others"
             }*/
-        }
+      },
+      "When": {
+        "Query: '{{Hogwarts}}' = 'HogwartsET'": true
+      }
     },
-
     //Warps
     {
-        "Action": "EditData",
-        "Target": "Mods/CJBok.CheatsMenu/Warps",
-        "Entries": {
-            //HOGSMEADE
-            //Hogsmeade Ceridwens Cauldrons
-            "{{ModId}}_CeridwensCauldrons_DebugWarp": {
-                "Id": "{{ModId}}_CeridwensCauldrons_DebugWarp",
-                "SectionId": "{{ModId}}_HogsmeadeVillage_WarpSection",
-                "DisplayName": "Ceridwens Cauldrons", 
-                "Location": "{{ModId}}_CeridwensCauldrons",
-                "Tile": "6, 14"
-            },
-
-            //Hogsmeade Station
-            "{{ModId}}_HogsmeadeStation_DebugWarp": {
-                "Id": "{{ModId}}_HogsmeadeStation_DebugWarp",
-                "SectionId": "{{ModId}}_HogsmeadeVillage_WarpSection",
-                "DisplayName": "Hogsmeade Station", 
-                "Location": "{{ModId}}_HogsmeadeStation",
-                "Tile": "34, 14"
-            },
-
-            //Ollivanders
-            "{{ModId}}_Ollivanders_DebugWarp": {
-                "Id": "{{ModId}}_Ollivanders_DebugWarp",
-                "SectionId": "{{ModId}}_HogsmeadeVillage_WarpSection",
-                "DisplayName": "Ollivanders", 
-                "Location": "{{ModId}}_Ollivanders",
-                "Tile": "8, 18"
-            },
-
-            //HOGWARTS - CLASSROOMS
-            //Arithmancy Classroom
-            "{{ModId}}_HogwartsArithmancyClassroom_DebugWarp": {
-                "Id": "{{ModId}}_HogwartsArithmancyClassroom_DebugWarp",
-                "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
-                "DisplayName": "Arithmancy Classroom",
-                "Location": "{{ModId}}_HogwartsArithmancyClassroom",
-                "Tile": "22, 8"
-            },
-
-            //Astronomy Classroom
-            "{{ModId}}_HogwartsAstronomyClassroom_DebugWarp": {
-                "Id": "{{ModId}}_HogwartsAstronomyClassroom_DebugWarp",
-                "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
-                "DisplayName": "Astronomy Classroom",
-                "Location": "{{ModId}}_HogwartsAstronomyClassroom",
-                "Tile": "17, 25"
-            },
-
-            //Charm Classroom
-            "{{ModId}}_HogwartsCharmClassroom_DebugWarp": {
-                "Id": "{{ModId}}_HogwartsCharmClassroom_DebugWarp",
-                "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
-                "DisplayName": "Charm Classroom",
-                "Location": "{{ModId}}_HogwartsCharmsClassroom",
-                "Tile": "9, 15"
-            },
-
-            //DADA Classroom
-            "{{ModId}}_HogwartsDADAClassroom_DebugWarp": {
-                "Id": "{{ModId}}_HogwartsDADAClassroom_DebugWarp",
-                "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
-                "DisplayName": "DADA Classroom",
-                "Location": "{{ModId}}_HogwartsDADAClassroom",
-                "Tile": "3, 20"
-            },
-
-            //Divination Classroom
-            "{{ModId}}_HogwartsDivinationClassroom_DebugWarp": {
-                "Id": "{{ModId}}_HogwartsDivinationClassroom_DebugWarp",
-                "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
-                "DisplayName": "Divination Classroom",
-                "Location": "{{ModId}}_HogwartsDivinationClassroom",
-                "Tile": "14, 20"
-            },
-            
-            //Magical Theory Classroom
-            "{{ModId}}_HogwartsMagicalTheoryClassroom_DebugWarp": {
-                "Id": "{{ModId}}_HogwartsMagicalTheoryClassroom_DebugWarp",
-                "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
-                "DisplayName": "Magical Theory Classroom",
-                "Location": "{{ModId}}_HogwartsMagicalTheoryClassroom",
-                "Tile": "7, 22"
-            },
-
-            //Muggle Studies Classroom
-            "{{ModId}}_HogwartsMuggleStudiesClassroom_DebugWarp": {
-                "Id": "{{ModId}}_HogwartsMuggleStudiesClassroom_DebugWarp",
-                "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
-                "DisplayName": "Muggle Studies Classroom",
-                "Location": "{{ModId}}_HogwartsMuggleStudiesClassroom",
-                "Tile": "8, 14"
-            },
-
-            //Potions Classroom
-            "{{ModId}}_HogwartsPotionsClassroom_DebugWarp": {
-                "Id": "{{ModId}}_HogwartsPotionsClassroom_DebugWarp",
-                "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
-                "DisplayName": "Potions Classroom", 
-                "Location": "{{ModId}}_HogwartsPotionsClassroom",
-                "Tile": "15, 30"
-            },
-
-            //Transfiguration Classroom
-            "{{ModId}}_HogwartsTransfigurationClassroom_DebugWarp": {
-                "Id": "{{ModId}}_HogwartsTransfigurationClassroom_DebugWarp",
-                "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
-                "DisplayName": "Transfiguration Classroom",
-                "Location": "{{ModId}}_HogwartsTransfigurationClassroom",
-                "Tile": "8, 19"
-            },
-
-            //CommonRooms
-            "{{ModId}}_HogwartsCommonRoomGryffindor_DebugWarp":{
-                "Id":"{{ModId}}_HogwartsCommonRoomGryffindor_DebugWarp",
-                "SectionId":"{{ModId}}_HogwartsCommonRoom_WarpSection",
-                "DisplayName":"Gryffindor",
-                "Location":"{{ModId}}_HogwartsCommonRoomGryffindor",
-                "Tile": "24, 25"
-            },
-            "{{ModId}}_HogwartsCommonRoomHufflepuff_DebugWarp":{
-                "Id":"{{ModId}}_HogwartsCommonRoomHufflepuff_DebugWarp",
-                "SectionId":"{{ModId}}_HogwartsCommonRoom_WarpSection",
-                "DisplayName":"Hufflepuff",
-                "Location":"{{ModId}}_HogwartsCommonRoomHufflepuff",
-                "Tile": "25, 26"
-            },
-            "{{ModId}}_HogwartsCommonRoomRavenclaw_DebugWarp":{
-                "Id":"{{ModId}}_HogwartsCommonRoomRavenclaw_DebugWarp",
-                "SectionId":"{{ModId}}_HogwartsCommonRoom_WarpSection",
-                "DisplayName":"Ravenclaw",
-                "Location":"{{ModId}}_HogwartsCommonRoomRavenclaw",
-                "Tile": "23, 31"
-            },
-             "{{ModId}}_HogwartsCommonRoomSlytherin_DebugWarp":{
-                "Id":"{{ModId}}_HogwartsCommonRoomSlytherin_DebugWarp",
-                "SectionId":"{{ModId}}_HogwartsCommonRoom_WarpSection",
-                "DisplayName":"Slytherin",
-                "Location":"{{ModId}}_HogwartsCommonRoomSlytherin",
-                "Tile": "23, 31"
-            },
-            //HOGWARTS
-            //Library Annex
-            "{{ModId}}_HogwartsLibraryAnnex_DebugWarp": {
-                "Id": "{{ModId}}_HogwartsLibraryAnnex_DebugWarp",
-                "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
-                "DisplayName": "Library",
-                "Location": "{{ModId}}_HogwartsLibraryAnnex",
-                "Tile": "54, 29"
-            },
-
-            //Faculty Tower
-            "{{ModId}}_HogwartsFacultyTower_DebugWarp": {
-                "Id": "{{ModId}}_HogwartsFacultyTower_DebugWarp",
-                "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
-                "DisplayName": "Faculty Tower",
-                "Location": "{{ModId}}_HogwartsFacultyTower",
-                "Tile": "42, 40"
-            },
-
-            //Grand Staircase (BasementF)
-            "{{ModId}}_HogwartsGrandStaircase_DebugWarp": {
-                "Id": "{{ModId}}_HogwartsGrandStaircase_DebugWarp",
-                "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
-                "DisplayName": "Grand Staircase",
-                "Location": "{{ModId}}_HogwartsGrandStaircase",
-                "Tile": "30, 102"
-            },
-
-            //South Wing
-            "{{ModId}}_HogwartsSouthWing_DebugWarp": {
-                "Id": "{{ModId}}_HogwartsSouthWing_DebugWarp",
-                "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
-                "DisplayName": "South Wing",
-                "Location": "{{ModId}}_HogwartsSouthWing",
-                "Tile": "29, 10"
-            },
-
-            //Greenhouse
-
-            //Great Hall
-            "{{ModId}}_HogwartsGreatHall_DebugWarp": {
-                "Id": "{{ModId}}_HogwartsGreatHall_DebugWarp",
-                "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
-                "DisplayName": "Great Hall",
-                "Location": "{{ModId}}_HogwartsGreatHall",
-                "Tile": "15, 39"
-            },
-
-            "{{ModId}}_HogwartsHeadmistressOffice_DebugWarp": {
-                "Id": "{{ModId}}_HogwartsHeadmistressOffice_DebugWarp",
-                "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
-                "DisplayName": "Headmistress Office",
-                "Location": "{{ModId}}_HogwartsHeadmistressOffice",
-                "Tile": "37, 54"
-            },
-
-            //Bell Tower Courtyard
-            "{{ModId}}_HogwartsBellTowerCourtyard_DebugWarp": {
-                "Id": "{{ModId}}_HogwartsBellTowerCourtyard_DebugWarp",
-                "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
-                "DisplayName": "Bell Tower Courtyard",
-                "Location": "{{ModId}}_HogwartsBellTowerCourtyard",
-                "Tile": "44, 62"
-            },
-
-            //TWings
-            "{{ModId}}_HogwartsTransfigurationWing_DebugWarp": {
-                "Id": "{{ModId}}_HogwartsTransfigurationWing_DebugWarp",
-                "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
-                "DisplayName": "Transfiguration Wing",
-                "Location": "{{ModId}}_HogwartsTransfigurationWing",
-                "Tile": "35, 57"
-            }
-
-            //FORBIDDEN FOREST    
-
+      "Action": "EditData",
+      "Target": "Mods/CJBok.CheatsMenu/Warps",
+      "Entries": {
+        //HOGSMEADE
+        //Hogsmeade Ceridwens Cauldrons
+        "{{ModId}}_CeridwensCauldrons_DebugWarp": {
+          "Id": "{{ModId}}_CeridwensCauldrons_DebugWarp",
+          "SectionId": "{{ModId}}_HogsmeadeVillage_WarpSection",
+          "DisplayName": "Ceridwens Cauldrons",
+          "Location": "{{ModId}}_CeridwensCauldrons",
+          "Tile": "6, 14"
         },
+        //Hogsmeade Station
+        "{{ModId}}_HogsmeadeStation_DebugWarp": {
+          "Id": "{{ModId}}_HogsmeadeStation_DebugWarp",
+          "SectionId": "{{ModId}}_HogsmeadeVillage_WarpSection",
+          "DisplayName": "Hogsmeade Station",
+          "Location": "{{ModId}}_HogsmeadeStation",
+          "Tile": "34, 14"
+        },
+        //Ollivanders
+        "{{ModId}}_Ollivanders_DebugWarp": {
+          "Id": "{{ModId}}_Ollivanders_DebugWarp",
+          "SectionId": "{{ModId}}_HogsmeadeVillage_WarpSection",
+          "DisplayName": "Ollivanders",
+          "Location": "{{ModId}}_Ollivanders",
+          "Tile": "8, 18"
+        },
+        //HOGWARTS - CLASSROOMS
+        //Arithmancy Classroom
+        "{{ModId}}_HogwartsArithmancyClassroom_DebugWarp": {
+          "Id": "{{ModId}}_HogwartsArithmancyClassroom_DebugWarp",
+          "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
+          "DisplayName": "Arithmancy Classroom",
+          "Location": "{{ModId}}_HogwartsArithmancyClassroom",
+          "Tile": "22, 8"
+        },
+        //Astronomy Classroom
+        "{{ModId}}_HogwartsAstronomyClassroom_DebugWarp": {
+          "Id": "{{ModId}}_HogwartsAstronomyClassroom_DebugWarp",
+          "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
+          "DisplayName": "Astronomy Classroom",
+          "Location": "{{ModId}}_HogwartsAstronomyClassroom",
+          "Tile": "17, 25"
+        },
+        //Charm Classroom
+        "{{ModId}}_HogwartsCharmClassroom_DebugWarp": {
+          "Id": "{{ModId}}_HogwartsCharmClassroom_DebugWarp",
+          "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
+          "DisplayName": "Charm Classroom",
+          "Location": "{{ModId}}_HogwartsCharmsClassroom",
+          "Tile": "9, 15"
+        },
+        //DADA Classroom
+        "{{ModId}}_HogwartsDADAClassroom_DebugWarp": {
+          "Id": "{{ModId}}_HogwartsDADAClassroom_DebugWarp",
+          "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
+          "DisplayName": "DADA Classroom",
+          "Location": "{{ModId}}_HogwartsDADAClassroom",
+          "Tile": "3, 20"
+        },
+        //Divination Classroom
+        "{{ModId}}_HogwartsDivinationClassroom_DebugWarp": {
+          "Id": "{{ModId}}_HogwartsDivinationClassroom_DebugWarp",
+          "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
+          "DisplayName": "Divination Classroom",
+          "Location": "{{ModId}}_HogwartsDivinationClassroom",
+          "Tile": "14, 20"
+        },
+        //Magical Theory Classroom
+        "{{ModId}}_HogwartsMagicalTheoryClassroom_DebugWarp": {
+          "Id": "{{ModId}}_HogwartsMagicalTheoryClassroom_DebugWarp",
+          "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
+          "DisplayName": "Magical Theory Classroom",
+          "Location": "{{ModId}}_HogwartsMagicalTheoryClassroom",
+          "Tile": "7, 22"
+        },
+        //Muggle Studies Classroom
+        "{{ModId}}_HogwartsMuggleStudiesClassroom_DebugWarp": {
+          "Id": "{{ModId}}_HogwartsMuggleStudiesClassroom_DebugWarp",
+          "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
+          "DisplayName": "Muggle Studies Classroom",
+          "Location": "{{ModId}}_HogwartsMuggleStudiesClassroom",
+          "Tile": "8, 14"
+        },
+        //Potions Classroom
+        "{{ModId}}_HogwartsPotionsClassroom_DebugWarp": {
+          "Id": "{{ModId}}_HogwartsPotionsClassroom_DebugWarp",
+          "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
+          "DisplayName": "Potions Classroom",
+          "Location": "{{ModId}}_HogwartsPotionsClassroom",
+          "Tile": "15, 30"
+        },
+        //Transfiguration Classroom
+        "{{ModId}}_HogwartsTransfigurationClassroom_DebugWarp": {
+          "Id": "{{ModId}}_HogwartsTransfigurationClassroom_DebugWarp",
+          "SectionId": "{{ModId}}_HogwartsCastleClassroom_WarpSection",
+          "DisplayName": "Transfiguration Classroom",
+          "Location": "{{ModId}}_HogwartsTransfigurationClassroom",
+          "Tile": "8, 19"
+        },
+        //CommonRooms
+        "{{ModId}}_HogwartsCommonRoomGryffindor_DebugWarp": {
+          "Id": "{{ModId}}_HogwartsCommonRoomGryffindor_DebugWarp",
+          "SectionId": "{{ModId}}_HogwartsCommonRoom_WarpSection",
+          "DisplayName": "Gryffindor",
+          "Location": "{{ModId}}_HogwartsCommonRoomGryffindor",
+          "Tile": "24, 25"
+        },
+        "{{ModId}}_HogwartsCommonRoomHufflepuff_DebugWarp": {
+          "Id": "{{ModId}}_HogwartsCommonRoomHufflepuff_DebugWarp",
+          "SectionId": "{{ModId}}_HogwartsCommonRoom_WarpSection",
+          "DisplayName": "Hufflepuff",
+          "Location": "{{ModId}}_HogwartsCommonRoomHufflepuff",
+          "Tile": "25, 26"
+        },
+        "{{ModId}}_HogwartsCommonRoomRavenclaw_DebugWarp": {
+          "Id": "{{ModId}}_HogwartsCommonRoomRavenclaw_DebugWarp",
+          "SectionId": "{{ModId}}_HogwartsCommonRoom_WarpSection",
+          "DisplayName": "Ravenclaw",
+          "Location": "{{ModId}}_HogwartsCommonRoomRavenclaw",
+          "Tile": "23, 31"
+        },
+        "{{ModId}}_HogwartsCommonRoomSlytherin_DebugWarp": {
+          "Id": "{{ModId}}_HogwartsCommonRoomSlytherin_DebugWarp",
+          "SectionId": "{{ModId}}_HogwartsCommonRoom_WarpSection",
+          "DisplayName": "Slytherin",
+          "Location": "{{ModId}}_HogwartsCommonRoomSlytherin",
+          "Tile": "23, 31"
+        },
+        //HOGWARTS
+        //Library Annex
+        "{{ModId}}_HogwartsLibraryAnnex_DebugWarp": {
+          "Id": "{{ModId}}_HogwartsLibraryAnnex_DebugWarp",
+          "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
+          "DisplayName": "Library",
+          "Location": "{{ModId}}_HogwartsLibraryAnnex",
+          "Tile": "54, 29"
+        },
+        //Faculty Tower
+        "{{ModId}}_HogwartsFacultyTower_DebugWarp": {
+          "Id": "{{ModId}}_HogwartsFacultyTower_DebugWarp",
+          "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
+          "DisplayName": "Faculty Tower",
+          "Location": "{{ModId}}_HogwartsFacultyTower",
+          "Tile": "42, 40"
+        },
+        //Grand Staircase (BasementF)
+        "{{ModId}}_HogwartsGrandStaircase_DebugWarp": {
+          "Id": "{{ModId}}_HogwartsGrandStaircase_DebugWarp",
+          "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
+          "DisplayName": "Grand Staircase",
+          "Location": "{{ModId}}_HogwartsGrandStaircase",
+          "Tile": "30, 102"
+        },
+        //South Wing
+        "{{ModId}}_HogwartsSouthWing_DebugWarp": {
+          "Id": "{{ModId}}_HogwartsSouthWing_DebugWarp",
+          "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
+          "DisplayName": "South Wing",
+          "Location": "{{ModId}}_HogwartsSouthWing",
+          "Tile": "29, 10"
+        },
+        //Greenhouse
+        //Great Hall
+        "{{ModId}}_HogwartsGreatHall_DebugWarp": {
+          "Id": "{{ModId}}_HogwartsGreatHall_DebugWarp",
+          "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
+          "DisplayName": "Great Hall",
+          "Location": "{{ModId}}_HogwartsGreatHall",
+          "Tile": "15, 39"
+        },
+        "{{ModId}}_HogwartsHeadmistressOffice_DebugWarp": {
+          "Id": "{{ModId}}_HogwartsHeadmistressOffice_DebugWarp",
+          "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
+          "DisplayName": "Headmistress Office",
+          "Location": "{{ModId}}_HogwartsHeadmistressOffice",
+          "Tile": "37, 54"
+        },
+        //Bell Tower Courtyard
+        "{{ModId}}_HogwartsBellTowerCourtyard_DebugWarp": {
+          "Id": "{{ModId}}_HogwartsBellTowerCourtyard_DebugWarp",
+          "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
+          "DisplayName": "Bell Tower Courtyard",
+          "Location": "{{ModId}}_HogwartsBellTowerCourtyard",
+          "Tile": "44, 62"
+        },
+        //TWings
+        "{{ModId}}_HogwartsTransfigurationWing_DebugWarp": {
+          "Id": "{{ModId}}_HogwartsTransfigurationWing_DebugWarp",
+          "SectionId": "{{ModId}}_HogwartsCastle_WarpSection",
+          "DisplayName": "Transfiguration Wing",
+          "Location": "{{ModId}}_HogwartsTransfigurationWing",
+          "Tile": "35, 57"
+        }
+        //FORBIDDEN FOREST    
+      },
+      "When": {
+        "Query: '{{Hogwarts}}' = 'HogwartsET'": true
+      }
     }
-
-]
-    }
+  ]
+}
