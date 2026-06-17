@@ -5,7 +5,7 @@
       "Action": "Load",
       "Target": "Data/Events/{{ModId}}_ForbiddenForestCentaurCamp, Data/Events/{{ModId}}_HogsmeadeVillage, Data/Events/{{ModId}}_HogsmeadeStation, Data/Events/{{ModId}}_HogwartsBellTowerCourtyard, Data/Events/{{ModId}}_HogwartsGrandStaircase, Data/Events/{{ModId}}_HogwartsPotionsClassroom, Data/Events/{{ModId}}_HogwartsTransfigurationClassroom, Data/Events/{{ModId}}_Ollivanders",
       "FromFile": "Data/blank.json"
-    },
+    },// This is a comment. 
     {
       "LogName": "Hogwarts Suryawati Phoenix Load",
       "Action": "Load",
@@ -370,21 +370,5 @@
         globalFade/viewport -1000 -1000/pause 1000/end"
       }
     },
-    {
-      "LogName": "Hogsmeade Village Events",
-      "Action": "EditData",
-      "Target": "Data/Events/{{ModId}}_HogsmeadeVillage",
-      "Entries": {
-        "148580000": "none/68 96/HogwartsMPuddifoot 66 84 2 HogwartsAberforth 63 99 0 HogwartsMrsFlume 54 94 2 HogwartsMrFlume 54 96 0 HogwartsOllivander 80 93 1 farmer 83 99 3/skippable/pause 1000/pause 3000/end"
-      }
-    },
-    {
-      "LogName": "Hogwarts Invitation Mail",
-      "Action": "EditData",
-      "Target": "Data/mail",
-      "Entries": {
-        "{{ModId}}_HogwartsInvitation": "Dear @,^We are pleased to inform you that you have been accepted at Hogwarts School of Witchcraft and Wizardry. Please find your nearest wizard tower to travel to the Scottish Highlands where you can begin your studies.^^Yours sincerely,^^Minerva McGonagall^Headmistress[#]Hogwarts Invitation"
-      }
-    }
   ]
 }
