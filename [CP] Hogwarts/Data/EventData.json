@@ -1,4 +1,4 @@
-{//Like what
+{
   "Changes": [
     {
       "LogName": "Hogwarts Event Load",
@@ -210,7 +210,7 @@
         globalFade/viewport -1000 -1000/pause 1000/end"
       }
     },
-    // Ollivanders (notes: Priority new locations; *flashbacks*? rewrite dialogue and fix mistakes: check Cutscenes)
+    // Ollivanders (notes: Priority new locations; *flashbacks*? rewrite dialogue and fix mistakes: check Cutscenes.dockx)
     {
       "LogName": "Hogwarts Ollivanders Events",
       "Action": "EditData",
@@ -251,7 +251,7 @@
         question null \"#Mr. Ollivander? Sir?\"/pause 500/emote HogwartsOllivander 16/faceDirection HogwartsOllivander 2/
         speak HogwartsOllivander \"Oh, I didn't hear you. Forgive me. I was deep in thought...\"/pause 800/
         question null \"#Are you alright sir? You seem fatigued.\"/pause 800/emote HogwartsOllivander 28/
-        speak HogwartsOllivander \"This wand of yew... it is quite unlike any other.\"/pause 800/
+        speak HogwartsOllivander \"This wand... it is quite unlike any other.\"/pause 800/
         question null \"#You're very focused on that wand.\"/pause 800/
         speak HogwartsOllivander \"This wand... it elevates me. Every memory of hate, this wand turns it into power, #$b#and I have had tremendous power lately.\"/pause 800/
         emote farmer 8/pause 800/
@@ -259,12 +259,12 @@
 		    question null \"#It doesn't feel like you're the one in control of that wand. Maybe it's too dangerous.\"/pause 800/
         speak HogwartsOllivander \"Wands are meant to be wielded, and I intend to wield this one.\"/pause 400/
         emote farmer 40/pause 800/
-	    	speak HogwartsOllivander \"You are a student. #$b#What could you possibly know of power or what it takes to survive it? #$b#You should return to the castle, where you at least are safe.\"/
+	    	speak HogwartsOllivander \"You are a student. #$b#What could you possibly know of power? #$b#You should return to the castle, where you at least are safe.\"/
         globalFade/viewport -1000 -1000/pause 1000/end",
 
         "{{ModId}}_Ollivander45": "none/8 6/farmer 7 6 1 HogwartsOllivander 9 6 3/skippable/pause 800/
         question null \"#How is it possible that your wand is more powerful than other wands I've witnessed?\"/pause 800/
-        speak HogwartsOllivander \"This is no ordinary yew wand.\"/pause 800/
+        speak HogwartsOllivander \"This is no ordinary wand...\"/pause 800/
         globalFade/viewport -1000 -1000/pause 800/
         changeToTemporaryMap {{ModId}}_HogwartsValley/viewport 92 132 true/warp HogwartsOllivander 92 132/faceDirection HogwartsOllivander 0/pause 800/
         speak HogwartsOllivander \"It's been some time, Albus.#$b#Curious... A yew tree.#$b#This tree grew...#$b#From the Dark Lord's wand!\"/pause 800/
