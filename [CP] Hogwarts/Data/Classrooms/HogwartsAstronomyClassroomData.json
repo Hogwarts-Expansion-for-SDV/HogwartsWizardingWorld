@@ -9,7 +9,7 @@
     {
       "LogName": "Stellascope Transparent Images Load",
       "Action": "Load",
-      "Target": "{{ModId}}/transparentstellascope",
+      "Target": "{{ModId}}/TransparentStellascope, {{ModId}}/TransparentStellascopeNext",
       "FromFile": "assets/Astronomy/transparent.png"
     },
     {
@@ -72,7 +72,7 @@
     {
       "LogName": "Hogwarts Astronomy Night Sky Stellascope",
       "Action": "EditImage",
-      "Target": "{{ModId}}/transparentstellascope",
+      "Target": "{{ModId}}/TransparentStellascope, {{ModId}}/TransparentStellascopeNext",
       "FromFile": "assets/Astronomy/nightsky.png",
       "FromArea": {
         "X": "{{Query: {{Random: {{Range: 0, 472}}|key=Stella}}}}",
@@ -91,11 +91,30 @@
     {
       "LogName": "Hogwarts Astronomy Stella",
       "Action": "EditImage",
-      "Target": "{{ModId}}/transparentstellascope",
+      "Target": "{{ModId}}/TransparentStellascope",
       "FromFile": "assets/Astronomy/stars.png",
       "FromArea": {
-        "X": "{{Query: {{Random: 0, 32, 64, 96, 128, 160, 192}}}}",
-        "Y": "{{Query: {{Random: 0, 32}}}}",
+        "X": "{{Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}}}}",
+        "Y": 0,
+        "Width": 32,
+        "Height": 32
+      },
+      "ToArea": {
+        "X": 48,
+        "Y": 48,
+        "Width": 32,
+        "Height": 32
+      },
+      "PatchMode": "Overlay"
+    },
+    {
+      "LogName": "Hogwarts Astronomy Stella Next",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/TransparentStellascopeNext",
+      "FromFile": "assets/Astronomy/stars.png",
+      "FromArea": {
+        "X": "{{Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}}}}",
+        "Y": 0,
         "Width": 32,
         "Height": 32
       },
@@ -110,7 +129,7 @@
     {
       "LogName": "Hogwarts Astronomy Stellascope Filter",
       "Action": "EditImage",
-      "Target": "{{ModId}}/transparentstellascope",
+      "Target": "{{ModId}}/TransparentStellascope",
       "FromFile": "assets/Astronomy/filters.png",
       "FromArea": {
         "X": "{{Query: {{Random: 0, 128, 256, 384, 512}}}}",
@@ -129,7 +148,7 @@
     {
       "LogName": "Hogwarts Astronomy Lunascope and Stellascope Cutout",
       "Action": "EditImage",
-      "Target": "{{ModId}}/transparentlunascope, {{ModId}}/transparentstellascope",
+      "Target": "{{ModId}}/transparentlunascope, {{ModId}}/TransparentStellascope",
       "FromFile": "assets/Astronomy/scopecutout2.png",
       "FromArea": {
         "X": 0,
@@ -207,7 +226,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "MEEP_CloseupInteraction_Image {{ModId}}/transparentstellascope 0 0 128 128"
+            "Action": "MEEP_CloseupInteraction_Image {{ModId}}/TransparentStellascope 0 0 128 128"
           }
         },
         {
@@ -217,7 +236,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "MEEP_CloseupInteraction_Image {{ModId}}/transparentstellascope 0 0 128 128"
+            "Action": "MEEP_CloseupInteraction_Image {{ModId}}/TransparentStellascope 0 0 128 128"
           }
         },
         {
@@ -227,7 +246,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "MEEP_CloseupInteraction_Image {{ModId}}/transparentstellascope 0 0 128 128"
+            "Action": "MEEP_CloseupInteraction_Image {{ModId}}/TransparentStellascope 0 0 128 128"
           }
         },
         {
@@ -237,7 +256,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "MEEP_CloseupInteraction_Image {{ModId}}/transparentstellascope 0 0 128 128"
+            "Action": "MEEP_CloseupInteraction_Image {{ModId}}/TransparentStellascope 0 0 128 128"
           }
         }
       ],

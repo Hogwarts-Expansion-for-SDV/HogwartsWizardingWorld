@@ -1,6 +1,26 @@
 {
   "Changes": [
     {
+      "LogName": "Hogwarts Bell Tower Courtyard Stellascope",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModID}}_HogwartsBellTowerCourtyard",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 0,
+            "Y": 0
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteraction_Image {{ModId}}/TransparentStellascopeNext 0 0 128 128"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= DecidedlyHuman.MappingExtensionsAndExtraProperties": true
+      }
+    },
+    {
       "LogName": "Hogwarts Bell Tower Courtyard Creature Pen 1",
       "Action": "EditMap",
       "Target": "Maps/{{ModID}}_HogwartsBellTowerCourtyard",
