@@ -574,9 +574,65 @@
     //Astronomy Table Stella 
     {
       "Name": "AstronomyTableStellaNextX",
-      "Value": "23",
+      "Value": "384",
       "When": {
-        "Query: {{Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}}}} = 0": true
+        "Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416, 448, 480}} = 0": true,
+        "Query: {{Random: 384, 480}} = 384": true
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaNextX",
+      "Value": "480",
+      "When": {
+        "Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416, 448, 480}} = 0": true,
+        "Query: {{Random: 384, 480}} = 480": true
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaNextX",
+      "Value": "0",
+      "When": {
+        "Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416, 448, 480}} = 32": true,
+        "Query: {{Random: 0, 160, 288, 320}} = 0": true
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaNextX",
+      "Value": "160",
+      "When": {
+        "Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416, 448, 480}} = 32": true,
+        "Query: {{Random: 0, 160, 288, 320}} = 160": true
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaNextX",
+      "Value": "288",
+      "When": {
+        "Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416, 448, 480}} = 32": true,
+        "Query: {{Random: 0, 160, 288, 320}} = 288": true
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaNextX",
+      "Value": "320",
+      "When": {
+        "Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416, 448, 480}} = 32": true,
+        "Query: {{Random: 0, 160, 288, 320}} = 320": true
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaNextX",
+      "Value": "448",
+      "When": {
+        "Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416, 448, 480}} = 64": true
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaNextX",
+      "Value": "320",
+      "When": {
+        "Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416, 448, 480}} = 96": true,
+        "Query: {{Random: 0, 160, 288, 320}} = 320": true
       }
     },
     /*Divination Charmed Tent*/
