@@ -113,7 +113,7 @@
       "Target": "{{ModId}}/TransparentStellascopeNext",
       "FromFile": "assets/Astronomy/stars.png",
       "FromArea": {
-        "X": "{{Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416, 480}}}}",
+        "X": "{{AstronomyTableStellaNextX}}",
         "Y": 0,
         "Width": 32,
         "Height": 32
@@ -125,6 +125,26 @@
         "Height": 32
       },
       "PatchMode": "Overlay"
+    },
+    {
+      "LogName": "Hogwarts Bell Tower Courtyard Astronomy Table",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsBellTowerCourtyard",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 59,
+            "Y": 25
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteraction_Image {{ModId}}/TransparentStellascopeNext 0 0 128 128"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= DecidedlyHuman.MappingExtensionsAndExtraProperties": true
+      }
     },
     {
       "LogName": "Hogwarts Astronomy Stellascope Filter",
@@ -148,7 +168,7 @@
     {
       "LogName": "Hogwarts Astronomy Lunascope and Stellascope Cutout",
       "Action": "EditImage",
-      "Target": "{{ModId}}/transparentlunascope, {{ModId}}/TransparentStellascope",
+      "Target": "{{ModId}}/transparentlunascope, {{ModId}}/TransparentStellascope, {{ModId}}/TransparentStellascopeNext",
       "FromFile": "assets/Astronomy/scopecutout2.png",
       "FromArea": {
         "X": 0,
