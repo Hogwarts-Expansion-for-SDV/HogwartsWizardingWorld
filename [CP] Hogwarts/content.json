@@ -573,129 +573,98 @@
     },
     //Astronomy Table Stella 
     {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "0",
-      "When": {
-        "Query: ({{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 32 AND {{Random: 0, 160, 288, 320}} = 0) OR ({{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 128 AND {{Random: 0, 416}} = 0)": true
-      }
-    },
-    {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "32",
-      "When": {
-        "Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 416 AND {{Random: 32, 96}} = 32": true
-      }
-    },
-    {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "64",
-      "When": {
-        "Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 192 AND {{Random: 64, 128, 224, 480}} = 64": true
-      }
-    },
-    {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "96",
-      "When": {
-        "Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 416 AND {{Random: 32, 96}} = 96": true
-      }
-    },
-    {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "128",
-      "When": {
-        "Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 192 AND {{Random: 64, 128, 224, 480}} = 128": true
-      }
-    },
-    {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "160",
-      "When": {
-        "Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 32 and {{Random: 0, 160, 288, 320}} = 160": true
-      }
-    },
-    {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "192",
-      "When": {
-        "Query: ({{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 288 AND {{Random: 192, 320}} = 192) OR ({{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 384)": true
-      }
-    },
-    {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "224",
-      "When": {
-        "Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 192 AND {{Random: 64, 128, 224, 480}} = 224": true
-      }
-    },
-    {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "256",
-      "When": {
-        "Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 224 AND {{Random: 256, 320, 384}} = 256": true
-      }
-    },
-    {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "288",
-      "When": {
-        "Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 32 AND {{Random: 0, 160, 288, 320}} = 288": true
-      }
-    },
-    {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "320",
-      "When": {
-        "Query: ({{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 32 AND {{Random: 0, 160, 288, 320}} = 320) OR ({{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 64 AND {{Random: 320, 448}} = 320) OR ({{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 224 AND {{Random: 256, 320, 384}} = 320) OR ({{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 224 AND {{Random: 256, 320, 384}} = 320) OR ({{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 288 AND {{Random: 192, 320}} = 320)": true
-      }
-    },
-    {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "352",
-      "When": {
-        "Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 160 AND {{Random: 352, 384}} = 352": true
-      }
+      "Name": "AstronomyTableStellaPresent",
+      "Value": "{{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416|key=Stella}}"
     },
     {
       "Name": "AstronomyTableStellaNextX",
       "Value": "384",
       "When": {
-        "Query: ({{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 0) OR ({{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 160 AND {{Random: 352, 384}} = 384) OR ({{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 224 AND {{Random: 256, 320, 384}} = 384) OR ({{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 352 AND {{Random: 384, 544}} = 384)": true
+        "AstronomyTableStellaPresent": "0"
       }
     },
     {
       "Name": "AstronomyTableStellaNextX",
-      "Value": "416",
+      "Value": "{{Random: 0, 160, 288, 320|key=Stella32}}",
       "When": {
-        "Query: ({{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 128 AND {{Random: 0, 416}} = 416) OR ({{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 320 AND {{Random: 416, 512, 544}} = 416)": true
+        "AstronomyTableStellaPresent": "32"
       }
     },
     {
       "Name": "AstronomyTableStellaNextX",
-      "Value": "448",
+      "Value": "{{Random: 320, 448|key=Stella64}}",
       "When": {
-        "Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 64 AND {{Random: 320, 448}} = 448": true
-      }
-    },
-    {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "480",
-      "When": {
-        "Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 192 AND {{Random: 64, 128, 224, 480}} = 480": true
-      }
-    },
-    {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "512",
-      "When": {
-        "Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 320 AND {{Random: 416, 512, 544}} = 512": true
+        "AstronomyTableStellaPresent": "64"
       }
     },
     {
       "Name": "AstronomyTableStellaNextX",
       "Value": "544",
       "When": {
-        "Query: ({{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 96) OR ({{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 256) OR ({{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 320 AND {{Random: 416, 512, 544}} = 544) OR ({{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}} = 352 AND {{Random: 384, 544}} = 544)": true
+        "AstronomyTableStellaPresent": "96, 256"
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaNextX",
+      "Value": "{{Random: 0, 416|key=Stella128}}",
+      "When": {
+        "AstronomyTableStellaPresent": "128"
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaNextX",
+      "Value": "{{Random: 352, 384, 544|key=Stella160}}",
+      "When": {
+        "AstronomyTableStellaPresent": "160"
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaNextX",
+      "Value": "{{Random: 64, 128, 224, 480|key=Stella192}}",
+      "When": {
+        "AstronomyTableStellaPresent": "192"
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaNextX",
+      "Value": "{{Random: 256, 320, 384|key=Stella224}}",
+      "When": {
+        "AstronomyTableStellaPresent": "224"
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaNextX",
+      "Value": "{{Random: 192, 320|key=Stella288}}",
+      "When": {
+        "AstronomyTableStellaPresent": "288"
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaNextX",
+      "Value": "{{Random: 256, 416, 512, 544|key=Stella320}}",
+      "When": {
+        "AstronomyTableStellaPresent": "320"
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaNextX",
+      "Value": "{{Random: 384, 544|key=Stella352}}",
+      "When": {
+        "AstronomyTableStellaPresent": "352"
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaNextX",
+      "Value": "192",
+      "When": {
+        "AstronomyTableStellaPresent": "384"
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaNextX",
+      "Value": "{{Random: 32, 96|key=Stella416}}",
+      "When": {
+        "AstronomyTableStellaPresent": "416"
       }
     },
     /*Divination Charmed Tent*/

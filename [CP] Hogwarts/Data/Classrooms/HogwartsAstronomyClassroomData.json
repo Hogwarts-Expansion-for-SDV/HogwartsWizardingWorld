@@ -94,7 +94,7 @@
       "Target": "{{ModId}}/TransparentStellascope",
       "FromFile": "assets/Astronomy/stars.png",
       "FromArea": {
-        "X": "{{Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416}}}}",
+        "X": "{{Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416|key=Stella}}}}",
         "Y": 0,
         "Width": 32,
         "Height": 32
@@ -113,7 +113,7 @@
       "Target": "{{ModId}}/TransparentStellascopeNext",
       "FromFile": "assets/Astronomy/stars.png",
       "FromArea": {
-        "X": "{{AstronomyTableStellaNextX}}",
+        "X": "{{Query: {{AstronomyTableStellaNextX}}}}",
         "Y": 0,
         "Width": 32,
         "Height": 32
@@ -144,6 +144,27 @@
       ],
       "When": {
         "HasMod |contains= DecidedlyHuman.MappingExtensionsAndExtraProperties": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Objects Stella",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_HogwartsWhiteDwarf": {
+          "Name": "Hogwarts White Dwarf",
+          "DisplayName": "White Dwarf Tablet",
+          "Description": "A tablet of a white dwarf star.",
+          "Type": "Basic",
+          "Category": 0,
+          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+          "SpriteIndex": 0,
+          "CanBeTrashed": false,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "ExcludeFromShippingCollection": true
+        }
       }
     },
     {
