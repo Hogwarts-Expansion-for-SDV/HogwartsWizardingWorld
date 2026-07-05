@@ -574,97 +574,132 @@
     //Astronomy Table Stella 
     {
       "Name": "AstronomyTableStellaPresent",
-      "Value": "{{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416|key=Stella}}"
+      "Value": "{{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416, 480, 576, 608, 640, 672, 704, 736|key=Stella}}"
     },
     {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "384",
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "{{Random: 384, 544, 640|key=Stella0}}",
       "When": {
         "AstronomyTableStellaPresent": "0"
       }
     },
     {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "{{Random: 0, 160, 288, 320|key=Stella32}}",
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "{{Random: 0, 128, 160, 224|key=Stella32}}",
       "When": {
         "AstronomyTableStellaPresent": "32"
       }
     },
     {
-      "Name": "AstronomyTableStellaNextX",
+      "Name": "AstronomyTableStellaAfterNextX",
       "Value": "{{Random: 320, 448|key=Stella64}}",
       "When": {
         "AstronomyTableStellaPresent": "64"
       }
     },
     {
-      "Name": "AstronomyTableStellaNextX",
+      "Name": "AstronomyTableStellaAfterNextX",
       "Value": "544",
       "When": {
-        "AstronomyTableStellaPresent": "96, 256"
+        "AstronomyTableStellaPresent": "96, 256, 480"
       }
     },
     {
-      "Name": "AstronomyTableStellaNextX",
+      "Name": "AstronomyTableStellaAfterNextX",
       "Value": "{{Random: 0, 416|key=Stella128}}",
       "When": {
         "AstronomyTableStellaPresent": "128"
       }
     },
     {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "{{Random: 352, 384, 544|key=Stella160}}",
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "{{Random: 224, 352, 384, 544, 608|key=Stella160}}",
       "When": {
         "AstronomyTableStellaPresent": "160"
       }
     },
     {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "{{Random: 64, 128, 224, 480|key=Stella192}}",
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "{{Random: 64, 160, 244, 576, 704|key=Stella192}}",
       "When": {
         "AstronomyTableStellaPresent": "192"
       }
     },
     {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "{{Random: 256, 320, 384|key=Stella224}}",
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "{{Random: 160, 320, 608|key=Stella224}}",
       "When": {
         "AstronomyTableStellaPresent": "224"
       }
     },
     {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "{{Random: 192, 320|key=Stella288}}",
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "{{Random: 192, 320, 448|key=Stella288}}",
       "When": {
         "AstronomyTableStellaPresent": "288"
       }
     },
     {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "{{Random: 256, 416, 512, 544|key=Stella320}}",
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "{{Random: 416, 512, 544|key=Stella320}}",
       "When": {
         "AstronomyTableStellaPresent": "320"
       }
     },
     {
-      "Name": "AstronomyTableStellaNextX",
-      "Value": "{{Random: 384, 544|key=Stella352}}",
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "{{Random: 256, 544|key=Stella352}}",
       "When": {
         "AstronomyTableStellaPresent": "352"
       }
     },
     {
-      "Name": "AstronomyTableStellaNextX",
+      "Name": "AstronomyTableStellaAfterNextX",
       "Value": "192",
       "When": {
-        "AstronomyTableStellaPresent": "384"
+        "AstronomyTableStellaPresent": "384, 640"
       }
     },
     {
-      "Name": "AstronomyTableStellaNextX",
+      "Name": "AstronomyTableStellaAfterNextX",
       "Value": "{{Random: 32, 96|key=Stella416}}",
       "When": {
         "AstronomyTableStellaPresent": "416"
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "320",
+      "When": {
+        "AstronomyTableStellaPresent": "576"
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "{{Random: 256, 352, 384, 640|key=Stella608}}",
+      "When": {
+        "AstronomyTableStellaPresent": "608"
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "{{Random: 256, 384, 672|key=Stella672}}",
+      "When": {
+        "AstronomyTableStellaPresent": "672"
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "288",
+      "When": {
+        "AstronomyTableStellaPresent": "704"
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "{{Random: 256, 320, 576, 672|key=Stella736}}",
+      "When": {
+        "AstronomyTableStellaPresent": "736"
       }
     },
     /*Divination Charmed Tent*/

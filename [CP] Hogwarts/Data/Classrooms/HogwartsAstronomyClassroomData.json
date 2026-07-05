@@ -94,7 +94,7 @@
       "Target": "{{ModId}}/TransparentStellascope",
       "FromFile": "assets/Astronomy/stars.png",
       "FromArea": {
-        "X": "{{Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416|key=Stella}}}}",
+        "X": "{{Query: {{AstronomyTableStellaPresent}}}}",
         "Y": 0,
         "Width": 32,
         "Height": 32
@@ -113,7 +113,7 @@
       "Target": "{{ModId}}/TransparentStellascopeNext",
       "FromFile": "assets/Astronomy/stars.png",
       "FromArea": {
-        "X": "{{Query: {{AstronomyTableStellaNextX}}}}",
+        "X": "{{Query: {{AstronomyTableStellaAfterNextX}}}}",
         "Y": 0,
         "Width": 32,
         "Height": 32
@@ -151,6 +151,20 @@
       "Action": "EditData",
       "Target": "Data/Objects",
       "Entries": {
+        "{{ModId}}_HogwartsStellascope": {
+          "Name": "Hogwarts Stellascope",
+          "DisplayName": "Stellascope",
+          "Description": "A magical instrument designed to look at past, present, and future stellar events.",
+          "Type": "Basic",
+          "Category": 0,
+          "Texture": "{{InternalAssetKey: assets/Astronomy/telescopes.png}}",
+          "SpriteIndex": 0,
+          "CanBeTrashed": false,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "ExcludeFromShippingCollection": true
+        },
         "{{ModId}}_HogwartsWhiteDwarf": {
           "Name": "Hogwarts White Dwarf",
           "DisplayName": "White Dwarf Tablet",
@@ -159,12 +173,236 @@
           "Category": 0,
           "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
           "SpriteIndex": 0,
-          "CanBeTrashed": false,
+          "CanBeTrashed": true,
           "ContextTags": [
             "{{ModId}}_Hogwarts"
           ],
           "ExcludeFromShippingCollection": true
-        }
+        },
+        "{{ModId}}_HogwartsStar": {
+          "Name": "Hogwarts Star",
+          "DisplayName": "Star Tablet",
+          "Description": "A tablet of a star.",
+          "Type": "Basic",
+          "Category": 0,
+          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+          "SpriteIndex": 1,
+          "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_HogwartsBrownDwarf": {
+          "Name": "Hogwarts Brown Dwarf",
+          "DisplayName": "Brown Dwarf Tablet",
+          "Description": "A tablet of a brown dwarf star.",
+          "Type": "Basic",
+          "Category": 0,
+          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+          "SpriteIndex": 2,
+          "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_HogwartsRedDwarf": {
+          "Name": "Hogwarts Red Dwarf",
+          "DisplayName": "Red Dwarf Tablet",
+          "Description": "A tablet of a red dwarf star.",
+          "Type": "Basic",
+          "Category": 0,
+          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+          "SpriteIndex": 3,
+          "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_HogwartsRedGiant": {
+          "Name": "Hogwarts Red Giant",
+          "DisplayName": "Red Giant Tablet",
+          "Description": "A tablet of a red giant star.",
+          "Type": "Basic",
+          "Category": 0,
+          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+          "SpriteIndex": 4,
+          "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_HogwartsRedSupergiant": {
+          "Name": "Hogwarts Red Supergiant",
+          "DisplayName": "Red Supergiant Tablet",
+          "Description": "A tablet of a red supergiant star.",
+          "Type": "Basic",
+          "Category": 0,
+          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+          "SpriteIndex": 5,
+          "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_HogwartsProtostar": {
+          "Name": "Hogwarts Protostar",
+          "DisplayName": "Protostar Tablet",
+          "Description": "A tablet of a protostar star.",
+          "Type": "Basic",
+          "Category": 0,
+          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+          "SpriteIndex": 6,
+          "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_HogwartsPlanetaryNebula": {
+          "Name": "Hogwarts Planetary Nebula",
+          "DisplayName": "Planetary Nebula Tablet",
+          "Description": "A tablet of a planetary nebula star.",
+          "Type": "Basic",
+          "Category": 0,
+          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+          "SpriteIndex": 7,
+          "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_HogwartsBlueSupergiant": {
+          "Name": "Hogwarts Blue Supergiant",
+          "DisplayName": "Blue Supergiant Tablet",
+          "Description": "A tablet of a blue supergiant star.",
+          "Type": "Basic",
+          "Category": 0,
+          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+          "SpriteIndex": 8,
+          "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_HogwartsSupernova": {
+          "Name": "Hogwarts Supernova",
+          "DisplayName": "Supernova Tablet",
+          "Description": "A tablet of a supernova.",
+          "Type": "Basic",
+          "Category": 0,
+          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+          "SpriteIndex": 9,
+          "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_HogwartsSupershell": {
+          "Name": "Hogwarts Supershell",
+          "DisplayName": "Supershell Tablet",
+          "Description": "A tablet of a supershell.",
+          "Type": "Basic",
+          "Category": 0,
+          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+          "SpriteIndex": 10,
+          "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_HogwartsBlackHole": {
+          "Name": "Hogwarts Black Hole",
+          "DisplayName": "Black Hole Tablet",
+          "Description": "A tablet of a black hole.",
+          "Type": "Basic",
+          "Category": 0,
+          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+          "SpriteIndex": 11,
+          "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_HogwartsMolecularCloud": {
+          "Name": "Hogwarts Molecular Cloud",
+          "DisplayName": "Molecular Cloud Tablet",
+          "Description": "A tablet of a molecular cloud.",
+          "Type": "Basic",
+          "Category": 0,
+          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+          "SpriteIndex": 12,
+          "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_HogwartsNeutronStar": {
+          "Name": "Hogwarts Neutron Star",
+          "DisplayName": "Neutron Star Tablet",
+          "Description": "A tablet of a neutron star.",
+          "Type": "Basic",
+          "Category": 0,
+          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+          "SpriteIndex": 13,
+          "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_HogwartsBlackDwarf": {
+          "Name": "Hogwarts Black Dwarf",
+          "DisplayName": "Black Dwarf Tablet",
+          "Description": "A tablet of a black dwarf star.",
+          "Type": "Basic",
+          "Category": 0,
+          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+          "SpriteIndex": 14,
+          "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "ExcludeFromShippingCollection": true
+        },
+        "{{ModId}}_HogwartsDeadBrownDwarf": {
+          "Name": "Hogwarts Dead Brown Dwarf",
+          "DisplayName": "Dead Brown Dwarf Tablet",
+          "Description": "A tablet of a dead brown dwarf star.",
+          "Type": "Basic",
+          "Category": 0,
+          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+          "SpriteIndex": 15,
+          "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "ExcludeFromShippingCollection": true
+        },/*
+        "{{ModId}}_HogwartsOldColdNeutronStar": {
+          "Name": "Hogwarts Old Cold Neutron Star",
+          "DisplayName": "Old Cold Neutron Star Tablet",
+          "Description": "A tablet of a old cold neutron star.",
+          "Type": "Basic",
+          "Category": 0,
+          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+          "SpriteIndex": 16,
+          "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "ExcludeFromShippingCollection": true
+        }*/
       }
     },
     {
