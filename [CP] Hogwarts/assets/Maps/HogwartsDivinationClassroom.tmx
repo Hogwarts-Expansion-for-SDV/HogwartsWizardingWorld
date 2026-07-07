@@ -1,130 +1,200 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="29" height="25" tilewidth="16" tileheight="16" infinite="0" nextlayerid="41" nextobjectid="37">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="29" height="25" tilewidth="16" tileheight="16" infinite="0" nextlayerid="45" nextobjectid="37">
  <tileset firstgid="1" name="z_DivinationClassroom__M99_Hogwarts" tilewidth="16" tileheight="16" tilecount="2048" columns="32">
   <image source="z_DivinationClassroom_M99_Hogwarts.png" width="512" height="1024"/>
+  <tile id="72">
+   <animation>
+    <frame tileid="72" duration="200"/>
+    <frame tileid="230" duration="200"/>
+    <frame tileid="232" duration="200"/>
+    <frame tileid="234" duration="200"/>
+    <frame tileid="296" duration="200"/>
+    <frame tileid="234" duration="200"/>
+    <frame tileid="296" duration="200"/>
+    <frame tileid="234" duration="200"/>
+    <frame tileid="296" duration="200"/>
+    <frame tileid="234" duration="200"/>
+    <frame tileid="296" duration="200"/>
+    <frame tileid="298" duration="200"/>
+    <frame tileid="232" duration="200"/>
+    <frame tileid="230" duration="200"/>
+    <frame tileid="72" duration="200"/>
+    <frame tileid="72" duration="200"/>
+    <frame tileid="72" duration="200"/>
+    <frame tileid="72" duration="200"/>
+    <frame tileid="72" duration="200"/>
+    <frame tileid="72" duration="200"/>
+    <frame tileid="72" duration="200"/>
+    <frame tileid="72" duration="200"/>
+    <frame tileid="72" duration="200"/>
+    <frame tileid="72" duration="200"/>
+    <frame tileid="72" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="73">
+   <animation>
+    <frame tileid="73" duration="200"/>
+    <frame tileid="231" duration="200"/>
+    <frame tileid="233" duration="200"/>
+    <frame tileid="235" duration="200"/>
+    <frame tileid="297" duration="200"/>
+    <frame tileid="235" duration="200"/>
+    <frame tileid="297" duration="200"/>
+    <frame tileid="235" duration="200"/>
+    <frame tileid="297" duration="200"/>
+    <frame tileid="235" duration="200"/>
+    <frame tileid="297" duration="200"/>
+    <frame tileid="299" duration="200"/>
+    <frame tileid="233" duration="200"/>
+    <frame tileid="231" duration="200"/>
+    <frame tileid="73" duration="200"/>
+    <frame tileid="73" duration="200"/>
+    <frame tileid="73" duration="200"/>
+    <frame tileid="73" duration="200"/>
+    <frame tileid="73" duration="200"/>
+    <frame tileid="73" duration="200"/>
+    <frame tileid="73" duration="200"/>
+    <frame tileid="73" duration="200"/>
+    <frame tileid="73" duration="200"/>
+    <frame tileid="73" duration="200"/>
+    <frame tileid="73" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="104">
+   <animation>
+    <frame tileid="104" duration="200"/>
+    <frame tileid="262" duration="200"/>
+    <frame tileid="264" duration="200"/>
+    <frame tileid="266" duration="200"/>
+    <frame tileid="328" duration="200"/>
+    <frame tileid="266" duration="200"/>
+    <frame tileid="328" duration="200"/>
+    <frame tileid="266" duration="200"/>
+    <frame tileid="328" duration="200"/>
+    <frame tileid="266" duration="200"/>
+    <frame tileid="328" duration="200"/>
+    <frame tileid="330" duration="200"/>
+    <frame tileid="264" duration="200"/>
+    <frame tileid="262" duration="200"/>
+    <frame tileid="104" duration="200"/>
+    <frame tileid="104" duration="200"/>
+    <frame tileid="104" duration="200"/>
+    <frame tileid="104" duration="200"/>
+    <frame tileid="104" duration="200"/>
+    <frame tileid="104" duration="200"/>
+    <frame tileid="104" duration="200"/>
+    <frame tileid="104" duration="200"/>
+    <frame tileid="104" duration="200"/>
+    <frame tileid="104" duration="200"/>
+    <frame tileid="104" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="105">
+   <animation>
+    <frame tileid="105" duration="200"/>
+    <frame tileid="263" duration="200"/>
+    <frame tileid="265" duration="200"/>
+    <frame tileid="267" duration="200"/>
+    <frame tileid="329" duration="200"/>
+    <frame tileid="267" duration="200"/>
+    <frame tileid="329" duration="200"/>
+    <frame tileid="267" duration="200"/>
+    <frame tileid="329" duration="200"/>
+    <frame tileid="267" duration="200"/>
+    <frame tileid="329" duration="200"/>
+    <frame tileid="331" duration="200"/>
+    <frame tileid="265" duration="200"/>
+    <frame tileid="263" duration="200"/>
+    <frame tileid="105" duration="200"/>
+    <frame tileid="105" duration="200"/>
+    <frame tileid="105" duration="200"/>
+    <frame tileid="105" duration="200"/>
+    <frame tileid="105" duration="200"/>
+    <frame tileid="105" duration="200"/>
+    <frame tileid="105" duration="200"/>
+    <frame tileid="105" duration="200"/>
+    <frame tileid="105" duration="200"/>
+    <frame tileid="105" duration="200"/>
+    <frame tileid="105" duration="200"/>
+   </animation>
+  </tile>
  </tileset>
  <tileset firstgid="2049" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
   <image source="paths.png" width="64" height="256"/>
  </tileset>
- <tileset firstgid="2113" name="z_vanillaEdits_Hogwarts" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
-  <image source="z_vanillaEdits_Hogwarts.png" width="512" height="656"/>
+ <tileset firstgid="2113" name="z_Library_HitMe_Hogwarts" tilewidth="16" tileheight="16" tilecount="924" columns="21">
+  <image source="z_Library_HitMe_Hogwarts.png" width="336" height="704"/>
+ </tileset>
+ <tileset firstgid="3037" name="z_HogsmeadeInterior_Hxoni_Hogwarts" tilewidth="16" tileheight="16" tilecount="874" columns="23">
+  <image source="z_HogsmeadeInterior_Hxoni_Hogwarts.png" width="368" height="608"/>
+ </tileset>
+ <tileset firstgid="3911" name="z_GrandStaircase_HitMe_Hogwarts" tilewidth="16" tileheight="16" tilecount="420" columns="21">
+  <image source="z_GrandStaircase_HitMe_Hogwarts.png" width="336" height="320"/>
+ </tileset>
+ <tileset firstgid="4331" name="z_wizard_furniture_Hogwarts" tilewidth="16" tileheight="16" tilecount="351" columns="13">
+  <image source="z_wizard_furniture_Hogwarts.png" width="208" height="432"/>
  </tileset>
  <layer id="2" name="Back" width="29" height="25">
   <data encoding="base64" compression="zlib">
-   eJztk0EOAWEMhZv0dwicZDgGG5wEKxyBDU4xEhIcgw1Ogo33h8aQUl1MYjEv+eJL+qpjEkREZSaqgCrrbs09XUkCr4E6627NPV1JC94GHdbdmnu6ki68B/qsuzX3dCVT+AzMWXdr7ulK1vAN2LLu1tzTlRzgR3Bi3a25pys5wy/gyrpbc09XUg7474Bq0N2ae7oxuxLREr4yiL09SOA1UA9P9+zHz5hFuPNtN310WqANOhn37K/C680xnmHyAdnpgh7oZ9yzL/E85wj9ARjS0z37kjSzsyvp5HUzvpsGaCr8ctPzblPjOfc5/M7378jTi5vFzeLmf9+8AdK+csU=
+   eJxjYBh8oJSDgaGMg3h6FIwCeoLlPAwMK3hoQ+MC+4By+3loQw9WfzIxYsfMjKjqQOYBxRrQ1ZHjT3x2Iqvbh8NOGKanP9H9i8+fSowIrIyEkcXR/amEpEYZja0EtRufP3G5l1x/MhGwE188khufhOwciflz1J9D35+EACH/jAJMAABOxsx2
   </data>
  </layer>
- <objectgroup id="21" name="Back"/>
  <layer id="37" name="Back1" width="29" height="25">
   <properties>
    <property name="DrawAbove" value="Back"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt1MdNQ0EUheEnjYPk9B6UgSOUQV4CJWAcYAWUgCOUgSMuA0coA0eogH83YhajEWgskDjSt7nneq5kyXacrwkJxwkjgihicOEJ2Zvs6Ho1W8zjSCCJFNLICNmb7Oh6NbvM97CPAxziCMdC9iY7ul7NOfMsLpBDHgUUhexNdnS9mjvmJZRRQRU11IXsTXZ0vZpH5g000UIbHXSF7E12dL2aZ+Z9DDDECGNMhOxNdnS9mjfmU8wwxwJLrITsTXZ0vZqQj98WIogiBheeT/YmO7r+t+TE7zinOPOv7/PX7N7g9ps3f/r5deX/u11/sgH+t5FDHgUUcYmrgJ2bJd4to4IqaqjjHg+WbjZ4t4kW2uigiyf0LN3s8+4AQ4wwxgQveLV0c8q7M8yxwBIrvOPD0s1wkP9tRBGDCw8b2AzauRnn3QSSSCGNDLaxY+nmX84nZyeCOA==
+   eJxjYBgFo2AUjILBBx4D8SMI3fAIyobysaklqIZYECtIgeZBDh4zYIYVqWGLrv4RHdxNKhiIOMQXTuSELaXpeBSMglFAfwAASoMuSw==
   </data>
  </layer>
- <objectgroup id="38" name="Back1"/>
  <layer id="10" name="Back2" width="29" height="25">
   <properties>
    <property name="DrawAbove" value="Back"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt01lOAlEQhWESewPItA6UptfRMvQ6ZFwHgrIOVHAdzusQp1d/EipWTHeqTHi8J/mSTp2T+9blo1LpGBVUUUMdDUis3ruRNLmf4BQtxGgjUXur924kKfczdNBFD31kam/13o3knPsAQ4wwxgRTtbd670Yy436BORa4xBWWam/13o1kxf0aN7jFGhvcqb3VezeSe+4PeMQTnvGCV7W3eu9G8sZ9i3d84BNf+FZ7q/duJOWIfwsVVFFDHY3od2P13o2kqe4tvmO0kRTs4/29qPe8ke7vHdX3+c4K9pK8fvdGF73I98bwTz819nn97o0RxphE9hv/zaHfCwkJCQk5fH4AQ8FcWg==
+   eJztkc0NwjAMhYPEweLGDYkTG7FAd2GJZAgyBBmC7oMq2+KpipSfOhfoJ1n1axy79XOuzOX0DdS5Mys8cQRiHURrjtqKJ3FE6RtFa47aihdxJOmbRGuO2oo3cczSdxatOWor1Ev1M+dtGOBnBD9z3sYBfibwM+dtMpqpHl6P7qG+4fsF9RKfW/Dy/bdDuXap8Ub/O53ra+8NtaX7NXOxZuvsX0Z3U7uv9dnU6Mualjs9/f8Nix319hjt/85OLx/Fhj4G
   </data>
  </layer>
- <objectgroup id="25" name="Back2"/>
- <layer id="39" name="TheMissingLayer" width="29" height="25">
-  <properties>
-   <property name="DrawBefore" value="Buildings"/>
-  </properties>
-  <data encoding="base64" compression="zlib">
-   eJxjYGBgYARiJgbcgJA8MWrQ5UftHLVz1M7Ba+coGAWjYBSMglEwCkgDAPdJAG0=
-  </data>
- </layer>
- <objectgroup id="40" name="TheMissingLayer"/>
  <layer id="5" name="Buildings" width="29" height="25">
   <data encoding="base64" compression="zlib">
-   eJztlstOwlAQhttCkZV3cYX6Bu5NND6HCcYX0R3RV9EX0a03QE15BJWLEDWtfo0MaZuetgdI2fgnX3JyZqZ/zwyctF42ctU5fvV/z9w8+/ABAxjCO3SgC71A/BXeEuIDRY54VguGsQVrpmGswwZUYBOWYQVWzXB8EZYS4pVIjniI5z7rA2gV4vvRYL85ZVw8xLPG+liRPyuJh3iesj6DXTsd0QL9Kpt/6yx14jHJ71bmItor6tVHPZ1Rvct7efBjh/d9yVxER4FYW1HfDuREPd1RrFriLLBdCu/7krnE9dtT1HsJnlk0nguzvDD1auM8pQdPvPszvMT0JkmOot5JOKf04JPcL/i2w/ui6DNFrqLenbK3cc/UkcrzljndwT08aM4srXZ831rh/Q65XehBX9MzqXbHCty3Vnz9rHVoqc+Zpkf+dw1oQquUvW7e56zl5HkS8Jz0TtGReMzze+iqmJ1r7oGbwF1wqVHr43v+AiMZlqs=
+   eJzNk79OAkEQxucEkoNEpFKj1REofAUtfA99E21I9AkMWIidiRqstdBCG/9GO0kIvoLxAbTxm2UH1+N298TDOMmXW5Zv5rezN0fkjtkS0XwKcUyVPMVSRqtItJKjRoGUaDlHFGEd6bXsw0PN4u9Y0t8ctA5mjZRoDbWrWFf1WvbhoUDnjNsv99cKia6gTTDrpEQbue+SfXiUdzf8eb9mfx3kd6E2mHuo6RI8ynsSpu/XZF3q/lr63BdgnqOmS/AM/ZLvY/Nd8jyw91n319HnfgGzj5ouwTP0m/k8X7a7ZibPQzccPe8HmO+o6RI8I/fDv2spmeZ5dyrUCAKihbxbi3nlpXh+GqbZ3yFqHEOFAN8guHk8Izzv4X+AosGe+p/XR5VBjtmvj8lzz+fbKhNtl5N9B9PJ+2ZIPvdb9zDlfBLX0E2C9xa68+yvlr/quZgyb1mF1HMx+Z1kHVzTxUy6S9s9xiOea+a5mJOK/8ZsY9b2Ld/IOLE0o2o2bMzX2L75fiTXVts8a9JMvFmYveIoN4tgXs/BzJorPB/TJZmzU9zjmb7LZoo8G9MXJvMRvKcYcxIxiT7+Mj4B15i9OA==
   </data>
  </layer>
- <objectgroup id="30" name="Buildings">
-  <object id="11" name="TileData" x="232" y="234" width="16" height="16">
-   <properties>
-    <property name="Action" value="Message &quot;DivinationTeacherTable&quot;"/>
-   </properties>
-  </object>
-  <object id="12" name="TileData" x="16" y="128" width="16" height="16">
-   <properties>
-    <property name="Action" value="Message &quot;DivinationCabinet&quot;"/>
-   </properties>
-  </object>
-  <object id="13" name="TileData" x="416" y="128" width="16" height="16">
-   <properties>
-    <property name="Action" value="Message &quot;DivinationCabinet&quot;"/>
-   </properties>
-  </object>
-  <object id="14" name="TileData" x="16" y="288" width="16" height="16">
-   <properties>
-    <property name="Action" value="Message &quot;DivinationCabinet&quot;"/>
-   </properties>
-  </object>
-  <object id="15" name="TileData" x="16" y="320" width="16" height="16">
-   <properties>
-    <property name="Action" value="Message &quot;DivinationCabinet&quot;"/>
-   </properties>
-  </object>
-  <object id="16" name="TileData" x="432" y="288" width="16" height="16">
-   <properties>
-    <property name="Action" value="Message &quot;DivinationCabinet&quot;"/>
-   </properties>
-  </object>
-  <object id="17" name="TileData" x="432" y="320" width="16" height="16">
-   <properties>
-    <property name="Action" value="Message &quot;DivinationCabinet&quot;"/>
-   </properties>
-  </object>
-  <object id="22" name="TileData" x="208" y="192" width="16" height="16">
-   <properties>
-    <property name="Action" value="Message &quot;DivinationCabinet&quot;"/>
-   </properties>
-  </object>
-  <object id="33" name="TileData" x="416" y="352" width="16" height="16">
-   <properties>
-    <property name="Action" value="Message “CrystalBallShowcase”"/>
-   </properties>
-  </object>
-  <object id="34" name="TileData" x="32" y="352" width="16" height="16">
-   <properties>
-    <property name="Action" value="Message “CrystalBallShowcase”"/>
-   </properties>
-  </object>
-  <object id="35" name="TileData" x="240" y="192" width="16" height="16">
-   <properties>
-    <property name="Action" value="Message “CrystalBallShowcase”"/>
-   </properties>
-  </object>
-  <object id="36" name="TileData" x="224" y="192" width="16" height="16">
-   <properties>
-    <property name="Action" value="Message “CrystalBallShowcase”"/>
-   </properties>
-  </object>
- </objectgroup>
- <layer id="20" name="Paths" width="29" height="25">
+ <layer id="41" name="Buildings1" width="29" height="25">
   <data encoding="base64" compression="zlib">
-   eJxjYBgF9AScHJTJE6uG3oBa7qZG+IwC2gBKw3407oYWGI2voQGoHU9DPd6HuvsHAoymIeoBAGL6AQA=
+   eJztkkEOgjAQRYeFS6VblxgVT6GRhKOw4hIcgJVHUKNeA/Ui3sRpYaDB2tbKgkVf8pNp82d+0imAniPqZKmzYZYtd9RDOvM6Bihixf1zoMw+a8yT6sGJcH6kyEnwnCjuyf8Pe5yBghcqxTpt6gzrTHFPfhfm01pyppxD9O/JT/02VKhJUx+Y6G8z5ZxvNfmxV4CzisqQyfuWUuYChKwzyU+ZOKuQPbrMOATYhN1fCQKAC6ulq8lP/b9kbtG/C7tdyZSaPZGf+m0zVwaPLZuZmGXM5P+e79E1J++d+V5TQw9/mxtzTfzkysTM0VGC+7t6xk/u9+vxtLwBOldRjQ==
   </data>
  </layer>
- <objectgroup id="28" name="Paths"/>
+ <layer id="42" name="Buildings2" width="29" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztk8sNwjAQRNcHJL6500AUPm1QCn3MjU8n0AWIRpCSPjKREmGtCPEnBw5+0shrZ3ZWsRKR/+VFPQfqMXl41jFMRUDJ2zr7VXf+GApmFOqsb2af34UZNacW1DKgnz1gL5gBZmHIv16JbLhuqR21D5jJHrAXzACz0GS6cMpEztlnn6vnF+qqznLrnXS/DxVzKmst29wbdW895RdfDBMjoFy9Xn6NvsvADLj4mm//MMK8DmZB/08aw3s5jjiTWTCBd51IJBKJeGpbCiyN
+  </data>
+ </layer>
  <layer id="17" name="Front" width="29" height="25">
   <data encoding="base64" compression="zlib">
-   eJzl1UtKw1AUxvETTANat6B0pjupO9GRbzt26Mh3W0cuQe0r9YG4A1/VFgrqVvyHJHip90bT3mbSD35QOOfeAychFRHZwCa2sI0dlLCGdUN9VcKYekpRz2A9zhGOcYJTlFFBFYeG+j4OIrqeitKj1uPUUEcDTbTgo40rQ/0ClxFdj6/0qPU4L3hFB294Rxc9PBvqj3iK6Hq6So9an7TMOCJ5zDq/a9POaPXBnknPR07kE185c88Ce1o07Oo/53W5nxLZdc31IvOWDDMLbnjedpaZt2LxnbhhJ7e4S7mbUc8HuykYdhvceZ5w5zh2G9z5YPnOGs+pjgaaKZ/ZsGf7bvjOzmE+4d3VJTjXd39+20rZ4/8RVZx59u5NSos5Ptq4zmimjSR9U8Y1w/Y3RZcsZvyVPS+9OPkhz2Wdb10Nda0=
+   eJztU1sKwjAQ3H5Gpfeoegm9ST3JXMbHpx6mSj/9F8/ggAhp2eBGo1jJwEDYndkJGyLye3DkiByTE6XPGtgDNaAWKTIrckrOyLnSZw3sgRpUiTK/hUUhsixe99MLzkCMp2be6o1MelFHZmb8J9bkRqlvyV1EPUPfpXVffW/ecxf7UuRQppvHWeBMWPX++zzz+ncN/a8QTi5CbERrmJky15L3QOPuPLruWbtP62mann7IOAfOn8JF2d91IDu8Ac5mNLw=
   </data>
  </layer>
- <objectgroup id="32" name="Front"/>
+ <layer id="44" name="Front1" width="29" height="25">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjALKgCcQe9HI7HQgzsAingnEWVjEvYHYh0ZuGeogh4GhoRuIkcXagbiDCL2ngfgMGfpAYDWanaOA+gCY5hu8yQhnXPlrFIyCUUA6AACDIgwK
+  </data>
+ </layer>
  <layer id="11" name="AlwaysFront" width="29" height="25">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFtASrgHg1EK/BIreSgDy6GdjASizyp4D4NBCfwaL+JBHyyGZgAyexyL8C4tdA/AaL+pdEyCObgQ28JCA/CkbBKBgF6GAXC4RWYMEuf4+ZgeE+M2H9DTj0jwLaAnVGBgYNxqFvxygYOQAAhTkitg==
+   eJxjYBgFo2AUjIJRMApGwSgYBaSAhTjYtAQHcbBHweAAAAtvAsU=
   </data>
  </layer>
+ <layer id="20" name="Paths" width="29" height="25" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4D6gJNjcJgxCoY+IDUdjKYb3ABb2BAbXpToHQW0B5TExWg8joJRQB0AAPBZAKs=
+  </data>
+ </layer>
+ <objectgroup id="21" name="Back"/>
+ <objectgroup id="38" name="Back1"/>
+ <objectgroup id="25" name="Back2"/>
+ <objectgroup id="30" name="Buildings"/>
+ <objectgroup id="32" name="Front"/>
  <objectgroup id="34" name="AlwaysFront"/>
+ <objectgroup id="28" name="Paths"/>
 </map>
