@@ -3,7 +3,7 @@
     {
       "LogName": "Hogwarts Astronomy Gameplay Images Load",
       "Action": "Load",
-      "Target": "{{ModId}}/moonobjects, {{ModId}}/moons, {{ModId}}/nightsky, {{ModId}}/scopecutout1, {{ModId}}/scopecutout2, {{ModId}}/stars, {{ModId}}/starsobjects, {{ModId}}/StarSirius",
+      "Target": "{{ModId}}/moonobjects, {{ModId}}/moons, {{ModId}}/nightsky, {{ModId}}/scopecutout1, {{ModId}}/scopecutout2, {{ModId}}/stars, {{ModId}}/starsobjects, {{ModId}}/StarSirius, {{ModId}}/telescopes",
       "FromFile": "assets/Astronomy/{{TargetWithoutPath}}.png"
     },
     {
@@ -154,241 +154,458 @@
         "{{ModId}}_HogwartsStellascope": {
           "Name": "Hogwarts Stellascope",
           "DisplayName": "Stellascope",
-          "Description": "A magical instrument designed to look at past, present, and future stellar events.",
-          "Type": "Basic",
-          "Category": 0,
-          "Texture": "{{InternalAssetKey: assets/Astronomy/telescopes.png}}",
+          "Description": "A magical instrument designed to look at past, present, or future stellar events.",
+          "Texture": "{{ModId}}/telescopes",
           "SpriteIndex": 0,
           "CanBeTrashed": false,
           "ContextTags": [
             "{{ModId}}_Hogwarts"
           ],
-          "ExcludeFromShippingCollection": true
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
         },
-        "{{ModId}}_HogwartsWhiteDwarf": {
-          "Name": "Hogwarts White Dwarf",
-          "DisplayName": "White Dwarf Tablet",
-          "Description": "A tablet of a white dwarf star.",
-          "Type": "Basic",
-          "Category": 0,
-          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+        "{{ModId}}_StandardWhiteDwarf": {
+          "Name": "{{ModId}}_StandardWhiteDwarf",
+          "DisplayName": "Standard White Dwarf",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 0,
-          "CanBeTrashed": true,
           "ContextTags": [
             "{{ModId}}_Hogwarts"
           ],
-          "ExcludeFromShippingCollection": true
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
         },
-        "{{ModId}}_HogwartsStar": {
-          "Name": "Hogwarts Star",
-          "DisplayName": "Star Tablet",
-          "Description": "A tablet of a star.",
-          "Type": "Basic",
-          "Category": 0,
-          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+        "{{ModId}}_YellowDwarf": {
+          "Name": "{{ModId}}_YellowDwarf",
+          "DisplayName": "Yellow Dwarf",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 1,
-          "CanBeTrashed": true,
           "ContextTags": [
             "{{ModId}}_Hogwarts"
           ],
-          "ExcludeFromShippingCollection": true
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
         },
-        "{{ModId}}_HogwartsBrownDwarf": {
-          "Name": "Hogwarts Brown Dwarf",
-          "DisplayName": "Brown Dwarf Tablet",
-          "Description": "A tablet of a brown dwarf star.",
-          "Type": "Basic",
-          "Category": 0,
-          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+        "{{ModId}}_RedDwarf": {
+          "Name": "{{ModId}}_RedDwarf",
+          "DisplayName": "Red Dwarf",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 2,
-          "CanBeTrashed": true,
           "ContextTags": [
             "{{ModId}}_Hogwarts"
           ],
-          "ExcludeFromShippingCollection": true
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
         },
-        "{{ModId}}_HogwartsRedDwarf": {
-          "Name": "Hogwarts Red Dwarf",
-          "DisplayName": "Red Dwarf Tablet",
-          "Description": "A tablet of a red dwarf star.",
-          "Type": "Basic",
-          "Category": 0,
-          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+        "{{ModId}}_BrownDwarf": {
+          "Name": "{{ModId}}_BrownDwarf",
+          "DisplayName": "Brown Dwarf",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 3,
-          "CanBeTrashed": true,
           "ContextTags": [
             "{{ModId}}_Hogwarts"
           ],
-          "ExcludeFromShippingCollection": true
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
         },
-        "{{ModId}}_HogwartsRedGiant": {
-          "Name": "Hogwarts Red Giant",
-          "DisplayName": "Red Giant Tablet",
-          "Description": "A tablet of a red giant star.",
-          "Type": "Basic",
-          "Category": 0,
-          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+        "{{ModId}}_RedGiant": {
+          "Name": "{{ModId}}_RedGiant",
+          "DisplayName": "Red Giant",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 4,
-          "CanBeTrashed": true,
           "ContextTags": [
             "{{ModId}}_Hogwarts"
           ],
-          "ExcludeFromShippingCollection": true
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
         },
-        "{{ModId}}_HogwartsRedSupergiant": {
-          "Name": "Hogwarts Red Supergiant",
-          "DisplayName": "Red Supergiant Tablet",
-          "Description": "A tablet of a red supergiant star.",
-          "Type": "Basic",
-          "Category": 0,
-          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+        "{{ModId}}_RedSupergiant": {
+          "Name": "{{ModId}}_RedSupergiant",
+          "DisplayName": "Red Supergiant",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 5,
-          "CanBeTrashed": true,
           "ContextTags": [
             "{{ModId}}_Hogwarts"
           ],
-          "ExcludeFromShippingCollection": true
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
         },
-        "{{ModId}}_HogwartsProtostar": {
-          "Name": "Hogwarts Protostar",
-          "DisplayName": "Protostar Tablet",
-          "Description": "A tablet of a protostar star.",
-          "Type": "Basic",
-          "Category": 0,
-          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+        "{{ModId}}_Protostar": {
+          "Name": "{{ModId}}_Protostar",
+          "DisplayName": "Protostar",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 6,
-          "CanBeTrashed": true,
           "ContextTags": [
             "{{ModId}}_Hogwarts"
           ],
-          "ExcludeFromShippingCollection": true
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
         },
-        "{{ModId}}_HogwartsPlanetaryNebula": {
-          "Name": "Hogwarts Planetary Nebula",
-          "DisplayName": "Planetary Nebula Tablet",
-          "Description": "A tablet of a planetary nebula star.",
-          "Type": "Basic",
-          "Category": 0,
-          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+        "{{ModId}}_BlueSupergiant": {
+          "Name": "{{ModId}}_BlueSupergiant",
+          "DisplayName": "Blue Supergiant",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 7,
-          "CanBeTrashed": true,
           "ContextTags": [
             "{{ModId}}_Hogwarts"
           ],
-          "ExcludeFromShippingCollection": true
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
         },
-        "{{ModId}}_HogwartsBlueSupergiant": {
-          "Name": "Hogwarts Blue Supergiant",
-          "DisplayName": "Blue Supergiant Tablet",
-          "Description": "A tablet of a blue supergiant star.",
-          "Type": "Basic",
-          "Category": 0,
-          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+        "{{ModId}}_BlackHole": {
+          "Name": "{{ModId}}_BlackHole",
+          "DisplayName": "Black Hole",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 8,
-          "CanBeTrashed": true,
           "ContextTags": [
             "{{ModId}}_Hogwarts"
           ],
-          "ExcludeFromShippingCollection": true
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
         },
-        "{{ModId}}_HogwartsSupernova": {
-          "Name": "Hogwarts Supernova",
-          "DisplayName": "Supernova Tablet",
-          "Description": "A tablet of a supernova.",
-          "Type": "Basic",
-          "Category": 0,
-          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+        "{{ModId}}_PlanetaryNebula": {
+          "Name": "{{ModId}}_PlanetaryNebula",
+          "DisplayName": "Planetary Nebula",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 9,
-          "CanBeTrashed": true,
           "ContextTags": [
             "{{ModId}}_Hogwarts"
           ],
-          "ExcludeFromShippingCollection": true
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
         },
-        "{{ModId}}_HogwartsSupershell": {
-          "Name": "Hogwarts Supershell",
-          "DisplayName": "Supershell Tablet",
-          "Description": "A tablet of a supershell.",
-          "Type": "Basic",
-          "Category": 0,
-          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+        "{{ModId}}_Supernova": {
+          "Name": "{{ModId}}_Supernova",
+          "DisplayName": "Supernova",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 10,
-          "CanBeTrashed": true,
           "ContextTags": [
             "{{ModId}}_Hogwarts"
           ],
-          "ExcludeFromShippingCollection": true
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
         },
-        "{{ModId}}_HogwartsBlackHole": {
-          "Name": "Hogwarts Black Hole",
-          "DisplayName": "Black Hole Tablet",
-          "Description": "A tablet of a black hole.",
-          "Type": "Basic",
-          "Category": 0,
-          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+        "{{ModId}}_NeutronStar": {
+          "Name": "{{ModId}}_NeutronStar",
+          "DisplayName": "Neutron Star",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 11,
-          "CanBeTrashed": true,
           "ContextTags": [
             "{{ModId}}_Hogwarts"
           ],
-          "ExcludeFromShippingCollection": true
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
         },
-        "{{ModId}}_HogwartsMolecularCloud": {
-          "Name": "Hogwarts Molecular Cloud",
-          "DisplayName": "Molecular Cloud Tablet",
-          "Description": "A tablet of a molecular cloud.",
-          "Type": "Basic",
-          "Category": 0,
-          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+        "{{ModId}}_Supershell": {
+          "Name": "{{ModId}}_Supershell",
+          "DisplayName": "Supershell",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 12,
-          "CanBeTrashed": true,
           "ContextTags": [
             "{{ModId}}_Hogwarts"
           ],
-          "ExcludeFromShippingCollection": true
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
         },
-        "{{ModId}}_HogwartsNeutronStar": {
-          "Name": "Hogwarts Neutron Star",
-          "DisplayName": "Neutron Star Tablet",
-          "Description": "A tablet of a neutron star.",
-          "Type": "Basic",
-          "Category": 0,
-          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+        "{{ModId}}_MolecularCloud": {
+          "Name": "{{ModId}}_MolecularCloud",
+          "DisplayName": "Molecular Cloud",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 13,
-          "CanBeTrashed": true,
           "ContextTags": [
             "{{ModId}}_Hogwarts"
           ],
-          "ExcludeFromShippingCollection": true
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
         },
-        "{{ModId}}_HogwartsBlackDwarf": {
-          "Name": "Hogwarts Black Dwarf",
-          "DisplayName": "Black Dwarf Tablet",
-          "Description": "A tablet of a black dwarf star.",
-          "Type": "Basic",
-          "Category": 0,
-          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+        "{{ModId}}_BlackDwarf": {
+          "Name": "{{ModId}}_BlackDwarf",
+          "DisplayName": "Black Dwarf",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 14,
-          "CanBeTrashed": true,
           "ContextTags": [
             "{{ModId}}_Hogwarts"
           ],
-          "ExcludeFromShippingCollection": true
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
         },
-        "{{ModId}}_HogwartsDeadBrownDwarf": {
-          "Name": "Hogwarts Dead Brown Dwarf",
-          "DisplayName": "Dead Brown Dwarf Tablet",
-          "Description": "A tablet of a dead brown dwarf star.",
-          "Type": "Basic",
-          "Category": 0,
-          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
+        "{{ModId}}_DeadBrownDwarf": {
+          "Name": "{{ModId}}_DeadBrownDwarf",
+          "DisplayName": "Dead Brown Dwarf",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 15,
-          "CanBeTrashed": true,
           "ContextTags": [
             "{{ModId}}_Hogwarts"
           ],
-          "ExcludeFromShippingCollection": true
-        },/*
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_OldColdNeutronStar": {
+          "Name": "{{ModId}}_OldColdNeutronStar",
+          "DisplayName": "Old Cold Neutron Star",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
+          "SpriteIndex": 16,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_Dissipation": {
+          "Name": "{{ModId}}_Dissipation",
+          "DisplayName": "Dissipation",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
+          "SpriteIndex": 17,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_BlueHypergiant": {
+          "Name": "{{ModId}}_BlueHypergiant",
+          "DisplayName": "Blue Hypergiant",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
+          "SpriteIndex": 18,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_Wolf-RayetStar": {
+          "Name": "{{ModId}}_Wolf-RayetStar",
+          "DisplayName": "Wolf-Rayet Star",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
+          "SpriteIndex": 19,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_RemnantNebula": {
+          "Name": "{{ModId}}_RemnantNebula",
+          "DisplayName": "Remnant Nebula",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
+          "SpriteIndex": 20,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_YellowSupergiant": {
+          "Name": "{{ModId}}_YellowSupergiant",
+          "DisplayName": "Yellow Supergiant",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
+          "SpriteIndex": 21,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_TTauriStar": {
+          "Name": "{{ModId}}_TTauriStar",
+          "DisplayName": "T Tauri Star",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
+          "SpriteIndex": 22,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_BlueStar": {
+          "Name": "{{ModId}}_BlueStar",
+          "DisplayName": "Blue Star",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
+          "SpriteIndex": 23,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_HerbigStar": {
+          "Name": "{{ModId}}_HerbigStar",
+          "DisplayName": "Herbig Star",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
+          "SpriteIndex": 24,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_OrangeDwarf": {
+          "Name": "{{ModId}}_OrangeDwarf",
+          "DisplayName": "Orange Dwarf",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
+          "SpriteIndex": 25,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_BlueStraggler": {
+          "Name": "{{ModId}}_BlueStraggler",
+          "DisplayName": "Blue Straggler ",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
+          "SpriteIndex": 26,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_MinimalWhiteDwarf": {
+          "Name": "{{ModId}}_MinimalWhiteDwarf",
+          "DisplayName": "Minimal White Dwarf",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
+          "SpriteIndex": 27,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_BlueGiant": {
+          "Name": "{{ModId}}_BlueGiant",
+          "DisplayName": "Blue Giant",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
+          "SpriteIndex": 28,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_RedHypergiant": {
+          "Name": "{{ModId}}_RedHypergiant",
+          "DisplayName": "Red Hypergiant",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
+          "SpriteIndex": 29,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_YellowHypergiant": {
+          "Name": "{{ModId}}_YellowHypergiant",
+          "DisplayName": "Yellow Hypergiant",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
+          "SpriteIndex": 30,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_RemnantWhiteDwarf": {
+          "Name": "{{ModId}}_RemnantWhiteDwarf",
+          "DisplayName": "Remnant White Dwarf",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
+          "SpriteIndex": 31,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_MaximalWhiteDwarf": {
+          "Name": "{{ModId}}_MaximalWhiteDwarf",
+          "DisplayName": "Maximal White Dwarf",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
+          "SpriteIndex": 32,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_BlueDwarf": {
+          "Name": "{{ModId}}_BlueDwarf",
+          "DisplayName": "Blue Dwarf",
+          "Description": "A tablet of a stellar event.",
+          "Texture": "{{ModId}}/starsobjects",
+          "SpriteIndex": 33,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        }, /*
         "{{ModId}}_HogwartsOldColdNeutronStar": {
           "Name": "Hogwarts Old Cold Neutron Star",
           "DisplayName": "Old Cold Neutron Star Tablet",
