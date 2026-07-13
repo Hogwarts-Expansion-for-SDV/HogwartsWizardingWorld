@@ -1,0 +1,134 @@
+{
+  "Changes": [
+    {
+      "LogName": "Include debug shop data",
+      "Action": "Include",
+      "FromFile": "Data/DEBUGShopData.json",
+      "When": {
+        "Debug_mode": true
+      }
+    },
+    {
+      "LogName": "Hogwarts General Data Include",
+      "Action": "Include",
+      "FromFile": "
+Data/CastlePortraitsData.json,
+Data/ChairData.json,
+Data/CompatibilityMods.json,
+Data/CreatureMailData.json,
+Data/EditImageData.json,
+Data/EventData.json,
+Data/ForbiddenForestData.json,
+Data/ForbiddenForestCreatureDenData.json,
+Data/ForbiddenForestCreatureDenTriggerData.json, 
+Data/ForbiddenForestMonsters.json,
+Data/HogsmeadeStationData.json,
+Data/HogsmeadeVillageData.json,
+Data/HogsmeadeVillageCropAreaData.json,
+Data/HogwartsBellTowerCourtyardData.json,
+Data/HogwartsClockTowerData.json,
+Data/HogwartsFacultyTowerData.json,
+Data/HogwartsIcyCorridorData.json,
+Data/HogwartsGrandStaircaseData.json,
+Data/HogwartsGreatHallData.json,
+Data/HogwartsGreenhouseData.json,
+Data/HogwartsHeadmistressOffice.json,
+Data/HogwartsLibraryAnnexData.json,
+Data/HogwartsSouthWingData.json,
+Data/HogwartsTransfigurationWingData.json,
+Data/HogwartsVivariumData.json,
+Data/HogwartsValleyData.json,
+Data/HouseTasksData.json,
+Data/LocationData.json,
+Data/MapPropertiesData.json,
+Data/MapPropertiesLocationFurniture.json,
+Data/MonsterSprites.json,
+Data/MountData.json,
+Data/SouthSeaBogData.json,
+Data/TilesheetData.json,
+Data/TrinketTinkerData.json,
+Data/WandData.json,
+Data/Classrooms/HogwartsArithmancyClassroomData.json,
+Data/Classrooms/HogwartsAstronomyClassroomData.json,
+Data/Classrooms/HogwartsCharmsClassroomData.json,
+Data/Classrooms/HogwartsDADAClassroomData.json,
+Data/Classrooms/HogwartsDivinationClassroomData.json,
+Data/Classrooms/HogwartsHistoryOfMagicClassroomData.json,
+Data/Classrooms/HogwartsMagicalTheoryClassroomData.json,
+Data/Classrooms/HogwartsMuggleStudiesClassroomData.json,
+Data/Classrooms/HogwartsPotionsClassroomData.json,
+Data/Classrooms/HogwartsTransfigurationClassroomData.json,
+Data/Common Rooms/HogwartsCommonRoomGryffindorData.json,
+Data/Common Rooms/HogwartsCommonRoomHufflepuffData.json,
+Data/Common Rooms/HogwartsCommonRoomRavenclawData.json,
+Data/Common Rooms/HogwartsCommonRoomSlytherinData.json,
+Data/Common Rooms/HogwartsDormsData.json,
+Data/Guidebooks/FantasticBeastsGuidebookData.json,
+Data/Guidebooks/MonsterBookGuidebookData.json,
+Data/ScenicViewpoints/ScenicViewpointEastData.json, 
+Data/Shops/DogweedAndDeathcapData.json,
+Data/Shops/MadamSnellingsTressEmporiumData.json,
+Data/Shops/SpintwitchesSportingNeedsData.json,
+Data/Shops/TomesAndScrollsData.json"
+    },
+    /* NPC */
+    {
+      "LogName": "NPC Includes",
+      "Action": "Include",
+      "FromFile": "Data/NPCLoadData.json, Data/NPCData.json, Data/NPCDialogue.json, Data/ScheduleData.json, Data/NPCGiftTastes.json, Data/Students/StudentLoadData.json, Data/Students/StudentDataControl.json"
+    },
+    /* Objects */
+    {
+      "LogName": "Object Data",
+      "Action": "Include",
+      "FromFile": "Data/Objects/AllObjects.json"
+    },
+    {
+      "LogName": "Crafting Recipe Data",
+      "Action": "Include",
+      "FromFile": "Data/CraftingRecipeData.json"
+    },
+    {
+      "LogName": "Cooking Recipe Data",
+      "Action": "Include",
+      "FromFile": "Data/CookingRecipeData.json"
+    },
+    {
+      "LogName": "Include Forage Data",
+      "Action": "Include",
+      "FromFile": "Data/ForageData.json"
+    },
+    /* Shops */
+    {
+      "LogName": "Shop Data",
+      "Action": "Include",
+      "FromFile": "Data/ShopData.json"
+    },
+    {
+      "LogName": "Floo Flame Data",
+      "Action": "Include",
+      "FromFile": "Data/FlooFlameNetwork.json"
+    },
+    {
+      "LogName": "Font Replacements",
+      "Action": "Include",
+      "FromFile": "Data/FontReplacements.json"
+    },
+    {
+      "LogName": "Add music to maps",
+      "Action": "Include",
+      "FromFile": "Data/Music.json",
+      "When": {
+        "HasMod": "HogwartsET.Music.Hogwarts"
+      }
+    },
+    {
+      "LogName": "Add Warp Points to CJB Cheats Menu",
+      "Action": "Include",
+      "FromFile": "Data/DEBUGWarpData.json",
+      "When": {
+        "HasMod": "CJBok.CheatsMenu"
+      }
+    }
+  ]
+}
