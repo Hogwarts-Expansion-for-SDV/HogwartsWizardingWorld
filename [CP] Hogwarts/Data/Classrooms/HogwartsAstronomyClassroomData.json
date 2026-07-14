@@ -767,25 +767,154 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 24,
-            "Y": 25
+            "X": 21,
+            "Y": 37
           },
-          "Layer": "Back",
+          "Layer": "Buildings",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 3 12"
+            "Action": "Warp 3 12 {{ModId}}_HogwartsTransfigurationWing"
           }
         },
         {
           "Position": {
-            "X": 25,
-            "Y": 25
+            "X": 22,
+            "Y": 37
           },
-          "Layer": "Back",
+          "Layer": "Buildings",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 4 12"
+            "Action": "Warp 4 12 {{ModId}}_HogwartsTransfigurationWing"
           }
         }
       ]
+    },
+    //Celestial Globe Animation
+    {
+      "LogName": "Astronomy Classroom Globe Animation",
+      "Action": "EditData",
+      "Target": "DMT/Animations",
+      "Entries": {
+        "{{ModId}}.AstronomyClassroom": [
+          {
+            "Name": "Globe1",
+            "Texture": "Maps/z_AstronomyClassroomm_Hxoni_Hogwarts",
+            "SourceRect": {
+              "X": 144,
+              "Y": 0,
+              "Width": 16,
+              "Height": 16
+            },
+            "Position": {
+              "X": 1408,
+              "Y": 3008
+            },
+            "Scale": 4,
+            "Length": 7,
+            "LayerDepth": 5,
+            "Loops": 1,
+            "Flipped": false,
+            "Interval": 150,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          {
+            "Name": "Globe2",
+            "Texture": "Maps/z_AstronomyClassroomm_Hxoni_Hogwarts",
+            "SourceRect": {
+              "X": 144,
+              "Y": 16,
+              "Width": 16,
+              "Height": 16
+            },
+            "Position": {
+              "X": 1472,
+              "Y": 3008
+            },
+            "Scale": 4,
+            "Length": 7,
+            "LayerDepth": 5,
+            "Loops": 1,
+            "Flipped": false,
+            "Interval": 150,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          {
+            "Name": "Globe3",
+            "Texture": "Maps/z_AstronomyClassroomm_Hxoni_Hogwarts",
+            "SourceRect": {
+              "X": 144,
+              "Y": 32,
+              "Width": 16,
+              "Height": 16
+            },
+            "Position": {
+              "X": 1408,
+              "Y": 3072
+            },
+            "Scale": 4,
+            "Length": 7,
+            "LayerDepth": 5,
+            "Loops": 1,
+            "Flipped": false,
+            "Interval": 150,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          {
+            "Name": "Globe4",
+            "Texture": "Maps/z_AstronomyClassroomm_Hxoni_Hogwarts",
+            "SourceRect": {
+              "X": 144,
+              "Y": 48,
+              "Width": 16,
+              "Height": 16
+            },
+            "Position": {
+              "X": 1472,
+              "Y": 3072
+            },
+            "Scale": 4,
+            "Length": 7,
+            "LayerDepth": 5,
+            "Loops": 1,
+            "Flipped": false,
+            "Interval": 150,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          }
+        ]
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Astronomy Classroom Globe DMTE",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsAstronomyClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 22,
+            "Y": 49
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "DMT/animation_Action": "{{ModId}}.AstronomyClassroom,Globe1|Globe2|Globe3|Globe4"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
     }
   ]
 }
