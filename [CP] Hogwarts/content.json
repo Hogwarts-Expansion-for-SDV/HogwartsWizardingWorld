@@ -578,7 +578,7 @@
     },
     {
       "Name": "AstronomyStella0",
-      "Value": "{{Random: 352, 384, 544, 640, 992|key=Stella0}}"
+      "Value": "{{Random: 320, 352, 384, 544, 640, 992|key=Stella0}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
@@ -915,6 +915,21 @@
       "Value": "{{AstronomyStella1024}}",
       "When": {
         "AstronomyTableStellaPresent": "1024"
+      }
+    },
+    // Astronomy Stella Objects
+    {
+      "Name": "AstronomyStellaObject",
+      "Value": "{{ModId}}_WhiteDwarf",
+      "When": {
+        "Query: {{AstronomyTableStellaPresent}} = 288 AND {{AstronomyStella288}} IN (320, 352, 448, 992)": true
+      }
+    },
+    {
+      "Name": "AstronomyStellaObject",
+      "Value": "{{ModId}}_RedDwarf",
+      "When": {
+        "Query: {{AstronomyTableStellaPresent}} = 704 AND {{AstronomyStella704}} IN (832, 1056)": true
       }
     },
     /*Divination Charmed Tent*/
