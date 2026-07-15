@@ -140,6 +140,16 @@
           "SetProperties": {
             "Action": "MEEP_CloseupInteraction_Image {{ModId}}/TransparentStellascopeNext 0 0 128 128"
           }
+        },
+        {
+          "Position": {
+            "X": 59,
+            "Y": 26
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteraction_Image {{ModId}}/TransparentStellascopeNext 0 0 128 128"
+          }
         }
       ],
       "When": {
@@ -659,7 +669,7 @@
         "Height": 128
       },
       "PatchMode": "Overlay"
-    },
+    },/*
     {
       "LogName": "Hogwarts Astronomy Classroom Lunascope Left",
       "Action": "EditMap",
@@ -759,7 +769,7 @@
       "When": {
         "HasMod |contains= DecidedlyHuman.MappingExtensionsAndExtraProperties": true
       }
-    },
+    },*/
     {
       "LogName": "Hogwarts Astronomy Classroom Warp",
       "Action": "EditMap",
