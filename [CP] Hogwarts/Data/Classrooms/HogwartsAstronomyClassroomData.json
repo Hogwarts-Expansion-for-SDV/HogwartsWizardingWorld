@@ -87,7 +87,20 @@
         "Height": 128
       },
       "PatchMode": "Overlay"
-    },
+    },/*
+    {
+      "LogName": "Hogwarts Astronomy Stella StarSirius",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/transparentstellascope",
+      "FromFile": "assets/Astronomy/StarSirius.png",
+      "ToArea": {
+        "X": "{{AstronomyTableLunaX}}",
+        "Y": "{{AstronomyTableLunaY}}",
+        "Width": 20,
+        "Height": 20
+      },
+      "PatchMode": "Overlay"
+    },*/
     {
       "LogName": "Hogwarts Astronomy Stella",
       "Action": "EditImage",
@@ -96,14 +109,14 @@
       "FromArea": {
         "X": "{{Query: {{AstronomyTableStellaPresent}}}}",
         "Y": 0,
-        "Width": 32,
-        "Height": 32
+        "Width": 48,
+        "Height": 48
       },
       "ToArea": {
-        "X": 48,
-        "Y": 48,
-        "Width": 32,
-        "Height": 32
+        "X": 40,
+        "Y": 40,
+        "Width": 48,
+        "Height": 48
       },
       "PatchMode": "Overlay"
     },
@@ -115,51 +128,17 @@
       "FromArea": {
         "X": "{{Query: {{AstronomyTableStellaAfterNextX}}}}",
         "Y": 0,
-        "Width": 32,
-        "Height": 32
+        "Width": 48,
+        "Height": 48
       },
       "ToArea": {
-        "X": 48,
-        "Y": 48,
-        "Width": 32,
-        "Height": 32
+        "X": 40,
+        "Y": 40,
+        "Width": 48,
+        "Height": 48
       },
       "PatchMode": "Overlay"
-    },/*
-    {
-      "LogName": "Hogwarts Bell Tower Courtyard Astronomy Table Stellascope",
-      "Action": "EditData",
-      "Target": "DMT/Tiles",
-      "Entries": {
-        "{{ModId}}_AstronomyTableStellascopeBellTowerCourtyard": {
-          "Locations": [
-            "{{ModId}}_HogwartsBellTowerCourtyard"
-          ],
-          "Layers": [
-            "Building"
-          ],
-          "Rectangles": [
-            {
-              "X": 59,
-              "Y": 25,
-              "Width": 1,
-              "Height": 1
-            }
-          ],
-          "Actions": [
-            {
-              "Key": "DMT/changeProperties",
-              "Value": "Action=kitchen",
-              "Trigger": "Item((O){{ModId}}_HogwartsStellascope)"
-            }
-          ]
-        }
-      },
-      "When": {
-        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
-        "HasMod |contains= DecidedlyHuman.MappingExtensionsAndExtraProperties": true
-      }
-    },*/
+    },
     {
       "LogName": "Hogwarts Bell Tower Courtyard Astronomy Table",
       "Action": "EditMap",
@@ -172,7 +151,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "DMT/changeProperties_Item((O){{ModId}}_HogwartsStellascope)": "Action=MEEP_CloseupInteraction_Image {{ModId}}/TransparentStellascope 0 0 128 128",
+            "DMT/changeProperties_Item((O){{ModId}}_HogwartsStellascope)": "Action=MEEP_CloseupInteraction_Image {{ModId}}/TransparentStellascopeNext 0 0 128 128",
             "DMT/changeMultipleIndex_Item((O){{ModId}}_HogwartsStellascope)": "Front1 59 24=z_HogsmeadeInterior_Hxoni_Hogwarts/834"
           }
         },
@@ -195,14 +174,65 @@
       }
     },
     {
-      "LogName": "Hogwarts Objects Stella",
+      "LogName": "Hogwarts Astronomy Furniture",
+      "Action": "EditData",
+      "Target": "Data/Furniture",
+      "Entries": {
+        "{{ModId}}_Stellascope": "Stellascope/other/1 2/1 1/1/500/1/Stellascope/834/Maps\\z_HogsmeadeInterior_Hxoni_Hogwarts/true/collection_Hogwarts",
+        "{{ModId}}_Lunascope": "Lunascope/other/1 2/1 1/1/500/1/Lunascope/834/Maps\\z_HogsmeadeInterior_Hxoni_Hogwarts/true/collection_Hogwarts"
+      }
+    },
+    {
+      "LogName": "Hogwarts Astronomy Furniture MMAP",
+      "Action": "EditData",
+      "Target": "mushymato.MMAP/FurnitureProperties",
+      "Entries": {
+        "{{ModId}}_Stellascope": {
+          "TileProperties": [
+            {
+              "Id": "{{ModId}}_Stellascope",
+              "Name": "Action",
+              "Value": "MEEP_CloseupInteraction_Image {{ModId}}/TransparentStellascope 0 0 128 128",
+              "Layer": "Buildings",
+              "TileArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 1,
+                "Height": 1
+              }
+            }
+          ]
+        },
+        "{{ModId}}_Lunascope": {
+          "TileProperties": [
+            {
+              "Id": "{{ModId}}_Lunascope",
+              "Name": "Action",
+              "Value": "MEEP_CloseupInteraction_Image {{ModId}}/TransparentLunascope 0 0 128 128",
+              "Layer": "Buildings",
+              "TileArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 1,
+                "Height": 1
+              }
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= mushymato.MMAP": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Objects Astronomy",
       "Action": "EditData",
       "Target": "Data/Objects",
       "Entries": {
         "{{ModId}}_HogwartsStellascope": {
-          "Name": "Hogwarts Stellascope",
+          "Name": "Portable Stellascope",
           "DisplayName": "Stellascope",
-          "Description": "A magical instrument designed to look at past, present, or future stellar events.",
+          "Description": "A magical instrument designed to be placed on a holder to look at past, present, or future stellar events.",
           "Texture": "{{ModId}}/telescopes",
           "SpriteIndex": 0,
           "CanBeTrashed": false,
@@ -707,7 +737,7 @@
         "Height": 128
       },
       "PatchMode": "Overlay"
-    },/*
+    }, /*
     {
       "LogName": "Hogwarts Astronomy Classroom Lunascope Left",
       "Action": "EditMap",

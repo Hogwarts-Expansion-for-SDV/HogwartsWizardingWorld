@@ -130,7 +130,7 @@
       "Name": "Slytherin_CommonRoomCoordinates",
       "Value": "{{ModId}}_HogwartsCommonRoomGryffindor"
     },
-    /*Wands*/
+    // Wands
     {
       "Name": "Wand",
       "Value": "Acacia",
@@ -485,7 +485,7 @@
       "Name": "GlassDoorLocations",
       "Value": "HogwartsLibraryAnnex"
     },
-    /*Divination Creature Den*/
+    // Divination Creature Den
     {
       "Name": "DivinationCreatureDenX",
       "Value": "67",
@@ -574,11 +574,11 @@
     //Astronomy Table Stella 
     {
       "Name": "AstronomyTableStellaPresent",
-      "Value": "{{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256, 288, 320, 352, 384, 416, 480, 512, 576, 608, 640, 672, 704, 736, 768, 800, 832, 864, 896, 928, 960, 992, 1024|key=Stella}}"
+      "Value": "{{Random: 0, 48, 96, 144, 192, 240, 288, 336, 384, 432, 480, 528, 576, 624, 720, 768, 864, 912, 960, 1008, 1056, 1104, 1152, 1200, 1248, 1296, 1344, 1392, 1440, 1488, 1536|key=Stella}}"
     },
     {
       "Name": "AstronomyStella0",
-      "Value": "{{Random: 320, 352, 384, 544, 640, 992|key=Stella0}}"
+      "Value": "{{Random: 480, 528, 576, 816, 960, 1488|key=Stella0}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
@@ -588,30 +588,19 @@
       }
     },
     {
-      "Name": "AstronomyStella32",
-      "Value": "{{Random: 288, 320, 448, 992|key=Stella32}}"
+      "Name": "AstronomyStella48",
+      "Value": "{{Random: 432, 480, 672, 1488|key=Stella48}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
-      "Value": "{{AstronomyStella32}}",
+      "Value": "{{AstronomyStella48}}",
       "When": {
-        "AstronomyTableStellaPresent": "32"
-      }
-    },
-    {
-      "Name": "AstronomyStella64",
-      "Value": "{{Random: 128, 864|key=Stella64}}"
-    },
-    {
-      "Name": "AstronomyTableStellaAfterNextX",
-      "Value": "{{AstronomyStella64}}",
-      "When": {
-        "AstronomyTableStellaPresent": "64"
+        "AstronomyTableStellaPresent": "48"
       }
     },
     {
       "Name": "AstronomyStella96",
-      "Value": "{{Random: 544|key=Stella96}}"
+      "Value": "{{Random: 192, 1296|key=Stella96}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
@@ -621,30 +610,19 @@
       }
     },
     {
-      "Name": "AstronomyStella128",
-      "Value": "{{Random: 0, 320, 352, 416, 448, 992|key=Stella128}}"
+      "Name": "AstronomyStella144",
+      "Value": "{{Random: 816|key=Stella144}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
-      "Value": "{{AstronomyStella128}}",
+      "Value": "{{AstronomyStella144}}",
       "When": {
-        "AstronomyTableStellaPresent": "128"
-      }
-    },
-    {
-      "Name": "AstronomyStella160",
-      "Value": "{{Random: 160, 224, 256, 352, 384, 544, 576, 640, 960|key=Stella160}}"
-    },
-    {
-      "Name": "AstronomyTableStellaAfterNextX",
-      "Value": "{{AstronomyStella160}}",
-      "When": {
-        "AstronomyTableStellaPresent": "160"
+        "AstronomyTableStellaPresent": "144"
       }
     },
     {
       "Name": "AstronomyStella192",
-      "Value": "{{Random: 32, 64, 160, 224, 480, 672, 736, 800, 896|key=Stella192}}"
+      "Value": "{{Random: 0, 480, 528, 624, 672, 1488|key=Stella192}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
@@ -654,30 +632,19 @@
       }
     },
     {
-      "Name": "AstronomyStella224",
-      "Value": "{{Random: 160, 224, 256, 352, 384, 544, 640|key=Stella224}}"
+      "Name": "AstronomyStella240",
+      "Value": "{{Random: 240, 336, 384, 528, 576, 816, 864, 960, 1440|key=Stella240}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
-      "Value": "{{AstronomyStella224}}",
+      "Value": "{{AstronomyStella240}}",
       "When": {
-        "AstronomyTableStellaPresent": "224"
-      }
-    },
-    {
-      "Name": "AstronomyStella256",
-      "Value": "{{Random: 544|key=Stella256}}"
-    },
-    {
-      "Name": "AstronomyTableStellaAfterNextX",
-      "Value": "{{AstronomyStella256}}",
-      "When": {
-        "AstronomyTableStellaPresent": "256"
+        "AstronomyTableStellaPresent": "240"
       }
     },
     {
       "Name": "AstronomyStella288",
-      "Value": "{{Random: 192, 320, 352, 448, 992|key=Stella288}}"
+      "Value": "{{Random: 48, 96, 240, 336, 720, 1008, 1104, 1200, 1344|key=Stella288}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
@@ -687,30 +654,19 @@
       }
     },
     {
-      "Name": "AstronomyStella320",
-      "Value": "{{Random: 256, 320, 352, 416, 448, 512, 544|key=Stella320}}"
+      "Name": "AstronomyStella336",
+      "Value": "{{Random: 240, 336, 384, 528, 576, 816, 960|key=Stella336}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
-      "Value": "{{AstronomyStella320}}",
+      "Value": "{{AstronomyStella336}}",
       "When": {
-        "AstronomyTableStellaPresent": "320"
-      }
-    },
-    {
-      "Name": "AstronomyStella352",
-      "Value": "{{Random: 544|key=Stella352}}"
-    },
-    {
-      "Name": "AstronomyTableStellaAfterNextX",
-      "Value": "{{AstronomyStella352}}",
-      "When": {
-        "AstronomyTableStellaPresent": "352"
+        "AstronomyTableStellaPresent": "336"
       }
     },
     {
       "Name": "AstronomyStella384",
-      "Value": "{{Random: 192|key=Stella384}}"
+      "Value": "{{Random: 816|key=Stella384}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
@@ -720,19 +676,19 @@
       }
     },
     {
-      "Name": "AstronomyStella416",
-      "Value": "{{Random: 96, 704, 736, 768|key=Stella416}}"
+      "Name": "AstronomyStella432",
+      "Value": "{{Random: 288, 480, 528, 672, 1488|key=Stella432}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
-      "Value": "{{AstronomyStella416}}",
+      "Value": "{{AstronomyStella432}}",
       "When": {
-        "AstronomyTableStellaPresent": "416"
+        "AstronomyTableStellaPresent": "432"
       }
     },
     {
       "Name": "AstronomyStella480",
-      "Value": "{{Random: 544|key=Stella480}}"
+      "Value": "{{Random: 384, 480, 528, 624, 672, 768, 816|key=Stella480}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
@@ -742,19 +698,19 @@
       }
     },
     {
-      "Name": "AstronomyStella512",
-      "Value": "{{Random: 544|key=Stella512}}"
+      "Name": "AstronomyStella528",
+      "Value": "{{Random: 816|key=Stella528}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
-      "Value": "{{AstronomyStella512}}",
+      "Value": "{{AstronomyStella528}}",
       "When": {
-        "AstronomyTableStellaPresent": "512"
+        "AstronomyTableStellaPresent": "528"
       }
     },
     {
       "Name": "AstronomyStella576",
-      "Value": "{{Random: 256, 320, 352, 384, 544, 640|key=Stella576}}"
+      "Value": "{{Random: 288|key=Stella576}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
@@ -764,63 +720,30 @@
       }
     },
     {
-      "Name": "AstronomyStella608",
-      "Value": "{{Random: 256, 352, 384, 544, 640|key=Stella608}}"
+      "Name": "AstronomyStella624",
+      "Value": "{{Random: 144, 1056, 1104, 1152|key=Stella624}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
-      "Value": "{{AstronomyStella608}}",
+      "Value": "{{AstronomyStella624}}",
       "When": {
-        "AstronomyTableStellaPresent": "608"
+        "AstronomyTableStellaPresent": "624"
       }
     },
     {
-      "Name": "AstronomyStella640",
-      "Value": "{{Random: 192|key=Stella640}}"
+      "Name": "AstronomyStella720",
+      "Value": "{{Random: 816|key=Stella720}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
-      "Value": "{{AstronomyStella640}}",
+      "Value": "{{AstronomyStella720}}",
       "When": {
-        "AstronomyTableStellaPresent": "640"
-      }
-    },
-    {
-      "Name": "AstronomyStella672",
-      "Value": "{{Random: 256, 320, 352, 384, 544, 640, 672, 928, 960|key=Stella672}}"
-    },
-    {
-      "Name": "AstronomyTableStellaAfterNextX",
-      "Value": "{{AstronomyStella672}}",
-      "When": {
-        "AstronomyTableStellaPresent": "672"
-      }
-    },
-    {
-      "Name": "AstronomyStella704",
-      "Value": "{{Random: 128, 832, 864, 1056|key=Stella704}}"
-    },
-    {
-      "Name": "AstronomyTableStellaAfterNextX",
-      "Value": "{{AstronomyStella704}}",
-      "When": {
-        "AstronomyTableStellaPresent": "704"
-      }
-    },
-    {
-      "Name": "AstronomyStella736",
-      "Value": "{{Random: 128, 160, 224, 320, 672, 928, 960|key=Stella736}}"
-    },
-    {
-      "Name": "AstronomyTableStellaAfterNextX",
-      "Value": "{{AstronomyStella736}}",
-      "When": {
-        "AstronomyTableStellaPresent": "736"
+        "AstronomyTableStellaPresent": "720"
       }
     },
     {
       "Name": "AstronomyStella768",
-      "Value": "{{Random: 160, 224, 672, 896|key=Stella768}}"
+      "Value": "{{Random: 816|key=Stella768}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
@@ -830,30 +753,8 @@
       }
     },
     {
-      "Name": "AstronomyStella800",
-      "Value": "{{Random: 288, 320, 448, 992|key=Stella800}}"
-    },
-    {
-      "Name": "AstronomyTableStellaAfterNextX",
-      "Value": "{{AstronomyStella800}}",
-      "When": {
-        "AstronomyTableStellaPresent": "800"
-      }
-    },
-    {
-      "Name": "AstronomyStella832",
-      "Value": "{{Random: 288, 320|key=Stella832}}"
-    },
-    {
-      "Name": "AstronomyTableStellaAfterNextX",
-      "Value": "{{AstronomyStella832}}",
-      "When": {
-        "AstronomyTableStellaPresent": "832"
-      }
-    },
-    {
       "Name": "AstronomyStella864",
-      "Value": "{{Random: 320, 352, 384, 448, 544, 640|key=Stella864}}"
+      "Value": "{{Random: 384, 480, 528, 576, 816, 960|key=Stella864}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
@@ -863,30 +764,19 @@
       }
     },
     {
-      "Name": "AstronomyStella896",
-      "Value": "{{Random: 288, 352, 384, 640, 1024|key=Stella896}}"
+      "Name": "AstronomyStella912",
+      "Value": "{{Random: 384, 528, 576, 816, 960|key=Stella912}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
-      "Value": "{{AstronomyStella896}}",
+      "Value": "{{AstronomyStella912}}",
       "When": {
-        "AstronomyTableStellaPresent": "896"
-      }
-    },
-    {
-      "Name": "AstronomyStella928",
-      "Value": "{{Random: 256, 320, 352, 384, 544, 576, 640|key=Stella928}}"
-    },
-    {
-      "Name": "AstronomyTableStellaAfterNextX",
-      "Value": "{{AstronomyStella928}}",
-      "When": {
-        "AstronomyTableStellaPresent": "928"
+        "AstronomyTableStellaPresent": "912"
       }
     },
     {
       "Name": "AstronomyStella960",
-      "Value": "{{Random: 256, 320, 352, 384, 544, 608, 640|key=Stella960}}"
+      "Value": "{{Random: 288|key=Stella960}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
@@ -896,25 +786,135 @@
       }
     },
     {
-      "Name": "AstronomyStella992",
-      "Value": "{{Random: 256, 352, 384, 512, 544, 640, 992|key=Stella992}}"
+      "Name": "AstronomyStella1008",
+      "Value": "{{Random: 384, 480, 528, 576, 816, 960, 1008, 1392, 1440|key=Stella1008}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
-      "Value": "{{AstronomyStella992}}",
+      "Value": "{{AstronomyStella1008}}",
       "When": {
-        "AstronomyTableStellaPresent": "992"
+        "AstronomyTableStellaPresent": "1008"
       }
     },
     {
-      "Name": "AstronomyStella1024",
-      "Value": "{{Random: 320, 352, 384, 448, 512, 544, 640, 992|key=Stella1024}}"
+      "Name": "AstronomyStella1056",
+      "Value": "{{Random: 192, 1248, 1296, 1584|key=Stella1056}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
-      "Value": "{{AstronomyStella1024}}",
+      "Value": "{{AstronomyStella1056}}",
       "When": {
-        "AstronomyTableStellaPresent": "1024"
+        "AstronomyTableStellaPresent": "1056"
+      }
+    },
+    {
+      "Name": "AstronomyStella1104",
+      "Value": "{{Random: 192, 240, 336, 480, 1008, 1392, 1440|key=Stella1104}}"
+    },
+    {
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "{{AstronomyStella1104}}",
+      "When": {
+        "AstronomyTableStellaPresent": "1104"
+      }
+    },
+    {
+      "Name": "AstronomyStella1152",
+      "Value": "{{Random: 240, 336, 1008, 1344|key=Stella1152}}"
+    },
+    {
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "{{AstronomyStella1152}}",
+      "When": {
+        "AstronomyTableStellaPresent": "1152"
+      }
+    },
+    {
+      "Name": "AstronomyStella1200",
+      "Value": "{{Random: 432, 480, 672, 1488|key=Stella1200}}"
+    },
+    {
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "{{AstronomyStella1200}}",
+      "When": {
+        "AstronomyTableStellaPresent": "1200"
+      }
+    },
+    {
+      "Name": "AstronomyStella1248",
+      "Value": "{{Random: 432, 480|key=Stella1248}}"
+    },
+    {
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "{{AstronomyStella1248}}",
+      "When": {
+        "AstronomyTableStellaPresent": "1248"
+      }
+    },
+    {
+      "Name": "AstronomyStella1296",
+      "Value": "{{Random: 480, 528, 576, 672, 816, 960|key=Stella1296}}"
+    },
+    {
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "{{AstronomyStella1296}}",
+      "When": {
+        "AstronomyTableStellaPresent": "1296"
+      }
+    },
+    {
+      "Name": "AstronomyStella1344",
+      "Value": "{{Random: 432, 528, 576, 960, 1536|key=Stella1344}}"
+    },
+    {
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "{{AstronomyStella1344}}",
+      "When": {
+        "AstronomyTableStellaPresent": "1344"
+      }
+    },
+    {
+      "Name": "AstronomyStella1392",
+      "Value": "{{Random: 384, 480, 528, 576, 816, 864, 960|key=Stella1392}}"
+    },
+    {
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "{{AstronomyStella1392}}",
+      "When": {
+        "AstronomyTableStellaPresent": "1392"
+      }
+    },
+    {
+      "Name": "AstronomyStella1440",
+      "Value": "{{Random: 384, 480, 528, 576, 816, 912, 960|key=Stella1440}}"
+    },
+    {
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "{{AstronomyStella1440}}",
+      "When": {
+        "AstronomyTableStellaPresent": "1440"
+      }
+    },
+    {
+      "Name": "AstronomyStella1488",
+      "Value": "{{Random: 384, 528, 576, 768, 816, 960, 1488|key=Stella1488}}"
+    },
+    {
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "{{AstronomyStella1488}}",
+      "When": {
+        "AstronomyTableStellaPresent": "1488"
+      }
+    },
+    {
+      "Name": "AstronomyStella1536",
+      "Value": "{{Random: 480, 528, 576, 672, 768, 816, 960, 1488|key=Stella1536}}"
+    },
+    {
+      "Name": "AstronomyTableStellaAfterNextX",
+      "Value": "{{AstronomyStella1536}}",
+      "When": {
+        "AstronomyTableStellaPresent": "1536"
       }
     },
     // Astronomy Stella Objects
@@ -922,255 +922,262 @@
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_StandardWhiteDwarf",
       "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 288 AND {{AstronomyStella288}} IN (320, 352, 448, 992)": true
-      }
-    },
-    {
-      "Name": "AstronomyStellaObject",
-      "Value": "{{Random: {{ModId}}_OrangeDwarf, {{ModId}}_YellowDwarf}}",
-      "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 704 AND {{AstronomyStella704}} IN (128, 864)": true
+        "Query: {{AstronomyTableStellaPresent}} = 432 AND {{AstronomyStella432}} IN (480, 528, 672, 1488)": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_RedDwarf",
       "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 704 AND {{AstronomyStella704}} IN (832, 1056)": true
+        "Query: {{AstronomyTableStellaPresent}} = 1056 AND {{AstronomyStella1056}} IN (1248, 1584)": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_BrownDwarf",
       "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 192 AND {{AstronomyStella192}} = 480": true
+        "Query: {{AstronomyTableStellaPresent}} = 288 AND {{AstronomyStella288}} = 720": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_RedGiant",
       "When": {
-        "Query: ({{AstronomyTableStellaPresent}} = 32 AND {{AstronomyStella32}} = 288) OR ({{AstronomyTableStellaPresent}} = 800 AND {{AstronomyStella800}} IN (288, 320)) OR ({{AstronomyTableStellaPresent}} = 832 AND {{AstronomyStella832}} IN (288, 320)) OR ({{AstronomyTableStellaPresent}} = 896 AND {{AstronomyStella896}} IN (288, 1024))": true
+        "Query: ({{AstronomyTableStellaPresent}} = 48 AND {{AstronomyStella48}} = 432) OR ({{AstronomyTableStellaPresent}} = 1200 AND {{AstronomyStella1200}} IN (432, 480)) OR ({{AstronomyTableStellaPresent}} = 1248 AND {{AstronomyStella1248}} IN (432, 480)) OR ({{AstronomyTableStellaPresent}} = 1344 AND {{AstronomyStella1344}} IN (432, 1536))": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_RedSupergiant",
       "When": {
-        "Query: ({{AstronomyTableStellaPresent}} = 672 AND {{AstronomyStella672}} IN (928, 960)) OR ({{AstronomyTableStellaPresent}} = 736 AND {{AstronomyStella736}} IN (928, 960))": true
+        "Query: ({{AstronomyTableStellaPresent}} = 1008 AND {{AstronomyStella1008}} IN (1392, 1440)) OR ({{AstronomyTableStellaPresent}} = 1104 AND {{AstronomyStella1008}} IN (1392, 1440))": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_Protostar",
       "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 416 AND {{AstronomyStella416}} IN (96, 704, 736, 768)": true
-      }
-    },
-    {
-      "Name": "AstronomyStellaObject",
-      "Value": "{{Random: {{ModId}}_Supernova, {{ModId}}_RedHypergiant}}",
-      "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 160 AND {{AstronomyStella160}} = 256": true
+        "Query: {{AstronomyTableStellaPresent}} = 624 AND {{AstronomyStella624}} IN (144, 1056, 1104, 1152)": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_BlackHole",
       "When": {
-        "Query: ({{AstronomyTableStellaPresent}} = 160 AND {{AstronomyStella160}} = 544) OR ({{AstronomyTableStellaPresent}} = 224 AND {{AstronomyStella224}} = 544) OR ({{AstronomyTableStellaPresent}} = 352 AND {{AstronomyStella352}} = 544) OR ({{AstronomyTableStellaPresent}} = 576 AND {{AstronomyStella576}} = 544) OR ({{AstronomyTableStellaPresent}} = 608 AND {{AstronomyStella608}} = 544) OR ({{AstronomyTableStellaPresent}} = 672 AND {{AstronomyStella672}} = 544) OR ({{AstronomyTableStellaPresent}} = 928 AND {{AstronomyStella928}} = 544) OR ({{AstronomyTableStellaPresent}} = 960 AND {{AstronomyStella960}} = 544)": true
+        "Query: ({{AstronomyTableStellaPresent}} = 240 AND {{AstronomyStella240}} = 816) OR ({{AstronomyTableStellaPresent}} = 336 AND {{AstronomyStella336}} = 816) OR ({{AstronomyTableStellaPresent}} = 528 AND {{AstronomyStella528}} = 816) OR ({{AstronomyTableStellaPresent}} = 864 AND {{AstronomyStella864}} = 816) OR ({{AstronomyTableStellaPresent}} = 912 AND {{AstronomyStella912}} = 816) OR ({{AstronomyTableStellaPresent}} = 1008 AND {{AstronomyStella1008}} = 816) OR ({{AstronomyTableStellaPresent}} = 1392 AND {{AstronomyStella1392}} = 816) OR ({{AstronomyTableStellaPresent}} = 1440 AND {{AstronomyStella1440}} = 816)": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_PlanetaryNebula",
       "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 128 AND {{AstronomyStella128}} IN (0, 416)": true
+        "Query: {{AstronomyTableStellaPresent}} = 192 AND {{AstronomyStella192}} IN (0, 624)": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_Supernova",
       "When": {
-        "Query: ({{AstronomyTableStellaPresent}} = 0 AND {{AstronomyStella0}} IN (352, 384, 640, 992)) OR ({{AstronomyTableStellaPresent}} = 160 AND {{AstronomyStella160}} IN (352, 384, 640)) OR ({{AstronomyTableStellaPresent}} = 224 AND {{AstronomyStella224}} IN (352, 384, 640)) OR ({{AstronomyTableStellaPresent}} = 576 AND {{AstronomyStella576}} IN (352, 384, 640)) OR ({{AstronomyTableStellaPresent}} = 608 AND {{AstronomyStella608}} IN (256, 352, 384, 640)) OR ({{AstronomyTableStellaPresent}} = 672 AND {{AstronomyStella672}} IN (352, 384, 640)) OR ({{AstronomyTableStellaPresent}} = 864 AND {{AstronomyStella864}} IN (384, 640)) OR ({{AstronomyTableStellaPresent}} = 896 AND {{AstronomyStella896}} IN (352, 384, 640)) OR ({{AstronomyTableStellaPresent}} = 928 AND {{AstronomyStella928}} IN (352, 384, 640)) OR ({{AstronomyTableStellaPresent}} = 960 AND {{AstronomyStella960}} IN (352, 384, 640)) OR ({{AstronomyTableStellaPresent}} = 992 AND {{AstronomyStella992}} IN (352, 384, 640, 992)) OR ({{AstronomyTableStellaPresent}} = 1024 AND {{AstronomyStella1024}} IN (352, 384, 640, 992))": true
+        "Query: ({{AstronomyTableStellaPresent}} = 0 AND {{AstronomyStella0}} IN (528, 576, 960, 1488)) OR ({{AstronomyTableStellaPresent}} = 240 AND {{AstronomyStella240}} IN (528, 576, 960)) OR ({{AstronomyTableStellaPresent}} = 336 AND {{AstronomyStella336}} IN (528, 576, 960)) OR ({{AstronomyTableStellaPresent}} = 864 AND {{AstronomyStella864}} IN (528, 576, 960)) OR ({{AstronomyTableStellaPresent}} = 912 AND {{AstronomyStella912}} IN (384, 528, 576, 960)) OR ({{AstronomyTableStellaPresent}} = 1008 AND {{AstronomyStella1008}} IN (528, 576, 960)) OR ({{AstronomyTableStellaPresent}} = 1296 AND {{AstronomyStella1296}} IN (576, 960)) OR ({{AstronomyTableStellaPresent}} = 1344 AND {{AstronomyStella1344}} IN (528, 576, 960)) OR ({{AstronomyTableStellaPresent}} = 1392 AND {{AstronomyStella1392}} IN (528, 576, 960)) OR ({{AstronomyTableStellaPresent}} = 1440 AND {{AstronomyStella1440}} IN (528, 576, 960)) OR ({{AstronomyTableStellaPresent}} = 1488 AND {{AstronomyStella1488}} IN (528, 576, 960, 1488)) OR ({{AstronomyTableStellaPresent}} = 1536 AND {{AstronomyStella1536}} IN (528, 576, 960, 1488))": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_NeutronStar",
       "When": {
-        "Query: ({{AstronomyTableStellaPresent}} = 320 AND {{AstronomyStella320}} IN (256, 512)) OR ({{AstronomyTableStellaPresent}} = 992 AND {{AstronomyStella992}} IN (256, 512)) OR ({{AstronomyTableStellaPresent}} = 1024 AND {{AstronomyStella1024}} = 512)": true
-      }
-    },
-    {
-      "Name": "AstronomyStellaObject",
-      "Value": "{{Random: {{ModId}}_Supernova, {{ModId}}_YellowSupergiant}}",
-      "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 224 AND {{AstronomyStella224}} = 256": true
+        "Query: ({{AstronomyTableStellaPresent}} = 480 AND {{AstronomyStella480}} IN (384, 768)) OR ({{AstronomyTableStellaPresent}} = 1488 AND {{AstronomyStella1488}} IN (384, 768)) OR ({{AstronomyTableStellaPresent}} = 1536 AND {{AstronomyStella1536}} = 768)": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_MolecularCloud",
       "When": {
-        "Query: ({{AstronomyTableStellaPresent}} = 288 AND {{AstronomyStella288}} = 192) OR ({{AstronomyTableStellaPresent}} = 384 AND {{AstronomyStella384}} = 192) OR ({{AstronomyTableStellaPresent}} = 640 AND {{AstronomyStella640}} = 192)": true
+        "Query: ({{AstronomyTableStellaPresent}} = 432 AND {{AstronomyStella432}} = 288) OR ({{AstronomyTableStellaPresent}} = 576 AND {{AstronomyStella576}} = 288) OR ({{AstronomyTableStellaPresent}} = 960 AND {{AstronomyStella960}} = 288)": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_BlackDwarf",
       "When": {
-        "Query: ({{AstronomyTableStellaPresent}} = 0 AND {{AstronomyStella0}} = 544) OR ({{AstronomyTableStellaPresent}} = 864 AND {{AstronomyStella864}} = 544) OR ({{AstronomyTableStellaPresent}} = 992 AND {{AstronomyStella992}} = 544) OR ({{AstronomyTableStellaPresent}} = 1024 AND {{AstronomyStella1024}} = 544)": true
+        "Query: ({{AstronomyTableStellaPresent}} = 0 AND {{AstronomyStella0}} = 816) OR ({{AstronomyTableStellaPresent}} = 1296 AND {{AstronomyStella1296}} = 816) OR ({{AstronomyTableStellaPresent}} = 1488 AND {{AstronomyStella1488}} = 816) OR ({{AstronomyTableStellaPresent}} = 1536 AND {{AstronomyStella1536}} = 816)": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_DeadBrownDwarf",
       "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 96 AND {{AstronomyStella96}} = 544": true
-      }
-    },
-    {
-      "Name": "AstronomyStellaObject",
-      "Value": "{{Random: {{ModId}}_Supernova, {{ModId}}_YellowHypergiant}}",
-      "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 928 AND {{AstronomyStella928}} = 256": true
+        "Query: {{AstronomyTableStellaPresent}} = 144 AND {{AstronomyStella144}} = 816": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_Dissipation",
       "When": {
-        "Query: ({{AstronomyTableStellaPresent}} = 256 AND {{AstronomyStella256}} = 544) OR ({{AstronomyTableStellaPresent}} = 320 AND {{AstronomyStella320}} = 544) OR ({{AstronomyTableStellaPresent}} = 480 AND {{AstronomyStella480}} = 544) OR ({{AstronomyTableStellaPresent}} = 512 AND {{AstronomyStella512}} = 544)": true
+        "Query: ({{AstronomyTableStellaPresent}} = 384 AND {{AstronomyStella384}} = 816) OR ({{AstronomyTableStellaPresent}} = 480 AND {{AstronomyStella480}} = 816) OR ({{AstronomyTableStellaPresent}} = 720 AND {{AstronomyStella720}} = 816) OR ({{AstronomyTableStellaPresent}} = 768 AND {{AstronomyStella768}} = 816)": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_BlueHypergiant",
       "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 960 AND {{AstronomyStella960}} IN (320, 608)": true
+        "Query: {{AstronomyTableStellaPresent}} = 1440 AND {{AstronomyStella1440}} IN (480, 912)": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_WolfRayetStar",
       "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 576 AND {{AstronomyStella576}} = 320": true
-      }
-    },
-    {
-      "Name": "AstronomyStellaObject",
-      "Value": "{{Random: {{ModId}}_Supernova, {{ModId}}_BlueHypergiant}}",
-      "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 960 AND {{AstronomyStella960}} = 256": true
+        "Query: {{AstronomyTableStellaPresent}} = 864 AND {{AstronomyStella864}} = 480": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_YellowSupergiant",
       "When": {
-        "Query: ({{AstronomyTableStellaPresent}} = 160 AND {{AstronomyStella160}} IN (160, 224)) OR ({{AstronomyTableStellaPresent}} = 224 AND {{AstronomyStella224}} IN (160, 224)) OR ({{AstronomyTableStellaPresent}} = 736 AND {{AstronomyStella736}} IN (160, 224, 320))": true
+        "Query: ({{AstronomyTableStellaPresent}} = 240 AND {{AstronomyStella240}} IN (240, 336)) OR ({{AstronomyTableStellaPresent}} = 336 AND {{AstronomyStella336}} IN (336, 240)) OR ({{AstronomyTableStellaPresent}} = 1104 AND {{AstronomyStella1104}} IN (240, 336, 480))": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_TTauriStar",
       "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 192 AND {{AstronomyStella192}} IN (32, 64, 800)": true
+        "Query: {{AstronomyTableStellaPresent}} = 288 AND {{AstronomyStella288}} IN (48, 96, 1200)": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_BlueStar",
       "When": {
-        "Query: ({{AstronomyTableStellaPresent}} = 192 AND {{AstronomyStella192}} IN (160, 224, 672, 896)) OR ({{AstronomyTableStellaPresent}} = 768 AND {{AstronomyStella768}} IN (160, 224, 672, 896))": true
+        "Query: ({{AstronomyTableStellaPresent}} = 288 AND {{AstronomyStella288}} IN (240, 336, 1008, 1344)) OR ({{AstronomyTableStellaPresent}} = 1152 AND {{AstronomyStella1152}} IN (240, 336, 1008, 1344))": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_HerbigStar",
       "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 192 AND {{AstronomyStella192}} = 736": true
-      }
-    },
-    {
-      "Name": "AstronomyStellaObject",
-      "Value": "{{Random: {{ModId}}_BlueSupergiant, {{ModId}}_RedSupergiant}}",
-      "When": {
-        "Query: ({{AstronomyTableStellaPresent}} = 672 AND {{AstronomyStella672}} IN (320, 672)) OR ({{AstronomyTableStellaPresent}} = 736 AND {{AstronomyStella736}} = 672)": true
+        "Query: {{AstronomyTableStellaPresent}} = 288 AND {{AstronomyStella288}} = 1104": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_BlueStraggler",
       "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 64 AND {{AstronomyStella64}} = 128": true
+        "Query: {{AstronomyTableStellaPresent}} = 96 AND {{AstronomyStella96}} = 192": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_MinimalWhiteDwarf",
       "When": {
-        "Query: ({{AstronomyTableStellaPresent}} = 32 AND {{AstronomyStella32}} IN (320, 448, 992)) OR ({{AstronomyTableStellaPresent}} = 800 AND {{AstronomyStella800}} IN (448, 992))": true
+        "Query: ({{AstronomyTableStellaPresent}} = 48 AND {{AstronomyStella48}} IN (480, 672, 1488)) OR ({{AstronomyTableStellaPresent}} = 1200 AND {{AstronomyStella1200}} IN (672, 1488))": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_BlueGiant",
       "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 736 AND {{AstronomyStella736}} = 128": true
+        "Query: {{AstronomyTableStellaPresent}} = 1104 AND {{AstronomyStella1104}} = 192": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_RedHypergiant",
       "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 160 AND {{AstronomyStella160}} = 960": true
+        "Query: {{AstronomyTableStellaPresent}} = 240 AND {{AstronomyStella240}} = 1440": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_YellowHypergiant",
       "When": {
-        "Query: ({{AstronomyTableStellaPresent}} = 160 AND {{AstronomyStella160}} = 576) OR ({{AstronomyTableStellaPresent}} = 928 AND {{AstronomyStella928}} IN (320, 576))": true
+        "Query: ({{AstronomyTableStellaPresent}} = 240 AND {{AstronomyStella240}} = 864) OR ({{AstronomyTableStellaPresent}} = 1392 AND {{AstronomyStella1392}} IN (480, 864))": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_RemnantWhiteDwarf",
       "When": {
-        "Query: ({{AstronomyTableStellaPresent}} = 0 AND {{AstronomyStella0}} = 320) OR ({{AstronomyTableStellaPresent}} = 320 AND {{AstronomyStella320}} IN (320, 352, 448)) OR ({{AstronomyTableStellaPresent}} = 864 AND {{AstronomyStella864}} IN (320, 352, 448)) OR ({{AstronomyTableStellaPresent}} = 1024 AND {{AstronomyStella1024}} IN (320, 448))": true
+        "Query: ({{AstronomyTableStellaPresent}} = 0 AND {{AstronomyStella0}} = 480) OR ({{AstronomyTableStellaPresent}} = 480 AND {{AstronomyStella480}} IN (480, 528, 672)) OR ({{AstronomyTableStellaPresent}} = 1296 AND {{AstronomyStella1296}} IN (480, 528, 672)) OR ({{AstronomyTableStellaPresent}} = 1536 AND {{AstronomyStella1536}} IN (480, 672))": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_MaximalWhiteDwarf",
       "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 128 AND {{AstronomyStella128}} IN (320, 352, 448, 992)": true
+        "Query: {{AstronomyTableStellaPresent}} = 192 AND {{AstronomyStella192}} IN (480, 528, 672, 1488)": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_BlueDwarf",
       "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 64 AND {{AstronomyStella64}} = 864": true
+        "Query: {{AstronomyTableStellaPresent}} = 96 AND {{AstronomyStella96}} = 1296": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
-      "Value": "{{Random: {{ModId}}_RemnantNebula, {{ModId}}_Supershell}}",
+      "Value": "{{ModId}}_OrangeDwarf, {{ModId}}_YellowDwarf",
       "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 320 AND {{AstronomyStella320}} = 416": true
+        "Query: {{AstronomyTableStellaPresent}} = 1056 AND {{AstronomyStella1056}} IN (192, 1296)": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
-      "Value": "{{Random: {{ModId}}_BlueSupergiant, {{ModId}}_RedSupergiant}}",
+      "Value": "{{ModId}}_Supernova, {{ModId}}_RedHypergiant",
       "When": {
-        "Query: ({{AstronomyTableStellaPresent}} = 672 AND {{AstronomyStella672}} IN (320, 672)) OR ({{AstronomyTableStellaPresent}} = 736 AND {{AstronomyStella736}} = 672)": true
+        "Query: {{AstronomyTableStellaPresent}} = 240 AND {{AstronomyStella240}} = 384": true
       }
     },
-    /*Divination Charmed Tent*/
+    {
+      "Name": "AstronomyStellaObject",
+      "Value": "{{ModId}}_Supernova, {{ModId}}_YellowSupergiant",
+      "When": {
+        "Query: {{AstronomyTableStellaPresent}} = 336 AND {{AstronomyStella336}} = 384": true
+      }
+    },
+    {
+      "Name": "AstronomyStellaObject",
+      "Value": "{{ModId}}_Supernova, {{ModId}}_WolfRayetStar",
+      "When": {
+        "Query: {{AstronomyTableStellaPresent}} = 864 AND {{AstronomyStella864}} = 384": true
+      }
+    },
+    {
+      "Name": "AstronomyStellaObject",
+      "Value": "{{ModId}}_Supernova, {{ModId}}_BlueSupergiant, {{ModId}}_RedSupergiant",
+      "When": {
+        "Query: {{AstronomyTableStellaPresent}} = 1008 AND {{AstronomyStella1008}} = 384": true
+      }
+    },
+    {
+      "Name": "AstronomyStellaObject",
+      "Value": "{{ModId}}_Supernova, {{ModId}}_YellowHypergiant",
+      "When": {
+        "Query: {{AstronomyTableStellaPresent}} = 1392 AND {{AstronomyStella1392}} = 384": true
+      }
+    },
+    {
+      "Name": "AstronomyStellaObject",
+      "Value": "{{ModId}}_Supernova, {{ModId}}_BlueHypergiant",
+      "When": {
+        "Query: {{AstronomyTableStellaPresent}} = 1440 AND {{AstronomyStella1440}} = 384": true
+      }
+    },
+    {
+      "Name": "AstronomyStellaObject",
+      "Value": "{{ModId}}_BlueSupergiant, {{ModId}}_RedSupergiant",
+      "When": {
+        "Query: ({{AstronomyTableStellaPresent}} = 1008 AND {{AstronomyStella1008}} IN (480, 1008)) OR ({{AstronomyTableStellaPresent}} = 1104 AND {{AstronomyStella1104}} = 1008)": true
+      }
+    },
+    {
+      "Name": "AstronomyStellaObject",
+      "Value": "{{ModId}}_RemnantNebula, {{ModId}}_Supershell",
+      "When": {
+        "Query: {{AstronomyTableStellaPresent}} = 480 AND {{AstronomyStella480}} = 624": true
+      }
+    },
+    // Divination Charmed Tent
     {
       "Name": "DivinationCharmedTentX",
       "Value": "19",
