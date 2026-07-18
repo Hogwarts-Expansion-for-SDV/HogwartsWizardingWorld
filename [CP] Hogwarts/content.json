@@ -528,47 +528,190 @@
         "Query: {{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}}} >= 85": true
       }
     },
-    //Astronomy Table Luna
+    //Astronomy Table Luna Star Sirius
     {
       "Name": "AstronomyTableLunaX",
       "Value": "23",
       "When": {
-        "Query: {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableLunaX}}}} <= 66": true
+        "Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableLunaX}} <= 66": true
       }
     },
     {
       "Name": "AstronomyTableLunaX",
       "Value": "53",
       "When": {
-        "Query: {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableLunaX}}}} > 66 AND {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableLunaX}}}} < 118": true
+        "Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableLunaX}} > 66 AND {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableLunaX}} < 118": true
       }
     },
     {
       "Name": "AstronomyTableLunaX",
       "Value": "85",
       "When": {
-        "Query: {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableLunaX}}}} >= 118": true
+        "Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableLunaX}} >= 118": true
       }
     },
     {
       "Name": "AstronomyTableLunaY",
       "Value": "23",
       "When": {
-        "Query: {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableLunaY}}}} <= 47": true
+        "Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableLunaY}} <= 47": true
       }
     },
     {
       "Name": "AstronomyTableLunaY",
       "Value": "53",
       "When": {
-        "Query: {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableLunaY}}}} > 47 AND {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableLunaY}}}} < 85": true
+        "Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableLunaY}} > 47 AND {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableLunaY}} < 85": true
       }
     },
     {
       "Name": "AstronomyTableLunaY",
       "Value": "85",
       "When": {
-        "Query: {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableLunaY}}}} >= 85": true
+        "Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableLunaY}} >= 85": true
+      }
+    },
+    //Astronomy Table Stella 
+    {
+      "Name": "AstronomyTableLunaPresent",
+      "Value": "{{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256|key=Luna}}"
+    },
+    {
+      "Name": "AstronomyLuna0",
+      "Value": "{{Random: 32, 224|key=Luna0}}"
+    },
+    {
+      "Name": "AstronomyTableLunaNextX",
+      "Value": "{{AstronomyLuna0}}",
+      "When": {
+        "AstronomyTableLunaPresent": "0"
+      }
+    },
+    {
+      "Name": "AstronomyLuna32",
+      "Value": "{{Random: 0, 64|key=Luna32}}"
+    },
+    {
+      "Name": "AstronomyTableLunaNextX",
+      "Value": "{{AstronomyLuna32}}",
+      "When": {
+        "AstronomyTableLunaPresent": "32"
+      }
+    },
+    {
+      "Name": "AstronomyLuna64",
+      "Value": "{{Random: 32, 96|key=Luna64}}"
+    },
+    {
+      "Name": "AstronomyTableLunaNextX",
+      "Value": "{{AstronomyLuna64}}",
+      "When": {
+        "AstronomyTableLunaPresent": "64"
+      }
+    },
+    {
+      "Name": "AstronomyLuna96",
+      "Value": "{{Random: 64, 128|key=Luna96}}"
+    },
+    {
+      "Name": "AstronomyTableLunaNextX",
+      "Value": "{{AstronomyLuna96}}",
+      "When": {
+        "AstronomyTableLunaPresent": "96"
+      }
+    },
+    {
+      "Name": "AstronomyLuna128",
+      "Value": "{{Random: 96, 160|key=Luna128}}"
+    },
+    {
+      "Name": "AstronomyTableLunaNextX",
+      "Value": "{{AstronomyLuna128}}",
+      "When": {
+        "AstronomyTableLunaPresent": "128"
+      }
+    },
+    {
+      "Name": "AstronomyLuna160",
+      "Value": "{{Random: 128, 192|key=Luna160}}"
+    },
+    {
+      "Name": "AstronomyTableLunaNextX",
+      "Value": "{{AstronomyLuna160}}",
+      "When": {
+        "AstronomyTableLunaPresent": "160"
+      }
+    },
+    {
+      "Name": "AstronomyLuna192",
+      "Value": "{{Random: 160, 224|key=Luna192}}"
+    },
+    {
+      "Name": "AstronomyTableLunaNextX",
+      "Value": "{{AstronomyLuna192}}",
+      "When": {
+        "AstronomyTableLunaPresent": "192"
+      }
+    },
+    {
+      "Name": "AstronomyLuna224",
+      "Value": "{{Random: 0, 192|key=Luna224}}"
+    },
+    {
+      "Name": "AstronomyTableLunaNextX",
+      "Value": "{{AstronomyLuna224}}",
+      "When": {
+        "AstronomyTableLunaPresent": "224"
+      }
+    },
+    {
+      "Name": "AstronomyTableLunaNextX",
+      "Value": "256",
+      "When": {
+        "AstronomyTableLunaPresent": "256"
+      }
+    },
+    //Astronomy Table Stella Star Sirius
+    {
+      "Name": "AstronomyTableStellaX",
+      "Value": "23",
+      "When": {
+        "Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableStellaX}} <= 66": true
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaX",
+      "Value": "53",
+      "When": {
+        "Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableStellaX}} > 66 AND {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableStellaX}} < 118": true
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaX",
+      "Value": "85",
+      "When": {
+        "Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableStellaX}} >= 118": true
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaY",
+      "Value": "23",
+      "When": {
+        "Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableStellaY}} <= 47": true
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaY",
+      "Value": "53",
+      "When": {
+        "Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableStellaY}} > 47 AND {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableStellaY}} < 85": true
+      }
+    },
+    {
+      "Name": "AstronomyTableStellaY",
+      "Value": "85",
+      "When": {
+        "Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableStellaY}} >= 85": true
       }
     },
     //Astronomy Table Stella 

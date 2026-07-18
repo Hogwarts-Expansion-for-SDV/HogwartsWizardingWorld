@@ -7,21 +7,15 @@
       "FromFile": "assets/Astronomy/{{TargetWithoutPath}}.png"
     },
     {
-      "LogName": "Stellascope Transparent Images Load",
+      "LogName": "Hogwarts Astronomy Transparent Images Load",
       "Action": "Load",
-      "Target": "{{ModId}}/TransparentStellascope, {{ModId}}/TransparentStellascopeNext",
-      "FromFile": "assets/Astronomy/transparent.png"
-    },
-    {
-      "LogName": "Lunascope Transparent Images Load",
-      "Action": "Load",
-      "Target": "{{ModId}}/transparentlunascope",
+      "Target": "{{ModId}}/TransparentLunascope, {{ModId}}/TransparentLunascopeNext, {{ModId}}/TransparentStellascope, {{ModId}}/TransparentStellascopeNext",
       "FromFile": "assets/Astronomy/transparent.png"
     },
     {
       "LogName": "Hogwarts Astronomy Night Sky Luna",
       "Action": "EditImage",
-      "Target": "{{ModId}}/transparentlunascope",
+      "Target": "{{ModId}}/TransparentLunascope",
       "FromFile": "assets/Astronomy/nightsky.png",
       "FromArea": {
         "X": "{{Query: {{Random: {{Range: 0, 472}}|key=Luna}}}}",
@@ -40,13 +34,42 @@
     {
       "LogName": "Hogwarts Astronomy Luna StarSirius",
       "Action": "EditImage",
-      "Target": "{{ModId}}/transparentlunascope",
+      "Target": "{{ModId}}/TransparentLunascope",
       "FromFile": "assets/Astronomy/StarSirius.png",
+      "FromArea": {
+        "X": 100,
+        "Y": 0,
+        "Width": 20,
+        "Height": 20
+      },
       "ToArea": {
         "X": "{{AstronomyTableLunaX}}",
         "Y": "{{AstronomyTableLunaY}}",
         "Width": 20,
         "Height": 20
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "LocationName |contains= {{ModId}}_HogwartsAstronomyClassroom": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Astronomy Luna Next",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/TransparentLunascopeNext",
+      "FromFile": "assets/Astronomy/moons.png",
+      "FromArea": {
+        "X": "{{Query: {{AstronomyTableLunaNextX}}}}",
+        "Y": 0,
+        "Width": 32,
+        "Height": 32
+      },
+      "ToArea": {
+        "X": 48,
+        "Y": 48,
+        "Width": 32,
+        "Height": 32
       },
       "PatchMode": "Overlay"
     },
@@ -87,20 +110,30 @@
         "Height": 128
       },
       "PatchMode": "Overlay"
-    },/*
+    },
     {
       "LogName": "Hogwarts Astronomy Stella StarSirius",
       "Action": "EditImage",
-      "Target": "{{ModId}}/transparentstellascope",
+      "Target": "{{ModId}}/TransparentStellascope",
       "FromFile": "assets/Astronomy/StarSirius.png",
-      "ToArea": {
-        "X": "{{AstronomyTableLunaX}}",
-        "Y": "{{AstronomyTableLunaY}}",
+      "FromArea": {
+        "X": "{{Query: {{Random: 0, 20, 40, 60, 80|key=StarSiriusStella}}}}",
+        "Y": 0,
         "Width": 20,
         "Height": 20
       },
-      "PatchMode": "Overlay"
-    },*/
+      "ToArea": {
+        "X": "{{AstronomyTableStellaX}}",
+        "Y": "{{AstronomyTableStellaY}}",
+        "Width": 20,
+        "Height": 20
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "LocationName |contains= {{ModId}}_HogwartsAstronomyClassroom": true
+      },
+      "Update": "OnLocationChange"
+    },
     {
       "LogName": "Hogwarts Astronomy Stella",
       "Action": "EditImage",
@@ -239,6 +272,99 @@
           "ContextTags": [
             "{{ModId}}_Hogwarts"
           ],
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_HogwartsLunascope": {
+          "Name": "Portable Lunascope",
+          "DisplayName": "Lunascope",
+          "Description": "A magical instrument designed to be placed on a holder to look at past, present, or future lunar events.",
+          "Texture": "{{ModId}}/telescopes",
+          "SpriteIndex": 0,
+          "CanBeTrashed": false,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ],
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_WaningCrescent": {
+          "Name": "{{ModId}}_WaningCrescent",
+          "DisplayName": "Waning Crescent",
+          "Description": "A tablet of a lunar phase.",
+          "Texture": "{{ModId}}/moons",
+          "SpriteIndex": 0,
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_LastQuarter": {
+          "Name": "{{ModId}}_LastQuarter",
+          "DisplayName": "Last Quarter",
+          "Description": "A tablet of a lunar phase.",
+          "Texture": "{{ModId}}/moons",
+          "SpriteIndex": 1,
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_WaningGibbous": {
+          "Name": "{{ModId}}_WaningGibbous",
+          "DisplayName": "Waning Gibbous",
+          "Description": "A tablet of a lunar phase.",
+          "Texture": "{{ModId}}/moons",
+          "SpriteIndex": 2,
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_FullMoon": {
+          "Name": "{{ModId}}_FullMoon",
+          "DisplayName": "Full Moon",
+          "Description": "A tablet of a lunar phase.",
+          "Texture": "{{ModId}}/moons",
+          "SpriteIndex": 3,
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_WaxingGibbous": {
+          "Name": "{{ModId}}_WaxingGibbous",
+          "DisplayName": "Waxing Gibbous",
+          "Description": "A tablet of a lunar phase.",
+          "Texture": "{{ModId}}/moons",
+          "SpriteIndex": 4,
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_FirstQuarter": {
+          "Name": "{{ModId}}_FirstQuarter",
+          "DisplayName": "First Quarter",
+          "Description": "A tablet of a lunar phase.",
+          "Texture": "{{ModId}}/moons",
+          "SpriteIndex": 5,
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_WaxingCrescent": {
+          "Name": "{{ModId}}_WaxingCrescent",
+          "DisplayName": "Waxing Crescent",
+          "Description": "A tablet of a lunar phase.",
+          "Texture": "{{ModId}}/moons",
+          "SpriteIndex": 6,
+          "CanBeTrashed": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true
+        },
+        "{{ModId}}_NewMoon": {
+          "Name": "{{ModId}}_NewMoon",
+          "DisplayName": "New Moon",
+          "Description": "A tablet of a lunar phase.",
+          "Texture": "{{ModId}}/moons",
+          "SpriteIndex": 7,
+          "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
           "ExcludeFromRandomSale": true
         },
@@ -683,23 +809,9 @@
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
           "ExcludeFromRandomSale": true
-        }, /*
-        "{{ModId}}_HogwartsOldColdNeutronStar": {
-          "Name": "Hogwarts Old Cold Neutron Star",
-          "DisplayName": "Old Cold Neutron Star Tablet",
-          "Description": "A tablet of a old cold neutron star.",
-          "Type": "Basic",
-          "Category": 0,
-          "Texture": "{{InternalAssetKey: assets/Astronomy/starsobjects.png}}",
-          "SpriteIndex": 16,
-          "CanBeTrashed": true,
-          "ContextTags": [
-            "{{ModId}}_Hogwarts"
-          ],
-          "ExcludeFromShippingCollection": true
-        }*/
+        }
       }
-    },
+    }, /*
     {
       "LogName": "Hogwarts Astronomy Stellascope Filter",
       "Action": "EditImage",
@@ -718,26 +830,14 @@
         "Height": 128
       },
       "PatchMode": "Overlay"
-    },
+    },*/
     {
       "LogName": "Hogwarts Astronomy Lunascope and Stellascope Cutout",
       "Action": "EditImage",
-      "Target": "{{ModId}}/transparentlunascope, {{ModId}}/TransparentStellascope, {{ModId}}/TransparentStellascopeNext",
+      "Target": "{{ModId}}/TransparentLunascope, {{ModId}}/TransparentLunascopeNext, {{ModId}}/TransparentStellascope, {{ModId}}/TransparentStellascopeNext",
       "FromFile": "assets/Astronomy/scopecutout2.png",
-      "FromArea": {
-        "X": 0,
-        "Y": 0,
-        "Width": 128,
-        "Height": 128
-      },
-      "ToArea": {
-        "X": 0,
-        "Y": 0,
-        "Width": 128,
-        "Height": 128
-      },
       "PatchMode": "Overlay"
-    }, /*
+    },
     {
       "LogName": "Hogwarts Astronomy Classroom Lunascope Left",
       "Action": "EditMap",
@@ -745,8 +845,8 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 9,
-            "Y": 25
+            "X": 13,
+            "Y": 19
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -755,8 +855,8 @@
         },
         {
           "Position": {
-            "X": 11,
-            "Y": 22
+            "X": 13,
+            "Y": 24
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -765,8 +865,8 @@
         },
         {
           "Position": {
-            "X": 14,
-            "Y": 22
+            "X": 16,
+            "Y": 24
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -775,8 +875,28 @@
         },
         {
           "Position": {
-            "X": 14,
-            "Y": 31
+            "X": 19,
+            "Y": 24
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteraction_Image {{ModId}}/transparentlunascope 0 0 128 128"
+          }
+        },
+        {
+          "Position": {
+            "X": 23,
+            "Y": 19
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteraction_Image {{ModId}}/transparentlunascope 0 0 128 128"
+          }
+        },
+        {
+          "Position": {
+            "X": 23,
+            "Y": 23
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -789,44 +909,14 @@
       }
     },
     {
-      "LogName": "Hogwarts Astronomy Classroom Stellascope Right",
+      "LogName": "Hogwarts Astronomy Classroom Stellascope",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsAstronomyClassroom",
       "MapTiles": [
         {
           "Position": {
-            "X": 20,
-            "Y": 22
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "MEEP_CloseupInteraction_Image {{ModId}}/TransparentStellascope 0 0 128 128"
-          }
-        },
-        {
-          "Position": {
-            "X": 20,
-            "Y": 31
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "MEEP_CloseupInteraction_Image {{ModId}}/TransparentStellascope 0 0 128 128"
-          }
-        },
-        {
-          "Position": {
-            "X": 23,
-            "Y": 31
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "MEEP_CloseupInteraction_Image {{ModId}}/TransparentStellascope 0 0 128 128"
-          }
-        },
-        {
-          "Position": {
-            "X": 25,
-            "Y": 28
+            "X": 18,
+            "Y": 19
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -837,7 +927,7 @@
       "When": {
         "HasMod |contains= DecidedlyHuman.MappingExtensionsAndExtraProperties": true
       }
-    },*/
+    },
     {
       "LogName": "Hogwarts Astronomy Classroom Warp",
       "Action": "EditMap",
