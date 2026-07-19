@@ -9,7 +9,7 @@
     {
       "LogName": "Hogwarts Astronomy Transparent Images Load",
       "Action": "Load",
-      "Target": "{{ModId}}/TransparentLunascope, {{ModId}}/TransparentLunascopeNext, {{ModId}}/TransparentStellascope, {{ModId}}/TransparentStellascopeNext",
+      "Target": "{{ModId}}/TransparentLunascope, {{ModId}}/TransparentLunascopeNext, {{ModId}}/TransparentStellascope, {{ModId}}/TransparentStellascopeAfterNext",
       "FromFile": "assets/Astronomy/transparent.png"
     },
     {
@@ -95,7 +95,7 @@
     {
       "LogName": "Hogwarts Astronomy Night Sky Stellascope",
       "Action": "EditImage",
-      "Target": "{{ModId}}/TransparentStellascope, {{ModId}}/TransparentStellascopeNext",
+      "Target": "{{ModId}}/TransparentStellascope, {{ModId}}/TransparentStellascopeAfterNext",
       "FromFile": "assets/Astronomy/nightsky.png",
       "FromArea": {
         "X": "{{Query: {{Random: {{Range: 0, 472}}|key=Stella}}}}",
@@ -123,8 +123,8 @@
         "Height": 20
       },
       "ToArea": {
-        "X": "{{AstronomyTableStellaX}}",
-        "Y": "{{AstronomyTableStellaY}}",
+        "X": "{{Query: {{Random: {{Range: 19, 166}}|key=AstronomyStellaStarSiriusX}}}}",
+        "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=AstronomyStellaStarSiriusY}}}}",
         "Width": 20,
         "Height": 20
       },
@@ -154,9 +154,9 @@
       "PatchMode": "Overlay"
     },
     {
-      "LogName": "Hogwarts Astronomy Stella Next",
+      "LogName": "Hogwarts Astronomy Stella After Next",
       "Action": "EditImage",
-      "Target": "{{ModId}}/TransparentStellascopeNext",
+      "Target": "{{ModId}}/TransparentStellascopeAfterNext",
       "FromFile": "assets/Astronomy/stars.png",
       "FromArea": {
         "X": "{{Query: {{AstronomyTableStellaAfterNextX}}}}",
@@ -171,7 +171,27 @@
         "Height": 48
       },
       "PatchMode": "Overlay"
-    },
+    },/*
+    {
+      "LogName": "Hogwarts Bell Tower Courtyard Astronomy Table Stellascope Load",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsBellTowerCourtyard",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 0,
+            "Y": 0
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/addTilesheet_Load": "assets/Tilesheets/z_HogsmeadeInterior_Hxoni_Hogwarts.png,Maps/zz_HogsmeadeInterior_Hxoni_Hogwarts"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },*/
     {
       "LogName": "Hogwarts Bell Tower Courtyard Astronomy Table",
       "Action": "EditMap",
@@ -184,7 +204,8 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "DMT/changeProperties_Item((O){{ModId}}_HogwartsStellascope)": "Action=MEEP_CloseupInteraction_Image {{ModId}}/TransparentStellascopeNext 0 0 128 128",
+            "DMT/changeProperties_Item((O){{ModId}}_HogwartsStellascope)": "Action=MEEP_CloseupInteraction_Image {{ModId}}/TransparentStellascopeAfterNext 0 0 128 128",
+            "DMT/addTilesheet_Load": "assets/Tilesheets/z_HogsmeadeInterior_Hxoni_Hogwarts.png,Maps/z_HogsmeadeInterior_Hxoni_Hogwarts",
             "DMT/changeMultipleIndex_Item((O){{ModId}}_HogwartsStellascope)": "Front1 59 24=z_HogsmeadeInterior_Hxoni_Hogwarts/834"
           }
         },
@@ -292,7 +313,7 @@
           "Name": "{{ModId}}_WaningCrescent",
           "DisplayName": "Waning Crescent",
           "Description": "A tablet of a lunar phase.",
-          "Texture": "{{ModId}}/moons",
+          "Texture": "{{ModId}}/moonobjects",
           "SpriteIndex": 0,
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -302,7 +323,7 @@
           "Name": "{{ModId}}_LastQuarter",
           "DisplayName": "Last Quarter",
           "Description": "A tablet of a lunar phase.",
-          "Texture": "{{ModId}}/moons",
+          "Texture": "{{ModId}}/moonobjects",
           "SpriteIndex": 1,
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -312,7 +333,7 @@
           "Name": "{{ModId}}_WaningGibbous",
           "DisplayName": "Waning Gibbous",
           "Description": "A tablet of a lunar phase.",
-          "Texture": "{{ModId}}/moons",
+          "Texture": "{{ModId}}/moonobjects",
           "SpriteIndex": 2,
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -322,7 +343,7 @@
           "Name": "{{ModId}}_FullMoon",
           "DisplayName": "Full Moon",
           "Description": "A tablet of a lunar phase.",
-          "Texture": "{{ModId}}/moons",
+          "Texture": "{{ModId}}/moonobjects",
           "SpriteIndex": 3,
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -332,7 +353,7 @@
           "Name": "{{ModId}}_WaxingGibbous",
           "DisplayName": "Waxing Gibbous",
           "Description": "A tablet of a lunar phase.",
-          "Texture": "{{ModId}}/moons",
+          "Texture": "{{ModId}}/moonobjects",
           "SpriteIndex": 4,
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -342,7 +363,7 @@
           "Name": "{{ModId}}_FirstQuarter",
           "DisplayName": "First Quarter",
           "Description": "A tablet of a lunar phase.",
-          "Texture": "{{ModId}}/moons",
+          "Texture": "{{ModId}}/moonobjects",
           "SpriteIndex": 5,
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -352,7 +373,7 @@
           "Name": "{{ModId}}_WaxingCrescent",
           "DisplayName": "Waxing Crescent",
           "Description": "A tablet of a lunar phase.",
-          "Texture": "{{ModId}}/moons",
+          "Texture": "{{ModId}}/moonobjects",
           "SpriteIndex": 6,
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -362,7 +383,7 @@
           "Name": "{{ModId}}_NewMoon",
           "DisplayName": "New Moon",
           "Description": "A tablet of a lunar phase.",
-          "Texture": "{{ModId}}/moons",
+          "Texture": "{{ModId}}/moonobjects",
           "SpriteIndex": 7,
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -834,7 +855,7 @@
     {
       "LogName": "Hogwarts Astronomy Lunascope and Stellascope Cutout",
       "Action": "EditImage",
-      "Target": "{{ModId}}/TransparentLunascope, {{ModId}}/TransparentLunascopeNext, {{ModId}}/TransparentStellascope, {{ModId}}/TransparentStellascopeNext",
+      "Target": "{{ModId}}/TransparentLunascope, {{ModId}}/TransparentLunascopeNext, {{ModId}}/TransparentStellascope, {{ModId}}/TransparentStellascopeAfterNext",
       "FromFile": "assets/Astronomy/scopecutout2.png",
       "PatchMode": "Overlay"
     },

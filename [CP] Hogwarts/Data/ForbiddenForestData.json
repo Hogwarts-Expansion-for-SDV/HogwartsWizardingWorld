@@ -38,8 +38,35 @@
         "Height": 12
       },
       "PatchMode": "Overlay",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableLunaX}}+5}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableLunaY}}+6}}"
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "DMT/changeProperties_Item((O){{ModId}}_HogwartsLunascope)": "Action=MEEP_CloseupInteraction_Image {{ModId}}/TransparentLunascopeNext 0 0 128 128",
+            "DMT/changeMultipleIndex_Item((O){{ModId}}_HogwartsLunascope)": "Front1 {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableLunaX}}+5}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableLunaY}}+5}}=z_HogsmeadeInterior_Hxoni_Hogwarts/834"
+          }
+        },
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableLunaX}}+5}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableLunaY}}+7}}"
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "DMT/take_Once_Item((O){{AstronomyLunaObject}})": "(O){{AstronomyLunaObject}}",
+            "DMT/give_Once_Item((O){{AstronomyLunaObject}})": "(O){{ModId}}_{{Random:{{Card}}}}",
+            "DMT/mail_Once_Item((O){{AstronomyLunaObject}})": "{{ModId}}_AstronomyTableLuna"
+          }
+        }
+      ],
       "When": {
-        "Query: {{Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256}}}} = 256": false //I do not remember why this is here. When the moon is not in the sky? 
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasMod |contains= DecidedlyHuman.MappingExtensionsAndExtraProperties": true,
+        "Query: {{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256}} = 256": false // Merlin Trial Astronomy Table Luna does not appear when there is no moon. 
       }
     },
     {

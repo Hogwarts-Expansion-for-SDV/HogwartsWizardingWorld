@@ -571,7 +571,7 @@
         "Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableLunaY}} >= 85": true
       }
     },
-    //Astronomy Table Stella 
+    //Astronomy Table Luna 
     {
       "Name": "AstronomyTableLunaPresent",
       "Value": "{{Random: 0, 32, 64, 96, 128, 160, 192, 224, 256|key=Luna}}"
@@ -671,47 +671,61 @@
         "AstronomyTableLunaPresent": "256"
       }
     },
-    //Astronomy Table Stella Star Sirius
+    // Astronomy Stella Objects
     {
-      "Name": "AstronomyTableStellaX",
-      "Value": "23",
+      "Name": "AstronomyLunaObject",
+      "Value": "{{ModId}}_WaningCrescent",
       "When": {
-        "Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableStellaX}} <= 66": true
+        "Query: ({{AstronomyTableLunaPresent}} = 64 AND {{AstronomyLuna64}} = 32) OR ({{AstronomyTableLunaPresent}} = 192 AND {{AstronomyLuna192}} = 224)": true
       }
     },
     {
-      "Name": "AstronomyTableStellaX",
-      "Value": "53",
+      "Name": "AstronomyLunaObject",
+      "Value": "{{ModId}}_LastQuarter",
       "When": {
-        "Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableStellaX}} > 66 AND {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableStellaX}} < 118": true
+        "Query: ({{AstronomyTableLunaPresent}} = 96 AND {{AstronomyLuna96}} = 64) OR ({{AstronomyTableLunaPresent}} = 224 AND {{AstronomyLuna224}} = 0)": true
       }
     },
     {
-      "Name": "AstronomyTableStellaX",
-      "Value": "85",
+      "Name": "AstronomyLunaObject",
+      "Value": "{{ModId}}_WaningGibbous",
       "When": {
-        "Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialAstronomyTableStellaX}} >= 118": true
+        "Query: ({{AstronomyTableLunaPresent}} = 128 AND {{AstronomyLuna128}} = 96) OR ({{AstronomyTableLunaPresent}} = 0 AND {{AstronomyLuna0}} = 32)": true
       }
     },
     {
-      "Name": "AstronomyTableStellaY",
-      "Value": "23",
+      "Name": "AstronomyLunaObject",
+      "Value": "{{ModId}}_FullMoon",
       "When": {
-        "Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableStellaY}} <= 47": true
+        "Query: ({{AstronomyTableLunaPresent}} = 160 AND {{AstronomyLuna160}} = 128) OR ({{AstronomyTableLunaPresent}} = 32 AND {{AstronomyLuna32}} = 64)": true
       }
     },
     {
-      "Name": "AstronomyTableStellaY",
-      "Value": "53",
+      "Name": "AstronomyLunaObject",
+      "Value": "{{ModId}}_WaxingGibbous",
       "When": {
-        "Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableStellaY}} > 47 AND {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableStellaY}} < 85": true
+        "Query: ({{AstronomyTableLunaPresent}} = 192 AND {{AstronomyLuna192}} = 160) OR ({{AstronomyTableLunaPresent}} = 64 AND {{AstronomyLuna64}} = 94)": true
       }
     },
     {
-      "Name": "AstronomyTableStellaY",
-      "Value": "85",
+      "Name": "AstronomyLunaObject",
+      "Value": "{{ModId}}_FirstQuarter",
       "When": {
-        "Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialAstronomyTableStellaY}} >= 85": true
+        "Query: ({{AstronomyTableLunaPresent}} = 224 AND {{AstronomyLuna224}} = 192) OR ({{AstronomyTableLunaPresent}} = 96 AND {{AstronomyLuna96}} = 128)": true
+      }
+    },
+    {
+      "Name": "AstronomyLunaObject",
+      "Value": "{{ModId}}_WaxingCrescent",
+      "When": {
+        "Query: ({{AstronomyTableLunaPresent}} = 0 AND {{AstronomyLuna0}} = 224) OR ({{AstronomyTableLunaPresent}} = 128 AND {{AstronomyLuna128}} = 160)": true
+      }
+    },
+    {
+      "Name": "AstronomyLunaObject",
+      "Value": "{{ModId}}_NewMoon",
+      "When": {
+        "Query: ({{AstronomyTableLunaPresent}} = 32 AND {{AstronomyLuna32}} = 0) OR ({{AstronomyTableLunaPresent}} = 160 AND {{AstronomyLuna160}} = 192)": true
       }
     },
     //Astronomy Table Stella 
