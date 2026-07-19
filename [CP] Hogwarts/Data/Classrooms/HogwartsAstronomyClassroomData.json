@@ -205,8 +205,8 @@
           "Layer": "Buildings",
           "SetProperties": {
             "DMT/changeProperties_Item((O){{ModId}}_HogwartsStellascope)": "Action=MEEP_CloseupInteraction_Image {{ModId}}/TransparentStellascopeAfterNext 0 0 128 128",
-            "DMT/addTilesheet_Load": "assets/Tilesheets/z_HogsmeadeInterior_Hxoni_Hogwarts.png,Maps/z_HogsmeadeInterior_Hxoni_Hogwarts",
-            "DMT/changeMultipleIndex_Item((O){{ModId}}_HogwartsStellascope)": "Front1 59 24=z_HogsmeadeInterior_Hxoni_Hogwarts/834"
+            "DMT/addTilesheet_Load": "{{ModId}}_Stellascope,Maps/z_HogsmeadeInterior_Hxoni_Hogwarts",
+            "DMT/changeMultipleIndex_Item((O){{ModId}}_HogwartsStellascope)": "Front1 59 24={{ModId}}_Stellascope/834"
           }
         },
         {
