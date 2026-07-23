@@ -671,7 +671,7 @@
         "AstronomyTableLunaPresent": "256"
       }
     },
-    // Astronomy Stella Objects
+    // Astronomy Luna Objects
     {
       "Name": "AstronomyLunaObject",
       "Value": "{{ModId}}_WaningCrescent",
@@ -790,7 +790,7 @@
     },
     {
       "Name": "AstronomyStella240",
-      "Value": "{{Random: 240, 336, 384, 528, 576, 816, 864, 960, 1440|key=Stella240}}"
+      "Value": "{{Random: 240, 336, 384, 480, 528, 576, 816, 864, 960, 1392, 1440|key=Stella240}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
@@ -911,7 +911,7 @@
     },
     {
       "Name": "AstronomyStella864",
-      "Value": "{{Random: 384, 480, 528, 576, 816, 960|key=Stella864}}"
+      "Value": "{{Random: 240, 384, 480, 528, 576, 816, 864, 960, 1392|key=Stella864}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
@@ -1032,7 +1032,7 @@
     },
     {
       "Name": "AstronomyStella1392",
-      "Value": "{{Random: 384, 480, 528, 576, 816, 864, 960|key=Stella1392}}"
+      "Value": "{{Random: 240, 384, 480, 528, 576, 816, 864, 960, 1008, 1392, 1440|key=Stella1392}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
@@ -1043,7 +1043,7 @@
     },
     {
       "Name": "AstronomyStella1440",
-      "Value": "{{Random: 384, 480, 528, 576, 816, 912, 960|key=Stella1440}}"
+      "Value": "{{Random: 240, 384, 480, 528, 576, 816, 912, 960, 1008, 1392, 1440|key=Stella1440}}"
     },
     {
       "Name": "AstronomyTableStellaAfterNextX",
@@ -1107,7 +1107,7 @@
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_RedSupergiant",
       "When": {
-        "Query: ({{AstronomyTableStellaPresent}} = 1008 AND {{AstronomyStella1008}} IN (1392, 1440)) OR ({{AstronomyTableStellaPresent}} = 1104 AND {{AstronomyStella1008}} IN (1392, 1440))": true
+        "Query: ({{AstronomyTableStellaPresent}} = 1008 AND {{AstronomyStella1008}} IN (1392, 1440)) OR ({{AstronomyTableStellaPresent}} = 1104 AND {{AstronomyStella1104}} IN (1392, 1440)) OR ({{AstronomyTableStellaPresent}} = 1392 AND {{AstronomyStella1392}} IN (1008, 1440)) OR ({{AstronomyTableStellaPresent}} = 1440 AND {{AstronomyStella1440}} IN (1008, 1392))": true
       }
     },
     {
@@ -1177,21 +1177,14 @@
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_BlueHypergiant",
       "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 1440 AND {{AstronomyStella1440}} IN (480, 912)": true
-      }
-    },
-    {
-      "Name": "AstronomyStellaObject",
-      "Value": "{{ModId}}_WolfRayetStar",
-      "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 864 AND {{AstronomyStella864}} = 480": true
+        "Query: {{AstronomyTableStellaPresent}} = 1440 AND {{AstronomyStella1440}} = 912": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_YellowSupergiant",
       "When": {
-        "Query: ({{AstronomyTableStellaPresent}} = 240 AND {{AstronomyStella240}} IN (240, 336)) OR ({{AstronomyTableStellaPresent}} = 336 AND {{AstronomyStella336}} IN (336, 240)) OR ({{AstronomyTableStellaPresent}} = 1104 AND {{AstronomyStella1104}} IN (240, 336, 480))": true
+        "Query: ({{AstronomyTableStellaPresent}} = 240 AND {{AstronomyStella240}} = 336) OR ({{AstronomyTableStellaPresent}} = 336 AND {{AstronomyStella336}} IN (240, 336)) OR ({{AstronomyTableStellaPresent}} = 1104 AND {{AstronomyStella1104}} IN (240, 336, 480))": true
       }
     },
     {
@@ -1240,14 +1233,14 @@
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_RedHypergiant",
       "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 240 AND {{AstronomyStella240}} = 1440": true
+        "Query: ({{AstronomyTableStellaPresent}} = 240 AND {{AstronomyStella240}} = 1440) OR ({{AstronomyTableStellaPresent}} = 1440 AND {{AstronomyStella1440}} = 240)": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
       "Value": "{{ModId}}_YellowHypergiant",
       "When": {
-        "Query: ({{AstronomyTableStellaPresent}} = 240 AND {{AstronomyStella240}} = 864) OR ({{AstronomyTableStellaPresent}} = 1392 AND {{AstronomyStella1392}} IN (480, 864))": true
+        "Query: ({{AstronomyTableStellaPresent}} = 240 AND {{AstronomyStella240}} IN (864, 1392)) OR ({{AstronomyTableStellaPresent}} = 864 AND {{AstronomyStella864}} IN (240, 864, 1392)) OR ({{AstronomyTableStellaPresent}} = 1392 AND {{AstronomyStella1392}} IN (240, 864))": true
       }
     },
     {
@@ -1273,65 +1266,100 @@
     },
     {
       "Name": "AstronomyStellaObject",
-      "Value": "{{ModId}}_OrangeDwarf, {{ModId}}_YellowDwarf",
+      "Value": "{{Random: {{ModId}}_OrangeDwarf, {{ModId}}_YellowDwarf}}",
       "When": {
         "Query: {{AstronomyTableStellaPresent}} = 1056 AND {{AstronomyStella1056}} IN (192, 1296)": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
-      "Value": "{{ModId}}_Supernova, {{ModId}}_RedHypergiant",
-      "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 240 AND {{AstronomyStella240}} = 384": true
-      }
-    },
-    {
-      "Name": "AstronomyStellaObject",
-      "Value": "{{ModId}}_Supernova, {{ModId}}_YellowSupergiant",
+      "Value": "{{Random: {{ModId}}_Supernova, {{ModId}}_YellowSupergiant}}",
       "When": {
         "Query: {{AstronomyTableStellaPresent}} = 336 AND {{AstronomyStella336}} = 384": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
-      "Value": "{{ModId}}_Supernova, {{ModId}}_WolfRayetStar",
-      "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 864 AND {{AstronomyStella864}} = 384": true
-      }
-    },
-    {
-      "Name": "AstronomyStellaObject",
-      "Value": "{{ModId}}_Supernova, {{ModId}}_BlueSupergiant, {{ModId}}_RedSupergiant",
+      "Value": "{{Random: {{ModId}}_Supernova, {{ModId}}_BlueSupergiant, {{ModId}}_RedSupergiant}}",
       "When": {
         "Query: {{AstronomyTableStellaPresent}} = 1008 AND {{AstronomyStella1008}} = 384": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
-      "Value": "{{ModId}}_Supernova, {{ModId}}_YellowHypergiant",
-      "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 1392 AND {{AstronomyStella1392}} = 384": true
-      }
-    },
-    {
-      "Name": "AstronomyStellaObject",
-      "Value": "{{ModId}}_Supernova, {{ModId}}_BlueHypergiant",
-      "When": {
-        "Query: {{AstronomyTableStellaPresent}} = 1440 AND {{AstronomyStella1440}} = 384": true
-      }
-    },
-    {
-      "Name": "AstronomyStellaObject",
-      "Value": "{{ModId}}_BlueSupergiant, {{ModId}}_RedSupergiant",
+      "Value": "{{Random: {{ModId}}_BlueSupergiant, {{ModId}}_RedSupergiant}}",
       "When": {
         "Query: ({{AstronomyTableStellaPresent}} = 1008 AND {{AstronomyStella1008}} IN (480, 1008)) OR ({{AstronomyTableStellaPresent}} = 1104 AND {{AstronomyStella1104}} = 1008)": true
       }
     },
     {
       "Name": "AstronomyStellaObject",
-      "Value": "{{ModId}}_RemnantNebula, {{ModId}}_Supershell",
+      "Value": "{{Random: {{ModId}}_RemnantNebula, {{ModId}}_Supershell}}",
       "When": {
         "Query: {{AstronomyTableStellaPresent}} = 480 AND {{AstronomyStella480}} = 624": true
+      }
+    },
+    {
+      "Name": "AstronomyStellaObject",
+      "Value": "{{Random: {{ModId}}_YellowSupergiant, {{ModId}}_RedHypergiant, {{ModId}}_YellowHypergiant}}",
+      "When": {
+        "Query: {{AstronomyTableStellaPresent}} = 240 AND {{AstronomyStella240}} IN (240, 480)": true
+      }
+    },
+    {
+      "Name": "AstronomyStellaObject",
+      "Value": "{{Random: {{ModId}}_Supernova, {{ModId}}_RedHypergiant, {{ModId}}_YellowSupergiant, {{ModId}}_YellowHypergiant}}",
+      "When": {
+        "Query: {{AstronomyTableStellaPresent}} = 240 AND {{AstronomyStella240}} = 384": true
+      }
+    },
+    {
+      "Name": "AstronomyStellaObject",
+      "Value": "{{Random: {{ModId}}_Supernova, {{ModId}}_WolfRayetStar, {{ModId}}_YellowHypergiant}}",
+      "When": {
+        "Query: {{AstronomyTableStellaPresent}} = 864 AND {{AstronomyStella864}} = 384": true
+      }
+    },
+    {
+      "Name": "AstronomyStellaObject",
+      "Value": "{{Random: {{ModId}}_Supernova, {{ModId}}_YellowHypergiant, {{ModId}}_RedSupergiant}}",
+      "When": {
+        "Query: {{AstronomyTableStellaPresent}} = 1392 AND {{AstronomyStella1392}} = 384": true
+      }
+    },
+    {
+      "Name": "AstronomyStellaObject",
+      "Value": "{{Random: {{ModId}}_Supernova, {{ModId}}_BlueHypergiant, {{ModId}}_RedSupergiant, {{ModId}}_RedHypergiant}}",
+      "When": {
+        "Query: {{AstronomyTableStellaPresent}} = 1440 AND {{AstronomyStella1440}} = 384": true
+      }
+    },
+    {
+      "Name": "AstronomyStellaObject",
+      "Value": "{{Random: {{ModId}}_WolfRayetStar, {{ModId}}_YellowHypergiant}}",
+      "When": {
+        "Query: {{AstronomyTableStellaPresent}} = 864 AND {{AstronomyStella864}} = 480": true
+      }
+    },
+    {
+      "Name": "AstronomyStellaObject",
+      "Value": "{{Random: {{ModId}}_YellowHypergiant, {{ModId}}_RedSupergiant}}",
+      "When": {
+        "Query: {{AstronomyTableStellaPresent}} = 1392 AND {{AstronomyStella1392}} IN (480, 1392)": true
+      }
+    },
+    {
+      "Name": "AstronomyStellaObject",
+      "Value": "{{Random: {{ModId}}_BlueHypergiant, {{ModId}}_YellowHypergiant}}",
+      "When": {
+        "Query: {{AstronomyTableStellaPresent}} = 1440 AND {{AstronomyStella1440}} = 480": true
+      }
+    },
+    {
+      "Name": "AstronomyStellaObject",
+      "Value": "{{Random: {{ModId}}_RedSupergiant, {{ModId}}_RedHypergiant, {{ModId}}_BlueHypergiant}}",
+      "When": {
+        "Query: {{AstronomyTableStellaPresent}} = 1440 AND {{AstronomyStella1440}} = 1440": true
       }
     },
     // Divination Charmed Tent
