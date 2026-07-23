@@ -1,134 +1,25 @@
 {
   "Changes": [
+    // Cauldron Interactive Spawn
     {
-      "LogName": "Hogwarts Faculty Tower Warps",
+      "LogName": "Faculty Tower Cauldron Furniture Spawn DMTE",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsFacultyTower",
       "MapTiles": [
-        /*Grand Staircase East*/
         {
           "Position": {
             "X": 0,
-            "Y": 59
+            "Y": 0
           },
           "Layer": "Back",
           "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 54 69"
-          }
-        },
-        {
-          "Position": {
-            "X": 0,
-            "Y": 60
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 54 69"
-          }
-        },
-        {
-          "Position": {
-            "X": 0,
-            "Y": 61
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 54 69"
-          }
-        },
-        {
-          "Position": {
-            "X": 0,
-            "Y": 62
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 54 69"
-          }
-        },
-        //Grand Staircase West
-        {
-          "Position": {
-            "X": 98,
-            "Y": 18
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 1 51"
-          }
-        },
-        {
-          "Position": {
-            "X": 98,
-            "Y": 19
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 1 51"
-          }
-        },
-        {
-          "Position": {
-            "X": 98,
-            "Y": 20
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 1 51"
-          }
-        },
-        {
-          "Position": {
-            "X": 98,
-            "Y": 21
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 1 51"
-          }
-        },
-        /*South Wing*/
-        {
-          "Position": {
-            "X": 41,
-            "Y": 22
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Warp 28 58 {{ModId}}_HogwartsSouthWing"
-          }
-        },
-        {
-          "Position": {
-            "X": 42,
-            "Y": 22
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Warp 28 58 {{ModId}}_HogwartsSouthWing"
-          }
-        },
-        {
-          "Position": {
-            "X": 94,
-            "Y": 8
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 70 27"
-          }
-        },
-        {
-          "Position": {
-            "X": 95,
-            "Y": 8
-          },
-          "Layer": "Back",
-          "SetProperties": {
-            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 70 27"
+            "DMT/object_Once_Load": "15,44,(F)Cauldron,true"
           }
         }
-      ]
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
     },
     //Door Replacements
     //Wood Door 1
@@ -303,6 +194,136 @@
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true
       }
-    }*/
+    },*/
+    {
+      "LogName": "Hogwarts Faculty Tower Warps",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsFacultyTower",
+      "MapTiles": [
+        /*Grand Staircase East*/
+        {
+          "Position": {
+            "X": 0,
+            "Y": 59
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 54 69"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 60
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 54 69"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 61
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 54 69"
+          }
+        },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 62
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 54 69"
+          }
+        },
+        //Grand Staircase West
+        {
+          "Position": {
+            "X": 98,
+            "Y": 18
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 1 51"
+          }
+        },
+        {
+          "Position": {
+            "X": 98,
+            "Y": 19
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 1 51"
+          }
+        },
+        {
+          "Position": {
+            "X": 98,
+            "Y": 20
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 1 51"
+          }
+        },
+        {
+          "Position": {
+            "X": 98,
+            "Y": 21
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 1 51"
+          }
+        },
+        /*South Wing*/
+        {
+          "Position": {
+            "X": 41,
+            "Y": 22
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 28 58 {{ModId}}_HogwartsSouthWing"
+          }
+        },
+        {
+          "Position": {
+            "X": 42,
+            "Y": 22
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 28 58 {{ModId}}_HogwartsSouthWing"
+          }
+        },
+        {
+          "Position": {
+            "X": 94,
+            "Y": 8
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 70 27"
+          }
+        },
+        {
+          "Position": {
+            "X": 95,
+            "Y": 8
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 70 27"
+          }
+        }
+      ]
+    }
   ]
 }

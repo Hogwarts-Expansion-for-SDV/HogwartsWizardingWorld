@@ -115,7 +115,19 @@
         "Width": 9,
         "Height": 9
       },
-      "PatchMode": "Overlay"
+      "PatchMode": "Overlay",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "{{Query: {{Random: {{Range: 19, 166}}|key=CharmedTent1X}}+4}}",
+            "Y": "{{Query: {{Random: {{Range: 23, 128}}|key=CharmedTent1Y}}+4}}"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_ForbiddenForestCharmedTent 2 4"
+          }
+        }
+      ]
     },
     {
       "LogName": "Forbidden Forest Charmed Tent Interior",

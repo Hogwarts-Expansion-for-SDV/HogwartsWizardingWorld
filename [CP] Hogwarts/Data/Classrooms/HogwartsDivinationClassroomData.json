@@ -1,32 +1,16 @@
 {
   "Changes": [
-    //Warp Data
     {
-      "LogName": "Hogwarts Divination Classroom Warp",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsDivinationClassroom",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 13,
-            "Y": 21
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Warp 66 56 {{ModId}}_HogwartsLibraryAnnex"
-          }
-        },
-        {
-          "Position": {
-            "X": 14,
-            "Y": 21
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Warp 66 56 {{ModId}}_HogwartsLibraryAnnex"
-          }
-        }
-      ]
+      "LogName": "Hogwarts Image Load",
+      "Action": "Load",
+      "Target": "{{ModId}}/Twigs, {{ModId}}/XylomancyBase",
+      "FromFile": "assets/Divination/{{TargetWithoutPath}}.png"
+    },
+    {
+      "LogName": "Hogwarts Image Load Teacup Base",
+      "Action": "Load",
+      "Target": "{{ModId}}/TeacupBaseCreatureDen",
+      "FromFile": "assets/Divination/TeacupBase.png"
     },
     /*Left Top Left - Creature Den*/
     {
@@ -58,12 +42,6 @@
       }
     },
     {
-      "LogName": "Hogwarts Teacup Image Base Load",
-      "Action": "Load",
-      "Target": "Mods/{{ModId}}/TeacupBaseCreatureDen",
-      "FromFile": "assets/Divination/TeacupBase.png"
-    },
-    {
       "LogName": "Hogwarts Divination Classroom Left Top Left Creature Den Teacup Image Base",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsDivinationClassroom",
@@ -75,7 +53,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "MEEP_CloseupInteraction_Image Mods/{{ModId}}/TeacupBaseCreatureDen 0 0 224 144"
+            "Action": "MEEP_CloseupInteraction_Image {{ModId}}/TeacupBaseCreatureDen 0 0 224 144"
           }
         }
       ],
@@ -86,7 +64,7 @@
     {
       "LogName": "Hogwarts Teacup Creature Den Placement EditImage",
       "Action": "EditImage",
-      "Target": "Mods/{{ModId}}/TeacupBaseCreatureDen",
+      "Target": "{{ModId}}/TeacupBaseCreatureDen",
       "FromFile": "assets/Divination/CreatureDen.png",
       "ToArea": {
         "X": "{{DivinationCreatureDenX}}",
@@ -132,7 +110,7 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 8,
+            "X": 3,
             "Y": 11
           },
           "Layer": "Buildings",
@@ -175,18 +153,6 @@
       }
     },
     {
-      "LogName": "Hogwarts Xylomancy Image Base Load",
-      "Action": "Load",
-      "Target": "Mods/{{ModId}}/XylomancyBase",
-      "FromFile": "assets/Divination/{{TargetWithoutPath}}.png"
-    },
-    {
-      "LogName": "Hogwarts Twigs Spritesheet Load",
-      "Action": "Load",
-      "Target": "Mods/{{ModId}}/Twigs",
-      "FromFile": "assets/Divination/{{TargetWithoutPath}}.png"
-    },
-    {
       "LogName": "Hogwarts Divination Classroom Left Top Left Charmed Tent Xylomancy Image Base",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsDivinationClassroom",
@@ -198,7 +164,7 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "MEEP_CloseupInteraction_Image Mods/{{ModId}}/XylomancyBase 0 0 128 128"
+            "Action": "MEEP_CloseupInteraction_Image {{ModId}}/XylomancyBase 0 0 128 128"
           }
         }
       ],
@@ -209,7 +175,7 @@
     {
       "LogName": "Hogwarts Twig Formation EditImage A1",
       "Action": "EditImage",
-      "Target": "Mods/{{ModId}}/XylomancyBase",
+      "Target": "{{ModId}}/XylomancyBase",
       "FromFile": "assets/Divination/Twigs.png",
       "FromArea": {
         "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key={{Time}}A1}}}}",
@@ -218,8 +184,8 @@
         "Height": 40
       },
       "ToArea": {
-        "X": 8,
-        "Y": 8,
+        "X": 3,
+        "Y": 3,
         "Width": 40,
         "Height": 40
       },
@@ -229,7 +195,7 @@
     {
       "LogName": "Hogwarts Twig Formation EditImage A2",
       "Action": "EditImage",
-      "Target": "Mods/{{ModId}}/XylomancyBase",
+      "Target": "{{ModId}}/XylomancyBase",
       "FromFile": "assets/Divination/Twigs.png",
       "FromArea": {
         "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key=A2{{Time}}}}}}",
@@ -238,8 +204,8 @@
         "Height": 40
       },
       "ToArea": {
-        "X": 8,
-        "Y": 48,
+        "X": 3,
+        "Y": 44,
         "Width": 40,
         "Height": 40
       },
@@ -249,7 +215,7 @@
     {
       "LogName": "Hogwarts Twig Formation EditImage A3",
       "Action": "EditImage",
-      "Target": "Mods/{{ModId}}/XylomancyBase",
+      "Target": "{{ModId}}/XylomancyBase",
       "FromFile": "assets/Divination/Twigs.png",
       "FromArea": {
         "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key={{Time}}A3}}}}",
@@ -258,8 +224,8 @@
         "Height": 40
       },
       "ToArea": {
-        "X": 8,
-        "Y": 88,
+        "X": 3,
+        "Y": 85,
         "Width": 40,
         "Height": 40
       },
@@ -269,7 +235,7 @@
     {
       "LogName": "Hogwarts Twig Formation EditImage B1",
       "Action": "EditImage",
-      "Target": "Mods/{{ModId}}/XylomancyBase",
+      "Target": "{{ModId}}/XylomancyBase",
       "FromFile": "assets/Divination/Twigs.png",
       "FromArea": {
         "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key={{Time}}B1}}}}",
@@ -278,8 +244,8 @@
         "Height": 40
       },
       "ToArea": {
-        "X": 48,
-        "Y": 8,
+        "X": 44,
+        "Y": 3,
         "Width": 40,
         "Height": 40
       },
@@ -289,7 +255,7 @@
     {
       "LogName": "Hogwarts Twig Formation EditImage B2",
       "Action": "EditImage",
-      "Target": "Mods/{{ModId}}/XylomancyBase",
+      "Target": "{{ModId}}/XylomancyBase",
       "FromFile": "assets/Divination/Twigs.png",
       "FromArea": {
         "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key={{Time}}B2}}}}",
@@ -298,8 +264,8 @@
         "Height": 40
       },
       "ToArea": {
-        "X": 48,
-        "Y": 48,
+        "X": 44,
+        "Y": 44,
         "Width": 40,
         "Height": 40
       },
@@ -309,7 +275,7 @@
     {
       "LogName": "Hogwarts Twig Formation EditImage B3",
       "Action": "EditImage",
-      "Target": "Mods/{{ModId}}/XylomancyBase",
+      "Target": "{{ModId}}/XylomancyBase",
       "FromFile": "assets/Divination/Twigs.png",
       "FromArea": {
         "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key={{Time}}B3}}}}",
@@ -318,8 +284,8 @@
         "Height": 40
       },
       "ToArea": {
-        "X": 48,
-        "Y": 88,
+        "X": 44,
+        "Y": 85,
         "Width": 40,
         "Height": 40
       },
@@ -329,7 +295,7 @@
     {
       "LogName": "Hogwarts Twig Formation EditImage C1",
       "Action": "EditImage",
-      "Target": "Mods/{{ModId}}/XylomancyBase",
+      "Target": "{{ModId}}/XylomancyBase",
       "FromFile": "assets/Divination/Twigs.png",
       "FromArea": {
         "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key={{Time}}C1}}}}",
@@ -338,8 +304,8 @@
         "Height": 40
       },
       "ToArea": {
-        "X": 88,
-        "Y": 8,
+        "X": 85,
+        "Y": 3,
         "Width": 40,
         "Height": 40
       },
@@ -349,7 +315,7 @@
     {
       "LogName": "Hogwarts Twig Formation EditImage C2",
       "Action": "EditImage",
-      "Target": "Mods/{{ModId}}/XylomancyBase",
+      "Target": "{{ModId}}/XylomancyBase",
       "FromFile": "assets/Divination/Twigs.png",
       "FromArea": {
         "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key=C2{{Time}}}}}}",
@@ -358,8 +324,8 @@
         "Height": 40
       },
       "ToArea": {
-        "X": 88,
-        "Y": 48,
+        "X": 85,
+        "Y": 44,
         "Width": 40,
         "Height": 40
       },
@@ -369,7 +335,7 @@
     {
       "LogName": "Hogwarts Twig Formation EditImage C3",
       "Action": "EditImage",
-      "Target": "Mods/{{ModId}}/XylomancyBase",
+      "Target": "{{ModId}}/XylomancyBase",
       "FromFile": "assets/Divination/Twigs.png",
       "FromArea": {
         "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key={{Time}}C3}}}}",
@@ -378,8 +344,8 @@
         "Height": 40
       },
       "ToArea": {
-        "X": 88,
-        "Y": 88,
+        "X": 85,
+        "Y": 85,
         "Width": 40,
         "Height": 40
       },
@@ -389,7 +355,7 @@
     {
       "LogName": "Hogwarts Twig Formation EditImage Charmed Tent",
       "Action": "EditImage",
-      "Target": "Mods/{{ModId}}/XylomancyBase",
+      "Target": "{{ModId}}/XylomancyBase",
       "FromFile": "assets/Divination/Twigs.png",
       "FromArea": {
         "X": "{{Query: {{Random: 0, 40, 80, 120, 160, 200|key={{Time}}Twig}}}}",
@@ -442,6 +408,34 @@
           "MarkActionApplied": false
         }
       }
+    },
+    //Warp Data
+    {
+      "LogName": "Hogwarts Divination Classroom Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDivinationClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 13,
+            "Y": 21
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 66 56 {{ModId}}_HogwartsLibraryAnnex"
+          }
+        },
+        {
+          "Position": {
+            "X": 14,
+            "Y": 21
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 66 56 {{ModId}}_HogwartsLibraryAnnex"
+          }
+        }
+      ]
     }
   ]
 }
