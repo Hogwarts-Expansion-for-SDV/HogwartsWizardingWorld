@@ -1413,19 +1413,19 @@
         "Companion": {
           "DespawnOnTile": [
             0,
-            122,
+            121,
             0
           ],
           "IdleArguments": [
             0,
-            122,
+            121,
             0
           ]
         }
       },
       "When": {
         "HasMod|contains=PeacefulEnd.CustomCompanions": true,
-        "HasMod|contains=HogwartsET.CC.Hogwarts": true,
+        "HasMod|contains=HogwartsET.CC": true,
         "Day": "1, 15"
       },
       "Update": "OnTimeChange"
@@ -1438,7 +1438,7 @@
         {
           "Position": {
             "X": 137,
-            "Y": 122
+            "Y": 121
           },
           "Layer": "Back",
           "SetProperties": {
@@ -1448,7 +1448,7 @@
         {
           "Position": {
             "X": 127,
-            "Y": 122
+            "Y": 121
           },
           "Layer": "Back",
           "SetProperties": {
@@ -1458,7 +1458,7 @@
         {
           "Position": {
             "X": 117,
-            "Y": 122
+            "Y": 121
           },
           "Layer": "Back",
           "SetProperties": {
@@ -1468,7 +1468,7 @@
         {
           "Position": {
             "X": 107,
-            "Y": 122
+            "Y": 121
           },
           "Layer": "Back",
           "SetProperties": {
@@ -1503,7 +1503,7 @@
       },
       "When": {
         "HasMod|contains=PeacefulEnd.CustomCompanions": true,
-        "HasMod|contains=HogwartsET.CC.Hogwarts": true,
+        "HasMod|contains=HogwartsET.CC": true,
         "Day": "8, 22"
       },
       "Update": "OnTimeChange"
@@ -2067,65 +2067,5 @@
         "HasMod |contains= mushymato.MMAP": true
       }
     }
-    /*Bird Animation DMTE
-    {
-      "LogName": "Hogsmeade Village Animation",
-      "Action": "EditData",
-      "Target": "DMT/Animations",
-      "Entries": {
-        "{{ModId}}.HogsmeadeVillage": [
-          {
-            "Name": "Bird1",
-            "Texture": "TileSheets\\critters",
-            "SourceRect": {
-              "X": 160,
-              "Y": 64,
-              "Width": 32,
-              "Height": 32
-            },
-            "Position": {
-              "X": 7744,
-              "Y": 704
-            },
-            "Scale": 4,
-            "Length": 2,
-            "LayerDepth": 0,
-            "Loops": 50000,
-            "Flipped": false,
-            "Interval": 1000
-          }
-        ]
-      },
-      "When": {
-        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
-      }
-    },
-    {
-      "LogName": "Hogsmeade Village Bird 1 Animation Idle",
-      "Action": "EditData",
-      "Target": "DMT/Tiles",
-      "Entries": {
-        "{{ModId}}.Bird1AnimationIdle": {
-          "Locations": [
-            "{{ModId}}_HogsmeadeVillage"
-          ],
-          "Layers": [
-            "Back"
-          ],
-          "Actions": [
-            {
-              "LogName": "Bird 1 Idle Astronomy Table",
-              "Key": "DMT/animation",
-              "Value": "{{ModId}}.HogsmeadeVillage,Bird1",
-              "Trigger": "Load",
-              "Once": false
-            }
-          ]
-        }
-      },
-      "When": {
-        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
-      }
-    }*/
   ]
 }
