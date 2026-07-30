@@ -1,26 +1,6 @@
 {
   "Changes": [
     {
-      "LogName": "Hogwarts Area of Effect Buffs",
-      "Action": "EditData",
-      "Target": "Data/Buffs",
-      "Entries": {
-        "{{ModId}}_HogsmeadeVillageCenter": {
-          "DisplayName": "Incendio",
-          "Description": "A charm that conjures a jet of flames.",
-          "IsDebuff": false,
-          "GlowColor": null,
-          "Duration": 99999,
-          "MaxDuration": -1,
-          "IconTexture": "TileSheets/BuffsIcons",
-          "IconSpriteIndex": 12,
-          "ActionsOnApply": [
-            "AddMail Current {{ModId}}_HogsmeadeVillageCenter received"
-          ]
-        }
-      }
-    },
-    {
       "LogName": "Hogwarts Area of Effect Spells",
       "Action": "EditData",
       "Target": "aedenthorn.AreaOfEffect/spells",
@@ -35,27 +15,26 @@
           "SetSound": "fairy_heal",
           "SpellLevels": [
             {
-              "Buffs": [
-                "{{ModId}}_HogsmeadeVillageCenter"
-              ]
+              "TriggerAction": "AddMail Current {{ModId}}_HogsmeadeVillageCenter received"
             }
           ]
         },
         "{{ModId}}_Reducto": {
           "DisplayName": "Reducto",
           "Sequence": [
-            "DownLeft",
-            "DownRight"
+            "DownRight",
+            "DownLeft"
           ],
           "SetSound": "fairy_heal",
           "SpellLevels": [
             {
-              "Buffs": [
-                "{{ModId}}_HogsmeadeVillageCenter"
-              ]
+              "TriggerAction": "AddMail Current {{ModId}}_HogsmeadeVillageCenter received"
             }
           ]
         }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.AreaOfEffect": true
       }
     },
     {
@@ -63,13 +42,16 @@
       "Action": "EditData",
       "Target": "aedenthorn.AreaOfEffect/tools",
       "Entries": {
-        "{{ModId}}_AcaciaWand": {
+        "{{ModId}}_{{Wand}}Wand": {
           "RechargeSound": "cowboy_powerup",
           "Spells": [
             "{{ModId}}_HogsmeadeVillageCenter",
             "{{ModId}}_Reducto"
           ]
         }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.AreaOfEffect": true
       }
     }
   ]

@@ -3,414 +3,6 @@
     /*Priority early; otherwise, wand upgrades won't work.
         Lower speed until appropriate.*/
     {
-      "LogName": "Hogwarts Wands Tools Data",
-      "Action": "EditData",
-      "Target": "Data/Tools",
-      "Priority": "Early",
-      "Entries": {
-        "{{ModId}}_AcaciaWand": {
-          "Name": "{{ModId}}_AcaciaWand",
-          "DisplayName": "{{i18n: obj.wands.AcaciaWand.name}}",
-          "Description": "{{i18n: obj.wands.AcaciaWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 0
-        },
-        "{{ModId}}_AlderWand": {
-          "Name": "{{ModId}}_AlderWand",
-          "DisplayName": "{{i18n: obj.wands.AlderWand.name}}",
-          "Description": "{{i18n: obj.wands.AlderWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 1
-        },
-        "{{ModId}}_AppleWand": {
-          "Name": "{{ModId}}_AppleWand",
-          "DisplayName": "{{i18n: obj.wands.AppleWand.name}}",
-          "Description": "{{i18n: obj.wands.AppleWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 2
-        },
-        "{{ModId}}_AshWand": {
-          "Name": "{{ModId}}_AshWand",
-          "DisplayName": "{{i18n: obj.wands.AshWand.name}}",
-          "Description": "{{i18n: obj.wands.AshWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 3
-        },
-        "{{ModId}}_AspenWand": {
-          "Name": "{{ModId}}_AspenWand",
-          "DisplayName": "{{i18n: obj.wands.AspenWand.name}}",
-          "Description": "{{i18n: obj.wands.AspenWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 4
-        },
-        "{{ModId}}_BeechWand": {
-          "Name": "{{ModId}}_BeechWand",
-          "DisplayName": "{{i18n: obj.wands.BeechWand.name}}",
-          "Description": "{{i18n: obj.wands.BeechWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 5
-        },
-        "{{ModId}}_BirchWand": {
-          "Name": "{{ModId}}_BirchWand",
-          "DisplayName": "{{i18n: obj.wands.BirchWand.name}}",
-          "Description": "{{i18n: obj.wands.BirchWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 6
-        },
-        "{{ModId}}_BlackWalnutWand": {
-          "Name": "{{ModId}}_BlackWalnutWand",
-          "DisplayName": "{{i18n: obj.wands.BlackWalnutWand.name}}",
-          "Description": "{{i18n: obj.wands.BlackWalnutWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 7
-        },
-        "{{ModId}}_BlackthornWand": {
-          "Name": "{{ModId}}_BlackthornWand",
-          "DisplayName": "{{i18n: obj.wands.BlackthornWand.name}}",
-          "Description": "{{i18n: obj.wands.BlackthornWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 8
-        },
-        "{{ModId}}_BrazilwoodWand": {
-          "Name": "{{ModId}}_BrazilwoodWand",
-          "DisplayName": "{{i18n: obj.wands.BrazilwoodWand.name}}",
-          "Description": "{{i18n: obj.wands.BrazilwoodWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 9
-        },
-        "{{ModId}}_CedarWand": {
-          "Name": "{{ModId}}_CedarWand",
-          "DisplayName": "{{i18n: obj.wands.CedarWand.name}}",
-          "Description": "{{i18n: obj.wands.CedarWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 10
-        },
-        "{{ModId}}_CherryWand": {
-          "Name": "{{ModId}}_CherryWand",
-          "DisplayName": "{{i18n: obj.wands.CherryWand.name}}",
-          "Description": "{{i18n: obj.wands.CherryWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 11
-        },
-        "{{ModId}}_ChestnutWand": {
-          "Name": "{{ModId}}_ChestnutWand",
-          "DisplayName": "{{i18n: obj.wands.ChestnutWand.name}}",
-          "Description": "{{i18n: obj.wands.ChestnutWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 12
-        },
-        "{{ModId}}_CypressWand": {
-          "Name": "{{ModId}}_CypressWand",
-          "DisplayName": "{{i18n: obj.wands.CypressWand.name}}",
-          "Description": "{{i18n: obj.wands.CypressWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 13
-        },
-        "{{ModId}}_DogwoodWand": {
-          "Name": "{{ModId}}_DogwoodWand",
-          "DisplayName": "{{i18n: obj.wands.DogwoodWand.name}}",
-          "Description": "{{i18n: obj.wands.DogwoodWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 14
-        },
-        "{{ModId}}_EbonyWand": {
-          "Name": "{{ModId}}_EbonyWand",
-          "DisplayName": "{{i18n: obj.wands.EbonyWand.name}}",
-          "Description": "{{i18n: obj.wands.EbonyWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 15
-        },
-        "{{ModId}}_ElderWoodWand": {
-          "Name": "{{ModId}}_ElderWoodWand",
-          "DisplayName": "{{i18n: obj.wands.ElderWoodWand.name}}",
-          "Description": "{{i18n: obj.wands.ElderWoodWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 16
-        },
-        "{{ModId}}_ElmWand": {
-          "Name": "{{ModId}}_ElmWand",
-          "DisplayName": "{{i18n: obj.wands.ElmWand.name}}",
-          "Description": "{{i18n: obj.wands.ElmWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 17
-        },
-        "{{ModId}}_EnglishOakWand": {
-          "Name": "{{ModId}}_EnglishOakWand",
-          "DisplayName": "{{i18n: obj.wands.EnglishOakWand.name}}",
-          "Description": "{{i18n: obj.wands.EnglishOakWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 18
-        },
-        "{{ModId}}_FirWand": {
-          "Name": "{{ModId}}_FirWand",
-          "DisplayName": "{{i18n: obj.wands.FirWand.name}}",
-          "Description": "{{i18n: obj.wands.FirWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 19
-        },
-        "{{ModId}}_HawthornWand": {
-          "Name": "{{ModId}}_HawthornWand",
-          "DisplayName": "{{i18n: obj.wands.HawthornWand.name}}",
-          "Description": "{{i18n: obj.wands.HawthornWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 20
-        },
-        "{{ModId}}_HazelWand": {
-          "Name": "{{ModId}}_HazelWand",
-          "DisplayName": "{{i18n: obj.wands.HazelWand.name}}",
-          "Description": "{{i18n: obj.wands.HazelWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 21
-        },
-        "{{ModId}}_HollyWand": {
-          "Name": "{{ModId}}_HollyWand",
-          "DisplayName": "{{i18n: obj.wands.HollyWand.name}}",
-          "Description": "{{i18n: obj.wands.HollyWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 22
-        },
-        "{{ModId}}_HornbeamWand": {
-          "Name": "{{ModId}}_HornbeamWand",
-          "DisplayName": "{{i18n: obj.wands.HornbeamWand.name}}",
-          "Description": "{{i18n: obj.wands.HornbeamWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 23
-        },
-        "{{ModId}}_IvyWand": {
-          "Name": "{{ModId}}_IvyWand",
-          "DisplayName": "{{i18n: obj.wands.IvyWand.name}}",
-          "Description": "{{i18n: obj.wands.IvyWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 24
-        },
-        "{{ModId}}_LarchWand": {
-          "Name": "{{ModId}}_LarchWand",
-          "DisplayName": "{{i18n: obj.wands.LarchWand.name}}",
-          "Description": "{{i18n: obj.wands.LarchWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 25
-        },
-        "{{ModId}}_LaurelWand": {
-          "Name": "{{ModId}}_LaurelWand",
-          "DisplayName": "{{i18n: obj.wands.LaurelWand.name}}",
-          "Description": "{{i18n: obj.wands.LaurelWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 26
-        },
-        "{{ModId}}_MahoganyWand": {
-          "Name": "{{ModId}}_MahoganyWand",
-          "DisplayName": "{{i18n: obj.wands.MahoganyWand.name}}",
-          "Description": "{{i18n: obj.wands.MahoganyWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 27
-        },
-        "{{ModId}}_MapleWand": {
-          "Name": "{{ModId}}_MapleWand",
-          "DisplayName": "{{i18n: obj.wands.MapleWand.name}}",
-          "Description": "{{i18n: obj.wands.MapleWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 28
-        },
-        "{{ModId}}_OliveWand": {
-          "Name": "{{ModId}}_OliveWand",
-          "DisplayName": "{{i18n: obj.wands.OliveWand.name}}",
-          "Description": "{{i18n: obj.wands.OliveWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 29
-        },
-        "{{ModId}}_PearWand": {
-          "Name": "{{ModId}}_PearWand",
-          "DisplayName": "{{i18n: obj.wands.PearWand.name}}",
-          "Description": "{{i18n: obj.wands.PearWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 30
-        },
-        "{{ModId}}_PineWand": {
-          "Name": "{{ModId}}_PineWand",
-          "DisplayName": "{{i18n: obj.wands.PineWand.name}}",
-          "Description": "{{i18n: obj.wands.PineWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 31
-        },
-        "{{ModId}}_PoplarWand": {
-          "Name": "{{ModId}}_PoplarWand",
-          "DisplayName": "{{i18n: obj.wands.PoplarWand.name}}",
-          "Description": "{{i18n: obj.wands.PoplarWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 32
-        },
-        "{{ModId}}_PricklyAshWand": {
-          "Name": "{{ModId}}_PricklyAshWand",
-          "DisplayName": "{{i18n: obj.wands.PricklyAshWand.name}}",
-          "Description": "{{i18n: obj.wands.PricklyAshWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 33
-        },
-        "{{ModId}}_RedOakWand": {
-          "Name": "{{ModId}}_RedOakWand",
-          "DisplayName": "{{i18n: obj.wands.RedOakWand.name}}",
-          "Description": "{{i18n: obj.wands.RedOakWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 34
-        },
-        "{{ModId}}_RedwoodWand": {
-          "Name": "{{ModId}}_RedwoodWand",
-          "DisplayName": "{{i18n: obj.wands.RedwoodWand.name}}",
-          "Description": "{{i18n: obj.wands.RedwoodWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 35
-        },
-        "{{ModId}}_ReedWand": {
-          "Name": "{{ModId}}_ReedWand",
-          "DisplayName": "{{i18n: obj.wands.ReedWand.name}}",
-          "Description": "{{i18n: obj.wands.ReedWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 36
-        },
-        "{{ModId}}_RosewoodWand": {
-          "Name": "{{ModId}}_RosewoodWand",
-          "DisplayName": "{{i18n: obj.wands.RosewoodWand.name}}",
-          "Description": "{{i18n: obj.wands.RosewoodWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 37
-        },
-        "{{ModId}}_RowanWand": {
-          "Name": "{{ModId}}_RowanWand",
-          "DisplayName": "{{i18n: obj.wands.RowanWand.name}}",
-          "Description": "{{i18n: obj.wands.RowanWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 38
-        },
-        "{{ModId}}_SilverLimeWand": {
-          "Name": "{{ModId}}_SilverLimeWand",
-          "DisplayName": "{{i18n: obj.wands.SilverLimeWand.name}}",
-          "Description": "{{i18n: obj.wands.SilverLimeWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 39
-        },
-        "{{ModId}}_SpruceWand": {
-          "Name": "{{ModId}}_SpruceWand",
-          "DisplayName": "{{i18n: obj.wands.SpruceWand.name}}",
-          "Description": "{{i18n: obj.wands.SpruceWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 40
-        },
-        "{{ModId}}_SnakewoodWand": {
-          "Name": "{{ModId}}_SnakewoodWand",
-          "DisplayName": "{{i18n: obj.wands.SnakewoodWand.name}}",
-          "Description": "{{i18n: obj.wands.SnakewoodWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 41
-        },
-        "{{ModId}}_SugarMapleWand": {
-          "Name": "{{ModId}}_SugarMapleWand",
-          "DisplayName": "{{i18n: obj.wands.SugarMapleWand.name}}",
-          "Description": "{{i18n: obj.wands.SugarMapleWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 42
-        },
-        "{{ModId}}_SwampMayhawWand": {
-          "Name": "{{ModId}}_SwampMayhawWand",
-          "DisplayName": "{{i18n: obj.wands.SwampMayhawWand.name}}",
-          "Description": "{{i18n: obj.wands.SwampMayhawWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 43
-        },
-        "{{ModId}}_SycamoreWand": {
-          "Name": "{{ModId}}_SycamoreWand",
-          "DisplayName": "{{i18n: obj.wands.SycamoreWand.name}}",
-          "Description": "{{i18n: obj.wands.SycamoreWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 44
-        },
-        "{{ModId}}_TamarackWand": {
-          "Name": "{{ModId}}_TamarackWand",
-          "DisplayName": "{{i18n: obj.wands.TamarackWand.name}}",
-          "Description": "{{i18n: obj.wands.TamarackWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 45
-        },
-        "{{ModId}}_VineWand": {
-          "Name": "{{ModId}}_VineWand",
-          "DisplayName": "{{i18n: obj.wands.VineWand.name}}",
-          "Description": "{{i18n: obj.wands.VineWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 46
-        },
-        "{{ModId}}_WalnutWand": {
-          "Name": "{{ModId}}_WalnutWand",
-          "DisplayName": "{{i18n: obj.wands.WalnutWand.name}}",
-          "Description": "{{i18n: obj.wands.WalnutWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 47
-        },
-        "{{ModId}}_WillowWand": {
-          "Name": "{{ModId}}_WillowWand",
-          "DisplayName": "{{i18n: obj.wands.WillowWand.name}}",
-          "Description": "{{i18n: obj.wands.WillowWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 48
-        },
-        "{{ModId}}_YewWand": {
-          "Name": "{{ModId}}_YewWand",
-          "DisplayName": "{{i18n: obj.wands.YewWand.name}}",
-          "Description": "{{i18n: obj.wands.YewWand.desc}}",
-          "ClassName": "GenericTool",
-          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
-          "SpriteIndex": 49
-        }
-      }
-    },
-    {
       "LogName": "Hogwarts Expansion Objects Weapons Data Wands",
       "Action": "EditData",
       "Target": "Data/Weapons",
@@ -432,10 +24,10 @@
           "AreaOfEffect": 100,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 0,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -482,7 +74,7 @@
                 "ItemId": "(O)132"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_AlderWand": {
           "Name": "Alder Wand",
@@ -500,10 +92,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 1,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -550,7 +142,7 @@
                 "ItemId": "(O)157"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_AppleWand": {
           "Name": "Apple Wand",
@@ -568,10 +160,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 2,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -618,7 +210,7 @@
                 "ItemId": "(O)613"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_AshWand": {
           "Name": "Ash Wand",
@@ -636,10 +228,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 3,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -686,7 +278,7 @@
                 "ItemId": "(O)544"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_AspenWand": {
           "Name": "Aspen Wand",
@@ -704,10 +296,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 4,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -754,7 +346,7 @@
                 "ItemId": "(O)582"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_BeechWand": {
           "Name": "Beech Wand",
@@ -772,10 +364,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 5,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -822,7 +414,7 @@
                 "ItemId": "(O)CalicoEggStone_1"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_BirchWand": {
           "Name": "Birch Wand",
@@ -840,10 +432,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 6,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -890,7 +482,7 @@
                 "ItemId": "(O)456"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_BlackWalnutWand": {
           "Name": "Black Walnut Wand",
@@ -908,10 +500,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 7,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -958,7 +550,7 @@
                 "ItemId": "(O)553"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_BlackthornWand": {
           "Name": "Blackthorn Wand",
@@ -976,10 +568,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 8,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -1026,7 +618,7 @@
                 "ItemId": "(O)599"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_BrazilwoodWand": {
           "Name": "Brazilwood Wand",
@@ -1044,10 +636,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 9,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -1094,7 +686,7 @@
                 "ItemId": "(O)MossySeed"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_CedarWand": {
           "Name": "Cedar Wand",
@@ -1112,10 +704,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 10,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -1162,7 +754,7 @@
                 "ItemId": "(O)Moss"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_CherryWand": {
           "Name": "Cherry Wand",
@@ -1180,10 +772,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 11,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -1230,7 +822,7 @@
                 "ItemId": "(O)685"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_ChestnutWand": {
           "Name": "Chestnut Wand",
@@ -1248,10 +840,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 12,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -1298,7 +890,7 @@
                 "ItemId": "(O)560"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_CypressWand": {
           "Name": "Cypress Wand",
@@ -1316,10 +908,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 13,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -1366,7 +958,7 @@
                 "ItemId": "(O)539"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_DogwoodWand": {
           "Name": "Dogwood Wand",
@@ -1384,10 +976,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 14,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -1434,7 +1026,7 @@
                 "ItemId": "(O)397"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_EbonyWand": {
           "Name": "Ebony Wand",
@@ -1452,10 +1044,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 15,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -1502,7 +1094,7 @@
                 "ItemId": "(O)382"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_ElderWoodWand": {
           "Name": "Elder Wood Wand",
@@ -1520,10 +1112,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 16,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -1570,7 +1162,7 @@
                 "ItemId": "(O)526"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_ElmWand": {
           "Name": "Elm Wand",
@@ -1588,10 +1180,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 17,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -1638,7 +1230,7 @@
                 "ItemId": "(O)586"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_EnglishOakWand": {
           "Name": "English Oak Wand",
@@ -1656,10 +1248,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 18,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -1706,7 +1298,7 @@
                 "ItemId": "(O)751"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_FirWand": {
           "Name": "Fir Wand",
@@ -1724,10 +1316,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 19,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -1774,7 +1366,7 @@
                 "ItemId": "(O)823"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_HawthornWand": {
           "Name": "Hawthorn Wand",
@@ -1792,10 +1384,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 20,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -1842,7 +1434,7 @@
                 "ItemId": "(O)830"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_HazelWand": {
           "Name": "Hazel Wand",
@@ -1860,10 +1452,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 21,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -1910,7 +1502,7 @@
                 "ItemId": "(O)861"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_HollyWand": {
           "Name": "Holly Wand",
@@ -1928,10 +1520,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 22,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -1978,7 +1570,7 @@
                 "ItemId": "(O)862"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_HornbeamWand": {
           "Name": "Hornbeam Wand",
@@ -1996,10 +1588,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 23,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -2046,7 +1638,7 @@
                 "ItemId": "(O)70"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_IvyWand": {
           "Name": "Ivy Wand",
@@ -2064,10 +1656,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 24,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -2114,7 +1706,7 @@
                 "ItemId": "(O)399"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_LarchWand": {
           "Name": "Larch Wand",
@@ -2132,10 +1724,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 25,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -2182,7 +1774,7 @@
                 "ItemId": "(O)407"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_LaurelWand": {
           "Name": "Laurel Wand",
@@ -2200,10 +1792,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 26,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -2250,7 +1842,7 @@
                 "ItemId": "(O)718"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_MahoganyWand": {
           "Name": "Mahogany Wand",
@@ -2268,10 +1860,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 27,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -2318,7 +1910,7 @@
                 "ItemId": "(O)841"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_MapleWand": {
           "Name": "Maple Wand",
@@ -2336,10 +1928,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 28,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -2386,7 +1978,7 @@
                 "ItemId": "(O)82"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_OliveWand": {
           "Name": "Olive Wand",
@@ -2404,10 +1996,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 29,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -2454,7 +2046,7 @@
                 "ItemId": "(O)324"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_PearWand": {
           "Name": "Pear Wand",
@@ -2472,10 +2064,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 30,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -2522,7 +2114,7 @@
                 "ItemId": "(O)315"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_PineWand": {
           "Name": "Pine Wand",
@@ -2540,10 +2132,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 31,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -2590,7 +2182,7 @@
                 "ItemId": "(O)382"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_PoplarWand": {
           "Name": "Poplar Wand",
@@ -2608,10 +2200,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 32,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -2658,7 +2250,7 @@
                 "ItemId": "(O)174"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_PricklyAshWand": {
           "Name": "Prickly Ash Wand",
@@ -2676,10 +2268,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 33,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -2726,7 +2318,7 @@
                 "ItemId": "(O)238"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_RedOakWand": {
           "Name": "Red Oak Wand",
@@ -2744,10 +2336,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 34,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -2794,7 +2386,7 @@
                 "ItemId": "(O)256"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_RedwoodWand": {
           "Name": "Redwood Wand",
@@ -2812,10 +2404,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 35,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -2862,7 +2454,7 @@
                 "ItemId": "(O)56"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_ReedWand": {
           "Name": "Reed Wand",
@@ -2880,10 +2472,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 36,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -2930,7 +2522,7 @@
                 "ItemId": "(O)SeedSpot"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_RosewoodWand": {
           "Name": "Rosewood Wand",
@@ -2948,10 +2540,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 37,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -2998,7 +2590,7 @@
                 "ItemId": "(O)923"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_RowanWand": {
           "Name": "Rowan Wand",
@@ -3016,10 +2608,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 38,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -3066,7 +2658,7 @@
                 "ItemId": "(O)106"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_SilverLimeWand": {
           "Name": "Silver Lime Wand",
@@ -3084,10 +2676,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 39,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -3134,7 +2726,7 @@
                 "ItemId": "(O)880"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_SpruceWand": {
           "Name": "Spruce Wand",
@@ -3152,10 +2744,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 41,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -3202,7 +2794,7 @@
                 "ItemId": "(O)670"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_SnakewoodWand": {
           "Name": "Snakewood Wand",
@@ -3220,10 +2812,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 40,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -3270,7 +2862,7 @@
                 "ItemId": "(O)534"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_SugarMapleWand": {
           "Name": "Sugar Maple Wand",
@@ -3288,10 +2880,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 42,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -3338,7 +2930,7 @@
                 "ItemId": "(O)315"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_SwampMayhawWand": {
           "Name": "Swamp Mayhaw Wand",
@@ -3356,10 +2948,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 43,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -3406,7 +2998,7 @@
                 "ItemId": "(O)199"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_SycamoreWand": {
           "Name": "Sycamore Wand",
@@ -3424,10 +3016,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 44,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -3474,7 +3066,7 @@
                 "ItemId": "(O)314"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_TamarackWand": {
           "Name": "Tamarack Wand",
@@ -3492,10 +3084,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 45,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -3542,7 +3134,7 @@
                 "ItemId": "(O)446"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_VineWand": {
           "Name": "Vine Wand",
@@ -3560,10 +3152,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 46,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -3610,7 +3202,7 @@
                 "ItemId": "(O)892"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_WalnutWand": {
           "Name": "Walnut Wand",
@@ -3628,10 +3220,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 47,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -3678,7 +3270,7 @@
                 "ItemId": "(O)BasicCoalNode0"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_WillowWand": {
           "Name": "Willow Wand",
@@ -3696,10 +3288,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 48,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -3746,7 +3338,7 @@
                 "ItemId": "(O)GreenRainWeeds1"
               }
             }
-          ]
+          ]*/
         },
         "{{ModId}}_YewWand": {
           "Name": "Yew Wand",
@@ -3764,10 +3356,10 @@
           "AreaOfEffect": 0,
           "CritChance": 0,
           "CritMultiplier": 0,
-          "CanBeLostOnDeath": false,
+          "CanBeLostOnDeath": true,
           "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
           "SpriteIndex": 49,
-          "Projectiles": [
+          /*"Projectiles": [
             {
               "Id": "Forward",
               "Damage": "{{Query: {{Random: {{Range: 30, 50}}}}}}",
@@ -3814,9 +3406,518 @@
                 "ItemId": "(O)685"
               }
             }
-          ]
+          ]*/
         }
       }
-    }
+    },
+    /*{
+      "LogName": "Hogwarts Wands Tools Data",
+      "Action": "EditData",
+      "Target": "Data/Tools",
+      "Priority": "Early",
+      "Entries": {
+        "{{ModId}}_AcaciaWand": {
+          "Name": "{{ModId}}_AcaciaWand",
+          "DisplayName": "{{i18n: obj.wands.AcaciaWand.name}}",
+          "Description": "{{i18n: obj.wands.AcaciaWand.desc}}",
+          "ClassName": "MeleeWeapon",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 0,
+          "MenuSpriteIndex": 0,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_AlderWand": {
+          "Name": "{{ModId}}_AlderWand",
+          "DisplayName": "{{i18n: obj.wands.AlderWand.name}}",
+          "Description": "{{i18n: obj.wands.AlderWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 1,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_AppleWand": {
+          "Name": "{{ModId}}_AppleWand",
+          "DisplayName": "{{i18n: obj.wands.AppleWand.name}}",
+          "Description": "{{i18n: obj.wands.AppleWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 2,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_AshWand": {
+          "Name": "{{ModId}}_AshWand",
+          "DisplayName": "{{i18n: obj.wands.AshWand.name}}",
+          "Description": "{{i18n: obj.wands.AshWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 3,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_AspenWand": {
+          "Name": "{{ModId}}_AspenWand",
+          "DisplayName": "{{i18n: obj.wands.AspenWand.name}}",
+          "Description": "{{i18n: obj.wands.AspenWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 4,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_BeechWand": {
+          "Name": "{{ModId}}_BeechWand",
+          "DisplayName": "{{i18n: obj.wands.BeechWand.name}}",
+          "Description": "{{i18n: obj.wands.BeechWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 5,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_BirchWand": {
+          "Name": "{{ModId}}_BirchWand",
+          "DisplayName": "{{i18n: obj.wands.BirchWand.name}}",
+          "Description": "{{i18n: obj.wands.BirchWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 6,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_BlackWalnutWand": {
+          "Name": "{{ModId}}_BlackWalnutWand",
+          "DisplayName": "{{i18n: obj.wands.BlackWalnutWand.name}}",
+          "Description": "{{i18n: obj.wands.BlackWalnutWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 7,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_BlackthornWand": {
+          "Name": "{{ModId}}_BlackthornWand",
+          "DisplayName": "{{i18n: obj.wands.BlackthornWand.name}}",
+          "Description": "{{i18n: obj.wands.BlackthornWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 8,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_BrazilwoodWand": {
+          "Name": "{{ModId}}_BrazilwoodWand",
+          "DisplayName": "{{i18n: obj.wands.BrazilwoodWand.name}}",
+          "Description": "{{i18n: obj.wands.BrazilwoodWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 9,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_CedarWand": {
+          "Name": "{{ModId}}_CedarWand",
+          "DisplayName": "{{i18n: obj.wands.CedarWand.name}}",
+          "Description": "{{i18n: obj.wands.CedarWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 10,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_CherryWand": {
+          "Name": "{{ModId}}_CherryWand",
+          "DisplayName": "{{i18n: obj.wands.CherryWand.name}}",
+          "Description": "{{i18n: obj.wands.CherryWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 11,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_ChestnutWand": {
+          "Name": "{{ModId}}_ChestnutWand",
+          "DisplayName": "{{i18n: obj.wands.ChestnutWand.name}}",
+          "Description": "{{i18n: obj.wands.ChestnutWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 12,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_CypressWand": {
+          "Name": "{{ModId}}_CypressWand",
+          "DisplayName": "{{i18n: obj.wands.CypressWand.name}}",
+          "Description": "{{i18n: obj.wands.CypressWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 13,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_DogwoodWand": {
+          "Name": "{{ModId}}_DogwoodWand",
+          "DisplayName": "{{i18n: obj.wands.DogwoodWand.name}}",
+          "Description": "{{i18n: obj.wands.DogwoodWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 14,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_EbonyWand": {
+          "Name": "{{ModId}}_EbonyWand",
+          "DisplayName": "{{i18n: obj.wands.EbonyWand.name}}",
+          "Description": "{{i18n: obj.wands.EbonyWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 15,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_ElderWoodWand": {
+          "Name": "{{ModId}}_ElderWoodWand",
+          "DisplayName": "{{i18n: obj.wands.ElderWoodWand.name}}",
+          "Description": "{{i18n: obj.wands.ElderWoodWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 16,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_ElmWand": {
+          "Name": "{{ModId}}_ElmWand",
+          "DisplayName": "{{i18n: obj.wands.ElmWand.name}}",
+          "Description": "{{i18n: obj.wands.ElmWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 17,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_EnglishOakWand": {
+          "Name": "{{ModId}}_EnglishOakWand",
+          "DisplayName": "{{i18n: obj.wands.EnglishOakWand.name}}",
+          "Description": "{{i18n: obj.wands.EnglishOakWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 18,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_FirWand": {
+          "Name": "{{ModId}}_FirWand",
+          "DisplayName": "{{i18n: obj.wands.FirWand.name}}",
+          "Description": "{{i18n: obj.wands.FirWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 19,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_HawthornWand": {
+          "Name": "{{ModId}}_HawthornWand",
+          "DisplayName": "{{i18n: obj.wands.HawthornWand.name}}",
+          "Description": "{{i18n: obj.wands.HawthornWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 20,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_HazelWand": {
+          "Name": "{{ModId}}_HazelWand",
+          "DisplayName": "{{i18n: obj.wands.HazelWand.name}}",
+          "Description": "{{i18n: obj.wands.HazelWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 21,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_HollyWand": {
+          "Name": "{{ModId}}_HollyWand",
+          "DisplayName": "{{i18n: obj.wands.HollyWand.name}}",
+          "Description": "{{i18n: obj.wands.HollyWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 22,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_HornbeamWand": {
+          "Name": "{{ModId}}_HornbeamWand",
+          "DisplayName": "{{i18n: obj.wands.HornbeamWand.name}}",
+          "Description": "{{i18n: obj.wands.HornbeamWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 23,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_IvyWand": {
+          "Name": "{{ModId}}_IvyWand",
+          "DisplayName": "{{i18n: obj.wands.IvyWand.name}}",
+          "Description": "{{i18n: obj.wands.IvyWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 24,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_LarchWand": {
+          "Name": "{{ModId}}_LarchWand",
+          "DisplayName": "{{i18n: obj.wands.LarchWand.name}}",
+          "Description": "{{i18n: obj.wands.LarchWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 25,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_LaurelWand": {
+          "Name": "{{ModId}}_LaurelWand",
+          "DisplayName": "{{i18n: obj.wands.LaurelWand.name}}",
+          "Description": "{{i18n: obj.wands.LaurelWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 26,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_MahoganyWand": {
+          "Name": "{{ModId}}_MahoganyWand",
+          "DisplayName": "{{i18n: obj.wands.MahoganyWand.name}}",
+          "Description": "{{i18n: obj.wands.MahoganyWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 27,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_MapleWand": {
+          "Name": "{{ModId}}_MapleWand",
+          "DisplayName": "{{i18n: obj.wands.MapleWand.name}}",
+          "Description": "{{i18n: obj.wands.MapleWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 28,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_OliveWand": {
+          "Name": "{{ModId}}_OliveWand",
+          "DisplayName": "{{i18n: obj.wands.OliveWand.name}}",
+          "Description": "{{i18n: obj.wands.OliveWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 29,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_PearWand": {
+          "Name": "{{ModId}}_PearWand",
+          "DisplayName": "{{i18n: obj.wands.PearWand.name}}",
+          "Description": "{{i18n: obj.wands.PearWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 30,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_PineWand": {
+          "Name": "{{ModId}}_PineWand",
+          "DisplayName": "{{i18n: obj.wands.PineWand.name}}",
+          "Description": "{{i18n: obj.wands.PineWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 31,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_PoplarWand": {
+          "Name": "{{ModId}}_PoplarWand",
+          "DisplayName": "{{i18n: obj.wands.PoplarWand.name}}",
+          "Description": "{{i18n: obj.wands.PoplarWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 32,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_PricklyAshWand": {
+          "Name": "{{ModId}}_PricklyAshWand",
+          "DisplayName": "{{i18n: obj.wands.PricklyAshWand.name}}",
+          "Description": "{{i18n: obj.wands.PricklyAshWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 33,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_RedOakWand": {
+          "Name": "{{ModId}}_RedOakWand",
+          "DisplayName": "{{i18n: obj.wands.RedOakWand.name}}",
+          "Description": "{{i18n: obj.wands.RedOakWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 34,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_RedwoodWand": {
+          "Name": "{{ModId}}_RedwoodWand",
+          "DisplayName": "{{i18n: obj.wands.RedwoodWand.name}}",
+          "Description": "{{i18n: obj.wands.RedwoodWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 35,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_ReedWand": {
+          "Name": "{{ModId}}_ReedWand",
+          "DisplayName": "{{i18n: obj.wands.ReedWand.name}}",
+          "Description": "{{i18n: obj.wands.ReedWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 36,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_RosewoodWand": {
+          "Name": "{{ModId}}_RosewoodWand",
+          "DisplayName": "{{i18n: obj.wands.RosewoodWand.name}}",
+          "Description": "{{i18n: obj.wands.RosewoodWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 37,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_RowanWand": {
+          "Name": "{{ModId}}_RowanWand",
+          "DisplayName": "{{i18n: obj.wands.RowanWand.name}}",
+          "Description": "{{i18n: obj.wands.RowanWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 38,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_SilverLimeWand": {
+          "Name": "{{ModId}}_SilverLimeWand",
+          "DisplayName": "{{i18n: obj.wands.SilverLimeWand.name}}",
+          "Description": "{{i18n: obj.wands.SilverLimeWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 39,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_SpruceWand": {
+          "Name": "{{ModId}}_SpruceWand",
+          "DisplayName": "{{i18n: obj.wands.SpruceWand.name}}",
+          "Description": "{{i18n: obj.wands.SpruceWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 40,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_SnakewoodWand": {
+          "Name": "{{ModId}}_SnakewoodWand",
+          "DisplayName": "{{i18n: obj.wands.SnakewoodWand.name}}",
+          "Description": "{{i18n: obj.wands.SnakewoodWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 41,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_SugarMapleWand": {
+          "Name": "{{ModId}}_SugarMapleWand",
+          "DisplayName": "{{i18n: obj.wands.SugarMapleWand.name}}",
+          "Description": "{{i18n: obj.wands.SugarMapleWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 42,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_SwampMayhawWand": {
+          "Name": "{{ModId}}_SwampMayhawWand",
+          "DisplayName": "{{i18n: obj.wands.SwampMayhawWand.name}}",
+          "Description": "{{i18n: obj.wands.SwampMayhawWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 43,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_SycamoreWand": {
+          "Name": "{{ModId}}_SycamoreWand",
+          "DisplayName": "{{i18n: obj.wands.SycamoreWand.name}}",
+          "Description": "{{i18n: obj.wands.SycamoreWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 44,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_TamarackWand": {
+          "Name": "{{ModId}}_TamarackWand",
+          "DisplayName": "{{i18n: obj.wands.TamarackWand.name}}",
+          "Description": "{{i18n: obj.wands.TamarackWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 45,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_VineWand": {
+          "Name": "{{ModId}}_VineWand",
+          "DisplayName": "{{i18n: obj.wands.VineWand.name}}",
+          "Description": "{{i18n: obj.wands.VineWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 46,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_WalnutWand": {
+          "Name": "{{ModId}}_WalnutWand",
+          "DisplayName": "{{i18n: obj.wands.WalnutWand.name}}",
+          "Description": "{{i18n: obj.wands.WalnutWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 47,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_WillowWand": {
+          "Name": "{{ModId}}_WillowWand",
+          "DisplayName": "{{i18n: obj.wands.WillowWand.name}}",
+          "Description": "{{i18n: obj.wands.WillowWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 48,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        },
+        "{{ModId}}_YewWand": {
+          "Name": "{{ModId}}_YewWand",
+          "DisplayName": "{{i18n: obj.wands.YewWand.name}}",
+          "Description": "{{i18n: obj.wands.YewWand.desc}}",
+          "ClassName": "GenericTool",
+          "Texture": "{{InternalAssetKey: assets/Objects/Wands.png}}",
+          "SpriteIndex": 49,
+          "UpgradeLevel": 0,
+          "CanBeLostOnDeath": true
+        }
+      }
+    },*/
   ]
 }
