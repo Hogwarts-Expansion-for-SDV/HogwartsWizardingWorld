@@ -13,6 +13,12 @@
       "FromFile": "assets/Astronomy/transparent.png"
     },
     {
+      "LogName": "Hogwarts Astronomy BG Texture Load",
+      "Action": "Load",
+      "Target": "{{ModId}}/AstronomyBGTexture",
+      "FromFile": "assets/Tilesheets/z_AstronomyClassroom_Hxoni_Hogwarts.png"
+    },
+    {
       "LogName": "Hogwarts Astronomy Night Sky Luna",
       "Action": "EditImage",
       "Target": "{{ModId}}/TransparentLunascope",
@@ -171,7 +177,7 @@
         "Height": 48
       },
       "PatchMode": "Overlay"
-    },/*
+    }, /*
     {
       "LogName": "Hogwarts Bell Tower Courtyard Astronomy Table Stellascope Load",
       "Action": "EditMap",
@@ -877,7 +883,7 @@
         {
           "Position": {
             "X": 13,
-            "Y": 24
+            "Y": 23
           },
           "Layer": "Buildings",
           "SetProperties": {
@@ -976,108 +982,142 @@
         }
       ]
     },
-    //Celestial Globe Animation
+    //Birds on top of the tower :o
     {
-      "LogName": "Astronomy Classroom Globe Animation",
+      "LogName": "Astronomy Classroom MMAP Critter Birdie",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsAstronomyClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 21,
+            "Y": 21
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "mushymato.MMAP_Critter": "Birdie T {{Random: {{Range: 1, 3}}|key={{Time}}}}"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= mushymato.MMAP": true
+      },
+      "Update": "OnLocationChange"
+    },
+    //Astronomy DMTE Animations
+    {
+      "LogName": "Astronomy Classroom Misc Animations",
       "Action": "EditData",
       "Target": "DMT/Animations",
       "Entries": {
         "{{ModId}}.AstronomyClassroom": [
           {
             "Name": "Globe1",
-            "Texture": "Maps/z_AstronomyClassroomm_Hxoni_Hogwarts",
+            "Texture": "Maps/z_AstronomyClassroom_Hxoni_Hogwarts",
             "SourceRect": {
-              "X": 144,
+              "X": 96,
               "Y": 0,
-              "Width": 16,
-              "Height": 16
+              "Width": 32,
+              "Height": 32
             },
             "Position": {
               "X": 1408,
               "Y": 3008
             },
             "Scale": 4,
-            "Length": 7,
+            "Length": 8,
             "LayerDepth": 5,
             "Loops": 1,
             "Flipped": false,
-            "Interval": 150,
-            "Motion": {
-              "X": 0,
-              "Y": 0
-            }
+            "Interval": 150
           },
           {
             "Name": "Globe2",
-            "Texture": "Maps/z_AstronomyClassroomm_Hxoni_Hogwarts",
+            "Texture": "Maps/z_AstronomyClassroom_Hxoni_Hogwarts",
             "SourceRect": {
-              "X": 144,
-              "Y": 16,
-              "Width": 16,
-              "Height": 16
-            },
-            "Position": {
-              "X": 1472,
-              "Y": 3008
-            },
-            "Scale": 4,
-            "Length": 7,
-            "LayerDepth": 5,
-            "Loops": 1,
-            "Flipped": false,
-            "Interval": 150,
-            "Motion": {
-              "X": 0,
-              "Y": 0
-            }
-          },
-          {
-            "Name": "Globe3",
-            "Texture": "Maps/z_AstronomyClassroomm_Hxoni_Hogwarts",
-            "SourceRect": {
-              "X": 144,
-              "Y": 32,
-              "Width": 16,
-              "Height": 16
-            },
-            "Position": {
-              "X": 1408,
-              "Y": 3072
-            },
-            "Scale": 4,
-            "Length": 7,
-            "LayerDepth": 5,
-            "Loops": 1,
-            "Flipped": false,
-            "Interval": 150,
-            "Motion": {
-              "X": 0,
-              "Y": 0
-            }
-          },
-          {
-            "Name": "Globe4",
-            "Texture": "Maps/z_AstronomyClassroomm_Hxoni_Hogwarts",
-            "SourceRect": {
-              "X": 144,
+              "X": 96,
               "Y": 48,
               "Width": 16,
               "Height": 16
             },
             "Position": {
-              "X": 1472,
-              "Y": 3072
+              "X": 960,
+              "Y": 2880
             },
             "Scale": 4,
-            "Length": 7,
+            "Length": 4,
             "LayerDepth": 5,
-            "Loops": 1,
+            "Loops": 2,
             "Flipped": false,
-            "Interval": 150,
-            "Motion": {
+            "Interval": 150
+          }
+        ],
+        "{{ModId}}.AstronomyBG": [
+          {
+            "Name": "Astronomy BG",
+            "Texture": "{{ModId}}/AstronomyBGTexture",
+            "SourceRect": {
               "X": 0,
-              "Y": 0
-            }
+              "Y": 64,
+              "Width": 80,
+              "Height": 80
+            },
+            "Position": {
+              "X": 1024,
+              "Y": 2624
+            },
+            "Scale": 4,
+            "Length": 1,
+            "LayerDepth": 2,
+            "Rotation": 0.01,
+            "RotationChange": 0.004,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 500
+          },
+          {
+            "Name": "Astronomy BG Stars 1",
+            "Texture": "{{ModId}}/AstronomyBGTexture",
+            "SourceRect": {
+              "X": 0,
+              "Y": 144,
+              "Width": 80,
+              "Height": 80
+            },
+            "Position": {
+              "X": 1024,
+              "Y": 2624
+            },
+            "Scale": 4,
+            "Length": 4,
+            "LayerDepth": 3,
+            "Rotation": 0.01,
+            "RotationChange": 0.004,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 500
+          },
+          {
+            "Name": "Astronomy BG Stars 2",
+            "Texture": "{{ModId}}/AstronomyBGTexture",
+            "SourceRect": {
+              "X": 0,
+              "Y": 224,
+              "Width": 80,
+              "Height": 80
+            },
+            "Position": {
+              "X": 1024,
+              "Y": 2624
+            },
+            "Scale": 4,
+            "Length": 4,
+            "LayerDepth": 3,
+            "Rotation": 0.01,
+            "RotationChange": 0.004,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 500
           }
         ]
       },
@@ -1086,7 +1126,7 @@
       }
     },
     {
-      "LogName": "Astronomy Classroom Globe DMTE",
+      "LogName": "Astronomy Classroom Globes DMTE",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsAstronomyClassroom",
       "MapTiles": [
@@ -1097,10 +1137,57 @@
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "DMT/animation_Action": "{{ModId}}.AstronomyClassroom,Globe1|Globe2|Globe3|Globe4"
+            "DMT/animation_Action": "{{ModId}}.AstronomyClassroom,Globe1"
+          }
+        },
+        {
+          "Position": {
+            "X": 15,
+            "Y": 45
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "DMT/animation_Action": "{{ModId}}.AstronomyClassroom,Globe2"
+          }
+        },
+        {
+          "Position": {
+            "X": 22,
+            "Y": 44
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "DMT/changeMultipleIndex_Swap_Action": "Buildings2 22 44=z_AstronomyClassroom_Hxoni_Hogwarts/58",
+            "SwapDMT/changeMultipleIndex_Swap_Action": "Buildings2 22 44=z_AstronomyClassroom_Hxoni_Hogwarts/57"
           }
         }
       ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Astronomy Classroom Space BG Animation Play",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}.AstronomyBG": {
+          "Locations": [
+            "{{ModId}}_HogwartsAstronomyClassroom"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Actions": [
+            {
+              "LogName": "AstronomyBGAnimationPlay",
+              "Key": "DMT/animation",
+              "Value": "{{ModId}}.AstronomyBG,Astronomy BG|Astronomy BG Stars {{Random: 1, 2}}",
+              "Trigger": "Load"
+            }
+          ]
+        }
+      },
       "When": {
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
       }
