@@ -103,13 +103,13 @@
       "Update": "OnTimeChange"
     },
     {
-      "LogName": "Hogsmeade Express Arrival Spawn",
+      "LogName": "Hogsmeade Express Arrival Spawn Arriving",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogsmeadeStation",
       "MapTiles": [
         {
           "Position": {
-            "X": 46,
+            "X": 63,
             "Y": 20
           },
           "Layer": "Back",
@@ -120,7 +120,34 @@
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "Time": "{{Range: 1800, 2600}}",
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogsmeadeStationHogwartsExpressArriving": true,
+        "Time": "{{Range: 1800, 2000}}",
+        "Day": "1, 15"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Hogsmeade Express Arrival Spawn Arrived",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeStation",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 5,
+            "Y": 20
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.HogwartsExpressArrival"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= PeacefulEnd.CustomCompanions": true,
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogsmeadeStationHogwartsExpressArrived": true,
+        "Time": "{{Range: 2000, 2600}}",
         "Day": "1, 15"
       },
       "Update": "OnLocationChange"
@@ -199,10 +226,46 @@
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
         "Time": "{{Range: 1750, 2000}}",
         "Day": "1, 15"
       },
       "Update": "OnTimeChange"
+    },
+    {
+      "LogName": "Hogsmeade Station Hogwarts Express Arrival Trigger Actions Remove Mail",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_HogsmeadeStationHogwartsExpressArriving": {
+          "Id": "{{ModId}}_HogsmeadeStationHogwartsExpressArriving",
+          "Trigger": "LocationChanged",
+          "Condition": "TIME 1750 2000, {{HasMod |contains=PeacefulEnd.CustomCompanions}}, {{HasMod |contains=aedenthorn.DynamicMapTilesExtended}}",
+          "Action": "AddMail all {{ModId}}_HogsmeadeStationHogwartsExpressArriving",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_HogsmeadeStationHogwartsExpressArrived": {
+          "Id": "{{ModId}}_HogsmeadeStationHogwartsExpressArrived",
+          "Trigger": "LocationChanged",
+          "Condition": "TIME 2000 2600, {{HasMod |contains=PeacefulEnd.CustomCompanions}}, {{HasMod |contains=aedenthorn.DynamicMapTilesExtended}}",
+          "Action": "AddMail all {{ModId}}_HogsmeadeStationHogwartsExpressArrived",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_HogsmeadeStationHogwartsExpressArrivingRemoveMail": {
+          "Id": "{{ModId}}_HogsmeadeStationHogwartsExpressArrivingRemoveMail",
+          "Trigger": "LocationChanged",
+          "Condition": "TIME 2000 2600, {{HasMod |contains=PeacefulEnd.CustomCompanions}}, {{HasMod |contains=aedenthorn.DynamicMapTilesExtended}}",
+          "Action": "RemoveMail all {{ModId}}_HogsmeadeStationHogwartsExpressArriving",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_HogsmeadeStationHogwartsExpressArrivedRemoveMail": {
+          "Id": "{{ModId}}_HogsmeadeStationHogwartsExpressArrivedRemoveMail",
+          "Trigger": "DayStarted",
+          "Condition": "{{HasMod |contains=PeacefulEnd.CustomCompanions}}, {{HasMod |contains=aedenthorn.DynamicMapTilesExtended}}",
+          "Action": "RemoveMail all {{ModId}}_HogsmeadeStationHogwartsExpressArrived",
+          "MarkActionApplied": false
+        }
+      }
     },
     {
       "LogName": "Hogsmeade Station Warps",
