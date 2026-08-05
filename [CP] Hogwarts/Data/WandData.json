@@ -1330,12 +1330,11 @@
         "HasMod |contains= Spiderbuttons.BETAS": true
       }
     },
-    // No Area of Effect Framework
-    /*
     {
       "LogName": "Hogwarts Wand Skill 1 Left",
       "Action": "EditData",
       "Target": "Data/Weapons",
+      "Priority": "Early+3",
       "TargetField": [
         "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
@@ -1346,7 +1345,7 @@
         "MaxDistance": 10
       },
       "When": {
-        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{WandSpellcasting}}' = 'false'": false,
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'false'": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook1": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1355,6 +1354,7 @@
       "LogName": "Hogwarts Wand Skill 1 Right",
       "Action": "EditData",
       "Target": "Data/Weapons",
+      "Priority": "Early+3",
       "TargetField": [
         "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
@@ -1365,6 +1365,7 @@
         "MaxDistance": 10
       },
       "When": {
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'false'": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook1": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1373,6 +1374,7 @@
       "LogName": "Hogwarts Wand Skill 2 Forward",
       "Action": "EditData",
       "Target": "Data/Weapons",
+      "Priority": "Early+3",
       "TargetField": [
         "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
@@ -1382,6 +1384,7 @@
         "Damage": "{{Query: {{Random: {{Range: 40, 60}}}}}}"
       },
       "When": {
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'false'": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook2": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1390,6 +1393,7 @@
       "LogName": "Hogwarts Wand Skill 2 Left",
       "Action": "EditData",
       "Target": "Data/Weapons",
+      "Priority": "Early+3",
       "TargetField": [
         "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
@@ -1400,6 +1404,7 @@
         "MaxDistance": 10
       },
       "When": {
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'false'": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook2": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1408,6 +1413,7 @@
       "LogName": "Hogwarts Wand Skill 2 Right",
       "Action": "EditData",
       "Target": "Data/Weapons",
+      "Priority": "Early+3",
       "TargetField": [
         "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
@@ -1418,6 +1424,7 @@
         "MaxDistance": 10
       },
       "When": {
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'false'": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook2": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1426,6 +1433,7 @@
       "LogName": "Hogwarts Wand Skill 3 Forward",
       "Action": "EditData",
       "Target": "Data/Weapons",
+      "Priority": "Early+3",
       "TargetField": [
         "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
@@ -1435,6 +1443,7 @@
         "Damage": "{{Query: {{Random: {{Range: 50, 70}}}}}}"
       },
       "When": {
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'false'": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook3": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1443,6 +1452,7 @@
       "LogName": "Hogwarts Wand Skill 3 Left",
       "Action": "EditData",
       "Target": "Data/Weapons",
+      "Priority": "Early+3",
       "TargetField": [
         "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
@@ -1453,6 +1463,7 @@
         "MaxDistance": 10
       },
       "When": {
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'false'": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook3": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1461,6 +1472,7 @@
       "LogName": "Hogwarts Wand Skill 3 Right",
       "Action": "EditData",
       "Target": "Data/Weapons",
+      "Priority": "Early+3",
       "TargetField": [
         "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
@@ -1471,6 +1483,7 @@
         "MaxDistance": 10
       },
       "When": {
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'false'": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook3": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1479,6 +1492,7 @@
       "LogName": "Hogwarts Wand Skill 4 Forward",
       "Action": "EditData",
       "Target": "Data/Weapons",
+      "Priority": "Early+3",
       "TargetField": [
         "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
@@ -1488,6 +1502,7 @@
         "Damage": "{{Query: {{Random: {{Range: 60, 80}}}}}}"
       },
       "When": {
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'false'": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook4": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1496,6 +1511,7 @@
       "LogName": "Hogwarts Wand Skill 4 Left",
       "Action": "EditData",
       "Target": "Data/Weapons",
+      "Priority": "Early+3",
       "TargetField": [
         "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
@@ -1506,6 +1522,7 @@
         "MaxDistance": 10
       },
       "When": {
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'false'": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook4": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1514,6 +1531,7 @@
       "LogName": "Hogwarts Wand Skill 4 Right",
       "Action": "EditData",
       "Target": "Data/Weapons",
+      "Priority": "Early+3",
       "TargetField": [
         "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
@@ -1524,6 +1542,7 @@
         "MaxDistance": 10
       },
       "When": {
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'false'": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook4": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1532,6 +1551,7 @@
       "LogName": "Hogwarts Wand Skill 5 Forward",
       "Action": "EditData",
       "Target": "Data/Weapons",
+      "Priority": "Early+3",
       "TargetField": [
         "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
@@ -1542,6 +1562,7 @@
         "MaxDistance": 20
       },
       "When": {
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'false'": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook5": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1550,6 +1571,7 @@
       "LogName": "Hogwarts Wand Skill 5 Left",
       "Action": "EditData",
       "Target": "Data/Weapons",
+      "Priority": "Early+3",
       "TargetField": [
         "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
@@ -1560,6 +1582,7 @@
         "MaxDistance": 20
       },
       "When": {
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'false'": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook5": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1568,6 +1591,7 @@
       "LogName": "Hogwarts Wand Skill 5 Right",
       "Action": "EditData",
       "Target": "Data/Weapons",
+      "Priority": "Early+3",
       "TargetField": [
         "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
@@ -1578,6 +1602,7 @@
         "MaxDistance": 20
       },
       "When": {
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'false'": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook5": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1586,6 +1611,7 @@
       "LogName": "Hogwarts Wand Skill 6 Forward",
       "Action": "EditData",
       "Target": "Data/Weapons",
+      "Priority": "Early+3",
       "TargetField": [
         "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
@@ -1597,6 +1623,7 @@
         "Bounces": 1
       },
       "When": {
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'false'": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook6": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1605,6 +1632,7 @@
       "LogName": "Hogwarts Wand Skill 6 Left",
       "Action": "EditData",
       "Target": "Data/Weapons",
+      "Priority": "Early+3",
       "TargetField": [
         "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
@@ -1616,6 +1644,7 @@
         "Bounces": 1
       },
       "When": {
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'false'": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook6": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1624,6 +1653,7 @@
       "LogName": "Hogwarts Wand Skill 6 Right",
       "Action": "EditData",
       "Target": "Data/Weapons",
+      "Priority": "Early+3",
       "TargetField": [
         "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
@@ -1635,6 +1665,7 @@
         "Bounces": 1
       },
       "When": {
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'false'": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook6": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1643,6 +1674,7 @@
       "LogName": "Hogwarts Wand Skill 7 Forward",
       "Action": "EditData",
       "Target": "Data/Weapons",
+      "Priority": "Early+3",
       "TargetField": [
         "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
@@ -1654,6 +1686,7 @@
         "Bounces": 1
       },
       "When": {
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'false'": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook7": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1662,6 +1695,7 @@
       "LogName": "Hogwarts Wand Skill 7 Left",
       "Action": "EditData",
       "Target": "Data/Weapons",
+      "Priority": "Early+3",
       "TargetField": [
         "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
@@ -1673,6 +1707,7 @@
         "Bounces": 1
       },
       "When": {
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'false'": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook7": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1681,6 +1716,7 @@
       "LogName": "Hogwarts Wand Skill 7 Right",
       "Action": "EditData",
       "Target": "Data/Weapons",
+      "Priority": "Early+3",
       "TargetField": [
         "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
@@ -1692,10 +1728,11 @@
         "Bounces": 1
       },
       "When": {
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'false'": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook7": true
       },
       "Update": "OnLocationChange, OnTimeChange"
-    },*/
+    },
     {
       "LogName": "Hogwarts Wand Lumos Trigger Actions",
       "Action": "EditData",
@@ -1731,6 +1768,9 @@
       "Entries": {
         "DisplayName": "Wand-Lighting Charm",
         "Description": "Lumos!"
+      },
+      "When": {
+        "HasMod |contains= MindMeltMax.GlowBuff": true
       }
     },
     {
@@ -1745,6 +1785,7 @@
         "MindMeltMax.GlowBuff/GlowRadius": 1.3
       },
       "When": {
+        "HasMod |contains= MindMeltMax.GlowBuff": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook1": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1761,6 +1802,7 @@
         "MindMeltMax.GlowBuff/GlowRadius": 1.6
       },
       "When": {
+        "HasMod |contains= MindMeltMax.GlowBuff": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook2": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1777,6 +1819,7 @@
         "MindMeltMax.GlowBuff/GlowRadius": 1.9
       },
       "When": {
+        "HasMod |contains= MindMeltMax.GlowBuff": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook3": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1793,6 +1836,7 @@
         "MindMeltMax.GlowBuff/GlowRadius": 2.2
       },
       "When": {
+        "HasMod |contains= MindMeltMax.GlowBuff": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook4": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1809,6 +1853,7 @@
         "MindMeltMax.GlowBuff/GlowRadius": 2.5
       },
       "When": {
+        "HasMod |contains= MindMeltMax.GlowBuff": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook5": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1825,6 +1870,7 @@
         "MindMeltMax.GlowBuff/GlowRadius": 2.8
       },
       "When": {
+        "HasMod |contains= MindMeltMax.GlowBuff": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook6": true
       },
       "Update": "OnLocationChange, OnTimeChange"
@@ -1841,15 +1887,75 @@
         "MindMeltMax.GlowBuff/GlowRadius": 3.1
       },
       "When": {
+        "HasMod |contains= MindMeltMax.GlowBuff": true,
         "HasFlag |contains= {{ModId}}_WandSkillBook7": true
       },
       "Update": "OnLocationChange, OnTimeChange"
     },
     {
-      "LogName": "Hogwarts Wand No Area Of Effect Framework Forward",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_Blank": {
+          "Name": "Blank",
+          "DisplayName": "Blank",
+          "Description": "Blank.",
+          "Texture": "{{InternalAssetKey: assets/Objects/blank.png}}",
+          "SpriteIndex": 0
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts Wand No Area Of Effect Framework Forward Default",
       "Action": "EditData",
       "Target": "Data/Weapons",
       "Priority": "Early+1",
+      "TargetField": [
+        "{{ModId}}_{{Wand}}Wand",
+        "Projectiles",
+        "Forward"
+      ],
+      "Entries": {
+        "Damage": 0,
+        "Explodes": false,
+        "Bounces": 0,
+        "MaxDistance": 0,
+        "Velocity": 0,
+        "RotationVelocity": 0,
+        "TailLength": 0,
+        "FireSound": "",
+        "BounceSound": "",
+        "CollisionSound": "",
+        "MinAngleOffset": 0.0,
+        "MaxAngleOffset": 0.0
+      },
+      "When": {
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'true'": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Wand No Area Of Effect Framework Forward Default",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Priority": "Early+1",
+      "TargetField": [
+        "{{ModId}}_{{Wand}}Wand",
+        "Projectiles",
+        "Forward",
+        "Item"
+      ],
+      "Entries": {
+        "ItemId": "(O){{ModId}}_Blank"
+      },
+      "When": {
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'true'": true
+      }
+    }, /*
+    {
+      "LogName": "Hogwarts Wand No Area Of Effect Framework Forward",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Priority": "Early+2",
       "TargetField": [
         "{{ModId}}_{{Wand}}Wand",
         "Projectiles",
@@ -1868,9 +1974,9 @@
         "MaxAngleOffset": 0
       },
       "When": {
-        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{WandSpellcasting}}' = 'false'": true
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'false'": true
       }
-    },/*
+    },*/
     {
       "LogName": "Hogwarts Wand No Area Of Effect Framework Diagonal Left",
       "Action": "EditData",
@@ -1893,7 +1999,7 @@
         "MaxAngleOffset": 20
       },
       "When": {
-        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{WandSpellcasting}}' = 'false'": true
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'true'": true
       }
     },
     {
@@ -1918,8 +2024,8 @@
         "MaxAngleOffset": -20
       },
       "When": {
-        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{WandSpellcasting}}' = 'false'": true
+        "Query: '{{HasMod}}' <> 'aedenthorn.AreaOfEffect' OR '{{Spellcasting}}' = 'true'": true
       }
-    }*/
+    }
   ]
 }
