@@ -5,7 +5,7 @@
       "Action": "EditData",
       "Target": "aedenthorn.AreaOfEffect/spells",
       "Entries": {
-        "{{ModId}}_HogsmeadeVillageCenter": {
+        "{{ModId}}_Incendio": {
           "DisplayName": "Incendio",
           "Sequence": [
             "UpRight",
@@ -15,7 +15,54 @@
           "SetSound": "fairy_heal",
           "SpellLevels": [
             {
-              "TriggerAction": "AddMail Current {{ModId}}_HogsmeadeVillageCenter received"
+              "TriggerAction": null,
+              "CastSound": "fireball",
+              "TriggerSound": "fireball",
+              "Charges": 1,
+              "AreaType": "Circle",
+              "Radius": 5,
+              "Buffs": [],
+              "Projectiles": [
+                {
+                  "Damage": 30,
+                  "SpriteIndex": 10
+                },
+                {
+                  "Damage": 30,
+                  "SpriteIndex": 10
+                },
+                {
+                  "Damage": 30,
+                  "SpriteIndex": 10
+                }
+              ],
+              "Sprites": [
+                {
+                  "Type": "Fire",
+                  "PerTile": true,
+                  "AlphaFade": 0.003
+                }
+              ],
+              "Effects": [
+                {
+                  "Affected": [
+                    "Monster",
+                    "Farmer"
+                  ],
+                  "EffectType": "Damage",
+                  "Seconds": 4,
+                  "Value": 30
+                },
+                {
+                  "Affected": [
+                    "Twig",
+                    "Weed",
+                    "Grass",
+                    "Tree"
+                  ],
+                  "EffectType": "Burn"
+                }
+              ]
             }
           ]
         },
@@ -28,13 +75,63 @@
           "SetSound": "fairy_heal",
           "SpellLevels": [
             {
-              "TriggerAction": "AddMail Current {{ModId}}_HogsmeadeVillageCenter received"
+              "TriggerAction": "AddMail Current {{ModId}}_HogsmeadeVillageCenterIncendio received"
             }
           ]
         }
       },
       "When": {
         "HasMod |contains= aedenthorn.AreaOfEffect": true
+      }
+    },
+    {
+      "LogName": "Hogsmeade Village Center Floo Flame Incendio Area of Effect",
+      "Action": "EditData",
+      "Target": "aedenthorn.AreaOfEffect/spells",
+      "TargetField": [
+        "{{ModId}}_Incendio",
+        "SpellLevels"
+      ],
+      "Entries": {
+        "TriggerAction": "AddMail Current {{ModId}}_HogsmeadeVillageCenterIncendio received"
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.AreaOfEffect": true,
+        "LocationName |contains= {{ModId}}_HogsmeadeVillage": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Hogsmeade Village Center Floo Flame Rectangle Mail",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}_HogsmeadeVillageCenterFlooFlameRectangle": {
+          "Locations": [
+            "{{ModId}}_HogsmeadeVillage"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Rectangles": [
+            {
+              "X": 65,
+              "Y": 38,
+              "Width": 17,
+              "Height": 11
+            }
+          ],
+          "Actions": [
+            {
+              "Key": "DMT/mail",
+              "Value": "{{ModId}}_HogsmeadeVillageCenterFlooFlameRectangle",
+              "Trigger": "Tool(MeleeWeapon)"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
       }
     },
     {
