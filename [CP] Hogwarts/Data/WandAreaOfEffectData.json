@@ -15,7 +15,7 @@
           "SetSound": "fairy_heal",
           "SpellLevels": [
             {
-              "TriggerAction": null,
+              "TriggerAction": "{{Incendio}}",
               "CastSound": "fireball",
               "TriggerSound": "fireball",
               "Charges": 1,
@@ -63,7 +63,10 @@
                   "EffectType": "Burn"
                 }
               ]
-            }
+            },/*
+            {
+              "TriggerAction": "{{Incendio}}"
+            }*/
           ]
         },
         "{{ModId}}_Reducto": {
@@ -82,27 +85,45 @@
       },
       "When": {
         "HasMod |contains= aedenthorn.AreaOfEffect": true
-      }
-    },
-    {
-      "LogName": "Hogsmeade Village Center Floo Flame Incendio Area of Effect",
-      "Action": "EditData",
-      "Target": "aedenthorn.AreaOfEffect/spells",
-      "TargetField": [
-        "{{ModId}}_Incendio",
-        "SpellLevels"
-      ],
-      "Entries": {
-        "TriggerAction": "AddMail Current {{ModId}}_HogsmeadeVillageCenterIncendio received"
-      },
-      "When": {
-        "HasMod |contains= aedenthorn.AreaOfEffect": true,
-        "LocationName |contains= {{ModId}}_HogsmeadeVillage": true
       },
       "Update": "OnLocationChange"
     },
     {
-      "LogName": "Hogsmeade Village Center Floo Flame Rectangle Mail",
+      "LogName": "Hogwarts Area of Effect Wand Mail",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModID}}_HogsmeadeVillageCenter": {
+          "Id": "{{ModID}}_HogsmeadeVillageCenter",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageIncendio, PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCenterFlooFlameRectangle, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCenterFlooFlame",
+          "Trigger": "Esca.EMP_OneSecondUpdateTicked",
+          "Action": "AddMail Current {{ModId}}_HogsmeadeVillageCenterFlooFlame Received",
+          "MarkActionApplied": false,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCenterFlooFlame Received"
+        },
+        "{{ModID}}_HogsmeadeVillageCrossroad": {
+          "Id": "{{ModID}}_HogsmeadeVillageCrossroad",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageIncendio, PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlameRectangle, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlame",
+          "Trigger": "Esca.EMP_OneSecondUpdateTicked",
+          "Action": "AddMail Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlame Received",
+          "MarkActionApplied": false,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlame Received"
+        },
+        "{{ModID}}_HogsmeadeVillageCenterReset": {
+          "Id": "{{ModID}}_HogsmeadeVillageCenterReset",
+          "Condition": "ANY \"PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCenterFlooFlameRectangle\" \"PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlameRectangle\" \"PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageIncendio\"",
+          "Trigger": "LocationChanged",
+          "Actions": [
+            "RemoveMail Current {{ModId}}_HogsmeadeVillageCenterFlooFlameRectangle",
+            "RemoveMail Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlameRectangle",
+            "RemoveMail Current {{ModId}}_HogsmeadeVillageIncendio"
+          ],
+          "MarkActionApplied": false
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts Charms Mail",
       "Action": "EditData",
       "Target": "DMT/Tiles",
       "Entries": {
@@ -123,9 +144,35 @@
           ],
           "Actions": [
             {
+              "LogName": "Hogsmeade Village Center Floo Flame Rectangle Mail",
               "Key": "DMT/mail",
               "Value": "{{ModId}}_HogsmeadeVillageCenterFlooFlameRectangle",
               "Trigger": "Tool(MeleeWeapon)"
+            }
+          ]
+        },
+        "{{ModId}}_HogsmeadeVillageCrossroadFlooFlameRectangle": {
+          "Locations": [
+            "{{ModId}}_HogsmeadeVillage"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Rectangles": [
+            {
+              "X": 19,
+              "Y": 112,
+              "Width": 12,
+              "Height": 11
+            }
+          ],
+          "Actions": [
+            {
+              "LogName": "Hogsmeade Village Crossroad Floo Flame Rectangle Mail",
+              "Key": "DMT/mail",
+              "Value": "{{ModId}}_HogsmeadeVillageCrossroadFlooFlameRectangle",
+              "Trigger": "On",
+              "Once": false
             }
           ]
         }
@@ -142,7 +189,7 @@
         "{{ModId}}_{{Wand}}Wand": {
           "RechargeSound": "cowboy_powerup",
           "Spells": [
-            "{{ModId}}_HogsmeadeVillageCenter",
+            "{{ModId}}_Incendio",
             "{{ModId}}_Reducto"
           ]
         }

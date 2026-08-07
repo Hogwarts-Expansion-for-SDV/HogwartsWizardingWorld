@@ -1373,42 +1373,56 @@
       "Name": "DivinationCharmedTentX",
       "Value": "16",
       "When": {
-        "Query: {{Query: {{Random: {{Range: 19, 166}}|key=CharmedTent1X}}}} <= 66": true
+        "Query: {{Random: {{Range: 19, 166}}|key=CharmedTent1X}} <= 66": true
       }
     },
     {
       "Name": "DivinationCharmedTentX",
       "Value": "45",
       "When": {
-        "Query: {{Query: {{Random: {{Range: 19, 166}}|key=CharmedTent1X}}}} > 66 AND {{Query: {{Random: {{Range: 19, 166}}|key=CharmedTent1X}}}} < 118": true
+        "Query: {{Random: {{Range: 19, 166}}|key=CharmedTent1X}} > 66 AND {{Random: {{Range: 19, 166}}|key=CharmedTent1X}} < 118": true
       }
     },
     {
       "Name": "DivinationCharmedTentX",
       "Value": "72",
       "When": {
-        "Query: {{Query: {{Random: {{Range: 19, 166}}|key=CharmedTent1X}}}} >= 118": true
+        "Query: {{Random: {{Range: 19, 166}}|key=CharmedTent1X}} >= 118": true
       }
     },
     {
       "Name": "DivinationCharmedTentY",
       "Value": "16",
       "When": {
-        "Query: {{Query: {{Random: {{Range: 23, 128}}|key=CharmedTent1Y}}}} <= 47": true
+        "Query: {{Random: {{Range: 23, 128}}|key=CharmedTent1Y}} <= 47": true
       }
     },
     {
       "Name": "DivinationCharmedTentY",
       "Value": "45",
       "When": {
-        "Query: {{Query: {{Random: {{Range: 23, 128}}|key=CharmedTent1Y}}}} > 47 AND {{Query: {{Random: {{Range: 23, 128}}|key=CharmedTent1Y}}}} < 85": true
+        "Query: {{Random: {{Range: 23, 128}}|key=CharmedTent1Y}} > 47 AND {{Random: {{Range: 23, 128}}|key=CharmedTent1Y}} < 85": true
       }
     },
     {
       "Name": "DivinationCharmedTentY",
       "Value": "72",
       "When": {
-        "Query: {{Query: {{Random: {{Range: 23, 128}}|key=CharmedTent1Y}}}} >= 85": true
+        "Query: {{Random: {{Range: 23, 128}}|key=CharmedTent1Y}} >= 85": true
+      }
+    },
+    {
+      "Name": "Incendio",
+      "Value": "null",
+      "When": {
+        "LocationName |contains= {{ModId}}_HogsmeadeVillage": false
+      }
+    },
+    {
+      "Name": "Incendio",
+      "Value": "AddMail Current {{ModId}}_HogsmeadeVillageIncendio received",
+      "When": {
+        "LocationName |contains= {{ModId}}_HogsmeadeVillage": true
       }
     }
   ],
