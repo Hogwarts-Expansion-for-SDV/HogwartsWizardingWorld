@@ -123,7 +123,49 @@
       }
     },
     {
-      "LogName": "Hogwarts Charms Mail",
+      "LogName": "Hogsmeade Village Floo Flame Off DMTE",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 0,
+            "Y": 0
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/changeMultipleIndex_Once_Load": "Buildings1 24 113=z_FlooFlames_DomTSVG_Hogwarts/38|Buildings1 25 113=z_FlooFlames_DomTSVG_Hogwarts/39|Buildings1 24 114=z_FlooFlames_DomTSVG_Hogwarts/48|Buildings1 25 114=z_FlooFlames_DomTSVG_Hogwarts/49|Buildings1 72 40=z_FlooFlames_DomTSVG_Hogwarts/38|Buildings1 73 40=z_FlooFlames_DomTSVG_Hogwarts/39|Buildings1 72 41=z_FlooFlames_DomTSVG_Hogwarts/48|Buildings1 73 41=z_FlooFlames_DomTSVG_Hogwarts/49"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Hogsmeade Village Floo Flame On DMTE",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 0,
+            "Y": 0
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/changeMultipleIndex_Once_Load": "Buildings1 24 113=|Buildings1 25 113=|Buildings1 24 114=|Buildings1 25 114="
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageCrossroadFlooFlame": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Charms DMTE Mail",
       "Action": "EditData",
       "Target": "DMT/Tiles",
       "Entries": {
@@ -144,7 +186,6 @@
           ],
           "Actions": [
             {
-              "LogName": "Hogsmeade Village Center Floo Flame Rectangle Mail",
               "Key": "DMT/mail",
               "Value": "{{ModId}}_HogsmeadeVillageCenterFlooFlameRectangle",
               "Trigger": "Tool(MeleeWeapon)"
@@ -168,19 +209,44 @@
           ],
           "Actions": [
             {
-              "LogName": "Hogsmeade Village Crossroad Floo Flame Rectangle Mail",
               "Key": "DMT/mail",
               "Value": "{{ModId}}_HogsmeadeVillageCrossroadFlooFlameRectangle",
-              "Trigger": "On",
-              "Once": false
+              "Trigger": "Tool(MeleeWeapon)"
             }
           ]
         }
-      },
-      "When": {
-        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
       }
-    },
+    },/*
+    {
+      "LogName": "Hogwarts Charms DMTE Mail",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}_HogsmeadeVillageCrossroadFlooFlameRectangle": {
+          "Locations": [
+            "{{ModId}}_HogsmeadeVillage"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Rectangles": [
+            {
+              "X": 19,
+              "Y": 112,
+              "Width": 12,
+              "Height": 11
+            }
+          ],
+          "Actions": [
+            {
+              "Key": "DMT/mail",
+              "Value": "{{ModId}}_HogsmeadeVillageCrossroadFlooFlameRectangle",
+              "Trigger": "Tool(MeleeWeapon)"
+            }
+          ]
+        }
+      }
+    },*/
     {
       "LogName": "Hogwarts Area of Effect Tools",
       "Action": "EditData",
