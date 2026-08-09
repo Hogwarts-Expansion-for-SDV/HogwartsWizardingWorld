@@ -1411,11 +1411,12 @@
         "Query: {{Random: {{Range: 23, 128}}|key=CharmedTent1Y}} >= 85": true
       }
     },
+    // Incendio
     {
       "Name": "Incendio",
       "Value": "null",
       "When": {
-        "LocationName |contains= {{ModId}}_HogsmeadeVillage": false
+        "LocationName |contains= {{ModId}}_HogsmeadeVillage, {{ModId}}_HogwartsValley": false
       }
     },
     {
@@ -1423,6 +1424,13 @@
       "Value": "AddMail Current {{ModId}}_HogsmeadeVillageIncendio received",
       "When": {
         "LocationName |contains= {{ModId}}_HogsmeadeVillage": true
+      }
+    },
+    {
+      "Name": "Incendio",
+      "Value": "AddMail Current {{ModId}}_HogwartsValleyIncendio received",
+      "When": {
+        "LocationName |contains= {{ModId}}_HogwartsValley": true
       }
     }
   ],

@@ -42,6 +42,17 @@
               "TargetDirection": "down"
             },
             {
+              "Id": "{{ModId}}_HogwartsValley",
+              "DisplayName": "Hogwarts Valley",
+              "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_HogwartsValleyFlooFlame",
+              "TargetLocation": "{{ModId}}_HogwartsValley",
+              "TargetTile": {
+                "X": 80,
+                "Y": 116
+              },
+              "TargetDirection": "down"
+            },
+            {
               "Id": "{{ModId}}_WizardsTowerFireplace",
               "DisplayName": "{{i18n: floo.wizard}}",
               "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_Wizard",
@@ -49,6 +60,21 @@
               "TargetTile": {
                 "X": 10,
                 "Y": 13
+              },
+              "TargetDirection": "down"
+            }
+          ]
+        },
+        "{{ModId}}_HogwartsNetwork": {
+          "Destinations": [
+            {
+              "Id": "{{ModId}}_HogwartsBellTowerCourtyard",
+              "DisplayName": "Bell Tower Courtyard",
+              "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_HogwartsBellTowerCourtyardFlooFlame",
+              "TargetLocation": "{{ModId}}_HogwartsBellTowerCourtyard",
+              "TargetTile": {
+                "X": 99,
+                "Y": 51
               },
               "TargetDirection": "down"
             }
@@ -162,16 +188,6 @@
           "SetProperties": {
             "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_HogsmeadeStation"
           }
-        },
-        {
-          "Position": {
-            "X": 33,
-            "Y": 12
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_HogsmeadeStation"
-          }
         }
       ]
     },
@@ -228,6 +244,60 @@
           "Layer": "Buildings",
           "SetProperties": {
             "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_HogsmeadeVillageCrossroads"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Floo Flame Network - Hogwarts Valley",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsValley",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 79,
+            "Y": 115
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_HogwartsValley"
+          }
+        },
+        {
+          "Position": {
+            "X": 80,
+            "Y": 115
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_HogwartsValley"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Floo Flame Network - Hogwarts Bell Tower Courtyard",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsBellTowerCourtyard",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 99,
+            "Y": 50
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_HogwartsBellTowerCourtyard"
+          }
+        },
+        {
+          "Position": {
+            "X": 100,
+            "Y": 50
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MinecartTransport {{ModId}}_HogsmeadeNetwork {{ModId}}_HogwartsBellTowerCourtyard"
           }
         }
       ]

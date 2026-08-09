@@ -16,6 +16,8 @@
           "SpellLevels": [
             {
               "TriggerAction": "{{Incendio}}",
+              "MaxDistance": 10,
+              "MaxCharges": -1,
               "CastSound": "fireball",
               "TriggerSound": "fireball",
               "Charges": 1,
@@ -93,74 +95,171 @@
       "Action": "EditData",
       "Target": "Data/TriggerActions",
       "Entries": {
-        "{{ModID}}_HogsmeadeVillageCenter": {
-          "Id": "{{ModID}}_HogsmeadeVillageCenter",
+        "{{ModID}}_HogsmeadeVillageCenterFlooFlame": {
+          "Id": "{{ModID}}_HogsmeadeVillageCenterFlooFlame",
           "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageIncendio, PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCenterFlooFlameRectangle, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCenterFlooFlame",
           "Trigger": "Esca.EMP_OneSecondUpdateTicked",
           "Action": "AddMail Current {{ModId}}_HogsmeadeVillageCenterFlooFlame Received",
           "MarkActionApplied": false,
           "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCenterFlooFlame Received"
         },
-        "{{ModID}}_HogsmeadeVillageCrossroad": {
-          "Id": "{{ModID}}_HogsmeadeVillageCrossroad",
+        "{{ModID}}_HogsmeadeVillageCrossroadFlooFlame": {
+          "Id": "{{ModID}}_HogsmeadeVillageCrossroadFlooFlame",
           "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageIncendio, PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlameRectangle, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlame",
           "Trigger": "Esca.EMP_OneSecondUpdateTicked",
           "Action": "AddMail Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlame Received",
           "MarkActionApplied": false,
           "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlame Received"
         },
-        "{{ModID}}_HogsmeadeVillageCenterReset": {
-          "Id": "{{ModID}}_HogsmeadeVillageCenterReset",
-          "Condition": "ANY \"PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCenterFlooFlameRectangle\" \"PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlameRectangle\" \"PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageIncendio\"",
+        "{{ModID}}_HogwartsValleyFlooFlame": {
+          "Id": "{{ModID}}_HogwartsValleyFlooFlame",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, PLAYER_HAS_MAIL Current {{ModId}}_HogwartsValleyIncendio, PLAYER_HAS_MAIL Current {{ModId}}_HogwartsValleyFlooFlameRectangle, !PLAYER_HAS_MAIL Current {{ModId}}_HogwartsValleyFlooFlame",
+          "Trigger": "Esca.EMP_OneSecondUpdateTicked",
+          "Action": "AddMail Current {{ModId}}_HogwartsValleyFlooFlame Received",
+          "MarkActionApplied": false,
+          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_HogwartsValleyFlooFlame Received"
+        },
+        "{{ModID}}_FlooFlameMailReset": {
+          "Id": "{{ModID}}_FlooFlameMailReset",
+          "Condition": "ANY \"PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCenterFlooFlameRectangle\" \"PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlameRectangle\" \"PLAYER_HAS_MAIL Current {{ModId}}_HogwartsValleyFlooFlame\" \"PLAYER_HAS_MAIL Current {{ModId}}_HogwartsValleyIncendio\"",
           "Trigger": "LocationChanged",
           "Actions": [
             "RemoveMail Current {{ModId}}_HogsmeadeVillageCenterFlooFlameRectangle",
             "RemoveMail Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlameRectangle",
-            "RemoveMail Current {{ModId}}_HogsmeadeVillageIncendio"
+            "RemoveMail Current {{ModId}}_HogsmeadeVillageIncendio",
+            "RemoveMail Current {{ModId}}_HogwartsValleyFlooFlameRectangle",
+            "RemoveMail Current {{ModId}}_HogwartsValleyIncendio"
           ],
           "MarkActionApplied": false
         }
       }
     },
     {
-      "LogName": "Hogsmeade Village Floo Flame Off DMTE",
+      "LogName": "Hogsmeade Village Center Floo Flame Off DMTE",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogsmeadeVillage",
       "MapTiles": [
         {
           "Position": {
-            "X": 0,
-            "Y": 0
+            "X": 72,
+            "Y": 40
           },
           "Layer": "Back",
           "SetProperties": {
-            "DMT/changeMultipleIndex_Once_Load": "Buildings1 24 113=z_FlooFlames_DomTSVG_Hogwarts/38|Buildings1 25 113=z_FlooFlames_DomTSVG_Hogwarts/39|Buildings1 24 114=z_FlooFlames_DomTSVG_Hogwarts/48|Buildings1 25 114=z_FlooFlames_DomTSVG_Hogwarts/49|Buildings1 72 40=z_FlooFlames_DomTSVG_Hogwarts/38|Buildings1 73 40=z_FlooFlames_DomTSVG_Hogwarts/39|Buildings1 72 41=z_FlooFlames_DomTSVG_Hogwarts/48|Buildings1 73 41=z_FlooFlames_DomTSVG_Hogwarts/49"
+            "DMT/changeMultipleIndex_Load": "Front1 72 40=z_FlooFlames_DomTSVG_Hogwarts/38|Front1 73 40=z_FlooFlames_DomTSVG_Hogwarts/39|Buildings1 72 41=z_FlooFlames_DomTSVG_Hogwarts/48|Buildings1 73 41=z_FlooFlames_DomTSVG_Hogwarts/49"
           }
         }
       ],
       "When": {
-        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageCenterFlooFlame": false
       }
     },
     {
-      "LogName": "Hogsmeade Village Floo Flame On DMTE",
+      "LogName": "Hogsmeade Village Crossroads Floo Flame Off DMTE",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogsmeadeVillage",
       "MapTiles": [
         {
           "Position": {
-            "X": 0,
-            "Y": 0
+            "X": 24,
+            "Y": 113
           },
           "Layer": "Back",
           "SetProperties": {
-            "DMT/changeMultipleIndex_Once_Load": "Buildings1 24 113=|Buildings1 25 113=|Buildings1 24 114=|Buildings1 25 114="
+            "DMT/changeMultipleIndex_Load": "Front1 24 113=z_FlooFlames_DomTSVG_Hogwarts/38|Front1 25 113=z_FlooFlames_DomTSVG_Hogwarts/39|Buildings1 24 114=z_FlooFlames_DomTSVG_Hogwarts/48|Buildings1 25 114=z_FlooFlames_DomTSVG_Hogwarts/49"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageCrossroadFlooFlame": false
+      }
+    },
+    {
+      "LogName": "Hogwarts Valley Floo Flame Off DMTE",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsValley",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 79,
+            "Y": 114
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/changeMultipleIndex_Load": "Front1 79 114=z_FlooFlames_DomTSVG_Hogwarts/38|Front1 80 114=z_FlooFlames_DomTSVG_Hogwarts/39|Buildings1 79 115=z_FlooFlames_DomTSVG_Hogwarts/48|Buildings1 80 115=z_FlooFlames_DomTSVG_Hogwarts/49"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogwartsValleyFlooFlame": false
+      }
+    },
+    {
+      "LogName": "Hogsmeade Village Crossroads Floo Flame On DMTE",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 24,
+            "Y": 113
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/changeMultipleIndex_Once_Load": "Front1 24 113=|Front1 25 113=|Buildings1 24 114=|Buildings1 25 114="
           }
         }
       ],
       "When": {
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
         "HasFlag |contains= {{ModId}}_HogsmeadeVillageCrossroadFlooFlame": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogsmeade Village Center Floo Flame On DMTE",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 72,
+            "Y": 40
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/changeMultipleIndex_Once_Load": "Front1 72 40=|Front1 73 40=|Buildings1 72 41=|Buildings1 73 41="
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageCenterFlooFlame": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Valley Floo Flame On DMTE",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsValley",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 79,
+            "Y": 114
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/changeMultipleIndex_Once_Load": "Front1 79 114=|Front1 80 114=|Buildings1 79 115=|Buildings1 80 115="
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogwartsValleyFlooFlame": true
       },
       "Update": "OnTimeChange, OnLocationChange"
     },
@@ -214,39 +313,32 @@
               "Trigger": "Tool(MeleeWeapon)"
             }
           ]
-        }
-      }
-    },/*
-    {
-      "LogName": "Hogwarts Charms DMTE Mail",
-      "Action": "EditData",
-      "Target": "DMT/Tiles",
-      "Entries": {
-        "{{ModId}}_HogsmeadeVillageCrossroadFlooFlameRectangle": {
+        },
+        "{{ModId}}_HogwartsValleyFlooFlameRectangle": {
           "Locations": [
-            "{{ModId}}_HogsmeadeVillage"
+            "{{ModId}}_HogwartsValley"
           ],
           "Layers": [
             "Back"
           ],
           "Rectangles": [
             {
-              "X": 19,
-              "Y": 112,
-              "Width": 12,
-              "Height": 11
+              "X": 74,
+              "Y": 105,
+              "Width": 15,
+              "Height": 17
             }
           ],
           "Actions": [
             {
               "Key": "DMT/mail",
-              "Value": "{{ModId}}_HogsmeadeVillageCrossroadFlooFlameRectangle",
+              "Value": "{{ModId}}_HogwartsValleyFlooFlameRectangle",
               "Trigger": "Tool(MeleeWeapon)"
             }
           ]
         }
       }
-    },*/
+    },
     {
       "LogName": "Hogwarts Area of Effect Tools",
       "Action": "EditData",
