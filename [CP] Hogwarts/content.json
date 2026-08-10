@@ -1432,6 +1432,21 @@
       "When": {
         "LocationName |contains= {{ModId}}_HogwartsValley": true
       }
+    },
+    // Reducto
+    {
+      "Name": "Reducto",
+      "Value": "null",
+      "When": {
+        "LocationName |contains= {{ModId}}_HogsmeadeVillage, {{ModId}}_HogwartsValley": false
+      }
+    },
+    {
+      "Name": "Reducto",
+      "Value": "AddMail Current {{ModId}}_HogsmeadeVillageReducto received",
+      "When": {
+        "LocationName |contains= {{ModId}}_HogsmeadeVillage": true
+      }
     }
   ],
   "Changes": [
