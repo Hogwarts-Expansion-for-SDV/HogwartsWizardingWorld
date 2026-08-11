@@ -32,7 +32,7 @@
           "SetSound": "explosion",
           "SpellLevels": [
             {
-              "TriggerAction": "{{Reducto}}",
+              "TriggerAction": "AddMail Current {{ModId}}_Reducto received",
               "CastSound": "explosion",
               "TriggerSound": null,
               "Charges": 1,
@@ -76,7 +76,7 @@
           "SetSound": "fairy_heal",
           "SpellLevels": [
             {
-              "TriggerAction": "{{Incendio}}",
+              "TriggerAction": "AddMail Current {{ModId}}_Incendio received",
               "MaxDistance": 10,
               "CastSound": "fireball",
               "TriggerSound": "fireball",
@@ -145,49 +145,82 @@
           "Condition": null,
           "Trigger": "LocationChanged",
           "Actions": [
+            // Incendio
+            "RemoveMail Current {{ModId}}_Incendio",
             "RemoveMail Current {{ModId}}_HogsmeadeVillageCenterFlooFlameRectangle",
             "RemoveMail Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlameRectangle",
-            "RemoveMail Current {{ModId}}_HogsmeadeVillageIncendio",
             "RemoveMail Current {{ModId}}_HogwartsValleyFlooFlameRectangle",
-            "RemoveMail Current {{ModId}}_HogwartsValleyIncendio",
+            // Reducto
+            "RemoveMail Current {{ModId}}_Reducto",
             "RemoveMail Current {{ModId}}_HogsmeadeVillageForbiddenForestEntranceRectangle",
-            "RemoveMail Current {{ModId}}_HogsmeadeVillageReducto"
+            "RemoveMail Current {{ModId}}_HogwartsValleyAranshireBrocburrowPathRectangle",
+            "RemoveMail Current {{ModId}}_HogwartsValleyLowerHogsfieldFarmPathRectangle",
+            "RemoveMail Current {{ModId}}_HogwartsValleyLowerHogsfieldQuarryPathRectangle",
+            "RemoveMail Current {{ModId}}_HogwartsValleyBrocburrowAstronomyTableRectangle"
           ],
-          "MarkActionApplied": false
-        },
-        // Reducto
-        "{{ModID}}_HogsmeadeVillageForbiddenForestEntranceOpen": {
-          "Id": "{{ModID}}_HogsmeadeVillageForbiddenForestEntranceOpen",
-          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageReducto, PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageForbiddenForestEntranceRectangle, !PLAYER_HAS_MAIL Any HogsmeadeVillageForbiddenForestEntranceOpen",
-          "Trigger": "Esca.EMP_OneSecondUpdateTicked",
-          "Action": "AddMail All {{ModId}}_HogsmeadeVillageForbiddenForestEntranceOpen Received",
           "MarkActionApplied": false
         },
         // Incendio
         "{{ModID}}_HogsmeadeVillageCenterFlooFlame": {
           "Id": "{{ModID}}_HogsmeadeVillageCenterFlooFlame",
-          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageIncendio, PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCenterFlooFlameRectangle, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCenterFlooFlame",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, PLAYER_HAS_MAIL Current {{ModId}}_Incendio, PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCenterFlooFlameRectangle, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCenterFlooFlame",
           "Trigger": "Esca.EMP_OneSecondUpdateTicked",
           "Action": "AddMail Current {{ModId}}_HogsmeadeVillageCenterFlooFlame Received",
-          "MarkActionApplied": false,
-          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCenterFlooFlame Received"
+          "MarkActionApplied": false
         },
         "{{ModID}}_HogsmeadeVillageCrossroadFlooFlame": {
           "Id": "{{ModID}}_HogsmeadeVillageCrossroadFlooFlame",
-          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageIncendio, PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlameRectangle, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlame",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, PLAYER_HAS_MAIL Current {{ModId}}_Incendio, PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlameRectangle, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlame",
           "Trigger": "Esca.EMP_OneSecondUpdateTicked",
           "Action": "AddMail Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlame Received",
-          "MarkActionApplied": false,
-          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlame Received"
+          "MarkActionApplied": false
         },
         "{{ModID}}_HogwartsValleyFlooFlame": {
           "Id": "{{ModID}}_HogwartsValleyFlooFlame",
-          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, PLAYER_HAS_MAIL Current {{ModId}}_HogwartsValleyIncendio, PLAYER_HAS_MAIL Current {{ModId}}_HogwartsValleyFlooFlameRectangle, !PLAYER_HAS_MAIL Current {{ModId}}_HogwartsValleyFlooFlame",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, PLAYER_HAS_MAIL Current {{ModId}}_Incendio, PLAYER_HAS_MAIL Current {{ModId}}_HogwartsValleyFlooFlameRectangle, !PLAYER_HAS_MAIL Current {{ModId}}_HogwartsValleyFlooFlame",
           "Trigger": "Esca.EMP_OneSecondUpdateTicked",
           "Action": "AddMail Current {{ModId}}_HogwartsValleyFlooFlame Received",
-          "MarkActionApplied": false,
-          "SkipPermanentlyCondition": "PLAYER_HAS_MAIL Current {{ModId}}_HogwartsValleyFlooFlame Received"
+          "MarkActionApplied": false
+        },
+        // Reducto
+        "{{ModID}}_HogsmeadeVillageForbiddenForestEntrancePathOpen": {
+          "Id": "{{ModID}}_HogsmeadeVillageForbiddenForestEntrancePathOpen",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, PLAYER_HAS_MAIL Current {{ModId}}_Reducto, PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageForbiddenForestEntranceRectangle, !PLAYER_HAS_MAIL Any {{ModId}}_HogsmeadeVillageForbiddenForestEntrancePathOpen",
+          "Trigger": "Esca.EMP_OneSecondUpdateTicked",
+          "Action": "AddMail All {{ModId}}_HogsmeadeVillageForbiddenForestEntrancePathOpen Received",
+          "MarkActionApplied": false
+        },
+        "{{ModID}}_HogwartsValleyAranshireBrocburrowPathOpen": {
+          "Id": "{{ModID}}_HogwartsValleyAranshireBrocburrowPathOpen",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, PLAYER_HAS_MAIL Current {{ModId}}_Reducto, PLAYER_HAS_MAIL Current {{ModId}}_HogwartsValleyAranshireBrocburrowPathRectangle, !PLAYER_HAS_MAIL Any {{ModId}}_HogwartsValleyAranshireBrocburrowPathOpen",
+          "Trigger": "Esca.EMP_OneSecondUpdateTicked",
+          "Action": "AddMail All {{ModId}}_HogwartsValleyAranshireBrocburrowPathOpen Received",
+          "MarkActionApplied": false
+        },
+        "{{ModID}}_HogwartsValleyLowerHogsfieldFarmPathOpen": {
+          "Id": "{{ModID}}_HogwartsValleyLowerHogsfieldFarmPathOpen",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, PLAYER_HAS_MAIL Current {{ModId}}_Reducto, PLAYER_HAS_MAIL Current {{ModId}}_HogwartsValleyLowerHogsfieldFarmPathRectangle, !PLAYER_HAS_MAIL Any {{ModId}}_HogwartsValleyLowerHogsfieldFarmPathOpen",
+          "Trigger": "Esca.EMP_OneSecondUpdateTicked",
+          "Action": "AddMail All {{ModId}}_HogwartsValleyLowerHogsfieldFarmPathOpen Received",
+          "MarkActionApplied": false
+        },
+        "{{ModID}}_HogwartsValleyLowerHogsfieldQuarryPathOpen": {
+          "Id": "{{ModID}}_HogwartsValleyLowerHogsfieldQuarryPathOpen",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, PLAYER_HAS_MAIL Current {{ModId}}_Reducto, PLAYER_HAS_MAIL Current {{ModId}}_HogwartsValleyLowerHogsfieldQuarryPathRectangle, !PLAYER_HAS_MAIL Any {{ModId}}_HogwartsValleyLowerHogsfieldQuarryPathOpen",
+          "Trigger": "Esca.EMP_OneSecondUpdateTicked",
+          "Action": "AddMail All {{ModId}}_HogwartsValleyLowerHogsfieldQuarryPathOpen Received",
+          "MarkActionApplied": false
+        },
+        "{{ModID}}_HogwartsValleyBrocburrowAstronomyTableOpen": {
+          "Id": "{{ModID}}_HogwartsValleyBrocburrowAstronomyTableOpen",
+          "Condition": "PLAYER_HAS_ITEM Current (W){{ModId}}_{{Wand}}Wand, PLAYER_HAS_MAIL Current {{ModId}}_Reducto, PLAYER_HAS_MAIL Current {{ModId}}_HogwartsValleyBrocburrowAstronomyTableRectangle, !PLAYER_HAS_MAIL Any {{ModId}}_HogwartsValleyBrocburrowAstronomyTableOpen",
+          "Trigger": "Esca.EMP_OneSecondUpdateTicked",
+          "Action": "AddMail All {{ModId}}_HogwartsValleyBrocburrowAstronomyTableOpen Received",
+          "MarkActionApplied": false
         }
+      },
+      "When": {
+        "HasMod |contains= Esca.EMP": true
       }
     },
     // Reducto
@@ -210,6 +243,94 @@
       "When": {
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
         "HasFlag |contains= {{ModId}}_HogsmeadeVillageForbiddenForestEntranceOpen": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Valley Aranshire To Brocburrow Path Open DMTE",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsValley",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 0,
+            "Y": 99
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/changeMultipleIndex_Load": "Front 35 84=|Front 36 84=|Buildings 35 85=|Buildings 36 85="
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogwartsValleyAranshireBrocburrowPathOpen": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Valley LowerHogsfield To Farm Path Open DMTE",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsValley",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 0,
+            "Y": 99
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/changeMultipleIndex_Load": "Front 117 93=|Front 118 93=|Buildings 117 94=|Buildings 118 94="
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogwartsValleyLowerHogsfieldFarmPathOpen": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Valley LowerHogsfield To Quarry Path Open DMTE",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsValley",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 0,
+            "Y": 99
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/changeMultipleIndex_Load": "Front 154 106=|Front 155 106=|Buildings 154 107=|Buildings 155 107="
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogwartsValleyLowerHogsfieldQuarryPathOpen": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Valley Brocburrow Astronomy Table Open DMTE",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsValley",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 0,
+            "Y": 99
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/changeMultipleIndex_Load": "Buildings 43 60="
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogwartsValleyBrocburrowAstronomyTableOpen": true
       },
       "Update": "OnTimeChange, OnLocationChange"
     },
@@ -280,12 +401,12 @@
       },
       "Update": "OnTimeChange, OnLocationChange"
     },
+    // Reducto DMTE
     {
-      "LogName": "Hogwarts Charms DMTE Mail",
+      "LogName": "Hogsmeade Village Forbidden Forest Entrance Rectangle DMTE Mail",
       "Action": "EditData",
       "Target": "DMT/Tiles",
       "Entries": {
-        // Reducto
         "{{ModId}}_HogsmeadeVillageForbiddenForestEntranceRectangle": {
           "Locations": [
             "{{ModId}}_HogsmeadeVillage"
@@ -308,8 +429,160 @@
               "Trigger": "Tool(MeleeWeapon)"
             }
           ]
-        },
-        // Incendio
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageForbiddenForestEntranceOpen": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Valley Aranshire To Brocburrow Path Rectangle DMTE Mail",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}_HogwartsValleyAranshireBrocburrowPathRectangle": {
+          "Locations": [
+            "{{ModId}}_HogwartsValley"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Rectangles": [
+            {
+              "X": 30,
+              "Y": 85,
+              "Width": 15,
+              "Height": 9
+            }
+          ],
+          "Actions": [
+            {
+              "Key": "DMT/mail",
+              "Value": "{{ModId}}_HogwartsValleyAranshireBrocburrowPathRectangle",
+              "Trigger": "Tool(MeleeWeapon)"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogwartsValleyAranshireBrocburrowPathOpen": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Valley Lower Hogsfield To Farm Rectangle DMTE Mail",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}_HogwartsValleyLowerHogsfieldFarmPathRectangle": {
+          "Locations": [
+            "{{ModId}}_HogwartsValley"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Rectangles": [
+            {
+              "X": 117,
+              "Y": 94,
+              "Width": 10,
+              "Height": 4
+            }
+          ],
+          "Actions": [
+            {
+              "Key": "DMT/mail",
+              "Value": "{{ModId}}_HogwartsValleyLowerHogsfieldFarmPathRectangle",
+              "Trigger": "Tool(MeleeWeapon)"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogwartsValleyLowerHogsfieldFarmPathOpen": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Valley Lower Hogsfield To Quarry Rectangle DMTE Mail",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}_HogwartsValleyLowerHogsfieldQuarryPathRectangle": {
+          "Locations": [
+            "{{ModId}}_HogwartsValley"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Rectangles": [
+            {
+              "X": 149,
+              "Y": 108,
+              "Width": 12,
+              "Height": 6
+            }
+          ],
+          "Actions": [
+            {
+              "Key": "DMT/mail",
+              "Value": "{{ModId}}_HogwartsValleyLowerHogsfieldQuarryPathRectangle",
+              "Trigger": "Tool(MeleeWeapon)"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogwartsValleyLowerHogsfieldQuarryPathOpen": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Valley Brocburrow Astronomy Table Rectangle DMTE Mail",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}_HogwartsValleyBrocburrowAstronomyTableRectangle": {
+          "Locations": [
+            "{{ModId}}_HogwartsValley"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Rectangles": [
+            {
+              "X": 39,
+              "Y": 61,
+              "Width": 9,
+              "Height": 8
+            }
+          ],
+          "Actions": [
+            {
+              "Key": "DMT/mail",
+              "Value": "{{ModId}}_HogwartsValleyBrocburrowAstronomyTableRectangle",
+              "Trigger": "Tool(MeleeWeapon)"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogwartsValleyBrocburrowAstronomyTableOpen": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    // Incendio DMTE
+    {
+      "LogName": "Hogsmeade Village Center Floo Flame Rectangle DMTE Mail",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
         "{{ModId}}_HogsmeadeVillageCenterFlooFlameRectangle": {
           "Locations": [
             "{{ModId}}_HogsmeadeVillage"
@@ -332,7 +605,19 @@
               "Trigger": "Tool(MeleeWeapon)"
             }
           ]
-        },
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageCenterFlooFlame": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogsmeade Village Forbidden Forest Entrance Rectangle DMTE Mail",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
         "{{ModId}}_HogsmeadeVillageCrossroadFlooFlameRectangle": {
           "Locations": [
             "{{ModId}}_HogsmeadeVillage"
@@ -355,7 +640,19 @@
               "Trigger": "Tool(MeleeWeapon)"
             }
           ]
-        },
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageCrossroadFlooFlame": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Valley Floo Flame Rectangle DMTE Mail",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
         "{{ModId}}_HogwartsValleyFlooFlameRectangle": {
           "Locations": [
             "{{ModId}}_HogwartsValley"
@@ -379,7 +676,12 @@
             }
           ]
         }
-      }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogwartsValleyFlooFlame": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
     }
   ]
 }
