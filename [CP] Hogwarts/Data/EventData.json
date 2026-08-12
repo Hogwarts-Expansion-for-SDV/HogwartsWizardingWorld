@@ -211,58 +211,43 @@
       }
     },
     // Ollivanders (notes: Priority new locations; *flashbacks*? rewrite dialogue and fix mistakes: check Cutscenes.dockx)
-    {
-      "LogName": "Hogwarts Ollivanders Events",
-      "Action": "EditData",
-      "Target": "Data/Events/{{ModId}}_Ollivanders",
-      "Entries": {
-        "{{ModId}}_Ollivander05/": "none/8 17/farmer 100 100 0 HogwartsOllivander 10 15 3/skippable/pause 800/
-		    playSound doorClose/pause 200/
-	    	warp farmer 8 19/pause 500/
-        facedirection HogwartsOllivander 2/
-	    	speak HogwartsOllivander \"Welcome, welcome. You must be here for your first wand.\"/pause 400/emote HogwartsOllivander 40/pause 200/
-        move HogwartsOllivander 0 2 2/pause 300/
-        speak HogwartsOllivander \"A student I wasn't expecting. Curious..\"/pause 200/
-	    	speak HogwartsOllivander \"Forgive me.#$b#Do take your time. Please, look about...#$b# I am most interested to see which wand's attention you draw.\"/pause 200/
-        emote farmer 56/pause 200/
-		    move farmer 0 -1 0/move farmer 5 0 1/
-        facedirection HogwartsOllivander 1/pause 400/
-        emote farmer 40/move farmer 0 -2 0/facedirection farmer 1/pause 400/emote farmer 28/pause 200/move farmer 0 -2 0/move farmer -1 0 3/
-        facedirection HogwartsOllivander 0/
-        facedirection farmer 0/pause 600/emote farmer 12/pause 400/facedirection farmer 2/
-        question null \"#None of these wands seem to be working.\"/pause 800/
-        speak HogwartsOllivander \"Despite years of experience, wandmakers never know how wands will react.#$b#However, what we have agreed upon is that the wand chooses the wizard.\"/pause 800/
-        quickQuestion #Do you make all of these wands by yourself?#I’ve heard of your shop in Diagon Alley, but you have a shop here now?#
-        (break)pause 800\\speak HogwartsOllivander \"My daughter made many of these... She was a gifted wandmaker.\"
-        (break) speak HogwartsOllivander \"I opened this branch after... I was taken from my shop, and haven’t returned... #$b#Hogsmeade is quainter. Safer. #$b#A place to forget.\"/pause 800/
-        question null \"#Is your family still in London?\"/pause 800/
-        speak HogwartsOllivander \"Sadly, they have passed.#$b#I have this locket to help me get through... It has a portrait of my daughter.\"/pause 800/
-        emote farmer 28/pause 800/
-        question null \"#If you can go, I heard there's a support group for victims of Voldemort.\"/pause 800/emote HogwartsOllivander 12/pause 100/
-        move HogwartsOllivander 0 -1 0/pause 100/
-        speak HogwartsOllivander \"We do not speak his name!\"/pause 400/
-        emote farmer 16/pause 400/
-        speak HogwartsOllivander \"You have no idea-#$b#...#$b#Perhaps another time, @.#$b# The wands, and I, need a moment.\"/pause 800/
-        globalFade/viewport -1000 -1000/pause 1000/end",
+    { "LogName": "Hogwarts Ollivanders Events", 
+      "Action": "EditData", 
+      "Target": "Data/Events/{{ModId}}_Ollivanders", 
+      "Entries": { "{{ModId}}_Ollivander05/": "none/8 17/farmer 100 100 0 HogwartsOllivander 10 15 3/skippable/pause 800/playSound doorClose/
+      pause 200/warp farmer 8 19/pause 500/facedirection HogwartsOllivander 2/ speak HogwartsOllivander \"Welcome, welcome. You must be here for your first wand.\"/
+      pause 400/emote HogwartsOllivander 40/pause 200/ move HogwartsOllivander 0 2 2/
+      pause 300/ speak HogwartsOllivander \"A student I wasn't expecting. Curious..\"/
+      pause 200/ speak HogwartsOllivander \"Forgive me.#$b#Do take your time. Please, look about...#$b# I am most interested to see which wand's attention you draw.\"/pause 200/ emote farmer 56/
+      pause 200/ move farmer 0 -1 0/move farmer 5 0 1/facedirection HogwartsOllivander 1/pause 1000/
+      emote farmer 40/move farmer 0 -1 0/facedirection farmer 1/pause 1000/
+      emote farmer 28/pause 200/pause 600/emote farmer 12/pause 400/facedirection farmer 3/
+      question null \"#None of these wands seem to be working.\"/
+      pause 800/ speak HogwartsOllivander \"Despite years of experience, wandmakers never know how wands will react.#$b#However, what we have agreed upon is that the wand chooses the wizard.\"/
+      pause 800/move farmer 0 -1 0/facedirection farmer 1/pause 600/emote farmer 16/
+      question null \"#This wand is really beautiful.\"/pause 800/facedirection farmer 3/pause 1000/emote HogwartsOllivander 40/pause 1000/speak HogwartsOllivander \"That was the last wand my daughter ever made.$s#$b#She had a remarkable talent for wandmaking.\"/
+      pause 800/speak HogwartsOllivander \"By now, there are very few things I have left to remember her by.$s\"/pause 400/emote farmer 8/ question null \"#What happened to her?\"/
+      pause 1000/ speak HogwartsOllivander \"They took her from me.$a\"/pause 400/ speak HogwartsOllivander \"…I’m sorry. I shouldn’t have said that.$0#$b#It’s… difficult to speak of her. Even after all these years.\"/
+      emote farmer 16/pause 800/speak HogwartsOllivander \"Please. Come back another time.$0\"/globalFade/viewport -1000 -1000/pause 1000/end",
         
-        "{{ModId}}_Ollivander25/f {{ModId}}_HogwartsOllivander 1000/e {{ModId}}_Ollivander15": "none/8 17/farmer 100 100 0 HogwartsOllivander 7 14 0/skippable/pause 800/
-        warp farmer 8 19/playSound doorCreak/pause 400/
-        move farmer 0 -2 0/pause 1000/emote farmer 40/pause 1500/
-        question null \"#Mr. Ollivander? Sir?\"/pause 500/emote HogwartsOllivander 16/faceDirection HogwartsOllivander 2/
-        speak HogwartsOllivander \"Oh, I didn't hear you. Forgive me. I was deep in thought...\"/pause 800/
-        question null \"#Are you alright sir? You seem fatigued.\"/pause 800/emote HogwartsOllivander 28/
-        speak HogwartsOllivander \"This wand... it is quite unlike any other.\"/pause 800/
-        question null \"#You're very focused on that wand.\"/pause 800/
-        speak HogwartsOllivander \"This wand... it elevates me. Every memory of hate, this wand turns it into power, #$b#and I have had tremendous power lately.\"/pause 800/
-        emote farmer 8/pause 800/
-        question null \"#You don't sound like yourself. You should be careful...\" 
-		    question null \"#It doesn't feel like you're the one in control of that wand. Maybe it's too dangerous.\"/pause 800/
-        speak HogwartsOllivander \"Wands are meant to be wielded, and I intend to wield this one.\"/pause 400/
-        emote farmer 40/pause 800/
-	    	speak HogwartsOllivander \"You are a student. #$b#What could you possibly know of power? #$b#You should return to the castle, where you at least are safe.\"/
-        globalFade/viewport -1000 -1000/pause 1000/end",
+      "{{ModId}}_Ollivander25/f {{ModId}}_HogwartsOllivander 1000/e {{ModId}}_Ollivander45": "none/8 17/farmer 100 100 0 HogwartsOllivander 7 14 0/skippable/pause 800/
+      warp farmer 8 19/playSound doorCreak/pause 400/
+      move farmer 0 -2 0/pause 1000/emote farmer 40/pause 1500/
+      question null \"#Mr. Ollivander? Sir?\"/pause 500/emote HogwartsOllivander 16/faceDirection HogwartsOllivander 2/
+      speak HogwartsOllivander \"Oh, I didn't hear you. Forgive me. I was deep in thought...\"/pause 800/
+      question null \"#Are you alright sir? You seem fatigued.\"/pause 800/emote HogwartsOllivander 28/
+      speak HogwartsOllivander \"This wand... it is quite unlike any other.\"/pause 800/
+      question null \"#You're very focused on that wand.\"/pause 800/
+      speak HogwartsOllivander \"This wand... it elevates me. Every memory of hate, this wand turns it into power, #$b#and I have had tremendous power lately.\"/pause 800/
+      emote farmer 8/pause 800/
+      question null \"#You don't sound like yourself. You should be careful...\" 
+		  question null \"#It doesn't feel like you're the one in control of that wand. Maybe it's too dangerous.\"/pause 800/
+      speak HogwartsOllivander \"Wands are meant to be wielded, and I intend to wield this one.\"/pause 400/
+      emote farmer 40/pause 800/
+	    speak HogwartsOllivander \"You are a student. #$b#What could you possibly know of power? #$b#You should return to the castle, where you at least are safe.\"/
+      globalFade/viewport -1000 -1000/pause 1000/end",
 
-        "{{ModId}}_Ollivander45/": "none/8 6/farmer 7 6 1 HogwartsOllivander 9 6 3/skippable/pause 800/
+        "{{ModId}}_Ollivander45/f {{ModId}}_HogwartsOllivander 250": "none/8 6/farmer 7 6 1 HogwartsOllivander 9 6 3/skippable/pause 800/
         question null \"#How is it possible that your wand is more powerful than other wands I've witnessed?\"/pause 800/
         speak HogwartsOllivander \"This is no ordinary wand...\"/pause 800/
         globalFade/viewport -1000 -1000/pause 800/
