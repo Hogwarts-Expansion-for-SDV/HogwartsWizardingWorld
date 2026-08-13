@@ -218,17 +218,17 @@
       pause 200/warp farmer 8 19/pause 500/facedirection HogwartsOllivander 2/ speak HogwartsOllivander \"Welcome, welcome. You must be here for your first wand.\"/
       pause 400/emote HogwartsOllivander 40/pause 200/ move HogwartsOllivander 0 2 2/
       pause 300/ speak HogwartsOllivander \"A student I wasn't expecting. Curious..\"/
-      pause 200/ speak HogwartsOllivander \"Forgive me.#$b#Do take your time. Please, look about...#$b# I am most interested to see which wand's attention you draw.\"/pause 200/ emote farmer 56/
+      pause 200/ speak HogwartsOllivander \"Forgive me.#$b#Do take your time. Please, look about..\"/pause 200/ emote farmer 56/
       pause 200/ move farmer 0 -1 0/move farmer 5 0 1/facedirection HogwartsOllivander 1/pause 1000/
       emote farmer 40/move farmer 0 -1 0/facedirection farmer 1/pause 1000/
-      emote farmer 28/pause 200/pause 600/emote farmer 12/pause 400/facedirection farmer 3/
+      emote farmer 28/pause 800/emote farmer 12/pause 800/facedirection farmer 3/
       question null \"#None of these wands seem to be working.\"/
-      pause 800/ speak HogwartsOllivander \"Despite years of experience, wandmakers never know how wands will react.#$b#However, what we have agreed upon is that the wand chooses the wizard.\"/
-      pause 800/move farmer 0 -1 0/facedirection farmer 1/pause 600/emote farmer 16/
-      question null \"#This wand is really beautiful.\"/pause 800/facedirection farmer 3/pause 1000/emote HogwartsOllivander 40/pause 1000/speak HogwartsOllivander \"That was the last wand my daughter ever made.$s#$b#She had a remarkable talent for wandmaking.\"/
-      pause 800/speak HogwartsOllivander \"By now, there are very few things I have left to remember her by.$s\"/pause 400/emote farmer 8/ question null \"#What happened to her?\"/
-      pause 1000/ speak HogwartsOllivander \"They took her from me.$a\"/pause 400/ speak HogwartsOllivander \"…I’m sorry. I shouldn’t have said that.$0#$b#It’s… difficult to speak of her. Even after all these years.\"/
-      emote farmer 16/pause 800/speak HogwartsOllivander \"Please. Come back another time.$0\"/globalFade/viewport -1000 -1000/pause 1000/end",
+      pause 800/ speak HogwartsOllivander \"We may not understand why, but the wand chooses its wizard.$0\"/
+      pause 800/move farmer 0 -1 0/facedirection farmer 1/pause 1000/emote farmer 16/
+      question null \"#This wand is really beautiful.\"/pause 800/facedirection farmer 3/pause 1000/emote HogwartsOllivander 40/pause 1000/speak HogwartsOllivander \"That was the last wand my daughter ever made.$s#$b#She was remarkably talented.\"/
+      pause 800/emote farmer 8/pause 600/ question null \"#What happened to her?\"/
+      pause 1000/ speak HogwartsOllivander \"They took her from me.$a\"/showFrame farmer 94/pause 500/showFrame farmer 12/pause 400/ speak HogwartsOllivander \"I’m sorry. I shouldn’t have raised my voice.$0#$s#Please, come back another time.\"/
+      emote farmer 16/pause 1000/facedirection HogwartsOllivander 3/pause 600/globalFade/viewport -1000 -1000/pause 1000/end",
         
       "{{ModId}}_Ollivander25/f {{ModId}}_HogwartsOllivander 1000/e {{ModId}}_Ollivander45": "none/8 17/farmer 100 100 0 HogwartsOllivander 7 14 0/skippable/pause 800/
       warp farmer 8 19/playSound doorCreak/pause 400/
