@@ -9,7 +9,8 @@
           "RechargeSound": "cowboy_powerup",
           "Spells": [
             "{{ModId}}_Incendio",
-            "{{ModId}}_Reducto"
+            "{{ModId}}_Reducto",
+            "{{ModId}}_Reparo"
           ]
         }
       },
@@ -63,6 +64,20 @@
                   "EffectType": "Explode"
                 }
               ]
+            }
+          ]
+        },
+        "{{ModId}}_Reparo": {
+          "DisplayName": "Reparo",
+          "Sequence": [
+            "Right",
+            "DownLeft",
+            "UpLeft",
+            "Right"
+          ],
+          "SpellLevels": [
+            {
+              "TriggerAction": "AddMail Current {{ModId}}_Reparo received"
             }
           ]
         },
@@ -145,7 +160,8 @@
           "Trigger": "LocationChanged",
           "Actions": [
             "RemoveMail Current {{ModId}}_Incendio",
-            "RemoveMail Current {{ModId}}_Reducto"
+            "RemoveMail Current {{ModId}}_Reducto",
+            "RemoveMail Current {{ModId}}_Reparo"
           ],
           "MarkActionApplied": false
         }
@@ -235,9 +251,9 @@
           "Rectangles": [
             {
               "X": 30,
-              "Y": 85,
-              "Width": 15,
-              "Height": 9
+              "Y": 78,
+              "Width": 14,
+              "Height": 16
             }
           ],
           "Actions": [
@@ -249,7 +265,7 @@
             {
               "Key": "DMT/changeMultipleIndex",
               "Value": "Front 35 84=|Front 36 84=|Buildings 35 85=|Buildings 36 85=",
-              "Trigger": "Item((W){{ModId}}_{{Wand}}Wand)"
+              "Trigger": "Tool(MeleeWeapon)"
             },
             {
               "Key": "DMT/explosion",
@@ -302,10 +318,10 @@
           ],
           "Rectangles": [
             {
-              "X": 117,
-              "Y": 94,
-              "Width": 10,
-              "Height": 4
+              "X": 111,
+              "Y": 87,
+              "Width": 16,
+              "Height": 11
             }
           ],
           "Actions": [
@@ -370,10 +386,10 @@
           ],
           "Rectangles": [
             {
-              "X": 149,
-              "Y": 108,
-              "Width": 12,
-              "Height": 6
+              "X": 150,
+              "Y": 101,
+              "Width": 10,
+              "Height": 14
             }
           ],
           "Actions": [
@@ -488,6 +504,69 @@
       "When": {
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
         "HasFlag |contains= {{ModId}}_HogwartsValleyBrocburrowAstronomyTableOpen": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    // Reparo Hogsmeade Station Stone Fence
+    {
+      "LogName": "Hogsmeade Station Stone Fence Rectangle DMTE",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}_HogsmeadeStationStoneFenceRectangle": {
+          "Locations": [
+            "{{ModId}}_HogsmeadeStation"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Rectangles": [
+            {
+              "X": 55,
+              "Y": 6,
+              "Width": 9,
+              "Height": 12
+            }
+          ],
+          "Actions": [
+            {
+              "Key": "DMT/mail",
+              "Value": "{{ModId}}_HogsmeadeStationStoneFenceRectangle",
+              "Trigger": "Tool(MeleeWeapon)"
+            },
+            {
+              "Key": "DMT/changeMultipleIndex",
+              "Value": "Buildings 59 10=",
+              "Trigger": "Tool(MeleeWeapon)"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_Reparo": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogsmeade Station Stone Fence Open DMTE",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeStation",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 59,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/changeMultipleIndex_Load": "Buildings 59 10="
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogsmeadeStationStoneFenceRectangle": true
       },
       "Update": "OnTimeChange, OnLocationChange"
     },
