@@ -194,20 +194,20 @@
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogwartsGrandStaircase",
       "Entries": {
-        "{{ModId}}_Suryawati15": "none/28 40/farmer 25 44 0 HogwartsSuryawati 27 41 3/skippable/pause 800/
-        addTemporaryActor {{ModId}}_SuryawatiPhoenix 32 32 34 38 3 false Monster/pause 800/
-        move {{ModId}}_SuryawatiPhoenix -5 0 2 false/pause 800/
-        move HogwartsSuryawati -3 0 2 false/pause 800/
+        "{{ModId}}_Suryawati15": "spaceMusic/28 40/farmer 25 48 0 HogwartsSuryawati 27 41 3/skippable/pause 800/move farmer 0 -3 0/pause 1000/playSound parrot/emote farmer 16/faceDirection farmer 1/pause 100/faceDirection farmer 3/pause 100/playSound batFlap/playSound batFlap/pause 250/faceDirection farmer 0/
+        addTemporaryActor {{ModId}}_SuryawatiPhoenix 32 32 34 38 3 false Monster/pause 800/speed {{ModId}}_SuryawatiPhoenix 4/
+        move {{ModId}}_SuryawatiPhoenix -5 0 2 false/playSound batFlap/pause 800/viewport move 0 2 2000/
+        move HogwartsSuryawati -3 0 3 false/faceDirection HogwartsSuryawati 2/
         emote HogwartsSuryawati 16/pause 800/
-        speak HogwartsSuryawati \"It's not what it looks like...$2\"/pause 800/
-        question null \"#Were you... a bird?\"/pause 800/
+        speak HogwartsSuryawati \"It's not what it looks like...$2\"/pause 1000/
+        question null \"#Were you... a bird?\"/pause 1000/shake HogwartsSuryawati 500/pause 1000/
         speak HogwartsSuryawati \"You saw nothing!$3\"/pause 800/
         beginSimultaneousCommand/
         move HogwartsSuryawati 0 10 2 true/
-        emote HogwartsSuryawati 12/
+        emote HogwartsSuryawati 12/pause 500/
         emote farmer 8/
-        endSimultaneousCommand/
-        globalFade/viewport -1000 -1000/pause 1000/end"
+        endSimultaneousCommand/faceDirection farmer 3/faceDirection farmer 2/pause 1000/move HogwartsSuryawati -6 0 3 true/
+        globalFade/ambientLight 0 0 0/viewport -1000 -1000/pause 1000/end"
       }
     },
     // Ollivanders (notes: Priority new locations; *flashbacks*? rewrite dialogue and fix mistakes: check Cutscenes.dockx)
