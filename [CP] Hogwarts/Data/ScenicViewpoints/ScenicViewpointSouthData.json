@@ -1,0 +1,19 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Scenic Viewpoint MMAP Panorama FullView",
+      "Action": "EditData",
+      "Target": "mushymato.MMAP/Panorama",
+      "Fields": {
+        "MMAP_MountainView": {
+          "FullView": false
+        }
+      },
+      "When": {
+        "HasMod |contains= mushymato.MMAP": true,
+        "LocationName |contains= {{ModId}}_ScenicViewpointSouth": true
+      },
+      "Update": "OnLocationChange"
+    }
+  ]
+}

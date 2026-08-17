@@ -99,10 +99,22 @@
       "FromFile": "assets/Maps/Ollivanders.tmx"
     },
     {
+      "LogName": "Ollivander's Bedroom Load",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_OllivandersBedroom",
+      "FromFile": "assets/Maps/Ollivanders.tmx"
+    },
+    {
       "LogName": "Scenic Viewpoint East Load",
       "Action": "Load",
       "Target": "Maps/{{ModId}}_ScenicViewpointEast",
       "FromFile": "assets/Maps/ScenicViewpointEast.tmx"
+    },
+    {
+      "LogName": "Scenic Viewpoint South Load",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_ScenicViewpointSouth",
+      "FromFile": "assets/Maps/ScenicViewpointSouth.tmx"
     },
     {
       "LogName": "Stitches and Draughts Load",
@@ -612,6 +624,12 @@
       "FromFile": "assets/Maps/HogwartsPotionsClassroom.tmx"
     },
     {
+      "LogName": "Hogwarts Quidditch Pitch Load",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_HogwartsQuidditchPitch",
+      "FromFile": "assets/Maps/HogwartsQuidditchPitch.tmx"
+    },
+    {
       "LogName": "Hogwarts South Wing Load",
       "Action": "Load",
       "Target": "Maps/{{ModId}}_HogwartsSouthWing",
@@ -805,6 +823,16 @@
           "DefaultArrivalTile": {
             "X": 12,
             "Y": 20
+          }
+        },
+        "{{ModId}}_ScenicViewpointSouth": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_ScenicViewpointSouth"
+          },
+          "DefaultArrivalTile": {
+            "X": 6,
+            "Y": 14
           }
         },
         "{{ModId}}_StitchesAndDraughts": {
@@ -1349,6 +1377,16 @@
           "DefaultArrivalTile": {
             "X": 15,
             "Y": 30
+          }
+        },
+        "{{ModId}}_HogwartsQuidditchPitch": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsQuidditchPitch"
+          },
+          "DefaultArrivalTile": {
+            "X": 12,
+            "Y": 25
           }
         },
         "{{ModId}}_HogwartsSouthWing": {

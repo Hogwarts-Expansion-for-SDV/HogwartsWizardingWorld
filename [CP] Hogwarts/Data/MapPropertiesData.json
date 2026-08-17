@@ -167,7 +167,7 @@
       "Target": "Maps/{{ModId}}_ScenicViewpointEast",
       "MapProperties": {
         "Outdoors": "T",
-        "ViewportClamp": "0 0 24 25",
+        "ViewportClamp": "0 0 24 23",
         "Warp": "11 19 {{ModId}}_HogsmeadeStation 53 5 12 19 {{ModId}}_HogsmeadeStation 53 5"
       }
     },
@@ -175,6 +175,27 @@
       "LogName": "Map Properties of Scenic Viewpoint East MMAP",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_ScenicViewpointEast",
+      "MapProperties": {
+        "mushymato.MMAP_Panorama": "MMAP_MountainView"
+      },
+      "When": {
+        "HasMod |contains= mushymato.MMAP": true
+      }
+    },
+    {
+      "LogName": "Map Properties of Scenic Viewpoint South",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ScenicViewpointSouth",
+      "MapProperties": {
+        "Outdoors": "T",
+        "ViewportClamp": "0 0 13 15",
+        "Warp": "6 16 {{ModId}}_HogsmeadeVillage 108 15 7 16 {{ModId}}_HogsmeadeVillage 108 15"
+      }
+    },
+    {
+      "LogName": "Map Properties of Scenic Viewpoint South MMAP",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ScenicViewpointSouth",
       "MapProperties": {
         "mushymato.MMAP_Panorama": "MMAP_MountainView"
       },
@@ -269,7 +290,7 @@
       "Target": "Maps/{{ModId}}_HogwartsBellTowerCourtyard",
       "MapProperties": {
         "Outdoors": "T",
-        "NPCWarp": "95 78 {{ModId}}_HogwartsTransfigurationWing 19 29 95 48 {{ModID}}_HogwartsVivarium 9 56"
+        "Warp": "146 21 {{ModId}}_HogwartsQuidditchPitch 12 25 95 78 {{ModId}}_HogwartsTransfigurationWing 19 29 95 48 {{ModID}}_HogwartsVivarium 9 56"
       }
     },
     {
@@ -479,6 +500,15 @@
         "AmbientLight": "255 255 255",
         "AmbientNightLight": "150 150 30",
         "NPCWarp": "15 35 {{ModId}}_HogwartsTransfigurationWing 51 56"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Quidditch Pitch",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsQuidditchPitch",
+      "MapProperties": {
+        "Outdoors": "T",
+        "Warp": "12 26 {{ModId}}_HogwartsBellTowerCourtyard 146 22"
       }
     },
     {
