@@ -200,14 +200,14 @@
         move HogwartsSuryawati -3 0 3 false/faceDirection HogwartsSuryawati 2/
         emote HogwartsSuryawati 16/pause 800/
         speak HogwartsSuryawati \"It's not what it looks like...$2\"/pause 1000/
-        question null \"#Were you... a bird?\"/pause 1000/shake HogwartsSuryawati 500/pause 1000/
-        speak HogwartsSuryawati \"You saw nothing!$3\"/pause 800/
+        question null \"#Were you... a bird?\"/pause 1000/showFrame HogwartsSuryawati 16/shake HogwartsSuryawati 500/pause 1000/
+        speak HogwartsSuryawati \"You saw nothing!$3\"/pause 800/showFrame HogwartsSuryawati 0/
         beginSimultaneousCommand/
         move HogwartsSuryawati 0 10 2 true/
         emote HogwartsSuryawati 12/pause 500/
         emote farmer 8/
-        endSimultaneousCommand/faceDirection farmer 3/faceDirection farmer 2/pause 1000/move HogwartsSuryawati -6 0 3 true/
-        globalFade/ambientLight 0 0 0/viewport -1000 -1000/pause 1000/end"
+        endSimultaneousCommand/faceDirection farmer 3/faceDirection farmer 2/pause 1000/move HogwartsSuryawati -6 0 3 true/pause 1500/
+        end"
       }
     },
     // Ollivanders (notes: Priority new locations; *flashbacks*? rewrite dialogue and fix mistakes: check Cutscenes.dockx)
