@@ -1,0 +1,24 @@
+{
+  "Changes": [
+    {
+      "LogName": "Ollivander Spawn",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_OllivandersBedroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 3,
+            "Y": 7
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.VenomousTentaculaSapling"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= PeacefulEnd.CustomCompanions": true
+      }
+    }
+  ]
+}
