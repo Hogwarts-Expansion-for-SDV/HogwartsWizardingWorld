@@ -102,7 +102,7 @@
       "LogName": "Ollivander's Bedroom Load",
       "Action": "Load",
       "Target": "Maps/{{ModId}}_OllivandersBedroom",
-      "FromFile": "assets/Maps/Ollivanders.tmx"
+      "FromFile": "assets/Maps/OllivandersBedroom.tmx"
     },
     {
       "LogName": "Scenic Viewpoint East Load",
@@ -809,6 +809,16 @@
           "CreateOnLoad": {
             "AlwaysActive": false,
             "MapPath": "Maps/{{ModId}}_Ollivanders"
+          },
+          "DefaultArrivalTile": {
+            "X": 8,
+            "Y": 18
+          }
+        },
+          "{{ModId}}_OllivandersBedroom": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_OllivandersBedroom"
           },
           "DefaultArrivalTile": {
             "X": 8,
