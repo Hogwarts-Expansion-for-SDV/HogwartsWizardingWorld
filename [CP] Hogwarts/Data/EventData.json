@@ -13,6 +13,12 @@
       "FromFile": "assets/Creatures/Phoenix.png"
     },
     {
+      "LogName": "Hogwarts Willow Load",
+      "Action": "Load",
+      "Target": "{{ModId}}/WhompingWillow",
+      "FromFile": "assets/Creatures/WhompingWillow.png"
+    },
+    {
       "LogName": "Hogwarts Forbidden Forest Centaur Camp Suryawati25 Unicorn Sprite",
       "Action": "EditData",
       "Target": "mushymato.MMAP/TAS",
@@ -102,7 +108,7 @@
         speak HogwartsSuryawati \"I do not remember my mother.$2#$b#My father... I cannot tell him.$2#$b#He poaches magical creatures...$2\"/pause 1000/
         emote farmer 28/pause 500/speak HogwartsSuryawati \"Well... Now you know.\"/pause 1000/speak HogwartsSuryawati \"I actually feel a little better after sharing this.\"/pause 1000/speak HogwartsSuryawati \"A little bit...$4\"/pause 1000/
         globalFade/viewport -1000 -1000/pause 1000/end",
-        "{{ModId}}_Suryawati20": "spaceMusic/16 6/farmer 34 36 3 HogwartsSuryawati 999 999 2/addTemporaryActor {{ModId}}_SuryawatiPhoenix 32 32 -2 6 3 true Monster/speed {{ModId}}_SuryawatiPhoenix 7/move {{ModId}}_SuryawatiPhoenix 35 0 1 true/pause 6000/viewport move 3 8 2000/addTemporaryActor {{ModId}}_SuryawatiPhoenix 32 32 37 22 3 false Monster Suri/
+        "{{ModId}}_Suryawati20": "spaceMusic/16 6/farmer 34 36 3 HogwartsSuryawati 999 999 2/skippable/addTemporaryActor {{ModId}}_SuryawatiPhoenix 32 32 -2 6 3 true Monster/temporaryAnimatedSprite \"{{ModId}}/WhompingWillow\" 0 0 112 112 150 15 999 15 25 false false 2 0 1 0 0 0/speed {{ModId}}_SuryawatiPhoenix 7/move {{ModId}}_SuryawatiPhoenix 35 0 1 true/pause 6000/viewport move 3 8 2000/addTemporaryActor {{ModId}}_SuryawatiPhoenix 32 32 37 22 3 false Monster Suri/
         speed Suri 7/move Suri -30 0 1 true/pause 2000/viewport move 0 4 1500/pause 2000/screenFlash 1/viewport -9999 9999/warp HogwartsSuryawati 19 34/showFrame HogwartsSuryawati 23/viewport 20 35/globalFadeToClear/move farmer -4 0 3 true/pause 1000/shake HogwartsSuryawati 500/pause 500/emote farmer 16/shake HogwartsSuryawati 500/textAboveHead HogwartsSuryawati \"Uuhh...\"/
         jump farmer/speed farmer 4/move farmer -6 0 3 true/pause 2000/move farmer 0 -2 0 true/pause 1000/faceDirection farmer 3/pause 100/emote farmer 8/pause 1000/shake HogwartsSuryawati 1000/showFrame HogwartsSuryawati 16/pause 1000/emote HogwartsSuryawati 12/pause 1000/speak HogwartsSuryawati \"What the...$2\"/pause 1000/shake HogwartsSuryawati 500/speak HogwartsSuryawati \"What happened?\"/pause 500/
         question null \"#You were hit by the Whomping Willow when you... Flew towards it?\"/showFrame HogwartsSuryawati 0/jump HogwartsSuryawati/emote HogwartsSuryawati 16/pause 1000/faceDirection HogwartsSuryawati 1/speak HogwartsSuryawati \"Flew? D-Don't be ridiculous. I was just...$3\"/emote HogwartsSuryawati 36/pause 250/speak HogwartsSuryawati \"Observing the Willow... Closely.$2\"/
