@@ -93,15 +93,20 @@
         viewport move -2 -2 4500/pause 6000/
         speak HogwartsAndrew \"I dream of being an explorer.\"/pause 800/
         globalFade/viewport -1000 -1000/pause 1000/end",
-        "{{ModId}}_Suryawati35": "none/61 20/farmer 61 21 0 HogwartsSuryawati 61 19 2/skippable/pause 800/
-        emote farmer 8/pause 800/
+        "{{ModId}}_Suryawati35": "AbigailFluteDuet/61 21/farmer 61 28 0 HogwartsSuryawati 61 19 0/skippable/pause 800/move farmer 0 -7 0 true/pause 600/emote HogwartsSuryawati 40/pause 500/
+        emote farmer 8/pause 1000/facedirection HogwartsSuryawati 3/faceDirection HogwartsSuryawati 2/speak HogwartsSuryawati \"You're here...\"/pause 1000/animate HogwartsSuryawati false true 500 18 19 18 19 18 19 18 19 18 19/pause 500/
         speak HogwartsSuryawati \"As long as you don't tell anyone, I will answer your questions.$2\"/pause 800/
-        question null \"#I won't tell.#How are you able to transform into a bird?\"/pause 800/
+        question null \"#I won't tell.#How are you able to transform into a bird?\"/pause 800/stopAnimation HogwartsSuryawati 0/pause 500/showFrame HogwartsSuryawati 16/
         speak HogwartsSuryawati \"After an argument with my father, I ran away, and transformed for the first time.$2\"/pause 800/
-        question null \"#Do your parents know?\"/pause 800/
-        speak HogwartsSuryawati \"I do not remember my mother.$2#$b#My father... I cannot tell him.$2#$b#He poaches magical creatures...$2\"/pause 800/
-        emote farmer 28 true/
-        globalFade/viewport -1000 -1000/pause 1000/end"
+        question null \"#Do your parents know?\"/pause 1000/showFrame HogwartsSuryawati 0/faceDirection HogwartsSuryawati 3/pause 500/emote HogwartsSuryawati 40/pause 500/showFrame HogwartsSuryawati 17/pause 500/
+        speak HogwartsSuryawati \"I do not remember my mother.$2#$b#My father... I cannot tell him.$2#$b#He poaches magical creatures...$2\"/pause 1000/
+        emote farmer 28/pause 500/speak HogwartsSuryawati \"Well... Now you know.\"/pause 1000/speak HogwartsSuryawati \"I actually feel a little better after sharing this.\"/pause 1000/speak HogwartsSuryawati \"A little bit...$4\"/pause 1000/
+        globalFade/viewport -1000 -1000/pause 1000/end",
+        "{{ModId}}_Suryawati20": "spaceMusic/16 6/farmer 34 36 3 HogwartsSuryawati 999 999 2/addTemporaryActor {{ModId}}_SuryawatiPhoenix 32 32 -2 6 3 true Monster/speed {{ModId}}_SuryawatiPhoenix 7/move {{ModId}}_SuryawatiPhoenix 35 0 1 true/pause 6000/viewport move 3 8 2000/addTemporaryActor {{ModId}}_SuryawatiPhoenix 32 32 37 22 3 false Monster Suri/
+        speed Suri 7/move Suri -30 0 1 true/pause 2000/viewport move 0 4 1500/pause 2000/screenFlash 1/viewport -9999 9999/warp HogwartsSuryawati 19 34/showFrame HogwartsSuryawati 23/viewport 20 35/globalFadeToClear/move farmer -4 0 3 true/pause 1000/shake HogwartsSuryawati 500/pause 500/emote farmer 16/shake HogwartsSuryawati 500/textAboveHead HogwartsSuryawati \"Uuhh...\"/
+        jump farmer/speed farmer 4/move farmer -6 0 3 true/pause 2000/move farmer 0 -2 0 true/pause 1000/faceDirection farmer 3/pause 100/emote farmer 8/pause 1000/shake HogwartsSuryawati 1000/showFrame HogwartsSuryawati 16/pause 1000/emote HogwartsSuryawati 12/pause 1000/speak HogwartsSuryawati \"What the...$2\"/pause 1000/shake HogwartsSuryawati 500/speak HogwartsSuryawati \"What happened?\"/pause 500/
+        question null \"#You were hit by the Whomping Willow when you... Flew towards it?\"/showFrame HogwartsSuryawati 0/jump HogwartsSuryawati/emote HogwartsSuryawati 16/pause 1000/faceDirection HogwartsSuryawati 1/speak HogwartsSuryawati \"Flew? D-Don't be ridiculous. I was just...$3\"/emote HogwartsSuryawati 36/pause 250/speak HogwartsSuryawati \"Observing the Willow... Closely.$2\"/
+        pause 1000/question null \"#But I saw-\"/jump HogwartsSuryawati/speak HogwartsSuryawati \"You saw nothing!$3\"/pause 1000/emote farmer 36/question null \"#Fine. Just let me help.\"/pause 1000/shake HogwartsSuryawati 500/faceDirection 2/showFrame HogwartsSuryawati 16/pause 250/speak HogwartsSuryawati \"Okay. But...$2 #$b# Don't tell anyone about what happened here!$3\"/pause 2000/end"
       }
     },
     // Forbidden Forest Centaur Camp 
@@ -110,17 +115,17 @@
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_ForbiddenForestCentaurCamp",
       "Entries": {
-        "{{ModId}}_Suryawati55": "none/67 76/farmer 60 66 3 HogwartsSuryawati 57 65 2/skippable/pause 800/
+        "{{ModId}}_Suryawati55": "AbigailFluteDuet/99 76/farmer 102 78 3 HogwartsSuryawati 100 77 3/skippable/move farmer -4 0 3 true/move HogwartsSuryawati -3 0 3 true/showFrame HogwartsSuryawati 13/pause 1500/speak HogwartsSuryawati \"Somewhere around here... I definitely heard something.$2 #$b# Something hurt...$2\"/pause 500/showFrame HogwartsSuryawati 17/pause 500/showFrame HogwartsSuryawati 0/pause 1000/showFrame HogwartsSuryawati 16/pause 1000/emote farmer 28/pause 1000/beginSimultaneousCommand/playSound leafrustle/faceDirection HogwartsSuryawati 2/jump farmer/jump HogwartsSuryawati/emote HogwartsSuryawati 16/endSimultaneousCommand/pause 500/faceDirection HogwartsSuryawati 3/speak HogwartsSuryawati \"This way!$2\"/speed HogwartsSuryawati 4/move HogwartsSuryawati -15 0 3 true/pause 1000/emote farmer 28/speed farmer 3/move farmer -10 0 3 true/pause 1000/globalFade/viewport -9999 -9999/warp farmer 60 66/warp HogwartsSuryawati 57 65/showFrame HogwartsSuryawati 21/faceDirection farmer 3/pause 800/message \"Oh no...\"/pause 1000/
         temporaryAnimatedSprite \"{{ModId}}/UnicornCommon\" 96 96 32 32 99999 1 0 56 64 false false -1 0 2 0 0 0/
-        viewport move -2 -2 5000/pause 6000/
+        viewport 58 67/globalFadeToClear/pause 6000/
         beginSimultaneousCommand/
         emote HogwartsSuryawati 28/
         emote farmer 28/
-        endSimultaneousCommand/pause 800/
-        speak HogwartsSuryawati \"I will never forgive my father for this.$2#$b#Never.$2\"/pause 800/
-        emote farmer 28/pause 800/
+        endSimultaneousCommand/pause 1500/shake HogwartsSuryawati 500/showFrame HogwartsSuryawati 20/pause 1000/
+        speak HogwartsSuryawati \"I will never forgive my father for this.$2#$b#Never.$2\"/pause 1000/shake HogwartsSuryawati 500/
+        emote farmer 28/pause 1500/
         globalFade/viewport -1000 -1000/
-        action mushymato.MMAP_TAS 56 66 {{ModId}}_Suryawati25Unicorn/pause 1000/end"
+        action mushymato.MMAP_TAS 56 66 {{ModId}}_Suryawati25Unicorn/pause 1000/message \"Suryawati looks shaken...\"/pause 500/message \"I better walk her back to her dorm...\"/end dialogue HogwartsSuryawati \"I... I really don't want to talk right now.$2\""
       }
     },
     // Forest - Fix viewport in Wizard35
@@ -201,7 +206,7 @@
         emote HogwartsSuryawati 16/pause 800/
         speak HogwartsSuryawati \"It's not what it looks like...$2\"/pause 1000/
         question null \"#Were you... a bird?\"/pause 1000/showFrame HogwartsSuryawati 16/shake HogwartsSuryawati 500/pause 1000/
-        speak HogwartsSuryawati \"You saw nothing!$3\"/pause 800/showFrame HogwartsSuryawati 0/
+        speak HogwartsSuryawati \"You should have Madam Pomfrey check your eyes...$3 #$b# Or your head for that matter.\"/pause 800/showFrame HogwartsSuryawati 0/
         beginSimultaneousCommand/
         move HogwartsSuryawati 0 10 2 true/
         emote HogwartsSuryawati 12/pause 500/
