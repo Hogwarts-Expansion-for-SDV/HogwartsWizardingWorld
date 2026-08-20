@@ -3,7 +3,7 @@
     {
       "LogName": "Hogwarts Event Load",
       "Action": "Load",
-      "Target": "Data/Events/{{ModId}}_ForbiddenForestCentaurCamp, Data/Events/{{ModId}}_HogsmeadeVillage, Data/Events/{{ModId}}_HogsmeadeStation, Data/Events/{{ModId}}_HogwartsBellTowerCourtyard, Data/Events/{{ModId}}_HogwartsGrandStaircase, Data/Events/{{ModId}}_HogwartsPotionsClassroom, Data/Events/{{ModId}}_HogwartsTransfigurationClassroom, Data/Events/{{ModId}}_Ollivanders",
+      "Target": "Data/Events/{{ModId}}_ForbiddenForestCentaurCamp, Data/Events/{{ModId}}_HogsmeadeVillage, Data/Events/{{ModId}}_HogsmeadeStation, Data/Events/{{ModId}}_HogwartsBellTowerCourtyard, Data/Events/{{ModId}}_HogwartsGrandStaircase, Data/Events/{{ModId}}_HogwartsPotionsClassroom, Data/Events/{{ModId}}_HogwartsTransfigurationClassroom, Data/Events/{{ModId}}_HogwartsTransfigurationWing,Data/Events/{{ModId}}_Ollivanders",
       "FromFile": "Data/blank.json"
     },
     {
@@ -366,5 +366,18 @@
         globalFade/viewport -1000 -1000/pause 1000/end"
       }
     },
+    ////Transfiguration Wing////
+    {
+      "LogName": "Hogwarts Transfiguration Wing Events",
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_HogwartsTransfigurationWing",
+      "Entries": {
+        "{{ModId}}_Peeves": "MovieTheaterAfter/35 48/farmer 30 44 1 HogwartsPeeves 43 44 3/skippable/pause 250/move farmer 4 0 1/move farmer 0 4 2 true/
+        pause 1500/speed HogwartsPeeves 8/move HogwartsPeeves -16 0 3 true/pause 500/beginSimultaneousCommand/showFrame farmer 94/jump farmer/emote farmer 16/
+        playSound wand/endSimultaneousCommand/pause 1000/faceDirection farmer 0/pause 200/emote farmer 8/pause 1000/faceDirection farmer 1/pause 500/warp HogwartsPeeves 40 48/
+        faceDirection farmer 3/pause 250/move HogwartsPeeves -4 0 3/pause 500/animate HogwartsPeeves false true 100 16 17 16 17 16 17 16 17/playSound dustMeep/playSound dustMeep/pause 1000/
+        jump farmer/beginSimultaneousCommand/warp HogwartsPeeves 999 999/faceDirection farmer 1/pause 1000/emote farmer 12/pause 1000/end"
+      }
+    }
   ]
 }
