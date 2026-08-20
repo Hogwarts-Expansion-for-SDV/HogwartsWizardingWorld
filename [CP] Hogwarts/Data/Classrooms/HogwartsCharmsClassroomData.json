@@ -26,6 +26,53 @@
           }
         }
       ]
+    },
+    //Door Texture replacement
+    {
+      "LogName": "CharmsClassroomDoor - Animation1",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
+      "PatchMode": "Replace",
+      "FromArea": {
+        "X": 192,
+        "Y": 48,
+        "Width": 64,
+        "Height": 48
+      },
+      "ToArea": {
+        "X": 512,
+        "Y": 144,
+        "Width": 64,
+        "Height": 48
+      },
+      "When": {
+        "LocationName": "{{ModId}}_HogwartsCharmsClassroom"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "FacultyTowerDoors - TileReplace1",
+      "Action": "EditImage",
+      "Target": "Maps/townInterior",
+      "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
+      "PatchMode": "Replace",
+      "FromArea": {
+        "X": 192,
+        "Y": 48,
+        "Width": 16,
+        "Height": 48
+      },
+      "ToArea": {
+        "X": 384,
+        "Y": 16,
+        "Width": 16,
+        "Height": 48
+      },
+      "When": {
+        "LocationName": "{{ModId}}_HogwartsCharmsClassroom"
+      },
+      "Update": "OnLocationChange"
     }
   ]
 }
