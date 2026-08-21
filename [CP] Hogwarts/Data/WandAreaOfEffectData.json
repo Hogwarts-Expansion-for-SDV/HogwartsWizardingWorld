@@ -10,6 +10,7 @@
           "Spells": [
             "{{ModId}}_Alohomora",
             "{{ModId}}_Incendio",
+            "{{ModId}}_Lumos",
             "{{ModId}}_Reducto",
             "{{ModId}}_Reparo"
           ]
@@ -102,6 +103,18 @@
             }
           ]
         },
+        "{{ModId}}_Lumos": {
+          "DisplayName": "Lumos",
+          "Sequence": [
+            "UpRight",
+            "DownRight"
+          ],
+          "SpellLevels": [
+            {
+              "TriggerAction": "AddMail Current {{ModId}}_Lumos received"
+            }
+          ]
+        },
         "{{ModId}}_Reducto": {
           "DisplayName": "Reducto",
           "Sequence": [
@@ -134,13 +147,13 @@
               ],
               "Sprites": [],
               "Effects": [
-                {
+                /*{
                   "Affected": [
                     "Farmer",
                     "Object"
                   ],
                   "EffectType": "Explode"
-                }
+                }*/
               ]
             }
           ]
@@ -179,6 +192,15 @@
             "RemoveMail Current {{ModId}}_Incendio",
             "RemoveMail Current {{ModId}}_Reducto",
             "RemoveMail Current {{ModId}}_Reparo"
+          ],
+          "MarkActionApplied": false
+        },
+        "{{ModID}}_LumosGlowBuff": {
+          "Id": "{{ModID}}_LumosGlowBuff",
+          "Condition": "{{HasMod |contains= Esca.EMP}}, !PLAYER_HAS_MAIL Current {{ModId}}_LumosGlowBuff",
+          "Trigger": "Esca.EMP_OneSecondUpdateTicked",
+          "Actions": [
+            "AddMail Current {{ModId}}_LumosGlowBuff"
           ],
           "MarkActionApplied": false
         }

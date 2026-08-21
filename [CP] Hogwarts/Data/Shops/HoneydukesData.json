@@ -1,0 +1,150 @@
+{
+  "Changes": [
+    {
+      "LogName": "Honeydukes Shop Action",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Honeydukes",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 14,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "",
+            "Shop": "{{ModId}}_Honeydukes"
+          }
+        },
+        {
+          "Position": {
+            "X": 16,
+            "Y": 16
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "OpenShop {{ModId}}_Honeydukes",
+            "Shop": "{{ModId}}_Honeydukes"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Honeydukes Dialogue",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Honeydukes",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 13,
+            "Y": 5
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.exployeesonly}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 13,
+            "Y": 5
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.candyfloss}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 7,
+            "Y": 14
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.explodingbonbons{{Random:1,2}}}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 2,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.cauldroncakes}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 5,
+            "Y": 11
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.bertiebotts |Flavor={{i18n: mapstrings.Honeydukes.bertiebotts.flavor{{Random:1,2,3,4}}}}}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 2,
+            "Y": 5
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.juiceorwands{{Random:1,2}}}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 10,
+            "Y": 5
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.sale}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 10,
+            "Y": 12
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.pastiesorice{{Random:1,2}}}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 5,
+            "Y": 9
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.lollipopsorgum{{Random:1,2}}}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 14,
+            "Y": 9
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.icecream |Flavor={{i18n: mapstrings.Honeydukes.icecream.flavor{{Random:1,2}}}}}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 8,
+            "Y": 5
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Honeydukes.snackboxesornougat{{Random:1,2}}}}"
+          }
+        }
+      ]
+    }
+  ]
+}

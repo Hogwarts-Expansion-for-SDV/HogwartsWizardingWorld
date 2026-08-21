@@ -1750,7 +1750,8 @@
         "Description": "Lumos!"
       },
       "When": {
-        "HasMod |contains= MindMeltMax.GlowBuff": true
+        "HasMod |contains= MindMeltMax.GlowBuff": true,
+        "HasFlag |contains= LumosGlowBuff": true
       }
     },
     {
@@ -1766,7 +1767,8 @@
       },
       "When": {
         "HasMod |contains= MindMeltMax.GlowBuff": true,
-        "HasFlag |contains= {{ModId}}_WandSkillBook1": true
+        "HasFlag |contains= {{ModId}}_WandSkillBook1": true,
+        "HasFlag |contains= LumosGlowBuff": true
       },
       "Update": "OnLocationChange, OnTimeChange"
     },
