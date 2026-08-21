@@ -17,7 +17,7 @@
       "Action": "Load",
       "Target": "{{ModId}}/AstronomyBGTexture",
       "FromFile": "assets/Tilesheets/z_AstronomyClassroom_Hxoni_Hogwarts.png"
-    },/*
+    }, /*
     {
       "LogName": "Astronomy Card OpenShop",
       "Action": "EditMap",
@@ -1094,6 +1094,53 @@
       ],
       "When": {
         "HasMod |contains= mushymato.MMAP": true
+      },
+      "Update": "OnLocationChange"
+    },
+    //Door Texture replacement
+    {
+      "LogName": "AstronomyClassroomDoor - Animation1",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
+      "PatchMode": "Replace",
+      "FromArea": {
+        "X": 192,
+        "Y": 48,
+        "Width": 64,
+        "Height": 48
+      },
+      "ToArea": {
+        "X": 512,
+        "Y": 144,
+        "Width": 64,
+        "Height": 48
+      },
+      "When": {
+        "LocationName": "{{ModId}}_HogwartsAstronomyClassroom"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "AstronomyClassroomDoor - TileReplace1",
+      "Action": "EditImage",
+      "Target": "Maps/townInterior",
+      "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
+      "PatchMode": "Replace",
+      "FromArea": {
+        "X": 192,
+        "Y": 48,
+        "Width": 16,
+        "Height": 48
+      },
+      "ToArea": {
+        "X": 384,
+        "Y": 16,
+        "Width": 16,
+        "Height": 48
+      },
+      "When": {
+        "LocationName": "{{ModId}}_HogwartsAstronomyClassroom"
       },
       "Update": "OnLocationChange"
     },
