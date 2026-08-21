@@ -140,16 +140,19 @@
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "{{ModId}}_Wizard35": "none/7 9/farmer 8 9 3 Wizard 6 9 1/skippable/pause 800/
+        "{{ModId}}_Wizard35": "none/28 15/farmer 28 11 3 Wizard 26 11 1/skippable/pause 800/
         speak Wizard \"While the valley appears peaceful, dark forces attempt to penetrate our lands at this very moment.\"/pause 800/
         globalFade/viewport -1000 -1000/pause 800/
-        changeLocation Woods/viewport 41 20 true/pause 800/
+        changeLocation Woods/warp farmer -999 -999/warp Wizard -999 -999/viewport 41 20 true/pause 800/
         viewport move -3 -2 5500/pause 6000/
-        changeLocation Forest/viewport 7 9 true/pause 800/
-        speak Wizard \"Hence, our vocation is protecting muggles that reside in this valley.\"/pause 800/
+        globalFade/viewport 999 999/warp Wizard 12 18/warp farmer 14 18/pause 800/viewport 15 20/move Wizard -2 0 3 true/move farmer -2 0 3 true/globalFadeToClear/pause 2000/faceDirection Wizard 2/faceDirection farmer 2/pause 1000/
+        speak Wizard \"Hence, our vocation is protecting muggles that reside in this valley.\"/pause 800/showFrame Wizard 16/pause 800/speak Wizard \"Do you feel it? The natural currents of energy flowing through the air here.\"/pause 1000/showFrame farmer 85/pause 500/playSound wind/pause 1000/playSound wind/pause 1000/question null \"#I feel it.#It's... Something, for sure.\"/pause 1000/playSound wind/speak Wizard \"You've seen the monsters infesting these forests.\"/showFrame Wizard 0/faceDirection Wizard 1/pause 500/showFrame farmer 0/faceDirection farmer 3/
+        speak Wizard \"But the dangers are far greater than you yet realise, @...\"/emote farmer 8/pause 1000/speak Wizard \"But that's a conversation for another time.\"/pause 500/speak Wizard \"Come. I'll help you leave the woods safely\"/pause 500/
         globalFade/viewport -1000 -1000/pause 1000/end",
-        "{{ModId}}_Wizard55": "none/6 35/farmer 7 35 3 Wizard 5 35 1/skippable/pause 800/
-        speak Wizard \"In more than one instance, dark wizards dominated the wizarding world.#$b#They targeted muggle-born wizards, wizards who had relationships with muggles, and wizards who were supporters of muggle relationships.#$b#At that time, I was afraid for my life, so I erased both of our memories to protect her.#$b#Although protection charms appear banal, we protect families from breaking apart, wizarding and muggles alike.\"/pause 800/
+        "{{ModId}}_Wizard55": "desolate/6 32/farmer 6 35 3 Wizard 5 35 0/skippable/pause 1000/shake Wizard 500/pause 1000/move Wizard 0 -7 0 true/pause 1000/faceDirection farmer 0/pause 2000/move farmer 0 -4 0 true/pause 1000/emote farmer 8/pause 1000/
+        speak Wizard \"In more than one instance, dark wizards dominated the wizarding world.\"/pause 1000/faceDirection Wizard 1/pause 100/faceDirection Wizard 2/pause 250/speak Wizard \"They targeted muggle-born wizards, wizards who had relationships with muggles, and wizards who were supporters of muggle relationships.\"/emote farmer 28/pause 800/faceDirection Wizard 1/pause 500/speak Wizard \"At that time, I was afraid for my life, so I erased both of our memories to protect her.#$b#Although protection charms appear banal, we protect families from breaking apart, wizarding and muggles alike.\"/
+        pause 800/emote Wizard 40/pause 1000/faceDirection Wizard 2/pause 500/speak Wizard \"I understand how it sounds, but sometimes people like us need to make certain... Sacrifices.\"/pause 800/emote farmer 8/pause 1000/speak Wizard \"Well, no matter. I'm not fond of relieving these memories...\"/pause 500/faceDirection Wizard 0/speak Wizard \"You should go now. We'll speak another time.\"/
+        pause 1000/move Wizard 0 -1 0/beginSimultaneousCommand/playSound doorClose/warp Wizard 999 999/pause 800/emote farmer 8/pause 800/
         globalFade/viewport -1000 -1000/pause 1000/end"
       }
     },
@@ -309,15 +312,19 @@
       "Action": "EditData",
       "Target": "Data/Events/WizardHouse",
       "Entries": {
-        "{{ModId}}_Wizard05": "none/4 17/farmer 5 17 3 Wizard 3 17 1/skippable/pause 800/
-        speak Wizard \"The Ministry has assigned me to be your mentor.\"/pause 800/
+        "{{ModId}}_Wizard05": "continue/8 21/farmer 8 24 0 Wizard 10 14 0/skippable/pause 800/move farmer 0 -4 0 true/pause 250/viewport move 0 -2 1500/pause 2000/emote Wizard 40/pause 1000/faceDirection Wizard 1/pause 100/faceDirection Wizard 2/pause 1000/
+        speak Wizard \"Good. You're here.\"/pause 1000/move Wizard 0 2 2/move Wizard -5 0 3/move Wizard 0 2 2/move Wizard -2 0 3/move farmer 0 -2 0/move farmer -2 0 3/pause 100/pause 1000/
+        speak Wizard \"The Ministry has assigned me to be your mentor.\"/pause 800/emote farmer 8/pause 1000/speak Wizard \"I imagine you must be confused. #$b# Do not worry... I will try to explain the best I can.\"/pause 1500/faceDirection Wizard 2/pause 1000/
+        quickQuestion What do you wish to know?#What is the Ministry?#Why did they assign you to me?#Nah, I'm good. (break)speak Wizard \"The Mistry is a government of the magical community. #$b# They enforce laws and regulations on the use of magic... Everything magic related must first go through them. #$b# Well... most of it anyway.\" (break)speak Wizard \"Here in Pelican Town the current of magic is strong and steady. It flows through the Valley as naturally as a river does. #$b# However up until you arrived I was the only magic user here. The people of Pelican Town can't feel it like we do. #$b# I imagine The Mistry is aware of this.\" (break)speak Wizard \"Good. Then I'll get straight to the point.\"/pause 1000/
+        speak Wizard \"That being said...\"/pause 500
         globalFade/viewport -1000 -1000/pause 800/
         changeLocation CommunityCenter/viewport 43 21 true/pause 800/
-        viewport move -3 -2 5500/pause 6000/
-        speak Wizard \"There are creatures you and I know as Junimos that reside in Stardew Valley, yet the world is unaware of their existence and power.\"/pause 800/
-        globalFade/viewport -1000 -1000/warp farmer 5 17/faceDirection farmer 3/warp Wizard 3 17/faceDirection Wizard 1/pause 800/
-        changeLocation WizardHouse/viewport 6 16 true/pause 800/
-        speak Wizard \"Thus, you will assist me in understanding their affinity to this plane.\"/pause 800/
+        viewport move -3 -2 4500/pause 5000/
+        speak Wizard \"There are creatures you and I know as Junimos that reside in Stardew Valley, yet the world is unaware of their existence and power.\"/pause 800/playSound junimoMeep1/pause 250/
+        globalFade/viewport -1000 -1000/warp farmer 6 18/faceDirection farmer 3/warp Wizard 3 17/faceDirection Wizard 1/pause 800/
+        changeLocation WizardHouse/viewport 8 19 true/pause 800/
+        speak Wizard \"Thus, you will assist me in understanding their affinity to this plane.\"/pause 800/emote farmer 40/pause 1000/speak Wizard \"I understand this is all a lot to take it considering you've just arrived in the Valley. #$b# Well, you'll understand more soon enough.\"/
+        pause 500/emote farmer 60/move farmer 2 0 1/move farmer 0 8 2 true/pause 500/faceDirection Wizard 2/faceDirection Wizard 3/pause 100/
         globalFade/viewport -1000 -1000/pause 1000/end"
       }
     },
