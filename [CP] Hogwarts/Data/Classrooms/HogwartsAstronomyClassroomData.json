@@ -17,7 +17,34 @@
       "Action": "Load",
       "Target": "{{ModId}}/AstronomyBGTexture",
       "FromFile": "assets/Tilesheets/z_AstronomyClassroom_Hxoni_Hogwarts.png"
-    },
+    },/*
+    {
+      "LogName": "Astronomy Card OpenShop",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_AstronomyClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 14,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "OpenShop {{ModId}}_AstronomyCardStella"
+          }
+        },
+        {
+          "Position": {
+            "X": 16,
+            "Y": 16
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "OpenShop {{ModId}}_AstronomyCardStella"
+          }
+        }
+      ]
+    },*/
     {
       "LogName": "Hogwarts Astronomy Night Sky Luna",
       "Action": "EditImage",
@@ -322,6 +349,10 @@
           "Texture": "{{ModId}}/moonobjects",
           "SpriteIndex": 0,
           "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardLuna"
+          ],
           "ExcludeFromShippingCollection": true,
           "ExcludeFromRandomSale": true
         },
@@ -332,6 +363,10 @@
           "Texture": "{{ModId}}/moonobjects",
           "SpriteIndex": 1,
           "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardLuna"
+          ],
           "ExcludeFromShippingCollection": true,
           "ExcludeFromRandomSale": true
         },
@@ -342,6 +377,10 @@
           "Texture": "{{ModId}}/moonobjects",
           "SpriteIndex": 2,
           "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardLuna"
+          ],
           "ExcludeFromShippingCollection": true,
           "ExcludeFromRandomSale": true
         },
@@ -352,6 +391,10 @@
           "Texture": "{{ModId}}/moonobjects",
           "SpriteIndex": 3,
           "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardLuna"
+          ],
           "ExcludeFromShippingCollection": true,
           "ExcludeFromRandomSale": true
         },
@@ -362,6 +405,10 @@
           "Texture": "{{ModId}}/moonobjects",
           "SpriteIndex": 4,
           "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardLuna"
+          ],
           "ExcludeFromShippingCollection": true,
           "ExcludeFromRandomSale": true
         },
@@ -372,6 +419,10 @@
           "Texture": "{{ModId}}/moonobjects",
           "SpriteIndex": 5,
           "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardLuna"
+          ],
           "ExcludeFromShippingCollection": true,
           "ExcludeFromRandomSale": true
         },
@@ -382,6 +433,10 @@
           "Texture": "{{ModId}}/moonobjects",
           "SpriteIndex": 6,
           "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardLuna"
+          ],
           "ExcludeFromShippingCollection": true,
           "ExcludeFromRandomSale": true
         },
@@ -392,6 +447,10 @@
           "Texture": "{{ModId}}/moonobjects",
           "SpriteIndex": 7,
           "CanBeTrashed": true,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardLuna"
+          ],
           "ExcludeFromShippingCollection": true,
           "ExcludeFromRandomSale": true
         },
@@ -402,7 +461,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 0,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -415,7 +475,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 1,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -428,7 +489,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 2,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -441,7 +503,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 3,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -454,7 +517,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 4,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -467,7 +531,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 5,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -480,7 +545,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 6,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -493,7 +559,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 7,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -506,7 +573,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 8,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -519,7 +587,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 9,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -532,7 +601,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 10,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -545,7 +615,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 11,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -558,7 +629,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 12,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -571,7 +643,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 13,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -584,7 +657,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 14,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -597,7 +671,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 15,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -610,7 +685,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 16,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -623,7 +699,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 17,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -636,7 +713,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 18,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -649,7 +727,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 19,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -662,7 +741,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 20,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -675,7 +755,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 21,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -688,7 +769,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 22,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -701,7 +783,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 23,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -714,7 +797,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 24,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -727,7 +811,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 25,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -740,7 +825,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 26,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -753,7 +839,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 27,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -766,7 +853,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 28,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -779,7 +867,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 29,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -792,7 +881,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 30,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -805,7 +895,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 31,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -818,7 +909,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 32,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
@@ -831,7 +923,8 @@
           "Texture": "{{ModId}}/starsobjects",
           "SpriteIndex": 33,
           "ContextTags": [
-            "{{ModId}}_Hogwarts"
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_AstronomyCardStella"
           ],
           "CanBeTrashed": true,
           "ExcludeFromShippingCollection": true,
