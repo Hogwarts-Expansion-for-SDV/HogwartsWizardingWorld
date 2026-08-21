@@ -4,6 +4,24 @@
       "Action": "EditData",
       "Target": "Data/Shops",
       "Entries": {
+        "{{ModId}}_AstronomyClassroomLuna": {
+          "Items": [
+            {
+              "Id": "{{ModId}}_AstronomyClassroomLuna",
+              "ItemId": "ALL_ITEMS (O)",
+              "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_AstronomyCardLuna"
+            }
+          ]
+        },
+        "{{ModId}}_AstronomyClassroomStella": {
+          "Items": [
+            {
+              "Id": "{{ModId}}_AstronomyClassroomStella",
+              "ItemId": "ALL_ITEMS (O)",
+              "PerItemCondition": "ITEM_CONTEXT_TAG Target {{ModId}}_AstronomyCardStella"
+            }
+          ]
+        },
         "{{ModId}}_RedCap": {
           "Owners": [
             {
