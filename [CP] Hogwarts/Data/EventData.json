@@ -222,54 +222,9 @@
       }
     },
     // Ollivanders (notes: Priority new locations; *flashbacks*? rewrite dialogue and fix mistakes: check Cutscenes.dockx)
-    { "LogName": "Hogwarts Ollivanders Events", 
-      "Action": "EditData", 
-      "Target": "Data/Events/{{ModId}}_Ollivanders", 
-      "Entries": { "{{ModId}}_Ollivander05/": "none/8 17/farmer 100 100 0 HogwartsOllivander 10 15 3/skippable/pause 800/playSound doorClose/
-      pause 200/warp farmer 8 19/pause 500/facedirection HogwartsOllivander 2/ speak HogwartsOllivander \"Welcome, welcome. You must be here for your first wand.\"/
-      pause 400/emote HogwartsOllivander 40/pause 200/ move HogwartsOllivander 0 2 2/
-      pause 300/ speak HogwartsOllivander \"A student I wasn't expecting. Curious..\"/
-      pause 200/ speak HogwartsOllivander \"Forgive me.#$b#Do take your time. Please, look about..\"/pause 200/ emote farmer 56/
-      pause 200/ move farmer 0 -1 0/move farmer 5 0 1/facedirection HogwartsOllivander 1/pause 1000/
-      emote farmer 40/move farmer 0 -1 0/facedirection farmer 1/pause 1000/
-      emote farmer 28/pause 800/emote farmer 12/pause 800/facedirection farmer 3/
-      question null \"#None of these wands seem to be working.\"/
-      pause 800/ speak HogwartsOllivander \"We may not understand why, but the wand chooses its wizard.$0\"/
-      pause 800/move farmer 0 -1 0/facedirection farmer 1/pause 1000/emote farmer 16/
-      question null \"#This wand is really beautiful.\"/pause 800/facedirection farmer 3/pause 1000/emote HogwartsOllivander 40/pause 1000/speak HogwartsOllivander \"That was the last wand my daughter ever made.$s#$b#She was remarkably talented.\"/
-      pause 800/emote farmer 8/pause 600/ question null \"#What happened to her?\"/
-      pause 1000/ speak HogwartsOllivander \"They took her from me.$a\"/showFrame farmer 94/pause 500/showFrame farmer 12/pause 400/ speak HogwartsOllivander \"I’m sorry. I shouldn’t have raised my voice.$0#$s#Please, come back another time.\"/
-      emote farmer 16/pause 1000/facedirection HogwartsOllivander 3/pause 600/globalFade/viewport -1000 -1000/pause 1000/end",
-        
-      "{{ModId}}_Ollivander25/f {{ModId}}_HogwartsOllivander 1000/e {{ModId}}_Ollivander45": "none/8 17/farmer 100 100 0 HogwartsOllivander 7 14 0/skippable/pause 800/
-      warp farmer 8 19/playSound doorCreak/pause 400/
-      move farmer 0 -2 0/pause 1000/emote farmer 40/pause 1500/
-      question null \"#Mr. Ollivander? Sir?\"/pause 500/emote HogwartsOllivander 16/faceDirection HogwartsOllivander 2/
-      speak HogwartsOllivander \"Oh, I didn't hear you. Forgive me. I was deep in thought...\"/pause 800/
-      question null \"#Are you alright sir? You seem fatigued.\"/pause 800/emote HogwartsOllivander 28/
-      speak HogwartsOllivander \"This wand... it is quite unlike any other.\"/pause 800/
-      question null \"#You're very focused on that wand.\"/pause 800/
-      speak HogwartsOllivander \"This wand... it elevates me. Every memory of hate, this wand turns it into power, #$b#and I have had tremendous power lately.\"/pause 800/
-      emote farmer 8/pause 800/
-      question null \"#You don't sound like yourself. You should be careful...\" 
-		  question null \"#It doesn't feel like you're the one in control of that wand. Maybe it's too dangerous.\"/pause 800/
-      speak HogwartsOllivander \"Wands are meant to be wielded, and I intend to wield this one.\"/pause 400/
-      emote farmer 40/pause 800/
-	    speak HogwartsOllivander \"You are a student. #$b#What could you possibly know of power? #$b#You should return to the castle, where you at least are safe.\"/
-      globalFade/viewport -1000 -1000/pause 1000/end",
-
-        "{{ModId}}_Ollivander45/f {{ModId}}_HogwartsOllivander 250": "none/8 6/farmer 7 6 1 HogwartsOllivander 9 6 3/skippable/pause 800/
-        question null \"#How is it possible that your wand is more powerful than other wands I've witnessed?\"/pause 800/
-        speak HogwartsOllivander \"This is no ordinary wand...\"/pause 800/
-        globalFade/viewport -1000 -1000/pause 800/
-        changeToTemporaryMap {{ModId}}_HogwartsValley/viewport 92 132 true/warp HogwartsOllivander 92 132/faceDirection HogwartsOllivander 0/pause 800/
-        speak HogwartsOllivander \"It's been some time, Albus.#$b#Curious... A yew tree.#$b#This tree grew...#$b#From the Dark Lord's wand!\"/pause 800/
-        emote HogwartsOllivander 12/pause 800/
-        globalFade/viewport -1000 -1000/warp farmer 7 6/faceDirection farmer 1/warp HogwartsOllivander 9 6/faceDirection HogwartsOllivander 3/pause 800/
-        changeLocation {{ModId}}_Ollivanders/viewport 8 6 true/pause 800/
-        speak HogwartsOllivander \"I crafted the tree's wood into a wand, and now...#$b#The Dark Lord's wand serves me.\"/pause 800/
-        globalFade/viewport -1000 -1000/pause 1000/end"
-      }
+    { "LogName": "Hogwarts Ollivanders Events",
+      "Action": "Include",
+      "FromFile": "Data/Events/Ollivander.json"
     },
     // Potions Classroom 
     {

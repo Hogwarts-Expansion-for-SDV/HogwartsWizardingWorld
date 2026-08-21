@@ -1,0 +1,192 @@
+{
+  "Changes": [
+    {
+      "LogName": "Ollivanders Action OpenShop",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Ollivanders",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 7,
+            "Y": 16
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "OpenShop {{ModId}}_Ollivanders"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Ollivanders Book",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Ollivanders",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 11,
+            "Y": 5
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.encyclopedia}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 9,
+            "Y": 5
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.workbench{{Random:1,2,3}}}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 14,
+            "Y": 18
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.blackthorn}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 14,
+            "Y": 16
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.seveninches{{Random:1,2}}}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 14,
+            "Y": 14
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.eightinches}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 1,
+            "Y": 17
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.nineinches}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 1,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.ninetoteninches}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 1,
+            "Y": 11
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.teninches}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 1,
+            "Y": 7
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.tentoeleveninches}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 2,
+            "Y": 5
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.thirteeninches}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 5,
+            "Y": 5
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.fourteeninches}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 12,
+            "Y": 5
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.fifteeninches}}"
+          }
+        },
+        {
+          "Position": {
+            "X": 1,
+            "Y": 13
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Dialogue {{i18n: mapstrings.Ollivanders.sixteeninches}}"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Hogwarts Ollivanders Shop To Bedroom Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Ollivanders",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 11,
+            "Y": 12
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 4 9 {{ModId}}_OllivandersBedroom"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Hogwarts Ollivanders Bedroom To Shop Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_OllivandersBedroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 4,
+            "Y": 10
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_Ollivanders 11 13"
+          }
+        }
+      ]
+    }
+  ]
+}
