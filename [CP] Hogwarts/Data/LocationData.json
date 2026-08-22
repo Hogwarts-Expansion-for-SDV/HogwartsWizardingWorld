@@ -7,6 +7,13 @@
       "Target": "Maps/Andrew15, Maps/Ollivander15, Maps/Ollivander25, Maps/Ollivander35, Maps/Ollivander45, Maps/Ollivander55, Maps/Ollivander65, Maps/Suryawati15, Maps/Suryawati25, Maps/Suryawati35, Maps/Suryawati45, Maps/Suryawati55, Maps/Suryawati65, Maps/Suryawati75, Maps/Suryawati85, Maps/Suryawati95, Maps/Suryawati105, Maps/Suryawati115, Maps/Suryawati125",
       "FromFile": "assets/Event/{{TargetWithoutPath}}.tmx"
     },
+    /*_EmptyRoom*/
+    {
+      "LogName": "EmptyRoom",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_EmptyRoom",
+      "FromFile": "assets/Maps/EmptyRoom.tmx"
+    },
     /*Hogsmeade Load*/
     {
       "LogName": "Brood and Peck Load",
@@ -704,6 +711,12 @@
       "Action": "EditData",
       "Target": "Data/Locations",
       "Entries": {
+        "{{ModId}}_EmptyRoom": {
+        "CreateOnLoad": {
+        "AlwaysActive": true,
+        "MapPath": "Maps/{{ModId}}_EmptyRoom"
+          }
+        },
         /*Hogsmeade Location Data*/
         "{{ModId}}_BroodAndPeck": {
           "CreateOnLoad": {
