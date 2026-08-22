@@ -18,6 +18,54 @@
       "Target": "{{ModId}}/WhompingWillow",
       "FromFile": "assets/Creatures/WhompingWillow.png"
     },
+    ///////////////TRANSFIGURATION ASSETS///////////////////
+    {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Mouse": {
+                    "Name": "{{ModId}}_Mouse",
+                    "Displayname": "Mouse",
+                    "Description": "Used in Transfiguration class.",
+                    "Type": "Objects",
+                    "Category": 0,
+                    "Price": 1200,
+
+                    "Texture": "{{InternalAssetKey: assets/Objects/Uncategorized/Transfiguration_Mouse.png}}",
+                    "SpriteIndex": 0
+                }
+            }
+        },
+    {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Cup": {
+                    "Name": "{{ModId}}_Cup",
+                    "Displayname": "Cup",
+                    "Description": "Used in Transfiguration class.",
+                    "Type": "Objects",
+                    "Category": 0,
+                    "Price": 1200,
+
+                    "Texture": "{{InternalAssetKey: assets/Objects/Uncategorized/Transfiguration_Cup.png}}",
+                    "SpriteIndex": 0
+                }
+            }
+        },
+    {
+      "LogName": "Mouse Load",
+      "Action": "Load",
+      "Target": "{{ModId}}/Objects/Mouse",
+      "FromFile": "assets/Objects/Uncategorized/Transfiguration_Mouse.png"
+    },
+    {
+      "LogName": "Cup Load",
+      "Action": "Load",
+      "Target": "{{ModId}}/Objects/Cup",
+      "FromFile": "assets/Objects/Uncategorized/Transfiguration_Cup.png"
+    },
+    //////////////////////////////////////////////////////
     {
       "LogName": "Hogwarts Forbidden Forest Centaur Camp Suryawati25 Unicorn Sprite",
       "Action": "EditData",
@@ -108,11 +156,11 @@
         speak HogwartsSuryawati \"I do not remember my mother.$2#$b#My father... I cannot tell him.$2#$b#He poaches magical creatures...$2\"/pause 1000/
         emote farmer 28/pause 500/speak HogwartsSuryawati \"Well... Now you know.\"/pause 1000/speak HogwartsSuryawati \"I actually feel a little better after sharing this.\"/pause 1000/speak HogwartsSuryawati \"A little bit...$4\"/pause 1000/
         globalFade/viewport -1000 -1000/pause 1000/end",
-        "{{ModId}}_Suryawati20": "spaceMusic/16 6/farmer 34 36 3 HogwartsSuryawati 999 999 2/skippable/addTemporaryActor {{ModId}}_SuryawatiPhoenix 32 32 -2 6 3 true Monster/temporaryAnimatedSprite \"{{ModId}}/WhompingWillow\" 0 0 112 112 150 15 999 15 25 false false 2 0 1 0 0 0/speed {{ModId}}_SuryawatiPhoenix 7/move {{ModId}}_SuryawatiPhoenix 35 0 1 true/pause 6000/viewport move 3 8 2000/addTemporaryActor {{ModId}}_SuryawatiPhoenix 32 32 37 22 3 false Monster Suri/
-        speed Suri 7/move Suri -30 0 1 true/pause 2000/viewport move 0 4 1500/pause 2000/screenFlash 1/viewport -9999 9999/warp HogwartsSuryawati 19 34/showFrame HogwartsSuryawati 23/viewport 20 35/globalFadeToClear/move farmer -4 0 3 true/pause 1000/shake HogwartsSuryawati 500/pause 500/emote farmer 16/shake HogwartsSuryawati 500/textAboveHead HogwartsSuryawati \"Uuhh...\"/
-        jump farmer/speed farmer 4/move farmer -6 0 3 true/pause 2000/move farmer 0 -2 0 true/pause 1000/faceDirection farmer 3/pause 100/emote farmer 8/pause 1000/shake HogwartsSuryawati 1000/showFrame HogwartsSuryawati 16/pause 1000/emote HogwartsSuryawati 12/pause 1000/speak HogwartsSuryawati \"What the...$2\"/pause 1000/shake HogwartsSuryawati 500/speak HogwartsSuryawati \"What happened?\"/pause 500/
-        question null \"#You were hit by the Whomping Willow when you... Flew towards it?\"/showFrame HogwartsSuryawati 0/jump HogwartsSuryawati/emote HogwartsSuryawati 16/pause 1000/faceDirection HogwartsSuryawati 1/speak HogwartsSuryawati \"Flew? D-Don't be ridiculous. I was just...$3\"/emote HogwartsSuryawati 36/pause 250/speak HogwartsSuryawati \"Observing the Willow... Closely.$2\"/
-        pause 1000/question null \"#But I saw-\"/jump HogwartsSuryawati/speak HogwartsSuryawati \"You saw nothing!$3\"/pause 1000/emote farmer 36/question null \"#Fine. Just let me help.\"/pause 1000/shake HogwartsSuryawati 500/faceDirection 2/showFrame HogwartsSuryawati 16/pause 250/speak HogwartsSuryawati \"Okay. But...$2 #$b# Don't tell anyone about what happened here!$3\"/pause 2000/end"
+        "{{ModId}}_Suryawati20": "spaceMusic/16 6/farmer 34 36 3 HogwartsSuryawati 999 999 2/skippable/addTemporaryActor {{ModId}}_SuryawatiPhoenix 32 32 -2 5 3 true Monster/temporaryAnimatedSprite \"{{ModId}}/WhompingWillow\" 0 0 112 112 150 15 999 15 25 false false 2 0 1 0 0 0/speed {{ModId}}_SuryawatiPhoenix 7/move {{ModId}}_SuryawatiPhoenix 35 0 1 true/pause 6000/viewport move 3 8 2000/addTemporaryActor {{ModId}}_SuryawatiPhoenix 32 32 37 22 3 false Monster Suri/addTemporaryActor {{ModId}}_SuryawatiPhoenix 32 32 -2 28 3 true Monster Hurt/
+        speed Suri 7/move Suri -34 0 1 true/pause 2000/viewport move 0 4 1500/pause 3000/speed Hurt 7/move Hurt 40 0 1 true/pause 2500/screenFlash 1/viewport -9999 9999/pause 3000/warp HogwartsSuryawati 19 34/showFrame HogwartsSuryawati 23/globalFadeToClear 500 true/viewport 20 33/pause 1000/move farmer -6 0 3 true/pause 2000/shake HogwartsSuryawati 500/pause 500/emote farmer 16/shake HogwartsSuryawati 500/textAboveHead HogwartsSuryawati \"Uuhh...\"/
+        jump farmer/speed farmer 4/move farmer -6 0 3 true/pause 2000/move farmer 0 -3 0 true/pause 1000/faceDirection farmer 3/pause 100/emote farmer 8/pause 1000/shake HogwartsSuryawati 1000/showFrame HogwartsSuryawati 16/pause 1000/emote HogwartsSuryawati 12/pause 1000/speak HogwartsSuryawati \"What the...$2\"/pause 1000/shake HogwartsSuryawati 500/speak HogwartsSuryawati \"What happened?\"/pause 500/
+        question null \"#You were hit by the Whomping Willow when you... Flew towards it?\"/showFrame HogwartsSuryawati 0/jump HogwartsSuryawati/emote HogwartsSuryawati 16/pause 1000/faceDirection HogwartsSuryawati 1/speak HogwartsSuryawati \"Flew? D-Don't be ridiculous. I was just...$3\"/emote HogwartsSuryawati 40/pause 250/speak HogwartsSuryawati \"Observing the Willow... Closely.$2\"/
+        pause 1000/question null \"#But I saw-\"/jump HogwartsSuryawati/speak HogwartsSuryawati \"You saw nothing!$3\"/pause 1000/emote farmer 40/question null \"#Fine. Just let me help.\"/pause 1000/shake HogwartsSuryawati 500/faceDirection HogwartsSuryawati 2/showFrame HogwartsSuryawati 16/pause 250/speak HogwartsSuryawati \"Okay. But...$2 #$b# Don't tell anyone about what happened here!$3\"/pause 2000/end"
       }
     },
     // Forbidden Forest Centaur Camp 
@@ -140,19 +188,20 @@
       "Action": "EditData",
       "Target": "Data/Events/Forest",
       "Entries": {
-        "{{ModId}}_Wizard35": "none/28 15/farmer 28 11 3 Wizard 26 11 1/skippable/pause 800/
-        speak Wizard \"While the valley appears peaceful, dark forces attempt to penetrate our lands at this very moment.\"/pause 800/
+        "{{ModId}}_Wizard35": "none/28 12/farmer 28 11 3 Wizard 26 11 1 Abigail 999 999 3/skippable/pause 1500/
+        speak Wizard \"While the valley appears peaceful, dark forces attempt to penetrate our lands at this very moment.\"/pause 1000/faceDirection Wizard 2/pause 1000/showFrame Wizard 16/pause 1000/beginSimultaneousCommand/screenFlash 1/playSound wand/warp Wizard 999 999/warp farmer 999 999/endSimultaneousCommand/
+        viewport move 3 0 2000/warp Abigail 45 12/move Abigail -5 0 3/pause 1000/emote Abigail 8/
         globalFade/viewport -1000 -1000/pause 800/
-        changeLocation Woods/warp farmer -999 -999/warp Wizard -999 -999/viewport 41 20 true/pause 800/
+        changeLocation Woods/warp farmer -999 -999/warp Wizard -999 -999/warp Abigail -9999 -9999/viewport 41 20 true/pause 800/
         viewport move -3 -2 5500/pause 6000/
         globalFade/viewport 999 999/warp Wizard 12 18/warp farmer 14 18/pause 800/viewport 15 20/move Wizard -2 0 3 true/move farmer -2 0 3 true/globalFadeToClear/pause 2000/faceDirection Wizard 2/faceDirection farmer 2/pause 1000/
         speak Wizard \"Hence, our vocation is protecting muggles that reside in this valley.\"/pause 800/showFrame Wizard 16/pause 800/speak Wizard \"Do you feel it? The natural currents of energy flowing through the air here.\"/pause 1000/showFrame farmer 85/pause 500/playSound wind/pause 1000/playSound wind/pause 1000/question null \"#I feel it.#It's... Something, for sure.\"/pause 1000/playSound wind/speak Wizard \"You've seen the monsters infesting these forests.\"/showFrame Wizard 0/faceDirection Wizard 1/pause 500/showFrame farmer 0/faceDirection farmer 3/
         speak Wizard \"But the dangers are far greater than you yet realise, @...\"/emote farmer 8/pause 1000/speak Wizard \"But that's a conversation for another time.\"/pause 500/speak Wizard \"Come. I'll help you leave the woods safely\"/pause 500/
         globalFade/viewport -1000 -1000/pause 1000/end",
-        "{{ModId}}_Wizard55": "desolate/6 32/farmer 6 35 3 Wizard 5 35 0/skippable/pause 1000/shake Wizard 500/pause 1000/move Wizard 0 -7 0 true/pause 1000/faceDirection farmer 0/pause 2000/move farmer 0 -4 0 true/pause 1000/emote farmer 8/pause 1000/
+        "{{ModId}}_Wizard55": "desolate/6 32/farmer 6 35 3 Wizard 5 35 0 Abigail 20 35 3/skippable/pause 1000/shake Wizard 500/pause 1000/move Wizard 0 -7 0 true/pause 1000/faceDirection farmer 0/pause 2000/move farmer 0 -4 0 true/pause 1000/emote farmer 8/pause 1000/
         speak Wizard \"In more than one instance, dark wizards dominated the wizarding world.\"/pause 1000/faceDirection Wizard 1/pause 100/faceDirection Wizard 2/pause 250/speak Wizard \"They targeted muggle-born wizards, wizards who had relationships with muggles, and wizards who were supporters of muggle relationships.\"/emote farmer 28/pause 800/faceDirection Wizard 1/pause 500/speak Wizard \"At that time, I was afraid for my life, so I erased both of our memories to protect her.#$b#Although protection charms appear banal, we protect families from breaking apart, wizarding and muggles alike.\"/
         pause 800/emote Wizard 40/pause 1000/faceDirection Wizard 2/pause 500/speak Wizard \"I understand how it sounds, but sometimes people like us need to make certain... Sacrifices.\"/pause 800/emote farmer 8/pause 1000/speak Wizard \"Well, no matter. I'm not fond of relieving these memories...\"/pause 500/faceDirection Wizard 0/speak Wizard \"You should go now. We'll speak another time.\"/
-        pause 1000/move Wizard 0 -1 0/beginSimultaneousCommand/playSound doorClose/warp Wizard 999 999/pause 800/emote farmer 8/pause 800/
+        pause 1000/move Wizard 0 -1 0/beginSimultaneousCommand/playSound doorClose/warp Wizard 999 999/pause 800/emote farmer 8/pause 800/viewport move 3 2 1000/pause 1000/playSound leafrustle/pause 500/move Abigail 1 0 1/faceDirection Abigail 2/pause 500/move Abigail 0 2 2/faceDirection Abigail 3/pause 1000/
         globalFade/viewport -1000 -1000/pause 1000/end"
       }
     },
@@ -288,21 +337,23 @@
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogwartsTransfigurationClassroom",
       "Entries": {
-        "{{ModId}}_Andrew15": "none/19 11/farmer 20 15 0 HogwartsAndrew 20 12 0 HogwartsNkiruka 17 12 0 HogwartsHermione 20 8 2/skippable/pause 800/
-        speak HogwartsHermione \"Welcome class. I am Professor Granger, and I will be your substitute transfiguration professor for now until I am summoned by the Ministry.#$b#Now, let’s see your proficiency.#$b#Andrew, you are up first.\"/pause 800/
+        "{{ModId}}_Andrew15": "continue/19 11/farmer 20 15 0 HogwartsAndrew 20 12 0 HogwartsNkiruka 17 12 0 HogwartsHermione 20 8 2 HogwartsGryffindormaleFour 16 15 0 HogwartsSlytherinMaleFour 24 12 0 HogwartsHufflepuffFemaleFour 25 15 0 HogwartsRavenclawMaleFour 17 18 0 HogwartsHufflepuffMaleFour 21 18 0 HogwartsSlytherinFemaleFour 24 18 0/skippable/
+        addObject 20 10 {{ModId}}_Mouse 1/addObject 25 10 {{ModId}}_Mouse 2/addObject 17 10 {{ModId}}_Mouse 2/addObject 21 13 {{ModId}}_Mouse 2/addObject 25 13 {{ModId}}_Mouse 2/addObject 16 13 {{ModId}}_Mouse 2/addObject 16 16 {{ModId}}_Mouse 2/addObject 21 16 {{ModId}}_Mouse 2/addObject 24 16 {{ModId}}_Mouse 2/pause 1000/
+        faceDirection HogwartsHermione 1/pause 200/faceDirection HogwartsHermione 2/pause 200/faceDirection HogwartsHermione 3/pause 200/faceDirection HogwartsHermione 2/pause 1000/emote HogwartsHermione 56/pause 1000/
+        speak HogwartsHermione \"Welcome class. I am Professor Granger, and I will be your substitute transfiguration professor for now until I am summoned by the Ministry.\"/pause 800/speak HogwartsHermione \"Now, let’s see your proficiency.\"/pause 500/emote HogwartsHermione 40/pause 1000/speak HogwartsHermione \"Andrew, you are up first.\"/pause 800/
         emote HogwartsAndrew 40/pause 800/
-        faceDirection HogwartsAndrew 3/faceDirection HogwartsNkiruka 1/faceDirection farmer 3/
-        speak HogwartsAndrew \"Vero verto\"/
-        speak HogwartsNkiruka \"...\"/pause 800/
-        emote farmer 8/pause 800/
-        speak HogwartsHermione \"Flawless transfiguration, Andrew!\"/pause 800/
-        faceDirection HogwartsAndrew 0/faceDirection HogwartsNkiruka 0/faceDirection farmer 0/
+        faceDirection HogwartsAndrew 3/faceDirection HogwartsNkiruka 1/pause 800/emote HogwartsAndrew 28/pause 500/faceDirection farmer 3/faceDirection HogwartsAndrew 0/pause 800/
+        speak HogwartsAndrew \"Vero verto\"/shake HogwartsNkiruka 500/pause 100/
+        speak HogwartsNkiruka \"...\"/pause 800/beginSimultaneousCommand/playSound boop/removeObject 20 10/addObject 20 10 {{ModId}}_Cup 2/pause 1000/jump farmer/
+        emote farmer 8/pause 800/emote HogwartsHermione 32/pause 500/
+        speak HogwartsHermione \"Flawless transfiguration, Andrew!\"/pause 800/faceDirection HogwartsNkiruka 0/faceDirection farmer 0/pause 500/move HogwartsHermione -3 0 3/faceDirection HogwartsHermione 2/
         speak HogwartsHermione \"Since you were watching so closely, let’s see yours, Nkiruka.\"/pause 800/
-        emote HogwartsNkiruka 40/pause 800/
-        faceDirection HogwartsNkiruka 1/faceDirection HogwartsAndrew 3/faceDirection farmer 3/pause 800/
-        speak HogwartsNkiruka \"Fera verta\"/pause 800/
+        emote HogwartsNkiruka 40/pause 1000/
+        faceDirection HogwartsNkiruka 1/faceDirection HogwartsAndrew 3/faceDirection farmer 3/pause 1000/faceDirection HogwartsNkiruka 0/pause 500/
+        speak HogwartsNkiruka \"Fera verta\"/pause 2000/
         speak HogwartsHermione \"Good attempt, but not quite there.\"/pause 800/
-        emote HogwartsNkiruka 28/pause 800/
+        emote HogwartsNkiruka 28/pause 800/move HogwartsHermione 3 0 1/faceDirection HogwartsHermione 2/pause 1000/speak HogwartsHermione \"Alright class. Keep practicing.\"/emote HogwartsGryffindormaleFour 28/emote HogwartsSlytherinFemaleFour 12/
+        emote HogwartsSlytherinMaleFour 28/
         globalFade/viewport -1000 -1000/pause 1000/end"
       }
     },
