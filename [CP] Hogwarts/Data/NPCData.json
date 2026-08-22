@@ -655,15 +655,13 @@
           "BirthDay": 28,
           "Gender": "Male",
           "Age": "Adult",
-          "Manner": "Neutral",
-          "SocialAnxiety": "Neutral",
+          "Manner": "Polite",
+          "SocialAnxiety": "Outgoing",
           "Optimism": "Neutral",
           "CanBeRomanced": false,
           "Calendar": "HiddenAlways",
           "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
+          "CanVisitIsland": "FALSE",
           "IntroductionsQuest": false,
           "PerfectionScore": false,
           "EndSlideShow": "Hidden",
@@ -671,10 +669,10 @@
             {
               "Id": "Default",
               "Condition": null,
-              "Location": "{{ModId}}_EmptyRoom",
+              "Location": "{{ModId}}_HogwartsGreatHall",
               "Tile": {
-                "X": 5,
-                "Y": 5
+                "X": 7,
+                "Y": 38
               },
               "Direction": "down"
             }
@@ -682,8 +680,8 @@
         },
         "HogwartsDraco": {
           "DisplayName": "{{i18n: npc.Draco.name}}",
-          "BirthSeason": "Summer",
-          "BirthDay": 5,
+          "BirthSeason": "Fall",
+          "BirthDay": 19,
           "Gender": "Male",
           "Age": "Adult",
           "Manner": "Neutral",
@@ -692,9 +690,7 @@
           "CanBeRomanced": false,
           "Calendar": "HiddenAlways",
           "SocialTab": "HiddenAlways",
-          "CanReceiveGifts": false,
-          "CanGreetNearbyCharacters": true,
-          "CanVisitIsland": false,
+          "CanVisitIsland": "FALSE",
           "IntroductionsQuest": false,
           "PerfectionScore": false,
           "EndSlideShow": "Hidden",
@@ -702,10 +698,10 @@
             {
               "Id": "Default",
               "Condition": null,
-              "Location": "{{ModId}}_EmptyRoom",
+              "Location": "{{ModId}}_HogwartsGreatHall",
               "Tile": {
-                "X": 1,
-                "Y": 1
+                "X": 9,
+                "Y": 38
               },
               "Direction": "down"
             }
