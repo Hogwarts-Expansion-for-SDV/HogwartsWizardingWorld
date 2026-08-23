@@ -226,7 +226,7 @@
     //   "Target": "Maps/{{ModId}}_HogwartsDorms",
     //   "FromFile": "assets/Maps/HogwartsDorms.tmx"
     // },
-        //Gryffindor Males    
+    //Gryffindor Males    
     {
       "LogName": "Hogwarts GM1D Load",
       "Action": "Load",
@@ -312,7 +312,7 @@
       "Target": "Maps/{{ModId}}_HogwartsGF7D",
       "FromFile": "assets/Dorms/HogwartsGF7D.tmx"
     },
-        //Hufflepuff Males    
+    //Hufflepuff Males    
     {
       "LogName": "Hogwarts HM1D Load",
       "Action": "Load",
@@ -398,7 +398,7 @@
       "Target": "Maps/{{ModId}}_HogwartsHF7D",
       "FromFile": "assets/Dorms/HogwartsHF7D.tmx"
     },
-        //ravenclaw Males    
+    //ravenclaw Males    
     {
       "LogName": "Hogwarts RM1D Load",
       "Action": "Load",
@@ -484,7 +484,7 @@
       "Target": "Maps/{{ModId}}_HogwartsRF7D",
       "FromFile": "assets/Dorms/HogwartsRF7D.tmx"
     },
-        //Slytherin Males    
+    //Slytherin Males    
     {
       "LogName": "Hogwarts SM1D Load",
       "Action": "Load",
@@ -712,9 +712,9 @@
       "Target": "Data/Locations",
       "Entries": {
         "{{ModId}}_EmptyRoom": {
-        "CreateOnLoad": {
-        "AlwaysActive": true,
-        "MapPath": "Maps/{{ModId}}_EmptyRoom"
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_EmptyRoom"
           }
         },
         /*Hogsmeade Location Data*/
@@ -828,7 +828,7 @@
             "Y": 18
           }
         },
-          "{{ModId}}_OllivandersBedroom": {
+        "{{ModId}}_OllivandersBedroom": {
           "CreateOnLoad": {
             "AlwaysActive": false,
             "MapPath": "Maps/{{ModId}}_OllivandersBedroom"
@@ -965,7 +965,6 @@
         //     "MapPath": "Maps/{{ModId}}_HogwartsDorms"
         //   }
         // },
-
         //DORMS
         //gryffindor boys
         "{{ModId}}_HogwartsGM1D": {
@@ -1010,7 +1009,6 @@
             "MapPath": "Maps/{{ModId}}_HogwartsGM7D"
           }
         },
-
         //gryffindor girls
         "{{ModId}}_HogwartsGF1D": {
           "CreateOnLoad": {
@@ -1097,7 +1095,6 @@
             "MapPath": "Maps/{{ModId}}_HogwartsHM7D"
           }
         },
-
         //hufflepuff girls
         "{{ModId}}_HogwartsHF1D": {
           "CreateOnLoad": {
@@ -1142,7 +1139,7 @@
           }
         },
         //ravenclaw boys
-                "{{ModId}}_HogwartsRM1D": {
+        "{{ModId}}_HogwartsRM1D": {
           "CreateOnLoad": {
             "AlwaysActive": false,
             "MapPath": "Maps/{{ModId}}_HogwartsRM1D"
@@ -1184,7 +1181,6 @@
             "MapPath": "Maps/{{ModId}}_HogwartsRM7D"
           }
         },
-
         //ravenclaw females
         "{{ModId}}_HogwartsRF1D": {
           "CreateOnLoad": {
@@ -1229,7 +1225,7 @@
           }
         },
         //slytherin boys
-                "{{ModId}}_HogwartsSM1D": {
+        "{{ModId}}_HogwartsSM1D": {
           "CreateOnLoad": {
             "AlwaysActive": false,
             "MapPath": "Maps/{{ModId}}_HogwartsSM1D"
@@ -1314,10 +1310,7 @@
             "MapPath": "Maps/{{ModId}}_HogwartsSF7D"
           }
         },
-
-
-
-//END OF DORMS
+        //END OF DORMS
         "{{ModId}}_HogwartsFacultyTower": {
           "CreateOnLoad": {
             "AlwaysActive": false,
