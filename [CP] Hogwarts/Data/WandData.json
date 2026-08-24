@@ -1721,7 +1721,7 @@
         "{{ModId}}_LumosEnable": {
           "Id": "{{ModId}}_LumosEnable",
           "Trigger": "Spiderbuttons.BETAS_ItemEquipped",
-          "Condition": "ITEM_ID Target (W){{ModId}}_{{Wand}}Wand, PLAYER_HAS_MAIL Current {{ModId}}_{{Wand}}Wand Received",
+          "Condition": "ITEM_ID Target (W){{ModId}}_{{Wand}}Wand, PLAYER_HAS_MAIL Current {{ModId}}_{{Wand}}Wand Received, PLAYER_HAS_MAIL Current {{ModId}}_Lumos Received",
           "Action": "AddBuff MindMeltMax.GlowBuff/Glow",
           "MarkActionApplied": false
         },
@@ -1750,8 +1750,7 @@
         "Description": "Lumos!"
       },
       "When": {
-        "HasMod |contains= MindMeltMax.GlowBuff": true,
-        "HasFlag |contains= LumosGlowBuff": true
+        "HasMod |contains= MindMeltMax.GlowBuff": true
       }
     },
     {
@@ -1767,8 +1766,7 @@
       },
       "When": {
         "HasMod |contains= MindMeltMax.GlowBuff": true,
-        "HasFlag |contains= {{ModId}}_WandSkillBook1": true,
-        "HasFlag |contains= LumosGlowBuff": true
+        "HasFlag |contains= {{ModId}}_WandSkillBook1": true
       },
       "Update": "OnLocationChange, OnTimeChange"
     },
