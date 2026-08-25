@@ -17,34 +17,34 @@
       "Action": "Load",
       "Target": "{{ModId}}/AstronomyBGTexture",
       "FromFile": "assets/Tilesheets/z_AstronomyClassroom_Hxoni_Hogwarts.png"
-    }, /*
+    },
     {
-      "LogName": "Astronomy Card OpenShop",
+      "LogName": "Hogwarts Astronomy Card OpenShop",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_AstronomyClassroom",
+      "Target": "Maps/{{ModId}}_HogwartsAstronomyClassroom",
       "MapTiles": [
         {
           "Position": {
-            "X": 14,
-            "Y": 13
+            "X": 16,
+            "Y": 38
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "OpenShop {{ModId}}_AstronomyCardStella"
+            "Action": "OpenShop {{ModId}}_AstronomyClassroomStella"
           }
         },
         {
           "Position": {
-            "X": 16,
-            "Y": 16
+            "X": 20,
+            "Y": 38
           },
           "Layer": "Buildings",
           "SetProperties": {
-            "Action": "OpenShop {{ModId}}_AstronomyCardStella"
+            "Action": "OpenShop {{ModId}}_AstronomyClassroomLuna"
           }
         }
       ]
-    },*/
+    },
     {
       "LogName": "Hogwarts Astronomy Night Sky Luna",
       "Action": "EditImage",
@@ -959,7 +959,7 @@
       "PatchMode": "Overlay"
     },
     {
-      "LogName": "Hogwarts Astronomy Classroom Lunascope Left",
+      "LogName": "Hogwarts Astronomy Classroom Lunascope MEEP",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsAstronomyClassroom",
       "MapTiles": [
@@ -1029,7 +1029,7 @@
       }
     },
     {
-      "LogName": "Hogwarts Astronomy Classroom Stellascope",
+      "LogName": "Hogwarts Astronomy Classroom Stellascope MEEP",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsAstronomyClassroom",
       "MapTiles": [
@@ -1259,6 +1259,56 @@
             "Flipped": false,
             "Interval": 500
           }
+        ],
+        "{{ModId}}.AstronomyCardNotification": [
+          {
+            "Name": "NotificationLuna",
+            "Texture": "Maps/z_Notification1_Hogwarts",
+            "SourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 16,
+              "Height": 16
+            },
+            "Position": {
+              "X": 1280,
+              "Y": 2304
+            },
+            "Scale": 4,
+            "Length": 6,
+            "LayerDepth": 2,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 100,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          {
+            "Name": "NotificationStella",
+            "Texture": "Maps/z_Notification1_Hogwarts",
+            "SourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 16,
+              "Height": 16
+            },
+            "Position": {
+              "X": 1024,
+              "Y": 2304
+            },
+            "Scale": 4,
+            "Length": 6,
+            "LayerDepth": 2,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 100,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          }
         ]
       },
       "When": {
@@ -1359,6 +1409,36 @@
           ]
         }
       },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Astronomy Classroom Notification Animation Card Shop",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsAstronomyClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 20,
+            "Y": 38
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/animation_Enter": "{{ModId}}.AstronomyCardNotification,NotificationLuna"
+          }
+        },
+        {
+          "Position": {
+            "X": 16,
+            "Y": 38
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/animation_Enter": "{{ModId}}.AstronomyCardNotification,NotificationStella"
+          }
+        }
+      ],
       "When": {
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
       }

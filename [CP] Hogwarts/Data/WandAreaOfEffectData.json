@@ -11,6 +11,7 @@
             "{{ModId}}_Alohomora",
             "{{ModId}}_Incendio",
             "{{ModId}}_Lumos",
+            "{{ModId}}_Nox",
             "{{ModId}}_Reducto",
             "{{ModId}}_Reparo"
           ]
@@ -115,6 +116,20 @@
             }
           ]
         },
+        "{{ModId}}_Nox": {
+          "DisplayName": "Nox",
+          "Sequence": [
+            "UpRight",
+            "Right",
+            "DownLeft",
+            "Right"
+          ],
+          "SpellLevels": [
+            {
+              "TriggerAction": "RemoveMail Current {{ModId}}_Lumos received"
+            }
+          ]
+        },
         "{{ModId}}_Reducto": {
           "DisplayName": "Reducto",
           "Sequence": [
@@ -192,15 +207,6 @@
             "RemoveMail Current {{ModId}}_Incendio",
             "RemoveMail Current {{ModId}}_Reducto",
             "RemoveMail Current {{ModId}}_Reparo"
-          ],
-          "MarkActionApplied": false
-        },
-        "{{ModID}}_LumosGlowBuff": {
-          "Id": "{{ModID}}_LumosGlowBuff",
-          "Condition": "{{HasMod |contains= Esca.EMP}}, !PLAYER_HAS_MAIL Current {{ModId}}_LumosGlowBuff",
-          "Trigger": "Esca.EMP_OneSecondUpdateTicked",
-          "Actions": [
-            "AddMail Current {{ModId}}_LumosGlowBuff"
           ],
           "MarkActionApplied": false
         }
