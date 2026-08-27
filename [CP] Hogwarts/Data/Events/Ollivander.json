@@ -1,26 +1,78 @@
+//Ollivander 하트 이벤트 0 — 새 지팡이
+//(지팡이 가게에서.)
+//Ollivander: “이건 내가 직접 만든 특별한 지팡이란다.”
+//(올리밴더가 지팡이를 휘두르자, 해리 포터가 가게 안으로 들어온다.)
+//Harry: “올리밴더 씨—”
+//(주문이 폭발하고, 해리 역시 그 주문에 맞는다.)
+//Ollivander: “포터 군! 괜찮나?”
+//Harry: “어째서… 저는 아무렇지도 않은 거죠?”
+//Mr. Ollivander: “아무것도 아니란다!”
+//Harry: “저를 해칠 수 없었던 지팡이는 단 하나뿐이었는데… 하지만… 그럴 리가 없어.”
+//(로켓 하나가 바닥에 떨어진다.)
+//Harry: “이분은 누구죠?”
+//Ollivander: “내 딸이란다. 난 외출할 때마다 이걸 가지고 다니지.”
+//Harry: “따님은 런던에 계신가요?”
+//Ollivander: “안타깝게도 1차 전쟁 이후 세상을 떠났단다. 하지만… 이 안에 있는 사진이 나에게 말을 걸어오지.”
+//Harry: “저… 정말 죄송해요.”
+//Farmer: “괜찮으시다면 매주 오세요. 그레인저 부인이 볼드모트 생존자들을 위한 지원 모임을 열고 있어요.”
+//Ollivander: “그의 이름을 입에 담지 말게!”
+
 {
   "Changes": [
-    // Ollivanders (notes: Priority new locations; *flashbacks*? rewrite dialogue and fix mistakes: check Cutscenes.dockx)
     {
-      "LogName": "Hogwarts Ollivanders Events",
       "Action": "EditData",
-      "Target": "Data/Events/{{ModId}}_Ollivanders",
+      "Target": "Data/Objects",
       "Entries": {
-        "{{ModId}}_Ollivander05": "none/8 17/farmer 100 100 0 HogwartsOllivander 10 15 3/skippable/pause 800/playSound doorClose/
-      pause 200/warp farmer 8 19/pause 500/facedirection HogwartsOllivander 2/ speak HogwartsOllivander \"Welcome, welcome. You must be here for your first wand.\"/
-      pause 400/emote HogwartsOllivander 40/pause 200/ move HogwartsOllivander 0 2 2/
-      pause 300/ speak HogwartsOllivander \"A student I wasn't expecting. Curious..\"/
-      pause 200/ speak HogwartsOllivander \"Forgive me.#$b#Do take your time. Please, look about..\"/pause 200/ emote farmer 56/
-      pause 200/ move farmer 0 -1 0/move farmer 5 0 1/facedirection HogwartsOllivander 1/pause 1000/
-      emote farmer 40/move farmer 0 -1 0/facedirection farmer 1/pause 1000/
-      emote farmer 28/pause 800/emote farmer 12/pause 800/facedirection farmer 3/
-      question null \"#None of these wands seem to be working.\"/
-      pause 800/ speak HogwartsOllivander \"We may not understand why, but the wand chooses its wizard.$0\"/
-      pause 800/move farmer 0 -1 0/facedirection farmer 1/pause 1000/emote farmer 16/
-      question null \"#This wand is really beautiful.\"/pause 800/facedirection farmer 3/pause 1000/emote HogwartsOllivander 40/pause 1000/speak HogwartsOllivander \"That was the last wand my daughter ever made.$s#$b#She was remarkably talented.\"/
-      pause 800/emote farmer 8/pause 600/ question null \"#What happened to her?\"/
-      pause 1000/ speak HogwartsOllivander \"They took her from me.$a\"/showFrame farmer 94/pause 500/showFrame farmer 12/pause 400/ speak HogwartsOllivander \"I’m sorry. I shouldn’t have raised my voice.$0#$s#Please, come back another time.\"/
-      emote farmer 16/pause 1000/facedirection HogwartsOllivander 3/pause 600/globalFade/viewport -1000 -1000/pause 1000/end",
+        "{{ModId}}_LocketOpen": {
+          "Name": "{{ModId}}_LocketOpen",
+          "DisplayName": "Locket",
+          "Description": "A locket containing a photograph.",
+          "Type": "Objects",
+          "Category": 0,
+          "Price": 0,
+          "Texture": "{{InternalAssetKey: assets/Objects/LocketOpen.png}}",
+          "SpriteIndex": 0
+        }
+      }
+    },
+
+    {
+      "LogName": "Ollivander Locket Open Load",
+      "Action": "Load",
+      "Target": "{{ModId}}/LocketOpen",
+      "FromFile": "assets/Objects/LocketOpen.png"
+    },
+
+      {
+        "LogName": "Hogwarts Ollivanders Events",
+        "Action": "EditData",
+        "Target": "Data/Events/{{ModId}}_Ollivanders",
+        "Entries": {
+          "{{ModId}}_Ollivander05": "none/8 16/farmer 100 100 0 HogwartsOllivander 6 14 0 HogwartsHarry -100 -100 0/skippable/pause 800/playSound doorClose/
+        pause 200/warp farmer 8 20/pause 500/facedirection HogwartsOllivander 2/pause 600/textAboveHead HogwartsOllivander \"Welcome, welcome.\"/
+        pause 700/question null \"#I didn't know you had a shop here in Hogsmeade.\"/move farmer 0 -2 0/
+        speak HogwartsOllivander \"I've been here for quite a while now.\"/pause 400/faceDirection farmer 0/
+        question null \"#What are you working now?\"/ 
+        speak HogwartsOllivander \"This is a special wand I crafted.\"/move HogwartsOllivander 2 0 2/pause 400/ speak HogwartsOllivander \"Would you mind stepping aside for a moment?\"/
+        pause 300/ move farmer -2 0 0/
+        pause 1000/warp HogwartsHarry 8 20/facedirection HogwartsHarry 0/ textAboveHead HogwartsHarry \"Mr. Ol-\"/animate HogwartsOllivander false false 200 20 21 22 23/
+        pause 750/
+        playSound explosion/
+        screenFlash 0.7/
+        shake HogwartsHarry 300/
+        pause 300/
+        globalFade 0.09/
+        pause 400/
+        globalFadeToClear 0.09/
+        pause 100/
+        faceDirection farmer 1/emote farmer 16/speak HogwartsOllivander \"Mr. Potter! Are you alright?\"/speak HogwartsHarry \"How… am I unharmed?\"/speak HogwartsOllivander \"It’s nothing!\"/pause 500/
+        speak HogwartsHarry \"Only one wand was incapable of hurting me, but… that can't be possible.\"/temporaryAnimatedSprite \"{{ModId}}/LocketOpen\" 0 0 16 16 100 1 1 10 14 false false 14 0 1 0 0 0/
+        pause 500/emote HogwartsHarry 8/move HogwartsHarry 0 -2 0/move HogwartsHarry 2 0 0/speak HogwartsHarry \"Who is she?\"
+        /speak HogwartsOllivander \"My daughter’s. I carry this whenever I go out.\"/speak HogwartsHarry \"Is your daughter in London?\"/pause 600/emote HogwartsOllivander 40/
+        speak HogwartsOllivander \"Sadly, she has passed since the first war, but her picture talks to me through it.\"/emote HogwartsHarry 16
+        /speak HogwartsHarry \"I'm... I'm so sorry.\"/pause 400/question null \"#If you can come, every week, Mrs. Granger hosts a support group for survivors of Voldemort.\"/
+        speak HogwartsOllivander \"We do not speak his name!\"/globalFade/viewport -1000 -1000/pause 1000/end",
+
       "{{ModId}}_Ollivander25": "none/8 17/farmer 100 100 0 HogwartsOllivander 7 14 0/skippable/pause 800/
       warp farmer 8 19/playSound doorCreak/pause 400/
       move farmer 0 -2 0/pause 1000/emote farmer 40/pause 1500/
