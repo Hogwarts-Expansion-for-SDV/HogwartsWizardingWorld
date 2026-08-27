@@ -1,0 +1,31 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts SoAR Classroom Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSoARClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 14,
+            "Y": 21
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 68 43"
+          }
+        },
+        {
+          "Position": {
+            "X": 15,
+            "Y": 21
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 69 43"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -637,6 +637,12 @@
       "FromFile": "assets/Maps/HogwartsQuidditchPitch.tmx"
     },
     {
+      "LogName": "Hogwarts Study of Ancient Runes Classroom Load",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_HogwartsSoARClassroom",
+      "FromFile": "assets/Maps/HogwartsSoARClassroom.tmx"
+    },
+    {
       "LogName": "Hogwarts South Wing Load",
       "Action": "Load",
       "Target": "Maps/{{ModId}}_HogwartsSouthWing",
@@ -1403,6 +1409,16 @@
           "DefaultArrivalTile": {
             "X": 12,
             "Y": 25
+          }
+        },
+        "{{ModId}}_HogwartsSoARClassroom": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsSoARClassroom"
+          },
+          "DefaultArrivalTile": {
+            "X": "15",
+            "Y": "19"
           }
         },
         "{{ModId}}_HogwartsSouthWing": {

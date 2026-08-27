@@ -5,7 +5,7 @@
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsLibraryAnnex",
       "MapTiles": [
-//Arithmancy Classroom
+        //Arithmancy Classroom
         {
           "Position": {
             "X": 58,
@@ -26,7 +26,7 @@
             "Action": "Warp 22 20 {{ModId}}_HogwartsArithmancyClassroom"
           }
         },
-//Divination Classroom
+        //Divination Classroom
         {
           "Position": {
             "X": 66,
@@ -37,7 +37,7 @@
             "Action": "Warp 13 20 {{ModId}}_HogwartsDivinationClassroom"
           }
         },
-//Grand Staircase Left
+        //Grand Staircase Left
         {
           "Position": {
             "X": 45,
@@ -68,7 +68,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 54 51"
           }
         },
-//Grand Staircase Down        
+        //Grand Staircase Down        
         {
           "Position": {
             "X": 46,
@@ -99,7 +99,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 47 101"
           }
         },
-//Greenhouse Right 1
+        //Greenhouse Right 1
         {
           "Position": {
             "X": 66,
@@ -120,7 +120,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsGreenhouse 2 13"
           }
         },
-//Greenhouse Right 2
+        //Greenhouse Right 2
         {
           "Position": {
             "X": 66,
@@ -131,7 +131,6 @@
             "TouchAction": "Warp {{ModId}}_HogwartsGreenhouse 3 31"
           }
         },
-
         {
           "Position": {
             "X": 66,
@@ -142,7 +141,28 @@
             "TouchAction": "Warp {{ModId}}_HogwartsGreenhouse 3 32"
           }
         },
-//South Wing
+        //SoAR Classroom
+        {
+          "Position": {
+            "X": 68,
+            "Y": 42
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 14 20 {{ModId}}_HogwartsSoARClassroom"
+          }
+        },
+        {
+          "Position": {
+            "X": 69,
+            "Y": 42
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 15 20 {{ModId}}_HogwartsSoARClassroom"
+          }
+        },
+        //South Wing
         {
           "Position": {
             "X": 58,
@@ -153,7 +173,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsSouthWing 1 22"
           }
         },
-//Transfiguration Wing Up
+        //Transfiguration Wing Up
         {
           "Position": {
             "X": 46,
@@ -174,38 +194,38 @@
             "Action": "Warp 53 53 {{ModId}}_HogwartsTransfigurationWing"
           }
         },
-//Transfiguration Wing Up 2
-      {
-        "Position": {
-          "X": 61,
-          "Y": 25
+        //Transfiguration Wing Up 2
+        {
+          "Position": {
+            "X": 61,
+            "Y": 25
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 57 37 {{ModId}}_HogwartsTransfigurationWing"
+          }
         },
-        "Layer": "Buildings",
-        "SetProperties": {
-          "Action": "Warp 57 37 {{ModId}}_HogwartsTransfigurationWing"
-        }
-      },
-      {
-        "Position": {
-          "X": 62,
-          "Y": 25
+        {
+          "Position": {
+            "X": 62,
+            "Y": 25
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 58 37 {{ModId}}_HogwartsTransfigurationWing"
+          }
         },
-        "Layer": "Buildings",
-        "SetProperties": {
-          "Action": "Warp 58 37 {{ModId}}_HogwartsTransfigurationWing"
-        }
-      },
-      {
-        "Position": {
-          "X": 63,
-          "Y": 25
+        {
+          "Position": {
+            "X": 63,
+            "Y": 25
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 59 37 {{ModId}}_HogwartsTransfigurationWing"
+          }
         },
-        "Layer": "Buildings",
-        "SetProperties": {
-          "Action": "Warp 59 37 {{ModId}}_HogwartsTransfigurationWing"
-        }
-      },
-//Transfiguration Wing Down     
+        //Transfiguration Wing Down     
         {
           "Position": {
             "X": 46,
@@ -226,7 +246,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 54 69"
           }
         },
-//Transfiguration Wing Left        
+        //Transfiguration Wing Left        
         {
           "Position": {
             "X": 50,
