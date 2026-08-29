@@ -940,6 +940,69 @@
       },
       "Update": "OnTimeChange, OnLocationChange"
     },
+    // Reparo Hogwarts Valley Aranshire Bridge
+    {
+      "LogName": "Hogwarts Valley Aranshire Bridge Rectangle DMTE",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}_HogwartsValleyAranshireBridgeRectangle": {
+          "Locations": [
+            "{{ModId}}_HogwartsValley"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Rectangles": [
+            {
+              "X": 55,
+              "Y": 86,
+              "Width": 14,
+              "Height": 9
+            }
+          ],
+          "Actions": [
+            {
+              "Key": "DMT/mail",
+              "Value": "{{ModId}}_HogwartsValleyAranshireBridgeRectangle",
+              "Trigger": "Tool(MeleeWeapon)"
+            },
+            {
+              "Key": "DMT/changeMultipleIndex",
+              "Value": "Buildings 62 90=|Buildings 63 90=|Back 62 90=spring_beach/301|Back 63 90=spring_beach/301",
+              "Trigger": "Tool(MeleeWeapon)"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_Reparo": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Valley Aranshire Bridge Open DMTE",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsValley",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 62,
+            "Y": 90
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/changeMultipleIndex_Load": "Buildings 62 90=spring_beach/301|Buildings 63 90=spring_beach/301"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogwartsValleyAranshireBridgeRectangle": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
     // Incendio Hogsmeade Village Center
     {
       "LogName": "Hogsmeade Village Center Floo Flame Rectangle DMTE",
