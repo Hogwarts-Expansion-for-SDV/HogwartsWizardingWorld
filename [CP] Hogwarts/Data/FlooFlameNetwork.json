@@ -7,11 +7,12 @@
       "Update": "OnTimeChange, OnLocationChange",
       "Entries": {
         "{{ModId}}_HogsmeadeNetwork": {
+          "ChooseDestinationMessage": "Don't forget to speak very VERY clearly.",
           "Destinations": [
             {
               "Id": "{{ModId}}_HogsmeadeStation",
               "DisplayName": "{{i18n: floo.hogsmeadestation}}",
-              "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_Wizard",
+              "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_Wizard, PLAYER_HAS_SEEN_EVENT Current 112",
               "TargetLocation": "{{ModId}}_HogsmeadeStation",
               "TargetTile": {
                 "X": 33,
@@ -22,7 +23,7 @@
             {
               "Id": "{{ModId}}_HogsmeadeVillageCenter",
               "DisplayName": "{{i18n: floo.hogsmeadevillagecenter}}",
-              "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCenterFlooFlame",
+              "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_Wizard, PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCenterFlooFlame, PLAYER_HAS_SEEN_EVENT Current 112",
               "TargetLocation": "{{ModId}}_HogsmeadeVillage",
               "TargetTile": {
                 "X": 73,
@@ -33,7 +34,7 @@
             {
               "Id": "{{ModId}}_HogsmeadeVillageCrossroad",
               "DisplayName": "{{i18n: floo.hogsmeadevillagecrossroads}}",
-              "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlame",
+              "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_Wizard, PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageCrossroadFlooFlame, PLAYER_HAS_SEEN_EVENT Current 112",
               "TargetLocation": "{{ModId}}_HogsmeadeVillage",
               "TargetTile": {
                 "X": 25,
@@ -44,7 +45,7 @@
             {
               "Id": "{{ModId}}_HogwartsValley",
               "DisplayName": "Hogwarts Valley",
-              "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_HogwartsValleyFlooFlame",
+              "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_Wizard, PLAYER_HAS_MAIL Current {{ModId}}_HogwartsValleyFlooFlame, PLAYER_HAS_SEEN_EVENT Current 112",
               "TargetLocation": "{{ModId}}_HogwartsValley",
               "TargetTile": {
                 "X": 80,
@@ -55,7 +56,7 @@
             {
               "Id": "{{ModId}}_WizardsTowerFireplace",
               "DisplayName": "{{i18n: floo.wizard}}",
-              "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_Wizard",
+              "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_Wizard, PLAYER_HAS_SEEN_EVENT Current 112",
               "TargetLocation": "WizardHouse",
               "TargetTile": {
                 "X": 10,
@@ -70,7 +71,7 @@
             {
               "Id": "{{ModId}}_HogwartsBellTowerCourtyard",
               "DisplayName": "Bell Tower Courtyard",
-              "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_HogwartsBellTowerCourtyardFlooFlame",
+              "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_Wizard, PLAYER_HAS_MAIL Current {{ModId}}_HogwartsBellTowerCourtyardFlooFlame, PLAYER_HAS_SEEN_EVENT Current 112",
               "TargetLocation": "{{ModId}}_HogwartsBellTowerCourtyard",
               "TargetTile": {
                 "X": 99,
