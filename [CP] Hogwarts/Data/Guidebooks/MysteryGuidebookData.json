@@ -3,7 +3,7 @@
     {
       "LogName": "Hogwarts Mystery Guidebook Load",
       "Action": "Load",
-      "Target": "{{ModId}}/DeductionGrid, {{ModId}}/CheckMark, {{ModId}}/QuestionMark, {{ModId}}/XMark",
+      "Target": "{{ModId}}/CheckMark, {{ModId}}/DeductionGrid, {{ModId}}/MysteryGuidebookTabs, {{ModId}}/QuestionMark, {{ModId}}/XMark",
       "FromFile": "assets/Guidebook/{{TargetWithoutPath}}.png"
     },
     {
@@ -44,8 +44,8 @@
       "Action": "EditData",
       "Target": "Data/TriggerActions",
       "Entries": {
-        "{{ModID}}_OpenMysteryGuidebook": {
-          "Id": "{{ModID}}_OpenMysteryGuidebook",
+        "{{ModId}}_OpenMysteryGuidebook": {
+          "Id": "{{ModId}}_OpenMysteryGuidebook",
           "Condition": "ITEM_ID Input {{ModId}}_MysteryGuidebook",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "spacechase0.SpaceCore_OpenGuidebook {{ModId}}_Mystery",
@@ -61,35 +61,44 @@
       "Action": "EditData",
       "Target": "spacechase0.SpaceCore/Guidebooks",
       "Entries": {
-        "{{ModID}}_Mystery": {
-          "Title": "Case Of The Emergent Wizard",
+        "{{ModId}}_Mystery": {
+          "Title": "Case Files",
           "DefaultChapter": "Title",
-          "PageTexture": "{{InternalAssetKey: assets/Guidebook/MysteryGuidebookBase.png}}",
+          /*"PageTexture": "{{InternalAssetKey: assets/Guidebook/MysteryGuidebookBase.png}}",
           "PagePadding": "28, 28",
-          "PageSize": "600, 500",
+          "PageSize": "600, 500",*/
           "Chapters": {
             "Title": {
               "Name": "Case Of The Emergent Wizard",
-              "TabIconTexture": null,
-              "TabIconRect": null,
+              "TabIconTexture": "{{ModId}}/MysteryGuidebookTabs",
+              "TabIconRect": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+              },
               "Condition": "TRUE",
               "Pages": [
                 {
                   "Contents": "[center][font=dialogue]Investigation[/font][/center]
-                  [center][nextposition=0,64][font=default]Victim[/font][/center]
+                  [center][nextposition=0,64][font=default]Victim:[/font][/center]
                   [center][nextposition=0,96][font=default]Name: Abrielle[/font][/center]
-                  [center][nextposition=0,160][font=default]Status: Emergent Wizard[/font][/center]
-                  [center][nextposition=0,192][font=default]Sex: Female[/font][/center]
+                  [center][nextposition=0,128][font=default]Condition: Bewitched Slumber[/font][/center]
+                  [center][nextposition=0,192][font=default]Status: Emergent Wizard[/font][/center]
+                  [center][nextposition=0,224][font=default]Sex: Female[/font][/center]
                   [center][nextposition=0,256][font=default]House: Slytherin[/font][/center]
-                  [center][nextposition=0,288][font=default]Condition: Bewitched Slumber[/font][/center]          
-                  [center][nextposition=0,352][font=default]Information[/font][/center]
-                  [center][nextposition=0,384][font=default]Four people were unaccounted for at the time of the attack.[/font][/center]
-                  [center][nextposition=0,448][font=default]Each suspect provided a statement, but when all applied, it produced a contradiction. Therefore, someone is lying, maybe even unintentionally.[/font][/center]
-                  [center][nextposition=0,480][font=default]Whoever is lying is the culprit.[/font][/center]
-                  [center][nextposition=0,512][font=default]Clues From The Time Of Attack[/font][/center]
-                  [center][nextposition=0,544][font=default]Either someone who wanted to protect was at Hogwarts Valley, or the Ancient Magic Book was at Hogwarts Valley.[/font][/center]
-                  [center][nextposition=0,576][font=default]A wand was not discovered at Hogsmeade Village.[/font][/center]
-                  [center][nextposition=0,608][font=default]Whoever would kill for revenge was an adult.[/font][/center]"
+                  [center][nextposition=0,320][font=dialogue]Notes[/font][/center]
+                  [nextposition=0,384][font=default]-Four people were unaccounted for at the time of the attack.[/font]
+                  [nextposition=0,448][font=default]-Each suspect provided a statement, but when all applied, it produced a contradiction. Therefore, someone is lying, maybe even unintentionally.[/font]
+                  [nextposition=0,544][font=default]-Whoever is lying is the culprit.[/font]
+                  [nextposition=0,608][font=dialogue]Possibilities[/font]
+                  [nextposition=0,672][font=default]-Locations: Forbidden Forest, Hogsmeade Station, Hogsmeade Village, Hogwarts Valley.[/font]
+                  [nextposition=0,744][font=default]-Weapons: Ancient Magic Book, Creature Part, Potion, Wand.[/font]
+                  [nextposition=0,816][font=default]-Motives: Revenge, To Hide A Secret, To Protect, To Prove Oneself.[/font]
+                  [nextposition=0,896][font=dialogue]Clues From The Time Of Attack[/font]
+                  [nextposition=0,960][font=default]-Either someone who wanted to protect was at Hogwarts Valley, or the Ancient Magic Book was at Hogwarts Valley.[/font]
+                  [nextposition=0,1056][font=default]-A wand was not discovered at Hogsmeade Village.[/font]
+                  [nextposition=0,1086][font=default]-Whoever would kill for revenge was an adult.[/font]"
                 }
               ]
             },
@@ -107,48 +116,48 @@
                 {
                   "Id": "Andrew",
                   "Contents": "[center][font=dialogue]Andrew[/font][/center]
-                  [nospacing][nextposition=128,32][image=Portraits/HogwartsAndrew:0,0,64,64:1][nextposition=288,32][image=Characters/HogwartsAndrew:0,0,16,32:5][/nospacing]
-                  [nextposition=0,192][font=default]Status: Student[/font]
-                  [nextposition=0,256][font=default]Sex: Male[/font]
-                  [nextposition=0,288][font=default]House: Ravenclaw[/font]
-                  [nextposition=0,320][font=default]Residence: Hogwarts[/font]
-                  [nextposition=0,352][font=default]Unverified Statement From Questioning[/font]
-                  [nextposition=0,384][font=default]\""Garrick Ollivander brought a wand."\"[/font]
-                  [nextposition=0,416][font=default]Evidence[/font]",
+                  [nospacing][nextposition=128,48][image=Portraits/HogwartsAndrew:0,0,64,64:3][nextposition=320,48][image=Characters/HogwartsAndrew:0,0,16,32:6][/nospacing]
+                  [center][nextposition=0,256][font=default]Status: Student[/font]
+                  [center][nextposition=0,288][font=default]Sex: Male[/font]
+                  [center][nextposition=0,320][font=default]House: Ravenclaw[/font]
+                  [center][nextposition=0,352][font=default]Residence: Hogwarts[/font]
+                  [center][nextposition=0,416][font=dialogue][color=Firebrick]Unverified Statement From Questioning[/color][/font][/center]
+                  [center][nextposition=0,512][font=default][color=Firebrick]Garrick Ollivander brought a wand.[/color][/font][/center]
+                  [center][nextposition=0,576][font=dialogue]Evidence:[/font][/center]"
                 },
                 {
                   "Id": "Garrick Ollivander",
                   "Contents": "[center][font=dialogue]Garrick Ollivander[/font][/center]
-                  [nospacing][nextposition=128,32][image=Portraits/HogwartsOllivander:0,0,64,64:1][nextposition=288,32][image=Characters/HogwartsOllivander:0,0,16,32:5][/nospacing]
-                  [nextposition=0,192][font=default]Status: Shopkeeper[/font]
-                  [nextposition=0,256][font=default]Sex: Male[/font]
-                  [nextposition=0,352][center][font=dialogue]Residence: Hogsmeade Village[/font][/center]
-                  [nextposition=0,384][center][font=dialogue]Unverified Statement From Questioning[/font][/center]
-                  [nextposition=0,416][center][font=dialogue]\""The person with the creature part wanted to hide a secret."\"[/font][/center]
-                  [nextposition=0,448][center][font=dialogue]Evidence[/font][/center]",
+                  [nospacing][nextposition=128,48][image=Portraits/HogwartsOllivander:0,0,64,64:3][nextposition=320,48][image=Characters/HogwartsOllivander:0,0,16,32:6][/nospacing]
+                  [center][nextposition=0,256][font=default]Status: Shopkeeper[/font]
+                  [center][nextposition=0,288][font=default]Sex: Male[/font]
+                  [center][nextposition=0,320][font=default]Residence: Hogsmeade Village[/font][/center]
+                  [center][nextposition=0,384][color=Firebrick][font=dialogue]Unverified Statement From Questioning[/color][/font][/center]
+                  [center][nextposition=0,480][color=Firebrick][font=default]The person with the creature part wanted to hide a secret.[/color][/font][/center]
+                  [center][nextposition=0,576][font=dialogue]Evidence:[/font][/center]"
                 },
                 {
                   "Id": "M. Rasmodius",
                   "Contents": "[center][font=dialogue]M. Rasmodius[/font][/center]
-                  [nospacing][nextposition=128,32][image=Portraits/Wizard:0,0,64,64:1][nextposition=288,32][image=Characters/Wizard:0,0,16,32:5][/nospacing]
-                  [nextposition=0,192][font=default]Status: Monitor[/font]
-                  [nextposition=0,256][font=default]Sex: Male[/font]
-                  [nextposition=0,288][font=default]Residence: Stardew Valley[/font]
-                  [nextposition=0,320][font=default]Unverified Statement From Questioning[/font]
-                  [nextposition=0,352][font=default]\""I brought a creature part."\"[/font]
-                  [nextposition=0,384][font=default]Evidence[/font]",
+                  [nospacing][nextposition=128,48][image=Portraits/Wizard:0,0,64,64:3][nextposition=320,48][image=Characters/Wizard:0,0,16,32:6][/nospacing]
+                  [center][nextposition=0,256][font=default]Status: Monitor[/font]
+                  [center][nextposition=0,288][font=default]Sex: Male[/font]
+                  [center][nextposition=0,320][font=default]Residence: Stardew Valley[/font]
+                  [center][nextposition=0,384][color=Firebrick][font=dialogue]Unverified Statement From Questioning[/color][/font][/center]
+                  [center][nextposition=0,480][color=Firebrick][font=default]I brought a creature part.[/color][/font][/center]
+                  [center][nextposition=0,544][font=dialogue]Evidence:[/font][/center]"
                 },
                 {
                   "Id": "Suryawati",
                   "Contents": "[center][font=dialogue]Suryawati[/font][/center]
-                  [nospacing][nextposition=128,32][image=Portraits/HogwartsSuryawati:0,0,64,64:1][nextposition=288,32][image=Characters/HogwartsSuryawati:0,0,16,32:5][/nospacing]
-                  [nextposition=0,192][font=default]Status: Student[/font]
-                  [nextposition=0,256][font=default]Sex: Female[/font]
-                  [nextposition=0,288][font=default]House: Gryffindor[/font]
-                  [nextposition=0,320][font=default]Residence: Hogwarts[/font]
-                  [nextposition=0,352][font=default]Unverified Statement From Questioning[/font]
-                  [nextposition=0,384][font=default]\""The person with the wand could kill because they wanted revenge."\"[/font]
-                  [nextposition=0,416][font=default]Evidence[/font]",
+                  [nospacing][nextposition=128,48][image=Portraits/HogwartsSuryawati:0,0,64,64:3][nextposition=320,48][image=Characters/HogwartsSuryawati:0,0,16,32:6][/nospacing]
+                  [center][nextposition=0,256][font=default]Status: Student[/font][/center]
+                  [center][nextposition=0,288][font=default]Sex: Female[/font][/center]
+                  [center][nextposition=0,320][font=default]House: Gryffindor[/font][/center]
+                  [center][nextposition=0,352][font=default]Residence: Hogwarts[/font][/center]
+                  [center][nextposition=0,416][color=Firebrick][font=dialogue]Unverified Statement From Questioning[/color][/font][/center]
+                  [center][nextposition=0,512][color=Firebrick][font=default]The person with the wand could attack because they wanted revenge.[/color][/font][/center]
+                  [center][nextposition=0,608][font=dialogue]Evidence:[/font][/center]"
                 }
               ]
             },
@@ -166,11 +175,24 @@
                 {
                   "Id": "Notes",
                   "Contents": "[center][font=dialogue]Notes[/font][/center]
-                  [nospacing][nextposition=172,32][image={{ModId}}/DeductionGrid:0,0,257,200:1][/nospacing]
-                  [nextposition=0,192][font=default]Not every information is needed to solve the case. With enough information, the solution can be deduced.[/font]
-                  [nextposition=0,256][font=default]Revelio charm can be used to discover more evidence.[/font]
-                  [nextposition=0,288][font=default]However, the Revelio charm is stronger when the spellcaster knows the suspect.[/font]
-                  [nextposition=0,320][font=default]I need your help.[/font]",
+                  [nospacing][nextposition=64,32][image={{ModId}}/DeductionGrid:0,0,500,500:1][/nospacing]
+                  [nextposition=220,104][font=default]Wand[/font][nextposition=315,104][font=default]Andrew[/font]
+                  [nextposition=100,132][font=default]Creature Part[/font][nextposition=326,132][font=default]Ollivander[/font]
+                  [nextposition=44,158][font=default]Ancient Magic Book[/font][nextposition=340,158][font=default]M. Rasmodius[/font]
+                  [nextposition=184,186][font=default]Potion[/font][nextposition=348,186][font=default]Suryawati[/font]
+                  [nextposition=30,210][font=default]Hogsmeade Village[/font][nextposition=356,210][font=default]Revenge[/font]
+                  [nextposition=40,236][font=default]Hogwarts Valley[/font][nextposition=364,236][font=default]To Protect[/font]
+                  [nextposition=26,264][font=default]Forbidden Forest[/font][nextposition=372,264][font=default]To Prove Oneself[/font]
+                  [nextposition=94,290][font=default]H- Station[/font][nextposition=382,290][font=default]To Hide A Secret[/font]
+                  [nextposition=112,316][font=default]Revenge[/font][nextposition=398,316][font=default]H- Village[/font]
+                  [nextposition=64,344][font=default]To Protect[/font][nextposition=410,344][font=default]Hogwarts V-[/font]
+                  [nextposition=36,370][font=default]To Prove O-[/font][nextposition=422,370][font=default]F- Forest[/font]
+                  [nextposition=28,396][font=default]To Hide A S-[/font][nextposition=432,396][font=default]H- Station[/font]
+                  [nextposition=0,656][font=default]-Not every information is needed to solve the case. With enough information, the solution can be deduced.[/font]
+                  [nextposition=0,752][font=default]-Revelio charm may be used to discover more evidence.[/font]
+                  [nextposition=0,812][font=default]-However, the Revelio charm is stronger when the spellcaster knows the suspect.[/font]
+                  [center][nextposition=0,912][font=default]I need your help.[/font][/center]
+                  [center][nextposition=0,944][font=default]-Professor Granger[/font][/center]"
                 }
               ]
             }
