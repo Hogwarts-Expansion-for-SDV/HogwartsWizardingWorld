@@ -13,7 +13,8 @@
             "{{ModId}}_Lumos",
             "{{ModId}}_Nox",
             "{{ModId}}_Reducto",
-            "{{ModId}}_Reparo"
+            "{{ModId}}_Reparo",
+            "{{ModId}}_Revelio"
           ]
         }
       },
@@ -184,6 +185,20 @@
           "SpellLevels": [
             {
               "TriggerAction": "AddMail Current {{ModId}}_Reparo received"
+            }
+          ]
+        },
+        "{{ModId}}_Revelio": {
+          "DisplayName": "Revelio",
+          "Sequence": [
+            "Up",
+            "Right",
+            "DownLeft",
+            "DownRight"
+          ],
+          "SpellLevels": [
+            {
+              "TriggerAction": "AddMail Current {{ModId}}_Revelio received"
             }
           ]
         }
@@ -1191,6 +1206,71 @@
         "HasFlag |contains= {{ModId}}_HogwartsValleyFlooFlame": true
       },
       "Update": "OnTimeChange, OnLocationChange"
-    }
+    },
+    // Revelio Hogsmeade Station Potion Clue
+    {
+      "LogName": "Hogsmeade Station Potion Clue Rectangle DMTE",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}_HogsmeadeStationPotionClueRectangle": {
+          "Locations": [
+            "{{ModId}}_HogsmeadeStation"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Rectangles": [
+            {
+              "X": 49,
+              "Y": 4,
+              "Width": 14,
+              "Height": 6
+            }
+          ],
+          "Actions": [
+            {
+              "Key": "DMT/mail",
+              "Value": "{{ModId}}_HogsmeadeStationPotionClue",
+              "Trigger": "Tool(MeleeWeapon)"
+            },
+            {
+              "Key": "DMT/changeMultipleIndex",
+              "Value": "Buildings1 79 114=|Buildings1 80 114=|Buildings1 79 115=|Buildings1 80 115=",
+              "Trigger": "Tool(MeleeWeapon)"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_Revelio": true,
+        "HasFlag |contains= {{ModId}}_HogsmeadeStationPotionClue": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },/*
+    {
+      "LogName": "Hogwarts Draught Of Living Death Object Data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_DraughtofLivingDeath": {
+          "Name": "Draught of Living Death",
+          "DisplayName": "{{i18n: obj.potions.DraughtofLivingDeath.name}}",
+          "Description": "{{i18n: obj.potions.DraughtofLivingDeath.desc}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 999,
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
+          "SpriteIndex": 16,
+          "ContextTags": [
+            "{{ModId}}_Potion"
+          ],
+          "Edibility": 0,
+          "IsDrink": true,
+          "ExcludeFromShippingCollection": true
+        }
+      }
+    }*/
   ]
 }
