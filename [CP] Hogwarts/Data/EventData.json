@@ -333,24 +333,27 @@
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogwartsTransfigurationClassroom",
       "Entries": {
-        "{{ModId}}_Andrew15": "kindadumbautumn/19 11/farmer 20 15 0 HogwartsAndrew 20 12 0 HogwartsNkiruka 17 12 0 HogwartsHermione 20 8 2 HogwartsGryffindormaleFour 16 15 0 HogwartsSlytherinMaleFour 24 12 0 HogwartsHufflepuffFemaleFour 25 15 0 HogwartsRavenclawMaleFour 17 18 0 HogwartsHufflepuffMaleFour 21 18 0 HogwartsSlytherinFemaleFour 24 18 0/skippable/
-        addObject 20 10 {{ModId}}_Mouse 1/addObject 25 10 {{ModId}}_Mouse 1/addObject 17 10 {{ModId}}_Mouse 2/addObject 21 13 {{ModId}}_Mouse 2/addObject 25 13 {{ModId}}_Mouse 2/addObject 16 13 {{ModId}}_Mouse 2/addObject 16 16 {{ModId}}_Mouse 2/addObject 21 16 {{ModId}}_Mouse 2/addObject 24 16 {{ModId}}_Mouse 2/pause 1000/
+        "{{ModId}}_Andrew15": "kindadumbautumn/19 12/farmer 20 15 0 HogwartsAndrew 20 12 0 HogwartsNkiruka 17 12 0 HogwartsHermione 20 8 2 HogwartsDanny 999 999 0 HogwartsMcGonagall 15 7 2 HogwartsGryffindormaleFour 16 15 0 HogwartsSlytherinMaleFour 24 12 0 HogwartsHufflepuffFemaleFour 25 15 0 HogwartsRavenclawMaleFour 17 18 0 HogwartsHufflepuffMaleFour 21 18 0 HogwartsSlytherinFemaleFour 24 18 0/skippable/
+        addObject 20 10 {{ModId}}_Mouse 1/addObject 25 10 {{ModId}}_Mouse 1/addObject 17 10 {{ModId}}_Mouse 2/addObject 21 13 {{ModId}}_Mouse 2/addObject 25 13 {{ModId}}_Mouse 2/addObject 16 13 {{ModId}}_Mouse 2/addObject 16 16 {{ModId}}_Mouse 2/addObject 21 16 {{ModId}}_Mouse 2/addObject 24 16 {{ModId}}_Mouse 2/animate HogwartsMcGonagall false true 150 16 17 18 17 16 16 16 16 16 16 16 16 16 16 16 16/pause 1000/
+        speak HogwartsMcGonagall \"Welcome class. #$b# Due to current events, Investigator Granger will be your transfiguration professor for now until she's summoned back to the Ministry.\"/pause 1000/
         faceDirection HogwartsHermione 1/pause 200/faceDirection HogwartsHermione 2/pause 200/faceDirection HogwartsHermione 3/pause 200/faceDirection HogwartsHermione 2/pause 1000/emote HogwartsHermione 56/pause 1000/
-        speak HogwartsHermione \"Welcome class. I am Professor Granger, and I will be your substitute transfiguration professor for now until I am summoned by the Ministry.\"/pause 800/speak HogwartsHermione \"Now, let’s see your proficiency.\"/pause 500/emote HogwartsHermione 40/pause 1000/speak HogwartsHermione \"Andrew, you are up first.\"/pause 800/
-        emote HogwartsAndrew 40/pause 800/
+        speak HogwartsHermione \"Thank you, Headmistress. I once was a pupil of professor McGonagall, and like from her words, transfiguration is a science. #$b# For today, I would like to see what you have learned.\"/pause 500/emote HogwartsHermione 40/pause 1000/move HogwartsHermione 0 1 2/pause 500/speak HogwartsHermione \"What is your name?\"/pause 800/
+        emote HogwartsAndrew 40/pause 800/speak HogwartsAndrew \"My name is Andrew, professor...\"/pause 500/speak HogwartsHermione \"Andrew, would you like to start us off?\"/pause 1000/
         faceDirection HogwartsAndrew 3/faceDirection HogwartsNkiruka 1/pause 800/emote HogwartsAndrew 28/pause 500/faceDirection farmer 3/faceDirection HogwartsAndrew 0/pause 800/
         speak HogwartsAndrew \"Vero verto\"/shake HogwartsNkiruka 500/pause 100/
-        speak HogwartsNkiruka \"...\"/pause 800/beginSimultaneousCommand/playSound dwoop/temporarySprite 20 10 3 8 8 false 2/removeObject 20 10/addObject 20 10 {{ModId}}_Cup 1/pause 1000/jump farmer/
+        speak HogwartsNkiruka \"...\"/pause 800/beginSimultaneousCommand/playSound dwoop/temporarySprite 20 10 3 8 8 false 3/removeObject 20 10/addObject 20 10 {{ModId}}_Cup 1/pause 1000/jump farmer/
         emote farmer 8/pause 800/emote HogwartsHermione 32/pause 500/
         speak HogwartsHermione \"Flawless transfiguration, Andrew!\"/pause 800/faceDirection HogwartsNkiruka 0/faceDirection farmer 0/pause 500/move HogwartsHermione -3 0 3/faceDirection HogwartsHermione 2/
-        speak HogwartsHermione \"Since you were watching so closely, let’s see yours, Nkiruka.\"/pause 800/
+        speak HogwartsHermione \"How about you? #$b# Since you were watching so closely, let’s see yours.\"/pause 800/
         emote HogwartsNkiruka 40/pause 1000/
         faceDirection HogwartsNkiruka 1/faceDirection HogwartsAndrew 3/faceDirection farmer 3/pause 1000/faceDirection HogwartsNkiruka 0/pause 500/
-        speak HogwartsNkiruka \"Fera verta\"/pause 2000/
+        speak HogwartsNkiruka \"Fera verta\"/pause 2000/animate HogwartsHermione false true 500 18 19 18 19 18 19/
         speak HogwartsHermione \"Good attempt, but not quite there.\"/pause 800/
-        emote HogwartsNkiruka 28/pause 800/move HogwartsHermione 3 0 1/faceDirection HogwartsHermione 2/pause 1000/speak HogwartsHermione \"Alright class. Keep practicing.\"/emote HogwartsGryffindormaleFour 28 true/emote HogwartsSlytherinFemaleFour 12 true/
+        emote HogwartsNkiruka 28/pause 800/stopAnimation HogwartsHermione 0/move HogwartsHermione 3 0 1/faceDirection HogwartsHermione 2/pause 1000/speak HogwartsHermione \"Alright class. Keep practicing.\"/emote HogwartsGryffindormaleFour 28 true/emote HogwartsSlytherinFemaleFour 12 true/
         emote HogwartsSlytherinMaleFour 28/
-        globalFade/viewport -1000 -1000/pause 1000/end"
+        globalFade/viewport -1000 -1000/speak HogwartsHermione \"Class, you are dismissed!\"/warp HogwartsHermione 24 8/faceDirection HogwartsHermione 0/warp farmer 999 -999/warp HogwartsAndrew 999 -999/warp HogwartsNkiruka 999 -999/warp HogwartsMcGonagall 999 -999/warp HogwartsGryffindormaleFour 999 -999/warp HogwartsHufflepuffFemaleFour 999 -999/warp HogwartsSlytherinMaleFour 999 -999/warp HogwartsRavenclawMaleFour 999 -999/warp HogwartsHufflepuffMaleFour 999 -999/warp HogwartsSlytherinFemaleFour 999 -999/warp HogwartsDanny 23 18/
+        pause 1000/stopMusic/viewport 19 11 true/globalFadeToClear/move HogwartsDanny 0 -8 0 true/pause 800/emote HogwartsHermione 40/pause 1500/emote HogwartsDanny 12/pause 1000/speak HogwartsDanny \"Hermione, what are you doing? #$b# We're here as investigators, not to play teacher.\"/pause 800/faceDirection HogwartsHermione 2/pause 1000/animate HogwartsHermione false true 500 18 19 18 19 18 19/pause 250/speak HogwartsHermione \"Headmistress McGonagall needed a substitute teacher. #$b# ...And as one of the teachers, I can gather information from the inside.\"/
+        pause 800/faceDirection HogwartsDanny 3/pause 100/faceDirection HogwartsDanny 2/pause 500/emote HogwartsDanny 40/pause 1000/speak HogwartsDanny \"... #$b# ...There's someone here that doesn't belong. #$b# I can feel it.\"/stopAnimation HogwartsHermione 0/pause 1500/emote HogwartsHermione 8 true/pause 500/end"
       }
     },
     // Wizard Tower
@@ -414,7 +417,7 @@
       }
     },
   {
-    "LogName": "Hogsmeade - Chapter 1, Part 2",
+    "LogName": "Headmistress Office - Chapter 1, Part 2",
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogwartsHeadmistressOffice",
       "Entries": {
@@ -425,6 +428,18 @@
         emote HogwartsHermione 28/pause 1000/speak HogwartsMcGonagall \"Not that easy keeping children from getting involved in dangerous business now, is it?\"/pause 800/emote HogwartsHermione 60/pause 500/faceDirection HogwartsHermione 2/pause 200/animate HogwartsHermione false true 200 16 17 16 17 16/
         pause 1500/speak HogwartsHermione \"Well, in any case... I must begin my investigation somewhere. #$b# Please, inform me the second there's more news about the unconcious student, Headmistress McGonagall.\"/pause 1000/stopAnimation HogwartsHermione 0/speak HogwartsHermione \"Good day.\"/
         move HogwartsHermione 0 15 2 true/pause 2000/viewport move 0 -2 1500 true/emote HogwartsMcGonagall 40/pause 1500/speak HogwartsMcGonagall \"*Sigh* #$b# Some things never change at this school.\"/pause 500/end"
+      }
+  },
+  {
+    "LogName": "Hogwarts Transfiguration Classroom - Chapter 1, Part 3",
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_HogwartsTransfigurationClassroom",
+      "Entries": {
+        "{{ModId}}_ChapterThree": "none/6 9/farmer 8 14 0 HogwartsHermione 8 5 2/skippable/animate HogwartsHermione false true 200 16 17 16 17 16/pause 1000/move farmer 0 -3 0 true/pause 1000/speak HogwartsHermione \"Ah, there you are.\"/pause 250/question null \"#Did you summon me, professor?\"/
+        pause 500/stopAnimation HogwartsHermione 0/pause 250/speak HogwartsHermione \"Yes. I have some questions for you, @\"/pause 800/move HogwartsHermione 0 4 2/move HogwartsHermione -5 0 3/pause 100/faceDirection HogwartsHermione 2/pause 250/speak HogwartsHermione \"...Do you recognise these people?\"/pause 100/viewport move 0 2 1500 true/
+        screenFlash 1/animate HogwartsHermione true true 250 20 21 20 21 20 21/pause 1000/jump farmer/pause 1000/question null \"#I know them all.\"/pause 100/speak HogwartsHermione \"I've seen you interact with all of them.\"/pause 250/emote farmer 8/pause 500/speak HogwartsHermione \"...From each of their testimonies, one is contradicting. #$b# Moreover, any evidence appears to be deliberately concealed.\"/
+        pause 500/stopAnimation HogwartsHermione 0/pause 250/faceDirection HogwartsHermione 1/pause 500/move farmer -2 0 3/faceDirection farmer 0/speak HogwartsHermione \"Thus, I cannot complete my investigation without jeopardizing someone's innocence. #$b# You on the other hand... have unique circumstance.\"/pause 500/emote farmer 8/pause 1000/move HogwartsHermione 0 2 2/faceDirection HogwartsHermione 1/faceDirection farmer 3/
+        pause 200/speak HogwartsHermione \"@, I need your help.\"/pause 500/question null \"#You want me to gather information about them?\"/pause 500/speak HogwartsHermione \"Understand that what you are doing cannot be told to anyone. #$b# Do you understand what I'm asking you to do, @?\"/pause 1000/emote farmer 28/pause 1000/end"
       }
   }
   ]
