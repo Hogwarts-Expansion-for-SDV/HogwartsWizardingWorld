@@ -1,0 +1,96 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hog's Head Inn Door Texture Left Animation",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
+      "FromArea": {
+        "X": 192,
+        "Y": 48,
+        "Width": 64,
+        "Height": 48
+      },
+      "ToArea": {
+        "X": 512,
+        "Y": 144,
+        "Width": 64,
+        "Height": 48
+      },
+      "PatchMode": "Replace",
+      "When": {
+        "LocationName |contains= {{ModId}}_HogsHeadInn": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Hog's Head Inn Door Texture Right Animation",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
+      "FromArea": {
+        "X": 192,
+        "Y": 96,
+        "Width": 64,
+        "Height": 48
+      },
+      "ToArea": {
+        "X": 576,
+        "Y": 144,
+        "Width": 64,
+        "Height": 48
+      },
+      "PatchMode": "Replace",
+      "When": {
+        "LocationName |contains= {{ModId}}_HogsHeadInn": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Hog's Head Inn Door Texture Left Static",
+      "Action": "EditImage",
+      "Target": "Maps/townInterior",
+      "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
+      "FromArea": {
+        "X": 192,
+        "Y": 48,
+        "Width": 16,
+        "Height": 48
+      },
+      "ToArea": {
+        "X": 384,
+        "Y": 16,
+        "Width": 16,
+        "Height": 48
+      },
+      "PatchMode": "Replace",
+      "When": {
+        "LocationName |contains= {{ModId}}_HogsHeadInn": true
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Hog's Head Inn Door Texture Right Static",
+      "Action": "EditImage",
+      "Target": "Maps/townInterior",
+      "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
+      "FromArea": {
+        "X": 192,
+        "Y": 96,
+        "Width": 16,
+        "Height": 48
+      },
+      "ToArea": {
+        "X": 96,
+        "Y": 384,
+        "Width": 16,
+        "Height": 48
+      },
+      "PatchMode": "Replace",
+      "When": {
+        "LocationName |contains= {{ModId}}_HogsHeadInn": true
+      },
+      "Update": "OnLocationChange"
+    }
+  ]
+}
