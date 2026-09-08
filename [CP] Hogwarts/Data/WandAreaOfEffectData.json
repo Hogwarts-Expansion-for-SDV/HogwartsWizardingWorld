@@ -1235,8 +1235,8 @@
               "Trigger": "Tool(MeleeWeapon)"
             },
             {
-              "Key": "DMT/changeMultipleIndex",
-              "Value": "Buildings1 79 114=|Buildings1 80 114=|Buildings1 79 115=|Buildings1 80 115=",
+              "Key": "DMT/message",
+              "Value": "Traces of a potion from the time of the attack was discovered!#Your case files has been updated.",
               "Trigger": "Tool(MeleeWeapon)"
             }
           ]
@@ -1271,6 +1271,82 @@
           "ExcludeFromShippingCollection": true
         }
       }
-    }*/
+    },*/
+    // Revelio Hogsmeade Village Potion Clue
+    {
+      "LogName": "Hogsmeade Village Wand Clue Rectangle DMTE",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}_HogsmeadeVillageWandClueRectangle": {
+          "Locations": [
+            "{{ModId}}_HogsmeadeVillage"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Rectangles": [
+            {
+              "X": 62,
+              "Y": 90,
+              "Width": 8,
+              "Height": 8
+            }
+          ],
+          "Actions": [
+            {
+              "Key": "DMT/mail",
+              "Value": "{{ModId}}_HogsmeadeVillageWandClue",
+              "Trigger": "Tool(MeleeWeapon)"
+            },
+            {
+              "Key": "DMT/message",
+              "Value": "Traces of a wand from the time of the attack was discovered!#Your case files has been updated.",
+              "Trigger": "Tool(MeleeWeapon)"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_Revelio": true,
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageWandClue": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    // Revelio Wizard House Prove Clue
+    {
+      "LogName": "Wizard House Prove Clue Rectangle DMTE",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}_WizardHouseProveClueRectangle": {
+          "Locations": [
+            "WizardHouse"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Actions": [
+            {
+              "Key": "DMT/mail",
+              "Value": "{{ModId}}_WizardHouseProveClue",
+              "Trigger": "Tool(MeleeWeapon)"
+            },
+            {
+              "Key": "DMT/message",
+              "Value": "Traces of the time of the attack was discovered!#M. Rasmodius did not want to prove himself.#Your case files has been updated.",
+              "Trigger": "Tool(MeleeWeapon)"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_Revelio": true,
+        "HasFlag |contains= {{ModId}}_WizardHouseProveClue": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    }
   ]
 }

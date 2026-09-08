@@ -22,7 +22,8 @@
           "SpriteIndex": 14,
           "ContextTags": [
             "{{ModId}}_Guidebook"
-          ]
+          ],
+          "CanBeTrashed": false
         }
       }
     },
@@ -85,7 +86,7 @@
                   [center][nextposition=0,96][font=default]Name: Abrielle[/font][/center]
                   [center][nextposition=0,128][font=default]Condition: Bewitched Slumber[/font][/center]
                   [center][nextposition=0,192][font=default]Status: Emergent Wizard[/font][/center]
-                  [center][nextposition=0,224][font=default]Sex: Female[/font][/center]
+                  [center][nextposition=0,224][font=default]Student: Yes[/font][/center]
                   [center][nextposition=0,256][font=default]House: Slytherin[/font][/center]
                   [center][nextposition=0,320][font=dialogue]Notes[/font][/center]
                   [nextposition=0,384][font=default]-Four people were unaccounted for at the time of the attack.[/font]
@@ -97,8 +98,9 @@
                   [nextposition=0,816][font=default]-Motives: Revenge, To Hide A Secret, To Protect, To Prove Oneself.[/font]
                   [center][nextposition=0,896][font=dialogue]Clues From The Time Of Attack[/font][/center]
                   [nextposition=0,960][font=default]-Either someone who wanted to protect was at Hogwarts Valley, or the Ancient Magic Book was at Hogwarts Valley.[/font]
-                  [nextposition=0,1056][font=default]-A wand was not discovered at Hogsmeade Village.[/font]
-                  [nextposition=0,1086][font=default]-Whoever would attack for revenge was an adult.[/font]"
+                  [nextposition=0,1056][font=default]-Whoever would attack for revenge was not a student.[/font]
+                  [if=PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageWandClue Received][nextposition=0,1118][font=default]-A wand WAS discovered at Hogsmeade Village.[/font][/if]
+                  [else][nextposition=0,1118][font=default]-A wand was not discovered at Hogsmeade Village.[/font][/else]"
                 }
               ]
             },
@@ -118,7 +120,7 @@
                   "Contents": "[center][font=dialogue]Andrew[/font][/center]
                   [nospacing][nextposition=128,48][image=Portraits/HogwartsAndrew:0,0,64,64:3][nextposition=320,48][image=Characters/HogwartsAndrew:0,0,16,32:6][/nospacing]
                   [center][nextposition=0,256][font=default]Status: Student[/font]
-                  [center][nextposition=0,288][font=default]Sex: Male[/font]
+                  [center][nextposition=0,288][font=default]Student: Yes[/font]
                   [center][nextposition=0,320][font=default]House: Ravenclaw[/font]
                   [center][nextposition=0,352][font=default]Residence: Hogwarts[/font]
                   [center][nextposition=0,416][font=dialogue][color=Firebrick]Unverified Statement From Questioning[/color][/font][/center]
@@ -130,7 +132,7 @@
                   "Contents": "[center][font=dialogue]Garrick Ollivander[/font][/center]
                   [nospacing][nextposition=128,48][image=Portraits/HogwartsOllivander:0,0,64,64:3][nextposition=320,48][image=Characters/HogwartsOllivander:0,0,16,32:6][/nospacing]
                   [center][nextposition=0,256][font=default]Status: Shopkeeper[/font]
-                  [center][nextposition=0,288][font=default]Sex: Male[/font]
+                  [center][nextposition=0,288][font=default]Student: No[/font]
                   [center][nextposition=0,320][font=default]Residence: Hogsmeade Village[/font][/center]
                   [center][nextposition=0,384][color=Firebrick][font=dialogue]Unverified Statement From Questioning[/color][/font][/center]
                   [center][nextposition=0,480][color=Firebrick][font=default]The person with the creature part wanted to hide a secret.[/color][/font][/center]
@@ -141,7 +143,7 @@
                   "Contents": "[center][font=dialogue]M. Rasmodius[/font][/center]
                   [nospacing][nextposition=128,48][image=Portraits/Wizard:0,0,64,64:3][nextposition=320,48][image=Characters/Wizard:0,0,16,32:6][/nospacing]
                   [center][nextposition=0,256][font=default]Status: Monitor[/font]
-                  [center][nextposition=0,288][font=default]Sex: Male[/font]
+                  [center][nextposition=0,288][font=default]Student: No[/font]
                   [center][nextposition=0,320][font=default]Residence: Stardew Valley[/font]
                   [center][nextposition=0,384][color=Firebrick][font=dialogue]Unverified Statement From Questioning[/color][/font][/center]
                   [center][nextposition=0,480][color=Firebrick][font=default]I brought a creature part.[/color][/font][/center]
@@ -152,7 +154,7 @@
                   "Contents": "[center][font=dialogue]Suryawati[/font][/center]
                   [nospacing][nextposition=128,48][image=Portraits/HogwartsSuryawati:0,0,64,64:3][nextposition=320,48][image=Characters/HogwartsSuryawati:0,0,16,32:6][/nospacing]
                   [center][nextposition=0,256][font=default]Status: Student[/font][/center]
-                  [center][nextposition=0,288][font=default]Sex: Female[/font][/center]
+                  [center][nextposition=0,288][font=default]Student: Yes[/font][/center]
                   [center][nextposition=0,320][font=default]House: Gryffindor[/font][/center]
                   [center][nextposition=0,352][font=default]Residence: Hogwarts[/font][/center]
                   [center][nextposition=0,416][color=Firebrick][font=dialogue]Unverified Statement From Questioning[/color][/font][/center]
@@ -202,6 +204,142 @@
       "When": {
         "HasMod |contains= spacechase0.SpaceCore": true
       }
-    }
+    },
+    {
+      "LogName": "Hogwarts Deduction Grid Question Mark Hogwarts Valley Ancient Magic Book",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/QuestionMark",
+      "FromFile": "assets/Guidebook/QuestionMark.png",
+      "ToArea": {
+        "X": 303,
+        "Y": 367,
+        "Width": 19,
+        "Height": 49
+      },
+      "PatchMode": "Overlay",/*
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogsHeadInn": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"*/
+    },
+    {
+      "LogName": "Hogwarts Deduction Grid Question Mark Hogwarts Valley Protect",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/QuestionMark",
+      "FromFile": "assets/Guidebook/QuestionMark.png",
+      "ToArea": {
+        "X": 229,
+        "Y": 341,
+        "Width": 19,
+        "Height": 49
+      },
+      "PatchMode": "Overlay",/*
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogsHeadInn": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"*/
+    },
+    {
+      "LogName": "Hogwarts Deduction Grid X Mark Andrew Revenge",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/XMark",
+      "FromFile": "assets/Guidebook/XMark.png",
+      "ToArea": {
+        "X": 144,
+        "Y": 287,
+        "Width": 19,
+        "Height": 49
+      },
+      "PatchMode": "Overlay",/*
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogsHeadInn": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"*/
+    },
+    {
+      "LogName": "Hogwarts Deduction Grid X Mark Suryawati Revenge",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/XMark",
+      "FromFile": "assets/Guidebook/XMark.png",
+      "ToArea": {
+        "X": 176,
+        "Y": 366,
+        "Width": 19,
+        "Height": 49
+      },
+      "PatchMode": "Overlay",/*
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogsHeadInn": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"*/
+    },
+    {
+      "LogName": "Hogwarts Deduction Grid X Mark Hogsmeade Village Wand",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/XMark",
+      "FromFile": "assets/Guidebook/XMark.png",
+      "ToArea": {
+        "X": 325,
+        "Y": 314,
+        "Width": 19,
+        "Height": 49
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageWandClue": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Deduction Grid Check Mark Hogsmeade Village Wand",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/CheckMark",
+      "FromFile": "assets/Guidebook/CheckMark.png",
+      "ToArea": {
+        "X": 325,
+        "Y": 314,
+        "Width": 19,
+        "Height": 49
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageWandClue": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Deduction Grid X Mark M. Rasmodius Prove",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/XMark",
+      "FromFile": "assets/Guidebook/XMark.png",
+      "ToArea": {
+        "X": 144,
+        "Y": 393,
+        "Width": 19,
+        "Height": 49
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasFlag |contains= {{ModId}}_WizardHouseProveClue": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },/*
+    {
+      "LogName": "Hogwarts Deduction Grid X Mark Andrew Forbidden Forest",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/XMark",
+      "FromFile": "assets/Guidebook/XMark.png",
+      "ToArea": {
+        "X": 144,
+        "Y": 393,
+        "Width": 19,
+        "Height": 49
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasFlag |contains= {{ModId}}_WizardHouseProveClue": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },*/
   ]
 }
