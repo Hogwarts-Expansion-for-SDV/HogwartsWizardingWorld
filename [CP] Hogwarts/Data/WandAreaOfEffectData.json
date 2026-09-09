@@ -1248,30 +1248,7 @@
         "HasFlag |contains= {{ModId}}_HogsmeadeStationPotionClue": false
       },
       "Update": "OnTimeChange, OnLocationChange"
-    },/*
-    {
-      "LogName": "Hogwarts Draught Of Living Death Object Data",
-      "Action": "EditData",
-      "Target": "Data/Objects",
-      "Entries": {
-        "{{ModId}}_DraughtofLivingDeath": {
-          "Name": "Draught of Living Death",
-          "DisplayName": "{{i18n: obj.potions.DraughtofLivingDeath.name}}",
-          "Description": "{{i18n: obj.potions.DraughtofLivingDeath.desc}}",
-          "Type": "Basic",
-          "Category": -26,
-          "Price": 999,
-          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Potions.png}}",
-          "SpriteIndex": 16,
-          "ContextTags": [
-            "{{ModId}}_Potion"
-          ],
-          "Edibility": 0,
-          "IsDrink": true,
-          "ExcludeFromShippingCollection": true
-        }
-      }
-    },*/
+    },
     // Revelio Hogsmeade Village Potion Clue
     {
       "LogName": "Hogsmeade Village Wand Clue Rectangle DMTE",
@@ -1316,7 +1293,7 @@
     },
     // Revelio Wizard House Prove Clue
     {
-      "LogName": "Wizard House Prove Clue Rectangle DMTE",
+      "LogName": "Hogwarts Wizard House Prove Clue Rectangle DMTE",
       "Action": "EditData",
       "Target": "DMT/Tiles",
       "Entries": {
@@ -1345,6 +1322,65 @@
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
         "HasFlag |contains= {{ModId}}_Revelio": true,
         "HasFlag |contains= {{ModId}}_WizardHouseProveClue": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    // Revelio Andrew Forbidden Forest Clue
+    /*{
+      "LogName": "Hogwarts Andrew Forbidden Forest Clue Trigger Actions",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModID}}_AndrewForbiddenForestClue": {
+          "Id": "{{ModID}}_AndrewForbiddenForestClue",
+          "Condition": "ANY \"PLAYER_HAS_MAIL Current {{ModId}}_Revelio Received, LOCATION_NAME Here {{ModId}}_ForbiddenForestCentaurCamp, {{HasMod|contains=Esca.EMP}}, {{HasMod|contains=Spiderbuttons.BETAS}}, !PLAYER_HAS_MAIL Current {{ModId}}_AndrewForbiddenForestClue Received\" \"PLAYER_HAS_MAIL Current {{ModId}}_Revelio Received, LOCATION_NAME Here {{ModId}}_ForbiddenForest, {{HasMod|contains=Esca.EMP}}, {{HasMod|contains=Spiderbuttons.BETAS}}, !PLAYER_HAS_MAIL Current {{ModId}}_AndrewForbiddenForestClue Received\"",
+          "Trigger": "Esca.EMP_OneSecondUpdateTicked",
+          "Actions": [
+            "AddMail Current {{ModId}}_AndrewForbiddenForestClue",
+            "Spiderbuttons.BETAS_Message \"At the time of the attack, there was no trace of Andrew being at the Forbidden Forest\""
+          ],
+          "MarkActionApplied": false
+        }
+      }
+    },*/
+    {
+      "LogName": "Hogwarts Andrew Forbidden Forest Clue Rectangle DMTE",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}_AndrewForbiddenForestClueRectangle": {
+          "Locations": [
+            "{{ModId}}_ForbiddenForestCentaurCamp"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Rectangles": [
+            {
+              "X": 70,
+              "Y": 42,
+              "Width": 11,
+              "Height": 12
+            }
+          ],
+          "Actions": [
+            {
+              "Key": "DMT/mail",
+              "Value": "{{ModId}}_AndrewForbiddenForestClue",
+              "Trigger": "Tool(MeleeWeapon)"
+            },
+            {
+              "Key": "DMT/message",
+              "Value": "Using Revelio, there was no trace of Andrew being at the Forbidden Forest at the time of the attack.#Your case files has been updated.",
+              "Trigger": "Tool(MeleeWeapon)"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_Revelio": true,
+        "HasFlag |contains= {{ModId}}_AndrewForbiddenForestClue": false
       },
       "Update": "OnTimeChange, OnLocationChange"
     }
