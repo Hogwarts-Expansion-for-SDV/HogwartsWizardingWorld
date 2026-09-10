@@ -1,18 +1,18 @@
 {
   "Changes": [
     {
-      "LogName": "Hogwarts Mystery Guidebook Load",
+      "LogName": "Hogwarts Emergent Wizard Case Files Guidebook Load",
       "Action": "Load",
       "Target": "{{ModId}}/CheckMark, {{ModId}}/DeductionGrid, {{ModId}}/MysteryGuidebookTabs, {{ModId}}/QuestionMark, {{ModId}}/XMark",
       "FromFile": "assets/Guidebook/{{TargetWithoutPath}}.png"
     },
     {
-      "LogName": "Hogwarts Fantastic Beasts Guidebook Object Data",
+      "LogName": "Hogwarts Emergent Wizard Case Files Guidebook Object Data",
       "Action": "EditData",
       "Target": "Data/Objects",
       "Entries": {
-        "{{ModId}}_MysteryGuidebook": {
-          "Name": "Mystery",
+        "{{ModId}}_EmergentWizardCaseFilesGuidebook": {
+          "Name": "Emergent Wizard Case Files",
           "DisplayName": "Mystery i18n name",
           "Description": "Mystery i18n description",
           "Type": "Quest",
@@ -28,7 +28,7 @@
       }
     },
     {
-      "LogName": "Hogwarts Mystery Guidebook UseForTriggerAction",
+      "LogName": "Hogwarts Emergent Wizard Case Files Guidebook UseForTriggerAction",
       "Action": "EditData",
       "Target": "spacechase0.SpaceCore/ObjectExtensionData",
       "Entries": {
@@ -41,15 +41,15 @@
       }
     },
     {
-      "LogName": "Hogwarts Mystery Guidebook Trigger Action",
+      "LogName": "Hogwarts Emergent Wizard Case Files Guidebook Trigger Action",
       "Action": "EditData",
       "Target": "Data/TriggerActions",
       "Entries": {
-        "{{ModId}}_OpenMysteryGuidebook": {
-          "Id": "{{ModId}}_OpenMysteryGuidebook",
-          "Condition": "ITEM_ID Input {{ModId}}_MysteryGuidebook",
+        "{{ModId}}_OpenEmergentWizardCaseFilesGuidebook": {
+          "Id": "{{ModId}}_OpenEmergentWizardCaseFilesGuidebook",
+          "Condition": "ITEM_ID Input {{ModId}}_EmergentWizardCaseFilesGuidebook",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
-          "Action": "spacechase0.SpaceCore_OpenGuidebook {{ModId}}_Mystery",
+          "Action": "spacechase0.SpaceCore_OpenGuidebook {{ModId}}_EmergentWizardCaseFiles",
           "MarkActionApplied": false
         }
       },
@@ -58,11 +58,11 @@
       }
     },
     {
-      "LogName": "Hogwarts Mystery Guidebook",
+      "LogName": "Hogwarts Emergent Wizard Case Files Guidebook",
       "Action": "EditData",
       "Target": "spacechase0.SpaceCore/Guidebooks",
       "Entries": {
-        "{{ModId}}_Mystery": {
+        "{{ModId}}_EmergentWizardCaseFiles": {
           "Title": "Case Files",
           "DefaultChapter": "Title",
           /*"PageTexture": "{{InternalAssetKey: assets/Guidebook/MysteryGuidebookBase.png}}",
@@ -99,7 +99,7 @@
                   [center][nextposition=0,912][font=dialogue]Clues From The Time Of Attack[/font][/center]
                   [nextposition=0,960][font=default]-Either someone who wanted to protect was at Hogwarts Valley, or the Ancient Magic Book was at Hogwarts Valley.[/font]
                   [nextposition=0,1056][font=default]-Whoever would attack for revenge was not a student.[/font]
-                  [if=PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageWandClue Received][nextposition=0,1118][font=default]-A wand [color=Firebrick]WAS[/color] discovered at Hogsmeade Village.[/font][/if]
+                  [if=PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageWandClue Received][nextposition=0,1118][font=default]-Correction: a wand [color=Firebrick]WAS[/color] discovered at Hogsmeade Village.[/font][/if]
                   [else][nextposition=0,1118][font=default]-A wand was not discovered at Hogsmeade Village.[/font][/else]
                   [if=PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeStationPotionClue Received][nextposition=0,1182][font=default]A Potion was discovered at Hogsmeade Station.[/font][/if]
                   [else][nextposition=0,1182][font=default][/font][/else]"
@@ -210,6 +210,94 @@
       "When": {
         "HasMod |contains= spacechase0.SpaceCore": true
       }
+    },
+    {
+      "LogName": "Hogwarts Emergent Wizard Notification Hogsmeade Village",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeVillage",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 22,
+            "Y": 25
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/animation_Enter": "{{ModId}}.EmergentWizardCaseFiles,NotificationHogsmeadeVillage"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageWandClue": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Emergent Wizard Notification Hogsmeade Station",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsmeadeStation",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 56,
+            "Y": 7
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/animation_Enter": "{{ModId}}.EmergentWizardCaseFiles,NotificationHogsmeadeStation"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogsmeadeStationPotionClue": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Emergent Wizard Notification Forbidden Forest Centaur Camp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ForbiddenForestCentaurCamp",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 76,
+            "Y": 47
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/animation_Enter": "{{ModId}}.EmergentWizardCaseFiles,NotificationForbiddenForestCentaurCamp"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_AndrewForbiddenForestClue": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Emergent Wizard Notification Wizard House",
+      "Action": "EditMap",
+      "Target": "Maps/WizardHouse",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 4,
+            "Y": 6
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/animation_Enter": "{{ModId}}.EmergentWizardCaseFiles,NotificationWizardHouse"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_WizardHouseProveClue": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
     },
     {
       "LogName": "Hogwarts Deduction Grid Question Mark Hogwarts Valley Ancient Magic Book",
@@ -347,5 +435,113 @@
       },
       "Update": "OnTimeChange, OnLocationChange"
     },*/
+    {
+      "LogName": "Hogwarts Emergent Wizard Case Files Animation DMTE",
+      "Action": "EditData",
+      "Target": "DMT/Animations",
+      "Entries": {
+        "{{ModId}}.EmergentWizardCaseFiles": [
+          {
+            "Name": "NotificationHogsmeadeVillage",
+            "Texture": "Maps/z_Notification1_Hogwarts",
+            "SourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 16,
+              "Height": 16
+            },
+            "Position": {
+              "X": 1408,
+              "Y": 1600
+            },
+            "Scale": 4,
+            "Length": 6,
+            "LayerDepth": 0,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 100,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          {
+            "Name": "NotificationHogsmeadeStation",
+            "Texture": "Maps/z_Notification1_Hogwarts",
+            "SourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 16,
+              "Height": 16
+            },
+            "Position": {
+              "X": 3584,
+              "Y": 448
+            },
+            "Scale": 4,
+            "Length": 6,
+            "LayerDepth": 0,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 100,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          {
+            "Name": "NotificationForbiddenForestCentaurCamp",
+            "Texture": "Maps/z_Notification1_Hogwarts",
+            "SourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 16,
+              "Height": 16
+            },
+            "Position": {
+              "X": 4864,
+              "Y": 3008
+            },
+            "Scale": 4,
+            "Length": 6,
+            "LayerDepth": 0,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 100,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          },
+          {
+            "Name": "NotificationWizardHouse",
+            "Texture": "Maps/z_Notification1_Hogwarts",
+            "SourceRect": {
+              "X": 0,
+              "Y": 0,
+              "Width": 16,
+              "Height": 16
+            },
+            "Position": {
+              "X": 256,
+              "Y": 384
+            },
+            "Scale": 4,
+            "Length": 6,
+            "LayerDepth": 0,
+            "Loops": 10000,
+            "Flipped": false,
+            "Interval": 100,
+            "Motion": {
+              "X": 0,
+              "Y": 0
+            }
+          }
+        ]
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    }
   ]
 }
