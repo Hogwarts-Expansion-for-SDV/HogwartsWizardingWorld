@@ -32,7 +32,7 @@
       "Action": "EditData",
       "Target": "spacechase0.SpaceCore/ObjectExtensionData",
       "Entries": {
-        "{{ModId}}_MysteryGuidebook": {
+        "{{ModId}}_EmergentWizardCaseFilesGuidebook": {
           "UseForTriggerAction": true
         }
       },
@@ -196,11 +196,40 @@
                   [nextposition=64,344][font=default]To Protect[/font][nextposition=410,344][font=default]Hogwarts V-[/font]
                   [nextposition=36,370][font=default]To Prove O-[/font][nextposition=422,370][font=default]F- Forest[/font]
                   [nextposition=28,396][font=default]To Hide A S-[/font][nextposition=432,396][font=default]H- Station[/font]
-                  [nextposition=0,656][font=default]-Not every information is needed to solve the case. With enough information, the solution can be deduced.[/font]
-                  [nextposition=0,752][font=default]-Revelio charm may be used to discover more evidence.[/font]
-                  [nextposition=0,812][font=default]-However, the Revelio charm is stronger when the spellcaster knows the suspect.[/font]
-                  [center][nextposition=0,912][font=default]I need your help.[/font][/center]
-                  [center][nextposition=0,944][font=default]-Professor Granger[/font][/center]"
+                  [nextposition=0,524][font=default]-Not every information is needed to solve the case. With enough information, the solution can be deduced.[/font]
+                  [nextposition=0,620][font=default]-Test each suspects' statement by assuming their statement is a lie, while assuming everyone else's statements are true.[/font]
+                  [nextposition=0,720][font=default]-If there is a contradiction, then that suspect was telling the truth.[/font]
+                  [nextposition=0,792][font=default]-Revelio charm may be used to discover more evidence.[/font]
+                  [nextposition=0,856][font=default]-However, the Revelio charm is stronger when the spellcaster knows the suspect.[/font]
+                  [center][nextposition=0,952][font=default]I need your help.[/font][/center]
+                  [center][nextposition=0,984][font=default]-Professor Granger[/font][/center]"
+                }
+              ]
+            },
+            "AccusationSubmission": {
+              "Name": "Accusation Submission",
+              "TabIconTexture": "{{ModId}}/MysteryGuidebookTabs",
+              "TabIconRect": {
+                "X": 0,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+              },
+              "Condition": "TRUE",
+              "Pages": [
+                {
+                  "Id": "Accusation",
+                  "Contents": "[center][font=dialogue]Click the answer to submit your accusation.[/font][/center]
+                  [center][nextposition=0,128][font=default]Do not accuse until you are certain.[/font][/center]
+                  [center][nextposition=0,192][font=dialogue]Who?[/font][/center]
+                  [font=default][nextposition=32,256]Andrew[nextposition=352,256]Ollivander[/font]
+                  [font=default][nextposition=32,320]M. Rasmodius[nextposition=352,320]Suryawati[/font]
+                  [center][nextposition=0,384][font=dialogue]Where?[/font][/center]
+                  [font=default][nextposition=32,448]Forbidden Forest[nextposition=352,448]Hogsmeade Station[/font]
+                  [font=default][nextposition=32,512]Hogsmeade Village[nextposition=352,512]Hogwarts Valley[/font]
+                  [center][nextposition=0,576][font=dialogue]How?[/font][/center]
+                  [font=default][nextposition=32,640]Ancient Magic Book[nextposition=352,640]Creature Part[/font]
+                  [font=default][nextposition=32,704]Potion[nextposition=352,704]Wand[/font]"
                 }
               ]
             }
@@ -299,6 +328,7 @@
       },
       "Update": "OnTimeChange, OnLocationChange"
     },
+    // Given Evidence
     {
       "LogName": "Hogwarts Deduction Grid Question Mark Hogwarts Valley Ancient Magic Book",
       "Action": "EditImage",
@@ -368,40 +398,6 @@
       "Update": "OnTimeChange, OnLocationChange"*/
     },
     {
-      "LogName": "Hogwarts Deduction Grid X Mark Hogsmeade Village Wand",
-      "Action": "EditImage",
-      "Target": "{{ModId}}/DeductionGrid",
-      "FromFile": "assets/Guidebook/XMark.png",
-      "ToArea": {
-        "X": 325,
-        "Y": 314,
-        "Width": 19,
-        "Height": 49
-      },
-      "PatchMode": "Overlay",
-      "When": {
-        "HasFlag |contains= {{ModId}}_HogsmeadeVillageWandClue": false
-      },
-      "Update": "OnTimeChange, OnLocationChange"
-    },
-    {
-      "LogName": "Hogwarts Deduction Grid Check Mark Hogsmeade Village Wand",
-      "Action": "EditImage",
-      "Target": "{{ModId}}/DeductionGrid",
-      "FromFile": "assets/Guidebook/CheckMark.png",
-      "ToArea": {
-        "X": 325,
-        "Y": 314,
-        "Width": 19,
-        "Height": 49
-      },
-      "PatchMode": "Overlay",
-      "When": {
-        "HasFlag |contains= {{ModId}}_HogsmeadeVillageWandClue": true
-      },
-      "Update": "OnTimeChange, OnLocationChange"
-    },
-    {
       "LogName": "Hogwarts Deduction Grid X Mark M. Rasmodius Prove",
       "Action": "EditImage",
       "Target": "{{ModId}}/DeductionGrid",
@@ -417,24 +413,247 @@
         "HasFlag |contains= {{ModId}}_WizardHouseProveClue": true
       },
       "Update": "OnTimeChange, OnLocationChange"
-    },/*
+    },
     {
       "LogName": "Hogwarts Deduction Grid X Mark Andrew Forbidden Forest",
       "Action": "EditImage",
       "Target": "{{ModId}}/DeductionGrid",
       "FromFile": "assets/Guidebook/XMark.png",
       "ToArea": {
-        "X": 144,
+        "X": 165,
+        "Y": 234,
+        "Width": 19,
+        "Height": 49
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasFlag |contains= {{ModId}}_AndrewForbiddenForestClue": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    // Hogsmeade Station Potion
+    {
+      "LogName": "Hogwarts Deduction Grid Check Mark Hogsmeade Station Potion",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/DeductionGrid",
+      "FromFile": "assets/Guidebook/CheckMark.png",
+      "ToArea": {
+        "X": 314,
+        "Y": 446,
+        "Width": 19,
+        "Height": 49
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageWandClue": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Deduction Grid X Mark 1 Hogsmeade Station Potion",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/DeductionGrid",
+      "FromFile": "assets/Guidebook/XMark.png",
+      "ToArea": {
+        "X": 282,
+        "Y": 367,
+        "Width": 19,
+        "Height": 49
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageWandClue": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Deduction Grid X Mark 2 Hogsmeade Station Potion",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/DeductionGrid",
+      "FromFile": "assets/Guidebook/XMark.png",
+      "ToArea": {
+        "X": 293,
         "Y": 393,
         "Width": 19,
         "Height": 49
       },
       "PatchMode": "Overlay",
       "When": {
-        "HasFlag |contains= {{ModId}}_WizardHouseProveClue": true
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageWandClue": true
       },
       "Update": "OnTimeChange, OnLocationChange"
-    },*/
+    },
+    {
+      "LogName": "Hogwarts Deduction Grid X Mark 3 Hogsmeade Station Potion",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/DeductionGrid",
+      "FromFile": "assets/Guidebook/XMark.png",
+      "ToArea": {
+        "X": 303,
+        "Y": 420,
+        "Width": 19,
+        "Height": 49
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageWandClue": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Deduction Grid X Mark 4 Hogsmeade Station Potion",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/DeductionGrid",
+      "FromFile": "assets/Guidebook/XMark.png",
+      "ToArea": {
+        "X": 325,
+        "Y": 420,
+        "Width": 19,
+        "Height": 49
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageWandClue": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Deduction Grid X Mark 5 Hogsmeade Station Potion",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/DeductionGrid",
+      "FromFile": "assets/Guidebook/XMark.png",
+      "ToArea": {
+        "X": 335,
+        "Y": 393,
+        "Width": 19,
+        "Height": 49
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageWandClue": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Deduction Grid X Mark 6 Hogsmeade Station Potion",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/DeductionGrid",
+      "FromFile": "assets/Guidebook/XMark.png",
+      "ToArea": {
+        "X": 346,
+        "Y": 367,
+        "Width": 19,
+        "Height": 49
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageWandClue": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    // Hogsmeade Village Wand
+    {
+      "LogName": "Hogwarts Deduction Grid X Mark Hogsmeade Village Wand",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/DeductionGrid",
+      "FromFile": "assets/Guidebook/XMark.png",
+      "ToArea": {
+        "X": 314,
+        "Y": 287,
+        "Width": 19,
+        "Height": 49
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageWandClue": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Deduction Grid Check Mark Hogsmeade Village Wand",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/DeductionGrid",
+      "FromFile": "assets/Guidebook/CheckMark.png",
+      "ToArea": {
+        "X": 314,
+        "Y": 287,
+        "Width": 19,
+        "Height": 49
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageWandClue": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Deduction Grid X Mark 1 Hogsmeade Village Wand",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/DeductionGrid",
+      "FromFile": "assets/Guidebook/XMark.png",
+      "ToArea": {
+        "X": 293,
+        "Y": 340,
+        "Width": 19,
+        "Height": 49
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageWandClue": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Deduction Grid X Mark 2 Hogsmeade Village Wand",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/DeductionGrid",
+      "FromFile": "assets/Guidebook/XMark.png",
+      "ToArea": {
+        "X": 303,
+        "Y": 314,
+        "Width": 19,
+        "Height": 49
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageWandClue": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Deduction Grid X Mark 3 Hogsmeade Village Wand",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/DeductionGrid",
+      "FromFile": "assets/Guidebook/XMark.png",
+      "ToArea": {
+        "X": 324,
+        "Y": 314,
+        "Width": 19,
+        "Height": 49
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageWandClue": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Deduction Grid X Mark 4 Hogsmeade Village Wand",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/DeductionGrid",
+      "FromFile": "assets/Guidebook/XMark.png",
+      "ToArea": {
+        "X": 335,
+        "Y": 340,
+        "Width": 19,
+        "Height": 49
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageWandClue": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
     {
       "LogName": "Hogwarts Emergent Wizard Case Files Animation DMTE",
       "Action": "EditData",
