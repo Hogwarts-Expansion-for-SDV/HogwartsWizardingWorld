@@ -13,9 +13,9 @@
       "Entries": {
         "{{ModId}}_EmergentWizardCaseFilesGuidebook": {
           "Name": "Emergent Wizard Case Files",
-          "DisplayName": "Mystery i18n name",
-          "Description": "Mystery i18n description",
-          "Type": "Quest",
+          "DisplayName": "Emergent Wizard Case Files",
+          "Description": "Files about the Emergent Wizard case.",
+          "Type": "Basic",
           "Category": 0,
           "Price": 50,
           "Texture": "{{InternalAssetKey: assets/Objects/Artifacts.png}}",
@@ -99,7 +99,7 @@
                   [center][nextposition=0,912][font=dialogue]Clues From The Time Of Attack[/font][/center]
                   [nextposition=0,960][font=default]-Either someone who wanted to protect was at Hogwarts Valley, or the Ancient Magic Book was at Hogwarts Valley.[/font]
                   [nextposition=0,1056][font=default]-Whoever would attack for revenge was not a student.[/font]
-                  [if=PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageWandClue Received][nextposition=0,1118][font=default]-Correction: a wand [color=Firebrick]WAS[/color] discovered at Hogsmeade Village.[/font][/if]
+                  [if=PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageWandClue Received][nextposition=0,1118][font=default]-[color=Firebrick]Updated[/color]: a wand [color=Firebrick]WAS[/color] discovered at Hogsmeade Village.[/font][/if]
                   [else][nextposition=0,1118][font=default]-A wand was not discovered at Hogsmeade Village.[/font][/else]
                   [if=PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeStationPotionClue Received][nextposition=0,1182][font=default]A Potion was discovered at Hogsmeade Station.[/font][/if]
                   [else][nextposition=0,1182][font=default][/font][/else]"
@@ -220,9 +220,10 @@
                 {
                   "Id": "Accusation",
                   "Contents": "[center][font=dialogue]Click the answer to submit your accusation.[/font][/center]
-                  [center][nextposition=0,128][font=default]Do not accuse until you are certain.[/font][/center]
+                  [center][nextposition=0,128][font=default]Only choose one answer per category. Do not accuse an innocent person until ready.[/font][/center]
                   [center][nextposition=0,192][font=dialogue]Who?[/font][/center]
-                  [font=default][nextposition=32,256]Andrew[nextposition=352,256]Ollivander[/font]
+                  [font=default][nextposition=32,256][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoAndrew Received][color=Firebrick]Andrew[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhoAndrew Received]Andrew[/action][/else][/font]
+                  [font=default][nextposition=352,256][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoOllivander Received][color=Firebrick]Ollivander[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhoOllivander Received]Ollivander[/action][/else][/font]
                   [font=default][nextposition=32,320]M. Rasmodius[nextposition=352,320]Suryawati[/font]
                   [center][nextposition=0,384][font=dialogue]Where?[/font][/center]
                   [font=default][nextposition=32,448]Forbidden Forest[nextposition=352,448]Hogsmeade Station[/font]
