@@ -51,7 +51,42 @@
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "spacechase0.SpaceCore_OpenGuidebook {{ModId}}_EmergentWizardCaseFiles",
           "MarkActionApplied": false
-        }
+        },
+        "{{ModId}}_HogsmeadeStationPotionClue": {
+          "Id": "{{ModId}}_HogsmeadeStationPotionClue",
+          "Condition": "ANY \"PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current HogwartsOllivander 1, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeStationPotionClue Received\" \"PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current HogwartsSuryawati 1, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeStationPotionClue Received\"",
+          "Trigger": "DayStarted",
+          "Action": "AddQuest {{ModId}}_HogsmeadeStationPotionClue",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_HogsmeadeVillageWandClue": {
+          "Id": "{{ModId}}_HogsmeadeVillageWandClue",
+          "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current HogwartsAndrew 3, PLAYER_HEARTS Current HogwartsOllivander 5, PLAYER_HEARTS Current Wizard 3, PLAYER_HEARTS Current HogwartsSuryawati 3, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageWandClue Received",
+          "Trigger": "DayStarted",
+          "Action": "AddQuest {{ModId}}_HogsmeadeVillageWandClue",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_WizardHouseProveClue": {
+          "Id": "{{ModId}}_WizardHouseProveClue",
+          "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current Wizard 1, !PLAYER_HAS_MAIL Current {{ModId}}_WizardHouseProveClue Received",
+          "Trigger": "DayStarted",
+          "Action": "AddQuest {{ModId}}_WizardHouseProveClue",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_AndrewForbiddenForestClue": {
+          "Id": "{{ModId}}_AndrewForbiddenForestClue",
+          "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current HogwartsAndrew 1, !PLAYER_HAS_MAIL Current {{ModId}}_AndrewForbiddenForestClue Received",
+          "Trigger": "DayStarted",
+          "Action": "AddQuest {{ModId}}_AndrewForbiddenForestClue",
+          "MarkActionApplied": false
+        },/*
+        "{{ModId}}_AccusationSubmission": {
+          "Id": "{{ModId}}_AccusationSubmission",
+          "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageWandClue Received",
+          "Trigger": "LocationChanged",
+          "Action": "AddQuest {{ModId}}_AccusationSubmission",
+          "MarkActionApplied": false
+        }*/
       },
       "When": {
         "HasMod |contains= spacechase0.SpaceCore": true
@@ -91,13 +126,13 @@
                   [center][nextposition=0,320][font=dialogue]Notes[/font][/center]
                   [nextposition=0,384][font=default]-Four people were unaccounted for at the time of the attack.[/font]
                   [nextposition=0,448][font=default]-Each suspect provided a statement, but when all statements were applied, it produced a contradiction. Therefore, someone is lying, maybe even unintentionally.[/font]
-                  [nextposition=0,576][font=default][color=Firebrick]-Whoever is lying is the culprit.[/color][/font]
+                  [nextposition=0,576][font=default][color=Firebrick]-Find out who is lying.[/color][/font]
                   [center][nextposition=0,624][font=dialogue]Possibilities[/font][/center]
                   [nextposition=0,672][font=default]-Locations: Forbidden Forest Centaur Camp, Hogsmeade Station, Hogsmeade Village, Hogwarts Valley.[/font]
                   [nextposition=0,776][font=default]-Weapons: Ancient Magic Book, Creature Part, Potion, Wand.[/font]
                   [nextposition=0,848][font=default]-Motives: Revenge, To Hide A Secret, To Protect, To Prove Oneself.[/font]
                   [center][nextposition=0,912][font=dialogue]Clues From The Time Of Attack[/font][/center]
-                  [nextposition=0,960][font=default]-Either someone who wanted to protect was at Hogwarts Valley, or the Ancient Magic Book was at Hogwarts Valley.[/font]
+                  [nextposition=0,960][font=default]-Either someone who wanted to protect was at Hogwarts Valley, or the Ancient Magic Book was at Hogwarts Valley. Not both.[/font]
                   [nextposition=0,1056][font=default]-Whoever would attack for revenge was not a student.[/font]
                   [if=PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageWandClue Received][nextposition=0,1118][font=default]-[color=Firebrick]Updated[/color]: a wand [color=Firebrick]WAS[/color] discovered at Hogsmeade Village.[/font][/if]
                   [else][nextposition=0,1118][font=default]-A wand was not discovered at Hogsmeade Village.[/font][/else]
@@ -126,7 +161,7 @@
                   [center][nextposition=0,320][font=default]Residence: Hogwarts[/font]
                   [center][nextposition=0,352][font=default][/font]
                   [center][nextposition=0,416][font=dialogue][color=Firebrick]Unverified Statement From Questioning[/color][/font][/center]
-                  [center][nextposition=0,512][font=default][color=Firebrick]Garrick Ollivander brought a wand.[/color][/font][/center]
+                  [center][nextposition=0,512][font=default][color=Firebrick]Ollivander brought a wand.[/color][/font][/center]
                   [center][nextposition=0,576][font=dialogue]Revealed Evidence:[/font][/center]
                   [if=PLAYER_HAS_MAIL Current {{ModId}}_AndrewForbiddenForestClue Received][nextposition=0,640][font=default]Andrew was not at the Forbidden Forest.[/font][/if]
                   [else][nextposition=0,640][font=default][/font][/else]"
@@ -194,13 +229,13 @@
                   [nextposition=94,290][font=default]H- Station[/font][nextposition=382,290][font=default]To Hide A Secret[/font]
                   [nextposition=112,316][font=default]Revenge[/font][nextposition=398,316][font=default]H- Village[/font]
                   [nextposition=64,344][font=default]To Protect[/font][nextposition=410,344][font=default]Hogwarts V-[/font]
-                  [nextposition=36,370][font=default]To Prove O-[/font][nextposition=422,370][font=default]F- Forest[/font]
+                  [nextposition=13,370][font=default]To Prove One-[/font][nextposition=422,370][font=default]F- Forest[/font]
                   [nextposition=28,396][font=default]To Hide A S-[/font][nextposition=432,396][font=default]H- Station[/font]
                   [nextposition=0,524][font=default]-Not every information is needed to solve the case. With enough information, the solution can be deduced.[/font]
-                  [nextposition=0,620][font=default]-Test each suspects' statement by assuming their statement is a lie, while assuming everyone else's statements are true.[/font]
+                  [nextposition=0,620][font=default]-Test each suspect's statement by assuming their statement is a lie, while assuming everyone else's statements are true.[/font]
                   [nextposition=0,720][font=default]-If there is a contradiction, then that suspect was telling the truth.[/font]
                   [nextposition=0,792][font=default]-Revelio charm may be used to discover more evidence.[/font]
-                  [nextposition=0,856][font=default]-However, the Revelio charm is stronger when the spellcaster knows the suspect.[/font]
+                  [nextposition=0,856][font=default]-However, traces from the Revelio charm are stronger when the spellcaster knows the suspect.[/font]
                   [center][nextposition=0,952][font=default]I need your help.[/font][/center]
                   [center][nextposition=0,984][font=default]-Professor Granger[/font][/center]"
                 }
@@ -220,17 +255,22 @@
                 {
                   "Id": "Accusation",
                   "Contents": "[center][font=dialogue]Click the answer to submit your accusation.[/font][/center]
-                  [center][nextposition=0,128][font=default]Only choose one answer per category. Do not accuse an innocent person until ready.[/font][/center]
+                  [center][nextposition=0,112][font=default]Only choose one answer per category. Do not accuse until ready.[/font][/center]
                   [center][nextposition=0,192][font=dialogue]Who?[/font][/center]
-                  [font=default][nextposition=32,256][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoAndrew Received][color=Firebrick]Andrew[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhoAndrew Received]Andrew[/action][/else][/font]
-                  [font=default][nextposition=352,256][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoOllivander Received][color=Firebrick]Ollivander[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhoOllivander Received]Ollivander[/action][/else][/font]
-                  [font=default][nextposition=32,320]M. Rasmodius[nextposition=352,320]Suryawati[/font]
+                  [font=default][nextposition=32,256][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoOllivander Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoM.Rasmodius Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoSuryawati Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoAndrew Received][color=Firebrick]Andrew[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhoAndrew Received]Andrew[/action][/else][/else][/else][/else][/font]
+                  [font=default][nextposition=352,256][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoAndrew Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoM.Rasmodius Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoSuryawati Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoOllivander Received][color=Firebrick]Ollivander[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhoOllivander Received]Ollivander[/action][/else][/else][/else][/else][/font]
+                  [font=default][nextposition=32,320][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoAndrew Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoOllivander Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoSuryawati Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoM.Rasmodius Received][color=Firebrick]M. Rasmodius[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhoM.Rasmodius Received]M. Rasmodius[/action][/else][/else][/else][/else][/font]
+                  [font=default][nextposition=352,320][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoAndrew Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoOllivander Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoM.Rasmodius Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoSuryawati Received][color=Firebrick]Suryawati[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhoSuryawati Received]Suryawati[/action][/else][/else][/else][/else][/font]
                   [center][nextposition=0,384][font=dialogue]Where?[/font][/center]
-                  [font=default][nextposition=32,448]Forbidden Forest[nextposition=352,448]Hogsmeade Station[/font]
-                  [font=default][nextposition=32,512]Hogsmeade Village[nextposition=352,512]Hogwarts Valley[/font]
+                  [font=default][nextposition=32,448][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogsmeadeStation Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogsmeadeVillage Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogwartsValley Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereForbiddenForest Received][color=Firebrick]Forbidden Forest[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhereForbiddenForest Received]Forbidden Forest[/action][/else][/else][/else][/else][/font]
+                  [font=default][nextposition=352,448][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereForbiddenForest Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogsmeadeVillage Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogwartsValley Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogsmeadeStation Received][color=Firebrick]Hogsmeade Station[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhereHogsmeadeStation Received]Hogsmeade Station[/action][/else][/else][/else][/else][/font]
+                  [font=default][nextposition=32,512][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereForbiddenForest Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogsmeadeStation Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogwartsValley Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogsmeadeVillage Received][color=Firebrick]Hogsmeade Village[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhereHogsmeadeVillage Received]Hogsmeade Village[/action][/else][/else][/else][/else][/font]
+                  [font=default][nextposition=352,512][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereForbiddenForest Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogsmeadeStation Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogsmeadeVillage Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogwartsValley Received][color=Firebrick]Hogwarts Valley[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhereHogwartsValley Received]Hogwarts Valley[/action][/else][/else][/else][/else][/font]
                   [center][nextposition=0,576][font=dialogue]How?[/font][/center]
-                  [font=default][nextposition=32,640]Ancient Magic Book[nextposition=352,640]Creature Part[/font]
-                  [font=default][nextposition=32,704]Potion[nextposition=352,704]Wand[/font]"
+                  [font=default][nextposition=32,640][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatCreaturePart Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatPotion Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatWand Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatAncientMagicBook Received][color=Firebrick]Ancient Magic Book[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhatAncientMagicBook Received]Ancient Magic Book[/action][/else][/else][/else][/else][/font]
+                  [font=default][nextposition=352,640][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatAncientMagicBook Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatPotion Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatWand Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatCreaturePart Received][color=Firebrick]Creature Part[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhatCreaturePart Received]Creature Part[/action][/else][/else][/else][/else][/font]
+                  [font=default][nextposition=32,704][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatAncientMagicBook Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatCreaturePart Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatWand Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatPotion Received][color=Firebrick]Potion[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhatPotion Received]Potion[/action][/else][/else][/else][/else][/font]
+                  [font=default][nextposition=352,704][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatAncientMagicBook Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatCreaturePart Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatPotion Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatWand Received][color=Firebrick]Wand[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhatWand Received]Wand[/action][/else][/else][/else][/else][/font]"
                 }
               ]
             }
@@ -239,6 +279,18 @@
       },
       "When": {
         "HasMod |contains= spacechase0.SpaceCore": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Emergent Wizard Quests Data",
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        "{{ModId}}_HogsmeadeStationPotionClue": "Basic/Trace Detected at Hogsmeade Station/There is a trace from the time of the attack at Hogsmeade Station. Once in position, use Revelio. /Go to Hogsmeade Station///0//",
+        "{{ModId}}_HogsmeadeVillageWandClue": "Basic/Trace Detected at Hogsmeade Village/There is a trace from the time of the attack at Hogsmeade Village. Once in position, use Revelio. /Go to Hogsmeade Village///0//",
+        "{{ModId}}_WizardHouseProveClue": "Basic/Trace Detected at M. Rasmodius's Residence/There is a trace from the time of the attack at M. Rasmodius's residence. Once in position, use Revelio. /Go to M. Rasmodius's Residence///0//",
+        "{{ModId}}_AndrewForbiddenForestClue": "Basic/Trace Detected at the Forbidden Forest/There is a trace from the time of the attack at the Forbidden Forest Centaur Camp. Once in position, use Revelio. /Go to the Forbidden Forest///0//",
+        "{{ModId}}_AccusationSubmission": "Basic/Submit Accusation/Submit your accusation in the Emergent Wizard Case Files. Only choose one answer per category. /Submit your accusation///0//",
       }
     },
     {
@@ -259,7 +311,8 @@
       ],
       "When": {
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
-        "HasFlag |contains= {{ModId}}_HogsmeadeVillageWandClue": false
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageWandClue": false,
+        "HasActiveQuest |contains= {{ModId}}_HogsmeadeVillageWandClue": true
       },
       "Update": "OnTimeChange, OnLocationChange"
     },
@@ -281,7 +334,8 @@
       ],
       "When": {
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
-        "HasFlag |contains= {{ModId}}_HogsmeadeStationPotionClue": false
+        "HasFlag |contains= {{ModId}}_HogsmeadeStationPotionClue": false,
+        "HasActiveQuest |contains= {{ModId}}_HogsmeadeStationPotionClue": true
       },
       "Update": "OnTimeChange, OnLocationChange"
     },
@@ -303,7 +357,8 @@
       ],
       "When": {
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
-        "HasFlag |contains= {{ModId}}_AndrewForbiddenForestClue": false
+        "HasFlag |contains= {{ModId}}_AndrewForbiddenForestClue": false,
+        "HasActiveQuest |contains= {{ModId}}_AndrewForbiddenForestClue": true
       },
       "Update": "OnTimeChange, OnLocationChange"
     },
@@ -325,7 +380,8 @@
       ],
       "When": {
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
-        "HasFlag |contains= {{ModId}}_WizardHouseProveClue": false
+        "HasFlag |contains= {{ModId}}_WizardHouseProveClue": false,
+        "HasActiveQuest |contains= {{ModId}}_WizardHouseProveClue": true
       },
       "Update": "OnTimeChange, OnLocationChange"
     },
@@ -341,11 +397,7 @@
         "Width": 19,
         "Height": 49
       },
-      "PatchMode": "Overlay",/*
-      "When": {
-        "HasFlag |contains= {{ModId}}_HogsHeadInn": true
-      },
-      "Update": "OnTimeChange, OnLocationChange"*/
+      "PatchMode": "Overlay"
     },
     {
       "LogName": "Hogwarts Deduction Grid Question Mark Hogwarts Valley Protect",
@@ -358,11 +410,7 @@
         "Width": 19,
         "Height": 49
       },
-      "PatchMode": "Overlay",/*
-      "When": {
-        "HasFlag |contains= {{ModId}}_HogsHeadInn": true
-      },
-      "Update": "OnTimeChange, OnLocationChange"*/
+      "PatchMode": "Overlay"
     },
     {
       "LogName": "Hogwarts Deduction Grid X Mark Andrew Revenge",
@@ -375,11 +423,7 @@
         "Width": 19,
         "Height": 49
       },
-      "PatchMode": "Overlay",/*
-      "When": {
-        "HasFlag |contains= {{ModId}}_HogsHeadInn": true
-      },
-      "Update": "OnTimeChange, OnLocationChange"*/
+      "PatchMode": "Overlay"
     },
     {
       "LogName": "Hogwarts Deduction Grid X Mark Suryawati Revenge",
@@ -392,11 +436,7 @@
         "Width": 19,
         "Height": 49
       },
-      "PatchMode": "Overlay",/*
-      "When": {
-        "HasFlag |contains= {{ModId}}_HogsHeadInn": true
-      },
-      "Update": "OnTimeChange, OnLocationChange"*/
+      "PatchMode": "Overlay"
     },
     {
       "LogName": "Hogwarts Deduction Grid X Mark M. Rasmodius Prove",
