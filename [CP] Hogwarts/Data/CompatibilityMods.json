@@ -5,9 +5,10 @@
       "Action": "EditData",
       "Target": "Mods/Pathoschild.CentralStation/Stops",
       "Entries": {
-        "{{ModId}}_HogsmeadeStationTrain": {
+        "{{ModId}}_HogsmeadeStation": {
           "DisplayName": "Hogsmeade Station",
           "ToLocation": "{{ModId}}_HogsmeadeStation",
+          "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_Wizard, PLAYER_HAS_SEEN_EVENT Current 112",
           "Network": "Train",
           "ToTile": {
             "X": 33,
