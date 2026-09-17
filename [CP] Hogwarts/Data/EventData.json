@@ -130,21 +130,6 @@
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogwartsBellTowerCourtyard",
       "Entries": {
-        "{{ModId}}_Andrew55/e {{ModId}}_HogwartsAndrew35/f HogwartsAndrew 1250": "none/74 56/farmer 74 56 2 HogwartsAndrew 73 56 2/skippable/pause 800/
-        question null \"#Why is Nkiruka helping you impersonate her deceased brother?\"/pause 800/
-        speak HogwartsAndrew \"She... caused her brother to form an obscurial, a deadly parasitic force.\"/pause 800/
-        move HogwartsAndrew 0 -1 0 true/pause 800/
-        speak HogwartsAndrew \"At Uagadou, everyone is expected to know how to cast spells without a wand. However, Andrew did not know, and...#$b#Nkiruka belittled him for it.\"/pause 800/
-        emote farmer 28/pause 800/
-        question null \"#Why are you at Hogwarts?\"/pause 800/
-        move HogwartsAndrew 0 1 2 true/pause 800/
-        speak HogwartsAndrew \"Although I am a squib, my brother is not.#$b#I dreamed of something that my brother has the power to, and I do not.\"/pause 800/
-        question null \"#What’s that?\"/pause 800/
-        globalFade/viewport -1000 -1000/pause 800/
-        changeLocation {{ModId}}_HogwartsValley/viewport 192 139 true/pause 800/
-        viewport move -2 -2 4500/pause 6000/
-        speak HogwartsAndrew \"I dream of being an explorer.\"/pause 800/
-        globalFade/viewport -1000 -1000/pause 1000/end",
         "{{ModId}}_Suryawati35/e {{ModId}}_Suryawati20/f HogwartsSuryawati 500/t 1800 2200": "AbigailFluteDuet/61 21/farmer 61 28 0 HogwartsSuryawati 61 19 0/skippable/pause 800/move farmer 0 -7 0 true/pause 600/emote HogwartsSuryawati 40/pause 500/
         emote farmer 8/pause 1000/facedirection HogwartsSuryawati 3/faceDirection HogwartsSuryawati 2/speak HogwartsSuryawati \"You're here...\"/pause 1000/animate HogwartsSuryawati false true 500 18 19 18 19 18 19 18 19 18 19/pause 500/
         speak HogwartsSuryawati \"As long as you don't tell anyone, I will answer your questions.$2\"/pause 800/
@@ -272,88 +257,6 @@
       }
     },
     // Ollivanders (notes: Priority new locations; *flashbacks*? rewrite dialogue and fix mistakes: check Cutscenes.dockx)
-    // Potions Classroom 
-    {
-      "LogName": "Hogwarts Potions Classroom Events",
-      "Action": "EditData",
-      "Target": "Data/Events/{{ModId}}_HogwartsPotionsClassroom",
-      "Entries": {
-        "{{ModId}}_Andrew35/e {{ModId}}_Andrew15/f HogwartsAndrew 750": "none/23 19/farmer 23 19 3 HogwartsAndrew 27 19 3 HogwartsSlughorn 18 19 2/addObject 22 17 {{ModId}}_PewterCauldron 1/addObject 26 17 {{ModId}}_PewterCauldron 1/skippable/pause 800/
-        speak HogwartsSlughorn \"Everyone should be finishing up their potions!\"/pause 800/
-        faceDirection farmer 1/pause 800/
-        question null \"#Andrew, how did you complete your potion so effortlessly?\"/pause 800/
-        textAboveHead HogwartsSlughorn \"Three minutes remaining!\"/pause 2500/
-        emote farmer 8/pause 800/
-        question null \"#Wait...#Your potion still needs the finishing spell.\"/
-        emote HogwartsAndrew 40/pause 800/
-        emote farmer 8/pause 800/
-        faceDirection farmer 3/pause 800/
-        advancedMove HogwartsAndrew true 0 -1 4 200 0 1 2 200/
-        speak HogwartsAndrew \"*Where is she? She should be here by now.*\"/pause 800/
-        textAboveHead HogwartsSlughorn \"One minute remaining!\"/pause 800/
-        emote farmer 40/pause 800/
-        move farmer 1 0 1 false/pause 800/
-        temporarySprite 25 18 3 8 8 false 2/
-        stopAdvancedMoves/emote HogwartsAndrew 16/faceDirection HogwartsAndrew 3/pause 800/
-        move HogwartsSlughorn 0 -3 0 false/move HogwartsSlughorn 8 0 1 false/
-        faceDirection HogwartsSlughorn 2/pause 800/
-        speak HogwartsSlughorn \"Ahh marvelous potion-work, Andrew!\"/pause 800/
-        emote HogwartsAndrew 40/pause 800/
-        globalFade/viewport -1000 -1000/warp farmer 61 62/faceDirection farmer 3/warp HogwartsAndrew 58 61/faceDirection HogwartsAndrew 2/addTemporaryActor HogwartsNkiruka 16 32 58 65 0 true Character/faceDirection HogwartsNkiruka 0/pause 800/
-        changeLocation {{ModId}}_HogwartsTransfigurationWing/viewport 59 63 true/pause 800/
-        move HogwartsNkiruka 0 -2 0 false/pause 800/
-        speak HogwartsNkiruka \"I am so sorry I’m late, Andrew.\"/pause 800/
-        emote HogwartsAndrew 16/pause 800/
-        move farmer -2 0 3 false/pause 800/
-        emote farmer 8/pause 800/
-        question null \"#Nkiruka, are you fabricating magic for Andrew?\"/pause 800/
-        speak HogwartsAndrew \"Quiet.#$b#Follow me.\"/pause 800/
-        emote HogwartsNkiruka 28/pause 800/
-        globalFade/viewport -1000 -1000/warp farmer 64 42/faceDirection farmer 1/warp HogwartsAndrew 66 42/faceDirection HogwartsAndrew 3/addTemporaryActor HogwartsNkiruka 16 32 65 41 2 true Character/faceDirection HogwartsNkiruka 2/pause 800/
-        viewport 65 42 true/pause 800/
-        question null \"#Andrew is doing what?!\"/pause 800/
-        speak HogwartsNkiruka \"Andrew is impersonating my brother who passed away.\"/pause 800/
-        question null \"#How has he not been caught yet?\"/pause 800/
-        speak HogwartsNkiruka \"I am a transfer student from Uagadou. Over there, people are expected to know wandless magic, so I have been using my skills to fabricate Andrew’s magic in his classes.\"/pause 800/
-        question null \"#Andrew, why are you not doing your own magic?\"/pause 800/
-        speak HogwartsAndrew \"My parents... are magical, but I am not.\"/pause 800/
-        emote farmer 16/
-        question null \"#You’re... a squib?\"/pause 800/
-        speak HogwartsNkiruka \"@, Andrew has a health condition that only lets him live to 19. This is my chance to help him before he...\"/pause 800/
-        speak HogwartsAndrew \"Someone is coming. We’ll talk later.\"/pause 800/
-        emote farmer 40/pause 800/
-        globalFade/viewport -1000 -1000/pause 1000/end"
-      }
-    },
-    // Transfiguration Classroom 
-    {
-      "LogName": "Hogwarts Transfiguration Classroom Events",
-      "Action": "EditData",
-      "Target": "Data/Events/{{ModId}}_HogwartsTransfigurationClassroom",
-      "Entries": {
-        "{{ModId}}_Andrew15/e {{ModId}}_ChapterOne.1/f HogwartsAndrew 10/t 800 1300": "kindadumbautumn/19 12/farmer 20 15 0 HogwartsAndrew 20 12 0 HogwartsNkiruka 17 12 0 HogwartsHermione 20 8 2 HogwartsDanny 999 999 0 HogwartsMcGonagall 15 7 2 HogwartsGryffindormaleFour 16 15 0 HogwartsSlytherinMaleFour 24 12 0 HogwartsHufflepuffFemaleFour 25 15 0 HogwartsRavenclawMaleFour 17 18 0 HogwartsHufflepuffMaleFour 21 18 0 HogwartsSlytherinFemaleFour 24 18 0/skippable/
-        addObject 20 10 {{ModId}}_Mouse 1/addObject 25 10 {{ModId}}_Mouse 1/addObject 17 10 {{ModId}}_Mouse 2/addObject 21 13 {{ModId}}_Mouse 2/addObject 25 13 {{ModId}}_Mouse 2/addObject 16 13 {{ModId}}_Mouse 2/addObject 16 16 {{ModId}}_Mouse 2/addObject 21 16 {{ModId}}_Mouse 2/addObject 24 16 {{ModId}}_Mouse 2/animate HogwartsMcGonagall false true 150 16 17 18 17 16 16 16 16 16 16 16 16 16 16 16 16/pause 1000/
-        speak HogwartsMcGonagall \"Welcome class. #$b# Due to current events, Investigator Granger will be your transfiguration professor for now until she's summoned back to the Ministry.\"/pause 1000/
-        faceDirection HogwartsHermione 1/pause 200/faceDirection HogwartsHermione 2/pause 200/faceDirection HogwartsHermione 3/pause 200/faceDirection HogwartsHermione 2/pause 1000/emote HogwartsHermione 56/pause 1000/
-        speak HogwartsHermione \"Thank you, Headmistress. I once was a pupil of professor McGonagall, and like from her words, transfiguration is a science. #$b# For today, I would like to see what you have learned.\"/pause 500/emote HogwartsHermione 40/pause 1000/move HogwartsHermione 0 1 2/pause 500/speak HogwartsHermione \"What is your name?\"/pause 800/
-        emote HogwartsAndrew 40/pause 800/speak HogwartsAndrew \"My name is Andrew, professor...\"/pause 500/speak HogwartsHermione \"Andrew, would you like to start us off?\"/pause 1000/
-        faceDirection HogwartsAndrew 3/faceDirection HogwartsNkiruka 1/pause 800/emote HogwartsAndrew 28/pause 500/faceDirection farmer 3/faceDirection HogwartsAndrew 0/pause 800/
-        speak HogwartsAndrew \"Vero verto\"/shake HogwartsNkiruka 500/pause 100/
-        speak HogwartsNkiruka \"...\"/pause 800/beginSimultaneousCommand/playSound dwoop/removeObject 20 10/addObject 20 10 {{ModId}}_Cup 1/temporarySprite 20 10 5 8 10 false 3/pause 1000/jump farmer/endSimultaneousCommand/
-        emote farmer 8/pause 800/emote HogwartsHermione 32/pause 500/
-        speak HogwartsHermione \"Flawless transfiguration, Andrew!\"/pause 800/faceDirection HogwartsNkiruka 0/faceDirection farmer 0/pause 500/move HogwartsHermione -3 0 3/faceDirection HogwartsHermione 2/
-        speak HogwartsHermione \"How about you? #$b# Since you were watching so closely, let’s see yours.\"/pause 800/
-        emote HogwartsNkiruka 40/pause 1000/
-        faceDirection HogwartsNkiruka 1/faceDirection HogwartsAndrew 3/faceDirection farmer 3/pause 1000/faceDirection HogwartsNkiruka 0/pause 500/
-        speak HogwartsNkiruka \"Fera verta\"/pause 2000/animate HogwartsHermione false true 500 18 19 18 19 18 19/
-        speak HogwartsHermione \"Good attempt, but not quite there.\"/pause 800/
-        emote HogwartsNkiruka 28/pause 800/stopAnimation HogwartsHermione 0/move HogwartsHermione 3 0 1/faceDirection HogwartsHermione 2/pause 1000/speak HogwartsHermione \"Alright class. Keep practicing.\"/emote HogwartsGryffindormaleFour 28 true/emote HogwartsSlytherinFemaleFour 12 true/
-        emote HogwartsSlytherinMaleFour 28/
-        globalFade/viewport -1000 -1000/speak HogwartsHermione \"Class, you are dismissed!\"/warp HogwartsHermione 24 8/faceDirection HogwartsHermione 0/warp farmer 999 -999/warp HogwartsAndrew 999 -999/warp HogwartsNkiruka 999 -999/warp HogwartsMcGonagall 999 -999/warp HogwartsGryffindormaleFour 999 -999/warp HogwartsHufflepuffFemaleFour 999 -999/warp HogwartsSlytherinMaleFour 999 -999/warp HogwartsRavenclawMaleFour 999 -999/warp HogwartsHufflepuffMaleFour 999 -999/warp HogwartsSlytherinFemaleFour 999 -999/warp HogwartsDanny 23 18/
-        pause 1000/stopMusic/viewport 19 11 true/globalFadeToClear/move HogwartsDanny 0 -8 0 true/pause 800/emote HogwartsHermione 40/pause 1500/emote HogwartsDanny 12/pause 1000/speak HogwartsDanny \"Hermione, what are you doing? #$b# We're here as investigators, not to play teacher.\"/pause 800/faceDirection HogwartsHermione 2/pause 1000/animate HogwartsHermione false true 500 18 19 18 19 18 19/pause 250/speak HogwartsHermione \"Headmistress McGonagall needed a substitute teacher. #$b# ...And as one of the teachers, I can gather information from the inside.\"/
-        pause 800/faceDirection HogwartsDanny 3/pause 100/faceDirection HogwartsDanny 2/pause 500/emote HogwartsDanny 40/pause 1000/speak HogwartsDanny \"... #$b# ...There's someone here that doesn't belong. #$b# I can feel it.\"/stopAnimation HogwartsHermione 0/pause 1500/emote HogwartsHermione 8 true/pause 500/end"
-      }
-    },
     // Wizard Tower
     {
       "LogName": "Hogwarts Wizard Tower Events",
