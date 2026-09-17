@@ -1,6 +1,49 @@
 {
   "Changes": [
     {
+      "LogName": "Hogwarts Forbidden Forest Creature Den 1 Creature Saved DMTE",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}_ForbiddenForestCreatureDen1CreatureSaved": {
+          "Locations": [
+            "{{ModId}}_ForbiddenForest"
+          ],
+          "Layers": [
+            "Buildings"
+          ],
+          "Rectangles": [
+            {
+              "X": "{{Query: {{Random: {{Range: 14, 155}}|key=ForbiddenForestCreatureDen1X}}+12}}",
+              "Y": "{{Query: {{Random: {{Range: 9, 112}}|key=ForbiddenForestCreatureDen1Y}}+12}}",
+              "Width": 2,
+              "Height": 2
+            }
+          ],
+          "Actions": [
+            {
+              "LogName": "Forbidden Forest Creature Den Message",
+              "Key": "DMT/message",
+              "Value": "Creature is saved.",
+              "Trigger": "Action",
+              "Once": true
+            },
+            {
+              "LogName": "Forbidden Forest Creature Den Mail",
+              "Key": "DMT/mail",
+              "Value": "{{ModId}}_{{Random:{{Creature}}|key=CreatureDen1}}{{CreatureSaved}}",
+              "Trigger": "Action",
+              "Once": true
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains={{ModId}}_{{Random:{{Creature}}|key=CreatureDen1}}{{CreatureSaved}}": false
+      }
+    },
+    {
       "LogName": "Forbidden Forest Creature Den 1",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_ForbiddenForest",

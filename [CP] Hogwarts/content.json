@@ -1410,6 +1410,85 @@
       "When": {
         "Query: {{Random: {{Range: 23, 128}}|key=CharmedTent1Y}} >= 85": true
       }
+    },
+    // Flying Book
+    {
+      "Name": "FlyingBook",
+      "Value": "1",
+      "When": {
+        "HasFlag |contains= {{ModId}}_FlyingBook1, {{ModId}}_FlyingBook2, {{ModId}}_FlyingBook3, {{ModId}}_FlyingBook4, {{ModId}}_FlyingBook5, {{ModId}}_FlyingBook6, {{ModId}}_FlyingBook7": false
+      }
+    },
+    {
+      "Name": "FlyingBook",
+      "Value": "2",
+      "When": {
+        "HasFlag |contains= {{ModId}}_FlyingBook1": true
+      }
+    },
+    {
+      "Name": "FlyingBook",
+      "Value": "3",
+      "When": {
+        "HasFlag |contains= {{ModId}}_FlyingBook2": true
+      }
+    },
+    {
+      "Name": "FlyingBook",
+      "Value": "4",
+      "When": {
+        "HasFlag |contains= {{ModId}}_FlyingBook3": true
+      }
+    },
+    {
+      "Name": "FlyingBook",
+      "Value": "5",
+      "When": {
+        "HasFlag |contains= {{ModId}}_FlyingBook4": true
+      }
+    },
+    {
+      "Name": "FlyingBook",
+      "Value": "6",
+      "When": {
+        "HasFlag |contains= {{ModId}}_FlyingBook5": true
+      }
+    },
+    {
+      "Name": "FlyingBook",
+      "Value": "7",
+      "When": {
+        "HasFlag |contains= {{ModId}}_FlyingBook6": true
+      }
+    },
+    // Forbidden Forest Creature Den 1 Creature Is Saved
+    {
+      "Name": "CreatureSaved",
+      "Value": "1",
+      "When": {
+        "HasFlag |contains= {{ModId}}_CreatureSaved1, {{ModId}}_CreatureSaved2, {{ModId}}_CreatureSaved3, {{ModId}}_CreatureSaved4, {{ModId}}_CreatureSaved5, {{ModId}}_CreatureSaved6, {{ModId}}_CreatureSaved7": false
+      }
+    },
+    {
+      "Name": "CreatureSaved",
+      "Value": "2",
+      "When": {
+        "HasFlag |contains= {{ModId}}_CreatureSaved1": true
+      }
+    },
+    {
+      "Name": "CreatureSaved",
+      "Value": "3",
+      "When": {
+        "HasFlag |contains= {{ModId}}_CreatureSaved2": true
+      }
+    },
+    {
+      "Name": "CreatureSaved",
+      "Value": "4",
+      "When": {
+        "HasFlag |contains= {{ModId}}_CreatureSaved3": true
+      }
     }
   ],
   "Changes": [
@@ -1428,12 +1507,10 @@
 Data/CastlePortraitsData.json,
 Data/ChairData.json,
 Data/CompatibilityMods.json,
-Data/CreatureMailData.json,
 Data/EditImageData.json,
 Data/EventData.json,
 Data/ForbiddenForestData.json,
 Data/ForbiddenForestCreatureDenData.json,
-Data/ForbiddenForestCreatureDenTriggerData.json, 
 Data/ForbiddenForestMonsters.json,
 Data/HogsmeadeStationData.json,
 Data/HogsmeadeVillageData.json,
@@ -1479,6 +1556,7 @@ Data/Common Rooms/HogwartsCommonRoomRavenclawData.json,
 Data/Common Rooms/HogwartsCommonRoomSlytherinData.json,
 Data/Common Rooms/HogwartsDormsData.json,
 Data/Events/Ollivander.json,
+Data/Guidebooks/CalamityGuidebookData.json,
 Data/Guidebooks/FantasticBeastsGuidebookData.json,
 Data/Guidebooks/MonsterBookGuidebookData.json,
 Data/Guidebooks/MysteryGuidebookData.json,
