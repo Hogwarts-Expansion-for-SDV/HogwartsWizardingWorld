@@ -149,7 +149,7 @@
     {
       "LogName": "Hogwarts Library Annex Flying Book Spawn",
       "Action": "EditMap",
-      "Target": "Maps/{{Random: {{ModId}}_HogwartsLibraryAnnex, {{ModId}}_HogwartsGrandStaircase, {{ModId}}_HogwartsSouthWing, {{ModId}}_HogwartsTransfigurationWing, {{ModId}}_HogwartsBellTowerCourtyard, {{ModId}}_HogsmeadeVillage, {{ModId}}_HogwartsValley|key=FlyingBookLocation}}",
+      "Target": "Maps/{{FlyingBookLocations}}",
       "MapTiles": [
         {
           "Position": {
@@ -164,13 +164,15 @@
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag |contains= {{ModId}}_FlyingBook7": false
-      }
-    },/*
+        "HasFlag |contains= {{ModId}}_FlyingBook7": false,
+        "HasFlag |contains= {{ModId}}_FlyingBookDespawn": false
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
     {
       "LogName": "Hogwarts Library Annex Flying Book Despawn",//Can this be fixed? 
       "Action": "EditMap",
-      "Target": "Maps/{{Random: {{ModId}}_HogwartsLibraryAnnex, {{ModId}}_HogwartsGrandStaircase, {{ModId}}_HogwartsSouthWing, {{ModId}}_HogwartsTransfigurationWing, {{ModId}}_HogwartsBellTowerCourtyard, {{ModId}}_HogsmeadeVillage, {{ModId}}_HogwartsValley|key=FlyingBookLocation}}",
+      "Target": "Maps/{{FlyingBookLocations}}",
       "MapTiles": [
         {
           "Position": {
@@ -185,10 +187,10 @@
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag |contains= {{ModId}}_FlyingBook{{FlyingBook}}": true
+        "HasFlag |contains= {{ModId}}_FlyingBookDespawn": true
       },
       "Update": "OnTimeChange, OnLocationChange"
-    },*/
+    },
     {
       "LogName": "Hogwarts Library Annex Flying Book CC Trigger Action",
       "Action": "EditData",
@@ -197,7 +199,7 @@
         "Companion": {
           "DialogueSequence": [
             {
-              "Text": "$action AddMail Current {{ModId}}_FlyingBook{{FlyingBook}} Received",
+              "Text": "$action AddMail Current {{ModId}}_FlyingBook{{FlyingBook}} Received#$action AddMail Current {{ModId}}_FlyingBookDespawn Received#$action AddMail Current {{FlyingBookLocations}}FlyingBook Received",
               "DisplayOnce": true,
               "PortraitIndex": 0
             }
@@ -214,6 +216,13 @@
       "Action": "EditData",
       "Target": "Data/TriggerActions",
       "Entries": {
+        "{{ModID}}_FlyingBookDespawn": {
+          "Id": "{{ModID}}_FlyingBookDespawn",
+          "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_FlyingBookDespawn Received",
+          "Trigger": "DayStarted",
+          "Action": "RemoveMail Current {{ModId}}_FlyingBookDespawn",
+          "MarkActionApplied": false
+        },
         "{{ModID}}_FlyingBookLibraryMessage1": {
           "Id": "{{ModID}}_FlyingBookMessage1",
           "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_FlyingBook1 Received, {{HasMod|contains=Esca.EMP}}",
