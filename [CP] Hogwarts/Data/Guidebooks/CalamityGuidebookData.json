@@ -149,7 +149,7 @@
     {
       "LogName": "Hogwarts Library Annex Flying Book Spawn",
       "Action": "EditMap",
-      "Target": "Maps/{{FlyingBookLocations}}",
+      "Target": "Maps/{{Random: {{ModId}}_HogwartsLibraryAnnex, {{FlyingBookHogwartsGrandStaircase}}, {{FlyingBookHogwartsSouthWing}}, {{FlyingBookHogwartsTransfigurationWing}}, {{FlyingBookHogwartsBellTowerCourtyard}}, {{FlyingBookHogsmeadeVillage}}, {{FlyingBookHogwartsValley}}|key=FlyingBookLocation}}",
       "MapTiles": [
         {
           "Position": {
@@ -172,7 +172,7 @@
     {
       "LogName": "Hogwarts Library Annex Flying Book Despawn",//Can this be fixed? 
       "Action": "EditMap",
-      "Target": "Maps/{{FlyingBookLocations}}",
+      "Target": "Maps/{{Random: {{ModId}}_HogwartsLibraryAnnex, {{FlyingBookHogwartsGrandStaircase}}, {{FlyingBookHogwartsSouthWing}}, {{FlyingBookHogwartsTransfigurationWing}}, {{FlyingBookHogwartsBellTowerCourtyard}}, {{FlyingBookHogsmeadeVillage}}, {{FlyingBookHogwartsValley}}|key=FlyingBookLocation}}",
       "MapTiles": [
         {
           "Position": {
@@ -199,7 +199,7 @@
         "Companion": {
           "DialogueSequence": [
             {
-              "Text": "$action AddMail Current {{ModId}}_FlyingBook{{FlyingBook}} Received#$action AddMail Current {{ModId}}_FlyingBookDespawn Received#$action AddMail Current {{FlyingBookLocations}}FlyingBook Received",
+              "Text": "$action AddMail Current {{ModId}}_FlyingBook{{FlyingBook}} Received#$action AddMail Current {{ModId}}_FlyingBookDespawn Received#$action AddMail Current {{Random: {{ModId}}_HogwartsLibraryAnnex, {{FlyingBookHogwartsGrandStaircase}}, {{FlyingBookHogwartsSouthWing}}, {{FlyingBookHogwartsTransfigurationWing}}, {{FlyingBookHogwartsBellTowerCourtyard}}, {{FlyingBookHogsmeadeVillage}}, {{FlyingBookHogwartsValley}}|key=FlyingBookLocation}}FlyingBook Received",
               "DisplayOnce": true,
               "PortraitIndex": 0
             }

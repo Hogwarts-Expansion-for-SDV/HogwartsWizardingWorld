@@ -1413,8 +1413,88 @@
     },
     // Flying Book
     {
-      "Name": "FlyingBookLocations",
-      "Value": "{{Random: {{ModId}}_HogwartsLibraryAnnex, {{ModId}}_HogwartsGrandStaircase, {{ModId}}_HogwartsSouthWing, {{ModId}}_HogwartsTransfigurationWing, {{ModId}}_HogwartsBellTowerCourtyard, {{ModId}}_HogsmeadeVillage, {{ModId}}_HogwartsValley|key=FlyingBookLocation}}"
+      "Name": "FlyingBookHogwartsGrandStaircase",
+      "Value": "{{ModId}}_HogwartsGrandStaircase",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogwartsGrandStaircaseFlyingBook": false
+      }
+    },
+    {
+      "Name": "FlyingBookHogwartsGrandStaircase",
+      "Value": "",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogwartsGrandStaircaseFlyingBook": true
+      }
+    },
+    {
+      "Name": "FlyingBookHogwartsSouthWing",
+      "Value": "{{ModId}}_HogwartsSouthWing",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogwartsSouthWingFlyingBook": false
+      }
+    },
+    {
+      "Name": "FlyingBookHogwartsSouthWing",
+      "Value": "",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogwartsSouthWingFlyingBook": true
+      }
+    },
+    {
+      "Name": "FlyingBookHogwartsTransfigurationWing",
+      "Value": "{{ModId}}_HogwartsTransfigurationWing",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogwartsTransfigurationWingFlyingBook": false
+      }
+    },
+    {
+      "Name": "FlyingBookHogwartsTransfigurationWing",
+      "Value": "",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogwartsTransfigurationWingFlyingBook": true
+      }
+    },
+    {
+      "Name": "FlyingBookHogwartsBellTowerCourtyard",
+      "Value": "{{ModId}}_HogwartsBellTowerCourtyard",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogwartsBellTowerCourtyardFlyingBook": false
+      }
+    },
+    {
+      "Name": "FlyingBookHogwartsBellTowerCourtyard",
+      "Value": "",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogwartsBellTowerCourtyardFlyingBook": true
+      }
+    },
+    {
+      "Name": "FlyingBookHogsmeadeVillage",
+      "Value": "{{ModId}}_HogsmeadeVillage",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageFlyingBook": false
+      }
+    },
+    {
+      "Name": "FlyingBookHogsmeadeVillage",
+      "Value": "",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogsmeadeVillageFlyingBook": true
+      }
+    },
+    {
+      "Name": "FlyingBookHogwartsValley",
+      "Value": "{{ModId}}_HogwartsValley",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogwartsValleyFlyingBook": false
+      }
+    },
+    {
+      "Name": "FlyingBookHogwartsValley",
+      "Value": "",
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogwartsValleyFlyingBook": true
+      }
     },
     {
       "Name": "FlyingBook",
