@@ -120,14 +120,14 @@
       "Action":"EditData",
       "Target": "Data/Events/{{ModId}}_HogsHeadInn",
       "Entries": {        
-          "{{ModId}}_Ollivander45": "none/8 18/farmer 16 20 0 HogwartsOllivander 10 20 0 HogwartsAberforth 2 17 2 HogwartsDraco -1000 -1000 0/skippable//showFrame farmer 113/
-          addTemporaryActor HogwartsDarkWizard1 16 32 1 18 2 true Character /pause 600
+          "{{ModId}}_Ollivander45": "none/9 19/farmer 16 20 0 HogwartsOllivander 10 20 0 HogwartsAberforth 2 17 2 HogwartsDraco -1000 -1000 0/skippable/showFrame farmer 113/
+          addTemporaryActor HogwartsDarkWizard1 16 32 1 18 2 true Character /pause 800
           /textAboveHead HogwartsAberforth \"Your order’s up.\"/pause 1000/emote HogwartsDarkWizard1 40/pause 800/move HogwartsAberforth 4 0 1/ move HogwartsAberforth 0 1 1 / move HogwartsAberforth 2 0 0/move HogwartsAberforth 0 -1 0/move HogwartsAberforth 3 0 1/
-          faceDirection HogwartsAberforth 2/pause 800/speak HogwartsAberforth \"Sorry to keep you waiting.\"/pause 400/speak HogwartsAberforth \"How is your son doing?$b#Have you gone to visit him?\"/pause 600/
+          faceDirection HogwartsAberforth 2/pause 800/speak HogwartsAberforth \"Sorry to keep you waiting.\"/pause 400/speak HogwartsAberforth \"How is your son doing?#$b#Have you gone to visit him?\"/pause 600/
           emote HogwartsOllivander 16/pause 500/
-          speak HogwartsOllivander \"Ab...I can't go back to Diagon Alley. I can't!$a\"/pause 600/emote HogwartsAberforth 28/pause 800/playSound doorClose/warp HogwartsDraco 14 23 0/move HogwartsDraco 0 -1 0/
+          speak HogwartsOllivander \"Ab...I can't go back to Diagon Alley.#$b#I can't!$a\"/pause 600/emote HogwartsAberforth 28/pause 800/playSound doorClose/warp HogwartsDraco 14 23/move HogwartsDraco 0 -1 0/
           pause 600/textAboveHead HogwartsDraco \"Where is that dealer?\"/pause 500/faceDirection HogwartsOllivander 2/pause 600/emote HogwartsOllivander 16/pause 600/faceDirection HogwartsOllivander 0/
-          pause 600/move HogwartsDraco -7 0 3/emote HogwartsOllivander 40/move HogwartsDraco 0 -2 0/
+          pause 600/move HogwartsDraco -4 0 0/pause 600/emote HogwartsOllivander 40/move HogwartsDraco -4 0 0/move HogwartsDraco 0 -3 0/move HogwartsDraco -1 0 0/
           faceDirection HogwartsDraco 3 /end"}},
           
           
