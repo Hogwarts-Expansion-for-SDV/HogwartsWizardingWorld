@@ -126,10 +126,11 @@
           faceDirection HogwartsAberforth 2/pause 800/speak HogwartsAberforth \"Sorry to keep you waiting.\"/pause 400/speak HogwartsAberforth \"How is your son doing?#$b#Have you gone to visit him?\"/pause 600/
           emote HogwartsOllivander 16/pause 500/
           speak HogwartsOllivander \"Ab...I can't go back to Diagon Alley.#$b#I can't!$a\"/pause 600/emote HogwartsAberforth 28/pause 800/playSound doorClose/warp HogwartsDraco 14 23/move HogwartsDraco 0 -1 0/
-          pause 600/textAboveHead HogwartsDraco \"Where is that dealer?\"/pause 500/faceDirection HogwartsOllivander 2/pause 600/emote HogwartsOllivander 16/pause 600/faceDirection HogwartsOllivander 0/
-          pause 600/move HogwartsDraco -4 0 0/pause 600/emote HogwartsOllivander 40/move HogwartsDraco -4 0 0/move HogwartsDraco 0 -3 0/move HogwartsDraco -1 0 0/
-          faceDirection HogwartsDraco 3 /end"}},
-          
+          pause 800/textAboveHead HogwartsDraco \"Where is that dealer?\"/pause 500/faceDirection HogwartsOllivander 2/pause 600/emote HogwartsOllivander 16/pause 600/faceDirection HogwartsOllivander 0/
+          pause 600/move HogwartsDraco -4 0 0/pause 600/emote HogwartsOllivander 40/move HogwartsDraco -4 0 0/move HogwartsDraco 0 -3 0/move HogwartsDraco -2 0 0/
+          faceDirection HogwartsDraco 3/globalFade
+          /changeToTemporaryMap {{ModId}}_OllivandersBedroom/viewport 4 8 true/warp HogwartsOllivander 3 6 /faceDirection HogwartsOllivander 2
+        /speak HogwartsOllivander \"I... I warned you, My Lord. #$b#Your wand shares the same phoenix core as... #$b#Your wand will be useless against him.\"/end"}},
           
           
           
