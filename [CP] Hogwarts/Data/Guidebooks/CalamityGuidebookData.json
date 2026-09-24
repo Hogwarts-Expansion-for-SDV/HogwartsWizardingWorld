@@ -41,37 +41,20 @@
       }
     },
     {
-      "LogName": "Hogwarts Calamity Guidebook Trigger Action SpaceCore",
-      "Action": "EditData",
-      "Target": "Data/TriggerActions",
-      "Entries": {
-        "{{ModId}}_OpenCalamityGuidebook": {
-          "Id": "{{ModId}}_OpenCalamityGuidebook",
-          "Condition": "ITEM_ID Input {{ModId}}_CalamityGuidebook",
-          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
-          "Action": "spacechase0.SpaceCore_OpenGuidebook {{ModId}}_Calamity",
-          "MarkActionApplied": false
-        }
-      },
-      "When": {
-        "HasMod |contains= spacechase0.SpaceCore": true
-      }
-    },
-    {
       "LogName": "Hogwarts Calamity Guidebook",
       "Action": "EditData",
       "Target": "spacechase0.SpaceCore/Guidebooks",
       "Entries": {
         "{{ModId}}_Calamity": {
-          "Title": "Case Files",
+          "Title": "The Calamity",
           "DefaultChapter": "Title",
-          /*"PageTexture": "{{InternalAssetKey: assets/Guidebook/MysteryGuidebookBase.png}}",
+          /*"PageTexture": "{{InternalAssetKey: assets/Guidebook/CalamityGuidebookBase.png}}",
           "PagePadding": "28, 28",
           "PageSize": "600, 500",*/
           "Chapters": {
             "Title": {
-              "Name": "Case Of The Emergent Wizard",
-              "TabIconTexture": "{{ModId}}/MysteryGuidebookTabs",
+              "Name": "The Calamity",
+              "TabIconTexture": "{{ModId}}/CalamityGuidebookTabs",
               "TabIconRect": {
                 "X": 0,
                 "Y": 0,
@@ -81,34 +64,14 @@
               "Condition": "TRUE",
               "Pages": [
                 {
-                  "Contents": "[center][font=dialogue]Investigation[/font][/center]
-                  [center][nextposition=0,64][font=default]Victim:[/font][/center]
-                  [center][nextposition=0,96][font=default]Name: Abrielle[/font][/center]
-                  [center][nextposition=0,128][font=default]Condition: Bewitched Slumber[/font][/center]
-                  [center][nextposition=0,192][font=default]Status: Emergent Wizard[/font][/center]
-                  [center][nextposition=0,224][font=default]Student: Yes[/font][/center]
-                  [center][nextposition=0,256][font=default]House: Slytherin[/font][/center]
-                  [center][nextposition=0,320][font=dialogue]Notes[/font][/center]
-                  [nextposition=0,384][font=default]-Four people were unaccounted for at the time of the attack.[/font]
-                  [nextposition=0,448][font=default]-Each suspect provided a statement, but when all statements were applied, it produced a contradiction. Therefore, someone is lying, maybe even unintentionally.[/font]
-                  [nextposition=0,576][font=default][color=Firebrick]-Find out who is lying.[/color][/font]
-                  [center][nextposition=0,624][font=dialogue]Possibilities[/font][/center]
-                  [nextposition=0,672][font=default]-Locations: Forbidden Forest Centaur Camp, Hogsmeade Station, Hogsmeade Village, Hogwarts Valley.[/font]
-                  [nextposition=0,776][font=default]-Weapons: Ancient Magic Book, Creature Part, Potion, Wand.[/font]
-                  [nextposition=0,848][font=default]-Motives: Revenge, To Hide A Secret, To Protect, To Prove Oneself.[/font]
-                  [center][nextposition=0,912][font=dialogue]Clues From The Time Of Attack[/font][/center]
-                  [nextposition=0,960][font=default]-Either someone who wanted to protect was at Hogwarts Valley, or the Ancient Magic Book was at Hogwarts Valley. Not both.[/font]
-                  [nextposition=0,1056][font=default]-Whoever would attack for revenge was not a student.[/font]
-                  [if=PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageWandClue Received][nextposition=0,1118][font=default]-[color=Firebrick]Updated[/color]: a wand [color=Firebrick]WAS[/color] discovered at Hogsmeade Village.[/font][/if]
-                  [else][nextposition=0,1118][font=default]-A wand was not discovered at Hogsmeade Village.[/font][/else]
-                  [if=PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeStationPotionClue Received][nextposition=0,1182][font=default]A Potion was discovered at Hogsmeade Station.[/font][/if]
-                  [else][nextposition=0,1182][font=default][/font][/else]"
+                  "Contents": "[nextposition=0,64][font=default]A worldwide event, known as the Calamity, has caused Foundables to be displaced throughout the muggle world causing secrecy breaches. If Foundables were not calamitous enough, the Calamity has caused several muggles to acquire magical abilties, also known as Emergent Wizards.
+                  Although not much information is known about the Calamity, governments of the Wizarding World has stated that the event known as the Calamity was produced as a byproduct of a spell.[/font]"
                 }
               ]
             },
-            "AccusationSubmission": {
-              "Name": "Accusation Submission",
-              "TabIconTexture": "{{ModId}}/MysteryGuidebookTabs",
+            "Foundables": {
+              "Name": "Foundables",
+              "TabIconTexture": "{{ModId}}/CalamityGuidebookTabs",
               "TabIconRect": {
                 "X": 0,
                 "Y": 16,
@@ -118,24 +81,61 @@
               "Condition": "TRUE",
               "Pages": [
                 {
-                  "Id": "Accusation",
-                  "Contents": "[center][font=dialogue]Click the answer to submit your accusation.[/font][/center]
-                  [center][nextposition=0,112][font=default]Only choose one answer per category. Do not accuse until ready.[/font][/center]
-                  [center][nextposition=0,192][font=dialogue]Who?[/font][/center]
-                  [font=default][nextposition=32,256][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoOllivander Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoM.Rasmodius Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoSuryawati Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoAndrew Received][color=Firebrick]Andrew[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhoAndrew Received]Andrew[/action][/else][/else][/else][/else][/font]
-                  [font=default][nextposition=352,256][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoAndrew Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoM.Rasmodius Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoSuryawati Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoOllivander Received][color=Firebrick]Ollivander[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhoOllivander Received]Ollivander[/action][/else][/else][/else][/else][/font]
-                  [font=default][nextposition=32,320][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoAndrew Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoOllivander Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoSuryawati Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoM.Rasmodius Received][color=Firebrick]M. Rasmodius[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhoM.Rasmodius Received]M. Rasmodius[/action][/else][/else][/else][/else][/font]
-                  [font=default][nextposition=352,320][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoAndrew Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoOllivander Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoM.Rasmodius Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhoSuryawati Received][color=Firebrick]Suryawati[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhoSuryawati Received]Suryawati[/action][/else][/else][/else][/else][/font]
-                  [center][nextposition=0,384][font=dialogue]Where?[/font][/center]
-                  [font=default][nextposition=32,448][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogsmeadeStation Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogsmeadeVillage Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogwartsValley Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereForbiddenForest Received][color=Firebrick]Forbidden Forest[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhereForbiddenForest Received]Forbidden Forest[/action][/else][/else][/else][/else][/font]
-                  [font=default][nextposition=352,448][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereForbiddenForest Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogsmeadeVillage Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogwartsValley Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogsmeadeStation Received][color=Firebrick]Hogsmeade Station[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhereHogsmeadeStation Received]Hogsmeade Station[/action][/else][/else][/else][/else][/font]
-                  [font=default][nextposition=32,512][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereForbiddenForest Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogsmeadeStation Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogwartsValley Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogsmeadeVillage Received][color=Firebrick]Hogsmeade Village[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhereHogsmeadeVillage Received]Hogsmeade Village[/action][/else][/else][/else][/else][/font]
-                  [font=default][nextposition=352,512][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereForbiddenForest Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogsmeadeStation Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogsmeadeVillage Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhereHogwartsValley Received][color=Firebrick]Hogwarts Valley[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhereHogwartsValley Received]Hogwarts Valley[/action][/else][/else][/else][/else][/font]
-                  [center][nextposition=0,576][font=dialogue]How?[/font][/center]
-                  [font=default][nextposition=32,640][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatCreaturePart Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatPotion Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatWand Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatAncientMagicBook Received][color=Firebrick]Ancient Magic Book[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhatAncientMagicBook Received]Ancient Magic Book[/action][/else][/else][/else][/else][/font]
-                  [font=default][nextposition=352,640][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatAncientMagicBook Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatPotion Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatWand Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatCreaturePart Received][color=Firebrick]Creature Part[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhatCreaturePart Received]Creature Part[/action][/else][/else][/else][/else][/font]
-                  [font=default][nextposition=32,704][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatAncientMagicBook Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatCreaturePart Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatWand Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatPotion Received][color=Firebrick]Potion[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhatPotion Received]Potion[/action][/else][/else][/else][/else][/font]
-                  [font=default][nextposition=352,704][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatAncientMagicBook Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatCreaturePart Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatPotion Received][/if][else][if=PLAYER_HAS_MAIL Current {{ModId}}_WhatWand Received][color=Firebrick]Wand[/color][/if][else][onceaction=AddMail Current {{ModId}}_WhatWand Received]Wand[/action][/else][/else][/else][/else][/font]"
+                  "Id": "Foundables",
+                  "Contents": "
+                  [font=default][nextposition=0,64]According to the British Ministry of Magic, a Foundable is an abnormal thing produced by the Calamity. Foundables can include anything magical such as wizards, creatures, objects, and even memories. Foundables cut through dimensions of reality and become stuck at that specific space and time. It does this through a type of chaotic magic known Confoundables.[/font]"
+                }
+              ]
+            },
+            "EmergentWizards": {
+              "Name": "Emergent Wizard",
+              "TabIconTexture": "{{ModId}}/CalamityGuidebookTabs",
+              "TabIconRect": {
+                "X": 0,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+              },
+              "Condition": "TRUE",
+              "Pages": [
+                {
+                  "Id": "EmergentWizard",
+                  "Contents": "[font=default][nextposition=0,64][/font]"
+                }
+              ]
+            },
+            "SecrecyBreach": {
+              "Name": "Secrecy Breach",
+              "TabIconTexture": "{{ModId}}/CalamityGuidebookTabs",
+              "TabIconRect": {
+                "X": 0,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+              },
+              "Condition": "TRUE",
+              "Pages": [
+                {
+                  "Id": "SecrecyBreach",
+                  "Contents": "
+                  [font=default][nextposition=0,64]Since most of the world consists of muggles, there is a high chance of muggles enountering a Foundable. More disasterously, there is a chance Foundables will appear in populated public areas in the muggle world. If Foundables appear in the muggle world, they violate the International Statute of Wizarding Secrecy, thereby risking exposure of magic and Wizarding World to the muggle world.[/font]"
+                }
+              ]
+            },
+            "CalamityInvestigators": {
+              "Name": "Calamity Investigators",
+              "TabIconTexture": "{{ModId}}/CalamityGuidebookTabs",
+              "TabIconRect": {
+                "X": 0,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+              },
+              "Condition": "TRUE",
+              "Pages": [
+                {
+                  "Id": "CalamityInvestigators",
+                  "Contents": "[font=default][nextposition=0, 64]When a Foundable has been detected, Calamity Investigators are immediately dispatched to resolve the breach and obliviate muggle witnesses. With numerous Calamity investigators being dispatched throughout the world, resources are becoming thinned. Therefore, the Wizarding World must resolve the Calamity problem as expeditiously as possible.[/font]"
                 }
               ]
             }
@@ -170,7 +170,7 @@
       "Update": "OnTimeChange, OnLocationChange"
     },
     {
-      "LogName": "Hogwarts Library Annex Flying Book Despawn",//Can this be fixed? 
+      "LogName": "Hogwarts Library Annex Flying Book Despawn",
       "Action": "EditMap",
       "Target": "Maps/{{Random: {{ModId}}_HogwartsLibraryAnnex, {{FlyingBookHogwartsGrandStaircase}}, {{FlyingBookHogwartsSouthWing}}, {{FlyingBookHogwartsTransfigurationWing}}, {{FlyingBookHogwartsBellTowerCourtyard}}, {{FlyingBookHogsmeadeVillage}}, {{FlyingBookHogwartsValley}}|key=FlyingBookLocation}}",
       "MapTiles": [
@@ -212,10 +212,32 @@
       }
     },
     {
+      "LogName": "Hogwarts Flying Book Quests",
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        "{{ModId}}_FlyingPages": "Basic/Catch Flying Book/Books containing information about the Calamity has escaped its shelf. If you find one, catch it, and information in your book will update. /\"{{FlyingBook}}/7 Flying Books Caught\"///0//"
+      }
+    },
+    {
       "LogName": "Hogwarts Flying Book Trigger Actions",
       "Action": "EditData",
       "Target": "Data/TriggerActions",
       "Entries": {
+        "{{ModId}}_OpenCalamityGuidebook": {
+          "Id": "{{ModId}}_OpenCalamityGuidebook",
+          "Condition": "ITEM_ID Input {{ModId}}_CalamityGuidebook, {{HasMod|contains=spacechase0.SpaceCore}}",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "spacechase0.SpaceCore_OpenGuidebook {{ModId}}_Calamity",
+          "MarkActionApplied": false
+        },
+        "{{ModID}}_FlyingBookQuest": {
+          "Id": "{{ModID}}_FlyingBookQuest",
+          "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_Wizard Received",
+          "Trigger": "DayStarted",
+          "Action": "AddQuest Current {{ModId}}_FlyingBook",
+          "MarkActionApplied": true
+        },
         "{{ModID}}_FlyingBookDespawn": {
           "Id": "{{ModID}}_FlyingBookDespawn",
           "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_FlyingBookDespawn Received",
@@ -269,7 +291,10 @@
           "Id": "{{ModID}}_FlyingBookMessage7",
           "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_FlyingBook7 Received, {{HasMod|contains=Esca.EMP}}",
           "Trigger": "Esca.EMP_OneSecondUpdateTicked",
-          "Action": "Spiderbuttons.BETAS_Message \"You captured a flying book!#Information in your book has been updated.\"",
+          "Actions": [
+            "Spiderbuttons.BETAS_Message \"You captured a flying book!#Information in your book has been updated.\"",
+            "RemoveQuest Current {{ModId}}_FlyingBook"
+          ],
           "MarkActionApplied": true
         }
       }

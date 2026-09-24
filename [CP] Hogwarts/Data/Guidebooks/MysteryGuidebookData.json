@@ -265,28 +265,28 @@
       "Entries": {
         "{{ModId}}_HogsmeadeStationPotionClue": {
           "Id": "{{ModId}}_HogsmeadeStationPotionClue",
-          "Condition": "ANY \"PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current HogwartsOllivander 1, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeStationPotionClue Received\" \"PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current HogwartsSuryawati 1, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeStationPotionClue Received\"",
+          //"Condition": "ANY \"PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current HogwartsOllivander 1, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeStationPotionClue Received\" \"PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current HogwartsSuryawati 1, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeStationPotionClue Received\"",
           "Trigger": "DayStarted",
           "Action": "AddQuest {{ModId}}_HogsmeadeStationPotionClue",
           "MarkActionApplied": false
         },
         "{{ModId}}_HogsmeadeVillageWandClue": {
           "Id": "{{ModId}}_HogsmeadeVillageWandClue",
-          "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current HogwartsAndrew 3, PLAYER_HEARTS Current HogwartsOllivander 5, PLAYER_HEARTS Current Wizard 3, PLAYER_HEARTS Current HogwartsSuryawati 3, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageWandClue Received",
+          //"Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current HogwartsAndrew 3, PLAYER_HEARTS Current HogwartsOllivander 5, PLAYER_HEARTS Current Wizard 3, PLAYER_HEARTS Current HogwartsSuryawati 3, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageWandClue Received",
           "Trigger": "DayStarted",
           "Action": "AddQuest {{ModId}}_HogsmeadeVillageWandClue",
           "MarkActionApplied": false
         },
         "{{ModId}}_WizardHouseProveClue": {
           "Id": "{{ModId}}_WizardHouseProveClue",
-          "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current Wizard 1, !PLAYER_HAS_MAIL Current {{ModId}}_WizardHouseProveClue Received",
+          //"Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current Wizard 1, !PLAYER_HAS_MAIL Current {{ModId}}_WizardHouseProveClue Received",
           "Trigger": "DayStarted",
           "Action": "AddQuest {{ModId}}_WizardHouseProveClue",
           "MarkActionApplied": false
         },
         "{{ModId}}_AndrewForbiddenForestClue": {
           "Id": "{{ModId}}_AndrewForbiddenForestClue",
-          "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current HogwartsAndrew 1, !PLAYER_HAS_MAIL Current {{ModId}}_AndrewForbiddenForestClue Received",
+          //"Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current HogwartsAndrew 1, !PLAYER_HAS_MAIL Current {{ModId}}_AndrewForbiddenForestClue Received",
           "Trigger": "DayStarted",
           "Action": "AddQuest {{ModId}}_AndrewForbiddenForestClue",
           "MarkActionApplied": false
