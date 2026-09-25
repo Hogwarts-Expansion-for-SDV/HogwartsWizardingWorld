@@ -146,7 +146,7 @@
                   "Id": "M. Rasmodius",
                   "Contents": "[center][font=dialogue]M. Rasmodius[/font][/center]
                   [nospacing][nextposition=128,48][image=Portraits/Wizard:0,0,64,64:3][nextposition=320,48][image=Characters/Wizard:0,0,16,32:6][/nospacing]
-                  [center][nextposition=0,256][font=default]Status: Monitor[/font]
+                  [center][nextposition=0,256][font=default]Status: Plenipotentiary[/font]
                   [center][nextposition=0,288][font=default]Residence: Stardew Valley[/font]
                   [center][nextposition=0,320][font=default][/font]
                   [center][nextposition=0,384][color=Firebrick][font=dialogue]Unverified Statement From Questioning[/color][/font][/center]
@@ -251,11 +251,10 @@
       "Action": "EditData",
       "Target": "Data/Quests",
       "Entries": {
-        "{{ModId}}_HogsmeadeStationPotionClue": "Basic/Trace Detected at Hogsmeade Station/There is a trace from the time of the attack at Hogsmeade Station. Once in position, use Revelio. /Go to Hogsmeade Station///0//",
-        "{{ModId}}_HogsmeadeVillageWandClue": "Basic/Trace Detected at Hogsmeade Village/There is a trace from the time of the attack at Hogsmeade Village. Once in position, use Revelio. /Go to Hogsmeade Village///0//",
-        "{{ModId}}_WizardHouseProveClue": "Basic/Trace Detected at M. Rasmodius's Residence/There is a trace from the time of the attack at M. Rasmodius's residence. Once in position, use Revelio. /Go to M. Rasmodius's Residence///0//",
-        "{{ModId}}_AndrewForbiddenForestClue": "Basic/Trace Detected at the Forbidden Forest/There is a trace from the time of the attack at the Forbidden Forest Centaur Camp. Once in position, use Revelio. /Go to the Forbidden Forest///0//",
-        "{{ModId}}_AccusationSubmission": "Basic/Submit Accusation/Submit your accusation in the Emergent Wizard Case Files. Only choose one answer per category. /Submit your accusation///0//",
+        "{{ModId}}_HogsmeadeStationPotionClue": "Basic/Hogsmeade Station Trace/There is a trace from the time of the attack at Hogsmeade Station. Once in position, cast Revelio with your wand. /Perform Revelio at the trace///0//",
+        "{{ModId}}_HogsmeadeVillageWandClue": "Basic/Hogsmeade Village Trace/There is a trace from the time of the attack at Hogsmeade Village. Once in position, cast Revelio with your wand. /Perform Revelio at the trace///0//",
+        "{{ModId}}_WizardHouseProveClue": "Basic/Wizard Tower Trace/There is a trace from the time of the attack at M. Rasmodius's residence. Once in position, cast Revelio with your wand. /Perform Revelio at the trace///0//",
+        "{{ModId}}_AndrewForbiddenForestClue": "Basic/Forbidden Forest Trace/There is a trace from the time of the attack at the Forbidden Forest. Once in position, cast Revelio with your wand. /Perform Revelio at the trace///0//"
       }
     },
     {
@@ -265,28 +264,28 @@
       "Entries": {
         "{{ModId}}_HogsmeadeStationPotionClue": {
           "Id": "{{ModId}}_HogsmeadeStationPotionClue",
-          //"Condition": "ANY \"PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current HogwartsOllivander 1, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeStationPotionClue Received\" \"PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current HogwartsSuryawati 1, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeStationPotionClue Received\"",
+          "Condition": "ANY \"PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current HogwartsOllivander 1, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeStationPotionClue Received\" \"PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current HogwartsSuryawati 1, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeStationPotionClue Received\"",
           "Trigger": "DayStarted",
           "Action": "AddQuest {{ModId}}_HogsmeadeStationPotionClue",
           "MarkActionApplied": false
         },
         "{{ModId}}_HogsmeadeVillageWandClue": {
           "Id": "{{ModId}}_HogsmeadeVillageWandClue",
-          //"Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current HogwartsAndrew 3, PLAYER_HEARTS Current HogwartsOllivander 5, PLAYER_HEARTS Current Wizard 3, PLAYER_HEARTS Current HogwartsSuryawati 3, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageWandClue Received",
+          "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current HogwartsAndrew 3, PLAYER_HEARTS Current HogwartsOllivander 5, PLAYER_HEARTS Current Wizard 3, PLAYER_HEARTS Current HogwartsSuryawati 3, !PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageWandClue Received",
           "Trigger": "DayStarted",
           "Action": "AddQuest {{ModId}}_HogsmeadeVillageWandClue",
           "MarkActionApplied": false
         },
         "{{ModId}}_WizardHouseProveClue": {
           "Id": "{{ModId}}_WizardHouseProveClue",
-          //"Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current Wizard 1, !PLAYER_HAS_MAIL Current {{ModId}}_WizardHouseProveClue Received",
+          "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current Wizard 1, !PLAYER_HAS_MAIL Current {{ModId}}_WizardHouseProveClue Received",
           "Trigger": "DayStarted",
           "Action": "AddQuest {{ModId}}_WizardHouseProveClue",
           "MarkActionApplied": false
         },
         "{{ModId}}_AndrewForbiddenForestClue": {
           "Id": "{{ModId}}_AndrewForbiddenForestClue",
-          //"Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current HogwartsAndrew 1, !PLAYER_HAS_MAIL Current {{ModId}}_AndrewForbiddenForestClue Received",
+          "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_ChapterOne.3, PLAYER_HEARTS Current HogwartsAndrew 1, !PLAYER_HAS_MAIL Current {{ModId}}_AndrewForbiddenForestClue Received",
           "Trigger": "DayStarted",
           "Action": "AddQuest {{ModId}}_AndrewForbiddenForestClue",
           "MarkActionApplied": false
