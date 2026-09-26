@@ -104,8 +104,8 @@
                 }
               ]
             },
-            "Plenipotentiary": {
-              "Name": "Plenipotentiary",
+            "StationaryWizards": {
+              "Name": "Stationary Wizards",
               "TabIconTexture": "{{ModId}}/CalamityGuidebookTabs",
               "TabIconRect": {
                 "X": 0,
@@ -116,8 +116,8 @@
               "Condition": "TRUE",
               "Pages": [
                 {
-                  "Id": "Plenipotentiary",
-                  "Contents": "[font=default][nextposition=0,64]Due to the vast magical events occuring throughout the world, a wizard has been assigned to act a plenipotentiary of a region. Moreover, each region often contains magic unique to that region; therefore, these witches and wizards fulfill significant contributory roles for the wizarding world including: monitoring the area of magical and non-magical occurrences, maintaining magical secrecy, applying memory charms to muggles who witnessed magic, protecting the region from magical threats, concocting potions and applying charms to help those recover from a magical ailments and afflictions, studying endemic or exotic magical creatures or materials, and studying magic-related languages in the region. Now, with the Calamity, plenipotentiaries have additional responsibilities; they work to resolve Foundables appearing in their region, and they can become mentors to Emergent Wizards who originate from that region.[/font]"
+                  "Id": "StationaryWizards",
+                  "Contents": "[font=default][nextposition=0,64]Due to the vast magical events occuring throughout the world, wizards station themselves at a region that is in need of one. Moreover, each region often contains magic unique to that region; therefore, these witches and wizards fulfill significant contributory roles for the wizarding world including but not excluding to: monitoring the area of magical and non-magical occurrences, maintaining magical secrecy, applying memory charms to muggles who witnessed magic, protecting the region from magical threats, concocting potions and applying charms to help those recover from a magical ailments or afflictions, studying endemic or exotic magical creatures or materials, studying magically relevant languages in the region, and arbitrating magical or interspecies disputes in the area. Now, with the Calamity, the responsbilities of Stationary Wizards have been compounded; they must work to resolve Foundables appearing in their region, and they have been assigned as mentors to Emergent Wizards who originate from that region.[/font]"
                 }
               ]
             },
@@ -135,8 +135,74 @@
                 {
                   "Id": "SecrecyBreach",
                   "Contents": "
-                  [font=default][nextposition=0,64]Since most of the world consists of muggles, there is a strong probability of muggles enountering a Foundable. More disasterously, there is a chance Foundables will appear in populated public areas in the muggle world. Magic displaying within the presence of a muggle violates the International Statute of Wizarding Secrecy, thereby risking exposure of magic and Wizarding World to the muggle world.[/font]"
+                  [font=default][nextposition=0,64]Since most of the world consists of muggles, muggles encountering a Foundable is a near-certainty. More disasterously, there is a chance Foundables will appear in populated public areas in the muggle world. Magic displayed within the presence of a muggle risks exposure of magic and the Wizarding World to the muggle world. Thereby, Foundables naturally violate the International Statute of Wizarding Secrecy.[/font]"
                 }
+              ]
+            },
+            "InternationalStatuteOfWizardingSecrecy": {
+              "Name": "International Statute of Wizarding Secrecy",
+              "TabIconTexture": "{{ModId}}/CalamityGuidebookTabs",
+              "TabIconRect": {
+                "X": 0,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+              },
+              "Condition": "TRUE",
+              "Pages": [
+                {
+                  "Id": "InternationalStatuteOfWizardingSecrecy",
+                  "Contents": "
+                  [font=default][nextposition=0,64]Enacted by the International Confederation of Wizards, 1689
+Ratified and Enforced Globally, 1692 
+Signed and sealed on this day by the delegates of the International Confederation of Wizards. 
+[/font]"
+                },
+                {
+                  "Id": "MandateOfConcealment",
+                  "Contents": "
+                  [font=default][nextposition=0,64]SECTION I: THE MANDATE OF CONCEALMENT 
+1. Every magical government, Ministry, Council, or regional authority across the globe shall assume full and absolute responsibility for hiding the existence of magic, witches, wizards, and magical institutions within their respective borders. 
+2. No witch or wizard shall perform magic, display magical artifacts, or manifest magical phenomena in the presence of, or within sight of, any Muggle, except under the strict exemptions outlined in Section V. 
+3. Magical citizens traveling through or residing within Muggle territories must adopt the customary dress, manners, and behaviors of the local Muggle population to ensure complete assimilation and prevent suspicion. 
+[/font]"
+                },
+                {
+                  "Id": "MagicalArchitectureAndInfrastructure",
+                  "Contents": "
+                  [font=default][nextposition=0,64]SECTION II: MAGICAL ARCHITECTURE AND INFRASTRUCTURE 
+1. All permanent magical dwellings, marketplaces, schools, and government seats must be rendered structurally unplottable or heavily enchanted with Muggle-Repelling Charms, Disillusionment Charms, and non-magical redirection wards. 
+2. High-density magical enclaves (e.g., Diagon Alley, Hogsmeade Village) must maintain secure, concealed entry points strictly inaccessible to uninitiated Muggles. 
+
+[/font]"
+                },
+                {
+                  "Id": "ControlOfMagicalCreatures",
+                  "Contents": "
+                  [font=default][nextposition=0,64]SECTION III: CLAUSE 73 – CONTROL OF MAGICAL CREATURES
+(As amended by the International Confederation, 1750) 
+1. Each signatory nation shall be held strictly accountable for the concealment, containment, and management of all magical beasts, beings, and spirits residing within its territorial boundaries. 
+2. Should any magical beast (including but not limited to Dragons, Kelpies, and Hippogriffs) escape containment and become visible to the Muggle public, the governing Ministry of that territory must immediately deploy containment squads and memory-rectification personnel. Failure to do so within a reasonable timeframe shall result in severe international censure. 
+[/font]"
+                },
+                {
+                  "Id": "BreachesAndMemoryRectification",
+                  "Contents": "
+                  [font=default][nextposition=0,64]SECTION IV: BREACHES AND MEMORY RECTIFICATION 
+1. In the event of an accidental or intentional breach of secrecy, the local Ministry must immediately dispatch Obliviators or designated Muggle-Worthy Excuse Committees to modify the memories of affected Muggles and fabricate plausible, non-magical explanations. 
+2. Any intentional exposure of the wizarding world to Muggles by a witch or wizard shall be deemed a high treasonous offense against the International Confederation. Penalties shall include immediate wand-snapping, expulsion from the magical community, and permanent imprisonment in a high-security wizarding penitentiary. 
+
+[/font]"
+                },
+                {
+                  "Id": "Exemptions",
+                  "Contents": "
+                  [font=default][nextposition=0,64]SECTION V: EXEMPTIONS 
+1. The use of magic in the presence of Muggles is strictly permitted only in immediate, life-threatening emergencies where self-defense, or the defense of another witch or wizard, leaves no non-magical alternative. 
+2. Underage witches and wizards who experience involuntary, accidental outbursts of magic prior to receiving formal wand training shall be exempt from punitive criminal prosecution, though their guardians or local ministries remain responsible for subsequent memory modification of witnesses. 
+3. Magical secrecy may be lifted exclusively for the non-magical heads of state (e.g., the Muggle Prime Minister) solely to ensure the safety and coordination of both societies during times of mutual crisis. 
+[/font]"
+                },
               ]
             },
             "CalamityInvestigators": {

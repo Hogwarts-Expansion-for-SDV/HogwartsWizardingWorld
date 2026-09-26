@@ -20,6 +20,12 @@
 {
   "Changes": [
     {
+      "LogName": "Hogwarts Ollivander Event Image Load",
+      "Action": "Load",
+      "Target": "{{ModId}}/z_Ollivander15_Hogwarts, {{ModId}}/z_Ollivander25_Hogwarts{{ModId}}/z_Ollivander35_Hogwarts{{ModId}}/z_Ollivander45_Hogwarts{{ModId}}/z_Ollivander55_Hogwarts{{ModId}}/z_Ollivander65_Hogwarts",
+      "FromFile": "assets/Event/{{TargetWithoutPath}}.png"
+    },
+    {
       "Action": "EditData",
       "Target": "Data/Objects",
       "Entries": {
@@ -35,52 +41,49 @@
         }
       }
     },
-
     {
       "LogName": "Ollivander Locket Open Load",
       "Action": "Load",
       "Target": "{{ModId}}/LocketOpen",
       "FromFile": "assets/Objects/LocketOpen.png"
     },
-
     {
-  "LogName": "Ollivander 1 Heart Support Group Mail",
-  "Action": "EditData",
-  "Target": "Data/Mail",
-  "Entries": {
-    "{{ModId}}_OllivanderSupportGroup": "Dear @,^There will be a support group meeting tonight for those affected by the war.^Emergent wizards are welcome to attend.^If you would like to join us, please come to the Great Hall at 5:00 PM.^-Hermione[#]A Support Group Meeting"
-  }
-},
-{
-  "LogName": "Ollivander 1 Heart Support Group Quest",
-  "Action": "EditData",
-  "Target": "Data/Quests",
-  "Entries": {
-    "10200": "Location/Ollivander's Support Group/I received an invitation to a support group meeting for those affected by the war./Attend the support group meeting at the Great Hall at 5:00 PM./GreatHall/-1/0/-1/false"
-  }
-},
-{
-  "LogName": "Ollivander 1 Heart Invitation",
-  "Action": "EditData",
-  "Target": "Data/TriggerActions",
-  "Entries": {
-    "{{ModId}}_OllivanderHeart1Invitation": {
-      "Id": "{{ModId}}_OllivanderHeart1Invitation",
-      "Trigger": "DayEnding",
-      "Condition": "PLAYER_FRIENDSHIP_POINTS Current HogwartsOllivander 250",
-      "Actions": [
-        "AddMail Current {{ModId}}_OllivanderSupportGroup tomorrow",
-        "AddQuest 10200"
-      ]
-    }
-  }
-},
-
-      {
-        "LogName": "Hogwarts Ollivanders Events",
-        "Action": "EditData",
-        "Target": "Data/Events/{{ModId}}_Ollivanders",
-        "Entries": {
+      "LogName": "Ollivander 1 Heart Support Group Mail",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "{{ModId}}_OllivanderSupportGroup": "Dear @,^There will be a support group meeting tonight for those affected by the war.^Emergent wizards are welcome to attend.^If you would like to join us, please come to the Great Hall at 5:00 PM.^-Hermione[#]A Support Group Meeting"
+      }
+    },
+    {
+      "LogName": "Ollivander 1 Heart Support Group Quest",
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        "10200": "Location/Ollivander's Support Group/I received an invitation to a support group meeting for those affected by the war./Attend the support group meeting at the Great Hall at 5:00 PM./GreatHall/-1/0/-1/false"
+      }
+    },
+    {
+      "LogName": "Ollivander 1 Heart Invitation",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_OllivanderHeart1Invitation": {
+          "Id": "{{ModId}}_OllivanderHeart1Invitation",
+          "Trigger": "DayEnding",
+          "Condition": "PLAYER_FRIENDSHIP_POINTS Current HogwartsOllivander 250",
+          "Actions": [
+            "AddMail Current {{ModId}}_OllivanderSupportGroup tomorrow",
+            "AddQuest 10200"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts Ollivanders Events",
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_Ollivanders",
+      "Entries": {
           "{{ModId}}_Ollivander05": "none/8 16/farmer 100 100 0 HogwartsOllivander 6 14 0 HogwartsHarry -100 -100 0/skippable/pause 800/playSound doorClose/
         pause 200/warp farmer 8 20/pause 500/facedirection HogwartsOllivander 2/pause 600/textAboveHead HogwartsOllivander \"Welcome, welcome.\"/
         pause 700/question null \"#I didn't know you had a shop here in Hogsmeade.\"/move farmer 0 -2 0/
@@ -104,22 +107,23 @@
         /speak HogwartsOllivander \"My daughter’s. I carry this whenever I go out.\"/speak HogwartsHarry \"Is your daughter in London?\"/pause 600/emote HogwartsOllivander 40/
         speak HogwartsOllivander \"Sadly, she has passed since the first war, but her picture talks to me through it.\"/emote HogwartsHarry 16
         /speak HogwartsHarry \"I'm... I'm so sorry.\"/pause 400/question null \"#If you can come, every week, Mrs. Granger hosts a support group for survivors of Voldemort.\"/
-        speak HogwartsOllivander \"We do not speak his name!\"/globalFade/viewport -1000 -1000/pause 1000/end",}
-        },
-      {
-        "LogName": "Hogwarts Ollivanders Events",
-        "Action": "EditData",
-        "Target": "Data/Events/{{ModId}}_HogwartsGreatHall",
-        "Entries": {
-        "{{ModId}}_Ollivander25": "none/11 26/farmer 14 15 0 HogwartsOllivander 14 26 0 HogwartsHermione 11 23 2 HogwartsHarry 10 25 1/skippable/
-        pause 400/speak HogwartsHermione \"test\"/showFrame farmer 117/pause 1000/globalFade/viewport -1000 -1000/end"}
+        speak HogwartsOllivander \"We do not speak his name!\"/globalFade/viewport -1000 -1000/pause 1000/end",
       }
-    ,
-
-    {"LogName":"Hogwarts Ollivanders Events",
-      "Action":"EditData",
+    },
+    {
+      "LogName": "Hogwarts Ollivanders Events",
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_HogwartsGreatHall",
+      "Entries": {
+        "{{ModId}}_Ollivander25": "none/11 26/farmer 14 15 0 HogwartsOllivander 14 26 0 HogwartsHermione 11 23 2 HogwartsHarry 10 25 1/skippable/
+        pause 400/speak HogwartsHermione \"test\"/showFrame farmer 117/pause 1000/globalFade/viewport -1000 -1000/end"
+      }
+    },
+    {
+      "LogName": "Hogwarts Ollivanders Events",
+      "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogsHeadInn",
-      "Entries": {        
+      "Entries": {
           "{{ModId}}_Ollivander45": "none/9 19/farmer 16 20 0 HogwartsOllivander 10 20 0 HogwartsAberforth 2 17 2 HogwartsDraco -1000 -1000 0/skippable/showFrame farmer 113/
           addTemporaryActor HogwartsDarkWizard1 16 32 1 18 2 true Character /pause 800
           /textAboveHead HogwartsAberforth \"Your order’s up.\"/pause 1000/emote HogwartsDarkWizard1 40/pause 800/move HogwartsAberforth 4 0 1/ move HogwartsAberforth 0 1 1 / move HogwartsAberforth 2 0 0/move HogwartsAberforth 0 -1 0/move HogwartsAberforth 3 0 1/
@@ -130,15 +134,14 @@
           pause 600/move HogwartsDraco -4 0 0/pause 600/emote HogwartsOllivander 40/move HogwartsDraco -4 0 0/move HogwartsDraco 0 -3 0/move HogwartsDraco -2 0 0/
           faceDirection HogwartsDraco 3/globalFade
           /changeToTemporaryMap {{ModId}}_OllivandersBedroom/viewport 4 8 true/warp HogwartsOllivander 3 6 /faceDirection HogwartsOllivander 2
-        /speak HogwartsOllivander \"I... I warned you, My Lord. #$b#Your wand shares the same phoenix core as... #$b#Your wand will be useless against him.\"/end"}},
-          
-          
-          
-          
-        {"LogName":"Hogwarts Ollivanders Events",
-        "Action":"EditData",
-        "Target": "Data/Events/{{ModId}}_HogsHeadInn",
-        "Entries": {        
+        /speak HogwartsOllivander \"I... I warned you, My Lord. #$b#Your wand shares the same phoenix core as... #$b#Your wand will be useless against him.\"/end"
+      }
+    },
+    {
+      "LogName": "Hogwarts Ollivanders Events",
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_HogsHeadInn",
+      "Entries": {
           "{{ModId}}_Ollivander65" :"none/8 20/farmer -1000 -1000 0 HogwartsOllivander 9 6 3/skippable/pause 800/
           changeToTemporaryMap {{ModId}}_HogwartsValley/viewport 92 132 true/warp HogwartsOllivander 92 132/faceDirection HogwartsOllivander 0/pause 800/
           speak HogwartsOllivander \"It's been some time, Albus.#$b#Curious... A yew tree.#$b#This tree grew...#$b#From the Dark Lord's wand!\"/pause 800/
@@ -146,7 +149,21 @@
           globalFade/viewport -1000 -1000/warp farmer 7 6/faceDirection farmer 1/warp HogwartsOllivander 9 6/faceDirection HogwartsOllivander 3/pause 800/
           changeLocation {{ModId}}_Ollivanders/viewport 8 6 true/pause 800/
           speak HogwartsOllivander \"I crafted the tree's wood into a wand, and now...#$b#The Dark Lord's wand serves me.\"/pause 800/
-          globalFade/viewport -1000 -1000/pause 1000/end"}
-    }
-  ]
-}
+          globalFade/viewport -1000 -1000/pause 1000/end"
+        }
+      },
+      {
+      "LogName": "Hogwarts Ollivanders Events",
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_HogsmeadeVillage",
+      "Entries": {
+          "{{ModId}}_Ollivander85" :"none/32 89/farmer 32 89 0 HogwartsOllivander 33 90 3/skippable/pause 800/
+          action mushymato.MMAP_ScaledOverlay 1000 \"{{ModId}}/z_Ollivander15_Hogwarts\" LetterBox/
+          globalFade/viewport -1000 -1000/pause 1000/end"
+        },
+        "When": {
+          "HasMod |contains= mushymato.MMAP": true
+        }
+      }
+    ]
+  }
