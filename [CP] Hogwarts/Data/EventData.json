@@ -13,6 +13,18 @@
       "FromFile": "assets/Creatures/Phoenix.png"
     },
     {
+      "LogName": "Hogwarts Suryawati Unicorn Load",
+      "Action": "Load",
+      "Target": "Characters/Monsters/{{ModId}}_Unicorn",
+      "FromFile": "assets/Creatures/UnicornCommon.png"
+    },
+    {
+      "LogName": "Hogwarts Suryawati Unicorn2 Load",
+      "Action": "Load",
+      "Target": "Characters/Monsters/{{ModId}}_Unicorn2",
+      "FromFile": "assets/Creatures/Unicorn.png"
+    },
+    {
       "LogName": "Hogwarts Willow Load",
       "Action": "Load",
       "Target": "{{ModId}}/WhompingWillow",
@@ -158,8 +170,8 @@
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_ForbiddenForestCentaurCamp",
       "Entries": {
-        "{{ModId}}_Suryawati55/e {{ModId}}_Suryawati35/f HogwartsSuryawati 1250/t 1000 1700": "AbigailFluteDuet/99 76/farmer 102 78 3 HogwartsSuryawati 100 77 3/skippable/move farmer -4 0 3 true/move HogwartsSuryawati -3 0 3 true/showFrame HogwartsSuryawati 13/pause 1500/speak HogwartsSuryawati \"Somewhere around here... I definitely heard something.$2 #$b# Something hurt...$2\"/pause 500/showFrame HogwartsSuryawati 17/pause 500/showFrame HogwartsSuryawati 0/pause 1000/showFrame HogwartsSuryawati 16/pause 1000/emote farmer 28/pause 1000/beginSimultaneousCommand/playSound leafrustle/faceDirection HogwartsSuryawati 2/jump farmer/jump HogwartsSuryawati/emote HogwartsSuryawati 16/endSimultaneousCommand/pause 500/faceDirection HogwartsSuryawati 3/speak HogwartsSuryawati \"This way!$2\"/speed HogwartsSuryawati 4/move HogwartsSuryawati -15 0 3 true/pause 1000/emote farmer 28/speed farmer 3/move farmer -10 0 3 true/pause 1000/globalFade/viewport -9999 -9999/warp farmer 60 66/warp HogwartsSuryawati 57 65/showFrame HogwartsSuryawati 21/faceDirection farmer 3/pause 800/message \"Oh no...\"/pause 1000/
-        temporaryAnimatedSprite \"{{ModId}}/UnicornCommon\" 96 96 32 32 99999 1 0 56 64 false false -1 0 2 0 0 0/
+        "{{ModId}}_Suryawati55/e {{ModId}}_Suryawati35/f HogwartsSuryawati 1250/t 1000 1700": "AbigailFluteDuet/99 77/farmer 102 78 3 HogwartsSuryawati 100 77 3/skippable/move farmer -4 0 3 true/move HogwartsSuryawati -3 0 3 true/pause 2000/speak HogwartsSuryawati \"Somewhere around here... I definitely heard something.$2 #$b# Something hurt...$2\"/pause 500/showFrame HogwartsSuryawati 17/pause 500/showFrame HogwartsSuryawati 0/pause 1000/showFrame HogwartsSuryawati 16/pause 1000/emote farmer 28/pause 1000/beginSimultaneousCommand/playSound leafrustle/stopAnimation HogwartsSuryawati 0/jump farmer/jump HogwartsSuryawati/emote HogwartsSuryawati 16/endSimultaneousCommand/pause 500/faceDirection HogwartsSuryawati 3/speak HogwartsSuryawati \"This way!$2\"/speed HogwartsSuryawati 4/move HogwartsSuryawati -15 0 3 true/pause 1000/emote farmer 28/speed farmer 3/move farmer -10 0 3 true/pause 1000/globalFade/viewport -9999 -9999/warp farmer 60 66/warp HogwartsSuryawati 57 65/showFrame HogwartsSuryawati 21/faceDirection farmer 3/pause 800/message \"Oh no...\"/pause 1000/
+        temporaryAnimatedSprite \"{{ModId}}/UnicornCommon\" 96 96 32 32 99999 1 0 16 64 false false -1 0 2 0 0 0/addTemporaryActor {{ModId}}_Unicorn 32 32 57 66 3 true Monster/showFrame {{ModId}}_Unicorn 27/
         viewport 58 67 true/globalFadeToClear/pause 6000/
         beginSimultaneousCommand/
         emote HogwartsSuryawati 28/
@@ -168,7 +180,9 @@
         speak HogwartsSuryawati \"I will never forgive my father for this.$2#$b#Never.$2\"/pause 1000/shake HogwartsSuryawati 500/
         emote farmer 28/pause 1500/
         globalFade/viewport -1000 -1000/
-        action mushymato.MMAP_TAS 56 66 {{ModId}}_Suryawati25Unicorn/pause 1000/message \"Suryawati looks shaken...\"/pause 500/message \"I better walk her back to her dorm...\"/end dialogue HogwartsSuryawati \"I... I really don't want to talk right now.$2\""
+        action mushymato.MMAP_TAS 56 66 {{ModId}}_Suryawati25Unicorn/pause 1000/message \"Suryawati looks shaken...\"/pause 500/message \"I better walk her back to her dorm...\"/end dialogue HogwartsSuryawati \"I... I really don't want to talk right now.$2\"",
+
+        "{{ModId}}_Suryawati70": "none/83 56/farmer 999 999 2 HogwartsSuryawati 82 51 3 HogwartsSuryawatiFather 85 54 3/skippable/addTemporaryActor {{ModId}}_Unicorn2 32 32 85 54 3 true Monster/pause 2000/speed {{ModId}}_Unicorn2 5/move {{ModId}}_Unicorn2 -10 0 3/pause 1000/shake {{ModId}}_Unicorn2 1000/faceDirection {{ModId}}_Unicorn2 1/move HogwartsSuryawatiFather -5 0 3/pause 2000/shake {{ModId}}_Unicorn2 500/pause 2000/end"
       }
     },
     // Forest - Fix viewport in Wizard35
