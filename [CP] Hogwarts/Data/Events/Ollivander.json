@@ -124,17 +124,19 @@
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogsHeadInn",
       "Entries": {
-          "{{ModId}}_Ollivander45": "none/9 19/farmer 16 20 0 HogwartsOllivander 10 20 0 HogwartsAberforth 2 17 2 HogwartsDraco -1000 -1000 0/skippable/showFrame farmer 113/
+          "{{ModId}}_Ollivander45": "Saloon1/9 19/farmer 16 20 0 HogwartsOllivander 10 20 0 HogwartsAberforth 2 17 2 HogwartsDraco -1000 -1000 0/skippable/showFrame farmer 113/
           addTemporaryActor HogwartsDarkWizard1 16 32 1 18 2 true Character /pause 800
           /textAboveHead HogwartsAberforth \"Your order’s up.\"/pause 1000/emote HogwartsDarkWizard1 40/pause 800/move HogwartsAberforth 4 0 1/ move HogwartsAberforth 0 1 1 / move HogwartsAberforth 2 0 0/move HogwartsAberforth 0 -1 0/move HogwartsAberforth 3 0 1/
-          faceDirection HogwartsAberforth 2/pause 800/speak HogwartsAberforth \"Sorry to keep you waiting.\"/pause 400/speak HogwartsAberforth \"How is your son doing?#$b#Have you gone to visit him?\"/pause 600/
+          faceDirection HogwartsAberforth 2/pause 800/speak HogwartsAberforth \"Sorry to keep you waiting.\"/pause 600/speak HogwartsAberforth \"How is your son doing?#$b#Have you gone to visit him?\"/pause 800/
           emote HogwartsOllivander 16/pause 500/
-          speak HogwartsOllivander \"Ab...I can't go back to Diagon Alley.#$b#I can't!$a\"/pause 600/emote HogwartsAberforth 28/pause 800/playSound doorClose/warp HogwartsDraco 14 23/move HogwartsDraco 0 -1 0/
-          pause 800/textAboveHead HogwartsDraco \"Where is that dealer?\"/pause 500/faceDirection HogwartsOllivander 2/pause 600/emote HogwartsOllivander 16/pause 600/faceDirection HogwartsOllivander 0/
-          pause 600/move HogwartsDraco -4 0 0/pause 600/emote HogwartsOllivander 40/move HogwartsDraco -4 0 0/move HogwartsDraco 0 -3 0/move HogwartsDraco -2 0 0/
-          faceDirection HogwartsDraco 3/globalFade
-          /changeToTemporaryMap {{ModId}}_OllivandersBedroom/viewport 4 8 true/warp HogwartsOllivander 3 6 /faceDirection HogwartsOllivander 2
-        /speak HogwartsOllivander \"I... I warned you, My Lord. #$b#Your wand shares the same phoenix core as... #$b#Your wand will be useless against him.\"/end"
+          speak HogwartsOllivander \"Ab...I can't go back to Diagon Alley.#$b#I can't!$a\"/pause 800/emote HogwartsAberforth 28/pause 800/playSound doorClose/warp HogwartsDraco 14 23/move HogwartsDraco 0 -1 0/
+          pause 800/textAboveHead HogwartsDraco \"Where is that dealer?\"/pause 800/faceDirection HogwartsOllivander 2/pause 400/emote HogwartsOllivander 16/pause 400/faceDirection HogwartsOllivander 0/
+          pause 600/move HogwartsDraco -4 0 0/pause 800/emote HogwartsOllivander 40/move HogwartsDraco -4 0 0/move HogwartsDraco 0 -3 0/move HogwartsDraco -2 0 0/
+          faceDirection HogwartsDraco 3/stopMusic/globalFade 0.005
+          /changeToTemporaryMap {{ModId}}_OllivandersBedroom/ambientLight 150 150 150/viewport 4 8 true/warp HogwartsOllivander 3 6 /playSound thunder_small/showFrame HogwartsOllivander 25/
+          faceDirection HogwartsOllivander 2/pause 600/speak HogwartsOllivander \"I... I warned you, My Lord. #$b#Your wand shares the same phoenix core as... #$b#Your wand will be useless against him.\"
+          /pause 600/emote HogwartsOllivander 16/speak HogwartsOllivander \"Please, stop!\"/pasue 400/speak HogwartsOllivander \"I will tell you anything! Gregorovitch... My Lord!#$b#He has the Elder Wand!\"
+          /playSound thunder/end"
       }
     },
     {
