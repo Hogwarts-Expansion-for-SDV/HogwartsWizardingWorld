@@ -65,9 +65,9 @@
         "{{ModId}}_EmergentWizardCaseFiles": {
           "Title": "Case Files",
           "DefaultChapter": "Title",
-          /*"PageTexture": "{{InternalAssetKey: assets/Guidebook/MysteryGuidebookBase.png}}",
+          "PageTexture": "{{InternalAssetKey: assets/Guidebook/MysteryGuidebookBase.png}}",
           "PagePadding": "28, 28",
-          "PageSize": "600, 500",*/
+          "PageSize": "600, 500",
           "Chapters": {
             "Title": {
               "Name": "Case Of The Emergent Wizard",
@@ -82,27 +82,28 @@
               "Pages": [
                 {
                   "Contents": "[center][font=dialogue]Investigation[/font][/center]
-                  [center][nextposition=0,64][font=default]Victim:[/font][/center]
-                  [center][nextposition=0,96][font=default]Name: Abrielle[/font][/center]
-                  [center][nextposition=0,128][font=default]Condition: Bewitched Slumber[/font][/center]
-                  [center][nextposition=0,192][font=default]Status: Emergent Wizard[/font][/center]
-                  [center][nextposition=0,224][font=default]Student: Yes[/font][/center]
-                  [center][nextposition=0,256][font=default]House: Slytherin[/font][/center]
-                  [center][nextposition=0,320][font=dialogue]Notes[/font][/center]
-                  [nextposition=0,384][font=default]-Four people were unaccounted for at the time of the attack.[/font]
-                  [nextposition=0,448][font=default]-Each suspect provided a statement, but when all statements were applied, it produced a contradiction. Therefore, someone is lying, maybe even unintentionally.[/font]
-                  [nextposition=0,576][font=default][color=Firebrick]-Find out who is lying.[/color][/font]
-                  [center][nextposition=0,624][font=dialogue]Possibilities[/font][/center]
-                  [nextposition=0,672][font=default]-Locations: Forbidden Forest Centaur Camp, Hogsmeade Station, Hogsmeade Village, Hogwarts Valley.[/font]
-                  [nextposition=0,776][font=default]-Weapons: Ancient Magic Book, Creature Part, Potion, Wand.[/font]
-                  [nextposition=0,848][font=default]-Motives: Revenge, To Hide A Secret, To Protect, To Prove Oneself.[/font]
-                  [center][nextposition=0,912][font=dialogue]Clues From The Time Of Attack[/font][/center]
-                  [nextposition=0,960][font=default]-Either someone who wanted to protect was at Hogwarts Valley, or the Ancient Magic Book was at Hogwarts Valley. Not both.[/font]
-                  [nextposition=0,1056][font=default]-Whoever would attack for revenge was not a student.[/font]
-                  [if=PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageWandClue Received][nextposition=0,1118][font=default]-[color=Firebrick]Updated[/color]: a wand [color=Firebrick]WAS[/color] discovered at Hogsmeade Village.[/font][/if]
-                  [else][nextposition=0,1118][font=default]-A wand was not discovered at Hogsmeade Village.[/font][/else]
-                  [if=PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeStationPotionClue Received][nextposition=0,1182][font=default]A Potion was discovered at Hogsmeade Station.[/font][/if]
-                  [else][nextposition=0,1182][font=default][/font][/else]"
+                  [nospacing][nextposition=128,48][image=Portraits/HogwartsAbrielle:0,0,64,64:3][nextposition=320,48][image=Characters/HogwartsAbrielle:0,0,16,32:6][/nospacing]
+                  [center][nextposition=0,256][font=default]Victim:[/font][/center]
+                  [center][nextposition=0,288][font=default]Name: Abrielle[/font][/center]
+                  [center][nextposition=0,320][font=default]Curse: Bewitched Slumber[/font][/center]
+                  [center][nextposition=0,384][font=default]Status: Emergent Wizard[/font][/center]
+                  [center][nextposition=0,416][font=default]Student: Yes[/font][/center]
+                  [center][nextposition=0,448][font=default]House: Slytherin[/font][/center]
+                  [center][nextposition=0,512][font=dialogue]Notes[/font][/center]
+                  [nextposition=0,576][font=default]- Four people were unaccounted for at the time of the attack.[/font]
+                  [nextposition=0,640][font=default]- Each suspect provided a statement, but when all statements were applied, it produced a contradiction. Therefore, someone is lying, maybe even unintentionally.[/font]
+                  [nextposition=0,768][font=default][color=Firebrick]- Find out who is lying.[/color][/font]
+                  [center][nextposition=0,816][font=dialogue]Possibilities[/font][/center]
+                  [nextposition=0,864][font=default]- Locations: Forbidden Forest Centaur Camp, Hogsmeade Station, Hogsmeade Village, Hogwarts Valley.[/font]
+                  [nextposition=0,968][font=default]- Weapons: Ancient Magic Book, Creature Part, Potion, Wand.[/font]
+                  [nextposition=0,1040][font=default]- Motives: Revenge, To Hide A Secret, To Protect, To Prove Oneself.[/font]
+                  [center][nextposition=0,1104][font=dialogue]Clues From The Time Of Attack[/font][/center]
+                  [nextposition=0,1152][font=default]- Either someone who wanted to protect was at Hogwarts Valley, or the Ancient Magic Book was at Hogwarts Valley. Not both.[/font]
+                  [nextposition=0,1248][font=default]- Whoever would attack for revenge was not a student.[/font]
+                  [if=PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageWandClue Received][nextposition=0,1310][font=default]- [color=Firebrick]Updated[/color]: a wand [color=Firebrick]WAS[/color] discovered at Hogsmeade Village.[/font][/if]
+                  [else][nextposition=0,1310][font=default]- A wand was not discovered at Hogsmeade Village.[/font][/else]
+                  [if=PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeStationPotionClue Received][nextposition=0,1374][font=default]- A Potion was discovered at Hogsmeade Station.[/font][/if]
+                  [else][nextposition=0,1374][font=default][/font][/else]"
                 }
               ]
             },
@@ -146,7 +147,7 @@
                   "Id": "M. Rasmodius",
                   "Contents": "[center][font=dialogue]M. Rasmodius[/font][/center]
                   [nospacing][nextposition=128,48][image=Portraits/Wizard:0,0,64,64:3][nextposition=320,48][image=Characters/Wizard:0,0,16,32:6][/nospacing]
-                  [center][nextposition=0,256][font=default]Status: Plenipotentiary[/font]
+                  [center][nextposition=0,256][font=default]Status: Stationed Wizard[/font]
                   [center][nextposition=0,288][font=default]Residence: Stardew Valley[/font]
                   [center][nextposition=0,320][font=default][/font]
                   [center][nextposition=0,384][color=Firebrick][font=dialogue]Unverified Statement From Questioning[/color][/font][/center]
@@ -196,13 +197,13 @@
                   [nextposition=64,344][font=default]To Protect[/font][nextposition=410,344][font=default]Hogwarts V-[/font]
                   [nextposition=13,370][font=default]To Prove One-[/font][nextposition=422,370][font=default]F- Forest[/font]
                   [nextposition=28,396][font=default]To Hide A S-[/font][nextposition=432,396][font=default]H- Station[/font]
-                  [nextposition=0,524][font=default]-Not every information is needed to solve the case. With enough information, the solution can be deduced.[/font]
-                  [nextposition=0,620][font=default]-Test each suspect's statement by assuming their statement is a lie, while assuming everyone else's statements are true.[/font]
-                  [nextposition=0,720][font=default]-If there is a contradiction, then that suspect was telling the truth.[/font]
-                  [nextposition=0,792][font=default]-Revelio charm may be used to discover more evidence.[/font]
-                  [nextposition=0,856][font=default]-However, traces from the Revelio charm are stronger when the spellcaster knows the suspect.[/font]
+                  [nextposition=0,524][font=default]- Not every information is needed to solve the case. With enough information, the solution can be deduced.[/font]
+                  [nextposition=0,620][font=default]- Test each suspect's statement by assuming their statement is a lie, while assuming everyone else's statements are true.[/font]
+                  [nextposition=0,720][font=default]- If there is a contradiction, then that suspect was telling the truth.[/font]
+                  [nextposition=0,792][font=default]- Revelio charm may be used to discover more evidence.[/font]
+                  [nextposition=0,856][font=default]- However, traces from the Revelio charm are stronger when the spellcaster knows the suspect.[/font]
                   [center][nextposition=0,952][font=default]I need your help.[/font][/center]
-                  [center][nextposition=0,984][font=default]-Professor Granger[/font][/center]"
+                  [center][nextposition=0,984][font=default]- Professor Granger[/font][/center]"
                 }
               ]
             },
