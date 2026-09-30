@@ -66,7 +66,7 @@
           "Title": "Case Files",
           "DefaultChapter": "Title",
           "PageTexture": "{{InternalAssetKey: assets/Guidebook/MysteryGuidebookBase.png}}",
-          "PagePadding": "16, 28",
+          "PagePadding": "-14, 42",
           "PageSize": "720, 608",
           "Chapters": {
             "Title": {
@@ -78,6 +78,7 @@
                 "Width": 16,
                 "Height": 16
               },
+              "TabIconScale": 4,
               "Condition": "TRUE",
               "Pages": [
                 {
@@ -90,20 +91,20 @@
                   [center][nextposition=0,416][font=default]Student: Yes[/font][/center]
                   [center][nextposition=0,448][font=default]House: Slytherin[/font][/center]
                   [center][nextposition=0,512][font=dialogue]Notes[/font][/center]
-                  [center][nextposition=0,576][font=default]    - Four people were unaccounted for at the time of the attack.[/font]
-                  [center][nextposition=0,640][font=default]- Each suspect provided a statement, but when all statements were applied, it produced a contradiction. Therefore, someone is lying, maybe even unintentionally.[/font]
-                  [center][nextposition=0,768][font=default][color=Firebrick]- Find out who is lying.[/color][/font]
+                  [center][nextposition=0,576][font=default]    - Four people were unaccounted for at the time of the attack.[/font][/center]
+                  [center][nextposition=0,640][font=default]- Each suspect provided a statement, but when all statements were applied, it produced a contradiction. Therefore, someone is lying, maybe even unintentionally.[/font][/center]
+                  [center][nextposition=0,768][font=default][color=Firebrick]- Find out who is lying.[/color][/font][/center]
                   [center][nextposition=0,816][font=dialogue]Possibilities[/font][/center]
-                  [center][nextposition=0,864][font=default]    - Locations: Forbidden Forest Centaur Camp, Hogsmeade Station, Hogsmeade Village, Hogwarts Valley.[/font]
-                  [center][nextposition=0,968][font=default]    - Weapons: Ancient Magic Book, Creature Part, Potion, Wand.[/font]
-                  [center][nextposition=0,1040][font=default]   - Motives: Revenge, To Hide A Secret, To Protect, To Prove Oneself.[/font]
+                  [center][nextposition=0,864][font=default]    - Locations: Forbidden Forest Centaur Camp, Hogsmeade Station, Hogsmeade Village, Hogwarts Valley.[/font][/center]
+                  [center][nextposition=0,968][font=default]    - Weapons: Ancient Magic Book, Creature Part, Potion, Wand.[/font][/center]
+                  [center][nextposition=0,1040][font=default]   - Motives: Revenge, To Hide A Secret, To Protect, To Prove Oneself.[/font][/center]
                   [center][nextposition=0,1104][font=dialogue]Clues From The Time Of Attack[/font][/center]
-                  [center][nextposition=0,1152][font=default]       - Either someone who wanted to protect was at Hogwarts Valley, or the Ancient Magic Book was at Hogwarts Valley. Not both.[/font]
-                  [center][nextposition=0,1248][font=default]   - Whoever would attack for revenge was not a student.[/font]
-                  [if=PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageWandClue Received][nextposition=0,1310][font=default]- [color=Firebrick]Updated[/color]: a wand [color=Firebrick]WAS[/color] discovered at Hogsmeade Village.[/font][/if]
-                  [else][nextposition=0,1310][font=default]- A wand was not discovered at Hogsmeade Village.[/font][/else]
-                  [if=PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeStationPotionClue Received][nextposition=0,1374][font=default]- A Potion was discovered at Hogsmeade Station.[/font][/if]
-                  [else][nextposition=0,1374][font=default][/font][/else]"
+                  [center][nextposition=0,1152][font=default]       - Either someone who wanted to protect was at Hogwarts Valley, or the Ancient Magic Book was at Hogwarts Valley. Not both.[/font][/center]
+                  [center][nextposition=0,1248][font=default]   - Whoever would attack for revenge was not a student.[/font][/center]
+                  [center][if=PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeVillageWandClue Received][nextposition=0,1310][font=default]- [color=Firebrick]Updated[/color]: a wand [color=Firebrick]WAS[/color] discovered at Hogsmeade Village.[/font][/if]
+                  [else][nextposition=0,1310][font=default]- A wand was not discovered at Hogsmeade Village.[/font][/else][/center]
+                  [center][if=PLAYER_HAS_MAIL Current {{ModId}}_HogsmeadeStationPotionClue Received][nextposition=0,1374][font=default]- A Potion was discovered at Hogsmeade Station.[/font][/if]
+                  [else][nextposition=0,1374][font=default][/font][/else][/center]"
                 }
               ]
             },
@@ -122,22 +123,22 @@
                   "Id": "Andrew",
                   "Contents": "[center][font=dialogue]Andrew[/font][/center]
                   [nospacing][nextposition=128,48][image=Portraits/HogwartsAndrew:0,0,64,64:3][nextposition=320,48][image=Characters/HogwartsAndrew:0,0,16,32:6][/nospacing]
-                  [center][nextposition=0,256][font=default]Status: Student[/font]
-                  [center][nextposition=0,288][font=default]House: Ravenclaw[/font]
-                  [center][nextposition=0,320][font=default]Residence: Hogwarts[/font]
-                  [center][nextposition=0,352][font=default][/font]
+                  [center][nextposition=0,256][font=default]Status: Student[/font][/center]
+                  [center][nextposition=0,288][font=default]House: Ravenclaw[/font][/center]
+                  [center][nextposition=0,320][font=default]Residence: Hogwarts[/font][/center]
+                  [center][nextposition=0,352][font=default][/font][/center]
                   [center][nextposition=0,416][font=dialogue][color=Firebrick]  Unverified Statement From Questioning[/color][/font][/center]
                   [center][nextposition=0,512][font=default][color=Firebrick]Ollivander brought a wand.[/color][/font][/center]
                   [center][nextposition=0,576][font=dialogue]Revealed Evidence:[/font][/center]
-                  [if=PLAYER_HAS_MAIL Current {{ModId}}_AndrewForbiddenForestClue Received][nextposition=0,640][font=default]Andrew was not at the Forbidden Forest.[/font][/if]
-                  [else][nextposition=0,640][font=default][/font][/else]"
+                  [center][if=PLAYER_HAS_MAIL Current {{ModId}}_AndrewForbiddenForestClue Received][nextposition=0,640][font=default]Andrew was not at the Forbidden Forest.[/font][/if]
+                  [else][nextposition=0,640][font=default][/font][/else][/center]"
                 },
                 {
                   "Id": "Garrick Ollivander",
                   "Contents": "[center][font=dialogue]Garrick Ollivander[/font][/center]
                   [nospacing][nextposition=128,48][image=Portraits/HogwartsOllivander:0,0,64,64:3][nextposition=320,48][image=Characters/HogwartsOllivander:0,0,16,32:6][/nospacing]
-                  [center][nextposition=0,256][font=default]Status: Shopkeeper[/font]
-                  [center][nextposition=0,288][font=default]Residence: Hogsmeade Village[/font]
+                  [center][nextposition=0,256][font=default]Status: Shopkeeper[/font][/center]
+                  [center][nextposition=0,288][font=default]Residence: Hogsmeade Village[/font][/center]
                   [center][nextposition=0,320][font=default][/font][/center]
                   [center][nextposition=0,384][color=Firebrick][font=dialogue]  Unverified Statement From Questioning[/color][/font][/center]
                   [center][nextposition=0,480][color=Firebrick][font=default]   The person with the creature part wanted to hide a secret.[/color][/font][/center]
@@ -147,14 +148,14 @@
                   "Id": "M. Rasmodius",
                   "Contents": "[center][font=dialogue]M. Rasmodius[/font][/center]
                   [nospacing][nextposition=128,48][image=Portraits/Wizard:0,0,64,64:3][nextposition=320,48][image=Characters/Wizard:0,0,16,32:6][/nospacing]
-                  [center][nextposition=0,256][font=default]Status: Stationed Wizard[/font]
-                  [center][nextposition=0,288][font=default]Residence: Stardew Valley[/font]
-                  [center][nextposition=0,320][font=default][/font]
+                  [center][nextposition=0,256][font=default]Status: Stationed Wizard[/font][/center]
+                  [center][nextposition=0,288][font=default]Residence: Stardew Valley[/font][/center]
+                  [center][nextposition=0,320][font=default][/font][/center]
                   [center][nextposition=0,384][color=Firebrick][font=dialogue]  Unverified Statement From Questioning[/color][/font][/center]
                   [center][nextposition=0,480][color=Firebrick][font=default]I brought a creature part.[/color][/font][/center]
                   [center][nextposition=0,544][font=dialogue]Revealed Evidence:[/font][/center]
-                  [if=PLAYER_HAS_MAIL Current {{ModId}}_WizardHouseProveClue Received][nextposition=0,608][font=default]M. Rasmodius did not want to prove himself.[/font][/if]
-                  [else][nextposition=0,608][font=default][/font][/else]"
+                  [center][if=PLAYER_HAS_MAIL Current {{ModId}}_WizardHouseProveClue Received][nextposition=0,608][font=default]M. Rasmodius did not want to prove himself.[/font][/if]
+                  [else][nextposition=0,608][font=default][/font][/else][/center]"
                 },
                 {
                   "Id": "Suryawati",
@@ -197,11 +198,11 @@
                   [nextposition=64,344][font=default]To Protect[/font][nextposition=410,344][font=default]Hogwarts V-[/font]
                   [nextposition=13,370][font=default]To Prove One-[/font][nextposition=422,370][font=default]F- Forest[/font]
                   [nextposition=28,396][font=default]To Hide A S-[/font][nextposition=432,396][font=default]H- Station[/font]
-                  [center][nextposition=0,524][font=default]      - Not every information is needed to solve the case. With enough information, the solution can be deduced.[/font]
-                  [center][nextposition=0,620][font=default]     - Test each suspect's statement by assuming their statement is a lie, while assuming everyone else's statements are true.[/font]
-                  [center][nextposition=0,720][font=default]     - If there is a contradiction, then that suspect was telling the truth.[/font]
-                  [center][nextposition=0,792][font=default]     - Revelio charm may be used to discover more evidence.[/font]
-                  [center][nextposition=0,856][font=default]     - However, traces from the Revelio charm are stronger when the spellcaster knows the suspect.[/font]
+                  [center][nextposition=0,524][font=default]      - Not every information is needed to solve the case. With enough information, the solution can be deduced.[/font][/center]
+                  [center][nextposition=0,620][font=default]     - Test each suspect's statement by assuming their statement is a lie, while assuming everyone else's statements are true.[/font][/center]
+                  [center][nextposition=0,720][font=default]     - If there is a contradiction, then that suspect was telling the truth.[/font][/center]
+                  [center][nextposition=0,792][font=default]     - Revelio charm may be used to discover more evidence.[/font][/center]
+                  [center][nextposition=0,856][font=default]     - However, traces from the Revelio charm are stronger when the spellcaster knows the suspect.[/font][/center]
                   [center][nextposition=0,952][font=default]I need your help.[/font][/center]
                   [center][nextposition=0,984][font=default]- Professor Granger[/font][/center]"
                 }
