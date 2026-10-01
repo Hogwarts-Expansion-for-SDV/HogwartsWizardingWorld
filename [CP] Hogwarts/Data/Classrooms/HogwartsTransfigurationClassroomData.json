@@ -7,7 +7,7 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 20,
+            "X": 8,
             "Y": 21
           },
           "Layer": "Back",
@@ -17,7 +17,7 @@
         },
         {
           "Position": {
-            "X": 21,
+            "X": 9,
             "Y": 21
           },
           "Layer": "Back",
@@ -26,6 +26,53 @@
           }
         }
       ]
+    },
+    //Door Texture replacement
+    {
+      "LogName": "TransfigurationClassroomDoor - Animation1",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
+      "PatchMode": "Replace",
+      "FromArea": {
+        "X": 192,
+        "Y": 48,
+        "Width": 64,
+        "Height": 48
+      },
+      "ToArea": {
+        "X": 512,
+        "Y": 144,
+        "Width": 64,
+        "Height": 48
+      },
+      "When": {
+        "LocationName": "{{ModId}}_HogwartsTransfigurationClassroom"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "TransfigurationClassroomDoor - TileReplace1",
+      "Action": "EditImage",
+      "Target": "Maps/townInterior",
+      "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
+      "PatchMode": "Replace",
+      "FromArea": {
+        "X": 192,
+        "Y": 48,
+        "Width": 16,
+        "Height": 48
+      },
+      "ToArea": {
+        "X": 384,
+        "Y": 16,
+        "Width": 16,
+        "Height": 48
+      },
+      "When": {
+        "LocationName": "{{ModId}}_HogwartsTransfigurationClassroom"
+      },
+      "Update": "OnLocationChange"
     }
   ]
 }
