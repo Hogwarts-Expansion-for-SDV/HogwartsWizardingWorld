@@ -22,7 +22,7 @@
       "LogName": "Hogwarts Suryawati Unicorn2 Load",
       "Action": "Load",
       "Target": "Characters/Monsters/{{ModId}}_Unicorn2",
-      "FromFile": "assets/Creatures/Unicorn.png"
+      "FromFile": "assets/Creatures/UnicornSunBurst.png"
     },
     {
       "LogName": "Hogwarts Willow Load",
@@ -393,11 +393,11 @@
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogwartsTransfigurationClassroom",
       "Entries": {
-        "{{ModId}}_ChapterOne.3/e {{ModId}}_ChapterOne.2/t 1300 1800": "none/6 9/farmer 8 14 0 HogwartsHermione 8 5 2/skippable/animate HogwartsHermione false true 200 16 17 16 17 16/pause 1000/move farmer 0 -3 0 true/pause 1000/speak HogwartsHermione \"Ah, there you are.\"/pause 250/question null \"#Did you summon me, professor?\"/
-        pause 500/stopAnimation HogwartsHermione 0/pause 250/speak HogwartsHermione \"Yes. I have some questions for you, @\"/pause 800/move HogwartsHermione 0 4 2/move HogwartsHermione -2 0 3/pause 100/faceDirection HogwartsHermione 2/pause 250/speak HogwartsHermione \"...Do you recognise these people?\"/pause 100/viewport move 0 2 1500 true/
-        move farmer -2 0 3/faceDirection farmer 0/showFrame HogwartsHermione 22/pause 1000/jump farmer/pause 1000/question null \"#I know them all.\"/pause 100/speak HogwartsHermione \"I've seen you interact with all of them.\"/pause 250/emote farmer 8/pause 500/stopAnimation HogwartsHermione 0/animate HogwartsHermione false true 250 18 19/speak HogwartsHermione \"...From each of their testimonies, one is contradicting. #$b# Moreover, any evidence appears to be deliberately concealed.\"/
+        "{{ModId}}_ChapterOne.3/e {{ModId}}_ChapterOne.2/t 1300 1800": "none/999 999/farmer 21 15 0 HogwartsHermione 26 6 2/skippable/animate HogwartsHermione false true 200 16 17 16 17 16/pause 1000/playSound woodyStep/pause 600/playSound woodyStep/pause 1000/playSound doorCreak/pause 1500/viewport 23 9 true/playMusic movieTheater/move farmer 0 -4 0 true/pause 1000/speak HogwartsHermione \"Ah, there you are.\"/pause 500/faceDirection farmer 1/question null \"#Did you summon me, professor?\"/
+        pause 500/stopAnimation HogwartsHermione 0/pause 250/speak HogwartsHermione \"Yes. I have some questions for you, @\"/pause 800/move HogwartsHermione 0 3 2/move HogwartsHermione -3 0 3/pause 100/faceDirection HogwartsHermione 2/pause 250/speak HogwartsHermione \"...Do you recognise these people?\"/pause 100/viewport move 0 2 1500 true/
+        move farmer 2 0 3/faceDirection farmer 0/showFrame HogwartsHermione 22/pause 1000/jump farmer/pause 1000/question null \"#I know them all.\"/pause 100/speak HogwartsHermione \"I've seen you interact with all of them.\"/pause 250/emote farmer 8/pause 500/stopAnimation HogwartsHermione 0/animate HogwartsHermione false true 250 18 19/speak HogwartsHermione \"...From each of their testimonies, one is contradicting. #$b# Moreover, any evidence appears to be deliberately concealed.\"/
         pause 500/stopAnimation HogwartsHermione 0/pause 250/faceDirection HogwartsHermione 1/pause 500/speak HogwartsHermione \"Thus, I cannot complete my investigation without jeopardizing someone's innocence. #$b# You on the other hand... have unique circumstance.\"/pause 500/emote farmer 8/pause 1000/move HogwartsHermione -1 0 3/move HogwartsHermione 0 2 2/faceDirection HogwartsHermione 1/faceDirection farmer 3/
-        pause 200/speak HogwartsHermione \"@, I need your help.\"/pause 500/question null \"#You want me to gather information about them?\"/pause 500/speak HogwartsHermione \"Understand that what you are doing cannot be told to anyone. #$b# Do you understand what I'm asking you to do, @?\"/pause 1000/emote farmer 28/pause 1000/globalFade/viewport 999 999/playSound reward/message \"You acquired the Emergent Wizard Case Notes.\"/addItem {{ModId}}_EmergentWizardCaseFilesGuidebook 1/end"
+        pause 200/speak HogwartsHermione \"@, I need your help.\"/pause 500/question null \"#You want me to gather information about them?\"/pause 500/speak HogwartsHermione \"Understand that what you are doing cannot be told to anyone. #$b# Do you understand what I'm asking you to do, @?\"/pause 1000/emote farmer 28/pause 1000/globalFade/viewport 999 999/stopMusic/pause 500/playSound reward/message \"You acquired the Emergent Wizard Case Notes.\"/addItem {{ModId}}_EmergentWizardCaseFilesGuidebook 1/end"
       }
   },
   {
