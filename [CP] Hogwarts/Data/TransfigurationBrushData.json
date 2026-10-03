@@ -1,0 +1,706 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Transfiguration Brush Image Load",
+      "Action": "Load",
+      "Target": "{{ModId}}/TransfigurationBrushes",
+      "FromFile": "assets/Objects/Brushes.png"
+    },
+    {
+      "LogName": "Hogwarts Transfiguration Brush Trigger Actions",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_BrushBowtruckleBlue": {
+          "Id": "{{ModId}}_BrushBowtruckleBlue",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushBowtruckleBlue",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushBowtruckleBlue Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushBowtruckleBrown": {
+          "Id": "{{ModId}}_BrushBowtruckleBrown",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushBowtruckleBrown",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushBowtruckleBrown Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushBowtruckleBrownLeaf": {
+          "Id": "{{ModId}}_BrushBowtruckleBrownLeaf",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushBowtruckleBrownLeaf",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushBowtruckleBrownLeaf Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushBowtruckleGreen": {
+          "Id": "{{ModId}}_BrushBowtruckleGreen",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushBowtruckleGreen",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushBowtruckleGreen Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushCrupBrown": {
+          "Id": "{{ModId}}_BrushCrupBrown",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushCrupBrown",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushCrupBrown Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushCrupGrey": {
+          "Id": "{{ModId}}_BrushCrupGrey",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushCrupGrey",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushCrupGrey Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushDragonToadRed": {
+          "Id": "{{ModId}}_BrushDragonToadRed",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushDragonToadRed",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushDragonToadRed Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushDragonToadYellow": {
+          "Id": "{{ModId}}_BrushDragonToadYellow",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushDragonToadYellow",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushDragonToadYellow Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushFwooperShiny": {
+          "Id": "{{ModId}}_BrushFwooperShiny",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushFwooperShiny",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushFwooperShiny Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushGriffinGold": {
+          "Id": "{{ModId}}_BrushGriffinGold",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushGriffinGold",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushGriffinGold Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushGriffinWhite": {
+          "Id": "{{ModId}}_BrushGriffinWhite",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushGriffinWhite",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushGriffinWhite Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushHippogriffBlack": {
+          "Id": "{{ModId}}_BrushHippogriffBlack",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushHippogriffBlack",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushHippogriffBlack Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushHippogriffBrown": {
+          "Id": "{{ModId}}_BrushHippogriffBrown",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushHippogriffBrown",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushHippogriffBrown Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushHippogriffRed": {
+          "Id": "{{ModId}}_BrushHippogriffRed",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushHippogriffRed",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushHippogriffRed Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushHippogriffWhite": {
+          "Id": "{{ModId}}_BrushHippogriffWhite",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushHippogriffWhite",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushHippogriffWhite Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushKneazleBlonde": {
+          "Id": "{{ModId}}_BrushKneazleBlonde",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushKneazleBlonde",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushKneazleBlonde Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushKneazleGrey": {
+          "Id": "{{ModId}}_BrushKneazleGrey",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushKneazleGrey",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushKneazleGrey Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushMooncalfBlue": {
+          "Id": "{{ModId}}_BrushMooncalfBlue",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushMooncalfBlue",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushMooncalfBlue Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushMooncalfOrange": {
+          "Id": "{{ModId}}_BrushMooncalfOrange",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushMooncalfOrange",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushMooncalfOrange Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushMooncalfYellow": {
+          "Id": "{{ModId}}_BrushMooncalfYellow",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushMooncalfYellow",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushMooncalfYellow Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushNifflerBlack": {
+          "Id": "{{ModId}}_BrushNifflerBlack",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushNifflerBlack",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushNifflerBlack Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushNifflerWhite": {
+          "Id": "{{ModId}}_BrushNifflerWhite",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushNifflerWhite",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushNifflerWhite Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushOccamyBlue": {
+          "Id": "{{ModId}}_BrushOccamyBlue",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushOccamyBlue",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushOccamyBlue Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushPygmyPuffPurple": {
+          "Id": "{{ModId}}_BrushPygmyPuffPurple",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushPygmyPuffPurple",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushPygmyPuffPurple Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushUnicornSunburst": {
+          "Id": "{{ModId}}_BrushUnicornSunburst",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushUnicornSunburst",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushUnicornSunburst Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushUnicornGlow": {
+          "Id": "{{ModId}}_BrushUnicornGlow",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushUnicornGlow",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushUnicornGlow Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushUnicornGolden": {
+          "Id": "{{ModId}}_BrushUnicornGolden",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushUnicornGolden",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushUnicornGolden Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushUnicornRainbow": {
+          "Id": "{{ModId}}_BrushUnicornRainbow",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushUnicornRainbow",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushUnicornRainbow Received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_BrushUnicornWhite": {
+          "Id": "{{ModId}}_BrushUnicornWhite",
+          "Condition": "ITEM_ID Input {{ModId}}_BrushUnicornWhite",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddMail Current {{ModId}}_BrushUnicornWhite Received",
+          "MarkActionApplied": false
+        }
+      },
+      "When": {
+        "HasMod |contains= spacechase0.SpaceCore": true,
+        "HasMod |contains= Spiderbuttons.BETAS": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Transfiguration Brush ConsumeForTriggerAction",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+      "Entries": {
+        "{{ModId}}_BrushBowtruckleBlue": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushBowtruckleBrown": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushBowtruckleBrownLeaf": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushBowtruckleGreen": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushCrupBrown": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushCrupGrey": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushDragonToadRed": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushDragonToadYellow": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushFwooperShiny": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushGriffinGold": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushGriffinWhite": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushHippogriffBlack": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushHippogriffBrown": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushHippogriffRed": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushHippogriffWhite": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushKneazleBlonde": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushKneazleGrey": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushMooncalfBlue": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushMooncalfOrange": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushMooncalfYellow": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushNifflerBlack": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushNifflerWhite": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushOccamyBlue": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushPygmyPuffPurple": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushUnicornSunburst": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushUnicornGlow": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushUnicornGolden": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushUnicornRainbow": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
+        "{{ModId}}_BrushUnicornWhite": {
+          "UserForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        }
+      },
+      "When": {
+        "HasMod |contains= spacechase0.SpaceCore": true,
+        "HasMod |contains= Spiderbuttons.BETAS": true
+      }
+    },
+    {
+      "LogName": "Hogwarts Transfiguration Brush Objects",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_BrushBowtruckleBlue": {
+          "Name": "{{ModId}}_BrushBowtruckleBlue",
+          "DisplayName": "Bowtruckle Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 16,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushBowtruckleBrown": {
+          "Name": "{{ModId}}_BrushBowtruckleBrown",
+          "DisplayName": "Bowtruckle Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 27,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushBowtruckleBrownLeaf": {
+          "Name": "{{ModId}}_BrushBowtruckleBrownLeaf",
+          "DisplayName": "Bowtruckle Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 11,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushBowtruckleGreen": {
+          "Name": "{{ModId}}_BrushBowtruckleGreen",
+          "DisplayName": "Bowtruckle Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 10,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushCrupBrown": {
+          "Name": "{{ModId}}_BrushCrupBrown",
+          "DisplayName": "Crup Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 25,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushCrupGrey": {
+          "Name": "{{ModId}}_BrushCrupGrey",
+          "DisplayName": "Crup Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 24,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushDragonToadRed": {
+          "Name": "{{ModId}}_BrushDragonToadRed",
+          "DisplayName": "Dragon Toad Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 23,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushDragonToadYellow": {
+          "Name": "{{ModId}}_BrushDragonToadYellow",
+          "DisplayName": "Dragon Toad Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 2,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushFwooperShiny": {
+          "Name": "{{ModId}}_BrushFwooperShiny",
+          "DisplayName": "Fwooper Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 20,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushGriffinGold": {
+          "Name": "{{ModId}}_BrushGriffinGold",
+          "DisplayName": "Griffin Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 2,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushGriffinWhite": {
+          "Name": "{{ModId}}_BrushGriffinWhite",
+          "DisplayName": "Griffin Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 24,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushHippogriffBlack": {
+          "Name": "{{ModId}}_BrushHippogriffBlack",
+          "DisplayName": "Hippogriff Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 26,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushHippogriffBrown": {
+          "Name": "{{ModId}}_BrushHippogriffBrown",
+          "DisplayName": "Hippogriff Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 25,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushHippogriffRed": {
+          "Name": "{{ModId}}_BrushHippogriffRed",
+          "DisplayName": "Hippogriff Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 20,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushHippogriffWhite": {
+          "Name": "{{ModId}}_BrushHippogriffWhite",
+          "DisplayName": "Hippogriff Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 0,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushKneazleBlonde": {
+          "Name": "{{ModId}}_BrushKneazleBlonde",
+          "DisplayName": "Kneazle Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 1,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushKneazleGrey": {
+          "Name": "{{ModId}}_BrushKneazleGrey",
+          "DisplayName": "Kneazle Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 24,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushMooncalfBlue": {
+          "Name": "{{ModId}}_BrushMooncalfBlue",
+          "DisplayName": "Mooncalf Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 16,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushMooncalfOrange": {
+          "Name": "{{ModId}}_BrushMooncalfOrange",
+          "DisplayName": "Mooncalf Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 3,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushMooncalfYellow": {
+          "Name": "{{ModId}}_BrushMooncalfYellow",
+          "DisplayName": "Mooncalf Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 1,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushNifflerBlack": {
+          "Name": "{{ModId}}_BrushNifflerBlack",
+          "DisplayName": "Niffler Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 26,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushNifflerWhite": {
+          "Name": "{{ModId}}_BrushNifflerWhite",
+          "DisplayName": "Niffler Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 0,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushOccamyBlue": {
+          "Name": "{{ModId}}_BrushOccamyBlue",
+          "DisplayName": "Occamy Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 7,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushPygmyPuffPurple": {
+          "Name": "{{ModId}}_BrushPygmyPuffPurple",
+          "DisplayName": "Pygmy Puff Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 5,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushUnicornSunburst": {
+          "Name": "{{ModId}}_BrushUnicornSunburst",
+          "DisplayName": "Unicorn Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 22,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushUnicornGlow": {
+          "Name": "{{ModId}}_BrushUnicornGlow",
+          "DisplayName": "Unicorn Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 8,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushUnicornGolden": {
+          "Name": "{{ModId}}_BrushUnicornGolden",
+          "DisplayName": "Unicorn Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 3,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushUnicornRainbow": {
+          "Name": "{{ModId}}_BrushUnicornRainbow",
+          "DisplayName": "Unicorn Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 6,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        },
+        "{{ModId}}_BrushUnicornWhite": {
+          "Name": "{{ModId}}_BrushUnicornWhite",
+          "DisplayName": "Unicorn Transfiguration Brush",
+          "Description": "Use this brush to transfigure the creature to a different color in the vivarium.",
+          "Texture": "{{ModId}}/TransfigurationBrushes",
+          "SpriteIndex": 0,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_TransfigurationBrush"
+          ]
+        }
+      }
+    }
+  ]
+}

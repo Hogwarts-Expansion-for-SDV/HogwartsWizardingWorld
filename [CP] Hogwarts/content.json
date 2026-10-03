@@ -25,7 +25,7 @@
     },
     {
       "Name": "Creature",
-      "Value": "Abraxan, Ashwinder, AshwinderBlack, AshwinderGrey, Bicorn, Bowtruckle, BowtruckleBlue, BowtruckleBrown, BowtruckleBrownLeaf, BowtruckleGreen, Crup, CrupBrown, CrupGrey, DragonToadOrange, DragonToadRed, DragonToadYellow, Dugbog, DugbogBlue, DugbogBrown, DugbogGreen, FireCrabAmethyst, FireCrabAquamarine, FireCrabDiamond, FireCrabEmerald, FireCrabRuby, FireCrabTopaz, FwooperBlue, FwooperGreen, FwooperPink, FwooperShiny, FwooperYellow, Granian, GriffinBrown, GriffinGold, GriffinWhite, HippogriffBlack, HippogriffBrown, HippogriffGrey, HippogriffRed, HippogriffWhite, KneazleBlonde, KneazleBrown, KneazleGrey, Mooncalf, MooncalfBlue, MooncalfOrange, MooncalfYellow, OccamyBlue, OccamyTeal, Thestral, Unicorn, UnicornCommon, UnicornGlowing, UnicornGolden, UnicornRainbow, UnicornWhite"
+      "Value": "Abraxan, Bicorn, Bowtruckle, Crup, DragonToadOrange, Dugbog, FireCrabAmethyst, FireCrabAquamarine, FireCrabDiamond, FireCrabEmerald, FireCrabRuby, FireCrabTopaz, FwooperBlue, FwooperGreen, FwooperPink, FwooperYellow, Granian, GriffinBrown, HippogriffBrown, KneazleBrown, Mooncalf, OccamyBlue, Thestral, Unicorn"
     },
     {
       "Name": "Direction",
@@ -1573,7 +1573,22 @@
       "When": {
         "HasFlag |contains= {{ModId}}_CreatureSaved3": true
       }
-    }
+    },
+    // Transfiguration Brushes
+    {
+      "Name": "BowtruckleBlue",
+      "Value": "BowtruckleBlue",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushBowtruckleBlue": true
+      }
+    },
+    {
+      "Name": "BowtruckleBlue",
+      "Value": "Bowtruckle",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushBowtruckleBlue": false
+      }
+    },
   ],
   "Changes": [
     {
