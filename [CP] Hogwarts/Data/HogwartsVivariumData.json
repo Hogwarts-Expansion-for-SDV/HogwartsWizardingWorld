@@ -138,13 +138,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.BowtruckleBlue"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{BowtruckleBlue}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_BowtruckleBlue1"
+        "HasFlag": "{{ModId}}_Bowtruckle1"
       }
     },
     {
@@ -159,13 +159,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.BowtruckleBrown"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{BowtruckleBrown}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_BowtruckleBrown1"
+        "HasFlag": "{{ModId}}_Bowtruckle1"
       }
     },
     {
@@ -180,13 +180,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.BowtruckleBrownLeaf"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{BowtruckleBrownLeaf}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_BowtruckleBrownLeaf1"
+        "HasFlag": "{{ModId}}_Bowtruckle1"
       }
     },
     {
@@ -201,13 +201,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.BowtruckleGreen"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{BowtruckleGreen}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_BowtruckleGreen1"
+        "HasFlag": "{{ModId}}_Bowtruckle1"
       }
     },
     {
@@ -243,13 +243,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.CrupBrown"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{CrupBrown}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_CrupBrown1"
+        "HasFlag": "{{ModId}}_Crup1"
       }
     },
     {
@@ -264,13 +264,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.CrupGrey"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{CrupGrey}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_CrupGrey1"
+        "HasFlag": "{{ModId}}_Crup1"
       }
     },
     {
@@ -306,13 +306,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.DragonToadRed"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{DragonToadRed}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_DragonToadRed1"
+        "HasFlag": "{{ModId}}_DragonToadOrange1"
       }
     },
     {
@@ -327,13 +327,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.DragonToadYellow"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{DragonToadYellow}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_DragonToadYellow1"
+        "HasFlag": "{{ModId}}_DragonToadOrange1"
       }
     },
     {
@@ -627,7 +627,8 @@
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_FwooperShiny2"
+        "HasFlag |contains= {{ModId}}_FwooperBlue2, {{ModId}}_FwooperGreen2, {{ModId}}_FwooperPink2, {{ModId}}_FwooperYellow2": true,
+        "HasFlag |contains= {{ModId}}_BrushFwooperShiny": true
       }
     },
     {
@@ -732,7 +733,8 @@
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_FwooperShiny1"
+        "HasFlag |contains= {{ModId}}_FwooperBlue1, {{ModId}}_FwooperGreen1, {{ModId}}_FwooperPink1, {{ModId}}_FwooperYellow1": true,
+        "HasFlag |contains= {{ModId}}_BrushFwooperShiny": true
       }
     },
     {
@@ -810,13 +812,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.GriffinBabyGold"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{GriffinBabyGold}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_GriffinGold2"
+        "HasFlag": "{{ModId}}_GriffinBrown2"
       }
     },
     {
@@ -831,13 +833,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.GriffinBabyWhite"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{GriffinBabyWhite}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_GriffinWhite2"
+        "HasFlag": "{{ModId}}_GriffinBrown2"
       }
     },
     {
@@ -873,13 +875,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.GriffinGold"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{GriffinGold}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_GriffinGold1"
+        "HasFlag": "{{ModId}}_GriffinBrown1"
       }
     },
     {
@@ -894,13 +896,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.GriffinWhite"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{GriffinWhite}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_GriffinWhite1"
+        "HasFlag": "{{ModId}}_GriffinBrown1"
       }
     },
     {
@@ -1020,13 +1022,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.HippogriffBlack"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{HippogriffBlack}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_HippogriffBlack1"
+        "HasFlag": "{{ModId}}_HippogriffBrown1"
       }
     },
     {
@@ -1062,13 +1064,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.HippogriffGrey"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{HippogriffGrey}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_HippogriffGrey1"
+        "HasFlag": "{{ModId}}_HippogriffBrown1"
       }
     },
     {
@@ -1083,13 +1085,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.HippogriffRed"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{HippogriffRed}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_HippogriffRed1"
+        "HasFlag": "{{ModId}}_HippogriffBrown1"
       }
     },
     {
@@ -1104,13 +1106,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.HippogriffWhite"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{HippogriffWhite}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_HippogriffWhite1"
+        "HasFlag": "{{ModId}}_HippogriffBrown1"
       }
     },
     {
@@ -1125,13 +1127,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.KneazleBlonde"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{KneazleBlonde}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_KneazleBlonde1"
+        "HasFlag": "{{ModId}}_KneazleBrown1"
       }
     },
     {
@@ -1167,13 +1169,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.KneazleGrey"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{KneazleGrey}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_KneazleGrey1"
+        "HasFlag": "{{ModId}}_KneazleBrown1"
       }
     },
     {
@@ -1209,13 +1211,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.MooncalfBlue"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{MooncalfBlue}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_MooncalfBlue1"
+        "HasFlag": "{{ModId}}_Mooncalf1"
       }
     },
     {
@@ -1230,13 +1232,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.MooncalfOrange"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{MooncalfOrange}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_MooncalfOrange1"
+        "HasFlag": "{{ModId}}_Mooncalf1"
       }
     },
     {
@@ -1251,13 +1253,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.MooncalfYellow"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{MooncalfYellow}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_MooncalfYellow1"
+        "HasFlag": "{{ModId}}_Mooncalf1"
       }
     },
     {
@@ -1272,13 +1274,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.NifflerBlack"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{NifflerBlack}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_NifflerBlack1"
+        "HasFlag": "{{ModId}}_NifflerBrown1"
       }
     },
     {
@@ -1314,13 +1316,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.NifflerWhite"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{NifflerWhite}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_NifflerWhite1"
+        "HasFlag": "{{ModId}}_NifflerBrown1"
       }
     },
     {
@@ -1356,13 +1358,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.OccamyBabyTeal"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{OccamyBabyTeal}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_OccamyTeal2"
+        "HasFlag": "{{ModId}}_OccamyBlue2"
       }
     },
     {
@@ -1398,13 +1400,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.OccamyTeal"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{OccamyTeal}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_OccamyTeal1"
+        "HasFlag": "{{ModId}}_OccamyBlue1"
       }
     },
     {
@@ -1461,13 +1463,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.PygmyPuffPink"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{PygmyPuffPink}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_PygmyPuffPink1"
+        "HasFlag": "{{ModId}}_PygmyPuffPurple1"
       }
     },
     {
@@ -1524,13 +1526,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.UnicornSunburst"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{UnicornSunburst}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_Unicorn1"
+        "HasFlag": "{{ModId}}_UnicornCommon1"
       }
     },
     {
@@ -1555,7 +1557,7 @@
       }
     },
     {
-      "LogName": "Vivarium UnicornGlowing1",
+      "LogName": "Vivarium UnicornGlow1",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsVivarium",
       "MapTiles": [
@@ -1566,13 +1568,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.UnicornGlowing"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{UnicornGlow}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_UnicornGlowing1"
+        "HasFlag": "{{ModId}}_UnicornCommon1"
       }
     },
     {
@@ -1587,13 +1589,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.UnicornGolden"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{UnicornGolden}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_UnicornGolden1"
+        "HasFlag": "{{ModId}}_UnicornCommon1"
       }
     },
     {
@@ -1608,13 +1610,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.UnicornRainbow"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{UnicornRainbow}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_UnicornRainbow1"
+        "HasFlag": "{{ModId}}_UnicornCommon1"
       }
     },
     {
@@ -1629,13 +1631,13 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "CustomCompanions": "Spawn 1 HogwartsET.CC.UnicornWhite"
+            "CustomCompanions": "Spawn 1 HogwartsET.CC.{{UnicornWhite}}"
           }
         }
       ],
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true,
-        "HasFlag": "{{ModId}}_UnicornWhite1"
+        "HasFlag": "{{ModId}}_UnicornCommon1"
       }
     },
     {

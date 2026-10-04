@@ -25,7 +25,7 @@
     },
     {
       "Name": "Creature",
-      "Value": "Abraxan, Bicorn, Bowtruckle, Crup, DragonToadOrange, Dugbog, FireCrabAmethyst, FireCrabAquamarine, FireCrabDiamond, FireCrabEmerald, FireCrabRuby, FireCrabTopaz, FwooperBlue, FwooperGreen, FwooperPink, FwooperYellow, Granian, GriffinBrown, HippogriffBrown, KneazleBrown, Mooncalf, OccamyBlue, Thestral, Unicorn"
+      "Value": "Abraxan, Bicorn, Bowtruckle, Crup, DragonToadOrange, FireCrabAmethyst, FireCrabAquamarine, FireCrabDiamond, FireCrabEmerald, FireCrabRuby, FireCrabTopaz, FwooperBlue, FwooperGreen, FwooperPink, FwooperYellow, Granian, GriffinBrown, HippogriffBrown, KneazleBrown, Mooncalf, OccamyBlue, Thestral, Unicorn"
     },
     {
       "Name": "Direction",
@@ -1589,6 +1589,426 @@
         "HasFlag |contains= {{ModId}}_BrushBowtruckleBlue": false
       }
     },
+    {
+      "Name": "BowtruckleBrown",
+      "Value": "BowtruckleBrown",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushBowtruckleBrown": true
+      }
+    },
+    {
+      "Name": "BowtruckleBrown",
+      "Value": "Bowtruckle",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushBowtruckleBrown": false
+      }
+    },
+    {
+      "Name": "BowtruckleBrownLeaf",
+      "Value": "BowtruckleBrownLeaf",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushBowtruckleBrownLeaf": true
+      }
+    },
+    {
+      "Name": "BowtruckleBrownLeaf",
+      "Value": "Bowtruckle",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushBowtruckleBrownLeaf": false
+      }
+    },
+    {
+      "Name": "BowtruckleGreen",
+      "Value": "BowtruckleGreen",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushBowtruckleGreen": true
+      }
+    },
+    {
+      "Name": "BowtruckleGreen",
+      "Value": "Bowtruckle",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushBowtruckleGreen": false
+      }
+    },
+    {
+      "Name": "CrupBrown",
+      "Value": "CrupBrown",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushCrupBrown": true
+      }
+    },
+    {
+      "Name": "CrupBrown",
+      "Value": "Crup",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushCrupBrown": false
+      }
+    },
+    {
+      "Name": "CrupGrey",
+      "Value": "CrupGrey",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushCrupGrey": true
+      }
+    },
+    {
+      "Name": "CrupGrey",
+      "Value": "Crup",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushCrupGrey": false
+      }
+    },
+    {
+      "Name": "DragonToadRed",
+      "Value": "DragonToadRed",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushDragonToadRed": true
+      }
+    },
+    {
+      "Name": "DragonToadRed",
+      "Value": "DragonToadOrange",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushDragonToadRed": false
+      }
+    },
+    {
+      "Name": "DragonToadYellow",
+      "Value": "DragonToadYellow",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushDragonToadYellow": true
+      }
+    },
+    {
+      "Name": "DragonToadYellow",
+      "Value": "DragonToadOrange",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushDragonToadYellow": false
+      }
+    },
+    {
+      "Name": "GriffinGold",
+      "Value": "GriffinGold",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushGriffinGold": true
+      }
+    },
+    {
+      "Name": "GriffinGold",
+      "Value": "GriffinBrown",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushGriffinGold": false
+      }
+    },
+    {
+      "Name": "GriffinWhite",
+      "Value": "GriffinWhite",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushGriffinWhite": true
+      }
+    },
+    {
+      "Name": "GriffinWhite",
+      "Value": "GriffinBrown",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushGriffinWhite": false
+      }
+    },
+    {
+      "Name": "HippogriffBlack",
+      "Value": "HippogriffBlack",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushHippogriffBlack": true
+      }
+    },
+    {
+      "Name": "HippogriffBlack",
+      "Value": "HippogriffBrown",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushHippogriffBlack": false
+      }
+    },
+    {
+      "Name": "HippogriffGrey",
+      "Value": "HippogriffGrey",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushHippogriffGrey": true
+      }
+    },
+    {
+      "Name": "HippogriffGrey",
+      "Value": "HippogriffBrown",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushHippogriffGrey": false
+      }
+    },
+    {
+      "Name": "HippogriffRed",
+      "Value": "HippogriffRed",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushHippogriffRed": true
+      }
+    },
+    {
+      "Name": "HippogriffRed",
+      "Value": "HippogriffBrown",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushHippogriffRed": false
+      }
+    },
+    {
+      "Name": "HippogriffWhite",
+      "Value": "HippogriffWhite",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushHippogriffWhite": true
+      }
+    },
+    {
+      "Name": "HippogriffWhite",
+      "Value": "HippogriffBrown",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushHippogriffWhite": false
+      }
+    },
+    {
+      "Name": "KneazleBlonde",
+      "Value": "KneazleBlonde",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushKneazleBlonde": true
+      }
+    },
+    {
+      "Name": "KneazleBlonde",
+      "Value": "KneazleBrown",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushKneazleBlonde": false
+      }
+    },
+    {
+      "Name": "KneazleGrey",
+      "Value": "KneazleGrey",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushKneazleGrey": true
+      }
+    },
+    {
+      "Name": "KneazleGrey",
+      "Value": "KneazleBrown",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushKneazleGrey": false
+      }
+    },
+    {
+      "Name": "MooncalfBlue",
+      "Value": "MooncalfBlue",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushMooncalfBlue": true
+      }
+    },
+    {
+      "Name": "MooncalfBlue",
+      "Value": "Mooncalf",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushMooncalfBlue": false
+      }
+    },
+    {
+      "Name": "MooncalfOrange",
+      "Value": "MooncalfOrange",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushMooncalfOrange": true
+      }
+    },
+    {
+      "Name": "MooncalfOrange",
+      "Value": "Mooncalf",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushMooncalfOrange": false
+      }
+    },
+    {
+      "Name": "MooncalfYellow",
+      "Value": "MooncalfYellow",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushMooncalfYellow": true
+      }
+    },
+    {
+      "Name": "MooncalfYellow",
+      "Value": "Mooncalf",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushMooncalfYellow": false
+      }
+    },
+    {
+      "Name": "NifflerBlack",
+      "Value": "NifflerBlack",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushNifflerBlack": true
+      }
+    },
+    {
+      "Name": "NifflerBlack",
+      "Value": "NifflerBrown",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushNifflerBlack": false
+      }
+    },
+    {
+      "Name": "NifflerWhite",
+      "Value": "NifflerWhite",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushNifflerWhite": true
+      }
+    },
+    {
+      "Name": "NifflerWhite",
+      "Value": "NifflerBrown",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushNifflerWhite": false
+      }
+    },
+    {
+      "Name": "OccamyTeal",
+      "Value": "OccamyTeal",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushOccamyTeal": true
+      }
+    },
+    {
+      "Name": "OccamyTeal",
+      "Value": "OccamyBlue",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushOccamyTeal": false
+      }
+    },
+    {
+      "Name": "PygmyPuffPink",
+      "Value": "PygmyPuffPink",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushPygmyPuffPink": true
+      }
+    },
+    {
+      "Name": "PygmyPuffPink",
+      "Value": "PygmyPuffPurple",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushPygmyPuffPink": false
+      }
+    },
+    {
+      "Name": "UnicornSunburst",
+      "Value": "UnicornSunburst",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushUnicornSunburst": true
+      }
+    },
+    {
+      "Name": "UnicornSunburst",
+      "Value": "UnicornCommon",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushUnicornSunburst": false
+      }
+    },
+    {
+      "Name": "UnicornGlow",
+      "Value": "UnicornGlow",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushUnicornGlow": true
+      }
+    },
+    {
+      "Name": "UnicornGlow",
+      "Value": "UnicornCommon",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushUnicornGlow": false
+      }
+    },
+    {
+      "Name": "UnicornGolden",
+      "Value": "UnicornGolden",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushUnicornGolden": true
+      }
+    },
+    {
+      "Name": "UnicornGolden",
+      "Value": "UnicornCommon",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushUnicornGolden": false
+      }
+    },
+    {
+      "Name": "UnicornRainbow",
+      "Value": "UnicornRainbow",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushUnicornRainbow": true
+      }
+    },
+    {
+      "Name": "UnicornRainbow",
+      "Value": "UnicornCommon",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushUnicornRainbow": false
+      }
+    },
+    {
+      "Name": "UnicornWhite",
+      "Value": "UnicornWhite",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushUnicornWhite": true
+      }
+    },
+    {
+      "Name": "UnicornWhite",
+      "Value": "UnicornCommon",
+      "When": {
+        "HasFlag |contains= {{ModId}}_BrushUnicornWhite": false
+      }
+    },
+    {
+      "Name": "GriffinBabyGold",
+      "Value": "GriffinBabyGold",
+      "When": {
+        "HasFlag |contains= {{ModId}}_GriffinBabyGold": true
+      }
+    },
+    {
+      "Name": "GriffinBabyGold",
+      "Value": "GriffinBabyBrown",
+      "When": {
+        "HasFlag |contains= {{ModId}}_GriffinBabyGold": false
+      }
+    },
+    {
+      "Name": "GriffinBabyWhite",
+      "Value": "GriffinBabyWhite",
+      "When": {
+        "HasFlag |contains= {{ModId}}_GriffinBabyWhite": true
+      }
+    },
+    {
+      "Name": "GriffinBabyWhite",
+      "Value": "GriffinBabyBrown",
+      "When": {
+        "HasFlag |contains= {{ModId}}_GriffinBabyWhite": false
+      }
+    },
+    {
+      "Name": "OccamyBabyTeal",
+      "Value": "OccamyBabyTeal",
+      "When": {
+        "HasFlag |contains= {{ModId}}_OccamyBabyTeal": true
+      }
+    },
+    {
+      "Name": "OccamyBabyTeal",
+      "Value": "OccamyBabyBlue",
+      "When": {
+        "HasFlag |contains= {{ModId}}_OccamyBabyTeal": false
+      }
+    }
   ],
   "Changes": [
     {
