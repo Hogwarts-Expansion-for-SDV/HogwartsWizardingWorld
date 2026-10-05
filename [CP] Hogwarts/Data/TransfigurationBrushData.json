@@ -7,209 +7,528 @@
       "FromFile": "assets/Objects/Brushes.png"
     },
     {
-      "LogName": "Hogwarts Transfiguration Brush Trigger Actions",
+      "LogName": "Hogwarts Transfiguration Brush Trigger Actions", //FwooperShiny mail flag is unique. 
       "Action": "EditData",
       "Target": "Data/TriggerActions",
       "Entries": {
+        "{{ModId}}_TransfigurationBrushNoBowtruckleBlue": {
+          "Id": "{{ModId}}_TransfigurationBrushNoBowtruckleBlue",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushBowtruckleBlue, ITEM_ID Input {{ModId}}_BrushBowtruckleBlue, !PLAYER_HAS_MAIL Current {{ModId}}_Bowtruckle1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushBowtruckleBlue",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushBowtruckleBlue": {
           "Id": "{{ModId}}_BrushBowtruckleBlue",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushBowtruckleBlue",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushBowtruckleBlue, ITEM_ID Input {{ModId}}_BrushBowtruckleBlue, PLAYER_HAS_MAIL Current {{ModId}}_Bowtruckle1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushBowtruckleBlue Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoBowtruckleBrown": {
+          "Id": "{{ModId}}_TransfigurationBrushNoBowtruckleBrown",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushBowtruckleBrown, ITEM_ID Input {{ModId}}_BrushBowtruckleBrown, !PLAYER_HAS_MAIL Current {{ModId}}_Bowtruckle1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushBowtruckleBrown",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushBowtruckleBrown": {
           "Id": "{{ModId}}_BrushBowtruckleBrown",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushBowtruckleBrown",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushBowtruckleBrown, ITEM_ID Input {{ModId}}_BrushBowtruckleBrown, PLAYER_HAS_MAIL Current {{ModId}}_Bowtruckle1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushBowtruckleBrown Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoBowtruckleBrownLeaf": {
+          "Id": "{{ModId}}_TransfigurationBrushNoBowtruckleBrownLeaf",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushBowtruckleBrownLeaf, ITEM_ID Input {{ModId}}_BrushBowtruckleBrownLeaf, !PLAYER_HAS_MAIL Current {{ModId}}_Bowtruckle1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushBowtruckleBrownLeaf",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushBowtruckleBrownLeaf": {
           "Id": "{{ModId}}_BrushBowtruckleBrownLeaf",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushBowtruckleBrownLeaf",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushBowtruckleBrownLeaf, ITEM_ID Input {{ModId}}_BrushBowtruckleBrownLeaf, PLAYER_HAS_MAIL Current {{ModId}}_Bowtruckle1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushBowtruckleBrownLeaf Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoBowtruckleGreen": {
+          "Id": "{{ModId}}_TransfigurationBrushNoBowtruckleGreen",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushBowtruckleGreen, ITEM_ID Input {{ModId}}_BrushBowtruckleGreen, !PLAYER_HAS_MAIL Current {{ModId}}_Bowtruckle1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushBowtruckleGreen",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushBowtruckleGreen": {
           "Id": "{{ModId}}_BrushBowtruckleGreen",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushBowtruckleGreen",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushBowtruckleGreen, ITEM_ID Input {{ModId}}_BrushBowtruckleGreen, PLAYER_HAS_MAIL Current {{ModId}}_Bowtruckle1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushBowtruckleGreen Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoCrupBrown": {
+          "Id": "{{ModId}}_TransfigurationBrushNoCrupBrown",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushCrupBrown, ITEM_ID Input {{ModId}}_BrushCrupBrown, !PLAYER_HAS_MAIL Current {{ModId}}_Crup1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushCrupBrown",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushCrupBrown": {
           "Id": "{{ModId}}_BrushCrupBrown",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushCrupBrown",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushCrupBrown, ITEM_ID Input {{ModId}}_BrushCrupBrown, PLAYER_HAS_MAIL Current {{ModId}}_Crup1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushCrupBrown Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoCrupGrey": {
+          "Id": "{{ModId}}_TransfigurationBrushNoCrupGrey",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushCrupGrey, ITEM_ID Input {{ModId}}_BrushCrupGrey, !PLAYER_HAS_MAIL Current {{ModId}}_Crup1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushCrupGrey",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushCrupGrey": {
           "Id": "{{ModId}}_BrushCrupGrey",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushCrupGrey",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushCrupGrey, ITEM_ID Input {{ModId}}_BrushCrupGrey, PLAYER_HAS_MAIL Current {{ModId}}_Crup1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushCrupGrey Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoDragonToadRed": {
+          "Id": "{{ModId}}_TransfigurationBrushNoDragonToadRed",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushDragonToadRed, ITEM_ID Input {{ModId}}_BrushDragonToadRed, !PLAYER_HAS_MAIL Current {{ModId}}_DragonToadOrange1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushDragonToadRed",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushDragonToadRed": {
           "Id": "{{ModId}}_BrushDragonToadRed",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushDragonToadRed",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushDragonToadRed, ITEM_ID Input {{ModId}}_BrushDragonToadRed, PLAYER_HAS_MAIL Current {{ModId}}_DragonToadOrange1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushDragonToadRed Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoDragonToadYellow": {
+          "Id": "{{ModId}}_TransfigurationBrushNoDragonToadYellow",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushDragonToadYellow, ITEM_ID Input {{ModId}}_BrushDragonToadYellow, !PLAYER_HAS_MAIL Current {{ModId}}_DragonToadOrange1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushDragonToadYellow",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushDragonToadYellow": {
           "Id": "{{ModId}}_BrushDragonToadYellow",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushDragonToadYellow",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushDragonToadYellow, ITEM_ID Input {{ModId}}_BrushDragonToadYellow, PLAYER_HAS_MAIL Current {{ModId}}_DragonToadOrange1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushDragonToadYellow Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoFwooperShiny": {
+          "Id": "{{ModId}}_TransfigurationBrushNoFwooperShiny",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushFwooperShiny, ITEM_ID Input {{ModId}}_BrushFwooperShiny, !{{HasFlag |contains= {{ModId}}_FwooperBlue1}}, !{{HasFlag |contains= {{ModId}}_FwooperGreen1}}, !{{HasFlag |contains= {{ModId}}_FwooperPink1}}, !{{HasFlag |contains= {{ModId}}_FwooperYellow1}}",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushFwooperShiny",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushFwooperShiny": {
           "Id": "{{ModId}}_BrushFwooperShiny",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushFwooperShiny",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushFwooperShiny, ITEM_ID Input {{ModId}}_BrushFwooperShiny, {{HasFlag |contains= {{ModId}}_FwooperBlue1, {{ModId}}_FwooperGreen1, {{ModId}}_FwooperPink1, {{ModId}}_FwooperYellow1}}",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushFwooperShiny Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoGriffinGold": {
+          "Id": "{{ModId}}_TransfigurationBrushNoGriffinGold",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushGriffinGold, ITEM_ID Input {{ModId}}_BrushGriffinGold, !PLAYER_HAS_MAIL Current {{ModId}}_GriffinBrown1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushGriffinGold",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushGriffinGold": {
           "Id": "{{ModId}}_BrushGriffinGold",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushGriffinGold",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushGriffinGold, ITEM_ID Input {{ModId}}_BrushGriffinGold, PLAYER_HAS_MAIL Current {{ModId}}_GriffinBrown1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushGriffinGold Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoGriffinWhite": {
+          "Id": "{{ModId}}_TransfigurationBrushNoGriffinWhite",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushGriffinWhite, ITEM_ID Input {{ModId}}_BrushGriffinWhite, !PLAYER_HAS_MAIL Current {{ModId}}_GriffinBrown1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushGriffinWhite",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushGriffinWhite": {
           "Id": "{{ModId}}_BrushGriffinWhite",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushGriffinWhite",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushGriffinWhite, ITEM_ID Input {{ModId}}_BrushGriffinWhite, PLAYER_HAS_MAIL Current {{ModId}}_GriffinBrown1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushGriffinWhite Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoHippogriffBlack": {
+          "Id": "{{ModId}}_TransfigurationBrushNoHippogriffBlack",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushHippogriffBlack, ITEM_ID Input {{ModId}}_BrushHippogriffBlack, !PLAYER_HAS_MAIL Current {{ModId}}_HippogriffBrown1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushHippogriffBlack",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushHippogriffBlack": {
           "Id": "{{ModId}}_BrushHippogriffBlack",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushHippogriffBlack",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushHippogriffBlack, ITEM_ID Input {{ModId}}_BrushHippogriffBlack, PLAYER_HAS_MAIL Current {{ModId}}_HippogriffBrown1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushHippogriffBlack Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoHippogriffGrey": {
+          "Id": "{{ModId}}_TransfigurationBrushNoHippogriffGrey",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushHippogriffGrey, ITEM_ID Input {{ModId}}_BrushHippogriffGrey, !PLAYER_HAS_MAIL Current {{ModId}}_HippogriffBrown1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushHippogriffGrey",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushHippogriffGrey": {
           "Id": "{{ModId}}_BrushHippogriffGrey",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushHippogriffGrey",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushHippogriffGrey, ITEM_ID Input {{ModId}}_BrushHippogriffGrey, PLAYER_HAS_MAIL Current {{ModId}}_HippogriffBrown1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushHippogriffGrey Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoHippogriffRed": {
+          "Id": "{{ModId}}_TransfigurationBrushNoHippogriffRed",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushHippogriffRed, ITEM_ID Input {{ModId}}_BrushHippogriffRed, !PLAYER_HAS_MAIL Current {{ModId}}_HippogriffBrown1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushHippogriffRed",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushHippogriffRed": {
           "Id": "{{ModId}}_BrushHippogriffRed",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushHippogriffRed",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushHippogriffRed, ITEM_ID Input {{ModId}}_BrushHippogriffRed, PLAYER_HAS_MAIL Current {{ModId}}_HippogriffBrown1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushHippogriffRed Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoHippogriffWhite": {
+          "Id": "{{ModId}}_TransfigurationBrushNoHippogriffWhite",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushHippogriffWhite, ITEM_ID Input {{ModId}}_BrushHippogriffWhite, !PLAYER_HAS_MAIL Current {{ModId}}_HippogriffBrown1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushHippogriffWhite",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushHippogriffWhite": {
           "Id": "{{ModId}}_BrushHippogriffWhite",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushHippogriffWhite",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushHippogriffWhite, ITEM_ID Input {{ModId}}_BrushHippogriffWhite, PLAYER_HAS_MAIL Current {{ModId}}_HippogriffBrown1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushHippogriffWhite Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoKneazleBlonde": {
+          "Id": "{{ModId}}_TransfigurationBrushNoKneazleBlonde",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushKneazleBlonde, ITEM_ID Input {{ModId}}_BrushKneazleBlonde, !PLAYER_HAS_MAIL Current {{ModId}}_KneazleBrown1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushKneazleBlonde",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushKneazleBlonde": {
           "Id": "{{ModId}}_BrushKneazleBlonde",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushKneazleBlonde",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushKneazleBlonde, ITEM_ID Input {{ModId}}_BrushKneazleBlonde, PLAYER_HAS_MAIL Current {{ModId}}_KneazleBrown1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushKneazleBlonde Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoKneazleGrey": {
+          "Id": "{{ModId}}_TransfigurationBrushNoKneazleGrey",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushKneazleGrey, ITEM_ID Input {{ModId}}_BrushKneazleGrey, !PLAYER_HAS_MAIL Current {{ModId}}_KneazleBrown1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushKneazleGrey",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushKneazleGrey": {
           "Id": "{{ModId}}_BrushKneazleGrey",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushKneazleGrey",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushKneazleGrey, ITEM_ID Input {{ModId}}_BrushKneazleGrey, PLAYER_HAS_MAIL Current {{ModId}}_KneazleBrown1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushKneazleGrey Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoMooncalfBlue": {
+          "Id": "{{ModId}}_TransfigurationBrushNoMooncalfBlue",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushMooncalfBlue, ITEM_ID Input {{ModId}}_BrushMooncalfBlue, !PLAYER_HAS_MAIL Current {{ModId}}_Mooncalf1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushMooncalfBlue",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushMooncalfBlue": {
           "Id": "{{ModId}}_BrushMooncalfBlue",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushMooncalfBlue",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushMooncalfBlue, ITEM_ID Input {{ModId}}_BrushMooncalfBlue, PLAYER_HAS_MAIL Current {{ModId}}_Mooncalf1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushMooncalfBlue Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoMooncalfOrange": {
+          "Id": "{{ModId}}_TransfigurationBrushNoMooncalfOrange",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushMooncalfOrange, ITEM_ID Input {{ModId}}_BrushMooncalfOrange, !PLAYER_HAS_MAIL Current {{ModId}}_Mooncalf1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushMooncalfOrange",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushMooncalfOrange": {
           "Id": "{{ModId}}_BrushMooncalfOrange",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushMooncalfOrange",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushMooncalfOrange, ITEM_ID Input {{ModId}}_BrushMooncalfOrange, PLAYER_HAS_MAIL Current {{ModId}}_Mooncalf1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushMooncalfOrange Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoMooncalfYellow": {
+          "Id": "{{ModId}}_TransfigurationBrushNoMooncalfYellow",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushMooncalfYellow, ITEM_ID Input {{ModId}}_BrushMooncalfYellow, !PLAYER_HAS_MAIL Current {{ModId}}_Mooncalf1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushMooncalfYellow",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushMooncalfYellow": {
           "Id": "{{ModId}}_BrushMooncalfYellow",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushMooncalfYellow",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushMooncalfYellow, ITEM_ID Input {{ModId}}_BrushMooncalfYellow, PLAYER_HAS_MAIL Current {{ModId}}_Mooncalf1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushMooncalfYellow Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoNifflerBlack": {
+          "Id": "{{ModId}}_TransfigurationBrushNoNifflerBlack",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushNifflerBlack, ITEM_ID Input {{ModId}}_BrushNifflerBlack, !PLAYER_HAS_MAIL Current {{ModId}}_NifflerBrown1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushNifflerBlack",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushNifflerBlack": {
           "Id": "{{ModId}}_BrushNifflerBlack",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushNifflerBlack",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushNifflerBlack, ITEM_ID Input {{ModId}}_BrushNifflerBlack, PLAYER_HAS_MAIL Current {{ModId}}_NifflerBrown1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushNifflerBlack Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoNifflerWhite": {
+          "Id": "{{ModId}}_TransfigurationBrushNoNifflerWhite",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushNifflerWhite, ITEM_ID Input {{ModId}}_BrushNifflerWhite, !PLAYER_HAS_MAIL Current {{ModId}}_NifflerBrown1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushNifflerWhite",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushNifflerWhite": {
           "Id": "{{ModId}}_BrushNifflerWhite",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushNifflerWhite",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushNifflerWhite, ITEM_ID Input {{ModId}}_BrushNifflerWhite, PLAYER_HAS_MAIL Current {{ModId}}_NifflerBrown1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushNifflerWhite Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoOccamyTeal": {
+          "Id": "{{ModId}}_TransfigurationBrushNoOccamyTeal",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushOccamyTeal, ITEM_ID Input {{ModId}}_BrushOccamyTeal, !PLAYER_HAS_MAIL Current {{ModId}}_OccamyBlue1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushOccamyTeal",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushOccamyTeal": {
           "Id": "{{ModId}}_BrushOccamyTeal",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushOccamyTeal",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushOccamyTeal, ITEM_ID Input {{ModId}}_BrushOccamyTeal, PLAYER_HAS_MAIL Current {{ModId}}_OccamyBlue1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushOccamyTeal Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoPygmyPuffPink": {
+          "Id": "{{ModId}}_TransfigurationBrushNoPygmyPuffPink",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushPygmyPuffPink, ITEM_ID Input {{ModId}}_BrushPygmyPuffPink, !PLAYER_HAS_MAIL Current {{ModId}}_PygmyPuffPurple1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushPygmyPuffPink",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushPygmyPuffPink": {
           "Id": "{{ModId}}_BrushPygmyPuffPink",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushPygmyPuffPink",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushPygmyPuffPink, ITEM_ID Input {{ModId}}_BrushPygmyPuffPink, PLAYER_HAS_MAIL Current {{ModId}}_PygmyPuffPurple1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushPygmyPuffPink Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoUnicornSunburst": {
+          "Id": "{{ModId}}_TransfigurationBrushNoUnicornSunburst",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushUnicornSunburst, ITEM_ID Input {{ModId}}_BrushUnicornSunburst, !PLAYER_HAS_MAIL Current {{ModId}}_UnicornCommon1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushUnicornSunburst",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushUnicornSunburst": {
           "Id": "{{ModId}}_BrushUnicornSunburst",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushUnicornSunburst",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushUnicornSunburst, ITEM_ID Input {{ModId}}_BrushUnicornSunburst, PLAYER_HAS_MAIL Current {{ModId}}_UnicornCommon1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushUnicornSunburst Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoUnicornGlow": {
+          "Id": "{{ModId}}_TransfigurationBrushNoUnicornGlow",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushUnicornGlow, ITEM_ID Input {{ModId}}_BrushUnicornGlow, !PLAYER_HAS_MAIL Current {{ModId}}_UnicornCommon1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushUnicornGlow",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushUnicornGlow": {
           "Id": "{{ModId}}_BrushUnicornGlow",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushUnicornGlow",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushUnicornGlow, ITEM_ID Input {{ModId}}_BrushUnicornGlow, PLAYER_HAS_MAIL Current {{ModId}}_UnicornCommon1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushUnicornGlow Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoUnicornGolden": {
+          "Id": "{{ModId}}_TransfigurationBrushNoUnicornGolden",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushUnicornGolden, ITEM_ID Input {{ModId}}_BrushUnicornGolden, !PLAYER_HAS_MAIL Current {{ModId}}_UnicornCommon1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushUnicornGolden",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushUnicornGolden": {
           "Id": "{{ModId}}_BrushUnicornGolden",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushUnicornGolden",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushUnicornGolden, ITEM_ID Input {{ModId}}_BrushUnicornGolden, PLAYER_HAS_MAIL Current {{ModId}}_UnicornCommon1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushUnicornGolden Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoUnicornRainbow": {
+          "Id": "{{ModId}}_TransfigurationBrushNoUnicornRainbow",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushUnicornRainbow, ITEM_ID Input {{ModId}}_BrushUnicornRainbow, !PLAYER_HAS_MAIL Current {{ModId}}_UnicornCommon1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushUnicornRainbow",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushUnicornRainbow": {
           "Id": "{{ModId}}_BrushUnicornRainbow",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushUnicornRainbow",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushUnicornRainbow, ITEM_ID Input {{ModId}}_BrushUnicornRainbow, PLAYER_HAS_MAIL Current {{ModId}}_UnicornCommon1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushUnicornRainbow Received",
           "MarkActionApplied": false
         },
+        "{{ModId}}_TransfigurationBrushNoUnicornWhite": {
+          "Id": "{{ModId}}_TransfigurationBrushNoUnicornWhite",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushUnicornWhite, ITEM_ID Input {{ModId}}_BrushUnicornWhite, !PLAYER_HAS_MAIL Current {{ModId}}_UnicornCommon1 Received",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Actions": [
+            "spacechase0.SpaceCore_ShowHudMessage \"Creature not rescued.\"",
+            "AddItem {{ModId}}_BrushUnicornWhite",
+            "Spiderbuttons.BETAS_PatchUpdate"
+          ],
+          "MarkActionApplied": false
+        },
         "{{ModId}}_BrushUnicornWhite": {
           "Id": "{{ModId}}_BrushUnicornWhite",
-          "Condition": "ITEM_ID Input {{ModId}}_BrushUnicornWhite",
+          "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_BrushUnicornWhite, ITEM_ID Input {{ModId}}_BrushUnicornWhite, PLAYER_HAS_MAIL Current {{ModId}}_UnicornCommon1 Received",
           "Trigger": "spacechase0.SpaceCore_OnItemUsed",
           "Action": "AddMail Current {{ModId}}_BrushUnicornWhite Received",
           "MarkActionApplied": false
