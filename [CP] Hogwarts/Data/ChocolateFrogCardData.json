@@ -1,0 +1,102 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Chocolate Frog Card Image Load",
+      "Action": "Load",
+      "Target": "{{ModId}}/ChocolateFrogDark, {{ModId}}/ChocolateFrogMilk, {{ModId}}/ChocolateFrogWhite",
+      "FromFile": "assets/ChocolateFrogs/{{TargetWithoutPath}}.png"
+    },
+    {
+      "LogName": "Hogwarts Chocolate Frog Card Objects",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_ChocolateFrogMilk": {
+          "Name": "{{ModId}}_ChocolateFrogMilk",
+          "DisplayName": "Chocolate Frog Milk",
+          "Description": "Eat this chocolate frog to unlock a collectible card.",
+          "Texture": "{{ModId}}/ChocolateFrogMIlk",
+          "SpriteIndex": "{{Query: {{Random: {{Range: 0, 31}}}}}}",
+          "Type": "Basic",
+          "Price": 200,
+          "Edibility": 30,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_ChocolateFrog"
+          ]
+        },
+        "{{ModId}}_ChocolateFrogWhite": {
+          "Name": "{{ModId}}_ChocolateFrogWhite",
+          "DisplayName": "Chocolate Frog White",
+          "Description": "Eat this chocolate frog to unlock a collectible card.",
+          "Texture": "{{ModId}}/ChocolateFrogWhite",
+          "SpriteIndex": "{{Query: {{Random: {{Range: 0, 31}}}}}}",
+          "Price": 200,
+          "Edibility": 30,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_ChocolateFrog"
+          ]
+        },
+        "{{ModId}}_ChocolateFrogDark": {
+          "Name": "{{ModId}}_ChocolateFrogDark",
+          "DisplayName": "Chocolate Frog Dark",
+          "Description": "Eat this chocolate frog to unlock a collectible card.",
+          "Texture": "{{ModId}}/ChocolateFrogDark",
+          "SpriteIndex": "{{Query: {{Random: {{Range: 0, 31}}}}}}",
+          "Price": 200,
+          "Edibility": 30,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts",
+            "{{ModId}}_ChocolateFrog"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts Chocolate Frog Card ConsumeForTriggerAction",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+      "Entries": {
+        "{{ModId}}_ChocolateFrogMilk": {
+          "UseForTriggerAction": true
+        },
+        "{{ModId}}_ChocolateFrogWhite": {
+          "UseForTriggerAction": true
+        },
+        "{{ModId}}_ChocolateFrogDark": {
+          "UseForTriggerAction": true
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts Chocolate Frog Card Trigger Actions",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_ChocolateFrogMilkEdible": {
+          "Id": "{{ModId}}_ChocolateFrogMilkEdible",
+          "Condition": "ITEM_ID Input {{ModId}}_ChocolateFrogMilk",
+          "Trigger": "spacechase0.SpaceCore_OnItemEaten",
+          "Action": "AddItem {{ModId}}_{{Random:{{Card}}|key={{Time}}{{PlayerName}}}}",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_ChocolateFrogWhiteEdible": {
+          "Id": "{{ModId}}_ChocolateFrogWhiteEdible",
+          "Condition": "ITEM_ID Input {{ModId}}_ChocolateFrogWhite",
+          "Trigger": "spacechase0.SpaceCore_OnItemEaten",
+          "Action": "AddItem {{ModId}}_{{Random:{{Card}}|key={{Time}}{{PlayerName}}}}",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_ChocolateFrogDarkEdible": {
+          "Id": "{{ModId}}_ChocolateFrogDarkEdible",
+          "Condition": "ITEM_ID Input {{ModId}}_ChocolateFrogDark",
+          "Trigger": "spacechase0.SpaceCore_OnItemEaten",
+          "Action": "AddItem {{ModId}}_{{Random:{{Card}}|key={{Time}}{{PlayerName}}}}",
+          "MarkActionApplied": false
+        }
+      },
+      "Update": "OnTimeChange"
+    }
+  ]
+}
