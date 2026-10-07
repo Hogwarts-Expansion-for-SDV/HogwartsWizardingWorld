@@ -14,7 +14,7 @@
         "{{ModId}}_ChocolateFrogMilk": {
           "Name": "{{ModId}}_ChocolateFrogMilk",
           "DisplayName": "Chocolate Frog Milk",
-          "Description": "Eat this chocolate frog to unlock a collectible card.",
+          "Description": "Eat this chocolate frog to reveal a collectible card.",
           "Texture": "{{ModId}}/ChocolateFrogMIlk",
           "SpriteIndex": "{{Query: {{Random: {{Range: 0, 31}}}}}}",
           "Type": "Basic",
@@ -28,7 +28,7 @@
         "{{ModId}}_ChocolateFrogWhite": {
           "Name": "{{ModId}}_ChocolateFrogWhite",
           "DisplayName": "Chocolate Frog White",
-          "Description": "Eat this chocolate frog to unlock a collectible card.",
+          "Description": "Eat this chocolate frog to reveal a collectible card.",
           "Texture": "{{ModId}}/ChocolateFrogWhite",
           "SpriteIndex": "{{Query: {{Random: {{Range: 0, 31}}}}}}",
           "Price": 200,
@@ -41,7 +41,7 @@
         "{{ModId}}_ChocolateFrogDark": {
           "Name": "{{ModId}}_ChocolateFrogDark",
           "DisplayName": "Chocolate Frog Dark",
-          "Description": "Eat this chocolate frog to unlock a collectible card.",
+          "Description": "Eat this chocolate frog to reveal a collectible card.",
           "Texture": "{{ModId}}/ChocolateFrogDark",
           "SpriteIndex": "{{Query: {{Random: {{Range: 0, 31}}}}}}",
           "Price": 200,
@@ -78,21 +78,21 @@
           "Id": "{{ModId}}_ChocolateFrogMilkEdible",
           "Condition": "ITEM_ID Input {{ModId}}_ChocolateFrogMilk",
           "Trigger": "spacechase0.SpaceCore_OnItemEaten",
-          "Action": "AddItem {{ModId}}_{{Random:{{Card}}|key={{Time}}{{PlayerName}}}}",
+          "Action": "AddItem {{ModId}}_{{Random:{{ChocolateFrogCardBronze}}|key={{Time}}{{PlayerName}}}}",
           "MarkActionApplied": false
         },
         "{{ModId}}_ChocolateFrogWhiteEdible": {
           "Id": "{{ModId}}_ChocolateFrogWhiteEdible",
           "Condition": "ITEM_ID Input {{ModId}}_ChocolateFrogWhite",
           "Trigger": "spacechase0.SpaceCore_OnItemEaten",
-          "Action": "AddItem {{ModId}}_{{Random:{{Card}}|key={{Time}}{{PlayerName}}}}",
+          "Action": "AddItem {{ModId}}_{{Random:{{ChocolateFrogCardSilver}}|key={{Time}}{{PlayerName}}}}",
           "MarkActionApplied": false
         },
         "{{ModId}}_ChocolateFrogDarkEdible": {
           "Id": "{{ModId}}_ChocolateFrogDarkEdible",
           "Condition": "ITEM_ID Input {{ModId}}_ChocolateFrogDark",
           "Trigger": "spacechase0.SpaceCore_OnItemEaten",
-          "Action": "AddItem {{ModId}}_{{Random:{{Card}}|key={{Time}}{{PlayerName}}}}",
+          "Action": "AddItem {{ModId}}_{{Random:{{ChocolateFrogCardGold}}|key={{Time}}{{PlayerName}}}}",
           "MarkActionApplied": false
         }
       },

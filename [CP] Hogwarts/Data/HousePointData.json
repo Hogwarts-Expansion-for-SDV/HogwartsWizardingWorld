@@ -5,6 +5,60 @@
       "Action": "Load",
       "Target": "{{ModId}}/HousePoint",
       "FromFile": "assets/Objects/Galleta_Hxoni.png"
+    },
+    {
+      "LogName": "Hogwarts House Point Objects",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_HousePoint": {
+          "Name": "{{ModId}}_HousePoint",
+          "DisplayName": "Hogwarts House Point",
+          "Description": "Your triumps will earn you points. Submit these to an hourglass for a house to gain points towards winning the house cup.",
+          "Texture": "{{ModId}}/HousePoint",
+          "SpriteIndex": 0,
+          "Type": "Basic",
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Hogwarts House Point Objects Wallet Currencies UB",
+      "Action": "EditData",
+      "Target": "UnlockableBundles/WalletCurrencies",
+      "Entries": {
+        "{{ModId}}_HousePoint": {
+          "Shared": false,
+          "DrawOverheadPickupAnimation": false,
+          "OverheadPickupTexture": "{{ModId}}/HousePoint",
+          "OverheadPickupAnimation": null,
+          "OverheadPickupTextureSize": 16,
+          "BillboardTexture": "{{ModId}}/HousePoint",
+          "BillboardTextureSize": 16,
+          "BillboardDigits": 3,
+          "PickupSound": "reward",
+          "PlayMoneyRollSound": true,
+          "Items": [
+            {
+              "ItemId": "(O){{ModId}}_HousePoint",
+              "Value": 1
+            }
+          ],
+          "PowersData": {
+            "DisplayName": "Hogwarts House Points",
+            "TexturePath": "{{ModId}}/HousePoint",
+            "TexturePosition": {
+              "X": 0,
+              "Y": 0
+            }
+          }
+        }
+      },
+      "When": {
+        "HasMod |contains= DLX.Bundles": true
+      }
     }
   ]
 }
