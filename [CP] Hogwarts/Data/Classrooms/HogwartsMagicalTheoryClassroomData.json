@@ -7,15 +7,72 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 9,
-            "Y": 30
+            "X": 8,
+            "Y": 33
           },
           "Layer": "Back",
           "SetProperties": {
             "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 2 27"
           }
+        },
+        {
+          "Position": {
+            "X": 9,
+            "Y": 33
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsTransfigurationWing 3 27"
+          }
         }
       ]
+    },
+    //Door Texture replacement
+    {
+      "LogName": "MagicalTheoryClassroomDoor - Animation1",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
+      "PatchMode": "Replace",
+      "FromArea": {
+        "X": 192,
+        "Y": 96,
+        "Width": 64,
+        "Height": 48
+      },
+      "ToArea": {
+        "X": 512,
+        "Y": 144,
+        "Width": 64,
+        "Height": 48
+      },
+      "When": {
+        "LocationName": "{{ModId}}_HogwartsMagicalTheoryClassroom"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "MagicalTheoryClassroomDoor - TileReplace1",
+      "Action": "EditImage",
+      "Target": "Maps/townInterior",
+      "FromFile": "assets/Tilesheets/z_vanillaEdits_Hogwarts.png",
+      "PatchMode": "Replace",
+      "FromArea": {
+        "X": 192,
+        "Y": 96,
+        "Width": 16,
+        "Height": 48
+      },
+      "ToArea": {
+        "X": 384,
+        "Y": 16,
+        "Width": 16,
+        "Height": 48
+      },
+      "When": {
+        "LocationName": "{{ModId}}_HogwartsMagicalTheoryClassroom"
+      },
+      "Update": "OnLocationChange"
     }
   ]
 }
