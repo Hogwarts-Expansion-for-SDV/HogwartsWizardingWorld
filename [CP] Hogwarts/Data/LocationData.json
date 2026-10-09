@@ -630,6 +630,12 @@
       "FromFile": "assets/Maps/HogwartsQuidditchPitch.tmx"
     },
     {
+      "LogName": "Hogwarts Room oF Requirement Load",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_HogwartsRoomOfRequirement",
+      "FromFile": "assets/Maps/HogwartsRoomOfRequirement.tmx"
+    },
+    {
       "LogName": "Hogwarts Study of Ancient Runes Classroom Load",
       "Action": "Load",
       "Target": "Maps/{{ModId}}_HogwartsSoARClassroom",
@@ -1395,6 +1401,16 @@
           "DefaultArrivalTile": {
             "X": 12,
             "Y": 25
+          }
+        },
+        "{{ModId}}_HogwartsRoomOfRequirement": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsRoomOfRequirement"
+          },
+          "DefaultArrivalTile": {
+            "X": 6,
+            "Y": 10
           }
         },
         "{{ModId}}_HogwartsSoARClassroom": {
