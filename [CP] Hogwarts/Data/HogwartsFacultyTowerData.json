@@ -1,5 +1,25 @@
 {
   "Changes": [
+    {
+      "LogName": "Hogwarts Faculty Tower Prefects' Bathroom Music Submarine",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsFacultyTower",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 77,
+            "Y": 58
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/music_Once_On": "submarine_song"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
     // Cauldron Interactive Spawn
     {
       "LogName": "Faculty Tower Cauldron Furniture Spawn DMTE",
@@ -153,7 +173,7 @@
       "When": {
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
       }
-    },/*
+    }, /*
     {
       "LogName": "Faculty Tower Horklump DMTE",
       "Action": "EditMap",
