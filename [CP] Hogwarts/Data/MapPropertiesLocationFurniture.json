@@ -29,7 +29,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "DMT/object_Load": "3,5,(F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirement1}},false|3,8,(F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirement2}},false|7,5,(F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirement3}},false|7,8,(F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirement4}},false"
+            "DMT/object_Once_Enter": "3,5,(F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirementTopLeft}},false|3,8,(F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirementBottomLeft}},false|7,5,(F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirementTopRight}},false|7,8,(F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirementBottomRight}},false"
           }
         }
       ],
@@ -46,7 +46,7 @@
         "{{ModId}}_RoomOfRequirementFurnitureClear": {
           "Id": "{{ModId}}_RoomOfRequirementFurnitureClear",
           "Trigger": "DayEnding",
-          "Action": "Spiderbuttons.BETAS_ClearObjects Here Furniture 0 0 10 10",
+          "Action": "Spiderbuttons.BETAS_ClearObjects {{ModId}}_HogwartsRoomOfRequirement Furniture 0 0 10 10",
           "MarkActionApplied": false
         }
       },
@@ -56,6 +56,70 @@
       }
     },
     {
+      "LogName": "Hogwarts Room of Requirement Unlockable Bundle Left Top",
+      "Action": "EditData",
+      "Target": "UnlockableBundles/Bundles",
+      "Entries": {
+        "{{ModId}}_RoomOfRequirement{{Day}}{{Season}}{{Year}}TopLeft": {
+          "Location": "{{ModId}}_HogwartsRoomOfRequirement",
+          "ShopType": "Dialogue",
+          "BundleDescription": "Would you like to purchase this furniture?",
+          "ShopEvent": "none",
+          "ShopPosition": "2, 5",
+          "ShopTexture": "TileSheets/Craftables",
+          "ShopTextureSource": {
+            "X": 16,
+            "Y": 1120,
+            "Width": 16,
+            "Height": 32
+          },
+          "DrawQuestionMark": false,
+          "QuestionMarkOffset": "24, 32",
+          "Price": {
+            "{{ModId}}_HousePoint": 1
+          },
+          "BundleCompletedActions": [
+            "AddMail Current {{ModId}}_RoomOfRequirementTopLeft now",
+            "spacechase0.SpaceCore_ShowHudMessage \"The furniture will be mailed to your house.\" (F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirementTopLeft}}"
+          ],
+          "InteractionShake": true,
+          "InstantShopRemoval": false
+        }
+      },
+      "When": {
+        "HasMod |contains= DLX.Bundles": true,
+        "HasMod |contains= spacechase0.SpaceCore": true,
+        "HasFlag |contains= {{ModId}}_RoomOfRequirementTopLeft": false
+      }
+    },
+    {
+      "LogName": "Hogwarts House Tasks Mail Data",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "{{ModId}}_RoomOfRequirementTopLeft": "OWL POST%item id (F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirementTopLeft}} 1 %% %action RemoveMail Current {{ModId}}_RoomOfRequirementTopLeft now %%[#]Room of Requirement Furniture Shop",
+        "{{ModId}}_RoomOfRequirementBottomLeft": "OWL POST%item id (F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirementBottomLeft}} 1 %%[#]Room of Requirement Furniture Shop",
+        "{{ModId}}_RoomOfRequirementTopRight": "OWL POST%item id (F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirementTopRight}} 1 %%[#]Room of Requirement Furniture Shop",
+        "{{ModId}}_RoomOfRequirementBottomRight": "OWL POST%item id (F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirementBottomRight}} 1 %%[#]Room of Requirement Furniture Shop"
+      }
+    },
+    {
+      "LogName": "Hogwarts Room of Requirement Trigger Actions Remove Mail",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_RoomOfRequirementTopLeft": {
+          "Id": "{{ModId}}_RoomOfRequirementTopLeft",
+          "Trigger": "DayEnding",
+          "Condition": "ANY \"PLAYER_HAS_MAIL Any {{ModId}}_RoomOfRequirementTopLeft Any\" \"PLAYER_HAS_MAIL Any RoomOfRequirement{{Day}}{{Season}}{{Year}}TopLeft Any\"",
+          "Actions": [
+            "RemoveMail All DLX.Bundles.{{ModId}}_RoomOfRequirement{{Day}}{{Season}}{{Year}}TopLeft"
+          ],
+          "MarkActionApplied": false
+        }
+      }
+    },
+    /*{
       "LogName": "Hogwarts Room of Requirement Shop Data",
       "Action": "EditData",
       "Target": "Data/Shops",
@@ -71,27 +135,35 @@
             {
               "Id": "RoomOfRequirement1",
               "ItemId": "(F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirement1}}",
+              "TradeItemId": "{{ModId}}_HousePoint",
+              "TradeItemAmount": 2,
               "AvailableStock": 1
             },
             {
               "Id": "RoomOfRequirement2",
               "ItemId": "(F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirement2}}",
+              "TradeItemId": "{{ModId}}_HousePoint",
+              "TradeItemAmount": 2,
               "AvailableStock": 1
             },
             {
               "Id": "RoomOfRequirement3",
               "ItemId": "(F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirement3}}",
+              "TradeItemId": "{{ModId}}_HousePoint",
+              "TradeItemAmount": 2,
               "AvailableStock": 1
             },
             {
               "Id": "RoomOfRequirement4",
               "ItemId": "(F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirement4}}",
+              "TradeItemId": "{{ModId}}_HousePoint",
+              "TradeItemAmount": 2,
               "AvailableStock": 1
             }
           ]
         }
       }
-    },
+    },*/
     {
       "LogName": "Hogwarts Room of Requirement To Transfiguration Wing Warp",
       "Action": "EditMap",
