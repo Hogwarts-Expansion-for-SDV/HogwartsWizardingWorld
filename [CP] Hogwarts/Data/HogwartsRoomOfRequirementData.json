@@ -45,11 +45,11 @@
             "{{ModId}}_HousePoint": 1
           },
           "BundleCompletedActions": [
-            "AddMail Current {{ModId}}_RoomOfRequirementTopLeft now",
+            "AddMail Current {{ModId}}_RoomOfRequirementTopLeft tomorrow",
             "AddMail Current {{ModId}}_{{Random:{{HogwartsFurniture}}|key=RoomOfRequirementTopLeft}} received",
             "spacechase0.SpaceCore_ShowHudMessage \"The furniture will be mailed to your house.\" (F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirementTopLeft}}"
           ],
-          "InteractionShake": true,
+          "InteractionShake": false,
           "InstantShopRemoval": false
         }
       },
@@ -83,11 +83,11 @@
             "{{ModId}}_HousePoint": 1
           },
           "BundleCompletedActions": [
-            "AddMail Current {{ModId}}_RoomOfRequirementBottomLeft now",
+            "AddMail Current {{ModId}}_RoomOfRequirementBottomLeft tomorrow",
             "AddMail Current {{ModId}}_{{Random:{{HogwartsFurniture}}|key=RoomOfRequirementBottomLeft}} received",
             "spacechase0.SpaceCore_ShowHudMessage \"The furniture will be mailed to your house.\" (F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirementBottomLeft}}"
           ],
-          "InteractionShake": true,
+          "InteractionShake": false,
           "InstantShopRemoval": false
         }
       },
@@ -121,11 +121,11 @@
             "{{ModId}}_HousePoint": 1
           },
           "BundleCompletedActions": [
-            "AddMail Current {{ModId}}_RoomOfRequirementTopRight now",
+            "AddMail Current {{ModId}}_RoomOfRequirementTopRight tomorrow",
             "AddMail Current {{ModId}}_{{Random:{{HogwartsFurniture}}|key=RoomOfRequirementTopRight}} received",
             "spacechase0.SpaceCore_ShowHudMessage \"The furniture will be mailed to your house.\" (F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirementTopRight}}"
           ],
-          "InteractionShake": true,
+          "InteractionShake": false,
           "InstantShopRemoval": false
         }
       },
@@ -159,11 +159,11 @@
             "{{ModId}}_HousePoint": 1
           },
           "BundleCompletedActions": [
-            "AddMail Current {{ModId}}_RoomOfRequirementBottomRight now",
+            "AddMail Current {{ModId}}_RoomOfRequirementBottomRight tomorrow",
             "AddMail Current {{ModId}}_{{Random:{{HogwartsFurniture}}|key=RoomOfRequirementBottomRight}} received",
             "spacechase0.SpaceCore_ShowHudMessage \"The furniture will be mailed to your house.\" (F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirementBottomRight}}"
           ],
-          "InteractionShake": true,
+          "InteractionShake": false,
           "InstantShopRemoval": false
         }
       },
@@ -171,17 +171,6 @@
         "HasMod |contains= DLX.Bundles": true,
         "HasMod |contains= spacechase0.SpaceCore": true,
         "HasFlag |contains= {{ModId}}_RoomOfRequirementBottomRight": false
-      }
-    },
-    {
-      "LogName": "Hogwarts Room of Requirement Mail Data",
-      "Action": "EditData",
-      "Target": "Data/Mail",
-      "Entries": {
-        "{{ModId}}_RoomOfRequirementTopLeft": "OWL POST%item id (F){{RoomOfRequirementTopLeft}} 1 %% %action RemoveMail Current {{ModId}}_RoomOfRequirementTopLeft now %% %action RemoveMail Current {{ModId}}_{{Random:{{HogwartsFurniture}}|key=RoomOfRequirementTopLeft}} received %%[#]Room of Requirement Furniture Shop",
-        "{{ModId}}_RoomOfRequirementBottomLeft": "OWL POST%item id (F){{RoomOfRequirementBottomLeft}} 1 %% %action RemoveMail Current {{ModId}}_RoomOfRequirementBottomLeft now %% %action RemoveMail Current {{ModId}}_{{Random:{{HogwartsFurniture}}|key=RoomOfRequirementBottomLeft}} received %%[#]Room of Requirement Furniture Shop",
-        "{{ModId}}_RoomOfRequirementTopRight": "OWL POST%item id (F){{RoomOfRequirementTopRight}} 1 %% %action RemoveMail Current {{ModId}}_RoomOfRequirementTopRight now %% %action RemoveMail Current {{ModId}}_{{Random:{{HogwartsFurniture}}|key=RoomOfRequirementTopRight}} received %%[#]Room of Requirement Furniture Shop",
-        "{{ModId}}_RoomOfRequirementBottomRight": "OWL POST%item id (F){{RoomOfRequirementBottomRight}} 1 %% %action RemoveMail Current {{ModId}}_RoomOfRequirementBottomRight now %% %action RemoveMail Current {{ModId}}_{{Random:{{HogwartsFurniture}}|key=RoomOfRequirementBottomRight}} received %%[#]Room of Requirement Furniture Shop"
       }
     },
     {
@@ -199,104 +188,44 @@
         "{{ModId}}_RoomOfRequirementTopLeft": {
           "Id": "{{ModId}}_RoomOfRequirementTopLeft",
           "Trigger": "DayEnding",
-          "Condition": "ANY \"PLAYER_HAS_MAIL Any {{ModId}}_RoomOfRequirementTopLeft Any\" \"PLAYER_HAS_MAIL Any RoomOfRequirement{{Day}}{{Season}}{{Year}}TopLeft Any\"",
-          "Actions": [
-            "RemoveMail All DLX.Bundles.{{ModId}}_RoomOfRequirement{{Day}}{{Season}}{{Year}}TopLeft"
-          ],
+          "Condition": "PLAYER_HAS_MAIL Any DLX.Bundles.{{ModId}}_RoomOfRequirement{{Day}}{{Season}}{{Year}}TopLeft Any",
+          "Action": "RemoveMail All DLX.Bundles.{{ModId}}_RoomOfRequirement{{Day}}{{Season}}{{Year}}TopLeft Received",
           "MarkActionApplied": false
         },
         "{{ModId}}_RoomOfRequirementBottomLeft": {
           "Id": "{{ModId}}_RoomOfRequirementBottomLeft",
           "Trigger": "DayEnding",
-          "Condition": "ANY \"PLAYER_HAS_MAIL Any {{ModId}}_RoomOfRequirementBottomLeft Any\" \"PLAYER_HAS_MAIL Any RoomOfRequirement{{Day}}{{Season}}{{Year}}BottomLeft Any\"",
-          "Actions": [
-            "RemoveMail All DLX.Bundles.{{ModId}}_RoomOfRequirement{{Day}}{{Season}}{{Year}}BottomLeft"
-          ],
+          "Condition": "PLAYER_HAS_MAIL Any DLX.Bundles.{{ModId}}_RoomOfRequirement{{Day}}{{Season}}{{Year}}BottomLeft Any",
+          "Action": "RemoveMail All DLX.Bundles.{{ModId}}_RoomOfRequirement{{Day}}{{Season}}{{Year}}BottomLeft Received",
           "MarkActionApplied": false
         },
         "{{ModId}}_RoomOfRequirementTopRight": {
           "Id": "{{ModId}}_RoomOfRequirementTopRight",
           "Trigger": "DayEnding",
-          "Condition": "ANY \"PLAYER_HAS_MAIL Any {{ModId}}_RoomOfRequirementTopRight Any\" \"PLAYER_HAS_MAIL Any RoomOfRequirement{{Day}}{{Season}}{{Year}}TopRight Any\"",
-          "Actions": [
-            "RemoveMail All DLX.Bundles.{{ModId}}_RoomOfRequirement{{Day}}{{Season}}{{Year}}TopRight"
-          ],
+          "Condition": "PLAYER_HAS_MAIL Any DLX.Bundles.{{ModId}}_RoomOfRequirement{{Day}}{{Season}}{{Year}}TopRight Any",
+          "Action": "RemoveMail All DLX.Bundles.{{ModId}}_RoomOfRequirement{{Day}}{{Season}}{{Year}}TopRight Received",
           "MarkActionApplied": false
         },
         "{{ModId}}_RoomOfRequirementBottomRight": {
           "Id": "{{ModId}}_RoomOfRequirementBottomRight",
           "Trigger": "DayEnding",
-          "Condition": "ANY \"PLAYER_HAS_MAIL Any {{ModId}}_RoomOfRequirementBottomRight Any\" \"PLAYER_HAS_MAIL Any RoomOfRequirement{{Day}}{{Season}}{{Year}}BottomRight Any\"",
-          "Actions": [
-            "RemoveMail All DLX.Bundles.{{ModId}}_RoomOfRequirement{{Day}}{{Season}}{{Year}}BottomRight"
-          ],
+          "Condition": "PLAYER_HAS_MAIL Any DLX.Bundles.{{ModId}}_RoomOfRequirement{{Day}}{{Season}}{{Year}}BottomRight Any",
+          "Action": "RemoveMail All DLX.Bundles.{{ModId}}_RoomOfRequirement{{Day}}{{Season}}{{Year}}BottomRight Received",
           "MarkActionApplied": false
         }
       }
     },
-    /*
     {
-      "LogName": "Hogwarts Room of Requirement Furniture Shop Action OpenShop",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsRoomOfRequirement",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 5,
-            "Y": 3
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "OpenShop {{ModId}}_Ollivanders"
-          }
-        }
-      ]
-    },
-    {
-      "LogName": "Hogwarts Room of Requirement Shop Data",
+      "LogName": "Hogwarts Room of Requirement Mail Data",
       "Action": "EditData",
-      "Target": "Data/Shops",
+      "Target": "Data/Mail",
       "Entries": {
-        "{{ModId}}_RoomOfRequirement": {
-          "Owners": [
-            {
-              "Id": "RoomOfRequirement",
-              "Name": "AnyOrNone"
-            }
-          ],
-          "Items": [
-            {
-              "Id": "RoomOfRequirement1",
-              "ItemId": "(F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirement1}}",
-              "TradeItemId": "{{ModId}}_HousePoint",
-              "TradeItemAmount": 2,
-              "AvailableStock": 1
-            },
-            {
-              "Id": "RoomOfRequirement2",
-              "ItemId": "(F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirement2}}",
-              "TradeItemId": "{{ModId}}_HousePoint",
-              "TradeItemAmount": 2,
-              "AvailableStock": 1
-            },
-            {
-              "Id": "RoomOfRequirement3",
-              "ItemId": "(F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirement3}}",
-              "TradeItemId": "{{ModId}}_HousePoint",
-              "TradeItemAmount": 2,
-              "AvailableStock": 1
-            },
-            {
-              "Id": "RoomOfRequirement4",
-              "ItemId": "(F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirement4}}",
-              "TradeItemId": "{{ModId}}_HousePoint",
-              "TradeItemAmount": 2,
-              "AvailableStock": 1
-            }
-          ]
-        }
+        "{{ModId}}_RoomOfRequirementTopLeft": "OWL POST%item id (F){{RoomOfRequirementTopLeft}} 1 %% %action RemoveMail Current {{ModId}}_RoomOfRequirementTopLeft received %% %action RemoveMail Current {{ModId}}_{{RoomOfRequirementTopLeft}} received %%[#]Room of Requirement Furniture Shop TopLeft",
+        "{{ModId}}_RoomOfRequirementBottomLeft": "OWL POST%item id (F){{RoomOfRequirementBottomLeft}} 1 %% %action RemoveMail Current {{ModId}}_RoomOfRequirementBottomLeft received %% %action RemoveMail Current {{ModId}}_{{RoomOfRequirementBottomLeft}} received %%[#]Room of Requirement Furniture Shop BottomLeft",
+        "{{ModId}}_RoomOfRequirementTopRight": "OWL POST%item id (F){{RoomOfRequirementTopRight}} 1 %% %action RemoveMail Current {{ModId}}_RoomOfRequirementTopRight received %% %action RemoveMail Current {{ModId}}_{{RoomOfRequirementTopRight}} received %%[#]Room of Requirement Furniture Shop TopRight",
+        "{{ModId}}_RoomOfRequirementBottomRight": "OWL POST%item id (F){{RoomOfRequirementBottomRight}} 1 %% %action RemoveMail Current {{ModId}}_RoomOfRequirementBottomRight received %% %action RemoveMail Current {{ModId}}_{{RoomOfRequirementBottomRight}} received %%[#]Room of Requirement Furniture Shop BottomRight"
       }
-    },*/
+    },
     {
       "LogName": "Hogwarts Room of Requirement To Transfiguration Wing Warp",
       "Action": "EditMap",
@@ -574,7 +503,70 @@
         "AstronomyKitchen_SC_Hogwarts_565": "AstronomyKitchen_SC_Hogwarts_565/decor/1 1/1 1/1/0/2/Starry Globe/565/Maps\\z_AstronomyKitchen_SC_Hogwarts/false/collection_Hogwarts"
       }
     },
-    /*{
+    /*
+    {
+      "LogName": "Hogwarts Room of Requirement Furniture Shop Action OpenShop",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsRoomOfRequirement",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 5,
+            "Y": 3
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "OpenShop {{ModId}}_Ollivanders"
+          }
+        }
+      ]
+    },
+    {
+      "LogName": "Hogwarts Room of Requirement Shop Data",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "{{ModId}}_RoomOfRequirement": {
+          "Owners": [
+            {
+              "Id": "RoomOfRequirement",
+              "Name": "AnyOrNone"
+            }
+          ],
+          "Items": [
+            {
+              "Id": "RoomOfRequirement1",
+              "ItemId": "(F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirement1}}",
+              "TradeItemId": "{{ModId}}_HousePoint",
+              "TradeItemAmount": 2,
+              "AvailableStock": 1
+            },
+            {
+              "Id": "RoomOfRequirement2",
+              "ItemId": "(F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirement2}}",
+              "TradeItemId": "{{ModId}}_HousePoint",
+              "TradeItemAmount": 2,
+              "AvailableStock": 1
+            },
+            {
+              "Id": "RoomOfRequirement3",
+              "ItemId": "(F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirement3}}",
+              "TradeItemId": "{{ModId}}_HousePoint",
+              "TradeItemAmount": 2,
+              "AvailableStock": 1
+            },
+            {
+              "Id": "RoomOfRequirement4",
+              "ItemId": "(F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirement4}}",
+              "TradeItemId": "{{ModId}}_HousePoint",
+              "TradeItemAmount": 2,
+              "AvailableStock": 1
+            }
+          ]
+        }
+      }
+    },
+    {
       "LogName": "Map Properties - Location Furniture",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsGrandStaircase",
