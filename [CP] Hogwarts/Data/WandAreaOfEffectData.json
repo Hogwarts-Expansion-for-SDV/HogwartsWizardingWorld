@@ -353,8 +353,71 @@
       },
       "Update": "OnTimeChange, OnLocationChange"
     },
+    // Alohomora Grand Staircase Trophy Room
+    {
+      "LogName": "Hogwarts Grand Staircase Trophy Room Rectangle DMTE",
+      "Action": "EditData",
+      "Target": "DMT/Tiles",
+      "Entries": {
+        "{{ModId}}_HogwartsGrandStaircaseTrophyRoomRectangle": {
+          "Locations": [
+            "{{ModId}}_HogwartsGrandStaircase"
+          ],
+          "Layers": [
+            "Back"
+          ],
+          "Rectangles": [
+            {
+              "X": 5,
+              "Y": 95,
+              "Width": 3,
+              "Height": 8
+            }
+          ],
+          "Actions": [
+            {
+              "Key": "DMT/mail",
+              "Value": "{{ModId}}_HogwartsGrandStaircaseTrophyRoomOpen",
+              "Trigger": "Tool(MeleeWeapon)"
+            },
+            {
+              "Key": "DMT/changeMultipleProperties",
+              "Value": "Buildings,6,99,Action=Door",
+              "Trigger": "Tool(MeleeWeapon)"
+            }
+          ]
+        }
+      },
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_Alohomora": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts Grand Staircase Trophy Room Open DMTE",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGrandStaircase",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 6,
+            "Y": 99
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/changeMultipleProperties_Load": "Buildings,6,99,Action=Door"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasFlag |contains= {{ModId}}_HogwartsGrandStaircaseTrophyRoomOpen": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
     // Alohomora South Wing To Faculty Tower (Change warp, not door)
-    /*{
+    {
       "LogName": "Hogwarts South Wing To Faculty Tower Rectangle DMTE",
       "Action": "EditData",
       "Target": "DMT/Tiles",
@@ -401,12 +464,12 @@
       "MapTiles": [
         {
           "Position": {
-            "X": 7,
-            "Y": 58
+            "X": 28,
+            "Y": 62
           },
           "Layer": "Back",
           "SetProperties": {
-            "DMT/changeMultipleProperties_Load": "Buildings,7,58,Action=Door"
+            "Action": "Warp 42 23 {{ModId}}_HogwartsFacultyTower"
           }
         }
       ],
@@ -415,7 +478,7 @@
         "HasFlag |contains= {{ModId}}_HogwartsSouthWingFacultyTowerOpen": true
       },
       "Update": "OnTimeChange, OnLocationChange"
-    },*/
+    },
     // Reducto Hogsmeade Village Scenic Viewpoint South
     {
       "LogName": "Hogsmeade Village Scenic Viewpoint South Rectangle DMTE",
