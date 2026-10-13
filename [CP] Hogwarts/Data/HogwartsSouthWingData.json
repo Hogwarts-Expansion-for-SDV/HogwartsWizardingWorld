@@ -1,6 +1,94 @@
 {
   "Changes": [
     {
+      "LogName": "Hogwarts South Wing Door Furniture",
+      "Action": "EditData",
+      "Target": "Data/Furniture",
+      "Entries": {
+        "vanillaEdits_Hogwarts_78": "vanillaEdits_Hogwarts_78/other/1 3/1 1/2/0/2/Door/78/Maps\\z_vanillaEdits_Hogwarts/false/collection_Hogwarts"
+      }
+    },
+    {
+      "LogName": "Hogwarts South Wing Door Furniture Properties MMAP",
+      "Action": "EditData",
+      "Target": "mushymato.MMAP/FurnitureProperties",
+      "Entries": {
+        "vanillaEdits_Hogwarts_78": {
+          "CollisionMap": "O",
+          "DrawShadow": false,
+          "AdditionalTilePropertyRadius": 1,
+          "TileProperties": [
+            {
+              "Id": "DoorSound",
+              "Name": "TouchAction",
+              "Value": "Spiderbuttons.BETAS_Action Spiderbuttons.BETAS_PlaySound doorOpen",
+              "Layer": "Back",
+              "TileArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 1,
+                "Height": 1
+              }
+            }
+          ],
+          "DrawLayers": [
+            {
+              "Id": "DoorAnimation",
+              "SourceRect": {
+                "X": 192,
+                "Y": 48,
+                "Width": 16,
+                "Height": 48
+              },
+              "FrameCount": 4,
+              "FrameDuration": 90
+            }
+          ],
+          "Metadata": {
+            "mushymato.MMAP/DrawLayer.DoorAnimation.openAnim": "Auto"
+          }
+        }
+      },
+      "When": {
+        "HasMod |contains= mushymato.MMAP": true,
+        "HasMod |contains= Spiderbuttons.BETAS": true
+      }
+    },
+    {
+      "LogName": "Hogwarts South Wing Door Furniture Spawn DMTE",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSouthWing",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 28,
+            "Y": 55
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/object_Enter": "28,55,(F)vanillaEdits_Hogwarts_78,false"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
+      }
+    },
+    {
+      "LogName": "Hogwarts South Wing Trigger Actions",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_SouthWingDoorFurnitureClear": {
+          "Id": "{{ModId}}_SouthWingDoorFurnitureClear",
+          "Trigger": "LocationChanged",
+          "Condition": "{{HasMod |contains= Spiderbuttons.BETAS}}",
+          "Action": "Spiderbuttons.BETAS_ClearObjects {{ModId}}_HogwartsSouthWing Furniture 28 53 28 56",
+          "MarkActionApplied": false
+        }
+      }
+    },
+    {
       "LogName": "Hogwarts South Wing Warps",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsSouthWing",
