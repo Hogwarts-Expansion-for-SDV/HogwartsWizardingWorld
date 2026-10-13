@@ -67,13 +67,31 @@
         globalFade/viewport -1000 -1000/pause 1000/end",
       }
     },
+    //Ancient Runes Classroom
+
+    {
+      "LogName": "ARC Events",
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_HogwartsSoARClassroom",
+        "Entries": {
+          "{{ModId}}_Andrew50": "movieTheaterAfter/15 16/farmer 22 10 2 HogwartsAndrew 8 11 1 HogwartsNkiruka 7 10 2 HogwartsGryffindorFemaleThree 23 14 3 HogwartsSlytherinFemaleFour 6 14 1 HogwartsHufflepuffMaleOne 11 15 0 HogwartsHufflepuffFemaleFour 18 15 0 HogwartsRavenclawFemaleFive 18 13 2 HogwartsRavenclawMaleFour 9 14 3 HogwartsGryffindorMaleFour 22 17 1 HogwartsRavenclawMaleSix 7 17 3 HogwartsDromgoole 15 9 2/skippable/
+          viewport move 0 -2 2500/pause 1500/speak HogwartsDromgoole \"Now, Class. #$b# Can anyone tell me what curse-breakers are?\"/pause 500/jump HogwartsAndrew/faceDirection HogwartsDromgoole 3/speak HogwartsAndrew \"Professor, sacred or treasured tombs are often guarded by curses, thus curse-breakers work to counter those curses.\"/pause 500/emote HogwartsDromgoole 32 true/pause 800/faceDirection HogwartsDromgoole 2/
+          speak HogwartsDromgoole \"Very good, Andrew. Then, guess what we are doing today. #$b# Your task is to decipher these inscriptions so that you can break this form of curse.\"/temporarySprite 15 8 10 10 200 false 3/beginSimultaneousCommand/addObject 7 10 (F)AstronomyKitchen_SC_Hogwarts_523 1/temporarySprite 7 10 10 10 200 false 3/addObject 12 13 (F)AstronomyKitchen_SC_Hogwarts_523 1/temporarySprite 12 13 10 10 200 false 3/
+          addObject 8 13 (F)AstronomyKitchen_SC_Hogwarts_523 1/temporarySprite 8 13 10 10 200 false 3/addObject 17 13 (F)AstronomyKitchen_SC_Hogwarts_523 1/temporarySprite 17 13 10 10 200 false 3/addObject 21 13 (F)AstronomyKitchen_SC_Hogwarts_523 1/temporarySprite 21 13 10 10 200 false 3/addObject 22 10 (F)AstronomyKitchen_SC_Hogwarts_523 1/temporarySprite 22 10 10 10 200 false 3/addObject 6 16 (F)AstronomyKitchen_SC_Hogwarts_523 1/temporarySprite 6 16 10 10 200 false 3/addObject 23 16 (F)AstronomyKitchen_SC_Hogwarts_523 1/temporarySprite 23 16 10 10 200 false 3/endSimultaneousCommand/pause 1000/speak HogwartsDromgoole \"Isn't that exciting?\"/
+          beginSimultaneousCommand/emote HogwartsAndrew 32 true/emote HogwartsNkiruka 28 true/emote HogwartsGryffindorFemaleThree 8 true/emote HogwartsSlytherinFemaleFour 8 true/emote HogwartsHufflepuffMaleOne 8 true/emote HogwartsHufflepuffFemaleFour 8 true/emote HogwartsRavenclawFemaleFive 8 true/endSimultaneousCommand/pause 1000/faceDirection farmer 3/emote farmer 40/pause 500/
+          globalFade/viewport 1000 1000/warp HogwartsDromgoole 21 6/faceDirection HogwartsDromgoole 0/warp HogwartsAndrew 18 6/faceDirection farmer 1/warp farmer 12 10/pause 1000/viewport 17 9 true/pause 500/move HogwartsAndrew 1 0 1/speak HogwartsAndrew \"Professor, I'd like more runes to translate.\"/pause 100/faceDirection HogwartsDromgoole 3/emote HogwartsDromgoole 20/pause 1000/textAboveHead HogwartsDromgoole \"Ah, very good then.\"/
+          viewport move -2 2 2000/pause 1000/faceDirection farmer 3/move farmer -3 0 3/pause 1000/question null \"#Andrew likes curse inscriptions? #Andrew is into curses?\"/pause 500/faceDirection HogwartsNkiruka 1/pause 500/emote HogwartsNkiruka 40 true/speak HogwartsNkiruka \"Andrew told me once about a game he used to play with his brother. #$b# They would climb an icy mountain, and whoever chickens out, loses. #$b# You can imagine how difficult it would be for Andrew since... You know.$2\"/
+          emote farmer 28 true/pause 1000/speak HogwartsNkiruka \"But there was one time... He won only once. #$b# And since then Andrew has dreamt of learning magic and exploring the unknown.$2\"/pause 1000/emote farmer 40 true/stopMusic/viewport move 2 -2 2000/faceDirection HogwartsDromgoole 0/pause 500/faceDirection HogwartsAndrew 2/pause 1000/beginSimultaneousCommand/shake HogwartsAndrew 250/animate HogwartsAndrew false false 200 20 20 20 21 22 23 24 25 26 27 26 27 26 27/pause 2000/stopAnimation HogwartsAndrew 25/pause 1000/emote HogwartsAndrew 28/
+          pause 2000/end",
+      }
+    },
     // Potions Classroom 
     {
       "LogName": "Hogwarts Potions Classroom Events",
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogwartsPotionsClassroom",
       "Entries": {
-        "{{ModId}}_Andrew35/e {{ModId}}_Andrew15/f HogwartsAndrew 750": "50s/16 19/farmer 23 19 3 HogwartsAndrew 27 19 3 HogwartsSlughorn 18 19 2 HogwartsNkiruka 1000 1000 0 HogwartsHufflepuffMaleOne 9 16 2 HogwartsGryffindorMaleFour 14 12 2 HogwartsSlytherinFemaleFour 16 12 2 HogwartsGryffindorFemaleThree 7 19 1 HogwartsRavenclawFemaleFive 3 18 1 HogwartsRavenclawMaleSix 15 25 0/
+        "{{ModId}}_Andrew35/e {{ModId}}_Andrew15/f HogwartsAndrew 750": "50s/16 19/farmer 23 19 3 HogwartsDanny 999 999 2 HogwartsAndrew 27 19 3 HogwartsSlughorn 18 19 2 HogwartsNkiruka 1000 1000 0 HogwartsHufflepuffMaleOne 9 16 2 HogwartsGryffindorMaleFour 14 12 2 HogwartsSlytherinFemaleFour 16 12 2 HogwartsGryffindorFemaleThree 7 19 1 HogwartsRavenclawFemaleFive 3 18 1 HogwartsRavenclawMaleSix 15 25 0/
         addObject 22 17 {{ModId}}_PewterCauldron 1/addObject 26 17 {{ModId}}_PewterCauldron 1/addObject 8 17 {{ModId}}_PewterCauldron 1/addObject 15 12 {{ModId}}_PewterCauldron 1/addObject 14 21 {{ModId}}_PewterCauldron 1/skippable/showframe HogwartsHufflepuffMaleOne 16/positionOffset HogwartsGryffindorMaleFour 0 15/positionOffset HogwartsSlytherinFemaleFour 0 15/positionOffset HogwartsHufflepuffMaleOne 0 15/pause 800/
         speak HogwartsSlughorn \"Everyone should be finishing up their potions!\"/pause 1000/viewport move 2 0 2000/
         faceDirection farmer 1/pause 800/
@@ -105,25 +123,25 @@
         question null \"#Nkiruka, are you fabricating magic for Andrew?\"/pause 800/stopAnimation HogwartsAndrew 0/jump HogwartsAndrew/faceDirection HogwartsAndrew 1/
         speak HogwartsAndrew \"Not so loud!$2#$b# ...$5 #$b# Follow me.\"/pause 800/faceDirection HogwartsNkiruka 1/
         emote HogwartsNkiruka 28 true/pause 1500/
-        globalFade/viewport -1000 -1000/warp farmer 66 42/faceDirection farmer 3/warp HogwartsAndrew 64 42/faceDirection HogwartsAndrew 1/warp HogwartsNkiruka 65 41/faceDirection HogwartsNkiruka 2/pause 800/
+        globalFade/viewport -1000 -1000/warp HogwartsDanny 55 44/animate HogwartsDanny false true 500 18 17/warp farmer 66 42/faceDirection farmer 3/warp HogwartsAndrew 64 42/faceDirection HogwartsAndrew 1/warp HogwartsNkiruka 65 41/faceDirection HogwartsNkiruka 2/pause 800/
         viewport 65 42 true/pause 1500/
         question null \"#Andrew is doing what?!\"/pause 1000/animate HogwartsNkiruka false true 500 16 17/
         speak HogwartsNkiruka \"Andrew is impersonating my brother who passed away.$2\"/pause 1000/emote farmer 16/
         question null \"#How has he not been caught yet?\"/pause 800/emote HogwartsNkiruka 28 true/pause 1000/
         speak HogwartsNkiruka \"I am a transfer student from Uagadou. Over there, people are expected to know wandless magic, so I have been using my skills to fabricate Andrew’s magic in his classes.$2\"/pause 1000/
         emote farmer 40 true/pause 1000/question null \"#Andrew, why are you not doing your own magic?\"/pause 1000/stopAnimation HogwartsNkiruka 0/
-        speak HogwartsAndrew \"My parents... are magical, but I am not.$2\"/pause 800/jump farmer/
+        speak HogwartsAndrew \"My parents... are magical, but I am not.$2\"/pause 800/jump farmer/stopAnimation HogwartsDanny 0/faceDirection HogwartsDanny 1/
         emote farmer 16 true/pause 1000/
         speak HogwartsAndrew \"I'm a squib...$2\"/pause 1000/faceDirection HogwartsAndrew 2/emote HogwartsAndrew 12 true/pause 1000/
         speak HogwartsAndrew \"Someone is coming. We’ll talk later.$5\"/pause 1000/move HogwartsAndrew 0 3 2 false/pause 500/faceDirection farmer 2/pause 1250/shake HogwartsAndrew 500 true/
-        animate HogwartsAndrew false false 200 20 20 20 21 22 23 24 25 26 27 26 27 26 27/shake HogwartsAndrew 1000 true/pause 1000/
+        animate HogwartsAndrew false false 200 20 20 20 21 22 23 24 25 26 27 26 27 26 27/shake HogwartsAndrew 1000 true/pause 1000/move HogwartsDanny -1 0 3 true/pause 500/move HogwartsDanny 0 -1 2 true/pause 500/
         beginSimultaneousCommand/jump HogwartsNkiruka/showFrame HogwartsNkiruka 18/endSimultaneousCommand/pause 1000/textAboveHead HogwartsNkiruka \"Andrew!\"/pause 1500/
         stopAnimation HogwartsAndrew 25/pause 1500/emote HogwartsAndrew 40 true/pause 1000/shake HogwartsNkiruka 500 true/stopAnimation HogwartsNkiruka 0/pause 1000/
-        speed HogwartsAndrew 3/move HogwartsAndrew -7 0 3 true/pause 1500/speed HogwartsAndrew 3/move HogwartsAndrew 0 10 2 false/pause 1000/
+        speed HogwartsAndrew 3/move HogwartsAndrew -7 0 3 true/pause 1500/speed HogwartsAndrew 3/move HogwartsAndrew 0 8 2/pause 1000/
         faceDirection farmer 3/question null \"#What's wrong?\"/pause 1000/
         speak HogwartsNkiruka \"@, Andrew has a health condition that only lets him live to 19. This is my chance to help him before he...$2\"/
         emote HogwartsNkiruka 28 true/pause 800/showFrame HogwartsNkiruka 16/pause 1500/
-        emote farmer 40/pause 800/
+        emote farmer 40/pause 800/viewport move -2 0 2000/pause 1500/emote HogwartsDanny 40/
         globalFade/viewport -1000 -1000/pause 1000/end"
       }
     },
