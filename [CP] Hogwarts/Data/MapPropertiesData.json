@@ -66,7 +66,7 @@
       "MapProperties": {
         "AmbientLight": "90 90 90",
         "DayTiles": "Front 6 1 469 Front 6 2 501 Front 7 1 469 Front 7 2 501 Front 19 1 469 Front 19 2 501 Front 20 1 469 Front 20 2 501 Front 30 1 469 Front 30 2 501 Front 31 1 469 Front 31 2 501",
-        "Doors": "11 9 1 120 20 9 1 120  29 9 1 120 3 16 1 120 4 16 0 120",
+        "Doors": "11 9 1 120 20 9 1 120 29 9 1 120 3 16 1 120 4 16 1 120",
         "NightTiles": "Front 6 1 1219 Front 6 2 1251 Front 7 1 1219 Front 7 2 1251 Front 19 1 1219 Front 19 2 1251 Front 20 1 1219 Front 20 2 1251 Front 30 1 1219 Front 30 2 1251 Front 31 1 1219 Front 31 2 1251",
         "Warp": "14 25 {{ModId}}_HogsmeadeVillage 50 75"
       }
@@ -99,7 +99,7 @@
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogsmeadeVillage",
       "MapProperties": {
-        "mushymato.MMAP_SteamOverlay": "T {{Random: -0.1, 0, 0.1|key=X}} {{Random: -0.1, 0, 0.1|key=Y}} White 0.4 4"
+        "mushymato.MMAP_SteamOverlay": "T {{Random: -0.1, 0, 0.1|key=SteamOverlayX}} {{Random: -0.1, 0, 0.1|key=SteamOverlayY}} White 0.4 4"
       },
       "When": {
         "HasMod |contains= mushymato.MMAP": true,
@@ -386,7 +386,7 @@
         "AmbientLight": "255 255 255",
         "AmbientNightLight": "150 150 30",
         "Doors": "7 58 1 120 76 20 1 120 76 65 1 838 77 58 1 120 68 21 1 120 59 21 1 120 50 21 1 120 34 21 1 120 25 21 1 120 16 21 1 120 13 48 1 120 16 58 1 120 22 48 1 120 25 58 1 120 31 48 1 120 34 58 1 120 50 58 1 120 53 48 1 120 59 58 1 120 62 48 1 120 68 58 1 120 71 48 1 120 77 58 1 120 76 65 1 838",
-        "NPCWarp": "98 19 {{ModId}}_HogwartsGrandStaircase 1 51"
+        "NPCWarp": "42 23 {{ModId}}_HogwartsSouthWing 28 61 98 19 {{ModId}}_HogwartsGrandStaircase 1 51"
       }
     },
     {
@@ -566,9 +566,10 @@
         "AmbientLight": "255 255 255",
         "AmbientNightLight": "150 150 30",
         "DayTiles": "Front 67 22 256 Front 72 22 256 Front 76 22 256 Front 57 38 256 Front 54 38 256 Front 44 38 256 Front 43 38 256 Front 34 38 256 Front 30 38 256 Front 17 27 256 Front 14 27 256 Front 67 23 288 Front 72 23 288 Front 76 23 288 Front 57 39 288 Front 54 39 288 Front 44 39 288 Front 43 39 288 Front 34 39 288 Front 30 39 288 Front 17 28 288 Front 14 28 288",
+        "Doors": "28 55 1 120",
         "indoorWater": "T",
         "Outdoors": "T",
-        "NPCWarp": "79 50 {{ModId}}_HogwartsGrandStaircase 1 85 0 29 {{ModId}}_HogsmeadeVillage 37 154 14 37 {{ModId}}_HogwartsCommonRoomHufflepuff 25 26",
+        "NPCWarp": "28 62 {{ModId}}_HogwartsFacultyTower 42 23 79 50 {{ModId}}_HogwartsGrandStaircase 1 85 0 29 {{ModId}}_HogsmeadeVillage 37 154 14 37 {{ModId}}_HogwartsCommonRoomHufflepuff 25 26",
         "WindowLight": "67 22 2 67 23 2 72 22 2 72 23 2 76 22 2 76 23 2 57 38 2 57 39 2 54 38 2 54 39 2 44 38 2 44 39 2 43 38 2 43 39 2 34 38 2 34 39 2 30 38 2 30 39 2 17 27 2 27 28 2 14 27 2 14 28 2"
       }
     },
