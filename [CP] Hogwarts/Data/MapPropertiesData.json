@@ -694,6 +694,18 @@
         "Outdoors": "T",
         "ScreenshotRegion": "{{Query: {{Random: {{Range: 8, 100}}|key=SouthSeaBogScreenshotX}}}} {{Query: {{Random: {{Range: 8, 100}}|key=SouthSeaBogScreenshotY}}}} {{Query: {{Random: {{Range: 8, 100}}|key=SouthSeaBogScreenshotX}} + 30}} {{Query: {{Random: {{Range: 8, 100}}|key=SouthSeaBogScreenshotY}} + 30}}"
       }
+    },
+    // Miscellaneous
+    {
+      "LogName": "Map Properties of Suryawati Home Exterior",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Suryawati_HomeEx",
+      "MapProperties": {
+        "mushymato.MMAP_Panorama": "MMAP_MountainView"
+      },
+      "When": {
+        "HasMod |contains= mushymato.MMAP": true
+      }
     }
   ]
 }

@@ -445,7 +445,7 @@
             },
             {
               "Key": "DMT/changeMultipleProperties",
-              "Value": "Buildings,7,58,Action=Door",
+              "Value": "Back,28,62,TouchAction=Warp {{ModId}}_HogwartsFacultyTower 42 23",
               "Trigger": "Tool(MeleeWeapon)"
             }
           ]
@@ -469,13 +469,34 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "Action": "Warp 42 23 {{ModId}}_HogwartsFacultyTower"
+            "TouchAction": "Warp {{ModId}}_HogwartsFacultyTower 42 23"
+          }
+        }
+      ],
+      "When": {
+        "HasFlag |contains= {{ModId}}_HogwartsSouthWingFacultyTowerOpen": true
+      },
+      "Update": "OnTimeChange, OnLocationChange"
+    },
+    {
+      "LogName": "Hogwarts South Wing To Faculty Tower Locked Message DMTE",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsSouthWing",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 28,
+            "Y": 62
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/message_On": "This door is locked."
           }
         }
       ],
       "When": {
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
-        "HasFlag |contains= {{ModId}}_HogwartsSouthWingFacultyTowerOpen": true
+        "HasFlag |contains= {{ModId}}_HogwartsSouthWingFacultyTowerOpen": false
       },
       "Update": "OnTimeChange, OnLocationChange"
     },
