@@ -1,5 +1,6 @@
 {
   "Changes": [
+    ///Object Assets///
     {
       "Action": "EditData",
       "Target": "Data/Objects",
@@ -44,6 +45,7 @@
       "Target": "{{ModId}}/Objects/Cup",
       "FromFile": "assets/Objects/Uncategorized/Transfiguration_Cup.png"
     },
+    
     // Bell Tower Courtyard
     {
       "LogName": "Hogwarts Bell Tower Courtyard Events",
@@ -191,6 +193,15 @@
         pause 1000/speak HogwartsNkiruka \"Is this information appropriate to tell us, professor?$2\"/pause 200/emote HogwartsCroaker 12 true/stopAnimation HogwartsCroaker 18/pause 1000/speak HogwartsCroaker \"I think, as a former Unspeakable of the Ministry- I know what is truly fobidden to speak of.\"/pause 1000/stopAnimation HogwartsCroaker 0/pause 250/
         speak HogwartsCroaker \"Class, you are dismissed!\"/pause 1500/
         end"
+      }
+    }
+    // Mountain
+    {
+      "LogName": "Hogwarts Mountain Event",
+      "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_HogwartsSouthWing",
+      "Entries": {
+        "{{ModId}}_Andrew75": ""
       }
     }
   ]

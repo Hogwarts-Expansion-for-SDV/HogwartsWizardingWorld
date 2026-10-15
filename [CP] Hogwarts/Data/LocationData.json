@@ -366,6 +366,13 @@
       "Target": "Maps/{{ModId}}_Suryawati_HomeEx",
       "FromFile": "assets/Maps/Suryawati_HomeEx.tmx"
     },
+    ///Mountain///
+    {
+      "LogName": "Andrew Mountain",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_AndrewMountain",
+      "FromFile": "assets/Maps/Andrew_Mountain.tmx"
+    },
     /*Locations Data*/
     {
       "LogName": "Hogwarts Expansion Locations Data",
@@ -378,6 +385,16 @@
             "MapPath": "Maps/{{ModId}}_EmptyRoom"
           }
         },
+
+        //Mountain Data//
+
+        "{{ModId}}_AndrewMountain": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_AndrewMountain"
+          }
+        },
+
         /*Hogsmeade Location Data*/
         "{{ModId}}_BroodAndPeck": {
           "CreateOnLoad": {
