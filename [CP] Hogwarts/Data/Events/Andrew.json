@@ -52,20 +52,25 @@
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogwartsBellTowerCourtyard",
       "Entries": {
-        "{{ModId}}_Andrew55/e {{ModId}}_HogwartsAndrew35/f HogwartsAndrew 1250": "none/74 56/farmer 74 56 2 HogwartsAndrew 73 56 2/skippable/pause 800/
-        question null \"#Why is Nkiruka helping you impersonate her deceased brother?\"/pause 800/
-        speak HogwartsAndrew \"She... caused her brother to form an obscurial, a deadly parasitic force.\"/pause 800/
+        "{{ModId}}_Andrew55/e {{ModId}}_HogwartsAndrew35/f HogwartsAndrew 1250": "spaceMusic/74 56/farmer 82 56 3 HogwartsAndrew 73 56 2/skippable/addLantern 735 71 55 2/pause 1000/
+        move farmer -4 0 3/emote farmer 40/pause 1500/move farmer -4 0 2/pause 1000/
+        question null \"#Why is Nkiruka helping you impersonate her deceased brother?\"/pause 1000/emote HogwartsAndrew 40/pause 800/
+        speak HogwartsAndrew \"She... caused her brother to form an obscurial, a deadly parasitic force.\"/pause 1000/
         move HogwartsAndrew 0 -1 0 true/pause 800/
-        speak HogwartsAndrew \"At Uagadou, everyone is expected to know how to cast spells without a wand. However, Andrew did not know, and...#$b#Nkiruka belittled him for it.\"/pause 800/
-        emote farmer 28/pause 800/
-        question null \"#Why are you at Hogwarts?\"/pause 800/
-        move HogwartsAndrew 0 1 2 true/pause 800/
-        speak HogwartsAndrew \"Although I am a squib, my brother is not.#$b#I dreamed of something that my brother has the power to, and I do not.\"/pause 800/
-        question null \"#What’s that?\"/pause 800/
+        speak HogwartsAndrew \"At Uagadou, everyone is expected to know how to cast spells without a wand. However, Andrew did not know, and...#$b#Nkiruka belittled him for it.$2\"/pause 800/
+        emote farmer 28/pause 1000/question null \"#Why are you at Hogwarts?\"/pause 1000/
+        move HogwartsAndrew 0 1 2 true/pause 800/speak HogwartsAndrew \"Although I am a squib, my brother is not.$2\"/pause 1000/showFrame HogwartsAndrew 18/shake HogwartsAndrew 250/
+        speak HogwartsAndrew \"You've met him.$5 #$b# Danny the great investigator... The best son and student.$5\"/emote HogwartsAndrew 12 true/shake HogwartsAndrew 500/speak HogwartsAndrew \"It's not fair...$2 #$b# I deserve to be here as much as he did.$5\"/
+        pause 1000/faceDirection farmer 3/emote farmer 28/pause 1000/question null \"#How come he hasn't exposed you yet? #Wait, so he's okay with you being here?\"/pause 1000/speak HogwartsAndrew \"He doesn't know. #$b# Everyone back home believes it was just some miracle mistake.$2 #$b# That I was just a late bloomer who got their magic late and got a letter from Hogwarts of all schools.\"/
+        pause 1000/shake HogwartsAndrew 100/speak HogwartsAndrew \"But that was a lie too. #$b# Nkiruka's help was a blessing, even if it was born from guilt of her own mistakes.$2 #$b# It's terrible, I know. But I refuse to give up this one and only chance.$5\"/
+        pause 1000/animate HogwartsAndrew false false 200 20 21 22 23 24 25 25 25 25/pause 1600/stopAnimation HogwartsAndrew 25/pause 1000/speak HogwartsAndrew \"I have to do this now. It's now or never before I get even more weak.$2\"/
+        shake HogwartsAndrew 150 true/textAboveHead HogwartsAndrew \"*Cough*\"/pause 250/shake HogwartsAndrew 250/pause 2000/emote farmer 28 true/question null \"#I'm sorry... #...\"/pause 1500/emote HogwartsAndrew 40/
+        speak HogwartsAndrew \"I've always dreamed of something that my brother has the power to, and I do not.$2\"/pause 1000/
+        question null \"#What’s that?\"/pause 800/showFrame HogwartsAndrew 0/pause 1000/faceDirection HogwartsAndrew 3/
         globalFade/viewport -1000 -1000/pause 800/
         changeLocation {{ModId}}_HogwartsValley/viewport 192 139 true/pause 800/
         viewport move -2 -2 4500/pause 6000/
-        speak HogwartsAndrew \"I dream of being an explorer.\"/pause 800/
+        speak HogwartsAndrew \"I dream of being an explorer.$1\"/pause 800/
         globalFade/viewport -1000 -1000/pause 1000/end",
       }
     },
@@ -135,7 +140,7 @@
         speak HogwartsAndrew \"My parents... are magical, but I am not.$2\"/pause 800/jump farmer/stopAnimation HogwartsDanny 0/faceDirection HogwartsDanny 1/
         emote farmer 16 true/pause 1000/
         speak HogwartsAndrew \"I'm a squib...$2\"/pause 1000/faceDirection HogwartsAndrew 2/emote HogwartsAndrew 12 true/pause 1000/
-        speak HogwartsAndrew \"Someone is coming. We’ll talk later.$5\"/pause 1000/move HogwartsAndrew 0 3 2 false/pause 500/faceDirection farmer 2/pause 1250/shake HogwartsAndrew 500 true/
+        speak HogwartsAndrew \"Someone is coming. We’ll talk later.$5\"/pause 1000/move HogwartsAndrew 0 3 2 true/pause 500/faceDirection farmer 2/pause 1250/shake HogwartsAndrew 500 true/
         animate HogwartsAndrew false false 200 20 20 20 21 22 23 24 25 26 27 26 27 26 27/shake HogwartsAndrew 1000 true/pause 1000/move HogwartsDanny -1 0 3 true/pause 500/move HogwartsDanny 0 -1 2 true/pause 500/
         beginSimultaneousCommand/jump HogwartsNkiruka/showFrame HogwartsNkiruka 18/endSimultaneousCommand/pause 1000/textAboveHead HogwartsNkiruka \"Andrew!\"/pause 1500/
         stopAnimation HogwartsAndrew 25/pause 1500/emote HogwartsAndrew 40 true/pause 1000/shake HogwartsNkiruka 500 true/stopAnimation HogwartsNkiruka 0/pause 1000/
@@ -182,7 +187,7 @@
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogwartsMagicalTheoryClassroom",
       "Entries": {
-        "{{ModId}}_Andrew20": "none/8 16/farmer 13 25 0 HogwartsAndrew 11 25 0 HogwartsNkiruka 10 25 0 HogwartsCroaker 5 21 2 HogwartsGryffindorFemaleThree 4 28 0 HogwartsGryffindorMaleThree 6 28 0 HogwartsHufflepuffFemaleSeven 11 28 0 HogwartsHufflepuffMaleFour 12 28 0 HogwartsRavenclawFemaleFive 4 31 0 HogwartsRavenclawMaleFour 6 31 0 HogwartsSlytherinFemaleFour 11 31 0 HogwartsSlytherinMaleFour 13 31 0/skippable/
+        "{{ModId}}_Andrew20": "kindadumbautumn/8 16/farmer 13 25 0 HogwartsAndrew 11 25 0 HogwartsNkiruka 10 25 0 HogwartsCroaker 5 21 2 HogwartsGryffindorFemaleThree 4 28 0 HogwartsGryffindorMaleThree 6 28 0 HogwartsHufflepuffFemaleSeven 11 28 0 HogwartsHufflepuffMaleFour 12 28 0 HogwartsRavenclawFemaleFive 4 31 0 HogwartsRavenclawMaleFour 6 31 0 HogwartsSlytherinFemaleFour 11 31 0 HogwartsSlytherinMaleFour 13 31 0/skippable/
         pause 500/viewport move 0 2 4000 true/pause 1000/speak HogwartsCroaker \"While wands are widely used, it is not the only way to channel magic.\"/pause 250/move HogwartsCroaker 4 0 1/faceDirection HogwartsCroaker 2/
         pause 250/animate HogwartsCroaker false true 400 16 17/temporarySprite 10 20 22 10 200 false 3/speak HogwartsCroaker \"For today's lesson, you will attempt to cast a spell without a wand.\"/temporarySprite 10 20 22 10 200 false 3/pause 1000/
         globalFade/viewport 1000 1000/stopAnimation HogwartsCroaker 0/warp farmer 11 19/faceDirection farmer 1/warp HogwartsAndrew 12 22/warp HogwartsNkiruka 13 22/warp HogwartsCroaker 9 18/warp HogwartsGryffindorFemaleThree 8 24/warp HogwartsGryffindorMaleThree 9 24/warp HogwartsHufflepuffFemaleSeven 8 26/warp HogwartsHufflepuffMaleFour 9 26/viewport 10 20 true/
@@ -194,8 +199,8 @@
         speak HogwartsCroaker \"Class, you are dismissed!\"/pause 1500/
         end"
       }
-    }
-    // Mountain
+    },
+    // Mountain/ SouthWing
     {
       "LogName": "Hogwarts Mountain Event",
       "Action": "EditData",
