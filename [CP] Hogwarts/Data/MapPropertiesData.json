@@ -610,7 +610,8 @@
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_ForbiddenForest",
       "MapProperties": {
-        "AmbientLight": "120 65 120",
+        "AmbientLight": "215 210 200",
+        "AmbientNightLight": "245 240 220",
         "forceLoadPathLayerLights": "T",
         "Outdoors": "T",
         "ScreenshotRegion": "{{Query: {{Random: {{Range: 8, 175}}|key=ForbiddenForestScreenshotX}}}} {{Query: {{Random: {{Range: 8, 130}}|key=ForbiddenForestScreenshotY}}}} {{Query: {{Random: {{Range: 8, 175}}|key=ForbiddenForestScreenshotX}} + 40}} {{Query: {{Random: {{Range: 8, 130}}|key=ForbiddenForestScreenshotY}} + 40}}"
@@ -623,8 +624,8 @@
       "MapProperties": {
         "mushymato.MMAP_LightRays": "T",
         "mushymato.MMAP_WoodsBaubles": "T",
-        "mushymato.MMAP_WoodsLighting": "T T false",
-        "mushymato.MMAP_WoodsDebris": "-2"
+        "mushymato.MMAP_WoodsLighting": "#8c99a6 #6f8094 false",//T T false
+        "mushymato.MMAP_WoodsDebris": "-1 \"RANDOM 0.5\""
       },
       "When": {
         "HasMod |contains= mushymato.MMAP": true
@@ -635,7 +636,9 @@
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_ForbiddenForestCentaurCamp",
       "MapProperties": {
-        "AmbientLight": "120 65 120",
+        "AmbientLight": "215 210 200",
+        "AmbientNightLight": "245 240 220",
+        "forceLoadPathLayerLights": "T",
         "Outdoors": "T",
         "Warp": "109 89 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} 110 89 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} 111 89 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} 112 89 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} 113 89 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} 114 89 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} 51 89 {{ModId}}_HogwartsBellTowerCourtyard 24 0 52 89 {{ModId}}_HogwartsBellTowerCourtyard 24 0 53 89 {{ModId}}_HogwartsBellTowerCourtyard 24 0 54 89 {{ModId}}_HogwartsBellTowerCourtyard 24 0 55 89 {{ModId}}_HogwartsBellTowerCourtyard 24 0 56 89 {{ModId}}_HogwartsBellTowerCourtyard 24 0 135 54 {{ModId}}_HogsmeadeVillage 1 27 135 55 {{ModId}}_HogsmeadeVillage 1 27 135 56 {{ModId}}_HogsmeadeVillage 1 27 135 57 {{ModId}}_HogsmeadeVillage 1 27 135 58 {{ModId}}_HogsmeadeVillage 1 27 135 59 {{ModId}}_HogsmeadeVillage 1 27 135 60 {{ModId}}_HogsmeadeVillage 1 27 135 61 {{ModId}}_HogsmeadeVillage 1 27 135 62 {{ModId}}_HogsmeadeVillage 1 27 135 63 {{ModId}}_HogsmeadeVillage 1 27 135 64 {{ModId}}_HogsmeadeVillage 1 27 135 65 {{ModId}}_HogsmeadeVillage 1 27"
       }
@@ -647,8 +650,8 @@
       "MapProperties": {
         "mushymato.MMAP_LightRays": "T",
         "mushymato.MMAP_WoodsBaubles": "T",
-        "mushymato.MMAP_WoodsLighting": "T T false",
-        "mushymato.MMAP_WoodsDebris": "-2"
+        "mushymato.MMAP_WoodsLighting": "#a8b4c2 #8ba0b8 false",
+        "mushymato.MMAP_WoodsDebris": "-1"//  \"RANDOM 0.5\"
       },
       "When": {
         "HasMod |contains= mushymato.MMAP": true
@@ -698,6 +701,16 @@
     // Miscellaneous
     {
       "LogName": "Map Properties of Suryawati Home Exterior",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Suryawati_HomeEx",
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30",
+        "Outdoors": "T"
+      }
+    },
+    {
+      "LogName": "Map Properties of Suryawati Home Exterior MMAP",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_Suryawati_HomeEx",
       "MapProperties": {
