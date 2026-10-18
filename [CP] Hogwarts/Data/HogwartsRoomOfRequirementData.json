@@ -45,7 +45,7 @@
           },
           "BundleCompletedActions": [
             "AddMail Current {{ModId}}_RoomOfRequirementTopLeft tomorrow",
-            "AddMail Current {{ModId}}_{{Random:{{HogwartsFurniture}}|key=RoomOfRequirementTopLeft}} received",
+            "AddMail Current {{ModId}}_{{Random:{{HogwartsFurniture}}|key=RoomOfRequirementTopLeft}}_TopLeft received",
             "spacechase0.SpaceCore_ShowHudMessage \"The furniture will be mailed to your house.\" (F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirementTopLeft}}"
           ],
           "InteractionShake": false,
@@ -83,7 +83,7 @@
           },
           "BundleCompletedActions": [
             "AddMail Current {{ModId}}_RoomOfRequirementBottomLeft tomorrow",
-            "AddMail Current {{ModId}}_{{Random:{{HogwartsFurniture}}|key=RoomOfRequirementBottomLeft}} received",
+            "AddMail Current {{ModId}}_{{Random:{{HogwartsFurniture}}|key=RoomOfRequirementBottomLeft}}_BottomLeft received",
             "spacechase0.SpaceCore_ShowHudMessage \"The furniture will be mailed to your house.\" (F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirementBottomLeft}}"
           ],
           "InteractionShake": false,
@@ -121,7 +121,7 @@
           },
           "BundleCompletedActions": [
             "AddMail Current {{ModId}}_RoomOfRequirementTopRight tomorrow",
-            "AddMail Current {{ModId}}_{{Random:{{HogwartsFurniture}}|key=RoomOfRequirementTopRight}} received",
+            "AddMail Current {{ModId}}_{{Random:{{HogwartsFurniture}}|key=RoomOfRequirementTopRight}}_TopRight received",
             "spacechase0.SpaceCore_ShowHudMessage \"The furniture will be mailed to your house.\" (F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirementTopRight}}"
           ],
           "InteractionShake": false,
@@ -159,7 +159,7 @@
           },
           "BundleCompletedActions": [
             "AddMail Current {{ModId}}_RoomOfRequirementBottomRight tomorrow",
-            "AddMail Current {{ModId}}_{{Random:{{HogwartsFurniture}}|key=RoomOfRequirementBottomRight}} received",
+            "AddMail Current {{ModId}}_{{Random:{{HogwartsFurniture}}|key=RoomOfRequirementBottomRight}}_BottomRight received",
             "spacechase0.SpaceCore_ShowHudMessage \"The furniture will be mailed to your house.\" (F){{Random:{{HogwartsFurniture}}|key=RoomOfRequirementBottomRight}}"
           ],
           "InteractionShake": false,
@@ -170,6 +170,38 @@
         "HasMod |contains= DLX.Bundles": true,
         "HasMod |contains= spacechase0.SpaceCore": true,
         "HasFlag |contains= {{ModId}}_RoomOfRequirementBottomRight": false
+      }
+    },
+    {
+      "LogName": "Hogwarts Room of Requirement Mail Data TopLeft",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "{{ModId}}_RoomOfRequirementTopLeft": "OWL POST%item id (F){{RoomOfRequirementTopLeft}} 1 %% %action RemoveMail Current {{ModId}}_RoomOfRequirementTopLeft received %% %action RemoveMail Current {{ModId}}_{{RoomOfRequirementTopLeft}}_TopLeft received %%[#]Room of Requirement Furniture Shop TopLeft"
+      }
+    },
+    {
+      "LogName": "Hogwarts Room of Requirement Mail Data BottomLeft",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "{{ModId}}_RoomOfRequirementBottomLeft": "OWL POST%item id (F){{RoomOfRequirementBottomLeft}} 1 %% %action RemoveMail Current {{ModId}}_RoomOfRequirementBottomLeft received %% %action RemoveMail Current {{ModId}}_{{RoomOfRequirementBottomLeft}}_BottomLeft received %%[#]Room of Requirement Furniture Shop BottomLeft"
+      }
+    },
+    {
+      "LogName": "Hogwarts Room of Requirement Mail Data TopRight",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "{{ModId}}_RoomOfRequirementTopRight": "OWL POST%item id (F){{RoomOfRequirementTopRight}} 1 %% %action RemoveMail Current {{ModId}}_RoomOfRequirementTopRight received %% %action RemoveMail Current {{ModId}}_{{RoomOfRequirementTopRight}}_TopRight received %%[#]Room of Requirement Furniture Shop TopRight"
+      }
+    },
+    {
+      "LogName": "Hogwarts Room of Requirement Mail Data BottomRight",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "{{ModId}}_RoomOfRequirementBottomRight": "OWL POST%item id (F){{RoomOfRequirementBottomRight}} 1 %% %action RemoveMail Current {{ModId}}_RoomOfRequirementBottomRight received %% %action RemoveMail Current {{ModId}}_{{RoomOfRequirementBottomRight}}_BottomRight received %%[#]Room of Requirement Furniture Shop BottomRight"
       }
     },
     {
@@ -212,17 +244,6 @@
           "Action": "RemoveMail All DLX.Bundles.{{ModId}}_RoomOfRequirement{{Day}}{{Season}}{{Year}}BottomRight Received",
           "MarkActionApplied": false
         }
-      }
-    },
-    {
-      "LogName": "Hogwarts Room of Requirement Mail Data",
-      "Action": "EditData",
-      "Target": "Data/Mail",
-      "Entries": {
-        "{{ModId}}_RoomOfRequirementTopLeft": "OWL POST%item id (F){{RoomOfRequirementTopLeft}} 1 %% %action RemoveMail Current {{ModId}}_RoomOfRequirementTopLeft received %% %action RemoveMail Current {{ModId}}_{{RoomOfRequirementTopLeft}} received %%[#]Room of Requirement Furniture Shop TopLeft",
-        "{{ModId}}_RoomOfRequirementBottomLeft": "OWL POST%item id (F){{RoomOfRequirementBottomLeft}} 1 %% %action RemoveMail Current {{ModId}}_RoomOfRequirementBottomLeft received %% %action RemoveMail Current {{ModId}}_{{RoomOfRequirementBottomLeft}} received %%[#]Room of Requirement Furniture Shop BottomLeft",
-        "{{ModId}}_RoomOfRequirementTopRight": "OWL POST%item id (F){{RoomOfRequirementTopRight}} 1 %% %action RemoveMail Current {{ModId}}_RoomOfRequirementTopRight received %% %action RemoveMail Current {{ModId}}_{{RoomOfRequirementTopRight}} received %%[#]Room of Requirement Furniture Shop TopRight",
-        "{{ModId}}_RoomOfRequirementBottomRight": "OWL POST%item id (F){{RoomOfRequirementBottomRight}} 1 %% %action RemoveMail Current {{ModId}}_RoomOfRequirementBottomRight received %% %action RemoveMail Current {{ModId}}_{{RoomOfRequirementBottomRight}} received %%[#]Room of Requirement Furniture Shop BottomRight"
       }
     },
     {
