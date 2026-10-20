@@ -11,6 +11,18 @@
       "Action": "EditData",
       "Target": "Data/Objects",
       "Entries": {
+        "{{ModId}}_ChocolateFrog": {
+          "Name": "{{ModId}}_ChocolateFrog",
+          "DisplayName": "Chocolate Frog",
+          "Description": "{{i18n: obj.honeydukes.ChocolateFrog.desc}}",
+          "Texture": "{{InternalAssetKey: assets/Objects/Consumables/Honeydukes.png}}",
+          "SpriteIndex": 18,
+          "Type": "Basic",
+          "Price": 200,
+          "ContextTags": [
+            "{{ModId}}_Hogwarts"
+          ]
+        },
         "{{ModId}}_ChocolateFrogMilk": {
           "Name": "{{ModId}}_ChocolateFrogMilk",
           "DisplayName": "Chocolate Frog Milk",
@@ -58,6 +70,10 @@
       "Action": "EditData",
       "Target": "spacechase0.SpaceCore/ObjectExtensionData",
       "Entries": {
+        "{{ModId}}_ChocolateFrog": {
+          "UseForTriggerAction": true,
+          "ConsumeForTriggerAction": true
+        },
         "{{ModId}}_ChocolateFrogMilk": {
           "UseForTriggerAction": true
         },
@@ -74,6 +90,13 @@
       "Action": "EditData",
       "Target": "Data/TriggerActions",
       "Entries": {
+        "{{ModId}}_ChocolateFrog": {
+          "Id": "{{ModId}}_ChocolateFrog",
+          "Condition": "ITEM_ID Input {{ModId}}_ChocolateFrog",
+          "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+          "Action": "AddItem {{ModId}}_{{Random:{{ChocolateFrogStandard}}|key={{Time}}{{PlayerName}}}}",
+          "MarkActionApplied": false
+        },
         "{{ModId}}_ChocolateFrogMilkEdible": {
           "Id": "{{ModId}}_ChocolateFrogMilkEdible",
           "Condition": "ITEM_ID Input {{ModId}}_ChocolateFrogMilk",

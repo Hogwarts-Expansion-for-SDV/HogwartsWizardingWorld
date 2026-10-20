@@ -1,6 +1,12 @@
 {
   "Changes": [
     {
+      "LogName": "Hogwarts House Emblems Image Load",
+      "Action": "Load",
+      "Target": "{{ModId}}/HufflepuffEmblem, {{ModId}}/GryffindorEmblem, {{ModId}}/RavenclawEmblem, {{ModId}}/SlytherinEmblem",
+      "FromFile": "assets/Objects/Houses/{{TargetWithoutPath}}.png"
+    },
+    {
       "LogName": "Hogwarts House Point Image Load",
       "Action": "Load",
       "Target": "{{ModId}}/HousePoint",
@@ -58,6 +64,53 @@
       },
       "When": {
         "HasMod |contains= DLX.Bundles": true
+      }
+    },
+    {
+      "LogName": "Hogwarts House Powers",
+      "Action": "EditData",
+      "Target": "Data/Powers",
+      "Entries": {
+        "{{ModId}}_HufflepuffEmblem": {
+          "DisplayName": "Hufflepuff Emblem",
+          "Description": "You are a student of House Hufflepuff at Hogwarts.",
+          "TexturePath": "{{ModId}}/HufflepuffEmblem",
+          "TexturePosition": {
+            "X": 0,
+            "Y": 0
+          },
+          "UnlockedCondition": "PLAYER_HAS_MAIL Current {{ModId}}_Hufflepuff"
+        },
+        "{{ModId}}_GryffindorEmblem": {
+          "DisplayName": "Gryffindor Emblem",
+          "Description": "You are a student of House Gryffindor at Hogwarts.",
+          "TexturePath": "{{ModId}}/GryffindorEmblem",
+          "TexturePosition": {
+            "X": 0,
+            "Y": 0
+          },
+          "UnlockedCondition": "PLAYER_HAS_MAIL Current {{ModId}}_Gryffindor"
+        },
+        "{{ModId}}_RavenclawEmblem": {
+          "DisplayName": "Ravenclaw Emblem",
+          "Description": "You are a student of House Ravenclaw at Hogwarts.",
+          "TexturePath": "{{ModId}}/RavenclawEmblem",
+          "TexturePosition": {
+            "X": 0,
+            "Y": 0
+          },
+          "UnlockedCondition": "PLAYER_HAS_MAIL Current {{ModId}}_Ravenclaw"
+        },
+        "{{ModId}}_SlytherinEmblem": {
+          "DisplayName": "Slytherin Emblem",
+          "Description": "You are a student of House Slytherin at Hogwarts.",
+          "TexturePath": "{{ModId}}/SlytherinEmblem",
+          "TexturePosition": {
+            "X": 0,
+            "Y": 0
+          },
+          "UnlockedCondition": "PLAYER_HAS_MAIL Current {{ModId}}_Slytherin"
+        },
       }
     }
   ]
