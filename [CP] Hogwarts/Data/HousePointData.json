@@ -63,11 +63,12 @@
         }
       },
       "When": {
-        "HasMod |contains= DLX.Bundles": true
+        "HasMod |contains= DLX.Bundles": true,
+        "HasSeenEvent |contains= {{ModId}}_ChapterOne.1": true
       }
     },
     {
-      "LogName": "Hogwarts House Powers",
+      "LogName": "Hogwarts House Powers Hufflepuff",
       "Action": "EditData",
       "Target": "Data/Powers",
       "Entries": {
@@ -80,7 +81,18 @@
             "Y": 0
           },
           "UnlockedCondition": "PLAYER_HAS_MAIL Current {{ModId}}_Hufflepuff"
-        },
+        }
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_Hufflepuff": true,
+        "HasSeenEvent |contains= {{ModId}}_ChapterOne.1": true
+      }
+    },
+    {
+      "LogName": "Hogwarts House Powers Gryffindor",
+      "Action": "EditData",
+      "Target": "Data/Powers",
+      "Entries": {
         "{{ModId}}_GryffindorEmblem": {
           "DisplayName": "Gryffindor Emblem",
           "Description": "You are a student of House Gryffindor at Hogwarts.",
@@ -90,7 +102,18 @@
             "Y": 0
           },
           "UnlockedCondition": "PLAYER_HAS_MAIL Current {{ModId}}_Gryffindor"
-        },
+        }
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_Gryffindor": true,
+        "HasSeenEvent |contains= {{ModId}}_ChapterOne.1": true
+      }
+    },
+    {
+      "LogName": "Hogwarts House Powers Ravenclaw",
+      "Action": "EditData",
+      "Target": "Data/Powers",
+      "Entries": {
         "{{ModId}}_RavenclawEmblem": {
           "DisplayName": "Ravenclaw Emblem",
           "Description": "You are a student of House Ravenclaw at Hogwarts.",
@@ -100,7 +123,18 @@
             "Y": 0
           },
           "UnlockedCondition": "PLAYER_HAS_MAIL Current {{ModId}}_Ravenclaw"
-        },
+        }
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_Ravenclaw": true,
+        "HasSeenEvent |contains= {{ModId}}_ChapterOne.1": true
+      }
+    },
+    {
+      "LogName": "Hogwarts House Powers Slytherin",
+      "Action": "EditData",
+      "Target": "Data/Powers",
+      "Entries": {
         "{{ModId}}_SlytherinEmblem": {
           "DisplayName": "Slytherin Emblem",
           "Description": "You are a student of House Slytherin at Hogwarts.",
@@ -110,7 +144,11 @@
             "Y": 0
           },
           "UnlockedCondition": "PLAYER_HAS_MAIL Current {{ModId}}_Slytherin"
-        },
+        }
+      },
+      "When": {
+        "HasFlag |contains= {{ModId}}_Slytherin": true,
+        "HasSeenEvent |contains= {{ModId}}_ChapterOne.1": true
       }
     }
   ]
