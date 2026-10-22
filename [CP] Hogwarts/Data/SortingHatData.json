@@ -1,0 +1,39 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Sorting Hat Trigger Actions",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "{{ModId}}_SortingHatHufflepuff": {
+          "Id": "{{ModId}}_SortingHatHufflepuff",
+          "Trigger": "LocationChanged",
+          "Condition": "{{Query: '{{SortingHat}}' = 'Hufflepuff'}}, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatHufflepuff",
+          "Action": "AddMail Current {{ModId}}_Hufflepuff received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_SortingHatGryffindor": {
+          "Id": "{{ModId}}_SortingHatGryffindor",
+          "Trigger": "LocationChanged",
+          "Condition": "{{Query: '{{SortingHat}}' = 'Gryffindor'}}, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatGryffindor",
+          "Action": "AddMail Current {{ModId}}_Gryffindor received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_SortingHatRavenclaw": {
+          "Id": "{{ModId}}_SortingHatRavenclaw",
+          "Trigger": "LocationChanged",
+          "Condition": "{{Query: '{{SortingHat}}' = 'Ravenclaw'}}, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatRavenclaw",
+          "Action": "AddMail Current {{ModId}}_Ravenclaw received",
+          "MarkActionApplied": false
+        },
+        "{{ModId}}_SortingHatSlytherin": {
+          "Id": "{{ModId}}_SortingHatSlytherin",
+          "Trigger": "LocationChanged",
+          "Condition": "{{Query: '{{SortingHat}}' = 'Slytherin'}}, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatSlytherin",
+          "Action": "AddMail Current {{ModId}}_Slytherin received",
+          "MarkActionApplied": false
+        }
+      }
+    }
+  ]
+}

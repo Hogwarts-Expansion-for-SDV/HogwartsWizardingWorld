@@ -64,6 +64,7 @@ Data/MapPropertiesData.json,
 Data/MonsterSprites.json,
 Data/MountData.json,
 Data/SouthSeaBogData.json,
+Data/SortingHatData.json,
 Data/TilesheetData.json,
 Data/TransfigurationBrushData.json,
 Data/TrinketTinkerData.json,
@@ -8196,6 +8197,35 @@ Data/Shops/TomesAndScrollsData.json"
       "Value": "AstronomyKitchen_SC_Hogwarts_565",
       "When": {
         "HasFlag |contains= {{ModId}}_AstronomyKitchen_SC_Hogwarts_565_BottomRight": true
+      }
+    },
+    // Sorting Hat
+    {
+      "Name": "SortingHat",
+      "Value": "Hufflepuff",
+      "When": {
+        "Query: ('{{HasDialogueAnswer}}' <> '{{ModId}}_Extrinsic' AND '{{HasDialogueAnswer}}' <> '{{ModId}}_Idealist') OR ('{{HasDialogueAnswer}}' IN ('{{ModId}}_GuessHufflepuff', '{{ModId}}_Guess{{ModId}}_Realist') AND '{{HasDialogueAnswer}}' = '{{ModId}}_Intrinsic' AND '{{HasDialogueAnswer}}' = '{{ModId}}_IdealistOrRealist') OR ('{{HasDialogueAnswer}}' IN ('{{ModId}}_GuessHufflepuff', '{{ModId}}_GuessRavenclaw') AND '{{HasDialogueAnswer}}' = '{{ModId}}_ExtrinsicOrIntrinsic' AND '{{HasDialogueAnswer}}' = '{{ModId}}_Realist')": true
+      }
+    },
+    {
+      "Name": "SortingHat",
+      "Value": "Gryffindor",
+      "When": {
+        "Query: ('{{HasDialogueAnswer}}' <> '{{ModId}}_Intrinsic' AND '{{HasDialogueAnswer}}' <> '{{ModId}}_Realist') OR ('{{HasDialogueAnswer}}' IN ('{{ModId}}_GuessGryffindor', '{{ModId}}_Guess{{ModId}}_Idealist') AND '{{HasDialogueAnswer}}' = '{{ModId}}_Extrinsic' AND '{{HasDialogueAnswer}}' = '{{ModId}}_IdealistOrRealist') OR ('{{HasDialogueAnswer}}' IN ('{{ModId}}_GuessGryffindor', '{{ModId}}_GuessSlytherin') AND '{{HasDialogueAnswer}}' = '{{ModId}}_ExtrinsicOrIntrinsic' AND '{{HasDialogueAnswer}}' = '{{ModId}}_Idealist')": true
+      }
+    },
+    {
+      "Name": "SortingHat",
+      "Value": "Ravenclaw",
+      "When": {
+        "Query: ('{{HasDialogueAnswer}}' <> '{{ModId}}_Extrinsic' AND '{{HasDialogueAnswer}}' <> '{{ModId}}_Realist') OR ('{{HasDialogueAnswer}}' IN ('{{ModId}}_GuessRavenclaw', '{{ModId}}_Guess{{ModId}}_Idealist') AND '{{HasDialogueAnswer}}' = '{{ModId}}_Intrinsic' AND '{{HasDialogueAnswer}}' = '{{ModId}}_IdealistOrRealist') OR ('{{HasDialogueAnswer}}' IN ('{{ModId}}_GuessRavenclaw', '{{ModId}}_GuessHufflepuff') AND '{{HasDialogueAnswer}}' = '{{ModId}}_ExtrinsicOrIntrinsic' AND '{{HasDialogueAnswer}}' = '{{ModId}}_Idealist')": true
+      }
+    },
+    {
+      "Name": "SortingHat",
+      "Value": "Slytherin",
+      "When": {
+        "Query: ('{{HasDialogueAnswer}}' <> '{{ModId}}_Intrinsic' AND '{{HasDialogueAnswer}}' <> '{{ModId}}_Idealist') OR ('{{HasDialogueAnswer}}' IN ('{{ModId}}_GuessSlytherin', '{{ModId}}_Guess{{ModId}}_Realist') AND '{{HasDialogueAnswer}}' = '{{ModId}}_Extrinsic' AND '{{HasDialogueAnswer}}' = '{{ModId}}_IdealistOrRealist') OR ('{{HasDialogueAnswer}}' IN ('{{ModId}}_GuessSlytherin', '{{ModId}}_GuessGryffindor') AND '{{HasDialogueAnswer}}' = '{{ModId}}_ExtrinsicOrIntrinsic' AND '{{HasDialogueAnswer}}' = '{{ModId}}_Realist')": true
       }
     }
   ]
