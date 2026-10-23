@@ -45,6 +45,19 @@
       "Target": "{{ModId}}/Objects/Cup",
       "FromFile": "assets/Objects/Uncategorized/Transfiguration_Cup.png"
     },
+    ///Mountain Spritesheets///
+    {
+      "LogName": "Hogwarts Mountain Andrew Load",
+      "Action": "Load",
+      "Target": "Characters/Monsters/AndrewMountain",
+      "FromFile": "assets/Characters/HogwartsAndrewMountain.png"
+    },
+    {
+      "LogName": "Hogwarts Mountain Danny Load",
+      "Action": "Load",
+      "Target": "Characters/Monsters/DannyMountain",
+      "FromFile": "assets/Characters/HogwartsDannyMountain.png"
+    },
     
     // Bell Tower Courtyard
     {
@@ -206,7 +219,23 @@
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogwartsSouthWing",
       "Entries": {
-        "{{ModId}}_Andrew75": ""
+        "{{ModId}}_Andrew75": "spaceMusic/49 23/farmer 56 21 3 HogwartsAndrew 48 21 0 HogwartsDanny 48 33 0/
+        skippable/pause 2000/
+        move farmer -6 0 3/pause 500/emote farmer 8/pause 500/faceDirection HogwartsAndrew 1/pause 1000/speak HogwartsAndrew \"Oh, hi @.\"/pause 800/question null \"#What are you doing? #Lost in thoughts?\"/pause 1000/
+        speak HogwartsAndrew \"Just... Imagining how it would be.\"/faceDirection HogwartsAndrew 0/pause 500/speak HogwartsAndrew \"Graduating, I mean.$1\"/pause 200/emote HogwartsAndrew 40/pause 500/speak HogwartsAndrew \"Sometimes when there's a lot on my mind I imagine myself in few years.$1 #$b# On my graduation day. It's... Reassuring.$2\"/
+        pause 1000/faceDirection HogwartsAndrew 1/question null \"#How long until your graduation?\"/speed HogwartsDanny 3/move HogwartsDanny 0 -9 0/stopMusic/faceDirection farmer 2/faceDirection HogwartsAndrew 2/jump HogwartsAndrew/pause 500/shake HogwartsDanny 1000/speak HogwartsDanny \"...$3\"/pause 500/speak HogwartsDanny \"Hello, brother. #$b# I knew from the begining that something was off here.$3\"/
+        shake HogwartsAndrew 500/speak HogwartsAndrew \"What- What are you talking about?$2\"/pause 1000/emote HogwartsDanny 12 true/pause 500/speak HogwartsDanny \"Why are you wearing these robes if you don't belong here, Andrew?$3\"/shake HogwartsDanny 1000 true/speak HogwartsDanny \"Not only is my little brother a squib but he's also a liar.$3\"/pause 1000/shake HogwartsAndrew 1000 true/
+        speak HogwartsAndrew \"...$2 #$b# You won't understand.$5 #$b# You have no idea how hard it was to get this far!$5\"/pause 500/speak HogwartsDanny \"How can you even graduate without using magic, Andrew?!$3\"/pause 250/faceDirection HogwartsDanny 2/shake HogwartsDanny 500 true/pause 500//speak HogwartsDanny \"It's over, Andrew. I'm turning you in.$3\"/move HogwartsDanny 0 2 2/
+        beginSimultaneousCommand/jump HogwartsAndrew/textAboveHead HogwartsAndrew \"S-Stop!\"/endSimultaneousCommand/speed HogwartsAndrew 3/move HogwartsAndrew 0 2 2/speak HogwartsAndrew \"Is that the only way you can beat me?!$5\"/pause 1000/speak HogwartsDanny \"You didn't win that day... I'll prove it to you.$3\"/emote HogwartsAndrew 40/shake HogwartsAndrew 500/textAboveHead HogwartsAndrew \"Let's do this...\"/pause 2000/jump farmer/faceDirection farmer 3/pause 500/faceDirection farmer 2/emote farmer 8/
+        globalFade/viewport 1000 1000/warp HogwartsAndrew 21 53/faceDirection HogwartsAndrew 0/faceDirection HogwartsDanny 0/warp HogwartsDanny 23 56/changeLocation {{ModId}}_AndrewMountain/playMusic Frost_Ambient/viewport 22 53 true/pause 1000/move HogwartsDanny 0 -3 0/pause 500/speak HogwartsDanny \"You still have time to back off, Andrew... Save yourself the humiliation.$1\"/shake HogwartsAndrew 1500/speak HogwartsAndrew \"...$5\"/pause 1000/speak HogwartsDanny \"Your loss. $3\"/
+        pause 1000/stopMusic/beginSimultaneousCommand/screenFlash 1/warp HogwartsDanny 999 999/warp HogwartsAndrew 999 999/addTemporaryActor AndrewMountain 16 32 21 53 0 true Monster/addTemporaryActor DannyMountain 16 32 23 53 0 true Monster/endSimultaneousCommand/playMusic Near The Planet Core/pause 500/speed AndrewMountain 4/speed DannyMountain 3/move AndrewMountain 0 -9 0 DannyMountain 0 -9 0 true/viewport move 0 -3 8000/pause 3500/shake AndrewMountain 1000/
+        beginSimultaneousCommand/screenFlash 1/warp HogwartsAndrew 21 43/warp AndrewMountain 999 999/endSimultaneousCommand/shake DannyMountain 500/beginSimultaneousCommand/warp HogwartsDanny 23 43/warp DannyMountain 999 999/endSimultaneousCommand/speed HogwartsAndrew 3/speed HogwartsDanny 4/move HogwartsAndrew 0 -14 0 HogwartsDanny 0 -15 0 true/glow 25 25 25 true/shake HogwartsAndrew 500 true/pause 5000/textAboveHead HogwartsAndrew \"U-Ugh!\"/viewport move 0 -2 3000/shake HogwartsAndrew 1000/
+        pause 1000/move HogwartsAndrew 1 0 0 true/pause 500/move HogwartsAndrew 0 -1 0 true/pause 1000/beginSimultaneousCommand/warp DannyMountain 23 28/warp HogwartsDanny 999 999/endSimultaneousCommand/shake DannyMountain 500/beginSimultaneousCommand/warp AndrewMountain 22 28/warp HogwartsAndrew 999 999/screenFlash 1/glow 55 25 55 true/endSimultaneousCommand/speed DannyMountain 1/speed AndrewMountain 2/pause 500/move AndrewMountain 0 -6 0 DannyMountain 0 -4 0 true/pause 2500/
+        speak HogwartsDanny \"Andrew, we're... Too high up.$3\"/shake AndrewMountain 1000/speak HogwartsAndrew \"Are you giving up?$5\"/shake DannyMountain 250/textAboveHead DannyMountain \"Never!\"/pause 1500/move AndrewMountain 0 -3 0 true/viewport move 0 -2 3000/pause 1500/beginSimultaneousCommand/screenFlash 1/warp HogwartsAndrew 22 18/warp AndrewMountain 999 999/endSimultaneousCommand/move HogwartsAndrew 0 -2 0 true/shake DannyMountain 500/pause 1000/move DannyMountain 0 -5 0 true/pause 2500/
+        beginSimultaneousCommand/warp HogwartsDanny 23 18/warp DannyMountain 999 999/endSimultaneousCommand/pause 250/move HogwartsAndrew 0 -3 0 HogwartsDanny 0 -2 0 true/pause 500/shake HogwartsDanny 1000/pause 500/stopMusic/speak HogwartsDanny \"Andrew, how are you doing this...$4\"/pause 1500/speak HogwartsAndrew \"You want to know?$2\"/pause 800/faceDirection HogwartsAndrew 2/pause 500/speak HogwartsAndrew \"I stopped thinking about the return trip.$5\"/pause 500/faceDirection HogwartsAndrew 0/viewport move 0 -2 2000/
+        move HogwartsAndrew 0 -2 0 true/emote HogwartsDanny 40/pause 500/speak HogwartsDanny \"You're insane...$4\"/pause 1000/speed HogwartsDanny 1/move HogwartsDanny 0 -2 0 true/pause 2500/beginSimultaneousCommand/hideShadow HogwartsDanny true/shake HogwartsDanny 1000 true/positionOffset HogwartsDanny -5 -5 true/showFrame HogwartsDanny 21/playSound snowyStep/endSimultaneousCommand/pause 3000/faceDirection HogwartsAndrew 2/pause 500/speed HogwartsAndrew 1/move HogwartsAndrew 0 1 2 true/pause 2500/
+        shake HogwartsAndrew 500/textAboveHead HogwartsAndrew \"Cough- Cough!\"/animate HogwartsAndrew false false 200 20 20 20 21 22 23 24 25 26 27 26 27 26 27/pause 2400/stopAnimation HogwartsAndrew 27/pause 1000/emote HogwartsAndrew 40/pause 1000/globalFade/viewport -999 -999/
+        pause 1000/end",
       }
     }
   ]
