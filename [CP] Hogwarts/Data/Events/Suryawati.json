@@ -25,6 +25,12 @@
       "FromFile": "assets/Creatures/WhompingWillow.png"
     },
     {
+      "LogName": "Hogwarts Little Suryawati Load",
+      "Action": "Load",
+      "Target": "Characters/Monsters/LittleSury",
+      "FromFile": "assets/Characters/LittleSury.png"
+    },
+    {
       "LogName": "Hogwarts Forbidden Forest Centaur Camp Suryawati25 Unicorn Sprite",
       "Action": "EditData",
       "Target": "mushymato.MMAP/TAS",
@@ -112,10 +118,15 @@
       "Target": "Data/Events/{{ModId}}_HogwartsBellTowerCourtyard",
       "Entries": {
         "{{ModId}}_Suryawati35/e {{ModId}}_Suryawati20/f HogwartsSuryawati 500/t 1800 2200": "AbigailFluteDuet/61 21/farmer 61 28 0 HogwartsSuryawati 61 19 0/skippable/pause 800/move farmer 0 -7 0 true/pause 600/emote HogwartsSuryawati 40/pause 500/
-        emote farmer 8/pause 1000/facedirection HogwartsSuryawati 3/faceDirection HogwartsSuryawati 2/speak HogwartsSuryawati \"You're here...\"/pause 1000/animate HogwartsSuryawati false true 500 18 19 18 19 18 19 18 19 18 19/pause 500/
+        emote farmer 8/pause 1000/faceDirection HogwartsSuryawati 2/speak HogwartsSuryawati \"You're here...\"/pause 1000/animate HogwartsSuryawati false true 500 18 19 18 19 18 19 18 19 18 19/pause 500/
         speak HogwartsSuryawati \"As long as you don't tell anyone, I will answer your questions.$2\"/pause 800/
         question null \"#I won't tell.#How are you able to transform into a bird?\"/pause 800/stopAnimation HogwartsSuryawati 0/pause 500/showFrame HogwartsSuryawati 16/
         speak HogwartsSuryawati \"After an argument with my father, I ran away, and transformed for the first time.$2\"/pause 800/
+        globalFade/viewport 999 999/pause 1000/changeLocation {{ModId}}_Suryawati_HomeEx/ambientLight 50 50 100/addTemporaryActor HogwartsSuryawatiFather 16 32 12 39 0 true Character/addTemporaryActor LittleSury 16 32 15 39 3 true Monster/viewport 15 43 true/
+        pause 1000/shake LittleSury 1000/pause 800/message \"You promised you were done with this!\"/pause 1000/emote HogwartsSuryawatiFather 40/pause 1000/speak HogwartsSuryawatiFather \"We've been over this before, Suryawati...\"/pause 1500/speak HogwartsSuryawatiFather \"It must be done.\"/
+        beginSimultaneousCommand/shake LittleSury 1000 true/jump LittleSury/textAboveHead LittleSury \"Why?!\"/endSimultaneousCommand/pause 1000/speed LittleSury 3/move LittleSury 0 4 2 true/pause 1500/changeLocation town/viewport 999 999/playSound flameSpellHit/beginSimultaneousCommand/
+        addTemporaryActor {{ModId}}_SuryawatiPhoenix 32 32 17 7 2 true Monster/hideShadow {{ModId}}_SuryawatiPhoenix true/endSimultaneousCommand/animate {{ModId}}_SuryawatiPhoenix false true 200 0 1 2 3/changeLocation {{ModId}}_Suryawati_HomeEx/viewport 17 7 true/pause 1000/emote {{ModId}}_SuryawatiPhoenix 16 true/pause 1000/message \"I-I'm... flying?!\"/pause 2000/
+        changeLocation {{ModId}}_HogwartsBellTowerCourtyard/viewport 61 21 true/pause 1500/jump farmer/
         question null \"#Do your parents know?\"/pause 1000/showFrame HogwartsSuryawati 0/faceDirection HogwartsSuryawati 3/pause 500/emote HogwartsSuryawati 40/pause 500/showFrame HogwartsSuryawati 17/pause 500/
         speak HogwartsSuryawati \"I do not remember my mother.$2#$b#My father... I cannot tell him.$2#$b#He poaches magical creatures...$2\"/pause 1000/
         emote farmer 28/pause 500/speak HogwartsSuryawati \"Well... Now you know.\"/pause 1000/speak HogwartsSuryawati \"I actually feel a little better after sharing this.\"/pause 1000/speak HogwartsSuryawati \"A little bit...$4\"/pause 1000/
