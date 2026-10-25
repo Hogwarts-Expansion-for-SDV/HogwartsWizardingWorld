@@ -8,7 +8,7 @@
         "{{ModId}}_SortingHatHufflepuff": {
           "Id": "{{ModId}}_SortingHatHufflepuff",
           "Trigger": "Esca.EMP_OneSecondUpdateTicked",
-          "Condition": "ANY \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Intrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Realist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatHufflepuff, {{HasMod |contains= Esca.EMP}}\" \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_GuessHufflepuff {{ModId}}_GuessSlytherin, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Intrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_IdealistOrRealist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatHufflepuff, {{HasMod |contains= Esca.EMP}}\" \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_GuessHufflepuff {{ModId}}_GuessRavenclaw, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_ExtrinsicOrIntrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Realist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatHufflepuff, {{HasMod |contains= Esca.EMP}}\"",
+          "Condition": "ANY \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Intrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Realist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatHufflepuff\" \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_GuessHufflepuff {{ModId}}_GuessSlytherin, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Intrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_IdealistOrRealist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatHufflepuff\" \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_GuessHufflepuff {{ModId}}_GuessRavenclaw, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_ExtrinsicOrIntrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Realist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatHufflepuff\"",
           "Actions": [
             "AddMail Current {{ModId}}_Hufflepuff received",
             "Spiderbuttons.BETAS_PatchUpdate"
@@ -17,7 +17,9 @@
         }
       },
       "When": {
-        "HasFlag |contains= {{ModId}}_Hufflepuff, {{ModId}}_Gryffindor, {{ModId}}_Ravenclaw, {{ModId}}_Slytherin": false
+        "HasFlag |contains= {{ModId}}_Hufflepuff, {{ModId}}_Gryffindor, {{ModId}}_Ravenclaw, {{ModId}}_Slytherin": false,
+        "HasMod |contains= Esca.EMP": true,
+        "HasMod |contains= Spiderbuttons.BETAS": true
       }
     },
     {
@@ -28,7 +30,7 @@
         "{{ModId}}_SortingHatGryffindor": {
           "Id": "{{ModId}}_SortingHatGryffindor",
           "Trigger": "Esca.EMP_OneSecondUpdateTicked",
-          "Condition": "ANY \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Extrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Idealist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatGryffindor, {{HasMod |contains= Esca.EMP}}\" \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_GuessGryffindor {{ModId}}_GuessRavenclaw, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Extrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_IdealistOrRealist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatGryffindor, {{HasMod |contains= Esca.EMP}}\" \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_GuessGryffindor {{ModId}}_GuessSlytherin, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_ExtrinsicOrIntrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Idealist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatGryffindor, {{HasMod |contains= Esca.EMP}}\"",
+          "Condition": "ANY \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Extrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Idealist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatGryffindor\" \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_GuessGryffindor {{ModId}}_GuessRavenclaw, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Extrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_IdealistOrRealist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatGryffindor\" \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_GuessGryffindor {{ModId}}_GuessSlytherin, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_ExtrinsicOrIntrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Idealist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatGryffindor\"",
           "Actions": [
             "AddMail Current {{ModId}}_Gryffindor received",
             "Spiderbuttons.BETAS_PatchUpdate"
@@ -37,7 +39,9 @@
         }
       },
       "When": {
-        "HasFlag |contains= {{ModId}}_Hufflepuff, {{ModId}}_Gryffindor, {{ModId}}_Ravenclaw, {{ModId}}_Slytherin": false
+        "HasFlag |contains= {{ModId}}_Hufflepuff, {{ModId}}_Gryffindor, {{ModId}}_Ravenclaw, {{ModId}}_Slytherin": false,
+        "HasMod |contains= Esca.EMP": true,
+        "HasMod |contains= Spiderbuttons.BETAS": true
       }
     },
     {
@@ -48,7 +52,7 @@
         "{{ModId}}_SortingHatRavenclaw": {
           "Id": "{{ModId}}_SortingHatRavenclaw",
           "Trigger": "Esca.EMP_OneSecondUpdateTicked",
-          "Condition": "ANY \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Intrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Idealist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatRavenclaw, {{HasMod |contains= Esca.EMP}}\" \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_GuessRavenclaw {{ModId}}_GuessGryffindor, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Intrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_IdealistOrRealist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatRavenclaw, {{HasMod |contains= Esca.EMP}}\" \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_GuessRavenclaw {{ModId}}_GuessHufflepuff, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_ExtrinsicOrIntrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Idealist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatRavenclaw, {{HasMod |contains= Esca.EMP}}\"",
+          "Condition": "ANY \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Intrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Idealist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatRavenclaw\" \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_GuessRavenclaw {{ModId}}_GuessGryffindor, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Intrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_IdealistOrRealist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatRavenclaw\" \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_GuessRavenclaw {{ModId}}_GuessHufflepuff, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_ExtrinsicOrIntrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Idealist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatRavenclaw\"",
           "Actions": [
             "AddMail Current {{ModId}}_Ravenclaw received",
             "Spiderbuttons.BETAS_PatchUpdate"
@@ -57,7 +61,9 @@
         }
       },
       "When": {
-        "HasFlag |contains= {{ModId}}_Hufflepuff, {{ModId}}_Gryffindor, {{ModId}}_Ravenclaw, {{ModId}}_Slytherin": false
+        "HasFlag |contains= {{ModId}}_Hufflepuff, {{ModId}}_Gryffindor, {{ModId}}_Ravenclaw, {{ModId}}_Slytherin": false,
+        "HasMod |contains= Esca.EMP": true,
+        "HasMod |contains= Spiderbuttons.BETAS": true
       }
     },
     {
@@ -68,7 +74,7 @@
         "{{ModId}}_SortingHatSlytherin": {
           "Id": "{{ModId}}_SortingHatSlytherin",
           "Trigger": "Esca.EMP_OneSecondUpdateTicked",
-          "Condition": "ANY \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Extrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Realist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatSlytherin, {{HasMod |contains= Esca.EMP}}\" \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_GuessSlytherin {{ModId}}_GuessHufflepuff, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Extrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_IdealistOrRealist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatSlytherin, {{HasMod |contains= Esca.EMP}}\" \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_GuessSlytherin {{ModId}}_GuessGryffindor, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_ExtrinsicOrIntrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Realist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatSlytherin, {{HasMod |contains= Esca.EMP}}\"",
+          "Condition": "ANY \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Extrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Realist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatSlytherin\" \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_GuessSlytherin {{ModId}}_GuessHufflepuff, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Extrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_IdealistOrRealist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatSlytherin\" \"PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_GuessSlytherin {{ModId}}_GuessGryffindor, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_ExtrinsicOrIntrinsic, PLAYER_HAS_DIALOGUE_ANSWER Current {{ModId}}_Realist, !PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModId}}_SortingHatSlytherin\"",
           "Actions": [
             "AddMail Current {{ModId}}_Slytherin received",
             "Spiderbuttons.BETAS_PatchUpdate"
@@ -77,7 +83,9 @@
         }
       },
       "When": {
-        "HasFlag |contains= {{ModId}}_Hufflepuff, {{ModId}}_Gryffindor, {{ModId}}_Ravenclaw, {{ModId}}_Slytherin": false
+        "HasFlag |contains= {{ModId}}_Hufflepuff, {{ModId}}_Gryffindor, {{ModId}}_Ravenclaw, {{ModId}}_Slytherin": false,
+        "HasMod |contains= Esca.EMP": true,
+        "HasMod |contains= Spiderbuttons.BETAS": true
       }
     }
     /*,{
