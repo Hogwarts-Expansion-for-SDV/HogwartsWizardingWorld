@@ -8204,9 +8204,6 @@ Data/Shops/TomesAndScrollsData.json"
       "Name": "SortingHat",
       "Value": "",
       "When": {
-        "HasDialogueAnswer |contains= {{ModId}}_Intrinsic, {{ModId}}_Extrinsic, {{ModId}}_ExtrinsicOrIntrinsic": false,
-        "HasDialogueAnswer |contains= {{ModId}}_Idealist, {{ModId}}_Realist, {{ModId}}_IdealistOrRealist": false,
-        "HasDialogueAnswer |contains= {{ModId}}_GuessHufflepuff, {{ModId}}_GuessGryffindor, {{ModId}}_GuessRavenclaw, {{ModId}}_GuessSlytherin": false,
         "HasFlag |contains= {{ModId}}_Hufflepuff, {{ModId}}_Gryffindor, {{ModId}}_Ravenclaw, {{ModId}}_Slytherin": false
       }
     },
@@ -8214,29 +8211,29 @@ Data/Shops/TomesAndScrollsData.json"
       "Name": "SortingHat",
       "Value": "Hufflepuff",
       "When": {
-        "Query: ('{{HasDialogueAnswer}}' = '{{ModId}}_Intrinsic' AND '{{HasDialogueAnswer}}' = '{{ModId}}_Realist') OR ('{{HasDialogueAnswer}}' IN ('{{ModId}}_GuessHufflepuff', '{{ModId}}_GuessSlytherin') AND '{{HasDialogueAnswer}}' = '{{ModId}}_Intrinsic' AND '{{HasDialogueAnswer}}' = '{{ModId}}_IdealistOrRealist') OR ('{{HasDialogueAnswer}}' IN ('{{ModId}}_GuessHufflepuff', '{{ModId}}_GuessRavenclaw') AND '{{HasDialogueAnswer}}' = '{{ModId}}_ExtrinsicOrIntrinsic' AND '{{HasDialogueAnswer}}' = '{{ModId}}_Realist')": true
+        "HasFlag |contains= {{ModId}}_Hufflepuff": true
       }
     },
     {
       "Name": "SortingHat",
       "Value": "Gryffindor",
       "When": {
-        "Query: ('{{HasDialogueAnswer}}' = '{{ModId}}_Extrinsic' AND '{{HasDialogueAnswer}}' = '{{ModId}}_Idealist') OR ('{{HasDialogueAnswer}}' IN ('{{ModId}}_GuessGryffindor', '{{ModId}}_GuessRavenclaw') AND '{{HasDialogueAnswer}}' = '{{ModId}}_Extrinsic' AND '{{HasDialogueAnswer}}' = '{{ModId}}_IdealistOrRealist') OR ('{{HasDialogueAnswer}}' IN ('{{ModId}}_GuessGryffindor', '{{ModId}}_GuessSlytherin') AND '{{HasDialogueAnswer}}' = '{{ModId}}_ExtrinsicOrIntrinsic' AND '{{HasDialogueAnswer}}' = '{{ModId}}_Idealist')": true
+        "HasFlag |contains= {{ModId}}_Gryffindor": true
       }
     },
     {
       "Name": "SortingHat",
       "Value": "Ravenclaw",
       "When": {
-        "Query: ('{{HasDialogueAnswer}}' = '{{ModId}}_Intrinsic' AND '{{HasDialogueAnswer}}' = '{{ModId}}_Idealist') OR ('{{HasDialogueAnswer}}' IN ('{{ModId}}_GuessRavenclaw', '{{ModId}}_GuessGryffindor') AND '{{HasDialogueAnswer}}' = '{{ModId}}_Intrinsic' AND '{{HasDialogueAnswer}}' = '{{ModId}}_IdealistOrRealist') OR ('{{HasDialogueAnswer}}' IN ('{{ModId}}_GuessRavenclaw', '{{ModId}}_GuessHufflepuff') AND '{{HasDialogueAnswer}}' = '{{ModId}}_ExtrinsicOrIntrinsic' AND '{{HasDialogueAnswer}}' = '{{ModId}}_Idealist')": true
+        "HasFlag |contains= {{ModId}}_Ravenclaw": true
       }
     },
     {
       "Name": "SortingHat",
       "Value": "Slytherin",
       "When": {
-        "Query: ('{{HasDialogueAnswer}}' = '{{ModId}}_Extrinsic' AND '{{HasDialogueAnswer}}' = '{{ModId}}_Realist') OR ('{{HasDialogueAnswer}}' IN ('{{ModId}}_GuessSlytherin', '{{ModId}}_GuessHufflepuff') AND '{{HasDialogueAnswer}}' = '{{ModId}}_Extrinsic' AND '{{HasDialogueAnswer}}' = '{{ModId}}_IdealistOrRealist') OR ('{{HasDialogueAnswer}}' IN ('{{ModId}}_GuessSlytherin', '{{ModId}}_GuessGryffindor') AND '{{HasDialogueAnswer}}' = '{{ModId}}_ExtrinsicOrIntrinsic' AND '{{HasDialogueAnswer}}' = '{{ModId}}_Realist')": true
+        "HasFlag |contains= {{ModId}}_Slytherin": true
       }
-    },
+    }
   ]
 }
