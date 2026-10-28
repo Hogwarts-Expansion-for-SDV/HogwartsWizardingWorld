@@ -81,9 +81,26 @@
         jump farmer/beginSimultaneousCommand/warp HogwartsPeeves 999 999/faceDirection farmer 1/pause 1000/emote farmer 12/pause 1000/globalFade/viewport 1999 1999/pause 500/end"
       }
     },
-    ///Main Story Chapter 1///
-    
-  
-  
+    {
+      "LogName": "Hogwarts Transfiguration Wing Peeves Prank Event",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsTransfigurationWing",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 30,
+            "Y": 44
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "DMT/event_Once_On": "Data/Events/{{ModId}}_HogwartsTransfigurationWing|{{ModId}}_Peeves|"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
+        "HasSeenEvent |contains= {{ModId}}_Peeves": false
+      }
+    }
   ]
 }

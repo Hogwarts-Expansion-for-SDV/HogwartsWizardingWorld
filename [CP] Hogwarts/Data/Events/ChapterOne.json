@@ -1,6 +1,12 @@
 {
   "Changes": [
     {
+      "LogName": "Hogwarts Chapter One Image Load",
+      "Action": "Load",
+      "Target": "{{ModId}}/CaseFilesSuspects",
+      "FromFile": "assets/Event/Transparent128x128.png"
+    },
+    {
       "LogName": "Hogsmeade - Chapter 1, Part 1",
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogsmeadeStation",
@@ -43,15 +49,23 @@
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogwartsHeadmistressOffice",
       "Entries": {
-        "{{ModId}}_ChapterOne.2/e {{ModId}}_ChapterOne.1/t 1300 1800": "spaceMusic/37 52/farmer 999 999 0 HogwartsHermione 38 43 2 HogwartsMcGonagall 37 37 2/skippable/
+        "{{ModId}}_ChapterOne.2/e {{ModId}}_ChapterOne.1/t 1300 1800": "spaceMusic/39 55/farmer 44 57 3 HogwartsHermione 38 43 2 HogwartsMcGonagall 37 37 2/skippable/
+        move farmer -4 0 3/pause 1000/
+        viewport move 0 -6 2250/pause 2000/
         animate HogwartsMcGonagall false true 150 16 17 18 17 16 16 16 16 16 16 16 16 16 16 16 16/positionOffset HogwartsMcGonagall 0 10/animate HogwartsHermione false true 500 18 19 18 19 18 19/
-        viewport move 0 -3 3000/pause 1500/textAboveHead HogwartsHermione \"Hmm...\"/pause 1500/speak HogwartsHermione \"This truly is... Worrisome.\"/pause 500/stopAnimation HogwartsHermione 0/
-        faceDirection HogwartsHermione 3/faceDirection HogwartsHermione 0/pause 500/speak HogwartsHermione \"The ministry's resources are stretched thin as it is. #$b# The last thing we needed was students getting involved.\"/
-        emote HogwartsHermione 28/pause 1000/speak HogwartsMcGonagall \"Not that easy keeping children from getting involved in dangerous business now, is it?\"/pause 800/emote HogwartsHermione 60/pause 500/faceDirection HogwartsHermione 2/pause 200/animate HogwartsHermione false true 200 16 17 16 17 16/
-        pause 1500/speak HogwartsHermione \"Well, in any case... I must begin my investigation somewhere. #$b# Please, inform me the second there's more news about the unconcious student, Headmistress McGonagall.\"/pause 1000/stopAnimation HogwartsHermione 0/speak HogwartsHermione \"Good day.\"/warp farmer 37 57/
-        move HogwartsHermione 0 7 2 true/pause 1000/viewport move 0 2 4000 true/pause 1500/move farmer 0 -2 0 true/emote HogwartsHermione 16/pause 1000/speak HogwartsHermione \"Oh? You're here, wonderful.\"/animate HogwartsHermione false true 250 18 19 18 19/pause 2000/emote HogwartsHermione 40 true/speak HogwartsHermione \"Actually... We'll speak another time. You've just arrived afterall.\"/
-        stopAnimation HogwartsHermione 0/pause 500/speak HogwartsHermione \"Go right ahead. We'll have plenty time for introductions later.\"/pause 500/move HogwartsHermione 0 7 2 true/pause 1000/faceDirection farmer 1/pause 1000/move farmer 0 -4 1 true/pause 1000/beginSimultaneousCommand/fade/warp farmer 35 39/warp HogwartsHermione 999 999/stopAnimation HogwartsMcGonagall 0/faceDirection HogwartsMcGonagall 3/viewport 37 40/endSimultaneousCommand/globalFadeToClear 2000 true/
-        pause 1000/emote HogwartsMcGonagall 40/pause 1500/speak HogwartsMcGonagall \"I understand this is no ordinary situation, @. #$b# There's many things still left unansweared and things I cannot help you with right now.\"/pause 500/emote farmer 28/pause 500/faceDirection HogwartsMcGonagall 2/pause 500/speak HogwartsMcGonagall \"I encourage you however to use this as an opportunity. #$b# Hogwarts will not dissapoint you, @.\"/pause 1000/end"
+        pause 1500/speak HogwartsHermione \"Everybody has been accounted for at the time of the attack...#$b#Except for these four...#$b#When I checked each of their statements together, it doesn't make sense...#$b#One of them is lying.#$b#This is as far as I can go in my investigation without jeopardizing it.\"/stopAnimation HogwartsHermione 8/
+        faceDirection HogwartsHermione 2/faceDirection HogwartsMcGonagall 0/
+        move farmer -1 0 0/move farmer 0 -9 0/pause 1000/
+        speak HogwartsMcGonagall \"Ah, @. Come on in.\"/pause 800/
+        emote farmer 28/pause 1000/
+        message \"I can come back later, professor.\"/pause 1000/
+        speak HogwartsMcGonagall \"That’s not necessary. Professor Granger and I are done.\"/pause 800/emote HogwartsHermione 60/pause 500/faceDirection HogwartsHermione 2/pause 200/animate HogwartsHermione false true 200 16 17 16 17 16/
+        pause 1000/stopAnimation HogwartsHermione 0/
+        move HogwartsHermione 0 4 2 true/pause 1000/pause 1500/move farmer 0 -2 0 true/emote HogwartsHermione 16/pause 1000/animate HogwartsHermione false true 250 18 19 18 19/pause 2000/emote HogwartsHermione 40 true/
+        stopAnimation HogwartsHermione 0/pause 500/pause 500/move HogwartsHermione 0 4 0 true/pause 1000/faceDirection farmer 3/pause 1000/move farmer 0 -4 1 true/pause 1000/beginSimultaneousCommand/fade/warp farmer 35 39/warp HogwartsHermione 999 999/stopAnimation HogwartsMcGonagall 0/faceDirection HogwartsMcGonagall 3/viewport 37 40/endSimultaneousCommand/globalFadeToClear 2000 true/
+        pause 1000/emote HogwartsMcGonagall 40/pause 1500/
+        speak HogwartsMcGonagall \"@, how was your first year at Hogwarts?\"/pause 500/emote farmer 28/message \"I do not remember much.\"/pause 500/faceDirection HogwartsMcGonagall 2/pause 500/speak HogwartsMcGonagall \"Gaining magical abilities and learning at a school of magic must have been a shock. That’s why the Ministry has assigned you a mentor.#$b#You may spend less time at Hogwarts, but nevertheless, I expect you to work hard...#$b#Find what sparks your interests...#$b#And make solid friendships.\"/pause 1000/
+        message \"Who is my mentor?\"/pause 1000/end"
       }
     },
     {
@@ -59,11 +73,15 @@
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogwartsTransfigurationClassroom",
       "Entries": {
-        "{{ModId}}_ChapterOne.3/e {{ModId}}_ChapterOne.2/t 1300 1800": "none/999 999/farmer 21 15 0 HogwartsHermione 26 6 2/skippable/animate HogwartsHermione false true 200 16 17 16 17 16/pause 1000/playSound woodyStep/pause 600/playSound woodyStep/pause 1000/playSound doorCreak/pause 1500/viewport 23 9 true/playMusic movieTheater/move farmer 0 -4 0 true/pause 1000/speak HogwartsHermione \"Ah, there you are.\"/pause 500/faceDirection farmer 1/question null \"#Did you summon me, professor?\"/
-        pause 500/stopAnimation HogwartsHermione 0/pause 250/speak HogwartsHermione \"Yes. I have some questions for you, @\"/pause 800/move HogwartsHermione 0 3 2/move HogwartsHermione -3 0 3/pause 100/faceDirection HogwartsHermione 2/pause 250/speak HogwartsHermione \"...Do you recognise these people?\"/pause 100/viewport move 0 2 1500 true/
-        move farmer 2 0 3/faceDirection farmer 0/showFrame HogwartsHermione 22/pause 1000/jump farmer/pause 1000/question null \"#I've met them all.\"/pause 100/speak HogwartsHermione \"I've seen you interact with all of them.\"/pause 250/emote farmer 8/pause 500/stopAnimation HogwartsHermione 0/animate HogwartsHermione false true 250 18 19/speak HogwartsHermione \"As it turns out, these four have not been accounted for at the time of the attack ...And from each of their testimonies, one is contradicting. #$b# Moreover, any evidence appears to be deliberately concealed.\"/
-        pause 500/stopAnimation HogwartsHermione 0/pause 250/faceDirection HogwartsHermione 1/pause 500/speak HogwartsHermione \"Thus, I cannot complete my investigation without jeopardizing someone's innocence. #$b# You on the other hand... have unique circumstance.\"/pause 500/emote farmer 8/pause 1000/move HogwartsHermione -1 0 3/move HogwartsHermione 0 2 2/faceDirection HogwartsHermione 1/faceDirection farmer 3/
-        pause 200/speak HogwartsHermione \"@, I need your help.\"/pause 500/question null \"#You want me to gather information about them?\"/pause 500/speak HogwartsHermione \"Understand that what you are doing cannot be told to anyone. #$b# Do you understand what I'm asking you to do, @?\"/pause 1000/emote farmer 28/pause 1000/globalFade/viewport 999 999/stopMusic/pause 500/playSound reward/message \"You acquired the Emergent Wizard Case Notes.\"/addItem {{ModId}}_EmergentWizardCaseFilesGuidebook 1/end"
+        "{{ModId}}_ChapterOne.3/GameStateQuery {{HasMod |contains = mushymato.MMAP}}/e {{ModId}}_ChapterOne.2/FreeInventorySlots 1/t 600 1800": "none/999 999/farmer 21 15 0 HogwartsHermione 26 6 2/skippable/animate HogwartsHermione false true 200 16 17 16 17 16/pause 1000/playSound woodyStep/pause 600/playSound woodyStep/pause 1000/playSound doorCreak/pause 1500/viewport 23 9 true/playMusic movieTheater/move farmer 0 -4 0 true/pause 1000/speak HogwartsHermione \"Ah, there you are.\"/pause 500/faceDirection farmer 1/question null \"#Did you summon me, professor?\"/
+        pause 500/stopAnimation HogwartsHermione 0/pause 250/speak HogwartsHermione \"Yes.#$b#I have some questions for you, @.\"/pause 800/
+        emote farmer 8/move HogwartsHermione 0 3 2/move HogwartsHermione -3 0 3/pause 100/faceDirection HogwartsHermione 2/pause 250/speak HogwartsHermione \"Do you recognise these people?\"/pause 100/viewport move 0 2 1500 true/
+        move farmer 2 0 3/faceDirection farmer 0/showFrame HogwartsHermione 22/pause 1000/
+        action mushymato.MMAP_ScaledOverlay 5000 \"{{ModId}}/CaseFilesSuspects\" Fit/pause 5000/
+        action mushymato.MMAP_ScaledOverlay 1/
+        jump farmer/pause 1000/question null \"#I've met them all.\"/pause 250/emote farmer 8/pause 500/stopAnimation HogwartsHermione 0/animate HogwartsHermione false true 250 18 19/speak HogwartsHermione \"As it turns out, these four have not been accounted for at the time of the student attack, and their testimonies are contradicting each other. #$b# Furthermore, any evidence appears to be deliberately concealed.\"/
+        pause 500/stopAnimation HogwartsHermione 0/pause 250/faceDirection HogwartsHermione 1/pause 500/speak HogwartsHermione \"I cannot complete my investigation without jeopardizing it.\"/faceDirection HogwartsHermione 2/speak HogwartsHermione \"You on the other hand... are in a unique position.\"/pause 500/emote farmer 8/pause 1000/
+        pause 200/question null \"#You want me to spy on them?\"/pause 500/speak HogwartsHermione \"Understand that what you are doing cannot be revealed. #$b# Do you understand what I'm asking you to do, @?\"/pause 1000/emote farmer 28/pause 1000/globalFade/viewport 999 999/stopMusic/pause 500/playSound reward/message \"You acquired the Emergent Wizard Case Notes.\"/addItem {{ModId}}_EmergentWizardCaseFilesGuidebook 1/end"
       }
     },
     {
@@ -85,6 +103,82 @@
         warp HogwartsHooch 90 27/warp HogwartsMcGonagall 88 24/warp HogwartsInti 85 28/animate HogwartsInti true true 250 16 17/warp farmer 84 28/faceDirection farmer 2/pause 500/viewport 88 26 true/pause 1000/viewport move 0 4 1000/move HogwartsMcGonagall 0 3 2 true/pause 1000/pause 1000/emote HogwartsMcGonagall 40 true/faceDirection HogwartsMcGonagall 2/pause 500/speak HogwartsMcGonagall \"What happened?\"/pause 800/emote HogwartsInti 28/speak HogwartsInti \"Everyone suddenly fell to the ground. $2 #$b# It is as if all the broomsticks lost it's magic. $4\"/pause 1000/emote HogwartsHooch 12 true/pause 500/speak HogwartsHooch \"Could it be another Calamity breach?\"/pause 500/emote HogwartsMcGonagall 16/pause 1000/emote HogwartsMcGonagall 40 true/pause 1500/faceDirection HogwartsMcGonagall 1/pause 500/speak HogwartsMcGonagall \"Madam Hooch, all students are to stay off broomsticks until further notice. #$b# As of now, Quidditch is canceled.\"/
         showFrame HogwartsHooch 19/emote HogwartsHooch 16 true/jump HogwartsHooch/shake HogwartsHooch 1000/pause 1500/globalFade/viewport 999 999/pause 1000/playSound reward/message \"END OF CHAPTER 1\"/pause 1000/end"
       }
+    },
+    {
+      "LogName": "Hogwarts Chapter One Case File Suspects Andrew",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/CaseFilesSuspects",
+      "FromFile": "assets/Portraits/HogwartsAndrew.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 64,
+        "Height": 64
+      },
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 64,
+        "Height": 64
+      },
+      "PatchMode": "Replace"
+    },
+    {
+      "LogName": "Hogwarts Chapter One Case File Suspects M. Rasmodius",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/CaseFilesSuspects",
+      "FromFile": "assets/Portraits/MRasmodius.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 64,
+        "Height": 64
+      },
+      "ToArea": {
+        "X": 64,
+        "Y": 0,
+        "Width": 64,
+        "Height": 64
+      },
+      "PatchMode": "Replace"
+    },
+    {
+      "LogName": "Hogwarts Chapter One Case File Suspects Ollivander",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/CaseFilesSuspects",
+      "FromFile": "assets/Portraits/HogwartsOllivander.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 64,
+        "Height": 64
+      },
+      "ToArea": {
+        "X": 0,
+        "Y": 64,
+        "Width": 64,
+        "Height": 64
+      },
+      "PatchMode": "Replace"
+    },
+    {
+      "LogName": "Hogwarts Chapter One Case File Suspects Suryawati",
+      "Action": "EditImage",
+      "Target": "{{ModId}}/CaseFilesSuspects",
+      "FromFile": "assets/Portraits/HogwartsSuryawati.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 64,
+        "Height": 64
+      },
+      "ToArea": {
+        "X": 64,
+        "Y": 64,
+        "Width": 64,
+        "Height": 64
+      },
+      "PatchMode": "Replace"
     }
   ]
 }
