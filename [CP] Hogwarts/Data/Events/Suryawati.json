@@ -31,6 +31,12 @@
       "FromFile": "assets/Characters/LittleSury.png"
     },
     {
+      "LogName": "Hogwarts Suryawati StoryBoard Load",
+      "Action": "Load",
+      "Target": "{{ModId}}/z_Suryawati15_Hogwarts, {{ModId}}/z_Suryawati25_Hogwarts, {{ModId}}/z_Suryawati35_Hogwarts, {{ModId}}/z_Suryawati45_Hogwarts, {{ModId}}/z_Suryawati55_Hogwarts, {{ModId}}/z_Suryawati65_Hogwarts, {{ModId}}/z_Suryawati75_Hogwarts, {{ModId}}/z_Suryawati85_Hogwarts, {{ModId}}/z_Suryawati95_Hogwarts",
+      "FromFile": "assets/Event/{{TargetWithoutPath}}.png"
+    },
+    {
       "LogName": "Hogwarts Forbidden Forest Centaur Camp Suryawati25 Unicorn Sprite",
       "Action": "EditData",
       "Target": "mushymato.MMAP/TAS",
@@ -183,8 +189,29 @@
         pause 1000/shake HogwartsSuryawati 1000 true/playSound cavedrip/message \"It lives in your very skin.\"/pause 1000/speak HogwartsSuryawatiFather \"You promised you wouldn't hurt my family!\"/pause 1000/textAboveHead HogwartsDarkWizard1 \"Stand aside.\"/pause 3000/shake HogwartsSuryawatiFather 500/textAboveHead HogwartsSuryawatiFather \"Never!\"/playSound cavedrip/pause 3000/message \"What is it?\"/pause 1000/
         positionOffset HogwartsSuryawatiFather -5 0 true/pause 100/positionOffset HogwartsSuryawatiFather -5 0 true/speak HogwartsSuryawatiFather \"She is my daughter!\"/pause 1500/emote HogwartsDarkWizard1 12 true/pause 2500/speak HogwartsDarkWizard1 \"As you wish...\"/pause 1500/textAboveHead HogwartsDarkWizard1 \"Bombarda!\"/pause 1500/beginSimultaneousCommand/screenFlash 1/viewport -999 -999/playSound explosion/pause 1000/endSimultaneousCommand/
         pause 2000/playSound cavedrip/message \"Love, Harry.\"/viewport 81 54 true/pause 2000/playSound debuffSpell/pause 2000/showFrame HogwartsDarkWizard1 63/ambientLight 100 0 100/warp {{ModId}}_SuryawatiPhoenix 999 999/warp HogwartsSuryawati 81 54/showFrame HogwartsSuryawati 23/warp HogwartsDarkWizard1 91 55/hideShadow HogwartsDarkWizard1 true/animate HogwartsDarkWizard1 false true 500 64 65 66 65/viewport 81 54 true/addLantern 27 81 53 1/shake HogwartsSuryawati 1000 true/temporarySprite 80 54 10 10 100 false 3/temporarySprite 81 55 10 10 100 false 3/temporarySprite 82 54 10 10 100 false 3/pause 1000/faceDirection HogwartsSuryawatiFather 3/
-        emote HogwartsSuryawatiFather 16 true/animate HogwartsSuryawatiFather false false 200 36 37 38 39 39 39 39/stopAnimation HogwartsSuryawatiFather 39/pause 2000/removeObject 81 53/pause 1500/shake HogwartsSuryawati 1000 true/showFrame HogwartsSuryawati 16/speak HogwartsSuryawati \"...Father?\"/pause 1000/shake HogwartsSuryawati 1000 true/showFrame HogwartsSuryawati 24/positionOffset HogwartsSuryawati 10 0 true/positionOffset HogwartsSuryawatiFather -10 5 true/pause 2000/globalFade/viewport -999 -999/pause 1000/playSound cavedrip/message \"Love.\"/pause 1000/end"
+        emote HogwartsSuryawatiFather 16 true/animate HogwartsSuryawatiFather false false 200 36 37 38 39 39 39 39/stopAnimation HogwartsSuryawatiFather 39/pause 2000/removeObject 81 53/pause 1500/shake HogwartsSuryawati 1000 true/showFrame HogwartsSuryawati 16/speak HogwartsSuryawati \"...Father?\"/pause 1000/shake HogwartsSuryawati 1000 true/showFrame HogwartsSuryawati 24/positionOffset HogwartsSuryawati 10 0 true/positionOffset HogwartsSuryawatiFather -10 5 true/pause 2000/globalFade/viewport -999 -999/pause 1000/playSound cavedrip/message \"Love.\"/pause 1000/end",
+      
+      "{{ModId}}_SuryawatiTest": "none/81 56/farmer 81 56 0/skippable/
+        action mushymato.MMAP_ScaledOverlay 10 \"{{ModId}}/z_Suryawati15_Hogwarts\" LetterBox/pause 5000/
+        action mushymato.MMAP_ScaledOverlay 0/
+        action mushymato.MMAP_ScaledOverlay 10 \"{{ModId}}/z_Suryawati25_Hogwarts\" LetterBox/pause 5000/
+        action mushymato.MMAP_ScaledOverlay 0/
+        action mushymato.MMAP_ScaledOverlay 10 \"{{ModId}}/z_Suryawati35_Hogwarts\" LetterBox/pause 5000/
+        action mushymato.MMAP_ScaledOverlay 0/
+        action mushymato.MMAP_ScaledOverlay 10 \"{{ModId}}/z_Suryawati45_Hogwarts\" LetterBox/pause 5000/
+        action mushymato.MMAP_ScaledOverlay 0/
+        action mushymato.MMAP_ScaledOverlay 10 \"{{ModId}}/z_Suryawati55_Hogwarts\" LetterBox/pause 5000/
+        action mushymato.MMAP_ScaledOverlay 0/
+        action mushymato.MMAP_ScaledOverlay 10 \"{{ModId}}/z_Suryawati75_Hogwarts\" LetterBox/pause 5000/
+        action mushymato.MMAP_ScaledOverlay 0/
+        action mushymato.MMAP_ScaledOverlay 10 \"{{ModId}}/z_Suryawati85_Hogwarts\" LetterBox/pause 5000/
+        action mushymato.MMAP_ScaledOverlay 0/
+        action mushymato.MMAP_ScaledOverlay 10 \"{{ModId}}/z_Suryawati95_Hogwarts\" LetterBox/pause 5000/
+        action mushymato.MMAP_ScaledOverlay 0/
+    
+        globalFade/viewport -1000 -1000/end",
+      }// debug ebi HogwartsET.CP_SuryawatiTest
       }
-    },
+   
   ]
 }
