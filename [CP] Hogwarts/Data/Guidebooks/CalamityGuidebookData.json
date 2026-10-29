@@ -333,7 +333,7 @@ Signed and sealed on this day by the delegates of the International Confederatio
           "Id": "{{ModID}}_FlyingBookQuest",
           "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_Wizard Received",
           "Trigger": "DayStarted",
-          "Action": "AddQuest Current {{ModId}}_FlyingBook",
+          "Action": "AddQuest {{ModId}}_FlyingBook",
           "MarkActionApplied": true
         },
         "{{ModID}}_FlyingBookDespawn": {

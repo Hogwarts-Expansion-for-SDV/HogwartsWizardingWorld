@@ -59,18 +59,17 @@
       "Target": "Data/Objects",
       "Entries": {
         "{{ModId}}_HogwartsEmblem": {
-          "Name": "Hogwarts Emblem",
+          "Name": "{{ModId}}_HogwartsEmblem",
           "DisplayName": "Hogwarts Emblem",
-          "Description": "An emblem of Hogwarts School of Witchcraft and Wizardry.",
-          "Type": "Basic",
-          "Category": 0,
+          "Description": "An emblem of Hogwarts School of Witchcraft and Wizardry. ",
           "Texture": "{{InternalAssetKey: assets/Objects/Artifacts.png}}",
           "SpriteIndex": 16,
-          "CanBeTrashed": false,
+          "Type": "Basic",
           "ContextTags": [
             "{{ModId}}_Hogwarts"
           ],
-          "ExcludeFromShippingCollection": true
+          "CanBeGivenAsGift": false,
+          "CanBeTrashed": false
         }
       }
     },

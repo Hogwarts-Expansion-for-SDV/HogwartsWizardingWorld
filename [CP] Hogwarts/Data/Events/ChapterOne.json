@@ -1,12 +1,6 @@
 {
   "Changes": [
     {
-      "LogName": "Hogwarts Chapter One Image Load",
-      "Action": "Load",
-      "Target": "{{ModId}}/CaseFilesSuspects",
-      "FromFile": "assets/Event/Transparent128x128.png"
-    },
-    {
       "LogName": "Hogsmeade - Chapter 1, Part 1",
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogsmeadeStation",
@@ -77,11 +71,17 @@
         pause 500/stopAnimation HogwartsHermione 0/pause 250/speak HogwartsHermione \"Yes.#$b#I have some questions for you, @.\"/pause 800/
         emote farmer 8/move HogwartsHermione 0 3 2/move HogwartsHermione -3 0 3/pause 100/faceDirection HogwartsHermione 2/pause 250/speak HogwartsHermione \"Do you recognise these people?\"/pause 100/viewport move 0 2 1500 true/
         move farmer 2 0 3/faceDirection farmer 0/showFrame HogwartsHermione 22/pause 1000/
-        action mushymato.MMAP_ScaledOverlay 5000 \"{{ModId}}/CaseFilesSuspects\" Fit/pause 5000/
-        action mushymato.MMAP_ScaledOverlay 1/
+        message \"Andrew\"/
+        doAction 29 0/
+        message \"M. Rasmodius\"/
+        doAction 29 1/
+        message \"Garrick Ollivander\"/
+        doAction 29 2/
+        message \"Suryawati\"/
+        doAction 29 3/
         jump farmer/pause 1000/question null \"#I've met them all.\"/pause 250/emote farmer 8/pause 500/stopAnimation HogwartsHermione 0/animate HogwartsHermione false true 250 18 19/speak HogwartsHermione \"As it turns out, these four have not been accounted for at the time of the student attack, and their testimonies are contradicting each other. #$b# Furthermore, any evidence appears to be deliberately concealed.\"/
-        pause 500/stopAnimation HogwartsHermione 0/pause 250/faceDirection HogwartsHermione 1/pause 500/speak HogwartsHermione \"I cannot complete my investigation without jeopardizing it.\"/faceDirection HogwartsHermione 2/speak HogwartsHermione \"You on the other hand... are in a unique position.\"/pause 500/emote farmer 8/pause 1000/
-        pause 200/question null \"#You want me to spy on them?\"/pause 500/speak HogwartsHermione \"Understand that what you are doing cannot be revealed. #$b# Do you understand what I'm asking you to do, @?\"/pause 1000/emote farmer 28/pause 1000/globalFade/viewport 999 999/stopMusic/pause 500/playSound reward/message \"You acquired the Emergent Wizard Case Notes.\"/addItem {{ModId}}_EmergentWizardCaseFilesGuidebook 1/end"
+        pause 500/stopAnimation HogwartsHermione 0/pause 250/faceDirection HogwartsHermione 1/pause 500/speak HogwartsHermione \"I cannot complete the rest of my investigation without jeopardizing it.\"/faceDirection HogwartsHermione 2/speak HogwartsHermione \"You on the other hand... are in a unique position.\"/pause 500/emote farmer 8/pause 1000/
+        pause 200/question null \"#You want me to spy... on them?\"/pause 500/speak HogwartsHermione \"Understand that what you are doing cannot be revealed. #$b# Do you understand what I'm asking you to do, @?\"/pause 1000/emote farmer 28/pause 1000/globalFade/viewport 999 999/stopMusic/pause 500/playSound reward/message \"You acquired the Emergent Wizard Case Notes.\"/addItem {{ModId}}_EmergentWizardCaseFilesGuidebook 1/end"
       }
     },
     {
@@ -105,80 +105,54 @@
       }
     },
     {
-      "LogName": "Hogwarts Chapter One Case File Suspects Andrew",
-      "Action": "EditImage",
-      "Target": "{{ModId}}/CaseFilesSuspects",
-      "FromFile": "assets/Portraits/HogwartsAndrew.png",
-      "FromArea": {
-        "X": 0,
-        "Y": 0,
-        "Width": 64,
-        "Height": 64
-      },
-      "ToArea": {
-        "X": 0,
-        "Y": 0,
-        "Width": 64,
-        "Height": 64
-      },
-      "PatchMode": "Replace"
+      "LogName": "Hogwarts Transfiguration Classroom Portraits MEEP",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsTransfigurationClassroom",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 29,
+            "Y": 0
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteraction_Image Portraits/HogwartsAndrew 0 0 64 64"
+          }
+        },
+        {
+          "Position": {
+            "X": 29,
+            "Y": 1
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteraction_Image Portraits/Wizard 0 0 64 64"
+          }
+        },
+        {
+          "Position": {
+            "X": 29,
+            "Y": 2
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteraction_Image Portraits/HogwartsOllivander 0 0 64 64"
+          }
+        },
+        {
+          "Position": {
+            "X": 29,
+            "Y": 3
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "MEEP_CloseupInteraction_Image Portraits/HogwartsSuryawati 0 0 64 64"
+          }
+        }
+      ],
+      "When": {
+        "HasMod |contains= DecidedlyHuman.MappingExtensionsAndExtraProperties": true
+      }
     },
-    {
-      "LogName": "Hogwarts Chapter One Case File Suspects M. Rasmodius",
-      "Action": "EditImage",
-      "Target": "{{ModId}}/CaseFilesSuspects",
-      "FromFile": "assets/Portraits/MRasmodius.png",
-      "FromArea": {
-        "X": 0,
-        "Y": 0,
-        "Width": 64,
-        "Height": 64
-      },
-      "ToArea": {
-        "X": 64,
-        "Y": 0,
-        "Width": 64,
-        "Height": 64
-      },
-      "PatchMode": "Replace"
-    },
-    {
-      "LogName": "Hogwarts Chapter One Case File Suspects Ollivander",
-      "Action": "EditImage",
-      "Target": "{{ModId}}/CaseFilesSuspects",
-      "FromFile": "assets/Portraits/HogwartsOllivander.png",
-      "FromArea": {
-        "X": 0,
-        "Y": 0,
-        "Width": 64,
-        "Height": 64
-      },
-      "ToArea": {
-        "X": 0,
-        "Y": 64,
-        "Width": 64,
-        "Height": 64
-      },
-      "PatchMode": "Replace"
-    },
-    {
-      "LogName": "Hogwarts Chapter One Case File Suspects Suryawati",
-      "Action": "EditImage",
-      "Target": "{{ModId}}/CaseFilesSuspects",
-      "FromFile": "assets/Portraits/HogwartsSuryawati.png",
-      "FromArea": {
-        "X": 0,
-        "Y": 0,
-        "Width": 64,
-        "Height": 64
-      },
-      "ToArea": {
-        "X": 64,
-        "Y": 64,
-        "Width": 64,
-        "Height": 64
-      },
-      "PatchMode": "Replace"
-    }
   ]
 }
