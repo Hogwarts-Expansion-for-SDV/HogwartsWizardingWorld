@@ -26,21 +26,21 @@
         "{{ModId}}_HogwartsLetterAcceptanceAddMail": {
           "Id": "{{ModId}}_HogwartsLetterAcceptanceAddMail",
           "Trigger": "DayStarted",
-          "Condition": "!PLAYER_HAS_MAIL Current {{ModId}}_HogwartsLetterAcceptance received, {{HasMod |contains= aedenthorn.DynamicMapTilesExtended}}",
+          "Condition": "!PLAYER_HAS_MAIL Current {{ModId}}_HogwartsLetterAcceptance received, PLAYER_VISITED_LOCATION Any CommunityCenter, {{HasMod |contains= aedenthorn.DynamicMapTilesExtended}}",
           "Action": "AddMail all {{ModId}}_HogwartsLetterAcceptance now",
           "MarkActionApplied": true
         },
         "{{ModId}}_HogwartsLetterAcceptanceQuest": {
           "Id": "{{ModId}}_HogwartsLetterAcceptanceQuest",
           "Trigger": "Spiderbuttons.BETAS_LetterRead",
-          "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_HogwartsLetterAcceptance received, {{HasMod |contains= aedenthorn.DynamicMapTilesExtended}}",
+          "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_HogwartsLetterAcceptance received, {{HasMod |contains= aedenthorn.DynamicMapTilesExtended}}, {{HasMod |contains= Spiderbuttons.BETAS}}",
           "Action": "AddQuest {{ModId}}_HogwartsLetterAcceptance",
           "MarkActionApplied": true
         },
         "{{ModId}}_HogwartsFlooFlameHogsmeadeStationQuest": {
           "Id": "{{ModId}}_HogwartsFlameHogsmeadeStationQuest",
           "Trigger": "Spiderbuttons.BETAS_LetterRead",
-          "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_Wizard received",
+          "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_Wizard received, {{HasMod |contains= Spiderbuttons.BETAS}}",
           "Action": "AddQuest {{ModId}}_HogsmeadeStationFlooFlame",
           "MarkActionApplied": true
         },
