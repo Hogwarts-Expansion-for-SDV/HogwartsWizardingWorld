@@ -91,7 +91,7 @@
         "NightTiles": "AlwaysFront 28 121 908 AlwaysFront 32 111 908 AlwaysFront 32 125 908 AlwaysFront 37 79 908 AlwaysFront 38 51 908 AlwaysFront 41 111 908 AlwaysFront 41 125 908 AlwaysFront 44 121 908 AlwaysFront 46 79 908 AlwaysFront 47 51 908 AlwaysFront 62 62 908 AlwaysFront 62 87 908 AlwaysFront 62 95 908 AlwaysFront 66 62 908 AlwaysFront 69 87 908 AlwaysFront 69 95 908 AlwaysFront 75 104 908 AlwaysFront 78 31 908 AlwaysFront 79 77 908 AlwaysFront 82 40 908 AlwaysFront 83 31 908 AlwaysFront 83 105 908 AlwaysFront 88 58 908 AlwaysFront 90 67 908 AlwaysFront 93 108 908 AlwaysFront1 93 116 908 AlwaysFront 94 87 908 AlwaysFront 100 67 908 AlwaysFront 101 35 908 AlwaysFront 101 108 908 AlwaysFront1 101 116 908 AlwaysFront 103 56 908 AlwaysFront 103 99 908 AlwaysFront 111 86 908 AlwaysFront 118 55 908 AlwaysFront 121 89 908 AlwaysFront 130 76 908 AlwaysFront 157 31 908",
         "Outdoors": "T",
         "Warp": "-1 99 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 100 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 101 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 102 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}} -1 103 {{ModId}}_ForbiddenForest {{Query: {{Random: {{Range: 19, 166}}|key=MerlinTrialIngressX}} + 4}} {{Query: {{Random: {{Range: 23, 128}}|key=MerlinTrialIngressY}} + 4}}",
-        "NPCWarp": "36 155 {{ModId}}_HogwartsSouthWing 28 1 198 110 {{ModId}}_HogsmeadeStation 1 10"
+        "NPCWarp": "0 121 {{ModId}}_HogwartsBellTowerCourtyard 170 47 198 110 {{ModId}}_HogsmeadeStation 1 10"
       }
     },
     {
@@ -262,16 +262,16 @@
       }
     },
     /*Hogwarts Map Properties*/
-    {
+    /*{
       "LogName": "Map Properties of Hogwarts Arithmancy Classroom",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsArithmancyClassroom",
       "MapProperties": {
         "AmbientLight": "255 255 255",
         "AmbientNightLight": "150 150 30",
-        "NPCWarp": "22 21 {{ModId}}_HogwartsLibraryAnnex 58 51"
+        "NPCWarp": "22 21 {{ModId}}_HogwartsLibraryAnnex 59 51"
       }
-    },
+    },*/
     {
       "LogName": "Map Properties of Hogwarts Astronomy Classroom",
       "Action": "EditMap",
@@ -279,7 +279,7 @@
       "MapProperties": {
         "AmbientNightLight": "150 150 30",
         "Doors": "18 52 1 120",
-        "NPCWarp": "24 25 {{ModId}}_HogwartsTransfigurationWing 11 6"
+        "NPCWarp": "21 38 {{ModId}}_HogwartsTransfigurationWing 4 12"
       }
     },
     {
@@ -310,7 +310,7 @@
         "AmbientLight": "255 255 255",
         "AmbientNightLight": "150 150 30",
         "Doors": "7 15 1 120",
-        "NPCWarp": "20 21 {{ModId}}_HogwartsTransfigurationWing 8 12"
+        "NPCWarp": "20 21 {{ModId}}_HogwartsTransfigurationWing 4 20"
       }
     },
     {
@@ -349,7 +349,7 @@
         "AmbientNightLight": "150 150 30"
       }
     },
-    {
+    /*{
       "LogName": "Map Properties of Hogwarts DADA Classroom",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsDADAClassroom",
@@ -358,7 +358,7 @@
         "AmbientNightLight": "150 150 30",
         "NPCWarp": "5 30 {{ModId}}_HogwartsTransfigurationWing 4 40"
       }
-    },
+    },*/
     {
       "LogName": "Map Properties of Hogwarts Divination Classroom",
       "Action": "EditMap",
@@ -366,7 +366,7 @@
       "MapProperties": {
         "AmbientLight": "255 255 255",
         "AmbientNightLight": "150 150 30",
-        "NPCWarp": "15 31 {{ModId}}_HogwartsLibraryAnnex 51 56"
+        "NPCWarp": "4 20 {{ModId}}_HogwartsLibraryAnnex 66 56"
       }
     },
     {
@@ -386,7 +386,7 @@
         "AmbientLight": "255 255 255",
         "AmbientNightLight": "150 150 30",
         "Doors": "7 58 1 120 76 20 1 120 76 65 1 838 77 58 1 120 68 21 1 120 59 21 1 120 50 21 1 120 34 21 1 120 25 21 1 120 16 21 1 120 13 48 1 120 16 58 1 120 22 48 1 120 25 58 1 120 31 48 1 120 34 58 1 120 50 58 1 120 53 48 1 120 59 58 1 120 62 48 1 120 68 58 1 120 71 48 1 120 77 58 1 120 76 65 1 838",
-        "NPCWarp": "42 23 {{ModId}}_HogwartsSouthWing 28 61 98 19 {{ModId}}_HogwartsGrandStaircase 1 51"
+        "NPCWarp": "42 23 {{ModId}}_HogwartsSouthWing 28 61 94 8 {{ModId}}_HogwartsSouthWing 70 27"
       }
     },
     {
@@ -569,7 +569,7 @@
         "Doors": "28 55 1 120",
         "indoorWater": "T",
         "Outdoors": "T",
-        "NPCWarp": "28 62 {{ModId}}_HogwartsFacultyTower 42 23 79 50 {{ModId}}_HogwartsGrandStaircase 1 85 0 29 {{ModId}}_HogsmeadeVillage 37 154 14 37 {{ModId}}_HogwartsCommonRoomHufflepuff 25 26",
+        "NPCWarp": "28 62 {{ModId}}_HogwartsFacultyTower 42 23 20 50 {{ModId}}_HogwartsGrandStaircase 55 76 32 33 {{ModId}}_HogwartsGrandStaircase 8 84 81 50 {{ModId}}_HogwartsGrandStaircase 0 69 14 37 {{ModId}}_HogwartsCommonRoomHufflepuff 25 26",
         "WindowLight": "67 22 2 67 23 2 72 22 2 72 23 2 76 22 2 76 23 2 57 38 2 57 39 2 54 38 2 54 39 2 44 38 2 44 39 2 43 38 2 43 39 2 34 38 2 34 39 2 30 38 2 30 39 2 17 27 2 27 28 2 14 27 2 14 28 2"
       }
     },
@@ -581,7 +581,7 @@
         "AmbientLight": "255 255 255",
         "AmbientNightLight": "150 150 30",
         "Doors": "21 16 1 120",
-        "NPCWarp": "10 18 {{ModId}}_HogwartsTransfigurationWing 23 37"
+        "NPCWarp": "9 21 {{ModId}}_HogwartsTransfigurationWing 21 39"
       }
     },
     {
