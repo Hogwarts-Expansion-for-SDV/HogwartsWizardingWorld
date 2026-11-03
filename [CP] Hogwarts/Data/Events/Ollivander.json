@@ -84,30 +84,30 @@
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_Ollivanders",
       "Entries": {
-          "{{ModId}}_Ollivander05": "none/8 16/farmer 100 100 0 HogwartsOllivander 6 14 0 HogwartsHarry -100 -100 0/skippable/pause 800/playSound doorClose/
-        pause 200/warp farmer 8 20/pause 500/facedirection HogwartsOllivander 2/pause 600/textAboveHead HogwartsOllivander \"Welcome, welcome.\"/
-        pause 700/question null \"#I didn't know you had a shop here in Hogsmeade.\"/move farmer 0 -2 0/
-        speak HogwartsOllivander \"I've been here for quite a while now.\"/pause 400/faceDirection farmer 0/
-        question null \"#What are you working now?\"/ 
-        speak HogwartsOllivander \"This is a special wand I crafted.\"/move HogwartsOllivander 2 0 2/pause 400/ speak HogwartsOllivander \"Would you mind stepping aside for a moment?\"/
-        pause 300/ move farmer -2 0 0/
-        pause 1000/warp HogwartsHarry 8 20/facedirection HogwartsHarry 0/ textAboveHead HogwartsHarry \"Mr. Ol-\"/animate HogwartsOllivander false false 200 20 21 22 23/
-        pause 750/
-        playSound explosion/
-        screenFlash 0.7/
-        shake HogwartsHarry 300/
-        pause 300/
-        globalFade 0.09/
-        pause 400/
-        globalFadeToClear 0.09/
-        pause 100/
-        faceDirection farmer 1/emote farmer 16/speak HogwartsOllivander \"Mr. Potter! Are you alright?\"/speak HogwartsHarry \"How… am I unharmed?\"/speak HogwartsOllivander \"It’s nothing!\"/pause 500/
-        speak HogwartsHarry \"Only one wand was incapable of hurting me, but… that can't be possible.\"/temporaryAnimatedSprite \"{{ModId}}/LocketOpen\" 0 0 16 16 100 1 1 10 14 false false 14 0 1 0 0 0/
-        pause 500/emote HogwartsHarry 8/move HogwartsHarry 0 -2 0/move HogwartsHarry 2 0 0/speak HogwartsHarry \"Who is she?\"
-        /speak HogwartsOllivander \"My daughter’s. I carry this whenever I go out.\"/speak HogwartsHarry \"Is your daughter in London?\"/pause 600/emote HogwartsOllivander 40/
-        speak HogwartsOllivander \"Sadly, she has passed since the first war, but her picture talks to me through it.\"/emote HogwartsHarry 16
-        /speak HogwartsHarry \"I'm... I'm so sorry.\"/pause 400/question null \"#If you can come, every week, Mrs. Granger hosts a support group for survivors of Voldemort.\"/
-        speak HogwartsOllivander \"We do not speak his name!\"/globalFade/viewport -1000 -1000/pause 1000/end",
+          "{{ModId}}_Ollivander05": "50s/8 16/farmer 100 100 0 HogwartsOllivander 3 6 0 HogwartsOllivandersLocket 7 16 0/skippable/
+        temporaryAnimatedSprite \"{{ModId}}/LocketOpen\" 0 0 16 16 100000000 1 1 7 15 false true 14 0 1 0 0 0/pause 1000/playSound doorClose/
+        pause 200/warp farmer 8 20/pause 1000/emote HogwartsOllivandersLocket 16/pause 500/speak HogwartsOllivandersLocket \"Father, we have a customer!\"/
+        facedirection HogwartsOllivander 2/pause 600/textAboveHead HogwartsOllivandersLocket \"Hello, how may I help you today?\"/pause 1000/
+        emote farmer 8/pause 500/move farmer 0 -2 0/question null \"#Who said that? #Are you a locket?\"/
+        emote HogwartsOllivandersLocket 60/pause 500/speak HogwartsOllivandersLocket \"Yes, I help run the shop while my father is... Unavailable.$2\"/
+        move HogwartsOllivander 0 11 1 true/jump farmer/pause 1000/faceDirection farmer 3/pause 500/
+        speak HogwartsOllivander \"Ah! Welcome back, @.\"/pause 500/move HogwartsOllivander 2 0 1 true/pause 500/
+        speak HogwartsOllivander \"I see you without your wand. Break it, did you?\"/emote farmer 60/pause 1500/
+        speak HogwartsOllivander \"Not to worry! We have other ones more suitable for you this time.\"/pause 250/move HogwartsOllivander 5 0 0 true/faceDirection farmer 1/pause 2000/
+        speak HogwartsOllivander \"Let's see here...\"/move HogwartsOllivander 0 -3 0 true/pause 1500/emote HogwartsOllivander 40/pause 1000/shake HogwartsOllivander 500/pause 1000/
+        faceDirection farmer 0/pause 500/jump HogwartsOllivander/pause 500/faceDirection HogwartsOllivander 2/speak HogwartsOllivander \"Try this one.\"/
+        pause 1000/move farmer 2 0 0 true/pause 1000/move farmer 0 -2 0 true/pause 1000/faceDirection HogwartsOllivander 2/pause 250/faceDirection farmer 1/pause 250/
+        showFrame farmer 81/playSound explosion/temporarySprite 11 16 5 4 20 false 3/temporarySprite 12 16 5 6 50 false 3/temporarySprite 13 16 5 10 100 false 3/playSound explosion/screenFlash 1/
+        pause 100/emote HogwartsOllivander 16 true/emote HogwartsOllivandersLocket 16/pause 500/emote farmer 28/speak HogwartsOllivandersLocket \"Father... please be careful.$2\"/
+        pause 500/speak HogwartsOllivander \"Yes, yes I know...\"/pause 500/textAboveHead HogwartsOllivander \"Perhaps this one...\"/pause 1000/
+        faceDirection farmer 1/pause 500/showFrame farmer 81/temporarySprite 11 15 45 10 200 false 3/playSound death/screenFlash 1/pause 2000/emote HogwartsOllivander 60/pause 1000/
+        speak HogwartsOllivander \"No. No... Definitely not.\"/pause 1000/faceDirection farmer 1/pause 500/textAboveHead HogwartsOllivandersLocket \"Sigh...\"/faceDirection farmer 3/
+        stopMusic/pause 1500/question null \"#Sir, your locket... Is it of your daughter?\"/pause 500/emote HogwartsOllivander 40/
+        speak HogwartsOllivander \"My daughter’s... I carry this whenever I go out.\"/pause 1600/shake HogwartsOllivander 500/
+        speak HogwartsOllivander \"Sadly, she has passed since the first war, but her picture talks to me through it.\"/pause 1000/faceDirection farmer 0/emote farmer 28/
+        question null \"#If you can come, every week, Mrs. Granger hosts a support group for survivors of Voldemort.\"/shake HogwartsOllivander 2000 true/
+        speak HogwartsOllivander \"We do not speak his name!\"/pause 1000/emote HogwartsOllivandersLocket 28/pause 1000/speak HogwartsOllivandersLocket \"Father...$3\"/
+        pause 250/globalFade/viewport -1000 -1000/pause 1000/end",
       }
     },
     {
