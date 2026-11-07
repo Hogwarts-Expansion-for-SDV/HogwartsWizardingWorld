@@ -42,7 +42,24 @@
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true,
         "HasFlag |contains= {{ModId}}_TomesAndScrollsStaircase": true
       }
-    }/*
+    },
+    {
+      "LogName": "Tomes and Scrolls Hogsmeade Village Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_TomesAndScrolls",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 12,
+            "Y": 17
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogsmeadeVillage 82 97"
+          }
+        }
+      ]
+    },/*
     {
       "LogName": "Tomes and Scrolls Staircase Trigger Actions Remove Mail",
       "Action": "EditData",

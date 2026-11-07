@@ -1,0 +1,21 @@
+{
+  "Changes": [
+    {
+      "LogName": "Ceridwen's Cauldrons Hogsmeade Village Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_CeridwensCauldrons",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 6,
+            "Y": 16
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogsmeadeVillage 124 97"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "Changes": [
+    {
+      "LogName": "The Magic Neep Hogsmeade Village Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_TheMagicNeep",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 6,
+            "Y": 13
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogsmeadeVillage 18 72"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "Changes": [
     {
-      "LogName": "ikg Changes",
+      "LogName": "Spintwitches Sporting Needs Uniform Change",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_SpintwitchesSportingNeeds",
       "MapTiles": [
@@ -22,6 +22,23 @@
           "Layer": "Buildings1",
           "SetTilesheet": "z_HogsmeadeInterior_Hxoni_Hogwarts",
           "SetIndex": "{{Query:{{Random:762,794,795,796}}+23}}"
+        }
+      ]
+    },
+    {
+      "LogName": "Spintwitches Sporting Needs Hogsmeade Village Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_SpintwitchesSportingNeeds",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 4,
+            "Y": 15
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogsmeadeVillage 81 83"
+          }
         }
       ]
     }

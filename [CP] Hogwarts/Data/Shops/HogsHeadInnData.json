@@ -45,6 +45,23 @@
         "LocationName |contains= {{ModId}}_HogsHeadInn": true
       },
       "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Hog's Head Inn Hogsmeade Village Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogsHeadInn",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 14,
+            "Y": 24
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogsmeadeVillage 50 75"
+          }
+        }
+      ]
     }
   ]
 }

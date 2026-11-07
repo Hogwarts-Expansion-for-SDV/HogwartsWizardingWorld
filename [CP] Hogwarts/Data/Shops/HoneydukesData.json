@@ -143,6 +143,23 @@
           }
         }
       ]
+    },
+    {
+      "LogName": "Honeydukes Hogsmeade Village Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Honeydukes",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 10,
+            "Y": 21
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogsmeadeVillage 99 49"
+          }
+        }
+      ]
     }
   ]
 }

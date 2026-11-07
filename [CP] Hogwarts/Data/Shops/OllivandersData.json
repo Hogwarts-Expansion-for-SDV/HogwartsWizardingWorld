@@ -187,6 +187,23 @@
           }
         }
       ]
+    },
+    {
+      "LogName": "Ollivanders Hogsmeade Village Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_Ollivanders",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 8,
+            "Y": 20
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogsmeadeVillage 127 83"
+          }
+        }
+      ]
     }
   ]
 }

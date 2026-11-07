@@ -1,0 +1,21 @@
+{
+  "Changes": [
+    {
+      "LogName": "Three Broomsticks Inn Hogsmeade Village Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_ThreeBroomsticksInn",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 15,
+            "Y": 30
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogsmeadeVillage 53 96"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "Changes": [
+    {
+      "LogName": "Brood and Peck Hogsmeade Village Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_BroodAndPeck",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 4,
+            "Y": 14
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogsmeadeVillage 81 60"
+          }
+        }
+      ]
+    }
+  ]
+}

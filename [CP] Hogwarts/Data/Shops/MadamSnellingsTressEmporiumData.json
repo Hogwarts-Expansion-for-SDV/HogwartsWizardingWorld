@@ -105,6 +105,23 @@
           "SetIndex": "{{Query:{{Random:{{MadamSnellingsTressEmporiumWigs}}}}}}"
         }
       ]
+    },
+    {
+      "LogName": "Madam Snelling's Tress Emporium Hogsmeade Village Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_MadamSnellingsTressEmporium",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 13,
+            "Y": 11
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogsmeadeVillage 89 48"
+          }
+        }
+      ]
     }
   ]
 }

@@ -19,6 +19,23 @@
       "When": {
         "HasMod |contains= PeacefulEnd.CustomCompanions": true
       }
+    },
+    {
+      "LogName": "Dogweed and Deathcap Hogsmeade Village Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_DogweedAndDeathcap",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 9,
+            "Y": 12
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogsmeadeVillage 64 20"
+          }
+        }
+      ]
     }
   ]
 }
