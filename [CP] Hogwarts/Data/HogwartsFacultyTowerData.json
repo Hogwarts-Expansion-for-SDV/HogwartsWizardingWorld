@@ -533,7 +533,7 @@
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsFacultyTower",
       "MapTiles": [
-        /*Grand Staircase East*/
+        /*Grand Staircase Left*/
         {
           "Position": {
             "X": 0,
@@ -574,7 +574,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 54 69"
           }
         },
-        //Grand Staircase West
+        //Grand Staircase Right
         {
           "Position": {
             "X": 98,
@@ -609,6 +609,16 @@
           "Position": {
             "X": 98,
             "Y": 21
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 1 51"
+          }
+        },
+        {
+          "Position": {
+            "X": 98,
+            "Y": 22
           },
           "Layer": "Back",
           "SetProperties": {

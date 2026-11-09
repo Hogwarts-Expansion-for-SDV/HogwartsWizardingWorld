@@ -64,7 +64,7 @@
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogsHeadInn",
       "MapProperties": {
-        "AmbientLight": "90 90 90",
+        "AmbientLight": "95 95 95",
         "DayTiles": "Front 6 1 469 Front 6 2 501 Front 7 1 469 Front 7 2 501 Front 19 1 469 Front 19 2 501 Front 20 1 469 Front 20 2 501 Front 30 1 469 Front 30 2 501 Front 31 1 469 Front 31 2 501",
         "Doors": "11 9 1 120 20 9 1 120 29 9 1 120 3 16 1 120 4 16 1 120",
         "NightTiles": "Front 6 1 1219 Front 6 2 1251 Front 7 1 1219 Front 7 2 1251 Front 19 1 1219 Front 19 2 1251 Front 20 1 1219 Front 20 2 1251 Front 30 1 1219 Front 30 2 1251 Front 31 1 1219 Front 31 2 1251",
@@ -235,7 +235,7 @@
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_ThreeBroomsticksInn",
       "MapProperties": {
-        "AmbientLight": "170 190 90",
+        "AmbientLight": "95 95 95",
         "DayTiles": "Front 4 2 288 Front 5 2 288 Front 22 2 288 Front 23 2 288",
         "Doors": "7 17 1 120 7 10 1 120 21 10 1 120",
         "Light": "7 13 4 11 13 4 3 18 5 5 1 4 7 20 4 9 20 4 7 23 4 9 23 4 2 9 4 2 11 4 2 13 4",
@@ -300,7 +300,7 @@
       "Target": "Maps/{{ModId}}_HogwartsBellTowerCourtyard",
       "MapProperties": {
         "Outdoors": "T",
-        "NPCWarp": "171 47 {{ModId}}_HogsmeadeVillage 1 121 146 21 {{ModId}}_HogwartsQuidditchPitch 12 25 146 78 {{ModId}}_HogwartsTransfigurationWing 34 29 95 48 {{ModID}}_HogwartsVivarium 9 56"
+        "NPCWarp": "171 47 {{ModId}}_HogsmeadeVillage 1 121 146 21 {{ModId}}_HogwartsQuidditchStadium 12 25 146 78 {{ModId}}_HogwartsTransfigurationWing 34 29 95 50 {{ModID}}_HogwartsVivarium 61 52"
       }
     },
     {
@@ -401,7 +401,7 @@
       "MapProperties": {
         "AmbientLight": "255 255 255",
         "AmbientNightLight": "150 150 30",
-        "NPCWarp": "8 80 {{ModId}}_HogwartsGreatHall 15 39 15 48 {{ModId}}_HogwartsCommonRoomGryffindor 24 25 43 42 {{ModId}}_HogwartsCommonRoomRavenclaw 24 32 39 101 {{ModId}}_HogwartsCommonRoomSlytherin 24 31"
+        "NPCWarp": "8 80 {{ModId}}_HogwartsGreatHall 15 39 15 48 {{ModId}}_HogwartsCommonRoomGryffindor 24 25 43 42 {{ModId}}_HogwartsCommonRoomRavenclaw 24 32 39 101 {{ModId}}_HogwartsCommonRoomSlytherin 24 31 22 12 {{ModId}}_HogwartsHeadmistressOffice 44 57 8 85 {{ModId}}_HogwartsSouthWing 32 36"
       }
     },
     {
@@ -465,7 +465,7 @@
       "MapProperties": {
         "AmbientLight": "255 255 255",
         "AmbientNightLight": "150 150 30",
-        "NPCWarp": "10 20 {{ModId}}_HogwartsTransfigurationWing 28 30"
+        "NPCWarp": "10 20 {{ModId}}_HogwartsTransfigurationWing 28 34"
       }
     }, /*
     {
@@ -484,7 +484,7 @@
         "AmbientLight": "100 100 45",
         "AmbientNightLight": "150 150 30",
         "Doors": "64 6 1 838 66 38 1 838 66 35 1 838",
-        "NPCWarp": "45 44 {{ModId}}_HogwartsGrandStairCase 54 51 50 38 {{ModId}}_HogwartsTransfigurationWing 17 41"
+        "NPCWarp": "58 38 {{ModId}}_HogwartsSouthWing 1 22"
       }
     },
     {
@@ -496,7 +496,7 @@
         "AmbientNightLight": "150 150 30",
         "Light": "2 3 4 18 3 4",
         "Doors": "4 16 1 120",
-        "NPCWarp": "9 33 {{ModId}}_HogwartsTransfigurationWing 6 19"
+        "NPCWarp": "9 33 {{ModId}}_HogwartsTransfigurationWing 3 27"
       }
     },
     {
@@ -506,7 +506,8 @@
       "MapProperties": {
         "AmbientLight": "255 255 255",
         "AmbientNightLight": "150 150 30",
-        "NPCWarp": "7 15 {{ModId}}_HogwartsTransfigurationWing 55 45"
+        "Doors": "17 12 1 120",
+        "NPCWarp": "8 15 {{ModId}}_HogwartsTransfigurationWing 57 44"
       }
     },
     {
@@ -520,9 +521,9 @@
       }
     },
     {
-      "LogName": "Map Properties of Hogwarts Quidditch Pitch",
+      "LogName": "Map Properties of Hogwarts Quidditch Stadium",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsQuidditchPitch",
+      "Target": "Maps/{{ModId}}_HogwartsQuidditchStadium",
       "MapProperties": {
         "Outdoors": "T",
         "NPCWarp": "12 26 {{ModId}}_HogwartsBellTowerCourtyard 146 22"
@@ -544,7 +545,7 @@
       "MapProperties": {
         "AmbientLight": "255 255 255",
         "AmbientNightLight": "150 150 30",
-        "NPCWarp": "14 21 {{ModId}}_HogwartsLibraryAnnex 68 43 15 21 {{ModId}}_HogwartsLibraryAnnex 69 43"
+        "NPCWarp": "14 21 {{ModId}}_HogwartsLibraryAnnex 68 43"
       }
     },
     {
@@ -558,7 +559,7 @@
         "Doors": "28 55 1 120",
         "indoorWater": "T",
         "Outdoors": "T",
-        "NPCWarp": "28 62 {{ModId}}_HogwartsFacultyTower 42 23 20 50 {{ModId}}_HogwartsGrandStaircase 55 76 32 33 {{ModId}}_HogwartsGrandStaircase 8 84 81 50 {{ModId}}_HogwartsGrandStaircase 0 69 14 37 {{ModId}}_HogwartsCommonRoomHufflepuff 25 26",
+        "NPCWarp": "14 37 {{ModId}}_HogwartsCommonRoomHufflepuff 25 26 28 62 {{ModId}}_HogwartsFacultyTower 42 23 32 35 {{ModId}}_HogwartsGrandStaircase 8 84 0 22 {{ModId}}_HogwartsLibraryAnnex 56 38",
         "WindowLight": "67 22 2 67 23 2 72 22 2 72 23 2 76 22 2 76 23 2 57 38 2 57 39 2 54 38 2 54 39 2 44 38 2 44 39 2 43 38 2 43 39 2 34 38 2 34 39 2 30 38 2 30 39 2 17 27 2 27 28 2 14 27 2 14 28 2"
       }
     },
@@ -581,7 +582,7 @@
         "AmbientLight": "255 255 255",
         "AmbientNightLight": "150 150 30",
         "Outdoors": "T",
-        "NPCWarp": "20 28 {{ModId}}_HogwartsBellTowerCourtyard 95 77 34 30 {{ModId}}_HogwartsBellTowerCourtyard 146 77 58 61 {{ModId}}_HogwartsPotionsClassroom 15 33 21 39 {{ModId}}_HogwartsTransfigurationClassroom 9 20 29 34 {{ModId}}_HogwartsHistoryOfMagicClassroom 11 19 11 5 {{ModId}}_HogwartsAstronomyClassroom 24 24 55 44 {{ModId}}_HogwartsMuggleStudiesClassroom 8 14 5 18 {{ModId}}_HogwartsMagicalTheoryClassroom 9 29 18 41 {{ModId}}_HogwartsLibraryAnnex 51 38"
+        "NPCWarp": "4 13 {{ModId}}_HogwartsAstronomyClassroom 21 38 35 30 {{ModId}}_HogwartsBellTowerCourtyard 146 77 4 20 {{ModId}}_HogwartsCharmsClassroom 20 20 29 34 {{ModId}}_HogwartsHistoryOfMagicClassroom 11 19 52 54 {{ModId}}_HogwartsLibraryAnnex 47 26 3 27 {{ModId}}_HogwartsMagicalTheoryClassroom 9 32 59 61 {{ModId}}_HogwartsPotionsClassroom 15 32 57 44 {{ModId}}_HogwartsMuggleStudiesClassroom 8 14 21 39 {{ModId}}_HogwartsTransfigurationClassroom 9 20"
       }
     },
     {
@@ -590,7 +591,7 @@
       "Target": "Maps/{{ModId}}_HogwartsVivarium",
       "MapProperties": {
         "Outdoors": "T",
-        "NPCWarp": "9 55 {{ModID}}_HogwartsBellTowerCourtyard 95 49"
+        "NPCWarp": "61 52 {{ModID}}_HogwartsBellTowerCourtyard 95 49"
       }
     },
     /*Forbidden Forest*/
@@ -677,16 +678,16 @@
         "Warp": "25 32 {{ModId}}_HogwartsValley 156 57"
       }
     },
-    /*South Sea Bog*/
-    {
-      "LogName": "Map Properties of South Sea Bog",
+    /*Feldcroft Region*/
+    /*{
+      "LogName": "Map Properties of Feldcroft Region",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_SouthSeaBog",
+      "Target": "Maps/{{ModId}}_FeldcroftRegion",
       "MapProperties": {
         "Outdoors": "T",
         "ScreenshotRegion": "{{Query: {{Random: {{Range: 8, 100}}|key=SouthSeaBogScreenshotX}}}} {{Query: {{Random: {{Range: 8, 100}}|key=SouthSeaBogScreenshotY}}}} {{Query: {{Random: {{Range: 8, 100}}|key=SouthSeaBogScreenshotX}} + 30}} {{Query: {{Random: {{Range: 8, 100}}|key=SouthSeaBogScreenshotY}} + 30}}"
       }
-    },
+    },*/
     // Miscellaneous
     {
       "LogName": "Map Properties of Suryawati Home Exterior",

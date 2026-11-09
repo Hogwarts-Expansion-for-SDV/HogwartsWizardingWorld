@@ -104,6 +104,27 @@
             "Action": "Warp 25 26 {{ModId}}_HogwartsCommonRoomHufflepuff"
           }
         },
+        // Faculty Tower
+        {
+          "Position": {
+            "X": 69,
+            "Y": 26
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 94 6 {{ModId}}_HogwartsFacultyTower"
+          }
+        },
+        {
+          "Position": {
+            "X": 70,
+            "Y": 26
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 94 6 {{ModId}}_HogwartsFacultyTower"
+          }
+        },
         /*Grand Staircase*/
         {
           "Position": {
@@ -329,6 +350,16 @@
             "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 56 38"
           }
         },
+        {
+          "Position": {
+            "X": 0,
+            "Y": 24
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 56 38"
+          }
+        },
         /*South Wing*/
         {
           "Position": {
@@ -492,7 +523,7 @@
           },
           "Layer": "Back",
           "SetProperties": {
-            "DMT/animation_On": "{{ModId}}.HogwartsSouthWing,HufflepuffCommonRoomDoorOpen",
+            "DMT/animation_Once_On": "{{ModId}}.HogwartsSouthWing,HufflepuffCommonRoomDoorOpen",
             "DMT/changeMultipleIndex_On": "Buildings1 13 36=z_SouthWing_HitMe_Hogwarts/844|Buildings1 14 36=z_SouthWing_HitMe_Hogwarts/845|Buildings1 15 36=z_SouthWing_HitMe_Hogwarts/846|Buildings1 14 37=z_SouthWing_HitMe_Hogwarts/879"
           }
         }
