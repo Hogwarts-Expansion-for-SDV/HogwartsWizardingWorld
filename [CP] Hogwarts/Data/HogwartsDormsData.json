@@ -1,0 +1,361 @@
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Dorm Load",
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_HogwartsDormGF1, Maps/{{ModId}}_HogwartsDormGF2, Maps/{{ModId}}_HogwartsDormGF3, Maps/{{ModId}}_HogwartsDormGF4, Maps/{{ModId}}_HogwartsDormGF5, Maps/{{ModId}}_HogwartsDormGF6, Maps/{{ModId}}_HogwartsDormGF7, Maps/{{ModId}}_HogwartsDormGM1, Maps/{{ModId}}_HogwartsDormGM2, Maps/{{ModId}}_HogwartsDormGM3, Maps/{{ModId}}_HogwartsDormGM4, Maps/{{ModId}}_HogwartsDormGM5, Maps/{{ModId}}_HogwartsDormGM6, Maps/{{ModId}}_HogwartsDormGM7, Maps/{{ModId}}_HogwartsDormHF1, Maps/{{ModId}}_HogwartsDormHF2, Maps/{{ModId}}_HogwartsDormHF3, Maps/{{ModId}}_HogwartsDormHF4, Maps/{{ModId}}_HogwartsDormHF5, Maps/{{ModId}}_HogwartsDormHF6, Maps/{{ModId}}_HogwartsDormHF7, Maps/{{ModId}}_HogwartsDormHM1, Maps/{{ModId}}_HogwartsDormHM2, Maps/{{ModId}}_HogwartsDormHM3, Maps/{{ModId}}_HogwartsDormHM4, Maps/{{ModId}}_HogwartsDormHM5, Maps/{{ModId}}_HogwartsDormHM6, Maps/{{ModId}}_HogwartsDormHM7, Maps/{{ModId}}_HogwartsDormRF1, Maps/{{ModId}}_HogwartsDormRF2, Maps/{{ModId}}_HogwartsDormRF3, Maps/{{ModId}}_HogwartsDormRF4, Maps/{{ModId}}_HogwartsDormRF5, Maps/{{ModId}}_HogwartsDormRF6, Maps/{{ModId}}_HogwartsDormRF7, Maps/{{ModId}}_HogwartsDormRM1, Maps/{{ModId}}_HogwartsDormRM2, Maps/{{ModId}}_HogwartsDormRM3, Maps/{{ModId}}_HogwartsDormRM4, Maps/{{ModId}}_HogwartsDormRM5, Maps/{{ModId}}_HogwartsDormRM6, Maps/{{ModId}}_HogwartsDormRM7, Maps/{{ModId}}_HogwartsDormSF1, Maps/{{ModId}}_HogwartsDormSF2, Maps/{{ModId}}_HogwartsDormSF3, Maps/{{ModId}}_HogwartsDormSF4, Maps/{{ModId}}_HogwartsDormSF5, Maps/{{ModId}}_HogwartsDormSF6, Maps/{{ModId}}_HogwartsDormSF7, Maps/{{ModId}}_HogwartsDormSM1, Maps/{{ModId}}_HogwartsDormSM2, Maps/{{ModId}}_HogwartsDormSM3, Maps/{{ModId}}_HogwartsDormSM4, Maps/{{ModId}}_HogwartsDormSM5, Maps/{{ModId}}_HogwartsDormSM6, Maps/{{ModId}}_HogwartsDormSM7",
+      "FromFile": "assets/Dorms/HogwartsDorm.tmx"
+    },
+    {
+      "LogName": "Hogwarts Dorms Locations Data",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        //Gryffindor Female
+        "{{ModId}}_HogwartsDormGF1": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormGF1"
+          }
+        },
+        "{{ModId}}_HogwartsDormGF2": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormGF2"
+          }
+        },
+        "{{ModId}}_HogwartsDormGF3": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormGF3"
+          }
+        },
+        "{{ModId}}_HogwartsDormGF4": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormGF4"
+          }
+        },
+        "{{ModId}}_HogwartsDormGF5": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormGF5"
+          }
+        },
+        "{{ModId}}_HogwartsDormGF6": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormGF6"
+          }
+        },
+        "{{ModId}}_HogwartsDormGF7": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormGF7"
+          }
+        },
+        //Gryffindor Male
+        "{{ModId}}_HogwartsDormGM1": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormGM1"
+          }
+        },
+        "{{ModId}}_HogwartsDormGM2": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormGM2"
+          }
+        },
+        "{{ModId}}_HogwartsDormGM3": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormGM3"
+          }
+        },
+        "{{ModId}}_HogwartsDormGM4": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormGM4"
+          }
+        },
+        "{{ModId}}_HogwartsDormGM5": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormGM5"
+          }
+        },
+        "{{ModId}}_HogwartsDormGM6": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormGM6"
+          }
+        },
+        "{{ModId}}_HogwartsDormGM7": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormGM7"
+          }
+        },
+        //Hufflepuff Female
+        "{{ModId}}_HogwartsDormHF1": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormHF1"
+          }
+        },
+        "{{ModId}}_HogwartsDormHF2": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormHF2"
+          }
+        },
+        "{{ModId}}_HogwartsDormHF3": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormHF3"
+          }
+        },
+        "{{ModId}}_HogwartsDormHF4": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormHF4"
+          }
+        },
+        "{{ModId}}_HogwartsDormHF5": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormHF5"
+          }
+        },
+        "{{ModId}}_HogwartsDormHF6": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormHF6"
+          }
+        },
+        "{{ModId}}_HogwartsDormHF7": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormHF7"
+          }
+        },
+        //Hufflpuff Male
+        "{{ModId}}_HogwartsDormHM1": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormHM1"
+          }
+        },
+        "{{ModId}}_HogwartsDormHM2": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormHM2"
+          }
+        },
+        "{{ModId}}_HogwartsDormHM3": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormHM3"
+          }
+        },
+        "{{ModId}}_HogwartsDormHM4": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormHM4"
+          }
+        },
+        "{{ModId}}_HogwartsDormHM5": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormHM5"
+          }
+        },
+        "{{ModId}}_HogwartsDormHM6": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormHM6"
+          }
+        },
+        "{{ModId}}_HogwartsDormHM7": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormHM7"
+          }
+        },
+        //Ravenclaw Female
+        "{{ModId}}_HogwartsDormRF1": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormRF1"
+          }
+        },
+        "{{ModId}}_HogwartsDormRF2": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormRF2"
+          }
+        },
+        "{{ModId}}_HogwartsDormRF3": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormRF3"
+          }
+        },
+        "{{ModId}}_HogwartsDormRF4": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormRF4"
+          }
+        },
+        "{{ModId}}_HogwartsDormRF5": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormRF5"
+          }
+        },
+        "{{ModId}}_HogwartsDormRF6": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormRF6"
+          }
+        },
+        "{{ModId}}_HogwartsDormRF7": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormRF7"
+          }
+        },
+        //Ravenclaw Male
+        "{{ModId}}_HogwartsDormRM1": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormRM1"
+          }
+        },
+        "{{ModId}}_HogwartsDormRM2": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormRM2"
+          }
+        },
+        "{{ModId}}_HogwartsDormRM3": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormRM3"
+          }
+        },
+        "{{ModId}}_HogwartsDormRM4": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormRM4"
+          }
+        },
+        "{{ModId}}_HogwartsDormRM5": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormRM5"
+          }
+        },
+        "{{ModId}}_HogwartsDormRM6": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormRM6"
+          }
+        },
+        "{{ModId}}_HogwartsDormRM7": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormRM7"
+          }
+        },
+        //Slytherin Female
+        "{{ModId}}_HogwartsDormSF1": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormSF1"
+          }
+        },
+        "{{ModId}}_HogwartsDormSF2": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormSF2"
+          }
+        },
+        "{{ModId}}_HogwartsDormSF3": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormSF3"
+          }
+        },
+        "{{ModId}}_HogwartsDormSF4": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormSF4"
+          }
+        },
+        "{{ModId}}_HogwartsDormSF5": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormSF5"
+          }
+        },
+        "{{ModId}}_HogwartsDormSF6": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormSF6"
+          }
+        },
+        "{{ModId}}_HogwartsDormSF7": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormSF7"
+          }
+        },
+        //Slytherin Male
+        "{{ModId}}_HogwartsDormSM1": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormSM1"
+          }
+        },
+        "{{ModId}}_HogwartsDormSM2": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormSM2"
+          }
+        },
+        "{{ModId}}_HogwartsDormSM3": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormSM3"
+          }
+        },
+        "{{ModId}}_HogwartsDormSM4": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormSM4"
+          }
+        },
+        "{{ModId}}_HogwartsDormSM5": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormSM5"
+          }
+        },
+        "{{ModId}}_HogwartsDormSM6": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormSM6"
+          }
+        },
+        "{{ModId}}_HogwartsDormSM7": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormSM7"
+          }
+        }
+      }
+    }
+  ]
+}
