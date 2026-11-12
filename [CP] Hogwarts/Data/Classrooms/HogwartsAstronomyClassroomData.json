@@ -1048,33 +1048,6 @@
         "HasMod |contains= DecidedlyHuman.MappingExtensionsAndExtraProperties": true
       }
     },
-    {
-      "LogName": "Hogwarts Astronomy Classroom Warp",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsAstronomyClassroom",
-      "MapTiles": [
-        {
-          "Position": {
-            "X": 21,
-            "Y": 37
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Warp 3 12 {{ModId}}_HogwartsTransfigurationWing"
-          }
-        },
-        {
-          "Position": {
-            "X": 22,
-            "Y": 37
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Warp 4 12 {{ModId}}_HogwartsTransfigurationWing"
-          }
-        }
-      ]
-    },
     //Birds on top of the tower :o
     {
       "LogName": "Astronomy Classroom MMAP Critter Birdie",
@@ -1442,6 +1415,36 @@
       "When": {
         "HasMod |contains= aedenthorn.DynamicMapTilesExtended": true
       }
+    },
+    {
+      "LogName": "Hogwarts Astronomy Classroom Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsAstronomyClassroom",
+      "AddNpcWarps": [
+        "21 38 {{ModId}}_HogwartsTransfigurationWing 4 12"
+      ],
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 21,
+            "Y": 37
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 3 12 {{ModId}}_HogwartsTransfigurationWing"
+          }
+        },
+        {
+          "Position": {
+            "X": 22,
+            "Y": 37
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 4 12 {{ModId}}_HogwartsTransfigurationWing"
+          }
+        }
+      ]
     }
   ]
 }

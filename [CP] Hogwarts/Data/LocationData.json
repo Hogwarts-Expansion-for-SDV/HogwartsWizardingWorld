@@ -201,23 +201,17 @@
       "Target": "Maps/{{ModId}}_HogwartsCommonRoomSlytherin",
       "FromFile": "assets/Maps/HogwartsCommonRoomSlytherin.tmx"
     },
-    {
+    /*{
       "LogName": "Hogwarts Defense Against The Dark Arts Classroom Load",
       "Action": "Load",
       "Target": "Maps/{{ModId}}_HogwartsDADAClassroom",
       "FromFile": "assets/Maps/HogwartsDADAClassroom.tmx"
-    },
+    },*/
     {
       "LogName": "Hogwarts Divination Classroom Load",
       "Action": "Load",
       "Target": "Maps/{{ModId}}_HogwartsDivinationClassroom",
       "FromFile": "assets/Maps/HogwartsDivinationClassroom.tmx"
-    },
-    {
-      "LogName": "Hogwarts Dorms Load",
-      "Action": "Load",
-      "Target": "Maps/{{ModId}}_HogwartsDorms",
-      "FromFile": "assets/Maps/HogwartsDorms.tmx"
     },
     {
       "LogName": "Hogwarts Faculty Tower Load",
@@ -622,22 +616,16 @@
             "MapPath": "Maps/{{ModId}}_HogwartsCommonRoomSlytherin"
           }
         },
-        "{{ModId}}_HogwartsDADAClassroom": {
+        /*"{{ModId}}_HogwartsDADAClassroom": {
           "CreateOnLoad": {
             "AlwaysActive": false,
             "MapPath": "Maps/{{ModId}}_HogwartsDADAClassroom"
           }
-        },
+        },*/
         "{{ModId}}_HogwartsDivinationClassroom": {
           "CreateOnLoad": {
             "AlwaysActive": false,
             "MapPath": "Maps/{{ModId}}_HogwartsDivinationClassroom"
-          }
-        },
-        "{{ModId}}_HogwartsDorms": {
-          "CreateOnLoad": {
-            "AlwaysActive": false,
-            "MapPath": "Maps/{{ModId}}_HogwartsDorms"
           }
         },
         "{{ModId}}_HogwartsFacultyTower": {

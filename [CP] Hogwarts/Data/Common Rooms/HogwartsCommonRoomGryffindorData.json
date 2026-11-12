@@ -4,8 +4,25 @@
       "LogName": "Hogwarts Common Room Gryffindor Warp",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsCommonRoomGryffindor",
+      "AddNpcWarps": [
+        "24 26 {{ModId}}_HogwartsGrandStaircase 15 49",
+        "9 28 {{ModId}}_HogwartsCommonRoomGryffindor 10 13",
+        "4 27 {{ModId}}_HogwartsCommonRoomGryffindor 10 13",
+        "3 12 {{ModId}}_HogwartsCommonRoomGryffindor 10 13",
+        "5 12 {{ModId}}_HogwartsCommonRoomGryffindor 10 13",
+        "12 7 {{ModId}}_HogwartsCommonRoomGryffindor 10 13",
+        "5 5 {{ModId}}_HogwartsCommonRoomGryffindor 10 13",
+        "7 5 {{ModId}}_HogwartsCommonRoomGryffindor 10 13",
+        "39 29 {{ModId}}_HogwartsCommonRoomGryffindor 10 13",
+        "41 29 {{ModId}}_HogwartsCommonRoomGryffindor 10 13",
+        "44 17 {{ModId}}_HogwartsCommonRoomGryffindor 10 13",
+        "46 17 {{ModId}}_HogwartsCommonRoomGryffindor 10 13",
+        "33 11 {{ModId}}_HogwartsCommonRoomGryffindor 10 13",
+        "39 4 {{ModId}}_HogwartsCommonRoomGryffindor 10 13",
+        "42 4 {{ModId}}_HogwartsCommonRoomGryffindor 10 13"
+      ],
       "MapTiles": [
-/*Grand Staircase*/
+        /*Grand Staircase*/
         {
           "Position": {
             "X": 23,
@@ -36,8 +53,7 @@
             "TouchAction": "Warp {{ModId}}_HogwartsGrandStaircase 15 49"
           }
         }
-      ],
-      "AddNpcWarps":["24 26 {{ModId}}_HogwartsGrandStaircase 15 49"]
+      ]
     }
   ]
 }

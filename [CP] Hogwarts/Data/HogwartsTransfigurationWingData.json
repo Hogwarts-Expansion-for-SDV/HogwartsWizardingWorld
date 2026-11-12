@@ -4,6 +4,17 @@
       "LogName": "Hogwarts Transfiguration Wing Warps",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_HogwartsTransfigurationWing",
+      "AddNpcWarps": [
+        "4 13 {{ModId}}_HogwartsAstronomyClassroom 21 38",
+        "35 30 {{ModId}}_HogwartsBellTowerCourtyard 146 77",
+        "4 20 {{ModId}}_HogwartsCharmsClassroom 20 20",
+        "29 34 {{ModId}}_HogwartsHistoryOfMagicClassroom 11 19",
+        "52 54 {{ModId}}_HogwartsLibraryAnnex 47 26",
+        "3 27 {{ModId}}_HogwartsMagicalTheoryClassroom 9 32",
+        "59 61 {{ModId}}_HogwartsPotionsClassroom 15 32",
+        "57 44 {{ModId}}_HogwartsMuggleStudiesClassroom 8 14",
+        "21 39 {{ModId}}_HogwartsTransfigurationClassroom 9 20"
+      ],
       "MapTiles": [
         //Astronomy Classroom 
         {
@@ -118,27 +129,6 @@
           "Layer": "Buildings",
           "SetProperties": {
             "Action": "Warp 20 20 {{ModId}}_HogwartsCharmsClassroom"
-          }
-        },
-        //DADA Classroom
-        {
-          "Position": {
-            "X": 7,
-            "Y": 47
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Warp 5 29 {{ModId}}_HogwartsDADAClassroom"
-          }
-        },
-        {
-          "Position": {
-            "X": 8,
-            "Y": 47
-          },
-          "Layer": "Buildings",
-          "SetProperties": {
-            "Action": "Warp 5 29 {{ModId}}_HogwartsDADAClassroom"
           }
         },
         //Grand Staircase Right

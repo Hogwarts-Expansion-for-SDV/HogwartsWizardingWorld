@@ -1,52 +1,55 @@
 {
-    "Changes": [
-      {
-        "LogName": "Hogwarts Greenhouse Warp",
-        "Action": "EditMap",
-        "Target": "Maps/{{ModId}}_HogwartsGreenhouse",
-        "MapTiles": [
-          {
-            "Position": {
-              "X": 1,
-              "Y": 12
-            },
-            "Layer": "Back",
-            "SetProperties": {
-              "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 65 26"
-            }
+  "Changes": [
+    {
+      "LogName": "Hogwarts Greenhouse Warp",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsGreenhouse",
+      "AddNpcWarps": [
+        "2 13 {{ModId}}_HogwartsLibraryAnnex 64 27"
+      ],
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 1,
+            "Y": 12
           },
-          {
-            "Position": {
-              "X": 1,
-              "Y": 13
-            },
-            "Layer": "Back",
-            "SetProperties": {
-              "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 65 27"
-            }
-          },
-        //Library Annex Left 2
-          {
-            "Position": {
-              "X": 2,
-              "Y": 31
-            },
-            "Layer": "Back",
-            "SetProperties": {
-              "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 65 32"
-            }
-          },
-          {
-            "Position": {
-              "X": 2,
-              "Y": 32
-            },
-            "Layer": "Back",
-            "SetProperties": {
-              "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 65 33"
-            }
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 65 26"
           }
-        ]
-      }
-    ]
-  }
+        },
+        {
+          "Position": {
+            "X": 1,
+            "Y": 13
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 65 27"
+          }
+        },
+        //Library Annex Left 2
+        {
+          "Position": {
+            "X": 2,
+            "Y": 31
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 65 32"
+          }
+        },
+        {
+          "Position": {
+            "X": 2,
+            "Y": 32
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "TouchAction": "Warp {{ModId}}_HogwartsLibraryAnnex 65 33"
+          }
+        }
+      ]
+    }
+  ]
+}
