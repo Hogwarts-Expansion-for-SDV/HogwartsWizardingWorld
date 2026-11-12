@@ -124,17 +124,20 @@
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogsHeadInn",
       "Entries": {
-          "{{ModId}}_Ollivander45": "Saloon1/9 19/farmer 16 20 0 HogwartsOllivander 10 20 0 HogwartsAberforth 2 17 2 HogwartsDraco -1000 -1000 0/skippable/showFrame farmer 113/
-          addTemporaryActor HogwartsDarkWizard1 16 32 1 18 2 true Character /pause 800
-          /textAboveHead HogwartsAberforth \"Your order’s up.\"/pause 1000/emote HogwartsDarkWizard1 40/pause 800/move HogwartsAberforth 4 0 1/ move HogwartsAberforth 0 1 1 / move HogwartsAberforth 2 0 0/move HogwartsAberforth 0 -1 0/move HogwartsAberforth 3 0 1/
-          faceDirection HogwartsAberforth 2/pause 800/speak HogwartsAberforth \"Sorry to keep you waiting.\"/pause 600/speak HogwartsAberforth \"How is your son doing?#$b#Have you gone to visit him?\"/pause 800/
-          emote HogwartsOllivander 16/pause 500/
-          speak HogwartsOllivander \"Ab...I can't go back to Diagon Alley.#$b#I can't!$a\"/pause 800/emote HogwartsAberforth 28/pause 800/playSound doorClose/warp HogwartsDraco 14 23/move HogwartsDraco 0 -1 0/
-          pause 800/textAboveHead HogwartsDraco \"Where is that dealer?\"/pause 800/faceDirection HogwartsOllivander 2/pause 400/emote HogwartsOllivander 16/pause 400/faceDirection HogwartsOllivander 0/
-          pause 600/move HogwartsDraco -4 0 0/pause 800/emote HogwartsOllivander 40/move HogwartsDraco -4 0 0/move HogwartsDraco 0 -3 0/move HogwartsDraco -2 0 0/
-          faceDirection HogwartsDraco 3/stopMusic/globalFade 0.005
-          /changeToTemporaryMap {{ModId}}_OllivandersBedroom/ambientLight 150 150 150/viewport 4 8 true/warp HogwartsOllivander 3 6 /playSound thunder_small/showFrame HogwartsOllivander 25/
-          faceDirection HogwartsOllivander 2/pause 600/speak HogwartsOllivander \"I... I warned you, My Lord. #$b#Your wand shares the same phoenix core as... #$b#Your wand will be useless against him.\"
+          "{{ModId}}_Ollivander45": "spirits_eve/999 999/farmer 22 23 0 HogwartsOllivander 10 20 0 HogwartsAberforth 2 17 2 HogwartsDraco -1000 -1000 0/skippable/showFrame farmer 113/
+          addTemporaryActor HogwartsDarkWizard1 16 32 1 19 1 true Character /addTemporaryActor HogwartsDarkWizard2 16 32 19 17 2 true Character /ambientLight 90 90 50/pause 800/viewport 9 19 true/pause 2000
+          /textAboveHead HogwartsAberforth \"Your order’s up.\"/pause 1000/emote HogwartsDarkWizard1 40 true/pause 800/move HogwartsAberforth 4 0 1/ move HogwartsAberforth 0 1 1 / move HogwartsAberforth 2 0 0/move HogwartsAberforth 0 -1 0/move HogwartsAberforth 4 0 1/move HogwartsAberforth 0 1 2/positionOffset HogwartsAberforth 0 -10/
+          animate HogwartsAberforth false true 500 16 17/pause 1200/speak HogwartsAberforth \"Sorry to keep you waiting.\"/pause 1000/speak HogwartsAberforth \"How is your son doing?#$b#Have you gone to visit him?\"/pause 800/
+          shake HogwartsOllivander 500/pause 1000/
+          speak HogwartsOllivander \"Ab...I can't go back to Diagon Alley.#$b#I can't!$a\"/pause 800/emote HogwartsAberforth 28/pause 800/playSound doorClose/warp HogwartsDraco 14 23/move HogwartsDraco 0 -1 0/pause 500/
+          textAboveHead HogwartsDraco \"Now where is that damn...\"/pause 800/faceDirection HogwartsOllivander 2/pause 400/emote HogwartsOllivander 16/pause 400/faceDirection HogwartsOllivander 0/
+          pause 600/move HogwartsDraco -4 0 0/pause 800/emote HogwartsOllivander 40 true/shake HogwartsOllivander 500/move HogwartsDraco -4 0 0/move HogwartsDraco 0 -4 0/move HogwartsDraco -2 0 0/
+          faceDirection HogwartsDraco 3/emote HogwartsDarkWizard1 8/pause 500/emote HogwartsDraco 12 true/shake HogwartsDraco 250/playSound purchase/addObject 3 18 {{ModId}}_PearlDust 3/pause 1000/faceDirection HogwartsOllivander 3/pause 1000/shake HogwartsOllivander 500/speed HogwartsOllivander 3/move HogwartsOllivander 4 0 1/move HogwartsOllivander 0 2 2/
+          emote HogwartsAberforth 16/stopAnimation HogwartsAberforth 0/pause 500/speak HogwartsAberforth \"Ollivander? What about your drink?\"/pause 1000/faceDirection HogwartsOllivander 0/pause 500/
+          speak HogwartsOllivander \"Put it on my tab... I-I must go.\"/speed HogwartsOllivander 3/move HogwartsOllivander 0 2 2/playSound doorClose/warp HogwartsOllivander 100 100/pause 1000/emote HogwartsAberforth 8/pause 1000/
+          stopMusic/globalFade/viewport 999 999/
+          changeToTemporaryMap {{ModId}}_OllivandersBedroom/ambientLight 150 150 150/viewport 4 8 true/warp HogwartsOllivander 3 6/showFrame HogwartsOllivander 25/playSound thunder_small/shake HogwartsOllivander 500/
+          pause 600/speak HogwartsOllivander \"I... I warned you, My Lord. #$b#Your wand shares the same phoenix core as... #$b#Your wand will be useless against him.\"
           /pause 600/emote HogwartsOllivander 16/speak HogwartsOllivander \"Please, stop!\"/pasue 400/speak HogwartsOllivander \"I will tell you anything! Gregorovitch... My Lord!#$b#He has the Elder Wand!\"
           /playSound thunder/end"
       }
