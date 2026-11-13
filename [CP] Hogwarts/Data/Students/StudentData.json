@@ -1,0 +1,1128 @@
+/*{
+      "Name": "BellTowerCourtyardCoordinateX",
+      "Value": "{{Range: 31, 66}},{{Range: 120, 170}}"
+    },
+    {
+      "Name": "BellTowerCourtyardCoordinateY",
+      "Value": "{{Range: 17, 72}}"
+    },
+    {
+      "Name": "GreatHallCoordinateX",
+      "Value": "{{Range: 4, 26}}"
+    },
+    {
+      "Name": "GreatHallCoordinateY",
+      "Value": "{{Range: 22, 39}}"
+    },
+    {
+      "Name": "LibraryAnnexCoordinateX",
+      "Value": "{{Range: 2, 41}}"
+    },
+    {
+      "Name": "LibraryAnnexCoordinateY",
+      "Value": "{{Range: 6, 59}}"
+    },
+    {
+      "Name": "SouthWingCoordinateX",
+      "Value": "{{Range: 21, 78}}"
+    },
+    {
+      "Name": "SouthWingCoordinateY",
+      "Value": "{{Range: 8, 61}}"
+    },
+    {
+      "Name": "TransfigurationWingCoordinateX",
+      "Value": "{{Range: 3, 65}}"
+    },
+    {
+      "Name": "TransfigurationWingCoordinateY",
+      "Value": "{{Range: 5, 71}}"
+    },
+    {
+      "Name": "GreenhouseCoordinateX",
+      "Value": "{{Range: 4, 30}}"
+    },
+    {
+      "Name": "GreenhouseCoordinateY",
+      "Value": "{{Range: 9, 26}}"
+    },
+*/
+{
+  "Changes": [
+    {
+      "LogName": "Hogwarts Students Character Data",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        // Filler student characters
+        // GryffindorJr1 replaced by Suryawati
+        // SlytherinSr1 replaced by Abrielle
+        // HufflepuffKid1 replaced by Patrick
+        "HogwartsG1F1": {
+          "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.Y1}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Child",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm1F",
+              "Tile": {
+                "X": 11,
+                "Y": 40
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsG2F1": {
+          "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.Y2}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Child",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm2F",
+              "Tile": {
+                "X": 11,
+                "Y": 40
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsG3F1": {
+          "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.Y3}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm3F",
+              "Tile": {
+                "X": 11,
+                "Y": 40
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsG4F1": {
+          "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.Y4}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm4F",
+              "Tile": {
+                "X": 11,
+                "Y": 40
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsG5F1": {
+          "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.Y5}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm5F",
+              "Tile": {
+                "X": 11,
+                "Y": 40
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsG6F1": {
+          "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.Y6}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm6F",
+              "Tile": {
+                "X": 11,
+                "Y": 40
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsG7F1": {
+          "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.Y7}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm7F",
+              "Tile": {
+                "X": 11,
+                "Y": 40
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsG1M1": {
+          "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.Y1}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Child",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm1M",
+              "Tile": {
+                "X": 11,
+                "Y": 40
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsG2M1": {
+          "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.Y2}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Child",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm2M",
+              "Tile": {
+                "X": 11,
+                "Y": 40
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsG3M1": {
+          "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.Y3}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm3M",
+              "Tile": {
+                "X": 11,
+                "Y": 40
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsG4M1": {
+          "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.Y4}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm4M",
+              "Tile": {
+                "X": 11,
+                "Y": 40
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsG5M1": {
+          "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.Y5}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm5M",
+              "Tile": {
+                "X": 11,
+                "Y": 40
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsG6M1": {
+          "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.Y6}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm6M",
+              "Tile": {
+                "X": 11,
+                "Y": 40
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsG7M1": {
+          "DisplayName": "{{i18n: Hogwarts.Gryffindor}} {{i18n: Hogwarts.Y7}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm7M",
+              "Tile": {
+                "X": 11,
+                "Y": 40
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsH1F1": {
+          "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.Y1}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Child",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm1F",
+              "Tile": {
+                "X": 11,
+                "Y": 64
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsH2F1": {
+          "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.Y2}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Child",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm2F",
+              "Tile": {
+                "X": 11,
+                "Y": 64
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsH3F1": {
+          "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.Y3}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm3F",
+              "Tile": {
+                "X": 11,
+                "Y": 64
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsH4F1": {
+          "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.Y4}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm4F",
+              "Tile": {
+                "X": 11,
+                "Y": 64
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsH5F1": {
+          "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.Y5}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm5F",
+              "Tile": {
+                "X": 11,
+                "Y": 64
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsH6F1": {
+          "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.Y6}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm6F",
+              "Tile": {
+                "X": 11,
+                "Y": 64
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsH7F1": {
+          "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.Y7}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm7F",
+              "Tile": {
+                "X": 11,
+                "Y": 64
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsH1M1": {
+          "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.Y1}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Child",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm1M",
+              "Tile": {
+                "X": 11,
+                "Y": 64
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsH2M1": {
+          "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.Y2}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Child",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm2M",
+              "Tile": {
+                "X": 11,
+                "Y": 64
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsH3M1": {
+          "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.Y3}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm3M",
+              "Tile": {
+                "X": 11,
+                "Y": 64
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsH4M1": {
+          "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.Y4}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm4M",
+              "Tile": {
+                "X": 11,
+                "Y": 64
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsH5M1": {
+          "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.Y5}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm5M",
+              "Tile": {
+                "X": 11,
+                "Y": 64
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsH6M1": {
+          "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.Y6}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm6M",
+              "Tile": {
+                "X": 11,
+                "Y": 64
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsH7M1": {
+          "DisplayName": "{{i18n: Hogwarts.Hufflepuff}} {{i18n: Hogwarts.Y7}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm7M",
+              "Tile": {
+                "X": 11,
+                "Y": 64
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsR1F1": {
+          "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.Y1}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Child",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm1F",
+              "Tile": {
+                "X": 11,
+                "Y": 16
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsR2F1": {
+          "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.Y2}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Child",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm2F",
+              "Tile": {
+                "X": 11,
+                "Y": 16
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsR3F1": {
+          "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.Y3}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm3F",
+              "Tile": {
+                "X": 11,
+                "Y": 16
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsR4F1": {
+          "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.Y4}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm4F",
+              "Tile": {
+                "X": 11,
+                "Y": 16
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsR5F1": {
+          "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.Y5}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm5F",
+              "Tile": {
+                "X": 11,
+                "Y": 16
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsR6F1": {
+          "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.Y6}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm6F",
+              "Tile": {
+                "X": 11,
+                "Y": 16
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsR7F1": {
+          "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.Y7}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm7F",
+              "Tile": {
+                "X": 11,
+                "Y": 16
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsR1M1": {
+          "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.Y1}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Child",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm1M",
+              "Tile": {
+                "X": 11,
+                "Y": 16
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsR2M1": {
+          "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.Y2}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Child",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm2M",
+              "Tile": {
+                "X": 11,
+                "Y": 16
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsR3M1": {
+          "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.Y3}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm3M",
+              "Tile": {
+                "X": 11,
+                "Y": 16
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsR4M1": {
+          "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.Y4}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm4M",
+              "Tile": {
+                "X": 11,
+                "Y": 16
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsR5M1": {
+          "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.Y5}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm5M",
+              "Tile": {
+                "X": 11,
+                "Y": 16
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsR6M1": {
+          "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.Y6}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm6M",
+              "Tile": {
+                "X": 11,
+                "Y": 16
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsR7M1": {
+          "DisplayName": "{{i18n: Hogwarts.Ravenclaw}} {{i18n: Hogwarts.Y7}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm7M",
+              "Tile": {
+                "X": 11,
+                "Y": 16
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsS1F1": {
+          "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.Y1}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Child",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm1F",
+              "Tile": {
+                "X": 11,
+                "Y": 88
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsS2F1": {
+          "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.Y2}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Child",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm2F",
+              "Tile": {
+                "X": 11,
+                "Y": 88
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsS3F1": {
+          "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.Y3}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm3F",
+              "Tile": {
+                "X": 11,
+                "Y": 88
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsS4F1": {
+          "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.Y4}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm4F",
+              "Tile": {
+                "X": 11,
+                "Y": 88
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsS5F1": {
+          "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.Y5}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm5F",
+              "Tile": {
+                "X": 11,
+                "Y": 88
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsS6F1": {
+          "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.Y6}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm6F",
+              "Tile": {
+                "X": 11,
+                "Y": 88
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsS7F1": {
+          "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.Y7}} {{i18n: Hogwarts.girl}}",
+          "Gender": "Female",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm7F",
+              "Tile": {
+                "X": 11,
+                "Y": 88
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsS1M1": {
+          "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.Y1}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Child",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm1M",
+              "Tile": {
+                "X": 11,
+                "Y": 88
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsS2M1": {
+          "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.Y2}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Child",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm2M",
+              "Tile": {
+                "X": 11,
+                "Y": 88
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsS3M1": {
+          "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.Y3}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm3M",
+              "Tile": {
+                "X": 11,
+                "Y": 88
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsS4M1": {
+          "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.Y4}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm4M",
+              "Tile": {
+                "X": 11,
+                "Y": 88
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsS5M1": {
+          "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.Y5}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm5M",
+              "Tile": {
+                "X": 11,
+                "Y": 88
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsS6M1": {
+          "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.Y6}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm6M",
+              "Tile": {
+                "X": 11,
+                "Y": 88
+              },
+              "Direction": "right"
+            }
+          ]
+        },
+        "HogwartsS7M1": {
+          "DisplayName": "{{i18n: Hogwarts.Slytherin}} {{i18n: Hogwarts.Y7}} {{i18n: Hogwarts.boy}}",
+          "Gender": "Male",
+          "Age": "Teen",
+          "Calendar": "HiddenAlways",
+          "SocialTab": "HiddenAlways",
+          "CanReceiveGifts": false,
+          "Home": [
+            {
+              "Id": "Dorm",
+              "Location": "{{ModId}}_HogwartsDorm7M",
+              "Tile": {
+                "X": 11,
+                "Y": 88
+              },
+              "Direction": "right"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
