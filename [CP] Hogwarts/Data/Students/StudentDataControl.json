@@ -7,15 +7,14 @@
    - When we are done with all sprites + portraits (default + winter), move the rest the code in StudentLoadData.json to the template
    */
 {
-    "Changes": [
-//Schedule Data Include
-        {
-            "LogName": "Hogwarts - Gryffindor Student Schedules",
-            "Action": "Include",
-            "FromFile": "Data/Students/GryffindorStudentSchedule.json"
-        },
-        
-        /*{
+  "Changes": [
+    //Schedule Data Include
+    {
+      "LogName": "Hogwarts - Gryffindor Student Schedules",
+      "Action": "Include",
+      "FromFile": "Data/Students/GryffindorStudentSchedule.json"
+    },
+    /*{
             "Action": "Include",
             "FromFile": "Data/Students/RavenclawStudentSchedule.json"
         },
@@ -30,577 +29,514 @@
             "FromFile": "Data/Students/SlytherinStudentSchedule.json"
         },
         */
-
-        { 
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentStringData.json",
-        },
-
-//Gryffindor
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "GryffindorMaleOne",
-                "Gender": "Male",
-                "Room": "GM1D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "GryffindorFemaleOne",
-                "Gender": "Female",
-                "Room": "GF1D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "GryffindorMaleTwo",
-                "Gender": "Male",
-                "Room": "GM2D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "GryffindorFemaleTwo",
-                "Gender": "Female",
-                "Room": "GF2D",
-            }
-        },
-        
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "GryffindorMaleThree",
-                "Gender": "Male",
-                "Room": "GM3D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "GryffindorFemaleThree",
-                "Gender": "Female",
-                "Room": "GF3D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "GryffindorMaleFour",
-                "Gender": "Male",
-                "Room": "GM4D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "GryffindorFemaleFour",
-                "Gender": "Female",
-                "Room": "GF4D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "GryffindorMaleFive",
-                "Gender": "Male",
-                "Room": "GM5D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "GryffindorFemaleFive",
-                "Gender": "Female",
-                "Room": "GF5D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "GryffindorMaleSix",
-                "Gender": "Male",
-                "Room": "GM6D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "GryffindorFemaleSix",
-                "Gender": "Female",
-                "Room": "GF6D",
-            }
-        },
-
-                {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "GryffindorMaleSeven",
-                "Gender": "Male",
-                "Room": "GM7D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "GryffindorFemaleSeven",
-                "Gender": "Female",
-                "Room": "GF7D",
-            }
-        },
-
-//Hufflepuff
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "HufflepuffMaleOne",
-                "Gender": "Male",
-                "Room": "HM1D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "HufflepuffFemaleOne",
-                "Gender": "Female",
-                "Room": "HF1D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "HufflepuffMaleTwo",
-                "Gender": "Male",
-                "Room": "HM2D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "HufflepuffFemaleTwo",
-                "Gender": "Female",
-                "Room": "HF2D",
-            }
-        },
-
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "HufflepuffMaleThree",
-                "Gender": "Male",
-                "Room": "HM3D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "HufflepuffFemaleThree",
-                "Gender": "Female",
-                "Room": "HF3D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "HufflepuffMaleFour",
-                "Gender": "Male",
-                "Room": "HM4D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "HufflepuffFemaleFour",
-                "Gender": "Female",
-                "Room": "HF4D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "HufflepuffMaleFive",
-                "Gender": "Male",
-                "Room": "HM5D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "HufflepuffFemaleFive",
-                "Gender": "Female",
-                "Room": "HF5D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "HufflepuffMaleSix",
-                "Gender": "Male",
-                "Room": "HM6D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "HufflepuffFemaleSix",
-                "Gender": "Female",
-                "Room": "HF6D",
-            }
-        },
-
-                {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "HufflepuffMaleSeven",
-                "Gender": "Male",
-                "Room": "HM7D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "HufflepuffFemaleSeven",
-                "Gender": "Female",
-                "Room": "HF7D",
-            }
-        },
-
-//Ravenclaw
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "RavenclawMaleOne",
-                "Gender": "Male",
-                "Room": "RM1D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "RavenclawFemaleOne",
-                "Gender": "Female",
-                "Room": "RF1D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "RavenclawMaleTwo",
-                "Gender": "Male",
-                "Room": "RM2D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "RavenclawFemaleTwo",
-                "Gender": "Female",
-                "Room": "RF2D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "RavenclawMaleThree",
-                "Gender": "Male",
-                "Room": "RM3D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "RavenclawFemaleThree",
-                "Gender": "Female",
-                "Room": "RF3D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "RavenclawMaleFour",
-                "Gender": "Male",
-                "Room": "RM4D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "RavenclawFemaleFour",
-                "Gender": "Female",
-                "Room": "RF4D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "RavenclawMaleFive",
-                "Gender": "Male",
-                "Room": "RM5D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "RavenclawFemaleFive",
-                "Gender": "Female",
-                "Room": "RF5D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "RavenclawMaleSix",
-                "Gender": "Male",
-                "Room": "RM6D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "RavenclawFemaleSix",
-                "Gender": "Female",
-                "Room": "RF6D",
-            }
-        },
-
-                {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "RavenclawMaleSeven",
-                "Gender": "Male",
-                "Room": "RM7D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "RavenclawFemaleSeven",
-                "Gender": "Female",
-                "Room": "RF7D",
-            }
-        },
-
-//Slytherin
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "SlytherinMaleOne",
-                "Gender": "Male",
-                "Room": "SM1D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "SlytherinFemaleOne",
-                "Gender": "Female",
-                "Room": "SF1D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "SlytherinMaleTwo",
-                "Gender": "Male",
-                "Room": "SM2D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "SlytherinFemaleTwo",
-                "Gender": "Female",
-                "Room": "SF2D",
-            }
-        },
-        
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "SlytherinMaleThree",
-                "Gender": "Male",
-                "Room": "SM3D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "SlytherinFemaleThree",
-                "Gender": "Female",
-                "Room": "SF3D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "SlytherinMaleFour",
-                "Gender": "Male",
-                "Room": "SM4D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "SlytherinFemaleFour",
-                "Gender": "Female",
-                "Room": "SF4D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "SlytherinMaleFive",
-                "Gender": "Male",
-                "Room": "SM5D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "SlytherinFemaleFive",
-                "Gender": "Female",
-                "Room": "SF5D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "SlytherinMaleSix",
-                "Gender": "Male",
-                "Room": "SM6D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "SlytherinFemaleSix",
-                "Gender": "Female",
-                "Room": "SF6D",
-            }
-        },
-
-                {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "SlytherinMaleSeven",
-                "Gender": "Male",
-                "Room": "SM7D",
-            }
-        },
-
-        {
-            "Action": "Include",
-            "FromFile": "Data/Students/StudentDataTemplate.json",
-            "LocalTokens": {
-                "Name": "SlytherinFemaleSeven",
-                "Gender": "Female",
-                "Room": "SF7D",
-            }
-        },
-    
-]
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentStringData.json",
+    },
+    //Gryffindor
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "G1F1",
+        "Gender": "F",
+        "Room": "G1F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "G2F1",
+        "Gender": "F",
+        "Room": "G2F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "G3F1",
+        "Gender": "F",
+        "Room": "G3F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "G4F1",
+        "Gender": "F",
+        "Room": "G4F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "G5F1",
+        "Gender": "F",
+        "Room": "G5F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "G6F1",
+        "Gender": "F",
+        "Room": "G6F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "G7F1",
+        "Gender": "F",
+        "Room": "G7F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "G1M1",
+        "Gender": "M",
+        "Room": "G1M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "G2M1",
+        "Gender": "M",
+        "Room": "G2M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "G3M1",
+        "Gender": "M",
+        "Room": "G3M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "G4M1",
+        "Gender": "M",
+        "Room": "G4M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "G5M1",
+        "Gender": "M",
+        "Room": "G5M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "G6M1",
+        "Gender": "M",
+        "Room": "G6M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "G7M1",
+        "Gender": "M",
+        "Room": "G7M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "H1F1",
+        "Gender": "F",
+        "Room": "H1F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "H2F1",
+        "Gender": "F",
+        "Room": "H2F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "H3F1",
+        "Gender": "F",
+        "Room": "H3F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "H4F1",
+        "Gender": "F",
+        "Room": "H4F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "H5F1",
+        "Gender": "F",
+        "Room": "H5F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "H6F1",
+        "Gender": "F",
+        "Room": "H6F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "H7F1",
+        "Gender": "F",
+        "Room": "H7F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "H1M1",
+        "Gender": "M",
+        "Room": "H1M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "H2M1",
+        "Gender": "M",
+        "Room": "H2M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "H3M1",
+        "Gender": "M",
+        "Room": "H3M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "H4M1",
+        "Gender": "M",
+        "Room": "H4M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "H5M1",
+        "Gender": "M",
+        "Room": "H5M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "H6M1",
+        "Gender": "M",
+        "Room": "H6M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "H7M1",
+        "Gender": "M",
+        "Room": "H7M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "R1F1",
+        "Gender": "F",
+        "Room": "R1F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "R2F1",
+        "Gender": "F",
+        "Room": "R2F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "R3F1",
+        "Gender": "F",
+        "Room": "R3F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "R4F1",
+        "Gender": "F",
+        "Room": "R4F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "R5F1",
+        "Gender": "F",
+        "Room": "R5F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "R6F1",
+        "Gender": "F",
+        "Room": "R6F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "R7F1",
+        "Gender": "F",
+        "Room": "R7F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "R1M1",
+        "Gender": "M",
+        "Room": "R1M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "R2M1",
+        "Gender": "M",
+        "Room": "R2M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "R3M1",
+        "Gender": "M",
+        "Room": "R3M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "R4M1",
+        "Gender": "M",
+        "Room": "R4M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "R5M1",
+        "Gender": "M",
+        "Room": "R5M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "R6M1",
+        "Gender": "M",
+        "Room": "R6M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "R7M1",
+        "Gender": "M",
+        "Room": "R7M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "S1F1",
+        "Gender": "F",
+        "Room": "S1F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "S2F1",
+        "Gender": "F",
+        "Room": "S2F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "S3F1",
+        "Gender": "F",
+        "Room": "S3F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "S4F1",
+        "Gender": "F",
+        "Room": "S4F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "S5F1",
+        "Gender": "F",
+        "Room": "S5F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "S6F1",
+        "Gender": "F",
+        "Room": "S6F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "S7F1",
+        "Gender": "F",
+        "Room": "S7F"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "S1M1",
+        "Gender": "M",
+        "Room": "S1M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "S2M1",
+        "Gender": "M",
+        "Room": "S2M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "S3M1",
+        "Gender": "M",
+        "Room": "S3M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "S4M1",
+        "Gender": "M",
+        "Room": "S4M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "S5M1",
+        "Gender": "M",
+        "Room": "S5M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "S6M1",
+        "Gender": "M",
+        "Room": "S6M"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Students/StudentDataTemplate.json",
+      "LocalTokens": {
+        "Name": "S7M1",
+        "Gender": "M",
+        "Room": "S7M"
+      }
+    }
+  ]
 }
