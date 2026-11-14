@@ -91,9 +91,9 @@
         emote farmer 8/pause 500/move farmer 0 -2 0/question null \"#Who said that? #Are you a locket?\"/
         emote HogwartsOllivandersLocket 60/pause 500/speak HogwartsOllivandersLocket \"Yes, I help run the shop while my father is... Unavailable.$2\"/
         move HogwartsOllivander 0 11 1 true/jump farmer/pause 1000/faceDirection farmer 3/pause 500/
-        speak HogwartsOllivander \"Ah! Welcome back, @.\"/pause 500/move HogwartsOllivander 2 0 1 true/pause 500/
+        speak HogwartsOllivander \"Ah! Welcome back, @.\"/pause 1500/move HogwartsOllivander 2 0 1 true/pause 500/
         speak HogwartsOllivander \"I see you without your wand. Break it, did you?\"/emote farmer 60/pause 1500/
-        speak HogwartsOllivander \"Not to worry! We have other ones more suitable for you this time.\"/pause 250/move HogwartsOllivander 5 0 0 true/faceDirection farmer 1/pause 2000/
+        speak HogwartsOllivander \"Not to worry! We have other ones more suitable for you this time.\"/pause 250/move HogwartsOllivander 5 0 0 true/faceDirection farmer 1/pause 2500/
         speak HogwartsOllivander \"Let's see here...\"/move HogwartsOllivander 0 -3 0 true/pause 1500/emote HogwartsOllivander 40/pause 1000/shake HogwartsOllivander 500/pause 1000/
         faceDirection farmer 0/pause 500/jump HogwartsOllivander/pause 500/faceDirection HogwartsOllivander 2/speak HogwartsOllivander \"Try this one.\"/
         pause 1000/move farmer 2 0 0 true/pause 1000/move farmer 0 -2 0 true/pause 1000/faceDirection HogwartsOllivander 2/pause 250/faceDirection farmer 1/pause 250/
@@ -131,15 +131,15 @@
           shake HogwartsOllivander 500/pause 1000/
           speak HogwartsOllivander \"Ab...I can't go back to Diagon Alley.#$b#I can't!$a\"/pause 800/emote HogwartsAberforth 28/pause 800/playSound doorClose/warp HogwartsDraco 14 23/move HogwartsDraco 0 -1 0/pause 500/
           textAboveHead HogwartsDraco \"Now where is that damn...\"/pause 800/faceDirection HogwartsOllivander 2/pause 400/emote HogwartsOllivander 16/pause 400/faceDirection HogwartsOllivander 0/
-          pause 600/move HogwartsDraco -4 0 0/pause 800/emote HogwartsOllivander 40 true/shake HogwartsOllivander 500/move HogwartsDraco -4 0 0/move HogwartsDraco 0 -4 0/move HogwartsDraco -2 0 0/
+          pause 600/move HogwartsDraco -4 0 0/pause 800/emote HogwartsOllivander 40 true/shake HogwartsOllivander 500/move HogwartsDraco -4 0 0/move HogwartsDraco 0 -4 0/move HogwartsDraco -2 0 3/
           faceDirection HogwartsDraco 3/emote HogwartsDarkWizard1 8/pause 500/emote HogwartsDraco 12 true/shake HogwartsDraco 250/playSound purchase/addObject 3 18 {{ModId}}_PearlDust 3/pause 1000/faceDirection HogwartsOllivander 3/pause 1000/shake HogwartsOllivander 500/speed HogwartsOllivander 3/move HogwartsOllivander 4 0 1/move HogwartsOllivander 0 2 2/
           emote HogwartsAberforth 16/stopAnimation HogwartsAberforth 0/pause 500/speak HogwartsAberforth \"Ollivander? What about your drink?\"/pause 1000/faceDirection HogwartsOllivander 0/pause 500/
           speak HogwartsOllivander \"Put it on my tab... I-I must go.\"/speed HogwartsOllivander 3/move HogwartsOllivander 0 2 2/playSound doorClose/warp HogwartsOllivander 100 100/pause 1000/emote HogwartsAberforth 8/pause 1000/
-          stopMusic/globalFade/viewport 999 999/
+          stopMusic/globalFade/viewport 999 999/pause 1000/
           changeToTemporaryMap {{ModId}}_OllivandersBedroom/ambientLight 150 150 150/viewport 4 8 true/warp HogwartsOllivander 3 6/showFrame HogwartsOllivander 25/playSound thunder_small/shake HogwartsOllivander 500/
           pause 600/speak HogwartsOllivander \"I... I warned you, My Lord. #$b#Your wand shares the same phoenix core as... #$b#Your wand will be useless against him.\"
           /pause 600/emote HogwartsOllivander 16/speak HogwartsOllivander \"Please, stop!\"/pasue 400/speak HogwartsOllivander \"I will tell you anything! Gregorovitch... My Lord!#$b#He has the Elder Wand!\"
-          /playSound thunder/end"
+          /playSound thunder/shake HogwartsOllivander 1000/pause 1500/end"
       }
     },
     {
