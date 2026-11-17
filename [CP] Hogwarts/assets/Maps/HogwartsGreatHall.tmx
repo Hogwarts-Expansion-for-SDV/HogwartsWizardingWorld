@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="31" height="43" tilewidth="16" tileheight="16" infinite="0" nextlayerid="21" nextobjectid="1">
+<map version="1.10" tiledversion="1.12.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="31" height="43" tilewidth="16" tileheight="16" infinite="0" nextlayerid="21" nextobjectid="130">
  <tileset firstgid="1" name="z_GreatHall_HitMe_Hogwarts" tilewidth="16" tileheight="16" tilecount="1353" columns="33">
   <image source="z_GreatHall_HitMe_Hogwarts.png" width="528" height="664"/>
   <tile id="572">
@@ -102,10 +102,10 @@
  <tileset firstgid="1354" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="688" columns="16">
   <image source="walls_and_floors.png" width="256" height="688"/>
  </tileset>
- <tileset firstgid="2042" name="z_Potions_Katy_Hogwarts" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
-  <image source="z_Potions_Katy_Hogwarts.png" width="512" height="1088"/>
+ <tileset firstgid="2042" name="z_Potions_Katy_Hogwarts" tilewidth="16" tileheight="16" tilecount="1184" columns="32">
+  <image source="z_Potions_Katy_Hogwarts.png" width="512" height="592"/>
  </tileset>
- <tileset firstgid="4218" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+ <tileset firstgid="3226" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
   <image source="townInterior.png" width="512" height="1088"/>
   <tile id="546">
    <animation>
@@ -148,57 +148,57 @@
    </animation>
   </tile>
  </tileset>
- <tileset firstgid="6394" name="z_Library_HitMe_Hogwarts" tilewidth="16" tileheight="16" tilecount="924" columns="21">
+ <tileset firstgid="5402" name="z_Library_HitMe_Hogwarts" tilewidth="16" tileheight="16" tilecount="924" columns="21">
   <image source="z_Library_HitMe_Hogwarts.png" width="336" height="704"/>
  </tileset>
- <tileset firstgid="7318" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+ <tileset firstgid="6326" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
   <image source="paths.png" width="64" height="256"/>
  </tileset>
  <layer id="2" name="Back" width="31" height="43">
   <data encoding="csv">
-4218,4218,4218,4218,4218,4218,4218,4218,4218,0,0,0,0,0,0,0,0,0,0,0,0,0,4218,4218,4218,4218,4218,4218,4218,4218,4218,
-4218,4218,4218,4218,4218,4218,4218,4218,4218,0,0,0,0,0,0,0,0,0,0,0,0,0,4218,4218,4218,4218,4218,4218,4218,4218,4218,
-4218,4218,4218,4218,4218,4218,4218,4218,4218,0,631,599,402,598,632,402,598,632,402,598,599,0,4218,4218,4218,4218,4218,4218,4218,4218,4218,
-4218,4218,4218,4218,4218,4218,4218,4218,4218,371,598,632,402,631,599,402,631,599,402,631,632,371,4218,4218,4218,4218,4218,4218,4218,4218,4218,
-4218,4218,4218,4218,4218,4218,4218,4218,4218,371,598,599,402,598,632,402,598,632,402,598,599,371,4218,4218,4218,4218,4218,4218,4218,4218,4218,
-4218,4218,4218,4218,4218,4218,4218,4218,4218,404,598,632,402,631,599,402,631,599,402,631,632,404,4218,4218,4218,4218,4218,4218,4218,4218,4218,
-4218,4218,371,371,371,4218,4218,371,371,371,598,599,402,598,632,402,598,599,402,631,599,371,371,371,4218,4218,371,371,371,4218,4218,
-4218,4218,501,502,502,57,58,502,502,371,628,632,402,631,630,402,631,632,402,598,632,371,501,501,57,58,501,501,502,4218,4218,
-4218,4218,57,58,57,58,57,58,57,404,371,371,371,371,371,404,371,371,371,371,371,404,57,58,57,58,57,58,57,4218,4218,
-4218,4218,57,58,57,58,57,58,57,371,1704,1705,369,404,371,371,371,371,371,371,371,371,57,58,57,58,57,58,57,4218,4218,
-4218,4218,57,58,57,58,57,58,57,370,1720,1721,371,371,371,371,371,371,371,371,404,370,57,58,57,58,57,58,57,4218,4218,
-4218,4218,4218,402,403,404,2032,2032,402,403,371,371,404,404,404,404,404,404,404,371,371,403,404,404,404,403,404,401,4218,4218,4218,
-4218,4218,402,402,402,402,744,744,404,402,404,404,401,401,401,401,401,401,371,404,404,402,402,402,402,402,403,404,4218,4218,4218,
-4218,4218,401,401,401,401,24,25,371,401,370,371,2016,24,25,24,25,24,2016,401,401,401,401,401,401,401,370,371,4218,4218,4218,
-4218,4218,4218,24,25,24,25,24,25,24,25,24,24,25,24,25,24,25,24,24,25,24,24,25,24,25,24,25,4218,4218,4218,
-4218,4218,4218,24,25,24,25,24,25,24,25,24,24,25,24,25,24,25,24,24,25,24,24,25,24,25,24,25,4218,4218,4218,
-4218,4218,4218,24,25,24,25,24,25,24,25,24,24,25,24,25,24,25,24,24,25,24,24,25,24,25,24,25,4218,4218,4218,
-4218,4218,4218,24,25,24,25,24,25,24,25,24,24,25,24,25,24,25,24,24,25,24,24,25,24,25,24,25,4218,4218,4218,
-4218,4218,4218,24,25,24,25,24,25,24,25,24,24,25,24,25,24,25,24,24,25,24,24,25,24,25,24,25,4218,4218,4218,
-4218,4218,402,24,25,24,25,24,25,24,25,24,24,25,24,25,24,25,24,24,25,24,24,25,24,25,24,25,402,4218,4218,
-4218,4218,401,141,141,145,141,145,141,145,141,113,24,25,24,25,24,25,24,112,141,145,141,145,141,145,141,141,401,4218,4218,
-4218,4218,8,7,8,7,8,7,8,7,8,7,24,25,24,25,24,25,24,7,74,7,9,7,8,9,8,7,8,4218,4218,
-4218,4218,41,40,41,40,41,40,41,40,41,42,24,25,24,25,24,25,24,40,41,40,41,40,41,40,41,40,41,4218,4218,
-4218,4218,8,7,8,7,8,7,8,7,8,7,141,145,141,142,141,142,141,7,74,7,9,7,8,9,8,7,8,4218,4218,
-4218,4218,41,40,41,40,41,40,41,40,41,40,41,40,41,42,43,40,41,40,41,40,41,40,41,40,41,40,41,4218,4218,
-4218,4218,8,7,8,7,8,7,8,7,8,7,8,9,8,9,8,7,9,7,8,9,8,7,8,9,8,7,8,4218,4218,
-4218,4218,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,4218,4218,
-4218,4218,8,7,8,7,8,7,8,7,8,7,8,7,8,9,8,7,8,7,8,7,8,7,8,7,8,7,8,4218,4218,
-4218,4218,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,4218,4218,
-4218,4218,8,7,8,7,8,7,8,7,8,7,8,7,8,73,74,7,8,7,8,7,8,7,8,7,8,7,8,4218,4218,
-4218,4218,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,4218,4218,
-4218,4218,8,7,8,7,8,7,8,7,8,7,8,7,8,9,8,73,74,73,74,73,74,73,74,7,8,7,8,4218,4218,
-4218,4218,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,106,107,40,41,40,41,40,41,40,41,4218,4218,
-4218,4218,8,7,8,9,10,11,8,7,8,7,8,7,8,75,8,7,8,73,74,7,73,74,8,7,8,7,8,4218,4218,
-4218,4218,41,40,41,42,43,44,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,4218,4218,
-4218,4218,8,7,74,7,8,73,74,7,8,7,8,7,8,9,8,7,8,7,8,7,8,7,8,7,8,7,8,4218,4218,
-4218,4218,41,40,107,40,41,106,107,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,4218,4218,
-4218,4218,8,7,8,7,8,7,8,7,8,7,8,7,9,73,8,7,8,7,8,7,8,7,8,7,8,40,41,4218,4218,
-4218,4218,41,40,41,40,41,40,41,40,41,40,41,42,43,40,109,40,41,40,41,42,43,40,41,40,109,40,41,4218,4218,
-4218,4218,8,7,8,7,8,7,8,7,8,7,8,7,8,9,8,7,8,7,8,7,12,10,12,7,8,40,41,4218,4218,
-4218,4218,4218,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,7,8,4218,4218,
-4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,8,7,8,73,74,7,8,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,
-4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218,4218
+3226,3226,3226,3226,3226,3226,3226,3226,3226,0,0,0,0,0,0,0,0,0,0,0,0,0,3226,3226,3226,3226,3226,3226,3226,3226,3226,
+3226,3226,3226,3226,3226,3226,3226,3226,3226,0,0,0,0,0,0,0,0,0,0,0,0,0,3226,3226,3226,3226,3226,3226,3226,3226,3226,
+3226,3226,3226,3226,3226,3226,3226,3226,3226,0,631,599,402,598,632,402,598,632,402,598,599,0,3226,3226,3226,3226,3226,3226,3226,3226,3226,
+3226,3226,3226,3226,3226,3226,3226,3226,3226,371,598,632,402,631,599,402,631,599,402,631,632,371,3226,3226,3226,3226,3226,3226,3226,3226,3226,
+3226,3226,3226,3226,3226,3226,3226,3226,3226,371,598,599,402,598,632,402,598,632,402,598,599,371,3226,3226,3226,3226,3226,3226,3226,3226,3226,
+3226,3226,3226,3226,3226,3226,3226,3226,3226,404,598,632,402,631,599,402,631,599,402,631,632,404,3226,3226,3226,3226,3226,3226,3226,3226,3226,
+3226,3226,371,371,371,3226,3226,371,371,371,598,599,402,598,632,402,598,599,402,631,599,371,371,371,3226,3226,371,371,371,3226,3226,
+3226,3226,501,502,502,57,58,502,502,371,628,632,402,631,630,402,631,632,402,598,632,371,501,501,57,58,501,501,502,3226,3226,
+3226,3226,57,58,57,58,57,58,57,404,371,371,371,371,371,404,371,371,371,371,371,404,57,58,57,58,57,58,57,3226,3226,
+3226,3226,57,58,57,58,57,58,57,371,1704,1705,369,404,371,371,371,371,371,371,371,371,57,58,57,58,57,58,57,3226,3226,
+3226,3226,57,58,57,58,57,58,57,370,1720,1721,371,371,371,371,371,371,371,371,404,370,57,58,57,58,57,58,57,3226,3226,
+3226,3226,3226,402,403,404,2032,2032,402,403,371,371,404,404,404,404,404,404,404,371,371,403,404,404,404,403,404,401,3226,3226,3226,
+3226,3226,402,402,402,402,744,744,404,402,404,404,401,401,401,401,401,401,371,404,404,402,402,402,402,402,403,404,3226,3226,3226,
+3226,3226,401,401,401,401,24,25,371,401,370,371,2016,24,25,24,25,24,2016,401,401,401,401,401,401,401,370,371,3226,3226,3226,
+3226,3226,3226,24,25,24,25,24,25,24,25,24,24,25,24,25,24,25,24,24,25,24,24,25,24,25,24,25,3226,3226,3226,
+3226,3226,3226,24,25,24,25,24,25,24,25,24,24,25,24,25,24,25,24,24,25,24,24,25,24,25,24,25,3226,3226,3226,
+3226,3226,3226,24,25,24,25,24,25,24,25,24,24,25,24,25,24,25,24,24,25,24,24,25,24,25,24,25,3226,3226,3226,
+3226,3226,3226,24,25,24,25,24,25,24,25,24,24,25,24,25,24,25,24,24,25,24,24,25,24,25,24,25,3226,3226,3226,
+3226,3226,3226,24,25,24,25,24,25,24,25,24,24,25,24,25,24,25,24,24,25,24,24,25,24,25,24,25,3226,3226,3226,
+3226,3226,402,24,25,24,25,24,25,24,25,24,24,25,24,25,24,25,24,24,25,24,24,25,24,25,24,25,402,3226,3226,
+3226,3226,401,141,141,145,141,145,141,145,141,113,24,25,24,25,24,25,24,112,141,145,141,145,141,145,141,141,401,3226,3226,
+3226,3226,8,7,8,7,8,7,8,7,8,7,24,25,24,25,24,25,24,7,74,7,9,7,8,9,8,7,8,3226,3226,
+3226,3226,41,40,41,40,41,40,41,40,41,42,24,25,24,25,24,25,24,40,41,40,41,40,41,40,41,40,41,3226,3226,
+3226,3226,8,7,8,7,8,7,8,7,8,7,141,145,141,142,141,142,141,7,74,7,9,7,8,9,8,7,8,3226,3226,
+3226,3226,41,40,41,40,41,40,41,40,41,40,41,40,41,42,43,40,41,40,41,40,41,40,41,40,41,40,41,3226,3226,
+3226,3226,8,7,8,7,8,7,8,7,8,7,8,9,8,9,8,7,9,7,8,9,8,7,8,9,8,7,8,3226,3226,
+3226,3226,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,3226,3226,
+3226,3226,8,7,8,7,8,7,8,7,8,7,8,7,8,9,8,7,8,7,8,7,8,7,8,7,8,7,8,3226,3226,
+3226,3226,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,3226,3226,
+3226,3226,8,7,8,7,8,7,8,7,8,7,8,7,8,73,74,7,8,7,8,7,8,7,8,7,8,7,8,3226,3226,
+3226,3226,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,3226,3226,
+3226,3226,8,7,8,7,8,7,8,7,8,7,8,7,8,9,8,73,74,73,74,73,74,73,74,7,8,7,8,3226,3226,
+3226,3226,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,106,107,40,41,40,41,40,41,40,41,3226,3226,
+3226,3226,8,7,8,9,10,11,8,7,8,7,8,7,8,75,8,7,8,73,74,7,73,74,8,7,8,7,8,3226,3226,
+3226,3226,41,40,41,42,43,44,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,3226,3226,
+3226,3226,8,7,74,7,8,73,74,7,8,7,8,7,8,9,8,7,8,7,8,7,8,7,8,7,8,7,8,3226,3226,
+3226,3226,41,40,107,40,41,106,107,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,3226,3226,
+3226,3226,8,7,8,7,8,7,8,7,8,7,8,7,9,73,8,7,8,7,8,7,8,7,8,7,8,40,41,3226,3226,
+3226,3226,41,40,41,40,41,40,41,40,41,40,41,42,43,40,109,40,41,40,41,42,43,40,41,40,109,40,41,3226,3226,
+3226,3226,8,7,8,7,8,7,8,7,8,7,8,7,8,9,8,7,8,7,8,7,12,10,12,7,8,40,41,3226,3226,
+3226,3226,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,7,8,3226,3226,
+3226,3226,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,41,40,3226,3226,
+3226,3226,3226,3226,7,8,7,8,7,8,7,8,7,8,7,8,9,8,73,74,73,74,73,74,73,74,7,8,3226,3226,3226
 </data>
  </layer>
  <layer id="12" name="Back1" width="31" height="43">
@@ -276,13 +276,13 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,7325,0,0,0,0,7325,7325,0,0,0,0,7325,0,7325,0,0,0,0,7325,7325,0,0,0,0,7325,0,0,0,
-0,0,0,7325,0,0,0,0,7325,7325,0,0,0,0,7325,0,7325,0,0,0,0,7325,7325,0,0,0,0,7325,0,0,0,
-0,0,0,7325,0,0,0,0,7325,7325,0,0,0,0,7325,0,7325,0,0,0,0,7325,7325,0,0,0,0,7325,0,0,0,
-0,0,0,7325,0,0,0,0,7325,7325,0,0,0,0,7325,0,7325,0,0,0,0,7325,7325,0,0,0,0,7325,0,0,0,
-0,0,0,7325,0,0,0,0,7325,7325,0,0,0,0,7325,0,7325,0,0,0,0,7325,7325,0,0,0,0,7325,0,0,0,
-0,0,0,7325,0,0,0,0,7325,7325,0,0,0,0,7325,0,7325,0,0,0,0,7325,7325,0,0,0,0,7325,0,0,0,
-0,0,0,7325,0,0,0,0,7325,7325,0,0,0,0,7325,0,7325,0,0,0,0,7325,7325,0,0,0,0,7325,0,0,0,
+0,0,0,6333,0,0,0,0,6333,6333,0,0,0,0,6333,0,6333,0,0,0,0,6333,6333,0,0,0,0,6333,0,0,0,
+0,0,0,6333,0,0,0,0,6333,6333,0,0,0,0,6333,0,6333,0,0,0,0,6333,6333,0,0,0,0,6333,0,0,0,
+0,0,0,6333,0,0,0,0,6333,6333,0,0,0,0,6333,0,6333,0,0,0,0,6333,6333,0,0,0,0,6333,0,0,0,
+0,0,0,6333,0,0,0,0,6333,6333,0,0,0,0,6333,0,6333,0,0,0,0,6333,6333,0,0,0,0,6333,0,0,0,
+0,0,0,6333,0,0,0,0,6333,6333,0,0,0,0,6333,0,6333,0,0,0,0,6333,6333,0,0,0,0,6333,0,0,0,
+0,0,0,6333,0,0,0,0,6333,6333,0,0,0,0,6333,0,6333,0,0,0,0,6333,6333,0,0,0,0,6333,0,0,0,
+0,0,0,6333,0,0,0,0,6333,6333,0,0,0,0,6333,0,6333,0,0,0,0,6333,6333,0,0,0,0,6333,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -304,21 +304,21 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,568,0,0,532,0,0,0,0,0,0,0,0,0,0,0,0,
 0,602,603,603,603,603,603,603,603,0,0,0,0,0,0,568,0,0,565,0,0,0,603,603,603,603,603,603,603,604,0,
 0,49,0,0,0,529,530,0,0,0,0,0,0,0,0,568,0,0,499,0,0,0,0,0,529,530,0,0,0,48,0,
-0,49,6643,6643,6643,0,0,6643,6643,568,0,0,0,0,0,568,0,0,532,0,0,568,6643,6643,0,0,6643,6643,6643,48,0,
+0,49,5651,5651,5651,0,0,5651,5651,568,0,0,0,0,0,568,0,0,532,0,0,568,5651,5651,0,0,5651,5651,5651,48,0,
 0,49,0,0,0,0,0,0,624,0,0,0,0,0,0,568,0,0,565,0,0,0,624,0,0,0,0,0,0,48,0,
 0,49,0,0,0,0,0,0,657,0,0,0,0,0,0,568,0,0,499,0,0,0,657,0,0,0,0,0,0,48,0,
 0,49,718,720,721,722,720,721,724,0,0,0,0,0,0,0,0,0,0,0,0,0,719,720,721,722,720,721,725,48,0,
 0,50,17,0,0,0,496,497,0,0,0,0,0,0,0,0,0,0,565,0,0,0,0,0,0,0,0,0,19,52,0,
 0,0,49,0,0,0,529,530,0,0,0,0,0,960,961,0,962,963,0,0,0,0,0,0,0,0,0,0,48,0,0,
-0,0,49,6643,6643,6643,0,0,6643,6643,991,992,533,534,535,634,535,534,536,997,998,6643,6643,6643,6643,6643,6643,6643,48,0,0,
+0,0,49,5651,5651,5651,0,0,5651,5651,991,992,533,534,535,634,535,534,536,997,998,5651,5651,5651,5651,5651,5651,5651,48,0,0,
 0,0,49,534,534,534,0,0,534,634,534,534,634,0,0,0,0,0,634,534,534,634,534,534,534,534,535,534,48,0,0,
 0,0,49,0,271,272,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,271,272,0,48,0,0,
 0,0,49,0,0,0,0,0,0,267,203,267,203,0,294,295,296,0,203,267,203,268,0,0,0,0,0,0,48,0,0,
 0,0,49,0,0,266,203,267,203,299,300,300,301,0,299,300,301,0,299,300,300,301,203,267,203,268,0,0,48,0,0,
 0,116,117,0,0,2147483949,300,298,300,301,0,0,0,0,0,0,0,0,0,0,0,2147483949,300,298,300,301,0,0,83,84,0,
-0,49,6601,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6601,48,0,
-0,49,6622,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6622,48,0,
-0,49,6643,0,0,0,0,0,0,0,0,0,0,0,0,235,0,0,0,0,0,0,0,0,0,0,0,0,6643,48,0,
+0,49,5609,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5609,48,0,
+0,49,5630,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5630,48,0,
+0,49,5651,0,0,0,0,0,0,0,0,0,0,0,0,235,0,0,0,0,0,0,0,0,0,0,0,0,5651,48,0,
 0,49,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,0,
 0,49,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,0,
 0,49,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,48,0,
@@ -333,13 +333,13 @@
 0,49,0,0,366,364,365,366,0,0,366,364,365,366,0,0,0,366,364,365,366,0,0,366,364,365,366,0,0,48,0,
 0,49,0,0,366,364,365,366,0,0,366,364,365,366,0,0,0,366,364,365,366,0,0,366,364,365,366,0,0,48,0,
 0,49,0,0,366,364,365,366,0,0,366,364,365,366,0,0,0,366,364,365,366,0,0,366,364,365,366,0,0,48,0,
-0,49,0,0,399,397,398,399,0,0,399,397,398,399,0,0,0,399,397,398,399,0,0,399,397,398,399,0,0,48,0,
-0,275,276,0,432,430,431,432,0,0,432,430,431,432,0,0,0,432,430,431,432,0,0,432,430,431,432,0,285,286,0,
-0,308,309,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,318,319,0,
-0,341,342,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,351,352,353,
-0,0,50,15,16,16,15,15,15,15,15,15,17,0,0,0,0,0,19,15,15,15,15,15,15,15,15,15,16,52,0,
-0,0,0,0,0,0,0,0,0,0,0,0,50,15,16,15,16,51,52,0,0,0,0,0,0,0,0,0,324,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,49,0,0,366,364,365,366,0,0,366,364,365,366,0,0,0,366,364,365,366,0,0,366,364,365,366,0,0,48,0,
+0,275,276,0,366,364,365,366,0,0,366,364,365,366,0,0,0,366,364,365,366,0,0,366,364,365,366,0,285,286,0,
+0,308,309,0,399,397,398,399,0,0,399,397,398,399,0,0,0,399,397,398,399,0,0,399,397,398,399,0,318,319,0,
+0,341,342,0,432,430,431,432,0,0,432,430,431,432,0,0,0,432,430,431,432,0,0,432,430,431,432,0,351,352,353,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,52,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,324,0,0,
+0,0,16,15,16,16,15,15,15,15,15,15,17,0,0,0,0,0,19,15,15,15,15,15,15,15,15,15,15,0,0
 </data>
  </layer>
  <layer id="13" name="Buildings1" width="31" height="43">
@@ -624,9 +624,651 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="7" name="Back"/>
+ <objectgroup id="7" name="Back">
+  <object id="113" name="TileData" x="64" y="640" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="115" name="TileData" x="112" y="640" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="116" name="TileData" x="160" y="640" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="117" name="TileData" x="208" y="640" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="118" name="TileData" x="272" y="640" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="119" name="TileData" x="320" y="640" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="120" name="TileData" x="368" y="640" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="121" name="TileData" x="416" y="640" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="122" name="TileData" x="64" y="400" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="123" name="TileData" x="112" y="400" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="124" name="TileData" x="160" y="400" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="125" name="TileData" x="208" y="400" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="126" name="TileData" x="272" y="400" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="127" name="TileData" x="320" y="400" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="128" name="TileData" x="368" y="400" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="129" name="TileData" x="416" y="400" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+ </objectgroup>
  <objectgroup id="8" name="Paths"/>
- <objectgroup id="9" name="Buildings"/>
+ <objectgroup id="9" name="Buildings">
+  <object id="1" name="TileData" x="64" y="416" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="64" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="3" name="TileData" x="64" y="448" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="64" y="464" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="5" name="TileData" x="64" y="480" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="6" name="TileData" x="64" y="496" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="7" name="TileData" x="64" y="512" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="8" name="TileData" x="64" y="528" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="9" name="TileData" x="64" y="544" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="10" name="TileData" x="64" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="11" name="TileData" x="64" y="576" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="12" name="TileData" x="112" y="416" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="13" name="TileData" x="112" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="14" name="TileData" x="112" y="448" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="15" name="TileData" x="112" y="464" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="16" name="TileData" x="112" y="480" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="17" name="TileData" x="112" y="496" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="18" name="TileData" x="112" y="512" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="19" name="TileData" x="112" y="528" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="20" name="TileData" x="112" y="544" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="21" name="TileData" x="112" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="22" name="TileData" x="112" y="576" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="23" name="TileData" x="160" y="416" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="24" name="TileData" x="160" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="25" name="TileData" x="160" y="448" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="26" name="TileData" x="160" y="464" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="27" name="TileData" x="160" y="480" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="28" name="TileData" x="160" y="496" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="29" name="TileData" x="160" y="512" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="30" name="TileData" x="160" y="528" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="31" name="TileData" x="160" y="544" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="32" name="TileData" x="160" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="33" name="TileData" x="160" y="576" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="34" name="TileData" x="208" y="416" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="35" name="TileData" x="208" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="36" name="TileData" x="208" y="448" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="37" name="TileData" x="208" y="464" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="38" name="TileData" x="208" y="480" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="39" name="TileData" x="208" y="496" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="40" name="TileData" x="208" y="512" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="41" name="TileData" x="208" y="528" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="42" name="TileData" x="208" y="544" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="43" name="TileData" x="208" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="44" name="TileData" x="208" y="576" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="45" name="TileData" x="272" y="416" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="46" name="TileData" x="272" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="47" name="TileData" x="272" y="448" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="48" name="TileData" x="272" y="464" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="49" name="TileData" x="272" y="480" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="50" name="TileData" x="272" y="496" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="51" name="TileData" x="272" y="512" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="52" name="TileData" x="272" y="528" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="53" name="TileData" x="272" y="544" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="54" name="TileData" x="272" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="55" name="TileData" x="272" y="576" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="56" name="TileData" x="320" y="416" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="57" name="TileData" x="320" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="58" name="TileData" x="320" y="448" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="59" name="TileData" x="320" y="464" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="60" name="TileData" x="320" y="480" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="61" name="TileData" x="320" y="496" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="62" name="TileData" x="320" y="512" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="63" name="TileData" x="320" y="528" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="64" name="TileData" x="320" y="544" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="65" name="TileData" x="320" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="66" name="TileData" x="320" y="576" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="67" name="TileData" x="368" y="416" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="68" name="TileData" x="368" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="69" name="TileData" x="368" y="448" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="70" name="TileData" x="368" y="464" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="71" name="TileData" x="368" y="480" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="72" name="TileData" x="368" y="496" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="73" name="TileData" x="368" y="512" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="74" name="TileData" x="368" y="528" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="75" name="TileData" x="368" y="544" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="76" name="TileData" x="368" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="77" name="TileData" x="368" y="576" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="78" name="TileData" x="416" y="416" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="79" name="TileData" x="416" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="80" name="TileData" x="416" y="448" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="81" name="TileData" x="416" y="464" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="82" name="TileData" x="416" y="480" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="83" name="TileData" x="416" y="496" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="84" name="TileData" x="416" y="512" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="85" name="TileData" x="416" y="528" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="86" name="TileData" x="416" y="544" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="87" name="TileData" x="416" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="88" name="TileData" x="416" y="576" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="89" name="TileData" x="64" y="592" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="90" name="TileData" x="64" y="608" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="91" name="TileData" x="112" y="592" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="92" name="TileData" x="112" y="608" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="93" name="TileData" x="160" y="592" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="94" name="TileData" x="160" y="608" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="95" name="TileData" x="208" y="592" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="96" name="TileData" x="208" y="608" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="97" name="TileData" x="272" y="592" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="98" name="TileData" x="272" y="608" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="99" name="TileData" x="320" y="592" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="100" name="TileData" x="320" y="608" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="101" name="TileData" x="368" y="592" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="102" name="TileData" x="368" y="608" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="103" name="TileData" x="416" y="592" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="104" name="TileData" x="416" y="608" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="105" name="TileData" x="64" y="624" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="106" name="TileData" x="112" y="624" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="107" name="TileData" x="160" y="624" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="108" name="TileData" x="208" y="624" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="109" name="TileData" x="272" y="624" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="110" name="TileData" x="320" y="624" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="111" name="TileData" x="368" y="624" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+  <object id="112" name="TileData" x="416" y="624" width="16" height="16">
+   <properties>
+    <property name="NPCPassable" value="T"/>
+   </properties>
+  </object>
+ </objectgroup>
  <objectgroup id="10" name="Front"/>
  <objectgroup id="11" name="AlwaysFront"/>
 </map>
