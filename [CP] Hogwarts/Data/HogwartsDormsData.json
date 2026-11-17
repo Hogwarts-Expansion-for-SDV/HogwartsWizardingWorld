@@ -3,18 +3,15 @@
     {
       "LogName": "Hogwarts Dorm Load",
       "Action": "Load",
-      "Target": "Maps/{{ModId}}_HogwartsDorms1F, Maps/{{ModId}}_HogwartsDorms2F, Maps/{{ModId}}_HogwartsDorms3F, Maps/{{ModId}}_HogwartsDorms4F, Maps/{{ModId}}_HogwartsDorms5F, Maps/{{ModId}}_HogwartsDorms6F, Maps/{{ModId}}_HogwartsDorms7F, Maps/{{ModId}}_HogwartsDorms1M, Maps/{{ModId}}_HogwartsDorms2M, Maps/{{ModId}}_HogwartsDorms3M, Maps/{{ModId}}_HogwartsDorms4M, Maps/{{ModId}}_HogwartsDorms5M, Maps/{{ModId}}_HogwartsDorms6M, Maps/{{ModId}}_HogwartsDorms7M",
-      "FromFile": "assets/Dorms/HogwartsDorms.tmx"
+      "Target": "Maps/{{ModId}}_HogwartsDormG1F, Maps/{{ModId}}_HogwartsDormG2F, Maps/{{ModId}}_HogwartsDormG3F, Maps/{{ModId}}_HogwartsDormG4F, Maps/{{ModId}}_HogwartsDormG5F, Maps/{{ModId}}_HogwartsDormG6F, Maps/{{ModId}}_HogwartsDormG7F, Maps/{{ModId}}_HogwartsDormG1M, Maps/{{ModId}}_HogwartsDormG2M, Maps/{{ModId}}_HogwartsDormG3M, Maps/{{ModId}}_HogwartsDormG4M, Maps/{{ModId}}_HogwartsDormG5M, Maps/{{ModId}}_HogwartsDormG6M, Maps/{{ModId}}_HogwartsDormG7M, Maps/{{ModId}}_HogwartsDormH1F, Maps/{{ModId}}_HogwartsDormH2F, Maps/{{ModId}}_HogwartsDormH3F, Maps/{{ModId}}_HogwartsDormH4F, Maps/{{ModId}}_HogwartsDormH5F, Maps/{{ModId}}_HogwartsDormH6F, Maps/{{ModId}}_HogwartsDormH7F, Maps/{{ModId}}_HogwartsDormH1M, Maps/{{ModId}}_HogwartsDormH2M, Maps/{{ModId}}_HogwartsDormH3M, Maps/{{ModId}}_HogwartsDormH4M, Maps/{{ModId}}_HogwartsDormH5M, Maps/{{ModId}}_HogwartsDormH6M, Maps/{{ModId}}_HogwartsDormH7M, Maps/{{ModId}}_HogwartsDormR1F, Maps/{{ModId}}_HogwartsDormR2F, Maps/{{ModId}}_HogwartsDormR3F, Maps/{{ModId}}_HogwartsDormR4F, Maps/{{ModId}}_HogwartsDormR5F, Maps/{{ModId}}_HogwartsDormR6F, Maps/{{ModId}}_HogwartsDormR7F, Maps/{{ModId}}_HogwartsDormR1M, Maps/{{ModId}}_HogwartsDormR2M, Maps/{{ModId}}_HogwartsDormR3M, Maps/{{ModId}}_HogwartsDormR4M, Maps/{{ModId}}_HogwartsDormR5M, Maps/{{ModId}}_HogwartsDormR6M, Maps/{{ModId}}_HogwartsDormR7M, Maps/{{ModId}}_HogwartsDormS1F, Maps/{{ModId}}_HogwartsDormS2F, Maps/{{ModId}}_HogwartsDormS3F, Maps/{{ModId}}_HogwartsDormS4F, Maps/{{ModId}}_HogwartsDormS5F, Maps/{{ModId}}_HogwartsDormS6F, Maps/{{ModId}}_HogwartsDormS7F, Maps/{{ModId}}_HogwartsDormS1M, Maps/{{ModId}}_HogwartsDormS2M, Maps/{{ModId}}_HogwartsDormS3M, Maps/{{ModId}}_HogwartsDormS4M, Maps/{{ModId}}_HogwartsDormS5M, Maps/{{ModId}}_HogwartsDormS6M, Maps/{{ModId}}_HogwartsDormS7M",
+      "FromFile": "assets/Dorms/HogwartsDorm.tmx"
     },
     {
-      "LogName": "Map Properties of Hogwarts Dorms 1F",
+      "LogName": "Map Properties of Hogwarts Dorm G1F",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsDorms1F",
+      "Target": "Maps/{{ModId}}_HogwartsDormG1F",
       "AddNpcWarps": [
-        "15 19 {{ModId}}_HogwartsCommonRoomRavenclaw 11 33 ",
-        "15 43 {{ModId}}_HogwartsCommonRoomGryffindor 9 28",
-        "15 67 {{ModId}}_HogwartsCommonRoomHufflepuff 3 24",
-        "15 91 {{ModId}}_HogwartsCommonRoomSlytherin 7 15"
+        "10 14 {{ModId}}_HogwartsCommonRoomGryffindor 9 28"
       ],
       "MapProperties": {
         "AmbientLight": "255 255 255",
@@ -22,14 +19,11 @@
       }
     },
     {
-      "LogName": "Map Properties of Hogwarts Dorms 2F",
+      "LogName": "Map Properties of Hogwarts Dorm G2F",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsDorms2F",
+      "Target": "Maps/{{ModId}}_HogwartsDormG2F",
       "AddNpcWarps": [
-        "15 19 {{ModId}}_HogwartsCommonRoomRavenclaw 13 33 ",
-        "15 43 {{ModId}}_HogwartsCommonRoomGryffindor 4 27",
-        "15 67 {{ModId}}_HogwartsCommonRoomHufflepuff 5 24",
-        "15 91 {{ModId}}_HogwartsCommonRoomSlytherin 9 15"
+        "10 14 {{ModId}}_HogwartsCommonRoomGryffindor 4 27"
       ],
       "MapProperties": {
         "AmbientLight": "255 255 255",
@@ -37,14 +31,11 @@
       }
     },
     {
-      "LogName": "Map Properties of Hogwarts Dorms 3F",
+      "LogName": "Map Properties of Hogwarts Dorm G3F",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsDorms3F",
+      "Target": "Maps/{{ModId}}_HogwartsDormG3F",
       "AddNpcWarps": [
-        "15 19 {{ModId}}_HogwartsCommonRoomRavenclaw 4 30 ",
-        "15 43 {{ModId}}_HogwartsCommonRoomGryffindor 3 12",
-        "15 67 {{ModId}}_HogwartsCommonRoomHufflepuff 9 24",
-        "15 91 {{ModId}}_HogwartsCommonRoomSlytherin 14 9"
+        "10 14 {{ModId}}_HogwartsCommonRoomGryffindor 3 12"
       ],
       "MapProperties": {
         "AmbientLight": "255 255 255",
@@ -52,14 +43,11 @@
       }
     },
     {
-      "LogName": "Map Properties of Hogwarts Dorms 4F",
+      "LogName": "Map Properties of Hogwarts Dorm G4F",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsDorms4F",
+      "Target": "Maps/{{ModId}}_HogwartsDormG4F",
       "AddNpcWarps": [
-        "15 19 {{ModId}}_HogwartsCommonRoomRavenclaw 6 30 ",
-        "15 43 {{ModId}}_HogwartsCommonRoomGryffindor 5 12",
-        "15 67 {{ModId}}_HogwartsCommonRoomHufflepuff 11 24",
-        "15 91 {{ModId}}_HogwartsCommonRoomSlytherin 16 9"
+        "10 14 {{ModId}}_HogwartsCommonRoomGryffindor 5 12"
       ],
       "MapProperties": {
         "AmbientLight": "255 255 255",
@@ -67,14 +55,11 @@
       }
     },
     {
-      "LogName": "Map Properties of Hogwarts Dorms 5F",
+      "LogName": "Map Properties of Hogwarts Dorm G5F",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsDorms5F",
+      "Target": "Maps/{{ModId}}_HogwartsDormG5F",
       "AddNpcWarps": [
-        "15 19 {{ModId}}_HogwartsCommonRoomRavenclaw 3 13 ",
-        "15 43 {{ModId}}_HogwartsCommonRoomGryffindor 12 7",
-        "15 67 {{ModId}}_HogwartsCommonRoomHufflepuff 4 17",
-        "15 91 {{ModId}}_HogwartsCommonRoomSlytherin 6 8"
+        "10 14 {{ModId}}_HogwartsCommonRoomGryffindor 12 7"
       ],
       "MapProperties": {
         "AmbientLight": "255 255 255",
@@ -82,14 +67,11 @@
       }
     },
     {
-      "LogName": "Map Properties of Hogwarts Dorms 6F",
+      "LogName": "Map Properties of Hogwarts Dorm G6F",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsDorms6F",
+      "Target": "Maps/{{ModId}}_HogwartsDormG6F",
       "AddNpcWarps": [
-        "15 19 {{ModId}}_HogwartsCommonRoomRavenclaw 5 13 ",
-        "15 43 {{ModId}}_HogwartsCommonRoomGryffindor 5 5",
-        "15 67 {{ModId}}_HogwartsCommonRoomHufflepuff 6 17",
-        "15 91 {{ModId}}_HogwartsCommonRoomSlytherin 8 8"
+        "10 14 {{ModId}}_HogwartsCommonRoomGryffindor 5 5"
       ],
       "MapProperties": {
         "AmbientLight": "255 255 255",
@@ -97,14 +79,11 @@
       }
     },
     {
-      "LogName": "Map Properties of Hogwarts Dorms 7F",
+      "LogName": "Map Properties of Hogwarts Dorm G7F",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsDorms7F",
+      "Target": "Maps/{{ModId}}_HogwartsDormG7F",
       "AddNpcWarps": [
-        "15 19 {{ModId}}_HogwartsCommonRoomRavenclaw 7 13 ",
-        "15 43 {{ModId}}_HogwartsCommonRoomGryffindor 7 5",
-        "15 67 {{ModId}}_HogwartsCommonRoomHufflepuff 8 17",
-        "15 91 {{ModId}}_HogwartsCommonRoomSlytherin 10 8"
+        "10 14 {{ModId}}_HogwartsCommonRoomGryffindor 7 5"
       ],
       "MapProperties": {
         "AmbientLight": "255 255 255",
@@ -112,14 +91,11 @@
       }
     },
     {
-      "LogName": "Map Properties of Hogwarts Dorms 1M",
+      "LogName": "Map Properties of Hogwarts Dorm G1M",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsDorms1M",
+      "Target": "Maps/{{ModId}}_HogwartsDormG1M",
       "AddNpcWarps": [
-        "15 19 {{ModId}}_HogwartsCommonRoomRavenclaw 42 32 ",
-        "15 43 {{ModId}}_HogwartsCommonRoomGryffindor 39 29",
-        "15 67 {{ModId}}_HogwartsCommonRoomHufflepuff 37 19",
-        "15 91 {{ModId}}_HogwartsCommonRoomSlytherin 38 13"
+        "10 14 {{ModId}}_HogwartsCommonRoomGryffindor 39 29"
       ],
       "MapProperties": {
         "AmbientLight": "255 255 255",
@@ -127,14 +103,11 @@
       }
     },
     {
-      "LogName": "Map Properties of Hogwarts Dorms 2M",
+      "LogName": "Map Properties of Hogwarts Dorm G2M",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsDorms2M",
+      "Target": "Maps/{{ModId}}_HogwartsDormG2M",
       "AddNpcWarps": [
-        "15 19 {{ModId}}_HogwartsCommonRoomRavenclaw 44 32 ",
-        "15 43 {{ModId}}_HogwartsCommonRoomGryffindor 41 29",
-        "15 67 {{ModId}}_HogwartsCommonRoomHufflepuff 41 19",
-        "15 91 {{ModId}}_HogwartsCommonRoomSlytherin 40 13"
+        "10 14 {{ModId}}_HogwartsCommonRoomGryffindor 41 29"
       ],
       "MapProperties": {
         "AmbientLight": "255 255 255",
@@ -142,14 +115,11 @@
       }
     },
     {
-      "LogName": "Map Properties of Hogwarts Dorms 3M",
+      "LogName": "Map Properties of Hogwarts Dorm G3M",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsDorms3M",
+      "Target": "Maps/{{ModId}}_HogwartsDormG3M",
       "AddNpcWarps": [
-        "15 19 {{ModId}}_HogwartsCommonRoomRavenclaw 46 32 ",
-        "15 43 {{ModId}}_HogwartsCommonRoomGryffindor 44 17",
-        "15 67 {{ModId}}_HogwartsCommonRoomHufflepuff 42 19",
-        "15 91 {{ModId}}_HogwartsCommonRoomSlytherin 30 11"
+        "10 14 {{ModId}}_HogwartsCommonRoomGryffindor 44 17"
       ],
       "MapProperties": {
         "AmbientLight": "255 255 255",
@@ -157,14 +127,11 @@
       }
     },
     {
-      "LogName": "Map Properties of Hogwarts Dorms 4M",
+      "LogName": "Map Properties of Hogwarts Dorm G4M",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsDorms4M",
+      "Target": "Maps/{{ModId}}_HogwartsDormG4M",
       "AddNpcWarps": [
-        "15 19 {{ModId}}_HogwartsCommonRoomRavenclaw 40 15 ",
-        "15 43 {{ModId}}_HogwartsCommonRoomGryffindor 46 17",
-        "15 67 {{ModId}}_HogwartsCommonRoomHufflepuff 38 13",
-        "15 91 {{ModId}}_HogwartsCommonRoomSlytherin 33 11"
+        "10 14 {{ModId}}_HogwartsCommonRoomGryffindor 46 17"
       ],
       "MapProperties": {
         "AmbientLight": "255 255 255",
@@ -172,14 +139,11 @@
       }
     },
     {
-      "LogName": "Map Properties of Hogwarts Dorms 5M",
+      "LogName": "Map Properties of Hogwarts Dorm G5M",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsDorms5M",
+      "Target": "Maps/{{ModId}}_HogwartsDormG5M",
       "AddNpcWarps": [
-        "15 19 {{ModId}}_HogwartsCommonRoomRavenclaw 42 15 ",
-        "15 43 {{ModId}}_HogwartsCommonRoomGryffindor 33 11",
-        "15 67 {{ModId}}_HogwartsCommonRoomHufflepuff 40 13",
-        "15 91 {{ModId}}_HogwartsCommonRoomSlytherin 34 5"
+        "10 14 {{ModId}}_HogwartsCommonRoomGryffindor 33 11"
       ],
       "MapProperties": {
         "AmbientLight": "255 255 255",
@@ -187,14 +151,11 @@
       }
     },
     {
-      "LogName": "Map Properties of Hogwarts Dorms 6M",
+      "LogName": "Map Properties of Hogwarts Dorm G6M",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsDorms6M",
+      "Target": "Maps/{{ModId}}_HogwartsDormG6M",
       "AddNpcWarps": [
-        "15 19 {{ModId}}_HogwartsCommonRoomRavenclaw 45 13 ",
-        "15 43 {{ModId}}_HogwartsCommonRoomGryffindor 39 4",
-        "15 67 {{ModId}}_HogwartsCommonRoomHufflepuff 44 12",
-        "15 91 {{ModId}}_HogwartsCommonRoomSlytherin 37 5"
+        "10 14 {{ModId}}_HogwartsCommonRoomGryffindor 39 4"
       ],
       "MapProperties": {
         "AmbientLight": "255 255 255",
@@ -202,14 +163,515 @@
       }
     },
     {
-      "LogName": "Map Properties of Hogwarts Dorms 7M",
+      "LogName": "Map Properties of Hogwarts Dorm G7M",
       "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_HogwartsDorms7M",
+      "Target": "Maps/{{ModId}}_HogwartsDormG7M",
       "AddNpcWarps": [
-        "15 19 {{ModId}}_HogwartsCommonRoomRavenclaw 47 13 ",
-        "15 43 {{ModId}}_HogwartsCommonRoomGryffindor 42 4",
-        "15 67 {{ModId}}_HogwartsCommonRoomHufflepuff 46 12",
-        "15 91 {{ModId}}_HogwartsCommonRoomSlytherin 40 5"
+        "10 14 {{ModId}}_HogwartsCommonRoomGryffindor 42 4"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm H1F",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormH1F",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomHufflepuff 3 24"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm H2F",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormH2F",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomHufflepuff 5 24"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm H3F",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormH3F",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomHufflepuff 9 24"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm H4F",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormH4F",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomHufflepuff 11 24"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm H5F",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormH5F",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomHufflepuff 4 17"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm H6F",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormH6F",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomHufflepuff 6 17"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm H7F",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormH7F",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomHufflepuff 8 17"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm H1M",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormH1M",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomHufflepuff 37 19"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm H2M",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormH2M",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomHufflepuff 41 19"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm H3M",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormH3M",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomHufflepuff 42 19"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm H4M",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormH4M",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomHufflepuff 38 13"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm H5M",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormH5M",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomHufflepuff 40 13"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm H6M",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormH6M",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomHufflepuff 44 12"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm H7M",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormH7M",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomHufflepuff 46 12"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm R1F",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormR1F",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomRavenclaw 11 33"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm R2F",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormR2F",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomRavenclaw 13 33"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm R3F",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormR3F",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomRavenclaw 4 30"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm R4F",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormR4F",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomRavenclaw 6 30"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm R5F",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormR5F",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomRavenclaw 3 13"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm R6F",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormR6F",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomRavenclaw 5 13"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm R7F",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormR7F",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomRavenclaw 7 13"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm R1M",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormR1M",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomRavenclaw 42 32"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm R2M",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormR2M",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomRavenclaw 44 32"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm R3M",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormR3M",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomRavenclaw 46 32"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm R4M",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormR4M",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomRavenclaw 40 15"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm R5M",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormR5M",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomRavenclaw 42 15"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm R6M",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormR6M",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomRavenclaw 45 13"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm R7M",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormR7M",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomRavenclaw 47 13"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm S1F",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormS1F",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomSlytherin 7 15"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm S2F",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormS2F",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomSlytherin 9 15"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm S3F",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormS3F",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomSlytherin 14 9"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm S4F",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormS4F",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomSlytherin 16 9"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm S5F",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormS5F",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomSlytherin 6 8"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm S6F",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormS6F",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomSlytherin 8 8"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm S7F",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormS7F",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomSlytherin 10 8"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm S1M",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormS1M",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomSlytherin 38 13"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm S2M",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormS2M",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomSlytherin 40 13"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm S3M",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormS3M",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomSlytherin 30 11"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm S4M",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormS4M",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomSlytherin 33 11"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm S5M",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormS5M",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomSlytherin 34 5"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm S6M",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormS6M",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomSlytherin 37 5"
+      ],
+      "MapProperties": {
+        "AmbientLight": "255 255 255",
+        "AmbientNightLight": "150 150 30"
+      }
+    },
+    {
+      "LogName": "Map Properties of Hogwarts Dorm S7M",
+      "Action": "EditMap",
+      "Target": "Maps/{{ModId}}_HogwartsDormS7M",
+      "AddNpcWarps": [
+        "10 14 {{ModId}}_HogwartsCommonRoomSlytherin 40 5"
       ],
       "MapProperties": {
         "AmbientLight": "255 255 255",
@@ -221,88 +683,340 @@
       "Action": "EditData",
       "Target": "Data/Locations",
       "Entries": {
-        "{{ModId}}_HogwartsDorms1F": {
+        "{{ModId}}_HogwartsDormG1F": {
           "CreateOnLoad": {
             "AlwaysActive": false,
-            "MapPath": "Maps/{{ModId}}_HogwartsDorms1F"
+            "MapPath": "Maps/{{ModId}}_HogwartsDormG1F"
           }
         },
-        "{{ModId}}_HogwartsDorms2F": {
+        "{{ModId}}_HogwartsDormG2F": {
           "CreateOnLoad": {
             "AlwaysActive": false,
-            "MapPath": "Maps/{{ModId}}_HogwartsDorms2F"
+            "MapPath": "Maps/{{ModId}}_HogwartsDormG2F"
           }
         },
-        "{{ModId}}_HogwartsDorms3F": {
+        "{{ModId}}_HogwartsDormG3F": {
           "CreateOnLoad": {
             "AlwaysActive": false,
-            "MapPath": "Maps/{{ModId}}_HogwartsDorms3F"
+            "MapPath": "Maps/{{ModId}}_HogwartsDormG3F"
           }
         },
-        "{{ModId}}_HogwartsDorms4F": {
+        "{{ModId}}_HogwartsDormG4F": {
           "CreateOnLoad": {
             "AlwaysActive": false,
-            "MapPath": "Maps/{{ModId}}_HogwartsDorms4F"
+            "MapPath": "Maps/{{ModId}}_HogwartsDormG4F"
           }
         },
-        "{{ModId}}_HogwartsDorms5F": {
+        "{{ModId}}_HogwartsDormG5F": {
           "CreateOnLoad": {
             "AlwaysActive": false,
-            "MapPath": "Maps/{{ModId}}_HogwartsDorms5F"
+            "MapPath": "Maps/{{ModId}}_HogwartsDormG5F"
           }
         },
-        "{{ModId}}_HogwartsDorms6F": {
+        "{{ModId}}_HogwartsDormG6F": {
           "CreateOnLoad": {
             "AlwaysActive": false,
-            "MapPath": "Maps/{{ModId}}_HogwartsDorms6F"
+            "MapPath": "Maps/{{ModId}}_HogwartsDormG6F"
           }
         },
-        "{{ModId}}_HogwartsDorms7F": {
+        "{{ModId}}_HogwartsDormG7F": {
           "CreateOnLoad": {
             "AlwaysActive": false,
-            "MapPath": "Maps/{{ModId}}_HogwartsDorms7F"
+            "MapPath": "Maps/{{ModId}}_HogwartsDormG7F"
           }
         },
-        "{{ModId}}_HogwartsDorms1M": {
+        "{{ModId}}_HogwartsDormG1M": {
           "CreateOnLoad": {
             "AlwaysActive": false,
-            "MapPath": "Maps/{{ModId}}_HogwartsDorms1M"
+            "MapPath": "Maps/{{ModId}}_HogwartsDormG1M"
           }
         },
-        "{{ModId}}_HogwartsDorms2M": {
+        "{{ModId}}_HogwartsDormG2M": {
           "CreateOnLoad": {
             "AlwaysActive": false,
-            "MapPath": "Maps/{{ModId}}_HogwartsDorms2M"
+            "MapPath": "Maps/{{ModId}}_HogwartsDormG2M"
           }
         },
-        "{{ModId}}_HogwartsDorms3M": {
+        "{{ModId}}_HogwartsDormG3M": {
           "CreateOnLoad": {
             "AlwaysActive": false,
-            "MapPath": "Maps/{{ModId}}_HogwartsDorms3M"
+            "MapPath": "Maps/{{ModId}}_HogwartsDormG3M"
           }
         },
-        "{{ModId}}_HogwartsDorms4M": {
+        "{{ModId}}_HogwartsDormG4M": {
           "CreateOnLoad": {
             "AlwaysActive": false,
-            "MapPath": "Maps/{{ModId}}_HogwartsDorms4M"
+            "MapPath": "Maps/{{ModId}}_HogwartsDormG4M"
           }
         },
-        "{{ModId}}_HogwartsDorms5M": {
+        "{{ModId}}_HogwartsDormG5M": {
           "CreateOnLoad": {
             "AlwaysActive": false,
-            "MapPath": "Maps/{{ModId}}_HogwartsDorms5M"
+            "MapPath": "Maps/{{ModId}}_HogwartsDormG5M"
           }
         },
-        "{{ModId}}_HogwartsDorms6M": {
+        "{{ModId}}_HogwartsDormG6M": {
           "CreateOnLoad": {
             "AlwaysActive": false,
-            "MapPath": "Maps/{{ModId}}_HogwartsDorms6M"
+            "MapPath": "Maps/{{ModId}}_HogwartsDormG6M"
           }
         },
-        "{{ModId}}_HogwartsDorms7M": {
+        "{{ModId}}_HogwartsDormG7M": {
           "CreateOnLoad": {
             "AlwaysActive": false,
-            "MapPath": "Maps/{{ModId}}_HogwartsDorms7M"
+            "MapPath": "Maps/{{ModId}}_HogwartsDormG7M"
+          }
+        },
+        "{{ModId}}_HogwartsDormH1F": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormH1F"
+          }
+        },
+        "{{ModId}}_HogwartsDormH2F": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormH2F"
+          }
+        },
+        "{{ModId}}_HogwartsDormH3F": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormH3F"
+          }
+        },
+        "{{ModId}}_HogwartsDormH4F": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormH4F"
+          }
+        },
+        "{{ModId}}_HogwartsDormH5F": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormH5F"
+          }
+        },
+        "{{ModId}}_HogwartsDormH6F": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormH6F"
+          }
+        },
+        "{{ModId}}_HogwartsDormH7F": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormH7F"
+          }
+        },
+        "{{ModId}}_HogwartsDormH1M": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormH1M"
+          }
+        },
+        "{{ModId}}_HogwartsDormH2M": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormH2M"
+          }
+        },
+        "{{ModId}}_HogwartsDormH3M": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormH3M"
+          }
+        },
+        "{{ModId}}_HogwartsDormH4M": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormH4M"
+          }
+        },
+        "{{ModId}}_HogwartsDormH5M": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormH5M"
+          }
+        },
+        "{{ModId}}_HogwartsDormH6M": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormH6M"
+          }
+        },
+        "{{ModId}}_HogwartsDormH7M": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormH7M"
+          }
+        },
+        "{{ModId}}_HogwartsDormR1F": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormR1F"
+          }
+        },
+        "{{ModId}}_HogwartsDormR2F": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormR2F"
+          }
+        },
+        "{{ModId}}_HogwartsDormR3F": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormR3F"
+          }
+        },
+        "{{ModId}}_HogwartsDormR4F": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormR4F"
+          }
+        },
+        "{{ModId}}_HogwartsDormR5F": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormR5F"
+          }
+        },
+        "{{ModId}}_HogwartsDormR6F": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormR6F"
+          }
+        },
+        "{{ModId}}_HogwartsDormR7F": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormR7F"
+          }
+        },
+        "{{ModId}}_HogwartsDormR1M": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormR1M"
+          }
+        },
+        "{{ModId}}_HogwartsDormR2M": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormR2M"
+          }
+        },
+        "{{ModId}}_HogwartsDormR3M": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormR3M"
+          }
+        },
+        "{{ModId}}_HogwartsDormR4M": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormR4M"
+          }
+        },
+        "{{ModId}}_HogwartsDormR5M": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormR5M"
+          }
+        },
+        "{{ModId}}_HogwartsDormR6M": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormR6M"
+          }
+        },
+        "{{ModId}}_HogwartsDormR7M": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormR7M"
+          }
+        },
+        "{{ModId}}_HogwartsDormS1F": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormS1F"
+          }
+        },
+        "{{ModId}}_HogwartsDormS2F": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormS2F"
+          }
+        },
+        "{{ModId}}_HogwartsDormS3F": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormS3F"
+          }
+        },
+        "{{ModId}}_HogwartsDormS4F": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormS4F"
+          }
+        },
+        "{{ModId}}_HogwartsDormS5F": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormS5F"
+          }
+        },
+        "{{ModId}}_HogwartsDormS6F": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormS6F"
+          }
+        },
+        "{{ModId}}_HogwartsDormS7F": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormS7F"
+          }
+        },
+        "{{ModId}}_HogwartsDormS1M": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormS1M"
+          }
+        },
+        "{{ModId}}_HogwartsDormS2M": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormS2M"
+          }
+        },
+        "{{ModId}}_HogwartsDormS3M": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormS3M"
+          }
+        },
+        "{{ModId}}_HogwartsDormS4M": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormS4M"
+          }
+        },
+        "{{ModId}}_HogwartsDormS5M": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormS5M"
+          }
+        },
+        "{{ModId}}_HogwartsDormS6M": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormS6M"
+          }
+        },
+        "{{ModId}}_HogwartsDormS7M": {
+          "CreateOnLoad": {
+            "AlwaysActive": false,
+            "MapPath": "Maps/{{ModId}}_HogwartsDormS7M"
           }
         }
       }
