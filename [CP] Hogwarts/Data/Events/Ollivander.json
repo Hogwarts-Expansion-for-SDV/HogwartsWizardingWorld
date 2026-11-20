@@ -97,7 +97,7 @@
         speak HogwartsOllivander \"Let's see here...\"/move HogwartsOllivander 0 -3 0 true/pause 1500/emote HogwartsOllivander 40/pause 1000/shake HogwartsOllivander 500/pause 1000/
         faceDirection farmer 0/pause 500/jump HogwartsOllivander/pause 500/faceDirection HogwartsOllivander 2/speak HogwartsOllivander \"Try this one.\"/
         pause 1000/move farmer 2 0 0 true/pause 1000/move farmer 0 -2 0 true/pause 1000/faceDirection HogwartsOllivander 2/pause 250/faceDirection farmer 1/pause 250/
-        showFrame farmer 81/playSound explosion/temporarySprite 11 16 5 4 20 false 3/temporarySprite 12 16 5 6 50 false 3/temporarySprite 13 16 5 10 100 false 3/playSound explosion/screenFlash 1/
+        showFrame farmer 81/playSound explosion/temporarySprite 11 15 5 4 20 false 3/temporarySprite 12 15 5 6 50 false 3/temporarySprite 13 15 5 10 100 false 3/playSound explosion/screenFlash 1/
         pause 100/emote HogwartsOllivander 16 true/emote HogwartsOllivandersLocket 16/pause 500/emote farmer 28/speak HogwartsOllivandersLocket \"Father... please be careful.$2\"/
         pause 500/speak HogwartsOllivander \"Yes, yes I know...\"/pause 500/textAboveHead HogwartsOllivander \"Perhaps this one...\"/pause 1000/
         faceDirection farmer 1/pause 500/showFrame farmer 81/temporarySprite 11 15 45 10 200 false 3/playSound death/screenFlash 1/pause 2000/emote HogwartsOllivander 60/pause 1000/
@@ -110,13 +110,28 @@
         pause 250/globalFade/viewport -1000 -1000/pause 1000/end",
       }
     },
+    ///Shady Patrons Spritesheets///
+    {
+      "LogName": "Hogwarts Mountain Andrew Load",
+      "Action": "Load",
+      "Target": "Characters/Monsters/ShadyGuys",
+      "FromFile": "assets/Characters/HogwartsShadyPatrons.png"
+    },
     {
       "LogName": "Hogwarts Ollivanders Events",
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogwartsGreatHall",
       "Entries": {
-        "{{ModId}}_Ollivander25": "none/11 26/farmer 14 15 0 HogwartsOllivander 14 26 0 HogwartsHermione 11 23 2 HogwartsHarry 10 25 1/skippable/
-        pause 400/speak HogwartsHermione \"test\"/showFrame farmer 117/pause 1000/globalFade/viewport -1000 -1000/end"
+        "{{ModId}}_Ollivander25": "sadpiano/15 30/farmer 17 28 0 HogwartsOllivander 15 32 0 HogwartsHermione 15 23 2 HogwartsHarry 13 23 2 HogwartsHagrid 10 29 0 HogwartsSlughorn 20 27 3 HogwartsMcGonagall 17 23 2 HogwartsFilch 22 22 2 HogwartsInti 4 23 2 HogwartsSprout 10 27 2 HogwartsAberforth 20 30 3/skippable/
+        animate HogwartsMcGonagall false true 250 16 16 16 17 18 17 16 16 16 16/viewport move 0 -1 3000/animate HogwartsHermione false true 500 16 17/animate HogwartsInti false true 500 20 21/pause 1000/move HogwartsOllivander 0 -4 0/pause 250/stopAnimation HogwartsHermione 0/
+        jump HogwartsHermione/faceDirection HogwartsHagrid 1/pause 500/emote HogwartsHagrid 32/faceDirection HogwartsSprout 1/faceDirection farmer 3/emote farmer 32 true/
+        speak HogwartsHermione \"Mr. Ollivander? I'm glad you could make it.\"/pause 250/emote HogwartsOllivander 60/pause 250/textAboveHead HogwartsHermione \"Have a seat everyone!\"/move HogwartsOllivander -2 0 3/faceDirection HogwartsOllivander 0/
+        move HogwartsHermione 0 2 2/pause 1000/speak HogwartsHermione \"This support group meeting is to provide a space for anyone to listen or share, and if you would like to share, we welcome you.\"/pause 500/
+        animate HogwartsHermione false true 500 18 19/pause 500/textAboveHead HogwartsHermione \"I can go first to start.\"/
+        pause 1000/globalFade/viewport -1000 -1000/warp HogwartsInti 7 24/warp HogwartsSlughorn 15 24/warp HogwartsHermione 17 24/stopAnimation HogwartsHermione 0/faceDirection HogwartsHermione 3/faceDirection HogwartsSlughorn 2/pause 1500/viewport 15 27 true/emote HogwartsSlughorn 40/pause 1000/emote HogwartsSlughorn 28/globalFade/viewport 999 999/
+        warp HogwartsSlughorn 20 27/faceDirection HogwartsSlughorn 3/warp HogwartsFilch 21 24/faceDirection HogwartsFilch 3/warp HogwartsOllivander 15 24/faceDirection HogwartsOllivander 2/warp HogwartsInti 9 25/stopAnimation HogwartsInti 0/faceDirection HogwartsInti 1/pause 1000/viewport 15 27 true/emote HogwartsOllivander 40/shake HogwartsOllivander 250/
+        speak HogwartsOllivander \"Well... As you all know, I lost someone dear to me during the war. #$b# There are some memories...\"/shake HogwartsOllivander 500/pause 1000/speak HogwartsOllivander \"I'm sorry. I can't do this... I must go.\"/pause 1000/
+        speed HogwartsOllivander 3/move HogwartsOllivander 0 15 2 true/pause 1000/beginSimultaneousCommand/faceDirection HogwartsFilch 2/faceDirection farmer 2/faceDirection HogwartsHermione 2/faceDirection HogwartsInti 2/faceDirection HogwartsAberforth 2/endSimultaneousCommand/emote farmer 28 true/emote HogwartsHermione 28 true/emote HogwartsHarry 28 true/emote HogwartsHagrid 28 true/emote HogwartsSlughorn 28 true/emote HogwartsSprout 28 true/emote HogwartsAberforth 28 true/emote HogwartsMcGonagall 28 true/pause 1500/end"
       }
     },
     {
@@ -124,22 +139,25 @@
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogsHeadInn",
       "Entries": {
-          "{{ModId}}_Ollivander45": "spirits_eve/999 999/farmer 22 23 0 HogwartsOllivander 10 20 0 HogwartsAberforth 2 17 2 HogwartsDraco -1000 -1000 0/skippable/showFrame farmer 113/
-          addTemporaryActor HogwartsDarkWizard1 16 32 1 19 1 true Character /addTemporaryActor HogwartsDarkWizard2 16 32 19 17 2 true Character /ambientLight 90 90 50/pause 800/viewport 9 19 true/pause 2000
-          /textAboveHead HogwartsAberforth \"Your order’s up.\"/pause 1000/emote HogwartsDarkWizard1 40 true/pause 800/move HogwartsAberforth 4 0 1/ move HogwartsAberforth 0 1 1 / move HogwartsAberforth 2 0 0/move HogwartsAberforth 0 -1 0/move HogwartsAberforth 4 0 1/move HogwartsAberforth 0 1 2/positionOffset HogwartsAberforth 0 -10/
+          "{{ModId}}_Ollivander45": "spirits_eve/999 999/farmer 220 23 0 HogwartsOllivander 10 20 0 HogwartsAberforth 2 17 2 HogwartsDraco -1000 -1000 0 HogwartsOllivandersLocket 5 6 0/skippable/
+          addObject 3 22 {{ModId}}_Butterbeer 3/addObject 15 18 {{ModId}}_Butterbeer 3/addObject 23 22 {{ModId}}_Butterbeer 3/
+          addTemporaryActor HogwartsDarkWizard1 16 32 1 19 1 true Character /addTemporaryActor ShadyGuys 16 32 5 23 2 true Monster/animate ShadyGuys false true 150 0 0 0 0 0 3 1 1 1 1 1 3 0 0 0 0 0 3 2 2 2 2 2 3/addTemporaryActor ShadyGuys 16 32 19 17 2 true Monster bird/
+          animate bird false true 250 8 8 8 8 9 10 9/addTemporaryActor ShadyGuys 16 32 22 22 2 true Monster wine/animate wine false true 800 4 5/addTemporaryActor ShadyGuys 16 32 23 21 2 true Monster mug/animate mug false true 500 6 7/
+          ambientLight 90 90 50/pause 800/viewport 12 19 true/pause 2000/
+          textAboveHead HogwartsAberforth \"Your order’s up.\"/pause 1000/emote HogwartsDarkWizard1 40 true/pause 800/move HogwartsAberforth 4 0 1/ move HogwartsAberforth 0 1 1 / move HogwartsAberforth 2 0 0/move HogwartsAberforth 0 -1 0/move HogwartsAberforth 4 0 1/move HogwartsAberforth 0 1 2/positionOffset HogwartsAberforth 0 -10/
           animate HogwartsAberforth false true 500 16 17/pause 1200/speak HogwartsAberforth \"Sorry to keep you waiting.\"/pause 1000/speak HogwartsAberforth \"How is your son doing?#$b#Have you gone to visit him?\"/pause 800/
           shake HogwartsOllivander 500/pause 1000/
           speak HogwartsOllivander \"Ab...I can't go back to Diagon Alley.#$b#I can't!$a\"/pause 800/emote HogwartsAberforth 28/pause 800/playSound doorClose/warp HogwartsDraco 14 23/move HogwartsDraco 0 -1 0/pause 500/
           textAboveHead HogwartsDraco \"Now where is that damn...\"/pause 800/faceDirection HogwartsOllivander 2/pause 400/emote HogwartsOllivander 16/pause 400/faceDirection HogwartsOllivander 0/
           pause 600/move HogwartsDraco -4 0 0/pause 800/emote HogwartsOllivander 40 true/shake HogwartsOllivander 500/move HogwartsDraco -4 0 0/move HogwartsDraco 0 -4 0/move HogwartsDraco -2 0 3/
-          faceDirection HogwartsDraco 3/emote HogwartsDarkWizard1 8/pause 500/emote HogwartsDraco 12 true/shake HogwartsDraco 250/playSound purchase/addObject 3 18 {{ModId}}_PearlDust 3/pause 1000/faceDirection HogwartsOllivander 3/pause 1000/shake HogwartsOllivander 500/speed HogwartsOllivander 3/move HogwartsOllivander 4 0 1/move HogwartsOllivander 0 2 2/
+          faceDirection HogwartsDraco 3/emote HogwartsDarkWizard1 8/pause 500/emote HogwartsDraco 12 true/shake HogwartsDraco 250/playSound purchase/addObject 3 18 {{ModId}}_PearlDust 3/pause 1000/faceDirection HogwartsOllivander 3/pause 1000/shake HogwartsOllivander 500/viewport move 1 0 2000/speed HogwartsOllivander 3/move HogwartsOllivander 4 0 1/move HogwartsOllivander 0 2 2/
           emote HogwartsAberforth 16/stopAnimation HogwartsAberforth 0/pause 500/speak HogwartsAberforth \"Ollivander? What about your drink?\"/pause 1000/faceDirection HogwartsOllivander 0/pause 500/
           speak HogwartsOllivander \"Put it on my tab... I-I must go.\"/speed HogwartsOllivander 3/move HogwartsOllivander 0 2 2/playSound doorClose/warp HogwartsOllivander 100 100/pause 1000/emote HogwartsAberforth 8/pause 1000/
-          stopMusic/globalFade/viewport 999 999/pause 1000/
-          changeToTemporaryMap {{ModId}}_OllivandersBedroom/ambientLight 150 150 150/viewport 4 8 true/warp HogwartsOllivander 3 6/showFrame HogwartsOllivander 25/playSound thunder_small/shake HogwartsOllivander 500/
+          stopMusic/globalFade/viewport 999 999/pause 1600/
+          changeToTemporaryMap {{ModId}}_OllivandersBedroom/ambientLight 150 150 150/warp HogwartsOllivandersLocket 5 5/temporaryAnimatedSprite \"{{ModId}}/LocketOpen\" 0 0 16 16 100000000 1 1 5 4 false true 14 0 1 0 0 0/viewport 4 4 true/viewport move 0 2 2000/warp HogwartsOllivander 3 6/showFrame HogwartsOllivander 25/playSound thunder_small/shake HogwartsOllivander 500/
           pause 600/speak HogwartsOllivander \"I... I warned you, My Lord. #$b#Your wand shares the same phoenix core as... #$b#Your wand will be useless against him.\"
-          /pause 600/emote HogwartsOllivander 16/speak HogwartsOllivander \"Please, stop!\"/pasue 400/speak HogwartsOllivander \"I will tell you anything! Gregorovitch... My Lord!#$b#He has the Elder Wand!\"
-          /playSound thunder/shake HogwartsOllivander 1000/pause 1500/end"
+          /pause 600/emote HogwartsOllivander 16/speak HogwartsOllivander \"Please, stop!\"/pause 400/speak HogwartsOllivander \"I will tell you anything! Gregorovitch... My Lord!#$b#He has the Elder Wand!\"
+          /playSound thunder/shake HogwartsOllivander 1000/pause 1500/emote HogwartsOllivandersLocket 28/pause 1000/speak HogwartsOllivandersLocket \"...$3\"/pause 800/end"
       }
     },
     {
