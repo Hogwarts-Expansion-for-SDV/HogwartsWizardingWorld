@@ -192,10 +192,6 @@
       "LogName": "Ollivanders Hogsmeade Village Warp",
       "Action": "EditMap",
       "Target": "Maps/{{ModId}}_Ollivanders",
-      "AddNpcWarps": [
-        "8 20 {{ModId}}_HogsmeadeVillage 127 83",
-        "11 13 {{ModId}}_OllivandersBedroom 4 9"
-      ],
       "MapTiles": [
         {
           "Position": {
@@ -207,14 +203,6 @@
             "TouchAction": "Warp {{ModId}}_HogsmeadeVillage 127 83"
           }
         }
-      ]
-    },
-    {
-      "LogName": "Ollivander's Bedroom Warp",
-      "Action": "EditMap",
-      "Target": "Maps/{{ModId}}_OllivandersBedroom",
-      "AddNpcWarps": [
-        "10 4 {{ModId}}_Ollivanders 11 13"
       ]
     }
   ]
