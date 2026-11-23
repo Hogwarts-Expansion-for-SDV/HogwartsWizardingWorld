@@ -163,15 +163,23 @@
     {
       "LogName": "Hogwarts Ollivanders Events",
       "Action": "EditData",
-      "Target": "Data/Events/{{ModId}}_HogsHeadInn",
+      "Target": "Data/Events/{{ModId}}_Ollivanders",
       "Entries": {
-          "{{ModId}}_Ollivander65" :"none/8 20/farmer -1000 -1000 0 HogwartsOllivander 9 6 3/skippable/pause 800/
-          changeToTemporaryMap {{ModId}}_HogwartsValley/viewport 92 132 true/warp HogwartsOllivander 92 132/faceDirection HogwartsOllivander 0/pause 800/
-          speak HogwartsOllivander \"It's been some time, Albus.#$b#Curious... A yew tree.#$b#This tree grew...#$b#From the Dark Lord's wand!\"/pause 800/
-          emote HogwartsOllivander 12/pause 800/
-          globalFade/viewport -1000 -1000/warp farmer 7 6/faceDirection farmer 1/warp HogwartsOllivander 9 6/faceDirection HogwartsOllivander 3/pause 800/
-          changeLocation {{ModId}}_Ollivanders/viewport 8 6 true/pause 800/
-          speak HogwartsOllivander \"I crafted the tree's wood into a wand, and now...#$b#The Dark Lord's wand serves me.\"/pause 800/
+          "{{ModId}}_Ollivander65" :"none/999 999/farmer 3 14 0 HogwartsOllivander 9 6 1/skippable/animate HogwartsOllivander false true 250 21 22 23 22 21/
+          pause 800/playSound doorClose/pause 800/move farmer 0 -7 1 true/pause 200/viewport 8 7 true/temporarySprite 7 5 4 10 200 false 3/playSound fairy_heal/temporarySprite 11 4 4 10 200 false 3/temporarySprite 9 3 4 10 200 false 3/playSound fairy_heal/
+          pause 1000/temporarySprite 7 5 4 10 100 false 3/temporarySprite 10 5 4 10 200 false 3/playSound fairy_heal/temporarySprite 9 4 4 10 200 false 3/pause 1000/temporarySprite 8 5 4 10 200 false 3/temporarySprite 11 5 4 10 100 false 3/temporarySprite 9 4 4 10 100 false 3/
+          temporarySprite 8 5 3 10 100 false 3/temporarySprite 10 5 3 10 200 false 3/playSound fairy_heal/temporarySprite 9 4 3 10 100 false 3/temporarySprite 7 5 3 10 200 false 3/temporarySprite 11 4 3 10 100 false 3/temporarySprite 9 3 3 10 200 false 3/playSound fairy_heal/pause 1000/
+          emote farmer 16/shake HogwartsOllivander 500/stopAnimation HogwartsOllivander 0/pause 500/emote HogwartsOllivander 28 true/pause 500/faceDirection HogwartsOllivander 3/pause 1000/speak HogwartsOllivander \"Oh, I... Thought I hanged up the closed sign.\"/pause 1000/emote farmer 40/pause 500/
+          question null \"#You did. But I'm not here to shop. #I didn't see any signs. #I'm investigating.\"/pause 1000/emote HogwartsOllivander 8/pause 1000/speak HogwartsOllivander \"Ah yes. Of course... #$b# What do you need then?\"/pause 1500/move farmer 0 -1 1/move farmer 2 0 1/pause 1000/
+          question null \"#Those were some powerfull spells. How did you do that? #What's up with that wand?\"/pause 500/emote HogwartsOllivander 40/pause 1000/faceDirection HogwartsOllivander 2/speak HogwartsOllivander \"This? Well...\"/pause 500/
+          changeToTemporaryMap {{ModId}}_HogwartsValley/viewport 92 132 true/playMusic fall_day_ambient/ambientLight 150 150 150/beginSimultaneousCommand/warp HogwartsOllivander 92 136/faceDirection HogwartsOllivander 0/endSimultaneousCommand/speed HogwartsOllivander 1/move HogwartsOllivander 0 -4 0 true/pause 2000/
+          speak HogwartsOllivander \"It's been some time, Albus.\"/pause 1000/emote HogwartsOllivander 8/speak HogwartsOllivander \"Curious... A yew tree? #$b#This tree grew...\"/pause 500/shake HogwartsOllivander 500/jump HogwartsOllivander/textAboveHead HogwartsOllivander \"From the Dark Lord's wand!\"/pause 1500/shake HogwartsOllivander 500/
+          pause 2000/emote HogwartsOllivander 12/shake HogwartsOllivander 500/pause 800/move HogwartsOllivander 0 -1 0/positionOffset HogwartsOllivander 5 -5 true/showFrame HogwartsOllivander 16/shake HogwartsOllivander 250/
+          globalFade/viewport -1000 -1000/pause 500/playSound stumpCrack/warp farmer 5 6/faceDirection farmer 1/warp HogwartsOllivander 9 6/showFrame HogwartsOllivander 20/pause 800/
+          changeLocation {{ModId}}_Ollivanders/viewport 8 6 true/stopMusic/pause 1000/
+          speak HogwartsOllivander \"I crafted the tree's wood into a wand, and now...\"/pause 800/faceDirection HogwartsOllivander 1/pause 1500/speak HogwartsOllivander \"The Dark Lord's wand serves me.\"/pause 1000/emote farmer 40/pause 1000/speed farmer 1/move farmer -2 0 1/pause 1500/
+          question null \"#I should go... #Uh huh, I just remembered I've got somewhere else to be. #You're creeping me out, man.\"/pause 1500/speak HogwartsOllivander \"My apologies, @. You're right... #$b# You should probably go.\"/faceDirection HogwartsOllivander 3/pause 500/speak HogwartsOllivander \"Goodbye, @.\"/
+          speed farmer 3/move farmer 0 13 2 true/pause 2000/faceDirection HogwartsOllivander 2/pause 1000/emote HogwartsOllivander 40/pause 1000/
           globalFade/viewport -1000 -1000/pause 1000/end"
         }
       },
