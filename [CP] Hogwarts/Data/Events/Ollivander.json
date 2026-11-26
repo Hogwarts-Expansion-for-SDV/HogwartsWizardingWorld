@@ -165,7 +165,7 @@
       "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_Ollivanders",
       "Entries": {
-          "{{ModId}}_Ollivander65" :"none/999 999/farmer 3 14 0 HogwartsOllivander 9 6 1/skippable/animate HogwartsOllivander false true 250 21 22 23 22 21/
+          "{{ModId}}_Ollivander65": "none/999 999/farmer 3 14 0 HogwartsOllivander 9 6 1/skippable/animate HogwartsOllivander false true 250 21 22 23 22 21/
           pause 800/playSound doorClose/pause 800/move farmer 0 -7 1 true/pause 200/viewport 8 7 true/temporarySprite 7 5 4 10 200 false 3/playSound fairy_heal/temporarySprite 11 4 4 10 200 false 3/temporarySprite 9 3 4 10 200 false 3/playSound fairy_heal/
           pause 1000/temporarySprite 7 5 4 10 100 false 3/temporarySprite 10 5 4 10 200 false 3/playSound fairy_heal/temporarySprite 9 4 4 10 200 false 3/pause 1000/temporarySprite 8 5 4 10 200 false 3/temporarySprite 11 5 4 10 100 false 3/temporarySprite 9 4 4 10 100 false 3/
           temporarySprite 8 5 3 10 100 false 3/temporarySprite 10 5 3 10 200 false 3/playSound fairy_heal/temporarySprite 9 4 3 10 100 false 3/temporarySprite 7 5 3 10 200 false 3/temporarySprite 11 4 3 10 100 false 3/temporarySprite 9 3 3 10 200 false 3/playSound fairy_heal/pause 1000/
@@ -186,9 +186,21 @@
       {
       "LogName": "Hogwarts Ollivanders Events",
       "Action": "EditData",
+      "Target": "Data/Events/{{ModId}}_ScenicViewpointEast",
+      "Entries": {
+          "{{ModId}}_Ollivander70": "none/12 18/farmer 25 21 3 HogwartsOllivander 10 21 0/skippable/
+          addTemporaryActor ShadyGuys 16 32 11 20 2 true Monster Painting/showFrame Painting 11/positionOffset HogwartsOllivander 30 -30/animate HogwartsOllivander false true 400 16 17 18 19 18 17/pause 2000/
+          move farmer -10 0 3 true/pause 3500/emote farmer 8/pause 2500/emote HogwartsOllivander 40/pause 1000/jump farmer/pause 2000/stopAnimation HogwartsOllivander 16/faceDirection HogwartsOllivander 1/pause 1500/
+          textAboveHead HogwartsOllivander
+          end"
+      }
+      },
+      {
+      "LogName": "Hogwarts Ollivanders Events",
+      "Action": "EditData",
       "Target": "Data/Events/{{ModId}}_HogsmeadeVillage",
       "Entries": {
-          "{{ModId}}_Ollivander85" :"none/32 89/farmer 32 89 0 HogwartsOllivander 33 90 3/skippable/pause 800/
+          "{{ModId}}_Ollivander85": "none/32 89/farmer 32 89 0 HogwartsOllivander 33 90 3/skippable/pause 800/
           action mushymato.MMAP_ScaledOverlay 1000 \"{{ModId}}/z_Ollivander15_Hogwarts\" LetterBox/
           globalFade/viewport -1000 -1000/pause 1000/end"
         },
